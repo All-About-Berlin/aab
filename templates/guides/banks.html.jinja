@@ -1,0 +1,325 @@
+{% extends "_layout.html" %}
+{% set entry = entries['guides/first-bank-account-in-germany.md'] %}
+{% set metatitle = entry.title %}
+{% set metadescription = entry.description %}
+{% set related_collections = [] %}
+{% for collection in get_entries('collections', sort_by='order') %}
+    {% if entry in collection.related_guides %}
+        {% do related_collections.append(collection) %}
+    {% endif %}
+{% endfor %}
+
+{% block postHead %}
+    {{ super() }}
+    <link rel="index" href="{{ site_url }}/guides">
+{% endblock %}
+
+{% set body_class = "with-sidebar" %}
+{% block precontent %}
+    <div class="sidebar">
+        {% with entry=entry, showScrollToTop=true, showSupportLink=true, showRelatedEntriesLink=related_collections|length %}
+            {% include 'blocks/_tableOfContents.html' %}
+        {% endwith %}
+    </div>
+    {% include "js/sidebar.js" %}
+{% endblock%}
+
+{% block content %}
+    {% set id = 'TODO' %}
+    <h1>{{ entry.title }}</h1>
+    {% include "blocks/_postMeta.html" %}
+    <div class="article-body">
+    {% raw %}
+        <h2>Bank picker</h2>
+        <div class="bank-comparator">
+            <div class="form">
+                <div class="form-group">
+                    <span class="label">What's your status?</span>
+                    <div class="checkbox-group">
+                        <label class="checkbox">
+                            <input type="radio" name="immigration-situation"> I'm a EU citizen
+                        </label>
+                        <label class="checkbox">
+                            <input type="radio" name="immigration-situation"> I'm a permanent resident
+                        </label>
+                        <label class="checkbox">
+                            <input type="radio" name="immigration-situation"> I have a residence permit
+                        </label>
+                        <label class="checkbox">
+                            <input type="radio" name="immigration-situation"> Other
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <span class="label">What do you need?</span>
+                    <div class="checkbox-group">
+                        <label class="checkbox">
+                            <input type="checkbox"> Free account<br><small>No monthly fees</small>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox"> <span>Free ATM withdrawals<br><small>No fees when you withdraw cash</small></span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox"> Free Visa or MasterCard
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox"> Girocard / EC Karte<br><small>Accepted by most German businesses</small>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox"> Apple Pay or Google Pay<br><small>Tap your phone to pay</small>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox"> A bank with physical branches<br><small>Go to the bank in person</small>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <table>
+                <colgroup>
+                    <col>
+                    <col
+                      v-for="(bank, bankName) in banks" :key="bankName"
+                      :colspan="Object.values(bank.accountTypes).length">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th
+                          class="name"
+                          v-for="(bank, bankName) in banks" :key="bankName"
+                          :colspan="Object.values(bank.accountTypes).length">
+                            <a :href="bank.url" target="_blank" :title="bankName">
+                                <img :src="bank.logo">
+                            </a>
+                            {{ bankName }}
+                        </th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th v-for="account in accounts" :key="account.key">
+                            <a :href="account.url" target="_blank" :title="account.bankName + ' ' + account.name">{{ account.name }}</a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="table-section" colspan="999">Fees</th>
+                    </tr>
+                    <tr>
+                        <th>Monthly fee</th>
+                        <td
+                          v-for="account in accounts" :key="account.key"
+                          v-html="account.monthlyFee ? formatCurrency(account.monthlyFee) : 'Free'"
+                        ></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            ATM fee
+                            <small>For withdrawing cash</small>
+                        </th>
+                        <td
+                          v-for="account in accounts" :key="account.key"
+                          v-html="account.atmFee"
+                        ></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Card fee
+                            <small>For a Visa or MasterCard</small>
+                        </th>
+                        <td
+                          v-for="account in accounts" :key="account.key"
+                          v-html="account.creditCardFee"
+                        ></td>
+                    </tr>
+                    <tr>
+                        <th class="table-section" colspan="999">Features</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            Payment methods
+                        </th>
+                        <td class="payment-methods"
+                          v-for="account in accounts" :key="account.key"
+                          v-html="account.paymentMethods.join('<br>')"
+                        ></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Languages
+                        </th>
+                        <td
+                          v-for="account in accounts" :key="account.key"
+                          v-html="relevantLanguagesList(account.languages)"
+                        ></td>
+                    </tr>
+                    <tr>
+                        <th class="table-section" colspan="999">Requirements</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            German address
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            Supported passports
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a href="/glossary/Anmeldung" target="_blank">Registered address</a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a href="/glossary/Aufenthaltstitel" target="_blank">Residence permit</a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a href="/glossary/Niederlassungserlaubnis" target="_blank">Permanent residence</a>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    {% endraw %}
+    </div>
+
+    <style type="text/css">
+        .bank-comparator{overflow:auto;scroll-snap-type:both mandatory}
+            .bank-comparator .tags a{font-size:var(--font-size-s);border-radius:var(--border-radius);border:var(--border-page);padding:3px var(--spacing-m);position:relative}
+                .bank-comparator .tags a:hover{text-decoration:none}
+                .bank-comparator .tags a.selected{background:var(--color-highlight);color:#fff}
+            .bank-comparator table{width:max-content;display:table;}
+                .bank-comparator td, .bank-comparator th{scroll-snap-align:start;scroll-margin-left:var(--size-image-logo);vertical-align:top}
+                    .bank-comparator th:empty{border:none}
+                .bank-comparator thead th{position:sticky;top:0;}
+                    .bank-comparator thead :last-child th{border-bottom:var(--border-page)}
+
+                .bank-comparator .table-section{background:var(--color-background-widget)}
+                .bank-comparator th small{display:block}
+                .bank-comparator .name{text-align:center;}
+                    .bank-comparator .name img{margin-bottom:var(--spacing-s);height:var(--size-image-logo);border-radius:50%;border:none;background:transparent;}
+                    .bank-comparator .name a:hover img{outline:none!important;filter:brightness(1.1);}
+                .bank-comparator .payment-methods {white-space: nowrap;}
+                    .bank-comparator .payment-methods svg{height:32px;border:var(--border-image);border-radius:var(--border-radius)}
+            .bank-comparator small{font-size:smaller}
+    </style>
+{% endblock %}
+{% include '/js/currency.js' %}
+{% include '/js/constants.js' %}
+{% include '/js/health-insurance-calculator.js' %}
+{% include '/js/vue.js' %}
+{% js %}
+  const languageMap = {
+    en: 'English',
+    de: 'German',
+    fr: 'French',
+    es: 'Spanish',
+    it: 'Italian',
+  };
+
+  document.querySelectorAll('.bank-comparator').forEach(
+    el => new Vue({
+      el: el,
+      data: function() {
+        return {
+          banks: {
+            'Commerzbank': {
+              languages: ['de', 'en'],
+              logo: '/staticimages/banks/commerzbank.png',
+              url: '/out/commerzbank',
+              accountTypes: {
+                'Basic': {
+                  atmFee: '?',
+                  creditCardFee: '3.90€ / month<br><small>Free virtual card</small>',
+                  monthlyFee: 0,
+                  paymentMethods: ['Girocard', 'Apple Pay', 'Google Pay'],
+                  url: '/out/commerzbank',
+                },
+                'Klassik': {
+                  atmFee: '?',
+                  creditCardFee: '',
+                  monthlyFee: 6.90,
+                  paymentMethods: ['Girocard', 'MasterCard', 'Apple Pay', 'Google Pay'],
+                  url: '/out/commerzbank',
+                },
+              }
+            },
+            'N26': {
+              logo: '/staticimages/banks/n26.png',
+              languages: ['de', 'en', 'fr', 'es', 'it'],
+              logo: '/staticimages/banks/n26.png',
+              url: '/out/n26-plans',
+              accountTypes: {
+                'Standard': {
+                  atmFee: '3 free withdrawals<br><small>Then 2€ each</small>',
+                  creditCardFee: '10€ once<br><small>Free virtual card</small>',
+                  monthlyFee: 0,
+                  paymentMethods: ['MasterCard', 'Apple Pay', 'Google Pay'],
+                  url: '/out/n26',
+                },
+                'Smart': {
+                  atmFee: '5 free withdrawals<br><small>Then 2€ each</small>',
+                  creditCardFee: '',
+                  monthlyFee: 4.90,
+                  paymentMethods: ['MasterCard', 'Apple Pay', 'Google Pay'],
+                  url: '/out/n26',
+                },
+                'You': {
+                  atmFee: '5 free withdrawals<br><small>Then 2€ each</small>',
+                  creditCardFee: '',
+                  monthlyFee: 9.90,
+                  paymentMethods: ['MasterCard', 'Apple Pay', 'Google Pay'],
+                  url: '/out/n26',
+                },
+                'Metal': {
+                  atmFee: '8 free withdrawals<br><small>Then 2€ each</small>',
+                  creditCardFee: '',
+                  monthlyFee: 16.90,
+                  paymentMethods: ['MasterCard', 'Apple Pay', 'Google Pay'],
+                  url: '/out/n26',
+                },
+              },
+            },
+          }
+        };
+      },
+      computed: {
+        accounts() {
+          return Object.entries(this.banks).reduce((allAccounts, [bankName, bank]) => {
+            const accountTypes = Object.entries(bank.accountTypes).map(([accountName, accountType]) => {
+              return {
+                key: bankName + accountName,
+                name: accountName,
+                bankName: bankName,
+                ...bank,
+                ...accountType,
+              }
+            })
+            allAccounts.push(...accountTypes)
+            return allAccounts;
+          }, []);
+        },
+      },
+      methods: {
+        relevantLanguagesList(availableLanguages) {
+          const relevantLanguages = navigator.languages
+            .map(userLocale => userLocale.split('-')[0])
+            .reduce((selectedLanguages, userLanguage) => {
+              if(availableLanguages.includes(userLanguage) && !selectedLanguages.includes(userLanguage)) {
+                selectedLanguages.push(userLanguage);
+              }
+              return selectedLanguages;
+            }, []);
+
+          const relevantLanguagesString = relevantLanguages.map(l => languageMap[l]).join('<br>');
+          const extraLanguageCount = availableLanguages.length - relevantLanguages.length;
+          return relevantLanguagesString + (extraLanguageCount ? `<br><small>and ${extraLanguageCount} more</small>` : '');
+        }
+      }
+    })
+  );
+{% endjs %}
