@@ -190,6 +190,7 @@ $width-main-column: 860px;
 	--l: 1.25rem;
 		--l-relative: 1.25em; // Text blocks
 	--m: 17px; // Separate but related elements
+		--m-relative: 1em; // Separate but related elements
 	--s: 0.5rem; // Space between parts of a component, list items
 		--s-relative: 0.5em; // Compact text blocks
 	--xs: 0.3rem; // Space between two characters
@@ -2720,6 +2721,77 @@ details{
 	}
 	picture + p{margin-top:0}
 	picture ~ hr{clear: both}
+}
+
+
+.bank-comparator{
+	.filters{
+		border-top:var(--b-box);
+		border-bottom:var(--b-box);
+		margin: var(--l-relative) 0;
+	}
+	.bank-options{
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: var(--m);
+
+		> *{
+			@include box-m;
+			margin: 0;
+			display: grid;
+			grid-column-gap: var(--xl-relative);
+			grid-template-areas: "logo title actions" "logo costs features";
+			grid-template-columns: var(--w-bank-logo) 1fr 1fr;
+			text-align: left;
+			align-items: flex-start;
+		}
+
+		img{
+			border-radius:50%;
+			border:none;
+			grid-area:logo;
+			width:100%;
+			align-self:flex-start
+		}
+
+		h3{
+			margin:0;
+			grid-area:title;
+			align-self:center;
+		}
+
+		.features{
+			grid-area:features;
+			font-size: var(--f-s);
+
+			display: flex;
+			flex-direction: column;
+			gap: var(--m-relative);
+
+			li{
+				line-height: var(--line-height-label);
+			}
+		}
+
+		.costs{
+			grid-area:costs;
+			font-size: var(--f-s);
+		}
+	}
+	.actions{
+		justify-self: end;
+		grid-area: actions;
+		display: flex;
+		gap: var(--m);
+
+		svg{
+			height: 1.5em;
+			width:auto;
+			vertical-align:
+			middle;
+			display:inline
+		}
+	}
 }
 
 @include only-print{
