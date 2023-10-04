@@ -1,20 +1,79 @@
 <collapsible class="abmeldung-form" {% if static|default %}static{% endif %}>
 {% raw %}
 	<template v-slot:header>
-		<small>Fill the form online</small>
-		Address deregistration form
+		<small>Abmeldung</small>
+		Deregister your address online
 	</template>
 	<progress v-if="stage !== 'start'" aria-label="Form progress" :max="stages.length - 1" :value="stageIndex"></progress>
 	<template v-if="stage === 'start'">
-		{% endraw %}{% image 'documents/abmeldung-original.pdf', alt="German document preview", sizes="300px" %}{% raw %}
-		<p>This tools helps you <strong>fill the <glossary>Abmeldung</glossary> form</strong> in 3 minutes. You can save the completed form, sign it, and send it to the <glossary>Bürgeramt</glossary>.</p>
-		<p>Your personal information stays on your computer. No one else can see it.</p>
+		<div class="collapsible-options">
+			<button @click="finishOnline = true; stageIndex += 1;">
+				{% endraw %}{% include "_css/icons/mail.svg" %}{% raw %}
+				<div>
+					<h3>Do your Abmeldung online</h3>
+					<p>Answer a few questions, and we do the rest. Get your Abmeldung certificate by email.</p>
+				</div>
+				<output>
+					<eur :amount="15"></eur>
+				</output>
+			</button>
+			<button @click="finishOnline = false; stageIndex += 1;">
+				{% endraw %}{% include "_css/icons/pdf.svg" %}{% raw %}
+				<div>
+					<h3>Fill the Abmeldung form online</h3>
+					<p>Answer a few questions, get a filled Abmeldung form. Print and send the form yourself.</p>
+				</div>
+				<output>
+					Free
+				</output>
+			</button>
+		</div>
+	</template>
+	<template v-if="stage === 'howThisWorks' && finishOnline">
+		<h2>How this works</h2>
+		<ol>
+			<li>
+				You answer a few questions. It takes 5 minutes.
+			</li>
+			<li>
+				We deregister your address for you.
+			</li>
+			<li>
+				When we receive your <glossary term="Abmeldebescheinigung">Abmeldung certificate</glossary>, we scan it and email it to you.
+			</li>
+		</ol>
+		<p>To deregister your address, we need...</p>
+		<ul>
+			<li>Your permission</li>
+			<li>Your signature</li>
+			<li>A photo of your passport</li>
+		</ul>
+		<p>If you prefer to share less information, you can do the Abmeldung by yourself. Just <a href="/guides/abmeldung-deregister-in-berlin#how-to-do-your-abmeldung" target="_blank">follow my instructions</a>.</p>
+	</template>
+	<template v-if="stage === 'howThisWorks' && !finishOnline">
+		<h2>How this works</h2>
+		<ol>
+			<li>
+				Answer a few questions. It takes 3 minutes.
+			</li>
+			<li>
+				Download the filled Abmeldung form, print it and sign it.
+			</li>
+			<li>
+				Send your Abmeldung documents to your Bürgeramt.
+			</li>
+			<li>
+				Receive your <glossary term="Abmeldebescheinigung">Abmeldung certificate</glossary> by mail. This does not always work.
+			</li>
+		</ol>
+		<p></p>
+		<p>You can also <a href="#" @click.prevent="finishOnline = true">do your Abmeldung online</a> for 15 €. It's faster and more reliable.</p>
 	</template>
 	<template v-if="stage === 'oldAddress'">
 		<h2>Your old address</h2>
 		<p>Where did you live? Enter the address that you want to deregister. Use the information on your <glossary>Meldebestätigung</glossary>.</p>
 		<hr>
-		<div class="form-group">
+		<div class="form-group required">
 			<label :for="uid('oldAddress')">Street address</label>
 			<input
 				:id="uid('oldAddress')"
@@ -22,14 +81,15 @@
 				type="text"
 				v-model="oldAddress"
 				placeholder="Alte Straße 123"
-				autocomplete="address-line1">
+				autocomplete="address-line1"
+				required>
 		</div>
-		<div class="form-group">
+		<div class="form-group required">
 			<label :for="uid('oldPostCode')">
 				<glossary term="Postleitzahl">Post code</glossary>
 			</label>
 			<div class="input-group">
-				<postalcode-input ref="oldPostCodeInput" class="show-errors" :id="uid('oldPostCode')" v-model="oldPostCode"></postalcode-input>
+				<postalcode-input ref="oldPostCodeInput" :id="uid('oldPostCode')" v-model="oldPostCode" required></postalcode-input>
 				Berlin
 			</div>
 		</div>
@@ -45,16 +105,16 @@
 			<a class="input-instructions" href="/guides/addressing-a-letter-in-germany#extra-information" target="_blank">How to write your building details ➞</a>
 		</div>
 		<hr>
-		<div class="form-group">
+		<div class="form-group required">
 			<label :for="uid('moveOutDate') + '-day'">Move-out date</label>
-			<date-picker v-model="moveOutDate" :id="uid('moveOutDate')" :aria-describedby="uid('moveOutDate-instructions')"></date-picker>
+			<date-picker v-model="moveOutDate" :id="uid('moveOutDate')" :aria-describedby="uid('moveOutDate-instructions')" required></date-picker>
 		</div>
 	</template>
 	<template v-if="stage === 'newAddress'">
 		<h2>Your new address</h2>
 		<p>Where will you live after you leave Germany?</p>
 		<hr>
-		<div class="form-group">
+		<div class="form-group required">
 			<label :for="uid('newAddress')">Street address</label>
 			<input
 				:id="uid('newAddress')"
@@ -62,9 +122,10 @@
 				ref="newAddressInput"
 				v-model="newAddress"
 				placeholder="123 Maple Street, Apt. 102"
-				autocomplete="address-line1">
+				autocomplete="address-line1"
+				required>
 		</div>
-		<div class="form-group">
+		<div class="form-group required">
 			<label :for="uid('newCityAndPostCode')">
 				City and post code
 			</label>
@@ -73,9 +134,9 @@
 				placeholder="Montreal, Quebec, H3E 1J4"
 				type="text"
 				v-model="newCityAndPostCode"
-				autocomplete="address-level2">
+				autocomplete="address-level2" required>
 		</div>
-		<div class="form-group">
+		<div class="form-group required">
 			<label :for="uid('newCountry')">Country</label>
 			<select v-model="newCountry" :id="uid('newCountry')" :aria-describedby="uid('newCountry-instructions')" autocomplete="country-name">
 				<option disabled hidden default value="">Country of your new address</option>
@@ -99,7 +160,7 @@
 					placeholder="Dr." 
 					class="anrede-input">
 			</div>
-			<div class="form-group">
+			<div class="form-group required">
 				<label :for="uid('firstName-' + person.id)">First and last name</label>
 				<div class="input-group">
 					<input type="text"
@@ -108,12 +169,14 @@
 						ref="firstNameInput"
 						placeholder="Alex"
 						autocomplete="given-name"
-						class="first-name-input">
+						class="first-name-input"
+						required>
 					<input type="text"
 						v-model="person.lastName"
 						placeholder="Smith"
 						autocomplete="family-name"
-						class="last-name-input">
+						class="last-name-input"
+						required>
 					<a class="input-instructions" href="#" v-if="!person.showExtraFields" @click.prevent="person.showExtraFields = true">Add a title or birth name</a>
 				</div>
 			</div>
@@ -127,33 +190,35 @@
 					placeholder="Alex Gagnon">
 				<span class="input-instructions" :id="uid('birthName-instructions-' + person.id)">If you changed your name, enter your full name at birth.</span>
 			</div>
-			<div class="form-group">
+			<div class="form-group required">
 				<label :for="uid('nationality-' + person.id)">Nationality</label>
 				<input type="text"
-				  placeholder="Canada"
-				  autofill="country-name"
-				  :id="uid('nationality-' + person.id)"
-				  :list="uid('countries')"
-				  v-model="person.nationality">
+				 	placeholder="Canada"
+				 	autofill="country-name"
+				 	:id="uid('nationality-' + person.id)"
+				 	:list="uid('countries')"
+				 	v-model="person.nationality"
+				 	required>
 			</div>
-			<div class="form-group">
+			<div class="form-group required">
 				<label :for="uid('dateOfBirth-' + person.id) + '-day'">Date of birth</label>
 				<date-picker
 					:id="uid('dateOfBirth-' + person.id)"
 					v-model="person.dateOfBirth"
-					autocomplete="bday"></date-picker>
+					autocomplete="bday" required></date-picker>
 			</div>
-			<div class="form-group">
+			<div class="form-group required">
 				<label :for="uid('birthPlace-' + person.id)">Place of birth</label>
 				<input
 					type="text"
 					v-model="person.birthPlace"
 					:id="uid('birthPlace-' + person.id)"
 					:aria-describedby="uid('birthPlace-instructions-' + person.id)"
-					placeholder="Montreal, Quebec, Canada">
+					placeholder="Montreal, Quebec, Canada"
+					required>
 				<span class="input-instructions" :id="uid('birthPlace-instructions-' + person.id)">The country, region and city where you were born.</span>
 			</div>
-			<div class="form-group">
+			<div class="form-group required">
 				<span class="label">Gender</span>
 				<div class="input-group">
 					<label class="checkbox">
@@ -170,9 +235,9 @@
 					</label>
 				</div>
 			</div>
-			<div class="form-group">
+			<div class="form-group required">
 				<label :for="uid('religion-' + person.id)">Religion</label>
-				<select :id="uid('religion-' + person.id)" v-model="person.religion" :aria-describedby="uid('religion-instructions-' + person.id)">
+				<select required :id="uid('religion-' + person.id)" v-model="person.religion" :aria-describedby="uid('religion-instructions-' + person.id)">
 					<option value="Evangelische Kirche">Evangelical Church</option>
 					<option value="Römisch-katholische Kirche">Roman Catholic Church</option>
 					<option value="Jüdische Gemeinde">Jewish Community</option>
@@ -187,7 +252,29 @@
 			<option v-for="country in sortedCountryList" :key="country[0]" :value="country[1]"></option>
 		</datalist>
 	</template>
-	<template v-if="stage === 'options'">
+	<template v-if="stage === 'permission'">
+		<h2>We need your permission</h2>
+		<p>To do your Anmeldung, we need your permission and your signature.</p>
+		<hr>
+		<div class="form-group no-label required">
+			<div class="input-group vertical">
+				I allow All About Berlin to&hellip;
+				<label class="checkbox">
+					<input type="checkbox" ref="basicPermissionCheckbox" required> Deregister my address at the Bürgeramt
+				</label>
+				<label class="checkbox">
+					<input type="checkbox" required> Receive my deregistration certificate, scan it and send it to me
+				</label>
+			</div>
+		</div>
+		<signature required :width="530" :height="70" :padding-x="20" :padding-y="50"></signature>
+	</template>
+	<template v-if="stage === 'onlineFinish'">
+		<h2>You are almost done!</h2>
+		<p>One last step: pay 15 €. We will deregister your address as soon as we get the payment confirmation.</p>
+		<p>You can also <a href="#" @click.prevent="generatePDF(people[0], people[1], people[2])">download your Abmeldung form</a> and do the Abmeldung by yourself.</p>
+	</template>
+	<template v-if="stage === 'offlineFinish'">
 		<h2>You are almost done!</h2>
 		<template v-if="peopleTriples.length > 1">
 			<p>Print the forms, sign them, and bring them to your <em>Abmeldung</em> appointment.</p>
@@ -236,13 +323,14 @@
 			</a>
 		</div>
 	</template>
-	<hr>
-	<div class="buttons">
-		<button v-if="stageIndex === 0" class="button primary" @click="stageIndex += 1">Start <i class="icon right" aria-hidden="true"></i></button>
-		<button v-if="stageIndex > 1" class="button" @click="stageIndex -= 1"><i class="icon left" aria-hidden="true"></i> Go back</button>
+	<hr v-if="stage !== 'start'">
+	<div class="buttons" v-if="stage !== 'start'">
+		<button v-if="stageIndex > 0" class="button" @click="stageIndex -= 1"><i class="icon left" aria-hidden="true"></i> Go back</button>
+		<button v-if="stage === 'howThisWorks'" class="button primary" @click="stageIndex += 1">Start <i class="icon right" aria-hidden="true"></i></button>
 		<button v-if="stage === 'addPeople'" class="button" @click="addPerson"><i class="icon person" aria-hidden="true"></i> Add another person</button>
-		<button v-if="stageIndex > 0 && stageIndex < stages.length - 2" class="button primary" @click="stageIndex += 1">Next step <i class="icon right" aria-hidden="true"></i></button>
+		<button v-if="stageIndex > 1 && stageIndex < stages.length - 2" class="button primary" @click="stageIndex += 1">Next step <i class="icon right" aria-hidden="true"></i></button>
 		<button v-if="stageIndex === stages.length - 2" class="button primary" @click="stageIndex += 1">Finish</button>
+		<a v-if="stage === 'onlineFinish'" class="button primary" href="https://buy.stripe.com/8wM17a3lJ9hEf4IaEF?client_reference_id=TODO">Pay 15 €</a>
 	</div>
 {% endraw %}
 </collapsible>
@@ -252,10 +340,12 @@
 {% include '_js/vue/city-input.js' %}
 {% include '_js/vue/collapsible.js' %}
 {% include '_js/vue/date-picker.js' %}
+{% include '_js/vue/eur.js' %}
 {% include '_js/vue/postalcode-input.js' %}
 {% include '_js/vue/glossary.js' %}
-{% include '_js/vue/uniqueIdsMixin.js' %}
+{% include '_js/vue/signature.js' %}
 {% include '_js/vue/trackedStagesMixin.js' %}
+{% include '_js/vue/uniqueIdsMixin.js' %}
 {% js %}
 	let abmeldungFormDownloadPromise = null;
 
@@ -267,6 +357,7 @@
 				return {
 					trackAs: 'Abmeldung form',
 
+					finishOnline: false,
 					moveOutDate: '',
 					oldAddress: '',
 					oldBuildingDetails: '',
@@ -281,18 +372,32 @@
 					recommendedCountries: new Set(
 						(navigator.languages || []).map(l => countries.all[l.substring(3)]).concat(['Germany']).filter(Boolean)
 					),
-					stages: [
-						'start',
-						'oldAddress',
-						'newAddress',
-						'addPeople',
-						'options',
-					],
 					stageIndex: 0,
 					pdfBytes: null,
 				};
 			},
 			computed: {
+				stages() {
+					if(this.finishOnline){
+						return [
+							'start',
+							'permission',
+							'howThisWorks',
+							'oldAddress',
+							'newAddress',
+							'addPeople',
+							'onlineFinish',
+						];
+					}
+					return [
+						'start',
+						'howThisWorks',
+						'oldAddress',
+						'newAddress',
+						'addPeople',
+						'offlineFinish',
+					];
+				},
 				stage(){
 					return this.stages[this.stageIndex];
 				},
@@ -414,10 +519,13 @@
 					Vue.nextTick(() => {
 						const inputToFocus = {
 							start: () => this.$refs.startButton,
+							howThisWorks: () => null,
 							oldAddress: () => this.$refs.oldAddressInput,
 							newAddress: () => this.$refs.newAddressInput,
 							addPeople: () => this.$refs.firstNameInput[0],
-							options: () => null,
+							permission: () => this.$refs.basicPermissionCheckbox,
+							onlineFinish: () => null,
+							offlineFinish: () => null,
 						}[this.stages[newStageIndex]]();
 
 						if(inputToFocus){

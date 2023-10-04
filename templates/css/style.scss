@@ -304,6 +304,10 @@ $width-main-column: 860px;
 	dialog::backdrop{
 		backdrop-filter: blur(3px) contrast(0.9) brightness(0.4) grayscale(0.2)!important;
 	}
+
+	canvas{
+		filter: invert(100%);
+	}
 }
 
 /*******************************************************************************
@@ -1572,6 +1576,13 @@ input[type=range] {
 	gap: var(--s) var(--m);
 	margin: var(--l-relative) 0;
 
+	&.no-label{
+		grid-template-columns: minmax(0, 1fr);
+		> * {
+			grid-column-start: 1;
+		}
+	}
+
 	.input-group {
 		display: flex;
 		flex-wrap: wrap;
@@ -2703,6 +2714,84 @@ details{
 	}
 	picture + p{margin-top:0}
 	picture ~ hr{clear: both}
+
+	ol > li{
+		@include list-marker-ol;
+	}
+	ul > li{
+		@include list-marker-ul;
+	}
+}
+
+.signature-input{
+	max-width: calc(min(100%, 15cm));
+	margin: 0 auto;
+
+	.signature-box{
+		border: var(--b-box);
+		border-radius: var(--b-radius);
+		position: relative;
+		z-index:1;
+		width: fit-content;
+		height: fit-content;
+		max-width: 100%;
+
+		&:hover .backdrop{
+			border-bottom-color: var(--c-border-input-focused);
+		}
+
+		canvas{
+			max-width: 100%;
+			display: block;
+			cursor: crosshair;
+		}
+
+		.backdrop{
+			color: var(--c-text-light);
+			position: absolute;
+			z-index: -1;
+			box-sizing: border-box;
+			border-bottom: 2px solid var(--c-border-input);
+
+
+			&:after{
+				@media (hover: hover){
+					content: '▲ Sign here with your mouse';
+				}
+				@media (hover: none){
+					content: '▲ Sign here with your finger';
+				}
+				color: var(--c-text);
+				font-size: var(--f-s);
+				position: absolute;
+				left: 0;
+				width: 100%;
+				text-align: center;
+				bottom: calc(var(--xxl) * -1);
+			}
+		}
+
+		&:not(.empty) .backdrop:after{
+			color: transparent;
+			transition: color 0.3s;
+		}
+	}
+
+	@include only-phone{
+		width: calc(100% + var(--w-page-border) * 2);
+		max-width: none;
+		margin-left: calc(var(--w-page-border) * -1);
+		margin-right: calc(var(--w-page-border) * -1);
+
+		.signature-box{
+			max-width: 100%;
+			width: 100%;
+			border: none;
+			border-radius: 0;
+			background: var(--c-bg-widget);
+			padding-bottom: var(--s);
+		}
+	}
 }
 
 @include only-print{
