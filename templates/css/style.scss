@@ -2728,13 +2728,14 @@ details{
 	margin: 0 auto;
 
 	.signature-box{
-		border: var(--b-box);
+		border: var(--b-input);
 		border-radius: var(--b-radius);
 		position: relative;
 		z-index:1;
 		width: fit-content;
 		height: fit-content;
 		max-width: 100%;
+		background: var(--c-bg-input);
 
 		&:hover .backdrop{
 			border-bottom-color: var(--c-border-input-focused);
@@ -2747,12 +2748,10 @@ details{
 		}
 
 		.backdrop{
-			color: var(--c-text-light);
 			position: absolute;
 			z-index: -1;
 			box-sizing: border-box;
 			border-bottom: 2px solid var(--c-border-input);
-
 
 			&:after{
 				@media (hover: hover){
@@ -2761,7 +2760,7 @@ details{
 				@media (hover: none){
 					content: '▲ Sign here with your finger';
 				}
-				color: var(--c-text);
+				color: var(--c-text-light);
 				font-size: var(--f-s);
 				position: absolute;
 				left: 0;
@@ -2786,7 +2785,8 @@ details{
 		.signature-box{
 			max-width: 100%;
 			width: 100%;
-			border: none;
+			border-left: none;
+			border-right: none;
 			border-radius: 0;
 			background: var(--c-bg-widget);
 			padding-bottom: var(--s);
