@@ -39,7 +39,7 @@
 				We deregister your address for you.
 			</li>
 			<li>
-				When we receive your <glossary term="Abmeldebescheinigung">Abmeldung certificate</glossary>, we scan it and email it to you.
+				When we receive your <glossary term="Abmeldebescheinigung">Abmeldung certificate</glossary>, we email it to you.
 			</li>
 		</ol>
 		<p>To deregister your address, we need...</p>
@@ -256,7 +256,8 @@
 		<h2>We need your permission</h2>
 		<p>To do your Anmeldung, we need your permission and your signature.</p>
 		<hr>
-		<div class="form-group no-label required">
+		<div class="form-group required">
+			<span class="label">Permission</span>
 			<div class="input-group vertical">
 				I allow All About Berlin to&hellip;
 				<label class="checkbox">
@@ -267,11 +268,21 @@
 				</label>
 			</div>
 		</div>
-		<signature required :width="530" :height="70" :padding-x="20" :padding-y="50"></signature>
+		<div class="form-group required">
+			<span class="label">Signature</span>
+			<signature required :width="530" :height="70" :padding-x="20" :padding-y="50"></signature>
+		</div>
+		<hr>
+		<div class="form-group required">
+			<label :for="uid('email')">Email</label>
+			<input v-model="emailAddress" type="email" :id="uid('email')" required autocomplete="email">
+			<span class="input-instructions">We will send your <glossary term="Abmeldebescheinigung">Abmeldung certificate</glossary> to this email.</span>
+		</div>
 	</template>
 	<template v-if="stage === 'onlineFinish'">
 		<h2>You are almost done!</h2>
-		<p>One last step: pay 15 €. We will deregister your address as soon as we get the payment confirmation.</p>
+		<p>The last step is to pay. We deregister your address as soon as we get the payment confirmation.</p>
+		<hr>
 		<p>You can also <a href="#" @click.prevent="generatePDF(people[0], people[1], people[2])">download your Abmeldung form</a> and do the Abmeldung by yourself.</p>
 	</template>
 	<template v-if="stage === 'offlineFinish'">
@@ -328,9 +339,9 @@
 		<button v-if="stageIndex > 0" class="button" @click="stageIndex -= 1"><i class="icon left" aria-hidden="true"></i> Go back</button>
 		<button v-if="stage === 'howThisWorks'" class="button primary" @click="stageIndex += 1">Start <i class="icon right" aria-hidden="true"></i></button>
 		<button v-if="stage === 'addPeople'" class="button" @click="addPerson"><i class="icon person" aria-hidden="true"></i> Add another person</button>
-		<button v-if="stageIndex > 1 && stageIndex < stages.length - 2" class="button primary" @click="stageIndex += 1">Next step <i class="icon right" aria-hidden="true"></i></button>
+		<button v-if="stageIndex > 1 && stageIndex < stages.length - 2" class="button primary" @click="stageIndex += 1">Continue <i class="icon right" aria-hidden="true"></i></button>
 		<button v-if="stageIndex === stages.length - 2" class="button primary" @click="stageIndex += 1">Finish</button>
-		<a v-if="stage === 'onlineFinish'" class="button primary" href="https://buy.stripe.com/8wM17a3lJ9hEf4IaEF?client_reference_id=TODO">Pay 15 €</a>
+		<a v-if="stage === 'onlineFinish'" class="button primary" :href="paymentUrl">Pay 15 €</a>
 	</div>
 {% endraw %}
 </collapsible>
@@ -366,8 +377,9 @@
 					newCityAndPostCode: '',
 					newCountry: '',
 					people: [],
-					namesAreOnMailbox: true,
-					nameOnMailbox: '',
+					emailAddress: '',
+					userId: 'allaboutberlin-' + Math.floor(Math.random() * 1000000).toString(36),
+
 					sortedCountryList: countries.getSortedList(),
 					recommendedCountries: new Set(
 						(navigator.languages || []).map(l => countries.all[l.substring(3)]).concat(['Germany']).filter(Boolean)
@@ -381,11 +393,11 @@
 					if(this.finishOnline){
 						return [
 							'start',
-							'permission',
 							'howThisWorks',
 							'oldAddress',
 							'newAddress',
 							'addPeople',
+							'permission',
 							'onlineFinish',
 						];
 					}
@@ -408,7 +420,13 @@
 						peopleGroups.push(this.people.slice(i*3, i*3 + 3));
 					}
 					return peopleGroups;
-				}
+				},
+				paymentUrl(){
+					const url = new URL('https://buy.stripe.com/8wM17a3lJ9hEf4IaEF');
+					url.searchParams.set('prefilled_email', this.emailAddress);
+					url.searchParams.set('client_reference_id', this.userId);
+					return url.toString();
+				},
 			},
 			methods: {
 				addPerson(){
