@@ -1,7 +1,10 @@
 {% include '_js/vue.js' %}
 {% js %}{% raw %}
 Vue.component('postalcode-input', {
-	props: ['value'],
+	props: {
+		value: String,
+		required: Boolean,
+	},
 	template: `
 		<input
 			class="postalcode-input"
@@ -14,7 +17,9 @@ Vue.component('postalcode-input', {
 			autocomplete="postal-code"
 			title="Postal code (Postleitzahl)"
 			:value="value"
-			v-on:input="$emit('input', $event.target.value)">
+			v-on:input="$emit('input', $event.target.value)"
+			:required="required"
+			>
 	`,
 });
 {% endraw %}{% endjs %}
