@@ -279,11 +279,19 @@
 			<span class="input-instructions">We will send your <glossary term="Abmeldebescheinigung">Abmeldung certificate</glossary> to this email.</span>
 		</div>
 	</template>
+	<template v-if="stage === 'documents'">
+		<h2>Add your ID documents</h2>
+		<p>To verify your identity, the <glossary>Bürgeramt</glossary> needs a copy of your ID documents.</p>
+		<hr>
+		<file-input ref="documentInput" accept="image/png,image/jpeg,.pdf">
+			Add a photo of everyone's passport or <em><glossary>Personalausweis</glossary></em>.
+		</file-input>
+	</template>
 	<template v-if="stage === 'onlineFinish'">
 		<h2>You are almost done!</h2>
 		<p>The last step is to pay. We deregister your address as soon as we get the payment confirmation.</p>
 		<hr>
-		<p>You can also <a href="#" @click.prevent="generatePDF(people[0], people[1], people[2])">download your Abmeldung form</a> and do the Abmeldung by yourself.</p>
+		<p>Too expensive? You can also <a href="#" @click.prevent="generatePDF(people[0], people[1], people[2])">download your Abmeldung form</a> and finish the Abmeldung by yourself.</p>
 	</template>
 	<template v-if="stage === 'offlineFinish'">
 		<h2>You are almost done!</h2>
@@ -352,8 +360,9 @@
 {% include '_js/vue/collapsible.js' %}
 {% include '_js/vue/date-picker.js' %}
 {% include '_js/vue/eur.js' %}
-{% include '_js/vue/postalcode-input.js' %}
+{% include '_js/vue/file-input.js' %}
 {% include '_js/vue/glossary.js' %}
+{% include '_js/vue/postalcode-input.js' %}
 {% include '_js/vue/signature.js' %}
 {% include '_js/vue/trackedStagesMixin.js' %}
 {% include '_js/vue/uniqueIdsMixin.js' %}
@@ -397,6 +406,7 @@
 							'oldAddress',
 							'newAddress',
 							'addPeople',
+							'documents',
 							'permission',
 							'onlineFinish',
 						];
@@ -542,6 +552,7 @@
 							newAddress: () => this.$refs.newAddressInput,
 							addPeople: () => this.$refs.firstNameInput[0],
 							permission: () => this.$refs.basicPermissionCheckbox,
+							documents: () => this.$refs.documentInput.$el,
 							onlineFinish: () => null,
 							offlineFinish: () => null,
 						}[this.stages[newStageIndex]]();

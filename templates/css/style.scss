@@ -1170,10 +1170,10 @@ sup:target a{
 		}
 	}
 
-	> ol > li, > :not(.collapsible, .table-of-contents) ol > li{
+	> ol > li, > :not(.collapsible, .table-of-contents, .abmeldung-form) ol > li{
 		@include list-marker-ol;
 	}
-	> ul > li, > :not(.collapsible, .table-of-contents) ul > li{
+	> ul > li, > :not(.collapsible, .table-of-contents, .abmeldung-form) ul > li{
 		@include list-marker-ul;
 	}
 	li.checkbox{
@@ -1286,7 +1286,7 @@ sup:target a{
 	opacity: 1; // Firefox
 }
 
-input:not([type=range]), textarea, select, .toggle{
+input:not([type=range],[type=file]), textarea, select, .toggle{
 	@include form-input;
 
 	min-width: 0;
@@ -1522,12 +1522,66 @@ input[type=range] {
 	}
 }
 
+.file-input{
+	margin: var(--l-relative) 0;
+
+	> .placeholder{
+		color: var(--c-text-light);
+		text-align: center;
+	}
+	ul{
+		margin: 0;
+		display: grid;
+		align-items: center;
+		gap: var(--s);
+	}
+	li{
+		@include box-m;
+		display: grid;
+		grid-template-columns: var(--w-img-logo) 1fr auto;
+		overflow: hidden;
+		line-height: var(--line-height-label);
+		align-items: center;
+
+		img, .placeholder{
+			margin: calc(var(--m) * -1) !important;
+			width: 100%;
+			height: var(--w-img-logo);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: var(--c-bg-image);
+			border: none;
+			border-right: var(--b-box);
+			border-radius: 0;
+			color: var(--c-text-light);
+			object-fit: cover;
+			object-position: top left;
+		}
+
+		a{
+			color: var(--c-border-input);
+			&:hover{
+				color: var(--c-border-input-focused);
+			}
+		}
+
+		@include only-phone{
+			font-size: var(--f-s);
+		}
+	}
+	input{
+		display: none;
+	}
+}
+
 .button{
 	@include text;
 	@include box-s;
 	@include box-clickable;
 
 	color: var(--c-text)!important;
+	display: inline-block;
 
 	&.primary{
 		background-color: var(--c-highlight);
@@ -2715,10 +2769,10 @@ details{
 	picture + p{margin-top:0}
 	picture ~ hr{clear: both}
 
-	ol > li{
+	> ol > li{
 		@include list-marker-ol;
 	}
-	ul > li{
+	> ul > li{
 		@include list-marker-ul;
 	}
 }
