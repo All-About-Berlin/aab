@@ -58,6 +58,8 @@ Vue.component('signature', {
 			// The size of the canvas. A multiple of its real size, bigger than the desired output resolution
 			this.$refs.canvas.width = containerWidth * sizeRatio;
 			this.$refs.canvas.height = containerHeight * sizeRatio;
+			this.$refs.canvas.style.maxWidth = `${containerWidth}px`;
+			this.$refs.canvas.style.maxHeight = `${containerHeight}px`;
 
 			this.$refs.canvas.getContext('2d').scale(sizeRatio, sizeRatio);
 

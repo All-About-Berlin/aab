@@ -272,8 +272,7 @@
 		<h2>I need your permission</h2>
 		<p>To do your Anmeldung, I need your permission and your signature.</p>
 		<hr>
-		<div class="form-group required">
-			<span class="label">Permission</span>
+		<div class="form-group required no-label">
 			<div class="input-group vertical">
 				I allow All About Berlin to&hellip;
 				<label class="checkbox">
@@ -284,13 +283,7 @@
 				</label>
 			</div>
 		</div>
-		<div class="form-group required">
-			<span class="label">Signature</span>
-			<signature required :width="530" :height="70" :padding-x="20" :padding-y="50"></signature>
-			<span class="input-instructions">
-				It must look like the signature on your ID document.
-			</span>
-		</div>
+		<signature required :width="530" :height="70" :padding-x="20" :padding-y="50"></signature>
 		<hr>
 		<div class="form-group required">
 			<label :for="uid('email')">Email</label>

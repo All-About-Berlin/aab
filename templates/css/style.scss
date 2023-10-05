@@ -2780,25 +2780,25 @@ details{
 }
 
 .signature-input{
-	max-width: calc(min(100%, 15cm));
-	margin: 0 auto;
+	max-width: 100%;
+	border: var(--b-input);
+	border-radius: var(--b-radius);
+	background: var(--c-bg-input);
 
 	.signature-box{
-		border: var(--b-input);
-		border-radius: var(--b-radius);
 		position: relative;
 		z-index:1;
 		width: fit-content;
 		height: fit-content;
 		max-width: 100%;
-		background: var(--c-bg-input);
+		margin: 0 auto;
 
 		&:hover .backdrop{
 			border-bottom-color: var(--c-border-input-focused);
 		}
 
 		canvas{
-			max-width: 100%;
+			width: 100%;
 			display: block;
 			cursor: crosshair;
 		}
