@@ -147,32 +147,6 @@
 				<span class="input-instructions" :id="uid('birthName-instructions-' + person.id)">If you changed your name, enter your full name at birth.</span>
 			</div>
 			<div class="form-group">
-				<label :for="uid('nationality-' + person.id)">Nationality</label>
-				<input type="text"
-				  placeholder="Canada"
-				  autofill="country-name"
-				  :id="uid('nationality-' + person.id)"
-				  :list="uid('countries')"
-				  v-model="person.nationality">
-			</div>
-			<div class="form-group">
-				<label :for="uid('dateOfBirth-' + person.id) + '-day'">Date of birth</label>
-				<date-picker
-					:id="uid('dateOfBirth-' + person.id)"
-					v-model="person.dateOfBirth"
-					autocomplete="bday"></date-picker>
-			</div>
-			<div class="form-group">
-				<label :for="uid('birthPlace-' + person.id)">Place of birth</label>
-				<input
-					type="text"
-					v-model="person.birthPlace"
-					:id="uid('birthPlace-' + person.id)"
-					:aria-describedby="uid('birthPlace-instructions-' + person.id)"
-					placeholder="Montreal, Quebec, Canada">
-				<span class="input-instructions" :id="uid('birthPlace-instructions-' + person.id)">The country, region and city where you were born.</span>
-			</div>
-			<div class="form-group">
 				<span class="label">Gender</span>
 				<div class="input-group">
 					<label class="checkbox">
@@ -190,6 +164,15 @@
 				</div>
 			</div>
 			<div class="form-group">
+				<label :for="uid('nationality-' + person.id)">Nationality</label>
+				<input type="text"
+				  placeholder="Canada"
+				  autofill="country-name"
+				  :id="uid('nationality-' + person.id)"
+				  :list="uid('countries')"
+				  v-model="person.nationality">
+			</div>
+			<div class="form-group">
 				<label :for="uid('religion-' + person.id)">Religion</label>
 				<div class="input-group">
 					<select :id="uid('religion-' + person.id)" v-model="person.religion" :aria-describedby="uid('religion-instructions-' + person.id)">
@@ -203,6 +186,23 @@
 					</select>
 					<span :id="uid('religion-instructions-' + person.id)" class="input-instructions">Members of some religions must pay the <glossary term="Kirchensteuer">church tax</glossary>.</span>
 				</div>
+			</div>
+			<div class="form-group">
+				<label :for="uid('dateOfBirth-' + person.id) + '-day'">Date of birth</label>
+				<date-picker
+					:id="uid('dateOfBirth-' + person.id)"
+					v-model="person.dateOfBirth"
+					autocomplete="bday"></date-picker>
+			</div>
+			<div class="form-group">
+				<label :for="uid('birthPlace-' + person.id)">Place of birth</label>
+				<input
+					type="text"
+					v-model="person.birthPlace"
+					:id="uid('birthPlace-' + person.id)"
+					:aria-describedby="uid('birthPlace-instructions-' + person.id)"
+					placeholder="Montreal, Quebec, Canada">
+				<span class="input-instructions" :id="uid('birthPlace-instructions-' + person.id)">The city, region and country where you were born.</span>
 			</div>
 		</template>
 		<datalist :id="uid('countries')">
