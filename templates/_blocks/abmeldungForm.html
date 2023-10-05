@@ -36,32 +36,15 @@
 				You answer a few questions. It takes 5 minutes.
 			</li>
 			<li>
+				You pay 15 € with a credit card, PayPal, Apple Pay or Google Pay.
+			</li>
+			<li>
 				I deregister your address for you.
 			</li>
 			<li>
 				I receive your <glossary term="Abmeldebescheinigung">Abmeldung certificate</glossary> and email it to you.
 			</li>
 		</ol>
-		<hr>
-		<details>
-			<summary>What you need</summary>
-			<ul>
-				<li>A photo of your passport or <em><glossary>Personalausweis</glossary></em>.</li>
-				<li>Your signature. You can sign on your screen.</li>
-				<li>A 15 € payment. You can pay by credit cards, bank transfers, PayPal, Apple Pay, Google Pay and more.</li>
-			</ul>
-		</details>
-		<details>
-			<summary>How I deregister your address</summary>
-			<p>I send your Abmeldung documents to your local Bürgeramt. They will send your <glossary term="Abmeldebescheinigung">Abmeldung certificate</glossary> to my address.</p>
-			<p>When I receive your Abmeldung certificate, I scan it and send it to you. This can take a few weeks.</p>
-		</details>
-		<details>
-			<summary>How I protect your privacy</summary>
-			<p>Your personal information stays in your browser until the last step. No one else can see it.</p>
-			<p>When you finish, you upload your application to All About Berlin's server. Your data is sent to your local Bürgeramt, then deleted.</p>
-			<p>If you prefer more privacy, fill the Abmeldung form online and submit it yourself.</p>
-		</details>
 	</template>
 	<template v-if="stage === 'howThisWorks' && !finishOnline">
 		<h2>How this works</h2>
@@ -79,7 +62,6 @@
 				Receive your <glossary term="Abmeldebescheinigung">Abmeldung certificate</glossary> by mail. This does not always work.
 			</li>
 		</ol>
-		<p></p>
 		<p>You can also <a href="#" @click.prevent="finishOnline = true">do your Abmeldung online</a> for 15 €. It's faster and more reliable.</p>
 	</template>
 	<template v-if="stage === 'oldAddress'">
