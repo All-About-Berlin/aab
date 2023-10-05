@@ -48,7 +48,7 @@ Vue.component('file-input', {
 			<input ref="fileInput" type="file" multiple :accept="accept" @change="onFilesSelected">
 			<div class="buttons">
 				<button class="button" :class="{primary: files.length === 0}" for="file-input" @click="openFileInput">
-					<i class="icon add"></i>
+					<i class="icon add" aria-hidden="true"></i>
 					{{ (files.length > 0 ? 'Add more ' : 'Add ') + type }}
 				</button>
 			</div>
