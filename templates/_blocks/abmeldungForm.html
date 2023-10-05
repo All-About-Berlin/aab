@@ -11,7 +11,7 @@
 				{% endraw %}{% include "_css/icons/mail.svg" %}{% raw %}
 				<div>
 					<h3>Do your Abmeldung online</h3>
-					<p>Answer a few questions, and we do the rest. Get your Abmeldung certificate by email.</p>
+					<p>Answer a few questions, and I do the rest. Get your Abmeldung certificate by email.</p>
 				</div>
 				<output>
 					<eur :amount="15"></eur>
@@ -36,19 +36,34 @@
 				You answer a few questions. It takes 5 minutes.
 			</li>
 			<li>
-				We deregister your address for you.
+				I deregister your address for you.
 			</li>
 			<li>
-				When we receive your <glossary term="Abmeldebescheinigung">Abmeldung certificate</glossary>, we email it to you.
+				I receive your <glossary term="Abmeldebescheinigung">Abmeldung certificate</glossary> and email it to you.
 			</li>
 		</ol>
-		<p>To deregister your address, we need...</p>
-		<ul>
-			<li>Your permission</li>
-			<li>Your signature</li>
-			<li>A photo of your passport</li>
-		</ul>
-		<p>If you prefer to share less information, you can do the Abmeldung by yourself. Just <a href="/guides/abmeldung-deregister-in-berlin#how-to-do-your-abmeldung" target="_blank">follow my instructions</a>.</p>
+		<hr>
+		<details>
+			<summary>What you need</summary>
+			<ul>
+				<li>A photo of your passport or <em><glossary>Personalausweis</glossary></em>.</li>
+				<li>Your signature. You can sign on your screen.</li>
+				<li>A 15 € payment. You can pay by credit cards, bank transfers, PayPal, Apple Pay, Google Pay and more.</li>
+			</ul>
+		</details>
+		<hr>
+		<details>
+			<summary>How I deregister your address</summary>
+			<p>I send your Abmeldung documents to your local Bürgeramt. They will send your Abmeldung certificate to my address.</p>
+			<p>When I receive your Abmeldung certificate, I scan it and send it to you. This can take a few weeks.</p>
+		</details>
+		<hr>
+		<details>
+			<summary>How I protect your privacy</summary>
+			<p>Your personal information stays in your browser until the last step. No one else can see it.</p>
+			<p>When you finish, you upload your application to All About Berlin's server. Your data is sent to your local Bürgeramt, then deleted.</p>
+			<p>If you prefer more privacy, fill the Abmeldung form online and submit it yourself.</p>
+		</details>
 	</template>
 	<template v-if="stage === 'howThisWorks' && !finishOnline">
 		<h2>How this works</h2>
@@ -71,7 +86,7 @@
 	</template>
 	<template v-if="stage === 'oldAddress'">
 		<h2>Your old address</h2>
-		<p>Where did you live? Enter the address that you want to deregister. Use the information on your <glossary>Meldebestätigung</glossary>.</p>
+		<p>Where did you live? Enter the address that you want to deregister.</p>
 		<hr>
 		<div class="form-group required">
 			<label :for="uid('oldAddress')">Street address</label>
@@ -102,6 +117,9 @@
 				v-model="oldBuildingDetails"
 				placeholder="Haus B, 2. Etage rechts"
 				autocomplete="address-line2">
+			<span class="input-instructions">
+				This information is on your <glossary>Meldebestätigung</glossary>.
+			</span>
 			<a class="input-instructions" href="/guides/addressing-a-letter-in-germany#extra-information" target="_blank">How to write your building details ➞</a>
 		</div>
 		<hr>
@@ -253,8 +271,8 @@
 		</datalist>
 	</template>
 	<template v-if="stage === 'permission'">
-		<h2>We need your permission</h2>
-		<p>To do your Anmeldung, we need your permission and your signature.</p>
+		<h2>I need your permission</h2>
+		<p>To do your Anmeldung, I need your permission and your signature.</p>
 		<hr>
 		<div class="form-group required">
 			<span class="label">Permission</span>
@@ -271,12 +289,15 @@
 		<div class="form-group required">
 			<span class="label">Signature</span>
 			<signature required :width="530" :height="70" :padding-x="20" :padding-y="50"></signature>
+			<span class="input-instructions">
+				It must look like the signature on your ID document.
+			</span>
 		</div>
 		<hr>
 		<div class="form-group required">
 			<label :for="uid('email')">Email</label>
 			<input v-model="emailAddress" type="email" :id="uid('email')" required autocomplete="email">
-			<span class="input-instructions">We will send your <glossary term="Abmeldebescheinigung">Abmeldung certificate</glossary> to this email.</span>
+			<span class="input-instructions">I will send your <glossary term="Abmeldebescheinigung">Abmeldung certificate</glossary> to this email.</span>
 		</div>
 	</template>
 	<template v-if="stage === 'documents'">
@@ -289,7 +310,7 @@
 	</template>
 	<template v-if="stage === 'onlineFinish'">
 		<h2>You are almost done!</h2>
-		<p>The last step is to pay. We deregister your address as soon as we get the payment confirmation.</p>
+		<p>The last step is to pay. I deregister your address as soon as you pay.</p>
 		<hr>
 		<p>Too expensive? You can also <a href="#" @click.prevent="generatePDF(people[0], people[1], people[2])">download your Abmeldung form</a> and finish the Abmeldung by yourself.</p>
 	</template>
