@@ -4,6 +4,10 @@ Vue.component('file-input', {
 	props: {
 		accept: String,
 		required: Boolean,
+		type: {
+			type: String,
+			default: 'files',
+		}
 	},
 	data() {
 		return {

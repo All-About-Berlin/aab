@@ -11,7 +11,7 @@
 				{% endraw %}{% include "_css/icons/mail.svg" %}{% raw %}
 				<div>
 					<h3>Do your Abmeldung online</h3>
-					<p>Answer a few questions, and I do the rest. Get your Abmeldung certificate by email.</p>
+					<p>Answer a few questions, and I do the rest. Get your <glossary term="Abmeldebescheinigung">Abmeldung certificate</glossary> by email.</p>
 				</div>
 				<output>
 					<eur :amount="15"></eur>
@@ -53,7 +53,7 @@
 		</details>
 		<details>
 			<summary>How I deregister your address</summary>
-			<p>I send your Abmeldung documents to your local Bürgeramt. They will send your Abmeldung certificate to my address.</p>
+			<p>I send your Abmeldung documents to your local Bürgeramt. They will send your <glossary term="Abmeldebescheinigung">Abmeldung certificate</glossary> to my address.</p>
 			<p>When I receive your Abmeldung certificate, I scan it and send it to you. This can take a few weeks.</p>
 		</details>
 		<details>
@@ -84,7 +84,7 @@
 	</template>
 	<template v-if="stage === 'oldAddress'">
 		<h2>Your old address</h2>
-		<p>Where did you live? Enter the address that you want to deregister.</p>
+		<p>Where did you live? Enter the address to deregister.</p>
 		<hr>
 		<div class="form-group required">
 			<label :for="uid('oldAddress')">Street address</label>
@@ -302,15 +302,13 @@
 		<h2>Add your ID documents</h2>
 		<p>To verify your identity, the <glossary>Bürgeramt</glossary> needs a copy of your ID documents.</p>
 		<hr>
-		<file-input ref="documentInput" accept="image/png,image/jpeg,.pdf">
-			Add a photo of everyone's passport or <em><glossary>Personalausweis</glossary></em>.
+		<file-input ref="documentInput" accept="image/png,image/jpeg,.pdf" type="documents">
+			Add everyone's passport or <em><glossary>Personalausweis</glossary></em>.
 		</file-input>
 	</template>
 	<template v-if="stage === 'onlineFinish'">
-		<h2>You are almost done!</h2>
-		<p>The last step is to pay. I deregister your address as soon as you pay.</p>
-		<hr>
-		<p>Too expensive? You can also <a href="#" @click.prevent="generatePDF(people[0], people[1], people[2])">download your Abmeldung form</a> and finish the Abmeldung by yourself.</p>
+		<h2>One last thing</h2>
+		<p>Your documents are ready. Pay the 15 € fee to finish your Abmeldung.</p>
 	</template>
 	<template v-if="stage === 'offlineFinish'">
 		<h2>You are almost done!</h2>
@@ -364,11 +362,10 @@
 	<hr v-if="stage !== 'start'">
 	<div class="buttons" v-if="stage !== 'start'">
 		<button v-if="stageIndex > 0" class="button" @click="stageIndex -= 1"><i class="icon left" aria-hidden="true"></i> Go back</button>
-		<button v-if="stage === 'howThisWorks'" class="button primary" @click="stageIndex += 1">Start <i class="icon right" aria-hidden="true"></i></button>
 		<button v-if="stage === 'addPeople'" class="button" @click="addPerson"><i class="icon person" aria-hidden="true"></i> Add another person</button>
-		<button v-if="stageIndex > 1 && stageIndex < stages.length - 2" class="button primary" @click="stageIndex += 1">Continue <i class="icon right" aria-hidden="true"></i></button>
+		<button v-if="stageIndex > 0 && stageIndex < stages.length - 2" class="button primary" @click="stageIndex += 1">Continue <i class="icon right" aria-hidden="true"></i></button>
 		<button v-if="stageIndex === stages.length - 2" class="button primary" @click="stageIndex += 1">Finish</button>
-		<a v-if="stage === 'onlineFinish'" class="button primary" :href="paymentUrl">Pay 15 €</a>
+		<a v-if="stage === 'onlineFinish'" class="button primary" :href="paymentUrl">Pay and finish</a>
 	</div>
 {% endraw %}
 </collapsible>
