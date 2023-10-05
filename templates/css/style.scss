@@ -1962,9 +1962,12 @@ details{
 		&[open]{
 			margin-bottom:var(--l-relative);
 		}
-		p {
+		p, ul {
 			@include text-block-compact;
 			font-size: var(--f-s);
+			li{
+				@include list-marker-ul-compact;
+			}
 		}
 	}
 
