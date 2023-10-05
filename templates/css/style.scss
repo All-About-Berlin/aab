@@ -1307,12 +1307,16 @@ input:not([type=range],[type=file]), textarea, select, .toggle{
 		cursor: pointer;
 	}
 
-	&[type=checkbox]{
+	&[type=checkbox], &[type=radio]{
 		flex:0 0 auto!important;
+		overflow: hidden; // The radio tick might be too high by a fraction of a pixel
+
 		&:after{
+			font-family: 'Courier New';
 			content: '✓';
 			color: transparent;
 			line-height: 100%;
+			aspect-ratio: 1 / 1;
 			transform: scale(1.3);
 		}
 
@@ -1324,23 +1328,10 @@ input:not([type=range],[type=file]), textarea, select, .toggle{
 	}
 
 	&[type=radio]{
-		flex:0 0 auto!important;
 		border-radius:50%;
 
-		&:after{
-			content: '';
-			width: 0;
-			height: 0;
-			position: absolute;
-			display: block;
-			box-shadow: inset 0 0 100px var(--c-text);
-			border-radius: 100%;
-			transition: width 0.15s, height 0.15s;
-		}
-
 		&:checked:after{
-			width: var(--s-relative);
-			height: var(--s-relative);
+			content: '●';
 		}
 	}
 
@@ -1377,8 +1368,8 @@ select{
 label.checkbox{
 	display: flex;
 	cursor: pointer;
-	align-items: center;
 	gap: var(--s);
+	align-items: first baseline;
 }
 
 .month-input, select.year-input{
@@ -1653,7 +1644,7 @@ input[type=range] {
 		}
 
 		.checkbox{
-			padding-top: var(--xs); // Align with form fields
+			padding-top: calc(var(--xs) + ((1.6 - 1.3) / 2 * var(--m))); // Align with form fields
 		}
 
 		&.vertical{
