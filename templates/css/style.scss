@@ -367,7 +367,10 @@ $width-main-column: 860px;
 	text-decoration: none!important;
 
 	&[disabled]{
-		opacity: 0.5;
+		background: transparent;
+		box-shadow: none;
+		color: var(--c-text-placeholder)!important;
+		cursor: not-allowed;
 	}
 
 	&:not([disabled]){
@@ -1577,6 +1580,10 @@ input[type=range] {
 	input{
 		display: none;
 	}
+
+	.buttons{
+		margin-bottom: 0;
+	}
 }
 
 .button{
@@ -1587,7 +1594,7 @@ input[type=range] {
 	color: var(--c-text)!important;
 	display: inline-block;
 
-	&.primary{
+	&.primary:not([disabled]){
 		background-color: var(--c-highlight);
 		border-color: var(--c-highlight);
 		color: #fff!important;
