@@ -168,6 +168,8 @@ If you work in gastronomy, ask for your *Gesundheitszeugnis*.[^32]
 
 ## What happens to your residence permit
 
+**Note:** Immigration law will change in November 2023. This information might not be valid after November 2023.
+
 ### Work visa or Blue Card
 
 After you inform the *Ausländerbehörde*, nothing happens. **Your residence permit does not expire**, but it can be shortened. The *Ausländerbehörde* will give you 3 to 12 months to find another job.[^5] It depends on which *Ausländerbehörde* you go to.
