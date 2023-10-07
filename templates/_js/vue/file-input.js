@@ -34,7 +34,7 @@ Vue.component('file-input', {
 			this.$refs.fileInput.click();
 		},
 		removeFile(file){
-			const fileIndex = this.files.index;
+			const fileIndex = this.files.indexOf(file);
 			if (fileIndex !== -1) {
 				this.files.splice(fileIndex, 1);
 			}
