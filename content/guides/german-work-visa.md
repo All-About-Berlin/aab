@@ -368,7 +368,7 @@ The interviewer will scan your documents page by page. Do not staple the pages t
     - [ ] **Your lease**
     - [ ] and your **tenancy confirmation** (*[[Wohnungsgeberbestätigung]]*)
     - [ ] and your **registration certificate** *[[Anmeldebestätigung]]*  
-        If you did not register your address yet, ignore this.
+        If you did not [register your address](/glossary/Anmeldung) yet, ignore this.
 - [ ] **Proof of education** (*Ausbildungsnachweis*)  
     If you have a degree or any relevant training, bring a proof of education. If it's not in English or German, you might need a [certified translation](/glossary/beglaubigte%20Übersetzung). A proof of education can be...[^28]
     - A degree from a German *Hochschule* or a comparable qualification
