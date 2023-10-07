@@ -274,7 +274,7 @@
 		<h2>Add your ID documents</h2>
 		<p>To verify your identity, the <glossary>Bürgeramt</glossary> needs a copy of your ID documents.</p>
 		<hr>
-		<file-input ref="documentInput" accept="image/png,image/jpeg,.pdf" type="documents">
+		<file-input ref="documentInput" accept="image/png,image/jpeg,.pdf" type="documents" v-model="identificationDocuments">
 			Add everyone's passport or <em><glossary>Personalausweis</glossary></em>.
 		</file-input>
 	</template>
@@ -377,6 +377,7 @@
 					people: [],
 					emailAddress: '',
 					userId: 'allaboutberlin-' + Math.floor(Math.random() * 1000000).toString(36),
+					identificationDocuments: [],
 
 					fee: {{ DIGITAL_ABMELDUNG_FEE }},
 					sortedCountryList: countries.getSortedList(),
