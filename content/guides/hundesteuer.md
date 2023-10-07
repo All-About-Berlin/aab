@@ -50,7 +50,7 @@ You will get a confirmation letter around 4 weeks later.
 
 ## How to register in the Hunderegister
 
-In Berlin, all dogs must be in the dog registry (*[[Hunderegister]]*).[^5] You can [register your dog online](https://hunderegister.berlin.de/), by post or on the phone.[^3] It costs {{HUNDEREGISTER_FEE|cur}}€.
+In Berlin, all dogs must be in the dog registry (*[[Hunderegister]]*).[^5] You can [register your dog online](https://hunderegister.berlin.de/), by post or on the phone.[^3] It costs {{HUNDEREGISTER_FEE|cur}}€. You can pay with PayPal or by [bank transfer](/glossary/SEPA-Überweisung).
 
 **[Berlin dog register](https://hunderegister.berlin.de/login)** (in German) - Berlin.de
 
