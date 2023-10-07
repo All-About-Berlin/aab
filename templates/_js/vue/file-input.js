@@ -14,6 +14,11 @@ Vue.component('file-input', {
 			files: [],
 		};
 	},
+	computed: {
+		isValid(){
+			return this.files.every(this.fileTypeIsValid);
+		},
+	},
 	methods: {
 		onFilesSelected(event){
 			Array.from(event.target.files).forEach(f => {
@@ -42,16 +47,29 @@ Vue.component('file-input', {
 		fileImage(file){
 			return URL.createObjectURL(file);
 		},
+		fileTypeIsValid(file){
+			return this.accept
+				.split(',')
+				.map(t => t.trim())
+				.some(t => {
+					// t is a mimetype or an extension
+					return file.type == t || file.name.endsWith(t);
+				});
+		}
 	},
 	template: `
-		<div class="file-input">
+		<fieldset class="file-input">
 			<ul v-if="files.length > 0">
-				<li v-for="file in files">
+				<li v-for="file in files" :class="{'error': !fileTypeIsValid(file)}">
 					<div class="placeholder" v-if="file.type === 'application/pdf'">
 						{% endraw %}{% include "_css/icons/pdf.svg" %}{% raw %}
 					</div>
+					<div class="placeholder" v-if="!fileTypeIsValid(file)">⚠</div>
 					<img v-if="file.type.startsWith('image/')" :src="fileImage(file)">
-					{{ file.name }}
+					<div>
+						{{ file.name }}
+						<small class="input-error" v-if="!fileTypeIsValid(file)">This file type is not supported.</small>
+					</div>
 					<a class="icon close" href="#" @click.prevent="removeFile(file)" title="Remove this file"></a>
 				</li>
 			</ul>
@@ -63,7 +81,7 @@ Vue.component('file-input', {
 					{{ (files.length > 0 ? 'Add more ' : 'Add ') + type }}
 				</button>
 			</div>
-		</div>
+		</fieldset>
 	`,
 });
 {% endraw %}{% endjs %}

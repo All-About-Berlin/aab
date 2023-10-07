@@ -224,6 +224,7 @@ $width-main-column: 860px;
 	--c-text-heading: #000;
 	--c-text-link: #00e;
 	--c-text-link-visited: #61a;
+	--c-text-error: #{darken(#da513d, 20%)};
 	--c-text-selection: #fd6;
 	--c-bg-input: var(--c-bg-page);
 	--c-bg-website: #f9f9f9;
@@ -283,6 +284,7 @@ $width-main-column: 860px;
 		--c-text-heading: #ddd;
 		--c-text-link: #bbf;
 		--c-text-link-visited: #a9d;
+		--c-text-error: #{lighten(#da513d, 20%)};
 		--c-text-selection: #550;
 		--c-bg-website: #111;
 		--c-bg-page: #222;
@@ -1549,6 +1551,16 @@ input[type=range] {
 			color: var(--c-text-light);
 			object-fit: cover;
 			object-position: top left;
+		}
+
+		.input-error{
+			display: block;
+		}
+
+		&.error{
+			.placeholder, .input-error{
+				color: var(--c-text-error);
+			}
 		}
 
 		a{
