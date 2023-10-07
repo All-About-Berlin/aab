@@ -16,7 +16,18 @@ Vue.component('file-input', {
 	},
 	methods: {
 		onFilesSelected(event){
-			Array.from(event.target.files).forEach(f => this.files.push(f));
+			Array.from(event.target.files).forEach(f => {
+
+				const fileExists = this.files.some(
+					curr => {
+						return f.name === curr.name && f.size === curr.size && f.lastModified === curr.lastModified;
+					}
+				);
+
+				if(!fileExists){
+					this.files.push(f);
+				}
+			});
 			event.target.value = null;
 		},
 		openFileInput(){
