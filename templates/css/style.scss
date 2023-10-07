@@ -2840,7 +2840,11 @@ details{
 				bottom: calc(var(--xxl) * -1);
 			}
 		}
+	}
 
+	&:not(.empty) .backdrop:after{
+		color: transparent;
+		transition: color 0.3s;
 	}
 
 	@include only-phone{
@@ -2848,21 +2852,15 @@ details{
 		max-width: none;
 		margin-left: calc(var(--w-page-border) * -1);
 		margin-right: calc(var(--w-page-border) * -1);
-
-		.signature-box{
-			max-width: 100%;
-			width: 100%;
-			border-left: none;
-			border-right: none;
-			border-radius: 0;
-			padding-bottom: var(--s);
-		}
+		border-left: none;
+		border-right: none;
+		border-radius: 0;
+		padding-bottom: var(--s);
 	}
 }
 .show-errors .signature-input{
 	&.empty{
 		border-color: var(--c-highlight)!important;
-		box-shadow: var(--shadow-s), 0 0 0 1px var(--c-highlight)!important;
 
 		.backdrop{
 			border-bottom-color: var(--c-highlight)!important;
@@ -2871,11 +2869,6 @@ details{
 				color: var(--c-text-error);
 			}
 		}
-	}
-
-	&:not(.empty) .backdrop:after{
-		color: transparent;
-		transition: color 0.3s;
 	}
 }
 
