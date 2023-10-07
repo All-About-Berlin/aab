@@ -2841,10 +2841,6 @@ details{
 			}
 		}
 
-		&:not(.empty) .backdrop:after{
-			color: transparent;
-			transition: color 0.3s;
-		}
 	}
 
 	@include only-phone{
@@ -2861,6 +2857,25 @@ details{
 			border-radius: 0;
 			padding-bottom: var(--s);
 		}
+	}
+}
+.show-errors .signature-input{
+	&.empty{
+		border-color: var(--c-highlight)!important;
+		box-shadow: var(--shadow-s), 0 0 0 1px var(--c-highlight)!important;
+
+		.backdrop{
+			border-bottom-color: var(--c-highlight)!important;
+
+			&:after{
+				color: var(--c-text-error);
+			}
+		}
+	}
+
+	&:not(.empty) .backdrop:after{
+		color: transparent;
+		transition: color 0.3s;
 	}
 }
 

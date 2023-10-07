@@ -91,8 +91,8 @@ Vue.component('signature', {
 		window.removeEventListener("resize", this.onResize);
 	},
 	template: `
-		<div class="signature-input" @touchmove.prevent>
-			<div class="signature-box" :class="{'empty': isEmpty}">
+		<div class="signature-input" :class="{'empty': isEmpty}" @touchmove.prevent>
+			<div class="signature-box">
 				<div class="backdrop" ref="backdrop"></div>
 				<canvas
 					class="canvas"

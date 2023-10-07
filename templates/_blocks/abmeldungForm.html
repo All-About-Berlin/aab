@@ -134,7 +134,6 @@
 		<div class="form-group required">
 			<label :for="uid('newCountry')">Country</label>
 			<select v-model="newCountry" :id="uid('newCountry')" :aria-describedby="uid('newCountry-instructions')" autocomplete="country-name">
-				<option disabled hidden default value="">Country of your new address</option>
 				<option v-if="country !== 'Germany'" v-for="country in recommendedCountries">{{ country }}</option>
 				<option disabled>──────────</option>
 				<option v-for="country in sortedCountryList" :key="country[0]">{{ country[1] }}</option>
@@ -253,12 +252,9 @@
 		<hr>
 		<div class="form-group required no-label">
 			<div class="input-group vertical">
-				I allow All About Berlin to&hellip;
 				<label class="checkbox">
-					<input type="checkbox" ref="basicPermissionCheckbox" required> Deregister my address at the Bürgeramt
-				</label>
-				<label class="checkbox">
-					<input type="checkbox" required> Receive my deregistration certificate, scan it and send it to me
+					<input type="checkbox" v-model="hasPermission" ref="basicPermissionCheckbox" required>
+					I allow All About Berlin to deregister my address at the Bürgeramt.
 				</label>
 			</div>
 		</div>
@@ -272,10 +268,10 @@
 	</template>
 	<template v-if="stage === 'documents'">
 		<h2>Add your ID documents</h2>
-		<p>To verify your identity, the <glossary>Bürgeramt</glossary> needs a copy of your ID documents.</p>
+		<p>The <glossary>Bürgeramt</glossary> must see your passport or <em><glossary>Personalausweis</glossary></em> to verify your identity.</p>
 		<hr>
 		<file-input ref="documentInput" accept="image/png,image/jpeg,.pdf" type="documents" v-model="identificationDocuments">
-			Add everyone's passport or <em><glossary>Personalausweis</glossary></em>.
+			Add a photo of everyone's passport or <em><glossary>Personalausweis</glossary></em>.
 		</file-input>
 	</template>
 	<template v-if="stage === 'onlineFinish'">
@@ -335,13 +331,13 @@
 	<div class="buttons" v-if="stage !== 'start'">
 		<button v-if="stageIndex > 0" class="button" @click="stageIndex -= 1"><i class="icon left" aria-hidden="true"></i> Go back</button>
 		<button v-if="stage === 'addPeople'" class="button" @click="addPerson"><i class="icon person" aria-hidden="true"></i> Add another person</button>
-		<button v-if="stageIndex === 1" class="button primary" @click="stageIndex += 1">Start <i class="icon right" aria-hidden="true"></i></button>
+		<button v-if="stageIndex === 1" class="button primary" @click="nextStep">Start <i class="icon right" aria-hidden="true"></i></button>
 		<button
 			v-if="stageIndex > 1 && stageIndex < stages.length - 2"
 			class="button primary"
 			:disabled="!stageIsComplete"
-			@click="stageIndex += 1">Continue <i class="icon right" aria-hidden="true"></i></button>
-		<button v-if="stageIndex === stages.length - 2" class="button primary" @click="stageIndex += 1">Finish</button>
+			@click="nextStep">Continue <i class="icon right" aria-hidden="true"></i></button>
+		<button v-if="stageIndex === stages.length - 2" class="button primary" @click="nextStep">Finish</button>
 		<a v-if="stage === 'onlineFinish'" class="button primary" :href="paymentUrl">Pay and finish</a>
 	</div>
 {% endraw %}
@@ -382,6 +378,8 @@
 					emailAddress: '',
 					userId: 'allaboutberlin-' + Math.floor(Math.random() * 1000000).toString(36),
 					identificationDocuments: [],
+					hasPermission: false,
+					signatureData: null,
 
 					fee: {{ DIGITAL_ABMELDUNG_FEE }},
 					sortedCountryList: countries.getSortedList(),
@@ -396,6 +394,9 @@
 				stageIsComplete(){
 					if(this.stage === 'documents'){
 						return this.identificationDocuments.length > 0;
+					}
+					else if(this.stage === 'permission'){
+						return this.signatureData && this.hasPermission;
 					}
 					return true;
 				},
@@ -440,6 +441,11 @@
 				},
 			},
 			methods: {
+				nextStep(){
+					if(validateForm(this.$el)){
+						this.stageIndex += 1;
+					}
+				},
 				addPerson(){
 					this.people.push({
 						id: Math.floor(Math.random() * 10000),
