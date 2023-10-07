@@ -1,13 +1,13 @@
 ---
 Title: How to get a Gewerbeschein in Berlin
 Short_title: How to get a Gewerbeschein
-Description: This is how you get a trade licence (Gewerbeschein) and register for the trade tax (Gewerbesteuer).
+Description: The Gewerbeanmeldung is how you get a trade licence (Gewerbeschein) and register for the trade tax (Gewerbesteuer).
 Date_created: 2021-05-14
 ---
 
 This is how you complete the trade registration (*[[Gewerbeanmeldung]]*), register for the trade tax (*[[Gewerbesteuer]]*), and receive a trade licence (*[[Gewerbeschein]]*) in Berlin.
 
-When you [start a business in Germany](/guides/start-a-business-in-germany), you must get a trade licence before you [register your business with the ](/guides/fragebogen-zur-steuerlichen-erfassung)*[Finanzamt](/guides/fragebogen-zur-steuerlichen-erfassung)*.
+When you [start a business in Germany](/guides/start-a-business-in-germany), you must get a trade licence before you [register your business with the *Finanzamt*](/guides/fragebogen-zur-steuerlichen-erfassung).
 
 You can do this online. It takes around 1 hour and costs 15 to 26€. It's only in German, but it's very easy.
 
