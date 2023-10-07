@@ -290,7 +290,7 @@ If you need to translate documents to German, use [Red Tape Translation](/out/re
     *[Detailed guide](/guides/biometric-pictures-in-berlin)*  
     You need two 35 × 45 mm biometric pictures. [There are many ways to get biometric photos in Berlin](/guides/biometric-pictures-in-berlin), including from the photo booth at the *Ausländerbehörde*.[^26] You do not need to cut the passport photos yourself; they have a tool for this.[^27]
 - **{{NATIONAL_VISA_FEE|cur}}€ for the visa application fees**  
-    The [Friedrich-Krause-Ufer](https://service.berlin.de/standort/121885/) *Ausländerbehörde* accepts Girokarte, cash, Visa and Mastercard.[^28] The visa application fee is between 28€ and {{NATIONAL_VISA_FEE|cur}}€.[^25] You only pay when you get your freelance visa. If you don't get it, you don't need to pay anything. The *Ausländerbehörde* [now accepts credit cards](/guides/berlin-auslanderbehorde-appointment#how-to-pay-the-residence-permit-fee), but bring enough cash just in case.
+    The [Friedrich-Krause-Ufer](https://service.berlin.de/standort/121885/) *Ausländerbehörde* accepts [[Girocard]], cash, Visa and Mastercard.[^28] The visa application fee is between 28€ and {{NATIONAL_VISA_FEE|cur}}€.[^25] You only pay when you get your freelance visa. If you don't get it, you don't need to pay anything. The *Ausländerbehörde* [now accepts credit cards](/guides/berlin-auslanderbehorde-appointment#how-to-pay-the-residence-permit-fee), but bring enough cash just in case.
 - **Proof of health insurance coverage**  
     *[Detailed guide](https://blog.holvi.com/expats-guide-health-insurance-in-germany-freelancers)*  
     Health insurance coverage is mandatory in Germany. You must prove that you are covered by an approved health insurance company. [The previous section](/guides/how-to-get-a-german-freelance-visa#step-5-get-health-insurance) has more details.
@@ -381,7 +381,7 @@ Here is a summary of all documents they can ask for:
 - [ ] Professional permit (optional)
 - [ ] Proof of adequate pension plan (if you are over 45 years old)
 - [ ] Proof of education (optional)
-    - [ ] Certified translations (if not in German or English)
+    - [ ] [Certified translations](/glossary/beglaubigte%20Übersetzung) (if not in German or English)
 - [ ] Proof of regular income (artists and language teachers only)
 - [ ] Proof of health insurance coverage
 - [ ] Recommendation letters **× 2-5**

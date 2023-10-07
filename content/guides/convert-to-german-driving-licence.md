@@ -120,7 +120,7 @@ Go to your *Bürgeramt* appointment, and bring all the [required documents](http
 - [ ] **Foreign driving licence**  
     Bring the original licence, not a copy. If it's not a EU or [[EEA]] licence, it must still be valid.[^6] During the appointment, they take your driving licence. You don't get it back.
 - [ ] **Photocopy of your driving licence**
-- [ ] **Passport or personal ID**
+- [ ] **Passport or [[Personalausweis]]**
 - [ ] **Passport photo**  
     You can [get new passport pictures](/guides/biometric-pictures-in-berlin) for around 6€.
 - [ ] **Registration certificate** (*[[Anmeldebestätigung]]*)  
