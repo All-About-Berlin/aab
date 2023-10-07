@@ -189,15 +189,15 @@
 				<span class="label">Gender</span>
 				<div class="input-group">
 					<label class="checkbox">
-						<input type="radio" :name="uid('gender-' + person.id)" v-model="person.gender" value="Männlich">
+						<input type="radio" :name="uid('gender-' + person.id)" v-model="person.gender" value="Männlich" required>
 						Male
 					</label>
 					<label class="checkbox">
-						<input type="radio" :name="uid('gender-' + person.id)" v-model="person.gender" value="Weiblich">
+						<input type="radio" :name="uid('gender-' + person.id)" v-model="person.gender" value="Weiblich" required>
 						Female
 					</label>
 					<label class="checkbox">
-						<input type="radio" :name="uid('gender-' + person.id)" v-model="person.gender" value="Divers">
+						<input type="radio" :name="uid('gender-' + person.id)" v-model="person.gender" value="Divers" required>
 						Other
 					</label>
 				</div>
