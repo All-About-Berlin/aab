@@ -33,7 +33,7 @@ To can [request a *Meldebescheinigung* online](https://service.berlin.de/dienstl
 1. [Get an appointment at any Bürgeramt](/guides/berlin-burgeramt-appointment) for "*[Meldebescheinigung beantragen](https://service.berlin.de/dienstleistung/120702/)*"
 2. When you go to your appointment, bring...
     - [ ] Your passport or [personal ID](/glossary/Personalausweis)
-    - [ ] 10€ for the fee. You can usually pay by [[Girocard]] or by credit card.
+    - [ ] 10€ for the fee. You can usually pay by [[Girocard]], Visa or MasterCard. It depends on the Bürgeramt.
 
 ### By post or email
 
