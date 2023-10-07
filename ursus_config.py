@@ -433,6 +433,8 @@ config.context_globals = {
     # ADMINISTRATION
     # ==============================================================================
 
+    "DIGITAL_ABMELDUNG_FEE": 15,
+
     # € - hunderegister.berlin.de
     "HUNDEREGISTER_FEE": 17.50,
 

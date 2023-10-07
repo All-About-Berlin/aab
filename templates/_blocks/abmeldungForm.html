@@ -14,7 +14,7 @@
 					<p>Answer a few questions, and I do the rest. Get your <glossary term="Abmeldebescheinigung">Abmeldung certificate</glossary> by email.</p>
 				</div>
 				<output>
-					<eur :amount="15"></eur>
+					<eur :amount="fee"></eur>
 				</output>
 			</button>
 			<button @click="finishOnline = false; stageIndex += 1;">
@@ -36,7 +36,7 @@
 				You answer a few questions. It takes 5 minutes.
 			</li>
 			<li>
-				You pay 15 € with a credit card, PayPal, Apple Pay or Google Pay.
+				You pay <eur :amount="fee"></eur> with a credit card, PayPal, Apple Pay or Google Pay.
 			</li>
 			<li>
 				I deregister your address for you.
@@ -62,7 +62,7 @@
 				Receive your <glossary term="Abmeldebescheinigung">Abmeldung certificate</glossary> by mail. This does not always work.
 			</li>
 		</ol>
-		<p>You can also <a href="#" @click.prevent="finishOnline = true">do your Abmeldung online</a> for 15 €. It's faster and more reliable.</p>
+		<p>You can also <a href="#" @click.prevent="finishOnline = true">do your Abmeldung online</a> for <eur :amount="fee"></eur>. It's faster and more reliable.</p>
 	</template>
 	<template v-if="stage === 'oldAddress'">
 		<h2>Your old address</h2>
@@ -280,7 +280,7 @@
 	</template>
 	<template v-if="stage === 'onlineFinish'">
 		<h2>One last thing</h2>
-		<p>Your documents are ready. Pay the 15 € fee to finish your Abmeldung.</p>
+		<p>Your documents are ready. Pay the <eur :amount="fee"></eur> € fee to finish your Abmeldung.</p>
 	</template>
 	<template v-if="stage === 'offlineFinish'">
 		<h2>You are almost done!</h2>
@@ -378,6 +378,7 @@
 					emailAddress: '',
 					userId: 'allaboutberlin-' + Math.floor(Math.random() * 1000000).toString(36),
 
+					fee: {{ DIGITAL_ABMELDUNG_FEE }},
 					sortedCountryList: countries.getSortedList(),
 					recommendedCountries: new Set(
 						(navigator.languages || []).map(l => countries.all[l.substring(3)]).concat(['Germany']).filter(Boolean)
