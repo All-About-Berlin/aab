@@ -990,13 +990,18 @@ progress{
 	width: 100%;
 	accent-color: var(--c-highlight);
 	appearance: none;
+	-webkit-appearance: none;
 
 	&::-webkit-progress-bar{
-		background: var(--c-border-box);
+		background-color: var(--c-border-box);
 	}
-	&::-moz-progress-bar, &::-webkit-progress-value{
-		background: var(--c-highlight)!important;
+	&::-moz-progress-bar{
+		background-color: var(--c-highlight)!important;
 	}
+}
+::-webkit-progress-value{
+	/* Does not work if there are other selectors around it */
+	background-color: var(--c-highlight)!important;
 }
 
 ul, ol{
@@ -1593,6 +1598,7 @@ input[type=range] {
 
 	color: var(--c-text)!important;
 	display: inline-block;
+	text-align: center;
 
 	&.primary:not([disabled]){
 		background-color: var(--c-highlight);
