@@ -11,6 +11,9 @@ Vue.component('signature', {
 	data() {
 		return {
 			isEmpty: true,
+			oldControlWidth: null,
+			resizeTimeout: null,
+			signatureData: null,
 			signaturePad: null,
 		};
 	},
@@ -47,28 +50,53 @@ Vue.component('signature', {
 			});
 		},
 		onResize() {
-			// The output resolution of the signature image
-			const desiredOutputWidth = (this.width + this.paddingX * 2) * 2;
 
-			// The size of the signature field in the UI
-			const containerWidth = this.$refs.canvas.offsetWidth;
-			const containerHeight = this.$refs.canvas.offsetHeight;
-			const sizeRatio = Math.ceil(desiredOutputWidth / containerWidth);
+			// The size of the output image
+			const outputWidth = (this.width + this.paddingX * 2) * 2;
+			const outputHeight = (this.height + this.paddingY * 2) * 2;
+
+			// The size of the signature control
+			const containerWidth = this.$el.offsetWidth;
+			const containerHeight = (outputHeight / outputWidth) * containerWidth;
+
+			const canvasPixelDensity = Math.ceil(outputWidth / containerWidth);
 
 			// The size of the canvas. A multiple of its real size, bigger than the desired output resolution
-			this.$refs.canvas.width = containerWidth * sizeRatio;
-			this.$refs.canvas.height = containerHeight * sizeRatio;
+			this.$refs.canvas.width = containerWidth * canvasPixelDensity;
+			this.$refs.canvas.height = containerHeight * canvasPixelDensity;
 			this.$refs.canvas.style.maxWidth = `${containerWidth}px`;
 			this.$refs.canvas.style.maxHeight = `${containerHeight}px`;
+			this.$refs.canvas.getContext('2d').scale(canvasPixelDensity, canvasPixelDensity);
 
-			this.$refs.canvas.getContext('2d').scale(sizeRatio, sizeRatio);
-
-    		const backdropSizeRatio = ((this.width + this.paddingX * 2) / containerWidth);
-
+			// The size of the backdrop
+    		const backdropSizeRatio = (this.width + this.paddingX * 2) / containerWidth;
 			this.$refs.backdrop.style.width = `${this.width / backdropSizeRatio}px`;
 			this.$refs.backdrop.style.height = `${this.height / backdropSizeRatio}px`;
 			this.$refs.backdrop.style.top = `${this.paddingY / backdropSizeRatio}px`;
 			this.$refs.backdrop.style.left = `${this.paddingX / backdropSizeRatio}px`;
+
+			// Backup the signature. When the resize is finish, restore the scaled signature.
+			if(!this.signaturePad.isEmpty()){
+				this.signatureData = this.signaturePad.toData();
+				this.signaturePad.clear();
+				this.oldControlWidth = this.$el.getBoundingClientRect().width - 2;
+
+				// Debounce the resize event
+				clearTimeout(this.resizeTimeout);
+				this.resizeTimeout = setTimeout(() => {
+					// Restore the signature, scaled to the new canvas
+					const signatureResizeRatio = (this.$el.getBoundingClientRect().width - 2) / this.oldControlWidth;
+					this.signatureData.forEach((pointGroup) => {
+						pointGroup.points.forEach((point) => {
+							point.x *= signatureResizeRatio;
+							point.y *= signatureResizeRatio;
+						});
+					});
+					this.signaturePad.fromData(this.signatureData);
+					this.signatureData = null;
+					console.log('Resize')
+				}, 100);
+			}
 		},
 		onSignature(){
 			this.signaturePad.toDataURL("image/svg+xml");
