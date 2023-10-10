@@ -258,7 +258,7 @@
 				</label>
 			</div>
 		</div>
-		<signature required :width="530" :height="70" :padding-x="20" :padding-y="50"></signature>
+		<signature :width="530" :height="70" :padding-x="20" :padding-y="50" v-model="signatureData"></signature>
 		<hr>
 		<div class="form-group required">
 			<label :for="uid('email')">Email</label>

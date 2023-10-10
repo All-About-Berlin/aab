@@ -7,6 +7,7 @@ Vue.component('signature', {
 		paddingY: Number,
 		width: Number,
 		height: Number,
+		value: Array,
 	},
 	data() {
 		return {
@@ -99,23 +100,27 @@ Vue.component('signature', {
 			this.signaturePad.clear();
 			this.isEmpty = true;
 			this.showEraseButton = false;
-			this.$emit('input', null);
+			this.$emit('input', this.signaturePad.toData());
 		},
 	},
 	mounted(){
 		this.signaturePad = new SignaturePad(this.$refs.canvas, {
 			minDistance: 1,
 		});
+
+		if(this.value){
+			this.signaturePad.fromData(this.value);
+		}
+
 	    this.signaturePad.addEventListener("beginStroke", () => {
 	    	this.isEmpty = false;
 	    	this.showEraseButton = false;
 		});
 
 	    this.signaturePad.addEventListener("endStroke", () => {
-	    	this.$emit('input', this.signaturePad.toDataURL());
+	    	this.$emit('input', this.signaturePad.toData());
 	    	this.showEraseButton = true;
 		});
-
 
 		this.resizeListener = window.addEventListener("resize", this.onResize);
 		Vue.nextTick(() => {
