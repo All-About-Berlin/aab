@@ -11,7 +11,7 @@
 				{% endraw %}{% include "_css/icons/online.svg" %}{% raw %}
 				<div>
 					<h3>Do your Abmeldung online</h3>
-					<p>Answer a few questions, pay {{ fee }} €, get your Abmeldung certificate by email.</p>
+					<p>Deregister in 5 minutes, get your Abmeldung certificate by email.</p>
 				</div>
 				<output>
 					<eur :amount="fee"></eur>
@@ -20,8 +20,8 @@
 			<button @click="finishOnline = false; stageIndex += 1;">
 				{% endraw %}{% include "_css/icons/pdf.svg" %}{% raw %}
 				<div>
-					<h3>Fill the Abmeldung form online</h3>
-					<p>Answer a few questions, print the form, and send it to your Bürgeramt yourself.</p>
+					<h3>Fill the form and send it yourself</h3>
+					<p>Fill the form online, print it, and send it to the Bürgeramt.</p>
 				</div>
 				<output>
 					Free
@@ -42,7 +42,7 @@
 				I deregister your address for you.
 			</li>
 			<li>
-				I receive your <glossary term="Abmeldebescheinigung">Abmeldung certificate</glossary> and email it to you.
+				When I receive your <glossary term="Abmeldebescheinigung">Abmeldung certificate</glossary>, I email it to you.
 			</li>
 		</ol>
 	</template>
