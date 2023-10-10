@@ -8,7 +8,7 @@
 	<template v-if="stage === 'start'">
 		<div class="collapsible-options">
 			<button @click="finishOnline = true; stageIndex += 1;">
-				{% endraw %}{% include "_css/icons/mail.svg" %}{% raw %}
+				{% endraw %}{% include "_css/icons/online.svg" %}{% raw %}
 				<div>
 					<h3>Do your Abmeldung online</h3>
 					<p>Answer a few questions, pay {{ fee }} €, get your Abmeldung certificate by email.</p>
@@ -276,7 +276,7 @@
 	</template>
 	<template v-if="stage === 'onlineFinish'">
 		<h2>One last thing</h2>
-		<p>Your documents are ready. Pay the <eur :amount="fee"></eur> € fee to finish your Abmeldung.</p>
+		<p>Your documents are ready. Pay the <eur :amount="fee"></eur> fee to finish your Abmeldung.</p>
 	</template>
 	<template v-if="stage === 'offlineFinish'">
 		<h2>You are almost done!</h2>
