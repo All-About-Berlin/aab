@@ -54,6 +54,8 @@ The extended registration certificate (*erweiterte Meldebescheinigung*) is a mor
 - Your previous addresses
 - Your registered spouse and children
 
-You rarely need an *erweiterte Meldebescheinigung*. You must request it from the *[[Bürgeramt]]* by email, by post or in person. You can't request it online.[^0]
+You rarely need an *erweiterte Meldebescheinigung*. You must get it in person at the *[[Bürgeramt]]*. You can't request it online.[^0]
+
+**[Book a Bürgeramt appointment ➞](https://service.berlin.de/dienstleistung/120702/)**
 
 [^0]: [berlin.de](https://service.berlin.de/dienstleistung/120702/)
