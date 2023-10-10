@@ -15,6 +15,7 @@ Vue.component('signature', {
 			resizeTimeout: null,
 			signatureData: null,
 			signaturePad: null,
+			showEraseButton: false,
 		};
 	},
 	methods: {
@@ -31,7 +32,6 @@ Vue.component('signature', {
 				const pngImage = await pdfDoc.embedPng(arrayBuffer);
 				const pngDims = await pngImage.scale(0.5)
 				const page = pdfDoc.getPage(0)
-				console.log(page.getWidth())
 				page.drawImage(pngImage, {
 					x: 300,
 					y: 10,
@@ -50,7 +50,6 @@ Vue.component('signature', {
 			});
 		},
 		onResize() {
-
 			// The size of the output image
 			const outputWidth = (this.width + this.paddingX * 2) * 2;
 			const outputHeight = (this.height + this.paddingY * 2) * 2;
@@ -71,9 +70,8 @@ Vue.component('signature', {
 			// The size of the backdrop
     		const backdropSizeRatio = (this.width + this.paddingX * 2) / containerWidth;
 			this.$refs.backdrop.style.width = `${this.width / backdropSizeRatio}px`;
-			this.$refs.backdrop.style.height = `${this.height / backdropSizeRatio}px`;
-			this.$refs.backdrop.style.top = `${this.paddingY / backdropSizeRatio}px`;
-			this.$refs.backdrop.style.left = `${this.paddingX / backdropSizeRatio}px`;
+			this.$refs.backdrop.style.top = `${(this.height + this.paddingY) / backdropSizeRatio}px`;
+			this.$refs.erase.style.top = `${(this.height + this.paddingY) / backdropSizeRatio}px`;
 
 			// Backup the signature. When the resize is finish, restore the scaled signature.
 			if(!this.signaturePad.isEmpty()){
@@ -94,13 +92,15 @@ Vue.component('signature', {
 					});
 					this.signaturePad.fromData(this.signatureData);
 					this.signatureData = null;
-					console.log('Resize')
 				}, 100);
 			}
 		},
-		onSignature(){
-			this.signaturePad.toDataURL("image/svg+xml");
-		}
+		clearSignature(){
+			this.signaturePad.clear();
+			this.isEmpty = true;
+			this.showEraseButton = false;
+			this.$emit('input', null);
+		},
 	},
 	mounted(){
 		this.signaturePad = new SignaturePad(this.$refs.canvas, {
@@ -108,7 +108,14 @@ Vue.component('signature', {
 		});
 	    this.signaturePad.addEventListener("beginStroke", () => {
 	    	this.isEmpty = false;
+	    	this.showEraseButton = false;
 		});
+
+	    this.signaturePad.addEventListener("endStroke", () => {
+	    	this.$emit('input', this.signaturePad.toDataURL());
+	    	this.showEraseButton = true;
+		});
+
 
 		this.resizeListener = window.addEventListener("resize", this.onResize);
 		Vue.nextTick(() => {
@@ -122,6 +129,7 @@ Vue.component('signature', {
 		<div class="signature-input" :class="{'empty': isEmpty}" @touchmove.prevent>
 			<div class="signature-box">
 				<div class="backdrop" ref="backdrop"></div>
+				<a class="erase" v-show="showEraseButton" ref="erase" href="#" @click.prevent="clearSignature" title="Erase the signature">Erase</a>
 				<canvas
 					class="canvas"
 					ref="canvas"
