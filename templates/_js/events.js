@@ -8,10 +8,16 @@ function validateForm(formElement) {
 			formIsValid = false;
 		}
 	});
+
+	if(formElement.querySelectorAll('.signature-input.empty[required]').length > 0){
+		formIsValid = false;
+	}
+
 	if(honeypotField && honeypotField.value){
 		formIsValid = false; // Rudimentary bot prevention
 	}
 	formElement.classList.toggle('show-errors', !formIsValid);
+
 	return formIsValid;
 }
 

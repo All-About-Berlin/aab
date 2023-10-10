@@ -2892,11 +2892,12 @@ details{
 	}
 }
 .show-errors .signature-input{
-	&.empty{
+	&.empty[required]{
 		border-color: var(--c-highlight)!important;
+		box-shadow: var(--shadow-s), 0 0 0 1px var(--c-highlight)!important;
 
 		.backdrop{
-			border-bottom-color: var(--c-highlight)!important;
+			border-color: var(--c-highlight)!important;
 
 			&:after{
 				color: var(--c-text-error);
