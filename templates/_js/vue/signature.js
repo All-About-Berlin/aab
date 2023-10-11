@@ -20,36 +20,6 @@ Vue.component('signature', {
 		};
 	},
 	methods: {
-		async addSignature() {
-			const pdfResponse = await fetch('/documents/abmeldung-original.pdf');;
-			const pdfBytes = new Uint8Array(await pdfResponse.arrayBuffer());
-
-			const pdfDoc = await PDFLib.PDFDocument.load(pdfBytes);
-
-			pdfDoc.getPage(0).drawText('Auf allaboutberlin.com ausgefüllt', { size: 9, x: 40, y: 20 });
-
-			this.$refs.canvas.toBlob(async (pngBlob) => {
-				const arrayBuffer = await pngBlob.arrayBuffer();
-				const pngImage = await pdfDoc.embedPng(arrayBuffer);
-				const pngDims = await pngImage.scale(0.5)
-				const page = pdfDoc.getPage(0)
-				page.drawImage(pngImage, {
-					x: 300,
-					y: 10,
-					width: pngImage.width / 4,
-					height: pngImage.height / 4,
-				});
-
-				const blob = new Blob(
-					[new Uint8Array(await pdfDoc.save())],
-					{type: "application/pdf"}
-				);
-				const link = document.createElement('a');
-				link.href=window.URL.createObjectURL(blob);
-				link.download='test.pdf';
-				link.click();
-			});
-		},
 		onResize() {
 			// The size of the output image
 			const outputWidth = (this.width + this.paddingX * 2) * 2;
@@ -101,6 +71,7 @@ Vue.component('signature', {
 			this.isEmpty = true;
 			this.showEraseButton = false;
 			this.$emit('input', this.signaturePad.toData());
+			this.$refs.canvas.toBlob(blob => this.$emit('signature', blob));
 		},
 	},
 	mounted(){
@@ -119,6 +90,7 @@ Vue.component('signature', {
 
 	    this.signaturePad.addEventListener("endStroke", () => {
 	    	this.$emit('input', this.signaturePad.toData());
+	    	this.$refs.canvas.toBlob(blob => this.$emit('signature', blob));
 	    	this.showEraseButton = true;
 		});
 

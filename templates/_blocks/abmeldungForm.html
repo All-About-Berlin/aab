@@ -258,7 +258,7 @@
 				</label>
 			</div>
 		</div>
-		<signature required :width="530" :height="70" :padding-x="20" :padding-y="50" v-model="signatureData"></signature>
+		<signature required :width="530" :height="70" :padding-x="20" :padding-y="50" v-model="signatureData" @signature="onSignature"></signature>
 		<hr>
 		<div class="form-group required">
 			<label :for="uid('email')">Email</label>
@@ -331,13 +331,13 @@
 	<div class="buttons" v-if="stage !== 'start'">
 		<button v-if="stageIndex > 0" class="button" @click="stageIndex -= 1"><i class="icon left" aria-hidden="true"></i> Go back</button>
 		<button v-if="stage === 'addPeople'" class="button" @click="addPerson"><i class="icon person" aria-hidden="true"></i> Add another person</button>
-		<button v-if="stageIndex === 1" class="button primary" @click="nextStep">Start <i class="icon right" aria-hidden="true"></i></button>
+		<button v-if="stageIndex === 1" class="button primary" @click="nextStage">Start <i class="icon right" aria-hidden="true"></i></button>
 		<button
 			v-if="stageIndex > 1 && stageIndex < stages.length - 2"
 			class="button primary"
 			:disabled="!stageIsComplete"
-			@click="nextStep">Continue <i class="icon right" aria-hidden="true"></i></button>
-		<button v-if="stageIndex === stages.length - 2" class="button primary" @click="nextStep">Finish</button>
+			@click="nextStage">Continue <i class="icon right" aria-hidden="true"></i></button>
+		<button v-if="stageIndex === stages.length - 2" class="button primary" @click="nextStage">Finish</button>
 		<a v-if="stage === 'onlineFinish'" class="button primary" :href="paymentUrl">Pay and finish</a>
 	</div>
 {% endraw %}
@@ -379,7 +379,9 @@
 					userId: 'allaboutberlin-' + Math.floor(Math.random() * 1000000).toString(36),
 					identificationDocuments: [],
 					hasPermission: false,
-					signatureData: null,
+
+					signatureData: null, // List of points
+					signatureBlob: null, // PNG blob of the signature
 
 					fee: {{ DIGITAL_ABMELDUNG_FEE }},
 					sortedCountryList: countries.getSortedList(),
@@ -438,8 +440,9 @@
 				},
 			},
 			methods: {
-				nextStep(){
-					if(validateForm(this.$el)){
+				onSignature($event) {
+					this.signatureBlob = $event;
+				},
 						this.stageIndex += 1;
 					}
 				},
@@ -540,8 +543,20 @@
 					}
 
 					const pdfDoc = await PDFLib.PDFDocument.load(this.pdfBytes);
+					await this.addSignature(pdfDoc, this.signatureBlob);
 					return await pdf.fillAndSavePDF(pdfDoc, textFields, checkboxFields, 'abmeldung-form-filled.pdf', this.trackAs);
-				}
+				},
+				async addSignature(pdfDoc, signatureBlob) {
+					const arrayBuffer = await signatureBlob.arrayBuffer();
+					const pngImage = await pdfDoc.embedPng(arrayBuffer);
+					const page = pdfDoc.getPage(0)
+					await page.drawImage(pngImage, {
+						x: 315,
+						y: 10,
+						width: 260,
+						height: 77,
+					});
+				},
 			},
 			watch: {
 				async stageIndex(newStageIndex){
