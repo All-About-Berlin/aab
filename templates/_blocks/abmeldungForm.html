@@ -576,7 +576,7 @@
 							newAddress: () => this.$refs.newAddressInput,
 							addPeople: () => this.$refs.firstNameInput[0],
 							permission: () => this.$refs.basicPermissionCheckbox,
-							documents: () => this.$refs.documentInput.$el,
+							documents: () => this.$refs.documentInput.$refs.button,
 							onlineFinish: () => null,
 							offlineFinish: () => null,
 						}[this.stages[newStageIndex]]();
