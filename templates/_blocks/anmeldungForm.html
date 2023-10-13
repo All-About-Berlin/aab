@@ -190,6 +190,7 @@
 			<div class="form-group">
 				<label :for="uid('dateOfBirth-' + person.id) + '-day'">Date of birth</label>
 				<date-picker
+					:key="person.id"
 					:id="uid('dateOfBirth-' + person.id)"
 					v-model="person.dateOfBirth"
 					autocomplete="bday"></date-picker>
@@ -258,7 +259,7 @@
 			</div>
 			<div class="form-group">
 				<label :for="uid('documentIssueDate-' + person.id) + '-day'">Date issued</label>
-				<date-picker :id="uid('documentIssueDate-' + person.id)" v-model="person.documentIssueDate"></date-picker>
+				<date-picker :key="person.id" :id="uid('documentIssueDate-' + person.id)" v-model="person.documentIssueDate"></date-picker>
 			</div>
 			<div class="form-group" v-if="person.documentType === 'PA'">
 				<label :for="uid('documentIssuingAuthority-' + person.id)">Issuing authority</label>
@@ -272,7 +273,7 @@
 			</div>
 			<div class="form-group">
 				<label :for="uid('documentExpirationDate-' + person.id) + '-day'">Expiration date</label>
-				<date-picker :id="uid('documentExpirationDate-' + person.id)" v-model="person.documentExpirationDate"></date-picker>
+				<date-picker :key="person.id" :id="uid('documentExpirationDate-' + person.id)" v-model="person.documentExpirationDate"></date-picker>
 			</div>
 		</template>
 	</template>

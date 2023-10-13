@@ -231,6 +231,7 @@
 			<div class="form-group required">
 				<label :for="uid('dateOfBirth-' + person.id) + '-day'">Date of birth</label>
 				<date-picker
+					:key="person.id"
 					:id="uid('dateOfBirth-' + person.id)"
 					v-model="person.dateOfBirth"
 					autocomplete="bday" required></date-picker>
