@@ -18,10 +18,9 @@ Vue.component('file-input', {
 	methods: {
 		onFilesSelected(event){
 			Array.from(event.target.files).forEach(f => {
-
 				const fileExists = this.value.some(
 					curr => {
-						return f.name === curr.name && f.size === curr.size && f.lastModified === curr.lastModified;
+						return f.name === curr.name && f.size === curr.size;
 					}
 				);
 
@@ -79,7 +78,7 @@ Vue.component('file-input', {
 			<div class="placeholder" v-if="value.length === 0"><slot></slot></div>
 			<input ref="fileInput" type="file" multiple :accept="accept" @change="onFilesSelected">
 			<div class="buttons">
-				<button class="button" :class="{primary: value.length === 0}" for="file-input" @click="openFileInput">
+				<button ref="button" class="button" :class="{primary: value.length === 0}" for="file-input" @click="openFileInput">
 					<i class="icon add" aria-hidden="true"></i>
 					{{ (value.length > 0 ? 'Add more ' : 'Add ') + type }}
 				</button>
