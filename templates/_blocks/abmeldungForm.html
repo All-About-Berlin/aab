@@ -146,6 +146,9 @@
 		<p>You can deregister your whole family at the same time.</p>
 		<template v-for="(person, index) in people">
 			<hr>
+			<h3 v-if="people.length > 1">
+				<i class="icon person"></i> {{ person.firstName ? `${person.title} ${person.firstName} ${person.lastName}` : `Person #${ index + 1 }` }}
+			</h3>
 			<div class="form-group" v-if="person.showExtraFields">
 				<label :for="uid('title') + person.id">Title</label>
 				<input type="text"
@@ -485,12 +488,6 @@
 				},
 				mergeFields(fields){
 					return fields.filter(Boolean).join(', ')
-				},
-				personName(person, index){
-					if(person.firstName || person.lastName){
-						return [person.firstName, person.lastName].filter(Boolean).join(' ');
-					}
-					return `person #${index}`;
 				},
 				async preloadPDF(){
 					// Load PDFLib and the PDF document in advance while the user fills the form
