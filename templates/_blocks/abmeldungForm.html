@@ -7,10 +7,10 @@
 	<progress v-if="stage !== 'start'" aria-label="Form progress" :max="stages.length - 1" :value="stageIndex"></progress>
 	<template v-if="stage === 'start'">
 		<div class="collapsible-options">
-			<button @click="finishOnline = true; stageIndex += 1;">
+			<button @click="finishOnline = true; stageIndex += 1;" :aria-labelledby="uid('h-btnOnline')">
 				{% endraw %}{% include "_css/icons/online.svg" %}{% raw %}
 				<div>
-					<h3>Do your Abmeldung online</h3>
+					<h3 :id="uid('h-btnOnline')">Do your Abmeldung online</h3>
 					<p>Deregister in 5 minutes, get your Abmeldung certificate by email.</p>
 				</div>
 				<output>
@@ -125,7 +125,7 @@
 				City and post code
 			</label>
 			<input
-				:for="uid('newCityAndPostCode')"
+				:id="uid('newCityAndPostCode')"
 				placeholder="Montreal, Quebec, H3E 1J4"
 				type="text"
 				v-model="newCityAndPostCode"
@@ -167,12 +167,14 @@
 						placeholder="Alex"
 						autocomplete="given-name"
 						class="first-name-input"
+						title="First name"
 						required>
 					<input type="text"
 						v-model="person.lastName"
 						placeholder="Smith"
 						autocomplete="family-name"
 						class="last-name-input"
+						title="Last name"
 						required>
 					<a class="input-instructions" href="#" v-if="!person.showExtraFields" @click.prevent="person.showExtraFields = true">Add a title or birth name</a>
 				</div>
