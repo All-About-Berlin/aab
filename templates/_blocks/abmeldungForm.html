@@ -133,7 +133,7 @@
 		</div>
 		<div class="form-group required">
 			<label :for="uid('newCountry')">Country</label>
-			<select v-model="newCountry" :id="uid('newCountry')" :aria-describedby="uid('newCountry-instructions')" autocomplete="country-name">
+			<select ref="newCountryInput" v-model="newCountry" :id="uid('newCountry')" :aria-describedby="uid('newCountry-instructions')" autocomplete="country-name" required>
 				<option v-if="country !== 'Germany'" v-for="country in recommendedCountries">{{ country }}</option>
 				<option disabled>──────────</option>
 				<option v-for="country in sortedCountryList" :key="country[0]">{{ country[1] }}</option>
@@ -397,6 +397,9 @@
 					if(this.stage === 'documents'){
 						return this.identificationDocuments.length > 0;
 					}
+					else if(this.stage === 'newAddress'){
+						return this.newCountry !== 'Germany';
+					}
 					return true;
 				},
 				stages() {
@@ -443,6 +446,8 @@
 				onSignature($event) {
 					this.signatureBlob = $event;
 				},
+				nextStage(){
+					if(validateForm(this.$el)){
 						this.stageIndex += 1;
 					}
 				},
@@ -584,6 +589,9 @@
 				oldPostCode(newVal) {
 					const postalCodeIsValid = parseInt(newVal, 10) > 10100 && parseInt(newVal, 10) < 14200;
 					this.$refs.oldPostCodeInput.$el.setCustomValidity(postalCodeIsValid ? '' : 'This is not a valid Berlin post code.');
+				},
+				newCountry(newVal) {
+					this.$refs.newCountryInput.setCustomValidity(newVal !== 'Germany' ? '' : 'If you stay in Germany, you probably should not deregister.');
 				}
 			},
 			created() {
