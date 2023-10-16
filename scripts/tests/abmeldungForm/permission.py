@@ -11,3 +11,6 @@ def test_data_remembered(page):
     expect(page.get_by_label("I allow All About Berlin to deregister my address at the Bürgeramt.")).to_be_checked()
     expect(page.locator("canvas")).not_to_have_class('empty')
     expect(page.get_by_label("Email")).to_have_value("contact@allaboutberlin.com")
+
+    page.get_by_role("button", name="Finish").click()
+    expect(page.get_by_text("One last thing")).to_have_count(1)

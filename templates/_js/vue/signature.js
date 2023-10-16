@@ -81,6 +81,7 @@ Vue.component('signature', {
 
 		if(this.value){
 			this.signaturePad.fromData(this.value);
+			this.isEmpty = false;
 		}
 
 	    this.signaturePad.addEventListener("beginStroke", () => {
