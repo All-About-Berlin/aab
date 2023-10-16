@@ -32,11 +32,23 @@ This website is built for advice, not ads. I sometimes work with advertisers, bu
 
 ## Privacy policy
 
+### Statistics
+
 This website tracks statistics anonymously with [Plausible](https://plausible.io/privacy-focused-web-analytics). It does not set tracking cookies, and it does not collect personal data. Statistics are stored on servers in the European Union, and they are not shared with nor sold to other companies.
 
-This website sometimes saves form data in your browser's localStorage. This saves you some time if you use the form again. This information is not shared with anyone, not even me.
+### Local storage
 
-This website also collects server error logs for debugging purposes. The logs are anonymised and do not contain personal data.
+This website sometimes saves form data in your browser's local storage. This preserves the form data when you reload the page. This information is not shared with anyone, not even All About Berlin.
+
+### Forms
+
+The forms and tools on this website are designed for privacy. Your data stays in your browser. It is not shared your information with anyone, not even All About Berlin.
+
+When you ask a question or request a service on All About Berlin, your request is sent to All About Berlin's server. Your request is processed, then your data is deleted as fast as possible. In most cases, your data is deleted after a few minutes.
+
+### Other
+
+This website collects server error logs for debugging purposes. The logs are anonymised and do not contain personal data.
 
 ## Terms of service
 
