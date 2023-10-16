@@ -274,10 +274,11 @@
 	</template>
 	<template v-if="stage === 'documents'">
 		<h2>Add your ID documents</h2>
-		<p>The <glossary>Bürgeramt</glossary> must see your passport or <em><glossary>Personalausweis</glossary></em> to verify your identity.</p>
+		<p>The <glossary>Bürgeramt</glossary> must verify your identity. Add a photo of your passport or <em><glossary>Personalausweis</glossary></em>.</p>
 		<hr>
 		<file-input ref="documentInput" accept="image/png,image/jpeg,.pdf" type="documents" v-model="identificationDocuments">
-			Add a photo of everyone's passport or <em><glossary>Personalausweis</glossary></em>.
+			{% endraw %}{% include "_css/icons/id.svg" %}{% raw %}
+			Add a photo of {{ people.length > 1 ? "everyone's ID documents" : "your ID document" }}.
 		</file-input>
 	</template>
 	<template v-if="stage === 'onlineFinish'">

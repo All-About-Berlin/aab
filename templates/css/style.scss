@@ -1528,8 +1528,12 @@ input[type=range] {
 	margin: var(--l-relative) 0;
 
 	> .placeholder{
-		color: var(--c-text-light);
 		text-align: center;
+
+		svg{
+			display: block;
+			margin: 0 auto var(--xs);
+		}
 	}
 	ul{
 		margin: 0;
