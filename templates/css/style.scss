@@ -1718,18 +1718,17 @@ input[type=range] {
 			grid-column-start: 1;
 		}
 	}
-
-	.input-instructions{
-		font-size: var(--f-s);
-		flex: 1 0 100%;
-		line-height: var(--line-height-labe);
-
-		summary:after{
-			float: none;
-		}
-	}
-
 }
+.input-instructions{
+	font-size: var(--f-s);
+	flex: 1 0 100%;
+	line-height: var(--line-height-labe);
+
+	summary:after{
+		float: none;
+	}
+}
+
 .date-picker{
 	@include form-input;
 	width: fit-content;

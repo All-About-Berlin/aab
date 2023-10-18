@@ -45,6 +45,13 @@
 				When I receive your <glossary term="Abmeldebescheinigung">Abmeldung certificate</glossary>, I email it to you.
 			</li>
 		</ol>
+		<details class="input-instructions">
+			<summary>How I protect your privacy</summary>
+			<p>This form asks many personal questions. I use your answers to fill your Abmeldung form.</p>
+			<p>Your personal information stays in your browser. On the last step, you can upload it to All About Berlin's server.</p>
+			<p>When your Abmeldung is done, your personal information is automatically deleted.</p>
+			<p>Your personal information is only used for your Abmeldung. It is not shared with anyone else. I will not email you for any other reason.</p>
+		</details>
 	</template>
 	<template v-if="stage === 'howThisWorks' && !finishOnline">
 		<h2>How this works</h2>
@@ -143,7 +150,7 @@
 	</template>
 	<template v-if="stage === 'addPeople'">
 		<h2>Who is deregistering?</h2>
-		<p>You can deregister your whole family at the same time.</p>
+		<p>I use this information to fill your Abmeldung form. Enter the same information as on your <em><glossary term="Anmeldebestätigung">Anmeldebestätigung</glossary></em>.</p>
 		<template v-for="(person, index) in people">
 			<hr>
 			<h3 v-if="people.length > 1">
@@ -243,34 +250,41 @@
 					v-model="person.birthPlace"
 					:id="uid('birthPlace-' + person.id)"
 					:aria-describedby="uid('birthPlace-instructions-' + person.id)"
-					placeholder="Montreal, Quebec, Canada"
+					placeholder="Montreal, Canada"
 					required>
-				<span class="input-instructions" :id="uid('birthPlace-instructions-' + person.id)">The city, region and country where you were born.</span>
 			</div>
 		</template>
+
+		<hr>
+		<h3 v-if="people.length > 1">Email</h3>
+		<div class="form-group required">
+			<label :for="uid('email')">Your email</label>
+			<input v-model="emailAddress" type="email" :id="uid('email')" required autocomplete="email">
+			<span class="input-instructions">I will send your <glossary term="Abmeldebescheinigung">Abmeldung certificate</glossary> to this email address.</span>
+		</div>
 		<datalist :id="uid('countries')">
 			<option v-for="country in sortedCountryList" :key="country[0]" :value="country[1]"></option>
 		</datalist>
 	</template>
 	<template v-if="stage === 'permission'">
-		<h2>I need your permission</h2>
-		<p>To do your Anmeldung, I need your permission and your signature.</p>
-		<hr>
+		<h2>Give your permission</h2>
 		<div class="form-group required no-label">
 			<div class="input-group vertical">
 				<label class="checkbox">
-					<input type="checkbox" v-model="hasPermission" ref="basicPermissionCheckbox" required>
+					<input type="checkbox" v-model="hasPermissionToDeregister" ref="basicPermissionCheckbox" required>
 					I allow All About Berlin to deregister my address at the Bürgeramt.
+				</label>
+				<label class="checkbox">
+					<input type="checkbox" v-model="hasPermissionToProcessData" ref="basicPermissionCheckbox" required>
+					I allow All About Berlin to process my data for this purpose.
 				</label>
 			</div>
 		</div>
 		<signature required :width="530" :height="70" :padding-x="20" :padding-y="50" v-model="signatureData" @signature="onSignature"></signature>
-		<hr>
-		<div class="form-group required">
-			<label :for="uid('email')">Email</label>
-			<input v-model="emailAddress" type="email" :id="uid('email')" required autocomplete="email">
-			<span class="input-instructions">I will send your <glossary term="Abmeldebescheinigung">Abmeldung certificate</glossary> to this email.</span>
-		</div>
+		<details class="input-instructions">
+			<summary>Why I need your signature</summary>
+			<p>Your signature is for the Abmeldung form and the <em><glossary>Vollmacht</glossary></em>. You can review these documents before you finish.</p>
+		</details>
 	</template>
 	<template v-if="stage === 'documents'">
 		<h2>Add your ID documents</h2>
@@ -385,7 +399,8 @@
 					emailAddress: '',
 					userId: 'allaboutberlin-' + Math.floor(Math.random() * 1000000).toString(36),
 					identificationDocuments: [],
-					hasPermission: false,
+					hasPermissionToDeregister: false,
+					hasPermissionToProcessData: false,
 
 					signatureData: null, // List of points
 					signatureBlob: null, // PNG blob of the signature
