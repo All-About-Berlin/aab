@@ -42,11 +42,11 @@ Ottonova's health insurance works for all residence permit applications, includi
 
 **[Health insurance for a residence permit application ➞](/guides/german-visa-health-insurance)**
 
-### It's a little expensive
+### It's expensive
 
-Compared to other private health insurances, Ottonova is a little expensive. If you want to pay the minimum amount for health insurance, there are other options.
+Compared to other private health insurances, Ottonova is expensive for what you get. You can get a better deal with other insurers.
 
-[Talk to a insurance broker](/guides/german-health-insurance#insurance-brokers) or use [Tarifcheck](/out/tarifcheck-health) to compare prices. Be careful; choosing the cheapest option can be a serious mistake, and cost you a lot of money later.
+[Talk to a insurance broker](/guides/german-health-insurance#insurance-brokers) to find a cheaper option. Be careful; choosing the cheapest option can be a serious mistake, and cost you a lot of money later.
 
 ### They speak English
 
@@ -68,7 +68,7 @@ If you only live in Germany for a few years, this is not important. If you plan 
 
 ## Summary
 
-Ottonova is okay. It's not *bad*, but it's also not special. You can **[get a quote from Ottonova](/out/ottonova)**, and decide if it works for you. It's better if a health insurance broker helps you choose health insurance.
+Ottonova is okay. It's not *bad*, but it's also not special. You can **[get a quote from Ottonova](/out/ottonova)**, and decide if it works for you. You might get a better deal if you [talk to a insurance broker](/guides/german-health-insurance#insurance-brokers).
 
 ### Pros
 

@@ -19,11 +19,11 @@ After you [move to Berlin](/guides/find-a-flat-in-berlin) and [find an apartment
 
 Don't sign the lease before you see the apartment in person. If you can't see the apartment in person, ask for a video call instead. There are many fake apartment ads online. Scammers show you a fake apartment, ask for a deposit, and disappear with your money.
 
-Don't pay anything before you sign a lease. Read your lease carefully. It can have information about rent increases, house rules, pets, and other important things.
-
-A lawyer or a tenants' union (*[[Mieterverein]]*) can check your lease. They can tell you if your rent is too high, or if parts of the lease are illegal.
+**Don't pay anything before you sign a lease.** Read your lease carefully. It can have information about rent increases, house rules, pets, and other important things.
 
 **[Guide to rental contracts in Germany](https://redtapetranslation.com/a-guide-to-rental-contracts-in-germany/)** - Red Tape Translation
+
+A lawyer or a tenants' union (*[[Mieterverein]]*) can check your lease. They can tell you if your rent is too high, or if parts of the lease are illegal.
 
 When you sign the lease, the apartment is yours. You can't change your decision. The landlord can't change their decision.
 
@@ -39,7 +39,8 @@ After you sign the lease, you will meet with the landlord to...
 
 - **Fill the [[Übergabeprotokoll]]**  
     This document describes the condition of the apartment. You must return the apartment in the same condition. It should describe everything: scratches on the floor, holes in the wall, broken taps etc. Take a lot of pictures to prove it.
-- **Get the [[Wohnungsgeberbestätigung]]** Before or during the handover, you get a [*Wohnungsgeberbestätigung*](/glossary/Wohnungsgeberbest%C3%A4tigung). You need it to [register your address](/guides/anmeldung-in-english-berlin) (*[[Anmeldung]]*).
+- **Get the [[Wohnungsgeberbestätigung]]**  
+    Before or during the handover, you get a [*Wohnungsgeberbestätigung*](/glossary/Wohnungsgeberbest%C3%A4tigung). You need it to [register your address](/guides/anmeldung-in-english-berlin) (*[[Anmeldung]]*).
 - **Read the electricity meter**  
     When you sign an electricity contract, you need to give the electricity provider your meter number (*[[Zählernummer]]*) and meter reading (*[[Zählerstand]]*). The electricity meter is usually hidden in the basement.
 - **Get the apartment keys**  
@@ -49,7 +50,7 @@ After you sign the lease, you will meet with the landlord to...
 
 ### Pay the deposit
 
-You must pay the deposit (*[[Kaution]]*) before your lease starts. You don't have to pay immediately after you sign the lease.
+You must pay the deposit (*[[Kaution]]*) **before your lease starts**. You don't have to pay immediately after you sign the lease.
 
 You can pay the deposit in 3 instalments. If you don't have enough money, there are [other options](/guides/mietkaution#if-you-dont-have-enough-money).
 
@@ -59,7 +60,7 @@ You usually pay the rent and the deposit by [SEPA transfer](/glossary/SEPA-%C3%9
 
 ### Pay the rent
 
-You must pay the rent before your lease starts. You don't have to pay immediately after you sign the lease.
+You must pay the rent **before your lease starts**. You don't have to pay immediately after you sign the lease.
 
 You only need to pay rent if you can actually live there. For example, if your leases starts on January 1, but you only get the keys on January 15, you don't pay rent from January 1 to January 15.[^9]
 
@@ -75,25 +76,13 @@ If your current internet company can't service your new apartment, you can cance
 
 ## After the move
 
-### Put your name on the mailbox
+### Put your name on your mailbox
 
-German apartment buildings rarely have individual apartment numbers. You have the same address as everyone in your building. If your name is not on your mailbox, you won't get mail addressed to you. You must add "c/o" or "bei" to your address.
+Ask your landlord to put your name on your mailbox and your doorbell.
 
-When you move in, the landlord or the *[[Hausverwaltung]]* puts your name on your mailbox. They can't make you pay for this.[^1]
+German apartments rarely have apartment numbers. Everyone in the building has the same address. Each person has a mailbox with their name on it. If there is no mailbox with your name on it, you will not receive your mail.
 
-If your name is not on the lease, your landlord can refuse to put your name on the mailbox.[^2]
-
-If you can't put your name on your mailbox, you must add ["c/o" or "bei"](https://en.wiktionary.org/wiki/care_of) to your address. For example:
-
-> [your name]  
-> **bei [your roommate's name]** (the person whose name is on the mailbox)  
-> Musterstraße 17  
-> 12345 Berlin  
-> Deutschland
-
-If your name is not on your mailbox, you must add "c/o" or "bei" to your official address when you [register your address](/guides/anmeldung-in-english-berlin).
-
-![Mailboxes briefkasten germany](/illustrations/mailboxes-briefkasten-germany.png)
+**[More information ➞](/guides/address-change#put-your-name-on-your-mailbox)**
 
 ### Register your address
 
@@ -119,7 +108,7 @@ You must choose an electricity provider and sign an electricity contract. Compar
 
 Most providers offer a lower price for the first year or two, then the price goes up. If you switch providers every year or two, you always get the lowest price. You can save a lot of money this way.
 
-If you already have an electricity contract, you can it transfer to your new address, usually for free. If you can cancel your contract, try to get a lower price from another provider.
+If you already have an electricity contract, you can transfer it to your new address, usually for free. If you can cancel your contract, try to get a lower price from another provider.
 
 The electricity contract is activated automatically. No one will visit your apartment. You just need to tell the electricity company your electricity meter number (*[[Zählernummer]]*) and reading (*[[Zählerstand]]*). The electricity meter is usually in the basement. You can check it when you sign the *[[Übergabeprotokoll]]*.
 
@@ -155,7 +144,7 @@ Your own things are not covered by liability insurance. To insure your furniture
 
 **[Types of insurance in Germany ➞](/guides/insurance)**
 
-[Muffin](/out/muffin-haftpflicht) helps you choose liability insurance from multiple companies, and they speak English. [Feather](/out/feather-haftpflicht) and [Getsafe](/out/getsafe-haftpflicht) sell liability insurance, and they speak English. They also sell household insurance (*[[Hausratversicherung]]*). You sometimes pay less when you get both insurances at the same time. Use [Tarifcheck](/out/tarifcheck-haftpflicht) to compare liability insurance options.
+[Muffin](/out/muffin-haftpflicht) helps you choose liability insurance from multiple companies, and they speak English. [Feather](/out/feather-haftpflicht) and [Getsafe](/out/getsafe-haftpflicht) sell liability insurance, and they speak English. They also sell household insurance (*[[Hausratversicherung]]*). You sometimes pay less when you get both insurances at the same time.
 
 ### Protect your rights
 
@@ -272,8 +261,6 @@ Sometimes, your landlord will remove air in your radiators with an *[Entlüftung
 **[Where to ask apartment questions ➞](/guides/questions-about-berlin#apartment-questions)**
 
 [^0]: [mietrecht.org](https://www.mietrecht.org/mietkaution/schluessel-nach-kautionszahlung/)
-[^1]: [haufe.de](https://www.haufe.de/immobilien/verwaltung/mietrecht-kosten-fuer-namensschilder-sind-keine-betriebskosten_258_91986.html)
-[^2]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/dm65o5/adding_co_to_the_anmeldung/f6lq399/), [mietrecht.org](https://www.mietrecht.org/mietvertrag/namen-briefkasten-klingel/#I)
 [^3]: [Finanztip](https://www.finanztip.de/haftpflichtversicherung/privathaftpflicht/)
 [^4]: [§823 BGB](https://www.gesetze-im-internet.de/bgb/__823.html)
 [^5]: [Settle in Berlin](https://www.settle-in-berlin.com/insurance-in-germany/)

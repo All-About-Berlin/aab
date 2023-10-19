@@ -66,15 +66,13 @@ Most insurance policies do not cover these accidents:
 
 It usually costs **less than 5€ per month**, or around 60€ per year. You can pay less if you get multiple insurances from the same company.
 
-Use [Tarifcheck](/out/tarifcheck-haftpflicht) to compare liability insurance prices.
-
 ## How to pick liability insurance
 
 If you feel lazy, **just choose [Getsafe](/out/getsafe-haftpflicht) or [Feather](/out/feather-haftpflicht).** Both options are fine. Both insurers speak English. I have insurance with Feather, but Getsafe is a little better: they sell their own insurance, their website clearly explains what it covers, and the contract is in English.
 
 To choose liability insurance yourself...
 
-1. **Use [Tarifcheck](/out/tarifcheck-haftpflicht) to compare prices**  
+1. **Use [Tarifcheck](/out/tarifcheck-haftpflicht) to see options**  
     Don't choose the cheapest option. Usually, it's cheaper because the coverage is not as good.
 2. **Use Test.de's [liability insurance checker](https://schnellcheck.test.de/haftpflichtversicherung/)**  
     This tool checks if your liability insurance covers the important things.
@@ -97,7 +95,7 @@ Your liability insurance must cover you well. This is the minimum it should cove
 - **Coverage for rented things** (*geliehene Sachen*)  
     If you rent a furnished apartment, it should cover rented things. This covers you if you break the furniture.
 
-Use [this tool](https://schnellcheck.test.de/haftpflichtversicherung/) to check if your liability insurance covers these things. Use [Tarifcheck](/out/tarifcheck-haftpflicht) to filter liability insurances by feature.
+Use [this tool](https://schnellcheck.test.de/haftpflichtversicherung/) to check if your liability insurance covers these things.
 
 I recommend liability insurance that covers lost keys. [Replacing a lost key](/guides/lost-keys#replacing-lost-keys-in-germany) can be very expensive. The landlord could make you pay to [replace all the locks in the building](/guides/lost-keys#do-i-need-to-pay-to-replace-the-locks). Most liability insurances cover this.
 

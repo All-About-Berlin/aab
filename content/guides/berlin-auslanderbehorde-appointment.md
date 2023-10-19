@@ -46,7 +46,7 @@ If you can't find an appointment online, you can:[^2]
 
 To do this, you must...
 
-1. [Find the correct department to contact](#how-to-contact-the-auslanderbehorde). You might need to use the official contact form.
+1. [Find the correct department to contact](#how-to-contact-the-auslanderbehorde). You must use their official contact form.
 2. Write a message. Write in German if you can. Your message must include:
     - [ ] What you need
     - [ ] Your full name
@@ -66,7 +66,7 @@ If you send all your documents, it counts as a residence permit application. Thi
 
 ### By fax
 
-Some people say that fax works better than email.[^22] Immigration experts are not sure.[^24]
+The Ausländerbehörde does not accept fax messages. You must use the online contact form.
 
 **[How to contact the Ausländerbehörde ↓](#how-to-contact-the-auslanderbehorde)**
 
@@ -98,7 +98,7 @@ Some employees speak English, but many only speak German. If you don't speak Ger
 
 **[How the Fiktionsbescheinigung works ➞](/guides/fiktionsbescheinigung)**
 
-Some residence permits are approved on the same day, during your interview. You get a paper residence permit, pay the fee, and leave. Around 8 weeks later, you get your plastic residence permit by post.
+Some residence permits are approved on the same day, during your interview. You get a paper residence permit, pay the fee (if they ask you), and leave. Around 8 weeks later, you get your plastic residence permit by post.
 
 Most residence permits are approved 1 to 6 months later.[^7]
 
@@ -132,9 +132,11 @@ If the *Ausländerbehörde* can't reach you, they will post the information [her
 
 ### How to pay the residence permit fee
 
-When your residence permit is approved, you must pay a fee. You only pay the fee if you get a residence permit is approved. If your application is rejected, you pay nothing.
+When your residence permit is approved, you must pay a fee. Some people have to pay now, and others have to pay later. You only pay the fee if your residence permit is approved. If it's rejected, you pay nothing.
 
-They will give you a plastic [payment card](/images/auslanderbehoerde-kassenkarte.jpg) (*Kassenkarte*). Bring that card to a [payment machine](/images/auslaenderbehoerde-kassenautomat.jpg) (*Kassenautomat*). Follow [the signs](/images/auslanderbehoerde-signs.jpg) to find the payment machines. These machines accept cash, EC cards, Visa and Mastercard.[^10] If your card is not accepted, you can also get cash from [this nearby ATM](https://goo.gl/maps/8cBy48WnTfbya13r6), even at night.
+**If you have to pay now**, they will give you a plastic [payment card](/images/auslanderbehoerde-kassenkarte.jpg) (*Kassenkarte*). Bring that card to a [payment machine](/images/auslaenderbehoerde-kassenautomat.jpg) (*Kassenautomat*). Follow [the signs](/images/auslanderbehoerde-signs.jpg) to find the payment machines. These machines accept cash, EC cards, Visa and Mastercard.[^10] If your card is not accepted, you can also get cash from [this nearby ATM](https://goo.gl/maps/8cBy48WnTfbya13r6), even at night.
+
+**If you have to pay later**, you will get an invoice by post. You will have 30 days to pay.[^25]
 
 ![Ausländerbehörde Kassenautomat](/images/auslaenderbehoerde-kassenautomat.jpg)
 
@@ -174,7 +176,7 @@ During your *Ausländerbehörde* appointment, the interviewer can give you a *[[
 
 ### How to contact the Ausländerbehörde
 
-The *Ausländerbehörde* removed emails and fax numbers from their website. You must use the **[contact form](/out/auslanderbehorde-departments)**, but [this organigram](/out/auslanderbehorde-organigram) (2022) shows the old email addresses and fax numbers. They might not work.
+The *Ausländerbehörde* removed emails and fax numbers from their website. You must use the **[contact form](/out/auslanderbehorde-departments)**.[^26]
 
 To contact the *Ausländerbehörde*...
 
@@ -233,3 +235,5 @@ If you need someone to go with you, I recommend [Red Tape Translation](/out/red-
 [^22]: [Instagram](https://www.instagram.com/p/CtL2b9wNC1V/), [Reddit](https://old.reddit.com/r/berlin/comments/14xk4ni/the_berlin_ausl%C3%A4nderbeh%C3%B6rde/), [Twitter](https://twitter.com/Eva_Kappl/status/1701839353624793565)
 [^24]: Carina Senf at [Rotwang Law](https://rotwang-law.de/en/) (July 2023), Kathleen Parker at [Red Tape Translation](https://redtapetranslation.com) (July 2023), [rbb24](https://twitter.com/rbb24/status/1701885546161684677)
 [^5]: [Reddit](https://old.reddit.com/r/berlin/comments/sof7dm/beyond_frustrated_with_ausl%C3%A4nderbeh%C3%B6rde_please/hw8ax66/)
+[^25]: Multiple relocation consultants (October 2023)
+[^26]: Multiple relocation consultants, [an Ausländerbehörde employee](https://www.linkedin.com/posts/victoriamesserberlin_millenials-germanimmigration-activity-7107981650088636416-Pw5K/) (October 2023)

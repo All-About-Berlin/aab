@@ -130,7 +130,7 @@ If you really need the *Abmeldebescheinigung* need this document, deregister in 
 
 They also help you cancel your [TV tax](/glossary/Rundfunkbeitrag), your health insurance, and your other contracts.
 
-It's a little expensive, but it lets you focus on other problems.
+It's not cheap, but it lets you focus on other problems.
 
 ## What happens when you deregister
 

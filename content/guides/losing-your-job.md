@@ -110,7 +110,7 @@ If you have a [residence permit](/glossary/Aufenthaltstitel) like a [work visa](
 
 To inform the *Ausländerbehörde*, you must...
 
-1. [Choose the right department to email](/guides/berlin-auslanderbehorde-appointment#how-to-contact-the-auslanderbehorde)
+1. [Choose the right department to contact](/guides/berlin-auslanderbehorde-appointment#how-to-contact-the-auslanderbehorde)
 2. Write a letter in German. It must include:
     - [ ] Your full name
     - [ ] Your date and place of birth
@@ -119,7 +119,7 @@ To inform the *Ausländerbehörde*, you must...
     - [ ] When your employment ends
 3. Include these documents with your message:[^2]
     - [ ] A copy of your termination notice or resignation letter
-4. Send your letter by email, post or fax. They will reply around 4 weeks later.[^36] You will not need to go to the *Ausländerbehörde* in person.
+4. Send your letter with [the official contact form](/guides/berlin-auslanderbehorde-appointment#how-to-contact-the-auslanderbehorde). They will reply around 4 weeks later.[^36] You will not need to go to the *Ausländerbehörde* in person.
 5. The *Ausländerbehörde* gives you 3 to 12 months to find a job.[^5] It's different at every *Ausländerbehörde*.[^8] They will tell you by email or by post.
 
 **[What happens to your residence permit ↓](#what-happens-to-your-residence-permit)**

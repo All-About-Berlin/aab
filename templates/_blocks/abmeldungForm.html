@@ -304,7 +304,7 @@
 		<template v-if="peopleTriples.length > 1">
 			<p>Print the forms, sign them, and bring them to your <em>Abmeldung</em> appointment.</p>
 			<div class="collapsible-options">
-				<button v-for="([person1, person2, person3], index) in peopleTriples" @click="generatePDF(person1, person2, person3)" :disabled="!pdfBytes">
+				<button v-for="([person1, person2, person3], index) in peopleTriples" @click="generatePDF(person1, person2, person3)" :disabled="downloadInProgress">
 					{% endraw %}{% include "_css/icons/pdf.svg" %}{% raw %}
 					<div>
 						<h3>Download part {{ index + 1 }} of the form</h3>
@@ -314,7 +314,7 @@
 			</div>
 		</template>
 		<div class="collapsible-options">
-			<button v-if="peopleTriples.length === 1" @click="generatePDF(people[0], people[1], people[2])" :disabled="!pdfBytes">
+			<button v-if="peopleTriples.length === 1" @click="generatePDF(people[0], people[1], people[2])" :disabled="downloadInProgress">
 				{% endraw %}{% include "_css/icons/pdf.svg" %}{% raw %}
 				<div>
 					<h3>Download the filled form</h3>
@@ -373,16 +373,15 @@
 {% include '_js/vue/file-input.js' %}
 {% include '_js/vue/glossary.js' %}
 {% include '_js/vue/postalcode-input.js' %}
+{% include '_js/vue/preloadPDFMixin.js' %}
 {% include '_js/vue/signature.js' %}
 {% include '_js/vue/trackedStagesMixin.js' %}
 {% include '_js/vue/uniqueIdsMixin.js' %}
 {% js %}
-	let abmeldungFormDownloadPromise = null;
-
 	document.querySelectorAll('.abmeldung-form').forEach(
 		el => new Vue({
 			el: el,
-			mixins: [uniqueIdsMixin, trackedStagesMixin],
+			mixins: [uniqueIdsMixin, trackedStagesMixin, preloadPDFMixin],
 			data() {
 				return {
 					trackAs: 'Abmeldung form',
@@ -411,7 +410,8 @@
 						(navigator.languages || []).map(l => countries.all[l.substring(3)]).concat(['Germany']).filter(Boolean)
 					),
 					stageIndex: 0,
-					pdfBytes: null,
+					downloadInProgress: false,
+					pdfUrl: '/documents/abmeldung-original.pdf',
 				};
 			},
 			computed: {
@@ -508,15 +508,8 @@
 				mergeFields(fields){
 					return fields.filter(Boolean).join(', ')
 				},
-				async preloadPDF(){
-					// Load PDFLib and the PDF document in advance while the user fills the form
-					pdf.loadPDFLib();
-					abmeldungFormDownloadPromise = fetch('/documents/abmeldung-original.pdf');
-
-					const [_, pdfResponse] = await Promise.all([pdfLibScriptPromise, abmeldungFormDownloadPromise]);
-					this.pdfBytes = new Uint8Array(await pdfResponse.arrayBuffer());
-				},
 				async generatePDF(person1, person2, person3){
+					this.downloadInProgress = true;
 					const textFields = {
 						'Tag des Auszugs': this.formattedDate(this.moveOutDate, 'de-DE'),
 						'Postleitzahl Gemeinde Ortsteil': this.mergeFields([this.oldPostCode, 'Berlin']),
@@ -564,8 +557,22 @@
 					}
 
 					const pdfDoc = await PDFLib.PDFDocument.load(this.pdfBytes);
+
+					// TODO: Broken
 					await this.addSignature(pdfDoc, this.signatureBlob);
-					return await pdf.fillAndSavePDF(pdfDoc, textFields, checkboxFields, 'abmeldung-form-filled.pdf', this.trackAs);
+					await pdf.fillAndSavePDF(this.pdfUrl, textFields, checkboxFields, 'abmeldung-form-filled.pdf', this.trackAs);
+					this.downloadInProgress = false;
+				},
+				async addSignature(pdfDoc, signatureBlob) {
+					const arrayBuffer = await signatureBlob.arrayBuffer();
+					const pngImage = await pdfDoc.embedPng(arrayBuffer);
+					const page = pdfDoc.getPage(0)
+					await page.drawImage(pngImage, {
+						x: 315,
+						y: 10,
+						width: 260,
+						height: 77,
+					});
 				},
 				async addSignature(pdfDoc, signatureBlob) {
 					const arrayBuffer = await signatureBlob.arrayBuffer();
@@ -581,9 +588,6 @@
 			},
 			watch: {
 				async stageIndex(newStageIndex){
-					if(newStageIndex > 0 && pdfLibScriptPromise === null){
-						await this.preloadPDF();
-					}
 					Vue.nextTick(() => {
 						const inputToFocus = {
 							start: () => this.$refs.startButton,

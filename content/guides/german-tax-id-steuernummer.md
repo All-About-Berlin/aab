@@ -47,7 +47,7 @@ There is no way to get your tax ID faster. You can't go to the *[[Finanzamt]]* j
 
 **If you lost your tax ID**, there are 2 ways to find it:
 
-- Go to the [nearest Finanzamt](https://service.berlin.de/standorte/finanzaemter/) with your passport, and ask for your tax ID.[^2] You don't need an appointment.
+- Go to your [local Finanzamt](https://service.berlin.de/standorte/finanzaemter/) with your passport, and ask for your tax ID.[^2] You don't need an appointment.
 - Fill [this form](https://www.bzst.de/SiteGlobals/Kontaktformulare/DE/Steuerliche_IDNr/Mitteilung_IdNr/mitteilung_IdNr_node.html), and the *[[Finanzamt]]* will send you a letter with your tax ID. It around 4 weeks, sometimes longer. They will send it to the address you [registered](/glossary/Anmeldung), not anywhere else.
 
 ## The tax number (Steuernummer)

@@ -174,7 +174,7 @@ Use the **[VAT helper](https://europa.eu/youreurope/business/taxation/vat/cross-
         - **Broadcasting, telecommunication and electronically-supplied services**  
             You charge the VAT rate in the customer's country.[^28] This includes most sales of digital services: software, films, web hosting, courses...[^32]
 
-If your customer is in another EU country, your invoice must contain [specific information](https://taxation-customs.ec.europa.eu/vat-invoicing-rules_en#:~:text=zero-rated%E2%80%99%20supplies).-,what%20information%20must%20an%20invoice%20contain%3F,-Full%20VAT%20invoices).
+If your customer is in another EU country, your invoice must contain [specific information](https://taxation-customs.ec.europa.eu/vat-invoicing-rules_en#:~:text=zero-rated%E2%80%99%20supplies).
 
 ### VAT for customers outside the EU
 

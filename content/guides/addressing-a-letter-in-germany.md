@@ -28,9 +28,9 @@ German addresses are written in this order:
 - **Person or business name**  
     German addresses start with the recipient's name. This name must be on the person's mailbox, or your letter won't be delivered.[^7]
     - **Intermediary**  
-        If the recipient's name is not on their mailbox, add "bei" or "c/o" to the address. The postal worker will give your letter to this person or company. - [More information](#if-the-name-is-not-on-the-mailbox)
+        If the recipient's name is not on their mailbox, [add "bei", "c/o" or "z.H." to the address](#if-the-name-is-not-on-the-mailbox). This is also how you send a letter to a person's office.
     - **Privacy details**  
-        Add *Persönlich* (personal) or *Vertraulich* (confidential) if no one else should read this letter.[^5]
+        Add *Persönlich* (personal) or *Vertraulich* (confidential) if no one else should read this letter.[^5] It means that other people at this address should not open your letter.
 - **Street name and house number**  
     Put the street name before the door number. For example, "Musterstraße 17". A building can have multiple entrances like "17A" and "17B".
 - **Extra information** (*Addresszusatz*)  
@@ -84,7 +84,11 @@ If you want to write to your friend Max Mustermann, this is how you would write 
 
 ### If the name is not on the mailbox
 
-German apartments do not always have door numbers, so **if the person's name is not on the mailbox, they will not receive your letter**. Add "bei [name on mailbox]" or "[c/o](https://en.wiktionary.org/wiki/care_of) [name on mailbox]" to the address.[^2] When you address an employee at a company, you can also use "z. Hd."[^6]
+German apartments rarely have apartment numbers. Everyone in the building has the same address. Each person has a mailbox with their name on it.
+
+If your name is not on your mailbox, you will not receive your mail.
+
+**If there is no mailbox with the person's name on it, your letter will not be delivered**. You must add "bei [name on mailbox]" or "[c/o](https://en.wiktionary.org/wiki/care_of) [name on mailbox]" to the address:[^2]
 
 > The person you are writing to  
 > **bei** The name on the mailbox  
@@ -94,9 +98,9 @@ German apartments do not always have door numbers, so **if the person's name is 
 
 For example, to send a letter to Max at his girlfriend Monika's address, write the address like this:[^0]
 
-![Envelope with German address](/illustrations/envelope-german-address-bei-person.png)
+![Envelope with German c/o address](/illustrations/envelope-german-address-bei-person.png)
 
-If you sent a letter to Max's office, address it like this:
+When you address an employee at a company, you can also use "z. Hd."[^6] For example, to send a letter to Max's office, write the address like this:
 
 > The person you are writing to  
 > **bei** The name of the business  
@@ -104,7 +108,7 @@ If you sent a letter to Max's office, address it like this:
 > [Postal code](/glossary/Postleitzahl) and city  
 > Country
 
-![Envelope with German address](/illustrations/envelope-german-address-bei-business.png)
+![Envelope with German business address](/illustrations/envelope-german-address-bei-business.png)
 
 You can also use "zu Handen" (z. Hd.):
 
@@ -128,7 +132,6 @@ If no one else should read this letter, add *Persönlich* (personal) or *Vertrau
 **[How to mail a letter](/guides/mail-a-letter)** — from your computer, without a printer
 
 [^0]: [Wikipedia](https://de.wikipedia.org/wiki/Zustellanweisung)
-[^1]: [gutefrage.net](https://www.gutefrage.net/frage/adresszusatz-)
 [^2]: [gutefrage.net](https://www.gutefrage.net/frage/was-ist-ein-adresszusatz-)
 [^3]: [gutefrage.net](https://www.gutefrage.net/frage/wie-schreibt-man-im-anschriftenfeld-das-stockwerk-auf)
 [^4]: [gutefrage.net](https://www.gutefrage.net/frage/zimmernummer-wenn-kein-feld-fuer-adresszusatz)

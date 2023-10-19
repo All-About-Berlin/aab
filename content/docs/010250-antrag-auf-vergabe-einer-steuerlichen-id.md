@@ -58,7 +58,7 @@ Include a copy of your passport or *[[Personalausweis]]* with the form.
 
 2 to 4 weeks later, you will get a tax ID by post. It will come in a letter from the *Bundeszentralamt für Steuern* (*BZSt*).
 
-The letter might be sent to your address in another country, even if you also gave an address in Germany.[^1]
+It might be sent to your address in another country, even if you also gave an address in Germany.[^1]
 
 [^0]: [Screenshot](/images/tax-id-form-instructions.png), [Screenshot](/images/anmeldung-taxid-info-2022-12-22.png)
-[^1]: According to a reader, March 2023
+[^1]: Multiple readers (March to October 2023)
