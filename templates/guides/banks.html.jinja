@@ -1,6 +1,6 @@
 {% extends "guides/entry.html.jinja" %}
 {% set entry = entries['guides/first-bank-account-in-germany.md'] %} 
-	
+
 {% block main %}
 	{% set id = 'todo' %}
 	<main aria-label="Main page">
@@ -12,11 +12,7 @@
 			{% raw %}
 				<div class="bank-comparator">
 					<h2>Bank picker</h2>
-					<a class="actions" href="#" @click.prevent="showFilters = !showFilters">
-						<i class="icon filter"></i>
-						{{ showFilters ? 'Hide filters' : 'Filter banks' }}
-					</a>
-					<div class="filters" v-show="showFilters">
+					<div class="filters">
 						<div class="form-group">
 							<span class="label">What do you need?</span>
 							<div class="input-group vertical">
@@ -26,18 +22,24 @@
 								<label class="checkbox">
 									<input type="checkbox"> <span>Free ATM withdrawals<br><small>No fees when you withdraw cash</small></span>
 								</label>
-								<label class="checkbox">
-									<input type="checkbox"> <span>Free Visa or MasterCard</span>
-								</label>
-								<label class="checkbox">
-									<input type="checkbox"> <span><glossary>Girocard</glossary> / EC Karte<br><small>Popular payment method in Germany</small></span>
-								</label>
-								<label class="checkbox">
-									<input type="checkbox"> <span>Apple Pay or Google Pay<br><small>Pay with your phone or smart watch</small></span>
-								</label>
-								<label class="checkbox">
-									<input type="checkbox"> <span>A bank with physical branches<br><small>Go to the bank in person</small></span>
-								</label>
+								<a href="#" v-if="!showFilters" @click.prevent="showFilters = true">
+									<i class="icon filter"></i>
+									Show more filters
+								</a>
+								<template v-if="showFilters">
+									<label class="checkbox">
+										<input type="checkbox"> <span>Free Visa or MasterCard</span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox"> <span><glossary>Girocard</glossary> / EC Karte<br><small>Popular payment method in Germany</small></span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox"> <span>Apple Pay or Google Pay<br><small>Pay with your phone or smart watch</small></span>
+									</label>
+									<label class="checkbox">
+										<input type="checkbox"> <span>A bank with physical branches<br><small>Go to the bank in person</small></span>
+									</label>
+								</template>
 							</div>
 						</div>
 						<div class="form-group">
@@ -85,8 +87,9 @@
 								<a :href="account.url" target="_blank">{{ account.bankName }} {{ account.name }}</a>
 							</h3>
 							<div class="actions">
-								<a @click="setScore(account, 1)">{% endraw %}{% include '_css/icons/star.svg' %}{% raw %} Save</a>
-								<a @click="setScore(account, -1)">{{ account.score < 0 ? 'Unhide' : 'Hide' }}</a>
+								<a v-if="!account.hidden && !account.saved" @click="toggleStatus(account, 'saved')">{% endraw %}{% include '_css/icons/star.svg' %}{% raw %} Save</a>
+								<a v-if="!account.hidden && account.saved" @click="toggleStatus(account, 'saved')">{% endraw %}{% include '_css/icons/star-filled.svg' %}{% raw %} Saved</a>
+								<a v-if="!account.saved" @click="toggleStatus(account, 'hidden')">{{ account.hidden ? 'Unhide' : 'Hide' }}</a>
 							</div>
 							<div class="costs">
 								<details>
@@ -284,142 +287,147 @@
 {% include '/js/constants.js' %}
 {% include '/js/vue.js' %}
 {% js %}
-  const languageMap = {
-    en: 'English',
-    de: 'German',
-    fr: 'French',
-    es: 'Spanish',
-    it: 'Italian',
-  };
+const languageMap = {
+	en: 'English',
+	de: 'German',
+	fr: 'French',
+	es: 'Spanish',
+	it: 'Italian',
+};
 
-  document.querySelectorAll('.bank-comparator').forEach(
-    el => new Vue({
-      el: el,
-      data: function() {
-        return {
-          banks: {
-            'Commerzbank': {
-              languages: ['de', 'en'],
-              logo: '/staticimages/banks/commerzbank.png',
-              url: '/out/commerzbank',
-              accountTypes: {
-                'Basic': {
-                  atmFee: '?',
-                  atmFeeExplanation: 'Free withdrawals on Cash Group ATMs.',
-                  creditCardFee: '3.90 €',
-                  creditCardFeeExplanation: 'Free virtual card for online shopping. 3.90 € for a plastic card.',
-                  monthlyFee: '0 €',
-                  paymentMethods: ['Girocard', 'Apple Pay', 'Google Pay'],
-                  url: '/out/commerzbank',
-                },
-                'Klassik': {
-                  atmFee: '?',
-                  atmFeeExplanation: 'Free withdrawals on Cash Group ATMs.',
-                  creditCardFee: '0 €',
-                  monthlyFee: '6.90 €',
-                  paymentMethods: ['Girocard', 'MasterCard', 'Apple Pay', 'Google Pay'],
-                  url: '/out/commerzbank',
-                },
-              }
-            },
-            'N26': {
-              logo: '/staticimages/banks/n26.png',
-              languages: ['de', 'en', 'fr', 'es', 'it'],
-              logo: '/staticimages/banks/n26.png',
-              url: '/out/n26-plans',
-              accountTypes: {
-                'Standard': {
-                  atmFee: '0 €',
-                  atmFeeExplanation: '3 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
-                  creditCardFee: 'one time 10 €',
-                  creditCardFeeExplanation: 'Free virtual card for online shopping. 10 € to get a plastic card.',
-                  monthlyFee: '0 €',
-                  paymentMethods: ['MasterCard', 'Apple Pay', 'Google Pay'],
-                  url: '/out/n26',
-                },
-                'Smart': {
-                  atmFee: '0 €',
-                  atmFeeExplanation: '5 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
-                  creditCardFee: '0 €',
-                  monthlyFee: '4.90 €',
-                  paymentMethods: ['MasterCard', 'Apple Pay', 'Google Pay'],
-                  url: '/out/n26',
-                },
-                'You': {
-                  atmFee: '0 €',
-                  atmFeeExplanation: '5 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
-                  creditCardFee: '0 €',
-                  monthlyFee: '9.90 €',
-                  paymentMethods: ['MasterCard', 'Apple Pay', 'Google Pay'],
-                  url: '/out/n26',
-                },
-                'Metal': {
-                  atmFee: '0 €',
-                  atmFeeExplanation: '8 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
-                  creditCardFee: '0 €',
-                  monthlyFee: '16.90 €',
-                  paymentMethods: ['MasterCard', 'Apple Pay', 'Google Pay'],
-                  url: '/out/n26',
-                },
-              },
-            },
-          },
-          showFilters: false,
-          showFilteredAccounts: false,
-          isStudent: false,
-          immigrationStatus: 'other',
-          sortedCountryList: Object.entries(countries).sort((a, b) => a[1].localeCompare(b[1])),
-        };
-      },
-      computed: {
-        accounts() {
-          console.log('resort')
-          return Object.entries(this.banks).reduce((allAccounts, [bankName, bank]) => {
-            const accountTypes = Object.entries(bank.accountTypes).map(([accountName, account]) => {
-              return {
-                key: bankName + accountName,
-                name: accountName,
-                bankName: bankName,
-                ...bank,
-                ...account,
-                score: account.score || 0,
-              }
-            })
-            console.log(...accountTypes)
-            allAccounts.push(...accountTypes)
-            return allAccounts;
-          }, [])
-          .sort((a, b) => {
-            return b.score - a.score;
-          });
-        },
-        filteredAccounts(){
-          return this.accounts.filter(a => a.score < 0)
-        },
-      },
-      methods: {
-        relevantLanguagesList(availableLanguages) {
-          const relevantLanguages = navigator.languages
-            .map(userLocale => userLocale.split('-')[0])
-            .reduce((selectedLanguages, userLanguage) => {
-              if(availableLanguages.includes(userLanguage) && !selectedLanguages.includes(userLanguage)) {
-                selectedLanguages.push(userLanguage);
-              }
-              return selectedLanguages;
-            }, []);
+document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
+		el: el,
+		data: function() {
+			return {
+				banks: {
+				'Commerzbank': {
+					languages: ['de', 'en'],
+					logo: '/staticimages/banks/commerzbank.png',
+					url: '/out/commerzbank',
+					accountTypes: {
+					'Basic': {
+						atmFee: '?',
+						atmFeeExplanation: 'Free withdrawals on Cash Group ATMs.',
+						creditCardFee: '3.90 €',
+						creditCardFeeExplanation: 'Free virtual card for online shopping. 3.90 € for a plastic card.',
+						monthlyFee: '0 €',
+						paymentMethods: ['Girocard', 'Apple Pay', 'Google Pay'],
+						url: '/out/commerzbank',
+					},
+					'Klassik': {
+						atmFee: '?',
+						atmFeeExplanation: 'Free withdrawals on Cash Group ATMs.',
+						creditCardFee: '0 €',
+						monthlyFee: '6.90 €',
+						paymentMethods: ['Girocard', 'MasterCard', 'Apple Pay', 'Google Pay'],
+						url: '/out/commerzbank',
+					},
+					}
+				},
+				'N26': {
+					logo: '/staticimages/banks/n26.png',
+					languages: ['de', 'en', 'fr', 'es', 'it'],
+					logo: '/staticimages/banks/n26.png',
+					url: '/out/n26-plans',
+					accountTypes: {
+					'Standard': {
+						atmFee: '0 €',
+						atmFeeExplanation: '3 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
+						creditCardFee: 'one time 10 €',
+						creditCardFeeExplanation: 'Free virtual card for online shopping. 10 € to get a plastic card.',
+						monthlyFee: '0 €',
+						paymentMethods: ['MasterCard', 'Apple Pay', 'Google Pay'],
+						url: '/out/n26',
+					},
+					'Smart': {
+						atmFee: '0 €',
+						atmFeeExplanation: '5 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
+						creditCardFee: '0 €',
+						monthlyFee: '4.90 €',
+						paymentMethods: ['MasterCard', 'Apple Pay', 'Google Pay'],
+						url: '/out/n26',
+					},
+					'You': {
+						atmFee: '0 €',
+						atmFeeExplanation: '5 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
+						creditCardFee: '0 €',
+						monthlyFee: '9.90 €',
+						paymentMethods: ['MasterCard', 'Apple Pay', 'Google Pay'],
+						url: '/out/n26',
+					},
+					'Metal': {
+						atmFee: '0 €',
+						atmFeeExplanation: '8 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
+						creditCardFee: '0 €',
+						monthlyFee: '16.90 €',
+						paymentMethods: ['MasterCard', 'Apple Pay', 'Google Pay'],
+						url: '/out/n26',
+					},
+					},
+				},
+				},
+				showFilters: false,
+				showFilteredAccounts: false,
+				isStudent: false,
+				immigrationStatus: 'other',
+				sortedCountryList: countries.getSortedList(),
+			};
+		},
+		computed: {
+			accounts() {
+				return Object.entries(this.banks).reduce((allAccounts, [bankName, bank]) => {
+					const accountTypes = Object.entries(bank.accountTypes).map(([accountName, account]) => {
+						let score = 0;
+						if(account.hidden){
+							score -= 100;
+						}
+						else if(account.saved){
+							score += 100;
+						}
 
-          const relevantLanguagesString = relevantLanguages.map(l => languageMap[l]).join(', ');
-          const extraLanguageCount = availableLanguages.length - relevantLanguages.length;
-          return relevantLanguagesString + (extraLanguageCount ? ` and ${extraLanguageCount} more` : '');
-        },
-        setScore(account, score){
-          Object.entries(this.banks).forEach(([bankName, bank]) => {
-            if(bank.accountTypes[account.name]) {
-              Vue.set(bank.accountTypes[account.name], 'score', score);
-            }
-          })
-        }
-      }
-    })
-  );
+						return {
+							key: bankName + accountName,
+							name: accountName,
+							bankName: bankName,
+							...bank,
+							...account,
+							score: score,
+						}
+					});
+					console.log(...accountTypes)
+					allAccounts.push(...accountTypes)
+					return allAccounts;
+				}, [])
+				.sort((a, b) => {
+					return b.score - a.score;
+				});
+			},
+			filteredAccounts(){
+				return this.accounts.filter(a => a.score < 0)
+			},
+		},
+		methods: {
+		relevantLanguagesList(availableLanguages) {
+			const relevantLanguages = navigator.languages
+				.map(userLocale => userLocale.split('-')[0])
+				.reduce((selectedLanguages, userLanguage) => {
+					if(availableLanguages.includes(userLanguage) && !selectedLanguages.includes(userLanguage)) {
+					selectedLanguages.push(userLanguage);
+					}
+					return selectedLanguages;
+				}, []);
+
+			const relevantLanguagesString = relevantLanguages.map(l => languageMap[l]).join(', ');
+			const extraLanguageCount = availableLanguages.length - relevantLanguages.length;
+			return relevantLanguagesString + (extraLanguageCount ? ` and ${extraLanguageCount} more` : '');
+		},
+		toggleStatus(account, field){
+			Object.entries(this.banks).forEach(([bankName, bank]) => {
+				if(bank.accountTypes[account.name]) {
+					Vue.set(bank.accountTypes[account.name], field, !account[field]);
+				}
+			})
+		}
+	}
+}));
 {% endjs %}
