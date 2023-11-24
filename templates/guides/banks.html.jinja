@@ -95,20 +95,21 @@
 								<details>
 									<summary class="price">
 										Monthly fee
-										<output v-html="account.monthlyFee"></output>
+										<output><eur :amount="account.monthlyFee"></eur></output>
 									</summary>
 								</details>
 								<details>
 									<summary class="price">
 										Payment card fee
-										<output v-html="account.creditCardFee"></output>
+										<output v-if="account.creditCardOneTimeFee">one time {{ formatCurrency(account.creditCardOneTimeFee) }}</output>
+										<output v-if="!account.creditCardOneTimeFee"><eur :amount="account.creditCardMonthlyFee"></eur></output>
 									</summary>
 									<div v-html="account.creditCardFeeExplanation"></div>
 								</details>
 								<details>
 									<summary class="price">
 										Cash withdrawal fee
-										<output v-html="account.atmFee"></output>
+										<output><eur :amount="account.atmFee"></eur></output>
 									</summary>
 									<div v-html="account.atmFeeExplanation"></div>
 								</details>
@@ -135,157 +136,11 @@
 	{% include "_js/sidebar.js" %}
 {% endblock %}
 
-{% set body_class = "with-sidebar" %}
-{% block precontent %}
-    <div class="sidebar">
-        {% with entry=entry, showScrollToTop=true, showSupportLink=true, showRelatedEntriesLink=related_collections|length %}
-            {% include 'blocks/_tableOfContents.html' %}
-        {% endwith %}
-    </div>
-    {% include "js/sidebar.js" %}
-{% endblock%}
-
-{% block content %}
-    {% set id = 'TODO' %}
-    <h1>{{ entry.title }}</h1>
-    {% include "blocks/_postMeta.html" %}
-    <div class="article-body">
-    {% raw %}
-        <div class="bank-comparator">
-            <h2>Bank picker <a class="actions" href="#" @click.prevent="showFilters = !showFilters">{{ showFilters ? 'Hide filters' : 'Show filters' }}</a></h2>
-            <div class="form" v-show="showFilters">
-                <div class="form-group">
-                    <span class="label">What do you need?</span>
-                    <div class="checkbox-group">
-                        <label class="checkbox">
-                            <input type="checkbox"> <span>Free account<br><small>No monthly fees</small></span>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox"> <span>Free ATM withdrawals<br><small>No fees when you withdraw cash</small></span>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox"> <span>Free Visa or MasterCard</span>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox"> <span>Girocard / EC Karte<br><small>Popular payment method in Germany</small></span>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox"> <span>Apple Pay or Google Pay<br><small>Pay with your phone or smart watch</small></span>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox"> <span>A bank with physical branches<br><small>Go to the bank in person</small></span>
-                        </label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <span class="label">What's your status?</span>
-                    <div class="checkbox-group">
-                        <label class="checkbox">
-                            <input v-model="immigrationStatus" value="citizen" type="radio" name="immigration-status"> I'm a EU citizen
-                        </label>
-                        <label class="checkbox">
-                            <input v-model="immigrationStatus" value="permanent-resident" type="radio" name="immigration-status"> I'm a permanent resident
-                        </label>
-                        <label class="checkbox">
-                            <input v-model="immigrationStatus" value="resident" type="radio" name="immigration-status"> I have a residence permit
-                        </label>
-                        <label class="checkbox">
-                            <input v-model="immigrationStatus" value="other" type="radio" name="immigration-status"> Other
-                        </label>
-                    </div>
-                </div>
-                <div class="form-group" v-if="immigrationStatus !== 'citizen'">
-                    <label for="nationality-{% endraw %}{{ id }}{% raw %}">Nationality</label>
-                    <div class="input-group">
-                        <select id="nationality-{% endraw %}{{ id }}{% raw %}">
-                            <option value="" disabled selected hidden>Choose a country</option>
-                            <option v-for="country in sortedCountryList" :key="country[0]" :value="country[0]">{{ country[1] }}</option>
-                        </select>
-                        <span class="input-instructions">Some banks can't verify foreign passports</span>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <span class="label">Occupation</span>
-                    <div class="checkbox-group">
-                        <label class="checkbox">
-                            <input v-model="isStudent" type="checkbox" name="occupation">
-                            <span>I'm a student<br><small>Some banks have free accounts for students</small></span>
-                        </label>
-                    </div>
-                </div>
-            </div>
-
-            <ul class="bank-options options">
-                <li v-for="account in accounts" :key="account.key" v-if="account.score >= 0 || showFilteredAccounts">
-                    <img :src="account.logo">
-                    <h3>
-                        <a :href="account.url" target="_blank">{{ account.bankName }} {{ account.name }}</a>
-
-                        <div class="actions">
-                            <a @click="setScore(account, 1)">{% endraw %}{% include '/css/icons/star.svg' %}{% raw %} Save</a>
-                            <a @click="setScore(account, -1)">{{ account.score < 0 ? 'Unhide' : 'Hide' }}</a>
-                        </div>
-                    </h3>
-                    <div class="costs">
-                        <div class="collapsible collapsed">
-                            <div class="header price">
-                                Monthly fee
-                                <output v-html="account.monthlyFee"></output>
-                            </div>
-                            <div class="body">
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="collapsible collapsed">
-                            <div class="header price">
-                                Payment card fee
-                                <output v-html="account.creditCardFee"></output>
-                            </div>
-                            <div class="body">
-                                <p v-html="account.creditCardFeeExplanation"></p>
-                            </div>
-                        </div>
-                        <div class="collapsible collapsed">
-                            <div class="header price">
-                                Cash withdrawal fee
-                                <output v-html="account.atmFee"></output>
-                            </div>
-                            <div class="body">
-                                <p v-html="account.atmFeeExplanation"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="features">
-                        <li class="pro" v-html="relevantLanguagesList(account.languages)"></li>
-                        <li class="pro" v-html="account.paymentMethods.join(', ')"></li>
-                    </ul>
-                </li>
-            </ul>
-
-            <a v-if="filteredAccounts.length > 0" @click.prevent="showFilteredAccounts = !showFilteredAccounts">{{ showFilteredAccounts ? 'Hide' : 'Show' }} {{ filteredAccounts.length }} hidden banks</a>
-        </div>
-    {% endraw %}
-    </div>
-
-    <style type="text/css">
-        .bank-comparator .form{border-top:var(--border-page);border-bottom:var(--border-page)}
-        .bank-options{grid-template-columns:1fr;}
-            .bank-options > *{margin:0;display:grid;grid-column-gap:var(--spacing-m);grid-template-areas:"logo title title" "actions costs features";grid-template-columns:var(--size-image-logo) 1fr 1fr;text-align:left;align-items:flex-start;}
-                .bank-comparator .actions{float:right}
-                  .bank-options .actions a{line-height:var(--line-height-compact);font-size:var(--font-size-s)}
-                      .bank-options .actions svg{height:1.5em;width:auto;vertical-align:middle;display:inline}
-                  .bank-options img{border-radius:50%;border:none;grid-area:logo;width:100%;align-self:flex-start}
-                  .bank-options h3{margin:0;grid-area:title;align-self:center;}
-                  .bank-options .features{grid-area:features}
-                      .bank-options li.pro{}
-                      .bank-options li.con{color:red}
-                          .bank-options > * li small{display:block}
-                  .bank-options .costs{grid-area:costs}
-    </style>
-{% endblock %}
-{% include '/js/currency.js' %}
-{% include '/js/constants.js' %}
-{% include '/js/vue.js' %}
+{% include '_js/countries.js' %}
+{% include '_js/currency.js' %}
+{% include '_js/vue.js' %}
+{% include '_js/vue/eur.js' %}
+{% include '_js/vue/glossary.js' %}
 {% js %}
 const languageMap = {
 	en: 'English',
@@ -305,23 +160,23 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 					logo: '/staticimages/banks/commerzbank.png',
 					url: '/out/commerzbank',
 					accountTypes: {
-					'Basic': {
-						atmFee: '?',
-						atmFeeExplanation: 'Free withdrawals on Cash Group ATMs.',
-						creditCardFee: '3.90 €',
-						creditCardFeeExplanation: 'Free virtual card for online shopping. 3.90 € for a plastic card.',
-						monthlyFee: '0 €',
-						paymentMethods: ['Girocard', 'Apple Pay', 'Google Pay'],
-						url: '/out/commerzbank',
-					},
-					'Klassik': {
-						atmFee: '?',
-						atmFeeExplanation: 'Free withdrawals on Cash Group ATMs.',
-						creditCardFee: '0 €',
-						monthlyFee: '6.90 €',
-						paymentMethods: ['Girocard', 'MasterCard', 'Apple Pay', 'Google Pay'],
-						url: '/out/commerzbank',
-					},
+						'Basic': {
+							atmFee: 99,
+							atmFeeExplanation: 'Free withdrawals on Cash Group ATMs.',
+							creditCardMonthlyFee: 3.9,
+							creditCardFeeExplanation: 'Free virtual card for online shopping. 3.90 € for a plastic card.',
+							monthlyFee: 0,
+							paymentMethods: ['Girocard', 'Apple Pay', 'Google Pay'],
+							url: '/out/commerzbank',
+						},
+						'Klassik': {
+							atmFee: 99,
+							atmFeeExplanation: 'Free withdrawals on Cash Group ATMs.',
+							creditCardMonthlyFee: 0,
+							monthlyFee: 6.9,
+							paymentMethods: ['Girocard', 'MasterCard', 'Apple Pay', 'Google Pay'],
+							url: '/out/commerzbank',
+						},
 					}
 				},
 				'N26': {
@@ -330,39 +185,40 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 					logo: '/staticimages/banks/n26.png',
 					url: '/out/n26-plans',
 					accountTypes: {
-					'Standard': {
-						atmFee: '0 €',
-						atmFeeExplanation: '3 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
-						creditCardFee: 'one time 10 €',
-						creditCardFeeExplanation: 'Free virtual card for online shopping. 10 € to get a plastic card.',
-						monthlyFee: '0 €',
-						paymentMethods: ['MasterCard', 'Apple Pay', 'Google Pay'],
-						url: '/out/n26',
-					},
-					'Smart': {
-						atmFee: '0 €',
-						atmFeeExplanation: '5 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
-						creditCardFee: '0 €',
-						monthlyFee: '4.90 €',
-						paymentMethods: ['MasterCard', 'Apple Pay', 'Google Pay'],
-						url: '/out/n26',
-					},
-					'You': {
-						atmFee: '0 €',
-						atmFeeExplanation: '5 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
-						creditCardFee: '0 €',
-						monthlyFee: '9.90 €',
-						paymentMethods: ['MasterCard', 'Apple Pay', 'Google Pay'],
-						url: '/out/n26',
-					},
-					'Metal': {
-						atmFee: '0 €',
-						atmFeeExplanation: '8 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
-						creditCardFee: '0 €',
-						monthlyFee: '16.90 €',
-						paymentMethods: ['MasterCard', 'Apple Pay', 'Google Pay'],
-						url: '/out/n26',
-					},
+						'Standard': {
+							atmFee: 0,
+							atmFeeExplanation: '3 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
+							creditCardOneTimeFee: 10,
+							creditCardMonthlyFee: 0,
+							creditCardFeeExplanation: 'Free virtual card for online shopping. 10 € to get a plastic card.',
+							monthlyFee: 0,
+							paymentMethods: ['MasterCard', 'Apple Pay', 'Google Pay'],
+							url: '/out/n26',
+						},
+						'Smart': {
+							atmFee: 0,
+							atmFeeExplanation: '5 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
+							creditCardMonthlyFee: 0,
+							monthlyFee: 4.9,
+							paymentMethods: ['MasterCard', 'Apple Pay', 'Google Pay'],
+							url: '/out/n26',
+						},
+						'You': {
+							atmFee: 0,
+							atmFeeExplanation: '5 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
+							creditCardMonthlyFee: 0,
+							monthlyFee: 9.9,
+							paymentMethods: ['MasterCard', 'Apple Pay', 'Google Pay'],
+							url: '/out/n26',
+						},
+						'Metal': {
+							atmFee: 0,
+							atmFeeExplanation: '8 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
+							creditCardMonthlyFee: 0,
+							monthlyFee: 16.9,
+							paymentMethods: ['MasterCard', 'Apple Pay', 'Google Pay'],
+							url: '/out/n26',
+						},
 					},
 				},
 				},
