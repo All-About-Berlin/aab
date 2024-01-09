@@ -210,6 +210,7 @@ $width-main-column: 860px;
 	--w-img-bio-s: 75px;
 	--w-img-bio-l: 125px;
 	--w-img-logo: 100px;
+	--w-bank-logo: 32px;
 	--h-img-logo: 75px;
 	--w-icon-s: var(--xl-relative);
 	--w-label-column: 10rem;
@@ -2744,19 +2745,35 @@ details{
 			@include box-m;
 			margin: 0;
 			display: grid;
-			grid-column-gap: var(--xl-relative);
-			grid-template-areas: "logo title actions" "logo costs features";
-			grid-template-columns: var(--w-bank-logo) 1fr 1fr;
+			grid-gap: var(--s) var(--xl-relative);
+			grid-template-areas: "logo title actions" "logo features costs";
+			grid-template-columns: calc(var(--w-bank-logo) - var(--s)) 1fr 1fr;
 			text-align: left;
 			align-items: flex-start;
+
+			@include only-phone{
+				grid-template-columns: 1fr;
+				grid-template-areas: "title" "actions" "features" "costs";
+
+				.features{
+					margin-top: var(--s);
+					padding: var(--m) 0;
+					border-top: var(--b-box);
+					border-bottom: var(--b-box);
+				}
+			}
 		}
 
 		img{
 			border-radius:50%;
 			border:none;
 			grid-area:logo;
-			width:100%;
-			align-self:flex-start
+			width: var(--w-bank-logo);
+			align-self:flex-start;
+
+			@include only-phone{
+				display: none;
+			}
 		}
 
 		h3{
@@ -2784,10 +2801,13 @@ details{
 		}
 
 		.actions{
-			justify-self: end;
+			@include not-phone{
+				justify-self: end;
+			}
 			grid-area: actions;
 			display: flex;
 			gap: var(--m);
+			font-size: var(--f-s);
 
 			svg{
 				height: 1.5em;
