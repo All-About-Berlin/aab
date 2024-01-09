@@ -101,7 +101,7 @@
 								<ul class="accounts">
 									<li v-for="(account, accountName) in bank.accountTypes" :key="bankName + accountName">
 										<h4>
-											<a :href="account.url">{{ accountName }} account</a>
+											<a :href="account.url" target="_blank">{{ accountName }} account</a>
 										</h4>
 										<p v-if="account.description" v-html="account.description"></p>
 										<div class="costs">

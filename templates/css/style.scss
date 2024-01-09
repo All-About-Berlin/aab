@@ -2792,7 +2792,6 @@ details{
 		.features{
 			margin: var(--s) 0 0;
 			grid-area: features;
-			font-size: var(--f-s);
 		}
 
 		.accounts{
@@ -2805,7 +2804,8 @@ details{
 				border-top: var(--b-box);
 
 				> p {
-					margin-top: var(--s-relative)
+					margin-top: var(--s-relative);
+					font-size: var(--f-s);
 				}
 				.costs{
 					font-size: var(--f-s);
