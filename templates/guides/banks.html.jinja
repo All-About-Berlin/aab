@@ -4,132 +4,140 @@
 {% block main %}
 	{% set id = 'todo' %}
 	<main aria-label="Main page">
-		{% block precontent %}{% endblock %}
+
 		<article class="section">
 			<h1>{{ entry.title }}</h1>
 			{% include "_blocks/postMeta.html" %}
-			<div class="">
-			{% raw %}
-				<div class="bank-comparator">
-					<h2>Bank picker</h2>
-					<div class="filters">
-						<div class="form-group">
-							<span class="label">What do you need?</span>
-							<div class="input-group vertical">
-								<label class="checkbox">
-									<input type="checkbox"> <span>Free account<br><small>No monthly fees</small></span>
-								</label>
-								<label class="checkbox">
-									<input type="checkbox"> <span>Free ATM withdrawals<br><small>No fees when you withdraw cash</small></span>
-								</label>
-								<a href="#" v-if="!showFilters" @click.prevent="showFilters = true">
-									<i class="icon filter"></i>
-									Show more filters
-								</a>
-								<template v-if="showFilters">
+			{% with entry=entry, showRelatedEntriesLink=related_collections|length %}
+				{% raw %}
+				<div class="article-body">
+					<div class="bank-comparator">
+						<h2>Bank picker</h2>
+						<div class="filters">
+							<div class="form-group">
+								<span class="label">What do you need?</span>
+								<div class="input-group vertical">
 									<label class="checkbox">
-										<input type="checkbox"> <span>Free Visa or MasterCard</span>
+										<input type="checkbox"> <span>Free account<br><small>No monthly fees</small></span>
 									</label>
 									<label class="checkbox">
-										<input type="checkbox"> <span><glossary>Girocard</glossary> / EC Karte<br><small>Popular payment method in Germany</small></span>
+										<input type="checkbox"> <span>Free ATM withdrawals<br><small>No fees when you withdraw cash</small></span>
+									</label>
+									<a href="#" v-if="!showFilters" @click.prevent="showFilters = true">
+										<i class="icon filter"></i>
+										Show more filters
+									</a>
+									<template v-if="showFilters">
+										<label class="checkbox">
+											<input type="checkbox"> <span>Free Visa or MasterCard</span>
+										</label>
+										<label class="checkbox">
+											<input type="checkbox"> <span><glossary>Girocard</glossary> / EC Karte<br><small>Popular payment method in Germany</small></span>
+										</label>
+										<label class="checkbox">
+											<input type="checkbox"> <span>Apple Pay or Google Pay<br><small>Pay with your phone or smart watch</small></span>
+										</label>
+										<label class="checkbox">
+											<input type="checkbox"> <span>A bank with physical branches<br><small>Go to the bank in person</small></span>
+										</label>
+									</template>
+								</div>
+							</div>
+							<div class="form-group">
+								<span class="label">What's your status?</span>
+								<div class="input-group vertical">
+									<label class="checkbox">
+										<input v-model="immigrationStatus" value="citizen" type="radio" name="immigration-status"> I'm a EU citizen
 									</label>
 									<label class="checkbox">
-										<input type="checkbox"> <span>Apple Pay or Google Pay<br><small>Pay with your phone or smart watch</small></span>
+										<input v-model="immigrationStatus" value="permanent-resident" type="radio" name="immigration-status"> I'm a permanent resident
 									</label>
 									<label class="checkbox">
-										<input type="checkbox"> <span>A bank with physical branches<br><small>Go to the bank in person</small></span>
+										<input v-model="immigrationStatus" value="resident" type="radio" name="immigration-status"> I have a residence permit
 									</label>
-								</template>
+									<label class="checkbox">
+										<input v-model="immigrationStatus" value="other" type="radio" name="immigration-status"> Other
+									</label>
+								</div>
+							</div>
+							<div class="form-group" v-if="immigrationStatus !== 'citizen'">
+								<label for="nationality-{% endraw %}{{ id }}{% raw %}">Nationality</label>
+								<div class="input-group">
+									<select id="nationality-{% endraw %}{{ id }}{% raw %}">
+										<option value="" disabled selected hidden>Choose a country</option>
+										<option value="">Unknown</option>
+										<option disabled>──────────</option>
+										<option v-for="country in sortedCountryList" :key="country[0]" :value="country[0]">{{ country[1] }}</option>
+									</select>
+									<span class="input-instructions">Some banks can't verify foreign passports</span>
+								</div>
+							</div>
+							<div class="form-group">
+								<span class="label">Occupation</span>
+								<div class="checkbox-group">
+									<label class="checkbox">
+										<input v-model="isStudent" type="checkbox" name="occupation">
+										<span>I'm a student<br><small>Some banks have free accounts for students</small></span>
+									</label>
+								</div>
 							</div>
 						</div>
-						<div class="form-group">
-							<span class="label">What's your status?</span>
-							<div class="input-group vertical">
-								<label class="checkbox">
-									<input v-model="immigrationStatus" value="citizen" type="radio" name="immigration-status"> I'm a EU citizen
-								</label>
-								<label class="checkbox">
-									<input v-model="immigrationStatus" value="permanent-resident" type="radio" name="immigration-status"> I'm a permanent resident
-								</label>
-								<label class="checkbox">
-									<input v-model="immigrationStatus" value="resident" type="radio" name="immigration-status"> I have a residence permit
-								</label>
-								<label class="checkbox">
-									<input v-model="immigrationStatus" value="other" type="radio" name="immigration-status"> Other
-								</label>
-							</div>
-						</div>
-						<div class="form-group" v-if="immigrationStatus !== 'citizen'">
-							<label for="nationality-{% endraw %}{{ id }}{% raw %}">Nationality</label>
-							<div class="input-group">
-								<select id="nationality-{% endraw %}{{ id }}{% raw %}">
-									<option value="" disabled selected hidden>Choose a country</option>
-									<option value="">Unknown</option>
-									<option disabled>──────────</option>
-									<option v-for="country in sortedCountryList" :key="country[0]" :value="country[0]">{{ country[1] }}</option>
-								</select>
-								<span class="input-instructions">Some banks can't verify foreign passports</span>
-							</div>
-						</div>
-						<div class="form-group">
-							<span class="label">Occupation</span>
-							<div class="checkbox-group">
-								<label class="checkbox">
-									<input v-model="isStudent" type="checkbox" name="occupation">
-									<span>I'm a student<br><small>Some banks have free accounts for students</small></span>
-								</label>
-							</div>
-						</div>
+
+						<ul class="bank-options">
+							<li class="bank" v-for="(bank, bankName) in banks" v-if="!bank.hidden" :key="bankName">
+								<img :src="bank.logo">
+								<h3>
+									<a :href="bank.url" target="_blank">{{ bankName }}</a>
+								</h3>
+								<div class="actions">
+									<a v-if="!bank.hidden && !bank.saved" @click="bank.hidden = !bank.hidden">{% endraw %}{% include '_css/icons/star.svg' %}{% raw %} Save</a>
+									<a v-if="!bank.hidden && bank.saved" @click="bank.hidden = !bank.hidden">{% endraw %}{% include '_css/icons/star-filled.svg' %}{% raw %} Saved</a>
+									<a v-if="!bank.saved" @click="bank.hidden = !bank.hidden">{{ bank.hidden ? 'Unhide' : 'Hide' }}</a>
+								</div>
+								<ul class="features">
+									<li class="pro" v-html="relevantLanguagesList(bank.languages)"></li>
+									<li class="pro" v-html="relevantPaymentMethods(bank).join(', ')"></li>
+								</ul>
+								<ul class="accounts">
+									<li v-for="(account, accountName) in bank.accountTypes" :key="bankName + accountName">
+										<h4>
+											<a :href="account.url">{{ accountName }} account</a>
+										</h4>
+										<p v-if="account.description" v-html="account.description"></p>
+										<div class="costs">
+											<details>
+												<summary class="price">
+													Monthly fee
+													<output><eur :amount="account.monthlyFee"></eur></output>
+												</summary>
+											</details>
+											<details>
+												<summary class="price">
+													Card fee
+													<output v-if="account.creditCardOneTimeFee">one time {{ formatCurrency(account.creditCardOneTimeFee) }}</output>
+													<output v-if="!account.creditCardOneTimeFee"><eur :amount="account.creditCardMonthlyFee"></eur></output>
+												</summary>
+												<div v-html="account.creditCardFeeExplanation"></div>
+											</details>
+											<details>
+												<summary class="price">
+													Withdrawal fee
+													<output><eur :amount="account.atmFee"></eur></output>
+												</summary>
+												<div v-html="account.atmFeeExplanation"></div>
+											</details>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
-
-					<ul class="bank-options">
-						<li v-for="account in accounts" :key="account.key" v-if="account.score >= 0 || showFilteredAccounts">
-							<img :src="account.logo">
-							<h3>
-								<a :href="account.url" target="_blank">{{ account.bankName }} {{ account.name }}</a>
-							</h3>
-							<div class="actions">
-								<a v-if="!account.hidden && !account.saved" @click="toggleStatus(account, 'saved')">{% endraw %}{% include '_css/icons/star.svg' %}{% raw %} Save</a>
-								<a v-if="!account.hidden && account.saved" @click="toggleStatus(account, 'saved')">{% endraw %}{% include '_css/icons/star-filled.svg' %}{% raw %} Saved</a>
-								<a v-if="!account.saved" @click="toggleStatus(account, 'hidden')">{{ account.hidden ? 'Unhide' : 'Hide' }}</a>
-							</div>
-							<div class="costs">
-								<details>
-									<summary class="price">
-										Monthly fee
-										<output><eur :amount="account.monthlyFee"></eur></output>
-									</summary>
-								</details>
-								<details>
-									<summary class="price">
-										Payment card fee
-										<output v-if="account.creditCardOneTimeFee">one time {{ formatCurrency(account.creditCardOneTimeFee) }}</output>
-										<output v-if="!account.creditCardOneTimeFee"><eur :amount="account.creditCardMonthlyFee"></eur></output>
-									</summary>
-									<div v-html="account.creditCardFeeExplanation"></div>
-								</details>
-								<details>
-									<summary class="price">
-										Cash withdrawal fee
-										<output><eur :amount="account.atmFee"></eur></output>
-									</summary>
-									<div v-html="account.atmFeeExplanation"></div>
-								</details>
-							</div>
-							<ul class="features">
-								<li class="pro" v-html="relevantLanguagesList(account.languages)"></li>
-								<li class="pro" v-html="account.paymentMethods.join(', ')"></li>
-							</ul>
-						</li>
-					</ul>
-
-					<a v-if="filteredAccounts.length > 0" @click.prevent="showFilteredAccounts = !showFilteredAccounts">{{ showFilteredAccounts ? 'Hide' : 'Show' }} {{ filteredAccounts.length }} hidden banks</a>
 				</div>
-			{% endraw %}
-			</div>
+				{% endraw %}
+			{% endwith %}
 		</article>
 	</main>
-	
+
 	<div class="sidebar no-print" aria-hidden="true">
 		{% with entry=entry, showScrollToTop=true, showSupportLink=true, showRelatedEntriesLink=related_collections|length %}
 			{% include '_blocks/tableOfContents.html' %}
@@ -153,16 +161,18 @@ const languageMap = {
 };
 
 document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
-		el: el,
-		data: function() {
-			return {
-				banks: {
+	el: el,
+	data: function() {
+		return {
+			banks: {
 				'Commerzbank': {
+					hidden: false,
 					languages: ['de', 'en'],
 					logo: '/staticimages/banks/commerzbank.png',
 					url: '/out/commerzbank',
 					accountTypes: {
 						'Basic': {
+							description: null,
 							atmFee: 99,
 							atmFeeExplanation: 'Free withdrawals on Cash Group ATMs.',
 							creditCardMonthlyFee: 3.9,
@@ -172,6 +182,7 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 							url: '/out/commerzbank',
 						},
 						'Klassik': {
+							description: null,
 							atmFee: 99,
 							atmFeeExplanation: 'Free withdrawals on Cash Group ATMs.',
 							creditCardMonthlyFee: 0,
@@ -182,12 +193,14 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 					}
 				},
 				'N26': {
+					hidden: false,
 					logo: '/staticimages/banks/n26.png',
 					languages: ['de', 'en', 'fr', 'es', 'it'],
 					logo: '/staticimages/banks/n26.png',
 					url: '/out/n26-plans',
 					accountTypes: {
 						'Standard': {
+							description: null,
 							atmFee: 0,
 							atmFeeExplanation: '3 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
 							creditCardOneTimeFee: 10,
@@ -198,6 +211,7 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 							url: '/out/n26',
 						},
 						'Smart': {
+							description: "Comes with travel insurance and free donuts.",
 							atmFee: 0,
 							atmFeeExplanation: '5 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
 							creditCardMonthlyFee: 0,
@@ -206,6 +220,7 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 							url: '/out/n26',
 						},
 						'You': {
+							description: null,
 							atmFee: 0,
 							atmFeeExplanation: '5 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
 							creditCardMonthlyFee: 0,
@@ -214,6 +229,7 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 							url: '/out/n26',
 						},
 						'Metal': {
+							description: null,
 							atmFee: 0,
 							atmFeeExplanation: '8 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
 							creditCardMonthlyFee: 0,
@@ -223,54 +239,22 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 						},
 					},
 				},
-				},
-				showFilters: false,
-				showFilteredAccounts: false,
-				isStudent: false,
-				immigrationStatus: 'other',
-				sortedCountryList: countries.getSortedList(),
-			};
-		},
-		computed: {
-			accounts() {
-				return Object.entries(this.banks).reduce((allAccounts, [bankName, bank]) => {
-					const accountTypes = Object.entries(bank.accountTypes).map(([accountName, account]) => {
-						let score = 0;
-						if(account.hidden){
-							score -= 100;
-						}
-						else if(account.saved){
-							score += 100;
-						}
-
-						return {
-							key: bankName + accountName,
-							name: accountName,
-							bankName: bankName,
-							...bank,
-							...account,
-							score: score,
-						}
-					});
-					console.log(...accountTypes)
-					allAccounts.push(...accountTypes)
-					return allAccounts;
-				}, [])
-				.sort((a, b) => {
-					return b.score - a.score;
-				});
 			},
-			filteredAccounts(){
-				return this.accounts.filter(a => a.score < 0)
-			},
-		},
-		methods: {
+			showFilters: false,
+			isStudent: false,
+			immigrationStatus: 'other',
+			sortedCountryList: countries.getSortedList(),
+		};
+	},
+	computed: {
+	},
+	methods: {
 		relevantLanguagesList(availableLanguages) {
 			const relevantLanguages = navigator.languages
 				.map(userLocale => userLocale.split('-')[0])
 				.reduce((selectedLanguages, userLanguage) => {
 					if(availableLanguages.includes(userLanguage) && !selectedLanguages.includes(userLanguage)) {
-					selectedLanguages.push(userLanguage);
+						selectedLanguages.push(userLanguage);
 					}
 					return selectedLanguages;
 				}, []);
@@ -279,13 +263,20 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 			const extraLanguageCount = availableLanguages.length - relevantLanguages.length;
 			return relevantLanguagesString + (extraLanguageCount ? ` and ${extraLanguageCount} more` : '');
 		},
+		relevantPaymentMethods(bank) {
+			const uniquePaymentMethods = new Set();
+			Object.values(bank.accountTypes).forEach(account => {
+				account.paymentMethods.forEach(method => uniquePaymentMethods.add(method));
+			});
+			return Array.from(uniquePaymentMethods);
+		},
 		toggleStatus(account, field){
 			Object.entries(this.banks).forEach(([bankName, bank]) => {
 				if(bank.accountTypes[account.name]) {
 					Vue.set(bank.accountTypes[account.name], field, !account[field]);
 				}
-			})
-		}
+			});
+		},
 	}
 }));
 {% endjs %}

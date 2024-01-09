@@ -1024,7 +1024,7 @@ p, pre, blockquote, ul, ol {
 	@include text-block;
 }
 
-strong, b{
+strong, b, h4{
 	@include text-bold;
 }
 em, i{font-style:italic}
@@ -1183,10 +1183,10 @@ sup:target a{
 		}
 	}
 
-	> ol > li, > :not(.collapsible, .table-of-contents) ol > li{
+	> ol > li, > :not(.collapsible, .bank-comparator, .table-of-contents) ol > li{
 		@include list-marker-ol;
 	}
-	> ul > li, > :not(.collapsible, .table-of-contents) ul > li{
+	> ul > li, > :not(.collapsible, .bank-comparator, .table-of-contents) ul > li{
 		@include list-marker-ul;
 	}
 	li.checkbox{
@@ -2744,66 +2744,37 @@ details{
 		> *{
 			@include box-m;
 			margin: 0;
-			display: grid;
-			grid-gap: var(--s) var(--xl-relative);
-			grid-template-areas: "logo title actions" "logo features costs";
-			grid-template-columns: calc(var(--w-bank-logo) - var(--s)) 1fr 1fr;
 			text-align: left;
-			align-items: flex-start;
+
+			display: grid;
+			grid-template-columns: var(--w-bank-logo) 1fr;
+			gap: 0 var(--m);
+			grid-template-areas:
+				"icon title actions"
+				"icon features features"
+				"icon accounts accounts";
 
 			@include only-phone{
-				grid-template-columns: 1fr;
-				grid-template-areas: "title" "actions" "features" "costs";
-
-				.features{
-					margin-top: var(--s);
-					padding: var(--m) 0;
-					border-top: var(--b-box);
-					border-bottom: var(--b-box);
-				}
+				grid-template-columns: 1fr calc(var(--w-bank-logo) * 2);
+				grid-template-areas: "title icon" "actions icon" "features features" "accounts accounts";
 			}
 		}
 
 		img{
+			grid-area: icon;
 			border-radius:50%;
 			border:none;
-			grid-area:logo;
-			width: var(--w-bank-logo);
-			align-self:flex-start;
-
-			@include only-phone{
-				display: none;
-			}
+			width: 100%;
+			margin: 0;
 		}
 
 		h3{
 			margin:0;
-			grid-area:title;
+			grid-area: title;
 			align-self:center;
 		}
 
-		.features{
-			grid-area:features;
-			font-size: var(--f-s);
-
-			display: flex;
-			flex-direction: column;
-			gap: var(--m-relative);
-
-			li{
-				line-height: var(--line-height-label);
-			}
-		}
-
-		.costs{
-			grid-area:costs;
-			font-size: var(--f-s);
-		}
-
 		.actions{
-			@include not-phone{
-				justify-self: end;
-			}
 			grid-area: actions;
 			display: flex;
 			gap: var(--m);
@@ -2815,6 +2786,30 @@ details{
 				vertical-align:
 				middle;
 				display:inline
+			}
+		}
+
+		.features{
+			margin: var(--s) 0 0;
+			grid-area: features;
+			font-size: var(--f-s);
+		}
+
+		.accounts{
+			grid-area: accounts;
+			margin: 0;
+
+			> li {
+				margin-top: var(--m);
+				padding-top: var(--m);
+				border-top: var(--b-box);
+
+				> p {
+					margin-top: var(--s-relative)
+				}
+				.costs{
+					font-size: var(--f-s);
+				}
 			}
 		}
 	}
