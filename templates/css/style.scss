@@ -2199,10 +2199,16 @@ details{
 
 		&:before{
 			content:'';
-			border-bottom: 1px dotted var(--c-border-box);
+			border-bottom: 1px dotted var(--c-text);
+			opacity: 0.5;
 			flex: 1 0 auto;
 			margin: 0 var(--xs);
+			transition: opacity 0.2s;
 		}
+	}
+
+	&:hover output:before{
+		opacity: 1;
 	}
 
 	@include only-phone{
