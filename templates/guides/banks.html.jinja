@@ -44,26 +44,21 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<span class="label">What's your status?</span>
+								<label :for="uid('immigrationStatus')">What's your status?</label>
 								<div class="input-group vertical">
-									<label class="checkbox">
-										<input v-model="immigrationStatus" value="citizen" type="radio" name="immigration-status"> I'm a EU citizen
-									</label>
-									<label class="checkbox">
-										<input v-model="immigrationStatus" value="permanent-resident" type="radio" name="immigration-status"> I'm a permanent resident
-									</label>
-									<label class="checkbox">
-										<input v-model="immigrationStatus" value="resident" type="radio" name="immigration-status"> I have a residence permit
-									</label>
-									<label class="checkbox">
-										<input v-model="immigrationStatus" value="other" type="radio" name="immigration-status"> Other
-									</label>
+									<select :id="uid('immigrationStatus')" v-model="immigrationStatus">
+										<option value="" disabled selected hidden>Choose your immigration status</option>
+										<option value="citizen"> EU citizen
+										<option value="permanent-resident"> Permanent resident
+										<option value="resident"> On a residence permit
+										<option value="other"> Other
+									</select>
 								</div>
 							</div>
 							<div class="form-group" v-if="immigrationStatus !== 'citizen'">
-								<label for="nationality-{% endraw %}{{ id }}{% raw %}">Nationality</label>
+								<label :for="uid('nationality')">Nationality</label>
 								<div class="input-group">
-									<select id="nationality-{% endraw %}{{ id }}{% raw %}">
+									<select :id="uid('nationality')">
 										<option value="" disabled selected hidden>Choose a country</option>
 										<option value="">Unknown</option>
 										<option disabled>──────────</option>
@@ -151,6 +146,8 @@
 {% include '_js/vue.js' %}
 {% include '_js/vue/eur.js' %}
 {% include '_js/vue/glossary.js' %}
+{% include '_js/vue/uniqueIdsMixin.js' %}
+
 {% js %}
 const languageMap = {
 	en: 'English',
@@ -162,6 +159,7 @@ const languageMap = {
 
 document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 	el: el,
+	mixins: [uniqueIdsMixin],
 	data: function() {
 		return {
 			banks: {
@@ -242,7 +240,7 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 			},
 			showFilters: false,
 			isStudent: false,
-			immigrationStatus: 'other',
+			immigrationStatus: '',
 			sortedCountryList: countries.getSortedList(),
 		};
 	},
