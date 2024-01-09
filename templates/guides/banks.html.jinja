@@ -64,6 +64,8 @@
 							<div class="input-group">
 								<select id="nationality-{% endraw %}{{ id }}{% raw %}">
 									<option value="" disabled selected hidden>Choose a country</option>
+									<option value="">Unknown</option>
+									<option disabled>──────────</option>
 									<option v-for="country in sortedCountryList" :key="country[0]" :value="country[0]">{{ country[1] }}</option>
 								</select>
 								<span class="input-instructions">Some banks can't verify foreign passports</span>
