@@ -79,10 +79,10 @@
 						</div>
 
 						<ul class="bank-options">
-							<li class="bank" v-for="(bank, bankName) in banks" v-if="!bank.hidden" :key="bankName">
+							<li class="bank" v-for="bank in sortedBanks" :key="bank.name">
 								<img :src="bank.logo">
 								<h3>
-									<a :href="bank.url" target="_blank">{{ bankName }}</a>
+									<a :href="bank.url" target="_blank">{{ bank.name }}</a>
 								</h3>
 								<div class="actions">
 									<a v-if="!bank.hidden && !bank.saved" @click="bank.saved = !bank.saved">{% endraw %}{% include '_css/icons/star.svg' %}{% raw %} Save</a>
@@ -101,7 +101,7 @@
 									</li>
 								</ul>
 								<ul class="accounts">
-									<li v-for="(account, accountName) in bank.accountTypes" :key="bankName + accountName">
+									<li v-for="(account, accountName) in bank.accountTypes" :key="bank.name + accountName">
 										<h4>
 											<a :href="account.url" target="_blank">{{ accountName }} account</a>
 										</h4>
@@ -174,7 +174,7 @@ const languageMap = {
 document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 	el: el,
 	mixins: [uniqueIdsMixin],
-	data: function() {
+	data() {
 		return {
 			banks: {
 				'Commerzbank': {
@@ -263,6 +263,17 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 		};
 	},
 	computed: {
+		sortedBanks(){
+			return Object.entries(this.banks).map(([bankName, bank]) => {
+				let score = 0;
+				score -= bank.hidden ? 1000 : 0;
+				score += bank.saved ? 1000 : 0;
+
+				bank.name = bankName;
+				bank.score = score;
+				return bank;
+			}).sort((a, b) => b.score - a.score);
+		}
 	},
 	methods: {
 		country(countryCode){
