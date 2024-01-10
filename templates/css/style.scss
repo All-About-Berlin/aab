@@ -2748,14 +2748,12 @@ details{
 
 .bank-comparator{
 	.filters{
-		border-top:var(--b-box);
-		border-bottom:var(--b-box);
-		margin: var(--l-relative) 0;
+		margin: var(--l) 0 var(--xl);
 	}
 	.bank-options{
 		display: grid;
 		grid-template-columns: 1fr;
-		gap: var(--m);
+		gap: var(--l);
 
 		> *{
 			@include box-m;
@@ -2764,7 +2762,7 @@ details{
 
 			display: grid;
 			grid-template-columns: var(--w-bank-logo) 1fr;
-			gap: var(--m) var(--m);
+			gap: 0 var(--m);
 			grid-template-areas:
 				"icon title actions"
 				"icon tags tags"
@@ -2806,22 +2804,21 @@ details{
 		}
 
 		.tags{
-			margin: 0;
 			grid-area: tags;
-			> * {
-				font-size: var(--f-s);
-			}
+			margin: var(--m) 0 var(--xl);
 		}
 
 		.accounts{
+			border-top: var(--b-box);
+			padding-top: var(--l);
 			grid-area: accounts;
 			margin: 0;
 
-			> li {
-				margin: var(--l) 0;
-				padding-top: var(--l);
-				border-top: var(--b-box);
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: var(--xl) var(--xxl);
 
+			> li {
 				&:first-child{
 					margin-top: 0;
 				}
@@ -2831,19 +2828,10 @@ details{
 					font-size: var(--f-s);
 				}
 				.costs{
-					margin: var(--s) 0;
-					display: grid;
-					grid-template-columns: 1fr 1fr;
-					grid-auto-flow: row;
-					gap: var(--xs) var(--l);
 					font-size: var(--f-s);
 
 					@include full-width-site{
 						grid-template-columns: 1fr;
-					}
-
-					summary {
-						margin: 0
 					}
 				}
 			}
@@ -2858,9 +2846,18 @@ details{
 	gap: var(--s);
 
 	> * {
+		font-size: var(--f-s);
 		box-shadow: none;
 		padding: var(--xs) var(--s);
 		white-space: nowrap;
+		&.active{
+			&:after{
+				content: '✕';
+				margin-left: var(--s);
+				color: var(--c-text-light);
+			}
+			border-color: var(--c-border-input);
+		}
 	}
 }
 

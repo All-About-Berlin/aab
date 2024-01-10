@@ -14,64 +14,64 @@
 					<div class="bank-comparator">
 						<h2>Bank picker</h2>
 						<div class="filters">
-							<div class="form-group">
-								<span class="label">Bank location</span>
-								<div class="input-group tags">
-									<button>Germany</button>
-									<button>France</button>
-									<button>United Kingdom</button>
-								</div>
+							<div class="tags">
+								<button @click="showFilters=!showFilters" class="primary"><i class="icon filter"></i> {{ showFilters ? 'Hide filters' : 'Filter banks' }}</button>
+								<tag :list="selectedFilters" v-for="filter in selectedFilters" :key="filter">{{ filter }}</tag>
 							</div>
-							<div class="form-group">
-								<span class="label">Language</span>
-								<div class="input-group tags">
-									<button v-for="lang in allBankLanguages" :key="lang">{{lang}}</button>
+							<template v-if="showFilters">
+								<div class="form-group">
+									<span class="label">Bank country</span>
+									<div class="input-group tags">
+										<tag :list="selectedFilters">Germany</tag>
+										<tag :list="selectedFilters">France</tag>
+										<tag :list="selectedFilters">United Kingdom</tag>
+									</div>
 								</div>
-							</div>
-							<div class="form-group">
-								<span class="label">Payment methods</span>
-								<div class="input-group tags">
-									<button>Apple Pay</button>
-									<button>Google Pay</button>
-									<button>Girocard</button>
+								<div class="form-group">
+									<span class="label">Language</span>
+									<div class="input-group tags">
+										<tag :list="selectedFilters" v-for="lang in allLanguages" :key="lang">{{lang}}</tag>
+									</div>
 								</div>
-							</div>
-							<div class="form-group">
-								<label :for="uid('immigrationStatus')">What's your status?</label>
-								<div class="input-group vertical">
-									<select :id="uid('immigrationStatus')" v-model="immigrationStatus">
-										<option value="" disabled selected hidden>Choose your immigration status</option>
-										<option value="remote">Coming to Germany</option>
-										<option value="resident">On a residence permit</option>
-										<option value="permanent-resident">Permanent resident</option>
-										<option value="citizen">EU citizen</option>
-										<option value="other">Other</option>
-									</select>
+								<div class="form-group">
+									<span class="label">Payment methods</span>
+									<div class="input-group tags">
+										<tag :list="selectedFilters" v-for="method in allPaymentMethods" :key="method">{{method}}</tag>
+									</div>
 								</div>
-							</div>
-							<div class="form-group" v-if="immigrationStatus !== 'citizen'">
-								<label :for="uid('nationality')">Nationality</label>
-								<div class="input-group">
-									<select :id="uid('nationality')">
-										<option value="" disabled selected hidden>Choose a country</option>
-										<option value="">Unknown</option>
-										<option disabled>──────────</option>
-										<option v-for="country in sortedCountryList" :key="country[0]" :value="country[0]">{{ country[1] }}</option>
-									</select>
-									<span class="input-instructions">Some banks can't verify foreign passports</span>
+								<div class="form-group">
+									<span class="label">Features</span>
+									<div class="input-group tags">
+										<tag :list="selectedFilters">No monthly fee</tag>
+										<tag :list="selectedFilters">No ATM fee</tag>
+										<tag :list="selectedFilters">Student account</tag>
+										<tag :list="selectedFilters">Blocking account</tag>
+										<tag :list="selectedFilters">German IBAN</tag>
+									</div>
 								</div>
-							</div>
-							<div class="form-group">
-								<span class="label">Occupation</span>
-								<div class="checkbox-group">
-									<label class="checkbox">
-										<input v-model="isStudent" type="checkbox" name="occupation">
-										<span>I'm a student<br><small>Some banks have free accounts for students</small></span>
-									</label>
+								<div class="form-group">
+									<label :for="uid('nationality')">Nationality</label>
+									<div class="input-group">
+										<select :id="uid('nationality')" v-model="nationality">
+											<option value="" disabled selected hidden>Choose a country</option>
+											<option value="">Unknown</option>
+											<option disabled>──────────</option>
+											<option v-for="country in sortedCountryList" :key="country[0]" :value="country[0]">{{ country[1] }}</option>
+										</select>
+									</div>
 								</div>
-							</div>
+								<div class="form-group" v-if="nationality != 'DE'">
+									<span class="label">Missing documents</span>
+									<div class="input-group tags">
+										<tag :list="selectedFilters">No Anmeldung</tag>
+										<tag :list="selectedFilters">No residence permit</tag>
+										<tag :list="selectedFilters">No permanent residence</tag>
+										<tag :list="selectedFilters">No EU citizenship</tag>
+									</div>
+								</div>
+								<hr>
+							</template>
 						</div>
-
 						<ul class="bank-options">
 							<li class="bank" v-for="bank in sortedBanks" :key="bank.name">
 								<img :src="bank.logo">
@@ -83,14 +83,13 @@
 									<a v-if="!bank.hidden && bank.saved" @click="bank.saved = !bank.saved">{% endraw %}{% include '_css/icons/star-filled.svg' %}{% raw %} Saved</a>
 									<a v-if="!bank.saved" @click="bank.hidden = !bank.hidden">{{ bank.hidden ? 'Unhide' : 'Hide' }}</a>
 								</div>
-								<ul class="tags">
-									<li>
-										<i class="icon location" aria-hidden="true"></i>
+								<div class="tags">
+									<tag :list="selectedFilters" icon="location">
 										{{ country(bank.country) }}
-									</li>
-									<li v-for="language in relevantLanguagesList(bank.languages)" :key="language">{{ language }}</li>
-									<li v-for="method in relevantPaymentMethods(bank)" :key="method">{{ method }}</li>
-								</ul>
+									</tag>
+									<tag :list="selectedFilters" v-for="language in relevantLanguagesList(bank.languages)" :key="language">{{ language }}</tag>
+									<tag :list="selectedFilters" v-for="method in relevantPaymentMethods(bank)" :key="method">{{ method }}</tag>
+								</div>
 								<ul class="accounts">
 									<li v-for="(account, accountName) in bank.accountTypes" :key="bank.name + accountName">
 										<h4>
@@ -162,6 +161,36 @@ const languageMap = {
 	IT: 'Italian',
 };
 
+Vue.component('tag', {
+	props: {
+		list: Array,
+		icon: String,
+	},
+	computed: {
+		tag() {
+			return this.$slots.default[0].text.trim();
+		},
+		isActive(){
+			return this.list.includes(this.tag);
+		}
+	},
+	methods: {
+		toggle() {
+			if(this.isActive){
+				this.list.splice(this.list.indexOf(this.tag), 1);
+			}
+			else{
+				this.list.push(this.tag);
+			}
+		},
+	},
+	template: `
+	<button :class="{'active': isActive}" @click="toggle">
+		<i class="icon" :class="icon" v-if="icon"></i>
+		<slot></slot>
+	</button>`,
+});
+
 document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 	el: el,
 	mixins: [uniqueIdsMixin],
@@ -179,7 +208,7 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 						'Basic': {
 							description: null,
 							atmFee: 99,
-							atmFeeExplanation: 'Free withdrawals on Cash Group ATMs.',
+							atmFeeExplanation: 'Free withdrawals from Cash Group ATMs.',
 							creditCardMonthlyFee: 3.9,
 							creditCardFeeExplanation: 'Free virtual card for online shopping. 3.90 € for a plastic card.',
 							monthlyFee: 0,
@@ -189,7 +218,7 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 						'Klassik': {
 							description: null,
 							atmFee: 99,
-							atmFeeExplanation: 'Free withdrawals on Cash Group ATMs.',
+							atmFeeExplanation: 'Free withdrawals from Cash Group ATMs.',
 							creditCardMonthlyFee: 0,
 							monthlyFee: 6.9,
 							paymentMethods: ['Girocard', 'MasterCard', 'Apple Pay', 'Google Pay'],
@@ -248,9 +277,11 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 				},
 			},
 			showFilters: false,
+			selectedFilters: [],
 			isStudent: false,
-			immigrationStatus: '',
+			nationality: '',
 			sortedCountryList: countries.getSortedList(),
+			formatCurrency,
 		};
 	},
 	computed: {
@@ -265,26 +296,45 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 				return bank;
 			}).sort((a, b) => b.score - a.score);
 		},
-		allBankLanguages(){
-			const languageCount = Object.values(this.banks)
+		allLanguages(){
+			// All languages offered, sorted by frequency
+			const bankCount = Object.values(this.banks)
 				.reduce((uniqueLanguages, bank) => {
-					bank.languages.forEach(language => {
-						uniqueLanguages[language] = (uniqueLanguages[language] || 0) + 1;
+					bank.languages.forEach(languageCode => {
+						uniqueLanguages[languageCode] = (uniqueLanguages[languageCode] || 0) + 1;
 					})
 					return uniqueLanguages;
 				}, {});
 
-			return Object.entries(languageCount)
+			delete bankCount.DE;
+
+			return Object.entries(bankCount)
 				.sort((a, b) => b[1] - a[1])
-				.map(([lang, count]) => languageMap[lang]);
+				.map(([languageCode, count]) => languageMap[languageCode]);
 		},
+		allPaymentMethods(){
+			// All payment methods offered, sorted by frequency
+			const paymentMethodCount = Object.values(this.banks)
+				.reduce((uniquePaymentMethods, bank) => {
+					Object.values(bank.accountTypes).forEach(account => {
+						account.paymentMethods.forEach(method => {
+							uniquePaymentMethods[method] = (uniquePaymentMethods[method] || 0) + 1
+						});
+					});
+					return uniquePaymentMethods;
+				}, {});
+
+			return Object.entries(paymentMethodCount)
+				.sort((a, b) => b[1] - a[1])
+				.map(([paymentMethod, count]) => paymentMethod);
+		}
 	},
 	methods: {
 		country(countryCode){
 			return countries.all[countryCode];
 		},
 		relevantLanguagesList(availableLanguages) {
-			return navigator.languages
+			const languages = navigator.languages
 				.map(userLocale => userLocale.split('-')[0].toUpperCase())
 				.reduce((selectedLanguages, userLanguage) => {
 					if(availableLanguages.includes(userLanguage) && !selectedLanguages.includes(userLanguage)) {
@@ -292,7 +342,9 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 					}
 					return selectedLanguages;
 				}, [])
+				.filter(l => l !== 'DE')
 				.map(l => languageMap[l]);
+			return languages;
 		},
 		relevantPaymentMethods(bank) {
 			const uniquePaymentMethods = new Set();
