@@ -15,32 +15,25 @@
 						<h2>Bank picker</h2>
 						<div class="filters">
 							<div class="form-group">
-								<span class="label">What do you need?</span>
-								<div class="input-group vertical">
-									<label class="checkbox">
-										<input type="checkbox"> <span>Free account<br><small>No monthly fees</small></span>
-									</label>
-									<label class="checkbox">
-										<input type="checkbox"> <span>Free ATM withdrawals<br><small>No fees when you withdraw cash</small></span>
-									</label>
-									<a href="#" v-if="!showFilters" @click.prevent="showFilters = true">
-										<i class="icon filter"></i>
-										Show more filters
-									</a>
-									<template v-if="showFilters">
-										<label class="checkbox">
-											<input type="checkbox"> <span>Free Visa or MasterCard</span>
-										</label>
-										<label class="checkbox">
-											<input type="checkbox"> <span><glossary>Girocard</glossary> / EC Karte<br><small>Popular payment method in Germany</small></span>
-										</label>
-										<label class="checkbox">
-											<input type="checkbox"> <span>Apple Pay or Google Pay<br><small>Pay with your phone or smart watch</small></span>
-										</label>
-										<label class="checkbox">
-											<input type="checkbox"> <span>A bank with physical branches<br><small>Go to the bank in person</small></span>
-										</label>
-									</template>
+								<span class="label">Bank location</span>
+								<div class="input-group tags">
+									<button>Germany</button>
+									<button>France</button>
+									<button>United Kingdom</button>
+								</div>
+							</div>
+							<div class="form-group">
+								<span class="label">Language</span>
+								<div class="input-group tags">
+									<button v-for="lang in allBankLanguages" :key="lang">{{lang}}</button>
+								</div>
+							</div>
+							<div class="form-group">
+								<span class="label">Payment methods</span>
+								<div class="input-group tags">
+									<button>Apple Pay</button>
+									<button>Google Pay</button>
+									<button>Girocard</button>
 								</div>
 							</div>
 							<div class="form-group">
@@ -90,16 +83,13 @@
 									<a v-if="!bank.hidden && bank.saved" @click="bank.saved = !bank.saved">{% endraw %}{% include '_css/icons/star-filled.svg' %}{% raw %} Saved</a>
 									<a v-if="!bank.saved" @click="bank.hidden = !bank.hidden">{{ bank.hidden ? 'Unhide' : 'Hide' }}</a>
 								</div>
-								<ul class="features">
+								<ul class="tags">
 									<li>
-										📍 <span v-html="country(bank.country)"></span>
+										<i class="icon location" aria-hidden="true"></i>
+										{{ country(bank.country) }}
 									</li>
-									<li>
-										💬 <span v-html="relevantLanguagesList(bank.languages)"></span>
-									</li>
-									<li>
-										💳 <span v-html="relevantPaymentMethods(bank).join(', ')"></span>
-									</li>
+									<li v-for="language in relevantLanguagesList(bank.languages)" :key="language">{{ language }}</li>
+									<li v-for="method in relevantPaymentMethods(bank)" :key="method">{{ method }}</li>
 								</ul>
 								<ul class="accounts">
 									<li v-for="(account, accountName) in bank.accountTypes" :key="bank.name + accountName">
@@ -274,14 +264,27 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 				bank.score = score;
 				return bank;
 			}).sort((a, b) => b.score - a.score);
-		}
+		},
+		allBankLanguages(){
+			const languageCount = Object.values(this.banks)
+				.reduce((uniqueLanguages, bank) => {
+					bank.languages.forEach(language => {
+						uniqueLanguages[language] = (uniqueLanguages[language] || 0) + 1;
+					})
+					return uniqueLanguages;
+				}, {});
+
+			return Object.entries(languageCount)
+				.sort((a, b) => b[1] - a[1])
+				.map(([lang, count]) => languageMap[lang]);
+		},
 	},
 	methods: {
 		country(countryCode){
 			return countries.all[countryCode];
 		},
 		relevantLanguagesList(availableLanguages) {
-			const relevantLanguages = navigator.languages
+			return navigator.languages
 				.map(userLocale => userLocale.split('-')[0].toUpperCase())
 				.reduce((selectedLanguages, userLanguage) => {
 					if(availableLanguages.includes(userLanguage) && !selectedLanguages.includes(userLanguage)) {
@@ -290,16 +293,6 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 					return selectedLanguages;
 				}, [])
 				.map(l => languageMap[l]);
-
-			const extraLanguageCount = availableLanguages.length - relevantLanguages.length;
-			let lastElement = '';
-			if(availableLanguages.length > 1 && !extraLanguageCount) {
-				lastElement = ` and ${relevantLanguages.pop()}`;
-			}
-			else if (extraLanguageCount) {
-				lastElement = ` and ${extraLanguageCount} more`;
-			}
-			return `${relevantLanguages.join(', ')}${lastElement}`;
 		},
 		relevantPaymentMethods(bank) {
 			const uniquePaymentMethods = new Set();
