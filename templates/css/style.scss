@@ -2207,6 +2207,11 @@ details{
 		}
 	}
 
+	p {
+		@include text-block-compact;
+		font-size: var(--f-s);
+	}
+
 	&:hover output:before{
 		opacity: 1;
 	}
@@ -2778,6 +2783,7 @@ details{
 			margin:0;
 			grid-area: title;
 			align-self:center;
+			line-height: var(--w-bank-logo);
 		}
 
 		.actions{
@@ -2805,16 +2811,24 @@ details{
 			margin: 0;
 
 			> li {
-				margin-top: var(--m);
-				padding-top: var(--m);
+				margin: var(--l) 0;
+				padding-top: var(--l);
 				border-top: var(--b-box);
 
-				> p {
-					margin-top: var(--s-relative);
+				p {
+					margin: var(--s) 0;
 					font-size: var(--f-s);
 				}
 				.costs{
+					margin: var(--s) 0;
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					grid-auto-flow: row;
+					gap: var(--xs) var(--l);
 					font-size: var(--f-s);
+					summary {
+						margin: 0
+					}
 				}
 			}
 		}

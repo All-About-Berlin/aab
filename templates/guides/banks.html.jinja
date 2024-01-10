@@ -85,13 +85,20 @@
 									<a :href="bank.url" target="_blank">{{ bankName }}</a>
 								</h3>
 								<div class="actions">
-									<a v-if="!bank.hidden && !bank.saved" @click="bank.hidden = !bank.hidden">{% endraw %}{% include '_css/icons/star.svg' %}{% raw %} Save</a>
-									<a v-if="!bank.hidden && bank.saved" @click="bank.hidden = !bank.hidden">{% endraw %}{% include '_css/icons/star-filled.svg' %}{% raw %} Saved</a>
+									<a v-if="!bank.hidden && !bank.saved" @click="bank.saved = !bank.saved">{% endraw %}{% include '_css/icons/star.svg' %}{% raw %} Save</a>
+									<a v-if="!bank.hidden && bank.saved" @click="bank.saved = !bank.saved">{% endraw %}{% include '_css/icons/star-filled.svg' %}{% raw %} Saved</a>
 									<a v-if="!bank.saved" @click="bank.hidden = !bank.hidden">{{ bank.hidden ? 'Unhide' : 'Hide' }}</a>
 								</div>
 								<ul class="features">
-									<li class="pro" v-html="relevantLanguagesList(bank.languages)"></li>
-									<li class="pro" v-html="relevantPaymentMethods(bank).join(', ')"></li>
+									<li>
+										📍 <span v-html="country(bank.country)"></span>
+									</li>
+									<li>
+										💬 <span v-html="relevantLanguagesList(bank.languages)"></span>
+									</li>
+									<li>
+										💳 <span v-html="relevantPaymentMethods(bank).join(', ')"></span>
+									</li>
 								</ul>
 								<ul class="accounts">
 									<li v-for="(account, accountName) in bank.accountTypes" :key="bankName + accountName">
@@ -112,14 +119,21 @@
 													<output v-if="account.creditCardOneTimeFee">one time {{ formatCurrency(account.creditCardOneTimeFee) }}</output>
 													<output v-if="!account.creditCardOneTimeFee"><eur :amount="account.creditCardMonthlyFee"></eur></output>
 												</summary>
-												<div v-html="account.creditCardFeeExplanation"></div>
+												<p v-html="account.creditCardFeeExplanation"></p>
 											</details>
 											<details>
 												<summary class="price">
 													Withdrawal fee
 													<output><eur :amount="account.atmFee"></eur></output>
 												</summary>
-												<div v-html="account.atmFeeExplanation"></div>
+												<p v-html="account.atmFeeExplanation"></p>
+											</details>
+											<details>
+												<summary class="price">
+													Interest rate
+													<output>5%</output>
+												</summary>
+												<p>Every year, you earn 5% interest on the money in your bank account.</p>
 											</details>
 										</div>
 									</li>
@@ -150,11 +164,11 @@
 
 {% js %}
 const languageMap = {
-	en: 'English',
-	de: 'German',
-	fr: 'French',
-	es: 'Spanish',
-	it: 'Italian',
+	EN: 'English',
+	DE: 'German',
+	FR: 'French',
+	ES: 'Spanish',
+	IT: 'Italian',
 };
 
 document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
@@ -165,7 +179,9 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 			banks: {
 				'Commerzbank': {
 					hidden: false,
-					languages: ['de', 'en'],
+					saved: false,
+					country: 'DE',
+					languages: ['DE', 'EN'],
 					logo: '/staticimages/banks/commerzbank.png',
 					url: '/out/commerzbank',
 					accountTypes: {
@@ -192,8 +208,10 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 				},
 				'N26': {
 					hidden: false,
+					saved: false,
 					logo: '/staticimages/banks/n26.png',
-					languages: ['de', 'en', 'fr', 'es', 'it'],
+					country: 'DE',
+					languages: ['DE', 'EN', 'FR', 'ES', 'IT'],
 					logo: '/staticimages/banks/n26.png',
 					url: '/out/n26-plans',
 					accountTypes: {
@@ -247,19 +265,29 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 	computed: {
 	},
 	methods: {
+		country(countryCode){
+			return countries.all[countryCode];
+		},
 		relevantLanguagesList(availableLanguages) {
 			const relevantLanguages = navigator.languages
-				.map(userLocale => userLocale.split('-')[0])
+				.map(userLocale => userLocale.split('-')[0].toUpperCase())
 				.reduce((selectedLanguages, userLanguage) => {
 					if(availableLanguages.includes(userLanguage) && !selectedLanguages.includes(userLanguage)) {
 						selectedLanguages.push(userLanguage);
 					}
 					return selectedLanguages;
-				}, []);
+				}, [])
+				.map(l => languageMap[l]);
 
-			const relevantLanguagesString = relevantLanguages.map(l => languageMap[l]).join(', ');
 			const extraLanguageCount = availableLanguages.length - relevantLanguages.length;
-			return relevantLanguagesString + (extraLanguageCount ? ` and ${extraLanguageCount} more` : '');
+			let lastElement = '';
+			if(availableLanguages.length > 1 && !extraLanguageCount) {
+				lastElement = ` and ${relevantLanguages.pop()}`;
+			}
+			else if (extraLanguageCount) {
+				lastElement = ` and ${extraLanguageCount} more`;
+			}
+			return `${relevantLanguages.join(', ')}${lastElement}`;
 		},
 		relevantPaymentMethods(bank) {
 			const uniquePaymentMethods = new Set();
