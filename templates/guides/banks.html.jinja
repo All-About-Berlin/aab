@@ -17,6 +17,7 @@
 							<div class="tags">
 								<button @click="showFilters=!showFilters" class="primary"><i class="icon filter"></i> {{ showFilters ? 'Hide filters' : 'Filter banks' }}</button>
 								<tag :list="selectedFilters" v-for="filter in selectedFilters" :key="filter">{{ filter }}</tag>
+								<tag :list="selectedFilters" v-for="filter in suggestedFilters" :key="filter">{{ filter }}</tag>
 							</div>
 							<template v-if="showFilters">
 								<div class="form-group">
@@ -327,6 +328,22 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 			return Object.entries(paymentMethodCount)
 				.sort((a, b) => b[1] - a[1])
 				.map(([paymentMethod, count]) => paymentMethod);
+		},
+		suggestedFilters(){
+			const filterList = [
+				'English',
+				'No Anmeldung',
+				'No monthly fee',
+				'Girocard'
+			];
+
+			if (this.selectedFilters.length < filterList.length){
+				const unusedFilters = filterList.filter(f => !this.selectedFilters.includes(f));
+				return unusedFilters.slice(
+					Math.max(filterList.length - this.selectedFilters.length, 0) * -1
+				)
+			}
+			return [];
 		}
 	},
 	methods: {
@@ -352,13 +369,6 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 				account.paymentMethods.forEach(method => uniquePaymentMethods.add(method));
 			});
 			return Array.from(uniquePaymentMethods);
-		},
-		toggleStatus(account, field){
-			Object.entries(this.banks).forEach(([bankName, bank]) => {
-				if(bank.accountTypes[account.name]) {
-					Vue.set(bank.accountTypes[account.name], field, !account[field]);
-				}
-			});
 		},
 	}
 }));
