@@ -210,7 +210,7 @@ $width-main-column: 860px;
 	--w-img-bio-s: 75px;
 	--w-img-bio-l: 125px;
 	--w-img-logo: 100px;
-	--w-bank-logo: calc(var(--l) * var(--line-height-heading));
+	--w-bank-logo: 32px;
 	--h-img-logo: 75px;
 	--w-icon-s: var(--xl-relative);
 	--w-label-column: 10rem;
@@ -274,7 +274,7 @@ $width-main-column: 860px;
 	--i-person: url("data:image/svg+xml;utf8,<svg viewBox='0 0 700 700' xmlns='http://www.w3.org/2000/svg'><path d='m350 234.68c-25.352-0.1875-49.586-10.441-67.375-28.504s-27.668-42.453-27.469-67.805c0.20312-25.352 10.469-49.582 28.543-67.359 18.074-17.777 42.473-27.645 67.82-27.426 25.352 0.21484 49.574 10.496 67.344 28.582 17.766 18.082 27.617 42.484 27.387 67.836-0.36719 25.27-10.676 49.371-28.691 67.094-18.016 17.719-42.289 27.629-67.559 27.582zm0-138.43c-11.336 0.1875-22.137 4.8359-30.066 12.938-7.9258 8.1016-12.34 19.008-12.277 30.344s4.5938 22.188 12.609 30.203 18.867 12.547 30.203 12.609 22.242-4.3516 30.344-12.277c8.1016-7.9297 12.75-18.73 12.938-30.066 0.09375-11.633-4.4844-22.816-12.711-31.039-8.2227-8.2266-19.406-12.805-31.039-12.711zm140 420h-280c-6.9609 0-13.641-2.7656-18.562-7.6875s-7.6875-11.602-7.6875-18.562v-55.477c0.09375-43.645 17.473-85.477 48.336-116.34 30.859-30.863 72.691-48.242 116.34-48.332h3.1484c43.648 0.089844 85.48 17.469 116.34 48.332 30.863 30.863 48.242 72.695 48.336 116.34v55.477c0 6.9609-2.7656 13.641-7.6875 18.562s-11.602 7.6875-18.562 7.6875zm-253.75-52.5h227.5v-29.227c-0.046875-29.734-11.879-58.238-32.906-79.266-21.027-21.027-49.531-32.863-79.27-32.906h-3.1484c-29.738 0.042969-58.242 11.879-79.27 32.906-21.027 21.027-32.859 49.531-32.906 79.266z'/></svg>");
 	--i-right: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-6 -6 46 46'><path d='M29.06,17.06l-12,12a1.5,1.5,0,0,1-2.12,0,1.49,1.49,0,0,1,0-2.12l9.44-9.44H4a1.5,1.5,0,0,1,0-3H24.38L14.94,5.06a1.5,1.5,0,0,1,2.12-2.12l12,12A1.49,1.49,0,0,1,29.06,17.06Z'/></svg>");
 	--i-verified: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 700 700'><path d='M439 215a26 26 0 0 1 0 37l-94 93c-5 5-11 8-18 8s-14-3-19-8l-47-46a26 26 0 0 1 38-38l28 29 74-75a26 26 0 0 1 38 0zm147 269a26 26 0 0 1-26 32h-6l-102-22a236 236 0 1 1 111-111zm-74-118a184 184 0 1 0-76 76c6-3 12-4 18-2l71 15-15-70c-2-6-1-13 2-19z'/></svg>");
-	--i-location: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 2 33 33'><path d='M16 2.5A10.58 10.58 0 0 0 5.5 13.14C5.5 18.62 13.93 28 14.9 29a1.48 1.48 0 0 0 2.2 0c1-1 9.4-10.39 9.4-15.87A10.58 10.58 0 0 0 16 2.5Zm0 23.24c-3.27-3.81-7.5-9.69-7.5-12.6a7.5 7.5 0 1 1 15 0c0 2.91-4.23 8.79-7.5 12.6ZM16 8.5a4.5 4.5 0 1 0 4.5 4.5A4.51 4.51 0 0 0 16 8.5Zm0 6a1.5 1.5 0 1 1 1.5-1.5 1.5 1.5 0 0 1-1.5 1.5Z'/></svg>");
+	--i-location: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-2 0 37 37'><path d='M16 2.5A10.58 10.58 0 0 0 5.5 13.14C5.5 18.62 13.93 28 14.9 29a1.48 1.48 0 0 0 2.2 0c1-1 9.4-10.39 9.4-15.87A10.58 10.58 0 0 0 16 2.5Zm0 23.24c-3.27-3.81-7.5-9.69-7.5-12.6a7.5 7.5 0 1 1 15 0c0 2.91-4.23 8.79-7.5 12.6ZM16 8.5a4.5 4.5 0 1 0 4.5 4.5A4.51 4.51 0 0 0 16 8.5Zm0 6a1.5 1.5 0 1 1 1.5-1.5 1.5 1.5 0 0 1-1.5 1.5Z'/></svg>");
 }
 
 @include only-phone{
@@ -2756,20 +2756,22 @@ details{
 		gap: var(--l);
 
 		> *{
-			@include box-m;
+			@include box-l;
 			margin: 0;
+			padding-left: var(--l);
 			text-align: left;
+			align-items: center;
 
 			display: grid;
 			grid-template-columns: var(--w-bank-logo) 1fr;
 			gap: 0 var(--m);
 			grid-template-areas:
 				"icon title actions"
-				"icon tags tags"
-				"icon accounts accounts";
+				". tags tags"
+				". accounts accounts";
 
 			@include only-phone{
-				grid-template-columns: 1fr calc(var(--w-bank-logo) * 2);
+				grid-template-columns: 1fr calc(var(--w-bank-logo));
 				grid-template-areas: "title icon" "actions icon" "tags tags" "accounts accounts";
 			}
 		}
@@ -2794,6 +2796,10 @@ details{
 			gap: var(--m);
 			font-size: var(--f-s);
 
+			@include only-phone{
+				margin: var(--s) 0;
+			}
+
 			svg{
 				height: 1.5em;
 				width:auto;
@@ -2805,18 +2811,26 @@ details{
 
 		.tags{
 			grid-area: tags;
-			margin: var(--m) 0 var(--xl);
+			margin: var(--l) calc(var(--w-page-border) * -1) var(--xl);
+			padding: 0 var(--w-page-border);
+
+			@include only-phone{
+				flex-wrap: nowrap;
+				overflow-x: scroll;
+			}
 		}
 
 		.accounts{
-			border-top: var(--b-box);
-			padding-top: var(--l);
 			grid-area: accounts;
 			margin: 0;
 
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			gap: var(--xl) var(--xxl);
+
+			@include full-width-site{
+				grid-template-columns: 1fr;
+			}
 
 			> li {
 				&:first-child{
@@ -2829,9 +2843,8 @@ details{
 				}
 				.costs{
 					font-size: var(--f-s);
-
-					@include full-width-site{
-						grid-template-columns: 1fr;
+					&:last-child summary{
+						margin-bottom: 0;
 					}
 				}
 			}
@@ -2851,12 +2864,8 @@ details{
 		padding: var(--xs) var(--s);
 		white-space: nowrap;
 		&.active{
-			&:after{
-				content: '✕';
-				margin-left: var(--s);
-				color: var(--c-text-light);
-			}
-			border-color: var(--c-border-input);
+			border-color: var(--c-border-hint);
+			background: var(--c-bg-widget);
 		}
 	}
 }
