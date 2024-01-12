@@ -2786,7 +2786,7 @@ details{
 
 			@include only-phone{
 				grid-template-columns: 1fr calc(var(--w-bank-logo));
-				grid-template-areas: "title icon" "description description" "actions icon" "tags tags" "costs costs";
+				grid-template-areas: "title icon" "description description" "actions actions" "tags tags" "costs costs";
 			}
 		}
 
@@ -2816,7 +2816,7 @@ details{
 			font-size: var(--f-s);
 
 			@include only-phone{
-				margin: var(--s) 0;
+				margin: var(--s) 0 0;
 			}
 
 			svg{
@@ -2871,9 +2871,7 @@ details{
 		}
 
 		&.error{
-			&:before{
-				content:'🔴';
-			}
+			box-shadow: none!important
 		}
 	}
 }
