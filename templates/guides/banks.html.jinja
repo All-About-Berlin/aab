@@ -75,7 +75,7 @@
 									<a v-if="!account.saved" @click="toggleHide(account)">{{ account.hidden ? 'Unhide' : 'Hide' }}</a>
 								</div>
 								<div class="tags">
-									<tag :tag="tag" v-for="tag in missingTags(account)" :key="tag.name" error></tag>
+									<tag :tag="tag" v-for="tag in account.missingTags" :key="tag.name" error></tag>
 									<tag :tag="tag" v-for="tag in account.tags" :key="tag.name"></tag>
 								</div>
 								<div class="costs">
@@ -393,9 +393,19 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 		sortedAccounts(){
 			return this.accounts.map((account) => {
 				let multiplier = 0;
+				let score = 1;
 				multiplier -= account.hidden ? 1000 : 0;
 				multiplier += account.saved ? 1000 : 0;
-				account.score = 0;
+
+				account.missingTags = this.selectedTags.filter(t => !account.tags.includes(t));
+				account.tags = account.tags.sort((t1, t2) => {
+					if(t1.selected !== t2.selected) {
+						return t2.selected > t1.selected;
+					}
+					return t1.group > t2.group;
+				});
+
+				account.score = score * multiplier;
 				return account;
 			}).sort((a, b) => b.score - a.score);
 		},
@@ -419,9 +429,6 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 	methods: {
 		logo(bank){
 			return `/staticimages/banks/${bank.name.toLowerCase()}.png`;
-		},
-		missingTags(account){
-			return this.selectedTags.filter(t => !account.tags.includes(t))
 		},
 		toggleSave(bank){
 			this.$set(bank, 'saved', !bank.saved);
