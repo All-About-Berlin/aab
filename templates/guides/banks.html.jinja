@@ -139,6 +139,7 @@ const banks = [
 		name: 'Commerzbank',
 		tags: [
 			'German bank',
+			'German IBAN',
 			'English-speaking',
 			'Girocard',
 			'Apple Pay',
@@ -173,6 +174,7 @@ const banks = [
 		name: 'N26',
 		tags: [
 			'German bank',
+			'German IBAN',
 			'English-speaking',
 			'French-speaking',
 			'Spanish-speaking',
@@ -288,16 +290,16 @@ const tags = {
 		error: 'ATM fee',
 		default: true,
 	},
+	'German IBAN': {
+		error: 'No German IBAN',
+		group: 'features',
+	},
 	'Student account': {
 		error: 'No student account',
 		group: 'features',
 	},
 	'Blocking account': {
 		error: 'No blocking account',
-		group: 'features',
-	},
-	'German IBAN': {
-		error: 'No German IBAN',
 		group: 'features',
 	},
 };
