@@ -519,6 +519,16 @@ $width-main-column: 860px;
 	}
 }
 
+@mixin no-scroll-bar{
+	scrollbar-width: none; /* Firefox */
+
+	&::-webkit-scrollbar {
+		width: 0;
+		height: 0;
+	    display: none;  /* Safari and Chrome */
+	}
+}
+
 /*******************************************************************************
  * 
  * Page layout
@@ -2764,7 +2774,7 @@ details{
 
 			display: grid;
 			grid-template-columns: var(--w-bank-logo) 1fr;
-			gap: var(--l) var(--m);
+			gap: 0 var(--m);
 			grid-template-areas:
 				"icon title actions"
 				". tags tags"
@@ -2812,11 +2822,13 @@ details{
 		.tags{
 			grid-area: tags;
 			margin: 0 calc(var(--w-page-border) * -1);
-			padding: 0 var(--w-page-border);
+			padding: var(--m) var(--w-page-border);
 
 			@include only-phone{
 				flex-wrap: nowrap;
 				overflow-x: scroll;
+				overflow-y: visible;
+				@include no-scroll-bar;
 			}
 		}
 
