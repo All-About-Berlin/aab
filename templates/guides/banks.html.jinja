@@ -138,8 +138,8 @@ const banks = [
 	{
 		name: 'Commerzbank',
 		tags: [
-			'Germany',
-			'English',
+			'German bank',
+			'English-speaking',
 			'Girocard',
 			'Apple Pay',
 			'Google Pay',
@@ -172,12 +172,13 @@ const banks = [
 	{
 		name: 'N26',
 		tags: [
-			'Germany',
-			'English',
-			'French',
-			'Spanish',
-			'Italian',
+			'German bank',
+			'English-speaking',
+			'French-speaking',
+			'Spanish-speaking',
+			'Italian-speaking',
 			'No Anmeldung',
+			'No ATM fee',
 		],
 		url: '/out/n26-plans',
 		accounts: [
@@ -228,30 +229,24 @@ const banks = [
 ];
 
 const tags = {
-	'English': {
+	'English-speaking': {
 		error: 'No English',
 		group: 'languages',
 		default: true,
 	},
-	'French': {
+	'French-speaking': {
 		error: 'No French',
 		group: 'languages',
 	},
-	'Italian': {
+	'Italian-speaking': {
 		error: 'No Italian',
 		group: 'languages',
 	},
-	'Spanish': {
+	'Spanish-speaking': {
 		error: 'No Spanish',
 		group: 'languages',
 	},
-	'Germany': {
-		group: 'countries',
-	},
-	'United Kingdom': {
-		group: 'countries',
-	},
-	'Lithuania': {
+	'German bank': {
 		group: 'countries',
 	},
 	'Apple Pay': {
@@ -310,17 +305,16 @@ const tags = {
 const tagGroups = {
 	countries: {
 		order: 0,
-		icon: 'location',
 	},
 	features: {
 		order: 1,
 	},
-	languages: {
-		order: 2,
-	},
 	paymentMethods: {
-		order: 3,
+		order: 2,
 		icon: '',
+	},
+	languages: {
+		order: 3,
 	},
 	requirements: {
 		order: 4,
