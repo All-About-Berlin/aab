@@ -227,11 +227,12 @@ $width-main-column: 860px;
 	// Colours
 	--c-highlight: #da513d;
 	--c-text: #444;
-	--c-text-light: #757575;
-	--c-text-placeholder: #999;
+	--c-text-error: #{darken(#da513d, 20%)};
 	--c-text-heading: #000;
-	--c-text-link: #00e;
+	--c-text-light: #757575;
 	--c-text-link-visited: #61a;
+	--c-text-link: #00e;
+	--c-text-placeholder: #999;
 	--c-text-selection: #fd6;
 	--c-bg-input: var(--c-bg-page);
 	--c-bg-input-error: #da513d22;
@@ -288,11 +289,12 @@ $width-main-column: 860px;
 	:root{
 		--c-highlight: #9f3a2b;
 		--c-text: #bbb;
-		--c-text-light: #999;
-		--c-text-placeholder: #666;
+		--c-text-error: #{darken(#9f3a2b, 20%)};
 		--c-text-heading: #ddd;
-		--c-text-link: #bbf;
+		--c-text-light: #999;
 		--c-text-link-visited: #a9d;
+		--c-text-link: #bbf;
+		--c-text-placeholder: #666;
 		--c-text-selection: #550;
 		--c-bg-website: #111;
 		--c-bg-page: #222;
@@ -2871,6 +2873,7 @@ details{
 		}
 
 		&.error{
+			color: var(--c-text-error)!important;
 			box-shadow: none!important
 		}
 	}
