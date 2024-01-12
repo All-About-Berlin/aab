@@ -2,7 +2,7 @@
 Title: What is Stoßlüften?
 German_term: Stoßlüften
 English_term: Ventilation
-Description: 
+Description: Opening all your windows for a few minutes to ventilate your home.
 Date_created: 2022-10-04
 Related_guides: guides/moving-in.md
 ---

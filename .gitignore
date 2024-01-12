@@ -1,0 +1,4 @@
+templates/api/exchangerates.json
+templates/tools/calculator.html.jinja
+templates/whoisthere.js
+

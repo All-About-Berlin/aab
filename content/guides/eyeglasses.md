@@ -76,8 +76,6 @@ These stores sell generic frames:
 
 - **[Ace + Tate](https://www.aceandtate.com/de-en/)**  
     Generic frames starting at 100€. They have [3 stores](https://www.aceandtate.com/de-en/stores/search?q=52.52000659999999,13.404954&qp=Berlin,%20Germany&l=en_DE) in Berlin.
-- **[Brille24](/out/brille24)** (German)  
-    Cheaper glasses with generic frames. You can try their glasses [in some stores](/out/brille24-in-store).
 - **[Brillenplatz.de](/out/brillenplatz)** (German)  
     Cheaper glasses with generic frames for less than 50€.
 - **[Fielmann](https://www.fielmann.de/)** (German)  

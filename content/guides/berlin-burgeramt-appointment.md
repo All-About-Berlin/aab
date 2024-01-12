@@ -35,9 +35,7 @@ They only speak German. You must wait a few minutes to talk to someone.
 
 Email your local *Bürgeramt*, explain what you need, and ask for an appointment. If your situation is urgent, include a proof. You might get an appointment faster, even if there are no appointments online.[^3] They usually reply in 1 or 2 days.
 
-**[Find your local Bürgeramt ➞](https://service.berlin.de/standorte/buergeraemter/)**
-
-![Where to find the email of a Berlin Bürgeramt](/images/email-berlin-buergeramt.png)
+**[How to contact the Bürgeramt ➞](#how-to-contact-the-burgeramt)**
 
 ## Go to the Bürgeramt in person
 
@@ -70,6 +68,17 @@ You can do multiple things in one appointment:
 ![Berlin Bürgeramt list of services](/images/berlin-buergeramt-list-of-services.png "Select multiple services from the list")
 
 ![Berlin Bürgeramt multiple appointments at once](/images/berlin-buergeramt-multiple-appointments.png "Look for available appointments")
+
+## How to contact the Bürgeramt
+
+If you have a problem, email the Bürgeramt. They usually reply a few days later. Sometimes it takes a few weeks.
+
+To contact the Bürgeramt:
+
+1. [Find your local Bürgeramt](https://service.berlin.de/standorte/buergeraemter/)
+2. Use the contact information on the right side of the page
+
+![Where to find the email of a Berlin Bürgeramt](/images/email-berlin-buergeramt.png)
 
 [^0]: [nicolasbouliane.com](https://nicolasbouliane.com/blog/berlin-buergeramt-experiment)
 [^1]: Confirmed by an employee who built the booking system (March 2023)

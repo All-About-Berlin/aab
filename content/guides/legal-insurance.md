@@ -119,7 +119,7 @@ If your landlord or your employer takes advantage of you, you must decide betwee
 
 With legal insurance, you don't care. The insurance pays for everything. **You can always defend yourself, because it costs you nothing.** You just call your lawyer and they take care of it.
 
-You can also call a lawyer just to ask a few questions.[^23] They can check a contract before you sign it. This is useful if you have a German contract, but you don't speak German. You can solve problems before they happen. **If you talk to a lawyer once or twice per year, it's already worth it.**
+You can also call a lawyer just to ask a few questions.[^23] Some legal insurances cover checking a contract before you sign it.[^42] This is useful if you have a German contract, but you don't speak German. You can solve problems before they happen. **If you talk to a lawyer once or twice per year, it's already worth it.**
 
 If you don't need full legal insurance, look at [cheaper options](/guides/questions-about-berlin#legal-questions) like tenant associations (*[[Mieterverein]]*) or legaltech like [Conny](/out/conny).
 
@@ -128,11 +128,11 @@ If you don't need full legal insurance, look at [cheaper options](/guides/questi
 To choose legal insurance:
 
 1. **Talk to an insurance broker**  
-    An independent insurance broker can help you pick the best insurance from multiple companies. Their help is free, because they are paid by commission. [Muffin](/out/muffin-rechtsschutz) is an English-speaking insurance broker in Berlin.
+    An independent insurance broker can help you pick the best insurance from multiple companies. Their help is free, because they are paid by commission.
 2. **Use a comparison website**  
     [Tarifcheck](/out/tarifcheck-rechtsschutz) helps you compare insurances. It's only in German.
 3. **Read your insurance policy**  
-    Every insurance is different. You must understand what your insurance covers. If you don't speak German, choose an English-speaking insurer. [Feather](/out/feather-rechtsschutz) and [Getsafe](/out/getsafe-rechtsschutz) speak English. Getsafe's insurance policy is [available in English](https://www.hellogetsafe.com/documents/legal_comfort_roland.pdf?lang=en).
+    Every insurance is different. You must understand what your insurance covers. If you don't speak German, choose an English-speaking insurer. [Feather](/out/feather-rechtsschutz) and [Getsafe](/out/getsafe-rechtsschutz) speak English. They both sell the same legal insurance from Roland.[^41]
 
 ### What to cover
 
@@ -241,3 +241,5 @@ For quick business or immigration questions, try Alexander von Engelhardt's lega
 [^38]: [beratungshilfe-berlin.de](http://www.beratungshilfe-berlin.de/beratungshilfe)
 [^39]: Fiona Macdonald, [immigration lawyer](https://www.fmr-legal.de/) (February 2023)
 [^40]: [Rotwang Law](https://rotwang-law.de/en/) (July 2023)
+[^41]: Last checked in November 2023
+[^42]: [Not Feather and Getsafe](https://faq.feather-insurance.com/en/articles/45291-does-my-legal-insurance-policy-cover-the-review-of-legal-contracts)

@@ -4,7 +4,7 @@ Description: Counsellor. Speaks English, Hindi and Marathi
 Accepts_public_insurance: No
 Website: http://mymindoasis.com
 Email: 
-Address: Bismarckstraße 82
-Latitude: 52.511293
-Longitude: 13.305945
+Address: Axel-Springer-Straße 54B
+Latitude: 52.509727
+Longitude: 13.399846
 ---

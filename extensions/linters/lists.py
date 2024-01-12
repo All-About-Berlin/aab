@@ -10,12 +10,17 @@ class MultilineListsLinter(LineLinter):
     """
     file_suffixes = ('.md', )
 
+    previous_file_path = None
     item_indent = None
     item_has_double_space = None
     list_regex = re.compile(r'^(?P<indent> *)(?P<bullet>[-*+]|\d+\.) (?P<content>.*)')
 
     def lint_line(self, file_path: Path, line: str):
         match = self.list_regex.match(line)
+
+        if self.previous_file_path != file_path:
+            self.item_indent = None
+            self.previous_file_path = file_path
 
         # List item first line
         if match:

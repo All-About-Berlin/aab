@@ -9,7 +9,6 @@ Related_guides:
     guides/unemployment-benefits.md
     guides/find-a-job-in-berlin.md
     guides/learn-german.md
-    guides/german-work-visa.md
 ---
 
 The *Agentur für Arbeit* (*Bundesagentur für Arbeit*, *Arbeitsagentur*, *BA* or *AfA*) is responsible for [unemployment benefits](/glossary/ALG%20I) and the German labour market.

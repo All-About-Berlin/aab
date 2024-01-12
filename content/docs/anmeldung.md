@@ -12,7 +12,7 @@ Related_guides:
     guides/moving-to-berlin.md
 ---
 
-This is the English translation of the official *[[Anmeldung]]* form. You must fill this form to [register your address](/glossary/Anmeldung) in Berlin.
+This is the English translation of the official *[[Anmeldung]]* form. Fill this form to [register your address](/glossary/Anmeldung) in Berlin.
 
 **[How to do your Anmeldung in Berlin ➞](/guides/anmeldung-in-english-berlin)**
 
@@ -43,7 +43,7 @@ If you fill the form yourself, use these instructions:
         - Choose **Nebenwohnung** if you will have multiple residences, and this will be a secondary residence
     - **Tag des Einzugs**: Enter your move-in date. If you already moved in, you can write a past date. Use the DD.MM.YYYY date format.
     - **Postleitzahl, Gemeinde, Ortsteil**: The [postal code](/glossary/Postleitzahl), municipality and region of your new residence. For example, "10115 Berlin Mitte".
-    - **Straße, Hausnummer, Zusätze**: The street, house number and door number of your new residence. For example, "Chausseestraße 123, #23". If the landlord does not want to put your name on the mailbox, [add "c/o" or "bei" to your address](/guides/anmeldung-in-english-berlin#can-i-do-my-anmeldung-if-my-name-is-not-on-the-mailbox)[^0]. If you can, write the [building, entrance and floor number](/guides/addressing-a-letter-in-germany#extra-information). - [How to write your address](/guides/addressing-a-letter-in-germany)
+    - **Straße, Hausnummer, Zusätze**: The street, house number and door number of your new residence. For example, "Chausseestraße 123, #23". If the landlord does not want to put your name on the mailbox, [add "c/o" or "bei" to your address](/guides/anmeldung-in-english-berlin#can-i-do-my-anmeldung-if-my-name-is-not-on-the-mailbox).[^0] If you can, write the [building, entrance and floor number](/guides/addressing-a-letter-in-germany#extra-information). - [How to write your address](/guides/addressing-a-letter-in-germany)
 - **Gemeindekennzahl (right column)**: This column contains information about your previous residence. If your previous address is in another country, just write your country name in "Bei Zuzug aus dem Ausland Staat" field.[^1]
     - **Die (letzte) bisherige Wohnung (im Inland) war**:
         - Choose **alleinige Wohnung** if your last residence in Germany was your only residence
@@ -79,7 +79,7 @@ If you fill the form yourself, use these instructions:
     - Widowed: *Verwitwet*
     - Civil union: *in eingetragener Lebenspartnerschaft*
 - **Dokumente**: During your *Anmeldung* appointment, you must prove your identity. You need your passport or *[[Personalausweis]]*. This section describes your ID document.
-    - **Art**: The type of document: "RP" for a passport, "PA" for a *[[Personalausweis]]*, or "KP" for a children's passport.
+    - **Art**: The type of document: "RP" for a passport, "PA" for a *[[Personalausweis]]*, or "KP" for a children's passport. You can use a *Personalausweis* from another EU country.
     - **Name, Vorname**: The last name and the first name of the person this document belongs to.
     - **Ausstellungsbehörde**: The authority that issued this document. For example, "Kanada Botschaft, Berlin".
     - **Seriennummer**: The serial number of the ID document. For example, your passport number.

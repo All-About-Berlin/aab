@@ -74,10 +74,6 @@ Corn tortillas are sold at [Chili & Paprika](http://www.chiliundpaprika.de/) and
 
 According to Quora, you can find Couscous spice at Galeria under the name *Ras el-Hanout*. Turkish markets and spice kiosks at Berlin's many [Wochenmärkte](https://web.archive.org/web/20220828174400/https://mein-wochenmarkt.com/berlin) should also carry couscous spices.
 
-### Evaporated milk
-
-See *Condensed milk*.
-
 ### Flour
 
 North American all-purpose flour is the same as Type 550 flour in Germany. It's in most supermarkets. [Mehlstübchen](https://www.mehlstuebchen.de/) has flours from all over the world, including Manitoba and type 00 *dopio zero*. Self-raising flour can be found at Galeria Kaufhof.

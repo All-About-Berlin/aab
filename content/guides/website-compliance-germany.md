@@ -48,7 +48,7 @@ Read the [General Data Protection Regulation](https://gdpr-info.eu/).
 
 All About Berlin does not collect personal data about its visitors (I use [Plausible analytics](https://plausible.io/)). It does not set tracking cookies.
 
-There are [a few forms](/tools) that collect user data. It only collects it for one purpose (contacting a broker). Once the job is done, the data is deleted.
+A few forms on the website collect user data, for example to send a message or submit a request. No data is sent without an action from you. The data is deleted from the server as soon as possible.
 
 All of this is explained in the [privacy policy](/terms#privacy-policy).
 
@@ -284,7 +284,7 @@ If your website generates income, it's a business. If it's not part of a registe
     You must apply for a trade licence at your local *Gewerbeamt*. In Berlin, you can [do it online](/guides/gewerbeschein). If your business generates more than {{GEWERBESTEUER_FREIBETRAG|cur}}€ in profit per year, you also need to pay the [trade tax (*Gewerbesteuer*)](/glossary/Gewerbesteuer).[^18] For more information, read my [*Gewerbesteuer* guide](/guides/gewerbesteuer).
 - **If your website generates income, you need to register it with the [[Finanzamt]].** You register by [filling the *Fragebogen zur steuerlichen Erfassung*](/guides/fragebogen-zur-steuerlichen-erfassung). You will then receive a tax number (*[[Steuernummer]]*), which you need to put in your website's [[Impressum]].
 - **Making money from your website is considered self-employment.**  
-    If you are not allowed to be self-employed in Germany, you will also need to [apply for a freelance visa](/guides/how-to-get-a-german-freelance-visa). You can get a freelance visa in addition to an existing visa.[^19]
+    If you are not allowed to be self-employed in Germany, you will also need to [apply for a freelance visa](/guides/freelance-visa). You can get a freelance visa in addition to an existing visa.[^19]
 
 **Related guides:**
 

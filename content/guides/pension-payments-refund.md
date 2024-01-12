@@ -5,7 +5,6 @@ Description: If you left Germany, you get your German pension payments back. It 
 Date_created: 2020-06-04
 Related_reviews:
     reviews/pension-payments-refund/johannes-kühn.md
-    reviews/pension-payments-refund/dr-rené-roy.md
     reviews/pension-payments-refund/christian-haas.md
 ---
 
@@ -275,14 +274,13 @@ If you want to do it yourself, here are the steps:[^19]
         2. **or** [form V0901](https://www.deutsche-rentenversicherung.de/SharedDocs/Formulare/DE/_pdf/V0901.html) (English)
         3. **or** [form V0902](https://www.deutsche-rentenversicherung.de/SharedDocs/Formulare/DE/_pdf/V0902.html) (French)
 4. **Download and fill the payment information form** (*Zahlungserklärung*)  
-    If you use a bank in another country, your refund will take 2 months longer.  
+    If you use a bank in another country, your refund will take 2 months longer. The payment information form asks for a PANR, a BXNR and a ZANR. You don't have those numbers.[^22] Leave those fields empty.  
     1. If the bank account is in Germany:
         1. If it's your bank account, fill [form A1310](https://www.deutsche-rentenversicherung.de/SharedDocs/Formulare/DE/_pdf/A1310.html). Transfers to German bank accounts are *much* faster.
         2. If it's not your bank account, fill [form A1313](https://www.deutsche-rentenversicherung.de/SharedDocs/Formulare/DE/_pdf/A1313.html).
     2. If the bank account is in Canada or the United States, fill [form A1312](https://www.deutsche-rentenversicherung.de/SharedDocs/Formulare/DE/_pdf/A1312.html).
     3. If the bank account is in Italy, fill [form A1311](https://www.deutsche-rentenversicherung.de/SharedDocs/Formulare/DE/_pdf/A1311.html).
     4. If the bank account is in any other country, fill [form A1310](https://www.deutsche-rentenversicherung.de/SharedDocs/Formulare/DE/_pdf/A1310.html).  
-    The payment information form asks for a PANR, a BXNR and a ZANR. You don't have those numbers.[^22] Leave those fields empty.
 5. **Collect the other documents**[^39]
     - [ ] **A certified copy of your passport**  
         The German embassy or consulate can make a certified copy of your passport. The information in your passport must be the same as in the application forms.
@@ -321,7 +319,7 @@ These businesses can help you request a refund. They will fill the forms and req
 - **[⭐ Pension Refund Germany](/out/german-pension-refund)**  
     Their fee is 10% of your refund (maximum fee 2,800€).[^31] They automated the process, so you can do everything online. They pay you in the currency you prefer. They work with a lawyer.
 - **[⭐ FundsBack](/out/fundsback)**  
-    Their fee is 10% of your refund (minimum fee 899€, maximum 2,899€).[^29] They specialise in pension refunds since 2017. Their lawyer helped me a lot, and he verified this guide many times. Every case goes through their lawyer.
+    Their fee is 9.9% of your refund (minimum fee 899€, maximum 2,899€).[^29] They specialise in pension refunds since 2017. Their lawyer helped me a lot, and he verified this guide many times. Every case goes through their lawyer.
 - **[⭐ Germany Pension Refund](/out/germany-pension-refund)**  
     Their fee is 9.75% of your refund (no minimum or maximum fee).[^30] They specialise in pension refunds since 2007. They helped me a lot, and they verified this guide many times. Every case goes through their lawyers.
 - **[TaxBack](/out/taxback)**  
@@ -377,7 +375,7 @@ Tax advisors rarely have experience with German pension refunds. German embassie
 [^26]: [toytowngermany.com](https://www.toytowngermany.com/wiki/Pension_refunds_on_leaving_Germany)
 [^27]: [Screenshot](/images/drv-requirements-2022-08-23.png)
 [^28]: [deutsche-rentenversicherung.de](https://www.deutsche-rentenversicherung.de/Bund/DE/Beratung-und-Kontakt/sicherheit_post.html)
-[^29]: [fundsback.org](https://www.fundsback.org/en/fees/)
+[^29]: [fundsback.org](https://fundsback.org/pension-refund-germany/#:~:text=minimum%20fee%20of%20899%E2%82%AC%2C%20maximum%20of%202899%E2%82%AC)
 [^30]: [de.germanypensionrefund.com](https://de.germanypensionrefund.com/pricing)
 [^31]: [pension-refund.com](https://pension-refund.com/process-and-pricing.html?utm_source=blog&utm_medium=banner&utm_campaign=Prpart145&utm_id=os3bkuy36e)
 [^32]: [taxback.com](https://www.taxback.com/en/germany/pension-return/?utm_source=allaboutberlin)

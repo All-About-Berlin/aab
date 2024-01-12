@@ -19,6 +19,8 @@ When you are self-employed, you must pay for your workspace, equipment, insuranc
 
 You also pay more for health insurance, because your employer does not pay half of it.
 
+**[How taxes work ➞](/guides/taxes)**
+
 Think about these costs:
 
 - **[Income tax](/glossary/Einkommensteuer)** - [Tax calculator](/tools/tax-calculator)  
@@ -36,7 +38,7 @@ Think about these costs:
 - **Office space, equipment, software**.  
     You will need to use your own equipment. You might also want to rent a co-working space. If you were an employee, your employer would pay for those. You must include these costs in your calculations.
 - **Finances and bookkeeping**  
-    You must pay for bookkeeping and invoicing software, and for a business bank account. This costs at least 20 to 50€ per month. You might need a tax advisor (*[[Steuerberater]]*) to help you with your taxes. Use [this calculator](https://www.steuerschroeder.de/Steuerberatergebuehren.html) to estimate the cost of a tax advisor.
+    You must pay for bookkeeping and invoicing software, and for a business bank account. This costs *at least* 20 to 50€ per month. You might need a tax advisor (*[[Steuerberater]]*) to help you with your taxes. Use [this calculator](https://www.steuerschroeder.de/Steuerberatergebuehren.html) to estimate the cost of a tax advisor.
 - **The [cost of living in Berlin](/guides/cost-of-living)**  
     You must make enough money to live in Berlin. The [cost of living in Berlin](/guides/cost-of-living) can be different from what you are used to. You could need more money (or less) to have the same lifestyle.
 
@@ -44,7 +46,7 @@ Think about these costs:
 
 ### No paid vacations
 
-As a freelancer, you don't have paid vacations, paid holidays or sick days. When you don't work, you don't get paid. If you remove the weekends, the national holidays and 30 vacation days, will only work around 210 days per year.[^1] Think about this when you set your rates.
+As a freelancer, you don't have [paid vacations](/guides/vacation-days), [paid holidays](/guides/public-holidays) or [sick days](/guides/sick-leave). When you don't work, you don't get paid. If you remove the weekends, the national holidays and 30 vacation days, will only work around 210 days per year.[^1] Think about this when you set your rates.
 
 You don't always get paid to work. The time you spend finding clients, doing your taxes or updating your website is not billable.
 

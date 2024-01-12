@@ -6,10 +6,10 @@ Description: A registration certificate (Anmeldebestätigung or Meldebestätigun
 Date_created: 2018-07-31
 Related_guides:
     guides/first-bank-account-in-germany.md
-    guides/free-schufa-berlin.md
+    guides/schufa.md
     guides/an-honest-review-of-n26.md
     guides/getting-married-in-germany.md
-    guides/how-to-get-a-german-freelance-visa.md
+    guides/freelance-visa.md
     guides/replacement-meldebescheinigung.md
     guides/convert-to-german-driving-licence.md
     guides/start-a-business-in-germany.md
@@ -17,7 +17,6 @@ Related_guides:
     guides/moving-to-berlin.md
     guides/german-banks-no-address.md
     guides/how-to-get-a-kitagutschein.md
-    guides/german-work-visa.md
 ---
 
 A registration certificate (*Anmeldebestätigung* or *Meldebestätigung*) proves that you live at a certain address.

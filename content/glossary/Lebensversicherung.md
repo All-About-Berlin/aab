@@ -2,7 +2,7 @@
 Title: What is Lebensversicherung
 German_term: Lebensversicherung
 English_term: Life insurance
-Description: 
+Description: It pays money to your family when you die.
 Date_created: 2018-12-12
 Related_guides: guides/insurance.md
 ---

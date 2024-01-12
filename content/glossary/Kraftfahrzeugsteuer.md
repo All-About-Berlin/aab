@@ -7,6 +7,7 @@ Date_created: 2019-01-18
 Related_guides:
     guides/buying-used-car-in-germany.md
     guides/car-cost-of-ownership-germany.md
+    guides/taxes.md
 ---
 
 If you own a car in Germany, you must pay a vehicle tax (*Kraftfahrzeugsteuer* or *Kfz-Steuer*) every year. The cost depends on the type of the vehicle, and the size of its engine.

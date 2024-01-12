@@ -64,7 +64,7 @@ During your appointment, you will get an *[[Abmeldebescheinigung]]*.
 Send these documents by [registered mail](/glossary/Einschreibebrief) to [any *Bürgeramt* in Berlin](https://service.berlin.de/standorte/buergeraemter/):
 
 - [ ] The filled and signed [*Abmeldung* form](/docs/abmeldung). You can [fill it online](/docs/abmeldung#fill-the-abmeldung-form-online).
-- [ ] A copy of your passport
+- [ ] A copy of your passport or *[[Personalausweis]]*
 - [ ] If you deregister late, a proof of your move-out date[^22]
 
 Write your new address on the form. If you use a German address, and [your name is not on the mailbox](/guides/addressing-a-letter-in-germany#if-the-name-is-not-on-the-mailbox), use "c/o" or "bei" on the address form.
@@ -114,7 +114,7 @@ To deregister by email, send this message to the Bürgeramt:
 Attach this to your email:
 
 - [ ] The filled and signed [*Abmeldung* form](/docs/abmeldung)
-- [ ] A copy of your passport
+- [ ] A copy of your passport or *[[Personalausweis]]*
 - [ ] An image of your signature, in the email message. It must look like the signature on the *Abmeldung* form.[^13]
 - [ ] A proof of your move-out date, if you deregister late[^22]
 

@@ -2,9 +2,13 @@
 Title: What is a Working Holiday Visa?
 German_term: Working Holiday Visa
 English_term: 
-Description: 
+Description: This residence permit allows citizens of certain countries to work in Germany for up to 1 year.
 Date_created: 2019-07-13
-Related_guides: guides/moving-to-berlin.md, guides/german-work-visa.md, guides/residence-permit.md
+Related_guides:
+    guides/moving-to-berlin.md
+    guides/work-visa.md
+    guides/blue-card.md
+    guides/residence-permit.md
 ---
 
 The Working Holiday Visa lets citizens of certain countries work in Germany for up to 1 year.

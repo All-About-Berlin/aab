@@ -1,7 +1,7 @@
 ---
-Title: My honest N26 review - 5 years with N26
+Title: My honest N26 review - 7 years with N26
 Short_title: Review of N26
-Description: My opinion of N26 bank after 5 years. Is N26 safe? Is it good? Should you use it as your main bank in Germany? Here's what I think.
+Description: My opinion of N26 bank after 7 years. Is N26 safe? Is it good? Should you use it as your main bank in Germany? Here's what I think.
 Date_created: 2017-09-02
 ---
 
@@ -9,7 +9,7 @@ In 2016, I switched to [N26](/out/n26). I left [Commerzbank](/out/commerzbank) b
 
 **N26 is free**. No withdrawal fees, no monthly fees, no credit card fees. *Free!* I get money from the sketchiest ATMs in Berlin, and I don't pay any fees. This is not common in Germany.
 
-I am an N26 customer since 2016. It's my main bank account. This is my experience as an N26 customer in 2023.
+I am an N26 customer since 2016. It's my main bank account. This is my experience as an N26 customer in 2024.
 
 ![N26 credit cards](/images/n26-credit-card-allaboutberlin.jpg)
 
@@ -63,7 +63,7 @@ This was a unique feature in 2016, but now most banks have it. [Kontist](/out/ko
 
 ### No [[Anmeldung]] needed
 
-Some banks require a registration certificate ([*Anmeldebestätigung*](/glossary/Anmeldebest%C3%A4tigung)) to open an account. You get a registration certificate when you [register your address](/guides/anmeldung-in-english-berlin). N26 does not require this document. If you just moved to Germany, and you don't have an apartment yet, you can still open an N26 account.
+Some banks require a registration certificate (*[[Meldebescheinigung]]*) to open an account. You get a registration certificate when you [register your address](/guides/anmeldung-in-english-berlin). N26 does not require this document. If you just moved to Germany, and you don't have an apartment yet, you can still open an N26 account.
 
 For some passports, N26 also requires a plastic [residence permit](/glossary/Aufenthaltstitel) that is valid for 1 year.[^2] If this is a problem for you, there are other options.
 
@@ -97,7 +97,6 @@ N26 fees and conditions get worse every year:
 
 - When you open an account, you must pay 10€ to get a plastic MasterCard. It used to be free.
 - The free account has 3 free ATM withdrawals per month. It used to be 5.
-- If you keep more than 50,000€ in your account, you pay a fee.
 - The free account does not include Spaces.
 
 This is not just N26. **All banks got worse**. Every year, when I update my [comparison of German banks](/guides/first-bank-account-in-germany), I notice more fees and more limitations.
@@ -106,7 +105,7 @@ This is not just N26. **All banks got worse**. Every year, when I update my [com
 
 The standard N26 account is free. The free account is not as good as before, but it's still great.
 
-In 2023, [most German banks](/guides/first-bank-account-in-germany) have monthly fees. If you look at the [N26 fee list](https://docs.n26.com/legal/01+DE/01+Account/en/13account-pricelist-en.pdf), almost everything is free.
+In 2024{{ fail_on('2024-12-31') }}, [most German banks](/guides/first-bank-account-in-germany) have monthly fees. If you look at the [N26 fee list](https://docs.n26.com/legal/01+DE/01+Account/en/13account-pricelist-en.pdf), almost everything is free.
 
 **[Banks with no monthly fees ➞](/guides/first-bank-account-in-germany#german-banks-with-no-monthly-fees)**
 
@@ -223,10 +222,10 @@ If you just moved to Germany, [N26](/out/n26) is a good bank to start with. You 
 Is N26 the best bank for you? It depends. There are [many other options](/guides/first-bank-account-in-germany):
 
 - If you want an online bank with low fees, there is also [comdirect](/out/comdirect), [DKB](/out/dkb), [ING](/out/ing) and [bunq](/out/bunq).
-- If you don't speak German, there is also [bunq](/out/bunq), [Wise](/out/wise-account), [Revolut](/out/revolut), [Monese](/out/monese), and [Deutsche Bank](/out/deutsche-bank).
+- If you don't speak German, there is also [bunq](/out/bunq), [Wise](/out/wise-account), [Monese](/out/monese), and [Deutsche Bank](/out/deutsche-bank).
 - If you prefer a bank with branches you can go to, there is [Commerzbank](/out/commerzbank), [Deutsche Bank](/out/deutsche-bank) and [Berliner Sparkasse](https://www.berliner-sparkasse.de/de/home.html).
 - If you don't have an *[[Anmeldung]]* yet, there are [many ways to open a bank account](/guides/german-banks-no-address).
-- If N26 does not support your passport type, [Wise](/out/wise-account), [Revolut](/out/revolut), [bunq](/out/bunq) and [Monese](/out/monese) support passports from more countries.
+- If N26 does not support your passport type, [Wise](/out/wise-account), [bunq](/out/bunq) and [Monese](/out/monese) support passports from more countries.
 
 **[Comparison of German banks ➞](/guides/first-bank-account-in-germany)**
 

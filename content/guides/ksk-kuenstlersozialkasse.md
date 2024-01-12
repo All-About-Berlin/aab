@@ -316,6 +316,8 @@ When you fill the [KSK application form](/out/ksk-application-form), you must se
 
 ![KSK application form - selecting a profession](/images/ksk-antrag-tätigkeit-2022-07-04.png)
 
+- [ ] **Business plan**  
+    If you just started your business, include a simple business plan that explains how your business works.[^54]
 - [ ] **Examples of your work**  
     For example, websites, art, photographs, content that you have published, newspaper articles about your work, concert tickets. Anything that proves that you do creative or journalistic work.
 - [ ] **Proof of your creative career**  
@@ -575,3 +577,4 @@ Many organisations offer **free** consultations, support and workshops for artis
 [^51]: [§7 KSVG](https://www.gesetze-im-internet.de/ksvg/__7.html)
 [^52]: Sebastian Hoffmann at [Smart Coop](https://smart-eg.de/en/) (2022)
 [^53]: Letter from the KSK (2023)
+[^54]: Sebastian Hoffmann at [Smart Coop](https://smart-eg.de/en/) (2022)

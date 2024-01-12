@@ -16,6 +16,7 @@ These tools help you find how much you should earn.
 - [Glassdoor](https://www.glassdoor.de/Geh%C3%A4lter/index.htm) and [Kununu](https://www.kununu.com/) - Find salaries by job title. You need an account.
 - [Gehalt.de](https://www.gehalt.de/) (in German) - find salaries by job title
 - [Levels.fyi](https://www.levels.fyi/Salaries/Software-Engineer/Berlin-Germany/) - IT salaries
+- [techpays.eu](https://techpays.eu/europe/germany) - IT salaries
 - [Startup salary survey](https://berlinstartupjobs.com/startup-salary-survey/) - Yearly survey by BerlinStartupJobs
 - [Developer salaries in Germany (2021)](https://cult.honeypot.io/developer-salary-report-2021/developer-salaries-germany-2021/) - Honeypot.io
 - [Salaries in Berlin](https://www.settle-in-berlin.com/salary-in-berlin/) - longer article by Settle in Berlin
@@ -31,15 +32,9 @@ When you negotiate your salary, you negotiate your [gross income](/glossary/Brut
 
 In Germany, you pay [around 35% of your salary](/tools/tax-calculator) in taxes and social contributions.[^0] Your employer takes them directly from your paycheck.
 
-{% include '_blocks/taxCalculator.html' %}
+**[How taxes work ➞](/guides/taxes)**
 
-You pay these taxes and contributions:
-
-- [Health insurance](/glossary/Krankenversicherung)
-- [Nursing care insurance](/glossary/Pflegeversicherung)
-- [Public pension insurance](/glossary/gesetzliche%20Rentenversicherung)
-- [Unemployment insurance](/glossary/Arbeitslosenversicherung)
-- [Church tax](/glossary/Kirchensteuer)
+**[Tax calculator ➞](/tools/tax-calculator)**
 
 ## Minimum wage and median income
 
@@ -55,7 +50,7 @@ The median household income in Germany is {{MEDIAN_INCOME_GERMANY|cur}}€ per y
 
 ### Minimum wage
 
-The minimum wage (*[[Mindestlohn]]*) in Germany is **{{MINIMUM_WAGE|cur}}€ per hour**.[^3] After October 1, it will be 12€ per hour. [Some professions](https://www.destatis.de/DE/Themen/Arbeit/Verdienste/Mindestloehne/Tabellen/mindestlohn-deutschland.html) have a higher minimum wage (*Branchenmindestlohn*).
+The minimum wage (*[[Mindestlohn]]*) in Germany is **{{MINIMUM_WAGE|cur}}€ per hour**.[^3] [Some professions](https://www.destatis.de/DE/Themen/Arbeit/Verdienste/Mindestloehne/Tabellen/mindestlohn-deutschland.html) have a higher minimum wage (*Branchenmindestlohn*).
 
 Around 4% of jobs pay the minimum wage.[^4]
 

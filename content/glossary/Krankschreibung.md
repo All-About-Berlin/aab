@@ -13,7 +13,7 @@ A sick note (*Krankschreibung*, *Arbeitsunfähigkeitsbescheinigung*, *AU-Beschei
 
 Most German employers ask for a sick note if you are sick for more than 3 days.[^0]
 
-Since 2023, sick notes are digital. You get a paper copy. Your health insurer gets a digital copy from your doctor. Your employer gets a digital copy from your health insurer. Only you get a paper copy.[^1]
+Since 2023, sick notes are digital. You get a paper copy. Your employer and your health insurer get a digital copy from your doctor.[^1]
 
 ![Krankschreibung](/images/Krankschreibung-AU-schein-sick-note-germany.jpg)
 

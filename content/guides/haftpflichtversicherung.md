@@ -54,7 +54,7 @@ Most insurance policies do not cover these accidents:
 - **Piracy and copyright infringement**  
     If you get in trouble for [illegally downloading movies](/guides/pirating-streaming-movies-in-germany), your liability insurance will not cover you.[^12]
 - **Locking yourself out**  
-    If you lock yourself out of your apartment, and you call a locksmith to open the door, your liability insurance will not pay for it.[^32] Household insurance (*[[Hausratversicherung]]*) sometimes covers locksmiths. [Muffin](/out/muffin-hausrat) sells household insurance that covers locksmiths, and they speak English.
+    If you lock yourself out of your apartment, and you call a locksmith to open the door, your liability insurance will not pay for it.[^32] Household insurance (*[[Hausratversicherung]]*) sometimes covers locksmiths.
 
 ## Do I really need it?
 
@@ -68,7 +68,7 @@ It usually costs **less than 5€ per month**, or around 60€ per year. You can
 
 ## How to pick liability insurance
 
-If you feel lazy, **just choose [Getsafe](/out/getsafe-haftpflicht) or [Feather](/out/feather-haftpflicht).** Both options are fine. Both insurers speak English. I have insurance with Feather, but Getsafe is a little better: they sell their own insurance, their website clearly explains what it covers, and the contract is in English.
+If you feel lazy, **just choose [Feather](/out/feather-haftpflicht) or [Getsafe](/out/getsafe-haftpflicht).** Both options are fine. They speak English. They have simple, clear contracts in English. I have my liability insurance with Feather since 2022.
 
 To choose liability insurance yourself...
 
@@ -101,6 +101,10 @@ I recommend liability insurance that covers lost keys. [Replacing a lost key](/g
 
 If you often rent vehicles, you can pay around 1€/month more to cover rented vehicles. This covers the car rental company's deductible if you damage the car.
 
+### Don't wait
+
+Get liability insurance before you need it. You can't get it *after* you have a problem. For example, if you get liability insurance just before you [move out](/guides/moving-out), it might not cover the things you already broke in the apartment.
+
 ### How to pay less
 
 Don't get the cheapest insurance. Pick good coverage with a good insurance company. There are other ways to pay less.
@@ -112,7 +116,7 @@ Don't get the cheapest insurance. Pick good coverage with a good insurance compa
 
 ### English-speaking insurers
 
-If you don't speak German, pick an English-speaking insurer. [Feather](/out/feather-haftpflicht) and [Getsafe](/out/getsafe-haftpflicht) sell liability insurance, and they speak English. [Muffin](/out/muffin-haftpflicht) sells liability insurance from multiple companies, and they speak English.
+If you don't speak German, pick an English-speaking insurer. [Feather](/out/feather-haftpflicht) and [Getsafe](/out/getsafe-haftpflicht) sell liability insurance, and they speak English.
 
 You must understand your insurance contract. It's important. [Feather](/out/feather-haftpflicht) has most of its contracts in English. [Getsafe](/out/getsafe-haftpflicht) only has the summary in English, not the contract.
 
@@ -150,7 +154,7 @@ Dog liability insurance (*[[Hundehaftpflichtversicherung]]*) is required in Berl
 
 *Hundehaftpflichtversicherung* costs around 5€ per month. Use [Tarifcheck](/out/tarifcheck-dogs) to compare prices. If you don't speak German, [Feather](/out/feather-dogs) and [Getsafe](/out/getsafe-dogs) sell dog liability insurance, and they speak English. Their insurance covers dangerous breeds.
 
-**[More about dog liability insurance ➞](/guides/pet-ownership#dog-liability-insurance)**
+**[More about dog liability insurance ➞](/guides/dog-ownership#dog-liability-insurance)**
 
 ### Liability insurance for drivers
 
@@ -164,7 +168,7 @@ When you drive a vehicle, you are covered by your car's insurance (*Kfz-Haftpfli
 
 There is private legal insurance (for you), and professional legal insurance (for your business). Private legal insurance costs 16€ to 24€ per month.[^29] Professional legal insurance is more expensive. The price depends on what type of business you run.
 
-[Muffin](/out/muffin-rechtsschutz) can help you choose legal insurance, and they speak English. [Feather](/out/feather-rechtsschutz) and [Getsafe](/out/getsafe-rechtsschutz) sell legal insurance, and they speak English. [Tarifcheck](/out/tarifcheck-rechtsschutz) lets you compare insurances, but it's only in German.
+[Feather](/out/feather-rechtsschutz) and [Getsafe](/out/getsafe-rechtsschutz) sell legal insurance, and they speak English. [Tarifcheck](/out/tarifcheck-rechtsschutz) lets you compare insurances, but it's only in German.
 
 **[More information about legal insurance ➞](/guides/legal-insurance)**
 
@@ -174,7 +178,7 @@ There is private legal insurance (for you), and professional legal insurance (fo
 
 **No**. You are not required to have liability insurance, but it's a really good idea to have it. Most Germans have it.
 
-- **If you have a dog** in Berlin, Brandenburg, Hamburg, Lower Saxony or Thuringia, you must have [dog liability insurance](/guides/pet-ownership#dog-liability-insurance).
+- **If you have a dog** in Berlin, Brandenburg, Hamburg, Lower Saxony or Thuringia, you must have [dog liability insurance](/guides/dog-ownership#dog-liability-insurance).
 - **If you have a car or a motorcycle**, then you must have [vehicle insurance](/guides/car-insurance-germany). It includes liability insurance for when you are driving.
 - **In some professions**, you must have professional liability insurance.
 

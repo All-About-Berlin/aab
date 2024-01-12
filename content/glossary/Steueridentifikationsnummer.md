@@ -7,9 +7,10 @@ Date_created: 2018-07-31
 Related_guides:
     guides/german-tax-id-steuernummer.md
     guides/find-a-job-in-berlin.md
-    guides/how-to-get-a-german-freelance-visa.md
+    guides/freelance-visa.md
     guides/fragebogen-zur-steuerlichen-erfassung.md
     guides/start-a-business-in-germany.md
+    guides/taxes.md
     guides/anmeldung-in-english-berlin.md
     guides/moving-to-berlin.md
 ---

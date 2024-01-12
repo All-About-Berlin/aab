@@ -133,7 +133,7 @@ The website and mobile app are very reliable. I never had problems with them.
 
 The website, the app and the customer support are in English. You don't need to speak German to use Kontist.
 
-[N26 Business](/out/n26-business), [Holvi](/out/holvi), [Qonto](/out/qonto) and [Revolut](/out/revolut-business) also speak English.
+[N26 Business](/out/n26-business), [Holvi](/out/holvi) and [Qonto](/out/qonto) also speak English.
 
 ### Too many ads
 

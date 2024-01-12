@@ -154,7 +154,7 @@ You can find cardboard boxes...
     Buy new boxes from Bauhaus, Hellweg, and [other hardware stores](/guides/where-to-buy-what#hardware-and-home-improvement).
 - **In stores**  
     Get free used boxes from stores near you. You just need to ask nicely.
-- **On [Kleinanzeigen](https://www.ebay-kleinanzeigen.de/s-berlin/umzugskarton/k0l3331)**  
+- **On [Kleinanzeigen](https://www.kleinanzeigen.de/s-berlin/umzugskarton/k0l3331)**  
     Buy used boxes from other people. It's much cheaper than new boxes.
 - **From the moving company**  
     If you hire a moving company, they can give or sell you boxes.
@@ -163,13 +163,13 @@ You can find cardboard boxes...
 
 A moving company helps you pack boxes, disassemble furniture, save a parking space (*Halteverbot*), hire movers, and [change your address](/guides/address-change). It costs 600 to 1,200€, but it's worth it.[^24] The price depend on how much furniture you have, and how hard it is to move the furniture.[^40]
 
-If you don't have many things to move, hire a "man with a van". They are usually cheaper than a moving company. You can find them on [Kleinanzeigen](https://www.ebay-kleinanzeigen.de/s-mitte/umzug/k0l3518). [Möbel Taxi](https://www.moebel-taxi.de/english/) is a popular option.
+If you don't have many things to move, hire a "man with a van". They are usually cheaper than a moving company. You can find them on [Kleinanzeigen](https://www.kleinanzeigen.de/s-mitte/umzug/k0l3518). [Möbel Taxi](https://www.moebel-taxi.de/english/) is a popular option.
 
 International moves are more expensive. Shipping and customs can be complicated. If you move to America or Asia, it's often cheaper to sell everything and buy it again.
 
-[Zapf](https://www.zapf.de/) is often recommended.[^25] [Smoovers](https://smoover-moving.de/) can book movers for you, but they have mixed reviews.
+[Zapf](https://www.zapf.de/) is often recommended.[^25] [Smoovers](https://smoover-moving.de/) can also book movers for you and they speak English.
 
-Your contract should say who pays for the damages the movers cause.[^39] For example, what happens if they scratch the walls while they move your couch? Most moving companies have insurance for this. The movers on [Kleinanzeigen](https://www.ebay-kleinanzeigen.de/s-mitte/umzug/k0l3518) are might not have insurance.
+Your contract should say who pays for the damages the movers cause.[^39] For example, what happens if they scratch the walls while they move your couch? Most moving companies have insurance for this. The movers on [Kleinanzeigen](https://www.kleinanzeigen.de/s-mitte/umzug/k0l3518) are might not have insurance.
 
 ### Rent a moving truck
 
@@ -181,7 +181,7 @@ Most people just hold a parking spot with their car until the moving truck arriv
 
 ### Sell or donate your things
 
-Get rid of the things you don't need. The best options are [Kleinanzeigen](https://www.ebay-kleinanzeigen.de/) and [Facebook groups](/guides/how-do-i-buy-and-sell-used-things-in-berlin#facebook-groups).
+Get rid of the things you don't need. The best options are [Kleinanzeigen](https://www.kleinanzeigen.de/) and [Facebook groups](/guides/how-do-i-buy-and-sell-used-things-in-berlin#facebook-groups).
 
 **[How to buy, sell and donate things ➞](/guides/how-do-i-buy-and-sell-used-things-in-berlin)**
 

@@ -19,7 +19,7 @@ Summary:
 
 ## What is the Deutschland Ticket?
 
-The Deutschland Ticket is a monthly public transit pass. It lets you use local public transit in all of Germany. It costs {{DEUTSCHLAND_TICKET_PRICE|cur}}€ per month. It's available from May 1, 2023 in all of Germany.
+The Deutschland Ticket is a monthly public transit pass. It lets you use local public transit in all of Germany. It costs {{DEUTSCHLAND_TICKET_PRICE|cur}}€ per month. It's available in all of Germany.
 
 ## What can you do with a Deutschland Ticket?
 

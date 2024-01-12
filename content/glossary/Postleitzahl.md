@@ -2,9 +2,10 @@
 Title: What is a Postleitzahl?
 German_term: Postleitzahl
 English_term: Post code
-Description: 
+Description: A 5-digit number that tells which area you live in.
 Date_created: 2020-12-17
-Related_guides: guides/start-a-business-in-germany.md, guides/hundesteuer.md
+Related_guides:
+    guides/start-a-business-in-germany.md
 ---
 
 A *Postleitzahl* or *PLZ* is a German post code or zip code. It always has 5 digits. For example, the post code of the Brandenburg Gate is 10117.

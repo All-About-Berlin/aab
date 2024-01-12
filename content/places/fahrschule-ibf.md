@@ -1,8 +1,8 @@
 ---
 Name: Fahrschule IBF
-Description: Driving lessons in English, Turkish and German.
+Description: Theory classes and driving lessons in English, Turkish and German.
 Website: http://www.fahrschule-ibf.de/
-Email: 
+Email: jonas.hammann17@gmail.com
 Address: Borussiastraße 19
 Latitude: 52.467024
 Longitude: 13.384794

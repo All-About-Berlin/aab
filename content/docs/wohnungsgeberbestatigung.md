@@ -14,9 +14,7 @@ Related_guides:
     guides/moving-to-berlin.md
 ---
 
-When you [move into an apartment](/guides/moving-in), the landlord or [main tenant](/glossary/Hauptmieter) gives you a [[Wohnungsgeberbestätigung]].[^0] You need this document to [register your address](/glossary/Anmeldung).
-
-**[How to register your address in Berlin ➞](/guides/anmeldung-in-english-berlin)**
+The *[[Wohnungsgeberbestätigung]]* is a document you need to [register your address](/glossary/Anmeldung). It must be signed by the landlord or [main tenant](/glossary/Hauptmieter) when you [move into an apartment](/guides/moving-in).[^0]
 
 The *Wohnungsgeberbestätigung* must contain:[^2]
 
@@ -31,6 +29,12 @@ The *Wohnungsgeberbestätigung* must contain:[^2]
 {% include "_blocks/downloadDocuments.html"%}
 
 This template is an official example from Berlin.de. You can also use your own template.[^1]
+
+## How to send this form
+
+You must register your address in person at the *[[Bürgeramt]]*.
+
+**[How to register your address in Berlin ➞](/guides/anmeldung-in-english-berlin)**
 
 [^0]: [gesetze-im-internet.de](https://www.gesetze-im-internet.de/englisch_bgb/englisch_bgb.html#p1968), [immobilienscout24.de](https://www.immobilienscout24.de/wissen/mieten/untervermietung.html)
 [^1]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/7r3rhe/question_about_anmeldung/dsu4ffx/)

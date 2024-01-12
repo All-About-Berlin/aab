@@ -1,39 +1,48 @@
 ---
-Title: List of relocation agencies and relocation consultants in Berlin
-Short_title: Relocation agencies in Berlin
+Title: List of relocation consultants and agencies in Berlin
+Short_title: Relocation consultants in Berlin
 Description: These relocation consultants can help you get the right residence permit and visa to live, work and freelance in Germany.
 Date_created: 2018-03-26
 Related_places:
     places/red-tape-translation.md
-    places/expath.md
-    places/nomaden-berlin.md
-    places/archer-relocation.md
-    places/glogauer-str-25.md
     places/sorted-berlin.md
+    places/archer-relocation.md
+    places/irc-berlin.md
+    places/expath.md
+    places/relokate.md
+    places/nomaden-berlin.md
+    places/glogauer-str-25.md
     places/start-relocation.md
     places/myhelpbuddy.md
-    places/relokate.md
-    places/irc-berlin.md
     places/prime-relocation.md
     places/impats.md
     places/von-wrede-relocation.md
     places/progedo.md
     places/gibbesch-consulting.md
+    places/expat-unity.md
+    places/jetztpat.md
 ---
 
-Relocation agencies make it easier to [move to Germany](/guides/moving-to-berlin). They take care of the paperwork, book appointments, help you find an apartment and much more.
+Relocation agencies make it easier to [move to Germany](/guides/moving-to-berlin).
 
-I recommend Kathleen Parker from Red Tape Translation. She helped with a few guides on this website. I often contact her to ask questions.
+A relocation agency can help you...
+
+- Apply for a [residence permit](/glossary/Aufenthaltstitel)
+- Book *[[Bürgeramt]]* and *[[Ausländerbehörde]]* appointments
+- [Find an apartment](/guides/find-a-flat-in-berlin) and [register your address](/glossary/Anmeldung)
+- Fill and translate documents
 
 {% include "_blocks/tableOfContents.html" %}
 
 ## Relocation agency or immigration lawyer?
 
-Relocation agencies can help you plan your move to Germany: [find your first apartment](/guides/find-a-flat-in-berlin), [book German classes](/guides/learn-german), [open a bank account](/guides/first-bank-account-in-germany), get a cell phone plan, register with basic utilities and so on.
+**Relocation consultants** help you [move to Berlin](/guides/moving-to-berlin) and deal with German bureaucracy, but they can't give you legal advice.
 
-However, **relocation agencies can't provide legal services**. Visa applications, residence permits applications and business registrations are considered legal consultation. Only lawyers can offer legal consultation. In practice, relocation consultants can help you with that, and they are cheaper than lawyers. You will find immigration lawyers in our [**list of English-speaking lawyers in Berlin**](/guides/english-speaking-lawyers-berlin).
+**Immigration lawyers** give legal advice. They only help you with immigration: residence permits, permanent residence and citizenship. If you have legal questions, you need a lawyer.
 
-There are also [other people who can help you](/guides/questions-about-berlin#immigration-questions).
+**[List of English-speaking lawyers ➞](/guides/english-speaking-lawyers-berlin)**
+
+**[Other people who can help ➞](/guides/questions-about-berlin)**
 
 ## List of relocation agencies
 

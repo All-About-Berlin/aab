@@ -8,6 +8,7 @@ Related_guides:
     guides/ottonova-review.md
     guides/german-health-insurance.md
     guides/german-visa-health-insurance.md
+    tools/health-insurance-calculator.md
     guides/techniker-krankenkasse-review.md
     guides/insurance.md
 ---

@@ -59,26 +59,26 @@ You should also tell...
 - [ ] **The [[Finanzamt]]**
     - [ ] **If you have a business**  
         If you use your home address as your business address, tell the *[[Finanzamt]]* about your address change.[^1] Fill the *[Änderung der Adresse](https://www.elster.de/eportal/formulare-leistungen/alleformulare/aenderungadresse)* form in [ELSTER](/glossary/ELSTER), or ask your [tax advisor](/glossary/Steuerberater) to do it. If your new address is served by a different *Finanzamt*, you will get a new *[[Steuernummer]]*.[^0]
-    - [ ] **If you have a dog**  
-        Tell the *Finanzamt* about your address change. This is because you must pay a dog tax (*[[Hundesteuer]]*). [This guide](/guides/hundesteuer) shows you how to change your address. You must also change your address in the [dog registry](https://hunderegister.berlin.de/) (*[[Hunderegister]]*). [How to register your dog in Berlin](/guides/hundesteuer).
 - [ ] **The TV tax** (*[[Rundfunkbeitrag]]*)  
     The *[[ARD ZDF Deutschlandradio Beitragsservice]]* collects the [TV tax](/glossary/Rundfunkbeitrag). You can update your address [here](https://www.rundfunkbeitrag.de/buergerinnen_und_buerger/formulare/aendern/index_ger.html). [More information about the TV tax.](/guides/gez-rundfunkbeitrag)
 - [ ] **The Kfz-Zulassungsstelle**  
     If you have a vehicle, you must update your registration papers. You can do this at the local *[[Kfz-Zulassungsstelle]]* or [online](https://service.berlin.de/dienstleistung/120918/). You will receive a new *[Zulassungsbescheinigung Teil 1](/glossary/Zulassungsbescheinigung)*.[^2]
 - [ ] **The Kita-Gutscheinstelle**  
     If you send your children to a [[Kita]], [request a Kitagutschein](/guides/how-to-get-a-kitagutschein) for your new address.
-- [ ] **The [[Ordnungsamt]]**  
-    If you have a dog from a dangerous breed (pit-bull, American Staffordshire terrier, bullterrier), you must register it at the *[[Ordnungsamt]]* every time you move. If you live in Berlin, start [here](https://service.berlin.de/dienstleistung/326263/).
 - [ ] **The [Hunderegister](https://hunderegister.berlin.de/)**  
-    If you have a dog, you should update their address in the [*Hunderegister*](https://hunderegister.berlin.de/).
+    In Berlin, if you have a dog, update your address in the *[[Hunderegister]]*. In other places, you might need to tell the *[[Finanzamt]]*.
+- [ ] **The [[Ordnungsamt]]**  
+    If you have a dog of a dangerous breed, you must register it at the *[[Ordnungsamt]]* every time you move. If you live in Berlin, start [here](https://service.berlin.de/dienstleistung/326263/).
+- [ ] **The [[Ordnungsamt]]**  
+    If you have a business, and your business address changes, you must [tell the *Ordnungsamt*](/out/business-ummeldung).
 - [ ] **Your website**  
-    If you have a commercial website, update your [[Impressum]] with your new address.
+    If you have a commercial website, put your new address in your [[Impressum]].
 
 ## Forward your mail
 
 You might still receive letters at your old address. You can pay to forward mail from your old address to your new address. Register for this service **before you move**.
 
-**[Deutsche Post](https://shop.deutschepost.de/nachsendeservice-beauftragen)** - 30€ for 6 months
+**[Deutsche Post](https://shop.deutschepost.de/nachsendeservice-beauftragen)** - 30€ for 6 months{{ fail_on('2025-01-31') }}
 
 Mail forwarding is **unreliable**. Official mail from the Bürgeramt, Finanzamt and Ausländerbehörde is not always forwarded.[^5] Forwarded mail can take a week longer to arrive.[^6] Packages are not forwarded.
 

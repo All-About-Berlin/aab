@@ -19,7 +19,7 @@ In Germany, a part of your [gross income](/glossary/Brutto%20income) (*Brutto*) 
 
 {% include '_blocks/taxCalculator.html' %}
 
-**[How taxes work ➞](/tools/tax-calculator#the-taxes-you-pay-in-germany)**
+**[How taxes work ➞](/guides/taxes)**
 
 **[How to pay less taxes ➞](/guides/saving-money-germany#taxes-and-social-contributions)**
 
@@ -122,7 +122,7 @@ If you have a dog, you must pay for dog food, [liability insurance](/glossary/Hu
 
 The dog tax is 120€ to 180€ per year. Dog liability insurance is required, and it costs around 5€ per month. Pet health insurance is optional, and it costs around 20€ per month. You can see the price of dog food [here](https://www.fressnapf.de/c/hund/hundefutter/trockenfutter/).
 
-**[Owning a dog in Germany ➞](/guides/pet-ownership)**
+**[Having a dog in Berlin ➞](/guides/dog-ownership)**
 
 ## One time expenses
 
@@ -144,7 +144,7 @@ If you live in a [[WG]], the deposit is smaller. Sometimes, there is no deposit.
 
 When you [move into your first apartment](/guides/moving-in), you must get new furniture, new appliances, kitchen equipment, etc. In Germany, you might even need to buy light fixtures, and a kitchen counter.
 
-To save money, buy used furniture. You can find free/cheap furniture on [Kleinanzeigen](https://www.ebay-kleinanzeigen.de/stadt/berlin/) and [various Facebook groups](/guides/how-do-i-buy-and-sell-used-things-in-berlin#facebook-groups).
+To save money, buy used furniture. You can find free/cheap furniture on [Kleinanzeigen](https://www.kleinanzeigen.de/stadt/berlin/) and [various Facebook groups](/guides/how-do-i-buy-and-sell-used-things-in-berlin#facebook-groups).
 
 **[Where to buy what in Berlin ➞](/guides/where-to-buy-what)**
 
@@ -156,7 +156,7 @@ This is an example budget for a single person who lives in Berlin. It uses reali
 
 3,994€ was the average German salary in 2019.[^2] I used health insurance from [[Techniker Krankenkasse]]. I used the tax class for a single person without children.
 
-Use my [tax calculator](/tools/tax-calculator) to calculate your [net income](/glossary/Netto%20income).
+**[Calculate your taxes ➞](/tools/tax-calculator)**
 
 | Description | Monthly | Yearly  |
 |-------------|--------:|--------:|
@@ -173,21 +173,21 @@ Use my [tax calculator](/tools/tax-calculator) to calculate your [net income](/g
 
 These are my real monthly expenses. This table does not include buying clothes, replacing broken things, or having fun. It only lists the bills I *must* pay.
 
-My budget includes a motorcycle, and a garage (120€/month). You don't need those. My rent is also very low, because I live far from the centre.
+My budget includes a motorcycle, and a garage (120€/month). You don't need those. My rent is also very low, because I live far from the centre.{{ fail_on('2024-12-31') }}
 
 | Description                      | Monthly | Yearly |
 |----------------------------------|-----:|-------:|
 | [Rent](/glossary/Warmmiete)                       | 678€ | 8,136€ |
 | Groceries                        | 175€ | 2,100€ |
-| Public transit pass              | 63€  | 756€   |
-| Electricity                      | 38€  | 456€   |
-| Internet                         | 36€  | 432€   |
+| Electricity                      | 50€  | 600€   |
+| Public transit pass              | {{DEUTSCHLAND_TICKET_PRICE|cur}}€ | {{DEUTSCHLAND_TICKET_PRICE*12|cur}}€ |
+| Internet                         | 40€  | 480€   |
 | [Vehicle insurance](/glossary/Kfz-Versicherung)          | 25€  | 304€   |
 | [TV tax (*Rundfunkbeitrag*)](/glossary/Rundfunkbeitrag) | 18€  | 210€   |
 | Mobile phone                     | 10€  | 120€   |
 | [Liability insurance](/glossary/Haftpflichtversicherung)        | 6€   | 74€  |
 | Vehicle tax                      | 4€   | 47€  |
-| **Total**<br>This is how much I need to pay the bills | **1,053€** | **12,630€** |
+| **Total**<br>This is how much I need to pay the bills | **1,055€** | **12,660€** |
 
 ## How to save money
 

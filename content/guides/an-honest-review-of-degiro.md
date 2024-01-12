@@ -11,7 +11,7 @@ Degiro is an online broker with low fees. You can buy and sell stocks for a very
 
 ## In English and German
 
-In 2023, the Degiro website is in English and in German. Before, it was only in German. If you don't speak German, it's a big improvement.
+In 2024{{ fail_on('2024-12-31') }}, the Degiro website is in English and in German. Before, it was only in German. If you don't speak German, it's a big improvement.
 
 ![Screenshot of the Degiro website in English](/images/degiro-user-interface-2023-02-24.png "The Degiro user interface in English")
 
@@ -21,7 +21,7 @@ The landing page and some important parts of the registration process are only i
 
 ## Low fees
 
-As promised, **the fees are very low**. You usually pay less than 1€ per trade. Most banks charge 10-20€ per transaction *plus* monthly fees.
+As promised, **the fees are very low**. You usually around 1€ per trade. Most banks charge 10-20€ per transaction *plus* monthly fees.
 
 This is why I switched from Commerzbank to Degiro. Over time, I saved *hundreds* of euros in trading fees.
 
@@ -31,7 +31,7 @@ In general, Degiro works fine. It does what it should, and has low fees. As a ca
 
 ### Reliability
 
-A few years ago, the Degiro platform was not reliable. It went down a few times per month. That's why my [2019 review](/documents/degiro-review-2019.pdf) was so negative. In 2023, I have no problems. The website always works fine. I have not noticed any downtime in the last few years.
+A few years ago, the Degiro platform was not reliable. It went down a few times per month. That's why my [2019 review](/documents/degiro-review-2019.pdf) was so negative. In 2024, I have no problems. The website always works fine. I have not noticed any downtime in the last few years.
 
 ### The sign up process
 
@@ -67,7 +67,7 @@ I transfered tens of thousands of euros in and out of Degiro without any issues.
 
 **Would I recommend Degiro?** Yes. I use it myself since a few years.
 
-Degiro is much better than before. They had many issues in 2018, but those are solved in 2023. If they showed you your profit/losses over time, Degiro would be perfect. Without that, it's still pretty good.
+Degiro is much better than before. They had many issues in 2018, but those are solved in 2024{{ fail_on('2024-12-31') }}. If they showed you your profit/losses over time, Degiro would be perfect. Without that, it's still pretty good.
 
 **[Visit the Degiro website ➞](/out/degiro)**
 

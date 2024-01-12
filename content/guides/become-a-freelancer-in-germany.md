@@ -13,7 +13,7 @@ This guide shows you how to [move to Germany](/guides/moving-to-berlin) and [sta
 
 ## Are you really a freelancer?
 
-Some employers hire "freelancers", but treat them like employees. This way, they don't have to pay social and healthcare. This is called fake self-employment ([*Scheinselbstständigkeit*](/glossary/Scheinselbstst%C3%A4ndigkeit)), and it's illegal.[^0]
+Some employers hire "freelancers", but treat them like employees. This way, they don't have to pay social and healthcare. This is called fake self-employment (*[[Scheinselbstständigkeit]]*), and it's illegal.[^0]
 
 **[What is fake self-employment?](https://redtapetranslation.com/do-i-need-to-be-worried-about-scheinselbststandigkeit/)** - Red Tape Translation
 
@@ -37,7 +37,7 @@ If you [start a business in Germany](/guides/start-a-business-in-germany), you m
 
 **[Cost of running a business ➞](/guides/start-a-business-in-germany#the-cost-of-running-a-business)**
 
-You also need savings to get started. If you need a [residence permit](/glossary/Aufenthaltstitel) to freelance in Germany, you can't work before you get the permit. Applying for a freelance visa can take *months*, and you need enough savings to wait. If you don't have enough savings, [apply for the residence permit in your home country](/guides/how-to-get-a-german-freelance-visa#two-ways-to-apply), and move to Germany after you get the permit. It's cheaper and safer.
+You also need savings to get started. If you need a [residence permit](/glossary/Aufenthaltstitel) to freelance in Germany, you can't work before you get the permit. Applying for a freelance visa can take *months*, and you need enough savings to wait. If you don't have enough savings, [apply for the residence permit in your home country](/guides/freelance-visa#how-to-apply-in-your-country), and move to Germany after you get the permit. It's cheaper and safer.
 
 ### Business registration
 
@@ -98,13 +98,15 @@ Use [Tarifcheck](/out/tarifcheck-berufunfahigkeit) to compare disability insuran
 
 ### Legal insurance
 
-Legal insurance (*[[Rechtsschutzversicherung]]*) will cover your legal costs if you need a lawyer. For example, if a client refuses to pay you, or if you have problems with another business.
+Legal insurance (*[[Rechtsschutzversicherung]]*) covers your legal costs if you need a lawyer. For example, if a client refuses to pay you, or if you have problems with another business.
 
-You must get professional legal insurance. Private legal insurance does not cover business activities.
+You must get professional legal insurance. Private legal insurance rarely covers business activities.
 
 **[What does legal insurance cover? ➞](/guides/legal-insurance)**
 
-[Muffin](/out/muffin-rechtsschutz) helps you choose legal insurance from multiple companies, and they speak English. [Feather](/out/feather-rechtsschutz) and [Getsafe](/out/getsafe-rechtsschutz) sell legal insurance, and they speak English. [Tarifcheck](/out/tarifcheck-rechtsschutz) helps you compare insurances, but it's only in German.
+[Feather](/out/feather-rechtsschutz) and [Getsafe](/out/getsafe-rechtsschutz) sell legal insurance, and they speak English. They sell the same legal insurance from Roland.
+
+[Tarifcheck](/out/tarifcheck-rechtsschutz) helps you compare insurances, but it's only in German.
 
 ### Accounting costs
 
@@ -124,11 +126,11 @@ You can also get disability insurance (*[[Berufsunfähigkeitsversicherung]]*). T
 
 ## Build some savings
 
-If you need to [apply for the German freelance visa](/guides/how-to-get-a-german-freelance-visa), you need enough savings to last 3 to 6 months without working. You can't work until you get the visa, and it takes a few months to get it.[^4] You need enough savings to survive until you can start working.
+If you need to [apply for the German freelance visa](/guides/freelance-visa), you need enough savings to last 3 to 6 months without working. You can't work until you get the visa, and it takes a few months to get it.[^4] You need enough savings to survive until you can start working.
 
 **[Cost of living in Germany ➞](/guides/cost-of-living)**
 
-As a freelancer, you will not always have enough work, and your clients will not always pay you on time. Sometimes, they won't pay you at all! You need to have enough savings to feed yourself and pay the rent even during the bad months. When you apply for the freelance visa, [you must prove that you have a few thousand euros saved](/guides/how-to-get-a-german-freelance-visa#proof-of-self-sufficiency).
+As a freelancer, you will not always have enough work, and your clients will not always pay you on time. Sometimes, they won't pay you at all! You need to have enough savings to feed yourself and pay the rent even during the bad months. When you apply for the freelance visa, [you must prove that you have a few thousand euros saved](/guides/freelance-visa#required-documents).
 
 Once you start freelancing, you also need to save some of your revenue to pay [VAT](/glossary/Umsatzsteuer), [income tax](/glossary/Einkommensteuer), [trade tax](/glossary/Gewerbesteuer) and health insurance. [Kontist](/out/kontist) bank accounts that do this automatically. [It's not perfect](/guides/kontist-review), but it works.
 
@@ -146,7 +148,7 @@ Will you bill per hour, per day or per project? Will you send an invoice bi-week
 
 ## Find your first clients
 
-If you need a freelance visa to work in Germany, you can't get it without clients in Germany. You must prove that German companies want to use your services. If you can't prove that, you won't get the visa.
+When you apply for a freelance visa in Berlin, you must usually prove that you will have clients in Germany.[^9] If you have no clients in Germany, you might not get a freelance visa. This rule might not apply in other German cities.
 
 This means you must approach German companies and get them to sign [letters of intent](/glossary/Absichtserkl%C3%A4rung). This is not a contract, just a letter that says they are interested in hiring you. German companies know about this, and won't mind signing those letters. You need at least two letters of intent for your visa application.
 
@@ -160,7 +162,7 @@ If you are not a EU or [[EEA]] citizen or permanent resident, you need a [reside
 
 **[Do you need a residence permit? ➞](/guides/residence-permit)**
 
-Everyone else needs a residence permit to work in Germany. To be self-employed, you must [apply for a German freelance visa](/guides/how-to-get-a-german-freelance-visa). This takes 3 to 6 months.[^8] You can't work before you get the residence permit. If you already have a [[Blue Card]] or a [work visa](/glossary/Work%20Visa), it might allow you to freelance already.
+Everyone else needs a residence permit to work in Germany. To be self-employed, you must [apply for a German freelance visa](/guides/freelance-visa). This takes 3 to 6 months.[^8] You can't work before you get the residence permit. If you already have a [work visa](/glossary/Work%20Visa) or a [[Blue Card]], it might allow you to freelance already.
 
 If you come from **{{AUFENTHV_41_COUNTRIES}}**, you can stay in Germany for up to 90 days without a visa.[^6] You can come to Germany and apply for a freelance visa there. It's easier to prepare your freelance visa application if you are already in Germany, but you will spend more time in Germany without an income.
 
@@ -168,7 +170,7 @@ If you come from another country, you need a [job seeker visa](/glossary/Job%20s
 
 [Getting a visa appointment](/guides/berlin-auslanderbehorde-appointment) can take up to 6 months in Berlin. You could get the visa immediately at the end of your appointment, or you could receive it 1 to 3 months later. You will get a temporary visa (*[[Fiktionsbescheinigung]]*) while you wait for the decision. It lets you stay in Germany, but it does not let you work. You need enough savings to survive until you get your visa.
 
-**[How to apply for the German freelance visa ➞](/guides/how-to-get-a-german-freelance-visa)**
+**[How to apply for the German freelance visa ➞](/guides/freelance-visa)**
 
 ## Start your business
 
@@ -189,11 +191,12 @@ If you are a freelance artist, publicist or art teacher, you can apply for the *
 **[Where to ask business questions](/guides/questions-about-berlin#business-questions)**
 
 [^0]: [§7 SGB IV](https://www.gesetze-im-internet.de/sgb_4/__7.html), [reddit.com/r/germany](https://old.reddit.com/r/germany/comments/7rz3wc/question_transitioning_from_fulltime_to_freelance/dt0u1gv/)
-[^1]: [allaboutberlin.com](/guides/how-to-get-a-german-freelance-visa#the-german-freelance-visa-requirements)
+[^1]: [allaboutberlin.com](/guides/freelance-visa#freelance-visa-requirements)
 [^2]: [gdv.de](https://www.gdv.de/de/themen/news/versicherungsschutz-versicherungsdichte-ueberversicherung-49418)
 [^3]: [Screenshot](/guides/haftpflichtversicherung)
-[^4]: [Screenshot](/guides/how-to-get-a-german-freelance-visa)
+[^4]: [Screenshot](/guides/freelance-visa)
 [^5]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/4szbve/freelancing_in_germany_help_and_questions/d5dggy0/), [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/9b8tm8/a_few_questions_for_berlinbased_freelancers/e51c3tk/)
 [^6]: [gtai.de](https://www.gtai.de/en/invest/investment-guide/who-needs-a-visa--558348), [Make it in Germany](https://www.make-it-in-germany.com/en/visa-residence/procedure/do-i-need-visa)
 [^7]: [tk.de](https://www.tk.de/techniker/leistungen-und-mitgliedschaft/informationen-versicherte/leistungen/weitere-leistungen/krankengeld/selbststaendige/krankengeldanspruch-selbststaendige-2006296)
 [^8]: [Berlin immigration office](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-16238.pdf) (July 2023), [Berlin immigration office](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-16605.pdf) (September 2023)
+[^9]: Kathleen Parker, Sebastian Hoffmann on [Facebook](https://www.facebook.com/groups/germanfreelancevisa/posts/1665701607231869/) (2023)

@@ -196,7 +196,7 @@
 					placeholder="Alex Gagnon">
 				<span class="input-instructions" :id="uid('birthName-instructions-' + person.id)">If you changed your name, enter your full name at birth.</span>
 			</div>
-			<div class="form-group required">
+
 				<span class="label">Gender</span>
 				<div class="input-group">
 					<label class="checkbox">
@@ -608,7 +608,9 @@
 				},
 				oldPostCode(newVal) {
 					const postalCodeIsValid = parseInt(newVal, 10) > 10100 && parseInt(newVal, 10) < 14200;
-					this.$refs.oldPostCodeInput.$el.setCustomValidity(postalCodeIsValid ? '' : 'This is not a valid Berlin post code.');
+					try{
+						this.$refs.oldPostCodeInput.$el.setCustomValidity(postalCodeIsValid ? '' : 'This is not a valid Berlin post code.');
+					} catch (e) {}
 				},
 				newCountry(newVal) {
 					this.$refs.newCountryInput.setCustomValidity(newVal !== 'Germany' ? '' : 'If you stay in Germany, you probably should not deregister.');

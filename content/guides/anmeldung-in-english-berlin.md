@@ -11,16 +11,18 @@ After you [move to Berlin](/guides/moving-to-berlin), [find a place to live](/gu
 
 ## Why you need to register
 
-It's required by law.[^33] When you register your address, you get:
+All German residents must register their address. It's required by law.[^33] [If you can't register your address](#if-you-cant-register-your-address), it can make your life really hard.
+
+When you register your address, you get:
 
 - **A registration certificate** (*[[Anmeldebestätigung]]*)  
     It proves that you live in Berlin. You need it to access many government services. You sometimes need it to get a [bank account](/guides/first-bank-account-in-germany), a SIM card, an internet contract and [health insurance](/guides/german-health-insurance).
 - **A tax ID** (*[Steuer-ID](/glossary/Steueridentifikationsnummer)*)  
     Your employer needs this to calculate your [salary tax](/glossary/Lohnsteuer). You need it to [start a business](/guides/start-a-business-in-germany). You need your children's tax ID to get a [daycare voucher](/glossary/Kitagutschein) and [child benefits](/glossary/Kindergeld).[^0] If you can't register your address, you can still [get a tax ID](/guides/german-tax-id-steuernummer#how-to-get-your-tax-id).
 - **A registered address**  
-    The government sends all important letters to your registered address, not anywhere else.
+    The government sends all important letters to your registered address. The government also requires a registered address for some services. For example, you need it to get a *[[Kitagutschein]]*.
 
-The *Anmeldung* is not a [residence permit](/glossary/Aufenthaltstitel). It does not give you the right to [live and work in Germany](/guides/moving-to-berlin). [If you need a residence permit](/guides/residence-permit), you must [apply for it](/guides/residence-permit#how-to-get-a-residence-permit).
+The *Anmeldung* is not a [residence permit](/glossary/Aufenthaltstitel). It does not give you the right to [live and work in Germany](/guides/moving-to-berlin). [If you need a residence permit](/guides/residence-permit) to live in Germany, you must [apply for it](/guides/residence-permit#how-to-get-a-residence-permit).
 
 ## How to register your address
 
@@ -43,13 +45,13 @@ Bring these documents to your appointment:
 - [ ] **Your [Wohnungsgeberbestätigung](/docs/wohnungsgeberbestatigung)**  
     You get this document before you [move in](/guides/moving-in). You can't register your address without this document.[^3] If you can, bring the original, not a copy.[^4]
     - Your landlord can give you this document.
-    - If you rent a room or a sublet, the main tenant (*[[Hauptmieter]]*) can also give you this document. They need the permission of the landlord.[^5]
+    - If you rent a room or a sublet, the main tenant (*[[Hauptmieter]]*) can also give you this document. They need permission from the landlord.[^5]
     - If you move with your spouse, they can give it to you. They don't need permission from the landlord.
-    - If you move with your boyfriend or girlfriend, they can give it to you. They need the permission of the landlord, but the landlord can't really refuse.[^6]
+    - If you move with your boyfriend or girlfriend, they can give it to you. They need permission from the landlord, but the landlord can't really refuse.[^6]
 - [ ] **The filled [Anmeldung form](/docs/anmeldung)**  
     [Fill the form online](/docs/anmeldung#fill-the-anmeldung-form-online). To register more than 2 people, use multiple forms.
 - [ ] **Your passport or [[Personalausweis]]**  
-    Bring the original ID document, not a copy. You can also use a EU national ID.[^7] If you have a *[[Personalausweis]]*, bring it with you. They will put a sticker on it with your new address.
+    Bring the original ID document, not a copy. You can use a *[[Personalausweis]]* from any [EU](/glossary/European%20Union) country.[^7] If you have a *[[Personalausweis]]*, bring it with you. They will put a sticker on it with your new address.
 - [ ] **Your [residence permit](/glossary/Aufenthaltstitel)**  
     If you have a residence permit, bring it with you. Your residence permit has your old address on it. They will put a sticker on it with your new address.[^8]
 - [ ] **Your vehicle registration papers**  
@@ -82,9 +84,11 @@ Arrive a few minutes before your appointment. Find the correct waiting room, and
 
 Sit at the desk, give your documents, and get your *[[Anmeldebestätigung]]*. They will put a sticker with your new address on your *[[Personalausweis]]*, [residence permit](/glossary/Aufenthaltstitel) and [vehicle registration papers](/glossary/Zulassungsbescheinigung). This only takes a few minutes.
 
-Check if the information on your *[[Anmeldebestätigung]]* is correct. The *Bürgeramt* employees often make mistakes.[^12]
+### Step 4: Verify your documents
 
-### Step 4: Wait for your tax ID
+Verify the information on your *[[Anmeldebestätigung]]*. Bürgeramt employees often make mistakes.[^12] If you find an error, [email the Bürgeramt](/guides/berlin-burgeramt-appointment#how-to-contact-the-burgeramt).
+
+### Step 5: Wait for your tax ID
 
 If this is your first *Anmeldung*, you will get a [tax ID](/glossary/Steueridentifikationsnummer) by post 2 to 4 weeks later.[^13] If you don't receive it, [ask for it again](/guides/german-tax-id-steuernummer#where-to-find-your-tax-id).
 
@@ -94,7 +98,16 @@ You can also get a tax ID without registering your address.
 
 ## If you can't register your address
 
-Sometimes, you can't do you *Anmeldung* at your current address. If you don't have a registered address, you can't access certain government services. If you just moved to Germany, it can make your life harder.
+Some places don't give you a *[[Wohnungsgeberbestätigung]]* and don't let you do your *Anmeldung*. This is really bad for you.
+
+If you can't do your *Anmeldung*...
+
+- **You can't get a residence permit**  
+    When you apply for a [residence permit](/glossary/Aufenthaltstitel), the *[[Ausländerbehörde]]* asks for a [[Wohnungsgeberbestätigung]]. Without this document, you can't get a residence permit.[^14]
+- **You can't access government services**  
+    Many government services require an *[[Anmeldebestätigung]]*. You can't access those services if you don't officially live in Berlin.
+- **You can't easily verify your address**  
+    It's harder to [open a bank account](/guides/first-bank-account-in-germany) or get a SIM card for your phone. Many services ask for an *[[Anmeldebestätigung]]* to verify your address.
 
 [HomeLike](/out/homelike), [HousingAnywhere](/out/housinganywhere) and [Wunderflats](/out/wunderflats) show you if you can register. Those furnished apartments are very expensive, but they let you [move in](/guides/moving-in) and focus on other problems. They give you more time to find a good, cheap apartment later.
 
@@ -117,13 +130,13 @@ The landlord can refuse to let someone sublet their apartment. There are excepti
 
 - **Spouse, parents and children**  
     They do not need the landlord's permission to move in.[^42]
-- **Boyfriends, girlfriends and life partners**
+- **Boyfriends, girlfriends and life partners**  
     They need the landlord's permission to move in.[^41] The landlord can't refuse without a good reason.[^47] For example, because the apartment is too small.
 - **Guests and visitors**  
     You have the right to have guests.[^40] Your landlord can't forbid guests. Your guests can't register their address at your apartment, because they don't live there.
 - **Legitimate interest**  
     You can rent part of your apartment if there is a legitimate interest. The landlord needs a good reason to refuse. Examples of legitimate interest:
-    - To replace a roommate who moved out[^46]
+    - To replace a room mate who moved out[^46]
     - To rent your apartment while you work or study in another country[^45]
     - Because you really need the money[^43]
 
@@ -213,7 +226,7 @@ Translators like [Red Tape Translation](/out/red-tape-translation-interpreter) a
 
 Church tax is 8% or 9% of your [income tax](/glossary/Einkommensteuer) (not 8-9% of your income).[^26] It's taken directly from your paycheck. A single person earning 50,000€ a year would pay 800 to 900€ per year in church tax.[^26]
 
-**[Church tax calculator ➞](/tools/tax-calculator)**
+**[Calculate your church tax ➞](/tools/tax-calculator)**
 
 If you were baptised in your home country, they might collect church tax [even if you register as an atheist](http://web.archive.org/web/20180913195533/https://global.handelsblatt.com/politics/expats-beware-germany-church-tax-922429). Watch your paychecks for unexpected church tax payments.
 
@@ -267,10 +280,6 @@ When you move into an apartment, you must do a few things: lower your rent, put 
 [^11]: [berlin.de](https://service.berlin.de/dienstleistung/120686/)
 [^12]: [reddit.com](https://old.reddit.com/r/berlin/comments/so7py2/wrong_floor_in_the_anmeldung/)
 [^13]: [Screenshot](/guides/german-tax-id-steuernummer)
-[^14]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/9yk7dk/how_to_do_anmeldung_when_im_not_allowed_to/ea1yi5i/), [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/bb5rnz/what_if_i_dont_find_a_place_with_anmeldung/ekghkk6/)
-[^15]: [berliner-mieterverein.de](https://www.berliner-mieterverein.de/recht/infoblaetter/info-8-untermiete-und-untervermietung-hauptmieter-und-untermieter.htm)
-[^16]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/dhr076/cheapest_option_for_anmeldung/f3th08u/), [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/9joq9d/yet_another_anmeldung_question/e6tclno/), [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/9exs5z/anmeldung_advice/e5s98lt/), [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/5j106a/paying_landlord_a_monthly_fee_for_anmeldung/dbck29n/)
-[^17]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/9yk7dk/how_to_do_anmeldung_when_im_not_allowed_to/ea1yi5i/), [gesetze-im-internet.de](https://www.gesetze-im-internet.de/englisch_bmg/englisch_bmg.html#p0201), [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/bb5rnz/what_if_i_dont_find_a_place_with_anmeldung/ekghkk6/)
 [^18]: [frag-einen-anwalt.de](https://www.frag-einen-anwalt.de/Ummeldung-bei-Wohnen-auf-Zeit--f311548.html), [blog.wunderflats.com](https://blog.wunderflats.com/die-wohnungsgeberbestaetigung-beim-moeblierten-wohnen-auf-zeit/#:~:text=bei%20kurzeren%20aufenthalten%20ist%20das%20ausstellen%20einer%20wohnungsgeberbescheinigung%20fur%20sie%20als%20vermieter%20einer%20beherbergungsstatte%20hingegen%20nicht%20verpflichtend), [gesetze-im-internet.de](https://www.gesetze-im-internet.de/englisch_bmg/englisch_bmg.html#:~:text=anyone%20staying%20in%20institutions%20for%20the%20purpose%20of%20commercial%20reception)
 [^19]: [community.withairbnb.com](https://community.withairbnb.com/t5/Gastgeben/Wohnungsbest%C3%A4tigung/td-p/427851), [blog.wunderflats.com](https://blog.wunderflats.com/die-wohnungsgeberbestaetigung-beim-moeblierten-wohnen-auf-zeit/), [gesetze-im-internet.de](https://www.gesetze-im-internet.de/englisch_bmg/englisch_bmg.html#:~:text=anyone%20staying%20in%20institutions%20for%20the%20purpose%20of%20commercial%20reception)
 [^20]: [Senate Department for the Interior, Digitalization and Sport](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15247.pdf), [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/dpdyog/student_staying_for_5_months_without_an_anmeldung/f5utqom/), [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/dpdyog/student_staying_for_5_months_without_an_anmeldung/f5w36it/), [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/dgl6o8/are_there_consequences_for_completing_anmeldung/)
@@ -278,11 +287,10 @@ When you move into an apartment, you must do a few things: lower your rent, put 
 [^22]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/dm65o5/adding_co_to_the_anmeldung/), [frag-einen-anwalt.de](https://www.frag-einen-anwalt.de/Meldeadresse-mit-co-Zeichnung--f212142.html)
 [^23]: [giga.de](https://www.giga.de/unternehmen/deutsche-post-ag/specials/c-o-bedeutung-der-angabe-bei-adressen-auf-briefen-post-und-paketen/), [focus.de](https://www.focus.de/finanzen/praxistipps/c-o-adresse-das-steckt-dahinter_id_7762940.html)
 [^24]: [Screenshot](/images/anmeldung-mit-bei-erlaubt-2022-12-23.png)
-[^25]: [Screenshot](/images/Anmeldung-mit-co-2022-12-09.png), [Screenshot](/images/Anmeldung-mit-c-o-2022-10-05.png)
+[^25]: [Screenshot](/images/Anmeldung-mit-co-2022-12-09.png), [Screenshot](/images/Anmeldung-mit-c-o-2022-10-05.png), [Reddit](https://old.reddit.com/r/askberliners/comments/180e5ye/does_it_require_a_stamp/)
 [^26]: [steuerberater.com](https://www.steuerberater.com/en/church-tax-calculator)
 [^27]: [§7 WoAufG Bln](https://gesetze.berlin.de/bsbe/document/jlr-WoAufGBEV5P7)
 [^28]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/d8o9vu/finding_my_anmeldung_appointment_confirmation/)
-[^29]: [§19 BMG](https://www.gesetze-im-internet.de/englisch_bmg/englisch_bmg.html#p0201)
 [^30]: [§17 Abs. 1 BMG](https://www.gesetze-im-internet.de/englisch_bmg/englisch_bmg.html#p0184)
 [^31]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/h86woq/registering_address_shall_i_fill_in_a_new/fuqs446/), Kathleen Parker at [Red Tape Translation](/out/red-tape-translation)
 [^32]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/dm65o5/adding_co_to_the_anmeldung/)
@@ -292,12 +300,12 @@ When you move into an apartment, you must do a few things: lower your rent, put 
 [^36]: [nomadenberlin.com](https://www.nomadenberlin.com/anmeldung-berlin#:~:text=remember%20to%20bring%20your%20marriage%20certificate), [iamexpat.de](https://www.iamexpat.de/expat-info/german-expat-news/anmeldung-16-tips-getting-address-registered-germany#:~:text=6.%20get%20your%20certificates%20in%20order), email to the Bürgeramt (May 2023), Kathleen Parker at [Red Tape Translation](https://redtapetranslation.com/) (May 2023), [reddit.com](https://old.reddit.com/r/germany/comments/ywpuht/do_i_need_german_birth_certificate_for_anmeldung/)
 [^37]: Kathleen Parker at [Red Tape Translation](/out/red-tape-translation) ([October 2022](https://www.facebook.com/groups/226825394858771/?multi_permalinks=1194390248102276&hoisted_section_header_type=recently_seen)), [reddit.com](https://old.reddit.com/r/berlinsocialclub/comments/6dgobi/anmeldung_question_do_i_need_my_birth_certificate/), [Facebook](https://www.facebook.com/groups/148190775844249/?multi_permalinks=923430394986946), [Facebook](https://www.facebook.com/groups/226825394858771/?multi_permalinks=786357288905576)
 [^38]: [nomadenberlin.com](https://www.nomadenberlin.com/anmeldung-berlin#:~:text=remember%20to%20bring%20your%20marriage%20certificate), [iamexpat.de](https://www.iamexpat.de/expat-info/german-expat-news/anmeldung-16-tips-getting-address-registered-germany#:~:text=6.%20get%20your%20certificates%20in%20order), email to the Bürgeramt (May 2023), Kathleen Parker at [Red Tape Translation](https://redtapetranslation.com/) (May 2023), [reddit.com](https://old.reddit.com/r/germany/comments/ywpuht/do_i_need_german_birth_certificate_for_anmeldung/)
-[^39]: [§553 Abs. 1 BGB](https://www.gesetze-im-internet.de/bgb/__553.html)
 [^40]: [Kuhlen Rechtsanwälte](https://www.kuhlen-berlin.de/glossar/untervermietung), [Berliner Mieterverein](https://www.berliner-mieterverein.de/recht/infoblaetter/info-8-untermiete-und-untervermietung-hauptmieter-und-untermieter.htm#:~:text=in%20aller%20regel%20fur%20mehrere%20wochen)
 [^41]: [Kuhlen Rechtsanwälte](https://www.kuhlen-berlin.de/glossar/untervermietung#:~:text=lebensgefahrten%20des%20mieters%20gehoren%20allerdings%20nicht), [Berliner Mieterverein](https://www.berliner-mieterverein.de/recht/infoblaetter/info-8-untermiete-und-untervermietung-hauptmieter-und-untermieter.htm#:~:text=nicht%20wie%20ein%20ehegatte%20ist%20die%20lebenspartnerin)
 [^42]: [Kuhlen Rechtsanwälte](https://www.kuhlen-berlin.de/glossar/untervermietung#:~:text=die%20aufnahme%20von%20nahen%20familienangehorigen), [Berliner Mieterverein](https://www.berliner-mieterverein.de/recht/infoblaetter/info-8-untermiete-und-untervermietung-hauptmieter-und-untermieter.htm#:~:text=die%20aufnahme%20von%20nahen%20familienangehorigen)
-[^43]: [VIII ARZ 2/84](https://www.prinz.law/urteile/bgh/VIII_ARZ___2-84-ok)
+[^43]: [VIII ARZ 2/84](https://www.prinz.law/urteile/bgh/VIII_ARZ___2-84-ok), [Berliner Zeitung](https://www.berliner-zeitung.de/news/untervermieten-von-teilen-der-wohnung-erlaubt-bgh-gibt-berliner-mieter-recht-li.2160879)
 [^44]: [Kuhlen Rechtsanwälte](https://www.kuhlen-berlin.de/glossar/untervermietung#:~:text=folge%20bei%20nicht-erteilung%20der%20erlaubnis)
 [^45]: [Berliner Mietergemeinschaft](https://www.bmgev.de/mietrecht/urteile/detailansicht/untermiete-oder-gebrauchsueberlassung/#:~:text=in%20einer%20anderen%20stadt%20oder%20im%20ausland)
 [^46]: [Berliner Mietergemeinschaft](https://www.bmgev.de/mietrecht/urteile/detailansicht/untermiete-oder-gebrauchsueberlassung/#:~:text=auszug%20eines%20mitglieds%20der%20wohngemeinschaft)
 [^47]: [VIII ZR 371/02](https://www.bmgev.de/mietrecht/urteile/detailansicht/aufnahme-des-lebensgefaehrten-in-die-wohnung/)
+[^14]: Elliot Herman, [relocation consultant](https://www.sorted.berlin/) (October 2023). Multiple relocation consultants (October 2023).

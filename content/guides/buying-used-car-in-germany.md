@@ -24,7 +24,7 @@ Public transportation is better, cheaper and often faster. A car is more useful 
 Germans use two websites to find vehicles:
 
 - [Mobile.de](https://www.mobile.de/)
-- [Kleinanzeigen](https://www.ebay-kleinanzeigen.de/stadt/berlin/)
+- [Kleinanzeigen](https://www.kleinanzeigen.de/stadt/berlin/)
 
 You can also visit car dealerships, but their cars are usually listed online. It's easier to look online.
 
@@ -77,7 +77,7 @@ Vehicles in Germany must be inspected every 2 years. This inspection is called t
 If a vehicle fails the inspection, it can't be registered, and you can't drive it. This is why old vehicles are cheaper when their   
 inspection approaches, and *much* cheaper when it's overdue (*TÜV abgelaufen*). You might need to spend a lot of money to make the vehicle pass the inspection again.
 
-[Mobile.de](https://www.mobile.de/) and [Kleinanzeigen](https://www.ebay-kleinanzeigen.de/stadt/berlin/) show the next inspection date in their listings.
+[Mobile.de](https://www.mobile.de/) and [Kleinanzeigen](https://www.kleinanzeigen.de/stadt/berlin/) show the next inspection date in their listings.
 
 ### Environmental zones
 
@@ -124,7 +124,7 @@ After you bought the car, the rest is your problem. You will not need to talk to
 
 When you register a vehicle, you must prove that it will have insurance. You must get a quote from a car insurance company, and ask for an [eVB number](/glossary/eVB-Nummer). You can usually do this online. You will need this number when you register the vehicle.
 
-If you don't speak German, [Getsafe](/out/getsafe-kfz) sells car insurance, and they speak English. Use [Verivox](/out/verivox-kfz) or [Tarifcheck](/out/tarifcheck-kfz) to compare car insurance prices.
+Use [Verivox](/out/verivox-kfz) or [Tarifcheck](/out/tarifcheck-kfz) to compare car insurance prices.
 
 **[Car insurance in Germany ➞](/guides/car-insurance-germany)**
 

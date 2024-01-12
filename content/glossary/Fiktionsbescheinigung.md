@@ -5,14 +5,14 @@ English_term: Temporary residence permit
 Description: Temporary residence permit given to those who wait for another residence permit to be approved.
 Date_created: 2018-07-31
 Related_guides:
+    guides/fiktionsbescheinigung.md
     guides/berlin-auslanderbehorde-appointment.md
-    guides/how-to-get-a-german-freelance-visa.md
-    guides/german-work-visa.md
+    guides/freelance-visa.md
+    guides/blue-card.md
+    guides/work-visa.md
     guides/renew-german-freelance-visa.md
 ---
 
-A *Fiktionsbescheinigung* is a temporary [residence permit](/glossary/Aufenthaltstitel). It lets you stay in Germany while you wait for another residence permit.[^0] It's usually valid until your real residence permit is approved or rejected.
+The *Fiktionsbescheinigung* is a proof that you can stay in Germany without a residence permit. It's just a piece of paper. You get it while you wait for another residence permit.
 
-**[More about the Fiktionsbescheinigung ➞](/guides/fiktionsbescheinigung)**
-
-[^0]: [berlin.de](https://service.berlin.de/dienstleistung/326233/en/), [vonengelhardt.com](https://www.vonengelhardt.com/en/faq/22-entry/675-fiktionsbescheinigung)
+**[How to get a Fiktionsbescheinigung ➞](/guides/fiktionsbescheinigung)**

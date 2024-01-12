@@ -2,9 +2,11 @@
 Title: What is the Höchstbeitrag for German health insurance?
 German_term: Höchstbeitrag
 English_term: Maximum health insurance contribution
-Description: 
+Description: If you earn more than this amount, the price of public health insurance stops going up.
 Date_created: 2019-01-31
-Related_guides: guides/german-health-insurance.md
+Related_guides:
+    guides/german-health-insurance.md
+    tools/health-insurance-calculator.md
 ---
 
 The price of [public health insurance](/glossary/gesetzliche%20Krankenversicherung) is based on your income. If you earn more money, you pay more for your health insurance.

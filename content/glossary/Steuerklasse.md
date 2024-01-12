@@ -4,7 +4,11 @@ German_term: Steuerklasse
 English_term: Tax class
 Description: Tax categories that define how much salary tax you pay.
 Date_created: 2018-08-15
-Related_guides: guides/anmeldung-in-english-berlin.md
+Related_guides:
+    guides/taxes.md
+    tools/tax-calculator.md
+    guides/anmeldung-in-english-berlin.md
+    guides/english-speaking-steuerberater-berlin.md
 ---
 
 Your tax class (*Steuerklasse*) decides how much [salary tax](/glossary/Lohnsteuer) you pay. It does not affect how much [income tax](/glossary/Einkommensteuer) you pay. It only affects how much income tax you pay *in advance*, as salary tax.
@@ -26,4 +30,4 @@ There are 6 tax classes (*Steuerklassen*).
 
 Your tax class depends on your situation. If you are self-employed, you usually don't have a tax class, because you don't pay salary tax.
 
-**[How taxes work in Germany ➞](/tools/tax-calculator#the-taxes-you-pay-in-germany)**
+**[How taxes work in Germany ➞](/guides/taxes)**

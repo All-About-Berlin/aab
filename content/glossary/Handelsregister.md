@@ -4,9 +4,17 @@ German_term: Handelsregister
 English_term: Trade register
 Description: The Handelsregister is register of German businesses.
 Date_created: 2018-07-31
-Related_guides: guides/how-to-get-a-german-freelance-visa.md, guides/handelsregisternummer-germany.md, guides/fragebogen-zur-steuerlichen-erfassung.md, guides/freiberufler-or-gewerbe.md, guides/renew-german-freelance-visa.md
+Related_guides:
+    guides/handelsregisternummer-germany.md
+    guides/start-a-business-in-germany.md
+    guides/freelance-visa.md
+    guides/fragebogen-zur-steuerlichen-erfassung.md
+    guides/freiberufler-or-gewerbe.md
+    guides/renew-german-freelance-visa.md
 ---
 
-The German Trade Register (*Handelsregister*) is a register of German businesses. All businesses must be listed in the *Handelsregister*, except small businesses (*[[Kleinunternehmer]]*), freelancers (*[[Freiberufler]]*) and companies constituted under civil law (*GbR*).
+The German Trade Register (*Handelsregister*) is a database of German businesses. Businesses that are in the *Handelsregister* get a *[[Handelsregisternummer]]*.
 
-**[More about the trade register ➞](/guides/handelsregisternummer-germany)**
+Most businesses must be listed in the *Handelsregister*, but there are exceptions for freelancers and small businesses.
+
+**[Who needs a Handelsregister entry? ➞](/guides/handelsregisternummer-germany#who-needs-a-handelsregister-entry)**

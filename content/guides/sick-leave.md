@@ -35,7 +35,7 @@ You can also get a [sick note](/glossary/Krankschreibung) for stress, depression
 
 ### 3. Send the sick note to your employer
 
-Since 2023, you don't need to give a sick note to your employer. Your employer can get a digital copy of your sick note from your health insurer.[^25]
+Since 2023, you don't need to give a sick note to your employer. Your employer can get a digital sick note from your health insurer.[^25]
 
 ### 4. Get better
 

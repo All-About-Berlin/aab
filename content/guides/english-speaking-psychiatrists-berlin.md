@@ -15,7 +15,6 @@ Related_places:
     places/dr-nicolaus-rigas.md
     places/dr-med-anne-kleiber.md
     places/ole-georg-munkvold.md
-    places/ursula-bartholomew-günther.md
     places/privatpraxis-dima-salloum.md
     places/psychiatrie-am-sterndamm.md
     places/praxis-dr-scherf-kollegen.md

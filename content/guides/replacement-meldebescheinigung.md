@@ -18,38 +18,28 @@ This guide explains how to get a *Meldebescheinigung* if you already registered 
 
 ## How to get an Anmeldebestätigung
 
-You can request it **online or in person** from the *[[Bürgeramt]]*. It costs 10€.[^0]
+Request it **[online](https://eww.berlin.de/buergerdienste/app/meldebescheinigung) or in person** from the *[[Bürgeramt]]*. It's free online, or 10€ in person.[^0]
 
 If you did not [register your address](/glossary/Anmeldung), you can't get a *Meldebescheinigung*.
 
 ### Online
 
-To can [request a *Meldebescheinigung* online](https://service.berlin.de/dienstleistung/120702/). You must be [registered](/glossary/Anmeldung) in Berlin.
+**[Request a *Meldebescheinigung* online](https://eww.berlin.de/buergerdienste/app/meldebescheinigung).** You can download it as a PDF.
 
-![Meldebescheinigung online berlin](/images/meldebescheinigung-online-berlin.png "Click this button to request a Meldebescheinigung online")
+You must be [registered](/glossary/Anmeldung) in Berlin.
+
+You must have an *Online-Ausweis*. If you have a residence permit, the *Online-Ausweis* is probably not activated, so you must go to the *Bürgeramt* in person to get a *Meldebescheinigung*.
 
 ### In person
 
 1. [Get an appointment at any Bürgeramt](/guides/berlin-burgeramt-appointment) for "*[Meldebescheinigung beantragen](https://service.berlin.de/dienstleistung/120702/)*"
 2. When you go to your appointment, bring...
-    - [ ] Your passport or [personal ID](/glossary/Personalausweis)
-    - [ ] 10€ for the fee. You can usually pay by [[Girocard]], Visa or MasterCard. It depends on the Bürgeramt.
-
-### By post or email
-
-You can also request a *[[Meldebescheinigung]]* by post or email:[^0]
-
-1. Transfer 10€ to [the *Bürgeramt's* bank account](http://www.berlin.de/labo/_assets/buergerdienste/bankverbindungen-der-buergeraemter.pdf)
-2. Write to [any *Bürgeramt* in Berlin](https://service.berlin.de/standorte/buergeraemter/). In you message, include...
-    - [ ] A copy of your passport or [personal ID](/glossary/Personalausweis)
-    - [ ] Your [[IBAN]]
-    - [ ] The date of your bank transfer
-
-**[How to mail a letter](/guides/mail-a-letter)** — from your computer, without a printer
+    - [ ] Your passport or *[[Personalausweis]]*
+    - [ ] 10€ for the fee. You can usually pay by [[Girocard]], Visa or MasterCard. It depends on the *Bürgeramt*.
 
 ## Erweiterte Meldebescheinigung
 
-The extended registration certificate (*erweiterte Meldebescheinigung*) is a more detailed *Meldebescheinigung*. It shows...
+The extended registration certificate (*erweiterte Meldebescheinigung*) **has more details** than the *Meldebescheinigung*. It shows...
 
 - Your previous addresses
 - Your registered spouse and children

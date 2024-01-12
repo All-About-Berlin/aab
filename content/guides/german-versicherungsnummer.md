@@ -5,7 +5,6 @@ Description: This is how you find you German social insurance number or social s
 Date_created: 2018-03-18
 Related_reviews:
     reviews/german-versicherungsnummer/johannes-kühn.md
-    reviews/german-versicherungsnummer/daniel-derosa.md
 ---
 
 The *[[Deutsche Rentenversicherung]]* uses your *Sozialversicherungsnummer* to identify you. It looks like this: **12 123456 A 123**. It's a unique number, and it never changes.

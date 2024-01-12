@@ -3,38 +3,42 @@ const bafogBedarfssatz = {{ GKV_BAFOG_BEDARFSSATZ }};
 
 const healthInsurance = {
 	defaultTarif: {{ GKV_BASE_CONTRIBUTION }}/100,
-	selfEmployedTarif: {{ GKV_SELF_EMPLOYED_BASE_CONTRIBUTION }}/100, // The 0.6% disability tarif is optional for freelancers
-	studentTarif: 0.7 * {{ GKV_BASE_CONTRIBUTION }}/100, // https://www.krankenkassen.de/gesetzliche-krankenkassen/krankenkasse-beitrag/studenten/
-	minMonthlyIncome: {{ GKV_MIN_INCOME }}, // If you earn less than that, you pay the min tarif
-	maxMonthlyIncome: {{ GKV_HÖCHSTBEITRAG_MIN_INCOME }}/12, // If you earn more than that, you pay the max tarif
-	minFreiwilligMonthlyIncome: {{ GKV_FREIWILLIG_VERSICHERT_MIN_INCOME }}/12, // You can get private above that amount
+	selfEmployedTarif: {{ GKV_SELF_EMPLOYED_BASE_CONTRIBUTION }}/100,
+	studentTarif: {{ GKV_STUDENT_BASE_CONTRIBUTION }}/100,
+	minMonthlyIncome: {{ GKV_MIN_INCOME }},
+	maxMonthlyIncome: {{ GKV_HÖCHSTBEITRAG_MIN_INCOME }}/12,
+	minFreiwilligMonthlyIncome: {{ GKV_FREIWILLIG_VERSICHERT_MIN_INCOME }}/12,
 	maxFamilienvericherungIncome: {{ GKV_FAMILIENVERSICHERUNG_MAX_INCOME }},
-	maxMidijobIncome: {{ MIDIJOB_MAX_INCOME }},
-	avgZusatzbeitrag: {{ GKV_AVERAGE_ZUSATZBEITRAG }}/100,
-	azubiFreibetrag: {{ GKV_AZUBI_MAX_FREE_INCOME }}, // Free health insurance below this amount
-	maxNebenjobIncome: {{ BEZUGSGRÖSSE_WEST }}*0.75, // Not a nebenjob above this income
+	midijobMaxIncome: {{ MIDIJOB_MAX_INCOME }},
+	avgZusatzbeitrag: {{ GKV_ZUSATZBEITRAG_AVERAGE }}/100,
+	azubiFreibetrag: {{ GKV_AZUBI_FREIBETRAG }},
+	nebenjobMaxIncome: {{ GKV_NEBENJOB_MAX_INCOME }},
 	factorF: {{ GKV_FACTOR_F }},
 	kskMinimumIncome: {{ KSK_MIN_INCOME }},
 	companies: {
 		average: {
 			name: 'Average health insurance',
-			zusatzbeitrag: {{ GKV_AVERAGE_ZUSATZBEITRAG }}/100,
+			zusatzbeitrag: {{ GKV_ZUSATZBEITRAG_AVERAGE }}/100,
 		},
 		aok: {
 			name: 'AOK Nordost',
-			zusatzbeitrag: 1.9/100,
+			zusatzbeitrag: {{ GKV_ZUSATZBEITRAG_AOK }}/100,
 		},
 		barmer: {
 			name: 'Barmer',
-			zusatzbeitrag: 1.5/100,
+			zusatzbeitrag: {{ GKV_ZUSATZBEITRAG_BARMER }}/100,
+		},
+		dak: {
+			name: 'DAK',
+			zusatzbeitrag: {{ GKV_ZUSATZBEITRAG_DAK }}/100,
 		},
 		hkk: {
 			name: 'hkk',
-			zusatzbeitrag: 0.98/100,
+			zusatzbeitrag: {{ GKV_ZUSATZBEITRAG_HKK }}/100,
 		},
 		tk: {
 			name: 'Techniker Krankenkasse',
-			zusatzbeitrag: 1.2/100,
+			zusatzbeitrag: {{ GKV_ZUSATZBEITRAG_TK }}/100,
 		},
 	},
 }
@@ -46,7 +50,7 @@ const pflegeversicherung = {
 	minimumChildCountForDiscount: 2,
 	maximumChildCountForDiscount: 5,
 	employerTarif: {{ PFLEGEVERSICHERUNG_NO_SURCHARGE }}/100/2, // Employer doesn't contribute to surcharge
-	defaultTarifMaxAge: 22, // Above this age, if you don't have kids, you pay the surchargeTarif
+	defaultTarifMaxAge: {{ PFLEGEVERSICHERUNG_NO_SURCHARGE_MAX_AGE }}, // Above this age, if you don't have kids, you pay the surchargeTarif
 };
 
 const taxes = {
@@ -80,12 +84,12 @@ const taxes = {
 		2020: { west: 6900 * 12, east: 6450 * 12 },
 		2021: { west: 7100 * 12, east: 6700 * 12 },
 		2022: { west: 7050 * 12, east: 6750 * 12 },
-		currentYear: { west: {{ BEITRAGSBEMESSUNGSGRENZE_WEST }}, east: {{ BEITRAGSBEMESSUNGSGRENZE_EAST }} },
-		2023: { west: {{ BEITRAGSBEMESSUNGSGRENZE_WEST }}, east: {{ BEITRAGSBEMESSUNGSGRENZE_EAST }} },
-		2024: { west: {{ BEITRAGSBEMESSUNGSGRENZE_WEST }}, east: {{ BEITRAGSBEMESSUNGSGRENZE_EAST }} }, // ESTIMATED (2023)
-		2025: { west: {{ BEITRAGSBEMESSUNGSGRENZE_WEST }}, east: {{ BEITRAGSBEMESSUNGSGRENZE_EAST }} }, // ESTIMATED (2023)
-		2026: { west: {{ BEITRAGSBEMESSUNGSGRENZE_WEST }}, east: {{ BEITRAGSBEMESSUNGSGRENZE_EAST }} }, // ESTIMATED (2023)
-		2027: { west: {{ BEITRAGSBEMESSUNGSGRENZE_WEST }}, east: {{ BEITRAGSBEMESSUNGSGRENZE_EAST }} }, // ESTIMATED (2023)
+		2023: { west: 7300 * 12, east: 7100 * 12 },
+		currentYear: { west: {{ BEITRAGSBEMESSUNGSGRENZE_WEST }}, east: {{ BEITRAGSBEMESSUNGSGRENZE_EAST }} }, // {{ fail_on('2024-12-31') }}
+		2024: { west: {{ BEITRAGSBEMESSUNGSGRENZE_WEST }}, east: {{ BEITRAGSBEMESSUNGSGRENZE_EAST }} },
+		2025: { west: {{ BEITRAGSBEMESSUNGSGRENZE_WEST }}, east: {{ BEITRAGSBEMESSUNGSGRENZE_EAST }} }, // ESTIMATED (2024)
+		2026: { west: {{ BEITRAGSBEMESSUNGSGRENZE_WEST }}, east: {{ BEITRAGSBEMESSUNGSGRENZE_EAST }} }, // ESTIMATED (2024)
+		2027: { west: {{ BEITRAGSBEMESSUNGSGRENZE_WEST }}, east: {{ BEITRAGSBEMESSUNGSGRENZE_EAST }} }, // ESTIMATED (2024)
 	},
 	grundfreibetrag: {{ GRUNDFREIBETRAG }},
 	kinderfreibetrag: {{ KINDERFREIBETRAG }},
@@ -94,11 +98,12 @@ const taxes = {
 	kindergeldPerChild: {{ KINDERGELD }},
 	solidarity: { // https://www.finanztip.de/solidaritaetszuschlag/
 		minIncomeTax: {{ SOLIDARITY_TAX_MILDERUNGSZONE_MIN_INCOME_TAX }},  // Above this, you pay solidarity tax
-		milderungszoneRate: 0.119, // percent of incomeTax - minIncomeTax
-		maxRate: 0.055,
+		milderungszoneRate: {{ SOLIDARITY_TAX_MILDERUNGSZONE_RATE }}, // percent of incomeTax - minIncomeTax
+		maxRate: {{ SOLIDARITY_TAX_MAX_RATE }},
 	},
 	minVorsorgepauschal: {{ VORSORGEPAUSCHAL_MIN }},
 	minVorsorgepauschalTaxClass3: {{ VORSORGEPAUSCHAL_MIN_TAX_CLASS_3 }},
+	{{ fail_on('2024-12-31') }}
 	incomeTaxTarifZones: {  // §32a EStG
 		1: {
 			formula: (x, y, z) => 0,
@@ -106,22 +111,22 @@ const taxes = {
 			maxIncome: {{ GRUNDFREIBETRAG }},
 		},
 		2: {
-			formula: (x, y, z) => (979.18 * y + 1400) * y,
+			formula: (x, y, z) => (922.98 * y + 1400) * y,
 			minIncome: {{ GRUNDFREIBETRAG }},
 			maxIncome: {{ INCOME_TAX_TARIF_2_MAX_INCOME }},
 		},
 		3: {
-			formula: (x, y, z) => (192.59 * z + 2397) * z + 966.53,
+			formula: (x, y, z) => (181.19 * z + 2397) * z + 1025.38,
 			minIncome: {{ INCOME_TAX_TARIF_2_MAX_INCOME }},
 			maxIncome: {{ INCOME_TAX_TARIF_3_MAX_INCOME }},
 		},
 		4: {
-			formula: (x, y, z) => 0.42 * x - 9972.98,
+			formula: (x, y, z) => 0.42 * x - 10602.13,
 			minIncome: {{ INCOME_TAX_TARIF_3_MAX_INCOME }},
 			maxIncome: {{ INCOME_TAX_TARIF_4_MAX_INCOME }},
 		},
 		5: {
-			formula: (x, y, z) => {{ INCOME_TAX_MAX_RATE }} / 100 * x - 18307.73,
+			formula: (x, y, z) => {{ INCOME_TAX_MAX_RATE }} / 100 * x - 18936.88,
 			minIncome: {{ INCOME_TAX_TARIF_4_MAX_INCOME }},
 			maxIncome: Infinity,
 		},
@@ -167,11 +172,11 @@ const pensions = {
 		2020: 18.6,
 		2021: 18.6,
 		2022: 18.6,
-		currentYear: {{ RENTENVERSICHERUNG_TOTAL_CONTRIBUTION }},
 		2023: 18.6,
-		2024: 18.6, // ESTIMATED (2022)
-		2025: 18.6, // ESTIMATED (2022)
-		2026: 18.6, // ESTIMATED (2022)
+		2024: 18.6,
+		currentYear: {{ RENTENVERSICHERUNG_TOTAL_CONTRIBUTION }}, // {{ fail_on('2024-12-31') }}
+		2025: 18.6, // ESTIMATED (2024)
+		2026: 18.6, // ESTIMATED (2024)
 	},
 }
 
@@ -193,7 +198,7 @@ const defaults = {  // Percentages are stored as full amounts, unlike elsewhere
 	useMonthlyIncome: false,
 	yearlyIncome: Math.round({{ MEDIAN_INCOME_GERMANY }}/100) * 100,
 	healthInsuranceType: 'unknown',
-	privateHealthInsuranceCost: 500, // € per month
+	privateHealthInsuranceCost: 550, // € per month
 	publicHealthInsuranceZusatzbeitrag: healthInsurance.companies.average.zusatzbeitrag * 100, // %
 };
 {% endjs %}

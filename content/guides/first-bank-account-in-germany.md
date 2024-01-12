@@ -17,19 +17,18 @@ You need a bank account to...
 
 - get paid by your employer
 - pay your rent
-- pay all kinds of taxes
-- buy things online
-- buy things in stores
+- pay all kinds of [taxes](/guides/taxes)
+- buy things online and in stores
 
-You need a bank that allows [SEPA transfers](/glossary/SEPA-%C3%9Cberweisung). This is how your employer pays you, and how you pay your rent and your taxes.
+Your bank must allow [SEPA transfers](/glossary/SEPA-%C3%9Cberweisung). This is how your employer pays you, and how you pay your rent and your taxes. All EU banks and most European banks allow SEPA transfers.[^0]
 
-All EU banks and most European banks allow SEPA transfers.[^0] This is why you need a European bank account. You don't need a German bank; just a bank in a European country.
+You don't need a German bank. You can open a bank account in any European country, including the United Kingdom.
 
 ## German banks for expats
 
-If you are new in Germany, it's harder to open a bank account. You have no [registered address](/glossary/Anmeldung), no [job](/guides/find-a-job-in-berlin), no [residence permit](/glossary/Aufenthaltstitel) and no credit history. Some banks don't accept your foreign passport.[^1]
+If you are new in Germany, it's harder to open a bank account. Banks often ask for a [registered address](/glossary/Anmeldung), a [job](/guides/find-a-job-in-berlin), a [residence permit](/glossary/Aufenthaltstitel) or credit history. Banks often refuse passports from certain countries.[^1]
 
-An expat-friendly bank lets you open an account anyway.
+An expat-friendly bank makes it easier to open an account.
 
 ### Expat-friendly banks
 
@@ -38,7 +37,6 @@ An expat-friendly bank lets you open an account anyway.
 - **[Deutsche Bank](/out/deutsche-bank)** - Online banking, customer service and some documents are in English.[^7] The rest is in German. If you open an account in person, they accept most passport types.[^8] They offer [blocking accounts](/glossary/Sperrkonto) for foreign students.
 - **[Monese](/out/monese)** - They speak 14 languages. They don't ask for an *[[Anmeldung]]*. You get a Belgian [[IBAN]].
 - **[N26](/out/n26)** - They speak 5 languages.[^9] They accept [many passport types](/out/n26-supported-passports). You need a plastic [residence permit](/glossary/Aufenthaltstitel) that is valid for at least 1 year.[^10] They don't ask for an *[[Anmeldung]]*. If you open an account from Germany, you get a German [[IBAN]].[^11] You need a German address to receive your bank card, but you don't need a [registered address](/glossary/Anmeldung).
-- **[Revolut](/out/revolut)** - They speak 24 languages.[^12] They don't ask for an *[[Anmeldung]]*.
 - **[Wise](/out/transferwise)** - They speak 14 languages. They accept [most passport types](https://wise.com/help/articles/2949801/how-does-wise-verify-my-identity?utm_source=allaboutberlin). They don't ask for an *[[Anmeldung]]*. You might get a Belgian [[IBAN]].
 
 ### Banks that are not expat-friendly
@@ -55,7 +53,6 @@ An expat-friendly bank lets you open an account anyway.
 - **[bunq](/out/bunq)** - English and 6 other languages
 - **[Monese](/out/monese)** - English and 13 other languages
 - **[N26](/out/n26)** - English and 4 other languages
-- **[Revolut](/out/revolut)** - English and 23 other languages
 - **[Wise](/out/transferwise)** - English and 13 other languages
 
 ### Banks with some English support
@@ -149,7 +146,6 @@ These banks are based in other EU countries. They let you open an account from G
 
 - **[bunq](/out/bunq)** - Licenced in Belgium. Accounts can have a German [[IBAN]]s.
 - **[Monese](/out/monese)** - Licenced in Belgium. Accounts have Belgian [[IBAN]]s.
-- **[Revolut](/out/revolut)** - Licenced in Belgium. Accounts have Belgian [[IBAN]]s.
 - **[Wise](/out/transferwise)** - Licenced in Belgium. Accounts have Belgian [[IBAN]]s.
 
 There are a few problems with non-German banks:
@@ -176,7 +172,7 @@ If you are American, you need extra forms to open a German bank account, because
 
 ### Open a bank account online
 
-Some banks like [N26](/out/n26),[bunq](/out/bunq), [DKB](/out/dkb), [ING](/out/ing), [Comdirect](/out/comdirect), [Revolut](/out/revolut) and [Wise](/out/wise-account) let you open an account with their app. You can do it at home. They start a video call, and they ask you to show both sides of your ID or passport. This only works with passports from certain countries.[^51] If they don't accept your passport, you must use [[Postident]] to verify your documents. This takes longer, and it doesn't always work.
+Some banks like [N26](/out/n26),[bunq](/out/bunq), [DKB](/out/dkb), [ING](/out/ing), [Comdirect](/out/comdirect) and [Wise](/out/wise-account) let you open an account with their app. You can do it at home. They start a video call, and they ask you to show both sides of your ID or passport. This only works with passports from certain countries.[^51] If they don't accept your passport, you must use [[Postident]] to verify your documents. This takes longer, and it doesn't always work.
 
 With online banks, you can sometimes open your account from another country, before you arrive in Germany. They still need to send your bank card to a German address. Some people sent the bank card to their office, or to a friend's address.
 
@@ -204,7 +200,7 @@ I am with [N26](/out/n26) since 2016. My [review of N26](/guides/an-honest-revie
 
 If you speak German, look at [DKB](/out/dkb) and [ING](/out/ing). People often recommend them.
 
-If no banks accept your passport, try [Deutsche Bank](/out/deutsche-bank). Online banks like [bunq](/out/bunq), [Monese](/out/monese), [Revolut](/out/revolut) and [Wise](/out/wise-account) also accept more passport types.
+If no banks accept your passport, try [Deutsche Bank](/out/deutsche-bank). Online banks like [bunq](/out/bunq), [Monese](/out/monese) and [Wise](/out/wise-account) also accept more passport types.
 
 [^0]: [ecb.europa.eu](https://www.ecb.europa.eu/paym/integration/retail/sepa/html/index.en.html)
 [^1]: [reddit.com](https://old.reddit.com/r/germany/comments/p8u1gt/deleted_by_user/)
@@ -218,7 +214,6 @@ If no banks accept your passport, try [Deutsche Bank](/out/deutsche-bank). Onlin
 [^9]: [Twitter](https://twitter.com/n26/status/1020293086730248194)
 [^10]: [docs.n26.com](https://docs.n26.com/cs/Support%20Center/id-docs/de/iddocs-de-en.pdf?s_id=173058848)
 [^11]: [support.n26.com](https://support.n26.com/en-eu/account-and-personal-details/personal-information-and-data/how-to-find-my-iban-or-account-number)
-[^12]: [blog.revolut.com](https://blog.revolut.com/revolut-is-now-available-in-24-languages/)
 [^13]: [Twitter](https://twitter.com/sasaraber/status/1504429265445703681), [Screenshot](/images/Screenshot-2022-04-21-at-10.57.38.png)
 [^14]: [reddit.com](https://old.reddit.com/r/germany/comments/qdr746/card_requirements_and_details_in_germany_eg_dkb/), [community.finanztip.de](https://community.finanztip.de/thema/80-erfahrungen-mit-der-dkb/?pageNo=3), [wer-weiss-was.de](https://www.wer-weiss-was.de/t/dkb-lehnt-kunden-ab/6515086), [kontofinder.de](https://www.kontofinder.de/ratgeber/girokonto-fuer-auslaender/), [reddit.com](https://old.reddit.com/r/germany/comments/la6nrx/deutsche_bank_vs_dkb_vs_n26/)
 [^15]: [reddit.com](https://old.reddit.com/r/germany/comments/qilicq/deleted_by_user/), [Twitter](https://twitter.com/cyrill_7/status/1502574559630958592)

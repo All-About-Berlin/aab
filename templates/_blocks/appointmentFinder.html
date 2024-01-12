@@ -190,7 +190,8 @@
 	</template>
 	<template v-if="isConnected && hasError">
 		<h3>Can't connect to Berlin.de</h3>
-		<p>Berlin.de is having issues. If this keeps happening, <a href="/contact">email me</a>.</p>
+		<p>Berlin.de is having issues or blocking this tool. The error is on their side, and I can't fix it. Try again later.</p>
+		<p>You can also <a target="_blank" href="/out/appointment-anmeldung">check Berlin.de</a>, <a href="tel:+49115">call 115</a> or <a href="/guides/berlin-burgeramt-appointment#email-the-burgeramt">email your <em>Bürgeramt</em></a>.</p>
 	</template>
 	<template v-if="isConnected && !hasError && appointments.length === 0">
 		<h3>No appointments found</h3>

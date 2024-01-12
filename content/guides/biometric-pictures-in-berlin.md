@@ -19,7 +19,7 @@ There are Fotofix machines everywhere in Berlin. You pay 6€ in coins, and you 
 
 **[List of passport photo machines](https://www.passbilder.net/ort/berlin)** - Passbilder.net
 
-These biometric photos are accepted by the [*Bürgeramt*](/glossary/Bürgeramt) and the [*Ausländerbehörde*](/glossary/Ausl%C3%A4nderbeh%C3%B6rde).
+These biometric photos are accepted by the *[[Bürgeramt]]* and the *[[Ausländerbehörde]]*.
 
 ## At the Bürgeramt/Ausländerbehörde
 
@@ -29,6 +29,8 @@ There are passport photo kiosks at the *[[Ausländerbehörde]]*, and at the *[[B
 
 The *Fotoautomat* prints 4 to 6 pictures on one paper. You do not need to cut them; the *Bürgeramt* and *Ausländerbehörde* have a tool for this.[^0]
 
+Get your passport photos in advance, not just before your appointment. If there is a problem with the photo machine, you must have time to find another one.
+
 ## Biometric pictures for other countries
 
 Other countries use different passport picture sizes. For example, India uses square pictures.
@@ -37,4 +39,4 @@ Other countries use different passport picture sizes. For example, India uses sq
 
 Photography studios can take pictures and cut them to the correct size. It costs 5€ to 15€.
 
-[^0]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/ixrhd2/biometric_photos_for_residence_permit_should_i/g68ebiq/)
+[^0]: Emily at [Archer Relocation](https://www.archer-relocation.com/) (December 2023), [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/ixrhd2/biometric_photos_for_residence_permit_should_i/g68ebiq/)

@@ -33,6 +33,16 @@ def build_wikilinks_url(label, base, end):
     return '{}{}{}'.format(base, urllib.parse.quote(label), end)
 
 
+def fail_on(expiration_date: str) -> str:
+    # Fails when the expiration date is reached. Used to set content date limits.
+    assert datetime.strptime(expiration_date, "%Y-%m-%d") >= datetime.now(), f"Content expired on {expiration_date}"
+    return ''
+
+
+def or_join(items):
+    return ', '.join(items[:-1]) + ' or ' + items[-1]
+
+
 config.content_path = Path(__file__).parent / 'content'
 config.templates_path = Path(__file__).parent / 'templates'
 config.output_path = Path(__file__).parent.parent / 'output'
@@ -150,7 +160,9 @@ config.renderers += (
 config.linters = (
     # 'extensions.linters.places.PlacesLinter',
     # 'ursus.linters.markdown.MarkdownExternalLinksLinter',
+    'extensions.linters.footnotes.CitationNeededLinter',
     'extensions.linters.footnotes.FootnoteLocationLinter',
+    'extensions.linters.footnotes.QuestionMarkLinter',
     'extensions.linters.internal_links.MarkdownInternalLinksLinter',
     'extensions.linters.lists.MultilineListsLinter',
     'extensions.linters.metadata.DateUpdatedLinter',
@@ -179,18 +191,65 @@ config.jinja_filters = {
 config.google_maps_api_key = 'AIzaSyAke3v8wHo91JZBiU8B6q6zMtOPn9i_xeM'  # Backend use only
 
 
-minimum_wage = 12
-beitragsbemessungsgrenze_west = 87600
+minimum_wage = 12.41
+beitragsbemessungsgrenze_west = 90600
+gkv_hoechstbeitrag_min_income = 62100
+bezugsgroesse_west = 3535
 health_insurance_base_contrib = 14.6
 health_insurance_min_pflegeversicherung = 2.4
 health_insurance_max_pflegeversicherung = 4
 health_insurance_min_zusatzbeitrag = 1
 health_insurance_max_zusatzbeitrag = 1.9
 
+aufenthv_41_countries = [
+    "Australia",
+    "Canada",
+    "Israel",
+    "Japan",
+    "New Zealand",
+    "South Korea",
+    "the United Kingdom",
+    "the United States",
+]
+
+beschv_26_1_countries = [
+    "Australia",
+    "Canada",
+    "Israel",
+    "Japan",
+    "Monaco",
+    "New Zealand",
+    "San Marino",
+    "South Korea",
+    "the United Kingdom",
+    "the United States",
+]
+
+beschv_26_2_countries = [
+    "Albania",
+    "Bosnia-Herzegovina",
+    "Kosovo",
+    "North Macedonia",
+    "Montenegro",
+    "Serbia",
+]
+
+aufenthg_21_2_countries = [  # Exempt from freelance visa pension requirement
+    "Dominican Republic",
+    "Indonesia",
+    "Iran",
+    "Japan",
+    "Philippines",
+    "Sri Lanka",
+    "Turkey",
+    "the United States",
+]
+
 config.context_globals = {
     'now': datetime.now(),
     'site_url': config.site_url,
     'random_id': random_id,
+    'fail_on': fail_on,
     'google_maps_api_key': 'AIzaSyBtGlbcvFspb9habWlXiFcptF8wdFjCb-E',  # Frontend use
     'glossary_groups': glossary_groups,
 
@@ -198,47 +257,54 @@ config.context_globals = {
     # HEALTH INSURANCE
     # ==============================================================================
 
-    # Mindestbemessungsgrundlage (€/mth) - BEZUGSGRÖSSE_WEST / 90 * 30 - §240 Abs. 4 SGV IV
-    "GKV_MIN_INCOME": 1131.67,
+    # Mindestbemessungsgrundlage (€/mth) - §240 Abs. 4 SGV IV
+    "GKV_MIN_INCOME": bezugsgroesse_west / 90 * 30,
 
     # Jahresarbeitsentgeltgrenze or Versicherungspflichtgrenze - Above this income (€/y), you are freiwillig versichert
-    "GKV_FREIWILLIG_VERSICHERT_MIN_INCOME": 66600,
+    "GKV_FREIWILLIG_VERSICHERT_MIN_INCOME": 69300,
 
     # Above this income (€/mth), your employer pays for health insurance - §20 SGB IV
-    "GKV_AZUBI_MAX_FREE_INCOME": 325,
+    "GKV_AZUBI_FREIBETRAG": 325,
+
+    # Above this income, it's no longer a Nebenjob
+    "GKV_NEBENJOB_MAX_INCOME": bezugsgroesse_west * 0.75,
 
     # Besondere Versicherungspflichtgrenze - Above this income (€/y), you pay the Höchstbeitrag - SVBezGrV 2021 [BBGKVPV]
-    "GKV_HÖCHSTBEITRAG_MIN_INCOME": 59850,
+    "GKV_HÖCHSTBEITRAG_MIN_INCOME": gkv_hoechstbeitrag_min_income,
 
-    # Maximum daily Krankengeld - GKV_HÖCHSTBEITRAG_MIN_INCOME * 0.7 / 360 - § 47 SGB V
-    "GKV_KRANKENGELD_DAILY_LIMIT": 116.38,
+    # Maximum daily Krankengeld - § 47 SGB V
+    "GKV_KRANKENGELD_DAILY_LIMIT": gkv_hoechstbeitrag_min_income * 0.7 / 360,
 
-    # Above this income (€/m), you can't have Familienversicherung - 1/7 of BEZUGSGRÖSSE_WEST - §10 SGB V
-    "GKV_FAMILIENVERSICHERUNG_MAX_INCOME": 485,
+    # Above this income (€/m), you can't have Familienversicherung - §10 SGB V
+    "GKV_FAMILIENVERSICHERUNG_MAX_INCOME": 1 / 7 * bezugsgroesse_west,
 
     # Base contribution (%), including Krankengeld - § 241 SGB V
     "GKV_BASE_CONTRIBUTION": health_insurance_base_contrib,
 
+    # Base contribution (%) for students - § 245 SGB V
+    "GKV_STUDENT_BASE_CONTRIBUTION": health_insurance_base_contrib * 0.7,
+
     # Base contribution (%), excluding Krankengeld - § 243 SGB V
     "GKV_SELF_EMPLOYED_BASE_CONTRIBUTION": 14,
 
-    # Average Zusatzbeitrag (%)
-    "GKV_AVERAGE_ZUSATZBEITRAG": 1.6,
-
     # Estimated minimum contribution (€/mth) without employer contribution
+    # TODO (2024-01-01)
     "GKV_ESTIMATED_MIN_CONTRIBUTION": 210,
 
     # Estimated maximum contribution for employees (€/mth)
+    # TODO (2024-01-01)
     "GKV_ESTIMATED_EMPLOYEE_MAX_CONTRIBUTION": 470,
 
     # Estimated maximum contribution for freelancers (€/mth)
+    # TODO (2024-01-01)
     "GKV_ESTIMATED_SELF_EMPLOYED_MAX_CONTRIBUTION": 925,
 
     # Estimated contribution for students (€/mth)
+    # TODO (2024-01-01)
     "GKV_ESTIMATED_STUDENT_CONTRIBUTION": 120,
 
     # Used to calculate health insurance for a midijob - § 20 SGB IV - monitored
-    "GKV_FACTOR_F": 0.6922,
+    "GKV_FACTOR_F": 0.6846,
 
     # Not quite accurate, but good enough
     "GKV_MIN_EMPLOYEE_RATE": round(
@@ -264,16 +330,27 @@ config.context_globals = {
     "PFLEGEVERSICHERUNG_WITH_SURCHARGE": health_insurance_max_pflegeversicherung,
     "PFLEGEVERSICHERUNG_NO_SURCHARGE": 3.4,
     "PFLEGEVERSICHERUNG_DISCOUNT_PER_CHILD": 0.25,
+    "PFLEGEVERSICHERUNG_NO_SURCHARGE_MAX_AGE": 22,
 
     # BAFöG Bedarfssatz (€/y) - sum of §13 BAföG Abs 1.2 + 2.2
     "GKV_BAFOG_BEDARFSSATZ": 812,
 
-    # Minimum income (€/y) to join the Künstlersozialkasse - § 3 KSVG
+    # Minimum income (€/y) to join the Künstlersozialkasse - § 3 Abs. 1 KSVG
     "KSK_MIN_INCOME": 3900,
+
+    # Zusatzbeiträge
+    "GKV_ZUSATZBEITRAG_AVERAGE": 1.7,
+    "GKV_ZUSATZBEITRAG_AOK": 2.7,
+    "GKV_ZUSATZBEITRAG_BARMER": 2.19,
+    "GKV_ZUSATZBEITRAG_DAK": 1.7,
+    "GKV_ZUSATZBEITRAG_HKK": 0.98,
+    "GKV_ZUSATZBEITRAG_TK": 1.2,
 
     # ==============================================================================
     # IMMIGRATION
     # ==============================================================================
+
+    "RESIDENCE_PERMIT_WAIT_TIME": "6 to 10 weeks",
 
     # Minimum income (€/y) to get a Blue Card - §18b AufenthG
     "BLUE_CARD_MIN_INCOME": 2 / 3 * beitragsbemessungsgrenze_west,
@@ -281,26 +358,33 @@ config.context_globals = {
     # Minimum income (€/y) to get a Blue Card in shortage fields - §18b AufenthG
     "BLUE_CARD_SHORTAGE_MIN_INCOME": 0.52 * beitragsbemessungsgrenze_west,
 
-    # Visa fees (€)
+    # Visa fees (€) - §44 AufenthV
     "SCHENGEN_VISA_FEE": 75,
     "NATIONAL_VISA_FEE": 100,
     "NATIONAL_VISA_RENEWAL_FEE": 96,
 
-    # Minimum pension value (€) to get a freelance visa above age 45
+    # Minimum pension value (€) to get a freelance visa above age 45 - A21.3 VAB
+    # 144 times FREELANCE_VISA_MIN_MONTHLY_PENSION, it seems
+    # TODO (2024-01-01)
     "FREELANCE_VISA_MIN_PENSION": 206293,
 
     # Minimum guaranteed pension payment (€/m) to get a freelance visa above age 45
+    # TODO (2024-01-01)
     "FREELANCE_VISA_MIN_MONTHLY_PENSION": 1432.59,
 
-    # Minimum income (€/mth) before health insurance and rent to get a freelance visa
-    # §2 Abs. 3 AufenthG + §13 BAföG, 2.3.1.1 VAB
-    "FREELANCE_VISA_MIN_INCOME": 502,  # 2023
+    # Minimum income (€/mth) before health insurance and rent to get a freelance visa - Anlage SGB 12
+    "FREELANCE_VISA_MIN_INCOME": 563,
 
     # Minimum gross income (€/y) to get a work visa above age 45 - service.berlin.de/dienstleistung/305304
     "WORK_VISA_MIN_INCOME": beitragsbemessungsgrenze_west * 0.55,
 
     # Nationalities that can apply for a residence permit directly in Germany - §41 AufenthV
-    "AUFENTHV_41_COUNTRIES": "Australia, Canada, Israel, Japan, New Zealand, South Korea, the United Kingdom or the United States",
+
+    "AUFENTHG_21_2_COUNTRIES": or_join(aufenthg_21_2_countries),
+    "AUFENTHV_41_COUNTRIES": or_join(aufenthv_41_countries),
+    "BESCHV_26_COUNTRIES": or_join(sorted(beschv_26_1_countries + beschv_26_2_countries)),
+    "BESCHV_26_1_COUNTRIES": or_join(beschv_26_1_countries),
+    "BESCHV_26_2_COUNTRIES": or_join(beschv_26_2_countries),
 
     # ==============================================================================
     # TAXES
@@ -319,9 +403,10 @@ config.context_globals = {
     "MIDIJOB_MAX_INCOME": 2000,
 
     # Median income (€/m) of all people who pay social contribs - SGB VI Anlage 1
-    "BEZUGSGRÖSSE_WEST": 3395,
+    "BEZUGSGRÖSSE_WEST": bezugsgroesse_west,
 
     # Median income (€/y) - rounded
+    # TODO (2024-01-01)
     "MEDIAN_INCOME_BERLIN": 43572,  # 2021
     "MEDIAN_INCOME_GERMANY": 42192,  # 2021
 
@@ -329,21 +414,21 @@ config.context_globals = {
     "RENTENVERSICHERUNG_EMPLOYEE_CONTRIBUTION": 9.3,
     "RENTENVERSICHERUNG_TOTAL_CONTRIBUTION": 18.6,
 
-    # Minimum Vorsorgepauschale - §39b Abs. 3 EStG
+    # Minimum Vorsorgepauschale - §39b Abs. 2.3 EStG
     "VORSORGEPAUSCHAL_MIN": 1900,
     "VORSORGEPAUSCHAL_MIN_TAX_CLASS_3": 3000,
 
     # Grundfreibetrag (€/y) - § 32a EstG [GFB]
-    "GRUNDFREIBETRAG": 10908,
+    "GRUNDFREIBETRAG": 11604,
 
     # Upper bound (€/y) of income tax tarif zones 2, 3 and 4 - § 32a EstG
-    "INCOME_TAX_TARIF_2_MAX_INCOME": 15999,
-    "INCOME_TAX_TARIF_3_MAX_INCOME": 62809,
+    "INCOME_TAX_TARIF_2_MAX_INCOME": 17005,
+    "INCOME_TAX_TARIF_3_MAX_INCOME": 66760,
     "INCOME_TAX_TARIF_4_MAX_INCOME": 277825,
 
     # Upper bound (€/y) of income tax tarif zones for tax classes 5 and 6 - § 39b Abs. 2 Satz 7 EstG [W1STKL5][W2STKL5][W3STKL5]
-    "INCOME_TAX_CLASS_56_LIMIT_1": 12485,
-    "INCOME_TAX_CLASS_56_LIMIT_2": 31404,
+    "INCOME_TAX_CLASS_56_LIMIT_1": 13279,
+    "INCOME_TAX_CLASS_56_LIMIT_2": 33380,
     "INCOME_TAX_CLASS_56_LIMIT_3": 222260,
 
     # Maximum income tax rate - § 32b EstG
@@ -354,20 +439,22 @@ config.context_globals = {
     "CHURCH_TAX_RATE_BW_BY": 8,
 
     # Above that income tax amount, you pay a 11.9% solidarity tax (€/y) - §3 SolzG 4a [SOLZFREI]
-    "SOLIDARITY_TAX_MILDERUNGSZONE_MIN_INCOME_TAX": 17543,
+    "SOLIDARITY_TAX_MILDERUNGSZONE_MIN_INCOME_TAX": 18130,
+    "SOLIDARITY_TAX_MILDERUNGSZONE_RATE": 0.119,
+    "SOLIDARITY_TAX_MAX_RATE": 0.055,
 
     # (€/y) - §9a EStG
     "ARBEITNEHMERPAUSCHALE": 1230,
 
-    # The employee's contribution (%) for Arbeitslosenversicherung - § 341 SGB 3, BeiSaV 2019 - monitored
+    # The employee's contribution (%) for Arbeitslosenversicherung - § 341 SGB 3, BeiSaV 2019
     "ARBEITSLOSENVERSICHERUNG_EMPLOYEE_RATE": 1.3,
 
-    # Maximum income used to calculate pension contributions (€/y) [BBGRV] - § SGB 6, Anlage 2 - monitored
-    "BEITRAGSBEMESSUNGSGRENZE_EAST": 85200,
+    # Maximum income used to calculate pension contributions (€/y) [BBGRV] - § SGB 6, Anlage 2
+    "BEITRAGSBEMESSUNGSGRENZE_EAST": 89400,
     "BEITRAGSBEMESSUNGSGRENZE_WEST": beitragsbemessungsgrenze_west,
 
-    # Maximum income from employment to stay a member of the KSK (€/y) - BEITRAGSBEMESSUNGSGRENZE_WEST / 2 - § 4 KSVG
-    "KSK_MAX_EMPLOYMENT_INCOME": 43800,
+    # Maximum income from employment to stay a member of the KSK (€/y) - § 4 KSVG
+    "KSK_MAX_EMPLOYMENT_INCOME": beitragsbemessungsgrenze_west / 2,
 
     # (€/y) §10c EStG [SAP]
     "SONDERAUSGABEN_PAUSCHBETRAG": 36,
@@ -376,7 +463,7 @@ config.context_globals = {
     "KINDERGELD": 250,
 
     # Tax break for parents (€/y) - § 32 EStG [KFB] - monitored
-    "KINDERFREIBETRAG": 8952,
+    "KINDERFREIBETRAG": 9312,
 
     # Tax break for single parents (€/y) - § 24b EStG [EFA]
     "ENTLASTUNGSBETRAG_ALLEINERZIEHENDE": 4260,
@@ -421,8 +508,8 @@ config.context_globals = {
     # ==============================================================================
 
     # € - monitored
-    "BVG_AB_TICKET": 3.20,  # TODO: Not monitored
-    "BVG_ABC_TICKET": 4.00,
+    "BVG_AB_TICKET": 3.50,
+    "BVG_ABC_TICKET": 4.40,
     "BVG_FINE": 60,
     "BVG_REDUCED_FINE": 7,
     "DEUTSCHLAND_TICKET_PRICE": 49,
@@ -433,10 +520,13 @@ config.context_globals = {
 
     "DIGITAL_ABMELDUNG_FEE": 15,
 
+    # € - service.berlin.de/dienstleistung/121921
+    "GEWERBEANMELDUNG_FEE": 15,
+
     # € - hunderegister.berlin.de
     "HUNDEREGISTER_FEE": 17.50,
 
-    # Dog tax (€/y) - §4 HuStG BE - monitored
+    # Dog tax (€/y) - §4 HuStG BE
     "HUNDESTEUER_FIRST_DOG": 120,
     "HUNDESTEUER_MORE_DOGS": 180,
 
@@ -451,6 +541,9 @@ config.context_globals = {
 
     # (€) - https://service.berlin.de/dienstleistung/327537/
     "DRIVING_LICENCE_CONVERSION_FEE": 36.30,
+
+    # (€) - https://www.meineschufa.de/de/datenkopie, https://bonitaetscheck.immobilienscout24.de/
+    "SCHUFA_REPORT_FEE": 29.95,
 }
 
 config.logging = {

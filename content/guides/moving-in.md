@@ -114,15 +114,15 @@ The electricity contract is activated automatically. No one will visit your apar
 
 ### Buy furniture and appliances
 
-You can buy used appliances from [Kleinanzeigen](https://www.ebay-kleinanzeigen.de:443/). Used appliances are *much* cheaper. Professional sellers offer a 12 month warranty and free delivery. Only buy your appliances from sellers with old accounts. Some scammers create accounts, sell broken appliances for a few days, and disappear. I bought many appliances from [Wasch Max](https://www.ebay-kleinanzeigen.de/s-bestandsliste.html?userId=30162989).
+You can buy used appliances from [Kleinanzeigen](https://www.kleinanzeigen.de:443/). Used appliances are *much* cheaper. Professional sellers offer a 12 month warranty and free delivery. Only buy your appliances from sellers with old accounts. Some scammers create accounts, sell broken appliances for a few days, and disappear. I bought many appliances from [Wasch Max](https://www.kleinanzeigen.de/s-bestandsliste.html?userId=30162989).
 
 **[Where to buy furniture and house supplies ➞](/guides/where-to-buy-what#furniture-and-house-supplies)**
 
-If you need help to move furniture, you can use a [Möbel Taxi](https://www.moebel-taxi.de/english/), or rent a van with [Miles](https://miles-mobility.com/en-de). You can find more moving services on [Kleinanzeigen](https://www.ebay-kleinanzeigen.de/s-umzug-transport/berlin/c296l3331).
+If you need help to move furniture, you can use a [Möbel Taxi](https://www.moebel-taxi.de/english/), or rent a van with [Miles](https://miles-mobility.com/en-de). You can find more moving services on [Kleinanzeigen](https://www.kleinanzeigen.de/s-umzug-transport/berlin/c296l3331).
 
 ### Install light fixtures
 
-Most apartments come without light fixtures. You will need to get your own from Ikea or some other furniture store. You can hire a *Handwerker* to install them for you. You can find a *Handwerker* on [Kleinanzeigen](https://www.ebay-kleinanzeigen.de/s-berlin/handwerker/k0l3331).
+Most apartments come without light fixtures. You will need to get your own from Ikea or some other furniture store. You can hire a *Handwerker* to install them for you. You can find a *Handwerker* on [Kleinanzeigen](https://www.kleinanzeigen.de/s-berlin/handwerker/k0l3331).
 
 ### Change your address
 
@@ -144,7 +144,7 @@ Your own things are not covered by liability insurance. To insure your furniture
 
 **[Types of insurance in Germany ➞](/guides/insurance)**
 
-[Muffin](/out/muffin-haftpflicht) helps you choose liability insurance from multiple companies, and they speak English. [Feather](/out/feather-haftpflicht) and [Getsafe](/out/getsafe-haftpflicht) sell liability insurance, and they speak English. They also sell household insurance (*[[Hausratversicherung]]*). You sometimes pay less when you get both insurances at the same time.
+[Feather](/out/feather-haftpflicht) and [Getsafe](/out/getsafe-haftpflicht) sell liability insurance, and they speak English. I got my liability insurance from Feather. They also sell household insurance (*[[Hausratversicherung]]*). You sometimes pay less when you get both insurances at the same time.
 
 ### Protect your rights
 
@@ -153,7 +153,7 @@ Landlords often take advantage of immigrants. You must be ready to defend yourse
 - **Join a tenants' association** (*[[Mieterverein]]*)  
     If you are a member, you get free help from their lawyers. They can check your lease, help you with a bad landlord, get your rent reduced, and help you sublet an apartment. It costs around 5€ per month. The [Berliner Mieterverein](https://www.berliner-mieterverein.de/sprachen/englisch.htm) and [Mieterschutzbund Berlin](https://www.mieterschutzbund-berlin.de/) are the biggest associations in Berlin. The Berliner Mieterverein offers help in English.[^10]
 - or **get legal insurance** (*[[Rechtsschutzversicherung]]*)  
-    It pays for your legal costs. You get free access to a lawyer. It's more expensive than a *[[Mieterverein]]*, but you get better service, and you can choose any [English-speaking lawyer](/guides/english-speaking-lawyers-berlin). [Muffin](/out/muffin-rechtsschutz), [Feather](/out/feather-rechtsschutz) and [Getsafe](/out/getsafe-rechtsschutz) sell legal insurance, and they speak in English.
+    It pays for your legal costs. You get free access to a lawyer. It's more expensive than a *[[Mieterverein]]*, but you get better service, and you can choose any [English-speaking lawyer](/guides/english-speaking-lawyers-berlin). [Feather](/out/feather-rechtsschutz) and [Getsafe](/out/getsafe-rechtsschutz) sell legal insurance, and they speak in English.
 - or **get help from the [Mieterberatung](https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeraemter/artikel.244745.php)**  
     This is a free service from the city of Berlin. They might not speak English.
 

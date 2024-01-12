@@ -13,11 +13,11 @@ This guide shows you how to relocate to Berlin from another country, step by ste
 
 Before you move to Germany, you might need a [residence permit](/glossary/Aufenthaltstitel). A residence permit gives you the right to live in Germany.
 
-To get a residence permit, you usually need a job offer, [health insurance](/glossary/Krankenversicherung), and a place to live. The first step is to find a job, then an apartment and health insurance.
+To get a residence permit, you usually need a job offer, [health insurance](/glossary/Krankenversicherung), and a place to live. The first step is to [find a job](/guides/find-a-job-in-berlin), then [an apartment](/guides/find-a-flat-in-berlin) and [health insurance](/guides/german-health-insurance).
 
 Moving to Germany costs a lot of money. You need savings. Your employer might offer a relocation bonus, or pay some of your relocation costs.
 
-After you arrive in Germany, you need a bank account and a SIM card for your phone. When you move into your apartment, you must register your address.
+After you arrive in Germany, you need a [bank account](/guides/first-bank-account-in-germany) and a SIM card for your phone. When you move into your apartment, you must [register your address](/guides/anmeldung-in-english-berlin).
 
 ![Move to berlin boxes luggage](/illustrations/move-to-berlin-boxes-luggage.png)
 
@@ -146,9 +146,9 @@ If you have children, you might need to send them to a daycare (*[[Kita]]*). It'
 
 **[How to find a Kita ➞](/guides/how-to-find-a-kita-in-berlin)**
 
-You can also bring your pets to Germany. If you bring your dog to Berlin, you must [microchip](/guides/pet-ownership#identification-badge-and-chip), [insure](/guides/pet-ownership#dog-liability-insurance) and [register](/guides/hundesteuer) it. You must also adjust to German dog culture.
+You can also bring your pets to Germany. If you bring your dog to Berlin, you must [microchip](/guides/dog-ownership#identification-chip), [insure](/guides/dog-ownership#dog-liability-insurance) and [register](/guides/dog-ownership#dog-register) it. You must also adjust to German dog culture.
 
-**[Dog ownership in Germany ➞](/guides/pet-ownership)**
+**[Guide for Berlin dog owners ➞](/guides/dog-ownership)**
 
 ### Get around in Berlin
 
@@ -172,7 +172,9 @@ Your foreign driving licence [might be valid in Germany](/guides/convert-to-germ
 
 Explore your new city! [Get a bicycle](/guides/bicycle-in-berlin) and explore everything inside and outside the *[Ring](/glossary/Ringbahn)*.
 
-If you move in the winter, Berlin will seem a little grey, but don't panic. It will be much nicer in the summer.
+If you move in the winter, Berlin can seem a little grey, but don't panic; it's much nicer in the summer.
+
+Follow [20percent.berlin](https://20percent.berlin/), [Berlin Events Weekly](https://www.berlineventsweekly.com/) and [Handpicked Berlin](https://handpickedberlin.com/) to know what's happening in Berlin.
 
 **[What to see and do in Berlin ➞](/guides/visit-berlin#what-to-see-and-do-in-berlin)**
 
@@ -210,6 +212,12 @@ If you don't speak German, you can still get help in English:
 - [English-speaking **barbers** and hair salons in Berlin](/guides/hairdressers-hairstylists-barbers-berlin)
 - [English-speaking **gynaecologists** in Berlin](/guides/english-speaking-gynecologists-berlin)
 
+### Find a doctor
+
+In Germany, when you have a health problem, you go to your *[[Hausarzt]]*. Find your *Hausarzt* before you need one. It will be easier to see a doctor when you are sick. This is useful when you need a [sick note](/glossary/Krankschreibung) for your employer.
+
+**[Find an English-speaking doctor ➞](/guides/english-speaking-doctors-berlin)**
+
 ## A new life in Germany
 
 After you are settled in Berlin, you can make new plans.
@@ -222,7 +230,9 @@ You can be self-employed in Germany. It's a little scary, but it's worth it.
 
 ### Permanent residence and citizenship
 
-After a few years in Germany, you can apply for [permanent residence](/glossary/Niederlassungserlaubnis) and German citizenship. This gives you more freedom, and more security. You don't need to renew your residence permit. You can stay in Germany even if you lose your job.
+After a few years in Germany, you can apply for [permanent residence](/glossary/Niederlassungserlaubnis) and German citizenship. Permanent residence gives you more freedom and more security. You don't need to renew your residence permit. You can stay in Germany even if you lose your job.
+
+With most [residence permits](/glossary/Aufenthaltstitel), you can get permanent residence after 5 years. If you have a [[Blue Card]], you can get permanent residence in 21 or 33 months.
 
 [^0]: [teltarif.de](https://www.teltarif.de/roaming/fair-use-policy.html)
 [^1]: [naylorengineering.com](http://web.archive.org/web/20220128231355/http://www.naylorengineering.com/handyvertrag-ohne-wohnsitz-in-deutschland/), [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/al0xcd/postident_in_berlin/efav1r4/?utm_source=reddit&utm_medium=web2x&context=3)

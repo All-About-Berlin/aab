@@ -29,6 +29,7 @@ Related_places:
     places/dr-med-eileen-behrens.md
     places/dr-med-elke-schröter.md
     places/dr-johanna-morguet-sahar-abdul-majeed.md
+    places/mvz-kopenick.md
 ---
 
 This is how you can find an English-speaking doctor or GP.

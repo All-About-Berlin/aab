@@ -2,11 +2,12 @@
 Title: What is the Berlin Hunderegister?
 German_term: Hunderegister
 English_term: Dog registry
-Description: 
+Description: All dog owners in Berlin must register their dog in the Hunderegister.
 Date_created: 2022-02-28
-Related_guides: guides/pet-ownership.md, guides/hundesteuer.md
+Related_guides:
+    guides/dog-ownership.md
 ---
 
 In Berlin, all dogs must be registered in the dog registry (*Hunderegister*). The registration costs {{HUNDEREGISTER_FEE|cur}}€.
 
-**[Dog register information for Berlin ➞](/guides/hundesteuer)**
+**[Berlin dog register](https://hunderegister.berlin.de/)** - Berlin.de

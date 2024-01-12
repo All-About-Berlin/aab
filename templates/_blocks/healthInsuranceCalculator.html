@@ -211,11 +211,7 @@
 				<option :value="3">3 children</option>
 				<option :value="4">4 children</option>
 				<option :value="5">5 children</option>
-				<option :value="6">6 children</option>
-				<option :value="7">7 children</option>
-				<option :value="8">8 children</option>
-				<option :value="9">9 children</option>
-				<option :value="10">10+ children</option>
+				<option :value="6">6+ children</option>
 			</select>
 		</div>
 		<hr>
@@ -278,7 +274,7 @@
 					You make more than <eur :amount="healthInsurance.maxMonthlyIncome" cents></eur> per month, so you pay the <glossary term="Höchstbeitrag">maximum price</glossary>. It's {{ baseContributionPercentage}}% of <eur :amount="healthInsurance.maxMonthlyIncome" cents></eur>.
 				</template>
 				<template v-else-if="flag('midijob')">
-					You make less than <eur :amount="healthInsurance.maxMidijobIncome" cents></eur>, so you pay the midijob tarif. It's cheaper than the normal tarif.
+					You make less than <eur :amount="healthInsurance.midijobMaxIncome" cents></eur>, so you pay the midijob tarif. It's cheaper than the normal tarif.
 				</template>
 				<template v-else-if="result.tarif === 'student'">
 					You pay the student tarif; the base cost is a fixed price.
@@ -457,7 +453,7 @@
 	<template v-if="stage === 'publicInsuranceOptions'">
 		<h3>Public health insurance</h3>
 		<p>
-			There are over 100 <glossary term="Krankenkasse">public health insurers</glossary>. Their price and coverage is almost the same, so you can't choose wrong.
+			There are over 100 <glossary term="Krankenkasse">public health insurers</glossary>. Their prices and coverage are almost the same.
 		</p>
 		<div class="collapsible-options">
 			<a title="Sign up with Techniker Krankenkasse" :href="result.tarif === 'student' ? '/out/tk-calc-students' : '/out/tk-calc'" target="_blank">
@@ -484,10 +480,20 @@
 				{% endraw %}{% include "_css/icons/health-insurance/logo-aok.svg" %}{% raw %}
 				<div>
 					<h3>AOK (Nordost)</h3>
-					<p>Another large public health insurer. There are different AOK branches for each part of Germany.</p>
+					<p>Another large public health insurer. They have branches for each part of Germany.</p>
 				</div>
 				<output>
 					<eur :amount="result.options.aok.total.personalContribution"></eur> <small>per month</small>
+				</output>
+			</a>
+			<a title="Sign up with DAK" href="/out/dak-calc" target="_blank">
+				{% endraw %}{% include "_css/icons/health-insurance/logo-dak.svg" %}{% raw %}
+				<div>
+					<h3>DAK</h3>
+					<p>Another large public health insurer.</p>
+				</div>
+				<output>
+					<eur :amount="result.options.dak.total.personalContribution"></eur> <small>per month</small>
 				</output>
 			</a>
 		</div>

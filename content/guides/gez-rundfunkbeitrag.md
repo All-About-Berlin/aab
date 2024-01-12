@@ -39,7 +39,7 @@ Every 3 months, you get an invoice from *ARD ZDF Deutschlandradio Beitragsservic
 
 How to enable automatic payments:
 
-1. Find your account number (*Beitragsnummer*). It's on the letters the *Beitragsservice* send you. It has 9 digits. You can also use the last 9 digits of the payment reference number (RF30X<u>000000000</u>).
+1. Find your 9-digit account number (*Beitragsnummer* or *Aktenzeichen*). It's on the letters the *Beitragsservice* sends you. It's also the last 9 digits of the payment reference number (RF30X<u>000000000</u>).
 2. Open [the account information form](https://www.rundfunkbeitrag.de/buergerinnen_und_buerger/formulare/aendern/index_ger.html)
 3. Enter your name, address, account number and other details.
 4. On the next step, choose "Zahlungsweise", and under "Zahlungsart", choose "[Lastschrift](/glossary/SEPA-Lastschriftmandat) von meinem/unserem konto".

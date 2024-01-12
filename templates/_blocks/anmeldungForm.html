@@ -30,7 +30,7 @@
 			</label>
 			<div class="input-group">
 				<postalcode-input class="show-errors" :id="uid('newPostCode')" v-model="newPostCode"></postalcode-input>
-				<city-input v-model="newCity"></city-input>
+				Berlin
 			</div>
 		</div>
 		<div class="form-group">
@@ -127,11 +127,13 @@
 						ref="firstNameInput"
 						placeholder="Alex"
 						autocomplete="given-name"
+						title="First name"
 						class="first-name-input">
 					<input type="text"
 						v-model="person.lastName"
 						placeholder="Smith"
 						autocomplete="family-name"
+						title="Last name"
 						class="last-name-input">
 					<a class="input-instructions" href="#" v-if="!person.showExtraFields" @click.prevent="person.showExtraFields = true">Add a title or birth name</a>
 				</div>
@@ -216,13 +218,13 @@
 		<hr>
 		<div class="input-group vertical">
 			<label class="checkbox">
-				<input ref="namesAreOnMailboxCheckbox" v-model="namesAreOnMailbox" type="checkbox"> {{ people.length > 1 ? 'Our names are on our' : 'My name is on my' }} mailbox
+				<input ref="namesAreOnMailboxCheckbox" v-model="namesAreOnMailbox" type="checkbox"> {{ people.length > 1 ? 'Our names are on our mailbox' : 'My name is on my mailbox' }}
 			</label>
 		</div>
 		<p v-if="!namesAreOnMailbox">If your name is not on your mailbox, you must <a href="/guides/anmeldung-in-english-berlin#can-i-do-my-anmeldung-if-my-name-is-not-on-the-mailbox" target="_blank">add “c/o” or “bei” to your address</a>. This tells postal workers to put your mail in another person's mailbox.</p>
 		<div class="form-group" v-if="!namesAreOnMailbox">
 			<label :for="uid('nameOnMailbox')">Name on mailbox</label>
-			<input type="text" v-model="nameOnMailbox" placeholder="Müller">
+			<input :id="uid('nameOnMailbox')" type="text" v-model="nameOnMailbox" placeholder="Müller">
 		</div>
 	</template>
 	<template v-if="stage === 'idDocuments'">
@@ -280,23 +282,23 @@
 	<template v-if="stage === 'options'">
 		<h2>You are almost done!</h2>
 		<template v-if="peoplePairs.length > 1">
-			<p>Print the forms, sign them, and bring them to your <em>Anmeldung</em> appointment.</p>
+			<p>Print these forms, sign them, and bring them to your <em>Anmeldung</em> appointment.</p>
 			<div class="collapsible-options">
-				<button v-for="([person1, person2], index) in peoplePairs" @click="generatePDF(person1, person2)" :disabled="downloadInProgress">
+				<button :aria-labelledby="uid('h-btnDownload') + index" v-for="([person1, person2], index) in peoplePairs" @click="generatePDF(person1, person2)" :disabled="downloadInProgress">
 					{% endraw %}{% include "_css/icons/pdf.svg" %}{% raw %}
 					<div>
-						<h3>Download part {{ index + 1 }} of the form</h3>
+						<h3 :id="uid('h-btnDownload') + index">Download your Anmeldung form (part {{ index + 1 }})</h3>
 						<p v-if="person1.firstName">For {{ person1.firstName }}<template v-if="person2"> and {{ person2.firstName }}</template>.</p>
 					</div>
 				</button>
 			</div>
 		</template>
 		<div class="collapsible-options">
-			<button v-if="peoplePairs.length === 1" @click="generatePDF(people[0], people[1])" :disabled="downloadInProgress">
+			<button v-if="peoplePairs.length === 1" @click="generatePDF(people[0], people[1])" :disabled="downloadInProgress" :aria-labelledby="uid('h-btnDownload')">
 				{% endraw %}{% include "_css/icons/pdf.svg" %}{% raw %}
 				<div>
-					<h3>Download the filled form</h3>
-					<p>Print and sign this form, then bring it to your <em>Anmeldung</em> appointment.</p>
+					<h3 :id="uid('h-btnDownload')">Download your Anmeldung form</h3>
+					<p>Print and sign this form, and bring it to your <em>Anmeldung</em> appointment.</p>
 				</div>
 			</button>
 		</div>
@@ -331,7 +333,7 @@
 		<button v-if="stageIndex === 0" class="button primary" @click="stageIndex += 1">Start <i class="icon right" aria-hidden="true"></i></button>
 		<button v-if="stageIndex > 1" class="button" @click="stageIndex -= 1"><i class="icon left" aria-hidden="true"></i> Go back</button>
 		<button v-if="stage === 'addPeople'" class="button" @click="addPerson"><i class="icon person" aria-hidden="true"></i> Add another person</button>
-		<button v-if="stageIndex > 0 && stageIndex < stages.length - 2" class="button primary" @click="stageIndex += 1">Next step <i class="icon right" aria-hidden="true"></i></button>
+		<button v-if="stageIndex > 0 && stageIndex < stages.length - 2" class="button primary" @click="stageIndex += 1">Continue <i class="icon right" aria-hidden="true"></i></button>
 		<button v-if="stageIndex === stages.length - 2" class="button primary" @click="stageIndex += 1">Finish</button>
 	</div>
 {% endraw %}
@@ -360,7 +362,6 @@
 					moveInDate: '',
 					newAddress: '',
 					newBuildingDetails: '',
-					newCity: '',
 					newPostCode: '',
 					oldAddress: '',
 					oldBuildingDetails: '',
@@ -458,7 +459,7 @@
 						'Tag des EinzugsRow1': this.formattedDate(this.moveInDate, 'de-DE'),
 						'Tag des AuszugsRow1': this.formattedDate(this.moveInDate, 'de-DE'),
 						'Straße Hausnummer ZusätzeRow1': this.mergeFields([this.newAddress, this.newBuildingDetails, beiAddress]),
-						'Postleitzahl Gemeinde OrtsteilRow1': this.mergeFields([this.newPostCode, this.newCity]),
+						'Postleitzahl Gemeinde OrtsteilRow1': this.mergeFields([this.newPostCode, 'Berlin']),
 						'Straße Hausnummer ZusätzeRow1_2': this.mergeFields([this.oldAddress, this.oldBuildingDetails, oldStateName]),
 						'Postleitzahl GemeindeKreisLandRow1': this.mergeFields([this.oldPostCode, this.oldCity]),
 						'Bei Zuzug aus dem Ausland StaatRow1': this.oldCountry === 'Germany' ? '' : this.oldCountry,

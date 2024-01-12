@@ -2,9 +2,11 @@
 Title: What is the Umsatzsteuervoranmeldung?
 German_term: Umsatzsteuervoranmeldung
 English_term: Advance VAT return
-Description: 
+Description: A monthly or quarterly VAT report. It tells the Finanzamt how much VAT you owe them.
 Date_created: 2022-10-15
-Related_guides: guides/value-added-tax.md
+Related_guides:
+    guides/value-added-tax.md
+    guides/start-a-business-in-germany.md
 ---
 
 An advance [VAT](/glossary/Umsatzsteuer) return (*Umsatzsteuervoranmeldung* or *UStVA*) is a monthly or quarterly VAT report.

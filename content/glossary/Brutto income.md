@@ -10,6 +10,8 @@ Related_guides:
     guides/cost-of-living.md
 ---
 
-Your gross income (*Bruttoeinkommen*) is what you earn before taxes, health insurance and social security contributions. The amount you keep every month is your net income (*[Nettoeinkommen](/glossary/Netto%20income)*). If you know your gross income, use the [German tax calculator](/tools/tax-calculator) to find your net income.
+Your gross income (*Bruttoeinkommen*) is what you earn before taxes, health insurance and social security contributions. The amount you keep every month is your net income (*[Nettoeinkommen](/glossary/Netto%20income)*).
+
+**[Calculate your gross income ➞](/tools/tax-calculator)**
 
 In Germany, when people talk about their salary, they usually talk about their gross income.

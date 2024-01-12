@@ -11,11 +11,13 @@ Related_guides:
     guides/anmeldung-in-english-berlin.md
 ---
 
-Normally, you get a [tax ID](/glossary/Steueridentifikationsnummer) after you [register your address](/glossary/Anmeldung) for the first time. If you can't register your address, but you still need a tax ID, you must fill this form and send it to the *[[Finanzamt]]*.
+Normally, you get a [tax ID](/glossary/Steueridentifikationsnummer) after you [register your address](/glossary/Anmeldung) for the first time. If you can't register your address, but you still need a tax ID, fill this form and send it to the *[[Finanzamt]]*.
 
-If you already did your *[[Anmeldung]]*, you don't need this form. You can wait for your tax ID or request it again.
+**This form is not reliable.** You might not receive your tax ID. It might be sent to your address in another country. It might be sent to your employer.
 
-**[How to get a tax ID ➞](/guides/german-tax-id-steuernummer#the-tax-id-steuer-id)**
+If you already did your *[[Anmeldung]]*, you don't need this form. You can wait for your tax ID or [request it again](/guides/german-tax-id-steuernummer#how-to-get-your-tax-id).
+
+**[How to get a tax ID ➞](/guides/german-tax-id-steuernummer#how-to-get-your-tax-id)**
 
 ## Download the form
 
@@ -27,9 +29,9 @@ The original form is [on the BZSt website](/out/taxid-form).
 
 People who need a tax ID, but can't [register their address](/glossary/Anmeldung):
 
-- People who work in Germany, but do not live in Germany.
-- People who live in Germany, but do not have a fixed address.
-- People who live in Germany, but [can't register their address](/guides/anmeldung-in-english-berlin#if-you-cant-register-your-address).
+- If you work in Germany, but do not live in Germany.
+- If you live in Germany, but do not have a fixed address.
+- If you live in Germany, but [can't register your address](/guides/anmeldung-in-english-berlin#if-you-cant-register-your-address).
 
 ## How to fill this form
 
@@ -50,13 +52,13 @@ If you fill this form because you can't register your current address:
 
 If you are an employee, send it to your employer's local *[[Finanzamt]]*. If not, send it to your local *[[Finanzamt]]*.[^0]
 
-Include a copy of your passport or *[[Personalausweis]]* with the form.
+Include a copy of your passport or *[[Personalausweis]]* with the form. You can use a *Personalausweis* from another EU country.
 
 **[Find your local Finanzamt ➞](/out/finanzamt-finder)**
 
 ## What happens next?
 
-2 to 4 weeks later, you will get a tax ID by post. It will come in a letter from the *Bundeszentralamt für Steuern* (*BZSt*).
+2 to 6 weeks later, you will get a tax ID by post. It will come in a letter from the *Bundeszentralamt für Steuern* (*BZSt*).
 
 It might be sent to your address in another country, even if you also gave an address in Germany.[^1]
 

@@ -2,9 +2,18 @@
 Title: Gewerbesteuer definition
 German_term: Gewerbesteuer
 English_term: Trade tax
-Description: 
+Description: A tax that most businesses must pay.
 Date_created: 2018-07-31
-Related_guides: guides/fragebogen-zur-steuerlichen-erfassung.md, guides/freiberufler-or-gewerbe.md, guides/start-a-business-in-germany.md, guides/website-compliance-germany.md, guides/become-a-freelancer-in-germany.md, guides/freelance-developer-rate.md, guides/gewerbesteuer.md, guides/gewerbeschein.md
+Related_guides:
+    guides/gewerbesteuer.md
+    guides/gewerbeschein.md
+    guides/taxes.md
+    guides/fragebogen-zur-steuerlichen-erfassung.md
+    guides/freiberufler-or-gewerbe.md
+    guides/start-a-business-in-germany.md
+    guides/website-compliance-germany.md
+    guides/become-a-freelancer-in-germany.md
+    guides/freelance-developer-rate.md
 ---
 
 The trade tax (*Gewerbesteuer*) is a tax most German businesses must pay.

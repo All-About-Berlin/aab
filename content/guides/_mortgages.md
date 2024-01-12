@@ -63,7 +63,7 @@ German banks will require you to submit both personal documents and property doc
 
 - Self-disclosure form (*Selbstauskunft*)
 - Copy of your passport
-- [Credit score certificate (Schufa)](/guides/free-schufa-berlin)
+- [Credit score certificate (Schufa)](/guides/schufa)
 - Proof of your equity
 
 **For employees only:**

@@ -2,13 +2,17 @@
 Title: What is the dog tax (Hundesteuer)?
 German_term: Hundesteuer
 English_term: Dog tax
-Description: 
+Description: A tax for dog owners.
 Date_created: 2020-12-17
-Related_guides: guides/abmeldung-deregister-in-berlin.md, guides/moving-out.md, guides/pet-ownership.md, guides/hundesteuer.md
+Related_guides:
+    guides/dog-ownership.md
+    guides/abmeldung-deregister-in-berlin.md
+    guides/moving-out.md
+    guides/taxes.md
 ---
 
-The dog tax (*Hundesteuer*) is a tax you pay when you own a dog in Berlin.
+When you have a dog in Berlin, you must add them to the dog register (*[[Hunderegister]]*) and pay a dog tax (*Hundesteuer*).
 
-Guide dogs are exempt from the dog tax.
+It costs **{{HUNDESTEUER_FIRST_DOG|cur}}€/year** for one dog, and {{HUNDESTEUER_MORE_DOGS|cur}}€ per year for each extra dog.
 
-**[Dog tax information for Berlin ➞](/guides/hundesteuer)**
+**[Berlin dog owner guide ➞](/guides/dog-ownership)**

@@ -15,7 +15,7 @@ This guide explains the current laws about cannabis in Germany.
 
 In Berlin, cannabis is tolerated. People often smoke weed in parks, on the street, and even in some bars. If you smoke weed, people usually leave you alone. You can still get in trouble, but it's less likely. It can be different in other German states.
 
-In 2021, a new coalition government was elected in Germany. This new government wants to legalise recreational marijuana in all of Germany. It's part of their coalition agreement. **Marijuana will probably become legal in 2024 or 2025.**
+In 2021, a new coalition government was elected in Germany. This new government wants to legalise recreational marijuana in all of Germany. It's part of their coalition agreement. **Marijuana will probably become legal in 2024.**{{ fail_on('2024-04-01') }}
 
 ## Is medicinal marijuana legal?
 

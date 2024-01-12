@@ -50,6 +50,11 @@ Related_places:
     places/kuhlen-partnerschaft-von-rechtsanwalten-mbb.md
     places/hertin-and-partner.md
     places/christoph-mueller.md
+    places/bohm-anwaltskanzlei.md
+    places/goddeke-aakb.md
+    places/hogertz.md
+    places/koudous-international.md
+    places/rechtsanwalt-raphael-kneer.md
 ---
 
 This list of English, French and Spanish-speaking attorneys will help you with any legal issues you might encounter while living in Berlin. If you are looking for an immigration lawyer, there are some in the list below.

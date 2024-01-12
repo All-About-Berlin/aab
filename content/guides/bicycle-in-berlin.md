@@ -28,7 +28,7 @@ Used bicycles are cheaper. There are many places where you can buy them:
     Monthly bicycle markets with hundreds of bicycles. There is also a bicycle workshop.
 - **[Fietsenbörse](https://fietsenboerse.de/)** (Schöneberg)  
     Monthly bicycle market with hundreds of bicycles.
-- **[Kleinanzeigen](https://www.ebay-kleinanzeigen.de/s-fahrraeder/c217)**  
+- **[Kleinanzeigen](https://www.kleinanzeigen.de/s-fahrraeder/c217)**  
     Classified ads website. Many bikes are listed there.
 - **[Flea markets](https://www.berlin.de/special/shopping/flohmaerkte/)**  
     There are flea markets every Sunday in Berlin. Many of them sell bicycles. Do not buy a bicycle there. The bicycles are too old, too expensive, and often stolen.
@@ -119,7 +119,9 @@ You should also write down your bicycle's frame number (*Rahmennummer*). If your
 
 ### Bike theft insurance
 
-If you have an expensive bike, you can get household insurance *[[Hausratversicherung]]* that covers bike theft, or just bicycle insurance (*[[Fahrradversicherung]]*. If your bike is stolen, your insurance will pay to replace it. Bicycle insurance only covers recent bicycles. Older bicycles are not covered. If you don't speak German, [Feather](/out/feather-bicycle), [Getsafe](/out/getsafe-bicycle) and [Muffin](/out/muffin) sell bicycle insurance, and they speak English.
+If you have an expensive bike, you can get household insurance *[[Hausratversicherung]]* that covers bike theft, or just bicycle insurance (*[[Fahrradversicherung]]*. If your bike is stolen, your insurance will pay to replace it. Bicycle insurance only covers recent bicycles. Older bicycles are not covered.
+
+If you don't speak German, [Feather](/out/feather-bicycle) and [Getsafe](/out/getsafe-bicycle) sell bicycle insurance, and they speak English.
 
 ### If your bike gets stolen
 
@@ -132,11 +134,11 @@ Report the theft to the Berlin police. You can do it online. If your bicycle is 
 Your bicycle must have lights, reflectors, a bell and working brakes. The Berlin Police sometimes controls bicycles.
 
 - [ ] **[Lights](https://www.amazon.de/s/ref=as_li_ss_tl?k=stvzo+fahrradbeleuchtung&__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2AZ7Q8F9D9AJ3&sprefix=stvzo+fahrrad,aps,215&ref=nb_sb_ss_i_1_13&linkCode=sl2&tag=nicolasboulia-21&linkId=9f73421a651437357fb9a83c139353ff&language=de_DE)** (*Scheinwerfer*)  
-    Your bicycle must have a white light in the front, and a red light in the back.[^5] Blinking lights are not allowed.[^6] If your bicycle does not have lights, you can get a 20 to 35€ fine.[^7] You can get a fine even during the day.
+    Your bicycle must have a white light in the front, and a red light in the back.[^5] Your light must be [StVZO-compliant](https://www.bikeradar.com/advice/buyers-guides/stvzo-bike-lights/). This means that it's designed to avoid blinding others. Blinking lights are not allowed.[^6] If your bicycle does not have lights, you can get a 20 to 35€ fine.[^7] You can get a fine even during the day.
     - [ ] **Headlight**  
-        One white front light, powered by a battery or dynamo.
+        One white front light, powered by a battery or dynamo. StVZO-compliant. Must not blind other people.
     - [ ] **Rear light**  
-        One red rear light, powered by a battery or dynamo.
+        One red rear light, powered by a battery or dynamo. Must not blink.
 - [ ] **Reflectors** (*Rückstrahler*)  
     Your bicycle must have all the required reflectors.[^8] If you don't have the correct reflectors, you can get a 20€ fine.
     - [ ] **[Front reflector](https://www.amazon.de/Fischer-Erwachsene-Vorbaubefestigung-Reflektor-schwarz/dp/B0154YPBIM/ref=as_li_ss_tl?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=fahrrad+reflektoren+stvzo&qid=1598610815&sr=8-11&linkCode=sl1&tag=nicolasboulia-21&linkId=7de1370f58f8c1a068d0ab4e0648c300&language=de_DE)**  

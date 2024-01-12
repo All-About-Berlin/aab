@@ -1,6 +1,6 @@
 ---
 Name: sorted.berlin
-Description: 
+Description: Elliot Herman has a lot of experience with German immigration.
 Website: http://www.sorted.berlin/
 Email: 
 Address: Grünberger Str. 13

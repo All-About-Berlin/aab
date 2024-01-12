@@ -4,7 +4,7 @@ German_term: Abmeldung einer Wohnung
 English_term: Deregistration of a residence
 German_document: documents/abmeldung-original.pdf
 English_document: documents/abmeldung-translated-finished.pdf
-Description: This is the document you must fill to deregister your address in Berlin.
+Description: This is the document you must fill to deregister your address in Berlin. It's also called the "Abmeldeformular".
 Date_created: 2018-01-06
 Related_guides:
     guides/abmeldung-deregister-in-berlin.md
@@ -13,7 +13,7 @@ Related_guides:
     guides/anmeldung-in-english-berlin.md
 ---
 
-Fill this form to deregister your address in Germany (*[[Abmeldung]]*). In Berlin, you can send the form to any *[[Bürgeramt]]* in Berlin. You can deliver the form in person, by email, or by [registered mail](/glossary/Einschreibebrief).
+Fill this form to deregister your address in Berlin (*[[Abmeldung]]*). You can send this form to any *[[Bürgeramt]]* in Berlin. You can deliver the form in person, by email, or by [registered mail](/glossary/Einschreibebrief).
 
 **[How to do your Abmeldung in Berlin ➞](/guides/abmeldung-deregister-in-berlin)**
 
@@ -31,7 +31,7 @@ The original *Abmeldung* form is [on Berlin.de](https://www.berlin.de/formularve
 
 ## How to fill this form
 
-- **Bisherige Wohnung / Gemeindekennzahl (left column)**: information about your last address in Germany. Use the information on your *[[Meldebestätigung]]*.
+- **Bisherige Wohnung / Gemeindekennzahl (left column)**: information about your last address in Germany. Use the information on your *[[Anmeldebestätigung]]*.
     - **Tag des Auszugs**: Your move-out date. You can deregister 7 days before you [move out](/guides/moving-out). You must do it maximum 14 days after you move out.[^0]
     - **Diese Wohnung hat bereits bestanden**: Choose this if you already registered your future address. If you are leaving Germany, choose *nein.*
     - **Die bisherige Wohnung war**: Choose this if this address was your only address (*alleinige Wohnung*), your main address (*Hauptwohnung*) or a secondary address (*Nebenwohnung*).
@@ -42,6 +42,6 @@ The original *Abmeldung* form is [on Berlin.de](https://www.berlin.de/formularve
     
 ## How to send this form
 
-Send the form by [registered mail](/glossary/Einschreibebrief) as described [here](/guides/abmeldung-deregister-in-berlin#by-registered-mail).
+Send the form by [registered mail](/glossary/Einschreibebrief) as explained [here](/guides/abmeldung-deregister-in-berlin#by-registered-mail).
 
 [^0]: [buergeramt-termine.de](https://buergeramt-termine.de/guide/abmeldung-deregister-germany/)

@@ -5,6 +5,7 @@ English_term: Pay slip
 Description: It shows how much your employer paid you, and how much social contributions you paid. It's also called a Lohnabrechnung.
 Date_created: 2020-07-18
 Related_guides:
+    guides/taxes.md
     guides/german-tax-id-steuernummer.md
     guides/german-versicherungsnummer.md
     guides/losing-your-job.md

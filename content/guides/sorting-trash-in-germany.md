@@ -53,7 +53,8 @@ Recycling centres accept almost everything. This is where you get rid of big ite
 - **🟡 [Grüner Punkt logo](/glossary/Gr%C3%BCner%20Punkt) or [Tetra Pak logo](/glossary/Tetra%20Pak) ➞ yellow bin**
 - **🟡 Paper + plastic packaging ➞ yellow bin**  
     This includes bread bags with plastic windows,[^8] but not envelopes with plastic windows.[^9]
-- **🟡 Milk cartons ➞ yellow bin**[^10]
+- **🟡 Milk cartons ➞ yellow bin**[^10]  
+    Plastic milk bottles have a *[[Pfand]]*.
 - **🟡 Tetra Pak ➞ yellow bin**
 - **🟤 Paper towels, tissues ➞ brown bin**
 - **⚫ Coated, waxed and thermal paper ➞ grey bin**  

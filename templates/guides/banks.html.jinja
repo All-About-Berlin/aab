@@ -1,0 +1,431 @@
+{% extends "guides/entry.html.jinja" %}
+{% set entry = entries['guides/first-bank-account-in-germany.md'] %} 
+
+{% block main %}
+	<main aria-label="Main page">
+		<article class="section">
+			<h1>{{ entry.title }}</h1>
+			{% include "_blocks/postMeta.html" %}
+			{% with entry=entry, showRelatedEntriesLink=related_collections|length %}
+				{% raw %}
+				<div class="article-body">
+					<div class="bank-comparator" v-cloak>
+						<h2>Bank picker</h2>
+						<div class="filters">
+							<div class="tags">
+								<button @click="showAllTags=!showAllTags" class="primary"><i class="icon filter"></i> {{ showAllTags ? 'Hide filters' : 'Filter banks' }}</button>
+								<tag :tag="t" v-for="t in tags" v-if="t.selected" :key="t.name"></tag>
+								<tag :tag="t" v-for="t in suggestedTags" :key="t.name"></tag>
+							</div>
+							<template v-if="showAllTags">
+								<div class="form-group">
+									<span class="label">Bank country</span>
+									<div class="input-group tags">
+										<tag :tag="t" v-for="t in tagGroups.countries.tags" :key="t.name"></tag>
+									</div>
+								</div>
+								<div class="form-group">
+									<span class="label">Language</span>
+									<div class="input-group tags">
+										<tag :tag="t" v-for="t in tagGroups.languages.tags" :key="t.name"></tag>
+									</div>
+								</div>
+								<div class="form-group">
+									<span class="label">Payment methods</span>
+									<div class="input-group tags">
+										<tag :tag="t" v-for="t in tagGroups.paymentMethods.tags" :key="t.name"></tag>
+									</div>
+								</div>
+								<div class="form-group">
+									<span class="label">Features</span>
+									<div class="input-group tags">
+										<tag :tag="t" v-for="t in tagGroups.features.tags" :key="t.name"></tag>
+									</div>
+								</div>
+								<div class="form-group">
+									<label :for="uid('nationality')">Nationality</label>
+									<div class="input-group">
+										<select :id="uid('nationality')" v-model="nationality">
+											<option value="" disabled selected hidden>Choose a country</option>
+											<option value="">Unknown</option>
+											<option disabled>──────────</option>
+											<option v-for="country in sortedCountryList" :key="country[0]" :value="country[0]">{{ country[1] }}</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<span class="label">Bank requirements</span>
+									<div class="input-group tags">
+										<tag :tag="t" v-for="t in tagGroups.requirements.tags" :key="t.name"></tag>
+									</div>
+								</div>
+								<hr>
+							</template>
+						</div>
+						<ul class="bank-options">
+							<li class="account" :class="{'hidden': account.score < 0}" v-for="account in sortedAccounts" :key="account.bank.name + account.name">
+								<img :src="logo(account.bank)">
+								<h3>
+									<a :href="account.url" target="_blank">{{ account.bank.name }} {{ account.name }}</a>
+								</h3>
+								<p v-if="account.description" v-html="account.description" class="description"></p>
+								<div class="actions">
+									<a v-if="!account.hidden && !account.saved" @click="account.saved = !account.saved">{% endraw %}{% include '_css/icons/star.svg' %}{% raw %} Save</a>
+									<a v-if="!account.hidden && account.saved" @click="account.saved = !account.saved">{% endraw %}{% include '_css/icons/star-filled.svg' %}{% raw %} Saved</a>
+									<a v-if="!account.saved" @click="account.hidden = !account.hidden">{{ account.hidden ? 'Unhide' : 'Hide' }}</a>
+								</div>
+								<div class="tags">
+									<tag :tag="tag" v-for="tag in account.missingTags" :key="tag.name" error></tag>
+									<tag :tag="tag" v-for="tag in account.tags" :key="tag.name"></tag>
+								</div>
+								<div class="costs">
+									<details>
+										<summary class="price">
+											Monthly fee
+											<output><eur :amount="account.monthlyFee"></eur></output>
+										</summary>
+									</details>
+									<details>
+										<summary class="price">
+											Card fee
+											<output v-if="account.creditCardOneTimeFee">one time {{ formatCurrency(account.creditCardOneTimeFee) }}</output>
+											<output v-if="!account.creditCardOneTimeFee"><eur :amount="account.creditCardMonthlyFee"></eur></output>
+										</summary>
+										<p v-html="account.creditCardFeeExplanation"></p>
+									</details>
+									<details>
+										<summary class="price">
+											Withdrawal fee
+											<output><eur :amount="account.atmFee"></eur></output>
+										</summary>
+										<p v-html="account.atmFeeExplanation"></p>
+									</details>
+									<details>
+										<summary class="price">
+											Interest rate
+											<output>5%</output>
+										</summary>
+										<p>Every year, you earn 5% interest on the money in your bank account.</p>
+									</details>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				{% endraw %}
+			{% endwith %}
+		</article>
+	</main>
+
+	<div class="sidebar no-print" aria-hidden="true">
+		{% with entry=entry, showScrollToTop=true, showSupportLink=true, showRelatedEntriesLink=related_collections|length %}
+			{% include '_blocks/tableOfContents.html' %}
+		{% endwith %}
+	</div>
+	{% include "_js/sidebar.js" %}
+{% endblock %}
+
+{% include '_js/countries.js' %}
+{% include '_js/currency.js' %}
+{% include '_js/vue.js' %}
+{% include '_js/vue/eur.js' %}
+{% include '_js/vue/glossary.js' %}
+{% include '_js/vue/uniqueIdsMixin.js' %}
+
+{% js %}{% raw %}
+
+const banks = [
+	{
+		name: 'Commerzbank',
+		tags: [
+			'German bank',
+			'German IBAN',
+			'English-speaking',
+			'Girocard',
+			'Apple Pay',
+			'Google Pay',
+		],
+		url: '/out/commerzbank',
+		accounts: [
+			{
+				name: 'Basic',
+				description: null,
+				atmFee: 99,
+				atmFeeExplanation: 'Free withdrawals from Cash Group ATMs.',
+				creditCardMonthlyFee: 3.9,
+				creditCardFeeExplanation: 'Free virtual card for online shopping. 3.90 € for a plastic card.',
+				monthlyFee: 0,
+				url: '/out/commerzbank',
+				tags: [],
+			},
+			{
+				name: 'Klassik',
+				description: null,
+				atmFee: 99,
+				atmFeeExplanation: 'Free withdrawals from Cash Group ATMs.',
+				creditCardMonthlyFee: 0,
+				monthlyFee: 6.9,
+				url: '/out/commerzbank',
+				tags: ['MasterCard'],
+			},
+		]
+	},
+	{
+		name: 'N26',
+		tags: [
+			'German bank',
+			'German IBAN',
+			'English-speaking',
+			'French-speaking',
+			'Spanish-speaking',
+			'Italian-speaking',
+			'No Anmeldung',
+			'No ATM fee',
+		],
+		url: '/out/n26-plans',
+		accounts: [
+			{
+				name: 'Standard',
+				description: null,
+				atmFee: 0,
+				atmFeeExplanation: '3 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
+				creditCardOneTimeFee: 10,
+				creditCardMonthlyFee: 0,
+				creditCardFeeExplanation: 'Free virtual card for online shopping. 10 € to get a plastic card.',
+				monthlyFee: 0,
+				url: '/out/n26',
+				tags: [],
+			},
+			{
+				name: 'Smart',
+				description: "Comes with travel insurance and free donuts.",
+				atmFee: 0,
+				atmFeeExplanation: '5 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
+				creditCardMonthlyFee: 0,
+				monthlyFee: 4.9,
+				url: '/out/n26',
+				tags: [],
+			},
+			{
+				name: 'You',
+				description: null,
+				atmFee: 0,
+				atmFeeExplanation: '5 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
+				creditCardMonthlyFee: 0,
+				monthlyFee: 9.9,
+				url: '/out/n26',
+				tags: [],
+			},
+			{
+				name: 'Metal',
+				description: null,
+				atmFee: 0,
+				atmFeeExplanation: '8 free withdrawals per month, then 2 € per withdrawal. You can use any ATM.',
+				creditCardMonthlyFee: 0,
+				monthlyFee: 16.9,
+				url: '/out/n26',
+				tags: [],
+			},
+		],
+	},
+];
+
+const tags = {
+	'English-speaking': {
+		error: 'No English',
+		group: 'languages',
+		default: true,
+	},
+	'French-speaking': {
+		error: 'No French',
+		group: 'languages',
+	},
+	'Italian-speaking': {
+		error: 'No Italian',
+		group: 'languages',
+	},
+	'Spanish-speaking': {
+		error: 'No Spanish',
+		group: 'languages',
+	},
+	'German bank': {
+		group: 'countries',
+	},
+	'Apple Pay': {
+		error: 'No Apple Pay',
+		group: 'paymentMethods',
+	},
+	'Google Pay': {
+		error: 'No Google Pay',
+		group: 'paymentMethods',
+	},
+	'Girocard': {
+		error: 'No Girocard',
+		group: 'paymentMethods',
+	},
+	'Visa': {
+		error: 'No Visa',
+		group: 'paymentMethods',
+	},
+	'MasterCard': {
+		error: 'No MasterCard',
+		group: 'paymentMethods',
+	},
+	'No Anmeldung': {
+		error: 'Anmeldung needed',
+		group: 'requirements',
+		default: true,
+	},
+	'No residence permit': {
+		error: 'Residence permit needed',
+		group: 'requirements',
+	},
+	'No monthly fee': {
+		group: 'features',
+		error: 'Monthly fee',
+		default: true,
+	},
+	'No ATM fee': {
+		group: 'features',
+		error: 'ATM fee',
+		default: true,
+	},
+	'German IBAN': {
+		error: 'No German IBAN',
+		group: 'features',
+	},
+	'Student account': {
+		error: 'No student account',
+		group: 'features',
+	},
+	'Blocking account': {
+		error: 'No blocking account',
+		group: 'features',
+	},
+};
+
+const tagGroups = {
+	countries: {
+		order: 0,
+	},
+	features: {
+		order: 1,
+	},
+	paymentMethods: {
+		order: 2,
+		icon: '',
+	},
+	languages: {
+		order: 3,
+	},
+	requirements: {
+		order: 4,
+		icon: '',
+	},
+};
+
+Object.entries(tags).forEach(([name, tag]) => {
+	tag.name = name;
+	tag.default = tag.default || false;
+	tag.selected = tag.selected || false;
+	tag.group = tagGroups[tag.group];
+});
+
+Object.entries(tagGroups).forEach(([name, tagGroup]) => {
+	tagGroup.tags = Object.values(tags).filter(t => t.group === tagGroup);
+});
+
+const accounts = banks.reduce((allAccounts, bank) => {
+	return bank.accounts.reduce((allAccounts, account) => {
+		account.bank = bank;
+
+		// Combine bank and account tags
+		account.tags.push(...bank.tags);
+
+		// Replace tag names with tag objects
+		account.tags = account.tags.map(t => tags[t]);
+
+		// Set UI attributes
+		account.saved = false;
+		account.hidden = false;
+
+		allAccounts.push(account);
+		return allAccounts;
+	}, allAccounts);
+}, []);
+
+Vue.component('tag', {
+	props: {
+		tag: Object,
+		error: Boolean,
+		list: Array,
+	},
+	template: `
+	<button :class="{'active': tag.selected, 'error': error}" @click="tag.selected = !tag.selected">
+		<i class="icon" :class="tag.group.icon" v-if="tag.group.icon"></i>
+		{{ error ? (tag.error || tag.name) : tag.name }}
+	</button>`,
+});
+
+document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
+	el: el,
+	mixins: [uniqueIdsMixin],
+	data() {
+		return {
+			banks,
+			accounts,
+			tags,
+			tagGroups,
+			showAllTags: false,
+			nationality: '',
+			sortedCountryList: countries.getSortedList(),
+			formatCurrency,
+		};
+	},
+	computed: {
+		// Flatten the list of banks into a list of accounts
+		sortedAccounts(){
+			return this.accounts.map((account) => {
+				account.missingTags = this.selectedTags.filter(t => !account.tags.includes(t));
+				account.tags = account.tags.sort((t1, t2) => {
+					if(t1.selected !== t2.selected) {
+						return t2.selected > t1.selected;
+					}
+					return t1.group.order > t2.group.order;
+				});
+
+				account.score = (
+					account.missingTags.length * -10
+					+ account.tags.filter(t => t.selected).length * 10
+					+ 1
+				);
+				return account;
+			}).sort((a, b) => {
+				if(a.saved !== b.saved) {
+					return a.saved < b.saved;
+				}
+				if(a.hidden !== b.hidden) {
+					return a.hidden > b.hidden;
+				}
+				return b.score - a.score;
+			});
+		},
+		selectedTags(){
+			return Object.values(tags).filter(t => t.selected);
+		},
+		suggestedTags(){
+			const defaultTags = Object.values(tags).filter(t => t.default);
+			return defaultTags
+				.filter(f => !f.selected)
+				.slice(
+					0, Math.max(defaultTags.length - this.selectedTags.length, 0)
+				);
+		},
+	},
+	methods: {
+		logo(bank){
+			return `/staticimages/banks/${bank.name.toLowerCase()}.png`;
+		},
+	}
+}));
+{% endraw %}{% endjs %}

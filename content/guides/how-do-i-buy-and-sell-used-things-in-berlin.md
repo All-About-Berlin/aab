@@ -15,7 +15,7 @@ This is how you trade used clothes, vehicles, electronics and other things in Be
 
 ### Classified ads
 
-- [Kleinanzeigen](https://www.ebay-kleinanzeigen.de/stadt/berlin/) (German) - the main classified ads website in Germany
+- [Kleinanzeigen](https://www.kleinanzeigen.de/stadt/berlin/) (German) - the main classified ads website in Germany
 - [Nebenan](https://nebenan.de/) (German) - Classified ads in your neighbourhood.
 
 ### Facebook groups
@@ -30,7 +30,7 @@ If you want to trade with English-speaking Berliners, try [Sell Your Stuff Berli
 ### Vehicles
 
 - [Mobile.de](https://www.mobile.de/)
-- [Kleinanzeigen](https://www.ebay-kleinanzeigen.de/stadt/berlin/)
+- [Kleinanzeigen](https://www.kleinanzeigen.de/stadt/berlin/)
 
 You really [don't need a car](/guides/buying-used-car-in-germany#do-you-need-a-car) in Berlin. [Buying a bicycle](/guides/bicycle-in-berlin#where-to-buy-a-bicycle-in-berlin) or [using public transit](/guides/public-transit) is a better choice. You can also [rent a car](/guides/public-transit#rent-a-car) when you need it.
 

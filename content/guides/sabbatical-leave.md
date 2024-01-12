@@ -22,9 +22,9 @@ Benefits of a working time account:
 - **You keep your job, your salary and your benefits**  
     You keep your job. Your employer still pays your salary, half of your [health insurance](/glossary/Krankenversicherung), your [pension insurance](/glossary/gesetzliche%20Rentenversicherung) and your [unemployment insurance](/glossary/Arbeitslosenversicherung), so you save a lot of money. At the end of your sabbatical, you get your job back. You keep your salary and your seniority at this company.
 - **You keep your residence permit**  
-    If you quit your job, you might lose your [residence permit](/glossary/Aufenthaltstitel). The [work visa](/glossary/Work%20Visa) and the [[Blue Card]] are tied to your job. After a few months without a job, you will need to leave Germany. With the working time account, you keep your job, so that's not a problem.
+    The [work visa](/glossary/Work%20Visa) and the [[Blue Card]] are tied to your job. You must keep your job to keep your residence permit. With the working time account, you keep your job, so that's not a problem.
 - **You pay less income tax**  
-    You pay less [income tax](/glossary/Einkommensteuer) on 5 × 80% of your salary than on 4 × 100% of your salary. If you have a 50,000€ salary, you save around 5,200€ in income tax. [Calculate it yourself](/tools/tax-calculator).
+    You pay less [income tax](/glossary/Einkommensteuer) on 5 × 80% of your salary than on 4 × 100% of your salary. If you have a 50,000€ salary, you save around 5,200€ in income tax. - [Calculate your income tax](/tools/tax-calculator).
 
 Disadvantages:
 

@@ -122,15 +122,15 @@ In 2021, I switched to private health insurance. I was still very happy with TK,
 
 ### Is TK accepted for a visa application?
 
-**Yes.** When you apply for a [residence permit](/glossary/Aufenthaltstitel), German public health insurance like TK is always accepted. It works when you [apply for a freelance visa](/guides/how-to-get-a-german-freelance-visa), a [work visa](/guides/german-work-visa), a [Blue Card](/guides/german-work-visa) or a student visa.
+**Yes.** When you apply for a [residence permit](/glossary/Aufenthaltstitel), German public health insurance like TK is always accepted. It works when you [apply for a freelance visa](/guides/freelance-visa), a [work visa](/guides/work-visa), a [Blue Card](/guides/blue-card) or a student visa.
 
-**Related guide:** [Which health insurance do I need for my visa application?](/guides/german-visa-health-insurance)
+**[How to choose health insurance for a visa application ➞](/guides/german-visa-health-insurance)**
 
 ### Will TK cover me?
 
 **Generally, yes.** TK is usually forced to cover you. There are two big exceptions: freelancers who just moved to Germany, and students over 30 years old who just moved to Germany. In this case, public health insurers can refuse to cover you, and it can be hard to find health insurance. Talk to a [health insurance broker](/guides/german-health-insurance#insurance-brokers), and they will help you for free.
 
-**Related guide:** [What options do I have? (How to choose health insurance)](/guides/german-health-insurance#your-options)
+**[Health insurance options ➞](/guides/german-health-insurance#your-options)**
 
 ## How to sign up with TK
 

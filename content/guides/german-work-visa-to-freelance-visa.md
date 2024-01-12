@@ -5,7 +5,7 @@ Description: This is how you go from a full time job to freelancing when you hav
 Date_created: 2018-07-13
 ---
 
-If you want to quit your job to [start a business](/guides/start-a-business-in-germany) or become a freelancer, you might need a different [residence permit](/glossary/Aufenthaltstitel). Usually, you must [apply for a freelance visa](/guides/how-to-get-a-german-freelance-visa).
+If you want to quit your job to [start a business](/guides/start-a-business-in-germany) or become a freelancer, you might need a different [residence permit](/glossary/Aufenthaltstitel). Usually, you must [apply for a freelance visa](/guides/freelance-visa).
 
 This guide shows you how to go from employee to freelancer. It's based on my personal experience.
 
@@ -13,7 +13,7 @@ This guide shows you how to go from employee to freelancer. It's based on my per
 
 ## Side business with a work visa
 
-If you can, [start your business](/guides/start-a-business-in-germany) before you quit your job. It gives you time to register your business, find clients, and prepare for the transition. You need at least a few weeks to [register your business](/guides/fragebogen-zur-steuerlichen-erfassung) and [apply for the freelance visa](/guides/how-to-get-a-german-freelance-visa).
+If you can, [start your business](/guides/start-a-business-in-germany) before you quit your job. It gives you time to register your business, find clients, and prepare for the transition. You need at least a few weeks to [register your business](/guides/fragebogen-zur-steuerlichen-erfassung) and [apply for the freelance visa](/guides/freelance-visa).
 
 **[How to start a business in Germany ➞](/guides/start-a-business-in-germany)**
 
@@ -26,7 +26,7 @@ If you need a residence permit to live in Germany, check if it lets you freelanc
 - If it says [*Selbständige Tätigkeit gestattet*](/images/aufenthaltstitel.jpg), you can be self-employed
 - If it says [*Erwerbstätigkeit erlaubt*](/images/aufenthaltstitel-zusatzblat-back-web.png), you can be self-employed[^1]
 
-If your residence permit allows you be self-employed, you can have a side business, but you must keep your job. Your job must be your main source of income. If this changes, you must [apply for a freelance visa](/guides/how-to-get-a-german-freelance-visa).
+If your residence permit allows you be self-employed, you can have a side business, but you must keep your job. Your job must be your main source of income. If this changes, you must [apply for a freelance visa](/guides/freelance-visa).
 
 ### Does your employer let you freelance?
 
@@ -37,7 +37,7 @@ You do not need permission from your employer to have a side business,[^2] but t
 
 ### Apply for the freelance visa
 
-Next, you must [apply for the freelance visa](/guides/how-to-get-a-german-freelance-visa). This can take many weeks.
+Next, you must [apply for the freelance visa](/guides/freelance-visa). This can take many weeks.
 
 **The freelance visa will replace your current residence permit**. You can't have both at the same time. As soon as you get the freelance visa, your old residence permit will become invalid. You must stop working for your employer as soon as you get the freelance visa, but you don't know when you will get the freelance visa. This can be hard to synchronise.
 

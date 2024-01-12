@@ -7,11 +7,11 @@ Date_created: 2022-01-27
 Hi, I'm Nicolas. You can contact me to…
 
 - **Ask a question**  
-    I will help you for free. Please do a little research, and [ask detailed questions](https://nicolasbouliane.com/blog/ask-nicely). Sometimes, you might [find better help elsewhere](/guides/questions-about-berlin). I can't give you legal or financial advice.
+    Please [ask the right people](/guides/questions-about-berlin) first. I would love to help you, but I get a lot of questions, and I don't have enough time to answer everyone. I can't give legal or financial advice. I can't answer visa and residence permit questions.
 - **Give feedback**  
-    If have suggestions for the website, let me know. Your feedback helps me improve the website and give better advice.
+    If you have changes and suggestions to make, send them to me! It helps me improve the website for everyone.
 - **Say thanks**  
-    I *love* hearing from happy readers! If my work helped you, you can also [donate a few euros](/donate) to support the website.
+    I *love* to hear from happy readers! If my work helped you, you can also [donate a few euros](/donate) to support the website.
 - **Advertise your business**  
     Read my [content policy](/terms#content-policy) and my [advertising policy](/terms#advertising-policy) first. I sometimes work with advertisers, but not at the readers' expense.
     - **Therapists and psychiatrists**  

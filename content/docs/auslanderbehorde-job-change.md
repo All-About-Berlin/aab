@@ -13,7 +13,14 @@ If you have a [residence permit](/glossary/Aufenthaltstitel), and you [quit or l
 
 **[What happens to your residence permit ➞](/guides/losing-your-job#what-happens-to-your-residence-permit)**
 
-If you have [permanent residence](/glossary/Niederlassungserlaubnis), or [EU](/glossary/European%20Union) or [[EEA]] citizenship, you don't need to do this.
+You must do this if...
+
+- You have a [residence permit](/glossary/Aufenthaltstitel) that requires you to have a job. For example, a [work visa](/glossary/Work%20Visa) or a [[Blue Card]].
+
+You don't need to do this if...
+
+- You have German [permanent residence](/glossary/Niederlassungserlaubnis)
+- or you are a [EU](/glossary/European%20Union) or [[EEA]] citizen.
 
 ## Letter template
 
@@ -23,12 +30,12 @@ If you have [permanent residence](/glossary/Niederlassungserlaubnis), or [EU](/g
 
 Send the letter to the department who is responsible for you. Include a copy of your resignation letter, your termination notice, and your new work contract.
 
-**[How to contact the Ausländerbehörde ➞](/guides/berlin-auslanderbehorde-appointment#how-to-contact-the-auslanderbehorde)**
+**[How to contact the Ausländerbehörde ➞](/guides/berlin-auslanderbehorde-appointment#contact-the-auslanderbehorde)**
 
 The *Ausländerbehörde* will answer a few weeks later.[^1]
 
 ## What to do next
 
-**[Losing your job in Germany ➞](/guides/losing-your-job)**
+**[Losing or changing your job in Germany ➞](/guides/losing-your-job)**
 
 [^1]: Carina Senf at [Rotwang Law](https://rotwang-law.de/en/) (July 2023), user report (July 2023)

@@ -9,11 +9,11 @@ This calculator shows how much you pay for unemployment insurance (*[[Arbeitslos
 
 {% include '_blocks/unemploymentInsuranceCalculatorStatic.html' %}
 
-Use my [German tax calculator](/tools/tax-calculator) to see all your social contributions.
-
 ## What is Arbeitslosenversicherung?
 
 If you work in Germany, you must pay for unemployment insurance (*[[Arbeitslosenversicherung]]*). Your employer takes unemployment insurance from your paycheck every month. If you [lose your job](/guides/losing-your-job), you get unemployment benefits (*[[ALG I]]*).
+
+**[How taxes work ➞](/guides/taxes)**
 
 **[How unemployment benefits work ➞](/guides/unemployment-benefits)**
 
@@ -24,6 +24,8 @@ If you work in Germany, you must pay for unemployment insurance (*[[Arbeitslosen
 ## How to calculate Arbeitslosenversicherung
 
 *Arbeitslosenversicherung* is **{{ARBEITSLOSENVERSICHERUNG_EMPLOYEE_RATE}}% of your [[Brutto income]]**.[^0]
+
+**[Social contributions calculator ➞](/guides/taxes)**
 
 ### In East Germany
 

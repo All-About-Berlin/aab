@@ -139,6 +139,8 @@ There are also many language learning apps for German:
 
 - [**Babbel**](/out/babbel) - 7 to 13€ per month  
     Regular language lesson without a teacher. You learn German vocabulary and grammar, one module at the time. I used Babbel a lot when I moved to Germany. I like that it teaches you the grammar, and lets you choose what to study. I found it too boring.
+    - [**Babbel Live**](/out/babbel) - 50 to 100€ per month  
+        Private video lessons with a live teacher, similar to Chatterbug.
 - [**Chatterbug**](/out/chatterbug) - 17€ per lesson  
     Private video lessons with a private teacher. You can book lessons every hour, so you can make your own schedule. Your teacher helps you complete exercises, and asks you questions. You can skip exercises you understand, or slow down to ask questions. If you don't like your teacher, you can find a new one. It's a great way to practice German conversations. In my opinion, this is the best way to learn German.
 - **[Duolingo](https://www.duolingo.com/)** - free  

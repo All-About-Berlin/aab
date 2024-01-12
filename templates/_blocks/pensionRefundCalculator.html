@@ -52,8 +52,8 @@
 					partners: [
 						{
 							name: 'FundsBack',
-							description: "10% fee. Minimum 899€, maximum 2,899€. No refund, no fee.",
-							fee: x => Math.min(Math.max(x * 0.1, 899), 2899),
+							description: "9.9% fee. Minimum 899€, maximum 2,899€. No refund, no fee.",
+							fee: x => Math.min(Math.max(x * 0.099, 899), 2899),
 							apiEndpoint: '/api/forms/pension-refund-fundsback',
 						},
 						{
@@ -91,6 +91,7 @@
 						'/api/reminders/pension',
 						{
 							method: 'POST',
+							keepalive: true,
 							headers: {'Content-Type': 'application/json; charset=utf-8',},
 							body: JSON.stringify({
 								'email': this.emailAddress,
@@ -108,6 +109,7 @@
 							this.selectedPartner.apiEndpoint,
 							{
 								method: 'POST',
+								keepalive: true,
 								headers: {'Content-Type': 'application/json; charset=utf-8',},
 								body: JSON.stringify({
 									'arrivalDate': `${this.firstYearOfWork}-${this.firstMonthOfWork}`,
@@ -118,7 +120,7 @@
 									'name': this.fullName,
 									'nationality': countries.all[this.nationality],
 								}),
-							}
+							},
 						);
 						plausible('Pension refund request', { props: { partner: this.selectedPartner.name }});
 						this.stage = 'requestConfirmation';

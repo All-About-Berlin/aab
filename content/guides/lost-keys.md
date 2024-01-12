@@ -53,9 +53,9 @@ Your [liability insurance (*Haftpflichtversicherung*)](/glossary/Haftpflichtvers
 - **Give a key to a trusted friend**  
     If you lock yourself out, you can call your friend instead of a locksmith.
 - **Get [liability insurance](/glossary/Haftpflichtversicherung)**  
-    It covers the cost of replacing all the locks, and it costs less than 5€ per month. Liability insurance is the most important insurance to have - 85% of Germans have it.[^3] [This guide](/guides/haftpflichtversicherung) explains why it's so important. [Feather](/out/feather-haftpflicht) and [Getsafe](/out/getsafe-haftpflicht) sell liability insurance for under 5€ per month. They cover lost keys for rented apartments, and they speak English. [Muffin](/out/muffin-haftpflicht) is an English-speaking broker. They can help you choose liability insurance.
+    It covers the cost of replacing all the locks, and it costs less than 5€ per month. Liability insurance is the most important insurance to have - 85% of Germans have it.[^3] [This guide](/guides/haftpflichtversicherung) explains why it's so important. [Feather](/out/feather-haftpflicht) and [Getsafe](/out/getsafe-haftpflicht) sell liability insurance for under 5€ per month. They cover lost keys for rented apartments, and they speak English.
 - **Get [household insurance](/glossary/Hausratversicherung)**  
-    Some policies cover the cost of a locksmith. [Muffin](/out/muffin-hausrat) sells household insurance that covers locksmiths, and they speak English. Use [Tarifcheck](/out/tarifcheck-hausrat) to find other home contents insurances that cover locksmiths.
+    Some policies cover the cost of a locksmith. Use [Tarifcheck](/out/tarifcheck-hausrat) to find other home contents insurances that cover locksmiths.
 
 [^0]: [stern.de](https://www.stern.de/wirtschaft/news/schluesseldienst-betrug--rechnung-ueber-1240-euro-fuer-einmal-tuer-aufmachen-8485766.html), [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/hlohza/looks_like_i_got_scammed_of_400_euros_by/)
 [^1]: [de.luko.eu](https://de.luko.eu/service/tipps/12-tipps-fuer-die-hausratversicherung/#3.-haus--und-wohnungsschutzbrief-mit-schlusseldienst-inklusive?)

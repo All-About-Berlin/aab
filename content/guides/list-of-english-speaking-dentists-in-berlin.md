@@ -12,6 +12,7 @@ Related_places:
     places/zahnartpraxis-dr-danai.md
     places/zahnärtze-in-kantcenter.md
     places/ku64.md
+    places/ku64-mitte.md
     places/dr-stefan-naumann.md
     places/tempeldent-zahnarztpraxis-in-tempelhof.md
     places/zahnarzt-friedrichshain-f-yashar.md
@@ -31,6 +32,7 @@ Related_places:
     places/die-praxis-mitte.md
     places/mvz-volksdent-gmbh.md
     places/dentalfirst.md
+    places/studio-dental-berlin.md
 ---
 
 This is a list of English-speaking dentists in Berlin. If this list is incomplete, you can [suggest a dentist](/suggest-business).

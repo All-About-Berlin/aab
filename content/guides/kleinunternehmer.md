@@ -18,10 +18,7 @@ You are a *Kleinunternehmer* if...[^1]
 - last year, you [revenue](/glossary/Umsatz) was below {{KLEINUNTERNEHMER_MAX_INCOME_FIRST_YEAR|cur}}€
 - **and** this year, your *expected* revenue is below {{KLEINUNTERNEHMER_MAX_INCOME|cur}}€
 
-If you are a *Kleinunternehmer*, you can:
-
-- *Choose* not to charge [VAT](/glossary/Umsatzsteuer).
-- *Choose* not to be listed in the trade register (*[[Handelsregister]]*).
+If you are a *Kleinunternehmer*, you can choose not to charge [VAT](/glossary/Umsatzsteuer).
 
 Freelancers (*[[Freiberufler]]*), tradespeople (*[[Gewerbe]]*) and limited liability companies (*UG*) can be a *Kleinunternehmer*.[^2]
 
@@ -64,7 +61,11 @@ In your first year in business, the {{KLEINUNTERNEHMER_MAX_INCOME_FIRST_YEAR|cur
 
 > **Example:** If you start your business in July, the limit for that year is {{KLEINUNTERNEHMER_MAX_INCOME_FIRST_YEAR|cur}}€ × 50% of the year: {{(KLEINUNTERNEHMER_MAX_INCOME_FIRST_YEAR/2)|cur}}€.
 
-### If earn more than the limit
+Only your VAT-eligible income is measured. VAT-free income does not count.[^14]
+
+> **Example:** Your revenue is 130,000€ per year. 30,000€ is salary from employment (no VAT), 80,000€ is from US clients (no VAT), and 20,000€ from German clients (with VAT). Your VAT-eligible revenue is 20,000€, so you can be a Kleinunternehmer.
+
+### If you earn more than the limit
 
 If your revenue is more than {{KLEINUNTERNEHMER_MAX_INCOME_FIRST_YEAR|cur}}€ this year, you stop being a *Kleinunternehmer* the next year.[^3]
 
@@ -108,3 +109,4 @@ If you don't charge VAT, you must add this line to your invoices:[^6]
 [^11]: [starting-up.de](https://www.starting-up.de/geld/steuern/umsatzsteuer-abc/seite-2.html#:~:text=sollte%20ihr%20einkommen%20allerdings%20die%20grenze%20zur%20umsatzsteuerpflicht%20uberschreiten)
 [^12]: Seamus Wolf on [LinkedIn](https://www.linkedin.com/posts/nicolasbouliane_how-being-a-kleinunternehmer-works-activity-7040950109177589761-kH44/)
 [^13]: Seamus Wolf on [LinkedIn](https://www.linkedin.com/posts/nicolasbouliane_how-being-a-kleinunternehmer-works-activity-7040950109177589761-kH44/)
+[^14]: Sebastian Hoffmann (October 2022)

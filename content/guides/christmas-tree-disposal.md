@@ -11,7 +11,9 @@ Every year in January, [BSR](/glossary/Berliner%20Stadtreinigung) collects old C
 
 Every year in January, [BSR](/glossary/Berliner%20Stadtreinigung) collects old Christmas trees. The collection dates (*Abholtermine*) depend on your address.
 
-**[Tree disposal calendar](https://www.bsr.de/frohe-umwelt-fur-unsere-weihnachten-23170.php)** - Berliner Stadtreinigung
+**[Tree disposal calendar](https://www.bsr.de/frohe-umwelt-fur-unsere-weihnachten-23170.php#:~:text=wann%20wird%20mein%20weihnachtsbaum%20abgeholt%3F)** - Berliner Stadtreinigung
+
+[Calendar for January 2024](https://www.berlin.de/special/1590109-208-weihnachtsbaeume-abholtermine-der-bsr-im.html) - Berlin.de{{ fail_on('2024-02-01') }}
 
 ## Leave your tree on the sidewalk
 

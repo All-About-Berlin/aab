@@ -2,7 +2,7 @@
 Title: What is the Grunderwerbsteuer?
 German_term: Grunderwerbsteuer
 English_term: Property transfer tax
-Description: 
+Description: A tax you pay when you buy a house from someone else.
 Date_created: 2020-06-11
 ---
 

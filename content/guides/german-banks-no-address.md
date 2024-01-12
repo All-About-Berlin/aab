@@ -29,7 +29,6 @@ These banks will let you open an account without a registered address in Germany
     They are based in the UK and in Belgium. Your bank account will have a Belgian [[IBAN]].
 - **[N26](/out/n26)**  
     They might require a [residence permit](/glossary/Aufenthaltstitel).
-- **[Revolut](/out/revolut)**
 - **[Wise](/out/wise-account)**  
     They are based in the UK and in Belgium.[^3] Your bank account will have a Belgian [[IBAN]].
 

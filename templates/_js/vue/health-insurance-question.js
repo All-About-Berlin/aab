@@ -83,6 +83,7 @@ Vue.component('health-insurance-question', {
 					'/api/forms/health-insurance-question',
 					{
 						method: 'POST',
+						keepalive: true,
 						headers: {'Content-Type': 'application/json; charset=utf-8',},
 						body: JSON.stringify({
 							name: this.fullName,
@@ -99,6 +100,7 @@ Vue.component('health-insurance-question', {
 					'/api/reminders/health-insurance-question-reminder',
 						{
 							method: 'POST',
+							keepalive: true,
 							headers: {'Content-Type': 'application/json; charset=utf-8',},
 							body: JSON.stringify({
 								name: this.fullName,
@@ -139,7 +141,7 @@ Vue.component('health-insurance-question', {
 						<option value="other">Other</option>
 					</select>
 				</div>
-				<div class="form-group" v-if="!income">
+				<div class="form-group" v-if="income === undefined">
 					<span class="label"></span>
 					<div class="input-group">
 						<label class="checkbox">
@@ -147,7 +149,7 @@ Vue.component('health-insurance-question', {
 						</label>
 					</div>
 				</div>
-				<hr v-if="!income && !occupation">
+				<hr v-if="income === undefined && !occupation">
 				<div class="form-group required">
 					<label :for="uid('name')">
 						Name

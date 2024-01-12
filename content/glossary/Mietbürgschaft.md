@@ -7,7 +7,7 @@ Date_created: 2018-07-31
 Related_guides:
     guides/mietkaution.md
     guides/moving-in.md
-    guides/find-a-flat-in-berlin.m
+    guides/find-a-flat-in-berlin.md
 ---
 
 The *Mietbürgschaft*, *Bürgschaft*, *Mietaval* or *Mietkautionsversicherung* is a way to pay your *[[Kaution]]* when you don't have enough money. Someone else - a parent, a friend or a bank - promises to pay your landlord if there is a problem.[^1]

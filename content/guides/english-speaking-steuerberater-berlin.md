@@ -68,7 +68,7 @@ Hire a tax advisor when...
 - **You want someone to take care of everything**  
     They can talk with the *[[Finanzamt]]*, and do all your taxes for you. You don't have to do anything. This makes your life much easier.
 - **You are [starting a business](/guides/start-a-business-in-germany)**  
-    A tax advisor can [register your business](/guides/fragebogen-zur-steuerlichen-erfassung), explain how business taxes work, and help you avoid expensive mistakes. They must also stamp documents for your [freelance visa application](/guides/how-to-get-a-german-freelance-visa) and [renewal](/guides/renew-german-freelance-visa). When you understand how to run your business, you can use [tax software for freelancers](/guides/german-tax-software#tax-software-for-freelancers) instead.
+    A tax advisor can [register your business](/guides/fragebogen-zur-steuerlichen-erfassung), explain how business taxes work, and help you avoid expensive mistakes. They must also stamp documents for your [freelance visa application](/guides/freelance-visa) and [renewal](/guides/renew-german-freelance-visa). When you understand how to run your business, you can use [tax software for freelancers](/guides/german-tax-software#tax-software-for-freelancers) instead.
 - **You are in trouble**  
     If you have problems with the *[[Finanzamt]]*, and you don't know what to do. They can take care of all communications with the *Finanzamt*. They can quickly solve your problem.
 
@@ -123,7 +123,6 @@ If you want the flexibility of a freelancer and the stability of a job, it's a g
 ### Other lists
 
 - [DATEV Kammersuchservice](http://www.datev.de/kasus/Start?KammerId=5&Suffix1=Berlin&Suffix2=Berlin) - search tax advisors by language
-- [tax-advisor.co](https://tax-advisor.co/de/berlin) - hand-compiled list with language filter
 
 [^0]: [Finanztip](https://www.finanztip.de/steuerberatungskosten/)
 [^1]: [Suat Göydeniz](https://stb-goeydeniz.de/) (2022)

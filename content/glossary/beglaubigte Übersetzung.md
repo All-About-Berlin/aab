@@ -5,8 +5,9 @@ English_term: Certified translation
 Description: A document translation verified by a state-certified translator.
 Date_created: 2023-05-17
 Related_guides:
-    guides/german-work-visa.md
-    guides/how-to-get-a-german-freelance-visa.md
+    guides/blue-card.md
+    guides/work-visa.md
+    guides/freelance-visa.md
     guides/getting-married-in-germany.md
     guides/convert-to-german-driving-licence.md
 ---

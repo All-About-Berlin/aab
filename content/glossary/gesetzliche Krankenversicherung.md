@@ -12,6 +12,7 @@ Related_guides:
     guides/insurance.md
     guides/techniker-krankenkasse-review.md
     guides/ottonova-review.md
+    guides/taxes.md
     guides/eyeglasses.md
     guides/ksk-kuenstlersozialkasse.md
 ---

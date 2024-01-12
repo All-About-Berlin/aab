@@ -2,9 +2,16 @@
 Title: What is Haftpflichtversicherung, and what does it cover?
 German_term: Haftpflichtversicherung
 English_term: Liability insurance
-Description: 
+Description: An insurance that protects you against liability claims and lawsuits.
 Date_created: 2018-08-21
-Related_guides: guides/find-a-flat-in-berlin.md, guides/freelance-developer-rate.md, guides/haftpflichtversicherung.md, guides/insurance.md, guides/moving-in.md, guides/lost-keys.md, guides/car-insurance-germany.md, guides/legal-insurance.md
+Related_guides:
+    guides/haftpflichtversicherung.md
+    guides/find-a-flat-in-berlin.md
+    guides/moving-in.md
+    guides/insurance.md
+    guides/lost-keys.md
+    guides/legal-insurance.md
+    guides/car-insurance-germany.md
 ---
 
 If you cause financial damage to other people, liability insurance (*Haftpflichtversicherung*) pays for fixing the damages.

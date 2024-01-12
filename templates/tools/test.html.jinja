@@ -16,20 +16,20 @@
 		</article>
 	</main>
 
-	<script src="https://unpkg.com/chai/chai.js"></script>
+	<script src="https://unpkg.com/chai@4.3.7/chai.js"></script>
 	<script src="https://unpkg.com/mocha/mocha.js"></script>
 	<script class="mocha-init">
 		mocha.setup('bdd');
 		let assert = chai.assert;
-		chai.config.truncateThreshold = 0
+		chai.config.truncateThreshold = 0;
+		{% js %}
+			{% include '_js/constants.js' %}
+			{% include '_js/tracking.js' %}
+			{% include '_js/health-insurance-calculator.js' %}
+			{% include '_js/pension-refund-calculator.js' %}
+			{% include '_js/tax-calculator.js' %}
+		{% endjs %}
 	</script>
-	{% js %}
-		{% include '_js/constants.js' %}
-		{% include '_js/tracking.js' %}
-		{% include '_js/health-insurance-calculator.js' %}
-		{% include '_js/pension-refund-calculator.js' %}
-		{% include '_js/tax-calculator.js' %}
-	{% endjs %}
 {% endblock %}
 
 {% block postFooter %}

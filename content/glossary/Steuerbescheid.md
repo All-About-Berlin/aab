@@ -5,6 +5,7 @@ English_term: Income tax assessment
 Description: A document that shows how much income tax you paid, and how much income tax you owe. Also called Einkommensteuerbescheid.
 Date_created: 2021-01-27
 Related_guides:
+    guides/taxes.md
     guides/find-a-flat-in-berlin.md
     guides/renew-german-freelance-visa.md
     guides/ksk-kuenstlersozialkasse.md

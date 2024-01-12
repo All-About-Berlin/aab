@@ -15,8 +15,14 @@ This guide explains how to use trains, trams, buses and ride sharing in Berlin.
 
 ### Where to buy a ticket
 
+To use **intercity trains** (IC and ICE), buy a ticket from the [Deutsche Bahn website](https://bahn.de), in the DB Navigator app, a DB Reisezentrum or a DB ticket machine. You can't buy tickets on the train.
+
+To use **everything else** ([[S-Bahn]], [[U-Bahn]], tram, bus, ferry) buy a local public transit ticket. If you travel within Berlin, this is what you need.
+
+You can buy local public transit tickets...
+
 - **In the app**  
-    Buy a digital ticket on your phone. Pay with a credit card, Apple Pay or Google Pay. Your ticket is valid 1 minute after you buy it. You need internet access to buy tickets. There is Wi-Fi at most train stations.
+    Buy tickets on your phone. Pay with a credit card, Apple Pay or Google Pay. Your ticket is valid 1 minute after you buy it. You need internet access to buy tickets. There is Wi-Fi at most train stations.
     - **[Jelbi app](https://www.jelbi.de/en/home/)**  
         You can also rent cars, bicycles, scooters and mopeds with this app. It's in English and German. You must create an account.
     - **[BVG app](https://www.bvg.de/en/subscriptions-and-tickets/all-apps)**  
@@ -32,14 +38,16 @@ This guide explains how to use trains, trams, buses and ride sharing in Berlin.
 - **At [[S-Bahn]] and [[BVG]] service points**  
     Buy tickets at [S-Bahn](https://sbahn.berlin/en/tickets/sale-and-contact/points-of-sale/) and [BVG service points](https://www.bvg.de/en/service-and-support/customer-centers-and-shops). There is often a queue.
 
-If you arrive at BER airport, there are ticket machines on the way to the train platforms. You can also install the [BVG ticket app](https://www.bvg.de/en/subscriptions-and-tickets/all-apps) before you arrive in Berlin.
+**At the airport**, there are ticket machines on the way to the train platforms, just before you go downstairs. You can also install the [BVG ticket app](https://www.bvg.de/en/subscriptions-and-tickets/all-apps) before you arrive in Berlin. The airport is in zone C, so you must buy an ABC ticket.
+
+![A public transit ticket machine at the Berlin-Brandenburg airport](/images/ber-ticket-machine.jpg "Ticket machine at the Berlin-Brandenburg airport")
 
 ### What ticket to buy
 
-The buy the correct ticket...
+To buy a local public transit ticket...
 
 1. **Choose the [tariff zone](#tariff-zones)**  
-    Berlin has [3 tariff zones](#tariff-zones): A, B and C. Buy an AB, BC or ABC ticket, depending on the zones you travel in.
+    Berlin has [3 tariff zones](#tariff-zones): A, B and C. Buy an AB or ABC ticket, depending on the zones you travel in. Most things are in zone A and B. The airport is in zone C.
 2. **Choose the [duration of the ticket](#ticket-duration)**  
     Single tickets are valid for 2 hours in one direction. Short trip tickets are only valid for a few stops. There are also daily, weekly and monthly passes.
 3. **Choose the [type of ticket](#ticket-types)**  
@@ -47,15 +55,17 @@ The buy the correct ticket...
 
 Your ticket is valid for the [[S-Bahn]], the [[U-Bahn]], trams, buses, ferries, regional trains (RE) and [*some* IC and ICE trains](https://www.vbb.de/vbb-services/umsteigen-und-weiterfahren/bahn/#c1155). It's not valid for private buses (Flixbus, *Hop-On, Hop-Off*) and tour boats.
 
+![A digital Deutschland Ticket in the BVG app](/images/bvg-app-digital-deutschland-ticket.jpg)
+
 ### Tariff zones
 
-Berlin has 3 public transit zones: A, B and C:
+Berlin has 3 public transit zones: A, B and C.
 
-- **Zone A** is everything inside the *[[Ringbahn]]*.
+- **Zone A** is central Berlin. It's everything inside the *[[Ringbahn]]*; all the central neighbourhoods.
 - **Zone B** is everything outside the *Ringbahn*, but inside Berlin.
-- **Zone C** includes parts of [[Brandenburg]] like the BER airport, Potsdam and Oranienburg.
+- **Zone C** is outside of Berlin. It includes parts of [[Brandenburg]] like the Berlin-Brandenburg airport, Potsdam and Oranienburg.
 
-Buy an AB, BC or ABC ticket, depending on the zones you travel in.
+Most things are in Zone A or B, so you usually need an AB ticket. If you go to the airport, you need an ABC ticket.
 
 [![Bvg tarifbereiche](/images/bvg-tarifbereiche.svg "Berlin public transit tariff zones")](/images/bvg-tarifbereiche.svg)
 
@@ -88,9 +98,11 @@ If you have a [[Deutschland Ticket]], you can travel in all zones.
 
 ### If you get caught without a ticket
 
-There are *Kontrolleur* who enter the train and check everyone's tickets. They wait until the doors close, so you can't run away. If your ticket is not valid, you get a {{BVG_FINE|cur}}€ fine.
+There are ticket checkers who enter the train and look at everyone's tickets. They wait until the doors close, so you can't run away. If your ticket is not valid, you get a {{BVG_FINE|cur}}€ fine.
 
 If you have the wrong ticket, you still get a fine.
+
+If you bought your ticket with the app, show them the [ticket QR code](/images/bvg-app-digital-deutschland-ticket.jpg) in the app.
 
 **[How to pay a BVG fine ➞](/guides/paying-a-bvg-fine)**
 
@@ -116,9 +128,9 @@ The display shows a train's last stop, not its direction. For example, the S2's 
 
 ### Take the bus or tram
 
-When you get on the bus, you can use any door. You don't need to show your ticket to the driver.[^16]
+When your bus or tram arrives, stand on the side, and let other people exit before you enter. If you stand in front of the door, you block people who try to leave.
 
-When your bus or tram arrives, let other people exit before you enter.
+You can use any door to get on the bus. You don't need to show your ticket to the driver.[^16]
 
 Before your stop, press the yellow or red "STOP" button near you. You will hear a "ding" sound. You will see "STOP" in the corner of the information screen. The bus will stop at the next bus stop. 
 
@@ -212,7 +224,7 @@ Normally, you must buy a reduced price (*Ermäßigungstarif*) ticket for your do
 
 If you have a [[Deutschland Ticket]], you can bring a dog with you for free, but only in zones A, B and C. In the rest of Germany, the rules can be different.
 
-**[Having a dog in Berlin ➞](/guides/pet-ownership)**
+**[Having a dog in Berlin ➞](/guides/dog-ownership)**
 
 ## Bring other people for free
 

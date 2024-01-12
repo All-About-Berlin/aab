@@ -1,5 +1,5 @@
 ---
-Name: Nomaden Berlin - Move to Berlin Relocation Services
+Name: Nomaden Berlin
 Description: 
 Website: https://www.nomadenberlin.com/
 Email: 

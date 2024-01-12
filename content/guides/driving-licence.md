@@ -84,7 +84,7 @@ After your appointment, you must wait 6 to 9 weeks to get the permission paper (
 
 Bring these documents for your *[[Bürgeramt]]* appointment:[^7]
 
-1. Passport or ID card (*[[Personalausweis]]*)
+1. Passport or *[[Personalausweis]]*
 2. First aid course certificate
 3. Eyesight test certificate
 4. Biometric picture - [where to get one](/guides/biometric-pictures-in-berlin)

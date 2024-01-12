@@ -1,6 +1,6 @@
 ---
 Name: Expath
-Description: Well-established relocation agency. One of the founders, Tia Robinson, is an active member of various expat communities.
+Description: Relocation agency and language school.
 Website: https://allaboutberlin.com/out/expath
 Email: 
 Address: Torstraße 117

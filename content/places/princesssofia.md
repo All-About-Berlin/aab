@@ -1,10 +1,10 @@
 ---
 Name: Princesssofia
-Description: Alison speaks English and French
-Website: https://www.princesssofia.de/kreuzberg
-Email: 
-Address: Katzbachstraße 11
-Latitude: 52.488996
-Longitude: 13.376398
-Google_Place_ID: ChIJW7k11yRQqEcRkobLitkeksU
+Description: International team. They speak English, Italian, Polish, Russian, Greek, and Portuguese.
+Website: http://www.princesssofia.de/
+Email: connely.elissa@gmail.com
+Address: Belziger Str. 30
+Latitude: 52.487086
+Longitude: 13.352857
+Google_Place_ID: ChIJs2NlZAZRqEcRkHI3InkIbCw
 ---

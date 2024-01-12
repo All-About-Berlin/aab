@@ -1,10 +1,10 @@
 ---
 Name: Archer Relocation
-Description: 
+Description: Emily has helped me write guides about the work visa and the Blue Card.
 Website: http://www.archer-relocation.com/
 Email: 
-Address: Krumme Str. 75
-Latitude: 52.512468
-Longitude: 13.310014
+Address: Akazienstraße 3A
+Latitude: 52.486770
+Longitude: 13.35559
 Google_Place_ID: ChIJnSdXt05QqEcRxtPkLAvIFhU
 ---

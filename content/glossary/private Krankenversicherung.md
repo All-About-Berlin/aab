@@ -10,6 +10,7 @@ Related_guides:
     tools/health-insurance-calculator.md
     guides/ottonova-review.md
     guides/insurance.md
+    guides/taxes.md
     guides/german-versicherungsnummer.md
     guides/techniker-krankenkasse-review.md
     guides/eyeglasses.md

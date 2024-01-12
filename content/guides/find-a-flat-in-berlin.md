@@ -36,7 +36,7 @@ You must do this before you apply for apartments:
 ### Things that are different in Germany
 
 - **The deposit**  
-    Almost all apartments require a deposit (*[[Kaution]]*). It's usually 3 times the [cold rent](/glossary/Kaltmiete). You get it back when you [move out](/guides/moving-out). You can [pay it in 3 instalments](/guides/mietkaution#pay-in-instalments). - [More about the deposit](/guides/mietkaution)
+    Almost all apartments require a deposit (*[[Kaution]]*). It's usually 3 times the [cold rent](/glossary/Kaltmiete). You get it back when you [move out](/guides/moving-out). You can [pay it in 3 instalments](/guides/mietkaution#when-to-pay-the-kaution). - [More about the deposit](/guides/mietkaution)
 - **Cold rent and warm rent**  
     In Germany, there is the cold rent (*[[Kaltmiete]]*) and the warm rent (*[[Warmmiete]]*). The warm rent is the cold rent plus utilities (*[[Nebenkosten]]*). It's what you pay every month. The *Nebenkosten* are not a fixed cost; your landlord adjusts them once per year based on your usage.
 - **Nothing is included**  
@@ -128,7 +128,7 @@ Ask the people you know: friends, colleagues, classmates... Many people find an 
 ### Classified ads
 
 - **[ImmobilienScout24](https://www.immobilienscout24.de/)** - Biggest apartment listing site
-- **[Kleinanzeigen](https://www.ebay-kleinanzeigen.de:443/)** - Biggest classified ads site
+- **[Kleinanzeigen](https://www.kleinanzeigen.de:443/)** - Biggest classified ads site
 - **[Immowelt](https://www.immowelt.de/)** - Second biggest apartment listing site
 - [Immonet](https://www.immonet.de/)
 - [Immobilo](https://www.immobilo.de/)
@@ -172,7 +172,6 @@ You can rent a vacation apartment. You rent by the day, and you can rarely do yo
 
 - **[In Berlin Wohnen](https://inberlinwohnen.de/wohnungsfinder/)** - Search all state-owned apartments
 - [Adler Group](https://www.adler-group.com/suche/wohnung)
-- [Akelius](https://rent.akelius.com/en/search/germany/apartment/berlin) - Big housing company with a bad reputation[^9]
 - [Charlottenburger Baugenossenschaft](https://charlotte1907.de/wohnungsangebote/woechentliche-angebote) - Housing cooperative
 - [Degewo](https://immosuche.degewo.de/de/search) - State-owned company
 - [Deutsche Wohnen](https://www.deutsche-wohnen.com/mieten/mietangebote/zuhause-mieten) - Big housing company
@@ -180,6 +179,7 @@ You can rent a vacation apartment. You rent by the day, and you can rarely do yo
 - [Fortuna](https://www.fortuna-eg.de/wohnungsangebote/mietinformationen/)
 - [Gesobau](https://www.gesobau.de/mieten/wohnungssuche.html) - State-owned company
 - [Gewobag](https://www.gewobag.de/fuer-mieter-und-mietinteressenten/mietangebote/) - State-owned company
+- [Heimstaden](https://heimstaden.com/de/immobiliensuche-mietwohnungen-gewerbe/mietwohnungen-in-berlin/)
 - [Howoge](https://www.howoge.de/wohnungen-gewerbe/wohnungssuche.html) - State-owned company
 - [Stadt und Land](https://www.stadtundland.de/) - State-owned company
 - [Vonovia](https://www.vonovia.de/en)
@@ -260,7 +260,7 @@ Most people can't choose where they live. They take what they find.[^11] You sho
 - **Crime**  
     Berlin is a safe city, even at night, but some parts are less safe. The areas next to big train stations (Alexanderplatz, Görlitzer Bahnhof, Kottbusser Tor, Hermannplatz) are more dangerous.[^14] There are more drunk people, drug addicts, street fights, vandalism and theft in those areas, but people will still leave you alone. You don't need to avoid the entire area, just the busy streets. Use the [crime atlas](https://www.kriminalitaetsatlas.berlin.de/K-Atlas/atlas.html) to find a safe area.
 - **Noise**  
-    Main roads are very noisy because of trams, cars and ambulances.[^15] Ambulances, trams and trains are *very* loud. You can hear even with your windows closed.[^16] Busy areas with lots of bars and restaurants are also loud, even late at night. Google Maps shows the busy areas in orange. If you want a quiet apartment, don't live in those areas. This old [noise map](https://interaktiv.morgenpost.de/laermkarte-berlin/) can help. The big red line is from Tegel airport, which closed in 2020.[^17]
+    Main roads are very noisy because of trams, cars and ambulances.[^15] Ambulances, trams and trains are *very* loud. You can hear even with your windows closed.[^16] Busy areas with lots of bars and restaurants are also loud, even late at night. Google Maps shows the busy areas in orange. If you want a quiet apartment, don't live in those areas. The [noise map](https://www.berlin.de/umweltatlas/verkehr-laerm/laermbelastung/2022/karten/artikel.1305256.php) can help. The big red line is from Tegel airport, which closed in 2020.[^17]
 
 ![Berlin ambulance noise](/illustrations/berlin-ambulance-noise.png)
 
@@ -295,7 +295,7 @@ Most people can't choose where they live. They take what they find.[^11] You sho
 Here are a few tricks to avoid scams:
 
 - **Wait before you pay**  
-    Don't send any money before you see the apartment in person and sign the lease.[^26] You have [until the day you move in](/guides/mietkaution#when-to-pay-the-kaution) to pay the rent and the [deposit](/glossary/Kaution). You can [pay the deposit in 3 instalments](/guides/mietkaution#pay-in-instalments). You never have to pay a fee to see an apartment, or to apply for it.[^42]
+    Don't send any money before you see the apartment in person and sign the lease.[^26] You have [until the day you move in](/guides/mietkaution#when-to-pay-the-kaution) to pay the rent and the [deposit](/glossary/Kaution). You can [pay the deposit in 3 instalments](/guides/mietkaution#when-to-pay-the-kaution). You never have to pay a fee to see an apartment, or to apply for it.[^42]
 - **Wait before you send documents**  
     Don't send your pay slips, your *[[Steuerbescheid]]* or a copy of your passport before you see the apartment. You don't need to share these documents to visit an apartment, only to apply for it. You should censor the parts of the documents that they don't need to see.
 - **See the apartment in person**  
@@ -337,7 +337,7 @@ Landlords prefer quiet, long-term tenants who pay their rent on time. They want 
 Landlords want tenants with...
 
 - **A good income**  
-    Your rent should be less than 30% of your monthly [[Netto income]].[^34] Many landlords ask for this. Two incomes are better than one. If you have a good salary, include it in your introduction messages. If you make a lot of money, you can apply for more expensive apartments. There is less competition for those apartments.
+    Your rent should be less than 30-40% of your monthly [[Netto income]].[^34] Some landlords want this, some landlords don't care. Two incomes are better than one. It's better if you're not in your [probation period](/glossary/Probezeit). If you have a good salary, say it in your introduction message. Your income can also be too high.[^48]
 - **A stable job**  
     Landlords prefer tenants with a stable job. It's harder to find an apartment if you are self-employed, or if you are on your [probation period](/glossary/Probezeit). If you have a good job, include it in your introduction messages.
 - **A stable residence permit**  
@@ -368,7 +368,7 @@ Only send documents after you see the apartment. Remove bank account numbers, pa
 You need these documents to apply for an apartment:
 
 - [ ] **[[Schufa]] report**  
-    This is like a credit report. You can [get one for free](/guides/free-schufa-berlin). If you are new in Germany, your *[[Schufa]]* is empty. You can bring a work contract or a tax return, to prove that you make enough money. Furnished apartments from [Homelike](/out/homelike), [Spotahome](/out/spotahome), [Wunderflats](/out/wunderflats) don't ask for a Schufa.[^37]
+    This is like a credit report. You can [get one for free](/guides/schufa). If you are new in Germany, your *[[Schufa]]* is empty. You can bring a work contract or a tax return, to prove that you make enough money. Furnished apartments from [Homelike](/out/homelike), [Spotahome](/out/spotahome), [Wunderflats](/out/wunderflats) don't ask for a Schufa.[^37]
 - [ ] **Passport or [[Personalausweis]]**  
     You must show it when you apply for the apartment. Bring photocopies of your ID, just in case.
 - [ ] **Proof of income**  
@@ -446,7 +446,7 @@ There are 3 types of insurance that cover your apartment:
 [^12]: [furnishedinside.com](https://www.furnishedinside.com/dachgeschosswohnung)
 [^13]: [reddit.com/r/berlin](https://www.reddit.com/r/berlin/comments/nkk7hs/comment/gzdee8d/?utm_source=reddit&utm_medium=web2x&context=3)
 [^14]: [morgenpost.de](http://web.archive.org/web/20220426082551/https://www.morgenpost.de/berlin/article129650925/Kriminalitaet-in-Berlin-So-gefaehrlich-ist-Ihr-Kiez.html?config=interactive), [kriminalitaetsatlas.berlin.de](https://www.kriminalitaetsatlas.berlin.de/K-Atlas/atlas.html)
-[^15]: [interaktiv.morgenpost.de](https://interaktiv.morgenpost.de/laermkarte-berlin/), [reddit.com/r/berlin](https://www.reddit.com/r/berlin/comments/og558q/strong_noise_from_tram_line/)
+[^15]: [interaktiv.morgenpost.de](https://interaktiv.morgenpost.de/laermkarte-berlin/), [Berlin noise map](https://www.berlin.de/umweltatlas/verkehr-laerm/laermbelastung/2022/karten/artikel.1305256.php), [reddit.com/r/berlin](https://www.reddit.com/r/berlin/comments/og558q/strong_noise_from_tram_line/)
 [^16]: [youtu.be](https://youtu.be/zxjJYEQLLiA?t=573)
 [^17]: [Wikipedia](https://en.wikipedia.org/wiki/Berlin_Tegel_Airport#Closure_and_legacy_of_Tegel_Airport)
 [^18]: [theculturetrip.com](https://theculturetrip.com/europe/germany/berlin/articles/is-berlin-the-greenest-city-in-the-world/)
@@ -479,3 +479,4 @@ There are 3 types of insurance that cover your apartment:
 [^21]: [anwalt-arbeitsrecht-dresden.de](https://www.anwalt-arbeitsrecht-dresden.de/rechts-infos/provision-fuer-wohnungsvermittlung)
 [^46]: [promietrecht.de](https://www.promietrecht.de/Wohnungsvermittler/Zu-viel-Abstand-Abloese-fuer-Wohnung-an-Vormieter-Vermieter-bezahlt-E2181.htm)
 [^47]: [reddit.com](https://old.reddit.com/r/berlinsocialclub/comments/14rdwit/landlord_doesnt_provide/), [reddit.com](https://old.reddit.com/r/berlin/comments/nfjm73/landlord_doesnt_want_to_provide/)
+[^48]: Multiple relocation consultants (October 2023)

@@ -5,6 +5,7 @@ English_term: Salary tax statement
 Description: A document that shows how your employer paid you, and what social contributions you paid.
 Date_created: 2020-07-18
 Related_guides:
+    guides/taxes.md
     tools/tax-calculator.md
     guides/german-tax-id-steuernummer.md
     guides/german-versicherungsnummer.md

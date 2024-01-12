@@ -61,9 +61,9 @@ Most dm and Rossmann stores are closed on Sundays, but there are [some exception
 - [Otto.de](https://www.otto.de/) (online) - Online furniture
 - Poco - Discount furniture and house supplies
 - Real - Department store
-- [Buy used furniture](/guides/how-do-i-buy-and-sell-used-things-in-berlin) on [Kleinanzeigen](https://www.ebay-kleinanzeigen.de/), [Facebook](https://www.facebook.com/groups/freeyourstuff/) or [Nebenan](https://nebenan.de/)
+- [Buy used furniture](/guides/how-do-i-buy-and-sell-used-things-in-berlin) on [Kleinanzeigen](https://www.kleinanzeigen.de/), [Facebook](https://www.facebook.com/groups/freeyourstuff/) or [Nebenan](https://nebenan.de/)
 
-If you need help to move furniture, use a [Möbel Taxi](https://www.moebel-taxi.de/english/) or rent a [Miles](https://miles-mobility.com/en-de). There are [more moving services on Kleinanzeigen](https://www.ebay-kleinanzeigen.de/s-umzug-transport/berlin/c296l3331).
+If you need help to move furniture, use a [Möbel Taxi](https://www.moebel-taxi.de/english/) or rent a [Miles](https://miles-mobility.com/en-de). There are [more moving services on Kleinanzeigen](https://www.kleinanzeigen.de/s-umzug-transport/berlin/c296l3331).
 
 ## Hardware and home improvement
 

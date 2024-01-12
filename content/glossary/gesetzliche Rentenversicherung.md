@@ -2,9 +2,13 @@
 Title: What is the gesetzliche Rentenversicherung?
 German_term: gesetzliche Rentenversicherung
 English_term: Public pension insurance
-Description: 
+Description: You pay a part of your income every month. When you retire, you get a pension from the German state.
 Date_created: 2020-06-04
-Related_guides: guides/pension-payments-refund.md, tools/pension-refund-calculator.md, guides/ksk-kuenstlersozialkasse.md
+Related_guides:
+    guides/pension-payments-refund.md
+    tools/pension-refund-calculator.md
+    guides/taxes.md
+    guides/ksk-kuenstlersozialkasse.md
 ---
 
 All employees in Germany pay for public pension insurance (*gesetzliche Rentenversicherung*). For self-employed people, pension insurance is optional.

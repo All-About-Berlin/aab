@@ -8,7 +8,7 @@ Related_guides:
     guides/english-speaking-steuerberater-berlin.md
     guides/german-tax-software.md
     guides/steuerberater-vs-buchhalter.md
-    guides/car-insurance-germany.md
+    guides/taxes.md
 ---
 
 A tax declaration (*Steuererklärung*) tells the *[[Finanzamt]]* how much taxes you should pay. They will review your tax declaration, decide how much you should really pay, and send you a *[[Steuerbescheid]]*.

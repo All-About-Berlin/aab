@@ -18,7 +18,7 @@ This guide is only for people who live in Germany. It explains how to register a
 
 Accounting and bookkeeping is the hardest part. You usually do it every month. If you make a mistake, it can be expensive.
 
-If you are [moving to Germany to become a freelancer](/guides/become-a-freelancer-in-germany), it's harder. You must [find an apartment](/guides/find-a-flat-in-berlin), [register your address](/guides/anmeldung-in-english-berlin) and [apply for a residence permit](/guides/how-to-get-a-german-freelance-visa), all at the same time. During that time, you can't work (because you don't have a residence permit), so you must have a lot of savings.
+If you are [moving to Germany to become a freelancer](/guides/become-a-freelancer-in-germany), it's harder. You must [find an apartment](/guides/find-a-flat-in-berlin), [register your address](/guides/anmeldung-in-english-berlin) and [apply for a residence permit](/guides/freelance-visa), all at the same time. During that time, you can't work (because you don't have a residence permit), so you must have a lot of savings.
 
 If you don't speak German, everything is *much* harder. All the documents are in German. The long [tax registration form](/guides/fragebogen-zur-steuerlichen-erfassung) is in German. The *[[Finanzamt]]* only writes in German. Most accounting tools are only in German. You will need help from someone who speaks German.
 
@@ -161,7 +161,12 @@ Tax advisors are very expensive in Germany, but they will save you a lot of mone
 
 Later, you will need to [register your business with the tax office](/guides/fragebogen-zur-steuerlichen-erfassung) (*[[Finanzamt]]*). The tax office decides if you are a freelancer (*[[Freiberufler]]*) or a tradesperson (*[[Gewerbe]]*).
 
-The difference is *very* important. Tradespeople must [get a trade licence](/guides/gewerbeschein) (*[[Gewerbeschein]]*) and [pay the trade tax](/guides/gewerbesteuer) (*[[Gewerbesteuer]]*). They must usually be listed in the trade register (*[[Handelsregister]]*). They must sometimes follow different accounting rules.
+The difference is *very* important. Tradespeople must...
+
+- [Get a trade licence](/guides/gewerbeschein) (*[[Gewerbeschein]]*)
+- [Pay the trade tax](/guides/gewerbesteuer) (*[[Gewerbesteuer]]*)
+- Get listed in the *Handelsregister* ([in some cases](/guides/handelsregisternummer-germany#who-needs-a-handelsregister-entry))
+- Use double entry bookkeeping ([in some cases](/guides/freiberufler-or-gewerbe#double-entry-bookkeeping))
 
 Not every freelancer is a *[[Freiberufler]]*! This title is only for [specific professions](https://www.ihk.de/hamburg/produktmarken/beratung-service/recht-und-steuern/steuerrecht/real-kommunale-steuern/abgrenzung-gewerbebetrieb-freie-berufe-1157144#titleInText8). Engineers, doctors, architects and teachers can be *Freiberufler*. Food delivery drivers and tour guides are not *Freiberufler*; they are a *[[Gewerbe]]*.[^13] Most commercial websites are registered as a *Gewerbe*.
 
@@ -191,7 +196,7 @@ You might need a [residence permit](/glossary/Aufenthaltstitel) to be self-emplo
 
 [**Who needs a residence permit? ➞**](/guides/residence-permit)
 
-**[How to apply for the German freelance visa ➞](/guides/how-to-get-a-german-freelance-visa)**
+**[How to apply for the German freelance visa ➞](/guides/freelance-visa)**
 
 ## Step 8: Tell your health insurer
 

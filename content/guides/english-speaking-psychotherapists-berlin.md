@@ -17,9 +17,7 @@ Related_places:
     places/the-living-body-julianne-appel-opper.md
     places/frau-dipl-psych-heidi-hooper-amri.md
     places/dr-pheasant.md
-    places/sarah-jane.md
     places/auf-dem-helmholtzplatz.md
-    places/josh-flowers-counselling.md
     places/bismarckstraße-82.md
     places/dr-christian-dombrowe.md
     places/frau-dipl-psych-nadja-ursula-gogolin.md
@@ -86,6 +84,9 @@ Related_places:
     places/psychotherapie-mag-michaela-klien.md
     places/praxis-fur-psychotherapie-ninja-kattenbeck.md
     places/privatpraxis-fur-psychotherapie-coaching-dr-viola-kappel-kollegen.md
+    places/bertine-de-jongh.md
+Related_reviews:
+    reviews/english-speaking-psychotherapists-berlin/agata-slezak.md
 ---
 
 This guide explains:
@@ -142,7 +143,7 @@ In Berlin, it costs around 100€ per hour.[^0] Group therapy is usually cheaper
 
 **If you have [private health insurance](/glossary/private%20Krankenversicherung)**, your insurance will usually refund the costs. Check with your health insurer first, just to be sure.
 
-**If you are a student**, you can also get free therapy [from your *Studentenwerk*](https://www.stw.berlin/en/counselling.html#jump_psychological_counselling).
+**If you are a student**, you can also get free therapy [from your *Studentenwerk*](https://www.stw.berlin/en/counselling/psychologic-counselling/).
 
 ## List of therapists
 
@@ -155,7 +156,7 @@ These directories help you find English-speaking therapists:
 - **[KV Berlin](https://www.kvberlin.de/fuer-patienten/arzt-und-psychotherapeutensuche)** - Find therapists who accept [public health insurance](/glossary/gesetzliche%20Krankenversicherung), with language filters
 - [Therapie.de directory](https://www.therapie.de/therapeutensuche/ergebnisse/?ort=Berlin) - Therapist search by language
 - [It's Complicated](https://www.complicated.life/en/find-a-therapist) - Find therapists by language and insurance type
-- [ACTBerlin's therapist directory](https://www.actberlin.info/therapist-directory.html) - List of therapists with language information
+- [Berlin therapist directory](https://www.therapistinberlin.com/therapist-directory.html) - List of therapists with language information
 - [Doctolib](https://www.doctolib.de/) - Find doctors and therapists by language
 - [AngloInfo's English-speaking therapist directory](https://www.angloinfo.com/berlin/directory/berlin-counselling-therapists-477)
 - [Stillpoint Spaces](https://www.stillpointspaces.com/berlin-space/) - Find therapists by language
@@ -169,7 +170,7 @@ These directories help you find English-speaking therapists:
 These resources can also help:
 
 - **[Berliner Krisendienst](https://www.berliner-krisendienst.de/en/)** - Emergency help, 24/7, also in English
-- [StudentenWERK counselling services](https://www.stw.berlin/en/counselling.html#jump_psychological_counselling) - Counselling for students
+- [StudentenWERK counselling services](https://www.stw.berlin/en/counselling/psychologic-counselling/) - Counselling for students
 - [Schwulenberatung Berlin](https://schwulenberatungberlin.de/about-us/) - Counselling for LGBTQ people
 - [Frauentreffpunkt](https://skf-berlin.de/offene-sozialarbeit/anti-gewalt-bereich/frauentreffpunkt-gegen-haeusliche-gewalt/) - English, Spanish and German counselling for women who are victims of domestic violence
 - [GLADT](https://gladt.de/en/counseling/) - Help for people of colour and LGBTQ people

@@ -4,7 +4,9 @@ German_term: Abmeldebescheinigung
 English_term: Deregistration certificate
 Description: A certificate you get when you do your Anmeldung. It confirms that you deregistered your address.
 Date_created: 2020-02-06
-Related_guides: guides/abmeldung-deregister-in-berlin.md
+Related_guides:
+    guides/abmeldung-deregister-in-berlin.md
+    guides/moving-out.md
 ---
 
 The deregistration certificate (*Abmeldebescheinigung*) confirms that you have [deregistered your address](/guides/abmeldung-deregister-in-berlin) in Germany. You get this document when you do your *[[Abmeldung]]*. If you do your *Abmeldung* by post or by email, the *Abmeldebescheinigung* is sent to your new address.

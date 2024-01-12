@@ -16,6 +16,7 @@ Related_places:
     places/praxis-für-sexualtherapie-helen-sange.md
     places/dipl-med-daniel-karohl.md
     places/gemeinschaftspraxis-fera.md
+    places/frauenarzt-zentrum-neukolln.md
 ---
 
 This is a list of gynaecologists and obstetricians who speak English. They were recommended by other immigrants.

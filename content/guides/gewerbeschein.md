@@ -1,229 +1,152 @@
 ---
-Title: How to get a Gewerbeschein in Berlin
-Short_title: How to get a Gewerbeschein
+Title: How to do your Gewerbeanmeldung in Berlin
+Short_title: How to do the Gewerbeanmeldung
 Description: The Gewerbeanmeldung is how you get a trade licence (Gewerbeschein) and register for the trade tax (Gewerbesteuer).
 Date_created: 2021-05-14
 ---
 
-This is how you complete the trade registration (*[[Gewerbeanmeldung]]*), register for the trade tax (*[[Gewerbesteuer]]*), and receive a trade licence (*[[Gewerbeschein]]*) in Berlin.
+When you [start a business](/guides/start-a-business-in-germany), you must register your trade. This is called the *Gewerbeanmeldung*.
 
-When you [start a business in Germany](/guides/start-a-business-in-germany), you must get a trade licence before you [register your business with the *Finanzamt*](/guides/fragebogen-zur-steuerlichen-erfassung).
+You must do your *Gewerbeanmeldung* to...
 
-You can do this online. It takes around 1 hour and costs 15 to 26€. It's only in German, but it's very easy.
+- Get trade licence (*[[Gewerbeschein]]*)
+- Register for the trade tax (*[[Gewerbesteuer]]*)
+
+Freelancers (*[[Freiberufler]]*) and [small businesses](/glossary/Kleinunternehmer) do not need to do their *Gewerbeanmeldung*, because they [do not pay the trade tax](/guides/gewerbesteuer#who-must-pay-the-gewerbesteuer).[^0]
+
+You can do this online. It takes 30 minutes to fill the form, and around 4 weeks to get the *[[Gewerbeschein]]*. It costs {{GEWERBEANMELDUNG_FEE|cur}}€.
 
 {% include "_blocks/tableOfContents.html" %}
 
-## Who needs a Gewerbeschein?
-
-Anyone who must to pay the trade tax (*[[Gewerbesteuer]]*). [Freelancers](/glossary/Freiberufler) and [small businesses](/glossary/Kleinunternehmer) do not pay the trade tax.
-
-**[Who must pay the Gewerbesteuer? ➞](/guides/gewerbesteuer#who-must-pay-the-gewerbesteuer)**
-
 ## Before you start
 
-### Get the required documents
+To do your *Gewerbeanmeldung*, you need...
 
-You need a scan of your German [residence permit](/glossary/Aufenthaltstitel). If you are a German or EU citizen, you don't need this.
-
-### Create a Berlin service account
-
-Before you begin, you must [create a ](/guides/service-konto-berlin)*[Service-Konto Berlin](/guides/service-konto-berlin)*. It only takes a few minutes.
+- [ ] A credit card (Visa or MasterCard) to pay the {{GEWERBEANMELDUNG_FEE|cur}}€ fee.
+- [ ] Permission to be self-employed in Germany. If you need a [residence permit](/glossary/Aufenthaltstitel) to live in Germany, [check if it allows self-employment](/guides/residence-permit#residence-permits-to-start-a-business). You must get your residence permit before you do the *Gewerbeanmeldung*.
 
 ## How to fill the registration form
 
-You must use the [Single Point of Contact](https://konto.service.berlin.de/skb/Service/Entry?sid=7) (*Einheitlicher Ansprechpartner*) tool to create a new case. You need a Berlin service account to use this tool.
+Open the **[online registration form](/out/business-ummeldung)**. Click the *Anmeldung* link next to *Gewerbe in Berlin anmelden*
 
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-1.png)](/images/berlin-gewerbeanmeldung-1.png)
+[![Start page of the Gewerbeanmeldung form](/images/gewerbeanmeldung-berlin-start-page.png)](/images/gewerbeanmeldung-berlin-start-page.png)
 
-▲ Log in with your [Berlin service account](/guides/service-konto-berlin).
+### Angaben zum Grund der Meldung
 
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-2.png)](/images/berlin-gewerbeanmeldung-2.png)
+[![Step 1 of the Gewerbeanmeldung form](/images/gewerbeanmeldung-berlin-step1.png)](/images/gewerbeanmeldung-berlin-step1.png)
 
-▲ Click the *Hier starten* button on the [Einheitlicher Ansprechpartner Berlin page](https://konto.service.berlin.de/skb/Service/Entry?sid=7).
+**Rechtsform:** Choose the type of business you want to start. Most people choose a sole proprietorship (*Einzelunternehmen*). To register a limited liability company (*UG*), [talk with a tax advisor](/guides/english-speaking-steuerberater-berlin) first.
 
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-3.png)](/images/berlin-gewerbeanmeldung-3.png)
+**Anmeldung erfolgt wegen:** Choose *Neuerrichtung des Betriebes* to register a new business.
 
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-4.png)](/images/berlin-gewerbeanmeldung-4.png)
+**Anmeldung zum:** Select the date of the registration. This is usually the current date. If you already started your business, you can use a date in the past.
 
-▲ Click *Neuen Fall starten*.
+### Allgemeine Angaben zum Betrieb
 
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-5.png)](/images/berlin-gewerbeanmeldung-5.png)
+[![Step 2 of the Gewerbeanmeldung form](/images/gewerbeanmeldung-berlin-step2.png)](/images/gewerbeanmeldung-berlin-step2.png)
 
-▲ Accept the privacy policy
+**Geschäftsbezeichnung:** The name of your business. If you are a freelancer, you don't need a business name. Usually, you need an entry in the *[[Handelsregister]]* to choose a business name. If you are a freelancer, you should probably leave this field empty.
 
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-6.png)](/images/berlin-gewerbeanmeldung-6.png)
+**Betriebsform:** Choose *Hauptniederlassung* to register your main business location.
 
-▲ Choose the type of business you want to register. In most cases, the answer is *[[Gewerbe]]*. Click *Weiter* to continue.
+**Beteiligung öffentlicher Hand:** Choose *Nein*.
 
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-7.png)](/images/berlin-gewerbeanmeldung-7.png)
+**Betriebsart:** Type of business.
 
-▲ Choose what you want to do. You want to register a business (*Ein Gewerbe anmelden*). Click *Weiter* to continue.
+- Industry (*Industrie*): If you make physical products in a factory.
+- Commerce (*Handel*): If you sell products that other people make
+- Trade (*Handwerk*): If you are in a [regulated craft](https://www.gesetze-im-internet.de/hwo/anlage_a.html), or to [one of these non-regulated crafts](https://www.selbstaendig-im-handwerk.de/Wissenswertes/Handwerksrecht/zulassungsfreie_handwerke.php). If you make physical products by hand, you are probably in this category.
+- Other (*Sonstiges*): If you are not in the other categories, or if you are not sure.
 
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-8.png)](/images/berlin-gewerbeanmeldung-8.png)
+**Anzahl Vollzeitbeschäftigte:** The number of full-time employees (do not include yourself)
 
-▲ Choose what you want to do. You want to register a business (*Gewerbeanmeldung*). Click *Weiter* to continue.
+**Anzahl Teilzeitbeschäftigte:** The number of part-time employees (do not include yourself)
 
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-9.png)](/images/berlin-gewerbeanmeldung-9.png)
+### Angaben zur Erlaubnis
 
-▲ Enter your street name (without the house number) to find your street. Next, enter your post code and house number. Click *Weiter* to continue.
+[![Step 3 of the Gewerbeanmeldung form](/images/gewerbeanmeldung-berlin-step3.png)](/images/gewerbeanmeldung-berlin-step3.png)
 
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-10.png)](/images/berlin-gewerbeanmeldung-10.png)
+Some businesses need special permits to operate:
 
-▲ Fill your personal information:
+- Restaurants and gastronomy
+- Doctors, dentists and medical professionals
+- Lawyers, tax advisors, financial advisors
 
-1. Title (*Anrede*)
-2. First name (*Vorname*)
-3. Last name (*Nachname*)
-4. Birth date (*Geburtsdatum*) - for example "23.09.1970"
-5. Street name (*Straße*) - for example "Musterstraße"
-6. House number (*Hausnummer*) - for example "123"
-7. Extra address information (*Adresszusatz*) - for example "c/o Max Mustermann"
-8. Location (*Ort*) - for example "Berlin"
-9. Country (*Land*) - for example "Deutschland"
-10. Phone number (*Telefon*) - for example +49301234567
-11. Fax number (*Fax*)
+If you don't need a permit to run your business, skip this step.
 
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-11.png)](/images/berlin-gewerbeanmeldung-11.png)
+### Anschrift der Betriebsstätte
 
-▲ Select your nationality. The next steps are different for each country. For some countries, you must prove that you have a valid [residence permit](/glossary/Aufenthaltstitel).
+Enter the address of your business. If you do not have a business address, use your home address.
 
-Click *Weiter* to continue.
+[![Step 4 of the Gewerbeanmeldung form](/images/gewerbeanmeldung-berlin-step4.png)](/images/gewerbeanmeldung-berlin-step4.png)
 
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-12.png)](/images/berlin-gewerbeanmeldung-12.png)
+**Telefon-Vorwahl:** The first 3 to 5 digits of your phone number. For landline telephones in Berlin, it's 030. For mobile phone, it's 4 or 5 digits starting with 01. For example, 01522. - [How to write phone numbers](/guides/dial-phone-numbers-germany#german-phone-number-format)
 
-▲ The *Ihr Zeichen* field is for your case name. You can leave this field empty.
+### Angaben zur Tätigkeit des Betriebes
 
-If you want a Single Point of Contact, choose *Ja*. A Single Point of Contact is a person who can answer your questions, and help you solve bureaucratic problems. More information [here](https://service.berlin.de/dienstleistung/141587/en/).
+[![Step 5 of the Gewerbeanmeldung form](/images/gewerbeanmeldung-berlin-step5.png)](/images/gewerbeanmeldung-berlin-step5.png)
 
-Click *Weiter* to continue.
+**Nebenerwerb:** Choose "Ja" if this is a side business at the beginning. Usually, this means that you will work less than 15 hours per week on this business.[^2]
 
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-13.png)](/images/berlin-gewerbeanmeldung-13.png)
+**Tätigkeitsschwerpunkt:** Describe what your business does in one or sentences. Write in German. If you don't speak German, use [Deepl](https://www.deepl.com/translator).
 
-▲ Click *Hochladen* to upload a copy of your residence permit. If you don't see this button, you can skip this step.
+**Weitere Tätigkeiten:** Additional occupations. If your business does other things, list them here.
 
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-14.png)](/images/berlin-gewerbeanmeldung-14.png)
+### Angaben zum Inhaber des Betriebes
 
-▲ Upload a scan of your [residence permit](/glossary/Aufenthaltstitel). Click *Weiter* to continue.
+[![Step 6 of the Gewerbeanmeldung form](/images/gewerbeanmeldung-berlin-step6.png)](/images/gewerbeanmeldung-berlin-step6.png)
 
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-15.png)](/images/berlin-gewerbeanmeldung-15.png)
+[![Step 7 of the Gewerbeanmeldung form](/images/gewerbeanmeldung-berlin-step7.png)](/images/gewerbeanmeldung-berlin-step7.png)
 
-▲ Click *Ausfüllen* to fill the *Gewerbeanmeldung* form. This is a digital version of the [GewA1 form](https://www.gewerbeanmeldung.de/formular-gewerbeanmeldung).[^3] The questions are the same. You can find a lot of help for the GewA1 form on the internet.
+Enter information about *you*, not your business. Enter your home address, not your business address.
 
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-16.png)](/images/berlin-gewerbeanmeldung-16.png)
+### Angaben zum Aufenthaltstitel
 
-▲ Choose the reason of your business registration. For a new business, choose *Neugründung*.
+If you have a [residence permit](/glossary/Aufenthaltstitel), fill this section. If you are a EU citizen or a German [permanent resident](/glossary/Niederlassungserlaubnis), skip this step. Your residence permit must [allow self-employment](/guides/residence-permit#residence-permits-to-start-a-business).
 
-- Start of operations (*Tätigkeitsbeginn*): When will you start your business activities? You can use the current date, or the date when you plan to start your business. If you already started your business, you can use a past date.
-- Announcement date (*Anzeigedatum*): The official date when your business is open.
+[![Step 8 of the Gewerbeanmeldung form](/images/gewerbeanmeldung-berlin-step8.png)](/images/gewerbeanmeldung-berlin-step8.png)
 
-Click *Weiter* to continue.
+**Ausstellungsdatum:** The date your residence permit was issued. It's written on the residence permit.
 
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-18.png)](/images/berlin-gewerbeanmeldung-18.png)
+**Erteilende Behörde:** The *[[Ausländerbehörde]]*, embassy or consulate that issued your residence permit. In Berlin, it's the *Landesamt für Einwanderung*. Their post code is 13353.
 
-▲ Enter the name of your business, and what kind of business you do.
+**Auflage oder Beschränkung:** Write the text on your *[Zusatzblatt](/glossary/Zusatzblatt%20%28residence%20permit%29)*. For example, *Selbständige Tätigkeit gestattet* or *Erwerbstätigkeit erlaubt*. If there is nothing on your *Zusatzblatt*, write *Keine Beschränkung*.
 
-For the business description, be precise, not too precise.[^0] If this description changes, you must fill this form again. For example, don't write "sale of women's clothes", just "sale of clothes". This way, if you start to sell men's clothes, you don't need to change anything.
+Attach a scan of your residence permit and *Zusatzblatt*.
 
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-17.png)](/images/berlin-gewerbeanmeldung-17.png)
+### Angabe der E-Mail
 
-▲ Choose the nature of your business.[^1]
+Enter your email address.
 
-1. Choose the kind of registration:
-    1. *Hauptniederlassung*: this is the main location of your business; your headquarters or head office. Most people should choose this option.
-    2. *Zweigniederlassung*: this is an independent branch or regional office, not the main location. [More information](https://www.ihk.de/aachen/recht/rechtsinformationen/aktuelle-dokumente-zum-thema-recht/selbststaendige-zweigniederlassung-und-unselbststaendige-betrie-607468) (in German).
-    3. *Unselbständige Zweigstelle*: this is a dependant branch. [More information](https://www.ihk.de/aachen/recht/rechtsinformationen/aktuelle-dokumente-zum-thema-recht/selbststaendige-zweigniederlassung-und-unselbststaendige-betrie-607468) (in German).
-    4. *Reisegewerbe*: this is a business without a fixed location, like a travelling salesman[^4]
-2. Choose the kind of business:
-    1. Industry (*Industrie*): you make physical products in a factory
-    2. Crafts (*Handwerk*): you are in a [regulated craft](https://www.gesetze-im-internet.de/hwo/anlage_a.html), or to [one of these non-regulated crafts](https://www.selbstaendig-im-handwerk.de/Wissenswertes/Handwerksrecht/zulassungsfreie_handwerke.php). If you make physical products by hand, you are probably in this category.
-    3. Commerce (*Handel*): if you sell products that other people make
-    4. Other (*Sonstiges*): if you are not in the other categories, or you are not sure[^1]
-3. Choose *Ja* if you are in the craft register (*Handwerksrolle*), and have a craft card (*Handwerkskarte*). This is only needed if you are in a [regulated craft](https://www.gesetze-im-internet.de/hwo/anlage_a.html). More information [here](https://service.berlin.de/dienstleistung/329376/en/).
-4. Choose *Ja* if this is a side business (*Nebenerwerb*). Usually, this means that you will work less than 15 hours per week on this business.[^2]
-5. Enter the number of full time employees. The business owner does not count. If you have no employees, write "0".
-6. Enter the number of part time employees. The business owner does not count. If you have no employees, write "0".
+[![Step 9 of the Gewerbeanmeldung form](/images/gewerbeanmeldung-berlin-step9.png)](/images/gewerbeanmeldung-berlin-step9.png)
 
-Click *Weiter* to continue.
+### Payment
 
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-19.png)](/images/berlin-gewerbeanmeldung-19.png)
+[![Step 10 of the Gewerbeanmeldung form](/images/gewerbeanmeldung-berlin-step10.png)](/images/gewerbeanmeldung-berlin-step10.png)
 
-▲ Enter information about the business owner.
+Verify the information that you entered, then tick the two boxes.
 
-- Doctorate (*Doktorgrad*)
-- First name (*Vorname*)
-- Last name (*Nachname*)
-- Gender (*Geschlecht*)
-- Name at birth (*Geburtsname*), if it changed
-- Birth date (*Geburtstag*)
+[![Step 11 of the Gewerbeanmeldung form](/images/gewerbeanmeldung-berlin-step11.png)](/images/gewerbeanmeldung-berlin-step11.png)
 
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-20.png)](/images/berlin-gewerbeanmeldung-20.png)
+Pay the {{GEWERBEANMELDUNG_FEE|cur}}€ fee.
 
-- City where you were born (*Geburtsort*)
-- Country where you were born (*Geburtsland*)
-- Nationality (*Staatsangehörigkeit*)
-- Street name where you live (*Straße*)
-- House number (*Hausnummer*)
-- House number (*Hausnummer bis*): if your address has multiple house numbers (like "Kuglerstraße 10-14"), enter the last number here.
-- Extra address information (*Adresszusatz*)
-- Country (*Land*)
-- Post code (Postleitzahl) - for example "13127"
-- Phone number (*Telefon Nummer*) - for example "+49-1522-123456"
+[![Step 12 of the Gewerbeanmeldung form](/images/gewerbeanmeldung-berlin-step12.png)](/images/gewerbeanmeldung-berlin-step12.png)
 
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-21.png)](/images/berlin-gewerbeanmeldung-21.png)
+## After you submit the form
 
-- Fax number (*Telefax Nummer*) - for example "+49-1522-123456"
-- Email (*E-Mail*)
-- Website (*Homepage*) - for example "<https://allaboutberlin.com>"
-- *Liegt eine Erlaubnis for?*: Choose *Ja* if you need special permits for your business. For example, if you are a doctor, an architect or a civil engineer, or if you open a restaurant.
+### Wait
 
-Click *Weiter* to continue.
+After you send your application, nothing happens. Around 4 weeks later, you get an email that confirms your *Gewerbeanmeldung*. You can then download your *[[Gewerbeschein]]*. In some districts, it takes much longer.[^5]
 
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-22.png)](/images/berlin-gewerbeanmeldung-22.png)
+You are now registered for the trade tax (*[[Gewerbesteuer]]*).
 
-▲ Enter information about your residence permit. This section is for people who need a [residence permit](/glossary/Aufenthaltstitel) to start a business in Berlin.
-
-- Issued on (*Ausgestellt am*): The day you received your residence permit.
-- Issuing authority (*Ausstellende Behörde*): The embassy, consulate or *[[Ausländerbehörde]]* that gave you the residence permit.
-- Post code of the issuing authority (*Postleitzahl*)
-- City of the issuing authority (*Ort*)
-- Choose *Ja* if your residence permit has special conditions.
-- Restrictions (*Auflagen*): Enter the restrictions written on your residence permit.
-
-Click *Weiter* to continue.
-
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-23.png)](/images/berlin-gewerbeanmeldung-23.png)
-
-▲ Enter information about your business location.
-
-- Extra address information (*Adresszusatz*)
-- Phone number (Telefon Nummer)
-- Fax number (Fax Nummer)
-- Email (E-Mail)
-- Website (*Homepage*)
-
-Click *Weiter* to continue
-
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-24.png)](/images/berlin-gewerbeanmeldung-24.png)
-
-▲ Click *Ausfüllen* to fill the *Identitätserklärung* form. This only takes a minute.
-
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-25.png)](/images/berlin-gewerbeanmeldung-25.png)
-
-▲ Tick the box, and click *Weiter* to continue
-
-[![Screenshot of step to apply for a Gewerbeschein online](/images/berlin-gewerbeanmeldung-26.png)](/images/berlin-gewerbeanmeldung-26.png)
-
-▲ Click *Jetzt einreichen* to submit your case.
+**[How the trade tax works ➞](/guides/gewerbesteuer#who-must-pay-the-gewerbesteuer)**
 
 ## Other ways to register
 
-### With eMeldung
-
-You can also do the *Gewerbeanmeldung* with [eMeldung](https://www.berlin.de/ea/emeldung/emeldung/?op=emeldung-start-meldeart). It's on the same website, and it does the same thing. The form is almost the same, but you don't need a Berlin Service Account.
-
 ### With a paper form
 
-If you don't want to register your business online, you can fill the [GewA1 form](https://www.gewerbeanmeldung.de/formular-gewerbeanmeldung) and send it to [the local *Ordnungsamt*](https://service.berlin.de/dienstleistung/121921/). Registering online is faster, but there are dozens of guides that explain how to fill the paper form.
+If you don't want to register your business online, you can fill the [GewA1 form](https://www.gewerbeanmeldung.de/formular-gewerbeanmeldung) and mail it to [the local *Ordnungsamt* of your business](https://service.berlin.de/dienstleistung/121921/).[^1] Registering online is faster.
 
 **[How to send a letter ➞](/guides/mail-a-letter)**
 
@@ -239,12 +162,11 @@ You can also ask a [tax advisor](/guides/english-speaking-steuerberater-berlin) 
 
 ## What to do next
 
-You finished a big step of [starting a business in Germany](/guides/start-a-business-in-germany). You are now registered for the trade tax (*[[Gewerbesteuer]]*). You will soon get your trade certificate (*[[Gewerbeschein]]*).
+The *Gewerbeanmeldung* is not the only step to start a business. You must also [register your business at the *Finanzamt*](/guides/fragebogen-zur-steuerlichen-erfassung).
 
-The next step is to [register your business with the *Finanzamt*](/guides/fragebogen-zur-steuerlichen-erfassung).
+**[How to start a business in Germany ➞](/guides/start-a-business-in-germany)**
 
-[^0]: [hannalisahaferkamp.com \(archived\)](https://web.archive.org/web/20160710161656/https://hannalisahaferkamp.com/blog/how-to-fill-out-the-trade-license-registration-in-berlin-guide), [selbststaendigkeit.de](https://selbststaendigkeit.de/existenzgruendung/startup/buchhaltung-steuern-rechnungen/ein-kleingewerbe-anmelden-diesen-tipps/)
-[^1]: [hannalisahaferkamp.com \(archived\)](https://web.archive.org/web/20160710161656/https://hannalisahaferkamp.com/blog/how-to-fill-out-the-trade-license-registration-in-berlin-guide)
+[^0]: [Berlin.de](https://service.berlin.de/dienstleistung/121921/)
+[^1]: [gewerbe-anmelden.info](https://www.gewerbe-anmelden.info/gewerbeschein/gewerbeschein-formular-ausfuellen)
 [^2]: [Wikipedia](https://de.wikipedia.org/wiki/Nebenerwerb), [gesetze-im-internet.de](https://www.gesetze-im-internet.de/sgb_3/__138.html)
-[^3]: [gewerbe-anmelden.info](https://www.gewerbe-anmelden.info/gewerbeschein/gewerbeschein-formular-ausfuellen)
-[^4]: [Wikipedia](https://de.wikipedia.org/wiki/Reisegewerbe)
+[^5]: [Gründerplatform](https://gruenderplattform.de/unternehmen-gruenden/gewerbe-anmelden#:~:text=dauert%20in%20der%20regel%204%20wochen), [Ecovis](https://www.ecovis.com/berlin-gruendung/faq/gewerbeanmeldung/), [Berlin Senate](https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-12857.pdf)

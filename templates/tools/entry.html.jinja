@@ -10,7 +10,7 @@
 {% block content %}
 	<h1>{{ entry.title }}</h1>
 	{% include "_blocks/postMeta.html" %}
-	{% with entry=entry, showSupportLink=true %}
+	{% with entry=entry %}
 		<div class="article-body">
 			{{ entry.body|render|safe }}
 		</div>

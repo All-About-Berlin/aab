@@ -11,6 +11,7 @@ Related_guides:
     guides/german-visa-health-insurance.md
     guides/become-a-freelancer-in-germany.md
     guides/cost-of-living.md
+    guides/taxes.md
     tools/tax-calculator.md
 ---
 

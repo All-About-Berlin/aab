@@ -10,11 +10,13 @@ Related_guides:
     guides/website-freiberuf-or-gewerbe.md
     guides/start-a-business-in-germany.md
     guides/become-a-freelancer-in-germany.md
-    guides/how-to-get-a-german-freelance-visa.md
+    guides/freelance-visa.md
     guides/fragebogen-zur-steuerlichen-erfassung.md
     guides/website-compliance-germany.md
 ---
 
 You get a trade licence (*Gewerbeschein*) when you register your business at the trade office (*Gewerbeamt*). You usually need a *Gewerbeschein* to run a business.
+
+[![Example Gewerbeschein](/images/gewerbeschein.png)](/images/gewerbeschein.png "Example Gewerbeschein")
 
 **[How to get a Gewerbeschein in Berlin ➞](/guides/gewerbeschein)**

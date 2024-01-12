@@ -37,7 +37,7 @@ If you *currently* get *ALG I*, it can affect your [permanent residence](/glossa
 
 If you got *ALG I* before, it does not affect your [permanent residence](/glossary/Niederlassungserlaubnis) or citizenship application.[^32]
 
-You can rarely get **[[Bürgergeld]]** with a residence permit. If your *[Zusatzblatt](/glossary/Zusatzblatt%20(residence%20permit))* says "Erlischt mit Bezug von Leistungen nach dem SGB II oder ...", you can't get *Bürgergeld*.[^33]
+You can rarely get **[[Bürgergeld]]** with a residence permit. If your *[Zusatzblatt](/glossary/Zusatzblatt%20%28residence%20permit%29)* says "Erlischt mit Bezug von Leistungen nach dem SGB II oder ...", you can't get *Bürgergeld*.[^33]
 
 ## When do I get unemployment benefits?
 
@@ -76,7 +76,7 @@ You can get less unemployment benefits because of a *[Sperrzeit](#the-sperrzeit)
 
 ### Register as a job seeker
 
-Register as seeking employment at the *[[Agentur für Arbeit]]*. You can register as a job seeker [online](https://www.arbeitsagentur.de/arbeitslos-melden/), [by phone](tel:+498004555500) or in person at the *Jobcenter*. To register online, you need a valid electronic ID.[^24]
+Register as seeking employment at the *[[Agentur für Arbeit]]*. You can register as a job seeker [online](https://www.arbeitsagentur.de/arbeitslos-melden/), [by phone](tel:+498004555500) or in person at the *Jobcenter*. To register online, you need a valid electronic ID.[^24] If you have a [residence permit](/glossary/Aufenthaltstitel), and you did not [activate the eID function](/guides/eid-online-ausweisfunktion), you can't register online.
 
 **[Register as a job seeker](https://www.arbeitsagentur.de/arbeitslos-melden/)** - Agentur für Arbeit
 

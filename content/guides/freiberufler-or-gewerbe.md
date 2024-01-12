@@ -12,7 +12,7 @@ In Germany, there are two types of self-employed people:
 - **Tradespeople** (*Gewerbetreibende*)  
     All other self-employed people. Their business is called a *Gewerbe*.
 
-This guide explains the differences between freelancers and tradespeople. You must understand this to [start a business](/guides/start-a-business-in-germany) or [apply for a freelance visa](/guides/how-to-get-a-german-freelance-visa).
+This guide explains the differences between freelancers and tradespeople. You must understand this to [start a business](/guides/start-a-business-in-germany) or [apply for a freelance visa](/guides/freelance-visa).
 
 {% include "_blocks/tableOfContents.html" %}
 
@@ -45,16 +45,16 @@ If you register a *Gewerbe*, you must...
 - **Get a trade licence** (*[[Gewerbeschein]]*)
 - **Pay the trade tax** (*[[Gewerbesteuer]]*)
 - **Get listed in the trade register** (*[[Handelsregister]]*)  
-    This is optional for small businesses (*[[Kleinunternehmer]]*)
+    If you are a sole proprietor (*Einzelunternehmer*), this is rarely required.
 - **Use double entry bookkeeping**  
-    This is optional for small businesses (*[[Kleinunternehmer]]*)[^6]
+    If you are a sole proprietor (*Einzelunternehmer*), this is rarely required.
 
-*Freiberufler* don't need to do any of this.
+If you are a *Freiberufler*, you don't need to do any of this. It saves you time and money.
 
 Your *Freiberufler* or *Gewerbetreibender* status also affects...
 
-- **Your [freelance visa](/glossary/Freelance%20visa) application**  
-    The [required documents](/guides/how-to-get-a-german-freelance-visa#required-documents) are different for *Freiberufler* and *Gewerbetreibende*. You get a different kind of freelance visa, but it makes no difference to you.[^1]
+- **Your [residence permit](/glossary/Aufenthaltstitel)**  
+    When you apply for a [freelance visa](/glossary/Freelance%20visa) or [permanent residence](/glossary/Niederlassungserlaubnis), the required documents for *Freiberufler* and *Gewerbetreibende* are different.[^1]
 - **The help you get**  
     The [[IHK]] helps *Gewerbetreibende* for free. They do not help *Freiberufler*.
 
@@ -68,21 +68,21 @@ It does not affect...
 
 If you are a *Gewerbetreibender*, you must register your business at the *Gewerbeamt*. This is called the *[[Gewerbeanmeldung]]*.
 
-This is how you get a trade certificate (*Gewerbeschein*). Your employer might ask for it. The *[[Ausländerbehörde]]* asks for it when you [apply for a freelance visa](/guides/how-to-get-a-german-freelance-visa).
+This is how you get a trade certificate (*[[Gewerbeschein]]*). Your employer might ask for it. The *[[Ausländerbehörde]]* asks for it when you [apply for a freelance visa](/guides/freelance-visa).
 
-In Berlin, you can [do your *Gewerbeanmeldung* online](https://service.berlin.de/dienstleistung/121921/en/). It costs 15€ to 31€.
+**[How to get a Gewerbeschein ➞](/guides/gewerbeschein)**
 
 ### Trade tax (Gewerbesteuer)
 
-If you are a *Gewerbetreibender*, and your [profit](/glossary/Gewinn) is over {{GEWERBESTEUER_FREIBETRAG|cur}}€ per year, you must pay the trade tax (*[[Gewerbesteuer]]*). You register for trade tax when you do the *Gewerbeanmeldung*.
+If you are a *Gewerbetreibender*, and your [profit](/glossary/Gewinn) is over {{GEWERBESTEUER_FREIBETRAG|cur}}€ per year, you must pay the trade tax (*[[Gewerbesteuer]]*). You register for trade tax when you do the *[[Gewerbeanmeldung]]*.
 
 **[What is the trade tax? ➞](/guides/gewerbesteuer)**
 
 ### Trade register (Handelsregister)
 
-If you are a *Gewerbetreibender*, you must list your business in the German trade register (*[[Handelsregister]]*).[^4]
+Some *Gewerbe* must be listed in the German trade register (*[[Handelsregister]]*). This is a lot of work, and you should avoid it if you can.
 
-Small businesses (*[[Kleinunternehmer]]*) don't need to be listed.[^6] You can *choose* to be listed, but it's rarely worth it.[^13]
+**[Who needs a Handelsregister entry? ➞](/guides/handelsregisternummer-germany#who-needs-a-handelsregister-entry)**
 
 You can request an entry in the *Handelsregister* when you fill the *[Fragebogen zur steuerlichen Erfassung](/guides/fragebogen-zur-steuerlichen-erfassung)*.
 
@@ -92,12 +92,11 @@ As a *Gewerbetreibender*, you must use double entry bookkeeping if...[^12]
 
 - your [profit](/glossary/Gewinn) is over {{DOUBLE_ENTRY_MIN_INCOME|cur}}€ per year
 - **or** your [revenue](/glossary/Umsatz) is over {{DOUBLE_ENTRY_MIN_REVENUE|cur}}€ per year
+- **or** you are listed in the trade register (*[[Handelsregister]]*)
 
-Freelancers don't need to use double entry bookkeeping.
+*Freiberufler* don't need to use double entry bookkeeping.
 
 Double entry bookkeeping is more work for you. You can be exempted from double entry bookkeeping if you prove that it causes your business "undue hardship".[^15] If you think this applies to you, [ask a tax advisor](/guides/english-speaking-steuerberater-berlin) about it.
-
-**[What is double entry bookkeeping?](https://basicaccountinghelp.com/double-entry-bookkeeping.html)** - basicaccountinghelp.com
 
 ## How to choose?
 
@@ -111,15 +110,12 @@ Sometimes, it's not clear. If you are not sure, [ask for help](/guides/questions
 
 **[Where to ask business questions ➞](/guides/questions-about-berlin#business-questions)**
 
+[^1]: [§21 Abs. 1, 2a or 5 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__21.html)
 [^3]: [ihk.de](https://www.ihk.de/schwerin/existenzgruendung/existenzgruendung/tipps-rund-um-die-gruendung/selbststaendigkeit-als-gewerbetreibender-oder-freiberufler-3032726#:~:text=zu%20den%20%22dienstleistungen%20hoherer%20art%22)
-[^4]: [ihk.de](https://www.ihk.de/stuttgart/fuer-unternehmen/recht-und-steuern/gesellschaftsrecht-unternehmensformen/handelsregistereintragung-677254#titleInText1)
-[^6]: [sevdesk.de](https://sevdesk.de/lexikon/eintragung-handelsregister/), [ihk.de](https://www.ihk.de/stuttgart/fuer-unternehmen/recht-und-steuern/gesellschaftsrecht-unternehmensformen/handelsregistereintragung-677254#titleInText1)
 [^12]: [fuer-gruender.de](https://www.fuer-gruender.de/wissen/unternehmen-gruenden/finanzen/buchfuehrung/bilanzierung/)
-[^13]: [selbststaendig-machen.net](https://www.selbststaendig-machen.net/handelsregister-lohnt-der-freiwillige-eintrag/)
 [^14]: [§18 EStG](https://www.gesetze-im-internet.de/estg/__18.html), [Wikipedia](https://de.wikipedia.org/wiki/Freier_Beruf_\(Deutschland\)), [IHK Hamburg](https://www.ihk.de/hamburg/produktmarken/beratung-service/recht-und-steuern/steuerrecht/real-kommunale-steuern/abgrenzung-gewerbebetrieb-freie-berufe-1157144#titleInText8)
 [^15]: §148 AO in [English](https://www.gesetze-im-internet.de/ao_1977/__148.html) and [German](https://www.gesetze-im-internet.de/ao_1977/__148.html)
 [^16]: [kultur-kreativ-wirtschaft.de](https://www.kultur-kreativ-wirtschaft.de/KUK/Redaktion/DE/Standardartikel/freier-beruf-gewerbe.html#:~:text=die%20entscheidung%2C%20ob%20ihre%20tatigkeit%20freiberuflich%20oder%20gewerblich%20ist)
 [^17]: [allaboutberlin.com](/guides/website-freiberuf-or-gewerbe)
 [^18]: [ihk.de](https://www.ihk.de/schwerin/existenzgruendung/existenzgruendung/tipps-rund-um-die-gruendung/selbststaendigkeit-als-gewerbetreibender-oder-freiberufler-3032726), [selbststaendig.de](https://www.selbststaendig.de/geschaeftsideen/paketdienst), [uber.com](https://www.uber.com/de/de/drive/requirements/), [haufe.de](https://www.haufe.de/finance/haufe-finance-office-premium/fotografische-taetigkeit-freiberuflich-oder-gewerblich_idesk_PI20354_HI20924.html), [gewerbeanmeldung.de](https://www.gewerbeanmeldung.de/gewerbe-anmelden/fotograf#:~:text=grundlagen%20zur%20selbststandigen%20tatigkeit%20als%20fotograf%3A%20freiberuflich%20oder%20gewerblich%3F)
 [^21]: This happened to All About Berlin
-[^1]: [§21 Abs. 1, 2a or 5 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__21.html)

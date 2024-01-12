@@ -23,15 +23,15 @@ You also need a tax ID to [start a business](/guides/start-a-business-in-germany
 
 ### How to get your tax ID
 
-You get a tax ID when you [register your address](/glossary/Anmeldung) for the first time. 2 to 4 weeks later, you get a letter from the *Bundeszentralamt für Steuern*. Your tax ID is in the top right corner.
+You get a tax ID when you [register your address](/glossary/Anmeldung) for the first time. 2 to 6 weeks later, you get a letter from the *Bundeszentralamt für Steuern*. Your tax ID is in the top right corner.
 
 [![Bundeszentralamt Für Steuern Zuteilung Identifikationsnummer](/images/tax-id-document-bzst.jpg)](/images/tax-id-document-bzst.jpg)
 
 **If you registered your address before**, you already have a tax ID. You just need to [find it](/guides/german-tax-id-steuernummer#where-to-find-your-tax-id).
 
-**If you can't register your address**, fill [this form](/docs/010250-antrag-auf-vergabe-einer-steuerlichen-id). You will get your tax ID by post 2 to 4 weeks later.
+**If you can't register your address**, fill [this form](/docs/010250-antrag-auf-vergabe-einer-steuerlichen-id). You will get your tax ID by post 2 to 6 weeks later.
 
-There is no way to get your tax ID faster. You can't go to the *[[Finanzamt]]* just after *[[Anmeldung]]*. You must wait for the letter.
+There is no way to get your tax ID faster. You can't go to the *[[Finanzamt]]* just after your *[[Anmeldung]]*. You must wait for the letter. If you don't get a letter after 6 weeks, go to your [local Finanzamt](https://service.berlin.de/standorte/finanzaemter/) with your passport, and ask for your tax ID.[^2] You don't need an appointment.
 
 ### Where to find your tax ID
 
@@ -41,7 +41,6 @@ There is no way to get your tax ID faster. You can't go to the *[[Finanzamt]]* j
 - On your pay slip (*[[Gehaltsabrechnung]]*) as "Steuer ID" - [example](/images/Gehaltsabrechnung-muster-steuerID.png)
 - On your salary tax statement (*[[Lohnsteuerbescheinigung]]*) as "Identifikationsnummer" - [example](/images/Lohnsteuerbescheinigung-SteuerID.png)
 - On your income tax report (*[[Steuerbescheid]]*) as "IdNr" - [example](/images/Einkommensteuerbescheid-SteuerID-Steuernummer.png)
-
 - On your *Entgeltabrechnung*
 - Your employer and your [tax advisor](/glossary/Steuerberater) know your tax ID. Ask them.
 

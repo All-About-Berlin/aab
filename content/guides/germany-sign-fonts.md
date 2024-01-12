@@ -1,7 +1,7 @@
 ---
 Title: What fonts do German signs use?
 Short_title: Fonts used on German signs
-Description: A list of typefaces that are commonly used in Germany. It includes fonts used by the BVG, the Deutsche Bahn and other German organisations.
+Description: A list of common typefaces in Germany. It includes fonts used by the BVG, the Deutsche Bahn and other German organisations.
 Date_created: 2020-01-20
 ---
 
@@ -11,11 +11,7 @@ This guide lists fonts that are used in Germany.
 
 ## Official font for Berlin
 
-**[Berlin Type](https://www.hvdfonts.com/custom-cases/berlin-type)** is the font used on official posters from the city of Berlin. It is free to use.
-
-## "The German font"
-
-When people talk about "the German font", they're often thinking about Fraktur. While it's often associated with National Socialism, it was declared "ungerman" by Adolf Hitler himself in 1941.[^0] **Tannenberg** was commonly used from 1935 to 1941.
+**[Berlin Type](https://www.hvdfonts.com/custom-cases/berlin-type)** is the official font of Berlin since 2021. It's free to use.
 
 ## BVG font
 
@@ -23,19 +19,19 @@ The BVG uses the **[FF Transit](https://www.fontshop.com/families/ff-transit)** 
 
 ## Deutsche Bahn fonts
 
-The [[Deutsche Bahn]] uses its own font family: **DB Type**. They use DIN 1451-4 for technical signs on the trains themselves since the 1920s. It's a replacement for **Musterzeichnung IV 44**[^1]).
+The [[Deutsche Bahn]] uses **DB Type** for signage. Train markings use **DIN 1451-4** since the 1920s. It replaced **Musterzeichnung IV 44**[^1]).
 
-In the former East Germany, you will still find signs that use **Erbar Grotesk**. **Helvetica** was also [briefly used](http://www.ralf-bueker.de/Bahnhofs_o._Stationsschilder_Epoche_V_weisse_Grundflaeche,_blau_umrandet,_Namen_in_schwarzer_Schrift.htm).
-
-The fonts used by the Deutsche Bahn are well-documented, thanks the work of countless model train enthusiasts.
+In the former East Germany, you still see signs in **Erbar Grotesk**. **Helvetica** was also [briefly used](http://www.ralf-bueker.de/Bahnhofs_o._Stationsschilder_Epoche_V_weisse_Grundflaeche,_blau_umrandet,_Namen_in_schwarzer_Schrift.htm).
 
 ## German road sign font
 
-German road signs use **DIN 1451**, which is available in 3 variants, *Engschrift,* *Mittelschrift* and *Breitschrift*. This standard font was introduced in 1931. The Deutsche Post also uses DIN 1451.
+German road signs use **DIN 1451** since 1931. It's available in 3 variants: narrow (*Engschrift*), normal (*Mittelschrift*) and wide (*Breitschrift*).
+
+The Deutsche Post also uses DIN 1451.
 
 ## German licence plate font
 
-German licence plates use **FE-Schrift** (*Fälschungserschwerende Schrift*) since 1995,[^2] which made plate numbers too easy to alter.
+German licence plates use **FE-Schrift** (*Fälschungserschwerende Schrift*)since 1995.[^2] It makes licence plates harder to alter.
 
 ## Berlin and East German fonts
 
@@ -43,9 +39,15 @@ A large number of East German signs were made by [DEWAG](https://de.wikipedia.or
 
 There are several digital releases of Erbar: [URW Erbar](https://www.fonts.com/de/font/urw-type-foundry/erbar), [Dunbar](https://cjtype.com/dunbar/), and Peter Wiegel's [Osterbar](http://www.peter-wiegel.de/Osterbar.html).
 
+## "The German font"
+
+When people talk about "the German font", they often think about Fraktur fonts. Use such fonts cautiously; they are old-fashioned, and sometimes associated with National Socialism.
+
+**Tannenberg** was commonly used from 1935 to 1941, then the Nazis banned them in favour of modern typefaces.[^0]
+
 ## Download links
 
-Pieter Wiegel recreated many historical fonts and published them [on his website](http://www.peter-wiegel.de/Fonts/index.html). They can be used without restrictions for commercial purposes.[^3]
+Pieter Wiegel recreated many historical typefaces and published them [on his website](http://www.peter-wiegel.de/Fonts/index.html). You can use them without restrictions.[^3]
 
 - [Musterzeichnung IV 44](http://www.peter-wiegel.de/Preussische.html)
 - [Berliner Wand](http://www.peter-wiegel.de/BerlinerWand.html)

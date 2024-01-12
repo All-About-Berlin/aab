@@ -5,13 +5,13 @@ Description: This is how you fill the Fragebogen zur steuerlichen Erfassung and 
 Date_created: 2018-03-14
 ---
 
-When you [start a business in Germany](/guides/start-a-business-in-germany), you must fill the *Fragebogen zur steuerlichen Erfassung*. This is how you register your business with the *[[Finanzamt]]*. All new businesses must do this.
+When you [start a business in Germany](/guides/start-a-business-in-germany), you must fill the *Fragebogen zur steuerlichen Erfassung*. This is how you register your business with the *[[Finanzamt]]*. All businesses and self-employed people must do this.
 
 When you fill this form, you get:
 
 - a tax number (*[[Steuernummer]]*)
-- a VAT number (*[[Umsatzsteuernummer]]*)
-- an entry in the trade register (*[[Handelsregister]]*)
+- a VAT number (*[[Umsatzsteuernummer]]*), if you charge VAT
+- an entry in the trade register (*[[Handelsregister]]*), [if you need one](/guides/handelsregisternummer-germany#who-needs-a-handelsregister-entry)
 
 Since 2021, there is no paper form. You must fill this form online.[^0]
 
@@ -24,9 +24,9 @@ There are 3 ways to register your business with the *[[Finanzamt]]*:
 - **Online with [[ELSTER]]** (in German)  
     This is the official way. [Create an ELSTER account](/guides/elster-account) and fill the *[[Fragebogen zur steuerlichen Erfassung]]*. This is what I describe in this guide. It's a bit complicated, and it's all in German, but you can do it yourself. It's free.
 - **Online with [Sorted](/out/sorted-fragebogen)** (in English)  
-    Sorted built a [tool to register your business](/out/sorted-fragebogen). It's faster and easier than the official form, and it's in English. I tried it myself. It's free.
+    Sorted built a [tool to register your business](/out/sorted-fragebogen). It's faster and easier than the official form, and it's in English. I tried it myself, and I think it's great. It's free.
 - **With a [tax advisor](/guides/english-speaking-steuerberater-berlin)**  
-    Your tax advisor (*[[Steuerberater]]*) can register your business for you. [My tax advisor](https://stb-goeydeniz.de/english-tax-advisor-berlin/) did it in 5 minutes. This is the safest and easiest way, but it's hard to find a tax advisor. Use my [list of English-speaking tax advisors](/guides/english-speaking-steuerberater-berlin).
+    Your tax advisor (*[[Steuerberater]]*) can register your business for you. My tax advisor did it in 5 minutes. This is the safest and easiest way, but it's hard to find a tax advisor. Use my [list of English-speaking tax advisors](/guides/english-speaking-steuerberater-berlin).
 
 [![Screenshot of Sorted's Fragenbogen zur steuerlichen Erfassung tool](/images/sorted-fragebogen-steuerlichen-erfassung-english.png "Sorted's form is easier to fill than the official form. It's 100% in English.")](/out/sorted-fragebogen)
 
@@ -38,7 +38,7 @@ You might need a [residence permit](/glossary/Aufenthaltstitel) to live in Germa
 
 **[Do you need a residence permit? ➞](/guides/residence-permit)**
 
-If you [apply for the German freelance visa](/guides/how-to-get-a-german-freelance-visa), you can register your business after you apply for the visa. When you [renew your freelance visa](/guides/renew-german-freelance-visa), your business should already be registered.
+If you [apply for the German freelance visa](/guides/freelance-visa), you can register your business after you apply for the visa. When you [renew your freelance visa](/guides/renew-german-freelance-visa), your business should already be registered.
 
 ### Are you a Freiberufler or a Gewerbe?
 
@@ -298,14 +298,12 @@ If you have multiple business locations, add them here.
 
 ### Section 10: Handelsregistereintrag
 
-If you already have an entry in the trade register (*[[Handelsregister]]*), fill this section. If this is a new business, you can skip this section. For more information about the trade register, read [this guide](/guides/handelsregisternummer-germany).
+Some businesses must be listed in the trade register (*[[Handelsregister]]*).[^18] If it's not required for your business, don't do it. A trade register entry requires a lot of extra work.
+
+**[Who needs a Handelsregister entry? ➞](/guides/handelsregisternummer-germany#who-needs-a-handelsregister-entry)**
 
 - **Eine Eintragung ist beabsichtigt** - Registration is intended  
-    Select "Ja" if you want an entry in the trade register.
-    - Freelancers (*[[Freiberufler]]*) don't need to be in the *Handelsregister*.[^2]
-    - Small businesses (*[[Kleinunternehmer]]*) don't need to be in the *Handelsregister*,[^2] but they can choose to be.
-    - Being in the *Handelsregister* forces you to use double entry bookkeeping.[^8] This can make things really complicated for a small business or freelancer.
-    - If you are a *Gesellschaft bürgerlichen Rechts*, a company constituted under civil law, you don't need to be listed in the *Handelsregister*.[^9]
+    Select "Ja" if you want an entry in the trade register. [If you don't need one](/guides/handelsregisternummer-germany#who-needs-a-handelsregister-entry), you probably should not select "Ja".
 - **Eine Eintragung ist erfolgt** - Registration is already done  
     Choose "Ja" if you already have an entry in the trade register. If this is a new business, choose "Nein".
 - **Der Handelsregistereintrag besteht seit** - The trade register entry exists since...  
@@ -315,7 +313,7 @@ If you already have an entry in the trade register (*[[Handelsregister]]*), fill
 - **Antrag wurde gestellt am** - Application was made on...  
     If you already applied for a trade register entry, but you have not received it, enter the date of your application.
 - **Ort des zuständigen Registergerichts** - Location of the registry court  
-    If you applied for a trade register entry, or if you already have a trade register entry, enter the location of the *Registergerichts* where you have an entry.
+    If you applied for a trade register entry, or if you already have a trade register entry, enter the location of the *Registergericht* where you have an entry.
 - **Handelsregister Bezeichnung** - Label of the trade register  
     If you have a trade register entry, select the first letters of your trade register number.
 - **Handelsregister Nummer** - Trade register number  
@@ -625,10 +623,8 @@ Some banks like [Kontist](/out/kontist), [Holvi](/out/holvi) and [Qonto](/out/qo
 [^3]: [andrewcross.eu (archived)](https://web.archive.org/web/20300000000000/https://andrewcross.eu/vat-freelancers-germany/)
 [^4]: [haufe.de](https://www.haufe.de/finance/finance-office-professional/kleinunternehmer-4-optionsmoeglichkeit_idesk_PI11525_HI1342182.html)
 [^5]: [praxistipps.chip.de](https://praxistipps.chip.de/adresszusatz-was-ist-das_46872)
-[^6]: [tiahardyrobinson.medium.com](https://tiahardyrobinson.medium.com/how-to-do-the-fragebogen-zur-steuerlichen-erfassung-in-english-2021-online-edition-for-4963c51292ad)
+[^6]: [tiahardyrobinson.medium.com](https://tiahardyrobinson.medium.com/how-to-do-the-fragebogen-zur-steuerlichen-erfassung-in-english-2021-online-edition-for-4963c51292ad), [tagesspiegel.de](https://www.tagesspiegel.de/wirtschaft/funf-wochen-warten-auf-die-steuernummer-4419565.html)
 [^7]: [formulare-bfinv.de](https://www.formulare-bfinv.de/ffw/resources/9858611CB50017037213/form/Ausfuellhilfe_2016.pdf)
-[^8]: [wilhelm-data.de](http://www.wilhelm-data.de/cm/docs/Steuererfassung.pdf)
-[^9]: [sumup.com](https://www.sumup.com/de-de/rechnungen/alles-ueber-rechnungen/brauche-ich-einen-handelsregistereintrag/), [dict.cc](https://www.dict.cc/?s=Gesellschaft+b%C3%BCrgerlichen+Rechts)
 [^10]: [berlin.de (archived)](https://web.archive.org/web/20160502035209/https://berlin.de/sen/finanzen/dokumentendownload/steuern/daten-und-fakten/betriebseroeffnung-betriebseinstellung/ausf__llhilfe_selbst__ndige_t__tigkeit_beteiligung_persges.pdf)
 [^11]: [mutebuttonblog.wordpress.com](https://mutebuttonblog.wordpress.com/2012/02/21/kleinunternehmerregelung-in-germany-to-apply-or-not-to-apply-that-is-the-question/)
 [^12]: [economywatch.com](https://www.economywatch.com/)
@@ -637,4 +633,5 @@ Some banks like [Kontist](/out/kontist), [Holvi](/out/holvi) and [Qonto](/out/qo
 [^15]: [steuerlinks.de](http://web.archive.org/web/20210921150926/http://www.steuerlinks.de/richtlinie/ustae/abs3a.12..html)
 [^16]: [iamexpat.de](https://www.iamexpat.de/expat-info/taxation-germany/elster-german-online-tax-office)
 [^17]: [firma.de](https://www.firma.de/firmengruendung/wer-muss-kein-gewerbe-anmelden/#:~:text=In%20Deutschland%20gilt%20die%20Gewerbefreiheit,und%20in%20eigener%20Verantwortung%20arbeitet.)
+[^18]: Suat Göydeniz, tax advisor (December 2023)
 [^19]: Seamus Wolf on [LinkedIn](https://www.linkedin.com/posts/nicolasbouliane_how-being-a-kleinunternehmer-works-activity-7040950109177589761-kH44/)
