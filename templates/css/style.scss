@@ -234,6 +234,7 @@ $width-main-column: 860px;
 	--c-text-link-visited: #61a;
 	--c-text-selection: #fd6;
 	--c-bg-input: var(--c-bg-page);
+	--c-bg-input-error: #da513d22;
 	--c-bg-website: #f9f9f9;
 	--c-bg-page: #fff;
 	--c-bg-widget: #00000009;
@@ -298,6 +299,7 @@ $width-main-column: 860px;
 		--c-bg-widget: #ffffff0c;
 		--c-bg-widget-opaque: #2c2c2c;
 		--c-bg-image: var(--c-bg-widget);
+		--c-bg-input-error: #9f3a2b22;
 		--c-border-box: #fff3;
 		--c-border-box-opaque: #4f4f4f;
 		--c-border-input: #fff5;
@@ -1716,6 +1718,7 @@ input[type=range] {
 }
 .show-errors :invalid, .show-errors:invalid, .error{
 	border-color: var(--c-highlight)!important;
+	background-color: var(--c-bg-input-error);
 	box-shadow: var(--shadow-s), 0 0 0 1px var(--c-highlight)!important;
 }
 
@@ -2777,12 +2780,13 @@ details{
 			gap: 0 var(--m);
 			grid-template-areas:
 				"icon title actions"
+				". description description"
 				". tags tags"
 				". costs costs";
 
 			@include only-phone{
 				grid-template-columns: 1fr calc(var(--w-bank-logo));
-				grid-template-areas: "title icon" "actions icon" "tags tags" "costs costs";
+				grid-template-areas: "title icon" "description description" "actions icon" "tags tags" "costs costs";
 			}
 		}
 
@@ -2798,6 +2802,11 @@ details{
 			margin:0;
 			grid-area: title;
 			align-self:center;
+		}
+
+		.description{
+			grid-area: description;
+			margin: var(--s) 0 0;
 		}
 
 		.actions{
@@ -2856,7 +2865,7 @@ details{
 		box-shadow: none;
 		padding: var(--xs) var(--s);
 		white-space: nowrap;
-		&.active{
+		&.active:not(.error){
 			border-color: var(--c-border-hint);
 			background: var(--c-bg-widget);
 		}
@@ -2871,7 +2880,6 @@ details{
 
 @include only-print{
 	:root{
-		--c-highlight: #da513d;
 		--c-text: #000;
 		--c-text-light: #000;
 		--c-text-placeholder: transparent;

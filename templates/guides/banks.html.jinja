@@ -2,7 +2,6 @@
 {% set entry = entries['guides/first-bank-account-in-germany.md'] %} 
 
 {% block main %}
-	{% set id = 'todo' %}
 	<main aria-label="Main page">
 		<article class="section">
 			<h1>{{ entry.title }}</h1>
@@ -22,25 +21,25 @@
 								<div class="form-group">
 									<span class="label">Bank country</span>
 									<div class="input-group tags">
-										<tag :tag="t" v-for="t in tagGroups.countries" :key="t.name"></tag>
+										<tag :tag="t" v-for="t in tagGroups.countries.tags" :key="t.name"></tag>
 									</div>
 								</div>
 								<div class="form-group">
 									<span class="label">Language</span>
 									<div class="input-group tags">
-										<tag :tag="t" v-for="t in tagGroups.languages" :key="t.name"></tag>
+										<tag :tag="t" v-for="t in tagGroups.languages.tags" :key="t.name"></tag>
 									</div>
 								</div>
 								<div class="form-group">
 									<span class="label">Payment methods</span>
 									<div class="input-group tags">
-										<tag :tag="t" v-for="t in tagGroups.paymentMethods" :key="t.name"></tag>
+										<tag :tag="t" v-for="t in tagGroups.paymentMethods.tags" :key="t.name"></tag>
 									</div>
 								</div>
 								<div class="form-group">
 									<span class="label">Features</span>
 									<div class="input-group tags">
-										<tag :tag="t" v-for="t in tagGroups.features" :key="t.name"></tag>
+										<tag :tag="t" v-for="t in tagGroups.features.tags" :key="t.name"></tag>
 									</div>
 								</div>
 								<div class="form-group">
@@ -55,24 +54,25 @@
 									</div>
 								</div>
 								<div class="form-group">
-									<span class="label">Missing documents</span>
+									<span class="label">Bank requirements</span>
 									<div class="input-group tags">
-										<tag :tag="t" v-for="t in tagGroups.requirements" :key="t.name"></tag>
+										<tag :tag="t" v-for="t in tagGroups.requirements.tags" :key="t.name"></tag>
 									</div>
 								</div>
 								<hr>
 							</template>
 						</div>
 						<ul class="bank-options">
-							<li class="account" v-for="account in sortedAccounts" :key="account.bank.name + account.name">
+							<li class="account" :class="{'hidden': account.score < 0}" v-for="account in sortedAccounts" :key="account.bank.name + account.name">
 								<img :src="logo(account.bank)">
 								<h3>
 									<a :href="account.url" target="_blank">{{ account.bank.name }} {{ account.name }}</a>
 								</h3>
+								<p v-if="account.description" v-html="account.description" class="description"></p>
 								<div class="actions">
-									<a v-if="!account.hidden && !account.saved" @click="toggleSave(account)">{% endraw %}{% include '_css/icons/star.svg' %}{% raw %} Save</a>
-									<a v-if="!account.hidden && account.saved" @click="toggleSave(account)">{% endraw %}{% include '_css/icons/star-filled.svg' %}{% raw %} Saved</a>
-									<a v-if="!account.saved" @click="toggleHide(account)">{{ account.hidden ? 'Unhide' : 'Hide' }}</a>
+									<a v-if="!account.hidden && !account.saved" @click="account.saved = !account.saved">{% endraw %}{% include '_css/icons/star.svg' %}{% raw %} Save</a>
+									<a v-if="!account.hidden && account.saved" @click="account.saved = !account.saved">{% endraw %}{% include '_css/icons/star-filled.svg' %}{% raw %} Saved</a>
+									<a v-if="!account.saved" @click="account.hidden = !account.hidden">{{ account.hidden ? 'Unhide' : 'Hide' }}</a>
 								</div>
 								<div class="tags">
 									<tag :tag="tag" v-for="tag in account.missingTags" :key="tag.name" error></tag>
@@ -133,13 +133,6 @@
 {% include '_js/vue/uniqueIdsMixin.js' %}
 
 {% js %}{% raw %}
-const languageMap = {
-	EN: 'English',
-	DE: 'German',
-	FR: 'French',
-	ES: 'Spanish',
-	IT: 'Italian',
-};
 
 const banks = [
 	{
@@ -148,9 +141,6 @@ const banks = [
 			'Germany',
 			'German',
 			'English',
-			'French',
-			'Spanish',
-			'Italian',
 			'Girocard',
 			'Apple Pay',
 			'Google Pay',
@@ -189,6 +179,7 @@ const banks = [
 			'French',
 			'Spanish',
 			'Italian',
+			'No Anmeldung',
 		],
 		url: '/out/n26-plans',
 		accounts: [
@@ -289,21 +280,13 @@ const tags = {
 		error: 'No MasterCard',
 		group: 'paymentMethods',
 	},
-	'Anmeldung': {
+	'No Anmeldung': {
 		error: 'Anmeldung needed',
 		group: 'requirements',
 		default: true,
 	},
-	'Residence permit': {
-		error: 'Residence permit',
-		group: 'requirements',
-	},
-	'Permanent residence': {
-		error: 'Permanent residence',
-		group: 'requirements',
-	},
-	'EU citizenship': {
-		error: 'EU citizenship',
+	'No residence permit': {
+		error: 'Residence permit needed',
 		group: 'requirements',
 	},
 	'No monthly fee': {
@@ -330,10 +313,36 @@ const tags = {
 	},
 };
 
+const tagGroups = {
+	countries: {
+		order: 0,
+		icon: 'location',
+	},
+	features: {
+		order: 1,
+	},
+	languages: {
+		order: 2,
+	},
+	paymentMethods: {
+		order: 3,
+		icon: '',
+	},
+	requirements: {
+		order: 4,
+		icon: '',
+	},
+};
+
 Object.entries(tags).forEach(([name, tag]) => {
 	tag.name = name;
 	tag.default = tag.default || false;
 	tag.selected = tag.selected || false;
+	tag.group = tagGroups[tag.group];
+});
+
+Object.entries(tagGroups).forEach(([name, tagGroup]) => {
+	tagGroup.tags = Object.values(tags).filter(t => t.group === tagGroup);
 });
 
 const accounts = banks.reduce((allAccounts, bank) => {
@@ -346,29 +355,24 @@ const accounts = banks.reduce((allAccounts, bank) => {
 		// Replace tag names with tag objects
 		account.tags = account.tags.map(t => tags[t]);
 
+		// Set UI attributes
+		account.saved = false;
+		account.hidden = false;
+
 		allAccounts.push(account);
 		return allAccounts;
 	}, allAccounts);
 }, []);
-
-const tagGroups = {
-	'languages': Object.keys(tags).filter(t => tags[t].group == 'languages').map(t => tags[t]),
-	'countries': Object.keys(tags).filter(t => tags[t].group == 'countries').map(t => tags[t]),
-	'paymentMethods': Object.keys(tags).filter(t => tags[t].group == 'paymentMethods').map(t => tags[t]),
-	'requirements': Object.keys(tags).filter(t => tags[t].group == 'requirements').map(t => tags[t]),
-	'features': Object.keys(tags).filter(t => tags[t].group == 'features').map(t => tags[t]),
-};
 
 Vue.component('tag', {
 	props: {
 		tag: Object,
 		error: Boolean,
 		list: Array,
-		icon: String,
 	},
 	template: `
 	<button :class="{'active': tag.selected, 'error': error}" @click="tag.selected = !tag.selected">
-		<i class="icon" :class="icon" v-if="icon"></i>
+		<i class="icon" :class="tag.group.icon" v-if="tag.group.icon"></i>
 		{{ error ? (tag.error || tag.name) : tag.name }}
 	</button>`,
 });
@@ -392,22 +396,29 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 		// Flatten the list of banks into a list of accounts
 		sortedAccounts(){
 			return this.accounts.map((account) => {
-				let multiplier = 0;
-				let score = 1;
-				multiplier -= account.hidden ? 1000 : 0;
-				multiplier += account.saved ? 1000 : 0;
-
 				account.missingTags = this.selectedTags.filter(t => !account.tags.includes(t));
 				account.tags = account.tags.sort((t1, t2) => {
 					if(t1.selected !== t2.selected) {
 						return t2.selected > t1.selected;
 					}
-					return t1.group > t2.group;
+					return t1.group.order > t2.group.order;
 				});
 
-				account.score = score * multiplier;
+				account.score = (
+					account.missingTags.length * -10
+					+ account.tags.filter(t => t.selected).length * 10
+					+ 1
+				);
 				return account;
-			}).sort((a, b) => b.score - a.score);
+			}).sort((a, b) => {
+				if(a.saved !== b.saved) {
+					return a.saved < b.saved;
+				}
+				if(a.hidden !== b.hidden) {
+					return a.hidden > b.hidden;
+				}
+				return b.score - a.score;
+			});
 		},
 		selectedTags(){
 			return Object.values(tags).filter(t => t.selected);
@@ -420,21 +431,10 @@ document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
 					0, Math.max(defaultTags.length - this.selectedTags.length, 0)
 				);
 		},
-		relevantLanguages() {
-			return navigator.languages
-				.map(userLocale => languageMap[userLocale.split('-')[0].toUpperCase()])
-				.filter(lang => lang && tagGroups.languages.has(lang))
-		},
 	},
 	methods: {
 		logo(bank){
 			return `/staticimages/banks/${bank.name.toLowerCase()}.png`;
-		},
-		toggleSave(bank){
-			this.$set(bank, 'saved', !bank.saved);
-		},
-		toggleHide(bank){
-			this.$set(bank, 'hidden', !bank.hidden);
 		},
 	}
 }));
