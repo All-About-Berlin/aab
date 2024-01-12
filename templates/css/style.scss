@@ -2764,15 +2764,15 @@ details{
 
 			display: grid;
 			grid-template-columns: var(--w-bank-logo) 1fr;
-			gap: 0 var(--m);
+			gap: var(--l) var(--m);
 			grid-template-areas:
 				"icon title actions"
 				". tags tags"
-				". accounts accounts";
+				". costs costs";
 
 			@include only-phone{
 				grid-template-columns: 1fr calc(var(--w-bank-logo));
-				grid-template-areas: "title icon" "actions icon" "tags tags" "accounts accounts";
+				grid-template-areas: "title icon" "actions icon" "tags tags" "costs costs";
 			}
 		}
 
@@ -2811,7 +2811,7 @@ details{
 
 		.tags{
 			grid-area: tags;
-			margin: var(--l) calc(var(--w-page-border) * -1) var(--xl);
+			margin: 0 calc(var(--w-page-border) * -1);
 			padding: 0 var(--w-page-border);
 
 			@include only-phone{
@@ -2820,33 +2820,14 @@ details{
 			}
 		}
 
-		.accounts{
-			grid-area: accounts;
-			margin: 0;
-
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			gap: var(--xl) var(--xxl);
-
-			@include full-width-site{
-				grid-template-columns: 1fr;
+		.costs{
+			grid-area: costs;
+			font-size: var(--f-s);
+			details:first-child summary{
+				margin-top: 0;
 			}
-
-			> li {
-				&:first-child{
-					margin-top: 0;
-				}
-
-				p {
-					margin: var(--s) 0;
-					font-size: var(--f-s);
-				}
-				.costs{
-					font-size: var(--f-s);
-					&:last-child summary{
-						margin-bottom: 0;
-					}
-				}
+			details:last-child summary{
+				margin-bottom: 0;
 			}
 		}
 	}
@@ -2866,6 +2847,12 @@ details{
 		&.active{
 			border-color: var(--c-border-hint);
 			background: var(--c-bg-widget);
+		}
+
+		&.error{
+			&:before{
+				content:'🔴';
+			}
 		}
 	}
 }
