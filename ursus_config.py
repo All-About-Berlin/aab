@@ -50,6 +50,8 @@ config.content_path = Path(__file__).parent / 'content'
 config.templates_path = Path(__file__).parent / 'templates'
 config.output_path = Path(__file__).parent.parent / 'output'
 
+config.translation_cache_path = Path(__file__).parent.parent / 'translations'
+
 config.site_url = os.environ.get('SITE_URL', '')
 config.html_url_extension = ''
 
@@ -195,6 +197,8 @@ config.minify_css = True
 config.google_maps_api_key = 'AIzaSyAhhCuZjNCFo2o84w27Xh0ravLwIiVProo'  # Backend use only
 
 config.google_tts_api_key = 'AIzaSyAhhCuZjNCFo2o84w27Xh0ravLwIiVProo'
+
+config.openai_api_key = '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'
 
 minimum_wage = 12.41
 beitragsbemessungsgrenze_west = 90600
