@@ -1,13 +1,24 @@
 from hashlib import sha256
 from openai import OpenAI
 from pathlib import Path
-from typing import List
+from typing import List, Tuple
 from ursus.config import config
 from ursus.utils import get_files_in_path, import_module_or_path
 import logging
+import re
 
 logging.basicConfig(**config.logging)
 logger = logging.getLogger(__name__)
+
+
+def split_document(text: str) -> Tuple[str, str]:
+    head_pattern = r'^---\s*\n(.*?\n)*?---\s*\n'
+    if head_match := re.search(head_pattern, text, re.DOTALL):
+        head_matter = head_match.group(0)
+        content = text[len(head_matter):]
+        return head_matter, content
+    else:
+        return "", text
 
 
 def chunk_text(text: str) -> List[[str, str]]:
@@ -58,7 +69,10 @@ def translate_file(translation_prompt: str, original_file: Path, translated_file
     translation_dict = {}
     section_hashes = []
 
-    for section_title, chunk in chunk_text(original_text):
+    head_matter, body = split_document(original_text)
+
+    logging.info(f"Translating {str(original_file)} to {language}")
+    for section_title, chunk in chunk_text(body):
         section_hash = hash_section(translation_prompt, chunk)
         section_hashes.append(section_hash)
 
@@ -66,6 +80,7 @@ def translate_file(translation_prompt: str, original_file: Path, translated_file
         if cache_path.exists():
             translation = cache_path.read_text()
         else:
+            logging.info(f"➞ Translating section '{section_title or 'Introduction'}' to {language}")
             translation = translate_markdown(translation_prompt, chunk, language, section_title=section_title)
             cache_path.parent.mkdir(parents=True, exist_ok=True)
             cache_path.write_text(translation)
@@ -73,7 +88,7 @@ def translate_file(translation_prompt: str, original_file: Path, translated_file
         translation_dict[section_hash] = translation
 
     # Assemble the chunks into a full translation
-    full_translation = ''.join([translation_dict[h] for h in section_hashes])
+    full_translation = head_matter + ''.join([translation_dict[h] for h in section_hashes])
     (config.content_path / translated_file).parent.mkdir(parents=True, exist_ok=True)
     (config.content_path / translated_file).write_text(full_translation)
 
@@ -85,7 +100,6 @@ def translate_content(translation_prompt: str, content_path: Path, languages: Li
     ]
     for original_file in content_files:
         for language in languages:
-            logging.info(f"Translating {str(original_file)} to {language}")
             translated_file = language / original_file
             translate_file(translation_prompt, original_file, translated_file, language)
 
