@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 
 def chunk_text(text: str) -> List[[str, str]]:
     chunks = []
-    for line in text.splitlines():
+    for line in text.split('\n'):
         if line.startswith('## ') or not chunks:
             chunks.append([
                 line.removeprefix('## ') if line.startswith('## ') else None,
@@ -32,17 +32,24 @@ def translate_markdown(translation_prompt: str, text: str, language: str, sectio
     if not text.strip():
         return text
 
-    return client.chat.completions.create(
+    # ChatGPT tends to lose whitespace at the start and end of the text, so we preserve and restore it
+    whitespace_before = text[:len(text) - len(text.lstrip())]
+    whitespace_after = text[len(text.rstrip()):]
+    stripped_text = text.strip()
+
+    translation = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[
             {"role": "system", "content": prompt},
             {"role": "system", "content": f"The section you are translating is titled \"{section_title}\""},
             {"role": "assistant", "content": "Input the Markdown text to translate. I will only return the translated Markdown."},
-            {"role": "user", "content": text}
+            {"role": "user", "content": stripped_text}
         ],
         n=1,
         temperature=0.2,
-    ).choices[0].message.content
+    ).choices[0].message.content.strip()
+
+    return "".join([whitespace_before, translation, whitespace_after])
 
 
 def translate_file(translation_prompt: str, original_file: Path, translated_file: Path, language: str):
@@ -54,6 +61,7 @@ def translate_file(translation_prompt: str, original_file: Path, translated_file
     for section_title, chunk in chunk_text(original_text):
         section_hash = hash_section(translation_prompt, chunk)
         section_hashes.append(section_hash)
+
         cache_path = config.translation_cache_path / translated_file / f'{section_hash}.md'
         if cache_path.exists():
             translation = cache_path.read_text()
@@ -65,7 +73,7 @@ def translate_file(translation_prompt: str, original_file: Path, translated_file
         translation_dict[section_hash] = translation
 
     # Assemble the chunks into a full translation
-    full_translation = '\n'.join([translation_dict[h] for h in section_hashes])
+    full_translation = ''.join([translation_dict[h] for h in section_hashes])
     (config.content_path / translated_file).parent.mkdir(parents=True, exist_ok=True)
     (config.content_path / translated_file).write_text(full_translation)
 
