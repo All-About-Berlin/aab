@@ -3,7 +3,7 @@ from openai import OpenAI
 from pathlib import Path
 from typing import List, Tuple
 from ursus.config import config
-from ursus.utils import get_files_in_path, import_module_or_path, parse_markdown_head_matter
+from ursus.utils import get_files_in_path, import_module_or_path, parse_markdown_head_matter, format_markdown_head_matter
 import logging
 import re
 
@@ -33,53 +33,58 @@ def translate_path(original_path: Path, language_code: str) -> Path:
     return language_code / original_path
 
 
-def translate_head_matter(head_matter: str, language_code: str, cache_path: Path) -> str:
-    if not head_matter.strip():
-        return
+def translate_string(text: str, language_code: str, cache_path: Path) -> str:
+    if not text.strip():
+        return text
+
+    stripped_text = text.strip()
 
     prompt = "\n".join((
         "You are an expert legal translator. You translate texts about German immigration law, and about moving to Germany. Your translation must be as accurate as possible.",
-        f"Translate the given texts from English to {language_names[language_code]}. Your translations are accurate. They not to deviate from the original structure, content, writing style, tone and formatting. You must always follow these translation rules:",
+        f"Translate the given texts from English to {language_names[language_code]}. Your translations are accurate. They not to deviate from the original structure, content, writing style, tone, punctuation and formatting. You must always follow these translation rules:",
         # "- Prefer translations from the dictionary below.",
         "- Prefer gender-neutral terms.",
         "- Always address the reader with the informal form 'Du' with a capital D, not the formal 'Sie'.",
         "- Only return the translated text.",
     ))
 
+    cache_hash = sha256((prompt + stripped_text).encode('utf-8')).hexdigest()
+    string_cache_path = cache_path / f"{cache_hash}.txt"
+
+    if string_cache_path.exists():
+        return string_cache_path.read_text()
+    else:
+        logging.info(f"Translating string \"{stripped_text[0:20]}\" to {language_names[language_code]}")
+        translation = OpenAI(api_key=config.openai_api_key).chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[
+                {"role": "system", "content": prompt},
+                {"role": "assistant", "content": "Input the text to translate. I will only return the translated text."},
+                {"role": "user", "content": stripped_text}
+            ],
+            n=1,
+            temperature=0.2,
+        ).choices[0].message.content.strip()
+        string_cache_path.parent.mkdir(parents=True, exist_ok=True)
+        string_cache_path.write_text(translation)
+        return translation
+
+
+def translate_head_matter(head_matter: str, language_code: str, cache_path: Path) -> str:
+    if not head_matter.strip():
+        return
+
     metadata, _ = parse_markdown_head_matter(head_matter.split('\n'))
     translated_metadata = {**metadata}
     for field_name in config.metadata_fields_to_translate:
-        if not metadata.get(field_name, '')[0].strip():
+        if field_name not in metadata:
             continue
+        elif len(metadata[field_name]) != 1:
+            raise ValueError(f"Field is an array: {field_name}")
 
-        field_hash = sha256((prompt + metadata[field_name][0]).encode('utf-8')).hexdigest()
-        field_cache_path = cache_path / f"{field_hash}.txt"
+        translated_metadata[field_name] = [translate_string(metadata[field_name][0], language_code, cache_path), ]
 
-        if field_cache_path.exists():
-            field_value = cache_path.read_text()
-        else:
-            field_value = OpenAI(api_key=config.openai_api_key).chat.completions.create(
-                model="gpt-4o-mini",
-                messages=[
-                    {"role": "system", "content": prompt},
-                    {"role": "assistant", "content": "Input the text to translate. I will only return the translated text."},
-                    {"role": "user", "content": metadata[field_name][0]}
-                ],
-                n=1,
-                temperature=0.2,
-            ).choices[0].message.content.strip()
-            field_cache_path.parent.mkdir(parents=True, exist_ok=True)
-            field_cache_path.write_text(field_value)
-
-        translated_metadata[field_name] = field_value
-
-    print(translated_metadata)
-
-    return "\n".join([
-        "---",
-        *[f"{key}: {value}" for key, value in translated_metadata.items()],
-        "---\n",
-    ])
+    return format_markdown_head_matter(translated_metadata)
 
 
 def chunk_markdown(text: str) -> List[[str, str]]:
@@ -102,7 +107,7 @@ def translate_markdown(text: str, language_code: str, cache_path: Path) -> str:
 
     prompt = "\n".join((
         "You are an expert legal translator for guides written in Markdown. The guides are about German immigration law, and about moving to Germany. Your translation must be as accurate as possible.",
-        f"Translate the given Markdown texts from English to {language_names[language_code]}. Your translations are accurate. They not to deviate from the original structure, content, writing style, tone and formatting. You must always follow these translation rules:",
+        f"Translate the given Markdown texts from English to {language_names[language_code]}. Your translations are accurate. They not to deviate from the original structure, content, writing style, tone, punctuation and formatting. You must always follow these translation rules:",
         "- Preserve the format and whitespace of the original text.",
         "- Preserve all whitespace, even at the end of a line.",
         "- Do not translate German terms.",
@@ -129,6 +134,8 @@ def translate_markdown(text: str, language_code: str, cache_path: Path) -> str:
             whitespace_before = chunk_text[:len(chunk_text) - len(chunk_text.lstrip())]
             whitespace_after = chunk_text[len(chunk_text.rstrip()):]
             stripped_chunk_text = chunk_text.strip()
+
+            logging.info(f"Translating chunk \"{stripped_chunk_text[0:20]}\" to {language_names[language_code]}")
 
             translated_chunk = whitespace_before + OpenAI(api_key=config.openai_api_key).chat.completions.create(
                 model="gpt-4o-mini",
