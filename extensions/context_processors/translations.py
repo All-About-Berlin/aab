@@ -133,8 +133,8 @@ def translate_markdown(text: str, language_code: str, cache_path: Path) -> str:
             whitespace_after = chunk_text[len(chunk_text.rstrip()):]
             stripped_chunk_text = chunk_text.strip()
 
-            logging.info(f"└── Translating chunk \"{stripped_chunk_text[0:20]}\" to {language_names[language_code]}")
-
+            preview = stripped_chunk_text[0:20].replace('\n', ' ').strip()
+            logging.info(f"└── Translating chunk \"{preview}\" to {language_names[language_code]}")
             translated_chunk = whitespace_before + OpenAI(api_key=config.openai_api_key).chat.completions.create(
                 model="gpt-4o-mini",
                 messages=[
