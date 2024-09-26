@@ -7,9 +7,6 @@ from ursus.utils import get_files_in_path, import_module_or_path, parse_markdown
 import logging
 import re
 
-logging.basicConfig(**config.logging)
-logger = logging.getLogger(__name__)
-
 
 language_names = {
     'de': 'German',
@@ -41,8 +38,9 @@ def translate_string(text: str, language_code: str, cache_path: Path) -> str:
 
     prompt = "\n".join((
         "You are an expert legal translator. You translate texts about German immigration law, and about moving to Germany. Your translation must be as accurate as possible.",
-        f"Translate the given texts from English to {language_names[language_code]}. Your translations are accurate. They not to deviate from the original structure, content, writing style, tone, punctuation and formatting. You must always follow these translation rules:",
+        f"Translate the given texts from English to {language_names[language_code]}. You must always follow these translation rules:",
         # "- Prefer translations from the dictionary below.",
+        "- Preserve the format, whitespace and punctuation of the original text.",
         "- Prefer gender-neutral terms.",
         "- Always address the reader with the informal form 'Du' with a capital D, not the formal 'Sie'.",
         "- Only return the translated text.",
@@ -54,7 +52,7 @@ def translate_string(text: str, language_code: str, cache_path: Path) -> str:
     if string_cache_path.exists():
         return string_cache_path.read_text()
     else:
-        logging.info(f"Translating string \"{stripped_text[0:20]}\" to {language_names[language_code]}")
+        logging.info(f"└── Translating string \"{stripped_text[0:20]}\" to {language_names[language_code]}")
         translation = OpenAI(api_key=config.openai_api_key).chat.completions.create(
             model="gpt-4o-mini",
             messages=[
@@ -107,9 +105,8 @@ def translate_markdown(text: str, language_code: str, cache_path: Path) -> str:
 
     prompt = "\n".join((
         "You are an expert legal translator for guides written in Markdown. The guides are about German immigration law, and about moving to Germany. Your translation must be as accurate as possible.",
-        f"Translate the given Markdown texts from English to {language_names[language_code]}. Your translations are accurate. They not to deviate from the original structure, content, writing style, tone, punctuation and formatting. You must always follow these translation rules:",
-        "- Preserve the format and whitespace of the original text.",
-        "- Preserve all whitespace, even at the end of a line.",
+        f"Translate the given Markdown texts from English to {language_names[language_code]}. You must always follow these translation rules:",
+        "- Preserve the format, whitespace and punctuation of the original text.",
         "- Do not translate German terms.",
         "- Do not translate URLs.",
         "- Do not translate footnote symbols. For example '[^123]'.",
@@ -135,7 +132,7 @@ def translate_markdown(text: str, language_code: str, cache_path: Path) -> str:
             whitespace_after = chunk_text[len(chunk_text.rstrip()):]
             stripped_chunk_text = chunk_text.strip()
 
-            logging.info(f"Translating chunk \"{stripped_chunk_text[0:20]}\" to {language_names[language_code]}")
+            logging.info(f"└── Translating chunk \"{stripped_chunk_text[0:20]}\" to {language_names[language_code]}")
 
             translated_chunk = whitespace_before + OpenAI(api_key=config.openai_api_key).chat.completions.create(
                 model="gpt-4o-mini",
@@ -184,6 +181,7 @@ def translate_content(language_code: str):
 
 if __name__ == '__main__':
     import_module_or_path('ursus_config.py')
+    logging.basicConfig(**config.logging)
     languages = ('de', )
     for language_code in languages:
         translate_content(language_code)
