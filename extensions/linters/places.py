@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-from markdown.extensions.meta import BEGIN_RE, META_RE, META_MORE_RE, END_RE
 from pathlib import Path
 from urllib.parse import urlparse
 from ursus.config import config
 from ursus.linters import Linter
-from ursus.utils import get_files_in_path
+from ursus.utils import get_files_in_path, parse_markdown_head_matter
 import googlemaps
 import logging
 import re
@@ -15,20 +14,10 @@ class PlacesLinter(Linter):
         super().__init__(*args, **kwargs)
         self.google_maps = googlemaps.Client(key=config.google_maps_api_key)
 
-    def parse_place(self, place_path: Path):
-        place = {}
-        field_positions = {}
-        with (config.content_path / place_path).open() as place_file:
-            for line_no, line in enumerate(place_file.readlines()):
-                if line.strip() and line.strip() != '---':
-                    field, value = line.split(':', 1)
-                    place[field.strip()] = value.strip()
-                    field_positions[field] = (line_no, 0, len(line) - 1)
-        return place, field_positions
-
     def lint(self, file_path: Path):
         if file_path.is_relative_to(Path('places')):
-            place, field_positions = self.parse_place(file_path)
+            with (config.content_path / file_path).open() as place_file:
+                place, field_positions = parse_markdown_head_matter(place_file.readlines())
 
             if 'Google_Place_ID' not in place:
                 yield (0, 0, 3), "Place has no place ID", logging.ERROR
@@ -75,42 +64,14 @@ class UnusedPlacesLinter(Linter):
         self.mentioned_places = set()
         for place_path in get_files_in_path(config.content_path, None, '.md'):
             with (config.content_path / place_path).open() as place_file:
-                metadata = self.parse_metadata(place_file.readlines())
+                metadata, _ = parse_markdown_head_matter(place_file.readlines())
                 related_places = [
                     value
                     for key, values in metadata.items()
                     for value in values
-                    if key.startswith('related_')
-                    and value.startswith('places/')
+                    if key.startswith('related_') and value.startswith('places/')
                 ]
                 self.mentioned_places.update(related_places)
-
-    def parse_metadata(self, lines):
-        meta = {}
-        key = None
-        if lines and BEGIN_RE.match(lines[0]):
-            lines.pop(0)
-        while lines:
-            line = lines.pop(0)
-            m1 = META_RE.match(line)
-            if line.strip() == '' or END_RE.match(line):
-                break  # blank line or end of YAML header - done
-            if m1:
-                key = m1.group('key').lower().strip()
-                value = m1.group('value').strip()
-                try:
-                    meta[key].append(value)
-                except KeyError:
-                    meta[key] = [value]
-            else:
-                m2 = META_MORE_RE.match(line)
-                if m2 and key:
-                    # Add another line to existing key
-                    meta[key].append(m2.group('value').strip())
-                else:
-                    lines.insert(0, line)
-                    break  # no meta data - done
-        return meta
 
     def lint(self, file_path: Path):
         if file_path.is_relative_to(Path('places')) and str(file_path) not in self.mentioned_places:
