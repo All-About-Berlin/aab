@@ -52,7 +52,8 @@ def translate_string(text: str, language_code: str, cache_path: Path) -> str:
     if string_cache_path.exists():
         return string_cache_path.read_text()
     else:
-        logging.info(f"└── Translating string \"{stripped_text[0:20]}\" to {language_names[language_code]}")
+        preview = stripped_text[0:20].replace('\n', ' ').strip()
+        logging.info(f"└── Translating string \"{preview}\" to {language_names[language_code]}")
         translation = OpenAI(api_key=config.openai_api_key).chat.completions.create(
             model="gpt-4o-mini",
             messages=[
