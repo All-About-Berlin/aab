@@ -50,7 +50,6 @@ config.content_path = Path(__file__).parent / 'content'
 config.templates_path = Path(__file__).parent / 'templates'
 config.output_path = Path(__file__).parent.parent / 'output'
 
-config.translation_cache_path = Path(__file__).parent.parent / 'translations'
 config.metadata_fields_to_translate = ('title', 'short_title', 'description', )
 
 config.site_url = os.environ.get('SITE_URL', '')
