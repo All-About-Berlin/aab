@@ -43,11 +43,11 @@ In Germany, you pay [around 35% of your salary](/tools/tax-calculator) in taxes 
 
 The median household income in Germany is {{MEDIAN_INCOME_GERMANY|cur}}€ per year before taxes. In Berlin, it's {{MEDIAN_INCOME_BERLIN|cur}}€ per year before taxes.[^1] This is only for households with working people. The median income per person is much lower: 2,109€ per month.[^6] The median income for immigrants is lower.
 
-**[Compare your income](https://www.iwkoeln.de/fileadmin/user_upload/HTML/2022/Einkommensrechner/index.html)** (German) - Enter your [[Netto income]], see how it compares to what other people earn.
+**[Compare your income](https://www.iwkoeln.de/fileadmin/user_upload/HTML/2022/Einkommensrechner/index.html)** (in German) - Enter your [[Netto income]], see how it compares to what other people earn.
 
-[Median income by profession](https://web.arbeitsagentur.de/entgeltatlas/) (German) - Federal Employment Office
+[Median income by profession](https://web.arbeitsagentur.de/entgeltatlas/) (in German) - Federal Employment Office
 
-[Median income by location](https://arbeitsagentur.maps.arcgis.com/apps/View/index.html?appid=4c75eaa971ec4d3e951ae5c99d7367ec) (German) - Federal Employment Office
+[Median income by location](https://arbeitsagentur.maps.arcgis.com/apps/View/index.html?appid=4c75eaa971ec4d3e951ae5c99d7367ec) (in German) - Federal Employment Office
 
 ### Minimum wage
 

@@ -15,8 +15,8 @@ This is how you trade used clothes, vehicles, electronics and other things in Be
 
 ### Classified ads
 
-- [Kleinanzeigen](https://www.kleinanzeigen.de/stadt/berlin/) (German) - the main classified ads website in Germany
-- [Nebenan](https://nebenan.de/) (German) - Classified ads in your neighbourhood.
+- [Kleinanzeigen](https://www.kleinanzeigen.de/stadt/berlin/) (in German) - the main classified ads website in Germany
+- [Nebenan](https://nebenan.de/) (in German) - Classified ads in your neighbourhood.
 
 ### Facebook groups
 
@@ -55,8 +55,8 @@ You can also visit flea markets. They happen every Sunday all over Berlin.
 
 - [BSR Verschenktmarkt](https://www.bsr.de/verschenkmarkt/Classifieds/List/Index.aspx) (in German) - Run by the city's recycling service
 - [Free Your Stuff Berlin](https://www.facebook.com/groups/freeyourstuff/) - Popular Facebook group
-- [Spenden statt wegwerfen](https://www.bsr.de/spenden-statt-wegwerfen-21204.php) (German) - List of [BSR](/glossary/Berliner%20Stadtreinigung) donation points
-- [Nebenan](https://nebenan.de/) (German) - Classified ads in your neighbourhood.
+- [Spenden statt wegwerfen](https://www.bsr.de/spenden-statt-wegwerfen-21204.php) (in German) - List of [BSR](/glossary/Berliner%20Stadtreinigung) donation points
+- [Nebenan](https://nebenan.de/) (in German) - Classified ads in your neighbourhood.
 - [Sharing is Caring](https://t.me/joinchat/CbD5mEn20K3k-gd-ckIXBw) - Telegram
 - [Donate your bicycle](https://rueckenwind.berlin/spenden/) - Rückenwind
 - [Where to donate books](https://old.reddit.com/r/berlin/comments/85dpef/donating_books_in_berlin/) - Reddit

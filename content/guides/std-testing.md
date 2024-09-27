@@ -24,13 +24,13 @@ This guide explains how to get tested for sexually transmitted diseases in Berli
     [s.a.m. health](https://samhealth.de/?locale=en) sells home tests for HIV, Syphilis, Gonorrhoea and Chlamydia. It costs 59€ the first time, then 49€.[^0]
 - **[Zentrum für sexuelle Gesundheit](https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/gesundheitsamt/zentren/artikel.248356.en.php)** of the Gesundheitsamt (English, German, other languages)  
     HIV tests for 10€. If you have a low income, it's free.[^1] They don't have general STI tests. There are [4 locations in Berlin](https://www.google.com/maps/search/Zentrum+für+sexuelle+Gesundheit/@52.5947073,13.3052094,11z/). They speak English.[^2]
-- **[Berlin Aids-Hilfe](https://www.berlin-aidshilfe.de/angebote/test-angebote/)** (German)  
+- **[Berlin Aids-Hilfe](https://www.berlin-aidshilfe.de/angebote/test-angebote/)** (in German)  
     General STI test for 25€. HIV test for 10€.
-- **[Praxis Prenzlauer Berg](https://praxis-prenzlauer-berg.de/DE/)** (German)  
+- **[Praxis Prenzlauer Berg](https://praxis-prenzlauer-berg.de/DE/)** (in German)  
     HIV test for 20€. Other tests available. They accept public and private health insurance.[^6]
 - **[Checkpoint](https://checkpoint-bln.de/en/)** (German, English, other languages)  
     HIV and other STI tests for LGBTQ+ people. Tests cost between 5€ and 25€.
-- **[Mann-o-meter](https://www.mann-o-meter.de/angebote/tests-auf-hiv-und-andere-stis)** (German)  
+- **[Mann-o-meter](https://www.mann-o-meter.de/angebote/tests-auf-hiv-und-andere-stis)** (in German)  
     HIV and other STI tests for LGBTQ+ people. Complete test for 15€.
 
 **[More testing options](https://www.hivandmore.de/aerzteverzeichnis/index.shtml)** - hivandmore.de

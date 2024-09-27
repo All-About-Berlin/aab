@@ -28,8 +28,8 @@ When you buy glasses, the optician charges your health insurance directly. You d
 
 **Useful links:**
 
-- [Information about eyeglasses](https://www.tk.de/techniker/leistungen-und-mitgliedschaft/informationen-versicherte/leistungen/weitere-leistungen/hilfsmittel/brille-und-kontaktlinsen-2001122) (German) - [TK](/glossary/Techniker%20Krankenkasse)
-- [Information about eyeglasses](https://www.aok.de/pk/leistungen/sehschwaechen-hoerschwaechen/untersuchungen-sehhilfen-brillen/) (German) - AOK
+- [Information about eyeglasses](https://www.tk.de/techniker/leistungen-und-mitgliedschaft/informationen-versicherte/leistungen/weitere-leistungen/hilfsmittel/brille-und-kontaktlinsen-2001122) (in German) - [TK](/glossary/Techniker%20Krankenkasse)
+- [Information about eyeglasses](https://www.aok.de/pk/leistungen/sehschwaechen-hoerschwaechen/untersuchungen-sehhilfen-brillen/) (in German) - AOK
 
 ### Are contact lenses covered?
 
@@ -43,7 +43,7 @@ If you go to an optician (*[[Optiker]]*), the test is not covered by your insura
 
 **Useful links:**
 
-- [Information about eye tests](https://www.tk.de/techniker/leistungen-und-mitgliedschaft/informationen-versicherte/leistungen/weitere-leistungen/hilfsmittel/brille-und-kontaktlinsen/bestimmung-sehschaerfe-kassenleistung-2004628) (German) - [TK](/glossary/Techniker%20Krankenkasse)
+- [Information about eye tests](https://www.tk.de/techniker/leistungen-und-mitgliedschaft/informationen-versicherte/leistungen/weitere-leistungen/hilfsmittel/brille-und-kontaktlinsen/bestimmung-sehschaerfe-kassenleistung-2004628) (in German) - [TK](/glossary/Techniker%20Krankenkasse)
 
 ## Does private health insurance cover glasses?
 
@@ -76,13 +76,13 @@ These stores sell generic frames:
 
 - **[Ace + Tate](https://www.aceandtate.com/de-en/)**  
     Generic frames starting at 100€. They have [3 stores](https://www.aceandtate.com/de-en/stores/search?q=52.52000659999999,13.404954&qp=Berlin,%20Germany&l=en_DE) in Berlin.
-- **[Brillenplatz.de](/out/brillenplatz)** (German)  
+- **[Brillenplatz.de](/out/brillenplatz)** (in German)  
     Cheaper glasses with generic frames for less than 50€.
-- **[Fielmann](https://www.fielmann.de/)** (German)  
+- **[Fielmann](https://www.fielmann.de/)** (in German)  
     The [Nulltarif collection](https://www.fielmann.de/brillen/nulltarif/) costs less than 20€. They have [hundreds of branches](https://www.fielmann.de/niederlassungen/) in Germany.
-- **[Mister Spex](/out/mister-spex)** (German)  
+- **[Mister Spex](/out/mister-spex)** (in German)  
     Cheaper glasses with generic frames. They have [dozens of branches](https://www.misterspex.de/c/sto/1000) in Germany. They also let you try different frames at home, and return the ones you don't like.[^9]
-- **[Robin Look](https://www.robinlook.de/)** (German)  
+- **[Robin Look](https://www.robinlook.de/)** (in German)  
     Cheaper glasses with generic frames. They have [dozens of branches](https://www.robinlook.de/StoreLocator) in Germany.
 
 When you visit an optician, they usually show you expensive frames first. Say that you don't want to pay a lot, and ask to see the generic options.
