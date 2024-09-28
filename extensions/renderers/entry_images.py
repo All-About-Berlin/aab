@@ -93,23 +93,26 @@ class EntryImageUrlProcessor(EntryContextProcessor):
         super().__init__()
 
     def process_entry(self, context: dict, entry_uri: str):
-        context['entries'][entry_uri]['image_url'] = f"{config.site_url}/{str(Path(entry_uri).with_suffix('.png'))}"
+        if get_entry_image_text(context['entries'][entry_uri]):
+            context['entries'][entry_uri]['image_url'] = f"{config.site_url}/{str(Path(entry_uri).with_suffix('.png'))}"
+
+
+def get_entry_image_text(entry: dict) -> str:
+    return entry.get('short_title') or entry.get('title')
 
 
 class EntryImageRenderer(Renderer):
     """
     Creates social media images for entries
     """
-    def get_image_text(self, entry: dict) -> str:
-        return entry.get('short_title') or entry.get('title')
 
     def get_hash(self, entry: dict) -> str:
-        return hashlib.md5(self.get_image_text(entry).encode("utf-8")).hexdigest()
+        return hashlib.md5(get_entry_image_text(entry).encode("utf-8")).hexdigest()
 
     def render(self, context: dict, changed_files: set = None) -> set:
         files_to_keep = set()
         for entry_uri, entry in context['entries'].items():
-            if not self.get_image_text(entry):
+            if not get_entry_image_text(entry):
                 continue
 
             entry_path = Path(entry_uri)
@@ -126,7 +129,7 @@ class EntryImageRenderer(Renderer):
 
             if needs_rerender:
                 logger.info(f"Rendering post image {str(image_path)}")
-                image = make_cover_image(self.get_image_text(entry), config.templates_path)
+                image = make_cover_image(get_entry_image_text(entry), config.templates_path)
 
                 # Unicode strings cause problems, so a simple hash is more reliable
                 exif = image.getexif()
