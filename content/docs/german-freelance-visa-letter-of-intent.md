@@ -14,6 +14,7 @@ Related_guides:
     guides/renew-german-freelance-visa.md
 Categories:
     auslaenderbehoerde
+Translation_DE: de/docs/freiberufler-visum-absichtserklaerung.md
 ---
 
 When you [apply for the German freelance visa](/guides/freelance-visa), you must include [letters of intent](/glossary/Absichtserkl%C3%A4rung) from potential clients. It shows that you will find clients in Germany.

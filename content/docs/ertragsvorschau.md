@@ -13,6 +13,7 @@ Related_guides:
     guides/berlin-auslanderbehorde-appointment.md
 Categories:
     auslaenderbehoerde
+Translation_DE: de/docs/ertragsvorschau.md
 ---
 
 You need this form to [apply for a freelance visa](/guides/freelance-visa) in Berlin. It's called the revenue forecast (*Ertragsvorschau*).

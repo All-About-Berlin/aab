@@ -10,6 +10,7 @@ Related_guides:
     guides/unemployment-benefits.md
 Categories:
     employer
+Translation_DE: de/docs/arbeit-kuendigungsschreiben.md
 ---
 
 To [quit your job](/guides/losing-your-job), you must give your employer a resignation letter. Your [notice period](/glossary/Kündigungsfrist) starts when your employer receives your resignation letter.

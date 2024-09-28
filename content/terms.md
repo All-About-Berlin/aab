@@ -2,6 +2,7 @@
 Title: Terms and conditions
 Description: The privacy policy and content policy of All About Berlin.
 Date_created: 2017-09-19
+Translation_DE: de/agb.md
 ---
 
 **[Contact the owner of this website ➞](/contact)**

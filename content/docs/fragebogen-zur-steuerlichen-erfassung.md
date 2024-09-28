@@ -12,6 +12,7 @@ Related_guides:
     guides/become-a-freelancer-in-germany.md
 Categories:
     finanzamt
+Translation_DE: de/docs/fragebogen-zur-steuerlichen-erfassung.md
 ---
 
 The *[[Fragebogen zur steuerlichen Erfassung]]* is the form you fill to register a business in Germany. **Since 2021, you must fill the form online**. You don't need the form below anymore.

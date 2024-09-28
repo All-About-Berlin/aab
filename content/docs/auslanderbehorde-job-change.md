@@ -9,6 +9,7 @@ Related_guides:
     guides/german-resignation-letter.md
 Categories:
     auslaenderbehoerde
+Translation_DE: de/docs/auslaenderbehoerde-jobwechsel.md
 ---
 
 If you have a [residence permit](/glossary/Aufenthaltstitel), and you [quit or lose your job](/guides/losing-your-job), you must tell the *[[Ausländerbehörde]]*. Use this template to write to them.

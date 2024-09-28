@@ -9,6 +9,7 @@ Related_guides:
     guides/losing-your-job.md
 Categories:
     agentur_fuer_arbeit
+Translation_DE: de/docs/alg-i-vorlaeufige-entscheidung.md
 ---
 
 If your employer refuses to send your *[[Arbeitsbescheinigung]]*, fill this template and send it to your *[[Agentur für Arbeit]]* case worker. It asks the *Agentur für Arbeit* to pay [unemployment benefits](/glossary/ALG%20I) without waiting for the *Arbeitsbescheinigung*.

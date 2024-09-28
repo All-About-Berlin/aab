@@ -13,6 +13,7 @@ Related_guides:
     guides/anmeldung-in-english-berlin.md
 Categories:
     buergeramt
+Translation_DE: de/docs/wohnsitzabmeldung-formular.md
 ---
 
 Fill this form to deregister your address in Berlin (*[[Abmeldung]]*). You can send this form to any *[[Bürgeramt]]* in Berlin. You can deliver the form in person, by email, or by [registered mail](/glossary/Einschreibebrief).

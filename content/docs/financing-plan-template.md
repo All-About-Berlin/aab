@@ -13,6 +13,7 @@ Related_guides:
     guides/become-a-freelancer-in-germany.md
 Categories:
     auslaenderbehoerde
+Translation_DE: de/docs/finanzierungsplan-auslaenderbehoerde.md
 ---
 
 You need this form to [apply for a freelance visa](/guides/freelance-visa) in Berlin. This document is called a financing plan (*Finanzierungsplan*) or a capital budget.

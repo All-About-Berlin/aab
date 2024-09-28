@@ -13,6 +13,7 @@ Related_guides:
     guides/become-a-freelancer-in-germany.md
 Categories:
     auslaenderbehoerde
+Translation_DE: de/docs/freiberufler-visum-anschreiben.md
 ---
 
 This is the cover letter I submitted when I [applied for a German freelance visa](/guides/freelance-visa) in 2018. It's based on [this cover letter](/images/German-freelance-visa-cover-letter-example.png).

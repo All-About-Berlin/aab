@@ -11,6 +11,7 @@ Related_guides:
     guides/anmeldung-in-english-berlin.md
 Categories:
     finanzamt
+Translation_DE: de/docs/010250-antrag-auf-vergabe-einer-steuerlichen-id.md
 ---
 
 This form helps you request a [tax ID](/glossary/Steueridentifikationsnummer) without [registering your address](/glossary/Anmeldung). Only use this form [if you can't register your address](/guides/anmeldung-in-english-berlin#if-you-cant-register-your-address).

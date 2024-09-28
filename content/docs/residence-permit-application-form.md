@@ -18,6 +18,7 @@ Related_guides:
     guides/freelance-visa-letter-of-intent.md
 Categories:
     auslaenderbehoerde
+Translation_DE: de/docs/aufenthaltstitel-formular.md
 ---
 
 When you apply for a [residence permit](/glossary/Aufenthaltstitel), you must include this form with your application.

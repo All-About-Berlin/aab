@@ -12,6 +12,7 @@ Related_guides:
     guides/moving-to-berlin.md
 Categories:
     buergeramt
+Translation_DE: de/docs/wohnsitzanmeldung-formular.md
 ---
 
 This is the English translation of the official *[[Anmeldung]]* form. Fill this form to [register your address](/glossary/Anmeldung) in Berlin.

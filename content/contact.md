@@ -2,6 +2,7 @@
 Title: Contact me
 Description: My name, email, address, IBAN, tax number and other contact information, and information on how to donate to this website.
 Date_created: 2022-01-27
+Translation_DE: de/kontakt.md
 ---
 
 Hi, I'm Nicolas. You can contact me to…

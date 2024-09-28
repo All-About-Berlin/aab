@@ -9,6 +9,7 @@ Related_guides:
     guides/moving-out.md
 Categories:
     landlord
+Translation_DE: de/docs/mietkaution-rueckforderung.md
 ---
 
 After you [move out](/guides/moving-out) of an apartment, you can get your *[[Kaution]]* back. Some landlords take a really long time to return your *Kaution*. Use this letter generator to ask for your *Kaution* back.
