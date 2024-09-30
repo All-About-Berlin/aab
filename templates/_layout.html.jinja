@@ -13,7 +13,7 @@
 
 	<link rel="home" href="{{ site_url }}/">
 	<link rel="icon" type="image/png" href="/staticimages/favicon.png">
-	<link rel="alternate" type="application/rss+xml" title="All About Berlin's latest guides" href="{{ site_url }}/guides/feed.rss">
+	<link rel="alternate" type="application/rss+xml" title="{% trans %}All About Berlin's latest guides{% endtrans %}" href="{{ site_url }}/guides/feed.rss">
 	<link rel="privacy-policy" href="{{ site_url }}/terms#privacy-policy">
 	<link rel="terms-of-service" href="{{ site_url }}/terms">
 
@@ -50,15 +50,15 @@
 		<a class="logo" href="{{ site_url }}/" rel="home" title="All About Berlin">
 			All About Berlin
 		</a>
-		<nav id="sections" aria-label="Website sections">
+		<nav id="sections" aria-label="{% trans %}Website sections{% endtrans %}">
 			{% include '_blocks/searchForm.html' %}
-			<a title="Guides about life in Berlin" href="{{ site_url }}/guides">Guides</a>
-			<a title="Tools, forms and templates" href="{{ site_url }}/tools">Tools</a>
-			<a href="{{ site_url }}/contact">Contact</a>
+			<a title="{% trans %}Guides about life in Berlin{% endtrans %}" href="{{ site_url }}/guides">{% trans %}Guides{% endtrans %}</a>
+			<a title="{% trans %}Tools, forms and templates{% endtrans %}" href="{{ site_url }}/tools">{% trans %}Tools{% endtrans %}</a>
+			<a href="{{ site_url }}/contact">{% trans %}Contact{% endtrans %}</a>
 		</nav>
 	</header>
 	{% block main %}
-		<main aria-label="Main page">
+		<main aria-label="{% trans %}Main page{% endtrans %}">
 			{% block precontent %}{% endblock %}
 			<article class="section">
 				{% block content %}{% endblock %}
@@ -68,17 +68,17 @@
 	{% endblock %}
 	<footer aria-label="Bottom menu" class="no-print">
 		© {{ now.strftime('%Y') }} • 
-		<a href="{{ site_url }}/contact" rel="nofollow">Contact</a> • 
-		<a href="{{ site_url }}/donate" rel="nofollow">Donate</a> • 
-		<a href="{{ site_url }}/terms#privacy-policy" rel="nofollow">Privacy</a> • 
-		<a href="{{ site_url }}/terms#terms-of-service" rel="nofollow">Terms and conditions</a>
+		<a href="{{ site_url }}/contact" rel="nofollow">{% trans %}Contact{% endtrans %}</a> • 
+		<a href="{{ site_url }}/donate" rel="nofollow">{% trans %}Donate{% endtrans %}</a> • 
+		<a href="{{ site_url }}/terms#privacy-policy" rel="nofollow">{% trans %}Privacy{% endtrans %}</a> • 
+		<a href="{{ site_url }}/terms#terms-of-service" rel="nofollow">{% trans %}Terms and conditions{% endtrans %}</a>
 	</footer>
 {% endblock %}
 {% block postFooter %}
 	{% include '_js/tracking.js' %}
 	{% include '_js/events.js' %}
 	{% include "_js/currency.js" %}
-	{% include '_blocks/tooltip.html' %}
+	{% include '_blocks/tooltip.html.jinja' %}
 	<script defer>
 		{% alljs %}
 	</script>
@@ -100,7 +100,7 @@
 					"@type": "Person",
 					"@id": "https://nicolasbouliane.com"
 				},
-				"description": "All About Berlin helps people settle in Berlin and navigate German bureaucracy.",
+				"description": "{% trans %}All About Berlin helps people settle in Berlin and navigate German bureaucracy.{% endtrans %}",
 				"inLanguage": "en",
 				"url": "{{ site_url }}/",
 				"publisher": {
@@ -128,7 +128,7 @@
 					"postalCode": "13127",
 					"streetAddress": "Pasewalker Straße 65"
 				},
-				"description": "All About Berlin helps people settle in Berlin and navigate German bureaucracy.",
+				"description": "{% trans %}All About Berlin helps people settle in Berlin and navigate German bureaucracy.{% endtrans %}",
 				"foundingDate": "2017-09-01",
 				"logo": "{{ site_url }}/staticimages/logo.png",
 				"name": "All About Berlin",
