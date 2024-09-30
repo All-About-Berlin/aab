@@ -9,7 +9,7 @@ This guide explains how bank accounts, credit cards and bank transfers work in G
 
 To open a bank account, read **[how to choose a bank](/guides/best-bank-germany)**.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Bank accounts
 

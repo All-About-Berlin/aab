@@ -27,7 +27,7 @@ You don't need to do this if...
 
 ## Letter template
 
-{% include "_blocks/auslaenderbehoerdeJobChangeNoticeStatic.html" %}
+{% include "_blocks/auslaenderbehoerdeJobChangeNoticeStatic.html.jinja" %}
 
 ## How to send this letter
 

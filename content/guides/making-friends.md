@@ -7,7 +7,7 @@ Date_created: 2019-11-12
 
 This guide shows you how to meet new people and make friends after you [move to Berlin](/guides/moving-to-berlin).
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Before you start
 

@@ -7,7 +7,7 @@ Date_created: 2020-05-02
 
 This guide explains how you can take photos of people, businesses and buildings in Germany.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Taking photos of people
 

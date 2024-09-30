@@ -7,7 +7,7 @@ Date_created: 2024-03-31
 
 This guide describes common apartment scams in Germany, and how to avoid them.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Scams by thieves
 

@@ -13,7 +13,7 @@
 
 {% block content %}
 	<h1>{{ title }}</h1>
-	{% include "_blocks/postMeta.html" %}
+	{% include "_blocks/postMeta.html.jinja" %}
 	<div class="article-body">
 		{{ entry.body|render|safe }}
 	</div>
@@ -24,7 +24,7 @@
 		<aside class="section no-print" id="related" aria-labelledby="h-using-this-term">
 			<h2 id="h-using-this-term">Related guides</h2>
 			{% with entries=entry.related_guides|default([]) %}
-				{% include "_blocks/entryPreviews.html" %}
+				{% include "_blocks/entryPreviews.html.jinja" %}
 			{% endwith %}
 		</aside>
 	{% endif %}

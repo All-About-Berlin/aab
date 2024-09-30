@@ -11,7 +11,7 @@ On April 15 2021, Berlin's rent cap (*Mietendeckel*) was declared unconstitution
 
 In this guide, I explain what will happen, what you can do, and how you can still lower your rent. This guide will be updated when there is new information.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## What was the Mietendeckel?
 

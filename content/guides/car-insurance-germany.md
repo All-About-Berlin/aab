@@ -7,7 +7,7 @@ Date_created: 2020-08-07
 
 In Germany, car insurance (*Kfz-Versicherung*) is mandatory. It's part of the [cost of owning a car in Germany](/guides/car-cost-of-ownership-germany). If your vehicle is not insured, you can't register it, and you can't drive it. This guide shows you how to choose insurance for your car or motorcycle.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Types of vehicle insurance
 

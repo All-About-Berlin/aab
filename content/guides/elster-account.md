@@ -8,7 +8,7 @@ This is how you create an [[ELSTER]] account. This account gives you access to o
 
 Creating an account is easy, but you must do it in German. **It takes around 1 week**, because they send your account activation code by post.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Before you start
 

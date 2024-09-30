@@ -7,13 +7,13 @@ Date_created: 2023-07-17
 
 To [quit your job in Germany](/guides/losing-your-job), you must give a resignation letter (*Kündigungsschreiben* or *Kündigungserklärung*) to your employer. Your resignation is only official when your employer receives this letter.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## How to write a resignation letter
 
 Use my [German resignation letter generator](/docs/resignation-letter):
 
-{% include "_blocks/resignationLetterStatic.html" %}
+{% include "_blocks/resignationLetterStatic.html.jinja" %}
 
 Your resignation letter must be short and precise. Don't add unnecessary information; it could be used against you.[^10]
 
@@ -50,7 +50,7 @@ Your resignation letter must be **printed and signed**. An email, a fax, an inst
 
 There are 2 ways to give your resignation letter.
 
-- **In person** (recommended)[^8]{% include '_blocks/recommended.html' %}  
+- **In person** (recommended)[^8]{% include '_blocks/recommended.html.jinja' %}  
     Give your resignation letter to your employer in person. Bring a witness that can confirm that it happened.[^5] This is the best option, because you can guarantee that your employer received your resignation. It's also more polite.
 - **By post**  
     Send your resignation letter by [registered mail](/glossary/Einschreibebrief). Your notice period begins when your employer receives your resignation, not when you send it.[^12] This can delay your resignation.

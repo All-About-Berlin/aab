@@ -7,7 +7,7 @@ Date_created: 2019-10-05
 
 This guide shows you what you must do when you move out of your apartment in Germany.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## End your lease
 
@@ -248,7 +248,7 @@ If you move for work, your relocation costs are [tax-deductible](/glossary/steue
 
 **If you leave Germany**, you can [get a refund for your pension payments](/guides/pension-payments-refund).[^28] You can get thousands of euros back.[^36]
 
-{% include '_blocks/pensionRefundCalculator.html' %}
+{% include '_blocks/pensionRefundCalculator.html.jinja' %}
 
 ## Need help?
 

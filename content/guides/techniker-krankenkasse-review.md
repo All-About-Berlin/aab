@@ -9,7 +9,7 @@ It's hard to [pick the right health insurance in Germany](/guides/german-health-
 
 I was a TK customer from 2015 to 2021. I had their health insurance as an intern, as an employee and as a freelancer. This is my review of their services.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## What is TK?
 
@@ -19,7 +19,7 @@ I was a TK customer from 2015 to 2021. I had their health insurance as an intern
 
 Your health insurance contributions depend on your income, and your situation. All public health insurers in Germany charge almost the same prices. TK is not the cheapest or the most expensive; it's just average.
 
-{% include '_blocks/healthInsuranceCalculator.html' %}
+{% include '_blocks/healthInsuranceCalculator.html.jinja' %}
 
 **[How to choose German health insurance ➞](/guides/german-health-insurance)**
 
@@ -53,7 +53,7 @@ On the other hand, the price of [private health insurance](/glossary/private%20K
 
 This is why going with private health insurance sometimes makes more sense. I explain this in my guide on [how to choose health insurance](/guides/german-health-insurance). In this situation, TK might not be the best option for you, and you should [talk with a health insurance broker](/guides/german-health-insurance#insurance-brokers).
 
-{% include '_blocks/healthInsuranceCalculator.html' %}
+{% include '_blocks/healthInsuranceCalculator.html.jinja' %}
 
 ### Good support
 
@@ -142,7 +142,7 @@ You can also go through the process yourself [on the TK website](https://www.tk.
 
 If you don't know which health insurer to choose, get help from a health insurance broker. They will help you pick the best health insurance for your needs. Brokers get paid by health insurance companies to bring them new customers. Their help is free.
 
-{% include '_blocks/healthInsuranceQuestion.html' %}
+{% include '_blocks/healthInsuranceQuestion.html.jinja' %}
 
 If you choose TK, you can pay 10€ per year to get [Envivas travel insurance](https://www.envivas.de/en/insurance/travelling-abroad). It covers your medical expenses while you travel. It works well: they paid for my friend's helicopter evacuation, ambulance trip and hospital recovery in Nepal.
 

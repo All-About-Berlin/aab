@@ -14,7 +14,7 @@
 		{% block precontent %}{% endblock %}
 		<article class="section">
 			<h1>{{ entry.title }}</h1>
-			{% include "_blocks/postMeta.html" %}
+			{% include "_blocks/postMeta.html.jinja" %}
 			<div class="article-body">
 				{{ entry.body|render|safe }}
 			</div>
@@ -23,13 +23,13 @@
 			<aside class="section" aria-labelledby="h-related-guides">
 				<h2 id="h-related-guides">Related guides</h2>
 				{% with entries=entry.related_guides|default([]) %}
-					{% include "_blocks/entryPreviews.html" %}
+					{% include "_blocks/entryPreviews.html.jinja" %}
 				{% endwith %}
 			</aside>
 		{% endif %}
 
 		{% with pageType='document' %}
-			{% include "_blocks/donationPrompt.html" %}
+			{% include "_blocks/donationPrompt.html.jinja" %}
 		{% endwith %}
 		<aside class="section no-print" aria-label="Affiliate links notice" data-nosnippet>
 			<p>
@@ -40,7 +40,7 @@
 	
 	<div class="sidebar no-print" aria-hidden="true">
 		{% with entry=entry, showScrollToTop=true %}
-			{% include '_blocks/tableOfContents.html' %}
+			{% include '_blocks/tableOfContents.html.jinja' %}
 		{% endwith %}
 	</div>
 	{% include "_js/sidebar.js" %}

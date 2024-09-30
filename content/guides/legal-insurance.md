@@ -11,7 +11,7 @@ In this guide, I explain what legal insurance (*Rechtsschutzversicherung*) is, w
 
 Legal insurance is also called legal protection insurance or legal expenses insurance.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## What is legal insurance?
 

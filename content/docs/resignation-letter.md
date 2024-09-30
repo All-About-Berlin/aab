@@ -19,7 +19,7 @@ To [quit your job](/guides/losing-your-job), you must give your employer a resig
 
 ## Letter template
 
-{% include "_blocks/resignationLetterStatic.html" %}
+{% include "_blocks/resignationLetterStatic.html.jinja" %}
 
 ## How to send this letter
 

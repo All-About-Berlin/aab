@@ -9,7 +9,7 @@ This guide explains how to use trains, trams, buses and ride sharing in Berlin.
 
 ![Yellow BVG class HK train](/illustrations/bvg-class-hk-train.png)
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Step 1: Buy a ticket
 
@@ -25,7 +25,7 @@ You can buy local public transit tickets...
     Find a [yellow or red ticket machine](/images/VBB-ticket-machine.jpg) at the train station. The machines are on the train platforms, near the exits. You can pay with coins, bills, credit cards and [Girocards](/glossary/Girocard). You can sometimes pay with Apple Pay and Google Pay. The ticket machines speak many languages. Don't forget to [stamp your ticket](#step-2-validate-your-ticket).
 - **In the app**  
     Buy tickets on your phone. Pay with a credit card, Apple Pay or Google Pay. Your ticket is valid 1 minute after you buy it. You need internet access to buy tickets. There is Wi-Fi at most train stations.
-    - **[Jelbi app](https://www.jelbi.de/en/home/)**{% include '_blocks/recommended.html' %}  
+    - **[Jelbi app](https://www.jelbi.de/en/home/)**{% include '_blocks/recommended.html.jinja' %}  
         You can also rent cars, bicycles, scooters and mopeds with this app. It's in English and German.
     - **[BVG app](https://www.bvg.de/en/subscriptions-and-tickets/all-apps)**  
         It's in English and German.

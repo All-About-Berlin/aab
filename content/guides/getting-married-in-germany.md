@@ -7,7 +7,7 @@ Date_created: 2017-10-09
 
 This guide explains how to get married in Berlin and the rest of Germany. It explains how to register your marriage and make it official (the *Eheschließung*), not how to plan a wedding ceremony.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## How hard is it?
 

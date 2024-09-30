@@ -7,7 +7,7 @@ Date_created: 2022-07-20
 
 This guide explains how vacations work for employees in Germany.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Vacation days
 

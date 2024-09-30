@@ -9,7 +9,7 @@ This guide shows you how to [move to Germany](/guides/moving-to-berlin) and [sta
 
 **If you already live in Germany**, you don't need this guide. Just read *[How to start a business in Germany](/guides/start-a-business-in-germany)*.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Are you really a freelancer?
 
@@ -58,7 +58,7 @@ A [tax advisor](/guides/english-speaking-steuerberater-berlin) (*Steuerberater*)
 
 In Germany, you *must* have [health insurance (*Krankenversicherung*)](/glossary/Krankenversicherung). It's mandatory. Health insurance is more expensive for freelancers, because your employer does not pay 50% of it.
 
-{% include '_blocks/healthInsuranceCalculator.html' %}
+{% include '_blocks/healthInsuranceCalculator.html.jinja' %}
 
 You can choose between [private](/glossary/private%20Krankenversicherung) and [public health insurance](/glossary/gesetzliche%20Krankenversicherung). If you come from a non-EU country, you might be forced to get private health insurance. Public health insurers often refuse to cover freelancers from outside the EU.
 
@@ -66,7 +66,7 @@ If you don't have a [residence permit](/glossary/Aufenthaltstitel) yet, you can 
 
 It's hard to [choose the right health insurance](/guides/german-health-insurance). Don't just pick the cheapest one. It's a *really* bad idea. **Get advice from a health insurance broker.** Their help is free. They get paid by insurance companies when you sign an insurance contract.
 
-{% include '_blocks/healthInsuranceQuestion.html' %}
+{% include '_blocks/healthInsuranceQuestion.html.jinja' %}
 
 I trust [Feather](/out/feather). I work with them since 2018. I have my health insurance with them. They helped me switch to private insurance and save over 400€ *per month*. I had a difficult case, and Rob worked for months to get me accepted. They have a lot of experience with expats.
 

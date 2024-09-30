@@ -20,7 +20,7 @@ With a Blue Card, you can...
 
 This guide explains how to apply for a [[Blue Card]] in Berlin or in your country.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Who needs a Blue Card?
 
@@ -59,7 +59,7 @@ You do not need a university degree if...[^31]
 
 If you can't get a Blue Card, there are other [residence permits](/glossary/Aufenthaltstitel) that let you work in Germany:
 
-- **[Work visa](/glossary/Work%20Visa)**{% include '_blocks/recommended.html' %}  
+- **[Work visa](/glossary/Work%20Visa)**{% include '_blocks/recommended.html.jinja' %}  
     No salary requirement. No university degree required. In some cases, you might need professional training. It's almost as good as a Blue Card. - [How to apply](/guides/work-visa)
 - **[[Working Holiday Visa]]** and **[[Youth Mobility Visa]]**  
     For young people from certain countries. Work in Germany for 1 year. No salary requirement. No education needed.

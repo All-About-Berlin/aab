@@ -7,7 +7,7 @@ Date_created: 2017-09-01
 
 To [apply for an apartment](/guides/find-a-flat-in-berlin), you often need a *Schufa* report (*SCHUFA-Bonitätsauskunft*).[^8] This guide explains how to get one.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## What is a Schufa score?
 

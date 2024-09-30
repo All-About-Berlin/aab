@@ -7,13 +7,13 @@ Date_created: 2023-10-30
 
 This guide explains how taxes work in Germany, and how to pay less taxes.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Tax calculator
 
 This tax calculator shows your salary after taxes. It works for employees, students and freelancers.
 
-{% include "_blocks/taxCalculator.html" %}
+{% include "_blocks/taxCalculator.html.jinja" %}
 
 ## The taxes you pay in Germany
 
@@ -57,7 +57,7 @@ There are three types of health insurance:
 
 If you are an employee, your employer pays half of it. If you earn less than {{GKV_FAMILIENVERSICHERUNG_MAX_INCOME|cur}}€ per month, you can use your parents' or spouse's health insurance for free. Students get a cheaper tariff.
 
-{% include '_blocks/healthInsuranceCalculator.html' %}
+{% include '_blocks/healthInsuranceCalculator.html.jinja' %}
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 

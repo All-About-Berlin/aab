@@ -16,7 +16,7 @@ Freelancers (*[[Freiberufler]]*) do not pay the trade tax. They don't need to do
 
 You can do this online. It takes 30 minutes to fill the form, and around 4 weeks to get the *[[Gewerbeschein]]*. It costs {{GEWERBEANMELDUNG_FEE|cur}}€.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Before you start
 

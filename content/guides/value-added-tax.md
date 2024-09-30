@@ -9,7 +9,7 @@ Value added tax (VAT) is a **{{VAT_RATE}}% tax** on goods and services.
 
 This guide explains VAT for German businesses. You must understand this to [start a business in Germany](/guides/start-a-business-in-germany).
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## What is VAT?
 

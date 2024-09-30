@@ -7,13 +7,13 @@ Date_created: 2020-08-27
 
 This guide shows real ways to save money in Germany.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Taxes and social contributions
 
 Most employees pay 35% to 50% of their income in taxes, health insurance and pension contributions. There are ways to pay less.
 
-{% include '_blocks/taxCalculator.html' %}
+{% include '_blocks/taxCalculator.html.jinja' %}
 
 ### How to pay less [income tax](/glossary/Einkommensteuer)
 
@@ -35,7 +35,7 @@ Most employees pay 35% to 50% of their income in taxes, health insurance and pen
 
 Use my health insurance calculator to see your options. If you need help, [talk to a broker](/guides/german-health-insurance#insurance-brokers). It's free.
 
-{% include '_blocks/healthInsuranceCalculator.html' %}
+{% include '_blocks/healthInsuranceCalculator.html.jinja' %}
 
 ### How to pay less [pension insurance](/glossary/gesetzliche%20Rentenversicherung)
 
@@ -71,7 +71,7 @@ Rent is the biggest expense for most people. There are ways to pay less rent:
 
 ## Transportation
 
-- **[Get the Deutschland Ticket](/guides/deutschland-ticket)**{% include '_blocks/recommended.html' %}  
+- **[Get the Deutschland Ticket](/guides/deutschland-ticket)**{% include '_blocks/recommended.html.jinja' %}  
     It's the cheapest monthly ticket, and it lets you use public transit everywhere in Germany.
 - **Get a yearly ticket**  
     If you can't get the Deutschland Ticket, get a yearly subscription like the [29€ Ticket](https://www.bvg.de/de/abos-und-tickets/berlin-abo). Most tickets are cheaper if you pay yearly.

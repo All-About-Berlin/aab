@@ -13,7 +13,7 @@ This guide explains how to start a business in Germany, step by step.
 
 This guide explains how to form a single proprietorship (*Einzelunternehmen*), not a corporation or a limited liability company (*UG* or *GmbH*).
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## How hard is it?
 
@@ -38,7 +38,7 @@ As a German resident, you must pay these taxes:
 - [Unemployment insurance](/glossary/Arbeitslosenversicherung) (optional)
 - [Public pension insurance](/glossary/gesetzliche%20Rentenversicherung) (optional)
 
-{% include "_blocks/taxCalculator.html" %}
+{% include "_blocks/taxCalculator.html.jinja" %}
 
 If you are self-employed, **you must earn more than an employee** to get the same [net income](/glossary/Netto%20income) and benefits. Your health insurance, pension insurance and unemployment insurance are twice as expensive, because your employer does not pay half of it.
 
@@ -187,7 +187,7 @@ When you are an employee, health insurance payments are taken from your salary. 
 
 Health insurance for freelancers is more expensive, because your employer does not pay half of it.
 
-{% include '_blocks/healthInsuranceCalculator.html' %}
+{% include '_blocks/healthInsuranceCalculator.html.jinja' %}
 
 If you have [public health insurance](/glossary/gesetzliche%20Krankenversicherung), the cost of your insurance depends on your income. Since you don't know your future income, they use your *estimated* income. If you pay too much for insurance, you will get a refund later. If you don't pay enough, you will get an invoice later.
 

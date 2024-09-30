@@ -7,7 +7,7 @@ Date_created: 2017-09-13
 
 If you have found a dead animal or need to dispose of the body of a deceased pet in Berlin, here is how to proceed.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Wild animals
 

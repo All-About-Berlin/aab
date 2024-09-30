@@ -7,7 +7,7 @@ Date_created: 2022-08-27
 
 In Germany, if you are too sick or injured to work, you take a sick day. This guide explains how sick leave works.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## It's okay to take sick days
 

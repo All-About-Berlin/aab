@@ -18,7 +18,7 @@ With a work visa, you can...
 
 This guide explains how to apply for a [work visa](/glossary/Work%20Visa) in Berlin or in your country.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Who needs a work visa?
 
@@ -60,7 +60,7 @@ If you are over 45 years old, you must have...[^43]
 
 If you can't get a work visa, there are other [residence permits](/glossary/Aufenthaltstitel) that let you work in Germany:
 
-- **[[Blue Card]]**{% include '_blocks/recommended.html' %}  
+- **[[Blue Card]]**{% include '_blocks/recommended.html.jinja' %}  
     For skilled workers with a university degree, or IT specialists without a degree. There is a minimum salary. The Blue Card is better than the work visa: you get it faster, and you can get [permanent residence](/glossary/Niederlassungserlaubnis) faster. - [How to apply](/guides/blue-card)
 - **[[Working Holiday Visa]]** and **[[Youth Mobility Visa]]**  
     For young people from certain countries. Work in Germany for 1 year. No salary requirement. No education needed.
@@ -151,7 +151,7 @@ There are 2 ways to apply for a work visa in Berlin:
 
 - **Apply in person**  
     [Get an *Ausländerbehörde* appointment](/guides/berlin-auslanderbehorde-appointment), go to your appointment, give your documents, and wait for your residence permit. It's almost impossible to get an appointment.
-- or **send your documents online**{% include '_blocks/recommended.html' %}  
+- or **send your documents online**{% include '_blocks/recommended.html.jinja' %}  
     [Use the *Ausländerbehörde* contact form](/guides/berlin-auslanderbehorde-appointment#send-your-documents-and-wait) to send all the [required documents](#required-documents), and wait for them to contact you. A few weeks later, they will give you an appointment. Usually, this is your only option.
 
 **[How to get an Ausländerbehörde appointment ➞](/guides/berlin-auslanderbehorde-appointment)**

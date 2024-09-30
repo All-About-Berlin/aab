@@ -17,7 +17,7 @@ You need an *Ausländerbehörde* appointment to...[^3]
 
 If you go to the *Ausländerbehörde* without an appointment, they will not help you.[^8]
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## How to get an appointment
 
@@ -163,7 +163,7 @@ You will also get a letter with **the activation code for your [[eID]]**. You ne
 
 If some documents are missing, you have 2 options:
 
-- **Send the missing documents by email**{% include '_blocks/recommended.html' %}  
+- **Send the missing documents by email**{% include '_blocks/recommended.html.jinja' %}  
     If you have the missing documents at home, ask if you can email them. You will pay the fee and give your fingerprints, so you don't need another *Ausländerbehörde* visit.[^32]
 - or **get another appointment**  
     They will give you another appointment in a few days. It gives you time to prepare the missing documents.

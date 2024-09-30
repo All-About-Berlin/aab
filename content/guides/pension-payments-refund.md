@@ -12,13 +12,13 @@ When you work in Germany, you give {{RENTENVERSICHERUNG_EMPLOYEE_CONTRIBUTION}}%
 
 In this guide, I show you if you can get a pension refund, and how to apply for it.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Who can get a pension payments refund?
 
 **Short answer:** use the pension refund calculator.
 
-{% include '_blocks/pensionRefundCalculator.html' %}
+{% include '_blocks/pensionRefundCalculator.html.jinja' %}
 
 **Long answer:** It depends on your citizenship, and the country you live in. The rules are different for every country.
 
@@ -246,7 +246,7 @@ You will not get a refund for your employer's contributions.[^15] If you already
 
 If you are a freelancer, you will only get 50% of your pension payments back ({{RENTENVERSICHERUNG_EMPLOYEE_CONTRIBUTION}}% of your income).[^17] By default, freelancers do not make public pension payments. If you did not make public pension payments, you will not get any money back.
 
-{% include '_blocks/pensionRefundCalculator.html' %}
+{% include '_blocks/pensionRefundCalculator.html.jinja' %}
 
 To know the exact amount, [request a *Versicherungsverlauf*](/out/drv-pension-payments-info) from the [[Deutsche Rentenversicherung]]. It will arrive by post in 1 to 3 weeks. If you have an [[eID]], you can [get a *Versicherungsverlauf* instantly](https://kundenportal.deutsche-rentenversicherung.de/od-kundenportal).
 
@@ -315,11 +315,11 @@ You can let someone take care of everything. There are good reasons to get help:
 
 These businesses can help you request a refund. They will fill the forms and request the refund for you. They can also check how much money you will get back.
 
-- **[Pension Refund Germany](/out/german-pension-refund)**{% include '_blocks/recommended.html' %}  
+- **[Pension Refund Germany](/out/german-pension-refund)**{% include '_blocks/recommended.html.jinja' %}  
     Their fee is 10% of your refund (maximum fee 2,800€).[^31] They automated the process, so you do everything online. They pay you in the currency you prefer. They work with a lawyer.
-- **[Germany Pension Refund](/out/germany-pension-refund)**{% include '_blocks/recommended.html' %}  
+- **[Germany Pension Refund](/out/germany-pension-refund)**{% include '_blocks/recommended.html.jinja' %}  
     Their fee is 9.75% of your refund (no minimum or maximum fee).[^30] They specialise in pension refunds since 2007. They helped me a lot, and they verified this guide many times. Every case goes through their lawyers.
-- **[FundsBack](/out/fundsback)**{% include '_blocks/recommended.html' %}  
+- **[FundsBack](/out/fundsback)**{% include '_blocks/recommended.html.jinja' %}  
     Their fee is 9.9% of your refund (minimum fee 899€, maximum 2,899€), or 9.405% if you use the link above.[^29] They specialise in pension refunds since 2017. Their lawyer helped me a lot, and he verified this guide many times. Every case goes through their lawyer.
 - **[TaxBack](/out/taxback)**  
     Their fee is 19.8% of your refund,[^32] or minimum 60€. I do not recommend them. They don't specialise in pension refunds, and their fee is too high.
@@ -342,7 +342,7 @@ If you have questions, write to the [[Deutsche Rentenversicherung]]. Their email
 
 [Germany Pension Refund](/out/germany-pension-refund), [FundsBack](/out/fundsback), [Pension Refund Germany](/out/german-pension-refund), [Taxback](/out/taxback) or [Germany Mantra](/out/germany-mantra) can request a refund for you. They will take care of everything, but they charge a fee for their service.
 
-{% include '_blocks/pensionRefundQuestion.html' %}
+{% include '_blocks/pensionRefundQuestion.html.jinja' %}
 
 Tax advisors rarely have experience with German pension refunds. German embassies and consulates do not help you with German pension refunds.
 

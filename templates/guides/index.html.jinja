@@ -12,26 +12,26 @@
 	<header class="intro" aria-label="Title and search box">
 		<h1>Guides about Germany</h1>
 		{% with autofocus=true %}
-			{% include "_blocks/searchForm.html" %}
+			{% include "_blocks/searchForm.html.jinja" %}
 		{% endwith %}
 	</header>
 	<section class="section" aria-label="Guide collections">
 		{% with currentEntry=null, collections=get_entries('collections', sort_by='order') %}
-			{% include "_blocks/collections.html" %}
+			{% include "_blocks/collections.html.jinja" %}
 		{% endwith %}
 	</section>
 	<section class="section" aria-label="Newest guides">
 		<h2>Newest guides</h2>
 		{% set newEntries = get_entries('guides', sort_by='date_created', reverse=True)[0:10] %}
 		{% with entries=newEntries, showDatePosted=true %}
-			{% include "_blocks/entryPreviews.html" %}
+			{% include "_blocks/entryPreviews.html.jinja" %}
 		{% endwith %}
 	</section>
 	<section class="section" aria-label="Recently updated guides">
 		<h2>Recent updates</h2>
 		{% set updatedEntries = get_entries('guides', sort_by='date_updated', reverse=True)[0:10] %}
 		{% with entries=updatedEntries, showDateUpdated=true %}
-			{% include "_blocks/entryPreviews.html" %}
+			{% include "_blocks/entryPreviews.html.jinja" %}
 		{% endwith %}
 	</section>
 </main>

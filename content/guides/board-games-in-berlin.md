@@ -15,7 +15,7 @@ Related_places:
 
 Want a nice place to play board games with your friends, and perhaps make some new ones? The following board game meetups happen every week in Berlin, and are always friendly to newcomers.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Board game meetups
 
@@ -35,4 +35,4 @@ Berlin Board Gamers organise more events [on Meetup.com](https://www.meetup.com/
 
 **[Spielwiese](https://www.spielwiese-berlin.de/blog/en/)** is a popular board game library in Friedrichshain.
 
-{% include '_blocks/relatedPlaces.html' %}
+{% include '_blocks/relatedPlaces.html.jinja' %}

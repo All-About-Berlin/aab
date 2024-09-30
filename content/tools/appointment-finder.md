@@ -8,7 +8,7 @@ Categories:
 
 This bot helps you find an appointment to [register your address](/glossary/Anmeldung) at the Berlin *[[Bürgeramt]]*.
 
-{% include "_blocks/appointmentFinderStatic.html" %}
+{% include "_blocks/appointmentFinderStatic.html.jinja" %}
 
 **[Other ways to get a Bürgeramt appointment ➞](/guides/berlin-burgeramt-appointment)**
 

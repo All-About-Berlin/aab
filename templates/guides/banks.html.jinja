@@ -19,18 +19,18 @@
         {% block precontent %}{% endblock %}
         <article class="section">
             <h1>{{ entry.title }}</h1>
-            {% include "_blocks/postMeta.html" %}
+            {% include "_blocks/postMeta.html.jinja" %}
             {% with entry=entry, showRelatedEntriesLink=related_collections|length %}
                 <div class="article-body">
                 {% with static=True %}
-                   {% include "_blocks/taxIdRequest.html" %}
+                   {% include "_blocks/taxIdRequest.html.jinja" %}
                 {% endwith %}
                 </div>
             {% endwith %}
         </article>
 
         {% with pageType='guide' %}
-            {% include "_blocks/donationPrompt.html" %}
+            {% include "_blocks/donationPrompt.html.jinja" %}
         {% endwith %}
         <aside class="section no-print" aria-label="Affiliate links notice" data-nosnippet>
             <p>
@@ -41,7 +41,7 @@
             <aside id="related" class="section no-print" aria-label="Collections that include this guide">
                 <h2>Related guides</h2>
                 {% with collections=related_collections, currentEntry=entry %}
-                    {% include "_blocks/collections.html" %}
+                    {% include "_blocks/collections.html.jinja" %}
                 {% endwith %}
             </aside>
         {% endif %}
@@ -49,7 +49,7 @@
     
     <div class="sidebar no-print" aria-hidden="true">
         {% with entry=entry, showScrollToTop=true, showRelatedEntriesLink=related_collections|length %}
-            {% include '_blocks/tableOfContents.html' %}
+            {% include '_blocks/tableOfContents.html.jinja' %}
         {% endwith %}
     </div>
     {% include "_js/sidebar.js" %}
@@ -126,7 +126,7 @@
                     "@id": "{{ site_url }}/#organization"
                 }
             },
-            {% include "_blocks/guideJsonld.json" %}
+            {% include "_blocks/guideJsonld.json.jinja" %}
         ]
     </script>
 {% endblock %}

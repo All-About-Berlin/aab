@@ -20,7 +20,7 @@ Related_places:
 
 To [get a German driving licence](/guides/driving-licence), you must take driving lessons. This guide lists places where you can take driving classes in English.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## How the driving exams work
 
@@ -46,6 +46,6 @@ Many schools say they offer driving lessons in English, but only offer the onlin
 
 If a driving school is missing from this list, [let me know](/suggest-business).
 
-{% include '_blocks/relatedPlaces.html' %}
+{% include '_blocks/relatedPlaces.html.jinja' %}
 
 [^0]: [gut-lernen.de](https://www.gut-lernen.de/fremdsprachen-pruefung.html), [berlin.de](https://www.berlin.de/labo/mobilitaet/fahrerlaubnisse-personen-und-gueterbefoerderung/fahrerlaubnis-fuehrerschein/artikel.283188.php)

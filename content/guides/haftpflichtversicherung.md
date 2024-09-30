@@ -9,7 +9,7 @@ Liability insurance (*[[Haftpflichtversicherung]]*) is **the most important insu
 
 This guide explains how German liability insurance works, what it covers, and how to choose the best liability insurance.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## What does liability insurance cover?
 

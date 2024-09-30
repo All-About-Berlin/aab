@@ -39,13 +39,13 @@ Do not use this form if...
 
 ## Fill the form online
 
-{% include "_blocks/taxIdRequestStatic.html" %}
+{% include "_blocks/taxIdRequestStatic.html.jinja" %}
 
 ## Download the form
 
 You can also download the original form and fill it yourself. If you need a tax ID for multiple people, fill the form multiple times.
 
-{% include "_blocks/downloadDocuments.html"%}
+{% include "_blocks/downloadDocuments.html.jinja"%}
 
 ## How to fill this form
 

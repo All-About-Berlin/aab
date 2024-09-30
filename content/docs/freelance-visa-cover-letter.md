@@ -22,4 +22,4 @@ This is the cover letter I submitted when I [applied for a German freelance visa
 
 ## Download the template
 
-{% include "_blocks/downloadDocuments.html"%}
+{% include "_blocks/downloadDocuments.html.jinja"%}

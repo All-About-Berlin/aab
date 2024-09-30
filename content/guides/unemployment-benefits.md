@@ -11,7 +11,7 @@ This guide shows you how to get unemployment benefits (*[[ALG I]]*) after you [l
 
 **[Losing your job in Germany ➞](/guides/losing-your-job)**
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Who can get unemployment benefits?
 
@@ -116,7 +116,7 @@ If you can't wait for your *Arbeitsbescheinigung*, ask the *Agentur für Arbeit*
 
 Your employer can also put false information in your *Arbeitsbescheinigung*. This can affect how much *[[ALG I]]* you get.[^28]
 
-{% include "_blocks/algIVorlaeufigeBewilligung.html" %}
+{% include "_blocks/algIVorlaeufigeBewilligung.html.jinja" %}
 
 ## Receiving unemployment benefits
 

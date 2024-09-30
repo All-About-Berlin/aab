@@ -33,13 +33,13 @@ Related_places:
 
 This is how you can find an English-speaking doctor or GP.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## List of doctors and GPs
 
 If a doctor is missing from this list, [fill this form](/suggest-business).
 
-{% include '_blocks/relatedPlaces.html' %}
+{% include '_blocks/relatedPlaces.html.jinja' %}
 
 ## Other doctor databases
 

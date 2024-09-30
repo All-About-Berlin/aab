@@ -16,4 +16,4 @@ Once in a while, the thin Italian slices are not good enough, and you want a thi
 
 If a place is missing, [contact me](/contact)
 
-{% include '_blocks/relatedPlaces.html' %}
+{% include '_blocks/relatedPlaces.html.jinja' %}

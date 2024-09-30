@@ -16,7 +16,7 @@ class TableOfContentsLinter(Linter):
 
         with (config.content_path / file_path).open() as file:
             for line in file.readlines():
-                if '_blocks/tableOfContents.html' in line:
+                if '_blocks/tableOfContents.html.jinja' in line:
                     return
 
         yield (0, 0, 3), "No table of contents", logging.WARNING

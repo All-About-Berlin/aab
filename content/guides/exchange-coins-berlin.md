@@ -7,7 +7,7 @@ Date_created: 2017-10-10
 
 This guide shows you how to deposit a lot of coins, or exchange them for euro bills. The German term is *Bargeldeinzahlung*.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## At your bank
 

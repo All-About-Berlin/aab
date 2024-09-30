@@ -7,7 +7,7 @@ Date_created: 2022-05-23
 
 This guide explains how to fight hay fever in Germany.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## What is hay fever?
 

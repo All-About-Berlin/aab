@@ -7,7 +7,7 @@ Date_created: 2020-01-20
 
 This guide lists fonts that are used in Germany.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Official font for Berlin
 

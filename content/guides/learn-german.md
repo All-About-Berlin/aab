@@ -8,7 +8,7 @@ Related_reviews: reviews/learn-german/tia-robinson.md
 
 If you [move to Berlin](/guides/moving-to-berlin), you should learn German. In this guide, I show you different ways of learning German in Berlin: language schools, German apps, language tandems and more. I also show you how to get free German classes.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Do I need to speak German in Berlin?
 

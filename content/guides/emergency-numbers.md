@@ -7,7 +7,7 @@ Date_created: 2021-04-13
 
 If you need to call the emergency services, call [112](tel:112). For the police, call 110.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Police: 110
 

@@ -7,7 +7,7 @@ Date_created: 2019-12-11
 
 Locking yourself out happens to everyone. This guide shows you how to get back into your apartment, and what to do if you can't find your keys.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Calling a locksmith in Berlin
 

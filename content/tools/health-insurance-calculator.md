@@ -9,7 +9,7 @@ Categories:
 
 This calculator helps you choose health insurance in Germany. It tells you how much [health insurance](/glossary/Krankenversicherung) costs, and how to pay less.
 
-{% include '_blocks/healthInsuranceCalculatorStatic.html' %}
+{% include '_blocks/healthInsuranceCalculatorStatic.html.jinja' %}
 
 You can also try Feather's [health insurance recommendation tool](/out/feather-calc).
 
@@ -29,5 +29,5 @@ Read my [German health insurance guide](/guides/german-health-insurance), then t
 
 **[How to choose German health insurance ➞](/guides/german-health-insurance)**
 
-{% include '_blocks/healthInsuranceQuestion.html' %}
+{% include '_blocks/healthInsuranceQuestion.html.jinja' %}
 

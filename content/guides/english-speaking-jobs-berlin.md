@@ -9,7 +9,7 @@ This guide shows you how to find an English-speaking job in Berlin.
 
 For more information about the German job market, work culture, resumes and more, read [this guide](/guides/find-a-job-in-berlin).
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Where to look for English-speaking jobs
 

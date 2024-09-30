@@ -32,7 +32,7 @@ A relocation agency can help you...
 - [Find an apartment](/guides/find-a-flat-in-berlin) and [register your address](/glossary/Anmeldung)
 - Fill and translate documents
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Relocation agency or immigration lawyer?
 
@@ -48,4 +48,4 @@ A relocation agency can help you...
 
 If someone is missing from this list, [contact me](/suggest-business).
 
-{% include '_blocks/relatedPlaces.html' %}
+{% include '_blocks/relatedPlaces.html.jinja' %}

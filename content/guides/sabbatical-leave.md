@@ -9,7 +9,7 @@ Sabbatical leave is a long, unpaid vacation from work. People usually take a sab
 
 This guide shows you how to take a sabbatical in Germany.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Option 1: Working time account
 

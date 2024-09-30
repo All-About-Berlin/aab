@@ -15,7 +15,7 @@ This guide applies to you if:
 2. You have a German driving licence
 3. You want to drive in a country that requires an International Driving Permit
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## With a German driver's licence
 

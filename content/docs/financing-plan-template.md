@@ -22,6 +22,6 @@ You need this form to [apply for a freelance visa](/guides/freelance-visa) in Be
 
 ## Download the template
 
-{% include "_blocks/downloadDocuments.html"%}
+{% include "_blocks/downloadDocuments.html.jinja"%}
 
 This is the official example from [Berlin.de](https://service.berlin.de/dienstleistung/305249/). The Berlin *[[Ausländerbehörde]]* prefers that you use this template, but you can also make your own *Finanzierungsplan*.

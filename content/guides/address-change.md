@@ -7,7 +7,7 @@ Date_created: 2022-09-24
 
 When you [move into a new apartment](/guides/moving-in), you must change your address. It's not automatic. This guide shows you how to do it.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Put your name on your mailbox
 

@@ -9,7 +9,7 @@ Author_URL: https://stephanjack.com/
 
 This guide explains how to donate your organs after your death. It's very easy: just [get an organ donor card](https://www.ueber-leben.de/organspendeausweis/#kostenlos-bestellen).
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## How to register as an organ donor
 

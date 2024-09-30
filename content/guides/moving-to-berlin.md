@@ -7,7 +7,7 @@ Date_created: 2018-06-05
 
 This guide shows you how to relocate to Berlin from another country, step by step.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ![Move to berlin boxes luggage](/illustrations/move-to-berlin-boxes-luggage.png)
 
@@ -60,7 +60,7 @@ If you live in Germany, you must have [health insurance](/glossary/Krankenversic
 
 Use my [health insurance calculator](/guides/german-health-insurance) to see your options. The best way to choose health insurance is to [talk to an insurance broker](/guides/german-health-insurance#insurance-brokers). Their help is free.
 
-{% include '_blocks/healthInsuranceCalculator.html' %}
+{% include '_blocks/healthInsuranceCalculator.html.jinja' %}
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 

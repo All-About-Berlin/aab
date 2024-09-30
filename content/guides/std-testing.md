@@ -7,7 +7,7 @@ Date_created: 2024-01-23
 
 This guide explains how to get tested for sexually transmitted diseases in Berlin. Sexually transmitted diseases are also called *STD*, *STI*, *sexuell übertragbare Infektionen* or *Geschlechtskrankheiten*.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## How hard is it to get tested
 

@@ -17,7 +17,7 @@ To apply for a freelance visa, you need letters of intent from potential clients
 
 A letter of intent says "I want to hire this person to do this job, for this price". It's not a contract. It does not force the person to hire you. It just shows interest for your services.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Why you need letters of intent
 
@@ -84,7 +84,7 @@ Your letters of intent must include...[^5]
 
 ## Letter of intent example
 
-{% include "_blocks/downloadDocuments.html" %}
+{% include "_blocks/downloadDocuments.html.jinja" %}
 
 **[Letter of intent template ➞](/docs/german-freelance-visa-letter-of-intent)**
 

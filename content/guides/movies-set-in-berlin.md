@@ -7,7 +7,7 @@ Date_created: 2017-10-03
 
 Below is a list of movies in which Berlin is a prominently featured location. They are listed in no particular order.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Der Himmel über Berlin (1987)
 

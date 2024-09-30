@@ -7,7 +7,7 @@ Date_created: 2022-06-23
 
 You might need a residence permit (*[[Aufenthaltstitel]]*) to live, work and study in Germany. This guide explains how residence permits work.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Who needs a German residence permit?
 

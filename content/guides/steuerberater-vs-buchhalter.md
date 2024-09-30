@@ -7,7 +7,7 @@ Date_created: 2018-02-19
 
 This guide explains the difference between tax advisors (*Steuerberater*) and bookkeepers (*Buchhalter*). 
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Summary
 

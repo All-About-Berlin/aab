@@ -7,7 +7,7 @@ Date_created: 2020-12-16
 
 This guide explains what all dog owners in Berlin must know. The rules can be different in the rest of Germany.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Coming to Germany
 

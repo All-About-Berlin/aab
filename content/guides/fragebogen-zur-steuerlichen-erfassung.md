@@ -15,7 +15,7 @@ When you fill this form, you get:
 
 Since 2021, there is no paper form. You must fill this form online.[^0]
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Different ways register your business
 
@@ -23,7 +23,7 @@ There are 3 ways to register your business with the *[[Finanzamt]]*:
 
 - **Online with [[ELSTER]]** (in German)  
     This is the official way. [Create an ELSTER account](/guides/elster-account) and fill the *[[Fragebogen zur steuerlichen Erfassung]]*. This is what I describe in this guide. It's a bit complicated, and it's all in German, but you can do it yourself. It's free.
-- **Online with [Sorted](/out/sorted-fragebogen)** (in English){% include '_blocks/recommended.html' %}  
+- **Online with [Sorted](/out/sorted-fragebogen)** (in English){% include '_blocks/recommended.html.jinja' %}  
     Sorted built a [tool to register your business](/out/sorted-fragebogen). It's faster and easier than the official form, and it's in English. I tried it myself, and I think it's great. It's free.
 - **With a [tax advisor](/guides/english-speaking-steuerberater-berlin)**  
     Your tax advisor (*[[Steuerberater]]*) can register your business for you. My tax advisor did it in 5 minutes. This is the safest and easiest way, but it's hard to find a tax advisor. Use my [list of English-speaking tax advisors](/guides/english-speaking-steuerberater-berlin).
@@ -598,7 +598,7 @@ When you are self-employed, [private health insurance](/glossary/private%20Krank
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 
-{% include '_blocks/healthInsuranceQuestion.html' %}
+{% include '_blocks/healthInsuranceQuestion.html.jinja' %}
 
 If you can, join the *[[Künstlersozialkasse]]*. They pay half of your health insurance. It's always a good deal.
 

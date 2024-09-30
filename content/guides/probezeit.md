@@ -7,7 +7,7 @@ Date_created: 2022-07-12
 
 When you start a new job in Germany, you are in your probation period (*[[Probezeit]]*). During that time, it's easier to lose your job. This guide explains how the *Probezeit* works.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## What is the probation period?
 

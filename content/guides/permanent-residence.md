@@ -14,7 +14,7 @@ Permanent residents can...
 - Bring their family to Germany
 - Visit other [Schengen countries](/glossary/Schengen%20area) without a visa
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Why become a permanent resident
 

@@ -7,7 +7,7 @@ Date_created: 2021-03-02
 
 This guide shows you how to buy eyeglasses in Germany. It explains what your health insurance pays for, and how to pay less for your glasses.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Does public health insurance cover glasses?
 

@@ -7,7 +7,7 @@ Date_created: 2019-01-06
 
 This is how you buy a car or a motorcycle in Germany. This guide tells you how to buy a vehicle from another person, and from a dealership.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Do you need a car?
 

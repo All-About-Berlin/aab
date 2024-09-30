@@ -7,7 +7,7 @@ Date_created: 2023-10-23
 
 You can use your [residence permit](/glossary/Aufenthaltstitel) as an [[eID]]. This allows you to log into online government services. This feature is not always activated. This guide explains how to activate it.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## How the eID works
 

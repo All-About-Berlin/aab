@@ -18,7 +18,7 @@ After you [move out](/guides/moving-out) of an apartment, you can get your *[[Ka
 
 ## Letter template
 
-{% include "_blocks/depositReturnStatic.html" %}
+{% include "_blocks/depositReturnStatic.html.jinja" %}
 
 ## How to send this letter
 

@@ -10,7 +10,7 @@ Berlin is better on a bicycle. The city is very flat, and it has a big network o
 
 In this guide, I show you how to buy a bike, what rules you must follow, and how to deal with bicycle theft.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Where to buy a bicycle in Berlin
 
@@ -61,7 +61,7 @@ If you only stay in Berlin for a few months, you can rent a bicycle instead.
     Borrow a bike, pay what you can.
 - **Bike sharing**  
     Some bike sharing services let you rent a bike for less than a day, only when you need it.
-    - **[Jelbi](https://www.jelbi.de/en/home/)**{% include '_blocks/recommended.html' %} - Rent bikes, scooters and cars from different services
+    - **[Jelbi](https://www.jelbi.de/en/home/)**{% include '_blocks/recommended.html.jinja' %} - Rent bikes, scooters and cars from different services
     - [Nextbike](https://www.nextbike.de/en/) and [Call a Bike](https://www.callabike.de/en/cities-berlin/) - Regular bikes. Also in the [Jelbi](https://www.jelbi.de/en/home/) app. 
     - [Lime](https://www.li.me/vehicles), [Tier](https://www.tier.app/en/) and [Bolt](https://bolt.eu/en-de/ebikes/) - Electric bikes. Also in the [Jelbi](https://www.jelbi.de/en/home/) app. 
     - [fLotte](https://flotte-berlin.de/) - Free cargo bike rental

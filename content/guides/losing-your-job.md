@@ -19,7 +19,7 @@ This guide shows you what to do when:
 
 It only applies to employees, not freelancers.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## If you quit your job
 
@@ -112,7 +112,7 @@ When you know that you will be unemployed, register as a job seeker at the *[[Ag
 
 If you have a [residence permit](/glossary/Aufenthaltstitel) like a [work visa](/glossary/Work%20Visa) or a [[Blue Card]], tell the *[[Ausländerbehörde]]* that you will be unemployed. Do this as soon as know that you will be unemployed. Do not wait more than 2 weeks.[^11]
 
-{% include "_blocks/auslaenderbehoerdeJobChangeNotice.html" %}
+{% include "_blocks/auslaenderbehoerdeJobChangeNotice.html.jinja" %}
 
 To inform the *Ausländerbehörde*, you must...
 
@@ -280,7 +280,7 @@ At the end of the year, make a tax declaration (*[[Steuererklärung]]*). Your jo
 
 When you work in Germany, you pay {{RENTENVERSICHERUNG_EMPLOYEE_CONTRIBUTION}}% of your salary for [pension insurance](/glossary/gesetzliche%20Rentenversicherung). If you leave Germany, you can get that money back.
 
-{% include '_blocks/pensionRefundCalculator.html' %}
+{% include '_blocks/pensionRefundCalculator.html.jinja' %}
 
 **[How to get a pension payments refund ➞](/guides/pension-payments-refund)**
 

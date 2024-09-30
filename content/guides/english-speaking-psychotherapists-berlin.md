@@ -84,7 +84,7 @@ This guide explains:
 
 **[Go to the list of therapists ➞](#list-of-therapists)**
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Psychiatrist, psychotherapist or counsellor?
 
@@ -134,7 +134,7 @@ In Berlin, it costs around 100€ per hour.[^0] Group therapy is usually cheaper
 
 ## List of therapists
 
-{% include '_blocks/relatedPlaces.html' %}
+{% include '_blocks/relatedPlaces.html.jinja' %}
 
 ### Other lists of therapists
 

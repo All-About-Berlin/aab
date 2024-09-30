@@ -7,7 +7,7 @@ Categories:
     calculator
 ---
 
-{% include '_blocks/pensionRefundCalculatorStatic.html' %}
+{% include '_blocks/pensionRefundCalculatorStatic.html.jinja' %}
 
 **[How to apply for a pension refund ➞](/guides/pension-payments-refund#how-to-ask-for-a-pension-refund)**
 

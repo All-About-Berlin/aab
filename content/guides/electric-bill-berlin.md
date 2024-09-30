@@ -8,7 +8,7 @@ Related_reviews: reviews/electric-bill-berlin/matthias-martensen.md
 
 This guide explains how you pay for heating, hot water and electricity in Germany.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## One home, two bills
 

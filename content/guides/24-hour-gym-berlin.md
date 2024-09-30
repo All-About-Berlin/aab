@@ -48,4 +48,4 @@ This is a map of gyms that are open 24 hour a day in Berlin. If a place is missi
 
 **[Find 24-hour gyms](https://www.google.com/maps/search/gym/data=!4m4!2m3!5m1!2e3!6e1)** - Google Maps
 
-{% include '_blocks/relatedPlaces.html' %}
+{% include '_blocks/relatedPlaces.html.jinja' %}

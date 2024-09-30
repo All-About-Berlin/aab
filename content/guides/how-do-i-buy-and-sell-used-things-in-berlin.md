@@ -9,7 +9,7 @@ This is how you trade used clothes, vehicles, electronics and other things in Be
 
 ![Zu verschenken box](/illustrations/zu-verschenken-box.png)
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Where to buy and sell things
 

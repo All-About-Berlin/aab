@@ -7,7 +7,7 @@ Date_created: 2020-10-04
 
 These are the thing you must pay when you drive a car in Germany. If you are thinking of [buying a car in Germany](/guides/buying-used-car-in-germany), this guide can be useful.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Car insurance
 

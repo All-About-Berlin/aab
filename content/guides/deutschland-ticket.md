@@ -14,7 +14,7 @@ Summary:
 - It's only sold as a monthly subscription that renews automatically
 - Tourists should buy it from [mo.pla](https://en.mopla.solutions/en/tickets/deutschlandticket) or Hamburg's [hvv Switch app](https://www.hvv-switch.de/en/)
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## How to buy the Deutschland Ticket
 
@@ -22,7 +22,7 @@ You can buy a Deutschland Ticket from many different apps. You can't buy it from
 
 The Deutschland Ticket always **starts on the first day of the month**.[^3] This means that if you need a ticket from January 10 to February 5, you must pay for two full months.
 
-|     | [mo.pla](https://en.mopla.solutions/en/tickets/deutschlandticket){% include '_blocks/recommended.html' %} | [hvv Switch](https://www.hvv-switch.de/en/) | [BVG](/out/deutschland-ticket-bvg) | [Deutsche Bahn](/out/deutschland-ticket-db) |
+|     | [mo.pla](https://en.mopla.solutions/en/tickets/deutschlandticket){% include '_blocks/recommended.html.jinja' %} | [hvv Switch](https://www.hvv-switch.de/en/) | [BVG](/out/deutschland-ticket-bvg) | [Deutsche Bahn](/out/deutschland-ticket-db) |
 |-|:-:|:-:|:-:|:-:|
 | **Buy a ticket for the current month** | ✓ | ✓ | ✗ | ✓ |
 | **Cancellation deadline** | Anytime | 10th of the month | 25th of the month | 10th of the month |

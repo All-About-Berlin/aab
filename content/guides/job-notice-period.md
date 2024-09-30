@@ -7,7 +7,7 @@ Date_created: 2023-04-19
 
 German jobs have a notice period (*Kündigungsfrist*). If you quit or get laid off, you must work until the end of your notice period. This guide explains how that notice period works.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## If you quit your job
 

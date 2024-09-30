@@ -8,7 +8,7 @@ When you [start a business](/guides/start-a-business-in-germany) and list it in 
 
 Some businesses have no *Handelsregisternummer*, because they are not in the *Handelsregister*.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## What does the Registernummer look like?
 

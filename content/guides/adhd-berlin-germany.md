@@ -7,7 +7,7 @@ Date_created: 2017-12-13
 
 This guide shows you how ADHD treatment usually works in Germany. It's based on my own experience, and updated with feedback from readers.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Health insurance coverage
 

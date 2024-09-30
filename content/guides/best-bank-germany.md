@@ -11,7 +11,7 @@ Before you start, learn [how banking works in Germany](/guides/banking). It help
 
 ![Cash coins cards german banks](/illustrations/cash-coins-cards-german-banks.png)
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## German banks for expats
 
@@ -89,9 +89,9 @@ I strongly recommend to get a free bank account. Don't pay your bank to hold you
 
 These banks offer a **free bank account** with no monthly fees:
 
-- **[C24](/out/c24)**{% include '_blocks/recommended.html' %}  
+- **[C24](/out/c24)**{% include '_blocks/recommended.html.jinja' %}  
     The best free bank account in my opinion. It's the only free account that includes a [[Girocard]]. They only speak German.
-- **[N26](/out/n26)**{% include '_blocks/recommended.html' %}  
+- **[N26](/out/n26)**{% include '_blocks/recommended.html.jinja' %}  
     The best free bank account if you don't speak German. It covers all your basic banking needs.
 - **[bunq](/out/bunq)**  
     The free account is very limited: no free ATM withdrawals, no payment card, and no German [[IBAN]]. The paid accounts make more sense.

@@ -21,7 +21,7 @@ This is a list of foreign cooking ingredients, and where to find them in Berlin.
 
 If you can't find something, ask [Found in... Berlin](https://www.facebook.com/groups/530673463736983/).
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## List of ingredients
 
@@ -197,7 +197,7 @@ Yeast is called *Backhefe* in Germany. You can find it in [small paper packets](
 
 ## Map of international shops
 
-{% include '_blocks/relatedPlaces.html' %}
+{% include '_blocks/relatedPlaces.html.jinja' %}
 
 [^0]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/ithnsf/almond_flour/)
 [^1]: [reddit.com/r/ketode](https://old.reddit.com/r/ketode/comments/40o744/how_do_i_get_chicken_thighs_in_germany/)

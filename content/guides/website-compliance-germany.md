@@ -7,7 +7,7 @@ Date_created: 2018-05-07
 
 This guide explains the rules to follow when you run a website in Germany.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## GDPR/[[DSGVO]] compliance
 

@@ -7,7 +7,7 @@ Date_created: 2018-01-23
 
 Degiro is an online broker with low fees. You can buy and sell stocks for a very low fee compared to most German banks. I started using Degiro in 2018. This is my review of their service. My [2019 review](/documents/degiro-review-2019.pdf) was more negative, but Degiro improved a lot since then.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## In English and German
 

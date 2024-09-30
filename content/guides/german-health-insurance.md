@@ -12,7 +12,7 @@ Related_reviews:
 
 This guide explains how German health insurance works, and how to choose the best health insurance for your needs.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## How German health insurance works
 
@@ -33,7 +33,7 @@ There are 2 health insurance systems:
 
 To know your options, use my health insurance calculator.
 
-{% include '_blocks/healthInsuranceCalculator.html' %}
+{% include '_blocks/healthInsuranceCalculator.html.jinja' %}
 
 Your options depend on your situation and your income:
 
@@ -112,7 +112,7 @@ If you don't speak German, [Techniker Krankenkasse](/out/signup-tk) and [Barmer]
 
 [Ask an expert](#insurance-brokers) to help you choose. Their help is free.
 
-{% include '_blocks/healthInsuranceQuestion.html' %}
+{% include '_blocks/healthInsuranceQuestion.html.jinja' %}
 
 ## Private health insurance
 
@@ -187,7 +187,7 @@ There are big differences between private health insurance companies. Each offer
 
 The best way to choose is to ask a health insurance broker. Their help is free. They get paid by the insurance companies when they bring new customers.
 
-{% include '_blocks/healthInsuranceQuestion.html' %}
+{% include '_blocks/healthInsuranceQuestion.html.jinja' %}
 
 [Ottonova](/out/ottonova) is popular option with expats, because they offer support in English, but [they are not perfect](/guides/ottonova-review).
 
@@ -297,7 +297,7 @@ Health insurance brokers help you choose health insurance. Their help is free fo
 
 If you are an immigrant, **choose a broker who works with expats**. Your needs are different, and your broker must know how to help you.
 
-{% include '_blocks/healthInsuranceQuestion.html' %}
+{% include '_blocks/healthInsuranceQuestion.html.jinja' %}
 
 ## What to do next
 

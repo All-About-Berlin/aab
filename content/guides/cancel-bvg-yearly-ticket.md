@@ -6,7 +6,7 @@ Date_created: 2018-06-01
 
 This is how you cancel a [[BVG]] ticket subscription (*Abo*). If you don't cancel it, it's renewed automatically.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 You can cancel your BVG subscription by email, by post, [at a BVG Kundenzentrum](https://www.bvg.de/de/service-und-kontakt/verkaufsstellen), or [on the BVG website](https://abo.bvg.de/de/).
 

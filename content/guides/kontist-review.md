@@ -9,7 +9,7 @@ Date_created: 2023-03-10
 
 I use Kontist since January 2022. This is my review of Kontist in 2024{{ fail_on('2025-01-01') }}, feature by feature. In my opinion, **there is no good reason to choose Kontist**, and you should look at the [alternatives](#kontist-alternatives).
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ![Kontist mobile app and card](/images/kontist-review-proof-of-membership.jpg "Confirmed customer")
 

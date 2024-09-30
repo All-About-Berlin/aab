@@ -9,7 +9,7 @@
 
 {% block content %}
 	<h1>{{ entry.title }}</h1>
-	{% include "_blocks/postMeta.html" %}
+	{% include "_blocks/postMeta.html.jinja" %}
 	{% with entry=entry %}
 		<div class="article-body">
 			{{ entry.body|render|safe }}
@@ -20,7 +20,7 @@
 
 {% block postcontent %}
 	{% with pageType='tool' %}
-		{% include "_blocks/donationPrompt.html" %}
+		{% include "_blocks/donationPrompt.html.jinja" %}
 	{% endwith %}
 	<aside class="section no-print" data-nosnippet>
 		<p>

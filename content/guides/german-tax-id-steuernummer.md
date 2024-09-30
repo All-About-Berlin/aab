@@ -7,7 +7,7 @@ Date_created: 2017-12-07
 
 German residents have different tax identification numbers. This guide explains what they are, and where to find them.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## The tax ID (Steuer-ID)
 

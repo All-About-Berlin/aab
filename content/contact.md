@@ -54,4 +54,4 @@ This website is my full time job. If my work helped you, [donate a few euros](/d
 
 A positive review [on Google Maps](/google-maps) also helps a lot.
 
-{% include "_blocks/tipJar.html"%}
+{% include "_blocks/tipJar.html.jinja"%}

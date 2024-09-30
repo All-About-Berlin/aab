@@ -9,7 +9,7 @@ This guide shows you how to deal with noise problems in Berlin.
 
 This includes loud neighbours that ignore [quiet hours](/guides/quiet-hours), construction noise, and noise from businesses.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Talk to each other
 

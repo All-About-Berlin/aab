@@ -13,7 +13,7 @@ I am an N26 customer since 2016. It's my main bank account. This is my experienc
 
 ![N26 credit cards](/images/n26-credit-card-allaboutberlin.jpg)
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## What are the benefits of N26?
 

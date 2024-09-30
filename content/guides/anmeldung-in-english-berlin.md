@@ -9,7 +9,7 @@ Related_reviews:
 
 After you [move to Berlin](/guides/moving-to-berlin), [find a place to live](/guides/find-a-flat-in-berlin) and [move in](/guides/moving-in), you must register your address at the *[[Bürgeramt]]*. This is called the *Anmeldung*. This guide explains how to do it.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Why you must register your address
 
@@ -50,7 +50,7 @@ You do not need to register if...
 
 You must do your *Anmeldung* **in person at the [[Bürgeramt]]**. You can go to any *[[Bürgeramt]]* in Berlin. **You need an appointment**. It must be after your move-in date.[^1] You have 14 days to register, but in Berlin nobody cares. You can do it months later.[^20]
 
-{% include "_blocks/appointmentFinder.html" %}
+{% include "_blocks/appointmentFinder.html.jinja" %}
 
 **[Other ways to get an appointment ➞](/guides/berlin-burgeramt-appointment)**
 

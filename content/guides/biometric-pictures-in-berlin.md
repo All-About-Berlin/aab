@@ -7,7 +7,7 @@ Date_created: 2017-10-06
 
 This guide shows you how to get biometric pictures or passport photos in Berlin.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## From a photo kiosk
 

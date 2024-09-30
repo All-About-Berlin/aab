@@ -164,7 +164,7 @@ Vue.component('health-insurance-question', {
 					</label>
 					<div class="input-group">
 						<input v-model="fullName" type="text" :id="uid('name')" required autocomplete="name">
-						{% endraw %}{% include "_blocks/formHoneypot.html" %}{% raw %}
+						{% endraw %}{% include "_blocks/formHoneypot.html.jinja" %}{% raw %}
 					</div>
 				</div>
 				<div class="form-group required">

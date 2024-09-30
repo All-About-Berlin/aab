@@ -29,7 +29,7 @@ The *Wohnungsgeberbestätigung* must contain:[^2]
 
 ## Download the template
 
-{% include "_blocks/downloadDocuments.html"%}
+{% include "_blocks/downloadDocuments.html.jinja"%}
 
 This template is an official example from Berlin.de. You can also use your own template.[^1]
 

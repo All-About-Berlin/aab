@@ -7,7 +7,7 @@ Date_created: 2022-12-01
 
 This is how you can send a letter by post in Germany, even if you don't have a printer.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## At the post office
 

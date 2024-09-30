@@ -7,7 +7,7 @@ Date_created: 2017-09-15
 
 This guide is for tourists who want to visit Berlin. If you want to move to Berlin, read my [moving to Berlin guide](/guides/moving-to-berlin).
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Visa requirements
 
@@ -283,7 +283,7 @@ If you want mobile data while you visit Berlin, you should get a temporary SIM c
 
 There are 3 ways to buy a SIM card:
 
-- **Buy a digital SIM card** (eSIM){% include '_blocks/recommended.html' %}  
+- **Buy a digital SIM card** (eSIM){% include '_blocks/recommended.html.jinja' %}  
     This is the cheapest and easiest way. I use it all the time. You buy an eSIM from [Airalo](/out/airalo), and activate it when you arrive in Berlin. Your phone must support eSIMs.
 - **Get a SIM card at a mobile phone shop**  
     Buy a SIM card from a Vodafone, Telekom or O2 shop. Electronics stores like Saturn or MediaMarkt also sell and activate SIM cards. You must show your passport and a [registration certificate](/glossary/Anmeldebest%C3%A4tigung) to activate the SIM card, but store employees will just use your passport and the address of your hotel.[^11]

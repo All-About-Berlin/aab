@@ -7,7 +7,7 @@ Date_created: 2017-09-27
 
 If I can't answer your questions, these resources can help.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## General questions
 

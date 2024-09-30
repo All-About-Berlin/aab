@@ -9,7 +9,7 @@ This guide explains how people usually buy weed in Berlin. Weed [is legal in Ger
 
 ![Rolling paper and a grinder](/illustrations/rolling-paper-grinder-weed-berlin-s.png)
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Is weed legal in Germany?
 
@@ -25,7 +25,7 @@ You should pay **around 10€ per gram**, but quality weed can be more expensive
 
 There are 3 ways to buy weed in Berlin: on Telegram, from street dealers or through your friends.
 
-1. **Your friends**{% include '_blocks/recommended.html' %}  
+1. **Your friends**{% include '_blocks/recommended.html.jinja' %}  
     They might know a good dealer. Just ask. You will find at least one friend who has a safe, reliable dealer. You will get better, cheaper, safer weed this way. People you have just met will not always introduce you to their dealer.
 2. **[Telegram](https://telegram.org/)**  
     This is the easiest option if your friends don't know any dealers. It's a common way to buy weed in Berlin. There are many Telegram groups you can join. Some groups are run by a single dealer, and others let dealers and buyers find each other.

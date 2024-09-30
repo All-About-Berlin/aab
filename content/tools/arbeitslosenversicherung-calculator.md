@@ -9,7 +9,7 @@ Categories:
 
 This calculator shows how much you pay for unemployment insurance (*[[Arbeitslosenversicherung]]*) every month.
 
-{% include '_blocks/unemploymentInsuranceCalculatorStatic.html' %}
+{% include '_blocks/unemploymentInsuranceCalculatorStatic.html.jinja' %}
 
 ## What is Arbeitslosenversicherung?
 

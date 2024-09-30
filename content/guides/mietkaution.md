@@ -7,7 +7,7 @@ Date_created: 2018-06-19
 
 When you [move into an apartment](/guides/moving-in), you must pay a deposit (*Kaution*). If you break something in the apartment, your landlord uses your *Kaution* to pay for the repairs. You get your *Kaution* back after you [move out](/guides/moving-out).
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## How much is the Kaution?
 
@@ -110,7 +110,7 @@ After you move out, the landlord has 6 months to find what must be repaired.[^12
 
 If you don't get your deposit back, send a request by [registered mail](/glossary/Einschreibebrief). Use my letter generator for this.
 
-{% include "_blocks/depositReturn.html"%}
+{% include "_blocks/depositReturn.html.jinja"%}
 
 **[How to mail a letter](/guides/mail-a-letter)** — from your computer, without a printer
 

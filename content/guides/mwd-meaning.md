@@ -7,7 +7,7 @@ Date_created: 2022-06-09
 
 "m/w/d" is an abbreviation of "männlich, weiblich oder divers". This guide explains why it appears on German job listings.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## What does this abbreviation mean?
 

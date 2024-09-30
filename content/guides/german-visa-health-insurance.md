@@ -9,7 +9,7 @@ Related_reviews:
 
 This guide explains how to choose health insurance when you apply for a German visa, a [[National Visa]] or a [residence permit](/glossary/Aufenthaltstitel).
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## What health insurance do you need?
 
@@ -79,7 +79,7 @@ Travel insurance is not accepted when you apply for a residence permit.
 
 [Ask a health insurance broker](/guides/german-health-insurance#insurance-brokers) to help you choose. Their help is free. It's the best way to choose insurance.
 
-{% include '_blocks/healthInsuranceQuestion.html' %}
+{% include '_blocks/healthInsuranceQuestion.html.jinja' %}
 
 **[How to choose German health insurance ➞](/guides/german-health-insurance)**
 
@@ -101,7 +101,7 @@ These insurers are less reliable:
 
 ## Need help?
 
-{% include '_blocks/healthInsuranceQuestion.html' %}
+{% include '_blocks/healthInsuranceQuestion.html.jinja' %}
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 

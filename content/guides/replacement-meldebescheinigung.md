@@ -14,7 +14,7 @@ You can get a *Meldebescheinigung* to...
 
 This guide explains how to get a *Meldebescheinigung* if you already registered your address.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## How to get an Anmeldebestätigung
 

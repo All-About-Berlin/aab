@@ -9,7 +9,7 @@ Related_reviews:
 
 In Berlin, you can take educational leave. You get a paid vacation to improve your education. It's called *Bildungsurlaub* or *Bildungszeit*.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## What the Bildungsurlaub is for
 

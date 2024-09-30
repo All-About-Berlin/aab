@@ -7,7 +7,7 @@ Date_created: 2017-10-23
 
 This guide shows you how to get a car or motorcycle driving licence in Berlin.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## How much does it cost?
 

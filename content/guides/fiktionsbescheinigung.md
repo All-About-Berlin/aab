@@ -7,7 +7,7 @@ Date_created: 2023-03-02
 
 This guide explains how the *Fiktionsbescheinigung* works, how to apply for a *Fiktionsbescheinigung*, and how to travel with an expired [residence permit](/glossary/Aufenthaltstitel).
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## What is a Fiktionsbescheinigung?
 

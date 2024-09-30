@@ -7,7 +7,7 @@ Date_created: 2019-10-25
 
 After you [move to Berlin](/guides/find-a-flat-in-berlin) and [find an apartment](/guides/find-a-flat-in-berlin), you must move in. This guide shows you how it works.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Before the move
 
@@ -104,7 +104,7 @@ You must must [register your new address](/glossary/Anmeldung) at the *[[Bürger
 
 [Book your *Anmeldung* appointment](/guides/berlin-burgeramt-appointment) as soon as you can. Appointments are hard to find. They can be months in the future.[^11] Your appointment date must be after you move in.
 
-{% include "_blocks/appointmentFinder.html" %}
+{% include "_blocks/appointmentFinder.html.jinja" %}
 
 If you move from another place in Germany, you don't need to [deregister your old address](/guides/abmeldung-deregister-in-berlin).
 
@@ -158,7 +158,7 @@ Your own things are not covered by liability insurance. To insure your own furni
 
 Landlords often [try to scam](/guides/housing-scams#scams-by-landlords-and-tenants) immigrants. You must be ready to defend yourself. There are many ways to do this:
 
-- **Join a tenants' association** (*[[Mieterverein]]*){% include '_blocks/recommended.html' %}  
+- **Join a tenants' association** (*[[Mieterverein]]*){% include '_blocks/recommended.html.jinja' %}  
     If you are a member, you get free help from their lawyers. They can check your lease, help you with a bad landlord, lower your rent, and help you sublet your apartment. It costs around 5€ per month. The [Berliner Mieterverein](https://www.berliner-mieterverein.de/sprachen/englisch.htm) and [Mieterschutzbund Berlin](https://www.mieterschutzbund-berlin.de/) are the biggest ones in Berlin. The Berliner Mieterverein speaks English.[^10]
 - or **get legal insurance** (*[[Rechtsschutzversicherung]]*)  
     It pays for your legal costs. You get free access to a lawyer. It's more expensive than a *[[Mieterverein]]*, but you get better service, and you can choose any [English-speaking lawyer](/guides/english-speaking-lawyers-berlin). [Feather](/out/feather-rechtsschutz) and [Getsafe](/out/getsafe-rechtsschutz) sell legal insurance, and they speak in English.

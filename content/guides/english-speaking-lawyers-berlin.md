@@ -73,7 +73,7 @@ This list of English, French and Spanish-speaking attorneys will help you with a
 
 If someone is missing from this list, [let me know](/suggest-business).
 
-{% include '_blocks/relatedPlaces.html' %}
+{% include '_blocks/relatedPlaces.html.jinja' %}
 
 ### Other lists of English-speaking lawyers
 

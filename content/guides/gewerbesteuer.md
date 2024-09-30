@@ -7,7 +7,7 @@ Date_created: 2021-01-19
 
 Most German businesses must pay a trade tax (*[[Gewerbesteuer]]*) on their [profits](/glossary/Gewinn). If you [start a business in Germany](/guides/start-a-business-in-germany), you must understand how the trade tax works. This guide explains it.
 
-{% include "_blocks/tableOfContents.html" %}
+{% include "_blocks/tableOfContents.html.jinja" %}
 
 ## Who must pay trade tax
 
