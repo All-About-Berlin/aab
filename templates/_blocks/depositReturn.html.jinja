@@ -1,0 +1,324 @@
+{% include '_js/letterUtils.js' %}
+{% include '_js/vue.js' %}
+{% include '_js/vue/blank.js' %}
+{% include '_js/vue/date-picker.js' %}
+{% include '_js/vue/eur.js' %}
+{% include '_js/vue/glossary.js' %}
+{% include '_js/vue/income-input.js' %}
+{% include '_js/vue/letter-generator.js' %}
+{% include '_js/vue/uniqueIdsMixin.js' %}
+{% js %}
+	document.querySelectorAll('.deposit-return').forEach(
+		el => new Vue({
+			el: el,
+			mixins: [uniqueIdsMixin],
+			data() {
+				return {
+					fullName: '',
+					oldAddress: '',
+					newAddress: '',
+
+					recipientType: 'company',
+					recipientCompanyName: '',
+					recipientGender: 'man',
+					recipientFirstName: '',
+					recipientLastName: '',
+					recipientAddress: '',
+					kautionAmount: '',
+					remainingKautionAmount: '',
+					bankAccountName: '',
+					bankAccountIBAN: '',
+					hasReceivedNebenkostenabrechnung: true,
+					hasReceivedPartOfKaution: false,
+
+					currentDate: new Date(),
+					moveOutDate: '',
+					deadlineWeeks: 2,
+				};
+			},
+			computed: {
+				longDeadline() {
+					const deadlineDate = new Date();
+					deadlineDate.setDate(deadlineDate.getDate() + this.deadlineWeeks * 7)
+					return deadlineDate.toLocaleDateString('en-US', {
+						day: 'numeric',
+						month: 'long',
+					});
+				}
+			},
+			methods: {
+				formatDate,
+				formatName,
+				formatSalutations,
+				deadline(language) {
+					const deadlineDate = new Date();
+					deadlineDate.setDate(deadlineDate.getDate() + this.deadlineWeeks * 7)
+					return formatDate(deadlineDate, {en: 'en-US', de: 'de-DE'}[language]);
+				}
+			}
+		})
+	);
+{% endjs %}
+
+<letter-generator class="deposit-return" track-as="Return of apartment deposit" {% if static|default %}static{% endif %}>
+{% raw %}
+	<template v-slot:header>Return of apartment deposit</template>
+
+	<template v-slot:letter-recipient="{ language, stage }">
+		<span class="letter-return-address" v-if="newAddress">
+			{{ fullName }}<template v-if="fullName && newAddress">, </template>
+			{{ newAddress.replaceAll('\n', ', ') }}
+		</span>
+		<template v-if="recipientCompanyName">
+			{{ recipientCompanyName }}<br>
+		</template>
+		<template v-if="formatName(recipientGender, recipientFirstName, recipientLastName, language)">
+			{{ formatName(recipientGender, recipientFirstName, recipientLastName, language) }}<br>
+		</template>
+		<span v-html="recipientAddress.replaceAll('\n', '<br>')"></span>
+	</template>
+
+	<template v-slot:letter-details="{ language, stage }">
+		<template v-if="language === 'en'">
+			<template v-if="fullName"><strong>Name:</strong> {{ fullName }}<br></template>
+			<strong>Date:</strong> {{ currentDate.toLocaleDateString("en-US") }}
+		</template>
+		<template v-if="language === 'de'">
+			<template v-if="fullName"><strong>Name:</strong> {{ fullName }}<br></template>
+			<strong>Datum:</strong> {{ currentDate.toLocaleDateString("de-DE") }}
+		</template>
+	</template>
+
+	<template v-slot:letter-body="{ language, stage }">
+		<p v-if="language === 'en'">
+			<strong>Subject: Return of apartment deposit</strong>
+		</p>
+		<p v-if="language === 'de'">
+			<strong>Betreff: Rückzahlung der Mietkaution</strong>
+		</p>
+
+		<p>{{ formatSalutations(recipientGender, recipientFirstName, recipientLastName, language) }},</p>
+
+		<p v-if="language === 'en'">
+			Our tenancy for the apartment mentioned below has been terminated since <blank placeholder="Move-out date" key="moveOutDate">{{ formatDate(moveOutDate, 'en-US') }}</blank>. The apartment has been vacated and properly handed over to you<template v-if="hasReceivedNebenkostenabrechnung">, and there is no outstanding utility bill</template>.
+		</p>
+		<p v-if="language === 'de'">
+			Unser Mietverhältnis über die unten genannte Wohnung ist seit dem <blank placeholder="Move-out date" key="moveOutDate">{{ formatDate(moveOutDate, 'de-DE') }}</blank> beendet und die Wohnung wurde geräumt und ordnungsgemäß an Sie übergeben<template v-if="hasReceivedNebenkostenabrechnung">, und es gibt keine offenen Nebenkostenabrechnungen</template>.
+		</p>
+
+		<p v-if="language === 'en'">
+			Address: <blank placeholder="Apartment address" key="oldAddress">{{ oldAddress.replaceAll('\n', ', ') }}</blank>
+			<br>
+			Tenant name: <blank placeholder="Full name" key="fullName">{{ fullName }}</blank>
+		</p>
+		<p v-if="language === 'de'">
+			Anschrift: <blank placeholder="Apartment address" key="oldAddress">{{ oldAddress.replaceAll('\n', ', ') }}</blank>
+			<br>
+			Name des Mieters/der Mieterin: <blank placeholder="Full name" key="fullName">{{ fullName }}</blank>
+		</p>
+
+		<p v-if="language === 'en' && !hasReceivedNebenkostenabrechnung && !hasReceivedPartOfKaution">
+			The outstanding utility bill does not entitle you to retain the entire deposit, but only an amount equivalent to the expected utility costs.
+		</p>
+		<p v-if="language === 'de' && !hasReceivedNebenkostenabrechnung && !hasReceivedPartOfKaution">
+			Die ausstehende Nebenkostenabrechnung berechtigt nicht zur Einbehaltung der gesamten Kaution, sondern nur zur Einbehaltung eines Betrages in Höhe der zu erwartenden Nebenkosten.
+		</p>
+
+		<p v-if="language === 'en'">
+			I politely request that you transfer
+			<template v-if="hasReceivedPartOfKaution">
+				the remaining
+				<blank placeholder="Remaining deposit" v-if="!remainingKautionAmount"></blank><eur cents :amount="remainingKautionAmount" v-if="remainingKautionAmount"></eur>
+				of the
+				<blank placeholder="Total deposit" v-if="!kautionAmount"></blank><eur cents :amount="kautionAmount" v-if="kautionAmount"></eur>
+				deposit
+			</template>
+			<template v-if="!hasReceivedPartOfKaution">
+				the deposit of
+				<blank placeholder="Deposit amount" v-if="!kautionAmount"></blank><eur cents :amount="kautionAmount" v-if="kautionAmount"></eur>
+			</template>
+			plus interest to my account by <blank placeholder="Deadline" key="deadlineEn">{{ deadline(language) }}</blank> at the latest.
+		</p>
+		<p v-if="language === 'de'">
+			Ich fordere Sie höflich auf,
+			<template v-if="hasReceivedPartOfKaution">
+				die restlichen
+				<blank placeholder="Remaining deposit" v-if="!remainingKautionAmount"></blank><eur cents :amount="remainingKautionAmount" locale="de-DE" v-if="remainingKautionAmount"></eur>
+				der
+				<blank placeholder="Total deposit" v-if="!kautionAmount"></blank><eur cents :amount="kautionAmount" locale="de-DE" v-if="kautionAmount"></eur> Kaution
+			</template>
+			<template v-if="!hasReceivedPartOfKaution">
+				die Kaution in Höhe von
+				<blank placeholder="Deposit amount" v-if="!kautionAmount"></blank><eur cents :amount="kautionAmount" locale="de-DE" v-if="kautionAmount"></eur>
+			</template>
+			zuzüglich Zinsen bis spätestens <blank placeholder="Deadline" key="deadlineDe">{{ deadline(language) }}</blank> auf mein Konto zu überweisen.
+		</p>
+
+		<p v-if="language === 'en'">
+			Account holder: <blank placeholder="Full name" key="bankAccountName">{{ bankAccountName || fullName }}</blank>
+			<br>
+			IBAN: <blank placeholder="Account IBAN" key="bankAccountIBAN">{{ bankAccountIBAN }}</blank>
+		</p>
+		<p v-if="language === 'de'">
+			Kontoinhaber:</strong> <blank placeholder="Full name" key="bankAccountName">{{ bankAccountName || fullName }}</blank>
+			<br>
+			IBAN: <blank placeholder="Account IBAN" key="bankAccountIBAN">{{ bankAccountIBAN }}</blank>
+		</p>
+
+		<p v-if="language === 'en'">
+			Should you have any reasons against paying out my rental deposit, please let me know by <blank placeholder="Deadline" key="deadlineEn">{{ deadline(language) }}</blank> at the latest.
+		</p>
+		<p v-if="language === 'de'">
+			Sollten aus Ihrer Sicht Gründe gegen die Auszahlung meiner Mietkaution sprechen, bitte ich Sie, mir diese bis spätestens <blank placeholder="Deadline" key="deadlineDe">{{ deadline(language) }}</blank> mitzuteilen.
+		</p>
+
+		<p v-if="language === 'en'">
+			Best regards<template v-if="fullName">,<br></template>
+			{{ fullName }}
+		</p>
+		<p v-if="language === 'de'">
+			Mit freundlichen Grüßen<template v-if="fullName">,<br></template>
+			{{ fullName }}
+		</p>
+
+		<p class="signature" v-if="stage === 'printPreview'">
+			{{ language === 'en' ? 'Signature' : 'Unterschrift' }}
+		</p>
+	</template>
+
+	<template v-slot:form="{ language }">
+		<div class="form-group">
+			<label :for="uid('fullName')">Your full name</label>
+			<input type="text" :id="uid('fullName')" v-model="fullName" autocomplete="name">
+		</div>
+		<div class="form-group">
+			<label :for="uid('newAddress')">Current address</label>
+			<div class="input-group">
+				<textarea
+					:id="uid('newAddress')"
+					v-model="newAddress"
+					class="address-input"
+					autocomplete="street-address"
+					placeholder="Neue Wohnungstraße 123&#10;12345 Berlin"></textarea>
+			</div>
+			<a class="input-instructions internal-link" href="/guides/addressing-a-letter-in-germany#how-to-write-german-addresses" target="_blank">How to write your address</a>
+		</div>
+		<div class="form-group">
+			<label :for="uid('bankAccountName')">Bank account holder</label>
+			<input type="text" :id="uid('bankAccountName')" v-model="bankAccountName" :placeholder="fullName">
+		</div>
+		<div class="form-group">
+			<label :for="uid('bankAccountIBAN')">Bank <glossary>IBAN</glossary></label>
+			<input type="text" :id="uid('bankAccountIBAN')" v-model="bankAccountIBAN" placeholder="DE00 0000 0000 0000 0000 00">
+		</div>
+		<hr>
+		<div class="form-group">
+			<label :for="uid('oldAddress')">Old address</label>
+			<div class="input-group">
+				<textarea
+					:id="uid('oldAddress')"
+					v-model="oldAddress"
+					class="address-input"
+					autocomplete="street-address"
+					placeholder="Alte Wohnungstraße 123&#10;12345 Berlin"></textarea>
+				<span class="input-instructions">This is the apartment for which you want the deposit back.</span>
+			</div>
+		</div>
+		<div class="form-group">
+			<label :for="uid('moveOutDate') + '-day'">Move-out date</label>
+			<date-picker v-model="moveOutDate" :id="uid('moveOutDate')"></date-picker>
+		</div>
+		<div class="form-group">
+			<label :for="uid('kautionAmount') + '-day'">Deposit amount</label>
+			<div class="input-group">
+				<income-input :id="uid('kautionAmount')" v-model="kautionAmount"></income-input>€
+			</div>
+			<label class="checkbox">
+				<input type="checkbox" v-model="hasReceivedPartOfKaution">
+				<div>
+					I received part of my deposit back
+				</div>
+			</label>
+			<div class="input-group" v-if="hasReceivedPartOfKaution">
+				<income-input v-model="remainingKautionAmount"></income-input>€ left to pay
+			</div>
+		</div>
+		<div class="form-group">
+			<span class="label">Utilities bill</span>
+			<label class="checkbox">
+				<input type="checkbox" v-model="hasReceivedNebenkostenabrechnung">
+				<div>
+					I received the last <glossary>Nebenkostenabrechnung</glossary>
+				</div>
+			</label>
+			<span class="input-instructions">
+				Landlords wait for the Nebenkostenabrechnung to return your deposit. This can take up to 12 months. They can only keep a part of your deposit for this.&nbsp;&mdash;&nbsp;<a class="internal-link" href="/guides/mietkaution#when-do-i-get-my-kaution-back" target="_blank">More information</a>
+			</span>
+		</div>
+		<hr>
+		<div class="form-group">
+			<span class="label">Landlord type</span>
+			<div class="input-group">
+				<label class="checkbox">
+					<input type="radio" :name="uid('recipientType')" v-model="recipientType" value="company">
+					Housing company
+				</label>
+				<label class="checkbox">
+					<input type="radio" :name="uid('recipientType')" v-model="recipientType" value="private">
+					Private landlord
+				</label>
+			</div>
+		</div>
+		<div class="form-group" v-if="recipientType == 'company'">
+			<label :for="uid('recipientCompanyName')">Company name</label>
+			<input
+				:id="uid('recipientCompanyName')"
+				type="text"
+				v-model="recipientCompanyName"
+				autocomplete="organization">
+		</div>
+		<div class="form-group" v-if="recipientType == 'private'">
+			<span class="label">Name</span>
+			<div class="input-group">
+				<select v-model="recipientGender" autocomplete="honorific-prefix">
+					<option value="man">Mister</option>
+					<option value="woman">Madam</option>
+					<option value="other">Other</option>
+				</select>
+				<input type="text"
+					:name="uid('employer-first-name')"
+					v-model="recipientFirstName"
+					placeholder="First name"
+					autocomplete="off"
+					class="first-name-input">
+				<input type="text"
+					:name="uid('employer-last-name')"
+					v-model="recipientLastName"
+					placeholder="Last name"
+					autocomplete="off"
+					class="last-name-input">
+			</div>
+		</div>
+		<div class="form-group">
+			<label :for="uid('recipientAddress')">Address</label>
+			<div class="input-group">
+				<textarea
+					:id="uid('recipientAddress')"
+					v-model="recipientAddress"
+					class="address-input"
+					autocomplete="off"
+					placeholder="Vermieterstraße 123&#10;12345 Berlin"></textarea>
+			</div>
+		</div>
+		<div class="form-group">
+			<label>Time to respond</label>
+			<select v-model="deadlineWeeks">
+				<option :value="2">2 weeks</option>
+				<option :value="4">4 weeks</option>
+				<option :value="6">6 weeks</option>
+			</select>
+			<span class="input-instructions">Ask for a reply before {{ longDeadline }}</span>
+		</div>
+	</template>
+{% endraw %}
+</letter-generator>

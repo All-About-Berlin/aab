@@ -1,0 +1,52 @@
+<div class="post-meta no-print">
+	{% set reviews = entry.related_reviews|default([]) %}
+	<span>
+		<i class="icon calendar" aria-hidden="true"></i>
+		<time content="{{ entry.date_updated.strftime('%F') }}" datetime="{{ entry.date_updated.strftime('%F') }}">Updated on {{ entry.date_updated.strftime('%B %-d, %Y') }}</time>
+	</span>
+	<span>
+		<i class="icon person" aria-hidden="true"></i>
+		{% if entry.author|default %}
+			{% if entry.author_url|default %}
+				By <a rel="nofollow" href="{{ entry.author_url }}" target="_blank">{{ entry.author }}</a>
+			{% else %}
+				By {{ entry.author }}
+			{% endif %}
+		{% else %}
+			By <a rel="nofollow" href="{{ site_url }}/contact">Nicolas Bouliane</a>
+		{% endif %}
+	</span>
+	{% if reviews|length == 1 %}
+		<span class="post-reviewers">
+			<i class="icon verified" aria-hidden="true"></i>
+			Verified by <a class="reviewers-link" href="#reviewers">1 expert</a>
+		</span>
+	{% elif reviews|length > 1 %}
+		<span class="post-reviewers">
+			<i class="icon verified" aria-hidden="true"></i>
+			Verified by <a href="#reviewers">{{ reviews|length }} experts</a>
+		</span>
+	{% endif %}
+	{% if reviews %}
+		<ul class="hidden" id="reviewers">
+			{% for review in reviews %}
+				{% set reviewer = review.related_expert[0] %}
+				<li>
+					{% if reviewer.picture|default %}
+						{% image reviewer.picture, css_class="profile-picture", alt=reviewer.name, sizes="75px" %}
+					{% else%}
+						<div class="placeholder"></div>
+					{% endif %}
+					<div>
+						<p>
+							<strong><span class="no-mobile">Verified by </span> {{ reviewer.name }}</strong>
+							<span class="no-mobile"> on </span>
+							<time content="{{ review.date_reviewed.strftime('%F') }}" datetime="{{ review.date_reviewed.strftime('%F') }}">{{ review.date_reviewed.strftime('%B %-d, %Y') }}</time>
+						</p>
+						{{ reviewer.body|render|safe }}
+					</div>
+				</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+</div>

@@ -1,0 +1,221 @@
+{% include '_js/utils.js' %}
+{% include '_js/pension-refund-calculator.js' %}
+{% include '_js/vue.js' %}
+{% include '_js/vue/collapsible.js' %}
+{% include '_js/vue/date-picker.js' %}
+{% include '_js/vue/eur.js' %}
+{% include '_js/vue/glossary.js' %}
+{% include '_js/vue/income-input.js' %}
+{% include '_js/vue/uniqueIdsMixin.js' %}
+{% include '_js/vue/trackedStagesMixin.js' %}
+{% js %}
+	document.querySelectorAll('collapsible.permanent-residence-check').forEach(
+		el => new Vue({
+			el: el,
+			mixins: [uniqueIdsMixin, trackedStagesMixin],
+			data() {
+				return {
+					trackAs: 'Permanent residence check',
+					stages: [
+						'start',
+						'residencePermit',
+						'extraQuestions',
+						'results',
+					],
+					stageIndex: 0,
+
+					residencePermit: 'other',
+					languageLevel: 'A0',
+					hasStudiedInGermany: false,
+					hasGermanRelative: false,
+					spouseHasWorkVisaOrBlueCard: false,
+					monthsInGermany: 20,
+				};
+			},
+			computed: {
+				stage(){
+					return this.stages[this.stageIndex];
+				},
+			},
+		})
+	);
+{% endjs %}
+
+<collapsible class="permanent-residence-check" ref="collapsible" aria-label="Pension refund check" {% if static|default %}static{% endif %} v-cloak>
+{% raw %}
+	<template v-slot:header>Permanent residence qualification check</template>
+	<template v-if="stage === 'start'">
+		<p>This tool tells you if you qualify for permanent residence.</p>
+	</template>
+
+	<template v-if="stage === 'residencePermit'">
+		<h3>Which residence permit do you have?</h3>
+		<p>Your type of residence permit is <a target="_blank" href="/illustrations/freelance-visa-type.png">written on your residence card</a>.</p>
+		<div class="form-group no-label">
+			<div class="input-group vertical">
+				<label class="checkbox">
+					<input type="radio" v-model="residencePermit" value="blueCard" :name="uid('residencePermit')">
+					<div>
+						Blue Card
+						<br><span class="input-instructions">§ 18c</span>
+					</div>
+				</label>
+				<label class="checkbox">
+					<input type="radio" v-model="residencePermit" value="workVisa" :name="uid('residencePermit')">
+					<div>
+						Work visa for skilled professionals
+						<br><span class="input-instructions">§ 18a, § 18b or § 18d</span>
+					</div>
+				</label>
+				<label class="checkbox">
+					<input type="radio" v-model="residencePermit" value="freelanceVisaAbs1" :name="uid('residencePermit')">
+					<div>
+						Freelance visa
+						<br><span class="input-instructions">§ 21 Abs. 1 or § 21 Abs. 2a</span>
+					</div>
+				</label>
+				<label class="checkbox">
+					<input type="radio" v-model="residencePermit" value="freelanceVisaAbs5" :name="uid('residencePermit')">
+					<div>
+						Freelance visa
+						<br><span class="input-instructions">§ 21 Abs. 5</span>
+					</div>
+				</label>
+				<label class="checkbox">
+					<input type="radio" v-model="residencePermit" value="refugee" :name="uid('residencePermit')">
+					<div>
+						Refugee or asylum seeker visa
+						<br><span class="input-instructions">§ 23 Abs. 4, § 25 Abs. 1 or § 25 Abs. 2 S. 1</span>
+					</div>
+				</label>
+				<label class="checkbox">
+					<input type="radio" v-model="residencePermit" value="other" :name="uid('residencePermit')">
+					Something else
+				</label>
+			</div>
+		</div>
+	</template>
+
+	<template v-if="stage === 'extraQuestions'">
+		<h3>How long have you been in Germany?</h3>
+		<div class="form-group no-label">
+			<div class="input-group vertical">
+				<label class="checkbox" v-if="!['blueCard', 'workVisa'].includes(residencePermit)">
+					<input type="radio" v-model="monthsInGermany" :value="60" :name="uid('monthsInGermany')">
+					<div>
+						5 years or longer
+					</div>
+				</label>
+				<label class="checkbox" v-if="['workVisa', 'freelanceVisaAbs1', 'refugee', 'other'].includes(residencePermit)">
+					<input type="radio" v-model="monthsInGermany" :value="36" :name="uid('monthsInGermany')">
+					<div>
+						3 years or longer
+					</div>
+				</label>
+				<label class="checkbox" v-if="residencePermit === 'blueCard'">
+					<input type="radio" v-model="monthsInGermany" :value="27" :name="uid('monthsInGermany')">
+					<div>
+						27 months or longer
+					</div>
+				</label>
+				<label class="checkbox" v-if="residencePermit === 'workVisa'">
+					<input type="radio" v-model="monthsInGermany" :value="24" :name="uid('monthsInGermany')">
+					<div>
+						2 years or longer
+					</div>
+				</label>
+				<label class="checkbox" v-if="residencePermit === 'blueCard'">
+					<input type="radio" v-model="monthsInGermany" :value="21" :name="uid('monthsInGermany')">
+					<div>
+						21 months or longer
+					</div>
+				</label>
+				<label class="checkbox">
+					<input type="radio" v-model="monthsInGermany" :value="20" :name="uid('monthsInGermany')">
+					Less than that
+				</label>
+			</div>
+		</div>
+
+		<template v-if="residencePermit !== 'freelanceVisaAbs1'">
+			<h3>How good is your German?</h3>
+			<div class="form-group no-label">
+				<div class="input-group vertical">
+					<label class="checkbox" v-if="residencePermit === 'refugee'">
+						<input type="radio" v-model="languageLevel" value="C1" :name="uid('languageLevel')">
+						<div>
+							Fluent (<glossary>C1</glossary> or better)
+						</div>
+					</label>
+					<label class="checkbox" v-if="residencePermit !== 'refugee'">
+						<input type="radio" v-model="languageLevel" value="B1" :name="uid('languageLevel')">
+						<div>
+							Intermediate (<glossary>B1</glossary> or better)
+						</div>
+					</label>
+					<label class="checkbox" v-if="residencePermit === 'refugee'">
+						<input type="radio" v-model="languageLevel" value="A2" :name="uid('languageLevel')">
+						<div>
+							Beginner (<glossary>A2</glossary> or better)
+						</div>
+					</label>
+					<label class="checkbox" v-if="residencePermit === 'blueCard'">
+						<input type="radio" v-model="languageLevel" value="A1" :name="uid('languageLevel')">
+						<div>
+							Beginner (<glossary>A1</glossary> or better)
+						</div>
+					</label>
+					<label class="checkbox">
+						<input type="radio" v-model="languageLevel" value="A0" :name="uid('languageLevel')">
+						I don't speak German
+					</label>
+				</div>
+			</div>
+		</template>
+
+		<template v-if="!['blueCard', 'workVisa', 'freelanceVisaAbs1'].includes(residencePermit)">
+			<h3>What is your family situation?</h3>
+			<div class="form-group no-label">
+				<div class="input-group vertical">
+					<label class="checkbox">
+						<input type="checkbox" v-model="hasGermanRelative" :name="uid('hasGermanRelative')">
+						My spouse, parent or child is a German citizen
+					</label>
+					<label class="checkbox">
+						<input type="checkbox" v-model="spouseHasWorkVisaOrBlueCard" :name="uid('spouseHasWorkVisaOrBlueCard')">
+						<div>
+							My spouse has a <glossary term="Work Visa">work visa</glossary> or a <glossary>Blue Card</glossary>
+						</div>
+					</label>
+				</div>
+			</div>
+		</template>
+
+		<template v-if="residencePermit === 'workVisa'">
+			<h3>Where did you study?</h3>
+			<div class="form-group no-label">
+				<div class="input-group">
+					<label class="checkbox">
+						<input type="checkbox" v-model="hasStudiedInGermany" :name="uid('hasStudiedInGermany')">
+						I graduated from a German university
+					</label>
+				</div>
+			</div>
+		</template>
+	</template>
+
+	<template v-if="stage === 'results'">
+		<h3>You qualify for permanent residence</h3>
+		<p>Cool.</p>
+	</template>
+
+	<div class="buttons">
+		<button class="button" v-if="stageIndex > 0" @click="stageIndex -= 1">
+			<i class="icon left" aria-hidden="true"></i> Go back
+		</button>
+		<button class="button primary" v-if="stageIndex < stages.length - 1" @click="stageIndex += 1">
+			Continue <i class="icon right" aria-hidden="true"></i>
+		</button>
+	</div>
+{% endraw %}
+</collapsible>

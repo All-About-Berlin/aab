@@ -1,0 +1,112 @@
+{% include '_js/countries.js' %}
+{% include '_js/utils.js' %}
+{% include '_js/vue.js' %}
+{% include '_js/vue/collapsible.js' %}
+{% include '_js/vue/date-picker.js' %}
+{% include '_js/vue/uniqueIdsMixin.js' %}
+{% js %}
+	document.querySelectorAll('collapsible.pension-refund-question').forEach(
+		el => new Vue({
+			el: el,
+			mixins: [uniqueIdsMixin],
+			data: function() {
+				return {
+					isLoading: false,
+					emailAddress: '',
+					fullName: '',
+					question: '',
+					nationality: countries.all[getDefault('nationality')] || '',
+					countryOfResidence: countries.all[getDefault('countryOfResidence')] || '',
+					stage: 'contactInfo',
+					sortedCountryList: countries.getSortedList(),
+				};
+			},
+			methods: {
+				async submitForm() {
+					if(validateForm(this.$refs.collapsible.$el)) {
+						this.isLoading = true;
+						const response = await fetch(
+							'/api/forms/pension-refund-question',
+							{
+								method: 'POST',
+								keepalive: true,
+								headers: {'Content-Type': 'application/json; charset=utf-8'},
+								body: JSON.stringify({
+									name: this.fullName,
+									email: this.emailAddress,
+									question: this.question,
+									nationality: this.nationality,
+									'country-of-residence': this.countryOfResidence,
+								}),
+							}
+						);
+						this.isLoading = false;
+						this.stage = response.ok ? 'thank-you' : 'error';
+						Vue.nextTick(() => {
+							this.$refs.collapsible.$el.scrollIntoView({ block: 'start', behavior: 'auto' });
+							plausible('Pension refund question', { props: { stage: this.stage }});
+						});
+					}
+				},
+			},
+		})
+	);
+{% endjs %}
+
+<collapsible class="pension-refund-question" aria-label="Ask a question about pension refunds" ref="collapsible" {% if static|default %}static{% endif %} v-cloak>
+	<template v-slot:header>Ask a pension refund expert</template>
+	{% include "_blocks/formHoneypot.html.jinja" %}
+	<template v-if="stage === 'contactInfo'">
+		<p>FundsBack helps people get their pension refund. You can ask them questions. They will answer in 1 to 3 business days. This is a free service.</p>
+		<hr>
+		<div class="form-group required">
+			<label :for="uid('question')">Your question</label>
+			<div class="input-group">
+				<textarea v-model="question" :id="uid('question')" required placeholder=" "></textarea>
+			</div>
+		</div>
+		<div class="form-group required">
+			<label :for="uid('name')">
+				Name
+			</label>
+			<div class="input-group">
+				<input v-model="fullName" type="text" :id="uid('name')" required autocomplete="name">
+			</div>
+		</div>
+		<div class="form-group required">
+			<label :for="uid('email')">
+				Email address
+			</label>
+			<div class="input-group">
+				<input v-model="emailAddress" type="email" :id="uid('email')" required autocomplete="email">
+			</div>
+		</div>
+		<hr>
+		<div class="form-group required">
+			<label :for="uid('nationality')">Nationality</label>
+			<div class="input-group">
+				<input type="text" v-model="nationality" :id="uid('nationality')" :list="uid('countries')" required>
+			</div>
+		</div>
+		<div class="form-group required">
+			<label :for="uid('country-of-residence')">Where do you live?</label>
+			<div class="input-group">
+				<input type="text" v-model="countryOfResidence" :id="uid('country-of-residence')" :list="uid('countries')" required>
+			</div>
+		</div>
+		<datalist :id="uid('countries')">
+			<option v-for="country in sortedCountryList" :key="country[0]" :value="country[1]"></option>
+		</datalist>
+		<hr>
+		<p>Remember, <strong>if you are a EU citizen, or you currently live in the EU, EEA or UK</strong>, you can't get a pension refund. Use my <a target="_blank" href="/tools/pension-refund-calculator">pension refund calculator</a> to know your options.</p>
+		<div class="buttons">
+			<button class="button primary no-print" @click="submitForm" :disabled="isLoading" :class="{loading: isLoading}">Ask FundsBack</button>
+		</div>
+	</template>
+	<template v-if="stage === 'thank-you'">
+		<p><strong>Message sent!</strong> FundsBack will contact you today or during the next business day.</p>
+	</template>
+	<template v-if="stage === 'error'">
+		<p><strong>An error occured</strong> while sending your question. If this keeps happening, <a target="_blank" href="/contact">contact me</a>.</p>
+	</template>
+</collapsible>

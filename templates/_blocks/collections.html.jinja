@@ -1,0 +1,26 @@
+{% if collections|length %}
+	<nav class="collections" aria-label="{% if currentEntry|default %}Collections that feature this guide{% else %}All guide collections{% endif %}">
+		{% for collection in collections %}
+			{% set id = random_id() %}
+			<div class="collection" aria-labelledby="h-coll-{{ id }}">
+				<h3 id="h-coll-{{ id }}"><a href="{{ collection.url }}">{{ collection.title }}</a></h3>
+				<ol aria-label="Guides in this collection">
+					{% for guide in collection.related_guides %}
+						{% if currentEntry|default and currentEntry == guide %}
+							<li class="current">
+								{{ guide.short_title|default(guide.title) }}
+							</li>
+						{% else %}
+							<li>
+								<a href="{{ guide.url }}" title="{{ guide.title }}">{{ guide.short_title|default(guide.title) }}</a>
+							</li>
+						{% endif %}
+					{% endfor %}
+				</ol>
+			</div>
+		{% endfor %}
+	</nav>
+	{% if collections|length > 1 %}
+		{% include "_js/masonry.js" %}
+	{% endif %}
+{% endif %}

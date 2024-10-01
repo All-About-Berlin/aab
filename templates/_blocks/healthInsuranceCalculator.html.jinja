@@ -1,0 +1,584 @@
+{% include '_js/constants.js' %}
+{% include '_js/health-insurance-calculator.js' %}
+{% include '_js/utils.js' %}
+{% include '_js/vue.js' %}
+{% include '_js/vue/age-input.js' %}
+{% include '_js/vue/collapsible.js' %}
+{% include '_js/vue/eur.js' %}
+{% include '_js/vue/glossary.js' %}
+{% include '_js/vue/health-insurance-question.js' %}
+{% include '_js/vue/income-input.js' %}
+{% include '_js/vue/occupation-input.js' %}
+{% include '_js/vue/trackedStagesMixin.js' %}
+{% include '_js/vue/uniqueIdsMixin.js' %}
+{% js %}
+	document.querySelectorAll('collapsible.health-insurance-calculator').forEach(
+		el => new Vue({
+			el: el,
+			mixins: [uniqueIdsMixin, trackedStagesMixin],
+			data: function() {
+				return {
+					trackAs: 'Health insurance calculator',
+					occupation: getDefault('occupation', 'employee'),
+					isMarried: getDefaultBoolean('isMarried'),
+					childrenCount: getDefaultNumber('childrenCount'),
+					income: getDefaultBoolean('useMonthlyIncome') ? Math.round(getDefaultNumber('yearlyIncome')/12) : getDefaultNumber('yearlyIncome'),
+					age: getDefaultNumber('age', ''),
+					formatPercent,
+					pflegeversicherung,
+					stage: 'start',
+					healthInsurance,
+					useMonthlyIncome: getDefaultBoolean('useMonthlyIncome'),
+				}
+			},
+			computed: {
+				result: function() {
+					setDefaultBoolean('isMarried', this.isMarried);
+					setDefault('occupation', this.occupation);
+					setDefaultNumber('yearlyIncome', this.monthlyIncome * 12);
+					setDefaultNumber('age', this.age);
+					setDefaultNumber('childrenCount', this.childrenCount);
+
+					return calculateHealthInsuranceContributions({
+						age: +this.age,
+						monthlyIncome: +this.monthlyIncome,
+						occupation: this.occupation,
+						isMarried: this.isMarried,
+						childrenCount: this.childrenCount,
+					});
+				},
+				salaryOrIncome() { return occupations.isEmployed(this.occupation) ? 'salary' : 'income' },
+				incomeInputRange() {
+					return {
+						min: 0,
+						max: this.useMonthlyIncome ? Math.ceil(healthInsurance.minFreiwilligMonthlyIncome/250)*250 : Math.ceil(healthInsurance.minFreiwilligMonthlyIncome*12/1000)*1000,
+						step: this.useMonthlyIncome ? 250 : 1000,
+					};
+				},
+				monthlyIncome: function() {
+					return this.useMonthlyIncome ? this.income : Math.round(this.income/12);
+				},
+				yearlyIncome: function() {
+					return this.useMonthlyIncome ? this.income * 12 : this.income;
+				},
+				minTotal: function() {
+					return this.result.options.cheapest.total;
+				},
+				maxTotal: function() {
+					return this.result.options.mostExpensive.total;
+				},
+				baseContributionPercentage: function() {
+					return (this.result.baseContribution.totalRate * 100).toFixed(1);
+				},
+				tarifName: function() {
+					return {
+						employee: 'employee',
+						midijob: 'midijob',
+						selfEmployed: 'self-employed',
+						selfPay: this.flag('minijob') ? 'minijob' : 'self-pay (freiwillig Versichert)',
+						student: 'student',
+						azubi: 'apprentice',
+					}[this.result.tarif];
+				},
+				yourSponsorsHave: function() {
+					if(this.flag('familienversicherung-parents') && this.flag('familienversicherung-spouse')){
+						return 'your parents or your spouse have';
+					}
+					else if(this.flag('familienversicherung-spouse')){
+						return 'your spouse has';
+					}
+					else if(this.flag('familienversicherung-parents')){
+						return 'your parents have';
+					}
+				},
+			},
+			methods: {
+				flag(flagName){
+					return this.result.flags.has(flagName);
+				},
+				eur(num) {
+					return formatCurrency(num, false, '€', false);
+				},
+			},
+			watch: {
+				useMonthlyIncome() {
+					setDefaultBoolean('useMonthlyIncome', this.useMonthlyIncome);
+					if(this.useMonthlyIncome) {
+						this.income = Math.round(this.income/12);
+					}
+					else {
+						this.income *= 12;
+					}
+				},
+				yearlyIncome() {
+					setDefaultNumber('yearlyIncome', this.yearlyIncome);
+					if(this.yearlyIncome > 0 && this.occupation === 'unemployed'){
+						this.occupation = 'employee';
+					}
+					else if(this.yearlyIncome === 0 && this.occupation === 'employee'){
+						this.occupation = 'unemployed';
+					}
+					else if(this.yearlyIncome > 0 && this.occupation === 'student'){
+						this.occupation = 'studentEmployee';
+					}
+					else if(this.yearlyIncome === 0 && this.occupation === 'studentEmployee'){
+						this.occupation = 'student';
+					}
+				},
+				occupation() {
+					if(this.occupation === 'unemployed') {
+						this.income = 0;
+					}
+				},
+			}
+		})
+	);
+{% endjs %}
+
+<collapsible class="health-insurance-calculator" ref="collapsible" {% if static|default %}static{% endif %} v-cloak>
+{% raw %}
+	<template v-slot:header>Health insurance calculator</template>
+
+	<template v-if="stage === 'start'">
+		<div class="range-input">
+			<label :for="uid('range-income')">
+				<strong v-if="income === 0">No income</strong>
+				<template v-if="income > 0"><strong><eur :amount="income"></eur></strong>/{{ useMonthlyIncome ? 'month' : 'year' }}</template>
+				<template v-if="income >= incomeInputRange.max">or more</template>
+				<template v-if="income > incomeInputRange.min && income < incomeInputRange.max">{{ salaryOrIncome }}</template>
+			</label>
+			<span class="no-mobile no-print range-prefix">€</span>
+			<input
+				aria-label="Salary"
+				class="no-print"
+				:id="uid('range-income')"
+				v-model.number="income"
+				type="range"
+				:step="incomeInputRange.step"
+				:min="incomeInputRange.min"
+				:max="incomeInputRange.max"
+				tabindex="0">
+			<span class="no-mobile no-print range-suffix">€€€</span>
+		</div>
+		<div class="form-group">
+			<label :for="uid('occupation')">
+				Occupation
+			</label>
+			<occupation-input :id="uid('occupation')" v-model="occupation"></occupation-input>
+		</div>
+		<div class="form-group show-errors">
+			<label :for="uid('income')">
+				{{ salaryOrIncome === 'salary' ? 'Salary' : 'Income' }}
+			</label>
+			<div class="input-group">
+				<income-input :id="uid('income')" v-model="income"></income-input>
+				€
+				<button class="toggle" @click="useMonthlyIncome = !useMonthlyIncome">per {{ useMonthlyIncome ? 'month' : 'year' }}</button>
+			</div>
+		</div>
+		<div class="form-group show-errors">
+			<label :for="uid('age')">
+				Age
+			</label>
+			<label class="input-group">
+				<age-input :id="uid('age')" v-model="age"></age-input>
+				years old
+			</label>
+		</div>
+		<div class="form-group">
+			<span class="label">
+				Marriage
+			</span>
+			<div class="input-group">
+				<label class="checkbox">
+					<input type="radio" :name="uid('is-married')" v-model="isMarried" :value="true">
+					Married
+				</label>
+				<label class="checkbox">
+					<input type="radio" :name="uid('is-married')" v-model="isMarried" :value="false">
+					Not married
+				</label>
+			</div>
+		</div>
+		<div class="form-group">
+			<label :for="uid('children-count')">
+				Children
+			</label>
+			<select :id="uid('children-count')" v-model="childrenCount">
+				<option :value="0">No children</option>
+				<option :value="1">1 child</option>
+				<option :value="2">2 children</option>
+				<option :value="3">3 children</option>
+				<option :value="4">4 children</option>
+				<option :value="5">5 children</option>
+				<option :value="6">6+ children</option>
+			</select>
+		</div>
+		<hr>
+		<p>
+			You pay the <strong>{{ tarifName }} tarif</strong>.
+			<template v-if="result.tarif === 'student'">
+				Your health insurance has a fixed price.
+			</template>
+			<template v-else-if="result.tarif === 'midijob'">
+				It's cheaper than the regular tarif.
+			</template>
+			<template v-else-if="result.tarif === 'selfPay'">
+				<template v-if="flag('minijob')">
+					You pay the <glossary term="Mindestbeitrag">minimum price</glossary>. Your employer does not pay part of your health insurance.
+				</template>
+				<template v-else>
+					Your health insurance costs a percentage of your income.
+					<template v-if="flag('alg-i-buergergeld')">
+						If you get <glossary>ALG I</glossary> or <glossary>Bürgergeld</glossary>, the <glossary>Agentur für Arbeit</glossary> pays for your insurance.
+					</template>
+					<template v-else>
+						Your employer does not pay half of it.
+					</template>
+				</template>
+			</template>
+			<template v-else-if="result.tarif === 'selfEmployed'">
+				Your health insurance costs a percentage of your income.
+			</template>
+			<template v-else-if="flag('azubi-free')">
+				You make less than <eur :amount="healthInsurance.azubiFreibetrag"></eur> per month, so you don't pay for health insurance. Your employer pays for it.
+			</template>
+			<template v-else>
+				Your health insurance costs a percentage of your income. Your employer pays half of it.
+			</template>
+
+			<template v-if="flag('student-30plus')">
+				You don't pay the student tarif because you are too old.
+			</template>
+			<template v-else-if="flag('not-nebenjob')">
+				You don't pay the student tarif because your income is too high.
+			</template>
+		</p>
+		<hr>
+		<details>
+			<summary class="price">
+				Base cost
+				<output>
+					<eur :amount="result.baseContribution.totalContribution"></eur><small class="no-mobile">/month</small>
+				</output>
+			</summary>
+			<p>
+				The base cost is the same with every <glossary term="Krankenkasse">public health insurer</glossary>.
+				<template v-if="flag('minijob')">
+					You have a minijob, so you pay the <glossary term="Mindestbeitrag">minimum price</glossary>. It's {{ baseContributionPercentage }}% of <eur :amount="healthInsurance.minMonthlyIncome" cents></eur> }}.
+				</template>
+				<template v-else-if="flag('min-contribution')">
+					You make less than <eur :amount="healthInsurance.minMonthlyIncome" cents></eur> per month, so you pay the <glossary term="Mindestbeitrag">minimum price</glossary>. It's {{ baseContributionPercentage }}% of <eur :amount="healthInsurance.minMonthlyIncome" cents></eur>.
+				</template>
+				<template v-else-if="flag('max-contribution')">
+					You make more than <eur :amount="healthInsurance.maxMonthlyIncome" cents></eur> per month, so you pay the <glossary term="Höchstbeitrag">maximum price</glossary>. It's {{ baseContributionPercentage}}% of <eur :amount="healthInsurance.maxMonthlyIncome" cents></eur>.
+				</template>
+				<template v-else-if="flag('midijob')">
+					You make less than <eur :amount="healthInsurance.midijobMaxIncome" cents></eur>, so you pay the midijob tarif. It's cheaper than the normal tarif.
+				</template>
+				<template v-else-if="result.tarif === 'student'">
+					You pay the student tarif; the base cost is a fixed price.
+				</template>
+				<template v-else>
+					The base cost is {{ baseContributionPercentage }}% of your income.
+				</template>
+			</p>
+		</details>
+		<details>
+			<summary class="price">
+				Insurer surcharge
+				<output
+					v-if="eur(result.options.cheapest.zusatzbeitrag.totalContribution) === eur(result.options.mostExpensive.zusatzbeitrag.totalContribution)">
+					<eur :amount="result.options.mostExpensive.zusatzbeitrag.totalContribution"></eur>
+				</output>
+				<output v-else>
+					<eur :amount="result.options.cheapest.zusatzbeitrag.totalContribution" no-symbol></eur>
+					&nbsp;to&nbsp;
+					<eur :amount="result.options.mostExpensive.zusatzbeitrag.totalContribution"></eur><small class="no-mobile">/month</small>
+				</output>
+			</summary>
+			<p>
+				Health insurers can charge a little more than the base cost. The surcharge (<em><glossary>Zusatzbeitrag</glossary></em>) is usually around {{ formatPercent(healthInsurance.avgZusatzbeitrag * 100) }} of your income.
+			</p>
+		</details>
+		<details>
+			<summary class="price">
+				Nursing care insurance
+				<output>
+					<eur :amount="result.pflegeversicherung.totalContribution"></eur><small class="no-mobile">/month</small>
+				</output>
+			</summary>
+			<p>
+				Nursing care insurance (<em><glossary>Pflegeversicherung</glossary></em>) costs the same with every <glossary term="Krankenkasse">public health insurer</glossary>.
+				<template v-if="flag('max-contribution')">
+					You make over <eur :amount="healthInsurance.maxMonthlyIncome" cents></eur> per month, so you pay the <glossary term="Höchstbeitrag">maximum price</glossary>.
+				</template>
+				<template v-else-if="age > pflegeversicherung.defaultTarifMaxAge && childrenCount === 0">
+					It costs {{ (pflegeversicherung.surchargeTarif*100).toFixed(1) }}% of your income, because you are over {{ pflegeversicherung.defaultTarifMaxAge }} years old and you don't have children.
+				</template>
+				<template v-else>
+					It costs {{ (pflegeversicherung.defaultTarif*100).toFixed(2) }}% of your income.
+				</template>
+			</p>
+		</details>
+		<details>
+			<summary class="price">
+				Your employer pays
+				<output v-if="maxTotal.employerContribution === 0">
+					<eur :amount="0"></eur>
+				</output>
+				<template v-else>
+					<output v-if="eur(minTotal.employerContribution) === eur(maxTotal.employerContribution)">
+						<eur :amount="maxTotal.employerContribution"></eur><small class="no-mobile">/month</small>
+					</output>
+					<output v-else>
+						<eur :amount="minTotal.employerContribution" no-symbol></eur>
+						&nbsp;to&nbsp;
+						<eur :amount="maxTotal.employerContribution"></eur><small class="no-mobile">/month</small>
+					</output>
+				</template>
+			</summary>
+			<p v-if="result.tarif === 'selfEmployed'">
+				When you are self-employed, you don't get help from your employer. You pay the full price yourself.
+			</p>
+			<p v-else-if="flag('azubi-free')">
+				Your employer pays for your health insurance, because you make less than <eur :amount="healthInsurance.azubiFreibetrag"></eur> per month.
+			</p>
+			<p v-else-if="flag('minijob')">
+				When you have a minijob, your employer does not pay for your health insurance.
+			</p>
+			<p v-else>
+				When you are an employee, your employer pays half of your health insurance.
+			</p>
+		</details>
+		<details>
+			<summary class="price highlighted">
+				You pay 
+				<template class="no-mobile" v-if="flag('max-contribution')">the maximum price</template>
+				<template class="no-mobile" v-if="flag('min-contribution')">the minimum price</template>
+				<output v-if="maxTotal === 0">
+					<eur :amount="0"></eur>
+				</output>
+				<output v-if="eur(minTotal.personalContribution) === eur(maxTotal.personalContribution) && maxTotal.personalContribution > 0">
+					<eur :amount="maxTotal.personalContribution"></eur><small class="no-mobile">/month</small>
+				</output>
+				<output v-if="eur(minTotal.personalContribution) != eur(maxTotal.personalContribution) && maxTotal.personalContribution > 0">
+					<eur :amount="minTotal.personalContribution" no-symbol></eur>
+					&nbsp;to&nbsp;
+					<eur :amount="maxTotal.personalContribution"></eur><small class="no-mobile">/month</small>
+				</output>
+			</summary>
+			<p>
+				This is how much you pay every month for public health insurance.
+				<template v-if="flag('max-contribution')">
+					You make more than <eur :amount="healthInsurance.maxMonthlyIncome" cents></eur> per month, so you pay the <glossary term="Höchstbeitrag">maximum price</glossary>.
+				</template>
+				<template v-else-if="flag('min-contribution')">
+					You pay the <glossary term="Mindestbeitrag">minimum price</glossary>, because you make less than <eur :amount="healthInsurance.minMonthlyIncome" cents></eur> per month.
+				</template>
+				<template v-else-if="flag('azubi-free')">
+					You pay nothing, because you make less than <eur :amount="healthInsurance.azubiFreibetrag"></eur> per month. Your employer pays for your insurance.
+				</template>
+			</p>
+		</details>
+		<div class="buttons">
+			<button class="button primary no-print" @click="stage = 'insuranceOptions'">Show insurance options <i class="icon right" aria-hidden="true"></i></button>
+		</div>
+	</template>
+	<template v-if="stage === 'insuranceOptions'">
+		<h3>Your options</h3>
+		<div class="collapsible-options">
+			<div v-if="flag('alg-i-buergergeld')">
+				{% endraw %}{% include "_css/icons/bank.svg" %}{% raw %}
+				<div>
+					<h3>ALG I or Bürgergeld</h3>
+					<p>
+						If you get <glossary>ALG I</glossary> or <glossary>Bürgergeld</glossary>, you don't pay for health insurance. The <glossary>Agentur für Arbeit</glossary> pays for it.
+					</p>
+				</div>
+				<output><eur :amount="0"></eur> <small>per month</small></output>
+			</div>
+			<div v-if="flag('familienversicherung-spouse') || flag('familienversicherung-parents')">
+				{% endraw %}{% include "_css/icons/family.svg" %}{% raw %}
+				<div>
+					<h3><glossary term="Familienversicherung">Family insurance</glossary></h3>
+					<p>
+						If {{ yourSponsorsHave }} <glossary term="gesetzliche Krankenversicherung">public health insurance</glossary>, it covers you for free. Ask their health insurer.
+					</p>
+				</div>
+				<output><eur :amount="0"></eur> <small>per month</small></output>
+			</div>
+			<button @click="stage = 'publicInsuranceOptions'">
+				{% endraw %}{% include "_css/icons/health.svg" %}{% raw %}
+				<div>
+					<h3>Public health insurance</h3>
+					<p>The safest choice for most people. The price is a percentage of your income.</p>
+				</div>
+				<output>
+					<eur :amount="result.options.barmer.total.personalContribution"></eur> <small>per month</small>
+				</output>
+			</button>
+			<button class='private-health-insurance' v-if="flag('private')" @click="stage = 'privateInsuranceOptions'">
+				{% endraw %}{% include "_css/icons/health.svg" %}{% raw %}
+				<div>
+					<h3>Private health insurance</h3>
+					<p>Better and cheaper for some people, like young people with a good income.</p>
+				</div>
+				<output v-if="result.tarif === 'student' || flag('student-30plus')">
+					<small>From</small> <eur :amount="111"></eur> <small>per month</small>
+				</output>
+				<output v-if="result.tarif === 'employee' && !flag('student-30plus')">
+					<small>From</small> <eur :amount="263"></eur> <small>per month</small>
+				</output>
+				<output v-if="result.tarif === 'selfEmployed' && !flag('student-30plus')">
+					<small>From</small> <eur :amount="552"></eur> <small>per month</small>
+				</output>
+			</button>
+			<a v-if="flag('ehic')" title="Learn more about the EHIC" href="/guides/german-health-insurance#insurance-from-other-eu-countries" target="_blank">
+				{% endraw %}{% include "_css/icons/passport.svg" %}{% raw %}
+				<div>
+					<h3>European Health Insurance Card</h3>
+					<p>If you have health insurance from another EU country, you might not need German health insurance.</p>
+				</div>
+			</a>
+			<a v-if="flag('ksk')" title="Learn more about the KSK" href="/guides/ksk-kuenstlersozialkasse" target="_blank">
+				{% endraw %}{% include "_css/icons/liability.svg" %}{% raw %}
+				<div>
+					<h3>Join the Künstlersozialkasse</h3>
+					<p>If you are a freelance artist or publicist, join the KSK. They pay half of your health insurance. It's always worth it.</p>
+				</div>
+			</a>
+		</div>
+	</template>
+	<template v-if="stage === 'publicInsuranceOptions'">
+		<h3>Public health insurance</h3>
+		<p>
+			There are over 100 <glossary term="Krankenkasse">public health insurers</glossary>. Their prices and coverage are almost the same.
+		</p>
+		<div class="collapsible-options">
+			<a title="Sign up with Techniker Krankenkasse" :href="result.tarif === 'student' ? '/out/tk-calc-students' : '/out/tk-calc'" target="_blank">
+				{% endraw %}{% include "_css/icons/health-insurance/logo-tk.svg" %}{% raw %}
+				<div>
+					<h3>Techniker Krankenkasse</h3>
+					<p>The biggest health insurer in Germany. They have English-speaking support.</p>
+				</div>
+				<output>
+					<eur :amount="result.options.tk.total.personalContribution"></eur> <small>per month</small>
+				</output>
+			</a>
+			<a title="Sign up with BARMER" href="/out/barmer-calc" target="_blank">
+				{% endraw %}{% include "_css/icons/health-insurance/logo-barmer.svg" %}{% raw %}
+				<div>
+					<h3>Barmer</h3>
+					<p>The second biggest public health insurer. They have an English-speaking Expat Hub.</p>
+				</div>
+				<output>
+					<eur :amount="result.options.barmer.total.personalContribution"></eur> <small>per month</small>
+				</output>
+			</a>
+			<a title="Sign up with AOK" href="/out/aok-calc" target="_blank">
+				{% endraw %}{% include "_css/icons/health-insurance/logo-aok.svg" %}{% raw %}
+				<div>
+					<h3>AOK (Nordost)</h3>
+					<p>Another large public health insurer. They have branches for each part of Germany.</p>
+				</div>
+				<output>
+					<eur :amount="result.options.aok.total.personalContribution"></eur> <small>per month</small>
+				</output>
+			</a>
+			<a title="Sign up with DAK" href="/out/dak-calc" target="_blank">
+				{% endraw %}{% include "_css/icons/health-insurance/logo-dak.svg" %}{% raw %}
+				<div>
+					<h3>DAK</h3>
+					<p>Another large public health insurer.</p>
+				</div>
+				<output>
+					<eur :amount="result.options.dak.total.personalContribution"></eur> <small>per month</small>
+				</output>
+			</a>
+		</div>
+	</template>
+	<template v-if="stage === 'privateInsuranceOptions'">
+		<h3>Private health insurance</h3>
+		<p>
+			<glossary term="private Krankenversicherung">Private health insurance</glossary> can be better and cheaper than public health insurance. It depends on your situation.
+		</p>
+		<div class="collapsible-options">
+			<a @click.prevent="stage = 'askABroker'" title="Choose a health insurance broker" href="/guides/german-health-insurance#insurance-brokers" target="_blank">
+				{% endraw %}{% include "_css/icons/help.svg" %}{% raw %}
+				<div>
+					<h3>Ask a health insurance broker</h3>
+					<p>They help you choose from hundreds of options. It's the best way to choose health insurance.</p>
+				</div>
+			</a>
+			<a title="Get a quote from Feather" href="/out/feather-calc" target="_blank">
+				{% endraw %}{% include "_css/icons/health-insurance/logo-feather.svg" %}{% raw %}
+				<div>
+					<h3>Get a quote from Feather</h3>
+					<p>They sell insurance from a few insurers. I got my health insurance from Feather, so I recommend them.</p>
+				</div>
+			</a>
+			<a title="Get a quote from Ottonova" href="/out/ottonova-calc" target="_blank">
+				{% endraw %}{% include "_css/icons/health-insurance/logo-ottonova.svg" %}{% raw %}
+				<div>
+					<h3>Get a quote from Ottonova</h3>
+					<p>They sell their own health insurance. It's expensive for what you get. They speak English.</p>
+				</div>
+				<output v-if="result.tarif === 'student' || flag('student-30plus')">
+					<small>From</small> <eur :amount="111"></eur> <small>per month</small>
+				</output>
+				<output v-if="result.tarif === 'employee' && !flag('student-30plus')">
+					<small>From</small> <eur :amount="263"></eur> <small>per month</small>
+				</output>
+				<output v-if="result.tarif === 'selfEmployed' && !flag('student-30plus')">
+					<small>From</small> <eur :amount="552"></eur> <small>per month</small>
+				</output>
+			</a>
+		</div>
+	</template>
+	<template v-if="['publicInsuranceOptions', 'insuranceOptions'].includes(stage)">
+		<h3>Need help choosing?</h3>
+		<div class="collapsible-options">
+			<a @click.prevent="stage = 'askABroker'" title="Choose a health insurance broker" href="/guides/german-health-insurance#insurance-brokers" target="_blank">
+				{% endraw %}{% include "_css/icons/help.svg" %}{% raw %}
+				<div>
+					<h3>Ask a health insurance broker</h3>
+					<p>It's the best way to choose health insurance, and it's free.</p>
+				</div>
+			</a>
+		</div>
+	</template>
+	<health-insurance-question
+		v-if="stage === 'askABroker'"
+		:age="age"
+		:income="yearlyIncome"
+		:occupation="occupation"
+		:is-married="isMarried"
+		:children-count="childrenCount"
+		>
+		<template v-slot:form-buttons>
+			<button class="button" @click="stage = 'insuranceOptions'">
+				<i class="icon left" aria-hidden="true"></i> Back to options
+			</button>
+		</template>
+		<template v-slot:after-confirmation>
+			<div class="buttons">
+				<button class="button" @click="stage = 'start'">
+					<i class="icon left" aria-hidden="true"></i> Back to calculator
+				</button>
+			</div>
+		</template>
+	</health-insurance-question>
+
+	<div class="buttons" v-if="stage === 'publicInsuranceOptions' || stage === 'privateInsuranceOptions'">
+		<button class="button" @click="stage = 'insuranceOptions'">
+			<i class="icon left" aria-hidden="true"></i> Back to options
+		</button>
+	</div>
+	<div class="buttons" v-if="stage === 'insuranceOptions'">
+		<button class="button" @click="stage = 'start'" v-if="stage === 'insuranceOptions'">
+			<i class="icon left" aria-hidden="true"></i> Back to calculator
+		</button>
+	</div>
+{% endraw %}
+</collapsible>

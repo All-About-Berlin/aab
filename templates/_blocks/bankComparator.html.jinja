@@ -1,0 +1,362 @@
+<div class="bank-comparator" v-cloak>
+{% raw %}
+	<div class="filters no-print">
+		<div class="tags">
+			<button @click="showAllTags=!showAllTags" class="primary"><i class="icon filter"></i> {{ showAllTags ? 'Hide filters' : 'Filter banks' }}</button>
+			<tag :tag="t" v-for="t in tags" v-if="t.selected" :key="t.name"></tag>
+			<tag icon="add" :tag="t" v-for="t in suggestedTags" :key="t.name"></tag>
+		</div>
+		<template v-if="showAllTags">
+			<div class="form-group">
+				<span class="label">Bank language</span>
+				<div class="input-group tags">
+					<tag :tag="t" v-for="t in tagGroups.languages.tags" :key="t.name"></tag>
+				</div>
+			</div>
+			<div class="form-group">
+				<span class="label">Features</span>
+				<tag-checkbox :tag="t" v-for="t in tagGroups.features.tags" :key="t.name"></tag-checkbox>
+			</div>
+			<div class="form-group">
+				<span class="label">Payment methods</span>
+				<tag-checkbox :tag="t" v-for="t in tagGroups.paymentMethods.tags" :key="t.name"></tag-checkbox>
+			</div>
+			<div class="form-group">
+				<span class="label">Bank requirements</span>
+				<tag-checkbox :tag="t" v-for="t in tagGroups.requirements.tags" :key="t.name"></tag-checkbox>
+			</div>
+			<hr>
+			<div class="form-group">
+				<label :for="uid('nationality')">Nationality</label>
+				<select :id="uid('nationality')" v-model="nationality">
+					<option value="" disabled selected hidden>Choose a country</option>
+					<option value="">Unknown</option>
+					<option disabled>──────────</option>
+					<option v-for="country in sortedCountryList" :key="country[0]" :value="country[0]">{{ country[1] }}</option>
+				</select>
+				<span class="input-instructions">
+					Banks don't recognise certain passports, so it's harder to open an account.
+				</span>
+			</div>
+			<div class="form-group show-errors">
+				<label :for="uid('income')">
+					Income
+				</label>
+				<div class="input-group">
+					<income-input :id="uid('income')" v-model="income"></income-input>
+					€ per month
+				</div>
+				<span class="input-instructions">Some banks have no monthly fee if you deposit enough money every month.</span>
+			</div>
+			<hr>
+		</template>
+	</div>
+	<ul class="bank-options">
+		<li class="account" v-show="account.score > 0 || showNegativeScore" v-for="account in sortedAccounts" :key="account.bank.name + account.name">
+			<a class="logo" :href="account.url" target="_blank">
+				<img :src="logo(account.bank)">
+			</a>
+			<h3>
+				<a :href="account.url" target="_blank">{{ account.bank.name }} {{ account.name }}</a>
+			</h3>
+			<p v-if="account.description" v-html="account.description" class="description"></p>
+			<div class="actions">
+				<a v-if="!account.hidden && !account.saved" @click="account.saved = !account.saved">{% endraw %}{% include '_css/icons/star.svg' %}{% raw %} Save</a>
+				<a v-if="!account.hidden && account.saved" @click="account.saved = !account.saved">{% endraw %}{% include '_css/icons/star-filled.svg' %}{% raw %} Saved</a>
+				<a v-if="!account.saved" @click="account.hidden = !account.hidden">{{ account.hidden ? 'Unhide' : 'Hide' }}</a>
+			</div>
+			<div class="details">
+				<div class="features">
+					<h4>Features</h4>
+					<div class="price" :class="{error: hasLanguagesError(account)}">
+						Languages
+						<output>{{ languages(account) }}</output>
+					</div>
+					<div class="price" :class="{error: hasBranchesError(account)}">
+						Physical branches
+						<output>{{ hasTag(account, 'Physical branches') }}</output>
+					</div>
+					<div class="price" :class="{error: hasPaymentMethodsError(account)}">
+						{{ cardTypes(account).length > 1 ? 'Card types' : 'Card type' }}
+						<output>{{ cardTypes(account).join(', ') }}</output>
+					</div>
+					<div class="price" :class="{error: hasAppleGooglePayError(account)}">
+						Apple Pay / Google Pay
+						<output>{{ hasTag(account, 'Apple Pay / Google Pay') }}</output>
+					</div>
+					<div class="price" :class="{error: hasJointAccountError(account)}">
+						Joint account
+						<output>{{ hasTag(account, 'Joint account') }}</output>
+					</div>
+				</div>
+				<div class="costs">
+					<h4>Costs</h4>
+					<details :class="{error: hasMonthlyFeeError(account)}">
+						<summary class="price">
+							Monthly fee
+							<output><eur :amount="account.monthlyFee"></eur></output>
+						</summary>
+						<div v-if="account.monthlyFee">You pay <eur :amount="account.monthlyFee"></eur> per month for the account.</div>
+						<div v-if="!account.monthlyFee">The account is free. There is no monthly fee.</div>
+					</details>
+					<details>
+						<summary class="price">
+							Card fee
+							<output v-if="account.creditCardOneTimeFee">{{ formatCurrency(account.creditCardOneTimeFee) }}, one time</output>
+							<output v-if="!account.creditCardOneTimeFee"><eur :amount="account.creditCardYearlyFee"></eur>/y</output>
+						</summary>
+						<div v-if="account.creditCardFeeExplanation" v-html="account.creditCardFeeExplanation"></div>
+						<div v-if="!account.creditCardFeeExplanation">You pay this fee to get a credit card.</div>
+					</details>
+					<details :class="{error: hasWithdrawalFeeError(account)}">
+						<summary class="price">
+							Withdrawal fee
+							<output><eur :amount="account.withdrawalFee"></eur></output>
+						</summary>
+						<div v-html="account.withdrawalFeeExplanation"></div>
+					</details>
+					<details :class="{error: hasDepositFeeError(account)}">
+						<summary class="price">
+							Deposit fee
+							<output>
+								<eur v-if="typeof account.depositFee === 'number'" :amount="account.depositFee"></eur>
+								<span v-if="typeof account.depositFee !== 'number'">{{ account.depositFee }}</eur>
+							</output>
+						</summary>
+						<div v-html="account.depositFeeExplanation"></div>
+					</details>
+					<details>
+						<summary class="price">
+							Interest rate
+							<output>{{ account.interestRate.toLocaleString('en-GB', {minimumFractionDigits: 0, maximumFractionDigits: 2}) }}%</output>
+						</summary>
+						<div>Get {{ account.interestRate.toLocaleString('en-GB', {minimumFractionDigits: 0, maximumFractionDigits: 2}) }}% interest per year on your savings.</div>
+					</details>
+				</div>
+				</details>
+				<details class="requirements" :class="{error: hasRequirementsError(account)}" v-if="account.bank.requirements">
+					<summary>Required documents</summary>
+					<p v-html="account.bank.requirements"></p>
+					<p v-if="account.bank.requirementsUrl"><strong><a class="external-link" :href="account.bank.requirementsUrl" target="_blank">Read more</a></strong></p>
+				</details>
+			</div>
+		</li>
+	</ul>
+	<a v-if="negativeScoreAccountsCount" class="no-print" :class="showNegativeScore ? 'hide-options' : 'show-options'" @click.prevent="showNegativeScore = !showNegativeScore" href="#">
+		{{ showNegativeScore ? "Hide" : "Show" }} {{ negativeScoreAccountsCount }} excluded bank{{ negativeScoreAccountsCount > 1 ? 's' : '' }}
+	</a>
+{% endraw %}
+</div>
+
+{% include '_js/countries.js' %}
+{% include '_js/currency.js' %}
+{% include '_js/vue.js' %}
+{% include '_js/vue/eur.js' %}
+{% include '_js/vue/glossary.js' %}
+{% include '_js/vue/income-input.js' %}
+{% include '_js/vue/uniqueIdsMixin.js' %}
+
+{% js %}
+
+const banks = {% include '_js/bankComparator/banks.json.jinja' %};
+const tags = {% include '_js/bankComparator/bankTags.json.jinja' %};
+
+{% raw %}
+const tagGroups = {
+	features: {
+		order: 1,
+	},
+	paymentMethods: {
+		order: 2,
+	},
+	languages: {
+		order: 3,
+	},
+	requirements: {
+		order: 4,
+	},
+};
+
+Object.entries(tags).forEach(([name, tag]) => {
+	tag.name = name;
+	tag.default = tag.default || false;
+	tag.selected = tag.selected || false;
+	tag.group = tagGroups[tag.group];
+});
+
+Object.entries(tagGroups).forEach(([name, tagGroup]) => {
+	tagGroup.tags = Object.values(tags).filter(t => t.group === tagGroup);
+});
+
+const accounts = banks.reduce((allAccounts, bank) => {
+	return bank.accounts.reduce((allAccounts, account) => {
+		account.bank = bank;
+		account.url = account.url || bank.url;
+		account.depositFee = account.depositFee || bank.depositFee;
+		account.depositFeeExplanation = account.depositFeeExplanation || bank.depositFeeExplanation;
+		account.description = [bank.description, account.description].filter(Boolean).join(' ');
+		account.interestRate = account.interestRate || bank.interestRate;
+		account.boost = (account.boost || 0) + (bank.boost || 0);
+
+		// Combine bank and account tags
+		account.tags.push(...bank.tags);
+
+		// Replace tag names with tag objects
+		account.tags = account.tags.map(t => tags[t]);
+
+		// Set UI attributes
+		account.saved = false;
+		account.hidden = false;
+
+		allAccounts.push(account);
+		return allAccounts;
+	}, allAccounts);
+}, []);
+
+Vue.component('tag', {
+	props: {
+		icon: String,
+		tag: Object,
+	},
+	template: `
+	<button :title="tag.description || ''" :class="{active: tag.selected}" @click="tag.selected = !tag.selected">
+		<i class="icon" :class="icon" v-if="icon"></i>
+		{{ tag.name }}
+	</button>`,
+});
+Vue.component('tag-checkbox', {
+	props: {
+		tag: Object,
+	},
+	template: `
+	<label class="checkbox">
+		<input type="checkbox" v-model="tag.selected">
+		<div>
+			{{ tag.name }}
+			<br v-if="tag.description">
+			<small v-if="tag.description">{{ tag.description }}</small>
+		</div>
+	</label>`,
+});
+
+const languageMap = {
+	"English": "EN",
+	"French": "FR",
+	"Spanish": "ES",
+	"Dutch": "NL",
+	"Italian": "IT",
+};
+
+document.querySelectorAll('.bank-comparator').forEach(el => new Vue({
+	el: el,
+	mixins: [uniqueIdsMixin],
+	data() {
+		return {
+			banks,
+			accounts,
+			tags,
+			tagGroups,
+			showAllTags: false,
+			showNegativeScore: false,
+			nationality: '',
+			income: 0,
+			sortedCountryList: countries.getSortedList(),
+			formatCurrency,
+		};
+	},
+	computed: {
+		// Flatten the list of banks into a list of accounts
+		sortedAccounts(){
+			return this.accounts.map((account) => {
+				account.missingTags = this.selectedTags.filter(t => !account.tags.includes(t));
+				account.tags = account.tags.sort((t1, t2) => {
+					if(t1.selected !== t2.selected) {
+						return t2.selected > t1.selected;
+					}
+					return t1.group.order > t2.group.order;
+				});
+
+				account.score = (
+					+account.saved * 1000
+					+ +account.hidden * -1000
+					+ account.missingTags.length * -30
+					+ account.tags.filter(t => t.selected).length * 10
+					+ account.boost
+					+ 1
+				);
+				return account;
+			}).sort((a, b) => {
+				if(a.saved !== b.saved) {
+					return a.saved < b.saved;
+				}
+				if(a.hidden !== b.hidden) {
+					return a.hidden > b.hidden;
+				}
+				return b.score - a.score;
+			});
+		},
+		negativeScoreAccountsCount() {
+			return this.sortedAccounts.filter(a => a.score <= 0).length;
+		},
+		selectedTags(){
+			return Object.values(tags).filter(t => t.selected);
+		},
+		suggestedTags(){
+			const defaultTags = Object.values(tags).filter(t => t.default);
+			return defaultTags
+				.filter(f => !f.selected)
+				.slice(
+					0, Math.max(defaultTags.length - this.selectedTags.length, 0)
+				);
+		},
+	},
+	methods: {
+		logo(bank){
+			return `/staticimages/banks/${bank.name.toLowerCase()}.png`;
+		},
+		cardTypes(account){
+			return ['Visa', 'Mastercard', 'Girocard'].filter(t => account.tags.includes(this.tags[t]));
+		},
+		languages(account) {
+			return account.tags.filter(t => t.group === this.tagGroups.languages).map(t => languageMap[t.name]).sort().join(', ')
+		},
+		hasTag(account, tagName){
+			return account.tags.includes(this.tags[tagName]) ? "Yes" : "No";
+		},
+		hasTagError(account, tags){
+			return tags.some(t => t.selected && !account.tags.includes(t));
+		},
+		hasAppleGooglePayError(account){
+			return this.hasTagError(account, [this.tags['Apple Pay / Google Pay']]);
+		},
+		hasBranchesError(account){
+			return this.hasTagError(account, [this.tags['Physical branches']]);
+		},
+		hasDepositFeeError(account){
+			return this.hasTagError(account, [this.tags['No withdrawal fee']]);
+		},
+		hasJointAccountError(account){
+			return this.hasTagError(account, [this.tags['Joint account']]);
+		},
+		hasLanguagesError(account){
+			return this.hasTagError(account, this.tagGroups.languages.tags);
+		},
+		hasMonthlyFeeError(account){
+			return this.hasTagError(account, [this.tags['No monthly fee']]);
+		},
+		hasPaymentMethodsError(account){
+			return this.hasTagError(account,[
+				this.tags['Mastercard'],
+				this.tags['Visa'],
+				this.tags['Girocard'],
+			]);
+		},
+		hasRequirementsError(account){
+			return this.hasTagError(account, this.tagGroups.requirements.tags);
+		},
+		hasWithdrawalFeeError(account){
+			return this.hasTagError(account, [this.tags['No withdrawal fee']]);
+		},
+	}
+}));
+{% endraw %}{% endjs %}

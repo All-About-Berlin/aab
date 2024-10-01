@@ -22,7 +22,7 @@ Fill this form to deregister your address in Berlin (*[[Abmeldung]]*). You can s
 
 ## Fill the Abmeldung form online
 
-{% include "_blocks/abmeldungFormStatic.html.jinja" %}
+{% with static=true %}{% include "_blocks/abmeldungForm.html.jinja" %}{% endwith %}
 
 ## Download the Abmeldung form
 

@@ -1,0 +1,99 @@
+{% include '_js/utils.js' %}
+{% include '_js/constants.js' %}
+{% include '_js/germanStates.js' %}
+{% include '_js/tax-calculator.js' %}
+{% include '_js/vue.js' %}
+{% include '_js/vue/collapsible.js' %}
+{% include '_js/vue/eur.js' %}
+{% include '_js/vue/glossary.js' %}
+{% include '_js/vue/income-input.js' %}
+{% include '_js/vue/occupation-input.js' %}
+{% include '_js/vue/state-input.js' %}
+{% include '_js/vue/uniqueIdsMixin.js' %}
+{% js %}
+	document.querySelectorAll('collapsible.unemployment-insurance-calculator').forEach(
+		el => new Vue({
+			el: el,
+			mixins: [uniqueIdsMixin],
+			data: function() {
+				return {
+					occupation: getDefault('occupation'),
+					monthlyIncome: Math.round(getDefaultNumber('yearlyIncome')/12),
+					germanState: getDefault('state'),
+					occupations,
+					taxes,
+				}
+			},
+			computed: {
+				showStatePicker: function() {
+					return (+this.monthlyIncome) * 12 >= taxes.beitragsbemessungsgrenze.currentYear.east && this.occupation !== 'unemployed';
+				},
+				results: function() {
+					setDefault('occupation', this.occupation);
+					setDefaultNumber('yearlyIncome', this.monthlyIncome*12);
+					setDefault('state', this.germanState);
+					return calculateUnemploymentInsurance(+this.monthlyIncome * 12, this.occupation, germanStates.isEastGerman(this.germanState));
+				},
+				monthlyBeitragsbemessungsgrenze: function() {
+					return taxes.beitragsbemessungsgrenze.currentYear[germanStates.isEastGerman(this.germanState) ? 'east' : 'west'];
+				},
+			},
+		})
+	);
+{% endjs %}
+
+<collapsible class="unemployment-insurance-calculator" aria-label="Unemployment insurance calculator" {% if static|default %}static{% endif %}>
+{% raw %}
+		<template v-slot:header>Unemployment insurance calculator</template>
+		<div class="form-group">
+			<label :for="uid('occupation')">
+				Occupation
+			</label>
+			<occupation-input :id="uid('occupation')" v-model="occupation"></occupation-input>
+		</div>
+		<div class="form-group show-errors" v-if="occupations.isEmployed(occupation)">
+			<label :for="uid('income')">
+				Income
+			</label>
+			<label class="input-group">
+				<income-input :id="uid('income')" v-model="monthlyIncome"></income-input>
+				€&nbsp;per&nbsp;month
+			</label>
+		</div>
+		<div class="form-group" v-if="showStatePicker">
+			<label :for="uid('state')">
+				Where do you work?
+			</label>
+			<div class="input-group">
+				<state-input east-west-berlin :id="uid('state')" v-model="germanState"></state-input>
+				<span class="input-instructions">The maximum contribution is different in East and West Germany.</span>
+			</div>
+		</div>
+		<hr>
+		<output class="large">
+			<eur :amount="results.unemploymentInsurance / 12"></eur><small class="no-mobile"> per month</small>
+		</output>
+		<p>
+			<template v-if="results.flags.has('none')">
+				<template v-if="results.flags.has('unemployed')">
+					You are unemployed, so you don't pay unemployment insurance.
+				</template>
+				<template v-else-if="results.flags.has('minijob')">
+					You earn less than <eur :amount="taxes.maxMinijobIncome"></eur> per month. When you have a <glossary>Minijob</glossary>, you don't pay unemployment insurance.
+				</template>
+			</template>
+			<template v-else-if="results.flags.has('optional')">
+				When you are self-employed, you don't have to pay unemployment insurance. It's optional.
+			</template>
+			<template v-else-if="results.flags.has('max-contribution')">
+				You earn more than <eur :amount="monthlyBeitragsbemessungsgrenze"></eur> per month (the <em><glossary>Beitragsbemessungsgrenze</glossary></em>), so you pay the maximum amount: {{ taxes.arbeitslosenversicherungRate * 100 }}% of <eur :amount="monthlyBeitragsbemessungsgrenze"></eur>.
+			</template>
+			<template v-else-if="results.flags.has('azubi')">
+				As an apprentice, you pay {{ taxes.arbeitslosenversicherungRate * 100 }}% of your income for unemployment insurance.
+			</template>
+			<template v-else>
+				You pay {{ taxes.arbeitslosenversicherungRate * 100 }}% of your income for unemployment insurance.
+			</template>
+		</p>
+{% endraw %}
+</collapsible>

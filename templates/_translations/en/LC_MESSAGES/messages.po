@@ -1,0 +1,353 @@
+# English translations for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-09-30 16:05+0200\n"
+"PO-Revision-Date: 2024-09-30 15:40+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_layout.html.jinja:16
+msgid "All About Berlin's latest guides"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_layout.html.jinja:53
+msgid "Website sections"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_layout.html.jinja:55
+msgid "Guides about life in Berlin"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_layout.html.jinja:55
+msgid "Guides"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_layout.html.jinja:56
+msgid "Tools, forms and templates"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_layout.html.jinja:56
+msgid "Tools"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_layout.html.jinja:57
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_layout.html.jinja:71
+msgid "Contact"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_layout.html.jinja:61
+msgid "Main page"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_layout.html.jinja:72
+msgid "Donate"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_layout.html.jinja:73
+msgid "Privacy"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_layout.html.jinja:74
+msgid "Terms and conditions"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_layout.html.jinja:103
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_layout.html.jinja:131
+msgid ""
+"All About Berlin helps people settle in Berlin and navigate German "
+"bureaucracy."
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:4
+msgid "Deregister your address"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:6
+msgctxt "Label for the progress bar on a multi-step form"
+msgid "Form progress"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:9
+msgid ""
+"This tool helps you <strong>fill the <glossary>Abmeldung</glossary> "
+"form</strong> in 3 minutes. You can save the completed form, print it, "
+"and bring it to your <glossary>Bürgeramt</glossary> appointment."
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:10
+msgid "Your personal information stays on your computer. No one else can see it."
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:13
+msgid "Your old address"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:14
+msgid "Where did you live? Enter the address that you want to deregister."
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:17
+msgctxt "The first line of an address"
+msgid "Street address"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:29
+msgid "Post code"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:33
+msgid "Berlin"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:37
+msgctxt "For example, 'Haus B, 2. Etage rechts'"
+msgid "Building details"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:44
+msgid "How to write your building details"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:48
+msgid "Move-out date"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:53
+msgid "Your next address"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:54
+msgid "Where will you live after you leave Germany?"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:57
+msgid "Street address"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:63
+msgctxt "Placeholder for the first line of a foreign street address"
+msgid "123 Maple Street, Apt. 102"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:69
+msgid "City and post code"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:73
+msgctxt "Placeholder for a city, region and post code"
+msgid "Montreal, Quebec, H3E 1J4"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:79
+msgid "Country"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:86
+msgid "If you stay in Germany, you probably don't need to deregister your address"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:86
+msgid "More information"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:90
+msgid "Who is deregistering?"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:91
+msgid ""
+"Enter the same information as on your <em><glossary "
+"term=\"Anmeldebestätigung\">Anmeldebestätigung</glossary></em>."
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:98
+msgctxt "The title that goes before a name, like 'Dr'"
+msgid "Title"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:107
+msgid "First and last name"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:113
+msgctxt "Example first name in the user's language"
+msgid "Alex"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:116
+msgid "First name"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:120
+msgctxt "Example last name in the user's language"
+msgid "Smith"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:123
+msgid "Last name"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:125
+msgid "Add a title or birth name"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:129
+msgid "Name at birth"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:135
+msgctxt "Example full name in the user's language"
+msgid "Alex Gagnon"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:136
+msgid "If you changed your name, enter your full name at birth."
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:143
+msgid "Male"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:147
+msgid "Female"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:151
+msgctxt "Other gender / Divers"
+msgid "Other"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:156
+msgid "Nationality"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:166
+msgid "Evangelical Church"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:167
+msgid "Roman Catholic Church"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:168
+msgid "Jewish Community"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:169
+msgid "Old Catholic Church"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:170
+msgid "Free Religious communities"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:172
+msgid "Other / No religion"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:176
+msgid "Date of birth"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:185
+msgid "Place of birth"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:191
+msgctxt "Example city/region/country in the user's language"
+msgid "Montreal, Quebec, Canada"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:193
+msgid "The city, region and country where you were born."
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:200
+msgid ""
+"Print the forms, sign them, and bring them to your <em>Abmeldung</em> "
+"appointment."
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:217
+msgid "Download the filled form"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:218
+msgid "Print this form, sign it, then send it to the <em>Bürgeramt</em>."
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:222
+msgid "What to do next"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:223
+msgid ""
+"To deregister your address, you must send this form to the Bürgeramt. You"
+" can do this by email, by post or in person."
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:228
+msgid "Send the Abmeldung form"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:229
+msgid "Deregister your address by post or by email. It's easier."
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:235
+msgid "Book a Bürgeramt appointment"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:236
+msgid ""
+"Deregister your address in person, get the deregistration certificate "
+"faster."
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:242
+msgid "Pay someone to deregister you"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:243
+msgid ""
+"Pay someone to book your appointment, go to the Bürgeramt and do your "
+"Abmeldung. It's easier, and you get your deregistration certificate by "
+"email."
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:249
+msgid "Support this website"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/abmeldungForm.html.jinja:250
+msgid "Donate a few euros to help me build more free tools."
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/tooltip.html.jinja:4
+msgid "Open definition in new tab"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/tooltip.html.jinja:9
+msgid "Hear how this term is pronounced"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/tooltip.html.jinja:10
+msgid "Close"
+msgstr ""
+
+#: /Users/nicolas/Documents/Projects/AllAboutBerlin/source/site/templates/_blocks/tooltip.html.jinja:10
+msgid "Close tooltip"
+msgstr ""
+

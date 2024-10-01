@@ -1,0 +1,23 @@
+<nav class="table-of-contents no-print" aria-label="Table of contents" {% if not showScreenReaders|default(true) %}aria-hidden="true"{% endif %}>
+	<h2>On this page</h2>
+	<ol>
+		{%- for heading in entry.table_of_contents -%}
+			<li>
+				{% if heading.children %}
+					<a href="#" title="Show or hide subsections" aria-label="Show or hide subsections" class="expand"></a>
+				{% endif %}
+				<a href="#{{ heading.id }}">{{ heading.name }}</a>
+				{% if heading.children %}
+					<ol>
+						{% for child in heading.children %}
+							<li><a href="#{{ child.id }}">{{ child.name }}</a></li>
+						{% endfor %}
+					</ol>
+				{% endif %}
+			</li>
+		{%- endfor -%}
+		{%- if showRelatedEntriesLink|default -%}
+			<li><a href="#related">Related guides</a></li>
+		{%- endif -%}
+	</ol>
+</nav>

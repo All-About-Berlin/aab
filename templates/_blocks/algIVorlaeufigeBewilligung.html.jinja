@@ -30,7 +30,7 @@
 
 <letter-generator class="alg-i-vorlaeufige-bewilligung" track-as="ALG I vorläufige Bewilligung" {% if static|default %}static{% endif %}>
 {% raw %}
-	<template v-slot:header>ALG I – Request a preliminary decision</template>
+	<template v-slot:header>{% trans %}ALG I – Request a preliminary decision{% endtrans %}</template>
 
 	<template v-slot:letter-recipient="{ language, stage }">
 		<span class="letter-return-address" v-if="address">
@@ -46,8 +46,8 @@
 
 	<template v-slot:letter-details="{ language, stage }">
 		<template v-if="language === 'en'">
-			<template v-if="fullName"><strong>Name:</strong> {{ fullName }}<br></template>
-			<strong>Date:</strong> {{ currentDate.toLocaleDateString("en-US") }}
+			<template v-if="fullName"><strong>{% trans "Full name" %}Name{% endtrans %}:</strong> {{ fullName }}<br></template>
+			<strong>Date:</strong> {{ currentDate.toLocaleDateString("{% trans "Current locale" %}en-US{% endtrans %}") }}
 			<template v-if="caseNumber"><br><strong>Case number: </strong> {{ caseNumber }}</template>
 		</template>
 		<template v-if="language === 'de'">
@@ -59,7 +59,7 @@
 
 	<template v-slot:letter-body="{ language, stage }">
 		<p v-if="language === 'en'">
-			<strong>Subject: Request for preliminary decision (ALG I)</strong>
+			<strong>{% trans %}Subject: Request for preliminary decision (ALG I){% endtrans %}</strong>
 		</p>
 		<p v-if="language === 'de'">
 			<strong>Betreff: Antrag auf vorläufige Entscheidung (ALG I)</strong>
@@ -68,21 +68,21 @@
 		<p>{{ formatSalutations(recipientGender, recipientFirstName, recipientLastName, language) }},</p>
 
 		<p v-if="language === 'en'">
-			Since the processing of my application requires more time, I hereby submit an application for a provisional decision in accordance with § 328 paragraph 1 sentence 3 SGB III, i.e. a provisional grant of unemployment benefits. The requirements for my unemployment benefits claim are met with sufficient probability. I am not responsible for the circumstances that still stand in the way of an immediate final decision.
+			{% trans %}Since the processing of my application requires more time, I hereby submit an application for a provisional decision in accordance with § 328 paragraph 1 sentence 3 SGB III, i.e. a provisional grant of unemployment benefits. The requirements for my unemployment benefits claim are met with sufficient probability. I am not responsible for the circumstances that still stand in the way of an immediate final decision.{% endtrans %}
 		</p>
 		<p v-if="language === 'de'">
 			da die Bearbeitung meines Antrages noch Zeit benötigt, stelle ich hiermit einen Antrag auf vorläufige Entscheidung nach § 328 Abs. 1 Satz 1 Nr. 3 SGB III, d.h. eine vorläufige Arbeitslosengeldgewährung. Die Voraussetzungen für meinen Arbeitslosengeldanspruch liegen mit hinreichender Wahrscheinlichkeit vor. Die Umstände, die einer sofortigen abschließenden Entscheidung noch entgegenstehen, habe ich nicht zu vertreten.
 		</p>
 
 		<p v-if="language === 'en'">
-			According to § 328 Para. 1 Sentence 1 No. 3 SGB III, a provisional decision is to be made on application in accordance with the law, i.e. you do not have any discretion in this respect. I request that you make a decision within 3 weeks of receipt of this application.
+			{% trans %}According to § 328 Para. 1 Sentence 1 No. 3 SGB III, a provisional decision is to be made on application in accordance with the law, i.e. you do not have any discretion in this respect. I request that you make a decision within 3 weeks of receipt of this application.{% endtrans %}
 		</p>
 		<p v-if="language === 'de'">
 			In den Fällen des § 328 Abs. 1 Satz 1 Nr. 3 SGB III ist auf Antrag nach der gesetzlichen Regelung vorläufig zu entscheiden, d.h. ein Ermessen steht Ihnen insoweit nicht zu. Ich bitte um Erteilung eines Leistungsbescheides binnen 3 Wochen ab Zugang dieses Antrags.
 		</p>
 
 		<p v-if="language === 'en'">
-			Best regards<template v-if="fullName">,<br></template>
+			{% trans %}Best regards{% endtrans %}<template v-if="fullName">,<br></template>
 			{{ fullName }}
 		</p>
 		<p v-if="language === 'de'">
@@ -90,17 +90,17 @@
 			{{ fullName }}
 		</p>
 		<p class="signature" v-if="stage === 'printPreview'">
-			{{ language === 'en' ? 'Signature' : 'Unterschrift' }}
+			{{ language === 'en' ? '{% trans %}Signature{% endtrans %}' : 'Unterschrift' }}
 		</p>
 	</template>
 
 	<template v-slot:form>
 		<div class="form-group no-print">
-			<label>Your full name</label>
+			<label>{% trans %}Your full name{% endtrans %}</label>
 			<input type="text" v-model="fullName">
 		</div>
 		<div class="form-group no-print">
-			<label :for="uid('address')">Your address</label>
+			<label :for="uid('address')">{% trans %}Your address{% endtrans %}</label>
 			<div class="input-group">
 				<textarea
 					:id="uid('address')"
@@ -110,7 +110,7 @@
 			</div>
 		</div>
 		<div class="form-group no-print">
-			<label :for="uid('agenturFurArbeitAddress')">Agentur für Arbeit address</label>
+			<label :for="uid('agenturFurArbeitAddress')">{% trans %}Agentur für Arbeit address{% endtrans %}</label>
 			<div class="input-group">
 				<textarea
 					:id="uid('agenturFurArbeitAddress')"
@@ -119,41 +119,41 @@
 					placeholder="Agentur für Arbeit Mitte&#10;Example Straße 123&#10;12345 Berlin"></textarea>
 				<br>
 				<a class="input-instructions external-link" href="https://web.arbeitsagentur.de/portal/metasuche/suche/dienststellen" target="_blank">
-					Find your Agentur für Arbeit
+					{% trans %}Find your Agentur für Arbeit{% endtrans %}
 				</a>
 			</div>
 		</div>
 		<div class="form-group no-print required">
-			<span class="label">Case worker</span>
+			<span class="label">{% trans %}Case worker{% endtrans %}</span>
 			<div class="input-group">
 				<select v-model="recipientGender" autocomplete="honorific-prefix">
-					<option value="man">Mister</option>
-					<option value="woman">Madam</option>
-					<option value="other">Other</option>
+					<option value="man">{% trans %}Mister{% endtrans %}</option>
+					<option value="woman">{% trans %}Madam{% endtrans %}</option>
+					<option value="other">{% trans %}Other{% endtrans %}</option>
 				</select>
 				<input type="text"
 					:name="uid('employer-first-name')"
 					v-model="recipientFirstName"
-					placeholder="First name"
+					placeholder="{% trans %}First name{% endtrans %}"
 					autocomplete="off"
 					class="first-name-input">
 				<input type="text"
 					:name="uid('employer-last-name')"
 					v-model="recipientLastName"
-					placeholder="Last name"
+					placeholder="{% trans %}Last name{% endtrans %}"
 					autocomplete="off"
 					class="last-name-input">
 				<span class="input-instructions">
-					This is the employee who helps you at the <glossary>Agentur für Arbeit</glossary>.
+					{% trans "Field description. The field ask for the case worker's name" %}This is the employee who helps you at the <glossary>Agentur für Arbeit</glossary>.{% endtrans %}
 				</span>
 			</div>
 		</div>
 		<div class="form-group no-print">
-			<label :for="uid('caseNumber')">Case number</label>
+			<label :for="uid('caseNumber')">{% trans "At the Agentur für Arbeit" %}Case number{% endtrans %}</label>
 			<div class="input-group">
 				<input type="text" v-model="caseNumber">
 				<span class="input-instructions">
-					This helps the <glossary>Agentur für Arbeit</glossary> find your information.
+					{% trans %}This helps the <glossary>Agentur für Arbeit</glossary> find your information.{% endtrans %}
 				</span>
 			</div>
 		</div>

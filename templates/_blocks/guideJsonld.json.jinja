@@ -1,0 +1,17 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "@type": "Person",
+    "@id": "https://nicolasbouliane.com"
+  },
+  "dateModified": "{{ entry.date_updated.isoformat() }}",
+  "datePublished": "{{ entry.date_created.isoformat() }}",
+  "description": {{ entry.description|tojson }},
+  "headline": {{ entry.title|tojson }},
+  "mainEntityOfPage": "{{ entry.url }}",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "{{ site_url }}/#organization"
+  }
+}

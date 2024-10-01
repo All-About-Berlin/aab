@@ -1,0 +1,234 @@
+{% include '_js/countries.js' %}
+{% include '_js/countriesInGerman.js' %}
+{% include '_js/letterUtils.js' %}
+{% include '_js/vue.js' %}
+{% include '_js/vue/blank.js' %}
+{% include '_js/vue/country-input.js' %}
+{% include '_js/vue/date-picker.js' %}
+{% include '_js/vue/letter-generator.js' %}
+{% include '_js/vue/uniqueIdsMixin.js' %}
+{% js %}
+	document.querySelectorAll('.auslaenderbehoerde-job-change').forEach(
+		el => new Vue({
+			el: el,
+			mixins: [uniqueIdsMixin],
+			data() {
+				return {
+					fullName: '',
+					address: '',
+					dateOfBirth: '',
+					letterType: 'termination',
+					placeOfBirth: '',
+					nationality: '',
+					auslaenderbehoerde: 'friedrich-krause-ufer',
+					customRecipientAddress: '',
+					currentDate: new Date(),
+					lastDayOfWork: '',
+
+					countriesInGerman,
+				};
+			},
+			computed: {
+				recipientAddress() {
+					if(this.auslaenderbehoerde !== 'other'){
+						// Both locations use the same address for mail
+						return 'Landesamt für Einwanderung\nFriedrich-Krause-Ufer 24\n13353 Berlin';
+					}
+					return this.customRecipientAddress;
+				},
+			},
+			methods: {
+				dateFromString,
+				formatDate,
+			}
+		})
+	);
+{% endjs %}
+
+<letter-generator class="auslaenderbehoerde-job-change" track-as="Ausländerbehörde job change" {% if static|default %}static{% endif %}>
+{% raw %}
+	<template v-slot:header>Ausländerbehörde – Job change notice</template>
+
+	<template v-slot:letter-recipient="{ language, stage }">
+		<span class="letter-return-address" v-if="address">
+			{{ fullName }}<template v-if="fullName && address">, </template>
+			{{ address.replaceAll('\n', ', ') }}
+		</span>
+		<span class="letter-return-address" v-else></span>
+		<span v-if="recipientAddress" v-html="recipientAddress.replaceAll('\n', '<br>')"></span>
+	</template>
+
+	<template v-slot:letter-details="{ language, stage }">
+		<template v-if="language === 'en'">
+			<template v-if="fullName"><strong>Name:</strong> {{ fullName }}<br></template>
+			<strong>Date:</strong> {{ formatDate(currentDate, 'en-US') }}
+		</template>
+		<template v-if="language === 'de'">
+			<template v-if="fullName"><strong>Name:</strong> {{ fullName }}<br></template>
+			<strong>Datum:</strong> {{ formatDate(currentDate, 'de-DE') }}
+		</template>
+	</template>
+
+	<template v-slot:letter-body="{ language, stage }">
+		<template v-if="language === 'en'">
+			<p>
+				<strong v-if="letterType === 'jobChange'">Subject: Notification of job change</strong>
+				<strong v-else>Subject: Notification of job termination</strong>
+			</p>
+			<p>
+				Dear Sir or Madam,
+			</p>
+			<p>
+				My name is <blank placeholder="Name">{{ fullName }}</blank>. I am a citizen of <blank placeholder="Country">{{ countries.all[nationality] }}</blank>. I was born on <blank placeholder="Date of birth">{{ formatDate(dateOfBirth, 'en-US') }}</blank> in <blank placeholder="Birthplace">{{ placeOfBirth }}</blank>.
+			</p>
+			<p v-if="letterType === 'resignation'">
+				I am writing to inform the Ausländerbehörde that I have quit my job.
+				My last day of work {{ dateFromString(lastDayOfWork) >= currentDate ? 'is' : 'was' }} on <blank placeholder="Last day of work">{{ formatDate(lastDayOfWork, 'en-US') }}</blank>.
+				I have attached a copy of my resignation letter.
+			</p>
+			<p v-if="letterType === 'termination'">
+				I am writing to inform the Ausländerbehörde that my employer has terminated my employment.
+				My last day of work {{ dateFromString(lastDayOfWork) >= currentDate ? 'is' : 'was' }} on <blank placeholder="Last day of work">{{ formatDate(lastDayOfWork, 'en-US') }}</blank>.
+				I have attached a copy of the termination notice.
+			</p>
+			<p v-if="letterType === 'jobChange'">
+				I am writing to inform the Ausländerbehörde that I am changing jobs.
+				I have attached a copy of my resignation letter and my new job contract.
+			</p>
+			<p>
+				Please tell me what to do next, and inform me of any changes to my residence permit.
+			</p>
+			<p>
+				Best regards<template v-if="fullName">,<br></template>
+				{{ fullName }}
+			</p>
+		</template>
+
+		<template v-if="language === 'de'">
+			<p>
+				<strong v-if="letterType === 'jobChange'">Betreff: Mitteilung über Jobwechsel</strong>
+				<strong v-else>Betreff: Mitteilung über Arbeitsplatzkündigung</strong>
+			</p>
+			<p>
+				Sehr geehrte Damen und Herren,
+			</p>
+			<p>
+				Mein Name ist <blank placeholder="Name">{{ fullName }}</blank>. Ich bin Staatsangehöriger von <blank placeholder="Land">{{ countriesInGerman.all[nationality] }}</blank>. Ich wurde am <blank placeholder="Geburtsdatum">{{ formatDate(dateOfBirth, 'de-DE') }}</blank> in <blank placeholder="Geburtsort">{{ placeOfBirth }}</blank> geboren.
+			</p>
+			<p v-if="letterType === 'resignation'">
+				Ich schreibe, um die Ausländerbehörde darüber zu informieren, dass ich meinen Job gekündigt habe.
+				Mein letzter Arbeitstag {{ dateFromString(lastDayOfWork) >= currentDate ? 'ist' : 'war' }} am <blank placeholder="Letzte Arbeitstag">{{ formatDate(lastDayOfWork, 'de-DE') }}</blank>.
+				Beigefügt ist eine Kopie meines Kündigungsschreibens.
+			</p>
+			<p v-if="letterType === 'termination'">
+				Ich schreibe, um die Ausländerbehörde darüber zu informieren, dass mein Arbeitgeber mein Arbeitsverhältnis beendet hat.
+				Mein letzter Arbeitstag {{ dateFromString(lastDayOfWork) >= currentDate ? 'ist' : 'war' }} am <blank placeholder="Letzte Arbeitstag">{{ formatDate(lastDayOfWork, 'de-DE') }}</blank>.
+				Beigefügt ist eine Kopie der Kündigungserklärung.
+			</p>
+			<p v-if="letterType === 'jobChange'">
+				Ich schreibe, um die Ausländerbehörde darüber zu informieren, dass ich meinen Job gewechselt habe.
+				Ich habe eine Kopie meines Kündigungsschreibens und meines neuen Arbeitsvertrags angehängt.
+			</p>
+			<p>
+				Bitte sagen Sie mir, was ich als Nächstes tun soll, und informieren Sie mich über eventuelle Änderungen meiner Aufenthaltserlaubnis.
+			</p>
+			<p>
+				Mit freundlichen Grüßen<template v-if="fullName">,<br></template>
+				{{ fullName }}
+			</p>
+		</template>
+
+		<p class="signature" v-if="stage === 'printPreview'">
+			{{ language === 'en' ? 'Signature' : 'Unterschrift' }}
+		</p>
+	</template>
+
+	<template v-slot:form>
+		<div class="form-group">
+			<span class="label">What happened?</span>
+			<div class="input-group vertical">
+				<label class="checkbox">
+					<input type="radio" v-model="letterType" value="termination" :name="uid('letterType')"> I was fired or laid off
+				</label>
+				<label class="checkbox">
+					<input type="radio" v-model="letterType" value="resignation" :name="uid('letterType')"> I quit my job
+				</label>
+				<label class="checkbox">
+					<input type="radio" v-model="letterType" value="jobChange" :name="uid('letterType')"> I am changing jobs
+				</label>
+			</div>
+		</div>
+		<div class="form-group">
+			<label :for="uid('last-workday') + '-day'">Last day of work</label>
+			<div class="input-group">
+				<date-picker
+					v-model="lastDayOfWork"
+					:id="uid('last-workday')"
+					autocomplete="bday"></date-picker>
+			</div>
+		</div>
+		<hr>
+		<div class="form-group no-print">
+			<label :for="uid('fullName')">Your full name</label>
+			<input :id="uid('fullName')" type="text" v-model="fullName">
+		</div>
+		<div class="form-group no-print">
+			<label :for="uid('address')">Your address</label>
+			<div class="input-group">
+				<textarea
+					:id="uid('address')"
+					v-model="address"
+					class="address-input"
+					placeholder="Wohnungstraße 123&#10;12345 Berlin"></textarea>
+			</div>
+		</div>
+		<div class="form-group">
+			<label :for="uid('date-of-birth') + '-day'">Date of birth</label>
+			<div class="input-group">
+				<date-picker
+					v-model="dateOfBirth"
+					:id="uid('date-of-birth')"
+					autocomplete="bday"></date-picker>
+			</div>
+		</div>
+		<div class="form-group">
+			<label :for="uid('place-of-birth')">Place of birth</label>
+			<div class="input-group">
+				<input type="text"
+					v-model="placeOfBirth"
+					placeholder="Montreal"
+					:id="uid('place-of-birth')">
+			</div>
+		</div>
+		<div class="form-group">
+			<label :for="uid('nationality')">Nationality</label>
+			<country-input
+				country-code
+				v-model="nationality"
+				:id="uid('nationality')"
+				required></country-input>
+		</div>
+		<hr>
+		<div class="form-group no-print">
+			<label :for="uid('auslaenderbehoerde')">Ausländerbehörde</label>
+			<div class="input-group">
+				<select :id="uid('auslaenderbehoerde')" v-model="auslaenderbehoerde">
+					<option value="friedrich-krause-ufer" selected>Berlin (Friedrich-Krause-Ufer)</option>
+					<option value="keplerstrasse">Berlin (Keplerstraße)</option>
+					<option value="other">Other</option>
+				</select>
+				<textarea
+					:id="uid('customRecipientAddress')"
+					v-model="customRecipientAddress"
+					class="address-input"
+					v-if="auslaenderbehoerde === 'other'"
+					placeholder="Ausländerbehörde&#10;Example Straße 123&#10;12345 Berlin"></textarea>
+				<br>
+				<a class="input-instructions external-link" v-if="auslaenderbehoerde === 'other'" href="https://bamf-navi.bamf.de/en/Themen/Behoerden/" target="_blank">
+					Find your Ausländerbehörde
+				</a>
+			</div>
+		</div>
+	</template>
+{% endraw %}
+</letter-generator>
