@@ -38,7 +38,7 @@ def fetch_law_xml(law_code: str) -> Path:
 
 
 ignored_paragraphs = ("Inhaltsübersicht",)
-WEGGEFALLEN_MARKER = "(weggefallen)"
+REPEALED_MARKER = "(weggefallen)"
 
 
 def parse_paragraph_text(element: ET.Element) -> tuple[str | None, dict[str, str]]:
@@ -50,15 +50,20 @@ def parse_paragraph_text(element: ET.Element) -> tuple[str | None, dict[str, str
     subsections = {}
     for sub_element in paragraph_text:
         if match := re.match(r"\((\d+[a-z]?)\)( .*)", sub_element.text or ""):
-            subsections[match.group(1)] = match.group(2)
+            text = match.group(2).strip()
+            repealed = text == REPEALED_MARKER
+            subsections[match.group(1)] = {
+                "text": None if repealed else text,
+                "repealed": repealed
+            }
             sub_element.set("data-subsection", match.group(1))
 
     return "".join(ET.tostring(c, encoding="unicode") for c in paragraph_text), subsections
 
 
 def is_paragraph_repealed(element: ET.Element):
-    repealed_in_title = getattr(element.find("metadaten/titel"), "text", "") == WEGGEFALLEN_MARKER
-    repealed_in_content = getattr(element.find("textdaten/text/Content/P"), "text", "") == WEGGEFALLEN_MARKER
+    repealed_in_title = getattr(element.find("metadaten/titel"), "text", "") == REPEALED_MARKER
+    repealed_in_content = getattr(element.find("textdaten/text/Content/P"), "text", "") == REPEALED_MARKER
     return repealed_in_title or repealed_in_content
 
 
