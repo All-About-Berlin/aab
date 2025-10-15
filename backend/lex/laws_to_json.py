@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
+from copy import deepcopy
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 from urllib.request import urlopen
 import json
-import logging
 import re
 import tempfile
 import xml.etree.ElementTree as ET
@@ -38,40 +38,63 @@ def fetch_law_xml(law_code: str) -> Path:
 
 
 ignored_paragraphs = ("Inhaltsübersicht",)
+WEGGEFALLEN_MARKER = '(weggefallen)'
 
 
-def parse_paragraph(norm: ET.Element):
+def parse_paragraph_text(element: ET.Element) -> tuple[str, dict[str, str]]:
+    updated_element = cast(ET.Element, deepcopy(element.find("textdaten/text/Content")))
+
+    subsections = {}
+
+    if updated_element is not None:  # Can be empty if paragraph is repealed, but not always
+        for sub_element in updated_element:
+            if match := re.match(r"\((\d+[a-z]?)\)( .*)", sub_element.text or ''):
+                subsections[match.group(1)] = match.group(2)
+                sub_element.set("data-subsection", match.group(1))
+
+    return ET.tostring(element).decode(), subsections
+
+
+def is_paragraph_repealed(element: ET.Element):
+    repealed_in_title = getattr(element.find("metadaten/titel"), "text", '') == WEGGEFALLEN_MARKER
+    repealed_in_content = getattr(element.find("textdaten/text/Content/P"), "text", '') == WEGGEFALLEN_MARKER
+    return repealed_in_title or repealed_in_content
+
+
+def parse_paragraph(element: ET.Element):
     if (
-        norm.get("doknr") is None
-        or (paragraph_name_node := norm.find("metadaten/enbez")) is None
-        or (paragraph_name := paragraph_name_node.text.strip()) in ignored_paragraphs
+        element.get("doknr") is None
+        or (paragraph_name_node := element.find("metadaten/enbez")) is None
+        or (paragraph_name := getattr(paragraph_name_node, 'text', '').strip()) in ignored_paragraphs
+        or not paragraph_name
     ):
         return
 
-    try:
-        parsed_paragraph_name = re.search(r"§\s*([\d]+[a-z]?)", paragraph_name).group(1)
-    except AttributeError:
-        logging.error(f"Can't parse paragraph name: '{paragraph_name}'")
+    match = re.match(r"§\s*([\d]+[a-z]?)", paragraph_name)  # "§ 123a"
+    parsed_paragraph_name = match.group(1) if match else paragraph_name  # "§ 123a -> 123a"
 
+    text, subsections = parse_paragraph_text(element)
     return {
         "full_name": paragraph_name,
         "name": parsed_paragraph_name,
-        "title": getattr(norm.find("metadaten/titel"), "text", None),
-        "doknr": norm.get("doknr"),
-        "text": getattr(norm.find("textdaten/text/Content"), "text", None),
-        "footnotes": getattr(norm.find("textdaten/fussnoten/Content"), "text", None),
+        "title": getattr(element.find("metadaten/titel"), "text", None),
+        "repealed": is_paragraph_repealed(element),
+        "doknr": element.get("doknr"),
+        "text": text,
+        "subsections": subsections,
+        "footnotes": getattr(element.find("textdaten/fussnoten/Content"), "text", None),
     }
 
 
-def parse_paragraphs(xml: ET.Element) -> dict[str, dict[str, Any]]:
-    xml_paragraphs = [n for n in xml.findall(".//norm")]
+def parse_paragraphs(root: ET.Element) -> dict[str, dict[str, Any]]:
+    xml_paragraphs = [n for n in root.findall(".//norm")]
     return {n["name"]: n for n in map(parse_paragraph, xml_paragraphs) if n}
 
 
 def parse_law(law_code):
     xml = ET.fromstring(sorted(Path(law_code).glob("*.xml"))[-1].read_bytes())
     return {
-        "name": xml.find("norm/metadaten/jurabk").text.strip(),
+        "name": getattr(xml.find("norm/metadaten/jurabk"), 'text', '').strip(),
         "paragraphs": parse_paragraphs(xml),
     }
 
@@ -79,7 +102,7 @@ def parse_law(law_code):
 if __name__ == "__main__":
     import argparse
 
-    parser = argparse.ArgumentParser(description="Monitor German law XML files.")
+    parser = argparse.ArgumentParser(description="Turn German law XML files into JSON.")
     parser.add_argument(
         "laws",
         nargs="+",
