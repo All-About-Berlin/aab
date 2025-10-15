@@ -49,13 +49,10 @@ def parse_paragraph_text(element: ET.Element) -> tuple[str | None, dict[str, str
 
     subsections = {}
     for sub_element in paragraph_text:
-        if match := re.match(r"\((\d+[a-z]?)\)( .*)", sub_element.text or ""):
+        if match := re.match(r"\((\d+[a-z]?)\)( .*)", sub_element.text or ""):  # "(1) Law text..."
             text = match.group(2).strip()
             repealed = text == REPEALED_MARKER
-            subsections[match.group(1)] = {
-                "text": None if repealed else text,
-                "repealed": repealed
-            }
+            subsections[match.group(1)] = {"text": None if repealed else text, "repealed": repealed}
             sub_element.set("data-subsection", match.group(1))
 
     return "".join(ET.tostring(c, encoding="unicode") for c in paragraph_text), subsections
@@ -76,8 +73,20 @@ def parse_paragraph(element: ET.Element):
     ):
         return
 
-    match = re.match(r"§\s*([\d]+[a-z]?)", paragraph_name)  # "§ 123a"
-    parsed_paragraph_name = match.group(1) if match else paragraph_name  # "§ 123a -> 123a"
+    # Default structure like "§ 123a"
+    if match := re.match(r"§\s*([\d]+[a-z]?)", paragraph_name):
+        parsed_paragraph_name = match.group(1)
+
+    # Parse repealed paragraphs that are grouped together like "(XXXX) §§ 15 bis 20"
+    elif match := re.match(r".*§§ (\d+[a-z]?) bis (\d+[a-z]?).*", paragraph_name):
+        parsed_paragraph_name = f"{match.group(1)}-{match.group(2)}"
+
+    # Parse repealed paragraphs that are grouped together like "(XXXX) §§ 15 bis 20"
+    elif match := re.match(r".*§§ (\d+[a-z]?) und (\d+[a-z]?).*", paragraph_name):
+        parsed_paragraph_name = f"{match.group(1)}+{match.group(2)}"
+
+    else:
+        raise ValueError(f"Unexpected paragraph name: {paragraph_name}")
 
     text, subsections = parse_paragraph_text(element)
     repealed = is_paragraph_repealed(element)
