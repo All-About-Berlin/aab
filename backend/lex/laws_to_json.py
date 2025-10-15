@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from copy import deepcopy
 from pathlib import Path
-from typing import Any, cast
+from typing import Any
 from urllib.request import urlopen
 import json
 import re
@@ -38,26 +38,27 @@ def fetch_law_xml(law_code: str) -> Path:
 
 
 ignored_paragraphs = ("Inhaltsübersicht",)
-WEGGEFALLEN_MARKER = '(weggefallen)'
+WEGGEFALLEN_MARKER = "(weggefallen)"
 
 
-def parse_paragraph_text(element: ET.Element) -> tuple[str, dict[str, str]]:
-    updated_element = cast(ET.Element, deepcopy(element.find("textdaten/text/Content")))
+def parse_paragraph_text(element: ET.Element) -> tuple[str | None, dict[str, str]]:
+    paragraph_text = deepcopy(element.find("textdaten/text/Content"))
+
+    if paragraph_text is None:  # Can be empty if paragraph is repealed, but not always
+        return None, {}
 
     subsections = {}
+    for sub_element in paragraph_text:
+        if match := re.match(r"\((\d+[a-z]?)\)( .*)", sub_element.text or ""):
+            subsections[match.group(1)] = match.group(2)
+            sub_element.set("data-subsection", match.group(1))
 
-    if updated_element is not None:  # Can be empty if paragraph is repealed, but not always
-        for sub_element in updated_element:
-            if match := re.match(r"\((\d+[a-z]?)\)( .*)", sub_element.text or ''):
-                subsections[match.group(1)] = match.group(2)
-                sub_element.set("data-subsection", match.group(1))
-
-    return ET.tostring(element).decode(), subsections
+    return "".join(ET.tostring(c, encoding="unicode") for c in paragraph_text), subsections
 
 
 def is_paragraph_repealed(element: ET.Element):
-    repealed_in_title = getattr(element.find("metadaten/titel"), "text", '') == WEGGEFALLEN_MARKER
-    repealed_in_content = getattr(element.find("textdaten/text/Content/P"), "text", '') == WEGGEFALLEN_MARKER
+    repealed_in_title = getattr(element.find("metadaten/titel"), "text", "") == WEGGEFALLEN_MARKER
+    repealed_in_content = getattr(element.find("textdaten/text/Content/P"), "text", "") == WEGGEFALLEN_MARKER
     return repealed_in_title or repealed_in_content
 
 
@@ -65,7 +66,7 @@ def parse_paragraph(element: ET.Element):
     if (
         element.get("doknr") is None
         or (paragraph_name_node := element.find("metadaten/enbez")) is None
-        or (paragraph_name := getattr(paragraph_name_node, 'text', '').strip()) in ignored_paragraphs
+        or (paragraph_name := getattr(paragraph_name_node, "text", "").strip()) in ignored_paragraphs
         or not paragraph_name
     ):
         return
@@ -74,13 +75,14 @@ def parse_paragraph(element: ET.Element):
     parsed_paragraph_name = match.group(1) if match else paragraph_name  # "§ 123a -> 123a"
 
     text, subsections = parse_paragraph_text(element)
+    repealed = is_paragraph_repealed(element)
     return {
         "full_name": paragraph_name,
         "name": parsed_paragraph_name,
-        "title": getattr(element.find("metadaten/titel"), "text", None),
-        "repealed": is_paragraph_repealed(element),
+        "title": None if repealed else getattr(element.find("metadaten/titel"), "text", None),
+        "repealed": repealed,
         "doknr": element.get("doknr"),
-        "text": text,
+        "text": None if repealed else text,
         "subsections": subsections,
         "footnotes": getattr(element.find("textdaten/fussnoten/Content"), "text", None),
     }
@@ -94,7 +96,7 @@ def parse_paragraphs(root: ET.Element) -> dict[str, dict[str, Any]]:
 def parse_law(law_code):
     xml = ET.fromstring(sorted(Path(law_code).glob("*.xml"))[-1].read_bytes())
     return {
-        "name": getattr(xml.find("norm/metadaten/jurabk"), 'text', '').strip(),
+        "name": getattr(xml.find("norm/metadaten/jurabk"), "text", "").strip(),
         "paragraphs": parse_paragraphs(xml),
     }
 
