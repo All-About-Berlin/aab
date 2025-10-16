@@ -15,3 +15,6 @@ pytest-base-url~=2.1
 pytest-instafail~=0.5.0
 pytest-playwright-visual-snapshot==0.2.4
 pytest-xdist~=3.8
+
+# Lex
+requests~=2.32

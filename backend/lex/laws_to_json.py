@@ -1,48 +1,53 @@
 #!/usr/bin/env python3
 from copy import deepcopy
 from pathlib import Path
-from typing import Any
-from urllib.request import urlopen
-import json
+from requests.packages.urllib3.util.retry import Retry
+from requests.adapters import HTTPAdapter
+from slugify import slugify
+import logging
 import re
+import requests
 import tempfile
 import xml.etree.ElementTree as ET
 import zipfile
 
 
-def fetch_law_xml(law_code: str) -> Path:
-    # Download and extract zip file
-    with urlopen(f"https://www.gesetze-im-internet.de/{law_code}/xml.zip", timeout=10) as r:
-        data = r.read()
+def fetch_law_xml(opener: requests.Session, law_url: str, laws_dir: Path) -> bytes:
+    # Download and extract the zip file containing the law XML file
+    zip_response = opener.get(law_url).content
 
     with tempfile.TemporaryDirectory() as td:
         zpath = Path(td) / "dl.zip"
-        zpath.write_bytes(data)
+        zpath.write_bytes(zip_response)
         with zipfile.ZipFile(zpath) as zf:
             name = next(n for n in zf.namelist() if n.lower().endswith(".xml"))
             xml_file_contents = zf.read(name)
 
-    # Find the first <norm> element, and use its builddate attribute as the file name
-    norm = ET.fromstring(xml_file_contents).find(".//norm")
-    if len(norm) == 0 or not (build_date := norm.get("builddate")):
-        raise ValueError("Invalid document format. Norm does not exist, or has no builddate attribute")
-
-    law_dir = Path(law_code)
-    law_dir.mkdir(exist_ok=True)
-    law_path = law_dir / f"{build_date}.xml"
-    if law_path.exists():
-        raise FileExistsError
-
-    law_path.write_bytes(xml_file_contents)
-    return law_path
+    return xml_file_contents
 
 
-ignored_paragraphs = ("Inhaltsübersicht",)
 REPEALED_MARKER = "(weggefallen)"
 
 
-def parse_paragraph_text(element: ET.Element) -> tuple[str | None, dict[str, str]]:
-    paragraph_text = deepcopy(element.find("textdaten/text/Content"))
+def get_law_name(xml_law: ET.Element) -> str:
+    amtabk_node = xml_law.find(".//norm/metadaten/amtabk")
+    if amtabk_node is not None and amtabk_node.text:
+        law_name = str(amtabk_node.text)
+    else:
+        jurabk_node = xml_law.find(".//norm/metadaten/jurabk")
+        if jurabk_node is not None and jurabk_node.text:
+            law_name = str(jurabk_node.text)
+        else:
+            raise ValueError("Could not get law name.")
+
+    return law_name.strip()
+
+
+def parse_paragraph_text(xml_paragraph: ET.Element) -> tuple[str | None, dict[str, str]]:
+    """
+    Parse and augment the TEXT of a single paragraph. For example, the text of § 21 AufenthG.
+    """
+    paragraph_text = deepcopy(xml_paragraph.find("textdaten/text/Content"))
 
     if paragraph_text is None:  # Can be empty if paragraph is repealed, but not always
         return None, {}
@@ -58,78 +63,146 @@ def parse_paragraph_text(element: ET.Element) -> tuple[str | None, dict[str, str
     return "".join(ET.tostring(c, encoding="unicode") for c in paragraph_text), subsections
 
 
-def is_paragraph_repealed(element: ET.Element):
-    repealed_in_title = getattr(element.find("metadaten/titel"), "text", "") == REPEALED_MARKER
-    repealed_in_content = getattr(element.find("textdaten/text/Content/P"), "text", "") == REPEALED_MARKER
+def is_paragraph_repealed(xml_paragraph: ET.Element):
+    """
+    Check if a paragraph is repealed ("weggefallen"). The original data does this in multiple ways.
+    """
+    repealed_in_title = getattr(xml_paragraph.find("metadaten/titel"), "text", "") == REPEALED_MARKER
+    repealed_in_content = getattr(xml_paragraph.find("textdaten/text/Content/P"), "text", "") == REPEALED_MARKER
     return repealed_in_title or repealed_in_content
 
 
-def parse_paragraph(element: ET.Element):
-    if (
-        element.get("doknr") is None
-        or (paragraph_name_node := element.find("metadaten/enbez")) is None
-        or (paragraph_name := getattr(paragraph_name_node, "text", "").strip()) in ignored_paragraphs
-        or not paragraph_name
-    ):
+def parse_paragraph(xml_paragraph: ET.Element, parent_uri: str):
+    """
+    Parse and augment a single paragraph. For example, § 21 AufenthG.
+    """
+    if (doknr := xml_paragraph.get("doknr")) is None:
+        logging.warning(f"Ignoring paragraph with no doknr (in {parent_uri})")
+        return
+    elif (paragraph_name_node := xml_paragraph.find("metadaten/enbez")) is None:
+        # If it has a <gliederungseinheit> element, it's an outline node. Those are expected.
+        if xml_paragraph.find(".//metadaten/gliederungseinheit") is None:
+            logging.warning(f"Ignoring paragraph with no metadaten/enbez (in {parent_uri}/{doknr})")
+        return
+    elif not (paragraph_name := getattr(paragraph_name_node, "text", "").strip()):
+        logging.warning(f"Ignoring paragraph with no name (in {parent_uri}/{doknr})")
         return
 
-    # Default structure like "§ 123a"
-    if match := re.match(r"§\s*([\d]+[a-z]?)", paragraph_name):
+    # Rename paragraphs like "§ 123a" or "Art 123a" to "123a"
+    if match := re.match(r"(§|Art)\s*([\d]+[a-z]?)", paragraph_name):
         parsed_paragraph_name = match.group(1)
 
-    # Parse repealed paragraphs that are grouped together like "(XXXX) §§ 15 bis 20"
-    elif match := re.match(r".*§§ (\d+[a-z]?) bis (\d+[a-z]?).*", paragraph_name):
+    # Rename paragraph ranges like "(XXXX) §§ 15 bis 16", or "Art 15 und Art 16" to "15-16"
+    elif match := re.match(
+        r"(?:(?:\(XXXX\) )?(?:§{1,2}|Art)) (\d+[a-z]?) (?:bis|und|u\.) (?:(?:§{1,2}|Art) )?(\d+[a-z]?)", paragraph_name
+    ):
         parsed_paragraph_name = f"{match.group(1)}-{match.group(2)}"
 
-    # Parse repealed paragraphs that are grouped together like "(XXXX) §§ 15 bis 20"
-    elif match := re.match(r".*§§ (\d+[a-z]?) und (\d+[a-z]?).*", paragraph_name):
-        parsed_paragraph_name = f"{match.group(1)}+{match.group(2)}"
-
     else:
-        raise ValueError(f"Unexpected paragraph name: {paragraph_name}")
+        if not (
+            paragraph_name.startswith(("Anlage", "Anhang"))
+            or paragraph_name
+            in ("(XXXX)", "Eingangsformel", "Inhaltsübersicht", "Inhaltsverzeichnis", "Schlussformel", "Schlußformel")
+        ):
+            logging.warning(f"Unexpected paragraph name: {paragraph_name}")
+        parsed_paragraph_name = paragraph_name.strip()
 
-    text, subsections = parse_paragraph_text(element)
-    repealed = is_paragraph_repealed(element)
+    text, subsections = parse_paragraph_text(xml_paragraph)
+    repealed = is_paragraph_repealed(xml_paragraph)
+    paragraph_id = slugify(parsed_paragraph_name)
+
     return {
-        "full_name": paragraph_name,
-        "name": parsed_paragraph_name,
-        "title": None if repealed else getattr(element.find("metadaten/titel"), "text", None),
+        "uri": f"{parent_uri}/{paragraph_id}",
+        "id": paragraph_id,
+        "name": paragraph_name,
+        "title": None if repealed else getattr(xml_paragraph.find("metadaten/titel"), "text", None),
         "repealed": repealed,
-        "doknr": element.get("doknr"),
+        "doknr": doknr,
         "text": None if repealed else text,
         "subsections": subsections,
-        "footnotes": getattr(element.find("textdaten/fussnoten/Content"), "text", None),
+        "footnotes": getattr(xml_paragraph.find("textdaten/fussnoten/Content"), "text", None),
     }
 
 
-def parse_paragraphs(root: ET.Element) -> dict[str, dict[str, Any]]:
-    xml_paragraphs = [n for n in root.findall(".//norm")]
-    return {n["name"]: n for n in map(parse_paragraph, xml_paragraphs) if n}
+def parse_law(xml_law: ET.Element):
+    name = get_law_name(xml_law)
 
+    law_id = slugify(name)
+    parsed_paragraphs = [parse_paragraph(xml_paragraph, law_id) for xml_paragraph in xml_law.findall(".//norm")]
 
-def parse_law(law_code):
-    xml = ET.fromstring(sorted(Path(law_code).glob("*.xml"))[-1].read_bytes())
     return {
-        "name": getattr(xml.find("norm/metadaten/jurabk"), "text", "").strip(),
-        "paragraphs": parse_paragraphs(xml),
+        "uri": law_id,
+        "id": law_id,
+        "name": name,
+        "title": None,
+        "short_title": None,
+        "doknr": xml_law.get("doknr"),
+        "date_built": xml_law.get("builddate"),
+        "paragraphs": {p["id"]: p for p in parsed_paragraphs if p},
     }
+
+
+def polite_but_persistent_opener(
+    retries=5,
+    backoff_factor=10,
+    status_forcelist=(500, 502, 504),
+    session=None,
+) -> requests.Session:
+    """
+    Opens URLs slowly, retries until successful
+    """
+    session = session or requests.Session()
+    retry = Retry(
+        total=retries,
+        read=retries,
+        connect=retries,
+        backoff_factor=backoff_factor,
+        status_forcelist=status_forcelist,
+    )
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount("http://", adapter)
+    session.mount("https://", adapter)
+    return session
 
 
 if __name__ == "__main__":
+    logging.basicConfig(
+        datefmt="%Y-%m-%d %H:%M:%S",
+        format="%(asctime)s %(levelname)s [%(name)s:%(lineno)d] %(message)s",
+        level=logging.INFO,
+    )
+
     import argparse
 
     parser = argparse.ArgumentParser(description="Turn German law XML files into JSON.")
+    parser.add_argument("--path", nargs="?", type=Path, help="Path to the file or directory", default=Path("."))
     parser.add_argument(
         "laws",
-        nargs="+",
+        type=str,
+        nargs="*",
         help="List of law short names (e.g., bgb, aufenthg_2004)",
     )
     args = parser.parse_args()
 
-    for law_code in args.laws:
-        # try:
-        #     fetch_law_xml(law_code)
-        # except FileExistsError:
-        #     logging.debug(f"{law_code} has not changed; file already exists")
+    opener = polite_but_persistent_opener()
 
-        print(json.dumps(parse_law(law_code), indent=4))
+    law_urls: list[str] = []
+    if args.laws:
+        law_urls = [f"https://www.gesetze-im-internet.de/{law_code}/xml.zip" for law_code in args.laws]
+    else:
+        logging.debug("No laws specified. Fetching all laws.")
+        xml_response = opener.get("https://www.gesetze-im-internet.de/gii-toc.xml")
+        law_urls = [str(link.text) for link in ET.fromstring(xml_response.content).findall(".//item/link") if link.text]
+
+    for law_url in law_urls:
+        logging.info(f"Fetching {law_url}")
+        xml_file_contents = fetch_law_xml(opener, law_url, Path("."))
+
+        logging.info(f"Parsing {law_url}")
+        xml_law = ET.fromstring(xml_file_contents)
+        parsed_law = parse_law(xml_law)
+
+        law_path = args.path / parsed_law["name"] / f"{parsed_law['date_built']}.xml"
+        law_path.parent.mkdir(parents=True, exist_ok=True)
+        law_path.write_bytes(xml_file_contents)
+        logging.info(f"Parsed {law_url} ({parsed_law['name']}). Saved to '{str(law_path)}'")
