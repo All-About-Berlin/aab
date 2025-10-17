@@ -4,6 +4,7 @@ from pathlib import Path
 from requests.packages.urllib3.util.retry import Retry
 from requests.adapters import HTTPAdapter
 from slugify import slugify
+import json
 import logging
 import re
 import requests
@@ -12,7 +13,7 @@ import xml.etree.ElementTree as ET
 import zipfile
 
 
-def fetch_law_xml(opener: requests.Session, law_url: str, laws_dir: Path) -> bytes:
+def fetch_law_xml(opener: requests.Session, law_url: str) -> bytes:
     # Download and extract the zip file containing the law XML file
     zip_response = opener.get(law_url).content
 
@@ -126,7 +127,6 @@ def parse_paragraph(xml_paragraph: ET.Element, parent_uri: str):
 
 def parse_law(xml_law: ET.Element):
     name = get_law_name(xml_law)
-
     law_id = slugify(name)
     parsed_paragraphs = [parse_paragraph(xml_paragraph, law_id) for xml_paragraph in xml_law.findall(".//norm")]
 
@@ -175,7 +175,23 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(description="Turn German law XML files into JSON.")
-    parser.add_argument("--path", nargs="?", type=Path, help="Path to the file or directory", default=Path("."))
+    parser.add_argument(
+        "--downloads-path",
+        dest="downloads_path",
+        nargs="?",
+        type=Path,
+        help="Path where files are downloaded before being parsed.",
+        default=Path("./lex/downloads"),
+    )
+    parser.add_argument(
+        "-o",
+        "--output-path",
+        dest="output_path",
+        nargs="?",
+        type=Path,
+        help="Path where the API files are saved.",
+        default=Path("./lex/output"),
+    )
     parser.add_argument(
         "laws",
         type=str,
@@ -196,13 +212,18 @@ if __name__ == "__main__":
 
     for law_url in law_urls:
         logging.info(f"Fetching {law_url}")
-        xml_file_contents = fetch_law_xml(opener, law_url, Path("."))
+        xml_file_contents = fetch_law_xml(opener, law_url)
 
         logging.info(f"Parsing {law_url}")
         xml_law = ET.fromstring(xml_file_contents)
         parsed_law = parse_law(xml_law)
 
-        law_path = args.path / parsed_law["name"] / f"{parsed_law['date_built']}.xml"
-        law_path.parent.mkdir(parents=True, exist_ok=True)
-        law_path.write_bytes(xml_file_contents)
-        logging.info(f"Parsed {law_url} ({parsed_law['name']}). Saved to '{str(law_path)}'")
+        xml_path = args.downloads_path / parsed_law["id"] / f"{parsed_law['date_built']}.xml"
+        xml_path.parent.mkdir(parents=True, exist_ok=True)
+        xml_path.write_bytes(xml_file_contents)
+
+        json_path = args.output_path / parsed_law["id"] / f"{parsed_law['date_built']}.json"
+        json_path.parent.mkdir(parents=True, exist_ok=True)
+        json_path.write_text(json.dumps(parsed_law, indent=None))
+
+        logging.info(f"Parsed {law_url} ({parsed_law['name']}). Saved to '{str(json_path)}'")
