@@ -52,6 +52,17 @@ def get_law_name(xml_law: ET.Element) -> str:
     return law_name.strip()
 
 
+def get_law_title(xml_law: ET.Element, long: bool) -> str:
+    node_name = "langue" if long else "kurzue"
+
+    node = xml_law.find(f".//norm/metadaten/{node_name}")
+    if node is None or not node.text:
+        mode = "long" if long else "short"
+        raise ValueError(f"Could not get {mode} law title.")
+
+    return node.text.strip()
+
+
 def parse_paragraph_text(xml_paragraph: ET.Element) -> tuple[str | None, dict[str, str]]:
     """
     Parse and augment the TEXT of a single paragraph. For example, the text of § 21 AufenthG.
@@ -142,8 +153,8 @@ def parse_law(xml_law: ET.Element):
         "uri": law_id,
         "id": law_id,
         "name": name,
-        "title": getattr(xml_law.find("metadaten/kurzue"), "text", None),
-        "short_title": getattr(xml_law.find("metadaten/langue"), "text", None),
+        "title": get_law_title(xml_law, long=True),
+        "short_title": get_law_title(xml_law, long=False),
         "doknr": xml_law.get("doknr"),
         "date_built": datetime.strptime(str(xml_law.get("builddate")), "%Y%m%d%H%M%S"),
         "paragraphs": {p["id"]: p for p in parsed_paragraphs if p},
