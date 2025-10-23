@@ -1136,8 +1136,21 @@ progress{
     }
 }
 
-p, pre, blockquote, ul, ol {
+p, pre, blockquote, ul, ol, dl {
     @include text-block;
+}
+
+dl {
+    margin-left: var(--xl);
+
+    dt{
+        @include text-bold;
+        float: left;
+    }
+    dd{
+        @include text-block-compact;
+        padding-left: var(--xl);
+    }
 }
 
 strong, b, h4{
