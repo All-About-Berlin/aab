@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 from copy import deepcopy
+from datetime import datetime
 from pathlib import Path
 from requests.packages.urllib3.util.retry import Retry
 from requests.adapters import HTTPAdapter
 from slugify import slugify
+from shutil import copy2
 import json
 import logging
 import re
@@ -11,6 +13,12 @@ import requests
 import tempfile
 import xml.etree.ElementTree as ET
 import zipfile
+
+
+def date_serializer(obj):
+    if isinstance(obj, datetime):
+        return obj.isoformat()
+    raise TypeError(f"Type {type(obj)} not serializable")
 
 
 def fetch_law_xml(opener: requests.Session, law_url: str) -> bytes:
@@ -91,11 +99,11 @@ def parse_paragraph(xml_paragraph: ET.Element, parent_uri: str):
 
     # Rename paragraphs like "§ 123a" or "Art 123a" to "123a"
     if match := re.match(r"(§|Art)\s*([\d]+[a-z]?)", paragraph_name):
-        parsed_paragraph_name = match.group(1)
+        parsed_paragraph_name = match.group(2)
 
     # Rename paragraph ranges like "(XXXX) §§ 15 bis 16", or "Art 15 und Art 16" to "15-16"
     elif match := re.match(
-        r"(?:(?:\(XXXX\) )?(?:§{1,2}|Art)) (\d+[a-z]?) (?:bis|und|u\.) (?:(?:§{1,2}|Art) )?(\d+[a-z]?)", paragraph_name
+        r"(?:(?:\(XXXX\) ?)?(?:§{1,2}|Art)) (\d+[a-z]?) (?:bis|und|u\.) (?:(?:§{1,2}|Art) )?(\d+[a-z]?)", paragraph_name
     ):
         parsed_paragraph_name = f"{match.group(1)}-{match.group(2)}"
 
@@ -137,7 +145,7 @@ def parse_law(xml_law: ET.Element):
         "title": None,
         "short_title": None,
         "doknr": xml_law.get("doknr"),
-        "date_built": xml_law.get("builddate"),
+        "date_built": datetime.strptime(str(xml_law.get("builddate")), "%Y%m%d%H%M%S"),
         "paragraphs": {p["id"]: p for p in parsed_paragraphs if p},
     }
 
@@ -198,6 +206,11 @@ if __name__ == "__main__":
         nargs="*",
         help="List of law short names (e.g., bgb, aufenthg_2004)",
     )
+    parser.add_argument(
+        "--pretty",
+        action="store_true",
+        help="Format the JSON output",
+    )
     args = parser.parse_args()
 
     opener = polite_but_persistent_opener()
@@ -218,12 +231,16 @@ if __name__ == "__main__":
         xml_law = ET.fromstring(xml_file_contents)
         parsed_law = parse_law(xml_law)
 
-        xml_path = args.downloads_path / parsed_law["id"] / f"{parsed_law['date_built']}.xml"
+        build_date_str = parsed_law["date_built"].isoformat()[0:10]
+
+        xml_path = args.downloads_path / parsed_law["id"] / f"{build_date_str}.xml"
         xml_path.parent.mkdir(parents=True, exist_ok=True)
         xml_path.write_bytes(xml_file_contents)
 
-        json_path = args.output_path / parsed_law["id"] / f"{parsed_law['date_built']}.json"
+        # Save to {date}.json, copy to latest.json
+        json_path = args.output_path / parsed_law["id"] / f"{build_date_str}.json"
         json_path.parent.mkdir(parents=True, exist_ok=True)
-        json_path.write_text(json.dumps(parsed_law, indent=None))
+        json_path.write_text(json.dumps(parsed_law, default=date_serializer, indent=4 if args.pretty else None))
+        copy2(json_path, json_path.with_stem("latest"))
 
-        logging.info(f"Parsed {law_url} ({parsed_law['name']}). Saved to '{str(json_path)}'")
+        logging.info(f"Parsed {law_url} ({parsed_law['name']}). Saved to '{str(json_path)}'.")
