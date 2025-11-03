@@ -1,0 +1,9 @@
+targets:
+  - name: "§ 18c AufenthG"
+    url: "https://www.gesetze-im-internet.de/aufenthg_2004/__18c.html"
+    selector: ".jnhtml"
+    every: 7d
+  - name: "§ 21 AufenthG"
+    url: "https://www.gesetze-im-internet.de/aufenthg_2004/__21.html"
+    selector: ".jnhtml"
+    every: 7d

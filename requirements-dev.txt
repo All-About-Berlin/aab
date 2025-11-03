@@ -18,3 +18,4 @@ pytest-xdist~=3.8
 
 # Lex
 requests~=2.32
+PyYAML~=6.0
