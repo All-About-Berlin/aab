@@ -245,7 +245,7 @@ Germans pay with cash, Girocard, Visa and Mastercard. **Always have cash with yo
 
 ![Sign that says "Cash only"](/illustrations/berlin-cash-only-sign.png)
 
-### Shops close on sundays
+### Shops close on Sundays
 
 In Germany, shops and supermarkets close on Sundays. Most restaurants, tourist attractions, *[Spätis](/glossary/Sp%C3%A4ti)* and gas stations stay open on Sundays.
 
