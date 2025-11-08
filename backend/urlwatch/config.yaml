@@ -1,9 +1,256 @@
-targets:
-  - name: "§ 18c AufenthG"
-    url: "https://www.gesetze-im-internet.de/aufenthg_2004/__18c.html"
-    selector: ".jnhtml"
-    every: 7d
-  - name: "§ 21 AufenthG"
-    url: "https://www.gesetze-im-internet.de/aufenthg_2004/__21.html"
-    selector: ".jnhtml"
-    every: 7d
+  - name: § 109 GewO
+    url: https://www.buzer.de/109_GewO.htm
+  - name: § 10 StAG
+    url: https://www.buzer.de/10_StAG.htm
+  - name: § 113 InsO
+    url: https://www.buzer.de/113_InsO.htm
+  - name: § 11 GewStG
+    url: https://www.buzer.de/11_GewStG.htm
+  - name: § 126 BGB
+    url: https://www.buzer.de/126_BGB.htm
+  - name: § 12 BeschV
+    url: https://www.buzer.de/12_BeschV.htm
+  - name: § 12 FeV
+    url: https://www.buzer.de/12_FeV.htm
+  - name: § 12 UStG
+    url: https://www.buzer.de/12_UStG.htm
+  - name: § 13 BAfoG
+    url: https://www.buzer.de/13_BAfoG.htm
+  - name: § 13a BAfoG
+    url: https://www.buzer.de/13a_BAfoG.htm
+  - name: § 148 AO
+    url: https://www.buzer.de/148_AO.htm
+  - name: § 16 KCanG
+    url: https://www.buzer.de/16_KCanG.htm
+  - name: § 16b AufenthG
+    url: https://www.buzer.de/16b_AufenthG.htm
+  - name: § 16e AufenthG
+    url: https://www.buzer.de/16e_AufenthG.htm
+  - name: § 17 BMG
+    url: https://www.buzer.de/17_BMG.htm
+  - name: § 17 ElektroG
+    url: https://www.buzer.de/17_ElektroG.htm
+  - name: § 187 BGB
+    url: https://www.buzer.de/187_BGB.htm
+  - name: § 18 AufenthG
+    url: https://www.buzer.de/18_AufenthG.htm
+  - name: § 18 EStG
+    url: https://www.buzer.de/18_EStG.htm
+  - name: § 18 TPG
+    url: https://www.buzer.de/18_TPG.htm
+  - name: § 18 UStG
+    url: https://www.buzer.de/18_UStG.htm
+  - name: § 18a AufenthG
+    url: https://www.buzer.de/18a_AufenthG.htm
+  - name: § 18b AufenthG
+    url: https://www.buzer.de/18b_AufenthG.htm
+  - name: § 18c AufenthG
+    url: https://www.buzer.de/18c_AufenthG.htm
+  - name: § 18g AufenthG
+    url: https://www.buzer.de/18g_AufenthG.htm
+  - name: § 18i AufenthG
+    url: https://www.buzer.de/18i_AufenthG.htm
+  - name: § 19 KCanG
+    url: https://www.buzer.de/19_KCanG.htm
+  - name: § 19 UStG
+    url: https://www.buzer.de/19_UStG.htm
+  - name: § 1 AufenthG
+    url: https://www.buzer.de/1_AufenthG.htm
+  - name: § 1 BUrlG
+    url: https://www.buzer.de/1_BUrlG.htm
+  - name: § 1 KCanG
+    url: https://www.buzer.de/1_KCanG.htm
+  - name: § 1 UStG
+    url: https://www.buzer.de/1_UStG.htm
+  - name: § 201a StGB
+    url: https://www.buzer.de/201a_StGB.htm
+  - name: § 20 AufenthG
+    url: https://www.buzer.de/20_AufenthG.htm
+  - name: § 20_SGB IV
+    url: https://www.buzer.de/20_SGB_IV.htm
+  - name: § 20 UStG
+    url: https://www.buzer.de/20_UStG.htm
+  - name: § 20a AufenthG
+    url: https://www.buzer.de/20a_AufenthG.htm
+  - name: § 210_SGB VI
+    url: https://www.buzer.de/210_SGB_VI.htm
+  - name: § 21 AufenthG
+    url: https://www.buzer.de/21_AufenthG.htm
+  - name: § 240 AO
+    url: https://www.buzer.de/240_AO.htm
+  - name: § 24 UStG
+    url: https://www.buzer.de/24_UStG.htm
+  - name: § 25e UStG
+    url: https://www.buzer.de/25e_UStG.htm
+  - name: § 26 AufenthG
+    url: https://www.buzer.de/26_AufenthG.htm
+  - name: § 26 BeschV
+    url: https://www.buzer.de/26_BeschV.htm
+  - name: § 27 BMG
+    url: https://www.buzer.de/27_BMG.htm
+  - name: § 28 AufenthG
+    url: https://www.buzer.de/28_AufenthG.htm
+  - name: § 29 AufenthG
+    url: https://www.buzer.de/29_AufenthG.htm
+  - name: § 29 BMG
+    url: https://www.buzer.de/29_BMG.htm
+  - name: § 2 AufenthG
+    url: https://www.buzer.de/2_AufenthG.htm
+  - name: § 2 KCanG
+    url: https://www.buzer.de/2_KCanG.htm
+  - name: § 30 AufenthG
+    url: https://www.buzer.de/30_AufenthG.htm
+  - name: § 312_SGB 3
+    url: https://www.buzer.de/312_SGB_3.htm
+  - name: § 312d BGB
+    url: https://www.buzer.de/312d_BGB.htm
+  - name: § 328_SGB 3
+    url: https://www.buzer.de/328_SGB_3.htm
+  - name: § 32 AufenthG
+    url: https://www.buzer.de/32_AufenthG.htm
+  - name: § 32a EStG
+    url: https://www.buzer.de/32a_EStG.htm
+  - name: § 32d EStG
+    url: https://www.buzer.de/32d_EStG.htm
+  - name: § 33_SGB V
+    url: https://www.buzer.de/33_SGB_V.htm
+  - name: § 35 AufenthG
+    url: https://www.buzer.de/35_AufenthG.htm
+  - name: § 36 AufenthG
+    url: https://www.buzer.de/36_AufenthG.htm
+  - name: § 3 AufenthG
+    url: https://www.buzer.de/3_AufenthG.htm
+  - name: § 3 KCanG
+    url: https://www.buzer.de/3_KCanG.htm
+  - name: § 3 TPG
+    url: https://www.buzer.de/3_TPG.htm
+  - name: § 404_SGB 3
+    url: https://www.buzer.de/404_SGB_3.htm
+  - name: § 41 AufenthV
+    url: https://www.buzer.de/41_AufenthV.htm
+  - name: § 41b EStG
+    url: https://www.buzer.de/41b_EStG.htm
+  - name: § 44_SGB V
+    url: https://www.buzer.de/44_SGB_V.htm
+  - name: § 45c AufenthV
+    url: https://www.buzer.de/45c_AufenthV.htm
+  - name: § 46 AufenthV
+    url: https://www.buzer.de/46_AufenthV.htm
+  - name: § 47 AufenthV
+    url: https://www.buzer.de/47_AufenthV.htm
+  - name: § 47 AugfenthG
+    url: https://www.buzer.de/47_AugfenthG.htm
+  - name: § 47_SGB V
+    url: https://www.buzer.de/47_SGB_V.htm
+  - name: § 48_SGB V
+    url: https://www.buzer.de/48_SGB_V.htm
+  - name: § 4 BUrlG
+    url: https://www.buzer.de/4_BUrlG.htm
+  - name: § 4 KCanG
+    url: https://www.buzer.de/4_KCanG.htm
+  - name: § 4 TPG
+    url: https://www.buzer.de/4_TPG.htm
+  - name: § 4 UStG
+    url: https://www.buzer.de/4_UStG.htm
+  - name: § 51 AufenthG
+    url: https://www.buzer.de/51_AufenthG.htm
+  - name: § 548 BGB
+    url: https://www.buzer.de/548_BGB.htm
+  - name: § 549 BGB
+    url: https://www.buzer.de/549_BGB.htm
+  - name: § 551 BGB
+    url: https://www.buzer.de/551_BGB.htm
+  - name: § 568 BGB
+    url: https://www.buzer.de/568_BGB.htm
+  - name: § 573 BGB
+    url: https://www.buzer.de/573_BGB.htm
+  - name: § 573c BGB
+    url: https://www.buzer.de/573c_BGB.htm
+  - name: § 575 BGB
+    url: https://www.buzer.de/575_BGB.htm
+  - name: § 59 UrhG
+    url: https://www.buzer.de/59_UrhG.htm
+  - name: § 5 AufenthG
+    url: https://www.buzer.de/5_AufenthG.htm
+  - name: § 5 BUrlG
+    url: https://www.buzer.de/5_BUrlG.htm
+  - name: § 5 DDG
+    url: https://www.buzer.de/5_DDG.htm
+  - name: § 5 KCanG
+    url: https://www.buzer.de/5_KCanG.htm
+  - name: § 60 TKG
+    url: https://www.buzer.de/60_TKG.htm
+  - name: § 614 BGB
+    url: https://www.buzer.de/614_BGB.htm
+  - name: § 622 BGB
+    url: https://www.buzer.de/622_BGB.htm
+  - name: § 623 BGB
+    url: https://www.buzer.de/623_BGB.htm
+  - name: § 626 BGB
+    url: https://www.buzer.de/626_BGB.htm
+  - name: § 64a StVZO
+    url: https://www.buzer.de/64a_StVZO.htm
+  - name: § 65 StVZO
+    url: https://www.buzer.de/65_StVZO.htm
+  - name: § 67 StVZO
+    url: https://www.buzer.de/67_StVZO.htm
+  - name: § 6 AufenthG
+    url: https://www.buzer.de/6_AufenthG.htm
+  - name: § 6 BUrlG
+    url: https://www.buzer.de/6_BUrlG.htm
+  - name: § 6 DDG
+    url: https://www.buzer.de/6_DDG.htm
+  - name: § 6 KCanG
+    url: https://www.buzer.de/6_KCanG.htm
+  - name: § 75 VwGO
+    url: https://www.buzer.de/75_VwGO.htm
+  - name: § 7 AufenthG
+    url: https://www.buzer.de/7_AufenthG.htm
+  - name: § 7 BUrlG
+    url: https://www.buzer.de/7_BUrlG.htm
+  - name: § 81 AufenthG
+    url: https://www.buzer.de/81_AufenthG.htm
+  - name: § 82 AufenthG
+    url: https://www.buzer.de/82_AufenthG.htm
+  - name: § 8_SGB IV
+    url: https://www.buzer.de/8_SGB_IV.htm
+  - name: § 9 AufenthG
+    url: https://www.buzer.de/9_AufenthG.htm
+  - name: § 9 BeschV
+    url: https://www.buzer.de/9_BeschV.htm
+  - name: § 9 BUrlG
+    url: https://www.buzer.de/9_BUrlG.htm
+  - name: § 9 KCanG
+    url: https://www.buzer.de/9_KCanG.htm
+  - name: § 9_SGB V
+    url: https://www.buzer.de/9_SGB_V.htm
+  - name: § 9 StAG
+    url: https://www.buzer.de/9_StAG.htm
+  - name: § 9a AufenthG
+    url: https://www.buzer.de/9a_AufenthG.htm
+  - name: § a20794
+    url: https://www.buzer.de/gesetz/1471/a20794.htm
+  - name: § a20796
+    url: https://www.buzer.de/gesetz/1471/a20796.htm
+  - name: § a20797
+    url: https://www.buzer.de/gesetz/1471/a20797.htm
+  - name: § a20799
+    url: https://www.buzer.de/gesetz/1471/a20799.htm
+  - name: § a20800
+    url: https://www.buzer.de/gesetz/1471/a20800.htm
+  - name: § a55388
+    url: https://www.buzer.de/gesetz/3985/a55388.htm
+  - name: § a55389
+    url: https://www.buzer.de/gesetz/3985/a55389.htm
+  - name: § a55392
+    url: https://www.buzer.de/gesetz/3985/a55392.htm
+  - name: § a59052
+    url: https://www.buzer.de/gesetz/4257/a59052.htm
+  - name: § a59053
+    url: https://www.buzer.de/gesetz/4257/a59053.htm
+  - name: § a75438
+    url: https://www.buzer.de/gesetz/5503/a75438.htm
+  - name: § 4 KSchG
+    url: https://www.buzer.de/gesetz/5503/a75441.htm
+  - name: § 2 DL-InfoV
+    url: https://www.buzer.de/gesetz/9221/a165923.htm
