@@ -1,3 +1,4 @@
 ursus-ssg==1.4.3
 pyphen==0.17.2
+osm2geojson~=0.3
 holidays
