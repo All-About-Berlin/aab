@@ -28,9 +28,9 @@ English-speaking options:
 - [SteuerGo](/out/steuergo)
     The most comprehensive software translated to English, includes support for cross-border edge cases.[^2]
 
- Many Germans use WISO Steuer for thier tax return.[^3] It doesn't have English version, but it offers support for all cross-border or foreign income situations.
+Many Germans use WISO Steuer for thier tax return.[^3] It doesn't have English version, but it offers support for all cross-border or foreign income situations.
  
- You can also file your taxes yourself in [[ELSTER]]. It's mostly in German, but many questions are now AI-translated.
+You can also file your taxes yourself in [[ELSTER]]. It's mostly in German, but many questions are now AI-translated.
 
 ## Tax software for freelancers
 
