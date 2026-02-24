@@ -15,7 +15,7 @@ Tax and bookkeeping software costs are [tax-deductible](/glossary/steuerlich%20a
 
 Tax software for employees help you prepare and send a [tax declaration](/glossary/Steuererklärung). This is how you pay less [income tax](/glossary/Einkommensteuer).
 
-If you only had German salary income, you can easily file tax return using any software or app. Expats often have cross-border situations: moving mid-year, foreign income (capital gains or rental), dual residency, or remittances. That’s where differences between apps start to matter.
+If you only had German salary income, you can easily file tax return using any app on the market. Expats often have additional cross-border layers: moving mid-year, foreign capital gains or rental income, dual residency, or supporting family abroad. That’s where differences between apps start to matter.
 
 English-speaking options:
 
