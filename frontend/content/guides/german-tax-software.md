@@ -15,13 +15,22 @@ Tax and bookkeeping software costs are [tax-deductible](/glossary/steuerlich%20a
 
 Tax software for employees help you prepare and send a [tax declaration](/glossary/Steuererklärung). This is how you pay less [income tax](/glossary/Einkommensteuer).
 
+If you only had German salary income, you can easily file tax return using any software or app. Expats often have cross-border situations: moving mid-year, foreign income (capital gains or rental), dual residency, or remittances. That’s where differences between apps start to matter.
+
 English-speaking options:
 
-- [Wundertax](/out/wundertax)
 - [Taxfix](/out/taxfix)
-- [SteuerGo](/out/steuergo)
+    Best when you lived in Germany for the whole year, and if you had just one German employer.[^1] 
 
-You can also file your taxes yourself in [[ELSTER]]. It's mostly in German, but many questions are now AI-translated.
+- [Wundertax](/out/wundertax)
+    More suited for expat cases, supporting various deductions and incomes. 
+
+- [SteuerGo](/out/steuergo)
+    The most comprehensive software translated to English, includes support for cross-border edge cases.[^2]
+
+ Many Germans use WISO Steuer for thier tax return.[^3] It doesn't have English version, but it offers support for all cross-border or foreign income situations.
+ 
+ You can also file your taxes yourself in [[ELSTER]]. It's mostly in German, but many questions are now AI-translated.
 
 ## Tax software for freelancers
 
@@ -55,3 +64,6 @@ These banks help with your accounting:
 - Join a freelancer cooperative like [Smart](/out/smart-coop).
 
 [^0]: [Finanztip](https://www.finanztip.de/steuerberatungskosten/)
+[^1]: [Taxfix](https://support.taxfix.de/hc/en-us/articles/25922502292125-Who-can-use-Taxfix-for-their-tax-declaration)
+[^2]: [SteuerGo](https://www.steuergo.de/de/texte/0/469/programmumfang_nach__87c_ao)
+[^3]: [Finanztip](https://www.finanztip.de/steuersoftware/), [Reddit](https://www.reddit.com/r/Finanzen/comments/1r7zoli/wie_macht_ihr_eure_steuererklärung/) (February 2026)
