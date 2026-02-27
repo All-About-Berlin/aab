@@ -19,16 +19,16 @@ If you only had German salary income, you can easily file tax return using any a
 
 English-speaking options:
 
-- [Taxfix](/out/taxfix)
+- [Taxfix](/out/taxfix)  
     Best when you lived in Germany for the whole year, and if you had just one German employer.[^1] 
 
-- [Wundertax](/out/wundertax)
-    More suited for expat cases, supporting relevant deductions and types of income. 
+- [Wundertax](/out/wundertax)  
+    More suited for expat cases, particularly EU-style relocations. supporting relevant deductions and types of income. Can be still be limited for non-EU cases.
 
-- [SteuerGo](/out/steuergo)
+- [SteuerGo](/out/steuergo)  
     The most comprehensive software translated to English, includes support for cross-border edge cases.[^2]
 
-Many Germans use WISO Steuer for thier tax return.[^3] It doesn't have English version, but it offers support for all cross-border or foreign income situations.
+Many Germans use WISO Steuer for their tax return.[^3] It doesn't have English version, but it offers support for all cross-border or foreign income situations.
  
 You can also file your taxes yourself in [[ELSTER]]. It's mostly in German, but many questions are now AI-translated.
 
