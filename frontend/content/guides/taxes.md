@@ -99,11 +99,12 @@ If you pay more than €{{SOLIDARITY_TAX_MILDERUNGSZONE_MIN_INCOME_TAX|cur}} per
 
 ### Capital gains tax
 
-If you make money from investments, you pay a {{CAPITAL_GAINS_TAX_RATE}}% tax on income on all profit above €{{CAPITAL_GAINS_FREIBETRAG|cur}} per year. This is the capital gains tax (*[[Kapitalertragsteuer]]*). It applies to profit, interests and dividends from stocks, ETFs and other financial investments.
+If you make money from investments, you pay a {{CAPITAL_GAINS_TAX_RATE}}% tax on income on all profit above €{{CAPITAL_GAINS_FREIBETRAG|cur}} per year. This is the capital gains tax (*[[Kapitalertragsteuer]]*). It applies to profit, interests and dividends from stocks, ETFs and other financial investments. Investment income is also subject to the [church tax](/glossary/Kirchensteuer) and [solidarity surcharge](/glossary/Solidaritätszuschlag).
+
+If you use a German broker, this tax is deducted automatically when you sell investments or receive dividends. The broker also carries losses forward to offset future gains. You do not need to report this in your tax return. If you use a foreign broker, or want to offset losses across multiple brokers, you need declare your investment income in your tax return. 
 
 Revenue from cryptocurrencies is not taxed as an investment, but as a private transaction.[^4]
 
-Investment income is also subject to the [church tax](/glossary/Kirchensteuer) and [solidarity surcharge](/glossary/Solidaritätszuschlag).
 
 ## Other taxes
 
