@@ -23,7 +23,7 @@ English-speaking options:
     Best when you lived in Germany for the whole year, and if you had just one German employer.[^1] 
 
 - [Wundertax](/out/wundertax)  
-    More suited for expat cases, particularly EU-style relocations. supporting relevant deductions and types of income. Can be still be limited for non-EU cases.
+    More suited for expat cases, particularly EU-style relocations. It supports more expats relevant deductions and types of income. Can be still be limited for non-EU cases.
 
 - [SteuerGo](/out/steuergo)  
     The most comprehensive software translated to English, includes support for cross-border edge cases.[^2]
