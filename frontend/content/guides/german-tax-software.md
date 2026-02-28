@@ -64,6 +64,6 @@ These banks help with your accounting:
 - Join a freelancer cooperative like [Smart](/out/smart-coop).
 
 [^0]: [Finanztip](https://www.finanztip.de/steuerberatungskosten/)
-[^1]: [Taxfix](https://support.taxfix.de/hc/en-us/articles/25922502292125-Who-can-use-Taxfix-for-their-tax-declaration)
+[^1]: [Taxfix](https://support.taxfix.de/hc/en-us/articles/25922502292125-Who-can-use-Taxfix-for-their-tax-declaration#:~:text=submitting%20tax%20returns%2E-,Which%20Tax%20Cases%20Are%20Not,payments%20to%20members%20of%20parliament,-%F0%9F%9A%80%20Fill%20out%20the)
 [^2]: [SteuerGo](https://www.steuergo.de/de/texte/0/469/programmumfang_nach__87c_ao)
 [^3]: [Finanztip](https://www.finanztip.de/steuersoftware/), [Reddit](https://www.reddit.com/r/Finanzen/comments/1r7zoli/wie_macht_ihr_eure_steuererklärung/) (February 2026)
