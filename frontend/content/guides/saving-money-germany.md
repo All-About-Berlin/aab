@@ -18,7 +18,7 @@ Most employees pay 35% to 50% of their income in taxes, health insurance and pen
 ### How to pay less [income tax](/glossary/Einkommensteuer)
 
 - **Make a [tax declaration](/glossary/Steuererklärung)**  
-    A tax declaration lets you deduct expenses from your income. This makes your taxable income smaller, so you pay less [income tax](/glossary/Einkommensteuer). Relocation costs, business expenses, home office days, commuting, pension payments, insurance and healthcare are [tax-deductible](/glossary/steuerlich%20absetzbar). Support payments to relative can be tax-deductible in some situations. [Tax software](/guides/german-tax-software) is the cheapest way to make a tax declaration.
+    A tax declaration lets you deduct expenses from your income. This makes your taxable income smaller, so you pay less [income tax](/glossary/Einkommensteuer). Relocation costs, business expenses, home office days, commuting, pension payments, insurance and healthcare are [tax-deductible](/glossary/steuerlich%20absetzbar). Support payments to relatives can be tax-deductible in some situations. [Tax software](/guides/german-tax-software) is the cheapest way to make a tax declaration.
 - **Save for retirement**  
     Most pension contributions are [tax-deductible](/glossary/steuerlich%20absetzbar). Contributing to your pension is a type of [tax deferral](https://en.wikipedia.org/wiki/Tax_deferral). It helps you pay less income tax over your lifetime.
 
