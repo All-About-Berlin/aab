@@ -17,7 +17,7 @@ This is how much it costs to live in Berlin, and elsewhere in Germany. This guid
 
 In Germany, a part of your [gross income](/glossary/Brutto%20income) (*Brutto*) is for taxes and social contribution. Your employer automatically takes them from your paycheck. The money you keep is your [net income](/glossary/Netto%20income) (*Netto*).
 
-{% tool "taxCalculator" %}
+{% tool "tax-calculator" %}
 
 **[How taxes work ➞](/guides/taxes)**
 

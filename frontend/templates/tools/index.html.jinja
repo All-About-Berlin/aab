@@ -4,11 +4,11 @@
 
 {% block postHead %}
 	{{ super() }}
-	<link rel="canonical" href="{{ site_url }}/tools">
+	<link rel="canonical" href="{{ SITE_URL }}/tools">
 {% endblock %}
 
 {% macro preview(entry) %}
-	{% if entry.url.startswith(site_url + '/docs/') %}
+	{% if entry.url.startswith(SITE_URL + '/docs/') %}
 		{% set id = random_id() %}
 		<li class="document" aria-labelledby="h-doc-{{ id }}">
 			<h3 id="h-doc-{{ id }}">
@@ -17,7 +17,7 @@
 			</h3>
 			<p>{{ entry.description }}</p>
 		</li>
-	{% elif entry.url.startswith(site_url + '/tools/') %}
+	{% elif entry.url.startswith(SITE_URL + '/tools/') %}
 		{% set id = random_id() %}
 		<li aria-labelledby="h-tool-{{ id }}">
 			<h3 id="h-tool-{{ id }}">
@@ -27,7 +27,6 @@
 		</li>
 	{% endif %}
 {% endmacro %}
-
 
 {% block main %}
 	<main aria-label="Main page">
@@ -127,5 +126,9 @@
 			<button class="button open-close" title="Show/hide table of contents"><i class="icon table-of-contents"></i></button>
 		</div>
 	</div>
-	{% include "_js/sidebar.js" %}
 {% endblock %}
+
+{% js %}
+	import initializeSidebar from '/js/components/sidebar.mjs';
+	initializeSidebar();
+{% endjs %}

@@ -110,7 +110,7 @@ After you move out, the landlord has 6 months to find what must be repaired.[^12
 
 If you don't get your deposit back, send a request by [registered mail](/glossary/Einschreibebrief). Use my letter generator for this.
 
-{% tool "apartmentDepositReturnLetter" %}
+{% tool "apartment-deposit-return-letter" %}
 
 **[How to mail a letter](/guides/mail-a-letter)** — from your computer, without a printer
 

@@ -754,6 +754,8 @@ body > header {
         text-align: left;
         padding-top: var(--l);
         border-top: var(--b-box);
+        color: var(--c-text-light);
+        font-size: var(--f-s);
     }
 }
 @include not-desktop{
@@ -966,7 +968,12 @@ main{
     }
 
     #related .collection{
-        padding: var(--m) 0;
+        padding: 0;
+        @include full-width-site{
+            &:not(:last-child){
+                margin-bottom: var(--xl);
+            }
+        }
     }
 
     .collection{
@@ -1004,7 +1011,7 @@ main{
             @include list-marker-light;
         }
 
-        @include not-desktop{
+        @include full-width-site{
             width: 100%;
         }
     }
@@ -1752,7 +1759,9 @@ input[type=range] {
         @include collapsible;
     }
 
-.loading, collapsible, letter-generator, feedback-citizenship, feedback-residence-permit, health-insurance-calculator{
+// v-cloak is an attribute that gets removed after a Vue JS element is mounted. It lets us style elements that have not
+// loaded yet.
+.loading, [v-cloak]{
     min-height: var(--w-icon-s);
     color: var(--c-text-light);
     position: relative;
@@ -1892,7 +1901,7 @@ input[type=range] {
         line-height: var(--line-height-label);
     }
 
-    &.required, &:has(:required) {
+    &:has(:required) {
         > :is(label, .label):first-child{
             &:after{
                 content: ' *';
@@ -1938,34 +1947,6 @@ input[type=range] {
 }
 .input-instructions:not(a){
     color: var(--c-text-light);
-}
-
-.date-input{
-    @include form-input;
-    width: fit-content;
-    flex: 0 0 fit-content;
-    display: inline-flex;
-    align-items: baseline;
-    color: var(--c-border-input); // The date separator, "/"
-
-    &:focus-within{
-        color: var(--c-border-input-focused);
-        border-color: var(--c-border-input-focused);
-    }
-
-    input, input:invalid{
-        background: transparent!important;
-        border: none!important;
-        box-shadow: none!important;
-        box-sizing:content-box!important;
-        flex: 0 0 auto!important;
-        text-align: center;
-        width: 3ch!important; // A bit wider because of the placeholder
-        padding: 0;
-    }
-    .year-input, .year-input:invalid{
-        width: 5ch!important;
-    }
 }
 
 .show-errors :invalid,
@@ -2103,8 +2084,8 @@ output.placeholder{
     }
 }
 
-input[name="username"], // Honeypot
-[v-cloak] // Vue elements before they're ready
+// Honeypot
+input[name="username"]
 {  
     display:none!important
 }
@@ -2221,7 +2202,7 @@ details{
     }
 }
 
-collapsible, letter-generator, feedback-residence-permit, health-insurance-calculator{  // Vue element before it loads
+[v-cloak]{  // Vue element before it loads
     @include widget;
     background: transparent!important;
     box-shadow: none;
@@ -2240,8 +2221,10 @@ collapsible, letter-generator, feedback-residence-permit, health-insurance-calcu
         margin-right: var(--s);
     }
 
-    > *{
-        display: none!important;
+    noscript{
+        font-size: var(--f-s);
+        display: block;
+        color: var(--c-text-light);
     }
 }
 
@@ -2539,30 +2522,23 @@ collapsible, letter-generator, feedback-residence-permit, health-insurance-calcu
     background: var(--c-bg-widget);
     box-shadow: inset var(--shadow-s);
 
-    @include full-width-site{
-        display: flex; // Items have equal width on desktop, not on mobile
-        &.language-picker{
-            float:none;
-            margin: 0 auto;
-        }
-    }
-
     input{
         clip-path: polygon(0 0); // Hidden but not for screen readers
         position: absolute;
 
         &:checked + label{
+            cursor: default;
             color: var(--c-text-light);
             background: transparent;
             z-index: 0;
+            box-shadow: 0px -7px 0 0px #0003, inset 0px 0px 2px 0 #0003;
+            position: relative;
+            top: 1px;
         }
-    }
 
-    input:first-child + label{
-        border-radius: var(--b-radius) 0 0 var(--b-radius);
-    }
-    label:last-child{
-        border-radius: 0 var(--b-radius) var(--b-radius) 0;
+        &:first-child + label{
+            border-radius: var(--b-radius) 0 0 var(--b-radius);
+        }
     }
 
     label{
@@ -2573,16 +2549,16 @@ collapsible, letter-generator, feedback-residence-permit, health-insurance-calcu
 
         cursor: pointer;
         background: var(--c-bg-widget-opaque);
-        box-shadow: inset 0 -4px 5px -5px var(--c-border-clickable), 0 0 0 1px var(--c-border-clickable);
+        box-shadow: inset 0 -4px 5px -5px #0005, 0 0 0 1px var(--c-border-clickable);
         position: relative;
         z-index: 1;
 
         display: grid;
         align-items: center;
-    }
 
-    input:checked + label{
-        cursor: default;
+        &:last-child{
+            border-radius: 0 var(--b-radius) var(--b-radius) 0;
+        }
     }
 
     label:focus-visible, input:focus-visible + label{
@@ -2593,6 +2569,18 @@ collapsible, letter-generator, feedback-residence-permit, health-insurance-calcu
     &.language-picker{
         float: right;
         margin-left: var(--m);
+    }
+
+    @include full-width-site{
+        display: flex; // Items have equal width on desktop, not on mobile
+        &.language-picker{
+            float:none;
+            margin: 0 auto;
+
+            label {
+                flex-grow: 1;
+            }
+        }
     }
 }
 
@@ -2646,6 +2634,7 @@ collapsible, letter-generator, feedback-residence-permit, health-insurance-calcu
     align-items: center;
     svg{
         flex: 0 0 auto;
+        color: var(--c-text-heading);
     }
     p{
         margin: 0;
@@ -3427,6 +3416,43 @@ collapsible, letter-generator, feedback-residence-permit, health-insurance-calcu
     flex-wrap: wrap;
 }
 
+.component-group{
+    .collapsible{
+        margin: var(--xxxl) 0;
+    }
+}
+
+.filters{
+    @include text-block;
+    display: grid;
+    gap: var(--m);
+    grid-template-columns: max-content;
+    grid-auto-flow: column;
+    justify-content: stretch;
+
+    .tabs{
+        display: flex;
+    }
+
+    select{
+        max-width: none;
+    }
+
+    @include full-width-site{
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: row;
+
+        .tabs{
+            grid-column: 1 / -1;
+        }
+    }
+
+    @include only-phone{
+        grid-template-columns: 1fr;
+        gap: var(--s);
+    }
+}
+
 .feedback-table, .feedback-summary {
     li{margin: 0};
     li + li{margin-top: var(--s-text-block)}
@@ -3443,7 +3469,7 @@ collapsible, letter-generator, feedback-residence-permit, health-insurance-calcu
 }
 .feedback-form, .feedback-list > li, .feedback-summary{
     @include text-block;
-    h3, .notes{
+    > h3, .notes{
         border-bottom: var(--b-box);
         margin: 0 0 var(--l);
         padding: 0 0 var(--l);
@@ -3533,6 +3559,12 @@ collapsible, letter-generator, feedback-residence-permit, health-insurance-calcu
             color: var(--c-text-light);
             @include only-phone{
                 flex:1 0 100%
+            }
+            @include not-phone{
+                span{
+                    @include heading;
+                    font-size: var(--m);
+                }
             }
         }
     }

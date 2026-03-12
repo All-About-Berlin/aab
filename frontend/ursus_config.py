@@ -4,7 +4,6 @@ from extensions.functions import (
     build_wikilinks_url,
     count_weekdays,
     fail_on,
-    get_public_holiday_dates,
     get_public_holidays,
     glossary_groups,
     or_join,
@@ -45,14 +44,14 @@ ctx["BEITRAGSBEMESSUNGSGRENZE"] = fail_on("2026-12-31", 8450 * 12)  # § SGB 6 A
 
 # Income tax calculation - https://www.lohn-info.de/lohnsteuerzahlen.html
 ctx["GRUNDFREIBETRAG"] = fail_on("2026-12-31", 12348)  # § 32a EstG [GFB]
-ctx["INCOME_TAX_BRACKET_2_MAX_INCOME"] = fail_on("2026-03-01", 17799)  # § 32a EstG [UPTAB26 - 1]
-ctx["INCOME_TAX_BRACKET_3_MAX_INCOME"] = fail_on("2026-03-01", 69878)  # § 32a EstG [UPTAB26 - 1]
-ctx["INCOME_TAX_BRACKET_4_MAX_INCOME"] = fail_on("2026-03-01", 277825)  # § 32a EstG [UPTAB26 - 1]
+ctx["INCOME_TAX_BRACKET_2_MAX_INCOME"] = fail_on("2026-03-13", 17799)  # § 32a EstG [UPTAB26 - 1]
+ctx["INCOME_TAX_BRACKET_3_MAX_INCOME"] = fail_on("2026-03-13", 69878)  # § 32a EstG [UPTAB26 - 1]
+ctx["INCOME_TAX_BRACKET_4_MAX_INCOME"] = fail_on("2026-03-13", 277825)  # § 32a EstG [UPTAB26 - 1]
 
 # Upper bound (€/y) of income tax tariff zones for tax classes 5 and 6
-ctx["INCOME_TAX_CLASS_56_LIMIT_1"] = fail_on("2026-03-01", 14071)  # § 39b Abs. 2 Satz 7 EstG [W1STKL5]
-ctx["INCOME_TAX_CLASS_56_LIMIT_2"] = fail_on("2026-03-01", 34939)  # § 39b Abs. 2 Satz 7 EstG [W2STKL5]
-ctx["INCOME_TAX_CLASS_56_LIMIT_3"] = fail_on("2026-03-01", 222260)  # § 39b Abs. 2 Satz 7 EstG [W3STKL5]
+ctx["INCOME_TAX_CLASS_56_LIMIT_1"] = fail_on("2026-03-13", 14071)  # § 39b Abs. 2 Satz 7 EstG [W1STKL5]
+ctx["INCOME_TAX_CLASS_56_LIMIT_2"] = fail_on("2026-03-13", 34939)  # § 39b Abs. 2 Satz 7 EstG [W2STKL5]
+ctx["INCOME_TAX_CLASS_56_LIMIT_3"] = fail_on("2026-03-13", 222260)  # § 39b Abs. 2 Satz 7 EstG [W3STKL5]
 
 ctx["INCOME_TAX_MAX_RATE"] = 45  # (%) - § 32b EstG
 
@@ -66,7 +65,7 @@ ctx["SOLIDARITY_TAX_MAX_RATE"] = fail_on("2026-12-31", Decimal("0.055"))  # § 4
 ctx["VORSORGEPAUSCHAL_MIN"] = fail_on("2026-12-31", 1900)  # § 39b Abs. 2.3.e EStG
 ctx["VORSORGEPAUSCHAL_MIN_TAX_CLASS_3"] = 3000  # ??
 ctx["ARBEITNEHMERPAUSCHALE"] = fail_on("2026-12-31", 1230)  # (€/y) - § 9a EStG
-ctx["SONDERAUSGABEN_PAUSCHBETRAG"] = fail_on("2026-03-01", 36)  # (€/y) § 10c EStG [SAP]
+ctx["SONDERAUSGABEN_PAUSCHBETRAG"] = fail_on("2026-03-13", 36)  # (€/y) § 10c EStG [SAP]
 
 ctx["ARBEITSLOSENVERSICHERUNG_EMPLOYEE_RATE"] = Decimal("2.6") / 2  # § 341 SGB 3, BeiSaV 2019
 
@@ -74,11 +73,11 @@ ctx["ARBEITSLOSENVERSICHERUNG_EMPLOYEE_RATE"] = Decimal("2.6") / 2  # § 341 SGB
 ctx["KINDERGELD"] = fail_on("2026-12-31", 259)
 
 # Tax break for parents (€/y) - § 32 Abs. 6 EStG [KFB] - monitored
-ctx["KINDERFREIBETRAG"] = fail_on("2026-03-01", (3414 + 1464) * 2)
+ctx["KINDERFREIBETRAG"] = fail_on("2026-03-13", (3414 + 1464) * 2)
 
 # Tax break for single parents (€/y) - § 24b EStG [EFA]
-ctx["ENTLASTUNGSBETRAG_ALLEINERZIEHENDE"] = fail_on("2026-03-01", 4260)
-ctx["ENTLASTUNGSBETRAG_ALLEINERZIEHENDE_EXTRA_CHILD"] = fail_on("2026-03-01", 240)
+ctx["ENTLASTUNGSBETRAG_ALLEINERZIEHENDE"] = fail_on("2026-03-13", 4260)
+ctx["ENTLASTUNGSBETRAG_ALLEINERZIEHENDE_EXTRA_CHILD"] = fail_on("2026-03-13", 240)
 
 ctx["CAPITAL_GAINS_TAX_RATE"] = Decimal("25")  # (%) - § 32d EStG
 ctx["CAPITAL_GAINS_FREIBETRAG"] = 1000  # Sparer-Pauschbetrag, § 20 Abs. 9 EStG
@@ -127,7 +126,7 @@ ctx["VAT_MIN_MONTHLY_AMOUNT"] = 7500
 ctx["MINIJOB_MAX_INCOME"] = round(ctx["MINIMUM_WAGE"] * 130 / 3)  # § 8 SGB IV
 
 # Below this income (€/mth), you have a midijob - § 20 SGB IV
-ctx["MIDIJOB_MAX_INCOME"] = fail_on("2026-03-01", 2100)
+ctx["MIDIJOB_MAX_INCOME"] = fail_on("2026-03-13", 2100)
 
 # Used to calculate health insurance for a midijob
 ctx["GKV_FACTOR_F"] = fail_on("2026-12-31", Decimal("0.6619"))  # § 20 SGB IV - TODO: Can be calculated from other vals
@@ -178,7 +177,7 @@ ctx["GKV_ZUSATZBEITRAG_TK"] = fail_on("2026-12-31", Decimal("2.69"))
 
 ctx["TRAVEL_INSURANCE_COST"] = fail_on("2026-12-31", 40)  # Guesstimated
 ctx["EXPAT_INSURANCE_COST"] = fail_on(
-    "2026-02-25",
+    "2026-03-13",
     {
         "feather-basic": 72,  # /out/feather-expats
         "feather-premium": 134,  # /out/feather-expats
@@ -188,7 +187,7 @@ ctx["EXPAT_INSURANCE_COST"] = fail_on(
     },
 )
 
-ctx["EXPAT_STUDENT_COST"] = fail_on("2026-03-01", 72)  # /out/feather-expats
+ctx["EXPAT_STUDENT_COST"] = fail_on("2026-03-13", 72)  # /out/feather-expats
 
 # Maximum daily Krankengeld
 ctx["GKV_KRANKENGELD_DAILY_LIMIT"] = (ctx["GKV_MAX_INCOME"] * Decimal("0.7") / 360).normalize()  # § 47 SGB V
@@ -421,7 +420,7 @@ ctx["DRIVING_PRACTICE_FEE"] = fail_on("2026-12-31", Decimal("60"))  # per 45-min
 ctx["DRIVING_THEORY_EXAM_FEE"] = fail_on("2026-12-31", Decimal("25"))  # Dekra/TÜV fee
 ctx["DRIVING_PRACTICAL_EXAM_FEE"] = fail_on("2026-12-31", Decimal("130"))  # Dekra/TÜV fee
 
-ctx["LEGAL_HOTLINE_COST_PER_MINUTE"] = fail_on("2026-03-01", 3)  # https://www.vonengelhardt.com/en/helpnowen
+ctx["LEGAL_HOTLINE_COST_PER_MINUTE"] = fail_on("2026-03-13", 3)  # https://www.vonengelhardt.com/en/helpnowen
 
 # ==============================================================================
 # DATES
@@ -430,7 +429,6 @@ ctx["LEGAL_HOTLINE_COST_PER_MINUTE"] = fail_on("2026-03-01", 3)  # https://www.v
 ctx["now"] = datetime.now(ZoneInfo("Europe/Berlin"))
 ctx["count_weekdays"] = count_weekdays
 ctx["get_public_holidays"] = get_public_holidays
-ctx["get_public_holiday_dates"] = get_public_holiday_dates
 ctx["PUBLIC_HOLIDAYS_BY_DATE_JSON"] = json.dumps(
     list(d.isoformat() for d in get_public_holidays(range(date.today().year, date.today().year + 3)).keys())
 )
@@ -439,25 +437,29 @@ ctx["PUBLIC_HOLIDAYS_BY_DATE_JSON"] = json.dumps(
 # TECHNICAL
 # ==============================================================================
 
-ctx["site_url"] = os.environ.get("URSUS_SITE_URL", "")
+ctx["SITE_URL"] = os.environ.get("URSUS_SITE_URL", "")  # No trailing slash!
 ctx["random_id"] = random_id
 ctx["fail_on"] = fail_on
 ctx["GOOGLE_MAPS_JAVASCRIPT_API_KEY"] = os.environ.get("GOOGLE_MAPS_JAVASCRIPT_API_KEY")  # Frontend use, to show a map
 ctx["glossary_groups"] = glossary_groups
 
-ctx["commit_id"] = git.Repo(Path(__file__).parent / "content", search_parent_directories=True).head.commit.hexsha
-
 ctx["RECOMMENDED"] = Markup(
     '&nbsp; <a target="_blank" class="recommended" aria-label="Recommended option" href="/glossary/Recommended"></a>'
 )
+
+content_path = Path(__file__).parent / "content"
+templates_path = Path(__file__).parent / "templates"
+
+ctx["commit_id"] = git.Repo(content_path, search_parent_directories=True).head.commit.hexsha
+
 
 # ==============================================================================
 # URSUS
 # ==============================================================================
 
-config.site_url = ctx["site_url"]
-config.content_path = Path(__file__).parent / "content"
-config.templates_path = Path(__file__).parent / "templates"
+config.site_url = ctx["SITE_URL"]
+config.content_path = content_path
+config.templates_path = templates_path
 
 config.output_path = (
     Path(env_output_dir) if (env_output_dir := os.environ.get("URSUS_OUTPUT_DIR")) else Path(__file__).parent / "output"
@@ -467,7 +469,10 @@ config.google_maps_places_api_key = os.environ.get("GOOGLE_MAPS_PLACES_API_KEY",
 config.google_tts_api_key = os.environ.get("GOOGLE_TTS_API_KEY", "")  # Backend use, to generate pronunciation files
 
 config.html_url_extension = ""
-config.minify_js = True
+
+# JS is minified in production and for running tests, but served as-is by default
+# When minify_js is True, changing .mjs files do not re-render the pages
+config.minify_js = bool(int(os.environ.get("BUNDLE_JS", 0)))
 config.minify_css = True
 
 config.context_globals = ctx
@@ -475,9 +480,12 @@ config.jinja_filters = {
     "cur": to_currency,
     "percent": to_percent,
 }
+
+config.jinja_extensions.remove("ursus.renderers.jinja.JsLoaderExtension")
 config.jinja_extensions.extend(
     [
         "extensions.renderers.jinja.ToolExtension",
+        "extensions.renderers.jinja.EsbuildJsLoaderExtension",
         "extensions.renderers.jinja.TableOfContentsExtension",
     ]
 )
@@ -487,6 +495,7 @@ config.context_processors.extend(
         "extensions.renderers.entry_images.EntryImageUrlProcessor",
         "ursus.context_processors.git_date.GitDateProcessor",
         "extensions.context_processors.hyphenated_titles.HyphenatedTitleProcessor",
+        "extensions.context_processors.tool_tests.ToolTestEntriesProcessor",
     ]
 )
 

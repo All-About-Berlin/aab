@@ -10,8 +10,7 @@ Related_guides:
     guides/permanent-residence.md
     guides/german-health-insurance/for-a-visa-application.md
     guides/immigration-office.md
-    guides/auslanderbehorde-wait-times.md
-    guides/citizenship-wait-times.md
+    guides/immigration-office/wait-times.md
     guides/fiktionsbescheinigung.md
     guides/biometric-pictures-in-berlin.md
     guides/relocation-agency-in-berlin.md

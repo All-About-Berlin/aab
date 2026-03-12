@@ -14,7 +14,7 @@ If you [work in Germany](/guides/find-a-job-in-berlin), you must have health ins
 
 Employees must get [public](/glossary/gesetzliche%20Krankenversicherung) or [private health insurance](/glossary/private%20Krankenversicherung). Use my [health insurance picker](/tools/health-insurance-calculator) to find the best option.
 
-{% tool "healthInsuranceCalculator", occupation="employee", static=True %}
+{% tool "health-insurance-calculator", initial_occupation="employee", static=True %}
 
 Your options depend on your income:
 

@@ -21,4 +21,4 @@ The *[[Fragebogen zur steuerlichen Erfassung]]* is the form you fill to register
 
 This form is outdated. [Register your business online](/guides/fragebogen-zur-steuerlichen-erfassung) instead.
 
-{% tool "documentDownloads" %}
+{% include "_blocks/documentDownloads.html" %}

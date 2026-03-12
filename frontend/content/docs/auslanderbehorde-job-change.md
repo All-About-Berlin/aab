@@ -13,13 +13,13 @@ Categories:
     auslaenderbehoerde
 ---
 
-If you have a [residence permit](/glossary/Aufenthaltstitel), and you [lose your job](/guides/losing-your-job), you must [tell the *Ausländerbehörde*](/guides/losing-your-job#tell-the-auslanderbehorde).[^2] Use this letter template to do it.{{ fail_on('2026-03-01') }}
+If you have a [residence permit](/glossary/Aufenthaltstitel), and you [lose your job](/guides/losing-your-job), you must [tell the *Ausländerbehörde*](/guides/losing-your-job#tell-the-auslanderbehorde).[^2] Use this letter template to do it.{{ fail_on('2026-03-13') }}
 
 If you change jobs, use the [official form](/out/auslanderbehorde-job-change) to report a job change.
 
 ## Letter template
 
-{% tool "auslaenderbehoerdeJobChangeLetter", static=True %}
+{% tool "auslaenderbehoerde-job-change-letter" %}
 
 ## How to send this letter
 

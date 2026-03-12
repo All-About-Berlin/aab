@@ -43,13 +43,13 @@ You can also get the document if you go to the *Finanzamt* in person. It might n
 
 Fill this application form, print it and sign it. You must know your [tax ID](/glossary/Steueridentifikationsnummer) or *[[Steuernummer]]*.
 
-{% tool "documentDownloads" %}
+{% include "_blocks/documentDownloads.html" %}
 
 ### Email template
 
 If you apply online, use this email template, and attach the application form.
 
-{% tool "bescheinigungInSteuersachenEmail", static=True %}
+{% tool "bescheinigung-in-steuersachen-email", static=True %}
 
 [^1]: [Berlin.de](https://service.berlin.de/dienstleistung/324713/en/) (June 2024)
 [^2]: [Reddit](https://old.reddit.com/r/germany/comments/1bc8lkk/how_long_does_it_take_to_receive_a_bescheinigung/) (March 2024), Finanzamt call (June 2024), [Berlin.de](https://service.berlin.de/dienstleistung/324713/en/) (June 2024), [Reddit](https://old.reddit.com/r/germany/comments/1bc8lkk/how_long_does_it_take_to_receive_a_bescheinigung/) (March 2024), [Red Tape Translation](https://redtapetranslation.com/bescheinigung-in-steuersachen/#:~:text=how%20long%20does%20it%20take%3F) (2024)

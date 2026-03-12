@@ -13,7 +13,7 @@ Related_guides:
     guides/start-a-business-in-germany.md
     guides/fragebogen-zur-steuerlichen-erfassung.md
     guides/immigration-office.md
-    guides/auslanderbehorde-wait-times.md
+    guides/immigration-office/wait-times.md
     guides/german-work-visa-to-freelance-visa.md
     guides/german-health-insurance/for-a-visa-application.md
     guides/freelance-visa-letter-of-intent.md
@@ -27,7 +27,7 @@ This is the official form for Berlin. The original document is [on Berlin.de](ht
 
 ## Download the residence permit form
 
-{% tool "documentDownloads" %}
+{% include "_blocks/documentDownloads.html" %}
 
 You can download this form in 11 languages:
 

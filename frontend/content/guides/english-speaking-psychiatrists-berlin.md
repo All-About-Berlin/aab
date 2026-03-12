@@ -30,7 +30,7 @@ This guide explains:
 
 ## List of English-speaking psychiatrists
 
-{% tool "placesMap" %}
+{% include "_blocks/placesMap.html" %}
 
 To suggest a psychiatrist, [fill this form](/suggest-therapist).
 

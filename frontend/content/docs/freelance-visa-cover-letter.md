@@ -21,4 +21,4 @@ This is the cover letter I submitted when I [applied for a German freelance visa
 
 ## Download the template
 
-{% tool "documentDownloads" %}
+{% include "_blocks/documentDownloads.html" %}

@@ -13,7 +13,6 @@ This guide helps you find a doctor that speaks English.
 
 - [English-speaking **doctors** and GPs in Berlin](/guides/english-speaking-doctors-berlin) - My own list
 - [English-speaking **doctors** in Germany](https://www.dfa.ie/media/embassygermany/ourservices/List-of-English-speaking-doctors-Germany.pdf) - Embassy of Ireland
-- [English-speaking **health professionals**](https://www.angloinfo.com/berlin/directory/berlin-health-fitness-beauty-7) - AngloInfo Berlin
 - [English-speaking **gynaecologists** and obstetricians in Berlin](/guides/english-speaking-gynecologists-berlin)
 
 ## English-speaking dentists

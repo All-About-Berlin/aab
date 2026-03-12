@@ -1,0 +1,106 @@
+import lunr from '/js/libs/lunr.mjs';
+
+export default function initializeSearchForm(){
+	window.addEventListener("DOMContentLoaded", function() {
+		/* Search */
+		let searchIndex = null;
+		let searchDocuments = null;
+
+		document.querySelectorAll('.search-form').forEach(searchForm => {
+			let searchResults = [];
+			let selectedResultIndex = 0;
+			let isNavigatingToResult = false;
+			const searchInput = searchForm.querySelector('input[type="search"]');
+			const searchResultsElement = searchForm.querySelector('.search-results');
+
+			function updateSearchResults(){
+				selectedResultIndex = 0;
+
+				const query = searchInput.value.trim();
+				if (searchIndex != null && searchDocuments != null && query != ''){
+					searchResults = searchIndex.search(`${query}^100 ${query}*^10 ${query}~2`)
+						.slice(0, 7).map(r => searchDocuments[r.ref]);
+				}
+				else {
+					searchResults = [];
+				}
+
+				searchResultsElement.textContent = '';
+				searchResults.forEach((result, index) => {
+					const el = document.createElement('a');
+					el.href = result.url;
+					el.innerText = result.short_title || result.title || result.german_term;
+					el.classList.toggle('highlighted', index === selectedResultIndex);
+					el.addEventListener('click', (e) => {
+						e.preventDefault();
+						openSearchResult(result.url, index);
+					})
+					searchResultsElement.appendChild(el);
+				});
+			}
+
+			function openSearchResult(url, index){
+				try {
+					plausible('Search', {
+						props: {queryAndDestination: `"${searchInput.value.trim()}" > ${url}`}
+					});
+				} catch (e) {
+					console.error(e);
+				}
+				isNavigatingToResult = true;
+				window.location = url;
+			}
+
+			function abandonSearch(){
+				if(!isNavigatingToResult && searchInput.value.trim()){
+					plausible('Abandoned search', {
+						props: {query: searchInput.value.trim()}
+					});
+				}
+			}
+
+			searchInput.addEventListener('focus', e => {
+				if(searchIndex === null) {
+					fetch('/search-index.json')
+						.then((response) => response.json())
+						.then((data) => {
+							searchIndex = lunr.Index.load(data.index);
+							searchDocuments = data.documents;
+							updateSearchResults();
+						});
+				}
+			});
+
+			searchInput.addEventListener('blur', abandonSearch);
+
+			if(searchInput.classList.contains('autofocus')) {
+				searchInput.focus();
+			}
+			searchInput.addEventListener('input', e => updateSearchResults());
+			searchResultsElement.addEventListener('mousedown', e => e.preventDefault()); // Prevents blurring before result click event
+
+			searchInput.addEventListener('keydown', e => {
+				if(searchResults.length && e.key === "Enter"){
+					openSearchResult(searchResults[selectedResultIndex].url, selectedResultIndex);
+				}
+				else if(searchResults.length && e.key === "ArrowUp"){
+					selectedResultIndex = Math.max(selectedResultIndex - 1, 0);
+				}
+				else if(searchResults.length && e.key === "ArrowDown"){
+					selectedResultIndex = Math.min(selectedResultIndex + 1, searchResults.length - 1);
+				}
+				else if(e.key === "Escape"){
+					searchInput.blur();
+				}
+				else {
+					return;
+				}
+
+				e.preventDefault();
+				searchResultsElement.childNodes.forEach((el, index) => {
+					el.classList.toggle('highlighted', index === selectedResultIndex);
+				});
+			});
+		});
+	});
+}

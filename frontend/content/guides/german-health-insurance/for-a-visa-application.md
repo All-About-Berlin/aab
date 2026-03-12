@@ -109,7 +109,7 @@ Do not choose health insurance yourself. You can make expensive mistakes. Choosi
 
 [Ask my health insurance expert](/guides/german-health-insurance#need-help) to help you choose. His help is free. It's the best way to choose health insurance.
 
-{% tool "healthInsuranceQuestion", static=True %}
+{% tool "health-insurance-calculator", mode="question", static=True %}
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 

@@ -12,6 +12,6 @@
   "mainEntityOfPage": "{{ entry.url }}",
   "publisher": {
     "@type": "Organization",
-    "@id": "{{ site_url }}/#organization"
+    "@id": "{{ SITE_URL }}/#organization"
   }
 }

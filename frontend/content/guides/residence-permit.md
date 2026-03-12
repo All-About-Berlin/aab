@@ -185,7 +185,9 @@ If you already live in Germany, apply before your current visa or residence perm
 
 ### 3. Wait
 
-The *Ausländerbehörde* will process your application. There is no way to track your application. You must wait for their response. It takes [a few months](/guides/auslanderbehorde-wait-times), but they approve 99% of applications.[^41] If you wait more than 3 months, you can [sue the *Ausländerbehörde*](/guides/immigration-office#sue-the-auslanderbehorde).
+The *Ausländerbehörde* will process your application. There is no way to track your application. You must wait for their response. It takes [a few months](/guides/immigration-office/wait-times), but they approve 99% of applications.[^41] If you wait more than 3 months, you can [sue the *Ausländerbehörde*](/guides/immigration-office#sue-the-auslanderbehorde).
+
+**[Immigration office wait times ➞](/guides/immigration-office/wait-times)**
 
 They might ask for more documents. If you can't reply to their email, [use the contact form](/guides/immigration-office#use-the-contact-form) again.
 
@@ -234,7 +236,7 @@ If documents are missing, ask if you can email them. You will pay the fee and gi
 
 If they approve your residence permit, you must [pay the application fee](/guides/immigration-office#payment-methods) at the payment machines.
 
-They must print your plastic residence card. This takes [around 8 weeks](/guides/auslanderbehorde-wait-times). They will give you another appointment to pick up the card. They do not mail the card to you.
+They must print your plastic residence card. This takes [around 8 weeks](/guides/immigration-office/wait-times). They will give you another appointment to pick up the card. They do not mail the card to you.
 
 You will get a document that confirms that your residence permit was approved. With that document, **you can start working**.[^45] It's not a valid travel document, so you can't use it to leave and re-enter Germany.
 
@@ -364,7 +366,7 @@ To convert your National Visa into a residence permit:
 1. **[Contact the Ausländerbehörde](/guides/immigration-office#how-to-contact-the-auslanderbehorde)**  
     Write to the *Ausländerbehörde* around 6 weeks before your National Visa expires. They take a really long time to reply. When they reply, they will give you an appointment. [If your National Visa expires](#if-your-visa-or-residence-permit-expires), you can stay in Germany and keep working or studying.
 2. **Go to your appointment**  
-    During the appointment, they take your fingerprints for your freelance visa. It takes around 15 minutes. You get a second appointment [around 8 weeks later](/guides/auslanderbehorde-wait-times) to pick up your residence permit.
+    During the appointment, they take your fingerprints for your freelance visa. It takes around 15 minutes. You get a second appointment [around 8 weeks later](/guides/immigration-office/wait-times) to pick up your residence permit.
 3. **Pick up your residence permit**  
     Go to your second *Ausländerbehörde* appointment to collect your residence permit. Bring your passport and your old residence permit.
 
@@ -374,9 +376,9 @@ To convert your National Visa into a residence permit:
 
 Tell me how long it took to get your residence permit. Your feedback helps thousands of people plan their application.
 
-{% tool "residencePermitFeedback/form" %}
+{% tool "residence-permit-feedback-form" %}
 
-**[See other people's feedback ➞](/guides/auslanderbehorde-wait-times)**
+**[Read other people's feedback ➞](/guides/immigration-office/wait-times)**
 
 ### Read your Zusatzblatt
 
@@ -404,7 +406,7 @@ Your immigration expenses are [tax-deductible](/glossary/steuerlich%20absetzbar)
 
 Your residence permit is valid for 6 months to 4 years. The expiration date is written on the card.
 
-When it's about to expire, you must renew it at the *[[Ausländerbehörde]]*. In Berlin, you must renew your residence permit 6 weeks before it expires, not sooner.[^11] It takes [a few months](/guides/auslanderbehorde-wait-times) to renew a residence permit.{{ fail_on('2026-12-31') }}
+When it's about to expire, you must renew it at the *[[Ausländerbehörde]]*. In Berlin, you must renew your residence permit 6 weeks before it expires, not sooner.[^11] It takes [a few months](/guides/immigration-office/wait-times) to renew a residence permit.{{ fail_on('2026-12-31') }}
 
 The *[[Ausländerbehörde]]* will check if you still meet all the requirements of your residence permit. You need a few documents to prove this. Start preparing them in advance.
 
@@ -458,7 +460,7 @@ To travel longer, you need permission from the *[[Ausländerbehörde]]*.
 
 Your [[National Visa]] or residence permit expires after 6 to 48 months. You must renew it at the *[[Ausländerbehörde]]*. The process is almost the same as when you apply for a new residence permit.
 
-It can take [a few months](/guides/auslanderbehorde-wait-times). While you wait, **you can usually stay in Germany**, even if your visa or residence permit expires.[^43]
+It can take [a few months](/guides/immigration-office/wait-times). While you wait, **you can usually stay in Germany**, even if your visa or residence permit expires.[^43]
 
 ### If you have a [[National Visa]] or a [residence permit](/glossary/Aufenthaltstitel)
 

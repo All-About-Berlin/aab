@@ -9,6 +9,7 @@ services:
       context: frontend
       target: dev
     environment:
+      - "BUNDLE_JS"
       - "URSUS_SITE_URL=https://localhost"
       - "GOOGLE_MAPS_JAVASCRIPT_API_KEY"
       - "GOOGLE_MAPS_PLACES_API_KEY"

@@ -34,7 +34,7 @@ There are 3 ways to register your business with the *[[Finanzamt]]*:
 
 ### Can you be self-employed?
 
-You might need a [residence permit](/glossary/Aufenthaltstitel) to live in Germany. Your current residence permit might not allow you to be self-employed. It usually takes [a few months](/guides/auslanderbehorde-wait-times) to change your residence permit.
+You might need a [residence permit](/glossary/Aufenthaltstitel) to live in Germany. Your current residence permit might not allow you to be self-employed. It usually takes [a few months](/guides/immigration-office/wait-times) to change your residence permit.
 
 **[Do you need a residence permit? ➞](/guides/residence-permit)**
 
@@ -598,7 +598,7 @@ If you have [public health insurance](/glossary/gesetzliche%20Krankenversicherun
 
 When you are self-employed, [private health insurance](/glossary/private%20Krankenversicherung) is often better and cheaper than [public](/glossary/gesetzliche%20Krankenversicherung). I switched, and I save around €600 per month. This is a complex decision. [Ask my insurance expert](/glossary/Makler) if it makes sense for you.
 
-{% tool "healthInsuranceQuestion" %}
+{% tool "health-insurance-calculator", mode="question" %}
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 

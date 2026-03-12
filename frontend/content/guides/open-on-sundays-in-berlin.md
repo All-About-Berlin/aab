@@ -9,7 +9,7 @@ On Sundays and [public holidays](/guides/public-holidays), most shops in Berlin 
 
 {% tableOfContents %}
 
-## What is open on Sundays in Berlin?
+## What stays open
 
 These businesses can open on Sundays:[^3]
 

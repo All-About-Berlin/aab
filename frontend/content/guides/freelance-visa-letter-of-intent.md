@@ -86,7 +86,7 @@ Be careful when you translate your letter of intent to German. Translation error
 
 ## Letter of intent example
 
-{% tool "documentDownloads" %}
+{% include "_blocks/documentDownloads.html" %}
 
 **[Letter of intent template ➞](/docs/german-freelance-visa-letter-of-intent)**
 

@@ -10,7 +10,6 @@ Related_guides:
     guides/losing-your-job.md
     guides/german-health-insurance.md
     guides/cost-of-living.md
-    tools/arbeitslosenversicherung-calculator.md
 ---
 
 When you [lose your job](/guides/losing-your-job), you can get financial help from the state. It's called *Arbeitslosengeld I* or *ALG I*. You apply for *ALG I* at the *[[Agentur für Arbeit]]*.

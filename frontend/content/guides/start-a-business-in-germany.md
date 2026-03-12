@@ -144,13 +144,13 @@ Sometimes, they freeze your account by mistake. It happened to me, and to other 
 
 In Germany, you *must* have [health insurance](/glossary/Krankenversicherung). It's a big part of your [cost of living](/guides/cost-of-living).
 
-{% tool "healthInsuranceCalculator", occupation="selfEmployed", static=True %}
+{% tool "health-insurance-calculator", initial_occupation="selfEmployed", static=True %}
 
 As a freelancer, **never choose health insurance yourself**. It's a terrible idea. Freelancers often get stuck with bad or expensive health insurance. [Freelance visa](/glossary/Freelance%20visa) applications are often rejected because of invalid health insurance.
 
 Ask my health insurance broker for advice. He will help you choose the best insurance. His help is free.
 
-{% tool "healthInsuranceQuestion" %}
+{% tool "health-insurance-calculator", mode="question" %}
 
 **Join the [[Künstlersozialkasse]]** if you can. They pay half of your health insurance. It's a really good deal. You can do this later.
 
@@ -160,11 +160,11 @@ Ask my health insurance broker for advice. He will help you choose the best insu
 
 If you are not a citizen of the [EU](/glossary/European%20Union), [[EEA]] or Switzerland, you need a [residence permit](/glossary/Aufenthaltstitel) to live in Germany. The freelance visa is a residence permit for self-employed people.
 
-It takes [a few months](/guides/auslanderbehorde-wait-times) to get a freelance visa. You must have clients in Germany, and a few thousand euros in savings.
+It takes [a few months](/guides/immigration-office/wait-times) to get a freelance visa. You must have clients in Germany, and a few thousand euros in savings.
 
 Other residence permits [sometimes allow self-employment](/guides/residence-permit#for-self-employment). This lets you start your business while you wait for your freelance visa.
 
-[If your current residence permit does not allow self-employment](/guides/residence-permit#for-self-employment), you must wait for your freelance visa. During that time, you can't work. You need enough savings to wait [a few months](/guides/auslanderbehorde-wait-times) without an income. It might be cheaper to get a freelance visa in your home country, before you move to Germany.
+[If your current residence permit does not allow self-employment](/guides/residence-permit#for-self-employment), you must wait for your freelance visa. During that time, you can't work. You need enough savings to wait [a few months](/guides/immigration-office/wait-times) without an income. It might be cheaper to get a freelance visa in your home country, before you move to Germany.
 
 **[How to apply for a freelance visa ➞](/guides/freelance-visa)**
 
@@ -251,7 +251,7 @@ If you have [public health insurance](/glossary/gesetzliche%20Krankenversicherun
 
 [Private health insurance](/glossary/private%20Krankenversicherung) could be a lot cheaper for you. I save around €600 per month. Use my [health insurance calculator](/tools/health-insurance-calculator) to compare costs, and [ask my insurance expert](/guides/german-health-insurance#ask-our-expert) to find the best option for you.
 
-{% tool "healthInsuranceCalculator", occupation="selfEmployed", static=True %}
+{% tool "health-insurance-calculator", initial_occupation="selfEmployed", static=True %}
 
 **[Health insurance for freelancers ➞](/guides/german-health-insurance/for-freelancers)**
 

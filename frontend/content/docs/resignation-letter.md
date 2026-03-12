@@ -20,7 +20,7 @@ To [quit your job](/guides/losing-your-job), you must give a resignation letter 
 
 ## Resignation letter template
 
-{% tool "jobResignationLetter", static=True %}
+{% tool "job-resignation-letter" %}
 
 ## How to write a resignation letter
 

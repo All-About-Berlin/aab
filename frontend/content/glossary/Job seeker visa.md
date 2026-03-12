@@ -9,7 +9,7 @@ Related_guides:
     guides/residence-permit.md
     guides/find-a-job-in-berlin.md
     guides/immigration-office.md
-    guides/auslanderbehorde-wait-times.md
+    guides/immigration-office/wait-times.md
     guides/freelance-visa.md
     guides/work-visa.md
     guides/blue-card.md

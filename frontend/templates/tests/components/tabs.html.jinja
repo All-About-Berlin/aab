@@ -1,0 +1,38 @@
+{% extends "tests/components/entry.html.jinja" %}
+
+{% js %}
+	import Vue from '/js/vue/vue.mjs';
+	import Tabs from '/js/vue/components/tabs.mjs';
+	new Vue({
+		el: document.querySelector('main .article-body'),
+		components: {
+			Tabs,
+		},
+		data() {
+			return {
+				radioValue: 'one',
+				checkboxValue: false,
+			}
+		}
+	});
+	document.querySelector('.article-body').classList.add('show-errors');
+{% endjs %}
+
+{% block component %}
+	<div class="form-group">
+		<label>Tabs</label>
+		<tabs
+			id="tabs1"
+			value="null"
+			:options="[{label: 'True', value: true}, {label: 'False', value: false}]"></tabs>
+		<tabs
+			:value="false"
+			id="tabs2"
+			:options="[{label: 'True', value: true}, {label: 'False', value: false}]"></tabs>
+		<tabs
+			id="tabs3"
+			value="null"
+			required
+			:options="[{label: 'True', value: true}, {label: 'False', value: false}]"></tabs>
+	</div>
+{% endblock %}

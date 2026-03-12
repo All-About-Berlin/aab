@@ -1,0 +1,19 @@
+{% extends "tests/components/entry.html.jinja" %}
+
+{% js %}
+	import Vue from '/js/vue/vue.mjs';
+	import Glossary from '/js/vue/components/glossary.mjs';
+	new Vue({
+		el: document.querySelector('main .article-body'),
+		components: {
+			Glossary,
+		},
+	})
+{% endjs %}
+
+{% block component %}
+	<p>
+		<glossary>Anmeldung</glossary> (implied term)
+		<br><glossary term="Anmeldung">Address registration</glossary> (specified term)
+	</p>
+{% endblock %}

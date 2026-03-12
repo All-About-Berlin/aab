@@ -10,15 +10,17 @@
 
 {% block postHead %}
 	{{ super() }}
-	<link rel="index" href="{{ site_url }}/guides">
+	<link rel="index" href="{{ SITE_URL }}/guides">
 {% endblock %}
 
 {% block main %}
 	<main aria-label="Main page">
 		{% block precontent %}{% endblock %}
 		<article class="section">
-			<h1>{{ entry.title }}</h1>
-			{% include "_blocks/postMeta.html" %}
+			{% block contentHeader %}
+				<h1>{{ entry.title }}</h1>
+				{% include "_blocks/postMeta.html" %}
+			{% endblock %}
 			{% with entry=entry, showRelatedEntriesLink=related_collections|length %}
 				<div class="article-body">
 					{{ entry.body|render|safe }}
@@ -65,7 +67,7 @@
 							"@type": "ListItem",
 							"position": 1,
 							"item": {
-								"@id": "{{ site_url }}/",
+								"@id": "{{ SITE_URL }}/",
 								"name": "Home"
 							}
 						},
@@ -73,7 +75,7 @@
 							"@type": "ListItem",
 							"position": 2,
 							"item": {
-								"@id": "{{ site_url }}/guides",
+								"@id": "{{ SITE_URL }}/guides",
 								"name": "Guides"
 							}
 						},
@@ -101,7 +103,7 @@
 							"jobTitle": {{ reviewer.job_title|tojson }},
 							"name": {{ reviewer.name|tojson }},
 							"email": {{ reviewer.email|tojson }}
-							{% if reviewer.picture|default %}, "image": "{{ site_url }}/{{ reviewer.picture }}"{% endif %}
+							{% if reviewer.picture|default %}, "image": "{{ SITE_URL }}/{{ reviewer.picture }}"{% endif %}
 							{% if reviewer.website|default %}
 								, "sameAs": [
 									{{ reviewer.website|tojson }}
@@ -115,7 +117,7 @@
 				{% endif %}
 				"publisher": {
 					"@type": "Organization",
-					"@id": "{{ site_url }}/#organization"
+					"@id": "{{ SITE_URL }}/#organization"
 				}
 			},
 			{% include "_blocks/guideJsonld.json" %}

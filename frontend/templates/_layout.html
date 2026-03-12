@@ -9,15 +9,15 @@
 	<link rel="preload" as="font" href="/fonts/librefranklin-variable-i.woff2" type="font/woff2" crossorigin>
 	<link rel="preload" as="fetch" href="/api/exchangerates.json" crossorigin>
 	<link rel="preload" as="script" href="/whoisthere.js">
-	<script async defer data-api="{{ site_url }}/whoisthere/event" data-domain="allaboutberlin.com" src="{{ site_url }}/whoisthere.js"></script>
+	<script async defer data-api="{{ SITE_URL }}/whoisthere/event" data-domain="allaboutberlin.com" src="{{ SITE_URL }}/whoisthere.js"></script>
 
-	<link rel="home" href="{{ site_url }}/">
+	<link rel="home" href="{{ SITE_URL }}/">
 	<link rel="icon" type="image/png" href="/staticimages/favicon.png">
-	<link rel="alternate" type="application/rss+xml" title="All About Berlin newsletter" href="{{ site_url }}/newsletter/feed.rss">
-	<link rel="alternate" type="application/rss+xml" title="All About Berlin's latest guides" href="{{ site_url }}/guides/feed.rss">
-	<link rel="author" href="{{ site_url }}/about">
-	<link rel="privacy-policy" href="{{ site_url }}/terms#privacy-policy">
-	<link rel="terms-of-service" href="{{ site_url }}/terms">
+	<link rel="alternate" type="application/rss+xml" title="All About Berlin newsletter" href="{{ SITE_URL }}/newsletter/feed.rss">
+	<link rel="alternate" type="application/rss+xml" title="All About Berlin's latest guides" href="{{ SITE_URL }}/guides/feed.rss">
+	<link rel="author" href="{{ SITE_URL }}/about">
+	<link rel="privacy-policy" href="{{ SITE_URL }}/terms#privacy-policy">
+	<link rel="terms-of-service" href="{{ SITE_URL }}/terms">
 
 	<meta name="theme-color" media="(prefers-color-scheme: light)" content="#da513d">
 	<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#9f3a2b">
@@ -39,9 +39,9 @@
 			<meta property="og:type" content="website">
 			<meta property="og:title" content="{% if metatitle|default %}{{ metatitle }}{% else %}All About Berlin{% endif%}">
 			<meta property="og:description" content="{{ metadescription }}">
-			<meta property="og:image" content="{{ site_url }}/staticimages/cover.png">
+			<meta property="og:image" content="{{ SITE_URL }}/staticimages/cover.png">
 		{% endif %}
-		<meta property="og:logo" content="{{ site_url }}/staticimages/logo.png" />
+		<meta property="og:logo" content="{{ SITE_URL }}/staticimages/logo.png" />
 	{% endblock %}
 
 	<meta name="git-commit-hash" content="{{ commit_id }}">
@@ -54,19 +54,24 @@
 			{% endblock %}
 		{% endscss %}
 	</style>
+	<noscript>
+		<style>
+			[v-cloak]:before, [v-cloak]:after{content:none}
+		</style>
+	</noscript>
 </head>
 <body>
 {% block body %}
 	<header id="main-nav" aria-label="Main menu" class="no-print">
-		<a class="logo" href="{{ site_url }}/" rel="home" title="All About Berlin">
+		<a class="logo" href="{{ SITE_URL }}/" rel="home" title="All About Berlin">
 			All About Berlin
 		</a>
 		<nav id="sections" aria-label="Website sections">
 			{% include "_blocks/searchForm.html" %}
-			<a title="Guides about life in Berlin" href="{{ site_url }}/guides">Guides</a>
-			<a title="Tools, forms and templates" href="{{ site_url }}/tools">Tools</a>
-			<a href="{{ site_url }}/newsletter">Newsletter</a>
-			<a class="no-mobile" href="{{ site_url }}/contact">Contact</a>
+			<a title="Guides about life in Berlin" href="{{ SITE_URL }}/guides">Guides</a>
+			<a title="Tools, forms and templates" href="{{ SITE_URL }}/tools">Tools</a>
+			<a href="{{ SITE_URL }}/newsletter">Newsletter</a>
+			<a class="no-mobile" href="{{ SITE_URL }}/contact">Contact</a>
 		</nav>
 	</header>
 	{% block main %}
@@ -80,19 +85,30 @@
 	{% endblock %}
 	{% block footer %}
 		<footer aria-label="Bottom menu" class="no-print">
-			<a href="{{ site_url }}/donate" rel="nofollow">Donate</a> •
-			<a href="{{ site_url }}/newsletter">Newsletter</a> •
-			<a href="{{ site_url }}/contact" rel="nofollow">Imprint</a> •
-			<a href="{{ site_url }}/terms" rel="nofollow">AGB</a>
+			<a href="{{ SITE_URL }}/donate" rel="nofollow">Donate</a> •
+			<a href="{{ SITE_URL }}/newsletter">Newsletter</a> •
+			<a href="{{ SITE_URL }}/contact" rel="nofollow">Imprint</a> •
+			<a href="{{ SITE_URL }}/terms" rel="nofollow">AGB</a>
 		</footer>
 	{% endblock %}
 {% endblock %}
 {% block postFooter %}
-	{% include "_js/tracking.js" %}
-	{% include "_js/events.js" %}
-	{% include "_js/utils/currency.js" %}
 	{% include "_blocks/tooltip.html" %}
-	<script defer>
+	<script type="module">
+		{% js %}
+			import { getCurrencyTooltipText } from '/js/utils/exchangeRates.mjs';
+			import { validateForm } from '/js/utils/form.mjs';
+			import { initializeTracking } from '/js/utils/tracking.mjs';
+			import initializeCurrencyTooltips from '/js/components/currency.mjs';
+			import initializeChecklists from '/js/components/checklist.mjs';
+			import initializeFootnotes from '/js/components/footnotes.mjs';
+
+			initializeTracking();
+			initializeChecklists();
+			initializeCurrencyTooltips();
+			initializeFootnotes();
+		{% endjs %}
+
 		{% alljs %}
 	</script>
 	<script type="application/ld+json">
@@ -100,7 +116,7 @@
 			{
 				"@context": "https://schema.org",
 				"@type": "WebSite",
-				"@id": "{{ site_url }}/#site",
+				"@id": "{{ SITE_URL }}/#site",
 				"author": {
 					"@type": "Person",
 					"@id": "https://nicolasbouliane.com"
@@ -115,10 +131,10 @@
 				},
 				"description": "All About Berlin helps people settle in Berlin and navigate German bureaucracy.",
 				"inLanguage": "en",
-				"url": "{{ site_url }}/",
+				"url": "{{ SITE_URL }}/",
 				"publisher": {
 					"@type": "Organization",
-					"@id": "{{ site_url }}/#organization"
+					"@id": "{{ SITE_URL }}/#organization"
 				},
 				"sameAs": [
 					"https://github.com/all-about-berlin",
@@ -131,7 +147,7 @@
 			},
 			{
 				"@context": "https://schema.org",
-				"@id": "{{ site_url }}/#organization",
+				"@id": "{{ SITE_URL }}/#organization",
 				"@type": "Organization",
 				"address": {
 					"@type": "PostalAddress",
@@ -143,7 +159,7 @@
 				},
 				"description": "All About Berlin helps people settle in Berlin and navigate German bureaucracy.",
 				"foundingDate": "2017-09-01",
-				"logo": "{{ site_url }}/staticimages/logo.png",
+				"logo": "{{ SITE_URL }}/staticimages/logo.png",
 				"name": "All About Berlin",
 				"sameAs": [
 					"https://github.com/all-about-berlin",
@@ -154,7 +170,7 @@
 					"https://www.linkedin.com/company/allaboutberlin/",
 					"https://allaboutberlin.com/newsletter"
 				],
-				"url": "{{ site_url }}/"
+				"url": "{{ SITE_URL }}/"
 			},
 			{
 				"@context": "https://schema.org",

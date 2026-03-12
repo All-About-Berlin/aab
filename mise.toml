@@ -50,9 +50,7 @@ while ! docker ps > /dev/null 2>&1; do
 done
 
 echo "Starting docker containers"
-if [ "$(docker ps -q | wc -l)" -eq 0 ]; then
-  docker compose up --build -d;
-fi
+docker compose up --build -d --force-recreate;
 
 # Waiting for server to be available
 max_attempts=30
@@ -65,6 +63,11 @@ until curl --fail -s -k https://localhost >/dev/null; do
   fi
   ((attempt++))
   sleep 1
+done
+
+echo "Waiting for frontend rebuild to finish"
+until [ $(docker ps --filter "name=frontend" --filter "health=healthy" --quiet) ]; do
+  sleep 2
 done
 """
 
@@ -95,18 +98,21 @@ frontend/scripts/add_review.py
 # = TEST =======================================================================
 
 [tasks.test-api]
+env = { "BUNDLE_JS" = "1" }
 run = """
 mise dev
 docker compose exec backend python3 manage.py test -b --parallel
 """
 
 [tasks.test-ui]
+env = { "BUNDLE_JS" = "1" }
 run = """
 mise dev
 pytest tests
 """
 
 [tasks.update-snapshots]
+env = { "BUNDLE_JS" = "1" }
 run = """
 mise dev
 rm -rf tests/snapshots/*
@@ -114,6 +120,7 @@ pytest tests --update-snapshots
 """
 
 [tasks.test]
+env = { "BUNDLE_JS" = "1" }
 run = """
 mise test-ui
 mise test-api

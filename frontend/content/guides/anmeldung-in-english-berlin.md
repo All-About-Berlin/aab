@@ -68,7 +68,7 @@ If this is your first *Anmeldung*, or if you are not an EU citizen, you must [do
 
 If you can't do your *Anmeldung* online, you must do it **in person at the [[Bürgeramt]]**. You can go to any *[[Bürgeramt]]* in Berlin. **You need an appointment**. It must be after your move-in date.[^1] You have 14 days to register, but in Berlin nobody cares. You can do it months later.[^20]
 
-{% tool "anmeldungAppointmentFinder" %}
+{% tool "anmeldung-appointment-finder" %}
 
 **[Other ways to get an appointment ➞](/guides/berlin-burgeramt-appointment)**
 

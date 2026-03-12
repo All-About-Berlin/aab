@@ -18,7 +18,7 @@ Directory structure:
 
 ### Backend
 
-The backend, a REST API built with Django and Django REST Framework. The API handles form submissions, email scheduling and other dynamic features. It also proxies APIs for newsletter subscriber management and currency conversions.
+The backend a REST API built with Django and Django REST Framework. The API handles form submissions, email scheduling and other dynamic features. It also proxies APIs for newsletter subscriber management and currency conversions.
 
 Most tools on the website entirely run in the browser, so they don't call the API.
 

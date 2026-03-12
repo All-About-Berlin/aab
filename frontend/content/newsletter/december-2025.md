@@ -45,7 +45,7 @@ I have updated my [Kita](https://allaboutberlin.com/guides/kita) and [Kitagutsch
 
 ## Immigration office wait times
 
-Since last winter, I [collect feedback](https://allaboutberlin.com/guides/auslanderbehorde-wait-times) from residence permit applicants. This helps you predict Ausländerbehörde delays and plan around them. In September, I started measuring [citizenship processing times](https://allaboutberlin.com/guides/citizenship-wait-times) too.
+Since last winter, I [collect feedback](https://allaboutberlin.com/guides/immigration-office/wait-times) from residence permit applicants. This helps you predict Ausländerbehörde delays and plan around them. In September, I started measuring [citizenship processing times](https://allaboutberlin.com/guides/immigration-office/wait-times) too.
 
 Last week, I made the page easier to read and added two useful pieces of information:
 

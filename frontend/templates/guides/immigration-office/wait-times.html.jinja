@@ -1,0 +1,10 @@
+{% extends "guides/entry.html.jinja" %}
+
+{% block postHead %}
+	{{ super() }}
+	<link rel="preload" as="fetch" href="/api/forms/residence-permit-feedback.json?page=1" crossorigin>
+{% endblock %}
+
+{% block contentHeader %}
+	<h1>{{ entry.title }}</h1>
+{% endblock %}

@@ -47,7 +47,7 @@ If you don't meet those requirements, you can't renew your freelance visa.
 
 **[How to apply for permanent residence ➞](/guides/permanent-residence)**
 
-**You might also qualify for [German citizenship](/guides/permanent-residence#citizenship).** It's the best option. You can qualify after 5 years in Germany.{{ fail_on('2026-03-01') }}
+**You might also qualify for [German citizenship](/guides/permanent-residence#citizenship).** It's the best option. You can qualify after 5 years in Germany.{{ fail_on('2026-03-13') }}
 
 ### 2. Know if you are freelance or self-employed
 
@@ -70,7 +70,7 @@ When you renew a [residence permit](/glossary/Aufenthaltstitel), [expat health i
 
 It takes 1 or 2 weeks to switch, but **it can take up to 3 months**.[^17] [Ask my insurance expert](/guides/german-health-insurance#need-help) to help you [choose the correct health insurance](/guides/german-health-insurance/for-freelancers). His help is free. Don't choose health insurance yourself; you can make expensive mistakes. Many applications are rejected because of invalid health insurance.[^5]
 
-{% tool "healthInsuranceQuestion" %}
+{% tool "health-insurance-calculator", mode="question" %}
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 
@@ -99,9 +99,9 @@ If your documents are not in English or German, you might need [certified transl
 
 ### 2. Send your documents
 
-You can't book an *Ausländerbehörde* appointment. You must [use their contact form](/guides/immigration-office#use-the-contact-form) to send your documents, then wait for a response. They can take [a few months](/guides/auslanderbehorde-wait-times) to reply.
+You can't book an *Ausländerbehörde* appointment. You must [use their contact form](/guides/immigration-office#use-the-contact-form) to send your documents, then wait for a response. They can take [a few months](/guides/immigration-office/wait-times) to reply.
 
-When they reply, they will give you an appointment. This appointment can be [in a few months](/guides/auslanderbehorde-wait-times). They might also ask for more documents.
+When they reply, they will give you an appointment. This appointment can be [in a few months](/guides/immigration-office/wait-times). They might also ask for more documents.
 
 In most cases, your current [residence permit](/glossary/Aufenthaltstitel) stays valid while you wait. [If it expires](/guides/residence-permit#if-your-visa-or-residence-permit-expires), you don't have to leave Germany. You can continue working, studying or freelancing like before. If you get a *[[Fiktionsbescheinigung]]*, you can [travel with your expired residence permit](/guides/fiktionsbescheinigung#travel-with-a-fiktionsbescheinigung).
 
@@ -109,7 +109,7 @@ In most cases, your current [residence permit](/glossary/Aufenthaltstitel) stays
 
 If you wait more than 3 months, you can [sue the *Ausländerbehörde* for inaction](/guides/immigration-office#sue-the-auslanderbehorde), but it might not help.
 
-{% tool "residencePermitFeedback/form", residence_permit='FREELANCE_VISA' %}
+{% tool "residence-permit-feedback-form", type='FREELANCE_VISA' %}
 
 ### 3. Find a translator
 
@@ -131,7 +131,7 @@ The *Ausländerbehörde* might ask you to bring new or updated documents to your
 
 **[What happens during your Ausländerbehörde appointment ➞](/guides/residence-permit#go-to-your-appointment)**
 
-{% tool "residencePermitFeedback/form", residence_permit='FREELANCE_VISA' %}
+{% tool "residence-permit-feedback-form", type='FREELANCE_VISA' %}
 
 ### 5. Receive your new residence permit
 
@@ -220,9 +220,9 @@ Keep the receipts. Those expenses are [tax-deductible](/glossary/steuerlich%20ab
 
 Your feedback helps thousands of people plan their freelance visa application.
 
-{% tool "residencePermitFeedback/form", residence_permit='FREELANCE_VISA' %}
+{% tool "residence-permit-feedback-form", type='FREELANCE_VISA' %}
 
-**[See other people's feedback ➞](/guides/auslanderbehorde-wait-times)**
+**[Read other people's feedback ➞](/guides/immigration-office/wait-times)**
 
 ### Apply for permanent residence
 

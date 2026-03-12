@@ -13,7 +13,7 @@ This guide shows real ways to save money in Germany.
 
 Most employees pay 35% to 50% of their income in taxes, health insurance and pension contributions. There are ways to pay less.
 
-{% tool "taxCalculator" %}
+{% tool "tax-calculator" %}
 
 ### How to pay less [income tax](/glossary/Einkommensteuer)
 
@@ -26,7 +26,7 @@ Most employees pay 35% to 50% of their income in taxes, health insurance and pen
 
 Use my [health insurance recommendation tool](/tools/health-insurance-calculator) to see your options. [Ask my insurance expert](/guides/german-health-insurance#need-help) to help you find cheaper health insurance.
 
-{% tool "healthInsuranceCalculator", static=True %}
+{% tool "health-insurance-calculator" %}
 
 - **[Use your EHIC](/guides/german-health-insurance#insurance-from-other-eu-countries)**  
     If you come from another EU country, you can use your European Health Insurance Card ([[EHIC]]) in Germany. EU students can use their EHIC until they graduate. When you start working, you must get German health insurance.

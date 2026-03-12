@@ -93,7 +93,7 @@ Each *Bürgeramt* does things differently. They rarely email your *[[Abmeldebesc
 
 To deregister by email, send this message to [any *Bürgeramt* in Berlin](https://service.berlin.de/standorte/buergeraemter/):
 
-{% tool "abmeldungEmail", static=True %}
+{% tool "abmeldung-email", static=True %}
 
 Attach this to your email:
 

@@ -1,7 +1,0 @@
-<div class="buttons bar left">
-	<select v-model="department">
-		<option :value="null">All departments</option>
-		<option disabled>──────────</option>
-		<option v-for="(name, key) in departments" :key="key" :value="key" v-text="name"></option>
-	</select>
-</div>

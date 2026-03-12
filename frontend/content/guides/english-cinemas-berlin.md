@@ -46,4 +46,4 @@ These cinemas usually screen movies in English, with or without subtitles. [Yorc
 
 In the summer, some of these cinemas also screen open air movies. You can watch movies outdoors.
 
-{% tool "placesMap" %}
+{% include "_blocks/placesMap.html" %}

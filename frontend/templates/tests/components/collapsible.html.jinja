@@ -1,0 +1,47 @@
+{% extends "tests/components/entry.html.jinja" %}
+
+{% js %}
+	import Vue from '/js/vue/vue.mjs';
+	import Collapsible from '/js/vue/components/collapsible.mjs';
+	import IconWhatsapp from '/js/vue/components/icons/whatsapp.mjs';
+
+	new Vue({
+		el: document.querySelector('main .article-body'),
+		components: {
+			Collapsible,
+			IconWhatsapp,
+		},
+	})
+{% endjs %}
+
+{% block component %}
+	<collapsible>
+		<template v-slot:header>
+			Closed collapsible
+		</template>
+		<p>This part is not visible</p>
+	</collapsible>
+
+	<collapsible static>
+		<template v-slot:header>
+			Static collapsible
+		</template>
+		<progress min="0" max="5" value="3"></progress>
+		<p>This collapsible is static</p>
+	</collapsible>
+
+	<collapsible open>
+		<template v-slot:header>
+			<small>Collapsible test</small>
+			Open collapsible
+		</template>
+		<progress min="0" max="5" value="3"></progress>
+		<p>A collapsible that is open.</p>
+		<hr>
+		<div class="buttons bar">
+			<button class="button primary"><i class="icon left" aria-hidden="true"></i> Primary</button>
+			<button class="button">Secondary <i class="icon right" aria-hidden="true"></i></button>
+			<button class="button whatsapp"><icon-whatsapp></icon-whatsapp> WhatsApp</button>
+		</div>
+	</collapsible>
+{% endblock %}

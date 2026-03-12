@@ -24,4 +24,4 @@ For plastic parts like hand protectors, handlebar weights, grips etc, but from [
 
 ## List of motorcycle equipment stores
 
-{% tool "placesMap" %}
+{% include "_blocks/placesMap.html" %}

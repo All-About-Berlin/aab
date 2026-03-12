@@ -100,7 +100,7 @@ You can apply in Germany if...
 
 If you can't apply in Germany, you must [apply in your home country](#how-to-apply-in-your-country).
 
-Your current residence permit [might allow self-employment](/guides/residence-permit#for-self-employment). If not, you must wait for your freelance visa to start working.[^35] This can take [a few months](/guides/auslanderbehorde-wait-times). It might be cheaper and safer if you [apply in your home country](#how-to-apply-in-your-country), then come to Germany when you have permission to start your business.
+Your current residence permit [might allow self-employment](/guides/residence-permit#for-self-employment). If not, you must wait for your freelance visa to start working.[^35] This can take [a few months](/guides/immigration-office/wait-times). It might be cheaper and safer if you [apply in your home country](#how-to-apply-in-your-country), then come to Germany when you have permission to start your business.
 
 **If you need help**, an [immigration lawyer](/guides/english-speaking-lawyers-berlin) or a [relocation consultant](/guides/relocation-agency-in-berlin) can take care of everything. It costs €500 to €2,000.[^45] It's a [tax-deductible](/glossary/steuerlich%20absetzbar) expense.
 
@@ -152,7 +152,7 @@ This is the only way. You can't go to the *Ausländerbehörde* without an appoin
 
 ### 4. Wait
 
-The *Ausländerbehörde* will process your application. There is no way to track your application. You must wait for their response. It takes [a few months](/guides/auslanderbehorde-wait-times).
+The *Ausländerbehörde* will process your application. There is no way to track your application. You must wait for their response. It takes [a few months](/guides/immigration-office/wait-times).
 
 While you wait, your current [[National Visa]] or residence permit might expire. It's extended until the *Ausländerbehörde* processes your application.[^36]
 
@@ -164,7 +164,7 @@ While you wait, your current [[National Visa]] or residence permit might expire.
 
 ### 5. Go to your appointment
 
-[A few months later](/guides/auslanderbehorde-wait-times), the *[[Ausländerbehörde]]* will email you an appointment date. If you get an appointment, you are almost guaranteed to get your freelance visa.
+[A few months later](/guides/immigration-office/wait-times), the *[[Ausländerbehörde]]* will email you an appointment date. If you get an appointment, you are almost guaranteed to get your freelance visa.
 
 Follow the instructions in the email. You might need to send extra documents, or bring them to your appointment.
 
@@ -178,7 +178,7 @@ Go to your second *[[Ausländerbehörde]]* appointment and pick up your freelanc
 
 **[How to pick up your freelance visa ➞](/guides/residence-permit#pick-up-your-residence-card)**
 
-{% tool "residencePermitFeedback/form", residence_permit='FREELANCE_VISA' %}
+{% tool "residence-permit-feedback-form", type='FREELANCE_VISA' %}
 
 ### 7. Start your business
 
@@ -321,9 +321,9 @@ These documents are not required, but some *Ausländerbehörde* employees ask fo
 
 Tell me how long it took to get your freelance visa. Your feedback helps thousands of people plan their application.
 
-{% tool "residencePermitFeedback/form", residence_permit='FREELANCE_VISA' %}
+{% tool "residence-permit-feedback-form", type='FREELANCE_VISA' %}
 
-**[See other people's feedback ➞](/guides/auslanderbehorde-wait-times)**
+**[Read other people's feedback ➞](/guides/immigration-office/wait-times)**
 
 ### Travel with a freelance visa
 

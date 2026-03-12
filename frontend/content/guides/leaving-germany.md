@@ -62,7 +62,7 @@ This checklist helps you move from Germany to another country.
         The [notice period](/glossary/Kündigungsfrist) is 1 month.[^23]
     - [ ] **Gym membership**  
         The [notice period](/glossary/Kündigungsfrist) is different for each gym. There is sometimes a shorter notice period when you leave Germany.[^24]
-    - [ ] **Public transit pass** or [Deutschland Ticket](/guides/deutschland-ticket#how-to-cancel-a-deutschland-ticket)
+    - [ ] **[Public transit pass](/guides/cancel-bvg-yearly-ticket)** or [Deutschland Ticket](/guides/deutschland-ticket#how-to-cancel-a-deutschland-ticket)
     - [ ] **Other insurances**  
         You can sometimes use your insurance policies in another country.
 - [ ] **Disenrol from university**  

@@ -203,11 +203,11 @@ Usually, you only need a blocked account for the first year. You must deposit at
 You can open a blocked account with...
 
 - **[Expatrio](/out/expatrio)**{{ RECOMMENDED }}  
-    Most people use Expatrio, because it works. They also sell packages with [health insurance](/glossary/Krankenversicherung).
-- [Fintiba](/out/fintiba)
-- [Coracle](/out/coracle)
+    Most people use it. It works fine. They also sell packages with [health insurance](/glossary/Krankenversicherung).
 - [Sparkasse](/out/sparkasse), but only at some branches[^41]
 - [Kotak Mahindra Bank](https://www.kotak.com/en/digital-banking/insta-services/send-money-abroad/kotak-german-blocked-account-sperrkonto.html) in India[^43]{{ fail_on('2027-12-31') }}
+- [Fintiba](/out/fintiba) was acquired by Expatrio in 2025[^29]
+- [Coracle](/out/coracle) was acquired by Expatrio in 2024[^29]
 
 Some [blocked accounts](/glossary/Sperrkonto) include [health insurance for your visa application](/guides/german-health-insurance/for-a-visa-application).
 
@@ -241,7 +241,7 @@ None of these banks give you a [[Girocard]]. If you need one, [C24](/out/c24) is
 [^16]: Tobias Arnold from bunq (February 2025)
 [^17]: [Reddit](https://old.reddit.com/r/germany/comments/18puh8o/about_blocked_account/) (2024)
 [^18]: [1822direkt.de](https://www.1822direkt.de/girokonto/leistungen-konditionen/)
-[^19]: Tobias Arnold from bunq (February 2025){{ fail_on('2026-03-01') }}
+[^19]: Tobias Arnold from bunq (February 2025){{ fail_on('2026-03-13') }}
 [^20]: [comdirect.de](https://www.comdirect.de/cms/ueberuns/de/presse/neues-mobiles-girokonto-von-comdirect.html)
 [^21]: [commerzbank.de](https://www.commerzbank.de/portal/media/efw-dokumente/preis_leistungsverzeichnis.pdf)
 [^22]: [§ 13 BAföG](https://www.buzer.de/13_BAfoG.htm) and [§ 13a BAföG](https://www.buzer.de/13a_BAfoG.htm), [VAB A2.3.5](/out/vab) (October 2025)
@@ -251,6 +251,7 @@ None of these banks give you a [[Girocard]]. If you need one, [C24](/out/c24) is
 [^26]: [ING](https://www.ing.de/girokonto/student/) (2025)
 [^27]: [berliner-volksbank.de](https://www.berliner-volksbank.de/privatkunden/junge-leute/kostenloses-girokonto.html)
 [^28]: [ING](https://www.ing.de/girokonto/konditionen/#:~:text=von%20mindestens%201.000%20%E2%82%AC%20im%20kalendermonat) (2025)
+[^29]: [Press release](https://www.chaptersgroup.com/2025/05/22/chapters-group-ag-erweitert-financial-technologies-segment-tochterunternehmen-fintiba-fusioniert-mit-expatrio/) (May 2025)
 [^33]: [bunq.com](https://www.bunq.com/documents/pricing)
 [^34]: [together.bunq.com](https://together.bunq.com/d/6635-what-are-my-daily-limits)
 [^36]: [ing.de](https://www.ing.de/girokonto/konditionen/#:~:text=bargeldauszahlung%20mit%20der%20visa%20card)

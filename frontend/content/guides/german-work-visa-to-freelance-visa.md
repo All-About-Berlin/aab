@@ -40,13 +40,13 @@ Next, you must [apply for the freelance visa](/guides/freelance-visa). This can 
 
 **The freelance visa will replace your current residence permit**. You can't have both at the same time. When you get your freelance visa, your old residence permit will become invalid. If your freelance visa does not allow employment, you must stop working for your employer.
 
-{% tool "residencePermitFeedback/form", residence_permit='FREELANCE_VISA' %}
+{% tool "residence-permit-feedback-form", type='FREELANCE_VISA' %}
 
 ## Tell your health insurer
 
 When you are an employee, your employer pays half of your health insurance. When you are self-employed, you pay the full amount yourself. This means that **your health insurance will be twice as expensive**.
 
-{% tool "healthInsuranceCalculator", occupation="selfEmployed", static=True %}
+{% tool "health-insurance-calculator", initial_occupation="selfEmployed", static=True %}
 
 You can switch to [private health insurance](/glossary/private%20Krankenversicherung). It can be better and cheaper than [public health insurance](/glossary/gesetzliche%20Krankenversicherung). I switched, and I save around €600 per month. It's a complex decision. [Ask my insurance expert](/guides/german-health-insurance#need-help) if it makes sense for you.
 

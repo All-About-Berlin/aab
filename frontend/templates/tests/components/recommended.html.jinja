@@ -1,0 +1,17 @@
+{% extends "tests/components/entry.html.jinja" %}
+
+{% js %}
+	import Vue from '/js/vue/vue.mjs';
+	import Recommended from '/js/vue/components/recommended.mjs';
+
+	new Vue({
+		el: document.querySelector('main .article-body'),
+		components: {
+			Recommended
+		}
+	});
+{% endjs %}
+
+{% block component %}
+	<p>Recommended option <recommended></recommended></p>
+{% endblock %}

@@ -40,13 +40,13 @@ Do not use this form if...
 
 ## Fill the form online
 
-{% tool "taxIdRequestFormFiller", static=True %}
+{% tool "tax-id-request-form-filler", static=True %}
 
 ## Download the form
 
 You can also download the original form and fill it yourself. If you need a tax ID for multiple people, fill the form multiple times.
 
-{% tool "documentDownloads" %}
+{% include "_blocks/documentDownloads.html" %}
 
 ## How to fill this form
 

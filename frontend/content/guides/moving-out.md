@@ -15,7 +15,7 @@ Most leases have a 3 month [notice period](/glossary/Kündigungsfrist). You must
 
 ### 1. Calculate your notice period
 
-{% tool "leaseNoticePeriodCalculator" %}
+{% tool "lease-notice-period-calculator" %}
 
 The standard [notice period](/glossary/Kündigungsfrist) is 3 months, but it can be shorter.[^29] You must pay rent until the end of your notice period.
 
@@ -29,7 +29,7 @@ The notice period starts when your landlord receives your [termination letter](/
 
 Your [notice period](/glossary/Kündigungsfrist) starts when your landlord *receives* your [termination letter](/glossary/Kündigungsschreiben), not when you send it.
 
-{% tool "leaseTerminationLetter" %}
+{% tool "lease-termination-letter" %}
 
 You must **print, sign and mail** the letter. An email, a text message or a fax is not enough.[^3] Digital signatures are not valid.[^1]
 

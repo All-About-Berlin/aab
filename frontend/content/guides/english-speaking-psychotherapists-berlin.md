@@ -100,7 +100,7 @@ This guide explains:
 
 ## List of therapists
 
-{% tool "placesMap" %}
+{% include "_blocks/placesMap.html" %}
 
 To add a therapist, [fill this form](/suggest-therapist).
 
@@ -114,7 +114,6 @@ These directories help you find English-speaking therapists:
 - [Berlin therapist directory](https://www.therapistinberlin.com/therapist-directory) - List of therapists with language information
 - [Doctolib](https://www.doctolib.de/) - Find doctors and therapists by language
 - [Jameda](https://www.jameda.de/suchen?loc=Berlin) - Find doctors and therapists by language
-- [AngloInfo's English-speaking therapist directory](https://www.angloinfo.com/berlin/directory/berlin-counselling-therapists-477)
 
 **[More resources and directories ➞](/guides/how-to-find-english-speaking-medical-professionals-in-berlin)**
 

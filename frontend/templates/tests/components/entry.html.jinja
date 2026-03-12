@@ -1,0 +1,12 @@
+{% extends "_layout.html" %}
+
+{% block postHead %}
+	<meta name="robots" content="noindex">
+{% endblock %}
+
+{% block content %}
+	<h1>Component test</h1>
+	<div class="article-body">
+		{% block component %}{% endblock %}
+	</div>
+{% endblock %}

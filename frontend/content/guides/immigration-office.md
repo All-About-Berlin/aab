@@ -50,7 +50,7 @@ To contact the *Ausländerbehörde*, or to apply for a residence permit that is 
 4. **Send your message**  
     If you get an error (*Anti-Spam-Schutz*), it's because you took too long to send your message. Click the back button, and send it again. After you send the message, click *Zusammenfassung ausdrucken* to print the confirmation message. This is a proof of your residence permit application. You might not get a confirmation email.[^8]
 5. **Wait for a response**  
-    They reply [very slowly](/guides/auslanderbehorde-wait-times). If you wait more than 3 months, you can [sue the *Ausländerbehörde*](#sue-the-auslanderbehorde).[^17] [If your visa or resident permit expires](/guides/residence-permit#if-your-visa-or-residence-permit-expires), it's usually extended until the *Ausländerbehörde* processes your application. Sometimes, you can't reply to their emails directly, so you must use the contact form again.
+    They reply [very slowly](/guides/immigration-office/wait-times). If you wait more than 3 months, you can [sue the *Ausländerbehörde*](#sue-the-auslanderbehorde).[^17] [If your visa or resident permit expires](/guides/residence-permit#if-your-visa-or-residence-permit-expires), it's usually extended until the *Ausländerbehörde* processes your application. Sometimes, you can't reply to their emails directly, so you must use the contact form again.
 
 **[What happens next? ➞](/guides/residence-permit#wait)**
 
@@ -93,21 +93,21 @@ The Berlin immigration office has multiple departments. Send your application to
 
 **[List of departments ➞](https://www.berlin.de/einwanderung/ueber-uns/kontakt/artikel.1394180.php)**
 
-**[Wait times by department ➞](/guides/auslanderbehorde-wait-times)**
+**[Wait times by department ➞](/guides/immigration-office/wait-times)**
 
-**Note:** The departments changed in October 2025: departments E1 to E6 were replaced with departments F1, F2 and M1 to M4.[^15]{{ fail_on('2026-03-01') }}. 
+**Note:** The departments changed in October 2025: departments E1 to E6 were replaced with departments F1, F2 and M1 to M4.[^15]{{ fail_on('2026-03-13') }}. 
 
 ## How to get an appointment
 
 To visit the *Ausländerbehörde*, you need an appointment. If you go without an appointment, they will not help you.[^3]
 
-**You can't book an appointment yourself.**[^2] You must [apply for a residence permit](/guides/residence-permit#how-to-apply-in-germany) or [use their contact form](#how-to-contact-the-auslanderbehorde). They decide when they give you an appointment. They can take [weeks or months](/guides/auslanderbehorde-wait-times) to reply.
+**You can't book an appointment yourself.**[^2] You must [apply for a residence permit](/guides/residence-permit#how-to-apply-in-germany) or [use their contact form](#how-to-contact-the-auslanderbehorde). They decide when they give you an appointment. They can take [weeks or months](/guides/immigration-office/wait-times) to reply.
 
 ## Wait times
 
 It usually takes a few months to get a residence permit in Berlin. The wait times vary by department and residence permit type.
 
-**[Ausländerbehörde wait times ➞](/guides/auslanderbehorde-wait-times)**
+**[Ausländerbehörde wait times ➞](/guides/immigration-office/wait-times)**
 
 Usually, you can't work before you get your residence permit. It might be cheaper to apply in your home country. You can move to Berlin after you get permission to work. You don't need to wait in Berlin without an income.
 
@@ -115,7 +115,7 @@ You don't need a residence permit to start studying. You can start studying as s
 
 **[How to apply in your country ➞](/guides/residence-permit#how-to-apply-in-your-country)**
 
-{% tool "residencePermitFeedback/form" %}
+{% tool "residence-permit-feedback-form" %}
 
 ## Payment methods
 
