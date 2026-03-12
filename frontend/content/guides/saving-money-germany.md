@@ -19,10 +19,11 @@ Most employees pay 35% to 50% of their income in taxes, health insurance and pen
 
 - **Make a [tax declaration](/glossary/Steuererklärung)**  
     A tax declaration lets you deduct expenses from your income. This makes your taxable income smaller, so you pay less [income tax](/glossary/Einkommensteuer). Relocation costs, work-related expanses, pension payments, insurance and healthcare are [tax-deductible](/glossary/steuerlich%20absetzbar). Financial support for relatives can be tax-deductible in some situations. [Tax software](/guides/german-tax-software) is the cheapest way to make a tax declaration.
-- **List all work-related deductions**  
-    Expenses related to earning employment income: commuting, home office days, work equipment (laptop, monitor, headset), home office equipment (desk, chair), professional literature, training and education costs.
+- **Include all work-related deductions**  
+    Track and include expenses related to employment income: commuting, home office days, work equipment (laptop, monitor, headset), home office equipment (desk, chair), professional literature, training and education costs.
+    
+    Employees automatically get a €1,230 work-expense allowance, so only expenses above this amount reduce your tax further.
 
-   Important: Employees automatically get a €1,230 work-expense allowance, so only expenses above this amount reduce your tax further.
 - **Save for retirement**  
     Most pension contributions are [tax-deductible](/glossary/steuerlich%20absetzbar). Contributing to your pension is a type of [tax deferral](https://en.wikipedia.org/wiki/Tax_deferral). It helps you pay less income tax over your lifetime.
 
