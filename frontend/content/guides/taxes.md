@@ -13,7 +13,7 @@ This guide explains how taxes work in Germany, and how to pay less taxes.
 
 This tax calculator shows your salary after taxes. It works for employees, students and freelancers.
 
-{% tool "taxCalculator" %}
+{% tool "tax-calculator", static=True %}
 
 ## The taxes you pay in Germany
 
@@ -57,7 +57,7 @@ There are three types of health insurance:
 
 If you are an employee, your employer pays half of it. If you earn less than €{{GKV_FAMILIENVERSICHERUNG_MAX_INCOME|cur}} per month, you can use your parents' or spouse's health insurance for free. Students get a cheaper tariff.
 
-{% tool "healthInsuranceCalculator" %}
+{% tool "health-insurance-calculator" %}
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 
@@ -79,9 +79,7 @@ If you are self-employed, public pension insurance is usually optional. If you d
 
 Unemployment insurance (*[[Arbeitslosenversicherung]]*) pays a percentage of your salary if you [lose your job](/guides/losing-your-job).
 
-It costs {{ARBEITSLOSENVERSICHERUNG_EMPLOYEE_RATE}}% of your income.
-
-**[Unemployment insurance calculator ➞](/tools/arbeitslosenversicherung-calculator)**
+It costs {{ARBEITSLOSENVERSICHERUNG_EMPLOYEE_RATE}}% of your income. The maximum cost is €{{(BEITRAGSBEMESSUNGSGRENZE * ARBEITSLOSENVERSICHERUNG_EMPLOYEE_RATE / 100 / 12)|cur}} per month.[^6]
 
 ### Church tax
 
@@ -173,3 +171,4 @@ A tax advisor can answer your questions and help you file your German taxes corr
 [^3]: [§ 32d EStG](https://www.buzer.de/32d_EStG.htm)
 [^4]: [wendl-koehler.de](https://wendl-koehler.de/rechtliches/kryptowaehrung-steuererklaerung/)
 [^5]: [orderbird.com](https://www.orderbird.com/blog/trinkgeld-versteuern/#anker2)
+[^6]: {{ARBEITSLOSENVERSICHERUNG_EMPLOYEE_RATE}}% of the *[[Beitragsbemessungsgrenze]]*

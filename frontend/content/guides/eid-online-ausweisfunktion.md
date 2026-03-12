@@ -55,7 +55,7 @@ If you pick up a new residence permit at the *Ausländerbehörde*, ask if they c
 
 If you just got your residence permit, **tell us how long it took**. Your feedback helps other people plan their residence permit application.
 
-{% tool "residencePermitFeedback/form" %}
+{% tool "residence-permit-feedback-form" %}
 
 With your new eID, it only takes a few minutes to [register as an organ donor](/guides/organ-donor), and it can save lives.
 

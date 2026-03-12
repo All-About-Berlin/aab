@@ -42,7 +42,7 @@ There are English-speaking jobs in Berlin, but most jobs require German.
 
 **[How to find a job ➞](/guides/find-a-job-in-berlin)**
 
-If you need a [residence permit](/glossary/Aufenthaltstitel) to live and work in Germany, you must get a job offer, then get a residence permit, then start working. It can take [a few weeks](/guides/auslanderbehorde-wait-times).
+If you need a [residence permit](/glossary/Aufenthaltstitel) to live and work in Germany, you must get a job offer, then get a residence permit, then start working. It can take [a few weeks](/guides/immigration-office/wait-times).
 
 **[How to get a residence permit ➞](/guides/residence-permit)**
 
@@ -62,7 +62,7 @@ If you live in Germany, you need [health insurance](/glossary/Krankenversicherun
 
 Use my [health insurance calculator](/guides/german-health-insurance) to know your options. [Ask my insurance expert](/guides/german-health-insurance#need-help) to help you choose. It's the best way to get insured.
 
-{% tool "healthInsuranceCalculator" %}
+{% tool "health-insurance-calculator" %}
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 
@@ -72,7 +72,7 @@ If you are an EU citizen, your [European Health Insurance Card](/glossary/EHIC) 
 
 ### Apply for a residence permit
 
-If you are not a citizen of the [EU](/glossary/European%20Union), [[EEA]] or Switzerland, you need a [residence permit](/glossary/Aufenthaltstitel) to live, work or study in Germany. It can take [a few months](/guides/auslanderbehorde-wait-times) to get one. You might need it before you start working or studying. Apply for it as soon as you can.
+If you are not a citizen of the [EU](/glossary/European%20Union), [[EEA]] or Switzerland, you need a [residence permit](/glossary/Aufenthaltstitel) to live, work or study in Germany. It can take [a few months](/guides/immigration-office/wait-times) to get one. You might need it before you start working or studying. Apply for it as soon as you can.
 
 **[How to get a residence permit ➞](/guides/residence-permit#how-to-get-a-residence-permit)**
 

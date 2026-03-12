@@ -15,7 +15,7 @@ This bot helps you find an appointment to [register your address](/glossary/Anme
 
 ## Appointment finder
 
-{% tool "anmeldungAppointmentFinder", static=True %}
+{% tool "anmeldung-appointment-finder", static=True %}
 
 ## Other appointment types
 

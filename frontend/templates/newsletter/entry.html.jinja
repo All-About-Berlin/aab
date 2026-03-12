@@ -8,7 +8,7 @@
 
 {% block postHead %}
 	{{ super() }}
-	<link rel="index" href="{{ site_url }}/newsletter">
+	<link rel="index" href="{{ SITE_URL }}/newsletter">
 	{% for e in get_entries('newsletter', sort_by='date_created', reverse=True) %}
 		{% if e.entry_uri == entry.entry_uri %}
 			{% if not loop.first %}
@@ -83,7 +83,7 @@
 							"@type": "ListItem",
 							"position": 1,
 							"item": {
-								"@id": "{{ site_url }}/",
+								"@id": "{{ SITE_URL }}/",
 								"name": "Home"
 							}
 						},
@@ -91,7 +91,7 @@
 							"@type": "ListItem",
 							"position": 2,
 							"item": {
-								"@id": "{{ site_url }}/newsletter",
+								"@id": "{{ SITE_URL }}/newsletter",
 								"name": "Newsletter"
 							}
 						},
@@ -119,9 +119,8 @@
 							"jobTitle": {{ reviewer.job_title|tojson }},
 							"name": {{ reviewer.name|tojson }},
 							"email": {{ reviewer.email|tojson }}
-							{% if reviewer.picture|default %}, "image": "{{ site_url }}/{{ reviewer.picture }}"{% endif %}
-							{% if reviewer.website|default %}
-								, "sameAs": [
+							{% if reviewer.picture|default %}, "image": "{{ SITE_URL }}/{{ reviewer.picture }}"{% endif %}
+							{% if reviewer.website|default %}, "sameAs": [
 									{{ reviewer.website|tojson }}
 								]
 							{% endif %}
@@ -130,7 +129,7 @@
 				],
 				"publisher": {
 					"@type": "Organization",
-					"@id": "{{ site_url }}/#organization"
+					"@id": "{{ SITE_URL }}/#organization"
 				}
 			},
 			{% include "_blocks/newsletterJsonld.json" %}

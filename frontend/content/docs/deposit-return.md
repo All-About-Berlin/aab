@@ -18,7 +18,7 @@ After you [move out](/guides/moving-out) of an apartment, you can get your *[[Ka
 
 ## Letter template
 
-{% tool "apartmentDepositReturnLetter", static=True %}
+{% tool "apartment-deposit-return-letter" %}
 
 ## How to send this letter
 

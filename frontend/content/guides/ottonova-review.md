@@ -89,7 +89,7 @@ You should...
 2. [Talk to a health insurance broker](/guides/german-health-insurance#need-help), who will help you choose the best option for *your* situation. Their help is free. If Ottonova is the best insurance for you, they will tell you.
 3. If it still makes sense, [get a quote from Ottonova](/out/ottonova), and decide if it works for you.
 
-{% tool "healthInsuranceCalculator", static=True %}
+{% tool "health-insurance-calculator", static=True %}
 
 ## How to choose health insurance
 
@@ -97,7 +97,7 @@ You should never choose private health insurance yourself. It's a complex decisi
 
 Ask a health insurance broker to help you. It's the best way to choose health insurance. If Ottonova is the best option, they will tell you.
 
-{% tool "healthInsuranceQuestion", static=True %}
+{% tool "health-insurance-calculator", mode="question", static=True %}
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 

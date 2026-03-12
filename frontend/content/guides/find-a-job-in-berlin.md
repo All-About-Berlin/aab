@@ -166,11 +166,11 @@ If you are not sure about your contract, [ask for help](/guides/help#legal-quest
 
 ## 5. Get a residence permit
 
-If you are not a citizen of the [EU](/glossary/European%20Union), [[EEA]] or Switzerland, you need a [residence permit](/glossary/Aufenthaltstitel) to live in Germany. Sometimes, you must wait for your residence permit to start working. It can take [a few months](/guides/auslanderbehorde-wait-times).
+If you are not a citizen of the [EU](/glossary/European%20Union), [[EEA]] or Switzerland, you need a [residence permit](/glossary/Aufenthaltstitel) to live in Germany. Sometimes, you must wait for your residence permit to start working. It can take [a few months](/guides/immigration-office/wait-times).
 
 **[How to get a residence permit ➞](/guides/residence-permit)**
 
-If you already have a residence permit, you might need the *[[Ausländerbehörde]]*'s permission to change jobs. Sometimes, you can start your new job immediately. Sometimes, you must wait for your new residence permit. This can take [a few weeks](/guides/auslanderbehorde-wait-times).
+If you already have a residence permit, you might need the *[[Ausländerbehörde]]*'s permission to change jobs. Sometimes, you can start your new job immediately. Sometimes, you must wait for your new residence permit. This can take [a few weeks](/guides/immigration-office/wait-times).
 
 **[How to change jobs ➞](/guides/losing-your-job#what-happens-to-your-residence-permit)**
 

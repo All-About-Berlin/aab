@@ -11,51 +11,59 @@
 	<div class="article-body">
 		<div id="mocha"></div>
 	</div>
-	{% include "_js/libs/chai.js" %}
-	{% include "_js/libs/mocha.js" %}
-	{% include "_js/utils/health-insurance.test.js" %}
-	{% include "_js/utils/pension-refund.test.js" %}
-	{% include "_js/utils/tax.test.js" %}
-	{% include "_js/utils/tracking.test.js" %}
-	{% include "_js/utils/utils.test.js" %}
+
+	<script src="/js/libs/mocha.js"></script>
+
+	<script type="module" src="/js/utils/healthInsurance.test.mjs"></script>
+	<script type="module" src="/js/utils/pensionRefund.test.mjs"></script>
+	<script type="module" src="/js/utils/tax.test.mjs"></script>
+	<script type="module" src="/js/utils/tracking.test.mjs"></script>
+	<script type="module" src="/js/utils/utils.test.mjs"></script>
+
+{% endblock %}
+
+{% block extraScss %}
+	#mocha-stats{margin:0;padding:var(--m);background:var(--c-bg-widget);border-radius:var(--b-radius)}
+		.progress-contain, .duration, .replay, .result{display:none}
+
+	#mocha-report .suite{margin-top:var(--s)}
+	#mocha-report > .suite > h1{font-weight:bold}
+	#mocha-report > .suite .pass h2{color:var(--c-text-light)}
+	#mocha-report > .suite > ul > .suite > h1{font-weight:bold}
+
+	.section{
+		max-width: 100%;
+		overflow-x:hidden;
+	}
+
+	#mocha-report *{
+		font-size: var(--f-s) !important;
+		font-weight: normal;
+		line-height: var(--m) !important;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	#mocha-report pre{
+		font-family:monospace!important;
+		overflow-x:auto;
+		margin:var(--m) 0;
+	}
+
+	#mocha-report li li{
+		padding-left: var(--l);
+	}
+
+	#mocha-report .test.fail h2{color:red;font-weight: bold;}
 {% endblock %}
 
 {% block postFooter %}
+	<script class="mocha-exec">
+		mocha.setup('bdd');
+	</script>
+
 	{{ super() }}
-	<style type="text/css">
-		#mocha-stats{margin:0;padding:var(--m);background:var(--c-bg-widget);border-radius:var(--b-radius)}
-			.progress-contain, .duration, .replay, .result{display:none}
 
-		#mocha-report .suite{margin-top:var(--s)}
-		#mocha-report > .suite > h1{font-weight:bold}
-		#mocha-report > .suite .pass h2{color:var(--c-text-light)}
-		#mocha-report > .suite > ul > .suite > h1{font-weight:bold}
-
-		.section{
-			max-width: 100%;
-			overflow-x:hidden;
-		}
-
-		#mocha-report *{
-			font-size: var(--f-s) !important;
-			font-weight: normal;
-			line-height: var(--m) !important;
-			margin-top: 0;
-			margin-bottom: 0;
-		}
-		#mocha-report pre{
-			font-family:monospace!important;
-			overflow-x:auto;
-			margin:var(--m) 0;
-		}
-
-		#mocha-report li li{
-			padding-left: var(--l);
-		}
-
-		#mocha-report .test.fail h2{color:red;font-weight: bold;}
-	</style>
-	<script class="mocha-exec" type="module">
+	<script type="module">
 		const runner = mocha.run();
 		const results = [];
 

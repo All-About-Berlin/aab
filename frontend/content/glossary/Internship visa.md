@@ -11,7 +11,7 @@ Related_guides:
     guides/work-visa.md
     guides/blue-card.md
     guides/immigration-office.md
-    guides/auslanderbehorde-wait-times.md
+    guides/immigration-office/wait-times.md
     guides/german-health-insurance/for-a-visa-application.md
 ---
 

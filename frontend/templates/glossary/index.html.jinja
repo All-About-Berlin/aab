@@ -7,7 +7,7 @@
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="{{ metatitle }}">
 	<meta property="og:description" content="{{ metadescription }}">
-	<link rel="canonical" href="{{ site_url }}/glossary">
+	<link rel="canonical" href="{{ SITE_URL }}/glossary">
 {% endblock %}
 
 {% set ns = namespace(currentLetter=None) %}
@@ -19,25 +19,26 @@
 	</header>
 {% endblock %}
 
-{% block content %}
-	<nav class="glossary-sections" aria-label="Letter shortcuts">
-		{% for group_name, entries in groups %}
-			<a href="#letter-{{ group_name }}" title="Terms that start with '{{ group_name }}'">{{ group_name }}</a>
-		{% endfor %}
-	</nav>
-	<nav class="collections" aria-label="List of terms, grouped by letter">
-		{% for group_name, entries in groups %}
-			<div class="collection" id="letter-{{ group_name }}">
-				<h3>{{ group_name }}</h3>
-				<ol>
-					{% for entry in entries %}
-						<li>
-							<a title="Definition of {{ entry.german_term }}" rel="tag" href="{{ entry.url }}">{{ entry.german_term }}</a>
-						</li>
-					{% endfor %}
-				</ol>
-			</div>
-		{% endfor %}
-	</nav>
-	{% include "_js/libs/masonry.js" %}
+{% block main %}
+	<main aria-label="Main page">
+		<nav class="section glossary-sections" aria-label="Letter shortcuts">
+			{% for group_name, entries in groups %}
+				<a href="#letter-{{ group_name }}" title="Terms that start with '{{ group_name }}'">{{ group_name }}</a>
+			{% endfor %}
+		</nav>
+		<section class="collections" aria-label="List of terms, grouped by letter">
+			{% for group_name, entries in groups %}
+				<div class="collection" id="letter-{{ group_name }}">
+					<h3>{{ group_name }}</h3>
+					<ol>
+						{% for entry in entries %}
+							<li>
+								<a title="Definition of {{ entry.german_term }}" rel="tag" href="{{ entry.url }}">{{ entry.german_term }}</a>
+							</li>
+						{% endfor %}
+					</ol>
+				</div>
+			{% endfor %}
+		</section>
+	</main>
 {% endblock %}

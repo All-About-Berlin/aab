@@ -40,7 +40,7 @@ This is how you can find an English-speaking doctor or GP.
 
 ## List of doctors and GPs
 
-{% tool "placesMap" %}
+{% include "_blocks/placesMap.html" %}
 
 To suggest a doctor, [fill this form](/suggest-business).
 

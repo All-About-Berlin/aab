@@ -12,6 +12,7 @@ services:
     build:
       target: prod
     environment:
+      - "BUNDLE_JS=1"
       - "URSUS_SITE_URL=https://allaboutberlin.com"
       - "CLOUDFLARE_ZONE"
       - "CLOUDFLARE_API_KEY"

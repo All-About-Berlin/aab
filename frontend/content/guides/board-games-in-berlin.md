@@ -35,4 +35,4 @@ Berlin Board Gamers organise more events [on Meetup.com](https://www.meetup.com/
 
 **[Spielwiese](https://www.spielwiese-berlin.de/blog/en/)** is a popular board game library in Friedrichshain.
 
-{% tool "placesMap" %}
+{% include "_blocks/placesMap.html" %}

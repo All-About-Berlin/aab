@@ -21,4 +21,8 @@
 		<button class="button open-close" title="Show/hide table of contents"><i class="icon table-of-contents"></i></button>
 	</div>
 </div>
-{% include "_js/sidebar.js" %}
+
+{% js %}
+	import initializeSidebar from '/js/components/sidebar.mjs';
+	initializeSidebar();
+{% endjs %}

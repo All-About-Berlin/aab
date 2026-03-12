@@ -1,7 +1,7 @@
 from datetime import date, datetime
 from decimal import Decimal
 from markdown.extensions.toc import slugify
-from typing import Iterable, List, Match, Any
+from typing import Iterable, Match, Any
 from ursus.context_processors import Entry
 import holidays
 import pyphen
@@ -95,21 +95,8 @@ def get_public_holidays(years: Iterable[int]):
             "en": in_english[date],
             "de": in_german[date],
         }
-        for date in in_english.keys()
+        for date in sorted(in_english.keys())
     }
-
-
-def get_public_holiday_dates(holiday_name: str, years=5) -> List[str]:
-    return [
-        # Pretty-print the dates
-        raw_date.strftime("%B %d, %Y (%A)")
-        for raw_date in holidays.country_holidays(
-            "DE",
-            subdiv="BE",
-            language="de",
-            years=range(date.today().year, date.today().year + years),
-        ).get_named(holiday_name)
-    ]
 
 
 def count_weekdays(dates: Iterable[date]) -> int:

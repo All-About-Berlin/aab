@@ -46,4 +46,4 @@ A relocation agency can help you...
 
 To add someone, [fill this form](/suggest-business).
 
-{% tool "placesMap" %}
+{% include "_blocks/placesMap.html" %}

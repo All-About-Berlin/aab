@@ -8,7 +8,7 @@
 "/glossary/zertifierte Teststelle" /guides
 /appointments "/tools/appointment-finder"
 /calculators "/tools"
-/calculators/arbeitslosenversicherung "/tools/arbeitslosenversicherung-calculator"
+/calculators/arbeitslosenversicherung "/tools/tax-calculator"
 /calculators/health-insurance "/tools/health-insurance-calculator"
 /calculators/pension-refund "/tools/pension-refund-calculator"
 /calculators/tax-calculator "/tools/tax-calculator"
@@ -29,6 +29,7 @@
 /guides/abmahnung-creative-commons "https://nicolasbouliane.com/blog/abmahnung-creative-commons"
 /guides/abmeldung-deregister-in-berlin /guides/abmeldung
 /guides/anmeldung-berlin-coronavirus /guides
+/guides/auslanderbehorde-wait-times /guides/immigration-office/wait-times
 /guides/bafin-approved-insurance /guides/german-health-insurance/for-a-visa-application
 /guides/banks /guides/best-bank-germany
 /guides/become-a-freelancer-in-germany /guides/start-a-business-in-germany
@@ -74,6 +75,7 @@
 /guides/categories/visiting-berlin/food "/guides/visit-berlin"
 /guides/categories/visiting-berlin/shopping "/guides/visit-berlin"
 /guides/categories/visiting-berlin/sights-attractions "/guides/visit-berlin"
+/guides/citizenship-wait-times /guides/immigration-office/wait-times
 /guides/coronavirus /guides
 /guides/coronavirus-test /guides
 /guides/english-driving-schools-in-berlin /guides/english-speaking-driving-schools
@@ -177,4 +179,5 @@
 /search /guides
 /support /contact
 /tools/null /guides
-/tools/residence-permit-feedback /guides/auslanderbehorde-wait-times
+/tools/arbeitslosenversicherung-calculator /tools/tax-calculator
+/tools/residence-permit-feedback /guides/immigration-office/wait-times

@@ -13,13 +13,13 @@ import pytest
     ],
 )
 def test_component_snapshot(page, test_screenshot, component):
-    page.goto(f"/tests/component/{component}")
+    page.goto(f"/tests/components/{component}")
     content = page.locator("main > article")
     test_screenshot(page, content)
 
 
 def test_glossary_click(page, test_screenshot):
-    page.goto("/tests/component/glossary")
+    page.goto("/tests/components/glossary")
     page.locator("main > article a").first.click()
 
     dialog = page.locator("dialog").first
@@ -31,7 +31,7 @@ def test_glossary_click(page, test_screenshot):
 
 
 def test_recommended_click(page, test_screenshot):
-    page.goto("/tests/component/recommended")
+    page.goto("/tests/components/recommended")
     link = page.locator("main > article a.recommended").first
 
     # Test hover state

@@ -10,7 +10,7 @@ Related_guides:
     guides/blue-card.md
     guides/work-visa.md
     guides/residence-permit.md
-    guides/auslanderbehorde-wait-times.md
+    guides/immigration-office/wait-times.md
     guides/german-health-insurance/for-a-visa-application.md
 ---
 

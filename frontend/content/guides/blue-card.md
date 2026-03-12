@@ -84,7 +84,7 @@ You can apply in Germany if...
 
 If you can't apply in Germany, you must [apply in your home country](#how-to-apply-in-your-country).
 
-Usually, you can't work before you get your Blue Card.[^35] It can take [a long time](/guides/auslanderbehorde-wait-times). You might wait a few months with no income. To get a Blue Card faster, you can also apply through the [Business Immigration Service](https://www.businesslocationcenter.de/en/our-services/bis-business-immigration-service).[^28]
+Usually, you can't work before you get your Blue Card.[^35] It can take [a long time](/guides/immigration-office/wait-times). You might wait a few months with no income. To get a Blue Card faster, you can also apply through the [Business Immigration Service](https://www.businesslocationcenter.de/en/our-services/bis-business-immigration-service).[^28]
 
 It's cheaper and safer if you [apply in your home country](#how-to-apply-in-your-country), then come to Germany when you have permission to work.
 
@@ -153,7 +153,7 @@ You can also apply through the [Business Immigration Service](https://www.busine
 
 ### 5. Wait
 
-The *Ausländerbehörde* will process your application. There is no way to track your application. You must wait for their response. It takes [a few months](/guides/auslanderbehorde-wait-times).
+The *Ausländerbehörde* will process your application. There is no way to track your application. You must wait for their response. It takes [a few months](/guides/immigration-office/wait-times).
 
 While you wait, your current [[National Visa]] or residence permit might expire. It's extended until the *Ausländerbehörde* processes your application.[^20]
 
@@ -165,7 +165,7 @@ If you have an [opportunity card](/glossary/Chancenkarte), you can work 20 hours
 
 ### 6. Go to your appointment
 
-[A few weeks later](/guides/auslanderbehorde-wait-times), the *[[Ausländerbehörde]]* will email you an appointment date. If you get an appointment, you are almost guaranteed to get your Blue Card.
+[A few weeks later](/guides/immigration-office/wait-times), the *[[Ausländerbehörde]]* will email you an appointment date. If you get an appointment, you are almost guaranteed to get your Blue Card.
 
 Follow the instructions in the email. You might need to send extra documents, or bring them to your appointment.
 
@@ -179,7 +179,7 @@ Go to your second *[[Ausländerbehörde]]* appointment and pick up your Blue Car
 
 **[How to pick up your Blue Card ➞](/guides/residence-permit#pick-up-your-residence-card)**
 
-{% tool "residencePermitFeedback/form", residence_permit='BLUE_CARD' %}
+{% tool "residence-permit-feedback-form", type='BLUE_CARD' %}
 
 ### 8. Start working in Germany
 
@@ -244,9 +244,9 @@ These are the required documents **in Berlin**.[^2] If you apply elsewhere, they
 
 Tell me how long it took to get your Blue Card. Your feedback helps thousands of people plan their application.
 
-{% tool "residencePermitFeedback/form", residence_permit='BLUE_CARD' %}
+{% tool "residence-permit-feedback-form", type='BLUE_CARD' %}
 
-**[See other people's feedback ➞](/guides/auslanderbehorde-wait-times)**
+**[Read other people's feedback ➞](/guides/immigration-office/wait-times)**
 
 ### Renew your Blue Card
 

@@ -63,7 +63,7 @@ Tax advisors are legally liable for the advice they give. If they make a mistake
 
 ## List of English-speaking tax advisors
 
-{% tool "placesMap" %}
+{% include "_blocks/placesMap.html" %}
 
 To suggest a tax advisor, [fill this form](/suggest-business).
 

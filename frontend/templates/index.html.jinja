@@ -4,7 +4,7 @@
 
 {% block postHead %}
 	{{ super() }}
-	<link rel="canonical" href="{{ site_url }}/">
+	<link rel="canonical" href="{{ SITE_URL }}/">
 {% endblock %}
 {% block main %}
 	<main aria-label="Main page">
@@ -17,20 +17,20 @@
 		<nav class="intersection" aria-label="Most important guides">
 			<ul class="buttons grid" aria-label="Guides for basic goals">
 				<li>
-					<a title="How to move to Berlin" href="{{site_url}}/guides/moving-to-berlin">
+					<a title="How to move to Berlin" href="{{ SITE_URL }}/guides/moving-to-berlin">
 						{% include "_icons/moving.svg" %}
 						Move to Berlin
 					</a>
 				</li>
 				<li>
-					<a title="How to find a job in Berlin" href="{{site_url}}/guides/find-a-job-in-berlin">
-						{% include "_icons/job.svg" %}
+					<a title="How to find a job in Berlin" href="{{ SITE_URL }}/guides/find-a-job-in-berlin">
+						{% include "_icons/employee.svg" %}
 						Find a job
 					</a>
 				</li>
 				<li>
-					<a title="How to start a business in Germany" href="{{site_url}}/guides/start-a-business-in-germany">
-						{% include "_icons/business.svg" %}
+					<a title="How to start a business in Germany" href="{{ SITE_URL }}/guides/start-a-business-in-germany">
+						{% include "_icons/freelancer.svg" %}
 						Start a business
 					</a>
 				</li>
@@ -38,62 +38,62 @@
 			<h3>What do you need?</h3>
 			<ul class="buttons grid" aria-label="Other important guides">
 				<li>
-					<a title="How to find an apartment in Berlin" href="{{site_url}}/guides/find-a-flat-in-berlin">
+					<a title="How to find an apartment in Berlin" href="{{ SITE_URL }}/guides/find-a-flat-in-berlin">
 						{% include "_icons/apartment.svg" %}
 						An apartment
 					</a>
 				</li>
 				<li>
-					<a title="How to register your address in Berlin" href="{{site_url}}/guides/anmeldung-in-english-berlin">
+					<a title="How to register your address in Berlin" href="{{ SITE_URL }}/guides/anmeldung-in-english-berlin">
 						{% include "_icons/anmeldung.svg" %}
 						An Anmeldung
 					</a>
 				</li>
 				<li>
-					<a title="Best bank account in Germany" href="{{site_url}}/guides/best-bank-germany">
+					<a title="Best bank account in Germany" href="{{ SITE_URL }}/guides/best-bank-germany">
 						{% include "_icons/bank.svg" %}
 						A bank account
 					</a>
 				</li>
 				<li>
-					<a title="How to choose German health insurance" href="{{site_url}}/guides/german-health-insurance">
+					<a title="How to choose German health insurance" href="{{ SITE_URL }}/guides/german-health-insurance">
 						{% include "_icons/health.svg" %}
 						Health insurance
 					</a>
 				</li>
 				<li>
-					<a title="What is liability insurance?" href="{{site_url}}/guides/haftpflichtversicherung">
+					<a title="What is liability insurance?" href="{{ SITE_URL }}/guides/haftpflichtversicherung">
 						{% include "_icons/liability.svg" %}
 						Liability insurance
 					</a>
 				</li>
 				<li>
-					<a title="How to get a free Schufa" href="{{site_url}}/guides/schufa">
+					<a title="How to get a free Schufa" href="{{ SITE_URL }}/guides/schufa">
 						{% include "_icons/schufa.svg" %}
 						A Schufa
 					</a>
 				</li>
 				<li>
-					<a title="" href="{{site_url}}/guides/bicycle-in-berlin">
+					<a title="" href="{{ SITE_URL }}/guides/bicycle-in-berlin">
 						{% include "_icons/bicycle.svg" %}
 						A bicycle
 					</a>
 				</li>
 				<li>
-					<a title="" href="{{site_url}}/guides/buying-used-car-in-germany">
+					<a title="" href="{{ SITE_URL }}/guides/buying-used-car-in-germany">
 						{% include "_icons/car.svg" %}
 						A vehicle
 					</a>
 				</li>
 				<li>
-					<a title="What is liability insurance?" href="{{site_url}}/guides/help">
-						{% include "_icons/help.svg" %}
+					<a title="What is liability insurance?" href="{{ SITE_URL }}/guides/help">
+						{% include "_icons/support.svg" %}
 						Professional help
 					</a>
 				</li>
 			</ul>
 			<div class="buttons bar">
-				<a class="button primary" href="{{ site_url }}/guides">See all guides <i class="icon right" aria-hidden="true"></i></a>
+				<a class="button primary" href="{{ SITE_URL }}/guides">See all guides <i class="icon right" aria-hidden="true"></i></a>
 			</div>
 		</nav>
 	</main>

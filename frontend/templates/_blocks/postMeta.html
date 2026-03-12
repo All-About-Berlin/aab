@@ -17,7 +17,7 @@
 				By {{ entry.author }}
 			{% endif %}
 		{% else %}
-			By <a rel="author nofollow" href="{{ site_url }}/about">Nicolas Bouliane</a>
+			By <a rel="author nofollow" href="{{ SITE_URL }}/about">Nicolas Bouliane</a>
 		{% endif %}
 	</span>
 	{% if reviews|length == 1 %}
@@ -54,3 +54,10 @@
 		</ul>
 	{% endif %}
 </div>
+
+{% if reviews|length %}
+	{% js %}
+		import initializeReviewers from '/js/components/reviewers.mjs';
+		initializeReviewers();
+	{% endjs %}
+{% endif %}

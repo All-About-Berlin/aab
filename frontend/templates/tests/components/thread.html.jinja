@@ -1,0 +1,17 @@
+{% extends "tests/components/entry.html.jinja" %}
+
+{% js %}
+	import Vue from '/js/vue/vue.mjs';
+	import Thread from '/js/vue/components/thread.mjs';
+
+	new Vue({
+		el: document.querySelector('main .article-body'),
+		components: {
+			Thread,
+		},
+	})
+{% endjs %}
+
+{% block component %}
+	<thread id="german-health-insurance"></thread>
+{% endblock %}

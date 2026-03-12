@@ -25,6 +25,6 @@ When you [apply for the German freelance visa](/guides/freelance-visa), you must
 
 ## Download the template
 
-{% tool "documentDownloads" %}
+{% include "_blocks/documentDownloads.html" %}
 
 See the [letter of intent example](/guides/freelance-visa-letter-of-intent#letter-of-intent-example) for the final result.

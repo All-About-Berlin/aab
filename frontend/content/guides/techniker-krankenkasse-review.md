@@ -20,7 +20,7 @@ I was a TK customer from 2015 to 2021. I had their health insurance as an intern
 
 Your health insurance contributions depend on your income, and your situation. All public health insurers in Germany charge almost the same prices. TK is not the cheapest or the most expensive; it's just average.
 
-{% tool "healthInsuranceCalculator" %}
+{% tool "health-insurance-calculator" %}
 
 **[How to choose German health insurance ➞](/guides/german-health-insurance)**
 
@@ -141,7 +141,7 @@ You can also go through the process yourself [on the TK website](https://www.tk.
 
 If you don't know which health insurer to choose, get help from a health insurance broker. They will help you pick the best health insurance for your needs. Brokers get paid by health insurance companies to bring them new customers. Their help is free.
 
-{% tool "healthInsuranceQuestion" %}
+{% tool "health-insurance-calculator", mode="question" %}
 
 If you choose TK, you can pay €10 per year to get [Envivas travel insurance](https://www.envivas.de/en/insurance/travelling-abroad). It covers your medical expenses while you travel. It works well: they paid for my friend's helicopter evacuation, ambulance trip and hospital recovery in Nepal.
 

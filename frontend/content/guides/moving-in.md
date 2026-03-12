@@ -123,7 +123,7 @@ You must must [register your new address](/glossary/Anmeldung) at the *[[Bürger
 
 [Book your *Anmeldung* appointment](/guides/berlin-burgeramt-appointment) as soon as you can. Appointments are hard to find. They can be months in the future.[^11] Your appointment date must be after you move in.
 
-{% tool "anmeldungAppointmentFinder" %}
+{% tool "anmeldung-appointment-finder" %}
 
 If you move from another place in Germany, you don't need to [deregister your old address](/guides/abmeldung).
 

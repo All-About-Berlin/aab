@@ -20,13 +20,13 @@ This is the English translation of the official *[[Anmeldung]]* form. Fill this 
 
 ## Fill the Anmeldung form online
 
-{% tool "anmeldungFormFiller", static=True %}
+{% tool "anmeldung-form-filler" %}
 
 ## Download the Anmeldung form
 
 You can also download the original form and fill it yourself. If you register more than 2 people, fill the form multiple times.
 
-{% tool "documentDownloads" %}
+{% include "_blocks/documentDownloads.html" %}
 
 The same form is [on Berlin.de](https://www.berlin.de/formularverzeichnis/?formular=/labo/zentrale-einwohnerangelegenheiten/_assets/anmeldung_bei_der_meldebehoerde.pdf).
 

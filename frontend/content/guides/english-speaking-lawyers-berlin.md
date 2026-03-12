@@ -67,9 +67,11 @@ This is a list of lawyers who speak English in Berlin.
 
 ## List of lawyers
 
-{% tool "placesMap" %}
+{% include "_blocks/placesMap.html" %}
 
-To add a lawyer, [fill this form](/suggest-business).
+**[Find more lawyers ➞](https://www.rak-berlin.de/anwaltssuche/)** - Search the Berlin *Rechtsanwaltskammer*'s database
+
+**[Suggest a lawyer ➞](/suggest-business)**
 
 ## Cost of a lawyer
 

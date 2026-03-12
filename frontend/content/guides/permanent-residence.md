@@ -238,7 +238,7 @@ The requirements and the application process are the same. If you qualify for th
 
 ## How to apply in Berlin
 
-In Berlin, you must apply online. **It takes [3 to 9 months](/guides/auslanderbehorde-wait-times)** to get permanent residence.[^5]{{ fail_on('2026-12-31') }}.
+In Berlin, you must apply online. **It takes [3 to 9 months](/guides/immigration-office/wait-times)** to get permanent residence.[^5]{{ fail_on('2026-12-31') }}.
 
 If you don't live in Berlin, you must [find your local *Ausländerbehörde*](https://bamf-navi.bamf.de/de/Themen/Behoerden/) and apply there. The application process can be different.
 
@@ -279,7 +279,7 @@ After you pay and send your application, you can download a PDF. This is your pr
 
 ### 4. Wait
 
-The *Ausländerbehörde* will process your application. There is no way to track your application. You must wait for their response. It takes [a few months](/guides/auslanderbehorde-wait-times).
+The *Ausländerbehörde* will process your application. There is no way to track your application. You must wait for their response. It takes [a few months](/guides/immigration-office/wait-times).
 
 While you wait, your current [[National Visa]] or residence permit might expire. It's extended until the *Ausländerbehörde* processes your application.[^34]
 
@@ -287,7 +287,7 @@ While you wait, your current [[National Visa]] or residence permit might expire.
 
 ### 5. Go to your appointment
 
-[A few months later](/guides/auslanderbehorde-wait-times), the *[[Ausländerbehörde]]* will email you an appointment date. If you get an appointment, you are almost guaranteed to get your permanent residence.
+[A few months later](/guides/immigration-office/wait-times), the *[[Ausländerbehörde]]* will email you an appointment date. If you get an appointment, you are almost guaranteed to get your permanent residence.
 
 Follow the instructions in the email. You might need to send extra documents, or bring them to your appointment.[^2] They usually ask for more recent proof of income, employment, health insurance and rent payments. Print them and bring them.
 
@@ -303,7 +303,7 @@ Go to your second *[[Ausländerbehörde]]* appointment and pick up your permanen
 
 **[How to pick up your permanent residence card ➞](/guides/residence-permit#pick-up-your-residence-card)**
 
-{% tool "residencePermitFeedback/form", residence_permit='PERMANENT_RESIDENCE' %}
+{% tool "residence-permit-feedback-form", type='PERMANENT_RESIDENCE' %}
 
 ## Required documents
 
@@ -412,9 +412,9 @@ If you depend on your spouse's income, bring...[^50]
 
 Your feedback helps thousands of people plan their permanent residence application.
 
-{% tool "residencePermitFeedback/form", residence_permit='PERMANENT_RESIDENCE' %}
+{% tool "residence-permit-feedback-form", type='PERMANENT_RESIDENCE' %}
 
-**[See other people's feedback ➞](/guides/auslanderbehorde-wait-times)**
+**[Read other people's feedback ➞](/guides/immigration-office/wait-times)**
 
 ### Activate your [[eID]]
 

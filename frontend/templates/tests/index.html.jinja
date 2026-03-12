@@ -8,14 +8,26 @@
 
 {% block content %}
 	<h1>{{ metatitle }}</h1>
-	<p>
-		Commit {{ commit_id }}, built on {{ now.isoformat() }}.
-	</p>
 	<div class="article-body">
+		<p>
+			Commit <strong>{{ commit_id }}</strong>
+			<br><small>Built on {{ now.isoformat() }}</small>
+		</p>
+		<hr>
 		<ul>
 			<li><a href="/tests/unit">Unit tests</a></li>
-			<li><a href="/tests/component">Component tests</a></li>
 			<li><a href="/tests/markdown">Markdown tests</a></li>
+			<li>
+				<details>
+					<summary>Tool tests</summary>
+					<ul>
+						{% for entry in get_entries("tests/tools", sort_by='tag') %}
+							<li><a href="{{ entry.url }}">{{ entry.tag }}</a></li>
+						{% endfor %}
+					</ul>
+				</details>
+			</li>
+			<li><a href="/tests/components">Component tests</a></li>
 		</ul>
 	</div>
 {% endblock %}

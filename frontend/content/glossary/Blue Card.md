@@ -11,7 +11,7 @@ Related_guides:
     guides/permanent-residence.md
     guides/find-a-job-in-berlin.md
     guides/immigration-office.md
-    guides/auslanderbehorde-wait-times.md
+    guides/immigration-office/wait-times.md
     guides/german-health-insurance/for-employees.md
 ---
 

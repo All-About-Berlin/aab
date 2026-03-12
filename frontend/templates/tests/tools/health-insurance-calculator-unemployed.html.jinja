@@ -1,0 +1,4 @@
+{% extends "tests/components/entry.html.jinja" %}
+{% block component %}
+	{% tool "health-insurance-calculator", initial_occupation="unemployed", static=True %}
+{% endblock %}

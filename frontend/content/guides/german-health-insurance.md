@@ -20,7 +20,7 @@ You need health insurance to apply for a [[National Visa]] or a [residence permi
 
 There is [public](/glossary/gesetzliche%20Krankenversicherung), [private](/glossary/private%20Krankenversicherung) and [expat](/glossary/Expat%20health%20insurance) health insurance. The best option depends on your situation.
 
-{% tool "healthInsuranceCalculator", static=True %}
+{% tool "health-insurance-calculator", static=True %}
 
 ## Public health insurance
 
@@ -143,7 +143,7 @@ The cost of private health insurance is [tax-deductible](/glossary/steuerlich%20
 ### Benefits of private health insurance
 
 - **It's better and cheaper for high earners**[^19]  
-    If you are young, healthy and well-paid, private is usually better *and* cheaper than public. I save around €600 per month.{{fail_on('2026-03-01')}}
+    If you are young, healthy and well-paid, private is usually better *and* cheaper than public. I save around €600 per month.{{fail_on('2026-03-13')}}
 - **Easier doctor appointments**  
     You can see a doctor faster. You get an appointment with a specialist in days instead of weeks. Try it yourself! Go on [Doctolib](https://www.doctolib.de/), and try to find a doctor appointment with public and with private health insurance.
 - **Better treatments**  
@@ -151,7 +151,7 @@ The cost of private health insurance is [tax-deductible](/glossary/steuerlich%20
 - **You choose your coverage**  
     You can pay more to get the best coverage, or pay less to save money. If you are young and healthy, you can get really cheap health insurance.
 - **You pay less when you don't use it**  
-    Many private health insurers have a no-claims bonus. If you don't use your health insurance, you get money back every year. If you never get sick, you can save a lot of money. In 2024, I got a €640 refund.{{ fail_on('2026-03-01')}}
+    Many private health insurers have a no-claims bonus. If you don't use your health insurance, you get money back every year. If you never get sick, you can save a lot of money. In 2024, I got a €640 refund.{{ fail_on('2026-03-13')}}
 
 ### Disadvantages of private health insurance
 
@@ -182,7 +182,7 @@ There is no best private health insurance. There are thousands of options. The b
 
 **Do not choose private health insurance yourself.** It's a really bad idea. [Ask a health insurance broker](#need-help) to compare all options and help you choose. Their help is free.
 
-{% tool "healthInsuranceQuestion" %}
+{% tool "health-insurance-calculator", mode="question" %}
 
 [Ottonova](/out/ottonova) sells their own private health insurance. It's rarely the best option.[^77] Don't choose Ottonova directly; [ask our expert](#need-help) first. If Ottonova is the best option for you, they will tell you.[^76]
 
@@ -368,11 +368,11 @@ Choose travel health insurance if...
 
 Use my [recommendation tool](#your-options) to know your options. There are 3 types of health insurance and hundreds of options. The best option depends on your situation. If you apply for a [[National Visa]], you might need a combination of insurances.
 
-{% tool "healthInsuranceCalculator", static=True %}
+{% tool "health-insurance-calculator", static=True %}
 
 ### 2. Ask our expert
 
-{% tool "healthInsuranceQuestion" %}
+{% tool "health-insurance-calculator", mode="question" %}
 
 **If you choose [public health insurance](/glossary/gesetzliche%20Krankenversicherung)**, you can't go wrong. All options are similar. Their cost and coverage are almost the same. [TK](/out/feather-tk) and [Barmer](/out/barmer) are good English-speaking options. You can change your mind and switch to private health insurance later.
 
@@ -432,7 +432,7 @@ When you are self-employed, the cost of public health insurance is based on your
 - [ ] **Get [liability insurance](/glossary/Haftpflichtversicherung)**{{ RECOMMENDED }}  
     It's the second most important insurance. Most Germans have it. I got mine from [Feather](/out/feather-haftpflicht). It costs €5 per month.
 - [ ] **Get travel health insurance**  
-    It covers you when you travel outside of Germany. It costs €25 to €40 per year.[^78]{{ fail_on('2026-03-01') }} You can get travel insurance from [Feather](/out/feather-travel), [Envivas](https://www.envivas.de/en/insurance/travelling-abroad) or [Allianz](https://www.allianzdirect.de/reiseversicherung/). Your [private health insurance](/glossary/private%20Krankenversicherung) might include travel insurance. Some banks accounts like [N26 Metal](/out/n26-metal) include travel insurance.
+    It covers you when you travel outside of Germany. It costs €25 to €40 per year.[^78]{{ fail_on('2026-03-13') }} You can get travel insurance from [Feather](/out/feather-travel), [Envivas](https://www.envivas.de/en/insurance/travelling-abroad) or [Allianz](https://www.allianzdirect.de/reiseversicherung/). Your [private health insurance](/glossary/private%20Krankenversicherung) might include travel insurance. Some banks accounts like [N26 Metal](/out/n26-metal) include travel insurance.
 - [ ] **[Become an organ donor](/guides/organ-donor)**{{ RECOMMENDED }}  
     It's really easy. It can save another person's life.
 - [ ] **Get [job disability insurance](/glossary/Berufsunfähigkeitsversicherung)**  
@@ -442,7 +442,7 @@ When you are self-employed, the cost of public health insurance is based on your
 
 Our insurance expert answers your questions and helps you choose health insurance. It's a free service.
 
-{% tool "healthInsuranceQuestion", static=True %}
+{% tool "health-insurance-calculator", mode="question", static=True %}
 
 Choose a broker who works with immigrants. Your needs are different, and your broker must know how to help you.
 

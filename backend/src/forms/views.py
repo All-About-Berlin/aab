@@ -182,10 +182,23 @@ class CitizenshipFeedbackViewSet(ResidencePermitFeedbackViewSet):
     filter_params = ["department"]
 
     def get_stats(self, request):
+        extra_filters = {param: request.query_params.get(param) for param in self.filter_params}
         return {
-            "first_response_date": CitizenshipFeedback.objects.wait_time("application_date", "first_response_date", {}),
-            "appointment_date": CitizenshipFeedback.objects.wait_time("first_response_date", "appointment_date", {}),
-            "total": CitizenshipFeedback.objects.wait_time("application_date", "appointment_date", {}),
+            "first_response_date": CitizenshipFeedback.objects.wait_time(
+                "application_date",
+                "first_response_date",
+                extra_filters,
+            ),
+            "appointment_date": CitizenshipFeedback.objects.wait_time(
+                "first_response_date",
+                "appointment_date",
+                extra_filters,
+            ),
+            "total": CitizenshipFeedback.objects.wait_time(
+                "application_date",
+                "appointment_date",
+                extra_filters,
+            ),
         }
 
 

@@ -10,7 +10,7 @@ Related_guides:
     guides/residence-permit.md
     guides/blue-card.md
     guides/immigration-office.md
-    guides/auslanderbehorde-wait-times.md
+    guides/immigration-office/wait-times.md
     guides/find-a-job-in-berlin.md
     guides/moving-to-berlin.md
     guides/german-health-insurance/for-employees.md
