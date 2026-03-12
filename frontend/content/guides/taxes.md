@@ -83,25 +83,25 @@ It costs {{ARBEITSLOSENVERSICHERUNG_EMPLOYEE_RATE}}% of your income. The maximum
 
 ### Church tax
 
-If you are a member of certain churches, you pay a church tax. It's a percentage of your income tax.
+If you are a member of certain churches, you pay a church tax. It's a percentage of your income tax. You also pay church tax on investment income.[^7]
 
-If you live in Baden-Württemberg or Bavaria, it costs {{CHURCH_TAX_RATE_BW_BY}}% of your [income tax](/glossary/Einkommensteuer). In other states it costs {{CHURCH_TAX_RATE}}% of your income tax.
+If you live in Baden-Württemberg or Bavaria, it's {{CHURCH_TAX_RATE_BW_BY}}% of your [income tax](/glossary/Einkommensteuer). In other states it's {{CHURCH_TAX_RATE}}% of your income tax.
 
 You stop paying church tax by leaving the church.
 
 ### Solidarity surcharge
 
-If you pay more than €{{SOLIDARITY_TAX_MILDERUNGSZONE_MIN_INCOME_TAX|cur}} per year in [income tax](/glossary/Einkommensteuer), you must pay a solidarity surcharge (*[[Solidaritätszuschlag]]*). It's a percentage of your income tax.
+If you pay more than €{{SOLIDARITY_TAX_MILDERUNGSZONE_MIN_INCOME_TAX|cur}} per year in [income tax](/glossary/Einkommensteuer), you must pay a solidarity surcharge (*[[Solidaritätszuschlag]]*). It's a percentage of your income tax. You also pay a solidarity surcharge on investment income.[^7]
 
 **[German tax calculator ➞](/tools/tax-calculator)**
 
 ### Capital gains tax
 
-If you make money from investments, you pay a {{CAPITAL_GAINS_TAX_RATE}}% tax on income on all profit above €{{CAPITAL_GAINS_FREIBETRAG|cur}} per year. This is the capital gains tax (*[[Kapitalertragsteuer]]*). It applies to profit, interests and dividends from stocks, ETFs and other financial investments.
+The capital gains tax (*[[Kapitalertragsteuer]]*) is a {{CAPITAL_GAINS_TAX_RATE}}% tax on profits from investments. It applies to profit, interests and dividends from stocks, ETFs and other investments. It does not apply to cryptocurrencies.[^4] The first €{{CAPITAL_GAINS_FREIBETRAG|cur}} per year are tax-free.[^8]
 
-Revenue from cryptocurrencies is not taxed as an investment, but as a private transaction.[^4]
+Most German brokers deduct this tax automatically when you sell stocks or receive dividends.
 
-Investment income is also subject to the [church tax](/glossary/Kirchensteuer) and [solidarity surcharge](/glossary/Solidaritätszuschlag).
+You must also pay [church tax](/glossary/Kirchensteuer) and a [solidarity surcharge](/glossary/Solidaritätszuschlag) on investments.[^7]
 
 ## Other taxes
 
@@ -169,6 +169,8 @@ A tax advisor can answer your questions and help you file your German taxes corr
 [^1]: [selbststaendig.de](https://www.selbststaendig.de/wissen/steuerklasse-fuer-selbststaendige)
 [^2]: [§ 32a EStG](https://www.buzer.de/32a_EStG.htm)
 [^3]: [§ 32d EStG](https://www.buzer.de/32d_EStG.htm)
-[^4]: [wendl-koehler.de](https://wendl-koehler.de/rechtliches/kryptowaehrung-steuererklaerung/)
+[^4]: [pandotax.de](https://pandotax.de/rechtliches/kryptowaehrung-steuererklaerung/#wie-lautet-das-aktuelle-urteil-zur-steuerpflicht) (March 2026), [steuern.de](https://www.steuern.de/bitcoin-steuer) (February 2025)
 [^5]: [orderbird.com](https://www.orderbird.com/blog/trinkgeld-versteuern/#anker2)
 [^6]: {{ARBEITSLOSENVERSICHERUNG_EMPLOYEE_RATE}}% of the *[[Beitragsbemessungsgrenze]]*
+[^7]: [lexware.de](https://www.lexware.de/wissen/unternehmerlexikon/kapitalertragsteuer/#:~:text=zuzuglich%20solidaritatszuschlag%20von%205%2C5%20prozent%20und%20gegebenenfalls%208%20oder%209%20prozent%20kirchensteuer%20liegt) (March 2026)
+[^8]: [lexware.de](https://www.lexware.de/wissen/unternehmerlexikon/kapitalertragsteuer/#:~:text=%20was%20ist%20der%20sparerfreibetrag%3F%20) (March 2026)

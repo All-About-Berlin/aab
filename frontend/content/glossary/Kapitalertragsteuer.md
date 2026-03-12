@@ -16,4 +16,4 @@ You also pay solidarity tax (*[[Solidaritätszuschlag]]*) and church tax (*[[Kir
 **[How taxes work in Germany ➞](/guides/taxes)**
 
 [^1]: [Wikipedia](https://de.wikipedia.org/wiki/Kapitalertragsteuer_\(Deutschland\)#Bemessung_der_Kapitalertragsteuer), [§ 32d Abs. 1 EStG](https://www.buzer.de/32d_EStG.htm)
-[^2]: [wendl-koehler.de](https://wendl-koehler.de/rechtliches/kryptowaehrung-steuererklaerung/)
+[^2]: [pandotax.de](https://pandotax.de/rechtliches/kryptowaehrung-steuererklaerung/#wie-lautet-das-aktuelle-urteil-zur-steuerpflicht) (March 2026), [steuern.de](https://www.steuern.de/bitcoin-steuer) (February 2025)
