@@ -19,7 +19,6 @@ Related_places:
     places/steuerberatung-sandra-lehmann.md
     places/stein-partners-llp.md
     places/prof-dr-jens-poll.md
-    places/lhd-hinterhäuser-dreyer.md
     places/dr-richard-bosley.md
     places/roland-schubert.md
     places/klier-ott-gmbh-steuerberatung.md
