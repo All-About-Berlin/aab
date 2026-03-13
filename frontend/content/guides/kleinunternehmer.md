@@ -15,7 +15,7 @@ This guide explains who can be a *Kleinunternehmer*, and when it makes sense to 
 
 You are a *Kleinunternehmer* if...[^1]
 
-- last year, you [revenue](/glossary/Umsatz) was below €{{KLEINUNTERNEHMER_MAX_INCOME_FIRST_YEAR|cur}}
+- last year, your [revenue](/glossary/Umsatz) was below €{{KLEINUNTERNEHMER_MAX_INCOME_FIRST_YEAR|cur}}
 - **and** this year, your *expected* revenue is below €{{KLEINUNTERNEHMER_MAX_INCOME|cur}}
 
 If you are a *Kleinunternehmer*, you can choose not to charge [VAT](/glossary/Umsatzsteuer).
