@@ -31,7 +31,7 @@ Only use basic tax software like [Taxfix](/out/taxfix) if...
 - You have lived in Germany for the entire year
 - and your income comes only from employment
 - and you have no foreign income 
-- and you are not sending financial payments to relatives
+- and you are not sending financial support to relatives
 
 Many Germans use [WISO Steuer](/out/wiso) for their tax return.[^3] It's only in German, but it handles many cross-border and foreign income scenarios.
 
