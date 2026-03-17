@@ -44,8 +44,18 @@ services:
       - "api_staticfiles:/var/www/api/staticfiles:ro"
       - "./frontend/output:/var/www/html"
       - "./frontend/content/redirects:/etc/caddy/redirects"
+  monitor:
+    build:
+      context: monitor
+    environment:
+      - "OPENAI_API_KEY"
+    volumes:
+      - "monitor_state:/root/.local/state/aab-monitor"
+      - "./monitor/src:/srv/src:ro"
+      - "./monitor/monitor.toml:/srv/monitor.toml:ro"
 volumes:
   caddy_data:
   caddy_config:
   api_db:
   api_staticfiles:
+  monitor_state:

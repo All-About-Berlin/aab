@@ -1,0 +1,37 @@
+[domains.default]
+delay = "1s"
+
+[domains."buzer.de"]
+every = "30d"
+crawler = "html"
+selector = ".arttext"
+action = "digest"
+
+[monitors.reddit-askberliners]
+url = "https://old.reddit.com/r/askberliners/new.json"
+crawler = "reddit"
+every = "1d"
+action = "digest"
+prompt = """
+Read this post. If it's a question about the immigration office (LEA or Ausländerbehörde), return a one-sentence summary of the post. Otherwise, only return "NOT_RELEVANT".
+"""
+
+[monitors.bgb-549]
+url = "https://www.buzer.de/549_BGB.htm"
+
+[monitors.bgb-614]
+url = "https://www.buzer.de/614_BGB.htm"
+
+[monitors.bgb-623]
+url = "https://www.buzer.de/623_BGB.htm"
+
+[monitors.bmas-mindestlohn]
+url = "https://www.bmas.de/DE/Arbeit/Arbeitsrecht/Mindestlohn/mindestlohn.html"
+crawler = "playwright"
+selector = ".typ-quote-3 p.text"
+every = "30d"
+constant = "MINIMUM_WAGE"
+action = "pr"
+prompt = """
+Read this page. Respond with the value of the current minimum wage. Only return the number, without any formatting or currency symbol.
+"""
