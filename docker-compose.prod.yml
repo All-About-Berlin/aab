@@ -46,6 +46,13 @@ services:
       - "static_site:/var/www/html"
     restart: unless-stopped
     logging: *prod-logging
+  monitor:
+    environment:
+      - "MAILGUN_API_KEY"
+      - "GITHUB_TOKEN"
+      - "MAILGUN_DOMAIN"
+    restart: unless-stopped
+    logging: *prod-logging
 volumes:
   static_site:
   temp_static_site:
