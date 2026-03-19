@@ -56,14 +56,17 @@ def create_pull_request(state_dir, title: str, url: str, summary: str, source_na
     file_sha = file_data["sha"]
 
     # Compare current and new values
-    current_value = constants.get(constant_name)
+    if constant_name not in constants:
+        raise ValueError(f"Constant '{constant_name}' not found in {CONFIG_PATH}")
+
+    current_value = constants[constant_name]["value"]
     log.info(f"{constant_name}: {current_value} -> {new_value}")
 
-    if str(current_value) == new_value:
+    if current_value == new_value:
         log.info(f"No change needed for {constant_name}")
         return
 
-    constants[constant_name] = new_value
+    constants[constant_name]["value"] = new_value
     updated_content = json.dumps(constants, indent=2, ensure_ascii=False) + "\n"
 
     # Create branch
