@@ -29,7 +29,7 @@ ctx = {}
 # ==============================================================================
 
 # German minimum wage (€/h) - https://www.bmas.de/DE/Arbeit/Arbeitsrecht/Mindestlohn/mindestlohn.html - https://www.destatis.de/DE/Themen/Arbeit/Verdienste/Mindestloehne/_inhalt.html
-ctx["MINIMUM_WAGE"] = fail_on("2026-06-01", Decimal("13.90"))
+ctx["MINIMUM_WAGE"] = 13.90
 
 ctx["MEDIAN_INCOME_BERLIN"] = fail_on(
     "2026-06-01", 48250
