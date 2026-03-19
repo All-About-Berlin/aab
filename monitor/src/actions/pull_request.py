@@ -1,6 +1,7 @@
-"""Create a GitHub PR that updates a constant in ursus_config.py."""
+"""Create a GitHub PR that updates a constant in constants.json."""
 
 import base64
+import json
 import logging
 import os
 import re
@@ -12,7 +13,7 @@ log = logging.getLogger(__name__)
 
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 REPO = "all-About-Berlin/aab"
-CONFIG_PATH = "frontend/ursus_config.py"
+CONFIG_PATH = "frontend/constants.json"
 API_BASE = "https://api.github.com"
 
 
@@ -28,7 +29,7 @@ def github_request(method: str, path: str, **kwargs) -> requests.Response:
 
 
 def create_pull_request(state_dir, title: str, url: str, summary: str, source_name: str, monitor_config=None, **kwargs):
-    """Update a constant in ursus_config.py and open a PR."""
+    """Update a constant in constants.json and open a PR."""
     if not monitor_config:
         raise ValueError("No monitor config provided for PR action")
 
@@ -51,18 +52,19 @@ def create_pull_request(state_dir, title: str, url: str, summary: str, source_na
     # Get the current file content
     file_resp = github_request("GET", f"/repos/{REPO}/contents/{CONFIG_PATH}", params={"ref": default_branch})
     file_data = file_resp.json()
-    file_content = base64.b64decode(file_data["content"]).decode()
+    constants = json.loads(base64.b64decode(file_data["content"]).decode())
     file_sha = file_data["sha"]
 
-    # Update the constant value
-    pattern = rf'(ctx\["{constant_name}"\]\s*=\s*)(.+)'
-    if not re.search(pattern, file_content):
-        raise ValueError(f"Constant {constant_name} not found in {CONFIG_PATH}")
+    # Compare current and new values
+    current_value = constants.get(constant_name)
+    log.info(f"{constant_name}: {current_value} -> {new_value}")
 
-    updated_content = re.sub(pattern, rf"\g<1>{new_value}", file_content)
-    if updated_content == file_content:
+    if str(current_value) == new_value:
         log.info(f"No change needed for {constant_name}")
         return
+
+    constants[constant_name] = new_value
+    updated_content = json.dumps(constants, indent=2, ensure_ascii=False) + "\n"
 
     # Create branch
     slug = re.sub(r"[^a-z0-9]+", "-", source_name.lower()).strip("-")
