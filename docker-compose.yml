@@ -49,6 +49,7 @@ services:
       context: monitor
     environment:
       - "OPENAI_API_KEY"
+      - "GITHUB_TOKEN"
     volumes:
       - "monitor_state:/root/.local/state/aab-monitor"
       - "./monitor/src:/srv/src:ro"
