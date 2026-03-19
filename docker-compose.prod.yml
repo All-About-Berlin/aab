@@ -49,7 +49,6 @@ services:
   monitor:
     environment:
       - "MAILGUN_API_KEY"
-      - "GITHUB_TOKEN"
       - "MAILGUN_DOMAIN"
     restart: unless-stopped
     logging: *prod-logging
