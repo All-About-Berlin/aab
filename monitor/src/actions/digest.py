@@ -16,7 +16,7 @@ log = logging.getLogger(__name__)
 
 def append_to_digest(state_dir: Path, title: str, url: str, summary: str, source_name: str, **kwargs):
     """Append an item to today's digest file."""
-    digest_file = state_dir / "digest" / f"{date.today().isoformat()}.json"
+    digest_file = state_dir / "digests" / f"{date.today().isoformat()}.json"
     digest_file.parent.mkdir(parents=True, exist_ok=True)
 
     items = []
@@ -39,7 +39,7 @@ def append_to_digest(state_dir: Path, title: str, url: str, summary: str, source
 def send_digest():
     """Send the daily digest email via Mailgun, then clear the digest file."""
 
-    digest_dir = STATE_DIR / "digest"
+    digest_dir = STATE_DIR / "digests"
     digest_file = digest_dir / f"{date.today().isoformat()}.json"
 
     if not digest_file.exists():
