@@ -79,7 +79,7 @@ def crawl_feed(monitor_config: dict, monitor_name: str, crawler, state: dict):
     new_items = [item for item in items if item.get("id") not in seen_ids]
 
     for item in new_items:
-        prompt = monitor_config.get("prompt")
+        prompt = monitor_config.get("prompt", "").format_map(monitor_config) or None
         log.info(f'[{monitor_name}] Processing item #{item["id"]}: "{item["title"]}"')
         if prompt:
             llm_response = query_llm(
@@ -122,7 +122,7 @@ def crawl_page(monitor_config: dict, monitor_name: str, crawler, state: dict):
         log.info(f"[{monitor_name}] No changes detected")
         return
 
-    prompt = monitor_config.get("prompt")
+    prompt = monitor_config.get("prompt", "").format_map(monitor_config) or None
     if prompt:
         if previous_content is None:
             user_message = content
