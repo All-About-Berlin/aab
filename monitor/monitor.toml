@@ -1,4 +1,7 @@
 [domains.default]
+github_repo = "all-About-Berlin/aab"
+file = "frontend/constants.json"
+branch = "ai"
 delay = "1s"
 
 [domains."buzer.de"]
@@ -30,8 +33,8 @@ url = "https://www.bmas.de/DE/Arbeit/Arbeitsrecht/Mindestlohn/mindestlohn.html"
 crawler = "playwright"
 selector = ".typ-quote-3 p.text"
 every = "30d"
-constant = "MINIMUM_WAGE"
 action = "pr"
+constant = "MINIMUM_WAGE"
 prompt = """
-Read this page. Respond with the value of the current minimum wage. Only return the number, without any formatting or currency symbol.
+Read this page. Return the current minimum wage. Only return the number, without any formatting or currency symbol.
 """
