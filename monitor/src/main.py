@@ -1,6 +1,7 @@
 import argparse
 import logging
 import time
+from datetime import datetime
 from pathlib import Path
 from config import get_monitor_config, load_config
 from crawlers import CRAWLERS, crawl_feed, crawl_page
@@ -33,8 +34,9 @@ def run(config: dict):
         if crawler_type not in CRAWLERS:
             raise ValueError(f"Unknown crawler type '{crawler_type}' for {monitor.name}")
 
-        if not monitor.should_crawl():
-            log.info(f"[{monitor.name}] Skipped (not due for a recrawl)")
+        next_crawl_date = monitor.get_next_crawl_date()
+        if datetime.now() < next_crawl_date:
+            log.info(f"[{monitor.name}] Skipped (will recrawl on {next_crawl_date.date().isoformat()})")
             skipped += 1
             continue
 
