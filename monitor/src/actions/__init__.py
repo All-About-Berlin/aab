@@ -1,5 +1,5 @@
-from monitor.src.actions.digest import append_to_digest
-from monitor.src.actions.pull_request import create_pull_request
+from actions.digest import append_to_digest
+from actions.pull_request import create_pull_request
 
 
 ACTIONS = {

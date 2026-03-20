@@ -5,7 +5,7 @@ import logging
 
 import requests
 
-from crawlers import USER_AGENT, PageResult
+from crawlers.types import USER_AGENT, PageResult
 
 log = logging.getLogger(__name__)
 

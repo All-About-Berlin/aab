@@ -4,7 +4,7 @@ import logging
 
 import requests
 
-from crawlers import USER_AGENT, FeedItem, FeedResult
+from crawlers.types import USER_AGENT, FeedItem, FeedResult
 
 log = logging.getLogger(__name__)
 

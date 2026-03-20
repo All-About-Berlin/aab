@@ -4,7 +4,7 @@ import logging
 
 from playwright.sync_api import sync_playwright
 
-from crawlers import PageResult
+from crawlers.types import PageResult
 
 log = logging.getLogger(__name__)
 

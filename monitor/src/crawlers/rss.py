@@ -1,10 +1,7 @@
-"""RSS/Atom feed crawler using feedparser."""
-
+from crawlers.types import USER_AGENT, FeedItem, FeedResult
 import logging
-
 import feedparser
 
-from crawlers import USER_AGENT, FeedItem, FeedResult
 
 log = logging.getLogger(__name__)
 
