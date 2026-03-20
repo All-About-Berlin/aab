@@ -3,7 +3,7 @@ from datetime import timedelta
 import time
 from urllib.parse import urlparse
 
-from monitor.src.state import read_domain_timestamp, write_domain_timestamp
+from state import read_domain_timestamp, write_domain_timestamp
 
 _DURATION_RE = re.compile(r"(\d+)\s*([smhdw])")
 

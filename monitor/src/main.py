@@ -3,11 +3,9 @@ import logging
 import time
 from pathlib import Path
 from config import get_monitor_config, load_config
-from monitor.src.crawlers import CRAWLERS, crawl_feed, crawl_page
-from state import (
-    STATE_DIR,
-    should_crawl,
-)
+from crawlers import CRAWLERS, crawl_feed, crawl_page
+from monitor import Monitor
+from state import STATE_DIR
 from utils import debounce_domain, get_domain, parse_duration
 
 logging.basicConfig(
@@ -28,34 +26,34 @@ def run(config: dict):
     skipped = 0
 
     for monitor_name in sorted(monitors):
-        monitor_config = get_monitor_config(config, monitor_name)
-        domain = get_domain(monitor_config["url"])
+        monitor = Monitor(monitor_name, get_monitor_config(config, monitor_name))
+        domain = get_domain(monitor.url)
 
-        crawler_type = monitor_config.get("crawler")
+        crawler_type = monitor.config.get("crawler")
         if crawler_type not in CRAWLERS:
-            raise ValueError(f"Unknown crawler type '{crawler_type}' for {monitor_name}")
+            raise ValueError(f"Unknown crawler type '{crawler_type}' for {monitor.name}")
 
-        if not should_crawl(monitor_name, monitor_config):
-            log.info(f"[{monitor_name}] Skipped (not due for a recrawl)")
+        if not monitor.should_crawl():
+            log.info(f"[{monitor.name}] Skipped (not due for a recrawl)")
             skipped += 1
             continue
 
-        log.info(f"[{monitor_name}] Processing single item...")
+        log.info(f"[{monitor.name}] Processing single item...")
 
-        debounce_domain(domain, parse_duration(monitor_config.get("delay", "0s")))
+        debounce_domain(domain, parse_duration(monitor.config.get("delay", "0s")))
 
         crawler_cls = CRAWLERS[crawler_type]
         crawler = crawler_cls()
 
         try:
             if crawler_cls.is_feed:
-                crawl_feed(monitor_config, monitor_name, crawler)
+                crawl_feed(monitor, crawler)
             else:
-                crawl_page(monitor_config, monitor_name, crawler)
+                crawl_page(monitor, crawler)
             succeeded += 1
         except Exception:
             failed += 1
-            log.exception(f"[{monitor_name}] Failed to process")
+            log.exception(f"[{monitor.name}] Failed to process")
 
     log.log(
         logging.ERROR if failed else logging.INFO,
