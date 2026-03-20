@@ -5,7 +5,7 @@ import logging
 import requests
 from bs4 import BeautifulSoup
 
-from crawlers import USER_AGENT
+from crawlers import USER_AGENT, PageResult
 
 log = logging.getLogger(__name__)
 
@@ -13,7 +13,7 @@ log = logging.getLogger(__name__)
 class HtmlCrawler:
     is_feed = False
 
-    def fetch(self, url: str, config: dict) -> dict:
+    def fetch(self, url: str, config: dict) -> PageResult:
         response = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=30)
         response.raise_for_status()
 
@@ -29,4 +29,4 @@ class HtmlCrawler:
             body = soup.find("body")
             text = body.get_text(strip=True) if body else soup.get_text(strip=True)
 
-        return {"content": text, "items": None}
+        return PageResult(content=text)

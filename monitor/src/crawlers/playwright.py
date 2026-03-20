@@ -4,13 +4,15 @@ import logging
 
 from playwright.sync_api import sync_playwright
 
+from crawlers import PageResult
+
 log = logging.getLogger(__name__)
 
 
 class PlaywrightCrawler:
     is_feed = False
 
-    def fetch(self, url: str, config: dict) -> dict:
+    def fetch(self, url: str, config: dict) -> PageResult:
         with sync_playwright() as p:
             browser = p.chromium.launch()
             page = browser.new_page()
@@ -27,4 +29,4 @@ class PlaywrightCrawler:
 
             browser.close()
 
-        return {"content": text, "items": None}
+        return PageResult(content=text)
