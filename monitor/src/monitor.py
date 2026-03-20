@@ -20,16 +20,14 @@ class Monitor:
         d.mkdir(parents=True, exist_ok=True)
         return d
 
-    def should_crawl(self) -> bool:
-        last_checked = self.get_last_crawl_date()
-        if not last_checked:
-            return True
-        interval = parse_duration(self.config.get("every", "1d"))
-        return datetime.now() - last_checked > interval
-
     def get_last_crawl_date(self) -> datetime | None:
         files = sorted(self.dir.iterdir(), reverse=True)
         return datetime.strptime(files[0].name[:10], "%Y-%m-%d") if files else None
+
+    def get_next_crawl_date(self) -> datetime:
+        last_checked = self.get_last_crawl_date()
+        interval = parse_duration(self.config.get("every", "1d"))
+        return last_checked + interval if last_checked else datetime.now()
 
     def mark_as_crawled(self):
         today = date.today().isoformat()
