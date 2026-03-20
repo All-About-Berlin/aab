@@ -4,7 +4,7 @@ import logging
 
 import requests
 
-from crawlers import USER_AGENT
+from crawlers import USER_AGENT, FeedItem, FeedResult
 
 log = logging.getLogger(__name__)
 
@@ -12,7 +12,7 @@ log = logging.getLogger(__name__)
 class RedditCrawler:
     is_feed = True
 
-    def fetch(self, url: str, config: dict) -> dict:
+    def fetch(self, url: str, config: dict) -> FeedResult:
         if not url.endswith(".json"):
             url = url.rstrip("/") + ".json"
 
@@ -26,12 +26,12 @@ class RedditCrawler:
         for post in posts:
             post_data = post.get("data", {})
             items.append(
-                {
-                    "id": post_data.get("id"),
-                    "title": post_data.get("title", ""),
-                    "url": f"https://old.reddit.com{post_data.get('permalink', '')}",
-                    "content": post_data.get("selftext", ""),
-                }
+                FeedItem(
+                    id=post_data.get("id"),
+                    title=post_data.get("title", ""),
+                    url=f"https://old.reddit.com{post_data.get('permalink', '')}",
+                    content=post_data.get("selftext", ""),
+                )
             )
 
-        return {"content": None, "items": items}
+        return FeedResult(items=items)
