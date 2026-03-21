@@ -535,7 +535,7 @@
     "description": "Minimum permanent residence fee (€)"
   },
   "MAX_PERMANENT_RESIDENCE_FEE": {
-    "value": "147",
+    "value": "Die maximale Gebühr für eine Niederlassungserlaubnis nach § 44 AufenthG beträgt 1470 Euro.",
     "type": "int",
     "description": "Maximum permanent residence fee (€) - § 44 AufenthG"
   },
