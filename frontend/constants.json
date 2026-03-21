@@ -691,7 +691,7 @@
   },
   "LEGAL_HOTLINE_COST_PER_MINUTE": {
     "value": "2.99",
-    "type": "int",
+    "type": "Decimal",
     "description": "Legal hotline cost per minute (€)",
     "source_url": "https://www.vonengelhardt.com/en/helpnowen",
     "fail_on": "2026-12-31"
