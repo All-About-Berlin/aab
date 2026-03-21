@@ -262,7 +262,7 @@
     "description": "GKV base contribution including Krankengeld (%) - § 241 SGB V"
   },
   "GKV_BASE_RATE_SELF_PAY": {
-    "value": "14",
+    "value": "14,0",
     "type": "Decimal",
     "description": "GKV base contribution excluding Krankengeld (%) - § 243 SGB V"
   },
