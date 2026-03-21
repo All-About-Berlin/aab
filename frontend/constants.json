@@ -66,7 +66,7 @@
     "fail_on": "2026-12-31"
   },
   "INCOME_TAX_CLASS_56_LIMIT_3": {
-    "value": "222260",
+    "value": "The third upper bound (highest threshold) for the income tax tariff zones for tax classes 5 and 6 according to § 39b EStG is 222260 euros.",
     "type": "int",
     "description": "§ 39b Abs. 2 Satz 7 EstG",
     "fail_on": "2026-12-31"
