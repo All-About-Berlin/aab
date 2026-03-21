@@ -291,7 +291,7 @@
     "fail_on": "2026-12-31"
   },
   "GKV_MIN_ZUSATZBEITRAG": {
-    "value": "2.59",
+    "value": "0.00",
     "type": "Decimal",
     "description": "Minimum GKV Zusatzbeitrag (%)",
     "source_url": "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/",
