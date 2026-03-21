@@ -47,9 +47,13 @@ services:
     restart: unless-stopped
     logging: *prod-logging
   monitor:
+    build:
+      target: prod
     environment:
       - "MAILGUN_API_KEY"
       - "MAILGUN_DOMAIN"
+    volumes: !override
+      - "monitor_state:/root/.local/state/aab-monitor"
     restart: unless-stopped
     logging: *prod-logging
 volumes:

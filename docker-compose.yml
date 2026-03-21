@@ -47,13 +47,14 @@ services:
   monitor:
     build:
       context: monitor
+      target: dev
     environment:
       - "OPENAI_API_KEY"
       - "GITHUB_TOKEN"
     volumes:
       - "monitor_state:/root/.local/state/aab-monitor"
       - "./monitor/src:/srv/src:ro"
-      - "./monitor/monitor.toml:/srv/monitor.toml:ro"
+      - "./monitor/config:/srv/config:ro"
 volumes:
   caddy_data:
   caddy_config:

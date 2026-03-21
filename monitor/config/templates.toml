@@ -1,0 +1,18 @@
+[templates.default]
+github_repo = "all-About-Berlin/aab"
+file = "frontend/constants.json"
+branch = "ai"
+delay = "1s"
+every = "30d"
+
+
+[templates.buzer]
+extends = "default"
+url = "https://www.buzer.de/{section}_{law}.htm"
+every = "30d"
+crawler = "html"
+selector = ".arttext"
+action = "pr"
+prompt = """
+Return {desired_value} from § {section} {law}, without symbols or formatting. If it's a number, use a dot as the decimal mark, but only if there are decimals. Use no thousands separator. If the value can't be found, only return "ERROR".
+"""

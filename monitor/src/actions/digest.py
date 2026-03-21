@@ -14,8 +14,11 @@ from state import STATE_DIR
 log = logging.getLogger(__name__)
 
 
-def append_to_digest(state_dir: Path, title: str, url: str, summary: str, source_name: str, **kwargs):
+def append_to_digest(state_dir: Path, title: str, url: str, summary: str, source_name: str, debug=False, **kwargs):
     """Append an item to today's digest file."""
+    if debug:
+        log.info(f"[{source_name}] (debug mode) Pretend adding to digest: {title}")
+        return
     digest_file = state_dir / "digests" / f"{date.today().isoformat()}.json"
     digest_file.parent.mkdir(parents=True, exist_ok=True)
 

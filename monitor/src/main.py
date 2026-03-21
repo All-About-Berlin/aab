@@ -16,7 +16,7 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 
-def run(config: dict):
+def run(config: dict, debug: bool = False):
     monitors = config.get("monitors", {})
     if not monitors:
         log.warning("No monitors configured")
@@ -25,6 +25,9 @@ def run(config: dict):
     succeeded = 0
     failed = 0
     skipped = 0
+
+    if debug:
+        log.info("Running in debug mode.")
 
     for monitor_name in sorted(monitors):
         monitor = Monitor(monitor_name, get_monitor_config(config, monitor_name))
@@ -36,7 +39,7 @@ def run(config: dict):
 
         next_crawl_date = monitor.get_next_crawl_date()
         if datetime.now() < next_crawl_date:
-            log.info(f"[{monitor.name}] Skipped (will recrawl on {next_crawl_date.date().isoformat()})")
+            log.info(f"[{monitor.name}] Skipped. Will crawl on {next_crawl_date.date().isoformat()}.")
             skipped += 1
             continue
 
@@ -49,9 +52,9 @@ def run(config: dict):
 
         try:
             if crawler_cls.is_feed:
-                crawl_feed(monitor, crawler)
+                crawl_feed(monitor, crawler, debug=debug)
             else:
-                crawl_page(monitor, crawler)
+                crawl_page(monitor, crawler, debug=debug)
             succeeded += 1
         except Exception:
             failed += 1
@@ -67,16 +70,17 @@ def main():
     parser = argparse.ArgumentParser(
         description="Monitor external sources for changes.", epilog="Made with ❤️ in Berlin"
     )
-    parser.add_argument("-c", "--config", type=Path, default=Path("monitor.toml"))
+    parser.add_argument("-c", "--config", type=Path, nargs="+")
+    parser.add_argument("--debug", action="store_true", help="Enable debug logging and skip external actions")
     args = parser.parse_args()
 
     config = load_config(args.config)
 
     log.info(f"State directory: {STATE_DIR}")
-    log.info(f"Config file: {args.config}")
+    log.info(f"Config files: {', '.join(str(p) for p in args.config)}")
 
     while True:
-        run(config)
+        run(config, debug=args.debug)
         time.sleep(60)
 
 

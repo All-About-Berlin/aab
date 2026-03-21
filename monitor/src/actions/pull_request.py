@@ -26,10 +26,31 @@ def github_request(method: str, path: str, **kwargs) -> requests.Response:
     return response
 
 
-def create_pull_request(state_dir, title: str, url: str, summary: str, source_name: str, monitor_config=None, **kwargs):
+def create_pull_request(
+    state_dir,
+    title: str,
+    url: str,
+    summary: str,
+    source_name: str,
+    monitor_config=None,
+    debug=False,
+    raw_content=None,
+    **kwargs,
+):
     """Update a constant in a JSON file and open a PR."""
     if not monitor_config:
         raise ValueError("No monitor config provided for PR action")
+
+    try:
+        constant_name = monitor_config["constant_to_update"]
+    except KeyError:
+        raise KeyError(f"[{source_name}] has no constant configured")
+
+    new_value = summary.strip()
+
+    if debug:
+        log.debug(f"[{source_name}] (debug mode) Pretending to update {constant_name} to '{new_value}'")
+        return
 
     try:
         repo = monitor_config["github_repo"]
@@ -40,13 +61,6 @@ def create_pull_request(state_dir, title: str, url: str, summary: str, source_na
         file_path = monitor_config["file"]
     except KeyError:
         raise KeyError(f"[{source_name}] has no file configured")
-
-    try:
-        constant_name = monitor_config["constant"]
-    except KeyError:
-        raise KeyError(f"[{source_name}] has no constant configured")
-
-    new_value = summary.strip()
 
     if not GITHUB_TOKEN:
         raise RuntimeError("GITHUB_TOKEN not set")
@@ -106,12 +120,25 @@ def create_pull_request(state_dir, title: str, url: str, summary: str, source_na
     )
 
     # Create PR
+    body = (
+        f"Automated update from monitor `{source_name}`.\n\n"
+        f"**Source:** {url}\n"
+        f"**Old value:** `{current_value}`\n"
+        f"**New value:** `{new_value}`\n"
+        f"**LLM response:** `{summary}`\n"
+    )
+    if raw_content:
+        truncated = raw_content[:2000]
+        if len(raw_content) > 2000:
+            truncated += "\n…(truncated)"
+        body += f"\n<details><summary>Raw crawled content</summary>\n\n```\n{truncated}\n```\n\n</details>\n"
+
     pr_resp = github_request(
         "POST",
         f"/repos/{repo}/pulls",
         json={
             "title": f"Update {constant_name}",
-            "body": f"Automated update from monitor `{source_name}`.\n\nSource: {url}\nNew value: `{new_value}`",
+            "body": body,
             "head": branch_name,
             "base": base_branch,
         },

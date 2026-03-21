@@ -21,7 +21,7 @@ CRAWLERS = {
 }
 
 
-def crawl_feed(monitor, crawler):
+def crawl_feed(monitor, crawler, debug=False):
     """Process a feed-type monitor (RSS, Reddit) where items are filtered individually."""
     result = crawler.fetch(monitor.url, monitor.config)
     if not result.items:
@@ -44,6 +44,8 @@ def crawl_feed(monitor, crawler):
                 prompt,
                 f"Title: {item.title}\nPost text: {item.content}",
             )
+            if llm_response.strip() == "ERROR":
+                raise ValueError(f"[{monitor.name}] LLM could not extract value for #{item.id}")
             if "NOT_RELEVANT" in llm_response.upper():
                 log.info(f"[{monitor.name}] Skipping #{item.id}: not relevant")
                 monitor.save_feed_crawl_result(item.id, raw_input, "NOT_RELEVANT")
@@ -59,12 +61,13 @@ def crawl_feed(monitor, crawler):
             summary=summary,
             source_name=monitor.name,
             monitor_config=monitor.config,
+            debug=debug,
         )
 
         monitor.save_feed_crawl_result(item.id, raw_input, summary)
 
 
-def crawl_page(monitor, crawler):
+def crawl_page(monitor, crawler, debug=False):
     """Process a page-type monitor (HTML, JSON) where the full content is diffed."""
     result = crawler.fetch(monitor.url, monitor.config)
     content = result.content
@@ -84,6 +87,8 @@ def crawl_page(monitor, crawler):
             user_message = f"Previous content:\n{previous_content}\n\nNew content:\n{content}"
 
         llm_response = query_llm(monitor.name, prompt, user_message)
+        if llm_response.strip() == "ERROR":
+            raise ValueError(f"[{monitor.name}] LLM could not extract value from page")
         if "NOT_RELEVANT" in llm_response.upper():
             monitor.save_page_crawl_result(content, "NOT_RELEVANT")
             return
@@ -96,8 +101,10 @@ def crawl_page(monitor, crawler):
         title="Changes detected",
         url=monitor.url,
         summary=summary,
+        raw_content=content,
         source_name=monitor.name,
         monitor_config=monitor.config,
+        debug=debug,
     )
 
     monitor.save_page_crawl_result(content, summary)

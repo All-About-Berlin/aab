@@ -1,4 +1,4 @@
-FROM python:3.13-slim
+FROM python:3.13-slim AS base
 
 COPY pyproject.toml /srv/
 RUN apt-get update \
@@ -7,8 +7,17 @@ RUN apt-get update \
     && playwright install --with-deps chromium \
     && rm -rf /var/lib/apt/lists/*
 
-COPY src/ /srv/src/
-COPY crontab.conf start.sh monitor.toml /srv/
+COPY crontab.conf start.sh /srv/
 RUN chmod +x /srv/start.sh
 
+# = PROD =======================================================================
+
+FROM base AS prod
+COPY src/ /srv/src/
+COPY config/ /srv/config/
 CMD ["/srv/start.sh"]
+
+# = DEV ========================================================================
+
+FROM base AS dev
+CMD ["/srv/start.sh", "--debug"]

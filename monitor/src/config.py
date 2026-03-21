@@ -2,22 +2,59 @@ from pathlib import Path
 import tomllib
 
 
-def load_config(config_path: Path) -> dict:
-    with open(config_path, "rb") as f:
-        return tomllib.load(f)
+def load_config(config_paths: list[Path]) -> dict:
+    """Load and deep-merge multiple TOML config files.
+
+    Top-level sections (templates, monitors) are merged across files.
+    Later files override earlier ones for the same key.
+    """
+    merged = {}
+    for path in config_paths:
+        with open(path, "rb") as f:
+            config = tomllib.load(f)
+        for key, value in config.items():
+            if key in merged and isinstance(merged[key], dict) and isinstance(value, dict):
+                merged[key] = {**merged[key], **value}
+            else:
+                merged[key] = value
+    return merged
 
 
-def get_domain_config(config: dict, domain: str) -> dict:
-    """Get merged domain config (default + domain-specific)."""
-    domains = config.get("domains", {})
-    return {**domains.get("default", {}), **domains.get(domain, {})}
+def resolve_template(config: dict, template_name: str, _seen: set | None = None) -> dict:
+    """Resolve a template by name, following the 'extends' chain."""
+    if _seen is None:
+        _seen = set()
+    if template_name in _seen:
+        raise ValueError(f"Circular template inheritance: {template_name}")
+    _seen.add(template_name)
+
+    templates = config.get("templates", {})
+    template = templates.get(template_name, {})
+    parent_name = template.get("extends")
+    if parent_name:
+        parent = resolve_template(config, parent_name, _seen)
+        return {**parent, **{k: v for k, v in template.items() if k != "extends"}}
+    return {k: v for k, v in template.items() if k != "extends"}
+
+
+def resolve_placeholders(merged: dict) -> dict:
+    """Replace {key} placeholders in string values with other values from the dict."""
+    resolved = {}
+    for key, value in merged.items():
+        if isinstance(value, str):
+            resolved[key] = value.format_map(merged)
+        else:
+            resolved[key] = value
+    return resolved
 
 
 def get_monitor_config(config: dict, monitor_name: str) -> dict:
-    """Get the fully merged config for a monitor (domain defaults + monitor overrides)."""
-    from utils import get_domain
-
+    """Get the fully merged config for a monitor (template + monitor overrides)."""
     monitor_config = config["monitors"][monitor_name]
-    domain = get_domain(monitor_config["url"])
-    domain_config = get_domain_config(config, domain)
-    return {**domain_config, **monitor_config}
+    template_name = monitor_config.get("extends")
+    if template_name:
+        template = resolve_template(config, template_name)
+        merged = {**template, **{k: v for k, v in monitor_config.items() if k != "extends"}}
+    else:
+        merged = dict(monitor_config)
+    return resolve_placeholders(merged)

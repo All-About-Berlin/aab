@@ -512,7 +512,7 @@
   "SCHENGEN_VISA_FEE": {
     "value": "75",
     "type": "int",
-    "description": "Schengen visa fee (€) - § 44 AufenthV"
+    "description": "Schengen visa fee (€) - § 46 AufenthV"
   },
   "NATIONAL_VISA_FEE": {
     "value": "100",
