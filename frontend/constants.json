@@ -144,7 +144,7 @@
     "fail_on": "2026-12-31"
   },
   "KINDERFREIBETRAG": {
-    "value": "9756",
+    "value": "3414 and 1464",
     "type": "int",
     "description": "Tax break for parents (€/y) - § 32 Abs. 6 EStG",
     "fail_on": "2026-12-31"
