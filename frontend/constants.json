@@ -60,7 +60,7 @@
     "fail_on": "2026-12-31"
   },
   "INCOME_TAX_CLASS_56_LIMIT_2": {
-    "value": "34939",
+    "value": "14282",
     "type": "int",
     "description": "§ 39b Abs. 2 Satz 7 EstG",
     "fail_on": "2026-12-31"
