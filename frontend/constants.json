@@ -525,7 +525,7 @@
     "description": "National visa renewal fee (€) - § 45 AufenthV"
   },
   "RESIDENCE_PERMIT_REPLACEMENT_FEE": {
-    "value": "67",
+    "value": "Der Textabschnitt enthält keine Angabe zur Gebühr für die Ersetzung einer Aufenthaltserlaubnis nach § 45c AufenthG. Bitte geben Sie den entsprechenden Paragraphen oder Auszug an, um die Gebühr in Euro zu erfahren.",
     "type": "int",
     "description": "Residence permit replacement fee after passport change (€) - § 45c AufenthG"
   },
