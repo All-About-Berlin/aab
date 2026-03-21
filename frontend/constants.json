@@ -318,7 +318,7 @@
     "fail_on": "2026-12-31"
   },
   "GKV_ZUSATZBEITRAG_BARMER": {
-    "value": "3.29",
+    "value": "3,29",
     "type": "Decimal",
     "source_url": "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/",
     "fail_on": "2026-12-31"
