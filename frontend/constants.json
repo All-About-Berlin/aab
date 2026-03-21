@@ -239,7 +239,7 @@
     "description": "Minimum VAT for monthly filing (€/y) - § 18 UStG"
   },
   "MIDIJOB_MAX_INCOME": {
-    "value": "2100",
+    "value": "2000",
     "type": "int",
     "description": "Below this income (€/mth), you have a midijob - § 20 SGB IV",
     "fail_on": "2026-12-31"
