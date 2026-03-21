@@ -257,7 +257,7 @@
     "fail_on": "2026-12-31"
   },
   "GKV_BASE_RATE_EMPLOYEE": {
-    "value": "14.6",
+    "value": "1460",
     "type": "Decimal",
     "description": "GKV base contribution including Krankengeld (%) - § 241 SGB V"
   },
