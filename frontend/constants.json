@@ -229,7 +229,7 @@
     "description": "Below this amount (€/y) in VAT, simplified rules for intra-EU VAT"
   },
   "VAT_MIN_QUARTERLY_AMOUNT": {
-    "value": "1000",
+    "value": "9000",
     "type": "int",
     "description": "Minimum VAT for quarterly filing (€/y) - § 18 UStG"
   },
