@@ -54,7 +54,7 @@
     "fail_on": "2026-12-31"
   },
   "INCOME_TAX_CLASS_56_LIMIT_1": {
-    "value": "14071",
+    "value": "Die erste obere Grenze für die Tarifeinkommensstufen in den Steuerklassen 5 und 6 beträgt 14071 Euro.",
     "type": "int",
     "description": "Upper bound (€/y) of income tax tariff zones for tax classes 5 and 6 - § 39b Abs. 2 Satz 7 EstG",
     "fail_on": "2026-12-31"
