@@ -545,7 +545,7 @@
     "description": "Fast track visa fee (€) - § 47 AufenthG"
   },
   "FREELANCE_VISA_MIN_MONTHLY_PENSION": {
-    "value": "1612.53",
+    "value": "1500.00",
     "type": "Decimal",
     "description": "Minimum monthly pension for freelance visa above age 45 (€/m)",
     "source_url": "https://www.bmas.de/DE/Soziales/Rente-und-Altersvorsorge/rentenversicherungsbericht-art.html",
