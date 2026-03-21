@@ -312,7 +312,7 @@
     "fail_on": "2026-12-31"
   },
   "GKV_ZUSATZBEITRAG_AOK": {
-    "value": "3.5",
+    "value": "3,50",
     "type": "Decimal",
     "source_url": "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/",
     "fail_on": "2026-12-31"
