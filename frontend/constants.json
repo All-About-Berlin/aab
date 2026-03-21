@@ -234,7 +234,7 @@
     "description": "Minimum VAT for quarterly filing (€/y) - § 18 UStG"
   },
   "VAT_MIN_MONTHLY_AMOUNT": {
-    "value": "7500",
+    "value": "9000",
     "type": "int",
     "description": "Minimum VAT for monthly filing (€/y) - § 18 UStG"
   },
