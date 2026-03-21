@@ -199,7 +199,7 @@
     "description": "§ 19 Abs. 1 UStG"
   },
   "KLEINUNTERNEHMER_MAX_INCOME": {
-    "value": "100000",
+    "value": "25000",
     "type": "int",
     "description": "§ 19 Abs. 1 UStG"
   },
