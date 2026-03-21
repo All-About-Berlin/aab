@@ -510,7 +510,7 @@
     "fail_on": "2026-12-31"
   },
   "SCHENGEN_VISA_FEE": {
-    "value": "75",
+    "value": "80",
     "type": "int",
     "description": "Schengen visa fee (€) - § 44 AufenthV"
   },
