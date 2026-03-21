@@ -245,7 +245,7 @@
     "fail_on": "2026-12-31"
   },
   "GKV_FACTOR_F": {
-    "value": "0.6619",
+    "value": "0.7009",
     "type": "Decimal",
     "description": "Factor F for midijob health insurance - § 20 SGB IV",
     "fail_on": "2026-12-31"
