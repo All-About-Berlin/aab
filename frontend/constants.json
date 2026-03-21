@@ -384,7 +384,7 @@
     "fail_on": "2026-12-31"
   },
   "BAFOG_BEDARFSSATZ": {
-    "value": "855",
+    "value": "1. Für Auszubildende in Fachschulklassen, deren Besuch eine abgeschlossene Berufsausbildung voraussetzt, Abendgymnasien und Kollegs beträgt der Grundbedarf 442 Euro monatlich.  \nWohnpauschale bei nicht bei den Eltern wohnen: 380 Euro.  \nGesamtbedarf: 442 + 380 = 822 Euro monatlich.\n\n2. Für Auszubildende an höheren Fachschulen, Akademien und Hochschulen beträgt der Grundbedarf 475 Euro monatlich.  \nWohnpauschale bei nicht bei den Eltern wohnen: 380 Euro.  \nGesamtbedarf: 475 + 380 = 855 Euro monatlich.\n\nMonatlicher BAföG-Bedarfssatz für Studierende, die nicht bei ihren Eltern wohnen:  \n- Fachschule etc.: 822 Euro  \n- Hochschule etc.: 855 Euro",
     "type": "int",
     "description": "BAföG Bedarfssatz (€/mth) - § 13 BAföG Abs 1.2 + 2.2",
     "fail_on": "2026-06-01"
