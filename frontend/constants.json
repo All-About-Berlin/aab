@@ -105,7 +105,7 @@
     "fail_on": "2026-12-31"
   },
   "WERBUNGSKOSTEN_PAUSCHALE": {
-    "value": "1230",
+    "value": "Arbeitnehmer-Pauschbetrag von 1230 Euro",
     "type": "int",
     "description": "§ 9a Abs. 1 EStG",
     "fail_on": "2026-12-31"
