@@ -324,7 +324,7 @@
     "fail_on": "2026-12-31"
   },
   "GKV_ZUSATZBEITRAG_DAK": {
-    "value": "3.2",
+    "value": "3,20",
     "type": "Decimal",
     "source_url": "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/",
     "fail_on": "2026-12-31"
