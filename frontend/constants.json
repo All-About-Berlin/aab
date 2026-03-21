@@ -396,7 +396,7 @@
     "fail_on": "2026-06-01"
   },
   "SPERRKONTO_SURCHARGE_OTHER": {
-    "value": "35",
+    "value": "The monthly surcharge for other expenses (sonstige Aufwendungen) from § 13a BAföG is 102 euros.",
     "type": "int",
     "description": "Sperrkonto other surcharge (€/mth) - § 13a BAföG Abs 1",
     "fail_on": "2026-06-01"
