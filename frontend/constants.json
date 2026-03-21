@@ -540,7 +540,7 @@
     "description": "Maximum permanent residence fee (€) - § 44 AufenthG"
   },
   "FAST_TRACK_FEE": {
-    "value": "411",
+    "value": "The provided text is from § 21 of the German Residence Act (AufenthG) regarding the political activities of foreigners in Germany. It does not contain information about the fee for the fast-track visa procedure (beschleunigtes Fachkräfteverfahren) as stated in § 47 AufenthG.\n\nPlease provide the relevant excerpt from § 47 AufenthG or specify if you want me to retrieve the current fee for the fast-track visa procedure.",
     "type": "int",
     "description": "Fast track visa fee (€) - § 47 AufenthG"
   },
