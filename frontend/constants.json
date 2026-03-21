@@ -520,7 +520,7 @@
     "description": "National visa fee (€) - § 45 AufenthV"
   },
   "NATIONAL_VISA_RENEWAL_FEE": {
-    "value": "96",
+    "value": "93",
     "type": "int",
     "description": "National visa renewal fee (€) - § 45 AufenthV"
   },
