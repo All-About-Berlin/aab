@@ -74,12 +74,11 @@ def main():
     parser.add_argument("--debug", action="store_true", help="Enable debug logging and skip external actions")
     args = parser.parse_args()
 
-    config = load_config(args.config)
-
     log.info(f"State directory: {STATE_DIR}")
     log.info(f"Config files: {', '.join(str(p) for p in args.config)}")
 
     while True:
+        config = load_config(args.config)
         run(config, debug=args.debug)
         time.sleep(60)
 
