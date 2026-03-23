@@ -48,10 +48,6 @@ def create_pull_request(
 
     new_value = summary.strip()
 
-    if debug:
-        log.debug(f"[{source_name}] (debug mode) Pretending to update {constant_name} to '{new_value}'")
-        return
-
     try:
         repo = monitor_config["github_repo"]
     except KeyError:
@@ -85,10 +81,15 @@ def create_pull_request(
         raise ValueError(f"Constant '{constant_name}' not found in {file_path}")
 
     current_value = constants[constant_name]["value"]
-    log.info(f"{constant_name}: {current_value} -> {new_value}")
 
     if current_value == new_value:
-        log.info(f"No change needed for {constant_name}")
+        log.info(f"[{source_name}] {constant_name} unchanged: {current_value}")
+        return
+
+    log.info(f"[{source_name}] {constant_name}: {current_value} -> {new_value}")
+
+    if debug:
+        log.info(f"[{source_name}] Debug mode, skipping PR creation")
         return
 
     constants[constant_name]["value"] = new_value

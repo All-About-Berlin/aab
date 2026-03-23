@@ -25,11 +25,13 @@ def crawl_feed(monitor, crawler, debug=False):
     """Process a feed-type monitor (RSS, Reddit) where items are filtered individually."""
     result = crawler.fetch(monitor.url, monitor.config)
     if not result.items:
+        log.info(f"[{monitor.name}] Feed is empty")
         return
 
     new_items = [item for item in result.items if not monitor.is_feed_item_processed(item.id)]
 
     if not new_items:
+        log.info(f"[{monitor.name}] No new items")
         monitor.mark_as_crawled()
         return
 
@@ -72,12 +74,14 @@ def crawl_page(monitor, crawler, debug=False):
     result = crawler.fetch(monitor.url, monitor.config)
     content = result.content
 
-    previous_content = monitor.get_last_crawl_output(raw=False)
+    previous_content = monitor.get_last_crawl_output(raw=True)
 
     if previous_content == content:
         log.info(f"[{monitor.name}] No changes detected")
-        monitor.save_page_crawl_result(content, "NO_CHANGE")
+        monitor.mark_as_crawled()
         return
+
+    previous_summary = monitor.get_last_crawl_output(raw=False)
 
     prompt = monitor.config.get("prompt", "").format_map(monitor.config) or None
     if prompt:
@@ -90,11 +94,17 @@ def crawl_page(monitor, crawler, debug=False):
         if llm_response.strip() == "ERROR":
             raise ValueError(f"[{monitor.name}] LLM could not extract value from page")
         if "NOT_RELEVANT" in llm_response.upper():
+            log.info(f"[{monitor.name}] Changes not relevant")
             monitor.save_page_crawl_result(content, "NOT_RELEVANT")
             return
         summary = llm_response
     else:
         summary = content
+
+    if previous_summary and previous_summary == summary:
+        log.info(f"[{monitor.name}] Value unchanged: {summary}")
+        monitor.save_page_crawl_result(content, summary)
+        return
 
     ACTIONS[monitor.config["action"]](
         state_dir=STATE_DIR,

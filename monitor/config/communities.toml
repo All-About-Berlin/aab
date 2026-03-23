@@ -1,0 +1,8 @@
+[monitors.reddit-askberliners]
+url = "https://old.reddit.com/r/askberliners/new.json"
+crawler = "reddit"
+every = "1d"
+action = "digest"
+prompt = """
+Read this post. If it's a question about the immigration office (LEA or Ausländerbehörde), return a one-sentence summary of the post. Otherwise, only return "NOT_RELEVANT".
+"""

@@ -1,0 +1,32 @@
+[templates.check24-gkv-zusatzbeitrag]
+extends = "default"
+crawler = "html"
+action = "pr"
+url = "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/"
+selector = ".w-full.border-collapse.max-w-4xl"
+prompt = "Read this table. Return the current Zusatzbeitrag for {insurer} as a percentage. Only return the number, without symbols or formatting. Use a dot as the decimal mark, but only if there are decimals. Use no thousands separator. If the value can't be found, only return 'ERROR'."
+
+[monitors.check24-gkv-zusatzbeitrag-aok]
+extends = "check24-gkv-zusatzbeitrag"
+insurer = "AOK Nordost"
+constant_to_update = "GKV_ZUSATZBEITRAG_AOK"
+
+[monitors.check24-gkv-zusatzbeitrag-barmer]
+extends = "check24-gkv-zusatzbeitrag"
+insurer = "Barmer"
+constant_to_update = "GKV_ZUSATZBEITRAG_BARMER"
+
+[monitors.check24-gkv-zusatzbeitrag-dak]
+extends = "check24-gkv-zusatzbeitrag"
+insurer = "DAK"
+constant_to_update = "GKV_ZUSATZBEITRAG_DAK"
+
+[monitors.check24-gkv-zusatzbeitrag-hkk]
+extends = "check24-gkv-zusatzbeitrag"
+insurer = "hkk"
+constant_to_update = "GKV_ZUSATZBEITRAG_HKK"
+
+[monitors.check24-gkv-zusatzbeitrag-tk]
+extends = "check24-gkv-zusatzbeitrag"
+insurer = "TK - Techniker Krankenkasse"
+constant_to_update = "GKV_ZUSATZBEITRAG_TK"
