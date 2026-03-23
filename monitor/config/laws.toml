@@ -30,33 +30,40 @@ section = "47"
 constant_to_update = "FAST_TRACK_FEE"
 desired_value = "the fee for the fast-track visa procedure (beschleunigtes Fachkräfteverfahren) in euros"
 
-[monitors.aufenthv-44-schengen-visa-fee]
+[monitors.aufenthv-46-schengen-visa-fee]
 extends = "buzer"
 law = "AufenthV"
 section = "46"
 constant_to_update = "SCHENGEN_VISA_FEE"
-desired_value = "the Schengen visa fee in euros"
+desired_value = "the category D visa fee from Absatz 2.1 in euros"
 
 [monitors.aufenthv-45-national-visa-fee]
 extends = "buzer"
 law = "AufenthV"
 section = "45"
 constant_to_update = "NATIONAL_VISA_FEE"
-desired_value = "the fee for issuing a national visa (Erteilung) in euros"
+desired_value = "the fee for issuing an Aufenthaltserlaubnis from Absatz 1.a in euros"
 
 [monitors.aufenthv-45-national-visa-renewal-fee]
 extends = "buzer"
 law = "AufenthV"
 section = "45"
 constant_to_update = "NATIONAL_VISA_RENEWAL_FEE"
-desired_value = "the fee for extending a national visa (Verlängerung) in euros"
+desired_value = "the fee for issuing an Aufenthaltserlaubnis from Absatz 2.b in euros"
 
-[monitors.bafoeg-13-bafog-bedarfssatz]
+[monitors.bafoeg-13-1-2-bedarfssatz]
 extends = "buzer"
 law = "BAfoG"
 section = "13"
-constant_to_update = "BAFOG_BEDARFSSATZ"
-desired_value = "the total BAföG Bedarfssatz for students living away from parents (Grundbedarf + Wohnpauschale) in euros per month"
+constant_to_update = "BAFOG_BEDARFSSATZ_13_ABS_1_2"
+desired_value = "the monthly Grundbedarf for Höheren Fachschulen, Akademien und Hochschulen (Absatz 1.2) in euros per month"
+
+[monitors.bafoeg-13-2-2-bedarfssatz]
+extends = "buzer"
+law = "BAfoG"
+section = "13"
+constant_to_update = "BAFOG_BEDARFSSATZ_13_ABS_2_2"
+desired_value = "the Wohnpauschale for students living away from parents (Absatz 2.2) in euros per month"
 
 [monitors.bafoeg-13a-sperrkonto-surcharge-insurance]
 extends = "buzer"
@@ -70,7 +77,7 @@ extends = "buzer"
 law = "BAfoG"
 section = "13a"
 constant_to_update = "SPERRKONTO_SURCHARGE_OTHER"
-desired_value = "the monthly surcharge for other expenses (sonstige Aufwendungen) in euros"
+desired_value = "the monthly surcharge for other expenses (sonstige Aufwendungen) in Absatz 3 Satz 3 in euros"
 
 [monitors.estg-10c-sonderausgaben-pauschbetrag]
 extends = "buzer"
@@ -271,35 +278,35 @@ desired_value = "the unemployment insurance contribution rate (Beitragssatz) as 
 
 [monitors.sgb4-20-gkv-azubi-freibetrag]
 extends = "buzer"
-law = "SGB_4"
+law = "SGB_IV"
 section = "20"
 constant_to_update = "GKV_AZUBI_FREIBETRAG"
 desired_value = "the monthly income threshold for Auszubildende (trainees) above which the employer pays social insurance contributions, in euros"
 
 [monitors.sgb4-20-gkv-factor-f]
 extends = "buzer"
-law = "SGB_4"
+law = "SGB_IV"
 section = "20"
 constant_to_update = "GKV_FACTOR_F"
 desired_value = "the Factor F used for calculating midijob social insurance contributions, as a decimal (e.g. 0.6619)"
 
 [monitors.sgb4-20-midijob-max-income]
 extends = "buzer"
-law = "SGB_4"
+law = "SGB_IV"
 section = "20"
 constant_to_update = "MIDIJOB_MAX_INCOME"
 desired_value = "the upper earnings limit for the Übergangsbereich (midijob) in euros per month"
 
 [monitors.sgb5-241-gkv-base-rate-employee]
 extends = "buzer"
-law = "SGB_5"
+law = "SGB_V"
 section = "241"
 constant_to_update = "GKV_BASE_RATE_EMPLOYEE"
 desired_value = "the general GKV contribution rate (allgemeiner Beitragssatz) as a percentage"
 
 [monitors.sgb5-243-gkv-base-rate-self-pay]
 extends = "buzer"
-law = "SGB_5"
+law = "SGB_V"
 section = "243"
 constant_to_update = "GKV_BASE_RATE_SELF_PAY"
 desired_value = "the reduced GKV contribution rate (ermäßigter Beitragssatz) as a percentage"

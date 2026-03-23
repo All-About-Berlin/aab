@@ -383,10 +383,16 @@
     "description": "Expat student insurance cost (€/mth)",
     "fail_on": "2026-12-31"
   },
-  "BAFOG_BEDARFSSATZ": {
-    "value": "855",
+  "BAFOG_BEDARFSSATZ_13_ABS_1_2": {
+    "value": "475",
     "type": "int",
-    "description": "BAföG Bedarfssatz (€/mth) - § 13 BAföG Abs 1.2 + 2.2",
+    "description": "BAföG Bedarfssatz (€/mth) - § 13 BAföG Abs 1 S. 2",
+    "fail_on": "2026-06-01"
+  },
+  "BAFOG_BEDARFSSATZ_13_ABS_2_2": {
+    "value": "380",
+    "type": "int",
+    "description": "BAföG Bedarfssatz (€/mth) - § 13 BAföG Abs 2 S. 2",
     "fail_on": "2026-06-01"
   },
   "SPERRKONTO_SURCHARGE_INSURANCE": {

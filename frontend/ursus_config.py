@@ -92,6 +92,8 @@ ctx["EXPAT_INSURANCE_COST"] = {
 ctx["GKV_KRANKENGELD_DAILY_LIMIT"] = (ctx["GKV_MAX_INCOME"] * Decimal("0.7") / 360).normalize()  # § 47 SGB V
 
 # BAFöG Bedarfssatz (€/y)
+ctx["BAFOG_BEDARFSSATZ"] = ctx["BAFOG_BEDARFSSATZ_13_ABS_1_2"] + ctx["BAFOG_BEDARFSSATZ_13_ABS_2_2"]
+
 ctx["SPERRKONTO_AMOUNT"] = (
     ctx["BAFOG_BEDARFSSATZ"] + ctx["SPERRKONTO_SURCHARGE_INSURANCE"] + ctx["SPERRKONTO_SURCHARGE_OTHER"]
 ) * 12  # § 13 BAföG Abs 1.2 + 2.2 + § 13a BAföG Abs 1
