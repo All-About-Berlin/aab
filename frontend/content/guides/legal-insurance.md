@@ -130,7 +130,7 @@ You can choose what your legal insurance covers. It can cover...
 ### Recommended coverage
 
 - [ ] **€150 deductible** (*[[Selbstbeteiligung]]*)  
-    If your deductible is higher, your insurance is cheaper. €150 is a reasonable deductible.[^34] It's usually less than €500.[^47] There are legal insurances without a deductible, but they are expensive.[^18]
+    If your deductible is higher, your insurance is cheaper. €150 is a reasonable deductible.[^34] There are legal insurances without a deductible, but they are expensive.[^18]
 - [ ] **€500,000 coverage limit**  
     Your legal insurance should cover you for at least €300,000, but €500,000 is better.[^7]
 - [ ] **6 month waiting period**  
@@ -192,7 +192,7 @@ Use [Tarifcheck](/out/tarifcheck-rechtsschutz) to compare legal insurances.
 [^19]: [check24.de](https://www.check24.de/rechtsschutzversicherung/fragen/freie-anwaltswahl/), Feather (March 2026)
 [^20]: [Feather](/out/feather-rechtsschutz) (March 2026), Seamus Wolf (March 2026), Check24 (March 2026), [Finanztip](https://www.finanztip.de/rechtsschutzversicherung/#c150867) (March 2026)
 [^21]: [fnp.de](https://www.fnp.de/ratgeber/geld/wenn-rechtsschutzversicherung-kunden-kuendigt-10458481.html), [reddit.com/r/AskAGerman](https://old.reddit.com/r/AskAGerman/comments/ph3wum/should_i_get_legal_insurance_to_protect_myself/), [Seamus Wolf](https://horizon65.com/) (March 2026)
-[^22]: [Clark](https://www.clark.de/rechtsschutzversicherung/selbstbeteiligung/#:~:text=in%20der%20regel%20pro%20versicherungsfall) (March 2026)
+[^22]: [Clark](https://www.clark.de/rechtsschutzversicherung/selbstbeteiligung/#:~:text=in%20der%20regel%20pro%20versicherungsfall) (March 2026), [Andreas Martin](https://rechtsanwalt-arbeitsrecht-in-berlin.de/) (August 2025)
 [^23]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/90f3u3/can_anyone_recommend_good_rechtsschutzversicherung/e2rbzwa/)
 [^24]: [Clark](https://www.clark.de/rechtsschutzversicherung/selbstbeteiligung/#:~:text=entscheidet%20das%20gericht%20zu%20deinen%20gunsten) (March 2026)
 [^25]: [toytowngermany.com](https://web.archive.org/web/20240808111111/https://www.toytowngermany.com/forum/topic/360547-legal-insurance/#comment-3479765), [hausundgrund.de](https://www.hausundgrund.de/themen)
@@ -211,6 +211,5 @@ Use [Tarifcheck](/out/tarifcheck-rechtsschutz) to compare legal insurances.
 [^42]: [Not Feather and Getsafe](https://faq.feather-insurance.com/en/articles/45291-does-my-legal-insurance-policy-cover-the-review-of-legal-contracts)
 [^45]: [Feather](https://faq.feather-insurance.com/en/articles/28679-how-can-i-request-a-phone-consultation-with-a-lawyer-through-my-legal-insurance?utm_source=allaboutberlin)
 [^46]: [Andreas Martin](https://rechtsanwalt-arbeitsrecht-in-berlin.de/) (August 2025)
-[^47]: [Andreas Martin](https://rechtsanwalt-arbeitsrecht-in-berlin.de/) (August 2025)
 [^48]: [Feather](https://feather-insurance.com/legal-insurance#:~:text=reviewing%20the%20contract%20before%20signing) (March 2026)
 [^49]: [Seamus Wolf](https://horizon65.com/) (March 2026), [Finanztip](https://www.finanztip.de/rechtsschutzversicherung/) (2026)
