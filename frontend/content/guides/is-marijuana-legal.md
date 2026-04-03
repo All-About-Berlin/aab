@@ -11,7 +11,7 @@ This guide explains the current laws about cannabis in Germany.
 
 ## Is recreational marijuana legal?
 
-**Yes, recreational marijuana is legal** since April 1, 2024. There are many restrictions:[^15]
+**Yes, recreational marijuana is legal** since April 2024. There are many restrictions:[^15]
 
 **Who** can smoke:
 
@@ -57,17 +57,15 @@ To join a club, you must...[^18]
 
 ### Is medicinal marijuana legal?
 
-**Yes**. Medical marijuana is legal. It is rarely prescribed. Only a few hundred people have a prescription.[^1] With legalisation, it became easier to prescribe.[^8]
+**Yes**. Medical marijuana is legal. It is rarely prescribed. Only a few hundred people have a prescription.[^1] Legalisation made it easier to get a prescription.[^8] It's currently the easiest way to buy cannabis.{{ fail_on('2026-12-31') }}
 
 **[How to get a cannabis prescription ➞](/guides/buying-marijuana-in-berlin#cannabis-prescription)**
 
 ### Is CBD legal?
 
-**It depends.** Cannabis flowers are legal, but processed cannabis is illegal.
+**Yes.** CBD products are legal if they have less than 0.3% THC.[^27]
 
-Before legalisation, processed CBD products with less than 0.2% THC were legal.[^2] CBD oil with less than 0.2% THC was legal.[^3] It should still be the case. The rules after legalisation are not clear yet.
-
-You can find CBD flowers in some *[Spätis](/glossary/Sp%C3%A4ti)* and head shops.[^4]
+You can buy CBD products online. You can find CBD flowers in some *[Spätis](/glossary/Sp%C3%A4ti)* and head shops.
 
 ### Are cannabis seeds legal?
 
@@ -88,9 +86,6 @@ This might have changed with legalisation, but it's not confirmed.
 **[Where to buy weed in Berlin ➞](/guides/buying-marijuana-in-berlin)**
 
 [^1]: [hanfsamenladen.com](https://www.hanfsamenladen.com/cannabis-samen-in-deutschland-legal#:~:text=diese%20erlaubnis%20haben%20in%20ganz%20deutschland%20nicht%20einmal%20300%20patienten)
-[^2]: [soll-galabau.de](https://www.soll-galabau.de/aktuelle-news/ansicht-aktuelles/datum/2021/09/14/cbd-die-aktuelle-rechtslage-in-deutschland.html#:~:text=dies%20bedeutet%20zusammenfassend), [§ 2 Abs. 2 KCanG](https://www.buzer.de/2_KCanG.htm)
-[^3]: [soll-galabau.de](https://www.soll-galabau.de/aktuelle-news/ansicht-aktuelles/datum/2021/09/14/cbd-die-aktuelle-rechtslage-in-deutschland.html#:~:text=ist%20cbd-ol%20legal%20in%20deutschland)
-[^4]: [soll-galabau.de](https://www.soll-galabau.de/aktuelle-news/ansicht-aktuelles/datum/2021/09/14/cbd-die-aktuelle-rechtslage-in-deutschland.html#:~:text=wie%20kann%20der%20verkauf%20von%20cbd-bluten%20stattfinden)
 [^5]: [§ 2 Abs. 3 KCanG](https://www.buzer.de/2_KCanG.htm), [§ 9 Abs. 1 KCanG](https://www.buzer.de/9_KCanG.htm)
 [^6]: [§ 2 Abs. 4 KCanG](https://www.buzer.de/2_KCanG.htm), [§ 3 Abs. 2 KCanG](https://www.buzer.de/3_KCanG.htm), [§ 9 KCanG](https://www.buzer.de/9_KCanG.htm)
 [^7]: [§ 5 Abs. 1 KCanG](https://www.buzer.de/5_KCanG.htm)
@@ -113,5 +108,6 @@ This might have changed with legalisation, but it's not confirmed.
 [^24]: [§ 16 Abs. 2 KCanG](https://www.buzer.de/16_KCanG.htm)
 [^25]: [§ 16 Abs. 2 KCanG](https://www.buzer.de/16_KCanG.htm)
 [^26]: [§ 16 Abs. 4 KCanG](https://www.buzer.de/16_KCanG.htm)
+[^27]: [§ 1 Abs. 9 S. a.bb KCanG](https://www.buzer.de/1_KCanG.htm) (April 2026), [geminishopcbd.com](https://geminishopcbd.com/de/blogs/blog/cbd-legal-deutschland-2025-cang-thc-grenze-03-prozent) (April 2026)
 [^28]: [Reddit](https://old.reddit.com/r/LSD/comments/1c29pe3/found_lsd_and_hhc_in_frankfort_germany/), [1](https://old.reddit.com/r/trees/comments/10fwyp2/hhc_carts_for_45_each_in_germany_what_do_you_think/), [2](https://old.reddit.com/r/askberliners/comments/1cq9z73/foreigner_in_berlin_would_like_to_buy_some_hhc/) (2024)
 [^29]: [rbb24.de](https://www.rbb24.de/panorama/beitrag/2025/07/berlin-cannabis-vereine-sieben-anbau-erlaubnis.html) (July 2025), [rbb24.de 1](https://www.rbb24.de/wirtschaft/beitrag/2025/01/berlin-cannabis-hanf-lageso-anbau.html), [2](https://www.rbb-online.de/abendschau/videos/20250401_1930/Ein_Jahr_Cannabis_Legalisierung.html) (March 2025){{ fail_on('2026-07-01') }}
