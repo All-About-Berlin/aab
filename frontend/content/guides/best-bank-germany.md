@@ -206,12 +206,11 @@ You can open a blocked account with...
     Most people use it. It works fine. They also sell packages with [health insurance](/glossary/Krankenversicherung).
 - [Sparkasse](/out/sparkasse), but only at some branches[^41]
 - [Kotak Mahindra Bank](https://www.kotak.com/en/digital-banking/insta-services/send-money-abroad/kotak-german-blocked-account-sperrkonto.html) in India[^43]{{ fail_on('2027-12-31') }}
-- [Fintiba](/out/fintiba) was acquired by Expatrio in 2025[^29]
+- [Fintiba](/out/fintiba) was acquired by Expatrio in 2025.[^29]
 - [Coracle](/out/coracle) was acquired by Expatrio in 2024.[^29] They don't accept new customers.{{ fail_on('2026-12-31') }}
+- Deutsche Bank stopped offering blocked accounts.[^42]
 
 Some [blocked accounts](/glossary/Sperrkonto) include [health insurance for your visa application](/guides/german-health-insurance/for-a-visa-application).
-
-Deutsche Bank stopped offering blocked accounts.[^42]
 
 ## Which bank should I choose?
 
