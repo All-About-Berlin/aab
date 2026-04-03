@@ -1,86 +1,70 @@
 ---
 Title: How to buy weed in Berlin
-Short_title: Where to buy weed
-Description: This is how you buy marijuana safely in Germany's capital.
+Short_title: How to buy weed
+Description: Different ways of safely buying cannabis, CBD, extracts and edibles in Berlin.
 Date_created: 2017-09-01
 ---
 
-This guide explains how people usually buy weed in Berlin. Weed [is legal in Germany](/guides/is-marijuana-legal) since April 1. The only legal way to buy weed is to [join a cannabis club](/guides/is-marijuana-legal#cannabis-clubs).
+This guide explains how people usually buy recreational marijuana in Berlin.
 
 ![Rolling paper and a grinder](/illustrations/rolling-paper-grinder-weed-berlin-s.png)
 
 {% tableOfContents %}
 
-## Is weed legal in Germany?
+## Where to buy weed
 
-**Yes**, it's legal but there are [many restrictions](/guides/is-marijuana-legal). Currently, it's still illegal to sell weed. The only way to buy weed legally is to [join a cannabis club](/guides/is-marijuana-legal#cannabis-clubs).
+Medical and recreational marijuana [are legal in Germany](/guides/is-marijuana-legal). It's hard to buy recreational marijuana legally, so people use other methods.
 
-**[Is marijuana legal in Germany? ➞](/guides/is-marijuana-legal)**
+- ✓ **[By prescription](#cannabis-prescription)**{{ RECOMMENDED }}  
+    It's currently the easiest way to get weed. You get a prescription from an online doctor, and buy medical cannabis from an online pharmacy. It's 100% legal. You can choose different strains, and you pay around €9 per gram.[^1]{{ fail_on('2026-06-15') }} They also sell extracts and edibles.[^16]
+- ✓ **Online**  
+    Websites like [Leafz](https://leafz.de/) sell THC edibles.[^14] It's easy and it works, but it's in a legal grey area.{{ fail_on('2026-12-31') }}
+- ✓ **Your friends**  
+    If you ask your friends, they will usually help you find a safe, reliable dealer.
+- ✓ **Grow your own cannabis**  
+    [Growing is legal.](/guides/is-marijuana-legal) [Alchimia](https://www.alchimiaweb.com/en/) and [Gas Station](https://gas-station.lu/) are good online shops for seeds.[^3] You can grow up to 3 plants at home.
+- ✗ **Cannabis clubs**  
+    Officially, it's the only legal way to buy recreational marijuana. It's not really worth it. There are only a dozen clubs in Berlin. They have long waiting lists, high membership fees, and many rules.[^15]
+- ✗ **[Dealers on Telegram](#buying-weed-on-telegram)**  
+    There are many Telegram groups you can join. It's still a common way to buy weed in Berlin. They advertise on stickers with QR codes. These groups are illegal, and they often get shut down by the police.[^6] The quality of the weed varies a lot.
+- ✗ **[Dealers in parks](#buying-weed-in-parks)**  
+    Dealers sell low-quality weed in parks. Avoid this option. The weed is low-quality, and often laced with chemicals.
 
-## Cost of weed in Berlin
-
-You should pay **around €10 per gram**, but quality weed can be more expensive.
-
-## Where do Berliners buy weed?
-
-There are 3 ways to buy weed in Berlin: on Telegram, from street dealers or through your friends.
-
-1. **Your friends**{{ RECOMMENDED }}  
-    They might know a good dealer. Just ask. You will find at least one friend who has a safe, reliable dealer. You will get better, cheaper, safer weed this way. People you have just met will not always introduce you to their dealer.
-2. **[Telegram](https://telegram.org/)**  
-    This is the easiest option if your friends don't know any dealers. It's a common way to buy weed in Berlin. There are many Telegram groups you can join. Some groups are run by a single dealer, and others let dealers and buyers find each other.
-3. **The parks**  
-    This should be your last option. They sell very low quality weed in parks. It's often laced with dangerous chemicals.
-
-You can join a **[cannabis club](/guides/is-marijuana-legal)** to legally buy weed. It's the only legal way to buy weed. You must be a German resident for at least 6 months to join a local club, so tourists might not be able to buy weed.[^11]
+You can join a **[cannabis club](/guides/is-marijuana-legal)** to legally buy weed. It's the only legal way to buy recreational marijuana. In practice, it's almost impossible to join a club; they have long waiting lists. You must be a German resident for at least 6 months to join a local club, so tourists can't buy weed from cannabis clubs.[^11]
 
 You can also **[get a prescription](#cannabis-prescription)** for medical marijuana.
 
-## Buying weed from Görlitzer and Hasenheide park
+## Buying weed on Telegram
 
-In Berlin, two parks have the most drug dealers:
+Many dealers sell weed and other drugs on Telegram. They advertise on stickers with QR codes. You can find those stickers everywhere in Neukölln, Kreuzberg and Friedrichshain. These Telegram groups often get shut down by the police.
 
-- **[Görlitzer park](https://maps.app.goo.gl/6FvcS73FRsL9su118)** in Kreuzberg  
-    A big central park in Berlin. It's famous for drug trafficking.[^0] The drug dealers are everywhere. They are hard to miss.[^1] It's safe to spend time in the park, at least during the day. Parents go there with their children. The police often targets this park.[^2]
-- **[Hasenheide park](https://goo.gl/maps/Mq2BLcn7TEYogDAE7)** in Neukölln  
-    A bigger park with fewer drug dealers. It's a better, safer park with an open air cinema and a petting zoo. The drug dealers are hard to miss.[^3]
+Telegram dealers are better than park dealers, but they are still risky. There are a lot of bad dealers that sell bad products.[^5] [Check your weed](#check-your-weed) before you smoke it.
 
-**Buying weed from parks is a bad idea**. If you still want to do it, it works like this:
+Usually, you set a meeting location. The dealer will start a secret chat to ask for more details. Some groups ask for a selfie to prove your identity, and for the driver to find you. When you end the secret chat, your photo is deleted.
 
-1. Talk to a drug dealer standing near the walking path. They are very hard to miss.
-2. The dealer will ask you what you want, then point to his friend who hides in the bushes. Many dealers speak English.
-3. His friend in the bushes will ask you how much weed you want. He will get take some weed from a bag he hides in a tree. He will put weed in your hand. He will not use a scale to weigh the weed, and you will not get a bag. You can try to negotiate and get a little more weed.
-4. Pay in cash, and leave. You should have the exact amount of money in your hand.
+When the driver is near you, they will message you. You usually sit in their car, and they drive a few hundred meters with you. You must give your money to the driver, get your weed, and leave. Be subtle when you do it.
 
-Dealers are easy to find. They are everywhere in the park. They will even approach you when you walk through the park. Some people say that you should avoid the dealers near the entrance, and choose dealers deeper in the park.
+## Buying weed in parks
 
-### Is buying weed from parks safe?
+Dealers sell weed at [Görlitzer park](https://maps.app.goo.gl/6FvcS73FRsL9su118) and [Volkspark Hasenheide](https://goo.gl/maps/Mq2BLcn7TEYogDAE7).[^0] **Do not buy weed from parks.** It is not safe. The weed is expensive, low quality and often laced with chemicals.[^4] The police often targets these parks.
 
-**No.** The weed you buy from random dealers is not safe. Most of the time, you will get contaminated weed. Dealers and park usually sell low quality weed that is contaminated with chemicals.[^4] These chemicals irritate your throat and leave a bad taste in your mouth. You will often get [Brix](https://www.youtube.com/watch?v=nUg6xa3oysg) and grit weed in Berlin's parks. It might improve after legalisation.
+If you still want to do it, it works like this:
 
-**[How to know if your weed is contaminated](https://www.cannaconnection.com/blog/12393-how-to-see-weed-is-contaminated)** - Cannaconnection.com
+1. Talk to a drug dealer standing near the walking path. Dealers are easy to find. They are everywhere in the park. They sometimes approach you when you walk through the park. Avoid the dealers near the entrance, and choose dealers deeper in the park.
+2. The dealer will ask you what you want, then point to his friend who hides in the bushes. They usually speak English.
+3. His friend in the bushes will ask you how much weed you want. He will take some weed from a bag and put it in your hand. He will not use a scale, and you will not get a bag. You can sometimes negotiate and get a little more weed.
+4. Pay in cash, and leave. You must have the exact amount of money in your hand.
+5. [Check your weed](#check-your-weed) to see if it's contaminated.
 
-You can also get caught with the police. They sometimes stay around the park's entrance, and stop people with drugs on them. They are more active in Görlitzer park.[^2]
+## Check your weed
 
-## Buying weed from Telegram
+If you buy hash or weed from a dealer, inspect it before you smoke it. Weed is often contaminated with chemicals or synthetic cannabinoids.
 
-Different groups have different methods.
+Laced weed often has the wrong smell or texture. It might have a chemical smell or leave a black residue when it burns.[^2]
 
-Usually, you set a meeting location. The person that runs the group will start a secret chat to ask for more details. Some groups ask for a selfie to prove your identity, and for the driver to find you. When you end the secret chat, your photo is deleted.
+Synthetic cannabinoids are also common.[^7] They are harder to detect.[^10] The high is shorter, stronger and less pleasant. It is addictive, and it can cause psychosis and withdrawal symptoms.[^8]
 
-You will receive a message when the driver is near you. The driver will pick you up. You must sit in the car. They might drive a few hundred meters with you. You must give your money to the driver, get your weed, get out of the car and leave. Be subtle, and do not flash your money near other people.
-
-### Is buying weed from Telegram safe?
-
-**No.** Marijuana from Telegram is often better than weed from the parks in Berlin, but it can still be contaminated.[^5] It might improve after legalisation.
-
-In Berlin, weed is sometimes contaminated with synthetic cannabinoids (also called K2 or Spice). Hash can also be contaminated with synthetic cannabinoids.[^6]
-
-This type of contaminated weed is bad for your mental and physical health.[^7] The high is shorter, stronger and less pleasant. It is addictive, and it can cause psychosis and withdrawal symptoms.[^8]
-
-You *can't* see if your weed is contaminated with a synthetic cannabinoid test kit. They are not made for this.[^9] You can see synthetic cannabinoids with a microscope, or a very strong magnifying glass.[^10] If the weed is contaminated, you might see crystals on the surface.
-
-**Related links:**
+## Useful links
 
 - [Contaminated weed reports](https://dirty-weed.com/index.php?lang=en) - dirty-weed.com
 - [Reddit discussion about contaminated cannabis](https://www.reddit.com/r/berlin/comments/kve48s/spice_laced_weed_is_in_berlin_watch_out/)
@@ -95,17 +79,19 @@ You can get a medical prescription for cannabis online.[^12] It's the easiest wa
 
 You can get a prescription from [TeleCan](https://www.telecan.eu/), [CannGo](https://canngo.express/), [DrAnsay](https://dransay.com/cannabis-rezept-online/) or Algea Care. TeleCan and CannGo have good reviews. Algea has bad reviews.
 
-[^0]: [Wikipedia](https://en.wikipedia.org/wiki/G%C3%B6rlitzer_Park#Drug_trafficking)
-[^1]: [goo.gl](https://goo.gl/maps/ppjbvAoUMVMv8TDy9), [goo.gl](https://goo.gl/maps/YjDdmS7k7RUeB6U6A)
-[^2]: [berliner-zeitung.de](https://www.berliner-zeitung.de/news/polizeibericht-berlin/statistik-das-sind-die-gefaehrlichsten-parks-in-berlin-li.171833)
-[^3]: [goo.gl](https://goo.gl/maps/7rDxdm3Pncg5BBuj7)
+[^0]: [Wikipedia](https://en.wikipedia.org/wiki/G%C3%B6rlitzer_Park#Drug_trafficking) (April 2026), [Wikipedia](https://en.wikipedia.org/wiki/Volkspark_Hasenheide#:~:text=the%20hasenheide%20is%20a%20focus%20of%20the%20berlin%20drug%20trade) (April 2026), [berliner-zeitung.de](https://www.berliner-zeitung.de/news/polizeibericht-berlin/statistik-das-sind-die-gefaehrlichsten-parks-in-berlin-li.171833)
+[^1]: [hanfvergleich.de](https://hanfvergleich.de/cannabis-preisindex) (April 2026)
+[^2]: [cannaconnection.com](https://www.cannaconnection.com/blog/12393-how-to-see-weed-is-contaminated#how-to-spot-contaminated-weed) (2026)
+[^3]: [Reddit](https://old.reddit.com/r/germantrees/comments/1kj5eg2/wo_kauft_ihr_eure_samen/) (2025), [Reddit](https://old.reddit.com/r/germantrees/comments/1jgb9ns/wo_kauft_ihr_samen/) (2025)
 [^4]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/4egzcz/psa_for_people_looking_to_buy_weed_spoiler_its/), [reddit.com](https://old.reddit.com/r/berlin/comments/4jbryw/deleted_by_user/)
 [^5]: [dirty-weed.com](https://dirty-weed.com/)
-[^6]: [morgenpost.de](https://www.morgenpost.de/berlin/polizeibericht/article231283010/Gefaehrliches-Haschisch-in-Berlin-im-Umlauf.html)
-[^7]: [legal-high-inhaltsstoffe.de](https://legal-high-inhaltsstoffe.de/de/news/2020/02/warnung-cannabis-mit-synthetischen-cannabinoiden.html), [mindzone.info](https://mindzone.info/aktuelles/warnung-gras-mit-synthetischen-cannabinoiden-gestreckt/), [hanfverband.de](https://hanfverband.de/nachrichten/news/hanfblueten-mit-synthetischem-cannabinoid-in-deutschland)
+[^6]: [Reddit](https://old.reddit.com/r/askberliners/comments/1kwzeyg/telegram_clean_up/) (2025)
+[^7]: [legal-high-inhaltsstoffe.de](https://legal-high-inhaltsstoffe.de/de/news/2020/02/warnung-cannabis-mit-synthetischen-cannabinoiden.html), [mindzone.info](https://mindzone.info/aktuelles/warnung-gras-mit-synthetischen-cannabinoiden-gestreckt/), [hanfverband.de](https://hanfverband.de/nachrichten/news/hanfblueten-mit-synthetischem-cannabinoid-in-deutschland), [morgenpost.de](https://www.morgenpost.de/berlin/polizeibericht/article231283010/Gefaehrliches-Haschisch-in-Berlin-im-Umlauf.html)
 [^8]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/kve48s/spice_laced_weed_is_in_berlin_watch_out/gixt3yr/?context=3), [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/kve48s/spice_laced_weed_is_in_berlin_watch_out/gixuanh/?context=3), [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/kve48s/spice_laced_weed_is_in_berlin_watch_out/gizrtd5/?context=3), [legal-high-inhaltsstoffe.de](https://legal-high-inhaltsstoffe.de/de/news/2020/02/warnung-cannabis-mit-synthetischen-cannabinoiden.html)
-[^9]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/kzwggs/spiced_weed_in_berlin_the_kits_we_have_used_are/)
 [^10]: [reddit.com/r/germantrees](https://old.reddit.com/r/germantrees/comments/iefo1b/frage_sind_synthetische_cannbinoide_erkennbar/)
 [^11]: [§ 1 Abs. 16 KCanG](https://www.buzer.de/1_KCanG.htm)
 [^12]: [Reddit](https://old.reddit.com/r/germantrees/comments/1ca6bp9/telecaneu/) (April 2024)
 [^13]: [telecan.eu](https://www.telecan.eu/index.php/behandlungskosten-preise/)
+[^14]: [Reddit](https://old.reddit.com/r/germantrees/comments/1fs90hr/edibles_von_leafzde_legal_oder_nicht/lxzx9jp/) (2024), [Reddit](https://old.reddit.com/r/askberliners/comments/1s26qri/are_cannabis_social_clubs_a_thing_with_you/oc9i2uw/) (March 2026), personal experience (2026), [Reddit](https://old.reddit.com/r/treedibles/comments/1gwoe60/are_space_jellys_by_leafz_or_thcandy_legit/) (2024)
+[^15]: [anbauverband.de](https://anbauverband.de/antrags-und-genehmigungszahlen/), [Reddit](https://old.reddit.com/r/askberliners/comments/1s26qri/are_cannabis_social_clubs_a_thing_with_you/) (2026), [Reddit](https://old.reddit.com/r/germantrees/comments/1s0pjtz/welche_erfahrungen_habt_ihr_mit_cscs/) (2026), [hanf-im-glueck.shop](https://hanf-im-glueck.shop/csc/deutschland/berlin/#Was-kostet-die-Mitgliedschaft-in-Berlin)
+[^16]: [Reddit](https://old.reddit.com/r/germantrees/comments/1rapax6/edibles_in_germany/) (2026)
