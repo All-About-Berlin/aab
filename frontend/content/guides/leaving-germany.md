@@ -74,7 +74,7 @@ This checklist helps you move from Germany to another country.
     You might need it to access online government services. Do this a few weeks before you leave.
 - [ ] **Save important documents**
     - [ ] **Public pension record** (*[[Versicherungsverlauf]]*)  
-        [Download it](https://kundenportal.deutsche-rentenversicherung.de/od-kundenportal) or [get it by post](/out/drv-pension-payments-info). It will arrive at your [registered address](/glossary/Anmeldung) in around 1 week.
+        [Download it](https://kundenportal.deutsche-rentenversicherung.de/od-kundenportal) or [get it by post](/out/drv-pension-payments-info). It will arrive at your [registered address](/glossary/Anmeldung) in around 1 week. Use it to [request a pension refund](/guides/pension-payments-refund) in 2 years.
     - [ ] Private pension documents
     - [ ] Medical records
         - [ ] [Vaccination pass](/glossary/Impfausweis)
