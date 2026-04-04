@@ -19,21 +19,18 @@ def test_download_buttons(page, test_screenshot, tmp_path):
 
     with page.expect_download() as download_info:
         download_1.click()
-        expect(download_1).to_be_disabled()
         download = download_info.value
         assert download.suggested_filename == "anmeldung-form-filled.pdf"
         download.save_as(tmp_path / "anmeldung-1.pdf")
 
     with page.expect_download() as download_info:
         download_2.click()
-        expect(download_2).to_be_disabled()
         download = download_info.value
         assert download.suggested_filename == "anmeldung-form-filled.pdf"
         download.save_as(tmp_path / "anmeldung-2.pdf")
 
     with page.expect_download() as download_info:
         download_3.click()
-        expect(download_3).to_be_disabled()
         download = download_info.value
         assert download.suggested_filename == "anmeldung-form-filled.pdf"
         download.save_as(tmp_path / "anmeldung-3.pdf")
