@@ -39,7 +39,9 @@ class ScheduledMessageEndpointMixin:
         request = {**self.example_request, "subscribe_to_newsletter": True}
         response = self.client.post(self.endpoint, request, format="json")
         self.assertEqual(response.status_code, 201, response.json())
-        mock_subscribe.assert_called_once_with(self.example_request["email"], mock_subscribe.call_args[0][1])
+        mock_subscribe.assert_called_once_with(
+            self.example_request["email"], mock_subscribe.call_args[0][1], source=self.model.__name__ + "ViewSet"
+        )
 
     @patch("forms.views.subscribe_to_newsletter", side_effect=Exception("Buttondown error"))
     def test_create_with_subscribe_to_newsletter_failure(self, mock_subscribe):
@@ -101,7 +103,9 @@ class FeedbackEndpointMixin:
         request = {**self.example_request, "subscribe_to_newsletter": True}
         response = self.client.post(self.endpoint, request, format="json")
         self.assertEqual(response.status_code, 201, response.json())
-        mock_subscribe.assert_called_once_with(self.example_request["email"], mock_subscribe.call_args[0][1])
+        mock_subscribe.assert_called_once_with(
+            self.example_request["email"], mock_subscribe.call_args[0][1], source=self.model.__name__ + "ViewSet"
+        )
 
     @patch("forms.views.subscribe_to_newsletter", side_effect=Exception("Buttondown error"))
     def test_create_with_subscribe_to_newsletter_failure(self, mock_subscribe):
@@ -134,7 +138,9 @@ class FeedbackEndpointMixin:
         updated_request = {**self.example_request, "subscribe_to_newsletter": True}
         response = self.client.put(f"{self.endpoint}/{new_object.modification_key}", updated_request, format="json")
         self.assertEqual(response.status_code, 200, response.json())
-        mock_subscribe.assert_called_once_with(self.example_request["email"], mock_subscribe.call_args[0][1])
+        mock_subscribe.assert_called_once_with(
+            self.example_request["email"], mock_subscribe.call_args[0][1], source=self.model.__name__ + "ViewSet"
+        )
 
     @patch("forms.views.subscribe_to_newsletter", side_effect=Exception("Buttondown error"))
     def test_update_with_subscribe_to_newsletter_failure(self, mock_subscribe):

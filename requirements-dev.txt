@@ -14,5 +14,5 @@ playwright~=1.55
 pytest>=8
 pytest-base-url~=2.1
 pytest-instafail~=0.5.0
-pytest-playwright-visual-snapshot==0.4.0
+pytest-playwright-visual-snapshot==0.5.1
 pytest-xdist~=3.8
