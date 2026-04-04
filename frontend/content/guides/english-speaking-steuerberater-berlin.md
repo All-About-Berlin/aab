@@ -39,7 +39,6 @@ Related_places:
     places/böttges-papendorf-weller-steuerberater.md
     places/goldstein-consulting-gmbh.md
     places/millennium-park-taxes.md
-    places/kb-küpper-kollegen-steuerberatungsgesellschaft.md
     places/steuerberater-jakub-czaplewski.md
     places/guhr-steuerberatungsgesellschaft.md
     places/insight-tax-gmbh.md
