@@ -1,7 +1,4 @@
-FROM python:3.13-slim AS base
-
-# Install dependencies
-COPY requirements.txt /requirements.txt
+FROM ghcr.io/astral-sh/uv:0.9.1-python3.13-bookworm-slim AS base
 
 # Rsync needed for prod builds
 # Git needed by ursus to build the site
@@ -10,11 +7,15 @@ RUN apt-get update \
         build-essential \
         python3-dev \
         curl \
-    && pip3 install --no-cache-dir -r /requirements.txt \
     && mkdir -p /var/output /var/live-output \
-    && rm -rf /var/lib/apt/lists/* /requirements.txt \
+    && rm -rf /var/lib/apt/lists/* \
     && sh -c 'curl -fsSL https://esbuild.github.io/dl/v0.27.3 | sh' \
     && mv ./esbuild /usr/local/bin/esbuild
+
+# Install Python dependencies
+COPY requirements.txt /requirements.txt
+RUN uv pip install --system --no-cache -r /requirements.txt \
+    && rm /requirements.txt
 
 ENV URSUS_OUTPUT_DIR=/var/output
 

@@ -1,13 +1,15 @@
-FROM python:3.13-slim AS base
+FROM ghcr.io/astral-sh/uv:0.9.1-python3.13-bookworm-slim AS base
 
 # Install dependencies
 # cron for various Django commands
 # rsync and ssh for database backups
-COPY requirements.txt /requirements.txt
 RUN apt-get update \
     && apt-get install -y --no-install-recommends openssh-client rsync cron \
-    && pip3 install --no-cache-dir -r /requirements.txt \
-    && rm -rf /var/lib/apt/lists/* /requirements.txt
+    && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt /requirements.txt
+RUN uv pip install --system --no-cache -r /requirements.txt \
+    && rm /requirements.txt
 
 COPY gunicorn_config.py crontab.conf start.sh /srv/
 

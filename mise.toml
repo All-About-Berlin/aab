@@ -27,7 +27,6 @@ mise generate git-pre-commit --hook=pre-commit --write --task=pre-commit
 mise generate git-pre-commit --hook=pre-push --write --task=pre-push
 """
 
-
 [hooks]
 enter = { task = "setup" }
 
