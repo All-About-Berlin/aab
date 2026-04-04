@@ -65,13 +65,13 @@ class ScheduledMessage(models.Model):
             logger.info(f"Scheduling 1 message ({self.__class__.__name__})")
             if settings.DEBUG_EMAILS:
                 logger.info(
-                    "SCHEDULING EMAIL MESSAGE\n"
-                    f"Deliver on: {self.delivery_date}\n"
-                    f"To: {', '.join(self.recipients)}\n"
-                    f"Reply-To: {self.reply_to}\n"
-                    f"Subject: {self.subject}\n"
-                    f"Body: \n{self.get_body()}"
+                    "Scheduling email message:\n"
+                    f"\tDeliver on: {self.delivery_date}\n"
+                    f"\tTo: {', '.join(self.recipients)}\n"
+                    f"\tReply-To: {self.reply_to}\n"
+                    f"\tSubject: {self.subject}\n"
                 )
+                logger.debug(f"\tEmail body: \n{self.get_body()}")
         super().save(*args, **kwargs)
 
     def remove_personal_data(self):

@@ -36,12 +36,12 @@ class Command(BaseCommand):
                     if settings.DEBUG:
                         if settings.DEBUG_EMAILS:
                             logger.info(
-                                "SENDING EMAIL MESSAGE\n"
-                                f"To: {', '.join(message.recipients)}\n"
-                                f"Reply-To: {message.reply_to}\n"
-                                f"Subject: {message.subject}\n"
-                                f"Body: \n{message.get_body()}"
+                                "Sending email message:\n"
+                                f"\tTo: {', '.join(message.recipients)}\n"
+                                f"\tReply-To: {message.reply_to}\n"
+                                f"\tSubject: {message.subject}\n"
                             )
+                            logger.debug(f"\tEmail body: \n{message.get_body()}")
                         else:
                             logger.info(f"Pretending to send 1 message ({message.__class__.__name__})")
                     else:

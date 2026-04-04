@@ -42,9 +42,8 @@ class Command(BaseCommand):
         try:
             if settings.DEBUG:
                 if settings.DEBUG_EMAILS:
-                    logger.info(
-                        f"SENDING EMAIL MESSAGE\nTo: {', '.join(recipients)}\nSubject: {subject}\nBody: \n{body}"
-                    )
+                    logger.info(f"Sending email message:\n\tTo: {', '.join(recipients)}\n\tSubject: {subject}\n")
+                    logger.debug(f"\tEmail body: \n{body}")
                 else:
                     logger.info("Pretending to send 1 message (daily digest)")
             else:
