@@ -42,9 +42,10 @@ ursus -wfs -c frontend/ursus_config.py
 [tasks.dev]
 description = "Serve the frontend and the backend in docker."
 alias = "d"
+quiet = true
 run = """
-echo "Starting docker daemon"
 if ! docker info >/dev/null 2>&1; then
+  echo "Starting docker daemon"
   open -a Docker;
 fi
 
@@ -54,7 +55,7 @@ while ! docker ps > /dev/null 2>&1; do
 done
 
 echo "Starting docker containers"
-docker compose up --build -d --force-recreate;
+compose_output=$(docker compose up --build -d --force-recreate 2>&1) || { echo "$compose_output"; exit 1; }
 
 # Waiting for server to be available
 max_attempts=30
@@ -103,16 +104,20 @@ frontend/scripts/add_review.py
 
 [tasks.test-api]
 env = { "BUNDLE_JS" = "1" }
+quiet = true
 run = """
 mise dev
-docker compose exec backend python3 manage.py test -b
+echo "Running API tests..."
+test_output=$(docker compose exec backend python3 manage.py test -b --verbosity 0 2>&1) || { echo "$test_output"; exit 1; }
 """
 
 [tasks.test-ui]
 env = { "BUNDLE_JS" = "1" }
+quiet = true
 run = """
 mise dev
-pytest tests
+echo "Running UI tests..."
+pytest tests --no-header -q
 """
 
 [tasks.update-snapshots]
@@ -125,6 +130,7 @@ pytest tests --update-snapshots
 
 [tasks.test]
 env = { "BUNDLE_JS" = "1" }
+quiet = true
 run = """
 mise test-ui
 mise test-api
@@ -134,18 +140,26 @@ mise test-api
 
 [tasks.shellcheck]
 description = "Lint shell scripts with shellcheck"
+quiet = true
 run = """
 for file in $(find . -type f -name "*.sh" -not -path '*/[@.]*'); do shellcheck $file; done;
 """
 
 [tasks.lint]
 description = "Run various linters for the project"
+quiet = true
 alias = "l"
 run = """
+echo "Running shellcheck..."
 mise shellcheck
-# pyright .
-ruff check
+
+echo "Running ruff..."
+ruff check --quiet
+
+echo "Running editorconfig-checker..."
 ec
+
+echo "Running ursus lint..."
 ursus lint --level=ERROR -c frontend/ursus_config.py
 """
 
@@ -167,5 +181,5 @@ mise lint
 description = "Run git pre-push checks"
 run = """
 mise lint
-mise test-ui
+mise test
 """

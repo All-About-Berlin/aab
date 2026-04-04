@@ -1,5 +1,8 @@
 from pathlib import Path
 import os
+import sys
+
+IS_RUNNING_TESTS = len(sys.argv) > 1 and sys.argv[1] == "test"
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -82,7 +85,7 @@ LOGGING = {
     },
     "handlers": {
         "console": {
-            "level": "INFO",
+            "level": "CRITICAL" if IS_RUNNING_TESTS else "INFO",
             "class": "logging.StreamHandler",
             "formatter": "default",
         },
@@ -90,7 +93,7 @@ LOGGING = {
     "loggers": {
         "": {
             "handlers": ["console"],
-            "level": "INFO",
+            "level": "CRITICAL" if IS_RUNNING_TESTS else "INFO",
             "propagate": True,
         },
         "django.request": {

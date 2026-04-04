@@ -8,12 +8,9 @@ def remove_bad_scheduledemails(apps, schema_editor):
     BrokerNotification = apps.get_model("insurance", "BrokerNotification")
     FeedbackNotification = apps.get_model("insurance", "FeedbackNotification")
 
-    print(
-        "Cleaning BrokerNotifications",
-        BrokerNotification.objects.filter(Q(case__email="") | Q(case__contact_method="WHATSAPP")).delete()[0],
-    )
-    print("Cleaning CustomerNotifications", CustomerNotification.objects.filter(case__email="").delete()[0])
-    print("Cleaning FeedbackNotifications", FeedbackNotification.objects.filter(case__email="").delete()[0])
+    BrokerNotification.objects.filter(Q(case__email="") | Q(case__contact_method="WHATSAPP")).delete()
+    CustomerNotification.objects.filter(case__email="").delete()
+    FeedbackNotification.objects.filter(case__email="").delete()
 
 
 class Migration(migrations.Migration):
