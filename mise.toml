@@ -45,11 +45,11 @@ alias = "d"
 quiet = true
 run = """
 if ! docker info >/dev/null 2>&1; then
-  echo "Starting docker daemon"
+  echo "[$(date +'%H:%M:%S')] Starting docker daemon"
   open -a Docker;
 fi
 
-echo "Waiting for docker daemon to be ready"
+echo "[$(date +'%H:%M:%S')] Waiting for docker daemon to be ready"
 while ! docker ps > /dev/null 2>&1; do
   sleep 1;
 done
@@ -57,10 +57,26 @@ done
 echo "Starting docker containers"
 compose_output=$(docker compose up --build -d --force-recreate 2>&1) || { echo "$compose_output"; exit 1; }
 
-# Waiting for server to be available
+max_attempts=10
+attempt=1
+echo "[$(date +'%H:%M:%S')] Waiting for backend availability"
+until curl --fail -s -k https://localhost/api/forms/ >/dev/null; do
+  if [ "$attempt" -ge "$max_attempts" ]; then
+    echo "Can't reach server after $max_attempts seconds."
+    exit 1
+  fi
+  ((attempt++))
+  sleep 1
+done
+"""
+
+[tasks.wait-for-frontend]
+quiet = true
+depends = ["dev"]
+run = """
 max_attempts=30
 attempt=1
-echo "Waiting for server availability"
+echo "[$(date +'%H:%M:%S')] Waiting for frontend availability"
 until curl --fail -s -k https://localhost >/dev/null; do
   if [ "$attempt" -ge "$max_attempts" ]; then
     echo "Can't reach server after $max_attempts seconds."
@@ -70,9 +86,9 @@ until curl --fail -s -k https://localhost >/dev/null; do
   sleep 1
 done
 
-echo "Waiting for frontend rebuild to finish"
+echo "[$(date +'%H:%M:%S')] Waiting for frontend rebuild to finish"
 until [ $(docker ps --filter "name=frontend" --filter "health=healthy" --quiet) ]; do
-  sleep 2
+  sleep 1
 done
 """
 
@@ -105,25 +121,25 @@ frontend/scripts/add_review.py
 [tasks.test-api]
 env = { "BUNDLE_JS" = "1" }
 quiet = true
+depends = ["dev"]
 run = """
-mise dev
-echo "Running API tests..."
+echo "[$(date +'%H:%M:%S')] Running API tests..."
 test_output=$(docker compose exec backend python3 manage.py test -b --verbosity 0 2>&1) || { echo "$test_output"; exit 1; }
 """
 
 [tasks.test-ui]
 env = { "BUNDLE_JS" = "1" }
 quiet = true
+depends = ["dev", "wait-for-frontend"]
 run = """
-mise dev
-echo "Running UI tests..."
-pytest tests --no-header -q
+echo "[$(date +'%H:%M:%S')] Running UI tests..."
+pytest tests
 """
 
 [tasks.update-snapshots]
 env = { "BUNDLE_JS" = "1" }
+depends = ["dev", "wait-for-frontend"]
 run = """
-mise dev
 rm -rf tests/snapshots/*
 pytest tests --update-snapshots
 """
@@ -131,9 +147,9 @@ pytest tests --update-snapshots
 [tasks.test]
 env = { "BUNDLE_JS" = "1" }
 quiet = true
+depends = ["test-api", "test-ui"]
 run = """
-mise test-ui
-mise test-api
+echo "[$(date +'%H:%M:%S')] Finished running tests"
 """
 
 # = CLEANUP ====================================================================
