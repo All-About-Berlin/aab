@@ -17,6 +17,7 @@ editorconfig-checker = "latest"
 [tasks.setup]
 description = "Install local dependencies to run the project"
 alias = "i"
+silent = true
 run = """
 uv pip install -r frontend/requirements.txt
 uv pip install -r backend/requirements.txt
@@ -25,6 +26,10 @@ playwright install --with-deps
 mise generate git-pre-commit --hook=pre-commit --write --task=pre-commit
 mise generate git-pre-commit --hook=pre-push --write --task=pre-push
 """
+
+
+[hooks]
+enter = { task = "setup" }
 
 # = RUN ========================================================================
 
