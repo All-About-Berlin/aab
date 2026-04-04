@@ -30,6 +30,22 @@ def set_default_timeout(page):
     page.set_default_timeout(2000)
 
 
+@pytest.fixture(autouse=True)
+def mock_exchange_rates(page):
+    """
+    Mock the currency conversion API to make tests work offline.
+    The external API call is also quite slow and makes the currency conversion tooltips flaky in snapshot testing.
+    """
+    page.route(
+        "**/api/exchangerates.json",
+        lambda route: route.fulfill(
+            status=200,
+            content_type="application/json",
+            body='{"rates":{"EUR":1,"USD":1.08,"GBP":0.86,"INR":90.5,"CAD":1.47,"CHF":0.97,"JPY":162.5,"AUD":1.65,"SEK":11.2,"PLN":4.32}}',
+        ),
+    )
+
+
 @pytest.fixture
 def browser_context_args(request, browser_context_args):
     """
