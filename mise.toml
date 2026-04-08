@@ -54,7 +54,7 @@ while ! docker ps > /dev/null 2>&1; do
   sleep 1;
 done
 
-echo "Starting docker containers"
+echo "[$(date +'%H:%M:%S')] Starting docker containers"
 compose_output=$(docker compose up --build -d --force-recreate 2>&1) || { echo "$compose_output"; exit 1; }
 
 max_attempts=10
@@ -62,7 +62,7 @@ attempt=1
 echo "[$(date +'%H:%M:%S')] Waiting for backend availability"
 until curl --fail -s -k https://localhost/api/forms/ >/dev/null; do
   if [ "$attempt" -ge "$max_attempts" ]; then
-    echo "Can't reach server after $max_attempts seconds."
+    echo "[$(date +'%H:%M:%S')] Can't reach server after $max_attempts seconds."
     exit 1
   fi
   ((attempt++))
@@ -79,7 +79,7 @@ attempt=1
 echo "[$(date +'%H:%M:%S')] Waiting for frontend availability"
 until curl --fail -s -k https://localhost >/dev/null; do
   if [ "$attempt" -ge "$max_attempts" ]; then
-    echo "Can't reach server after $max_attempts seconds."
+    echo "[$(date +'%H:%M:%S')] Can't reach server after $max_attempts seconds."
     exit 1
   fi
   ((attempt++))
@@ -166,16 +166,16 @@ description = "Run various linters for the project"
 quiet = true
 alias = "l"
 run = """
-echo "Running shellcheck..."
+echo "[$(date +'%H:%M:%S')] Running shellcheck..."
 mise shellcheck
 
-echo "Running ruff..."
+echo "[$(date +'%H:%M:%S')] Running ruff..."
 ruff check --quiet
 
-echo "Running editorconfig-checker..."
+echo "[$(date +'%H:%M:%S')] Running editorconfig-checker..."
 ec
 
-echo "Running ursus lint..."
+echo "[$(date +'%H:%M:%S')] Running ursus lint..."
 ursus lint --level=ERROR -c frontend/ursus_config.py
 """
 
