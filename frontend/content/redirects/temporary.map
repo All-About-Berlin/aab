@@ -58,6 +58,7 @@
 /out/deregistrationde-abmeldung               "https://deregistration.de/services/deregistration-online-germany/id/8/"
 /out/deregistrationde-gez                     "https://deregistration.de/services/rundfunkbeitrag-gez-germany/id/8/"
 /out/deregistrationde-mail                    "https://deregistration.de/services/mail-forwarding-germany/id/8/"
+/out/deregistrationde-full                    "https://deregistration.de/services/id/8/"
 /out/deutsche-bank                            "https://www.financeads.net/tc.php?t=28713C47285478T"
 /out/deutsche-bank-business                   "https://www.financeads.net/tc.php?t=28713C47285480T"
 /out/deutsche-bank-depot                      "https://www.financeads.net/tc.php?t=28713C47232807T"
@@ -70,6 +71,7 @@
 /out/drv-pension-payments-info                "https://www.eservice-drv.de/SelfServiceWeb/"
 /out/easyassist-abmeldung                     "https://easyassist.berlin/en/products/deregistration-berlin?sca_ref=9380252.Ef4tMCDJ6Z"
 /out/easyassist-anmeldung                     "https://easyassist.berlin/en/products/registration-berlin?sca_ref=9380252.Ef4tMCDJ6Z"
+/out/easyassist-full                          "https://easyassist.berlin/en/products/deregistration-berlin-full?sca_ref=9380252.Ef4tMCDJ6Z";
 /out/etoro                                    "https://www.financeads.net/tc.php?t=28713C106553660T"
 /out/expatrio                                 "https://www.expatrio.com?p=allaboutberlin"
 /out/fastbill                                 "https://www.awin1.com/cread.php?s=2813516&v=20766&q=406555&r=559395"

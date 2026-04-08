@@ -252,6 +252,8 @@ Your German citizenship does not expire, even if you leave Germany.
 
 ## Need help?
 
+[EasyAssist](/out/easyassist-full) and [Deregistration.de](/out/deregistrationde-full) can help you [deregister your address](/glossary/Abmeldung), stop paying [TV tax](/glossary/Rundfunkbeitrag) and cancel your contracts.
+
 **[Where to ask questions ➞](/guides/help)**
 
 [^1]: [eidel.io](https://eidel.io/notes-and-hacks-on-germanys-exit-tax/), [winheller.com](https://www.winheller.com/en/tax-law-tax-advisory/international-tax-planning/exit-taxation.html), [Hacker News](https://news.ycombinator.com/item?id=44828158), [wohnsitzausland.com](https://www.wohnsitzausland.com/fachwissen/wegzugsbesteuerung#wann)
