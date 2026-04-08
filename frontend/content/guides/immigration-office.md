@@ -133,7 +133,7 @@ After you paid, you can go home. You don't need to go back to your case worker. 
 
 ## Sue the Ausländerbehörde
 
-The *Ausländerbehörde* has 3 months to process your [residence permit](/glossary/Aufenthaltstitel) application. If it takes longer, you can sue them.[^11] This costs between €700 and €3000.[^16]
+The *Ausländerbehörde* has 3 months to process your [residence permit](/glossary/Aufenthaltstitel) application. If it takes longer, you can sue them.[^11] It costs €700 to €3000.[^16] Suing does not always work. The *Ausländerbehörde* sometimes ignores court orders.[^15]
 
 First, your lawyer sends a scary letter to the *Ausländerbehörde*. The *Ausländerbehörde* wants to avoid a lawsuit, so they process your application faster.
 
@@ -167,6 +167,7 @@ The immigration office does not give immigration advice. An [immigration lawyer]
 [^12]: [Fiona Macdonald, immigration lawyer](https://en.fmr-legal.de/general-8-1) (December 2023)
 [^13]: [Fiona Macdonald, immigration lawyer](https://en.fmr-legal.de/general-8-1) (December 2024)
 [^14]: [Fiona Macdonald, immigration lawyer](https://en.fmr-legal.de/general-8-1) (December 2023)
+[^15]: [Reddit](https://old.reddit.com/r/GermanCitizenship/comments/1sfh5jy/lea_is_ignoring_the_court/) (April 2026)
 [^16]: [Fiona Macdonald](https://en.fmr-legal.de/general-8-1) (December 2023), [Mirko Vorreuter](https://visaguard.berlin) (September 2025)
 [^17]: [§ 81 Abs. 5 AufenthG](https://www.buzer.de/81_AufenthG.htm)
 [^18]: [Mirko Vorreuter](https://visaguard.berlin) (September 2025)
