@@ -147,11 +147,9 @@ Your [residence permit](/glossary/Aufenthaltstitel) or [permanent residence](/gl
 
 ### Health insurance
 
-When you deregister, you can lose your German health insurance.[^14] German health insurance is only for German residents. If you want to keep your health insurance, you probably should not deregister.
+German health insurance is only for German residents. When you deregister, you can lose your German health insurance coverage.[^14] If you want to keep your health insurance, you probably should not deregister.
 
-If you have [private health insurance](/glossary/private%20Krankenversicherung), ask for an *[[Anwartschaft]]*. You pay a little money every month while you are outside of Germany. When you return to Germany, you can get your old health insurance back.[^15] It guarantees that you will get the same health insurance for the same price.
-
-If you move to another EU country, you are retired, and you get a German public pension, you can keep your German public health insurance.[^3]
+**[Health insurance and leaving Germany ➞](/guides/leaving-germany#health-insurance)
 
 ### Social security
 
@@ -163,6 +161,8 @@ You can keep your German bank account, even if you deregister your address and [
 
 If the bank sends you a letter, and it can't be delivered, they might freeze your bank account.[^17] If they freeze your bank account, you can't withdraw money, use your credit card, or make [bank transfers](/glossary/SEPA-%C3%9Cberweisung).
 
+**[Bank accounts and leaving Germany ➞](/guides/leaving-germany#bank-account)**
+
 ### Vehicles
 
 You can't own a vehicle registered in Germany if you don't live in Germany.[^14] Some people had a different experience, so there are exceptions to this.
@@ -173,7 +173,7 @@ When you deregister, you get an *[[Abmeldebescheinigung]]*. Use it to [cancel yo
 
 ## If you already moved out
 
-If you already left Germany, you can do your *Abmeldung* by email or by post.[^23] You will not be punished. It's better to [pay someone to deregister you](#pay-someone-to-do-it), because it guarantees that you will receive an *[[Abmeldebescheinigung]]*.
+If you already left Germany, do your *Abmeldung* by email or by post.[^23] The *Bürgeramt* won't punish you, but they might refuse to send your *[[Abmeldebescheinigung]]* to your address abroad. You can [pay someone to deregister you](#pay-someone-to-do-it), receive your *Abmeldebescheinigung*, and forward it to you. It's safer.
 
 ## What to do next
 
@@ -186,11 +186,9 @@ If you already left Germany, you can do your *Abmeldung* by email or by post.[^2
 [^0]: [§ 17 Abs. 2 BMG](https://www.buzer.de/17_BMG.htm), [Berlin.de](https://service.berlin.de/dienstleistung/120335/#:~:text=im%20zeitraum%20von%207%20tagen%20vor%2C%20muss%20aber%20bis%2014%20tage%20nach%20dem%20auszug%20vorgenommen%20werden) (January 2026)
 [^1]: [Robert Hantzsch](/out/easyassist-abmeldung) (August 2025), [Oliver Frankfurth](https://sympat.me) (April 2023), [Facebook](https://www.facebook.com/groups/berlinfreelancers/posts/3107197082693988/?comment_id=3107888739291489), [reddit.com](https://old.reddit.com/r/berlin/comments/o7vjdy/abmeldung_no_confirnation/)
 [^2]: [Robert Hantzsch](/out/easyassist-abmeldung) (August 2025), [reddit.com](https://old.reddit.com/r/berlin/comments/o7vjdy/abmeldung_no_confirnation/)
-[^3]: [Techniker Krankenkasse](https://www.tk.de/techniker/versicherung/tk-leistungen/ausland/wohnen-im-ausland/europaeisches-ausland-krankenversicherung-rentner-2009820) (January 2026), [Techniker Krankenkasse](https://www.tk.de/techniker/versicherung/tk-leistungen/ausland/wohnen-im-ausland/wohnsitz-ausland-rentner-2009812) (October 2025)
 [^4]: [Nerea Lopez](https://www.linkedin.com/posts/nicolasbouliane_to-those-who-left-germany-what-happened-activity-7420140781635731456-XFqF/) (January 2026)
 [^5]: [wohnsitzausland.com](https://www.wohnsitzausland.com/fachwissen/wohnsitz-abmelden-bei-umzug-ins-ausland#:~:text=bleiben%20sie%20also%20mit%20ihrem%20welteinkommen%20im%20land%20steuerpflichtig) (January 2026)
 [^14]: [wirelesslife.de](https://icwb.com/de/wohnsitz-abmelden-umzug-ins-ausland#umzug5)
-[^15]: [Finanztip](https://www.finanztip.de/pkv/pkv-anwartschaftsversicherung/), [Seamus Wolf](https://horizon65.com/) (2025)
 [^16]: [wirelesslife.de](https://icwb.com/de/wohnsitz-aus-deutschland-abmelden-pros-und-cons/)
 [^17]: [reddit.com/r/germany](https://old.reddit.com/r/germany/comments/m14kvt/what_happens_after_the_abmeldung/gqboqey/?context=3)
 [^18]: [Robert Hantzsch](/out/easyassist-abmeldung) (August 2025)
