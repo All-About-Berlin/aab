@@ -18,24 +18,24 @@ This guide explains why it's important, and how to do it.
 
 You must do your *Abmeldung* if...
 
-- **You [move out of Germany](/guides/leaving-germany)**  
+- ✓ **You [move out of Germany](/guides/leaving-germany)**  
     For example, if you move out of your Berlin apartment, and you move to Canada.
-- or **you have multiple homes, and you leave one of them**  
+- ✓ or **you have multiple homes, and you leave one of them**  
     For example, if you have apartments in Berlin and Hamburg, and you move out of the Hamburg apartment.
 
 Do not do your *Abmeldung* if...
 
-- **You will return to the same address**  
+- ✗ **You will return to the same address**  
     For example, if you study in France for 3 months, then move back to the same address in Germany.
-- **You move to another address in Germany**  
+- ✗ **You move to another address in Germany**  
     For example, if you move from Berlin to Munich. When you [register your new address](/guides/anmeldung-in-english-berlin), your old address is automatically deregistered.
-- **You have not [registered your address](/glossary/Anmeldung)**
+- ✗ **You have not [registered your address](/glossary/Anmeldung)**
 
 ## Why you must deregister
 
 You must deregister to...
 
-- Stop being a German resident
+- [Stop being a German resident](/guides/leaving-germany)
 - [Stop paying taxes](/guides/leaving-germany#taxes) in Germany
 
 When you deregister, you get a deregistration certificate (*[[Abmeldebescheinigung]]*). With this certificate, you can...

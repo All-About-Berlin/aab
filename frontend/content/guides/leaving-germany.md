@@ -70,8 +70,8 @@ This checklist helps you move from Germany to another country.
     Your university might refund your tuition fees and semester ticket.[^12] Your [public health insurance](/glossary/gesetzliche%20Krankenversicherung) might [become more expensive](#health-insurance).
     - [ ] Get a confirmation of disenrolment[^10]
     - [ ] Get a transcript of records[^11] (*Leistungsübersicht*)
-- [ ] **Activate your [[eID]]**  
-    You might need it to access online government services. Do this a few weeks before you leave.
+- [ ] **[Activate your eID](/guides/eid-online-ausweisfunktion)**  
+    You might need your [[eID]] to access online government services. Do this a few weeks before you leave. They send an activation code by post.
 - [ ] **Save important documents**
     - [ ] **Public pension record** (*[[Versicherungsverlauf]]*)  
         [Download it](https://kundenportal.deutsche-rentenversicherung.de/od-kundenportal) or [get it by post](/out/drv-pension-payments-info). It will arrive at your [registered address](/glossary/Anmeldung) in around 1 week. Use it to [request a pension refund](/guides/pension-payments-refund) in 2 years.
