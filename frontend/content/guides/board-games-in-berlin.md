@@ -21,7 +21,7 @@ Want a nice place to play board games with your friends, and perhaps make some n
 
 On **Tuesdays** from 7PM to 11PM, it's also board game night at [Brettspielegruppe Schöneberg](https://www.facebook.com/groups/brettspielegruppe/), Klixstraße 2 in Schöneberg. Entrance is €3 per person, and you must bring your own drinks.
 
-On **Wednesdays** at 7PM, [Spieletreff Berlin](http://www.spieletreff-berlin.de/) organizes a board game night in the Gemeindehaus on Nazarethkirchstraße 50 in Wedding. 30 to 40 participants show up each week to play one of the 150 available board games. Entrance is €2 per person, and drinks are sold on premises.
+On **Wednesdays** at 7PM, [Spieletreff Berlin](http://www.spieletreff-berlin.de/) organizes a board game night in the Gemeindehaus on Nazarethkirchstraße 50 in Wedding. 30 to 40 participants show up each week to play one of the 150 available board games. Entrance is €5 per person, and drinks are sold on premises.
 
 On **Thursdays** at 7PM, [RuDi](https://www.rudizentrum.de/) hosts the [board game meetup](https://www.meetup.com/berlin-board-gamers/) in Friedrichshain. There is usually a few dozen players there, and dozens of board games to choose from. You will find an equal proportion of English and German-speaking players there. Entrance is €1 per person, and drinks and snacks are €1.50 each.
 
