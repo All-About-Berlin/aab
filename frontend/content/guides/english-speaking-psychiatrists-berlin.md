@@ -48,7 +48,7 @@ These directories help you find English-speaking psychiatrists:
 
 ### For an ADHD diagnosis
 
-These Berlin psychiatrists speak English and diagnose people with ADHD:
+These Berlin psychiatrists speak English, can diagnose people with ADHD and can prescribe medication:
 
 - [Charité Outpatient Center for Adult ADHD](https://psychiatrie.charite.de/en/department/ambulanzbereich/outpatient_center_for_adult_adhd/) - hard to get an appointment
 - [Dr. Yrsa Werzinger](https://www.patienten-praxis.com/psychiatrie/dr-med-yrsa-wertzinger-fachaerztin-fuer-psychiatrie/)[^1]
