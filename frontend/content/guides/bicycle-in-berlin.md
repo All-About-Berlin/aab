@@ -118,8 +118,6 @@ You should also write down your bicycle's frame number (*Rahmennummer*). If your
 
 If you have an expensive bike, you can get household insurance *[[Hausratversicherung]]* that covers bike theft, or just bicycle insurance (*[[Fahrradversicherung]]*. If your bike is stolen, your insurance will pay to replace it. Bicycle insurance only covers recent bicycles. Older bicycles are not covered.
 
-If you don't speak German, [Feather](/out/feather-bicycle) sells bicycle insurance, and they speak English.
-
 ### If your bike gets stolen
 
 Report the theft to the Berlin police. You can do it online. If your bicycle is found again, they will let you know. You can also look at [this list of recovered bicycles](https://www.berlin.de/polizei/service/vermissen-sie-ihr-fahrrad/).
