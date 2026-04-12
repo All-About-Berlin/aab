@@ -1,4 +1,4 @@
-.PHONY: format lint typecheck check shellcheck test test-api test-ui help
+.PHONY: format format-check lint typecheck check check-ci test test-api test-ui help
 
 # Python source directories (excludes migrations and venv)
 PY_BACKEND := backend/src
@@ -18,6 +18,11 @@ format: ## Auto-format all code (Python via ruff)
 	@echo "[format] Python (ruff format)..."
 	@ruff format $(PY_ALL)
 	@echo "[format] Done."
+
+format-check: ## Verify formatting without modifying files (for CI)
+	@echo "[format-check] Python (ruff format --check)..."
+	@ruff format --check $(PY_ALL)
+	@echo "[format-check] Done."
 
 # = LINTING ====================================================================
 
@@ -51,6 +56,9 @@ typecheck: ## Type-check Python code (pyrefly)
 check: format lint typecheck ## Run format + lint + typecheck (full pre-commit suite)
 	@echo "[check] All checks passed."
 
+check-ci: format-check lint-python lint-shell typecheck ## CI-safe checks (no file modifications)
+	@echo "[check-ci] All CI checks passed."
+
 # = TESTING ====================================================================
 
 test: test-api test-ui ## Run all tests
@@ -58,7 +66,7 @@ test: test-api test-ui ## Run all tests
 
 test-api: ## Run backend API tests (Django, inside Docker)
 	@echo "[test] API tests..."
-	@docker compose exec backend python3 manage.py test -b --verbosity 0
+	@docker compose exec -T backend python3 manage.py test -b --verbosity 0
 
 test-ui: ## Run UI snapshot tests (Playwright)
 	@echo "[test] UI tests..."

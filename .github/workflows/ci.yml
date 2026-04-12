@@ -1,0 +1,135 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # Non-secret test key for CI only — not used in production
+  DJANGO_SECRET_KEY: ci-test-key-not-for-production-use-minimum-32-chars
+  COMPOSE_PROJECT_NAME: allaboutberlin
+  BUNDLE_JS: "1"
+
+jobs:
+  lint:
+    name: Format, Lint & Typecheck
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: "pip"
+          cache-dependency-path: |
+            backend/requirements.txt
+            frontend/requirements.txt
+            requirements-dev.txt
+
+      - name: Install tools and dependencies
+        run: |
+          pip install ruff==0.15.10 pyrefly==0.60.2 shellcheck-py==0.11.0.1
+          pip install -r requirements-dev.txt -r frontend/requirements.txt
+
+      - name: Check formatting
+        run: make format-check
+
+      - name: Lint Python
+        run: make lint-python
+
+      - name: Lint shell scripts
+        run: make lint-shell
+
+      - name: Lint content and templates
+        run: make lint-ursus
+
+      - name: Lint editorconfig
+        run: make lint-editorconfig
+
+      - name: Typecheck
+        run: make typecheck
+
+  test-api:
+    name: Backend API Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    needs: lint
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build and start backend services only
+        run: |
+          docker compose up --build -d backend proxy
+          echo "Waiting for backend..."
+          timeout 90 bash -c 'until curl -sf http://localhost/api/forms/ > /dev/null 2>&1; do sleep 2; done'
+
+      - name: Run API tests
+        run: docker compose exec -T backend python3 manage.py test -b --verbosity 1
+
+      - name: Dump logs on failure
+        if: failure()
+        run: docker compose logs --tail=100
+
+      - name: Stop Docker stack
+        if: always()
+        run: docker compose down
+
+  test-ui:
+    name: UI Snapshot Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    needs: lint
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: "pip"
+          cache-dependency-path: |
+            requirements-dev.txt
+            frontend/requirements.txt
+
+      - name: Install Python dependencies
+        run: pip install -r requirements-dev.txt -r frontend/requirements.txt
+
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ hashFiles('requirements-dev.txt') }}
+
+      - name: Install Playwright browsers
+        run: playwright install --with-deps chromium
+
+      - name: Build and start full Docker stack
+        run: docker compose up --build -d --wait --wait-timeout 300
+
+      - name: Run UI tests
+        run: pytest tests -n auto --base-url http://localhost
+
+      - name: Upload snapshot failures
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: snapshot-failures
+          path: tests/snapshot-failures/
+          retention-days: 7
+
+      - name: Dump logs on failure
+        if: failure()
+        run: docker compose logs --tail=100
+
+      - name: Stop Docker stack
+        if: always()
+        run: docker compose down
