@@ -9,6 +9,10 @@ prompt = """
 Return {desired_value} from § {section} {law}, without symbols or formatting. If it's a number, use a dot as the decimal mark, but only if there are decimals. Use no thousands separator. If the value can't be found, only return "ERROR".
 """
 
+# ==============================================================================
+# ==============================================================================
+# ==============================================================================
+
 [monitors.aufenthv-44-max-permanent-residence-fee]
 extends = "buzer"
 law = "AufenthV"
@@ -295,7 +299,7 @@ extends = "buzer"
 law = "SGB_IV"
 section = "20"
 constant_to_update = "MIDIJOB_MAX_INCOME"
-desired_value = "the upper earnings limit for the Übergangsbereich (midijob) in euros per month"
+desired_value = "the upper earnings limit for the Übergangsbereich according to Absatz 2, in euros per month"
 
 [monitors.sgb5-241-gkv-base-rate-employee]
 extends = "buzer"

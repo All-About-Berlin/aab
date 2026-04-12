@@ -28,5 +28,5 @@ constant_to_update = "GKV_ZUSATZBEITRAG_HKK"
 
 [monitors.check24-gkv-zusatzbeitrag-tk]
 extends = "check24-gkv-zusatzbeitrag"
-insurer = "TK - Techniker Krankenkasse"
+insurer = "Techniker Krankenkasse (TK)"
 constant_to_update = "GKV_ZUSATZBEITRAG_TK"

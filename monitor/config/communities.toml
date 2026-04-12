@@ -4,5 +4,10 @@ crawler = "reddit"
 every = "1d"
 action = "digest"
 prompt = """
-Read this post. If it's a question about the immigration office (LEA or Ausländerbehörde), return a one-sentence summary of the post. Otherwise, only return "NOT_RELEVANT".
+Read this post. If it's a question about one of these topics, return a one-sentence summary of the post. Otherwise, only return "NOT_RELEVANT".
+
+Here are the topics:
+
+- immigration office (LEA or Ausländerbehörde)
+- insurance
 """
