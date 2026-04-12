@@ -4,7 +4,9 @@ crawler = "html"
 action = "pr"
 url = "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/"
 selector = ".w-full.border-collapse.max-w-4xl"
-prompt = "Read this table. Return the current Zusatzbeitrag for {insurer} as a percentage. Only return the number, without symbols or formatting. Use a dot as the decimal mark, but only if there are decimals. Use no thousands separator. If the value can't be found, only return 'ERROR'."
+prompt = """
+Read this table. Return the latest Zusatzbeitrag for {insurer} as a percentage (in the rightmost column). Only return the number, without symbols or formatting. Use a dot as the decimal mark, but only if there are decimals. Use no thousands separator. If the value can't be found, only return 'ERROR'.
+"""
 
 [monitors.check24-gkv-zusatzbeitrag-aok]
 extends = "check24-gkv-zusatzbeitrag"
@@ -30,3 +32,25 @@ constant_to_update = "GKV_ZUSATZBEITRAG_HKK"
 extends = "check24-gkv-zusatzbeitrag"
 insurer = "Techniker Krankenkasse (TK)"
 constant_to_update = "GKV_ZUSATZBEITRAG_TK"
+
+[monitors.check24-gkv-avg-zusatzbeitrag]
+extends = "check24-gkv-zusatzbeitrag"
+constant_to_update = "GKV_AVG_ZUSATZBEITRAG"
+selector = "[component-export=InsuranceSummary]"
+prompt = """
+Read this page. Return the average (durchschnittliche) Zusatzbeitrag as a percentage. Only return the number, without the %% sign. Use a dot as the decimal mark. Use no thousands separator. If the value can't be found, only return 'ERROR'.
+"""
+
+[monitors.check24-gkv-max-zusatzbeitrag]
+extends = "check24-gkv-zusatzbeitrag"
+constant_to_update = "GKV_MAX_ZUSATZBEITRAG"
+prompt = """
+Read this table. Return the highest Zusatzbeitrag (in the rightmost column) among all listed providers, as a percentage. Only return the number, without the %% sign. Use a dot as the decimal mark. Use no thousands separator. If the value can't be found, only return 'ERROR'.
+"""
+
+[monitors.check24-gkv-min-zusatzbeitrag]
+extends = "check24-gkv-zusatzbeitrag"
+constant_to_update = "GKV_MIN_ZUSATZBEITRAG"
+prompt = """
+Read this table. Return the lowest non-zero Zusatzbeitrag (in the rightmost column) among all listed providers, as a percentage. Only return the number, without the %% sign. Use a dot as the decimal mark. Use no thousands separator. If the value can't be found, only return 'ERROR'.
+"""

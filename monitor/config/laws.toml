@@ -6,7 +6,7 @@ crawler = "html"
 selector = ".arttext"
 action = "pr"
 prompt = """
-Return {desired_value} from § {section} {law}, without symbols or formatting. If it's a number, use a dot as the decimal mark, but only if there are decimals. Use no thousands separator. If the value can't be found, only return "ERROR".
+This is the text of § {section} {law}. Return {desired_value} from that text. If the value is a number, use a dot as the decimal mark. Use no currency symbol and no thousands separator. If the requested value is not in the given text, only return "ERROR".
 """
 
 # ==============================================================================
@@ -53,7 +53,7 @@ extends = "buzer"
 law = "AufenthV"
 section = "45"
 constant_to_update = "NATIONAL_VISA_RENEWAL_FEE"
-desired_value = "the fee for issuing an Aufenthaltserlaubnis from Absatz 2.b in euros"
+desired_value = "the fee for renewing or extending an Aufenthaltserlaubnis from Absatz 2.b in euros"
 
 [monitors.bafoeg-13-1-2-bedarfssatz]
 extends = "buzer"
@@ -74,7 +74,7 @@ extends = "buzer"
 law = "BAfoG"
 section = "13a"
 constant_to_update = "SPERRKONTO_SURCHARGE_INSURANCE"
-desired_value = "the monthly surcharge for health insurance (Kranken- und Pflegeversicherung) in euros"
+desired_value = "the monthly Bedarf from Absatz 1 Satz 1 (Kranken- und Pflegeversicherung) in euros"
 
 [monitors.bafoeg-13a-sperrkonto-surcharge-other]
 extends = "buzer"
@@ -264,7 +264,7 @@ extends = "buzer"
 law = "SGB_11"
 section = "55"
 constant_to_update = "PFLEGEVERSICHERUNG_BASE_RATE_MAX_AGE"
-desired_value = "the maximum age up to which the base Pflegeversicherung rate applies (before the childless surcharge kicks in)"
+desired_value = "the last year of age at which the base Pflegeversicherung rate STOPS appling (the year BEFORE the childless surcharge kicks in)"
 
 [monitors.sgb11-55-pflegeversicherung-surcharge]
 extends = "buzer"
@@ -288,11 +288,15 @@ constant_to_update = "GKV_AZUBI_FREIBETRAG"
 desired_value = "the monthly income threshold for Auszubildende (trainees) above which the employer pays social insurance contributions, in euros"
 
 [monitors.sgb4-20-gkv-factor-f]
-extends = "buzer"
-law = "SGB_IV"
-section = "20"
+extends = "default"
+url = "https://www.tk.de/firmenkunden/versicherung/beitraege-faq/zahlen-und-grenzwerte/faktor-f-2033036"
+crawler = "html"
+selector = ".e-table.e-table__table"
+action = "pr"
 constant_to_update = "GKV_FACTOR_F"
-desired_value = "the Factor F used for calculating midijob social insurance contributions, as a decimal (e.g. 0.6619)"
+prompt = """
+Read this page. Return the latest Faktor F value. Only return the number as a decimal, without any formatting or currency symbol. Use a dot as the decimal mark. Use no thousands separator. If the value can't be found, only return 'ERROR'.
+"""
 
 [monitors.sgb4-20-midijob-max-income]
 extends = "buzer"

@@ -17,7 +17,7 @@ selector = ".typ-quote-3 p.text"
 action = "pr"
 constant_to_update = "MINIMUM_WAGE"
 prompt = """
-Read this page. Return the current minimum wage. Only return the number, without any formatting or currency symbol. If the value can't be found, only return 'ERROR'."
+Read this page. Return the current minimum wage. Only return the number, without any formatting or currency symbol. Use a dot as the decimal mark. Use no thousands separator. If the value can't be found, only return 'ERROR'.
 """
 
 [monitors.bmas-rentenversicherungsbericht]
@@ -27,34 +27,7 @@ crawler = "html"
 action = "pr"
 constant_to_update = "FREELANCE_VISA_MIN_MONTHLY_PENSION"
 prompt = """
-Read this page. Return the current monthly standard pension (Standardrente / Eckrente) amount in euros. Only return the number with decimals, without currency symbol or formatting. If the value can't be found, only return 'ERROR'."
-"""
-
-[monitors.check24-gkv-avg-zusatzbeitrag]
-extends = "check24-gkv-zusatzbeitrag"
-constant_to_update = "GKV_AVG_ZUSATZBEITRAG"
-prompt = """
-Read this page. Return the average (durchschnittlicher) Zusatzbeitrag rate as a percentage. Only return the number, without the %% sign. If the value can't be found, only return 'ERROR'."
-"""
-
-[monitors.check24-gkv-max-zusatzbeitrag]
-extends = "default"
-url = "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/"
-crawler = "html"
-action = "pr"
-constant_to_update = "GKV_MAX_ZUSATZBEITRAG"
-prompt = """
-Read this page. Return the highest Zusatzbeitrag rate among all listed health insurance providers, as a percentage. Only return the number, without the %% sign. If the value can't be found, only return 'ERROR'."
-"""
-
-[monitors.check24-gkv-min-zusatzbeitrag]
-extends = "default"
-url = "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/"
-crawler = "html"
-action = "pr"
-constant_to_update = "GKV_MIN_ZUSATZBEITRAG"
-prompt = """
-Read this page. Return the lowest Zusatzbeitrag rate among all listed health insurance providers, as a percentage. Only return the number, without the %% sign.
+Read this page. Return the current monthly standard pension (Standardrente / Eckrente) amount in euros. Only return the number with decimals, without currency symbol or formatting. If the value can't be found, only return 'ERROR'.
 """
 
 [monitors.ksk-zahlen]

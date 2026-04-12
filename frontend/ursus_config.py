@@ -52,6 +52,8 @@ ctx["GEWERBESTEUER_EXTRA_COST_BERLIN"] = (
     ctx["GEWERBESTEUER_RATE"] * (ctx["GEWERBESTEUER_HEBESATZ_BERLIN"] - ctx["GEWERBESTEUER_TAX_CREDIT"])
 ).normalize()
 
+ctx["KINDERFREIBETRAG"] = 2 * (ctx["KINDERFREIBETRAG_PER_PARENT"] + ctx["KINDERFREIBETRAG_ERZIEHUNGSBEDARF_PER_PARENT"])
+
 
 # ==============================================================================
 # HEALTH INSURANCE

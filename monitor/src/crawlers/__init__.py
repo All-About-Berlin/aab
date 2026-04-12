@@ -37,7 +37,7 @@ def crawl_feed(monitor, crawler, debug=False):
 
     for item in new_items:
         prompt = monitor.config.get("prompt", "").format_map(monitor.config) or None
-        log.info(f'[{monitor.name}] Processing item #{item.id}: "{item.title}"')
+        log.info(f'[{monitor.name}] Processing #{item.id}: "{item.title}"')
         raw_input = json.dumps(dataclasses.asdict(item), indent=2, ensure_ascii=False)
 
         if prompt:

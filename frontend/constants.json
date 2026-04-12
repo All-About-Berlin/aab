@@ -143,10 +143,16 @@
     "description": "Kindergeld amount per child (€/m) - § 6 Abs. 1 BKGG, § 66 EStG",
     "fail_on": "2026-12-31"
   },
-  "KINDERFREIBETRAG": {
-    "value": "9756",
+  "KINDERFREIBETRAG_PER_PARENT": {
+    "value": "3414",
     "type": "int",
-    "description": "Tax break for parents (€/y) - § 32 Abs. 6 EStG",
+    "description": "Tax break for parents (€/y) - § 32 Abs. 6 S. 1 EStG",
+    "fail_on": "2026-12-31"
+  },
+  "KINDERFREIBETRAG_ERZIEHUNGSBEDARF_PER_PARENT": {
+    "value": "1464",
+    "type": "int",
+    "description": "Tax break for parents (€/y) 'Betreuungs- und Erziehungs- oder Ausbildungsbedarf' - § 32 Abs. 6 S. 1 EStG",
     "fail_on": "2026-12-31"
   },
   "ENTLASTUNGSBETRAG_ALLEINERZIEHENDE": {
@@ -239,7 +245,7 @@
     "description": "Minimum VAT for monthly filing (€/y) - § 18 UStG"
   },
   "MIDIJOB_MAX_INCOME": {
-    "value": "2100",
+    "value": "2000",
     "type": "int",
     "description": "Below this income (€/mth), you have a midijob - § 20 Abs. 2 SGB IV",
     "fail_on": "2026-12-31"
@@ -526,7 +532,7 @@
     "description": "National visa fee (€) - § 45 AufenthV"
   },
   "NATIONAL_VISA_RENEWAL_FEE": {
-    "value": "96",
+    "value": "93",
     "type": "int",
     "description": "National visa renewal fee (€) - § 45 AufenthV"
   },
