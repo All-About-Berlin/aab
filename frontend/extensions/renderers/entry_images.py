@@ -77,7 +77,7 @@ def make_cover_image(text: str, templates_path: Path) -> ImageType:
         title_font = ImageFont.truetype(str(templates_path / "fonts/librefranklin-400.ttf"), font_size)
         try:
             wrapped_title = wrap_text(text, title_font, image.size[0] - 2 * padding)
-        except:
+        except Exception:
             font_size -= 3
         else:
             if len(wrapped_title.split("\n")) > 4:

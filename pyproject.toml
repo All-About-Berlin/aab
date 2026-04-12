@@ -2,9 +2,15 @@
 venvPath = "./"
 venv = ".venv"
 
+[tool.pyrefly]
+python_version = "3.13"
+search_path = [".venv/lib/python3.13/site-packages"]
+errors = { "missing-import" = false, "missing-attribute" = false, "bad-override" = false, "unbound-name" = false }
+project_excludes = ["**/migrations/**"]
+
 [tool.ruff]
 line-length = 120
 
 [tool.ruff.lint]
 select = ["E4", "E7", "E9", "F"]
-ignore = ["E722", "D"]
+ignore = ["D"]

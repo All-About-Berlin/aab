@@ -77,5 +77,6 @@ if __name__ == "__main__":
     try:
         build_site(site_path, tmp_output_path, final_output_path)
         purge_cloudflare_cache(cloudflare_zone, cloudflare_api_key)
-    except:  # noqa
+    except Exception:
         logger.exception("Failed to build site")
+        sys.exit(1)

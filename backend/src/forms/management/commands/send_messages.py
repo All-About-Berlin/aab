@@ -52,7 +52,7 @@ class Command(BaseCommand):
                     logger.exception(f"Could not send scheduled message (HTTP {exc.response.status_code})")
                     if 400 <= exc.response.status_code < 500:
                         message.status = MessageStatus.FAILED
-                except:
+                except Exception:
                     logger.exception(f"Could not send scheduled message (#{message.id}, {message.__class__.__name__})")
                     failures += 1
                 message.save()
