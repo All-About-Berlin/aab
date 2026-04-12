@@ -82,11 +82,11 @@ def create_pull_request(
 
     current_value = constants[constant_name]["value"]
 
-    if current_value == new_value:
+    if str(current_value) == str(new_value):
         log.info(f"[{source_name}] {constant_name} unchanged: {current_value}")
         return
 
-    log.info(f"[{source_name}] {constant_name}: {current_value} -> {new_value}")
+    log.warning(f"[{source_name}] {constant_name}: {current_value} -> {new_value}")
 
     if debug:
         log.info(f"[{source_name}] Debug mode, skipping PR creation")
