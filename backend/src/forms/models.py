@@ -232,13 +232,20 @@ def in_8_weeks():
 
 class FeedbackManager(models.Manager):
     def wait_time(self, date_column_start: str, date_column_end: str, extra_filters: dict[str, str]) -> dict[str, Any]:
+        # Build name -> column mapping to validate field names and resolve to actual DB column names
+        field_to_column = {f.name: f.column for f in self.model._meta.get_fields() if hasattr(f, "column")}
+        for field_name in (date_column_start, date_column_end, *extra_filters.keys()):
+            if field_name not in field_to_column:
+                raise ValueError(f"Invalid field name: {field_name}")
+
         where_extras = ""
-        for column_name, value in extra_filters.items():
-            where_extras += f" AND {column_name}=%({column_name})s" if value else ""
+        for field_name, value in extra_filters.items():
+            quoted = connection.ops.quote_name(field_to_column[field_name])
+            where_extras += f" AND {quoted}=%({field_name})s" if value else ""
 
         db_table = connection.ops.quote_name(self.model._meta.db_table)
-        column_start = connection.ops.quote_name(date_column_start)
-        column_end = connection.ops.quote_name(date_column_end)
+        column_start = connection.ops.quote_name(field_to_column[date_column_start])
+        column_end = connection.ops.quote_name(field_to_column[date_column_end])
 
         percentiles_query = f"""
             WITH time_diffs AS (
