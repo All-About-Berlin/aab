@@ -25,6 +25,7 @@ services:
         - "SSL_DOMAIN=localhost"
     environment:
       - "BUTTONDOWN_API_KEY"
+      - "DJANGO_SECRET_KEY"
     volumes:
       - "api_db:/var/db"
       - "api_staticfiles:/var/www/api/staticfiles"

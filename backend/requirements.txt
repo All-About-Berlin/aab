@@ -4,5 +4,6 @@ django~=6.0
 email-validator~=2.3
 gunicorn~=25.3
 python-dateutil~=2.9
+pydantic-settings~=2.13
 requests~=2.33
 websockets~=16.0

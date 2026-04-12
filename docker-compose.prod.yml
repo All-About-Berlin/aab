@@ -29,6 +29,8 @@ services:
     build:
       target: prod
     environment:
+      - "DJANGO_SECRET_KEY"
+      - "DJANGO_SECRET_KEY_PREVIOUS"
       - "MAILGUN_API_KEY"
       - "REMOTE_DB_BACKUPS_PATH"
     volumes: !override
