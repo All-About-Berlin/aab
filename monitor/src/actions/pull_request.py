@@ -51,12 +51,12 @@ def create_pull_request(
     try:
         repo = monitor_config["github_repo"]
     except KeyError:
-        raise KeyError(f"[{source_name}] has no github_repo configured")
+        raise KeyError(f"[{source_name}] has no 'github_repo' configured")
 
     try:
         file_path = monitor_config["file"]
     except KeyError:
-        raise KeyError(f"[{source_name}] has no file configured")
+        raise KeyError(f"[{source_name}] has no 'file' configured")
 
     if not GITHUB_TOKEN:
         raise RuntimeError("GITHUB_TOKEN not set")

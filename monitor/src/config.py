@@ -10,13 +10,16 @@ def load_config(config_paths: list[Path]) -> dict:
     """
     merged = {}
     for path in config_paths:
-        with open(path, "rb") as f:
-            config = tomllib.load(f)
-        for key, value in config.items():
-            if key in merged and isinstance(merged[key], dict) and isinstance(value, dict):
-                merged[key] = {**merged[key], **value}
-            else:
-                merged[key] = value
+        try:
+            with open(path, "rb") as f:
+                config = tomllib.load(f)
+            for key, value in config.items():
+                if key in merged and isinstance(merged[key], dict) and isinstance(value, dict):
+                    merged[key] = {**merged[key], **value}
+                else:
+                    merged[key] = value
+        except:
+            raise ValueError(f"Could not load config '{path}'")
     return merged
 
 
@@ -29,7 +32,9 @@ def resolve_template(config: dict, template_name: str, _seen: set | None = None)
     _seen.add(template_name)
 
     templates = config.get("templates", {})
-    template = templates.get(template_name, {})
+    if template_name not in templates:
+        raise ValueError(f"Template '{template_name}' not found")
+    template = templates[template_name]
     parent_name = template.get("extends")
     if parent_name:
         parent = resolve_template(config, parent_name, _seen)

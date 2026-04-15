@@ -18,8 +18,10 @@ def parse_duration(duration_str: str) -> timedelta:
 
 
 def get_domain(url: str) -> str:
-    domain = urlparse(url).netloc
-    return domain.removeprefix("www.")
+    domain = urlparse(url).netloc.removeprefix("www.")
+    if not domain:
+        raise ValueError(f"Cannot parse domain from URL '{url}'")
+    return domain
 
 
 def debounce_domain(domain: str, delay: timedelta):

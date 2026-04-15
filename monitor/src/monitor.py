@@ -12,7 +12,10 @@ class Monitor:
 
     @property
     def url(self) -> str:
-        return self.config["url"]
+        try:
+            return self.config["url"]
+        except KeyError:
+            raise KeyError(f"Monitor '{self.name}' has no url")
 
     @property
     def dir(self) -> Path:
