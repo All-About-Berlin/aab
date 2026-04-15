@@ -131,8 +131,17 @@ constant_to_update = "ENTLASTUNGSBETRAG_ALLEINERZIEHENDE_EXTRA_CHILD"
 extends = "buzer"
 law = "EStG"
 section = "32"
-desired_value = "the Kinderfreibetrag amount in euros"
-constant_to_update = "KINDERFREIBETRAG"
+subsection = "Absatz 6 Satz 1"
+desired_value = "the Freibetrag for the 'sächliche Existenzminimum des Kindes' in euros"
+constant_to_update = "KINDERFREIBETRAG_PER_PARENT"
+
+[monitors.estg-32-kinderfreibetrag-erziehungsbedarf]
+extends = "buzer"
+law = "EStG"
+section = "32"
+subsection = "Absatz 6 Satz 1"
+desired_value = "the Freibetrag for 'Betreuungs- und Erziehungs- oder Ausbildungsbedarf des Kindes' in euros"
+constant_to_update = "KINDERFREIBETRAG_ERZIEHUNGSBEDARF_PER_PARENT"
 
 [monitors.estg-32a-grundfreibetrag]
 extends = "buzer"
