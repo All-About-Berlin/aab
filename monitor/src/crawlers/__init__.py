@@ -1,5 +1,4 @@
 from crawlers.html import HtmlCrawler
-from crawlers.json import JsonCrawler
 from crawlers.playwright import PlaywrightCrawler
 from crawlers.reddit import RedditCrawler
 from crawlers.rss import RssCrawler
@@ -14,7 +13,6 @@ log = logging.getLogger(__name__)
 
 CRAWLERS = {
     "html": HtmlCrawler,
-    "json": JsonCrawler,
     "playwright": PlaywrightCrawler,
     "reddit": RedditCrawler,
     "rss": RssCrawler,
