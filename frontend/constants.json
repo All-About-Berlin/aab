@@ -237,12 +237,12 @@
   "VAT_MIN_QUARTERLY_AMOUNT": {
     "value": "2000",
     "type": "int",
-    "description": "Minimum VAT for quarterly filing (€/y) - § 18 UStG"
+    "description": "Minimum VAT for quarterly filing (€/y) - § 18 Abs. 2 S. 3 UStG"
   },
   "VAT_MIN_MONTHLY_AMOUNT": {
     "value": "9000",
     "type": "int",
-    "description": "Minimum VAT for monthly filing (€/y) - § 18 UStG"
+    "description": "Minimum VAT for monthly filing (€/y) - § 18 Abs. 2 S. 2 UStG"
   },
   "MIDIJOB_MAX_INCOME": {
     "value": "2000",

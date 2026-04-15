@@ -1,56 +1,63 @@
-[templates.check24-gkv-zusatzbeitrag]
+[templates.zusatzbeitrag]
 extends = "default"
-crawler = "html"
-action = "pr"
-url = "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/"
-selector = ".w-full.border-collapse.max-w-4xl"
+url = "https://www.krankenkassen.de/gesetzliche-krankenkassen/krankenkasse-beitrag/zusatzbeitrag/"
+selector = "#content table"
 prompt = """
-Read this table. Return the latest Zusatzbeitrag for {insurer} as a percentage (in the rightmost column). Only return the number, without symbols or formatting. Use a dot as the decimal mark, but only if there are decimals. Use no thousands separator. If the value can't be found, only return 'ERROR'.
+Read this table. Return the latest Zusatzbeitrag for {insurer} as a percentage (in the leftmost column).
+Return only the percentage, without percent signs or thousands separators. For decimal values, use a dot as the decimal mark.
+If the value can't be found, only return 'ERROR'.
 """
 
-[monitors.check24-gkv-zusatzbeitrag-aok]
-extends = "check24-gkv-zusatzbeitrag"
+[monitors.zusatzbeitrag-aok]
+extends = "zusatzbeitrag"
 insurer = "AOK Nordost"
 constant_to_update = "GKV_ZUSATZBEITRAG_AOK"
 
-[monitors.check24-gkv-zusatzbeitrag-barmer]
-extends = "check24-gkv-zusatzbeitrag"
+[monitors.zusatzbeitrag-barmer]
+extends = "zusatzbeitrag"
 insurer = "Barmer"
 constant_to_update = "GKV_ZUSATZBEITRAG_BARMER"
 
-[monitors.check24-gkv-zusatzbeitrag-dak]
-extends = "check24-gkv-zusatzbeitrag"
-insurer = "DAK"
+[monitors.zusatzbeitrag-dak]
+extends = "zusatzbeitrag"
+insurer = "DAK-Gesundheit"
 constant_to_update = "GKV_ZUSATZBEITRAG_DAK"
 
-[monitors.check24-gkv-zusatzbeitrag-hkk]
-extends = "check24-gkv-zusatzbeitrag"
+[monitors.zusatzbeitrag-hkk]
+extends = "zusatzbeitrag"
 insurer = "hkk"
 constant_to_update = "GKV_ZUSATZBEITRAG_HKK"
 
-[monitors.check24-gkv-zusatzbeitrag-tk]
-extends = "check24-gkv-zusatzbeitrag"
-insurer = "Techniker Krankenkasse (TK)"
+[monitors.zusatzbeitrag-tk]
+extends = "zusatzbeitrag"
+insurer = "Techniker Krankenkasse"
 constant_to_update = "GKV_ZUSATZBEITRAG_TK"
 
-[monitors.check24-gkv-avg-zusatzbeitrag]
-extends = "check24-gkv-zusatzbeitrag"
-constant_to_update = "GKV_AVG_ZUSATZBEITRAG"
+[monitors.zusatzbeitrag-average]
+extends = "default"
+url = "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/"
 selector = "[component-export=InsuranceSummary]"
 prompt = """
 Read this page. Return the average (durchschnittliche) Zusatzbeitrag as a percentage. Only return the number, without the %% sign. Use a dot as the decimal mark. Use no thousands separator. If the value can't be found, only return 'ERROR'.
 """
+constant_to_update = "GKV_AVG_ZUSATZBEITRAG"
 
-[monitors.check24-gkv-max-zusatzbeitrag]
-extends = "check24-gkv-zusatzbeitrag"
+[monitors.zusatzbeitrag-max]
+extends = "default"
+url = "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/"
+selector = ".w-full.border-collapse.max-w-4xl"
+prompt = """
+Read this text. Return the highest Zusatzbeitrag (in the rightmost column) among all listed providers, as a percentage. Only return the number, without the %% sign. Use a dot as the decimal mark. Use no thousands separator. If the value can't be found, only return 'ERROR'.
+"""
 constant_to_update = "GKV_MAX_ZUSATZBEITRAG"
-prompt = """
-Read this table. Return the highest Zusatzbeitrag (in the rightmost column) among all listed providers, as a percentage. Only return the number, without the %% sign. Use a dot as the decimal mark. Use no thousands separator. If the value can't be found, only return 'ERROR'.
-"""
 
-[monitors.check24-gkv-min-zusatzbeitrag]
-extends = "check24-gkv-zusatzbeitrag"
-constant_to_update = "GKV_MIN_ZUSATZBEITRAG"
+[monitors.zusatzbeitrag-min]
+extends = "default"
+url = "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/"
+selector = ".w-full.border-collapse.max-w-4xl"
 prompt = """
-Read this table. Return the lowest non-zero Zusatzbeitrag (in the rightmost column) among all listed providers, as a percentage. Only return the number, without the %% sign. Use a dot as the decimal mark. Use no thousands separator. If the value can't be found, only return 'ERROR'.
+Read this table. Return the lowest non-zero Zusatzbeitrag (in the leftmost column) among all "bundesweit" providers, as a percentage. Exclude "betriebsbezogen" and "regional" providers.
+Only return the percentage, without percent signs or formatting. Use a dot as the decimal mark, but only if there are decimals. Use no thousands separator.
+If the value can't be found, only return 'ERROR'.
 """
+constant_to_update = "GKV_MIN_ZUSATZBEITRAG"

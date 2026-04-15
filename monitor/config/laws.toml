@@ -1,12 +1,14 @@
 [templates.buzer]
 extends = "default"
 url = "https://www.buzer.de/{section}_{law}.htm"
-every = "30d"
-crawler = "html"
 selector = ".arttext"
-action = "pr"
+subsection = "the supplied text"
 prompt = """
-This is the text of § {section} {law}. Return {desired_value} from that text. If the value is a number, use a dot as the decimal mark. Use no currency symbol and no thousands separator. If the requested value is not in the given text, only return "ERROR".
+You will get the text of § {section} {law}. In {subsection}, return {desired_value}.
+
+If the value is a number, return only the numeric value, without units, currency symbols, percent signs or thousands separators. For decimal values, use a dot as the decimal mark. Do not include decimals for whole numbers.
+
+If the requested value is not in the supplied text, only return "ERROR".
 """
 
 # ==============================================================================
@@ -17,64 +19,70 @@ This is the text of § {section} {law}. Return {desired_value} from that text. I
 extends = "buzer"
 law = "AufenthV"
 section = "44"
-constant_to_update = "MAX_PERMANENT_RESIDENCE_FEE"
 desired_value = "the maximum fee for a permanent residence permit (Niederlassungserlaubnis) in euros"
+constant_to_update = "MAX_PERMANENT_RESIDENCE_FEE"
 
 [monitors.aufenthv-45c-residence-permit-replacement-fee]
 extends = "buzer"
 law = "AufenthV"
 section = "45c"
-constant_to_update = "RESIDENCE_PERMIT_REPLACEMENT_FEE"
 desired_value = "the fee for replacing a residence permit (e.g. after a passport change) in euros"
+constant_to_update = "RESIDENCE_PERMIT_REPLACEMENT_FEE"
 
 [monitors.aufenthv-47-fast-track-fee]
 extends = "buzer"
 law = "AufenthV"
 section = "47"
-constant_to_update = "FAST_TRACK_FEE"
 desired_value = "the fee for the fast-track visa procedure (beschleunigtes Fachkräfteverfahren) in euros"
+constant_to_update = "FAST_TRACK_FEE"
 
 [monitors.aufenthv-46-schengen-visa-fee]
 extends = "buzer"
 law = "AufenthV"
 section = "46"
+subsection = "Absatz 2 Satz 1"
+desired_value = "the category D visa fee in euros"
 constant_to_update = "SCHENGEN_VISA_FEE"
-desired_value = "the category D visa fee from Absatz 2.1 in euros"
 
 [monitors.aufenthv-45-national-visa-fee]
 extends = "buzer"
 law = "AufenthV"
 section = "45"
+subsection = "Absatz 1.a"
+desired_value = "the fee for issuing an Aufenthaltserlaubnis in euros"
 constant_to_update = "NATIONAL_VISA_FEE"
-desired_value = "the fee for issuing an Aufenthaltserlaubnis from Absatz 1.a in euros"
 
 [monitors.aufenthv-45-national-visa-renewal-fee]
 extends = "buzer"
 law = "AufenthV"
 section = "45"
+subsection = "Absatz 2.b"
+desired_value = "the fee for renewing or extending an Aufenthaltserlaubnis in euros"
 constant_to_update = "NATIONAL_VISA_RENEWAL_FEE"
-desired_value = "the fee for renewing or extending an Aufenthaltserlaubnis from Absatz 2.b in euros"
 
 [monitors.bafoeg-13-1-2-bedarfssatz]
 extends = "buzer"
 law = "BAfoG"
 section = "13"
+subsection = "Absatz 1.2"
+desired_value = "the monthly Grundbedarf for Höheren Fachschulen, Akademien und Hochschulen in euros per month"
 constant_to_update = "BAFOG_BEDARFSSATZ_13_ABS_1_2"
-desired_value = "the monthly Grundbedarf for Höheren Fachschulen, Akademien und Hochschulen (Absatz 1.2) in euros per month"
 
 [monitors.bafoeg-13-2-2-bedarfssatz]
 extends = "buzer"
 law = "BAfoG"
 section = "13"
+subsection = "Absatz 2.2"
+desired_value = "the Wohnpauschale for students living away from parents in euros per month"
 constant_to_update = "BAFOG_BEDARFSSATZ_13_ABS_2_2"
-desired_value = "the Wohnpauschale for students living away from parents (Absatz 2.2) in euros per month"
 
 [monitors.bafoeg-13a-sperrkonto-surcharge-insurance]
 extends = "buzer"
 law = "BAfoG"
 section = "13a"
+subsection = "Absatz 1 Satz 1"
+desired_value = "the monthly Bedarf (Kranken- und Pflegeversicherung) in euros"
 constant_to_update = "SPERRKONTO_SURCHARGE_INSURANCE"
-desired_value = "the monthly Bedarf from Absatz 1 Satz 1 (Kranken- und Pflegeversicherung) in euros"
 
 [monitors.bafoeg-13a-sperrkonto-surcharge-other]
 extends = "buzer"
@@ -87,212 +95,222 @@ desired_value = "the monthly surcharge for other expenses (sonstige Aufwendungen
 extends = "buzer"
 law = "EStG"
 section = "10c"
-constant_to_update = "SONDERAUSGABEN_PAUSCHBETRAG"
 desired_value = "the Sonderausgaben-Pauschbetrag amount in euros"
+constant_to_update = "SONDERAUSGABEN_PAUSCHBETRAG"
 
 [monitors.estg-20-capital-gains-freibetrag]
 extends = "buzer"
 law = "EStG"
 section = "20"
-constant_to_update = "CAPITAL_GAINS_FREIBETRAG"
 desired_value = "the Sparer-Pauschbetrag (capital gains tax-free allowance) in euros"
+constant_to_update = "CAPITAL_GAINS_FREIBETRAG"
 
 [monitors.estg-24b-entlastungsbetrag-alleinerziehende]
 extends = "buzer"
 law = "EStG"
 section = "24b"
-constant_to_update = "ENTLASTUNGSBETRAG_ALLEINERZIEHENDE"
 desired_value = "the Entlastungsbetrag for single parents (Alleinerziehende) in euros"
+constant_to_update = "ENTLASTUNGSBETRAG_ALLEINERZIEHENDE"
 
 [monitors.estg-24b-entlastungsbetrag-alleinerziehende-extra]
 extends = "buzer"
 law = "EStG"
 section = "24b"
-constant_to_update = "ENTLASTUNGSBETRAG_ALLEINERZIEHENDE_EXTRA_CHILD"
 desired_value = "the additional Entlastungsbetrag per extra child (Erhöhungsbetrag) in euros"
+constant_to_update = "ENTLASTUNGSBETRAG_ALLEINERZIEHENDE_EXTRA_CHILD"
 
 [monitors.estg-32-kinderfreibetrag]
 extends = "buzer"
 law = "EStG"
 section = "32"
-constant_to_update = "KINDERFREIBETRAG"
 desired_value = "the Kinderfreibetrag amount in euros"
+constant_to_update = "KINDERFREIBETRAG"
 
 [monitors.estg-32a-grundfreibetrag]
 extends = "buzer"
 law = "EStG"
 section = "32a"
-constant_to_update = "GRUNDFREIBETRAG"
+subsection = "Absatz 1.1"
 desired_value = "the Grundfreibetrag (basic tax-free allowance) in euros"
+constant_to_update = "GRUNDFREIBETRAG"
 
 [monitors.estg-32a-income-tax-bracket-2-max]
 extends = "buzer"
 law = "EStG"
 section = "32a"
+subsection = "Absatz 1.2"
+desired_value = "the upper bound of the second income tax bracket in euros"
 constant_to_update = "INCOME_TAX_BRACKET_2_MAX_INCOME"
-desired_value = "the upper bound of the second income tax bracket (Progressionszone I) in euros"
 
 [monitors.estg-32a-income-tax-bracket-3-max]
 extends = "buzer"
 law = "EStG"
 section = "32a"
+subsection = "Absatz 1.3"
+desired_value = "the upper bound of the third income tax bracket in euros"
 constant_to_update = "INCOME_TAX_BRACKET_3_MAX_INCOME"
-desired_value = "the upper bound of the third income tax bracket (Progressionszone II) in euros"
 
 [monitors.estg-32a-income-tax-bracket-4-max]
 extends = "buzer"
 law = "EStG"
 section = "32a"
-constant_to_update = "INCOME_TAX_BRACKET_4_MAX_INCOME"
+subsection = "Absatz 1.4"
 desired_value = "the upper bound of the fourth income tax bracket in euros"
+constant_to_update = "INCOME_TAX_BRACKET_4_MAX_INCOME"
 
-[monitors.estg-32b-income-tax-max-rate]
-extends = "buzer"
-law = "EStG"
-section = "32b"
+[monitors.estg-32a-income-tax-max-rate]
+extends = "default"
+url = "https://www.finanztip.de/spitzensteuersatz/"
+selector = ".intro-box .container"
+prompt = """
+In this text, return the maximum income tax rate (Höchststeuersatz) as a percentage.
+Only return the number, unrounded, without a percent sign, without thousands separator, and with a dot as the decimal mark.
+If the requested value is not in the supplied text, only return "ERROR".
+"""
 constant_to_update = "INCOME_TAX_MAX_RATE"
-desired_value = "the maximum income tax rate (Spitzensteuersatz) as a percentage"
+
 
 [monitors.estg-32d-capital-gains-tax-rate]
 extends = "buzer"
 law = "EStG"
 section = "32d"
-constant_to_update = "CAPITAL_GAINS_TAX_RATE"
 desired_value = "the flat tax rate for capital gains as a percentage"
+constant_to_update = "CAPITAL_GAINS_TAX_RATE"
 
 [monitors.estg-39b-class-56-limit-1]
 extends = "buzer"
 law = "EStG"
 section = "39b"
+subsection = "Absatz 2 Satz 7"
+desired_value = "the first and lowest of the 3 income tax thresholds (for Steuerklassen V and VI), in euros"
 constant_to_update = "INCOME_TAX_CLASS_56_LIMIT_1"
-desired_value = "the first upper bound (lowest threshold) for the income tax tariff zones for tax classes 5 and 6, in euros"
 
 [monitors.estg-39b-class-56-limit-2]
 extends = "buzer"
 law = "EStG"
 section = "39b"
+subsection = "Absatz 2 Satz 7"
+desired_value = "the middle of the 3 listed income thresholds, in euros"
 constant_to_update = "INCOME_TAX_CLASS_56_LIMIT_2"
-desired_value = "the second upper bound (middle threshold) for the income tax tariff zones for tax classes 5 and 6, in euros"
 
 [monitors.estg-39b-class-56-limit-3]
 extends = "buzer"
 law = "EStG"
 section = "39b"
+subsection = "Absatz 2 Satz 7"
+desired_value = "the third and highest of the 3 income tax thresholds (for Steuerklassen V and VI), in euros"
 constant_to_update = "INCOME_TAX_CLASS_56_LIMIT_3"
-desired_value = "the third upper bound (highest threshold) for the income tax tariff zones for tax classes 5 and 6, in euros"
 
 [monitors.estg-39b-vorsorgepauschal-min]
 extends = "buzer"
 law = "EStG"
 section = "39b"
-constant_to_update = "VORSORGEPAUSCHAL_MIN"
 desired_value = "the minimum Vorsorgepauschale amount in euros"
+constant_to_update = "VORSORGEPAUSCHAL_MIN"
 
 [monitors.estg-66-kindergeld]
 extends = "buzer"
 law = "EStG"
 section = "66"
-constant_to_update = "KINDERGELD"
 desired_value = "the monthly Kindergeld amount per child in euros"
+constant_to_update = "KINDERGELD"
 
 [monitors.estg-9a-arbeitnehmerpauschale]
 extends = "buzer"
 law = "EStG"
 section = "9a"
-constant_to_update = "ARBEITNEHMERPAUSCHALE"
 desired_value = "the Arbeitnehmer-Pauschbetrag amount in euros"
+constant_to_update = "ARBEITNEHMERPAUSCHALE"
 
 [monitors.estg-9a-werbungskosten-pauschale]
 extends = "buzer"
 law = "EStG"
 section = "9a"
-constant_to_update = "WERBUNGSKOSTEN_PAUSCHALE"
 desired_value = "Arbeitnehmer-Pauschbetrag"
+constant_to_update = "WERBUNGSKOSTEN_PAUSCHALE"
 
 [monitors.gewstg-11-gewerbesteuer-freibetrag]
 extends = "buzer"
 law = "GewStG"
 section = "11"
-constant_to_update = "GEWERBESTEUER_FREIBETRAG"
 desired_value = "the Gewerbesteuer Freibetrag amount in euros"
+constant_to_update = "GEWERBESTEUER_FREIBETRAG"
 
 [monitors.gewstg-11-gewerbesteuer-rate]
 extends = "buzer"
 law = "GewStG"
 section = "11"
-constant_to_update = "GEWERBESTEUER_RATE"
 desired_value = "the Gewerbesteuer Steuermesszahl as a percentage"
+constant_to_update = "GEWERBESTEUER_RATE"
 
 [monitors.hgb-241a-double-entry-min-income]
 extends = "buzer"
 law = "HGB"
 section = "241a"
-constant_to_update = "DOUBLE_ENTRY_MIN_INCOME"
 desired_value = "the profit threshold (Jahresüberschuss) above which double-entry bookkeeping is required, in euros"
+constant_to_update = "DOUBLE_ENTRY_MIN_INCOME"
 
 [monitors.hgb-241a-double-entry-min-revenue]
 extends = "buzer"
 law = "HGB"
 section = "241a"
-constant_to_update = "DOUBLE_ENTRY_MIN_REVENUE"
 desired_value = "the revenue threshold (Umsatzerlöse) above which double-entry bookkeeping is required, in euros"
+constant_to_update = "DOUBLE_ENTRY_MIN_REVENUE"
 
 [monitors.ksvg-3-ksk-min-income]
 url = "https://www.buzer.de/gesetz/1471/a20796.htm"
 extends = "buzer"
 law = "KSVG"
 section = "3"
-constant_to_update = "KSK_MIN_INCOME"
 desired_value = "the minimum annual income threshold for KSK membership (Geringfügigkeitsgrenze) in euros"
+constant_to_update = "KSK_MIN_INCOME"
 
 [monitors.sgb11-55-pflegeversicherung-base-rate]
 extends = "buzer"
 law = "SGB_11"
 section = "55"
-constant_to_update = "PFLEGEVERSICHERUNG_BASE_RATE"
 desired_value = "the Pflegeversicherung base contribution rate (Beitragssatz) as a percentage"
+constant_to_update = "PFLEGEVERSICHERUNG_BASE_RATE"
 
 [monitors.sgb11-55-pflegeversicherung-discount-per-child]
 extends = "buzer"
 law = "SGB_11"
 section = "55"
-constant_to_update = "PFLEGEVERSICHERUNG_DISCOUNT_PER_CHILD"
 desired_value = "the Pflegeversicherung discount per child (Abschlag je Kind) as a percentage"
+constant_to_update = "PFLEGEVERSICHERUNG_DISCOUNT_PER_CHILD"
 
 [monitors.sgb11-55-pflegeversicherung-max-age]
 extends = "buzer"
 law = "SGB_11"
 section = "55"
-constant_to_update = "PFLEGEVERSICHERUNG_BASE_RATE_MAX_AGE"
 desired_value = "the last year of age at which the base Pflegeversicherung rate STOPS appling (the year BEFORE the childless surcharge kicks in)"
+constant_to_update = "PFLEGEVERSICHERUNG_BASE_RATE_MAX_AGE"
 
 [monitors.sgb11-55-pflegeversicherung-surcharge]
 extends = "buzer"
 law = "SGB_11"
 section = "55"
-constant_to_update = "PFLEGEVERSICHERUNGS_SURCHARGE"
 desired_value = "the Pflegeversicherung surcharge for childless members (Kinderlosenzuschlag) as a percentage"
+constant_to_update = "PFLEGEVERSICHERUNGS_SURCHARGE"
 
 [monitors.sgb3-341-arbeitslosenversicherung-rate]
 extends = "buzer"
 law = "SGB_3"
 section = "341"
-constant_to_update = "ARBEITSLOSENVERSICHERUNG_RATE"
 desired_value = "the unemployment insurance contribution rate (Beitragssatz) as a percentage"
+constant_to_update = "ARBEITSLOSENVERSICHERUNG_RATE"
 
 [monitors.sgb4-20-gkv-azubi-freibetrag]
 extends = "buzer"
 law = "SGB_IV"
 section = "20"
-constant_to_update = "GKV_AZUBI_FREIBETRAG"
 desired_value = "the monthly income threshold for Auszubildende (trainees) above which the employer pays social insurance contributions, in euros"
+constant_to_update = "GKV_AZUBI_FREIBETRAG"
 
 [monitors.sgb4-20-gkv-factor-f]
 extends = "default"
 url = "https://www.tk.de/firmenkunden/versicherung/beitraege-faq/zahlen-und-grenzwerte/faktor-f-2033036"
-crawler = "html"
 selector = ".e-table.e-table__table"
-action = "pr"
 constant_to_update = "GKV_FACTOR_F"
 prompt = """
 Read this page. Return the latest Faktor F value. Only return the number as a decimal, without any formatting or currency symbol. Use a dot as the decimal mark. Use no thousands separator. If the value can't be found, only return 'ERROR'.
@@ -302,85 +320,92 @@ Read this page. Return the latest Faktor F value. Only return the number as a de
 extends = "buzer"
 law = "SGB_IV"
 section = "20"
-constant_to_update = "MIDIJOB_MAX_INCOME"
 desired_value = "the upper earnings limit for the Übergangsbereich according to Absatz 2, in euros per month"
+constant_to_update = "MIDIJOB_MAX_INCOME"
 
 [monitors.sgb5-241-gkv-base-rate-employee]
 extends = "buzer"
 law = "SGB_V"
 section = "241"
-constant_to_update = "GKV_BASE_RATE_EMPLOYEE"
 desired_value = "the general GKV contribution rate (allgemeiner Beitragssatz) as a percentage"
+constant_to_update = "GKV_BASE_RATE_EMPLOYEE"
 
 [monitors.sgb5-243-gkv-base-rate-self-pay]
 extends = "buzer"
 law = "SGB_V"
 section = "243"
-constant_to_update = "GKV_BASE_RATE_SELF_PAY"
 desired_value = "the reduced GKV contribution rate (ermäßigter Beitragssatz) as a percentage"
+constant_to_update = "GKV_BASE_RATE_SELF_PAY"
 
 [monitors.solzg-3-soli-milderungszone-min]
 url = "https://www.buzer.de/gesetz/282/a3297.htm"
 extends = "buzer"
 law = "SolzG"
 section = "3"
-constant_to_update = "SOLIDARITY_TAX_MILDERUNGSZONE_MIN_INCOME_TAX"
 desired_value = "the income tax threshold (Freigrenze) below which the solidarity surcharge is not levied, in euros"
+constant_to_update = "SOLIDARITY_TAX_MILDERUNGSZONE_MIN_INCOME_TAX"
 
 [monitors.solzg-4-soli-max-rate]
 url = "https://www.buzer.de/gesetz/282/a3298.htm"
 extends = "buzer"
 law = "SolzG"
 section = "4"
+subsection = "Satz 1"
+desired_value = "the Solidaritätszuschlag, as a decimal (for example '0.055')"
 constant_to_update = "SOLIDARITY_TAX_MAX_RATE"
-desired_value = "the Solidaritätszuschlag in Satz 1, as a decimal (e.g. 0.055)"
 
 [monitors.solzg-4-soli-milderungszone-rate]
 url = "https://www.buzer.de/gesetz/282/a3298.htm"
 extends = "buzer"
 law = "SolzG"
 section = "4"
+desired_value = "the Solidaritätszuschlag in Satz 2, as a decimal (for example '0.119')"
 constant_to_update = "SOLIDARITY_TAX_MILDERUNGSZONE_RATE"
-desired_value = "the Solidaritätszuschlag in Satz 2, as a decimal (e.g. 0.119)"
 
 [monitors.ustg-12-vat-rate]
 extends = "buzer"
 law = "UStG"
 section = "12"
+subsection = "Absatz 1"
+desired_value = "the standard VAT rate (Umsatzsteuer) as a percentage"
 constant_to_update = "VAT_RATE"
-desired_value = "the standard VAT rate (Umsatzsteuer) in Absatz 1 as a percentage"
 
 [monitors.ustg-12-vat-rate-reduced]
 extends = "buzer"
 law = "UStG"
 section = "12"
+subsection = "Absatz 2"
 constant_to_update = "VAT_RATE_REDUCED"
-desired_value = "the reduced VAT rate (ermäßigter Steuersatz) in Absatz 2 as a percentage"
+desired_value = "the reduced VAT rate (ermäßigter Steuersatz) as a percentage"
 
 [monitors.ustg-18-vat-min-monthly-amount]
 extends = "buzer"
 law = "UStG"
 section = "18"
+subsection = "Absatz 2 Satz 2"
 constant_to_update = "VAT_MIN_MONTHLY_AMOUNT"
-desired_value = "the minimum annual VAT amount that triggers monthly filing (Monatliche Abgabe), in euros"
+desired_value = "the minimum amount that requires monthly VAT filing, in euros"
 
 [monitors.ustg-18-vat-min-quarterly-amount]
 extends = "buzer"
 law = "UStG"
 section = "18"
+subsection = "Absatz 2 Satz 3"
 constant_to_update = "VAT_MIN_QUARTERLY_AMOUNT"
-desired_value = "the minimum annual VAT amount that triggers quarterly filing (Vierteljährliche Abgabe), in euros"
+desired_value = "the maximum monthly income according, in euros"
 
 [monitors.ustg-19-kleinunternehmer-max-income]
 extends = "buzer"
 law = "UStG"
 section = "19"
-constant_to_update = "KLEINUNTERNEHMER_MAX_INCOME"
+subsection = "Absatz 1 Satz 1"
 desired_value = "the maximum annual revenue threshold for Kleinunternehmerregelung in the current calendar year, in euros"
+constant_to_update = "KLEINUNTERNEHMER_MAX_INCOME"
 
 [monitors.ustg-19-kleinunternehmer-max-income-first-year]
 extends = "buzer"
 law = "UStG"
 section = "19"
-constant_to_update = "KLEINUNTERNEHMER_MAX_INCOME_FIRST_YEAR"
+subsection = "Absatz 1 Satz 1"
 desired_value = "the maximum annual revenue threshold for Kleinunternehmerregelung in the preceding calendar year, in euros"
+constant_to_update = "KLEINUNTERNEHMER_MAX_INCOME_FIRST_YEAR"

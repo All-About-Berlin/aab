@@ -1,4 +1,6 @@
 [templates.default]
+crawler = "html"
+action = "pr"
 github_repo = "all-About-Berlin/aab"
 file = "frontend/constants.json"
 branch = "ai"
@@ -14,39 +16,39 @@ extends = "default"
 url = "https://www.bmas.de/DE/Arbeit/Arbeitsrecht/Mindestlohn/mindestlohn.html"
 crawler = "playwright"
 selector = ".typ-quote-3 p.text"
-action = "pr"
 constant_to_update = "MINIMUM_WAGE"
 prompt = """
-Read this page. Return the current minimum wage. Only return the number, without any formatting or currency symbol. Use a dot as the decimal mark. Use no thousands separator. If the value can't be found, only return 'ERROR'.
+Read this page. Return the current minimum wage.
+Return only the numeric value, with two decimal places, with a dot as the decimal mark, and without a currency symbol.
+If the value can't be found on this page, only return 'ERROR'.
 """
 
-[monitors.bmas-rentenversicherungsbericht]
-extends = "default"
-url = "https://www.bmas.de/DE/Soziales/Rente-und-Altersvorsorge/rentenversicherungsbericht-art.html"
-crawler = "html"
-action = "pr"
-constant_to_update = "FREELANCE_VISA_MIN_MONTHLY_PENSION"
-prompt = """
-Read this page. Return the current monthly standard pension (Standardrente / Eckrente) amount in euros. Only return the number with decimals, without currency symbol or formatting. If the value can't be found, only return 'ERROR'.
-"""
+# [monitors.bmas-rentenversicherungsbericht]
+# extends = "default"
+# url = "https://www.bmas.de/DE/Soziales/Rente-und-Altersvorsorge/rentenversicherungsbericht-art.html"
+# constant_to_update = "FREELANCE_VISA_MIN_MONTHLY_PENSION"
+# prompt = """
+# Read this page. Return the current monthly standard pension (Standardrente / Eckrente) amount in euros.
+# Return only the numeric value, with two decimal places, with a dot as the decimal mark, and without a currency symbol.
+# If the value can't be found on this page, only return 'ERROR'.
+# """
 
 [monitors.ksk-zahlen]
 extends = "default"
 url = "https://www.kuenstlersozialkasse.de/service-und-medien/ksk-in-zahlen"
-crawler = "html"
-action = "pr"
 constant_to_update = "KSK_MIN_HEALTH_INSURANCE_INCOME"
 prompt = """
-Read this page. Return the Mindestbeitragsberechnungsgrundlage (minimum income for health insurance calculation) in euros per year. Only return the number, without currency symbol or formatting.
+Read this page. Return the Mindestbeitragsberechnungsgrundlage (minimum income for health insurance calculation) in euros per year.
+Return only the numeric value, with two decimal places, with a dot as the decimal mark, and without a currency symbol.
+If the value can't be found on this page, only return 'ERROR'.
 """
 
 [monitors.vonengelhardt-helpnow]
 extends = "default"
 url = "https://www.vonengelhardt.com/en/helpnowen"
-crawler = "html"
-every = "30d"
-action = "pr"
 constant_to_update = "LEGAL_HOTLINE_COST_PER_MINUTE"
 prompt = """
-Read this page. Return the cost per minute for the legal hotline, in euros. Only return the number, without currency symbol or formatting.
+Read this page. Return the cost per minute for the legal hotline, in euros.
+Return only the numeric value, with two decimal places, with a dot as the decimal mark, and without a currency symbol.
+If the value can't be found on this page, only return 'ERROR'.
 """
