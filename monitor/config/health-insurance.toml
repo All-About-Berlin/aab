@@ -5,7 +5,7 @@ selector = "#content table"
 prompt = """
 Read this table. Return the latest Zusatzbeitrag for {insurer} as a percentage (in the leftmost column).
 Return only the percentage, without percent signs or thousands separators. For decimal values, use a dot as the decimal mark.
-If the value can't be found, only return 'ERROR'.
+If the value is not in this table, only return 'ERROR'.
 """
 
 [monitors.zusatzbeitrag-aok]
@@ -61,3 +61,15 @@ Only return the percentage, without percent signs or formatting. Use a dot as th
 If the value can't be found, only return 'ERROR'.
 """
 constant_to_update = "GKV_MIN_ZUSATZBEITRAG"
+
+
+[monitors.pflegeversicherung-base-rate]
+extends = "default"
+url = "https://www.barmer.de/firmenkunden/sozialversicherung/beitraege/pflegeversicherung-beitraege-arbeitgeber"
+selector = "table"
+prompt = """
+Read this table. Return the Zusatzbeitrag for a person with 1 child, as a percentage.
+Return only the percentage, without percent signs or thousands separators. Use a dot as the decimal mark.
+If the value is not in this table, only return 'ERROR'.
+"""
+constant_to_update = "PFLEGEVERSICHERUNG_BASE_RATE"

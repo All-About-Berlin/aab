@@ -4,11 +4,19 @@ url = "https://www.buzer.de/{section}_{law}.htm"
 selector = ".arttext"
 subsection = "the supplied text"
 prompt = """
-You will get the text of § {section} {law}. In {subsection}, return {desired_value}.
+You will get the text of § {section} {law}. Using only {subsection}, return {desired_value}.
 
-If the value is a number, return only the numeric value, without units, currency symbols, percent signs or thousands separators. For decimal values, use a dot as the decimal mark. Do not include decimals for whole numbers.
+Format whole numbers as an integer. Format decimal numbers as floats. Leave out trailing zeroes.
 
-If the requested value is not in the supplied text, only return "ERROR".
+Examples:
+
+- '1 234' -> '1234'
+- '1.234,5' -> '1234.5'
+- '123,00' -> '123'
+- '1 234,56' -> '1234.56'
+
+Ignore all information outside of {subsection}. Only return one value. Do not add or concatenate multiple values.
+If the requested value is not in {subsection}, only return "ERROR".
 """
 
 # ==============================================================================
@@ -81,7 +89,7 @@ extends = "buzer"
 law = "BAfoG"
 section = "13a"
 subsection = "Absatz 1 Satz 1"
-desired_value = "the monthly Bedarf (Kranken- und Pflegeversicherung) in euros"
+desired_value = "the monthly Bedarf für Krankenkenversicherungsbeitrag, in euros"
 constant_to_update = "SPERRKONTO_SURCHARGE_INSURANCE"
 
 [monitors.bafoeg-13a-sperrkonto-surcharge-other]
@@ -190,7 +198,7 @@ extends = "buzer"
 law = "EStG"
 section = "39b"
 subsection = "Absatz 2 Satz 7"
-desired_value = "the middle of the 3 listed income thresholds, in euros"
+desired_value = "the amount associated with the '42 Prozent' tax bracket, in euros"
 constant_to_update = "INCOME_TAX_CLASS_56_LIMIT_2"
 
 [monitors.estg-39b-class-56-limit-3]
@@ -205,7 +213,8 @@ constant_to_update = "INCOME_TAX_CLASS_56_LIMIT_3"
 extends = "buzer"
 law = "EStG"
 section = "39b"
-desired_value = "the minimum Vorsorgepauschale amount in euros"
+subsection = "Absatz 2.3.e"
+desired_value = "the amount the Teilbetrag must not exceed, in euros"
 constant_to_update = "VORSORGEPAUSCHAL_MIN"
 
 [monitors.estg-66-kindergeld]
@@ -226,6 +235,7 @@ constant_to_update = "ARBEITNEHMERPAUSCHALE"
 extends = "buzer"
 law = "EStG"
 section = "9a"
+subsection = "Absatz 1"
 desired_value = "Arbeitnehmer-Pauschbetrag"
 constant_to_update = "WERBUNGSKOSTEN_PAUSCHALE"
 
@@ -265,32 +275,27 @@ section = "3"
 desired_value = "the minimum annual income threshold for KSK membership (Geringfügigkeitsgrenze) in euros"
 constant_to_update = "KSK_MIN_INCOME"
 
-[monitors.sgb11-55-pflegeversicherung-base-rate]
+[monitors.sgb11-55-pflegeversicherung-max-age]
 extends = "buzer"
 law = "SGB_11"
 section = "55"
-desired_value = "the Pflegeversicherung base contribution rate (Beitragssatz) as a percentage"
-constant_to_update = "PFLEGEVERSICHERUNG_BASE_RATE"
+subsection = "Absatz 3 Satz 1"
+desired_value = "the age at which the Beitragssatz increases (one year before the number in Satz 1)"
+constant_to_update = "PFLEGEVERSICHERUNG_BASE_RATE_MAX_AGE"
 
 [monitors.sgb11-55-pflegeversicherung-discount-per-child]
 extends = "buzer"
 law = "SGB_11"
 section = "55"
+subsection = "Absatz 3 Satz 4"
 desired_value = "the Pflegeversicherung discount per child (Abschlag je Kind) as a percentage"
 constant_to_update = "PFLEGEVERSICHERUNG_DISCOUNT_PER_CHILD"
-
-[monitors.sgb11-55-pflegeversicherung-max-age]
-extends = "buzer"
-law = "SGB_11"
-section = "55"
-desired_value = "the last year of age at which the base Pflegeversicherung rate STOPS appling (the year BEFORE the childless surcharge kicks in)"
-constant_to_update = "PFLEGEVERSICHERUNG_BASE_RATE_MAX_AGE"
 
 [monitors.sgb11-55-pflegeversicherung-surcharge]
 extends = "buzer"
 law = "SGB_11"
 section = "55"
-desired_value = "the Pflegeversicherung surcharge for childless members (Kinderlosenzuschlag) as a percentage"
+desired_value = "the Beitragszuschlag für Kinderlose as a percentage"
 constant_to_update = "PFLEGEVERSICHERUNGS_SURCHARGE"
 
 [monitors.sgb3-341-arbeitslosenversicherung-rate]
@@ -342,7 +347,8 @@ url = "https://www.buzer.de/gesetz/282/a3297.htm"
 extends = "buzer"
 law = "SolzG"
 section = "3"
-desired_value = "the income tax threshold (Freigrenze) below which the solidarity surcharge is not levied, in euros"
+subsection = "Absatz 3.2"
+desired_value = "the minimum income tax to collect solidarity tax (in anderen Fällen), in euros"
 constant_to_update = "SOLIDARITY_TAX_MILDERUNGSZONE_MIN_INCOME_TAX"
 
 [monitors.solzg-4-soli-max-rate]
@@ -351,7 +357,7 @@ extends = "buzer"
 law = "SolzG"
 section = "4"
 subsection = "Satz 1"
-desired_value = "the Solidaritätszuschlag, as a decimal (for example '0.055')"
+desired_value = "the Solidaritätszuschlag, as a decimal (for example '2.4 Prozent' -> '0.024')"
 constant_to_update = "SOLIDARITY_TAX_MAX_RATE"
 
 [monitors.solzg-4-soli-milderungszone-rate]
@@ -359,7 +365,8 @@ url = "https://www.buzer.de/gesetz/282/a3298.htm"
 extends = "buzer"
 law = "SolzG"
 section = "4"
-desired_value = "the Solidaritätszuschlag in Satz 2, as a decimal (for example '0.119')"
+subsection = "Satz 2"
+desired_value = "the Solidaritätszuschlag, as a decimal (for example '12.4 Prozent' -> '0.124')"
 constant_to_update = "SOLIDARITY_TAX_MILDERUNGSZONE_RATE"
 
 [monitors.ustg-12-vat-rate]

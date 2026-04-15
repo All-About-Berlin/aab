@@ -39,7 +39,8 @@ url = "https://www.kuenstlersozialkasse.de/service-und-medien/ksk-in-zahlen"
 constant_to_update = "KSK_MIN_HEALTH_INSURANCE_INCOME"
 prompt = """
 Read this page. Return the Mindestbeitragsberechnungsgrundlage (minimum income for health insurance calculation) in euros per year.
-Return only the numeric value, with two decimal places, with a dot as the decimal mark, and without a currency symbol.
+If the value is a whole euro amount, format it as an integer. For example, '1 234' -> '1234' or '123.00' -> '123'.
+If the value is a euro amount with cents, format it as a float with two decimal places. For example: '1 234,56' -> '1234.56'.
 If the value can't be found on this page, only return 'ERROR'.
 """
 
@@ -48,7 +49,8 @@ extends = "default"
 url = "https://www.vonengelhardt.com/en/helpnowen"
 constant_to_update = "LEGAL_HOTLINE_COST_PER_MINUTE"
 prompt = """
-Read this page. Return the cost per minute for the legal hotline, in euros.
-Return only the numeric value, with two decimal places, with a dot as the decimal mark, and without a currency symbol.
+Read this page. Return the cost per minute for the legal hotline.
+If the value is a whole euro amount, format it as an integer. For example, '1 234' -> '1234' or '123.00' -> '123'.
+If the value is a euro amount with cents, format it as a float with two decimal places. For example: '1 234,56' -> '1234.56'.
 If the value can't be found on this page, only return 'ERROR'.
 """
