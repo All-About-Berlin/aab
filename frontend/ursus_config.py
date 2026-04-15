@@ -249,9 +249,6 @@ ctx["AUFENTHV_41_COUNTRIES"] = or_join(
 # Maximum income from employment to stay a member of the KSK (€/y)
 ctx["KSK_MAX_EMPLOYMENT_INCOME"] = ctx["BEITRAGSBEMESSUNGSGRENZE"] / 2  # § 4 KSVG
 
-ctx["LEGAL_INSURANCE_MIN_COST"] = fail_on("2026-12-31", 15)
-ctx["LEGAL_INSURANCE_MAX_COST"] = fail_on("2026-12-31", 35)
-ctx["LAWYER_HOURLY_RATE"] = fail_on("2026-12-31", 200)
 
 # ==============================================================================
 # DATES

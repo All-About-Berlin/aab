@@ -707,5 +707,23 @@
     "description": "Legal hotline cost per minute (€)",
     "source_url": "https://www.vonengelhardt.com/en/helpnowen",
     "fail_on": "2026-12-31"
+  },
+  "LEGAL_INSURANCE_MIN_COST": {
+    "value": "15",
+    "type": "int",
+    "description": "Minimum legal insurance cost (€/mth)",
+    "fail_on": "2026-12-31"
+  },
+  "LEGAL_INSURANCE_MAX_COST": {
+    "value": "35",
+    "type": "int",
+    "description": "Maximum legal insurance cost (€/mth)",
+    "fail_on": "2026-12-31"
+  },
+  "LAWYER_HOURLY_RATE": {
+    "value": "200",
+    "type": "int",
+    "description": "Estimated lawyer hourly rate (€/h)",
+    "fail_on": "2026-12-31"
   }
 }
