@@ -53,10 +53,10 @@ If you are **not** a citizen of {{ BESCHV_26_1_COUNTRIES }}, you must have...[^4
 - [ ] **An employer in Germany**  
     Your employer must have an office in Germany, even it it's a remote job.[^30]
 
-If you are over 45 years old, you must have...[^43]
+If you are over 45 years old, and this is your first residence permit, you must have...[^43]
 
-- [ ] A [net salary](/glossary/Netto%20income) of at least €{{ WORK_VISA_MIN_INCOME|cur }} per year
-- [ ] **or** a pension plan that guarantees an income after retirement {# Give exact amount #}
+- [ ] A [net salary](/glossary/Netto%20income) of at least €{{ WORK_VISA_MIN_INCOME_OVER_45|cur }} per year (if this is your first residence permit)
+- [ ] **or** a pension plan that guarantees an income after retirement {# TODO: Give exact amount #}
 
 **You do not need to speak German** to get a work visa.[^27]
 
@@ -330,7 +330,7 @@ An [immigration lawyer](/guides/english-speaking-lawyers-berlin) or a [relocatio
 [^38]: [§ 26 BeschV](https://www.buzer.de/26_BeschV.htm), [DARE Consulting](https://dareconsulting.de/wp-content/uploads/2020/12/11_Broschuere_FEG-1.pdf#page=27) (page 25)
 [^41]: [make-it-in-germany.com](https://www.make-it-in-germany.com/fileadmin/1_Rebrush_2022/a_Fachkraefte/PDF-Dateien/3_Visum_u_Aufenthalt/Visagrafik_EN/2023_Jan_MiiG_Visum_zum_Arbeiten_Fachkraefte_EN.pdf)
 [^42]: [Auswärtiges Amt](https://www.auswaertiges-amt.de/de/service/fragenkatalog-node/01-arbeitsmoeglichkeiten/606314#:~:text=wenn%20sie%20genauso%20viel%20verdienen%20wie%20vergleichbare%20inlandische)
-[^43]: [Berlin.de](https://service.berlin.de/dienstleistung/305304/en/#:~:text=only%20if%20you%20are%20over%2045%20years%20of%20age), [BAMF](https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Arbeit/Fachkraft/fachkraft-node.html#:~:text=for%20people%20aged%2045%20or%20over)
+[^43]: [Berlin.de](https://service.berlin.de/dienstleistung/305304/en/#:~:text=only%20if%20you%20are%20over%2045%20years%20of%20age), [BAMF](https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Arbeit/Fachkraft/fachkraft-node.html#:~:text=for%20people%20aged%2045%20or%20over), [BAMF](https://www.make-it-in-germany.com/fileadmin/1_Rebrush_2022/a_Fachkraefte/PDF-Dateien/3_Visum_u_Aufenthalt/Visagrafik_DE/Lebensunterhaltssicherung_Uebersicht_DE.pdf) (2026)
 [^45]: Multiple relocation consultants (November 2023)
 [^49]: [§ 26 BeschV](https://www.buzer.de/26_BeschV.htm)
 [^50]: [Berlin.de](https://service.berlin.de/dienstleistung/305304/en/#:~:text=%20equivalence%20of%20the%20qualification%20), [§ 26 BeschV](https://www.buzer.de/26_BeschV.htm)
