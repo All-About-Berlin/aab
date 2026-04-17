@@ -25,6 +25,7 @@ def run(config: dict, debug: bool = False):
     succeeded = 0
     failed = 0
     skipped = 0
+    changed = 0
 
     if debug:
         log.info("Running in debug mode.")
@@ -52,18 +53,23 @@ def run(config: dict, debug: bool = False):
 
         try:
             if crawler_cls.is_feed:
-                crawl_feed(monitor, crawler, debug=debug)
+                has_changes = crawl_feed(monitor, crawler, debug=debug)
             else:
-                crawl_page(monitor, crawler, debug=debug)
+                has_changes = crawl_page(monitor, crawler, debug=debug)
             succeeded += 1
+            if has_changes:
+                changed += 1
         except Exception:
             failed += 1
             log.exception(f"[{monitor.name}] Failed to process")
 
-    log.log(
-        logging.ERROR if failed else logging.INFO,
-        f"Run complete: {succeeded} succeeded, {failed} failed, {skipped} skipped",
-    )
+    if failed:
+        level = logging.ERROR
+    elif changed:
+        level = logging.WARNING
+    else:
+        level = logging.INFO
+    log.log(level, f"Run complete: {succeeded} succeeded, {failed} failed, {skipped} skipped, {changed} changed")
 
 
 def main():
