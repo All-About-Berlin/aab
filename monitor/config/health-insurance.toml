@@ -38,30 +38,30 @@ extends = "default"
 url = "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/"
 selector = "[component-export=InsuranceSummary]"
 prompt = """
-Read this page. Return the average (durchschnittliche) Zusatzbeitrag as a percentage. Only return the number, without the %% sign. Use a dot as the decimal mark. Use no thousands separator. If the value can't be found, only return 'ERROR'.
+Read this page. Return the average (durchschnittliche) Zusatzbeitrag as a percentage.
+Only return the number, without the %% sign. Use a dot as the decimal mark. Use no thousands separator.
+If the value can't be found, only return 'ERROR'.
 """
 constant_to_update = "GKV_AVG_ZUSATZBEITRAG"
 
-[monitors.zusatzbeitrag-max]
-extends = "default"
-url = "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/"
-selector = ".w-full.border-collapse.max-w-4xl"
-prompt = """
-Read this text. Return the highest Zusatzbeitrag (in the rightmost column) among all listed providers, as a percentage. Only return the number, without the %% sign. Use a dot as the decimal mark. Use no thousands separator. If the value can't be found, only return 'ERROR'.
-"""
-constant_to_update = "GKV_MAX_ZUSATZBEITRAG"
-
 [monitors.zusatzbeitrag-min]
-extends = "default"
-url = "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/"
-selector = ".w-full.border-collapse.max-w-4xl"
+extends = "zusatzbeitrag"
+selector = ".a11y-table:first-of-type tr:first-of-type td:nth-child(2)"
 prompt = """
-Read this table. Return the lowest non-zero Zusatzbeitrag (in the leftmost column) among all "bundesweit" providers, as a percentage. Exclude "betriebsbezogen" and "regional" providers.
-Only return the percentage, without percent signs or formatting. Use a dot as the decimal mark, but only if there are decimals. Use no thousands separator.
-If the value can't be found, only return 'ERROR'.
+Read this HTML text.
+Only return the numeric value, without the %% sign. Use a dot as the decimal mark. Use no thousands separator.
+If the value is not a percentage, only return 'ERROR'.
 """
 constant_to_update = "GKV_MIN_ZUSATZBEITRAG"
 
+[monitors.zusatzbeitrag-max]
+extends = "zusatzbeitrag"
+selector = ".a11y-table:first-of-type tr:last-of-type td:nth-child(2)"
+prompt = """
+Read this HTML text. Return the text value as a percentage, without rounding, without percent signs and without thousands separators. Use a dot as the decimal mark.
+If the value is not a percentage, only return 'ERROR'.
+"""
+constant_to_update = "GKV_MAX_ZUSATZBEITRAG"
 
 [monitors.pflegeversicherung-base-rate]
 extends = "default"
@@ -69,7 +69,7 @@ url = "https://www.barmer.de/firmenkunden/sozialversicherung/beitraege/pflegever
 selector = "table"
 prompt = """
 Read this table. Return the total Beitragssatz for a person with 1 child, as a percentage.
-Return only the percentage, without percent signs or thousands separators. Use a dot as the decimal mark.
+Return only the percentage, formatted as a float.
 If the value is not in this table, only return 'ERROR'.
 """
 constant_to_update = "PFLEGEVERSICHERUNG_BASE_RATE"
