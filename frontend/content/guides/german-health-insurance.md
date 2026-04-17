@@ -448,10 +448,6 @@ Choose a broker who works with immigrants. Your needs are different, and your br
 
 Talk to a broker (*Makler*), not an agent (*Vertreter*). Brokers are independent. They recommend health insurance from different companies. Agents only sell insurance from specific companies.
 
-**[Feather](/out/feather)** now sells private health insurance from all providers, just like a broker. They have a lot of experience with immigrants, and they speak English.
-
-**[Ottonova](/out/ottonova)** sells their own insurance. It's [rarely the best option](/guides/ottonova-review).[^83] If you choose Ottonova, get it through our expert. If there is a better option, they will tell you.
-
 [^1]: [verbraucherzentrale.de](https://www.verbraucherzentrale.de/wissen/gesundheit-pflege/krankenversicherung/alle-kassenleistungen-der-zahnmedizin-im-ueberblick-12921#:~:text=die%20gesetzlichen%20krankenkassen%20erstatten%20im%20frontzahnbereich) (March 2025)
 [^2]: [gesundheitsinformation.de](https://www.gesundheitsinformation.de/krankenversicherung-in-deutschland.html), [gkv-spitzenverband.de](https://www.gkv-spitzenverband.de/english/statutory_health_insurance/statutory_health_insurance.jsp), [verwaltung.bund.de](https://verwaltung.bund.de/leistungsverzeichnis/en/rechte-und-pflichten/102837937) (April 2025)
 [^3]: [versicherungspflichtgrenzen.de](https://www.versicherungspflichtgrenzen.de/html/pflichtversicherungsgrenzen.html)
@@ -515,7 +511,6 @@ Talk to a broker (*Makler*), not an agent (*Vertreter*). Brokers are independent
 [^80]: [Emily Archer](https://www.archer-relocation.com/) (April 2025)
 [^81]: [Mona Anbari](https://versicherungsbuero-weiss.com/) (April 2025)
 [^82]: [Seamus Wolf](https://horizon65.com/) (April 2025)
-[^83]: [Seamus Wolf](https://horizon65.com/) (April 2025)
 [^84]: [check24.de](https://www.check24.de/gesetzliche-krankenversicherung/fragen/information-arbeitgeber/) (May 2025), [krankenkassen.de](https://www.krankenkassen.de/gesetzliche-krankenkassen/beschwerde/krankenkassenwechsel/#:~:text=muss%20ich%20meinen%20arbeitgeber%20vom%20krankenkassen-wechsel%20informieren%3F) (May 2025)
 [^85]: ["95 the same"](https://www.krankenkassen.de/gesetzliche-krankenkassen/leistungen-gesetzliche-krankenkassen/gesetzlich-vorgeschriebene-leistungen/#:~:text=Krankenkassen-Leistungen%20sind-,gleich,-Gesetzlich%20vorgeschriebene%20Leistungen) (June 2025), [check24.de](https://www.check24.de/gesetzliche-krankenversicherung/krankenkasse-wechseln/#:~:text=95%20prozent%20der%20leistungen) (May 2025)
 [^86]: [Feather Insurance](https://faq.feather-insurance.com/en/articles/70045-public-health-insurance-signup-for-students?utm_source=allaboutberlin#:~:text=above%2C%20allow%20for%20university%20enrolment%20(your%20chosen%20insurance%20provider%20will%20send%20an%20M10%20Meldung%20to%20your%20uni-,within%203%20working%20days,-%2C%20confirming%20your%20insurance%20status).%20So%20there%20is%20no%20need%20for%20insurance%20number%20at%20this%20point%2C%20and%20your) (May 2025), [Uni Frankfurt](https://www.uni-frankfurt.de/120841082/Krankenversicherung_f%C3%BCr_internationale_Studierende#:~:text=NEU%3A%20Die%20digitale-,versicherungsmeldung,-Keine%20Einschreibung%20ohne) (May 2025)
