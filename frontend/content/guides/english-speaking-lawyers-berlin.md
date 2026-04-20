@@ -59,6 +59,7 @@ Related_places:
     places/fn-legal.md
     places/vs-legal.md
     places/goddeke-aakb.md
+    places/anna-prymak.md
 ---
 
 This is a list of lawyers who speak English in Berlin.
