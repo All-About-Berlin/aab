@@ -100,7 +100,7 @@ Legal insurance is **not essential, but good to have**.[^21] It gives you peace 
 
 It's **useful for immigrants**, because employers and landlords often take advantage of them. It's hard to defend yourself when you don't speak German and you don't understand the system.[^40]
 
-Defending yourself is expensive. Lawyers cost around €{{LAWYER_HOURLY_RATE|cur}} per hour. Simple cases cost hundreds of euros, and court cases cost thousands of euros. If you lose, you must sometimes pay the other side's legal fees too.
+Defending yourself is expensive. Lawyers cost around €{{LAWYER_HOURLY_RATE|cur}} per hour. Simple cases cost hundreds of euros, and court cases cost thousands of euros.[^29] If you lose, you must sometimes pay the other side's legal fees too.
 
 If you have a problem with your landlord or your employer, you must decide between fighting and giving up. You might let them win just because you can't afford to fight. With legal insurance, you don't care. You can always defend yourself, because your insurance pays for it. You just call your lawyer and they take care of it. When people know that, they don't mess with you.
 
@@ -199,6 +199,7 @@ Use [Tarifcheck](/out/tarifcheck-rechtsschutz) to compare legal insurances.
 [^26]: [Check24](https://www.check24.de/rechtsschutzversicherung/verkehrsrechtsschutz/#beispiele-leistungsumfang) (March 2026)
 [^27]: [clark.de](https://www.clark.de/rechtsschutzversicherung/verkehrsrechtsschutz/#Was-beinhaltet-die-Verkehrsrechtsschutzversicherung-nicht?), [luko.eu](https://de.luko.eu/service/tipps/privathaftpflicht-fahrrad/)
 [^28]: [Roland](https://www.roland-rechtsschutz.de/rechtsschutzversicherung-ohne-selbstbeteiligung/#:~:text=variable%20selbstbeteiligung) (March 2026)
+[^29]: "€3,000 to 4,000 for an unfair dismissal case" - [Andreas Martin](https://rechtsanwalt-arbeitsrecht-in-berlin.de/) (April 2026)
 [^30]: [clark.de](https://www.clark.de/rechtsschutzversicherung/ohne-wartezeit/#Kann-ich-eine-Rechtsschutzversicherung-abschlie%C3%9Fen,-die-sofort-in-Kraft-tritt?)
 [^31]: [clark.de](https://www.clark.de/rechtsschutzversicherung/ohne-wartezeit/#:~:text=hier%20eine%20ubersicht%20haufiger%20rechtsschutzfalle%20und%20der%20wartezeitregelung%3A%20) (March 2026)
 [^34]: [check24.de](https://www.check24.de/rechtsschutzversicherung/fragen/welche-selbstbeteiligung-sinnvoll/)
