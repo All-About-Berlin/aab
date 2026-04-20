@@ -86,6 +86,7 @@ Related_places:
     places/maxim-makhanov.md
     places/talia-purnell.md
     places/agnieszka-kieres.md
+    places/peter-bennett.md
 Related_reviews:
     reviews/english-speaking-psychotherapists-berlin/agata-slezak.md
 ---
