@@ -33,6 +33,7 @@ services:
     build: ./proxy
     environment:
       - "OPENEXCHANGERATES_API_KEY"
+      - "SERVICES_SSL_DOMAIN=services.localhost"
     ports:
       - "80:80"
       - "443:443"

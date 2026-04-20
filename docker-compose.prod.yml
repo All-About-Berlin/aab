@@ -42,6 +42,7 @@ services:
     environment:
       - "SSL_DOMAIN=allaboutberlin.com"
       - "SSL_EMAIL=contact@allaboutberlin.com"
+      - "SERVICES_SSL_DOMAIN=agoodstart.de"
     volumes:
       - "static_site:/var/www/html"
     restart: unless-stopped
