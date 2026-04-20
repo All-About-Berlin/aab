@@ -327,7 +327,7 @@ These documents are not required, but some *Ausländerbehörde* employees ask fo
 
 Tell me how long it took to get your freelance visa. Your feedback helps thousands of people plan their application.
 
-{% tool "residence-permit-feedback-form", type='FREELANCE_VISA' %}
+{% tool "residence-permit-feedback-form", type='FREELANCE_VISA', static=True %}
 
 **[Read other people's feedback ➞](/guides/immigration-office/wait-times)**
 

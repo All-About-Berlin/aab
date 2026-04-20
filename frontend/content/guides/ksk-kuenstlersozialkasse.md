@@ -53,7 +53,7 @@ When you are a KSK member, **they pay half of your [health insurance](/glossary/
 
 Usually, you pay less than before, *and* you get more benefits. Calculate the difference yourself:
 
-{% tool "ksk-cost-difference-calculator" %}
+{% tool "ksk-cost-difference-calculator", static=True %}
 
 When you are in the KSK, they pay half of your health insurance, but you are forced to pay [public pension insurance](/glossary/gesetzliche%20Krankenversicherung). In other words, **you save money on health insurance, and reinvest it in your pension**. This is a *really* good deal.
 
@@ -214,7 +214,7 @@ The KSK is not a health insurer. You must [choose health insurance](/guides/germ
 
 [Ask my insurance expert](/guides/german-health-insurance#need-help) to help you choose the correct health insurance. Tell him that you plan to join the KSK.
 
-{% tool "health-insurance-calculator", mode="question" %}
+{% tool "health-insurance-calculator", mode="question", static=True %}
 
 **While you wait for the KSK's decision**, you also need health insurance. During that time, it's better to have public health insurance to avoid [KSK backpayments](/guides/ksk-kuenstlersozialkasse#backpayments).
 
