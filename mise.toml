@@ -1,4 +1,5 @@
 [env]
+_.file = ".env"
 COMPOSE_PROJECT_NAME = "allaboutberlin"
 BUILDKIT_PROGRESS = "plain"
 
