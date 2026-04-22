@@ -2895,6 +2895,8 @@ details{
         font-size: var(--f-s);
         margin: 0;
         padding:var(--m) 0;
+        line-height: var(--line-height-label);
+        gap: var(--xs);
 
         &:before{position: static;}
 
@@ -2920,8 +2922,9 @@ details{
             }
         }
         p, .recommended{
-            margin: var(--s) 0 0;
+            margin: 0;
             justify-self: flex-start;
+            font-size: var(--f-s);
         }
 
         &:last-child{
