@@ -445,7 +445,6 @@ ctx["PUBLIC_HOLIDAYS_BY_DATE_JSON"] = json.dumps(
 ctx["SITE_URL"] = os.environ.get("URSUS_SITE_URL", "")  # No trailing slash!
 ctx["random_id"] = random_id
 ctx["fail_on"] = fail_on
-ctx["GOOGLE_MAPS_JAVASCRIPT_API_KEY"] = os.environ.get("GOOGLE_MAPS_JAVASCRIPT_API_KEY")  # Frontend use, to show a map
 ctx["glossary_groups"] = glossary_groups
 
 ctx["RECOMMENDED"] = Markup(
