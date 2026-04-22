@@ -7,7 +7,8 @@
       "address": "Holzhauser Str. 148/152",
       "latitude": "52.584926",
       "longitude": "13.312785",
-      "google_place_id": "ChIJBZe5IIhTqEcRHv33gtTgg4I"
+      "google_place_id": "ChIJBZe5IIhTqEcRHv33gtTgg4I",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Louis Mega Shop Schöneweide",
@@ -15,16 +16,18 @@
       "address": "Schnellerstraße 20g",
       "latitude": "52.458101",
       "longitude": "13.505772",
-      "google_place_id": "ChIJIR_U07NIqEcRwOar1JG7MBA"
+      "google_place_id": "ChIJIR_U07NIqEcRwOar1JG7MBA",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "POLO Motorrad Reinickendorf",
       "description": "A fairly large store with a vast selection of products",
       "website": "https://www.polo-motorrad.com/de-de/stores/polo-motorrad-store-berlin-reinickendorf/",
       "address": "Holzhauser Str. 62-68",
-      "latitude": "52.581007",
-      "longitude": "13.304293",
-      "google_place_id": "ChIJHdB3-nNUqEcR4ttBz3wcw64"
+      "latitude": "52.580883",
+      "longitude": "13.303636",
+      "google_place_id": "ChIJHdB3-nNUqEcR4ttBz3wcw64",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Louis Mega Shop Lichtenberg",
@@ -32,7 +35,8 @@
       "address": "Siegfriedstraße 65",
       "latitude": "52.527165",
       "longitude": "13.500267",
-      "google_place_id": "ChIJT1FXA59OqEcRLePreILaixc"
+      "google_place_id": "ChIJT1FXA59OqEcRLePreILaixc",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "POLO Motorrad Mahlsdorf",
@@ -40,7 +44,8 @@
       "address": "Alt-Mahlsdorf 26",
       "latitude": "52.5052",
       "longitude": "13.612323",
-      "google_place_id": "ChIJwZ6NqzVKqEcRRb3NQqfuNyI"
+      "google_place_id": "ChIJwZ6NqzVKqEcRRb3NQqfuNyI",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "POLO Motorrad Wilmersdorf",
@@ -48,7 +53,8 @@
       "address": "Großbeerenstraße 2",
       "latitude": "52.439577",
       "longitude": "13.380533",
-      "google_place_id": "ChIJqeA-9UhFqEcR5_CC8G5AoRw"
+      "google_place_id": "ChIJqeA-9UhFqEcR5_CC8G5AoRw",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dainese store Berlin",
@@ -57,7 +63,8 @@
       "address": "Hohenzollerndamm 12",
       "latitude": "52.494688",
       "longitude": "13.325519",
-      "google_place_id": "ChIJZ9Gx2_ZQqEcR2QJmVJEu79U"
+      "google_place_id": "ChIJZ9Gx2_ZQqEcR2QJmVJEu79U",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Bandit Helmets",
@@ -66,7 +73,8 @@
       "address": "Darwinstraße 2",
       "latitude": "52.520974",
       "longitude": "13.314829",
-      "google_place_id": "ChIJD1xeexhRqEcRXfy1xEgVa8A"
+      "google_place_id": "ChIJD1xeexhRqEcRXfy1xEgVa8A",
+      "lastVerified": "2026-04-22"
     }
   ]
 }

@@ -7,7 +7,8 @@
       "address": "Oranienburger Str. 98",
       "latitude": "52.597486",
       "longitude": "13.332776",
-      "google_place_id": "ChIJdWE4U3hTqEcR_yPkvGZvFsU"
+      "google_place_id": "ChIJdWE4U3hTqEcR_yPkvGZvFsU",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Fahrschule Oscar",
@@ -16,7 +17,8 @@
       "address": "Hauptstraße 92",
       "latitude": "52.476396",
       "longitude": "13.341839",
-      "google_place_id": "ChIJuSTm5G9QqEcR_OQvwfdHMRQ"
+      "google_place_id": "ChIJuSTm5G9QqEcR_OQvwfdHMRQ",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Fahrschule Asphalt Profis",
@@ -25,17 +27,19 @@
       "address": "Am Friedrichshain 23",
       "latitude": "52.528759",
       "longitude": "13.428365",
-      "google_place_id": "ChIJp4LuPBBOqEcR7JyEDH88H6s"
+      "google_place_id": "ChIJp4LuPBBOqEcR7JyEDH88H6s",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Fahrschule IBF",
       "description": "Theory classes and driving lessons in English and Turkish.",
       "website": "http://www.fahrschule-ibf.de/",
       "email": "jonas.hammann17@gmail.com",
-      "address": "Borussiastraße 19",
+      "address": "Fahrschule IBF, Borussiastraße 19",
       "latitude": "52.467024",
       "longitude": "13.384794",
-      "google_place_id": "ChIJiy992fxPqEcR51Ux3BYhdgE"
+      "google_place_id": "ChIJiy992fxPqEcR51Ux3BYhdgE",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Fahrschule Aktiv",
@@ -44,7 +48,8 @@
       "address": "Reinickendorfer Str. 54",
       "latitude": "52.551589",
       "longitude": "13.367659",
-      "google_place_id": "ChIJNe4EXylSqEcRKV_1eAp4nlc"
+      "google_place_id": "ChIJNe4EXylSqEcRKV_1eAp4nlc",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "2Drive Fahrschule",
@@ -53,7 +58,8 @@
       "address": "Neue Bahnhofstraße 5",
       "latitude": "52.505406",
       "longitude": "13.469757",
-      "google_place_id": "ChIJ5yv_re9PqEcRH1VmlRqySPc"
+      "google_place_id": "ChIJ5yv_re9PqEcRH1VmlRqySPc",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Fahrschule Sevim",
@@ -62,7 +68,8 @@
       "address": "Schwedenstraße 18",
       "latitude": "52.554539",
       "longitude": "13.375945",
-      "google_place_id": "ChIJZ-2Egi9SqEcRD23O5VhKYV8"
+      "google_place_id": "ChIJZ-2Egi9SqEcRD23O5VhKYV8",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Kiez-Fahrschule Frenzel",
@@ -71,7 +78,8 @@
       "address": "Esmarchstraße 4",
       "latitude": "52.5317",
       "longitude": "13.43133",
-      "google_place_id": "ChIJcZQfqw9OqEcRIgNBwfBG6X4"
+      "google_place_id": "ChIJcZQfqw9OqEcRIgNBwfBG6X4",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Fahrschule Südstern",
@@ -79,15 +87,17 @@
       "address": "Hasenheide 58",
       "latitude": "52.489267",
       "longitude": "13.408768",
-      "google_place_id": "ChIJdQablM9PqEcR73gU3YlwGYo"
+      "google_place_id": "ChIJdQablM9PqEcR73gU3YlwGYo",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Fahrschule Dynamic",
       "website": "https://www.fahrschuledynamic.de/",
       "address": "Karl-Marx-Straße 43",
-      "latitude": "52.483789",
-      "longitude": "13.430476",
-      "google_place_id": "ChIJ_-pg5blPqEcRKETOQf9dAKY"
+      "latitude": "52.483818",
+      "longitude": "13.430455",
+      "google_place_id": "ChIJ_-pg5blPqEcRKETOQf9dAKY",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Fahrschule Next in Berlin",
@@ -95,7 +105,8 @@
       "address": "Perleberger Str. 65",
       "latitude": "52.535647",
       "longitude": "13.357166",
-      "google_place_id": "ChIJK5dC8JxRqEcRLvhe50X_dpY"
+      "google_place_id": "ChIJK5dC8JxRqEcRLvhe50X_dpY",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Fahrschule Driving School Berlin",
@@ -104,7 +115,8 @@
       "address": "Mierendorffpl. 10",
       "latitude": "52.525348",
       "longitude": "13.304827",
-      "google_place_id": "ChIJZQ4LrjtRqEcRbYCtZGQ6p9A"
+      "google_place_id": "ChIJZQ4LrjtRqEcRbYCtZGQ6p9A",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Fahrschule EXAKT Berlin Neukölln",
@@ -113,7 +125,8 @@
       "address": "Karl-Marx-Straße 221",
       "latitude": "52.470332",
       "longitude": "13.441748",
-      "google_place_id": "ChIJi-MbE6RPqEcRYrCbYn_6Kks"
+      "google_place_id": "ChIJi-MbE6RPqEcRYrCbYn_6Kks",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Fahrschule Prima",
@@ -123,7 +136,8 @@
       "address": "Dudenstraße 8",
       "latitude": "52.485175",
       "longitude": "13.384574",
-      "google_place_id": "ChIJq47PJSFQqEcRtqcVwtnRGw4"
+      "google_place_id": "ChIJq47PJSFQqEcRtqcVwtnRGw4",
+      "lastVerified": "2026-04-22"
     }
   ]
 }

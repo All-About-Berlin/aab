@@ -6,7 +6,8 @@
       "address": "Pannierstraße 58",
       "latitude": "52.48686",
       "longitude": "13.43054",
-      "google_place_id": "ChIJgaMEvrBPqEcRbKHNprYEXsg"
+      "google_place_id": "ChIJgaMEvrBPqEcRbKHNprYEXsg",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Jack's Barber Shop",
@@ -14,7 +15,8 @@
       "address": "Sonnenallee 25",
       "latitude": "52.48669",
       "longitude": "13.42928",
-      "google_place_id": "ChIJUavMsbBPqEcRGwYeKbghHog"
+      "google_place_id": "ChIJUavMsbBPqEcRGwYeKbghHog",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Streetcut",
@@ -23,7 +25,8 @@
       "address": "Gneisenaustraße 54",
       "latitude": "52.48912",
       "longitude": "13.40473",
-      "google_place_id": "ChIJrYP5VtZPqEcRJEwYIJqbODw"
+      "google_place_id": "ChIJrYP5VtZPqEcRJEwYIJqbODw",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Haartari",
@@ -31,7 +34,8 @@
       "address": "Bänschstraße 52",
       "latitude": "52.518039",
       "longitude": "13.465271",
-      "google_place_id": "ChIJ15O-uGFOqEcRXCj3zMtR4iY"
+      "google_place_id": "ChIJ15O-uGFOqEcRXCj3zMtR4iY",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "ROWDY Barber Shop",
@@ -40,7 +44,8 @@
       "address": "Kollwitzstraße 71",
       "latitude": "52.537167",
       "longitude": "13.418598",
-      "google_place_id": "ChIJ63S2ngFOqEcRHW14FpYouL8"
+      "google_place_id": "ChIJ63S2ngFOqEcRHW14FpYouL8",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "ROWDY Barbers",
@@ -49,7 +54,8 @@
       "address": "Meinekestraße 6",
       "latitude": "52.501529",
       "longitude": "13.328743",
-      "google_place_id": "ChIJ7-jmXflQqEcRAfMJdpdbjto"
+      "google_place_id": "ChIJ7-jmXflQqEcRAfMJdpdbjto",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "MAOC (Modern Art of Cutting) Hair",
@@ -57,7 +63,8 @@
       "address": "Hessische Str. 5",
       "latitude": "52.529203",
       "longitude": "13.380092",
-      "google_place_id": "ChIJfQgSVOtRqEcR4XRVAAP3Xfo"
+      "google_place_id": "ChIJfQgSVOtRqEcR4XRVAAP3Xfo",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Nomad Barber - Berlin",
@@ -66,7 +73,8 @@
       "address": "Schönleinstraße 4",
       "latitude": "52.492614",
       "longitude": "13.421154",
-      "google_place_id": "ChIJ_-n5JcpPqEcRCqF4hbAxUJk"
+      "google_place_id": "ChIJ_-n5JcpPqEcRCqF4hbAxUJk",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "GOD SAVE the MULLET GSTM.BERLIN",
@@ -74,23 +82,26 @@
       "address": "Skalitzer Str. 83",
       "latitude": "52.500645",
       "longitude": "13.438633",
-      "google_place_id": "ChIJKeW1L0xOqEcRoZhjU6zLqZY"
+      "google_place_id": "ChIJKeW1L0xOqEcRoZhjU6zLqZY",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Viktor Leske Kreuzberg",
       "website": "https://www.viktorleske.net/",
       "address": "Lausitzer Pl. 1",
-      "latitude": "52.500594",
-      "longitude": "13.429558",
-      "google_place_id": "ChIJqwbxakpOqEcRKSYTra4xGTo"
+      "latitude": "52.500727",
+      "longitude": "13.429511",
+      "google_place_id": "ChIJqwbxakpOqEcRKSYTra4xGTo",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Haarspree Frisöre",
       "website": "http://www.haarspree.de/",
       "address": "Wrangelstraße 65",
-      "latitude": "52.497078",
-      "longitude": "13.444828",
-      "google_place_id": "ChIJ6SRq9k1OqEcRZd-8XLrbsMY"
+      "latitude": "52.497204",
+      "longitude": "13.445046",
+      "google_place_id": "ChIJ6SRq9k1OqEcRZd-8XLrbsMY",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "NeoBerlin",
@@ -98,7 +109,8 @@
       "address": "Schönhauser Allee 42",
       "latitude": "52.539955",
       "longitude": "13.412548",
-      "google_place_id": "ChIJW5h0qf9RqEcRppPqWT_3e0o"
+      "google_place_id": "ChIJW5h0qf9RqEcRppPqWT_3e0o",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Viktor Leske Mitte",
@@ -106,7 +118,8 @@
       "address": "Joachimstraße 8",
       "latitude": "52.527552",
       "longitude": "13.400949",
-      "google_place_id": "ChIJubD8G-RRqEcRQ8tHxbIkROg"
+      "google_place_id": "ChIJubD8G-RRqEcRQ8tHxbIkROg",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "The Pauls Sisters GmbH",
@@ -115,7 +128,8 @@
       "address": "Chamissopl. 6",
       "latitude": "52.488076",
       "longitude": "13.391718",
-      "google_place_id": "ChIJsZIgZNhPqEcR0CyirGxmrlk"
+      "google_place_id": "ChIJsZIgZNhPqEcR0CyirGxmrlk",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "The Banana'd Bouffant",
@@ -124,7 +138,8 @@
       "address": "Möckernstraße 96",
       "latitude": "52.493677",
       "longitude": "13.379971",
-      "google_place_id": "ChIJT8Z9ty9QqEcRbQR43aIgpIk"
+      "google_place_id": "ChIJT8Z9ty9QqEcRbQR43aIgpIk",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Friseur Viktor Leske Mitte",
@@ -132,7 +147,8 @@
       "address": "Joachimstraße 8",
       "latitude": "52.527552",
       "longitude": "13.400949",
-      "google_place_id": "ChIJubD8G-RRqEcRQ8tHxbIkROg"
+      "google_place_id": "ChIJubD8G-RRqEcRQ8tHxbIkROg",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Nomad Barber",
@@ -140,15 +156,17 @@
       "address": "Schönleinstraße 4",
       "latitude": "52.492614",
       "longitude": "13.421154",
-      "google_place_id": "ChIJ_-n5JcpPqEcRCqF4hbAxUJk"
+      "google_place_id": "ChIJ_-n5JcpPqEcRCqF4hbAxUJk",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Friseur Viktor Leske",
       "website": "https://www.viktorleske.net/",
       "address": "Lausitzer Pl. 1",
-      "latitude": "52.500594",
-      "longitude": "13.429558",
-      "google_place_id": "ChIJqwbxakpOqEcRKSYTra4xGTo"
+      "latitude": "52.500727",
+      "longitude": "13.429511",
+      "google_place_id": "ChIJqwbxakpOqEcRKSYTra4xGTo",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Wild Hair",
@@ -157,7 +175,8 @@
       "address": "Prenzlauer Allee 195A",
       "latitude": "52.539587",
       "longitude": "13.423992",
-      "google_place_id": "ChIJn3s1SgdOqEcR30AlIauYIhM"
+      "google_place_id": "ChIJn3s1SgdOqEcR30AlIauYIhM",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Friseur Bernd Kramer Hairdesign",
@@ -174,7 +193,8 @@
       "address": "Belziger Str. 30",
       "latitude": "52.487086",
       "longitude": "13.352857",
-      "google_place_id": "ChIJs2NlZAZRqEcRkHI3InkIbCw"
+      "google_place_id": "ChIJs2NlZAZRqEcRkHI3InkIbCw",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Shan Rahimkhan",
@@ -182,17 +202,8 @@
       "address": "Tauentzienstraße 21-24",
       "latitude": "52.502023",
       "longitude": "13.341317",
-      "google_place_id": "ChIJB2MJJeVQqEcR_hfMBpg115g"
-    },
-    {
-      "name": "Beardy Boys Barbershop",
-      "description": "German, English, Hungarian and Portuguese-speaking barbers.",
-      "website": "https://www.beardy-boys.de/",
-      "email": "nagysimonmihaly@gmail.com",
-      "address": "Oderberger Str. 43",
-      "latitude": "52.539376",
-      "longitude": "13.407066",
-      "google_place_id": "ChIJUbloOvlRqEcRA6hKKSnrrw0"
+      "google_place_id": "ChIJB2MJJeVQqEcR_hfMBpg115g",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Urban Barber",
@@ -201,7 +212,8 @@
       "address": "Schöneberger Str. 11",
       "latitude": "52.4642",
       "longitude": "13.330912",
-      "google_place_id": "ChIJLwGio4JaqEcRN6_2JZqukYw"
+      "google_place_id": "ChIJLwGio4JaqEcRN6_2JZqukYw",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Co Barbers",
@@ -211,7 +223,8 @@
       "address": "Rosenthaler Str. 72A",
       "latitude": "52.529516",
       "longitude": "13.40191",
-      "google_place_id": "ChIJxbJzYZJRqEcRUVPg19ir-tk"
+      "google_place_id": "ChIJxbJzYZJRqEcRUVPg19ir-tk",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Amywho",
@@ -221,7 +234,8 @@
       "address": "Schleiermacherstraße 25",
       "latitude": "52.489173",
       "longitude": "13.397675",
-      "google_place_id": "ChIJWczGW8VPqEcR8zMYY7Zoqe8"
+      "google_place_id": "ChIJWczGW8VPqEcR8zMYY7Zoqe8",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "ESHK Friseur Moabit",
@@ -230,7 +244,8 @@
       "address": "Stromstraße 44",
       "latitude": "52.529987",
       "longitude": "13.342973",
-      "google_place_id": "ChIJwY0Z9qpRqEcRSNnCSzQWsyk"
+      "google_place_id": "ChIJwY0Z9qpRqEcRSNnCSzQWsyk",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "ESHK Friseur Neukölln",
@@ -239,7 +254,8 @@
       "address": "Thomasstraße 11",
       "latitude": "52.473544",
       "longitude": "13.439184",
-      "google_place_id": "ChIJ-XbhXJ9PqEcRQ0nwxtRlixQ"
+      "google_place_id": "ChIJ-XbhXJ9PqEcRQ0nwxtRlixQ",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "wallacewallace",
@@ -248,26 +264,29 @@
       "address": "Brunnenstraße 159",
       "latitude": "52.535128",
       "longitude": "13.397704",
-      "google_place_id": "ChIJT7xPfZVRqEcRLen82no-gJs"
+      "google_place_id": "ChIJT7xPfZVRqEcRLen82no-gJs",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "MaxBarber",
       "description": "Employees speak English, German, Lithuanian and Russian",
       "website": "https://maxbarber.berlin",
       "email": "chopshop.berlin@gmail.com",
-      "address": "Kurfürstendamm 210",
+      "address": "Parlour&Places, Kurfürstendamm 210/1 Floor",
       "latitude": "52.502033",
       "longitude": "13.324312",
-      "google_place_id": "ChIJB9KL-cVRqEcRdBAcUXyA5V8"
+      "google_place_id": "ChIJB9KL-cVRqEcRdBAcUXyA5V8",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Salone39",
       "description": "They speak English and Italian",
       "website": "https://www.salone39.com",
-      "address": "Silvio-Meier-Straße 2",
+      "address": "Silvio-Meier-Str. 2",
       "latitude": "52.515407",
       "longitude": "13.463405",
-      "google_place_id": "ChIJXSSIhdlPqEcRtyS6SWedMF0"
+      "google_place_id": "ChIJXSSIhdlPqEcRtyS6SWedMF0",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Badfish Barbershop",
@@ -276,7 +295,8 @@
       "address": "Krossener Str. 18",
       "latitude": "52.510547",
       "longitude": "13.457827",
-      "google_place_id": "ChIJQRgjmB9PqEcRG8WLLjGbEt4"
+      "google_place_id": "ChIJQRgjmB9PqEcRG8WLLjGbEt4",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Fade Club Cutbusser",
@@ -284,15 +304,17 @@
       "address": "Warschauer Str. 60",
       "latitude": "52.509673",
       "longitude": "13.451704",
-      "google_place_id": "ChIJ9wxTME9PqEcRWQSf8owWZV8"
+      "google_place_id": "ChIJ9wxTME9PqEcRWQSf8owWZV8",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Rechtsanwältin Zeynep Cetin",
       "website": "http://www.rechtsanwaeltin-cetin.de/",
-      "address": "Turmstraße 35 A",
+      "address": "Turmstr. 35 A",
       "latitude": "52.526744",
       "longitude": "13.337364",
-      "google_place_id": "ChIJqw_YkTVTqEcR8a-YMM9hDNA"
+      "google_place_id": "ChIJqw_YkTVTqEcR8a-YMM9hDNA",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Mado barber shop",
@@ -301,7 +323,8 @@
       "address": "Schönhauser Allee 49",
       "latitude": "52.542359",
       "longitude": "13.412723",
-      "google_place_id": "ChIJlQGhf2NNqEcRVm7RjvUXxZA"
+      "google_place_id": "ChIJlQGhf2NNqEcRVm7RjvUXxZA",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Berlin Barbers Charlottenburg",
@@ -309,7 +332,8 @@
       "address": "Zillestraße 79",
       "latitude": "52.513335",
       "longitude": "13.304512",
-      "google_place_id": "ChIJ2-Z75yBRqEcRNiQSvzQhgSY"
+      "google_place_id": "ChIJ2-Z75yBRqEcRNiQSvzQhgSY",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "The Blade Barbershop",
@@ -318,7 +342,8 @@
       "address": "Am Hamburger bhf 2a",
       "latitude": "52.531225",
       "longitude": "13.369909",
-      "google_place_id": "ChIJq48f79ZRqEcRhIIApXA7QFE"
+      "google_place_id": "ChIJq48f79ZRqEcRhIIApXA7QFE",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Barber Shop by Meti",
@@ -327,7 +352,8 @@
       "address": "Sprengelstraße 44",
       "latitude": "52.542307",
       "longitude": "13.358133",
-      "google_place_id": "ChIJXfI_D9VRqEcRJwPow1xV65Y"
+      "google_place_id": "ChIJXfI_D9VRqEcRJwPow1xV65Y",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Renasanz Salon",
@@ -337,7 +363,8 @@
       "address": "Grünberger Str. 24",
       "latitude": "52.512618",
       "longitude": "13.450756",
-      "google_place_id": "ChIJN7dacftPqEcRPj9LDR1yrJw"
+      "google_place_id": "ChIJN7dacftPqEcRPj9LDR1yrJw",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Alchimie",
@@ -346,7 +373,8 @@
       "address": "Niederbarnimstraße 5",
       "latitude": "52.51432",
       "longitude": "13.45904",
-      "google_place_id": "ChIJfTthsPhPqEcRE8s4AQpznSQ"
+      "google_place_id": "ChIJfTthsPhPqEcRE8s4AQpznSQ",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Amber",
@@ -354,7 +382,8 @@
       "address": "32 Rue Greneta, 75002 Paris, France",
       "latitude": "48.865327",
       "longitude": "2.349591",
-      "google_place_id": "ChIJebN16Rlu5kcRFwINZ8mm2uk"
+      "google_place_id": "ChIJebN16Rlu5kcRFwINZ8mm2uk",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "St Leonard",
@@ -363,16 +392,18 @@
       "address": "Brunnenstraße 158",
       "latitude": "52.535237",
       "longitude": "13.397534",
-      "google_place_id": "ChIJTdxQpTZRqEcRCqDpusto-rQ"
+      "google_place_id": "ChIJTdxQpTZRqEcRCqDpusto-rQ",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "UPPAMAN - Der Herrensalon",
       "website": "https://uppaman.com/",
       "email": "info@uppaman.com",
       "address": "Knesebeckstraße 77",
-      "latitude": "52.504151",
-      "longitude": "13.322429",
-      "google_place_id": "ChIJLaDLwc9RqEcRTNXDCWcHZb0"
+      "latitude": "52.5041",
+      "longitude": "13.322439",
+      "google_place_id": "ChIJLaDLwc9RqEcRTNXDCWcHZb0",
+      "lastVerified": "2026-04-22"
     }
   ]
 }

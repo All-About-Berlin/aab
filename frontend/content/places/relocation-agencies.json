@@ -8,17 +8,19 @@
       "latitude": "52.555939",
       "longitude": "13.413001",
       "google_place_id": "ChIJSZ-A9whSqEcRt_U8PUJ2yes",
-      "recommended": "Yes"
+      "recommended": "Yes",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "sorted.berlin",
       "description": "Elliot Herman has a lot of experience with German immigration.",
       "website": "http://www.sorted.berlin/",
-      "address": "Grünberger Str. 13",
-      "latitude": "52.513098",
-      "longitude": "13.450268",
+      "address": "Jungstraße 32",
+      "latitude": "52.512485",
+      "longitude": "13.466997",
       "google_place_id": "ChIJcaz22xxPqEcRNx0IeCMtUW0",
-      "recommended": "Yes"
+      "recommended": "Yes",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Archer Relocation",
@@ -27,7 +29,8 @@
       "address": "Akazienstraße 3A",
       "latitude": "52.486764",
       "longitude": "13.355594",
-      "google_place_id": "ChIJnSdXt05QqEcRxtPkLAvIFhU"
+      "google_place_id": "ChIJnSdXt05QqEcRxtPkLAvIFhU",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Gibbesch Consulting GmbH",
@@ -36,7 +39,8 @@
       "address": "Brahestraße 1",
       "latitude": "52.526926",
       "longitude": "13.303929",
-      "google_place_id": "ChIJATwypJVRqEcRp66GNm6hn9E"
+      "google_place_id": "ChIJATwypJVRqEcRp66GNm6hn9E",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "IRC Relocation",
@@ -46,25 +50,28 @@
       "address": "Nestorstraße 2",
       "latitude": "52.499822",
       "longitude": "13.300086",
-      "google_place_id": "ChIJ_baj2MJQqEcR8rFiZB7WJ4E"
+      "google_place_id": "ChIJ_baj2MJQqEcR8rFiZB7WJ4E",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "relokate",
       "description": "Relocation services for businesses who recruit globally.",
       "website": "https://www.relokatehr.com/",
       "email": "germany@relokate.de",
-      "address": "Brunnenstraße 27",
-      "latitude": "52.534209",
-      "longitude": "13.398713",
-      "google_place_id": "ChIJ-xjUx89RqEcRQ--n7IgH68c"
+      "address": "Urbanstraße 71",
+      "latitude": "52.488105",
+      "longitude": "13.423089",
+      "google_place_id": "ChIJ-xjUx89RqEcRQ--n7IgH68c",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Expats in Wonderland",
       "website": "https://expatsinwonderland.com/",
-      "address": "Exerzierstraße 24",
-      "latitude": "52.554188",
-      "longitude": "13.373518",
-      "google_place_id": "ChIJK9dABp1PqEcRNVxtfLrRVL0"
+      "address": "Neue Schönhauser Str. 12",
+      "latitude": "52.524451",
+      "longitude": "13.404204",
+      "google_place_id": "ChIJK9dABp1PqEcRNVxtfLrRVL0",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Start Relocation Service",
@@ -74,7 +81,8 @@
       "address": "Langenscheidtstraße 9a",
       "latitude": "52.489632",
       "longitude": "13.362342",
-      "google_place_id": "ChIJ_8W4hphRqEcR8PRJBoSmDqw"
+      "google_place_id": "ChIJ_8W4hphRqEcR8PRJBoSmDqw",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Prime Relocation Services",
@@ -83,7 +91,8 @@
       "address": "Leipziger Pl. 15",
       "latitude": "52.510424",
       "longitude": "13.378358",
-      "google_place_id": "ChIJreiFX8lRqEcRGIFGOhyNGEU"
+      "google_place_id": "ChIJreiFX8lRqEcRGIFGOhyNGEU",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Impats",
@@ -92,7 +101,8 @@
       "address": "Rudolf-Seiffert-Straße 33",
       "latitude": "52.527137",
       "longitude": "13.472285",
-      "google_place_id": "ChIJTcZOf4dOqEcRAP0GOt4y9mM"
+      "google_place_id": "ChIJTcZOf4dOqEcRAP0GOt4y9mM",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "von Wrede Relocation",
@@ -100,9 +110,10 @@
       "website": "https://www.vonwrede-relocation.com",
       "email": "contact@vonwrede-relocation.com",
       "address": "Goethestraße 32",
-      "latitude": "52.442638",
-      "longitude": "13.23422",
-      "google_place_id": "ChIJNd14hYVZqEcR-uxJZNLDsW0"
+      "latitude": "52.442639",
+      "longitude": "13.234233",
+      "google_place_id": "ChIJNd14hYVZqEcR-uxJZNLDsW0",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "PROGEDO",
@@ -111,7 +122,8 @@
       "address": "Großbeerenstraße 88",
       "latitude": "52.499505",
       "longitude": "13.385835",
-      "google_place_id": "ChIJFzbqHPFRqEcR1J98FBibcvM"
+      "google_place_id": "ChIJFzbqHPFRqEcR1J98FBibcvM",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Jetztpat",

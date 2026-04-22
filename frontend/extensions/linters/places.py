@@ -1,78 +1,103 @@
 #!/usr/bin/env python3
+from datetime import date, timedelta
 from pathlib import Path
-from typing import Any, List, Tuple
 from urllib.parse import urlparse
 from ursus.config import config
-from ursus.linters import LinterResult
-from ursus.linters.markdown import HeadMatterLinter
-from ursus.utils import parse_markdown_head_matter
+from ursus.linters import Linter, LinterResult
 import googlemaps
+import json
 import logging
 import re
 
 
-class PlacesLinter(HeadMatterLinter):
+class PlacesLinter(Linter):
+    """
+    Verify lists of places against the Google Maps API every few months
+    """
+
+    verification_frequency = timedelta(days=180)
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.google_maps = googlemaps.Client(key=config.google_maps_places_api_key)
 
-    def lint_meta(
-        self,
-        file_path: Path,
-        meta: dict[str, List[Any]],
-        field_positions: dict[str, Tuple[int, int, int]],
-    ) -> LinterResult:
-        if file_path.is_relative_to(Path("places")):
-            with (config.content_path / file_path).open() as place_file:
-                meta, field_positions = parse_markdown_head_matter(place_file.readlines())
+    def lint(self, file_path: Path) -> LinterResult:
+        if file_path.suffix.lower() != ".json" or not file_path.is_relative_to(Path("places")):
+            return
 
-            if "google_place_id" not in meta:
-                yield (0, 0, 3), "Place has no place ID", logging.ERROR
-                return
+        json_path = config.content_path / file_path
+        data = json.loads(json_path.read_text())
+        list_modified = False
+        to_remove = []
 
-            try:
-                google_place = self.google_maps.place(meta["google_place_id"][0], language="en")["result"]
-            except googlemaps.exceptions.ApiError as e:
-                yield (0, 0, 3), "Place error" + str(e), logging.ERROR
-                return
+        for i, place in enumerate(data.get("places", [])):
+            last_verified = place.get("lastVerified")
+            if last_verified:
+                verified_date = date.fromisoformat(last_verified)
+                if date.today() - verified_date < self.verification_frequency:
+                    continue
 
-            meta_website = urlparse(meta.get("website")[0]).netloc if meta.get("website") else None
-            if google_place.get("website") and meta_website != urlparse(google_place.get("website")).netloc:
-                yield (
-                    field_positions.get("website"),
-                    f"Website does not match with Google: {meta_website} -> {google_place.get('website')}",
-                    logging.WARNING,
-                )
+            if not place.get("google_place_id"):
+                name = place.get("name", f"place #{i + 1}")
+                yield None, f"{name}: Place has no place ID", logging.WARNING
+                continue
 
-            google_address = re.sub(r"(, (\d{5} )?Berlin)?, Germany$", "", google_place["formatted_address"]).strip()
-            if meta.get("address")[0] != google_address:
-                yield (
-                    field_positions.get("address"),
-                    f"Address does not match with Google: {meta.get('address')[0]} -> {google_address}",
-                    logging.ERROR,
-                )
+            yield from self.lint_place(place, i)
 
-            business_status = google_place.get("business_status")
-            if business_status and business_status != "OPERATIONAL":
-                yield (
-                    None,
-                    f"Business is {google_place.get('business_status')}",
-                    logging.ERROR,
-                )
+            if place.get("status") == "CLOSED_PERMANENTLY":
+                to_remove.append(i)
+            else:
+                place["lastVerified"] = date.today().isoformat()
 
-            lat = float(meta["latitude"][0])
-            lng = float(meta["longitude"][0])
-            g_lat = round(google_place["geometry"]["location"]["lat"], 6)
-            g_lng = round(google_place["geometry"]["location"]["lng"], 6)
-            if str(lat) != str(g_lat):
-                yield (
-                    field_positions.get("latitude"),
-                    f"Latitude does not match with Google: {lat} -> {g_lat}",
-                    logging.ERROR,
-                )
-            if str(lng) != str(g_lng):
-                yield (
-                    field_positions.get("longitude"),
-                    f"Longitude does not match with Google: {lng} -> {g_lng}",
-                    logging.ERROR,
-                )
+            list_modified = True
+
+        for i in reversed(to_remove):
+            data["places"].pop(i)
+
+        if list_modified:
+            logging.info(f"Updating {file_path}")
+            json_path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
+
+    def lint_place(self, place: dict, index: int) -> LinterResult:
+        name = place.get("name", f"place #{index + 1}")
+
+        try:
+            google_place = self.google_maps.place(place["google_place_id"], language="en")["result"]
+        except googlemaps.exceptions.ApiError as e:
+            yield None, f"{name}: Place error: {e}", logging.ERROR
+            return
+
+        meta_website = urlparse(place.get("website", "")).netloc if place.get("website") else None
+        if google_place.get("website") and meta_website != urlparse(google_place.get("website")).netloc:
+            yield (
+                None,
+                f"{name}: Website does not match with Google: {meta_website} -> {google_place.get('website')}",
+                logging.WARNING,
+            )
+
+        google_address = re.sub(r"(, (\d{5} )?Berlin)?, Germany$", "", google_place["formatted_address"]).strip()
+        if place.get("address") != google_address:
+            yield (
+                None,
+                f"{name}: Address does not match with Google: {place.get('address')} -> {google_address}",
+                logging.ERROR,
+            )
+            place["address"] = google_address
+
+        business_status = google_place.get("business_status")
+        if business_status and business_status != "OPERATIONAL":
+            yield None, f"{name}: Business is {business_status}", logging.ERROR
+            place["status"] = business_status
+        else:
+            place.pop("status", None)
+
+        lat = float(place.get("latitude", 0))
+        lng = float(place.get("longitude", 0))
+        g_lat = round(google_place["geometry"]["location"]["lat"], 6)
+        g_lng = round(google_place["geometry"]["location"]["lng"], 6)
+        if str(lat) != str(g_lat):
+            yield None, f"{name}: Latitude does not match with Google: {lat} -> {g_lat}", logging.ERROR
+            place["latitude"] = str(g_lat)
+        if str(lng) != str(g_lng):
+            yield None, f"{name}: Longitude does not match with Google: {lng} -> {g_lng}", logging.ERROR
+            place["longitude"] = str(g_lng)

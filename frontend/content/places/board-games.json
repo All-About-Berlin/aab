@@ -7,16 +7,18 @@
       "address": "Modersohnstraße 55",
       "latitude": "52.502524",
       "longitude": "13.457078",
-      "google_place_id": "ChIJXdT-uldOqEcR3dIsBfAaLYY"
+      "google_place_id": "ChIJXdT-uldOqEcR3dIsBfAaLYY",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Spieletreff Berlin Wednesday meetup",
       "description": "€2 per person",
       "website": "http://www.spieletreff-berlin.de/",
       "address": "Nazarethkirchstraße 50",
-      "latitude": "52.547843",
-      "longitude": "13.35918",
-      "google_place_id": "ChIJUWYBzd9RqEcRpdA0Ju8ePf0"
+      "latitude": "52.54768",
+      "longitude": "13.358988",
+      "google_place_id": "ChIJUWYBzd9RqEcRpdA0Ju8ePf0",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Wirtshaus Heuberger",
@@ -25,7 +27,8 @@
       "address": "Gotenstraße 1",
       "latitude": "52.48483",
       "longitude": "13.360097",
-      "google_place_id": "ChIJA27lvT9QqEcRx-WFQnYWTy0"
+      "google_place_id": "ChIJA27lvT9QqEcRx-WFQnYWTy0",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "BrewDog Berlin Mitte",
@@ -34,7 +37,8 @@
       "address": "Ackerstraße 29",
       "latitude": "52.532864",
       "longitude": "13.395794",
-      "google_place_id": "ChIJ6Qv93u9RqEcRh5Idxw-WJa8"
+      "google_place_id": "ChIJ6Qv93u9RqEcRh5Idxw-WJa8",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Spielwiese",
@@ -43,7 +47,8 @@
       "address": "Kopernikusstraße 24",
       "latitude": "52.510417",
       "longitude": "13.454049",
-      "google_place_id": "ChIJCVgEC1xOqEcRKzZ9w2B_0Kg"
+      "google_place_id": "ChIJCVgEC1xOqEcRKzZ9w2B_0Kg",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "NHU Nachbarschaftshaus Urbanstraße",
@@ -52,7 +57,8 @@
       "address": "Urbanstraße 21",
       "latitude": "52.492926",
       "longitude": "13.407614",
-      "google_place_id": "ChIJOTwR5dFPqEcR9joyVXjYLKs"
+      "google_place_id": "ChIJOTwR5dFPqEcR9joyVXjYLKs",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Brettspielplatz - Das Spielecafé",
@@ -61,7 +67,8 @@
       "address": "Waldstraße 50",
       "latitude": "52.529224",
       "longitude": "13.330749",
-      "google_place_id": "ChIJZ6ygyn1RqEcR0afeits5S6Q"
+      "google_place_id": "ChIJZ6ygyn1RqEcR0afeits5S6Q",
+      "lastVerified": "2026-04-22"
     }
   ]
 }

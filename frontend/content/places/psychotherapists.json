@@ -9,7 +9,8 @@
       "address": "Lützowstraße",
       "latitude": "52.504345",
       "longitude": "13.357333",
-      "google_place_id": "ChIJPVgC10xQqEcRCUHzUIB-Jnc"
+      "google_place_id": "ChIJPVgC10xQqEcRCUHzUIB-Jnc",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Psychotherapie Blagec",
@@ -20,7 +21,9 @@
       "address": "Bleibtreustraße 12A",
       "latitude": "52.50429",
       "longitude": "13.319632",
-      "google_place_id": "ChIJ2SnTi-BQqEcRECCiSDiuXkc"
+      "google_place_id": "ChIJ2SnTi-BQqEcRECCiSDiuXkc",
+      "status": "CLOSED_TEMPORARILY",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Julia Bellabarba",
@@ -31,7 +34,8 @@
       "address": "Kronenstraße 4",
       "latitude": "52.510856",
       "longitude": "13.387791",
-      "google_place_id": "ChIJP540PNBRqEcRfgUKbmGM8rA"
+      "google_place_id": "ChIJP540PNBRqEcRfgUKbmGM8rA",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Cordula Dietrich",
@@ -40,7 +44,8 @@
       "address": "Käthe-Niederkirchner-Straße 5",
       "latitude": "52.53131",
       "longitude": "13.429442",
-      "google_place_id": "ChIJgeLKog9OqEcRpdlyDPjU_i0"
+      "google_place_id": "ChIJgeLKog9OqEcRpdlyDPjU_i0",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dipl.-Psych. Nicholas Bellafiore",
@@ -50,7 +55,8 @@
       "address": "Schliemannstraße 41",
       "latitude": "52.541889",
       "longitude": "13.417529",
-      "google_place_id": "ChIJ__9vaQZSqEcRSHABSkOMfdc"
+      "google_place_id": "ChIJ__9vaQZSqEcRSHABSkOMfdc",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Anja Benesch",
@@ -59,7 +65,8 @@
       "address": "Florastraße 79A",
       "latitude": "52.565761",
       "longitude": "13.40222",
-      "google_place_id": "ChIJ__-PiANSqEcRIYxLNBkw87U"
+      "google_place_id": "ChIJ__-PiANSqEcRIYxLNBkw87U",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Ghazaleh Bailey",
@@ -70,7 +77,8 @@
       "address": "Saarbrücker Str. 28",
       "latitude": "52.530034",
       "longitude": "13.414811",
-      "google_place_id": "ChIJ0cPlMgRSqEcRW1VH90DIBuQ"
+      "google_place_id": "ChIJ0cPlMgRSqEcRW1VH90DIBuQ",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Julianne Appel-Opper",
@@ -81,7 +89,8 @@
       "address": "Fröaufstraße 6",
       "latitude": "52.466646",
       "longitude": "13.325499",
-      "google_place_id": "ChIJG6gGSn9QqEcRBVIZIsfphYo"
+      "google_place_id": "ChIJG6gGSn9QqEcRBVIZIsfphYo",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dipl.-Psych. Heidi Hooper Amri",
@@ -91,7 +100,8 @@
       "address": "Pariser Str. 61",
       "latitude": "52.495923",
       "longitude": "13.328964",
-      "google_place_id": "ChIJZ3HeoPdQqEcREVCPXaT8Ux8"
+      "google_place_id": "ChIJZ3HeoPdQqEcREVCPXaT8Ux8",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Brian L. Pheasant",
@@ -101,7 +111,8 @@
       "address": "Kuglerstraße 26",
       "latitude": "52.55217",
       "longitude": "13.418262",
-      "google_place_id": "ChIJVVXJ7w5OqEcR5XWdxeBbgYs"
+      "google_place_id": "ChIJVVXJ7w5OqEcR5XWdxeBbgYs",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Eva Štajner",
@@ -112,16 +123,18 @@
       "address": "Raumerstraße 7",
       "latitude": "52.54301",
       "longitude": "13.417673",
-      "google_place_id": "ChIJ5-Jw0shTqEcRC6WjjIve7N4"
+      "google_place_id": "ChIJ5-Jw0shTqEcRC6WjjIve7N4",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Christian Dombrowe",
       "accepts_public_insurance": "No",
       "website": "http://www.psychotherapy-dombrowe.com/",
-      "address": "Linienstraße 130",
+      "address": "Linienstraße 130/2. Hinterhof",
       "latitude": "52.527052",
       "longitude": "13.38881",
-      "google_place_id": "ChIJ2U6aR5FRqEcRwOpcE8pLctY"
+      "google_place_id": "ChIJ2U6aR5FRqEcRwOpcE8pLctY",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dipl.-Psych. Nadja Ursula Gogolin",
@@ -129,10 +142,11 @@
       "accepts_public_insurance": "Yes",
       "website": "http://www.psychotherapy-gogolin.com/contact-to-nadja-gogolin-psychotherapy-in-berlin.html",
       "email": "contact@psychotherapy-gogolin.com",
-      "address": "Gotenstraße 1",
-      "latitude": "52.480151",
-      "longitude": "13.360241",
-      "google_place_id": "ChIJ7_rpuVBQqEcRauVoYbQ1nVA"
+      "address": "Gotenstraße 14",
+      "latitude": "52.48219",
+      "longitude": "13.360024",
+      "google_place_id": "ChIJ7_rpuVBQqEcRauVoYbQ1nVA",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Blanka Leeker, MA",
@@ -143,7 +157,8 @@
       "address": "Spandauer Damm 54",
       "latitude": "52.519548",
       "longitude": "13.289076",
-      "google_place_id": "ChIJJ5UgV5BRqEcRAH4BY5nfJak"
+      "google_place_id": "ChIJJ5UgV5BRqEcRAH4BY5nfJak",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Mittelweg 50",
@@ -153,7 +168,8 @@
       "address": "Mittelweg 50",
       "latitude": "52.475619",
       "longitude": "13.430271",
-      "google_place_id": "ChIJk9PlUb1PqEcRj0lnuPjkNmE"
+      "google_place_id": "ChIJk9PlUb1PqEcRj0lnuPjkNmE",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dipl.-Psych. Jana Harthauß",
@@ -162,7 +178,8 @@
       "address": "Helmholtzstraße 11",
       "latitude": "52.467226",
       "longitude": "13.511372",
-      "google_place_id": "ChIJqY4AH_lJqEcRowM1crFgnYg"
+      "google_place_id": "ChIJqY4AH_lJqEcRowM1crFgnYg",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Sandra Cotta",
@@ -172,7 +189,8 @@
       "address": "Puschkinallee 48",
       "latitude": "52.493146",
       "longitude": "13.456966",
-      "google_place_id": "ChIJRQfEPnxRqEcRAW3HgWxa8mo"
+      "google_place_id": "ChIJRQfEPnxRqEcRAW3HgWxa8mo",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Didem Atahan-Fabig",
@@ -183,7 +201,8 @@
       "address": "Linienstraße 146",
       "latitude": "52.52694",
       "longitude": "13.391441",
-      "google_place_id": "ChIJKY4ovt5RqEcRiTmaanPZEQo"
+      "google_place_id": "ChIJKY4ovt5RqEcRiTmaanPZEQo",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dominic Decker",
@@ -194,7 +213,8 @@
       "address": "Schliemannstraße 41",
       "latitude": "52.541893",
       "longitude": "13.417521",
-      "google_place_id": "ChIJq6q-_v9NqEcRJY6-4-pCiX8"
+      "google_place_id": "ChIJq6q-_v9NqEcRJY6-4-pCiX8",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Alastair Roberts",
@@ -203,9 +223,10 @@
       "website": "http://www.alastairroberts.com/",
       "email": "alastair.roberts@btconnect.com",
       "address": "Hewaldstraße 2",
-      "latitude": "52.482051",
+      "latitude": "52.48205",
       "longitude": "13.343319",
-      "google_place_id": "ChIJE-fMYQhRqEcRQ7g_vIpKhNA"
+      "google_place_id": "ChIJE-fMYQhRqEcRQ7g_vIpKhNA",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dipl.-Psych. Anne Piotrowski",
@@ -214,7 +235,8 @@
       "address": "Knaackstraße 84",
       "latitude": "52.539287",
       "longitude": "13.415084",
-      "google_place_id": "ChIJI41afedRqEcRAm3Y7Q-ragY"
+      "google_place_id": "ChIJI41afedRqEcRAm3Y7Q-ragY",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "360° Psychotherapie",
@@ -224,17 +246,8 @@
       "address": "Berliner Allee 88",
       "latitude": "52.54932",
       "longitude": "13.457131",
-      "google_place_id": "ChIJ2w8IFsNNqEcROxUgMw5mGvU"
-    },
-    {
-      "name": "Ariane Fuechtner",
-      "description": "Alternative practitioner for psychotherapy",
-      "accepts_public_insurance": "No",
-      "website": "http://www.fuechtner.net/",
-      "address": "Hinterhaus Remise, Schillerstraße 40",
-      "latitude": "52.510179",
-      "longitude": "13.306309",
-      "google_place_id": "ChIJMxsMDHlRqEcR2xIqA5tLjRk"
+      "google_place_id": "ChIJ2w8IFsNNqEcROxUgMw5mGvU",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Grace O'Malley",
@@ -245,7 +258,8 @@
       "address": "Gitschiner Str. 87",
       "latitude": "52.498612",
       "longitude": "13.402474",
-      "google_place_id": "ChIJH6EcgclPqEcROZpXjCXPM2c"
+      "google_place_id": "ChIJH6EcgclPqEcROZpXjCXPM2c",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dipl. Med. Birgit Hansen",
@@ -256,7 +270,8 @@
       "address": "Landsberger Allee 201",
       "latitude": "52.533489",
       "longitude": "13.476676",
-      "google_place_id": "ChIJac-UbIBOqEcRKy0ICJoQlBE"
+      "google_place_id": "ChIJac-UbIBOqEcRKy0ICJoQlBE",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Katie Knight",
@@ -266,7 +281,8 @@
       "address": "Lichtburgring 13",
       "latitude": "52.548137",
       "longitude": "13.398735",
-      "google_place_id": "ChIJ3UJDP_dRqEcRAZh0m3X-Q2U"
+      "google_place_id": "ChIJ3UJDP_dRqEcRAZh0m3X-Q2U",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Philip Sheldon",
@@ -274,10 +290,11 @@
       "accepts_public_insurance": "No",
       "website": "https://www.philipsheldon.com/",
       "email": "philip.sheldon@outlook.com",
-      "address": "Weserstr. 153",
-      "latitude": "52.481986",
-      "longitude": "13.444113",
-      "google_place_id": "ChIJOZ0sXblPqEcRCD_WTJRpLFA"
+      "address": "Heidekampweg 9",
+      "latitude": "52.461934",
+      "longitude": "13.480376",
+      "google_place_id": "ChIJOZ0sXblPqEcRCD_WTJRpLFA",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dipl.-Psych. Kristina Oelschläger",
@@ -287,7 +304,8 @@
       "address": "Voigtstraße 31a",
       "latitude": "52.518189",
       "longitude": "13.468864",
-      "google_place_id": "ChIJf9hYmj9PqEcR5v79axhltkU"
+      "google_place_id": "ChIJf9hYmj9PqEcR5v79axhltkU",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Sean Carden",
@@ -298,7 +316,8 @@
       "address": "Weserstr. 56",
       "latitude": "52.482992",
       "longitude": "13.440713",
-      "google_place_id": "ChIJCy3FCTZTqEcRtofzKPiQ4OY"
+      "google_place_id": "ChIJCy3FCTZTqEcRtofzKPiQ4OY",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Michael Cugialy",
@@ -309,7 +328,8 @@
       "address": "Schulstraße 7, 16515 Oranienburg",
       "latitude": "52.755036",
       "longitude": "13.245767",
-      "google_place_id": "ChIJYQP_yK9bqEcRV_ymuwGgA9c"
+      "google_place_id": "ChIJYQP_yK9bqEcRV_ymuwGgA9c",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Johannes Mittermair",
@@ -319,7 +339,8 @@
       "address": "Türrschmidtstraße 4-5",
       "latitude": "52.502628",
       "longitude": "13.476753",
-      "google_place_id": "ChIJ9RakKO5OqEcR86Sh7h24oaI"
+      "google_place_id": "ChIJ9RakKO5OqEcR86Sh7h24oaI",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Daniel Friedrich",
@@ -330,7 +351,8 @@
       "address": "Schlegelstraße 11",
       "latitude": "52.530052",
       "longitude": "13.38698",
-      "google_place_id": "ChIJAfsc64tTqEcR3hMSm_Rx6g4"
+      "google_place_id": "ChIJAfsc64tTqEcR3hMSm_Rx6g4",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Praxis Godau",
@@ -341,7 +363,8 @@
       "address": "Jüterboger Str. 6",
       "latitude": "52.48647",
       "longitude": "13.3978",
-      "google_place_id": "ChIJRR0L0TZRqEcR2FPBbi6bF7o"
+      "google_place_id": "ChIJRR0L0TZRqEcR2FPBbi6bF7o",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Valentin Zahrnt",
@@ -352,7 +375,8 @@
       "address": "Schliemannstraße 45",
       "latitude": "52.541516",
       "longitude": "13.416527",
-      "google_place_id": "ChIJv0eQegNOqEcRllZW2nLyY_Y"
+      "google_place_id": "ChIJv0eQegNOqEcRllZW2nLyY_Y",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dipl.-Psych. Özgür Cengiz",
@@ -363,7 +387,8 @@
       "address": "Beethovenstraße 4",
       "latitude": "52.434358",
       "longitude": "13.333906",
-      "google_place_id": "ChIJ__8bh8JaqEcRXCRA8So37k8"
+      "google_place_id": "ChIJ__8bh8JaqEcRXCRA8So37k8",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Psychotherapist Lisa-Maria Aldinger",
@@ -373,7 +398,8 @@
       "address": "Grabbeallee 84",
       "latitude": "52.579747",
       "longitude": "13.39877",
-      "google_place_id": "ChIJ974FWJ1TqEcROvyUIIflpLY"
+      "google_place_id": "ChIJ974FWJ1TqEcROvyUIIflpLY",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "M.Sc. Berenike Franzen",
@@ -383,7 +409,8 @@
       "address": "Türrschmidtstraße 4-5",
       "latitude": "52.502628",
       "longitude": "13.476753",
-      "google_place_id": "ChIJ_Si-poVPqEcRluwtu0GrpTo"
+      "google_place_id": "ChIJ_Si-poVPqEcRluwtu0GrpTo",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. phil. Alexander Piotrowski",
@@ -394,7 +421,8 @@
       "address": "Knaackstraße 84",
       "latitude": "52.539264",
       "longitude": "13.414979",
-      "google_place_id": "ChIJDUlx1P9RqEcRnUrKW2Khsdk"
+      "google_place_id": "ChIJDUlx1P9RqEcRnUrKW2Khsdk",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Praxis für Psychotherapie, Hypnotherapie + Klangtherapie",
@@ -405,7 +433,8 @@
       "address": "Elsastraße 4",
       "latitude": "52.475266",
       "longitude": "13.33031",
-      "google_place_id": "ChIJRyorldpRqEcRdAyC6fVFVtM"
+      "google_place_id": "ChIJRyorldpRqEcRdAyC6fVFVtM",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Archana Golla",
@@ -416,7 +445,8 @@
       "address": "Calvinstraße 23",
       "latitude": "52.521861",
       "longitude": "13.351843",
-      "google_place_id": "ChIJI64Ds6ZRqEcR1OAYEoCtyVQ"
+      "google_place_id": "ChIJI64Ds6ZRqEcR1OAYEoCtyVQ",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Lazaros Giousmpasis",
@@ -427,7 +457,8 @@
       "address": "Koenigsallee 11A",
       "latitude": "52.492477",
       "longitude": "13.280497",
-      "google_place_id": "ChIJ08uUXUNRqEcRF00ja-YJxwY"
+      "google_place_id": "ChIJ08uUXUNRqEcRF00ja-YJxwY",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Dirk Stemper",
@@ -438,18 +469,8 @@
       "address": "Wallotstraße 8",
       "latitude": "52.492017",
       "longitude": "13.278896",
-      "google_place_id": "ChIJ78EDLcZRqEcRzYWybeWpBUY"
-    },
-    {
-      "name": "Dott. Gaia Porcelli",
-      "description": "Speaks English and Italian. Specialises in women's empowerment, psychological effects of abuses.",
-      "accepts_public_insurance": "No",
-      "website": "https://www.complicated.life/en/find-a-therapist/berlin/m-sc-clinical-psychology-gaia-porcelli",
-      "email": "por.psychologist@gmail.com",
-      "address": "Mehlitzstraße 8",
-      "latitude": "52.486105",
-      "longitude": "13.326396",
-      "google_place_id": "ChIJbTurRzNRqEcRGa7ADC1inys"
+      "google_place_id": "ChIJ78EDLcZRqEcRzYWybeWpBUY",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dipl.-Psych. Christiane Köhler",
@@ -460,7 +481,8 @@
       "address": "Seydelstraße 7",
       "latitude": "52.50998",
       "longitude": "13.403011",
-      "google_place_id": "ChIJYRx7EihOqEcR4P2Ua_dRxt8"
+      "google_place_id": "ChIJYRx7EihOqEcR4P2Ua_dRxt8",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Aloka Levitin",
@@ -471,7 +493,8 @@
       "address": "Lipaer Str. 14",
       "latitude": "52.44565",
       "longitude": "13.313023",
-      "google_place_id": "ChIJ99YhZHtbqEcRt2YCmbncyn8"
+      "google_place_id": "ChIJ99YhZHtbqEcRt2YCmbncyn8",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Joseph Hamer",
@@ -482,7 +505,8 @@
       "address": "Mindener Str. 21",
       "latitude": "52.524771",
       "longitude": "13.300558",
-      "google_place_id": "ChIJJ5UgV5BRqEcRwnGl5Fwhhe0"
+      "google_place_id": "ChIJJ5UgV5BRqEcRwnGl5Fwhhe0",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Ben Lemme",
@@ -492,7 +516,8 @@
       "address": "Erdmannstraße 13",
       "latitude": "52.488881",
       "longitude": "13.360029",
-      "google_place_id": "ChIJrzmNsfZRqEcRM-VzZgqiODA"
+      "google_place_id": "ChIJrzmNsfZRqEcRM-VzZgqiODA",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "PsyShrink",
@@ -503,7 +528,8 @@
       "address": "Keithstraße 16",
       "latitude": "52.503268",
       "longitude": "13.346169",
-      "google_place_id": "ChIJ8yR8iaVRqEcRNGzYb_Ja46k"
+      "google_place_id": "ChIJ8yR8iaVRqEcRNGzYb_Ja46k",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Roman Snihurowch, MD",
@@ -513,7 +539,8 @@
       "address": "Kienitzer Str. 110",
       "latitude": "52.47587",
       "longitude": "13.423631",
-      "google_place_id": "ChIJV0ja_3lPqEcRw9oGUQPdw4Q"
+      "google_place_id": "ChIJV0ja_3lPqEcRw9oGUQPdw4Q",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "My International Therapy",
@@ -524,7 +551,8 @@
       "address": "Schönhauser Allee 55",
       "latitude": "52.54356",
       "longitude": "13.412802",
-      "google_place_id": "ChIJF0ekaYxTqEcRqrA3A4zo0tU"
+      "google_place_id": "ChIJF0ekaYxTqEcRqrA3A4zo0tU",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. med Kai Gutzeit",
@@ -535,7 +563,8 @@
       "address": "Lenaustraße 8",
       "latitude": "52.490018",
       "longitude": "13.426786",
-      "google_place_id": "ChIJdcwI9LZPqEcRgUPsvpZ8j9w"
+      "google_place_id": "ChIJdcwI9LZPqEcRgUPsvpZ8j9w",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dipl.-Psych. Shireen Kwiatkowska-Naqvi",
@@ -546,7 +575,8 @@
       "address": "Pfarrstraße 115",
       "latitude": "52.505009",
       "longitude": "13.47696",
-      "google_place_id": "ChIJFVOr5Y1RqEcRS606L4ejbY8"
+      "google_place_id": "ChIJFVOr5Y1RqEcRS606L4ejbY8",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Art Therapy Studio",
@@ -557,7 +587,8 @@
       "address": "Gürtelstraße 12",
       "latitude": "52.545106",
       "longitude": "13.453012",
-      "google_place_id": "ChIJC0Fprt1NqEcRBF3syO4qbu4"
+      "google_place_id": "ChIJC0Fprt1NqEcRBF3syO4qbu4",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Wagner & Homunculus, Praxis für Systemische Therapie",
@@ -566,9 +597,10 @@
       "website": "https://wh-therapie.de/",
       "email": "praxis@wa-hc.de",
       "address": "Philippistraße 4",
-      "latitude": "52.511509",
-      "longitude": "13.287414",
-      "google_place_id": "ChIJy1ras_dOqEcRJ4QqbTujILU"
+      "latitude": "52.511503",
+      "longitude": "13.287417",
+      "google_place_id": "ChIJy1ras_dOqEcRJ4QqbTujILU",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Marylise Dumont",
@@ -578,7 +610,8 @@
       "address": "Tempelhofer Ufer 16A",
       "latitude": "52.49836",
       "longitude": "13.38375",
-      "google_place_id": "ChIJDx6boElRqEcRQBEHT0La5CM"
+      "google_place_id": "ChIJDx6boElRqEcRQBEHT0La5CM",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dipl.-Psych. Katrin Forler",
@@ -589,7 +622,8 @@
       "address": "Pestalozzistraße 37",
       "latitude": "52.572396",
       "longitude": "13.404274",
-      "google_place_id": "ChIJVd_IscdTqEcRPMO-EzlB4eM"
+      "google_place_id": "ChIJVd_IscdTqEcRPMO-EzlB4eM",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dipl.-Psych. Katja Rück",
@@ -600,7 +634,8 @@
       "address": "Goßlerstraße 23",
       "latitude": "52.469868",
       "longitude": "13.325879",
-      "google_place_id": "ChIJKz2yHLVPqEcRzPSsIFh6T5Y"
+      "google_place_id": "ChIJKz2yHLVPqEcRzPSsIFh6T5Y",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Ottoline Hart",
@@ -611,7 +646,8 @@
       "address": "Okerstraße 38",
       "latitude": "52.473777",
       "longitude": "13.424308",
-      "google_place_id": "ChIJLxLNZZZPqEcR55SQh22HQA0"
+      "google_place_id": "ChIJLxLNZZZPqEcR55SQh22HQA0",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Claudia Dzaack",
@@ -621,7 +657,8 @@
       "address": "Kastanienallee 26",
       "latitude": "52.537497",
       "longitude": "13.408256",
-      "google_place_id": "ChIJTcOwqP5RqEcRnmRQGmi2WSc"
+      "google_place_id": "ChIJTcOwqP5RqEcRnmRQGmi2WSc",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Manuela Luise, Creative Therapy",
@@ -632,7 +669,8 @@
       "address": "Ebelingstraße 14a",
       "latitude": "52.523821",
       "longitude": "13.450998",
-      "google_place_id": "ChIJrQdC6pPaGEwRjnpbqf0tGrw"
+      "google_place_id": "ChIJrQdC6pPaGEwRjnpbqf0tGrw",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dipl.-Psych. Michael Flor",
@@ -642,7 +680,8 @@
       "address": "Chausseestraße 28",
       "latitude": "52.531869",
       "longitude": "13.381769",
-      "google_place_id": "ChIJD2K41uxRqEcR4j90K1bgbQQ"
+      "google_place_id": "ChIJD2K41uxRqEcR4j90K1bgbQQ",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Lorna Schlochtermeier",
@@ -651,7 +690,8 @@
       "address": "Praxis in der Remise, Ohlauer Str. 10",
       "latitude": "52.496977",
       "longitude": "13.430582",
-      "google_place_id": "ChIJe1NK7qhPqEcRpcsr0WV7kX0"
+      "google_place_id": "ChIJe1NK7qhPqEcRpcsr0WV7kX0",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Mag. Michaela Klien",
@@ -662,7 +702,8 @@
       "address": "Neumannstraße 135",
       "latitude": "52.553288",
       "longitude": "13.423639",
-      "google_place_id": "ChIJ8xN0WAlNqEcRK_RjA4NVIsE"
+      "google_place_id": "ChIJ8xN0WAlNqEcRK_RjA4NVIsE",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Ninja Kattenbeck",
@@ -673,7 +714,8 @@
       "address": "Lützowstraße 23",
       "latitude": "52.503126",
       "longitude": "13.366423",
-      "google_place_id": "ChIJryOnR91RqEcRzjxzuM3IGxA"
+      "google_place_id": "ChIJryOnR91RqEcRzjxzuM3IGxA",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Viola Kappel & Kollegen",
@@ -681,10 +723,11 @@
       "accepts_public_insurance": "Yes",
       "website": "https://psychotherapie-kappel.de/",
       "email": "kontakt@psychotherapie-kappel.de",
-      "address": "Naumannstraße 7",
+      "address": "Praxis für Psychotherapie & Coaching Dr. Viola Kappel & Kollegen, Naumannstraße 7",
       "latitude": "52.485576",
       "longitude": "13.363617",
-      "google_place_id": "ChIJ7WgYynNRqEcR348aynWuCNY"
+      "google_place_id": "ChIJ7WgYynNRqEcR348aynWuCNY",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Bertine de Jongh",
@@ -695,7 +738,8 @@
       "address": "Mindener Str. 21",
       "latitude": "52.524771",
       "longitude": "13.300558",
-      "google_place_id": "ChIJJ5UgV5BRqEcRwnGl5Fwhhe0"
+      "google_place_id": "ChIJJ5UgV5BRqEcRwnGl5Fwhhe0",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Psychotherapie Vivian Birchall",
@@ -704,7 +748,8 @@
       "latitude": "52.453167",
       "longitude": "13.142604",
       "google_place_id": "ChIJB4T69ypZqEcRsvWbkWcbeNM",
-      "accepts_public_insurance": "No"
+      "accepts_public_insurance": "No",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dipl.-Psych. Mathias Funke, Psychotherapist",
@@ -715,7 +760,8 @@
       "latitude": "52.507444",
       "longitude": "13.496978",
       "google_place_id": "ChIJa_I65XhQqEcRL9lojdvC-lg",
-      "accepts_public_insurance": "No"
+      "accepts_public_insurance": "No",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "kAleiDoscope - Coaching & Counseling",
@@ -725,7 +771,8 @@
       "address": "Hohenzollernstraße 12",
       "latitude": "52.432613",
       "longitude": "13.252689",
-      "google_place_id": "ChIJS_pCzbRbqEcRgiTHrj0CZ18"
+      "google_place_id": "ChIJS_pCzbRbqEcRgiTHrj0CZ18",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "International Psychotherapy Berlin",
@@ -736,7 +783,8 @@
       "latitude": "52.493168",
       "longitude": "13.422277",
       "google_place_id": "ChIJx6x6Z09QqEcRECKFotXC3ng",
-      "accepts_public_insurance": "Yes"
+      "accepts_public_insurance": "Yes",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Angel Candeaux",
@@ -747,7 +795,8 @@
       "latitude": "52.498887",
       "longitude": "13.423554",
       "google_place_id": "ChIJ9RziE3hPqEcR4tDcOeGwoYM",
-      "accepts_public_insurance": "Yes"
+      "accepts_public_insurance": "Yes",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Vibes - Praxis für Psychotherapie & Coaching",
@@ -757,7 +806,8 @@
       "latitude": "52.569674",
       "longitude": "13.313165",
       "google_place_id": "ChIJEfUtdBJRqEcRoV_fPd03zX4",
-      "accepts_public_insurance": "Yes"
+      "accepts_public_insurance": "Yes",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "BOJE Beratung Ole Jaeckel-Engler",
@@ -765,10 +815,11 @@
       "website": "http://www.beratung-oje.de/",
       "email": "info@beratung-oje.de",
       "address": "Breite Str. 8",
-      "latitude": "52.57136",
+      "latitude": "52.571359",
       "longitude": "13.409683",
       "google_place_id": "ChIJibfJmQ5OqEcR0pfk9WlloxU",
-      "accepts_public_insurance": "No"
+      "accepts_public_insurance": "No",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "M. Sc. Antonia Windsheimer",
@@ -779,7 +830,8 @@
       "latitude": "52.497384",
       "longitude": "13.384102",
       "google_place_id": "ChIJl4sVESpRqEcRnXZXN67_CYE",
-      "accepts_public_insurance": "No"
+      "accepts_public_insurance": "No",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "OVID Clinic Berlin",
@@ -789,18 +841,20 @@
       "address": "Boxhagener Str. 82",
       "latitude": "52.508492",
       "longitude": "13.466821",
-      "google_place_id": "ChIJMadZk3BPqEcR-rn1DpXybwA"
+      "google_place_id": "ChIJMadZk3BPqEcR-rn1DpXybwA",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "The Primrose Practice",
       "description": "ADHD, Attachment Based Therapy, Psychodynamic Psychotherapy",
       "website": "http://www.theprimrosepractice.co.uk/",
       "email": "sophie@theprimrosepractice.co.uk",
-      "address": "Borsigstraße 28",
-      "latitude": "52.529527",
-      "longitude": "13.389426",
+      "address": "Borsigstraße 28/a",
+      "latitude": "52.529439",
+      "longitude": "13.389712",
       "google_place_id": "ChIJG1de0_9RqEcRd0p-aZ27OKk",
-      "accepts_public_insurance": "No"
+      "accepts_public_insurance": "No",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr Dafni Milioni",
@@ -811,7 +865,8 @@
       "latitude": "52.524744",
       "longitude": "13.300564",
       "google_place_id": "ChIJb_2eF_lRqEcRCD1KpGGfi6A",
-      "accepts_public_insurance": "No"
+      "accepts_public_insurance": "No",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Fraeya Whiffin",
@@ -822,7 +877,8 @@
       "latitude": "52.48759",
       "longitude": "13.417072",
       "google_place_id": "ChIJx99VeqJPqEcRmB2tkwA4hoI",
-      "accepts_public_insurance": "No"
+      "accepts_public_insurance": "No",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dipl.-Psych. Dr. Katharina Will",
@@ -833,7 +889,8 @@
       "latitude": "52.553883",
       "longitude": "13.434358",
       "google_place_id": "ChIJ51QmCZNRqEcRiGLqi1-V6Ao",
-      "accepts_public_insurance": "No"
+      "accepts_public_insurance": "No",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Maxim Makhankov",
@@ -844,17 +901,19 @@
       "latitude": "52.523146",
       "longitude": "13.452881",
       "google_place_id": "ChIJa9y76WppnmgRlAHpVP63Fh4",
-      "accepts_public_insurance": "No"
+      "accepts_public_insurance": "No",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Talia Purnell",
       "description": "Psychodynamic therapy",
       "website": "https://purnellcounseling.com/",
       "email": "purnellcounseling@gmail.com",
-      "address": "Straßmannstraße 39",
+      "address": "Praxisgemeinschaft Moksha, Straßmannstraße 39/c/o",
       "latitude": "52.523146",
       "longitude": "13.452881",
-      "google_place_id": "ChIJ9bdNbDpPqEcRLf0SQoHwaak"
+      "google_place_id": "ChIJ9bdNbDpPqEcRLf0SQoHwaak",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Counselling & Couples Therapy - Agnieszka Kieres",
@@ -865,7 +924,8 @@
       "latitude": "52.517878",
       "longitude": "13.455898",
       "google_place_id": "ChIJa6w9bpFPqEcRoguAc895v_I",
-      "accepts_public_insurance": "No"
+      "accepts_public_insurance": "No",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Peter Bennett",
@@ -873,7 +933,8 @@
       "address": "Waisenstraße 28",
       "latitude": "52.516529",
       "longitude": "13.414033",
-      "google_place_id": "ChIJwwjPBitPqEcR8tTBsTSXJus"
+      "google_place_id": "ChIJwwjPBitPqEcR8tTBsTSXJus",
+      "lastVerified": "2026-04-22"
     }
   ]
 }

@@ -5,8 +5,9 @@
       "website": "https://www.fitx.de/studio/berlin-alexanderplatz",
       "address": "Alexanderstraße 7",
       "latitude": "52.523312",
-      "longitude": "13.41661",
-      "google_place_id": "ChIJ-wBLKBlOqEcRq2t0vHy6S8s"
+      "longitude": "13.416616",
+      "google_place_id": "ChIJ-wBLKBlOqEcRq2t0vHy6S8s",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "FitX Fitnessstudio Hellersdorf",
@@ -14,7 +15,8 @@
       "address": "Hellersdorfer Str. 235",
       "latitude": "52.536408",
       "longitude": "13.60287",
-      "google_place_id": "ChIJkbmFXzNKqEcR_gZvf6LDvYA"
+      "google_place_id": "ChIJkbmFXzNKqEcR_gZvf6LDvYA",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "FitX Fitnessstudio Schöneberg",
@@ -22,7 +24,8 @@
       "address": "Hauptstraße 141",
       "latitude": "52.485422",
       "longitude": "13.356002",
-      "google_place_id": "ChIJUYomW0BQqEcRamBvYsxKOIM"
+      "google_place_id": "ChIJUYomW0BQqEcRamBvYsxKOIM",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "FitX Fitnessstudio Südkreuz",
@@ -30,7 +33,8 @@
       "address": "Wilhelm-Kabus-Straße 77",
       "latitude": "52.478143",
       "longitude": "13.364681",
-      "google_place_id": "ChIJO8BkiD1QqEcRY0TigxJ3xzs"
+      "google_place_id": "ChIJO8BkiD1QqEcRY0TigxJ3xzs",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "FitX Fitnessstudio Tempelhof",
@@ -38,7 +42,8 @@
       "address": "Ullsteinstraße 128",
       "latitude": "52.454114",
       "longitude": "13.387692",
-      "google_place_id": "ChIJA-m4LVdFqEcRKLzbJCpa2g0"
+      "google_place_id": "ChIJA-m4LVdFqEcRKLzbJCpa2g0",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "FitX Fitnessstudio Waidmannslust",
@@ -46,7 +51,8 @@
       "address": "Oraniendamm 6",
       "latitude": "52.607878",
       "longitude": "13.324964",
-      "google_place_id": "ChIJIwhoXZ1UqEcRxU3Kj70nX2Y"
+      "google_place_id": "ChIJIwhoXZ1UqEcRxU3Kj70nX2Y",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "FitX Fitnessstudio Wilmersdorf",
@@ -54,7 +60,9 @@
       "address": "Kurfürstendamm 156",
       "latitude": "52.49875",
       "longitude": "13.303",
-      "google_place_id": "ChIJ5WzFn8JQqEcRpBMsUXxpgpE"
+      "google_place_id": "ChIJ5WzFn8JQqEcRpBMsUXxpgpE",
+      "status": "CLOSED_TEMPORARILY",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "JOHN REED Fitness Kreuzberg",
@@ -62,7 +70,8 @@
       "address": "Kottbusser Damm 1",
       "latitude": "52.495359",
       "longitude": "13.420099",
-      "google_place_id": "ChIJv9CiCMtPqEcRF5Fo74udAJA"
+      "google_place_id": "ChIJv9CiCMtPqEcRF5Fo74udAJA",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "JOHN REED Fitness Prenzlauer Berg",
@@ -70,7 +79,8 @@
       "address": "Prenzlauer Allee 248-251",
       "latitude": "52.528426",
       "longitude": "13.416379",
-      "google_place_id": "ChIJgVtpjBxOqEcR-z-iXveHbcY"
+      "google_place_id": "ChIJgVtpjBxOqEcR-z-iXveHbcY",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "McFit gym Berlin Adlershof",
@@ -78,7 +88,8 @@
       "address": "Adlergestell 299",
       "latitude": "52.430956",
       "longitude": "13.549099",
-      "google_place_id": "ChIJOaY-59JHqEcRmIPhjqlFPLo"
+      "google_place_id": "ChIJOaY-59JHqEcRmIPhjqlFPLo",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "McFIT Charlottenburg",
@@ -86,7 +97,8 @@
       "address": "Tauentzienstraße 8",
       "latitude": "52.503689",
       "longitude": "13.338794",
-      "google_place_id": "ChIJG2BavFVQqEcR4l1NW1XMvHY"
+      "google_place_id": "ChIJG2BavFVQqEcR4l1NW1XMvHY",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "McFIT Fitnessstudio Heinersdorf",
@@ -94,7 +106,8 @@
       "address": "Romain-Rolland-Straße 32",
       "latitude": "52.565443",
       "longitude": "13.444232",
-      "google_place_id": "ChIJtWXu_I1NqEcRAX48yTpM1r0"
+      "google_place_id": "ChIJtWXu_I1NqEcRAX48yTpM1r0",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "McFIT Fitnessstudio Hohenschönhausen",
@@ -102,7 +115,8 @@
       "address": "Konrad-Wolf-Straße 56-60",
       "latitude": "52.536037",
       "longitude": "13.474682",
-      "google_place_id": "ChIJ914nWdVNqEcRwQk1hQVD52g"
+      "google_place_id": "ChIJ914nWdVNqEcRwQk1hQVD52g",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "McFIT Fitnessstudio Lichtenberg",
@@ -110,7 +124,8 @@
       "address": "Siegfriedstraße 177",
       "latitude": "52.521826",
       "longitude": "13.498887",
-      "google_place_id": "ChIJ81tm7pdOqEcRIV9FFa9UACc"
+      "google_place_id": "ChIJ81tm7pdOqEcRIV9FFa9UACc",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "McFIT Fitnessstudio Lichterfelde",
@@ -118,7 +133,8 @@
       "address": "Goerzallee 190-238",
       "latitude": "52.418455",
       "longitude": "13.287984",
-      "google_place_id": "ChIJgTjF1ahbqEcRk_UOk9FkBXY"
+      "google_place_id": "ChIJgTjF1ahbqEcRk_UOk9FkBXY",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "McFit gym Berlin Mahlsdorf",
@@ -126,7 +142,8 @@
       "address": "Alt-Mahlsdorf 24",
       "latitude": "52.505249",
       "longitude": "13.612179",
-      "google_place_id": "ChIJ2QJmKpJJqEcRlNWkX-ZtBXE"
+      "google_place_id": "ChIJ2QJmKpJJqEcRlNWkX-ZtBXE",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "McFit gym Berlin Marienfelde",
@@ -134,7 +151,8 @@
       "address": "Großbeerenstraße 148-158",
       "latitude": "52.430767",
       "longitude": "13.375299",
-      "google_place_id": "ChIJde5x6zBFqEcRwLhmg92-s_Y"
+      "google_place_id": "ChIJde5x6zBFqEcRwLhmg92-s_Y",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "McFIT Fitnessstudio Marzahn",
@@ -142,7 +160,8 @@
       "address": "Märkische Allee 160a",
       "latitude": "52.532422",
       "longitude": "13.537356",
-      "google_place_id": "ChIJF-HETf9LqEcRID7Y-7POGZg"
+      "google_place_id": "ChIJF-HETf9LqEcRID7Y-7POGZg",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "McFIT Fitnessstudio Moabit",
@@ -150,7 +169,8 @@
       "address": "Alt-Moabit 96d",
       "latitude": "52.524889",
       "longitude": "13.345577",
-      "google_place_id": "ChIJh_wCZQpRqEcReTFUGX_9Y-U"
+      "google_place_id": "ChIJh_wCZQpRqEcReTFUGX_9Y-U",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "McFit gym Berlin Niederschöneweide",
@@ -158,7 +178,8 @@
       "address": "Schnellerstraße 1-5",
       "latitude": "52.464099",
       "longitude": "13.497954",
-      "google_place_id": "ChIJ00bGqUtPqEcRCJMlVi46kNU"
+      "google_place_id": "ChIJ00bGqUtPqEcRCJMlVi46kNU",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "McFIT Fitnessstudio Neukölln",
@@ -166,7 +187,8 @@
       "address": "Tempelhofer Weg 91-99",
       "latitude": "52.451769",
       "longitude": "13.434731",
-      "google_place_id": "ChIJ_wOt9X9FqEcRA7GzEzoFRw0"
+      "google_place_id": "ChIJ_wOt9X9FqEcRA7GzEzoFRw0",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "McFit gym Berlin Reinickendorf",
@@ -174,7 +196,8 @@
       "address": "Oraniendamm 64",
       "latitude": "52.607369",
       "longitude": "13.323602",
-      "google_place_id": "ChIJcdoQr4JUqEcRMy7TGEqeFN0"
+      "google_place_id": "ChIJcdoQr4JUqEcRMy7TGEqeFN0",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "McFIT Fitnessstudio Spandau",
@@ -182,7 +205,8 @@
       "address": "Am Juliusturm 21",
       "latitude": "52.537504",
       "longitude": "13.227496",
-      "google_place_id": "ChIJidksPF9WqEcRJul0BRo5tW8"
+      "google_place_id": "ChIJidksPF9WqEcRJul0BRo5tW8",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "McFit gym Berlin Spandau Klosterfelde",
@@ -190,7 +214,8 @@
       "address": "Altonaer Str. 59-61",
       "latitude": "52.532045",
       "longitude": "13.187704",
-      "google_place_id": "ChIJpZLzMzdWqEcRFiYXI6EasUs"
+      "google_place_id": "ChIJpZLzMzdWqEcRFiYXI6EasUs",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "McFIT Fitnessstudio Tempelhof",
@@ -198,7 +223,8 @@
       "address": "Schöneberger Str. 11-15",
       "latitude": "52.469812",
       "longitude": "13.373682",
-      "google_place_id": "ChIJdyZ2ZQNQqEcROhRoE0Qx1v4"
+      "google_place_id": "ChIJdyZ2ZQNQqEcROhRoE0Qx1v4",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "McFit gym Berlin Wedding",
@@ -206,7 +232,8 @@
       "address": "Forum, Seestraße 64",
       "latitude": "52.55365",
       "longitude": "13.360847",
-      "google_place_id": "ChIJb4R5X9NTqEcRl0W9wBdgQps"
+      "google_place_id": "ChIJb4R5X9NTqEcRl0W9wBdgQps",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "McFIT Fitnessstudio Wilmersdorf",
@@ -214,7 +241,8 @@
       "address": "Berliner Straße 148",
       "latitude": "52.486647",
       "longitude": "13.32839",
-      "google_place_id": "ChIJ811DAGBQqEcRFzLoxWWPQoo"
+      "google_place_id": "ChIJ811DAGBQqEcRFzLoxWWPQoo",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "SuperFit Charlottenburg",
@@ -222,7 +250,8 @@
       "address": "Wilmersdorfer Str. 54",
       "latitude": "52.50826",
       "longitude": "13.30604",
-      "google_place_id": "ChIJnRLk2AZRqEcRRJfMw1nL1s8"
+      "google_place_id": "ChIJnRLk2AZRqEcRRJfMw1nL1s8",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "SuperFit Europa-Center",
@@ -230,15 +259,17 @@
       "address": "Tauentzienstraße 9-12",
       "latitude": "52.504524",
       "longitude": "13.337422",
-      "google_place_id": "ChIJky6YnVVQqEcRKxPUjz9px8c"
+      "google_place_id": "ChIJky6YnVVQqEcRKxPUjz9px8c",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "SuperFit Friedrichshain",
       "website": "http://superfit.club/",
-      "address": "Ring-Center, Frankfurter Allee 111",
-      "latitude": "52.514413",
-      "longitude": "13.4737",
-      "google_place_id": "ChIJo5HVsYxOqEcRGqNVg_PXGRs"
+      "address": "Ring-Center, Frankfurter Allee 111/2. OG",
+      "latitude": "52.514228",
+      "longitude": "13.473888",
+      "google_place_id": "ChIJo5HVsYxOqEcRGqNVg_PXGRs",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "SuperFit Mitte",
@@ -246,7 +277,8 @@
       "address": "Grunerstraße 20",
       "latitude": "52.518306",
       "longitude": "13.416053",
-      "google_place_id": "ChIJez-RBiJOqEcRDmNJKNVXaXc"
+      "google_place_id": "ChIJez-RBiJOqEcRDmNJKNVXaXc",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Superfit Neukölln",
@@ -254,7 +286,8 @@
       "address": "Karl-Marx-Straße 66",
       "latitude": "52.482088",
       "longitude": "13.432858",
-      "google_place_id": "ChIJhduVJLtPqEcRUSAyyrzp2ZY"
+      "google_place_id": "ChIJhduVJLtPqEcRUSAyyrzp2ZY",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "SuperFit Tegel",
@@ -262,7 +295,8 @@
       "address": "Am Borsigturm 2",
       "latitude": "52.584819",
       "longitude": "13.285833",
-      "google_place_id": "ChIJYdKLpWlUqEcRE7e4HfI0vV4"
+      "google_place_id": "ChIJYdKLpWlUqEcRE7e4HfI0vV4",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "SuperFit Steglitz",
@@ -270,7 +304,8 @@
       "address": "Schloßstraße 1",
       "latitude": "52.464324",
       "longitude": "13.326835",
-      "google_place_id": "ChIJ23SqdIJaqEcR6Y2dRu0JiRw"
+      "google_place_id": "ChIJ23SqdIJaqEcR6Y2dRu0JiRw",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Sqwod Pod",
@@ -280,7 +315,8 @@
       "address": "Jacobsohnstraße 27",
       "latitude": "52.556083",
       "longitude": "13.434764",
-      "google_place_id": "ChIJlejeuxJNqEcRZk9PrDh0u-o"
+      "google_place_id": "ChIJlejeuxJNqEcRZk9PrDh0u-o",
+      "lastVerified": "2026-04-22"
     }
   ]
 }

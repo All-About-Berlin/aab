@@ -7,7 +7,8 @@
       "address": "Oranienburger Str. 48",
       "latitude": "52.526143",
       "longitude": "13.388966",
-      "google_place_id": "ChIJsyy-KBhRqEcRjrSsAn5ukWk"
+      "google_place_id": "ChIJsyy-KBhRqEcRjrSsAn5ukWk",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Villa di Wow",
@@ -16,7 +17,8 @@
       "address": "Ohlauer Str. 30",
       "latitude": "52.495311",
       "longitude": "13.429802",
-      "google_place_id": "ChIJ8bfq57RPqEcREqXXVD43rh0"
+      "google_place_id": "ChIJ8bfq57RPqEcREqXXVD43rh0",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Liberty Pizza",
@@ -25,7 +27,8 @@
       "address": "Potsdamer Str. 3",
       "latitude": "52.435726",
       "longitude": "13.257914",
-      "google_place_id": "ChIJTVvF5DFaqEcR5gGOFqKOFBU"
+      "google_place_id": "ChIJTVvF5DFaqEcR5gGOFqKOFBU",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Manhattan Pizza",
@@ -34,7 +37,8 @@
       "address": "Albrechtstr. 114",
       "latitude": "52.454884",
       "longitude": "13.327568",
-      "google_place_id": "ChIJ_U3hTYVaqEcRZpawkdHS8vQ"
+      "google_place_id": "ChIJ_U3hTYVaqEcRZpawkdHS8vQ",
+      "lastVerified": "2026-04-22"
     }
   ]
 }

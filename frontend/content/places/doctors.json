@@ -7,7 +7,8 @@
       "address": "Askanischer Pl. 1",
       "latitude": "52.504966",
       "longitude": "13.381171",
-      "google_place_id": "ChIJM0to-sxRqEcRkAKeK50xyEY"
+      "google_place_id": "ChIJM0to-sxRqEcRkAKeK50xyEY",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Ilker-A.Aydin",
@@ -15,7 +16,8 @@
       "address": "Tegeler Weg 4",
       "latitude": "52.523491",
       "longitude": "13.299629",
-      "google_place_id": "ChIJ8S8ACjBRqEcRg1So6oVbiHM"
+      "google_place_id": "ChIJ8S8ACjBRqEcRg1So6oVbiHM",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Michael Latzke",
@@ -23,23 +25,26 @@
       "address": "Zionskirchstraße 23",
       "latitude": "52.5353",
       "longitude": "13.403128",
-      "google_place_id": "ChIJPadC13ghZUERFxoAEZl_krs"
+      "google_place_id": "ChIJPadC13ghZUERFxoAEZl_krs",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Thomas Raile",
       "website": "http://hausarzt-raile.de/",
-      "address": "Mohrenstraße 6",
+      "address": "Anton-Wilhelm-Amo-Straße 6",
       "latitude": "52.511767",
       "longitude": "13.386948",
-      "google_place_id": "ChIJRdgYkc9RqEcRzsFFxi55Sv0"
+      "google_place_id": "ChIJRdgYkc9RqEcRzsFFxi55Sv0",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Gemeinschaftspraxis Schlesisches Tor",
       "website": "http://www.praxis-schlesisches-tor.de/en/",
-      "address": "Köpenicker Str. 1",
-      "latitude": "52.501524",
-      "longitude": "13.441528",
-      "google_place_id": "ChIJDWzpck5OqEcRB84iUBz12G0"
+      "address": "Elsenstraße 111",
+      "latitude": "52.490676",
+      "longitude": "13.456679",
+      "google_place_id": "ChIJDWzpck5OqEcRB84iUBz12G0",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Petra Jordan",
@@ -47,7 +52,8 @@
       "address": "Driesener Str. 20",
       "latitude": "52.55261",
       "longitude": "13.405705",
-      "google_place_id": "ChIJp3G1yRpSqEcRHqdiorpJOm8"
+      "google_place_id": "ChIJp3G1yRpSqEcRHqdiorpJOm8",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Nadja Dreysse",
@@ -55,7 +61,8 @@
       "address": "Joachim-Friedrich-Straße 53",
       "latitude": "52.494763",
       "longitude": "13.295429",
-      "google_place_id": "ChIJB2xsasFQqEcREXV7F59rD7Q"
+      "google_place_id": "ChIJB2xsasFQqEcREXV7F59rD7Q",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Martina Schreen Allgemeinmedizin Hausarzt Berlin",
@@ -64,7 +71,8 @@
       "address": "Winsstraße 30",
       "latitude": "52.535817",
       "longitude": "13.427394",
-      "google_place_id": "ChIJWxMhygVOqEcRQJ6HDxB3MIw"
+      "google_place_id": "ChIJWxMhygVOqEcRQJ6HDxB3MIw",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Practice Dr. Peter Oblaski",
@@ -73,7 +81,8 @@
       "address": "Merseburger Str. 8",
       "latitude": "52.488361",
       "longitude": "13.352604",
-      "google_place_id": "ChIJycEm8ENQqEcRQSJfBIZAXwA"
+      "google_place_id": "ChIJycEm8ENQqEcRQSJfBIZAXwA",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Andreas Stein",
@@ -82,7 +91,8 @@
       "address": "Rathausstraße 7",
       "latitude": "52.519737",
       "longitude": "13.410822",
-      "google_place_id": "ChIJcaAm0c5PqEcRO7IY9QDlibo"
+      "google_place_id": "ChIJcaAm0c5PqEcRO7IY9QDlibo",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Praxis Dr. Cordes",
@@ -91,7 +101,8 @@
       "address": "Warschauer Str. 33",
       "latitude": "52.507789",
       "longitude": "13.449996",
-      "google_place_id": "ChIJ1di4_VpOqEcRfUET9Fa0VGE"
+      "google_place_id": "ChIJ1di4_VpOqEcRfUET9Fa0VGE",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Kantpraxis",
@@ -100,7 +111,8 @@
       "address": "Kurfürstendamm 42",
       "latitude": "52.502093",
       "longitude": "13.321038",
-      "google_place_id": "ChIJqXX9OftQqEcRRDvBsV2zgs8"
+      "google_place_id": "ChIJqXX9OftQqEcRRDvBsV2zgs8",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Christopher Marchand",
@@ -109,7 +121,8 @@
       "address": "Pestalozzistraße 57A",
       "latitude": "52.507802",
       "longitude": "13.298253",
-      "google_place_id": "ChIJhbq5P9lQqEcRA8RqXlpOr3E"
+      "google_place_id": "ChIJhbq5P9lQqEcRA8RqXlpOr3E",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Eva Essers",
@@ -117,7 +130,8 @@
       "address": "Dieffenbachstraße 65",
       "latitude": "52.493532",
       "longitude": "13.413429",
-      "google_place_id": "ChIJi6XzLsxPqEcRzgjFamPcGWI"
+      "google_place_id": "ChIJi6XzLsxPqEcRzgjFamPcGWI",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Sophie Rüggeberg",
@@ -127,7 +141,8 @@
       "address": "Bornholmer Str. 90",
       "latitude": "52.553575",
       "longitude": "13.412207",
-      "google_place_id": "ChIJ7doPJX1NqEcRGUViyBYUULg"
+      "google_place_id": "ChIJ7doPJX1NqEcRGUViyBYUULg",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Sabina Valentine",
@@ -137,7 +152,8 @@
       "address": "Hausvogteipl. 4",
       "latitude": "52.51337",
       "longitude": "13.396012",
-      "google_place_id": "ChIJyRZEwdNRqEcRu3DO-uONcdI"
+      "google_place_id": "ChIJyRZEwdNRqEcRu3DO-uONcdI",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Praxis für Allgemeinmedizin Stephanie Moore",
@@ -146,7 +162,8 @@
       "address": "Hagelberger Str. 19a",
       "latitude": "52.49179",
       "longitude": "13.381992",
-      "google_place_id": "ChIJ44Sqei9QqEcRWwl7Kxjt8wg"
+      "google_place_id": "ChIJ44Sqei9QqEcRWwl7Kxjt8wg",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Eileen Behrens",
@@ -155,7 +172,8 @@
       "address": "Neue Kantstraße 32",
       "latitude": "52.506577",
       "longitude": "13.294302",
-      "google_place_id": "ChIJTdkSJtpQqEcRs-QxUmfZdqc"
+      "google_place_id": "ChIJTdkSJtpQqEcRs-QxUmfZdqc",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Elke Schröter",
@@ -163,7 +181,8 @@
       "address": "Blenheimstraße 20",
       "latitude": "52.540932",
       "longitude": "13.555371",
-      "google_place_id": "ChIJgxQF8vFLqEcRB9tLnrXpXMA"
+      "google_place_id": "ChIJgxQF8vFLqEcRB9tLnrXpXMA",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Johanna Morguet & Sahar Abdul Majeed",
@@ -171,7 +190,8 @@
       "address": "Grolmanstraße 51",
       "latitude": "52.507052",
       "longitude": "13.321791",
-      "google_place_id": "ChIJ__870OJQqEcRJ-gJYjgKaXM"
+      "google_place_id": "ChIJ__870OJQqEcRJ-gJYjgKaXM",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Ärzte Zentrum Köpenick",
@@ -181,7 +201,8 @@
       "address": "Freiheit 1",
       "latitude": "52.44718",
       "longitude": "13.57584",
-      "google_place_id": "ChIJ26zoKW5IqEcRcAe4YcTuuoI"
+      "google_place_id": "ChIJ26zoKW5IqEcRcAe4YcTuuoI",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Meraneum",
@@ -191,7 +212,8 @@
       "address": "Bozener Str. 13-14",
       "latitude": "52.486601",
       "longitude": "13.338203",
-      "google_place_id": "ChIJny0StYFRqEcR2xOuGnUA5aU"
+      "google_place_id": "ChIJny0StYFRqEcR2xOuGnUA5aU",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "OVID Clinic Berlin",
@@ -201,7 +223,8 @@
       "address": "Boxhagener Str. 82",
       "latitude": "52.508492",
       "longitude": "13.466821",
-      "google_place_id": "ChIJMadZk3BPqEcR-rn1DpXybwA"
+      "google_place_id": "ChIJMadZk3BPqEcR-rn1DpXybwA",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. med. Katharina Schieke",
@@ -209,7 +232,8 @@
       "address": "Schiffbauerdamm 6/7",
       "latitude": "52.521541",
       "longitude": "13.386005",
-      "google_place_id": "ChIJ56LlM8JRqEcRzCnBB9uyz0Q"
+      "google_place_id": "ChIJ56LlM8JRqEcRzCnBB9uyz0Q",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Herr Dr. med. Jürgen Putz",
@@ -217,7 +241,8 @@
       "address": "Hügelschanze 29",
       "latitude": "52.5485",
       "longitude": "13.200443",
-      "google_place_id": "ChIJM1OK8xRWqEcR2A2L0_0CnI0"
+      "google_place_id": "ChIJM1OK8xRWqEcR2A2L0_0CnI0",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Katrin Ludwig",
@@ -226,7 +251,8 @@
       "address": "Ansbacher Str. 45",
       "latitude": "52.49842",
       "longitude": "13.34063",
-      "google_place_id": "ChIJGwZnL1dQqEcRoGSfz2j35R8"
+      "google_place_id": "ChIJGwZnL1dQqEcRoGSfz2j35R8",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. med. Julia Ertl",
@@ -234,7 +260,8 @@
       "address": "Hermannstraße 28",
       "latitude": "52.482002",
       "longitude": "13.424516",
-      "google_place_id": "ChIJwbIPR7lPqEcRSa6Tzqjr3M8"
+      "google_place_id": "ChIJwbIPR7lPqEcRSa6Tzqjr3M8",
+      "lastVerified": "2026-04-22"
     }
   ]
 }

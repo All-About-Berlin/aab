@@ -6,7 +6,8 @@
       "address": "Gärtnerstraße 19",
       "latitude": "52.511858",
       "longitude": "13.461648",
-      "google_place_id": "ChIJbRmdW_lOqEcR5HPpJoIMPuA"
+      "google_place_id": "ChIJbRmdW_lOqEcR5HPpJoIMPuA",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "BABYLON",
@@ -15,7 +16,8 @@
       "address": "Rosa-Luxemburg-Straße 30",
       "latitude": "52.525938",
       "longitude": "13.411423",
-      "google_place_id": "ChIJq6ra2B1OqEcRtEYQoe9BmTE"
+      "google_place_id": "ChIJq6ra2B1OqEcRtEYQoe9BmTE",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Hackesche Höfe Kino",
@@ -24,7 +26,8 @@
       "address": "Rosenthaler Str. 40 -41",
       "latitude": "52.524048",
       "longitude": "13.402226",
-      "google_place_id": "ChIJFVgg3OBRqEcR1qB4VWlJp-E"
+      "google_place_id": "ChIJFVgg3OBRqEcR1qB4VWlJp-E",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Kino Central",
@@ -32,7 +35,8 @@
       "address": "Rosenthaler Str. 39",
       "latitude": "52.524572",
       "longitude": "13.401815",
-      "google_place_id": "ChIJ71105-BRqEcRpsjmghOEVcQ"
+      "google_place_id": "ChIJ71105-BRqEcRpsjmghOEVcQ",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Sommerkino Kulturforum (Yorck)",
@@ -41,7 +45,8 @@
       "address": "Matthäikirchplatz 4",
       "latitude": "52.509006",
       "longitude": "13.367258",
-      "google_place_id": "ChIJ26fE-MlRqEcRSdaXVkAJ_8Q"
+      "google_place_id": "ChIJ26fE-MlRqEcRSdaXVkAJ_8Q",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Rollberg (Yorck)",
@@ -49,15 +54,17 @@
       "address": "Rollbergstraße 70",
       "latitude": "52.478625",
       "longitude": "13.428024",
-      "google_place_id": "ChIJfdgzWbxPqEcR-uBRMYjSZwg"
+      "google_place_id": "ChIJfdgzWbxPqEcR-uBRMYjSZwg",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Passage (Yorck)",
       "website": "https://www.yorck.de/kinos/passage",
       "address": "Karl-Marx-Straße 131",
-      "latitude": "52.477513",
-      "longitude": "13.439448",
-      "google_place_id": "ChIJncRx2aNPqEcRGNu6z9ymrRE"
+      "latitude": "52.477595",
+      "longitude": "13.439173",
+      "google_place_id": "ChIJncRx2aNPqEcRGNu6z9ymrRE",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Odeon (Yorck)",
@@ -65,7 +72,8 @@
       "address": "Hauptstraße 116",
       "latitude": "52.482131",
       "longitude": "13.349547",
-      "google_place_id": "ChIJAza0KGpQqEcRhqmME_bfEmo"
+      "google_place_id": "ChIJAza0KGpQqEcRhqmME_bfEmo",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Kino International (Yorck)",
@@ -74,7 +82,8 @@
       "address": "Karl-Marx-Allee 33",
       "latitude": "52.520478",
       "longitude": "13.422848",
-      "google_place_id": "ChIJH7q9khdOqEcR_AFoi_omA0w"
+      "google_place_id": "ChIJH7q9khdOqEcR_AFoi_omA0w",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Neues Off (Yorck)",
@@ -82,7 +91,8 @@
       "address": "Hermannstraße 20",
       "latitude": "52.483449",
       "longitude": "13.424482",
-      "google_place_id": "ChIJm_ftFI5ZqEcRflhrA9kr73E"
+      "google_place_id": "ChIJm_ftFI5ZqEcRflhrA9kr73E",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Filmtheater am Friedrichshain (Yorck)",
@@ -90,7 +100,8 @@
       "address": "Bötzowstraße 1-5",
       "latitude": "52.529045",
       "longitude": "13.430353",
-      "google_place_id": "ChIJV1P1qINPqEcRuySJjy1CI3s"
+      "google_place_id": "ChIJV1P1qINPqEcRuySJjy1CI3s",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Kant Kino (Yorck)",
@@ -98,7 +109,8 @@
       "address": "Kantstraße 54",
       "latitude": "52.506783",
       "longitude": "13.308327",
-      "google_place_id": "ChIJkSloluBQqEcRM5AkRyh-WgE"
+      "google_place_id": "ChIJkSloluBQqEcRM5AkRyh-WgE",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Delphi Filmpalast (Yorck)",
@@ -106,7 +118,8 @@
       "address": "Kantstraße 12A",
       "latitude": "52.506032",
       "longitude": "13.32851",
-      "google_place_id": "ChIJm6SNNPxQqEcRq8bcTLwe7y0"
+      "google_place_id": "ChIJm6SNNPxQqEcRq8bcTLwe7y0",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Cinema Paris (Yorck)",
@@ -115,7 +128,8 @@
       "address": "Kurfürstendamm 211",
       "latitude": "52.502042",
       "longitude": "13.324787",
-      "google_place_id": "ChIJmxmTNPxQqEcREhXdT1rk9vQ"
+      "google_place_id": "ChIJmxmTNPxQqEcREhXdT1rk9vQ",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Capitol Dahlem (Yorck)",
@@ -123,15 +137,17 @@
       "address": "Thielallee 36",
       "latitude": "52.453037",
       "longitude": "13.286726",
-      "google_place_id": "ChIJ74aV7WtaqEcRKrpk-0dm2Z0"
+      "google_place_id": "ChIJ74aV7WtaqEcRKrpk-0dm2Z0",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Blauer Stern (Yorck)",
       "website": "https://yorck.de/",
       "address": "Hermann-Hesse-Straße 11",
-      "latitude": "52.580407",
-      "longitude": "13.401396",
-      "google_place_id": "ChIJ0dvTsF1SqEcRS6HA5RRm838"
+      "latitude": "52.580377",
+      "longitude": "13.401193",
+      "google_place_id": "ChIJ0dvTsF1SqEcRS6HA5RRm838",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Babylon Kreuzberg (Yorck)",
@@ -139,7 +155,8 @@
       "address": "Dresdener Str. 126",
       "latitude": "52.500669",
       "longitude": "13.416903",
-      "google_place_id": "ChIJxea3BzNOqEcRUuCIlU0yxZ0"
+      "google_place_id": "ChIJxea3BzNOqEcRUuCIlU0yxZ0",
+      "lastVerified": "2026-04-22"
     }
   ]
 }

@@ -125,7 +125,7 @@ class MapExtension(InclusionTag, StandaloneTag):
     def get_context(self, places: str, **kwargs):
         entries = self.context["entries"]
         entry = entries[EntryURI(places)]
-        return {"places": entry["places"]}
+        return {"places": [p for p in entry["places"] if p.get("status", "OPERATIONAL") == "OPERATIONAL"]}
 
 
 class TableOfContentsExtension(InclusionTag, StandaloneTag):

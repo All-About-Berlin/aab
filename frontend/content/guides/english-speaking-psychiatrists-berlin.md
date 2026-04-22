@@ -8,9 +8,7 @@ Date_created: 2023-03-30
 This guide explains:
 
 - How to find an English-speaking psychiatrist
-- The difference between psychiatrists and psychotherapists
-
-**[Go to the list of psychiatrists ➞](#list-of-english-speaking-psychiatrists)**
+- The difference between psychiatrists and [psychotherapists](/guides/english-speaking-psychotherapists-berlin)
 
 {% tableOfContents %}
 
@@ -20,6 +18,8 @@ This guide explains:
 {% map places="places/psychiatrists.json" %}
 
 To suggest a psychiatrist, [fill this form](/suggest-therapist).
+
+Looking for a psychotherapist? Use my [list of psychotherapists](/guides/english-speaking-psychotherapists-berlin).
 
 ### Other lists of psychiatrists
 

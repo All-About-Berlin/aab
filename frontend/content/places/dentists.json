@@ -6,7 +6,8 @@
       "address": "Chausseestraße 22",
       "latitude": "52.530813",
       "longitude": "13.383004",
-      "google_place_id": "ChIJNXAs7OxRqEcRr4SC2oe8UiQ"
+      "google_place_id": "ChIJNXAs7OxRqEcRr4SC2oe8UiQ",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Studio Dental Berlin",
@@ -14,9 +15,10 @@
       "website": "http://studiodentalberlin.de/",
       "email": "info@studiodentalberlin.de",
       "address": "Wilmersdorfer Str. 128",
-      "latitude": "52.510132",
-      "longitude": "13.306048",
-      "google_place_id": "ChIJFxExkN9QqEcRfS9ieswDsjA"
+      "latitude": "52.510152",
+      "longitude": "13.305993",
+      "google_place_id": "ChIJFxExkN9QqEcRfS9ieswDsjA",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Jan Effinghausen",
@@ -24,7 +26,8 @@
       "address": "Jägerstraße 70",
       "latitude": "52.513837",
       "longitude": "13.386877",
-      "google_place_id": "ChIJJzE_OMVRqEcR7NrFRbUGhO0"
+      "google_place_id": "ChIJJzE_OMVRqEcR7NrFRbUGhO0",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Triadent",
@@ -32,7 +35,8 @@
       "address": "Rosenthaler Str. 63 - 64",
       "latitude": "52.527931",
       "longitude": "13.403038",
-      "google_place_id": "ChIJG85h8eNRqEcRo0fkW36H59Y"
+      "google_place_id": "ChIJG85h8eNRqEcRo0fkW36H59Y",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Radmann in Gesundbrunnen Center",
@@ -41,15 +45,8 @@
       "address": "Im Gesundbrunnen-Center, Badstraße 4",
       "latitude": "52.549877",
       "longitude": "13.387692",
-      "google_place_id": "ChIJIbj6kyFSqEcRhIgr7J6LDZk"
-    },
-    {
-      "name": "Medeco Zahnklinken",
-      "website": "https://www.mvzmedeco.berlin/standort-potsdamer-platz",
-      "address": "Stresemannstraße 121",
-      "latitude": "52.507195",
-      "longitude": "13.378585",
-      "google_place_id": "ChIJtXkgF8xRqEcRV_B2HS6OgpA"
+      "google_place_id": "ChIJIbj6kyFSqEcRhIgr7J6LDZk",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Zahnartpraxis Dr. Danai",
@@ -58,7 +55,8 @@
       "address": "Breisgauer Str. 37",
       "latitude": "52.434603",
       "longitude": "13.218006",
-      "google_place_id": "ChIJE0xI_51ZqEcRLJj-HwgLwtQ"
+      "google_place_id": "ChIJE0xI_51ZqEcRLJj-HwgLwtQ",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Fache, Dr. Khalife",
@@ -66,7 +64,8 @@
       "address": "Wilmersdorfer Str. 108-111",
       "latitude": "52.506149",
       "longitude": "13.30729",
-      "google_place_id": "ChIJzUs7puBQqEcR7UYzdDKqxYw"
+      "google_place_id": "ChIJzUs7puBQqEcR7UYzdDKqxYw",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Ku64",
@@ -75,7 +74,8 @@
       "address": "Kurfürstendamm 64",
       "latitude": "52.500619",
       "longitude": "13.310665",
-      "google_place_id": "ChIJ79fcE-ZQqEcRn2qA5pOz-Xc"
+      "google_place_id": "ChIJ79fcE-ZQqEcRn2qA5pOz-Xc",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "KU64 Zahnarzt Berlin Mitte - Dr. Ziegler & Partner",
@@ -83,7 +83,8 @@
       "address": "Hausvogteipl. 14",
       "latitude": "52.513306",
       "longitude": "13.397635",
-      "google_place_id": "ChIJETSfoJxRqEcReQ9pt5t_ek8"
+      "google_place_id": "ChIJETSfoJxRqEcReQ9pt5t_ek8",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Stefan Naumann",
@@ -91,7 +92,8 @@
       "address": "Auguste-Viktoria-Straße 7",
       "latitude": "52.491802",
       "longitude": "13.290637",
-      "google_place_id": "ChIJXa4cXMdQqEcRthk5mHA5Dms"
+      "google_place_id": "ChIJXa4cXMdQqEcRthk5mHA5Dms",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Tempeldent - Zahnarztpraxis in Tempelhof",
@@ -99,7 +101,8 @@
       "address": "Ringbahnstraße 76-80",
       "latitude": "52.468719",
       "longitude": "13.384336",
-      "google_place_id": "ChIJKXyKJf1PqEcRpP6wrSwhcFA"
+      "google_place_id": "ChIJKXyKJf1PqEcRpP6wrSwhcFA",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Zahnarzt Friedrichshain: F. Yashar",
@@ -107,7 +110,8 @@
       "address": "Frankfurter Allee 9",
       "latitude": "52.51612",
       "longitude": "13.456661",
-      "google_place_id": "ChIJvRNlXmdOqEcRR4dWygJvcck"
+      "google_place_id": "ChIJvRNlXmdOqEcRR4dWygJvcck",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Zahnarzt Martin Macha",
@@ -115,7 +119,8 @@
       "address": "Kantstraße 134",
       "latitude": "52.50597",
       "longitude": "13.31535",
-      "google_place_id": "ChIJf73WwuNQqEcRBFS6ggoGjfk"
+      "google_place_id": "ChIJf73WwuNQqEcRBFS6ggoGjfk",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Oliver Redaelli",
@@ -123,7 +128,8 @@
       "address": "Linkstraße 6",
       "latitude": "52.506897",
       "longitude": "13.374546",
-      "google_place_id": "ChIJ1UFSYqhJqEcRTZCVW0EalF0"
+      "google_place_id": "ChIJ1UFSYqhJqEcRTZCVW0EalF0",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Praxis Grinfeld",
@@ -132,7 +138,8 @@
       "address": "Berliner Straße 37",
       "latitude": "52.486689",
       "longitude": "13.321526",
-      "google_place_id": "ChIJeSL2T4tQqEcR0E80vUXbzJw"
+      "google_place_id": "ChIJeSL2T4tQqEcR0E80vUXbzJw",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Kottident",
@@ -140,7 +147,8 @@
       "address": "Adalbertstraße 94",
       "latitude": "52.500749",
       "longitude": "13.418725",
-      "google_place_id": "ChIJbz4bnjNOqEcR9SxW6-GbRKM"
+      "google_place_id": "ChIJbz4bnjNOqEcR9SxW6-GbRKM",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Zahnärzte Künzel",
@@ -148,7 +156,8 @@
       "address": "Kurfürstendamm 69",
       "latitude": "52.500414",
       "longitude": "13.307848",
-      "google_place_id": "ChIJyTiBf-hQqEcRr-5alarDwcI"
+      "google_place_id": "ChIJyTiBf-hQqEcRr-5alarDwcI",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Zahnarztpraxis Breitenbachplatz",
@@ -157,7 +166,8 @@
       "address": "Breitenbachpl. 21",
       "latitude": "52.465967",
       "longitude": "13.307489",
-      "google_place_id": "ChIJ101tifJbqEcRZe4dTH8mECE"
+      "google_place_id": "ChIJ101tifJbqEcRZe4dTH8mECE",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Zahnarztpraxis Dr. dent. Julia Hauschildt",
@@ -167,16 +177,18 @@
       "address": "Provinzstraße 45-46",
       "latitude": "52.5685",
       "longitude": "13.379227",
-      "google_place_id": "ChIJ-as10ElSqEcRNs4lp5gk3aU"
+      "google_place_id": "ChIJ-as10ElSqEcRNs4lp5gk3aU",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Zahnarztpraxis Dr. Anne Kehler",
       "website": "https://www.zahnarztpraxis-kehler.de/",
       "email": "za-kehler@web.de",
       "address": "Siegfriedstraße 212",
-      "latitude": "52.51239",
-      "longitude": "13.497494",
-      "google_place_id": "ChIJNTFQx79OqEcR3XVKYmBpWuw"
+      "latitude": "52.51241",
+      "longitude": "13.497471",
+      "google_place_id": "ChIJNTFQx79OqEcR3XVKYmBpWuw",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Zahnarzt Michael",
@@ -184,7 +196,8 @@
       "address": "Dunckerstraße 11",
       "latitude": "52.54253",
       "longitude": "13.420994",
-      "google_place_id": "ChIJYzqHyv9NqEcRzpXZfb8bakk"
+      "google_place_id": "ChIJYzqHyv9NqEcRzpXZfb8bakk",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Alt-Marzahn 66",
@@ -192,7 +205,8 @@
       "address": "Alt-Marzahn 66",
       "latitude": "52.542293",
       "longitude": "13.562676",
-      "google_place_id": "ChIJNSMzPuxLqEcR3z8XUV8e8gI"
+      "google_place_id": "ChIJNSMzPuxLqEcR3z8XUV8e8gI",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Thorsten John",
@@ -200,7 +214,8 @@
       "address": "Schlüterstraße 38",
       "latitude": "52.50203",
       "longitude": "13.316568",
-      "google_place_id": "ChIJy-Dea_tQqEcRmyAzHqsOFe8"
+      "google_place_id": "ChIJy-Dea_tQqEcRmyAzHqsOFe8",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dr. Sztankay",
@@ -208,7 +223,8 @@
       "address": "Bundesallee 92",
       "latitude": "52.467278",
       "longitude": "13.327913",
-      "google_place_id": "ChIJkW503XhQqEcRo-iLaihntvE"
+      "google_place_id": "ChIJkW503XhQqEcRo-iLaihntvE",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Zahnarztpraxis mederi am Roseneck",
@@ -218,15 +234,17 @@
       "address": "Karlsbader Str. 1",
       "latitude": "52.478569",
       "longitude": "13.282512",
-      "google_place_id": "ChIJOVXI-aRQqEcRHhe1RK4DaAU"
+      "google_place_id": "ChIJOVXI-aRQqEcRHhe1RK4DaAU",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Die Praxis Mitte",
       "website": "https://www.die-praxis.berlin/",
-      "address": "Münzstraße 5",
-      "latitude": "52.523865",
-      "longitude": "13.408602",
-      "google_place_id": "ChIJm7m4g-1PqEcR9qybv-6X6Ps"
+      "address": "Hinterhaus, Münzstraße 5",
+      "latitude": "52.524123",
+      "longitude": "13.408772",
+      "google_place_id": "ChIJm7m4g-1PqEcR9qybv-6X6Ps",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "MVZ Volksdent GmbH",
@@ -235,7 +253,8 @@
       "address": "Prenzlauer Allee 176",
       "latitude": "52.545547",
       "longitude": "13.427275",
-      "google_place_id": "ChIJyULcj21NqEcRkDYtea9SUds"
+      "google_place_id": "ChIJyULcj21NqEcRkDYtea9SUds",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "DentalFirst",
@@ -243,9 +262,10 @@
       "website": "https://www.dentalfirst.de/",
       "email": "eric@frymark.org",
       "address": "Reichsstraße 2",
-      "latitude": "52.510702",
-      "longitude": "13.271059",
-      "google_place_id": "ChIJsfqb5itXqEcRR_FOM2QAmFI"
+      "latitude": "52.510672",
+      "longitude": "13.270969",
+      "google_place_id": "ChIJsfqb5itXqEcRR_FOM2QAmFI",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Berlin Smile Zahnzentrum",
@@ -255,7 +275,8 @@
       "address": "Heidestraße 14",
       "latitude": "52.53182",
       "longitude": "13.367388",
-      "google_place_id": "ChIJ2VAthaRQqEcRfwxoqURKZRQ"
+      "google_place_id": "ChIJ2VAthaRQqEcRfwxoqURKZRQ",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "High-endo",
@@ -263,7 +284,8 @@
       "address": "Zahnarztpraxis high-endo.de, Uhlandstraße 175",
       "latitude": "52.501587",
       "longitude": "13.325441",
-      "google_place_id": "ChIJ150uuftQqEcRI6sVYv8VU5w"
+      "google_place_id": "ChIJ150uuftQqEcRI6sVYv8VU5w",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "torhaus - Your Dentists in Berlin",
@@ -273,7 +295,8 @@
       "address": "Robert-Koch-Platz 11",
       "latitude": "52.528409",
       "longitude": "13.378451",
-      "google_place_id": "ChIJ--eWx5RRqEcRdw6wJaph-Ig"
+      "google_place_id": "ChIJ--eWx5RRqEcRdw6wJaph-Ig",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Zahnärzte am Mexikoplatz - Lorena Gerlach & Dr. Constantin Wegenstein",
@@ -282,7 +305,8 @@
       "address": "Beerenstraße 66",
       "latitude": "52.437317",
       "longitude": "13.233651",
-      "google_place_id": "ChIJn0xj-oNZqEcRBSp-LkIneWU"
+      "google_place_id": "ChIJn0xj-oNZqEcRBSp-LkIneWU",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "zmq207 Zahnmedizin Berlin Mitte",
@@ -290,7 +314,8 @@
       "address": "Leipziger Str. 124",
       "latitude": "52.510106",
       "longitude": "13.383564",
-      "google_place_id": "ChIJqQAP6dpRqEcRsp7cT19f-HQ"
+      "google_place_id": "ChIJqQAP6dpRqEcRsp7cT19f-HQ",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "happybite Zahnzentrum",
@@ -300,7 +325,8 @@
       "address": "Lehrter Str. 23b",
       "latitude": "52.530586",
       "longitude": "13.362309",
-      "google_place_id": "ChIJJWbB5mxRqEcRuIjz2zWgM0c"
+      "google_place_id": "ChIJJWbB5mxRqEcRuIjz2zWgM0c",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dentist Wahid Sarwghad",
@@ -310,7 +336,8 @@
       "address": "Paul-Lincke-Ufer 41",
       "latitude": "52.496221",
       "longitude": "13.421872",
-      "google_place_id": "ChIJ24ds3spPqEcRWBV30EpcOco"
+      "google_place_id": "ChIJ24ds3spPqEcRWBV30EpcOco",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dental Clinic East",
@@ -319,7 +346,8 @@
       "address": "Dörpfeldstraße 46",
       "latitude": "52.43816",
       "longitude": "13.54806",
-      "google_place_id": "ChIJFQ8p0P9LqEcRcbq1XOLXsRw"
+      "google_place_id": "ChIJFQ8p0P9LqEcRcbq1XOLXsRw",
+      "lastVerified": "2026-04-22"
     },
     {
       "name": "Dental Practice Pushpam Sreekumar",
@@ -327,7 +355,8 @@
       "address": "Bamberger Str. 49",
       "latitude": "52.493978",
       "longitude": "13.337426",
-      "google_place_id": "ChIJcV4dncUjZUERLpMiQKg_9No"
+      "google_place_id": "ChIJcV4dncUjZUERLpMiQKg_9No",
+      "lastVerified": "2026-04-22"
     }
   ]
 }
