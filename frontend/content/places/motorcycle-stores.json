@@ -7,7 +7,7 @@
       "address": "Holzhauser Str. 148/152",
       "latitude": "52.584926",
       "longitude": "13.312785",
-      "google_place_id": "ChIJBZe5IIhTqEcRHv33gtTgg4I",
+      "googlePlaceId": "ChIJBZe5IIhTqEcRHv33gtTgg4I",
       "lastVerified": "2026-04-22"
     },
     {
@@ -16,7 +16,7 @@
       "address": "Schnellerstraße 20g",
       "latitude": "52.458101",
       "longitude": "13.505772",
-      "google_place_id": "ChIJIR_U07NIqEcRwOar1JG7MBA",
+      "googlePlaceId": "ChIJIR_U07NIqEcRwOar1JG7MBA",
       "lastVerified": "2026-04-22"
     },
     {
@@ -26,7 +26,7 @@
       "address": "Holzhauser Str. 62-68",
       "latitude": "52.580883",
       "longitude": "13.303636",
-      "google_place_id": "ChIJHdB3-nNUqEcR4ttBz3wcw64",
+      "googlePlaceId": "ChIJHdB3-nNUqEcR4ttBz3wcw64",
       "lastVerified": "2026-04-22"
     },
     {
@@ -35,7 +35,7 @@
       "address": "Siegfriedstraße 65",
       "latitude": "52.527165",
       "longitude": "13.500267",
-      "google_place_id": "ChIJT1FXA59OqEcRLePreILaixc",
+      "googlePlaceId": "ChIJT1FXA59OqEcRLePreILaixc",
       "lastVerified": "2026-04-22"
     },
     {
@@ -44,7 +44,7 @@
       "address": "Alt-Mahlsdorf 26",
       "latitude": "52.5052",
       "longitude": "13.612323",
-      "google_place_id": "ChIJwZ6NqzVKqEcRRb3NQqfuNyI",
+      "googlePlaceId": "ChIJwZ6NqzVKqEcRRb3NQqfuNyI",
       "lastVerified": "2026-04-22"
     },
     {
@@ -53,7 +53,7 @@
       "address": "Großbeerenstraße 2",
       "latitude": "52.439577",
       "longitude": "13.380533",
-      "google_place_id": "ChIJqeA-9UhFqEcR5_CC8G5AoRw",
+      "googlePlaceId": "ChIJqeA-9UhFqEcR5_CC8G5AoRw",
       "lastVerified": "2026-04-22"
     },
     {
@@ -63,7 +63,7 @@
       "address": "Hohenzollerndamm 12",
       "latitude": "52.494688",
       "longitude": "13.325519",
-      "google_place_id": "ChIJZ9Gx2_ZQqEcR2QJmVJEu79U",
+      "googlePlaceId": "ChIJZ9Gx2_ZQqEcR2QJmVJEu79U",
       "lastVerified": "2026-04-22"
     },
     {
@@ -73,7 +73,7 @@
       "address": "Darwinstraße 2",
       "latitude": "52.520974",
       "longitude": "13.314829",
-      "google_place_id": "ChIJD1xeexhRqEcRXfy1xEgVa8A",
+      "googlePlaceId": "ChIJD1xeexhRqEcRXfy1xEgVa8A",
       "lastVerified": "2026-04-22"
     }
   ]

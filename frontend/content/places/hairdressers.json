@@ -6,7 +6,7 @@
       "address": "Pannierstraße 58",
       "latitude": "52.48686",
       "longitude": "13.43054",
-      "google_place_id": "ChIJgaMEvrBPqEcRbKHNprYEXsg",
+      "googlePlaceId": "ChIJgaMEvrBPqEcRbKHNprYEXsg",
       "lastVerified": "2026-04-22"
     },
     {
@@ -15,7 +15,7 @@
       "address": "Sonnenallee 25",
       "latitude": "52.48669",
       "longitude": "13.42928",
-      "google_place_id": "ChIJUavMsbBPqEcRGwYeKbghHog",
+      "googlePlaceId": "ChIJUavMsbBPqEcRGwYeKbghHog",
       "lastVerified": "2026-04-22"
     },
     {
@@ -25,7 +25,7 @@
       "address": "Gneisenaustraße 54",
       "latitude": "52.48912",
       "longitude": "13.40473",
-      "google_place_id": "ChIJrYP5VtZPqEcRJEwYIJqbODw",
+      "googlePlaceId": "ChIJrYP5VtZPqEcRJEwYIJqbODw",
       "lastVerified": "2026-04-22"
     },
     {
@@ -34,7 +34,7 @@
       "address": "Bänschstraße 52",
       "latitude": "52.518039",
       "longitude": "13.465271",
-      "google_place_id": "ChIJ15O-uGFOqEcRXCj3zMtR4iY",
+      "googlePlaceId": "ChIJ15O-uGFOqEcRXCj3zMtR4iY",
       "lastVerified": "2026-04-22"
     },
     {
@@ -44,7 +44,7 @@
       "address": "Kollwitzstraße 71",
       "latitude": "52.537167",
       "longitude": "13.418598",
-      "google_place_id": "ChIJ63S2ngFOqEcRHW14FpYouL8",
+      "googlePlaceId": "ChIJ63S2ngFOqEcRHW14FpYouL8",
       "lastVerified": "2026-04-22"
     },
     {
@@ -54,7 +54,7 @@
       "address": "Meinekestraße 6",
       "latitude": "52.501529",
       "longitude": "13.328743",
-      "google_place_id": "ChIJ7-jmXflQqEcRAfMJdpdbjto",
+      "googlePlaceId": "ChIJ7-jmXflQqEcRAfMJdpdbjto",
       "lastVerified": "2026-04-22"
     },
     {
@@ -63,7 +63,7 @@
       "address": "Hessische Str. 5",
       "latitude": "52.529203",
       "longitude": "13.380092",
-      "google_place_id": "ChIJfQgSVOtRqEcR4XRVAAP3Xfo",
+      "googlePlaceId": "ChIJfQgSVOtRqEcR4XRVAAP3Xfo",
       "lastVerified": "2026-04-22"
     },
     {
@@ -73,7 +73,7 @@
       "address": "Schönleinstraße 4",
       "latitude": "52.492614",
       "longitude": "13.421154",
-      "google_place_id": "ChIJ_-n5JcpPqEcRCqF4hbAxUJk",
+      "googlePlaceId": "ChIJ_-n5JcpPqEcRCqF4hbAxUJk",
       "lastVerified": "2026-04-22"
     },
     {
@@ -82,7 +82,7 @@
       "address": "Skalitzer Str. 83",
       "latitude": "52.500645",
       "longitude": "13.438633",
-      "google_place_id": "ChIJKeW1L0xOqEcRoZhjU6zLqZY",
+      "googlePlaceId": "ChIJKeW1L0xOqEcRoZhjU6zLqZY",
       "lastVerified": "2026-04-22"
     },
     {
@@ -91,7 +91,7 @@
       "address": "Lausitzer Pl. 1",
       "latitude": "52.500727",
       "longitude": "13.429511",
-      "google_place_id": "ChIJqwbxakpOqEcRKSYTra4xGTo",
+      "googlePlaceId": "ChIJqwbxakpOqEcRKSYTra4xGTo",
       "lastVerified": "2026-04-22"
     },
     {
@@ -100,7 +100,7 @@
       "address": "Wrangelstraße 65",
       "latitude": "52.497204",
       "longitude": "13.445046",
-      "google_place_id": "ChIJ6SRq9k1OqEcRZd-8XLrbsMY",
+      "googlePlaceId": "ChIJ6SRq9k1OqEcRZd-8XLrbsMY",
       "lastVerified": "2026-04-22"
     },
     {
@@ -109,7 +109,7 @@
       "address": "Schönhauser Allee 42",
       "latitude": "52.539955",
       "longitude": "13.412548",
-      "google_place_id": "ChIJW5h0qf9RqEcRppPqWT_3e0o",
+      "googlePlaceId": "ChIJW5h0qf9RqEcRppPqWT_3e0o",
       "lastVerified": "2026-04-22"
     },
     {
@@ -118,7 +118,7 @@
       "address": "Joachimstraße 8",
       "latitude": "52.527552",
       "longitude": "13.400949",
-      "google_place_id": "ChIJubD8G-RRqEcRQ8tHxbIkROg",
+      "googlePlaceId": "ChIJubD8G-RRqEcRQ8tHxbIkROg",
       "lastVerified": "2026-04-22"
     },
     {
@@ -128,7 +128,7 @@
       "address": "Chamissopl. 6",
       "latitude": "52.488076",
       "longitude": "13.391718",
-      "google_place_id": "ChIJsZIgZNhPqEcR0CyirGxmrlk",
+      "googlePlaceId": "ChIJsZIgZNhPqEcR0CyirGxmrlk",
       "lastVerified": "2026-04-22"
     },
     {
@@ -138,7 +138,7 @@
       "address": "Möckernstraße 96",
       "latitude": "52.493677",
       "longitude": "13.379971",
-      "google_place_id": "ChIJT8Z9ty9QqEcRbQR43aIgpIk",
+      "googlePlaceId": "ChIJT8Z9ty9QqEcRbQR43aIgpIk",
       "lastVerified": "2026-04-22"
     },
     {
@@ -147,7 +147,7 @@
       "address": "Joachimstraße 8",
       "latitude": "52.527552",
       "longitude": "13.400949",
-      "google_place_id": "ChIJubD8G-RRqEcRQ8tHxbIkROg",
+      "googlePlaceId": "ChIJubD8G-RRqEcRQ8tHxbIkROg",
       "lastVerified": "2026-04-22"
     },
     {
@@ -156,7 +156,7 @@
       "address": "Schönleinstraße 4",
       "latitude": "52.492614",
       "longitude": "13.421154",
-      "google_place_id": "ChIJ_-n5JcpPqEcRCqF4hbAxUJk",
+      "googlePlaceId": "ChIJ_-n5JcpPqEcRCqF4hbAxUJk",
       "lastVerified": "2026-04-22"
     },
     {
@@ -165,7 +165,7 @@
       "address": "Lausitzer Pl. 1",
       "latitude": "52.500727",
       "longitude": "13.429511",
-      "google_place_id": "ChIJqwbxakpOqEcRKSYTra4xGTo",
+      "googlePlaceId": "ChIJqwbxakpOqEcRKSYTra4xGTo",
       "lastVerified": "2026-04-22"
     },
     {
@@ -175,7 +175,7 @@
       "address": "Prenzlauer Allee 195A",
       "latitude": "52.539587",
       "longitude": "13.423992",
-      "google_place_id": "ChIJn3s1SgdOqEcR30AlIauYIhM",
+      "googlePlaceId": "ChIJn3s1SgdOqEcR30AlIauYIhM",
       "lastVerified": "2026-04-22"
     },
     {
@@ -193,7 +193,7 @@
       "address": "Belziger Str. 30",
       "latitude": "52.487086",
       "longitude": "13.352857",
-      "google_place_id": "ChIJs2NlZAZRqEcRkHI3InkIbCw",
+      "googlePlaceId": "ChIJs2NlZAZRqEcRkHI3InkIbCw",
       "lastVerified": "2026-04-22"
     },
     {
@@ -202,7 +202,7 @@
       "address": "Tauentzienstraße 21-24",
       "latitude": "52.502023",
       "longitude": "13.341317",
-      "google_place_id": "ChIJB2MJJeVQqEcR_hfMBpg115g",
+      "googlePlaceId": "ChIJB2MJJeVQqEcR_hfMBpg115g",
       "lastVerified": "2026-04-22"
     },
     {
@@ -212,7 +212,7 @@
       "address": "Schöneberger Str. 11",
       "latitude": "52.4642",
       "longitude": "13.330912",
-      "google_place_id": "ChIJLwGio4JaqEcRN6_2JZqukYw",
+      "googlePlaceId": "ChIJLwGio4JaqEcRN6_2JZqukYw",
       "lastVerified": "2026-04-22"
     },
     {
@@ -223,7 +223,7 @@
       "address": "Rosenthaler Str. 72A",
       "latitude": "52.529516",
       "longitude": "13.40191",
-      "google_place_id": "ChIJxbJzYZJRqEcRUVPg19ir-tk",
+      "googlePlaceId": "ChIJxbJzYZJRqEcRUVPg19ir-tk",
       "lastVerified": "2026-04-22"
     },
     {
@@ -234,7 +234,7 @@
       "address": "Schleiermacherstraße 25",
       "latitude": "52.489173",
       "longitude": "13.397675",
-      "google_place_id": "ChIJWczGW8VPqEcR8zMYY7Zoqe8",
+      "googlePlaceId": "ChIJWczGW8VPqEcR8zMYY7Zoqe8",
       "lastVerified": "2026-04-22"
     },
     {
@@ -244,7 +244,7 @@
       "address": "Stromstraße 44",
       "latitude": "52.529987",
       "longitude": "13.342973",
-      "google_place_id": "ChIJwY0Z9qpRqEcRSNnCSzQWsyk",
+      "googlePlaceId": "ChIJwY0Z9qpRqEcRSNnCSzQWsyk",
       "lastVerified": "2026-04-22"
     },
     {
@@ -254,7 +254,7 @@
       "address": "Thomasstraße 11",
       "latitude": "52.473544",
       "longitude": "13.439184",
-      "google_place_id": "ChIJ-XbhXJ9PqEcRQ0nwxtRlixQ",
+      "googlePlaceId": "ChIJ-XbhXJ9PqEcRQ0nwxtRlixQ",
       "lastVerified": "2026-04-22"
     },
     {
@@ -264,7 +264,7 @@
       "address": "Brunnenstraße 159",
       "latitude": "52.535128",
       "longitude": "13.397704",
-      "google_place_id": "ChIJT7xPfZVRqEcRLen82no-gJs",
+      "googlePlaceId": "ChIJT7xPfZVRqEcRLen82no-gJs",
       "lastVerified": "2026-04-22"
     },
     {
@@ -275,7 +275,7 @@
       "address": "Parlour&Places, Kurfürstendamm 210/1 Floor",
       "latitude": "52.502033",
       "longitude": "13.324312",
-      "google_place_id": "ChIJB9KL-cVRqEcRdBAcUXyA5V8",
+      "googlePlaceId": "ChIJB9KL-cVRqEcRdBAcUXyA5V8",
       "lastVerified": "2026-04-22"
     },
     {
@@ -285,7 +285,7 @@
       "address": "Silvio-Meier-Str. 2",
       "latitude": "52.515407",
       "longitude": "13.463405",
-      "google_place_id": "ChIJXSSIhdlPqEcRtyS6SWedMF0",
+      "googlePlaceId": "ChIJXSSIhdlPqEcRtyS6SWedMF0",
       "lastVerified": "2026-04-22"
     },
     {
@@ -295,7 +295,7 @@
       "address": "Krossener Str. 18",
       "latitude": "52.510547",
       "longitude": "13.457827",
-      "google_place_id": "ChIJQRgjmB9PqEcRG8WLLjGbEt4",
+      "googlePlaceId": "ChIJQRgjmB9PqEcRG8WLLjGbEt4",
       "lastVerified": "2026-04-22"
     },
     {
@@ -304,7 +304,7 @@
       "address": "Warschauer Str. 60",
       "latitude": "52.509673",
       "longitude": "13.451704",
-      "google_place_id": "ChIJ9wxTME9PqEcRWQSf8owWZV8",
+      "googlePlaceId": "ChIJ9wxTME9PqEcRWQSf8owWZV8",
       "lastVerified": "2026-04-22"
     },
     {
@@ -313,7 +313,7 @@
       "address": "Turmstr. 35 A",
       "latitude": "52.526744",
       "longitude": "13.337364",
-      "google_place_id": "ChIJqw_YkTVTqEcR8a-YMM9hDNA",
+      "googlePlaceId": "ChIJqw_YkTVTqEcR8a-YMM9hDNA",
       "lastVerified": "2026-04-22"
     },
     {
@@ -323,7 +323,7 @@
       "address": "Schönhauser Allee 49",
       "latitude": "52.542359",
       "longitude": "13.412723",
-      "google_place_id": "ChIJlQGhf2NNqEcRVm7RjvUXxZA",
+      "googlePlaceId": "ChIJlQGhf2NNqEcRVm7RjvUXxZA",
       "lastVerified": "2026-04-22"
     },
     {
@@ -332,7 +332,7 @@
       "address": "Zillestraße 79",
       "latitude": "52.513335",
       "longitude": "13.304512",
-      "google_place_id": "ChIJ2-Z75yBRqEcRNiQSvzQhgSY",
+      "googlePlaceId": "ChIJ2-Z75yBRqEcRNiQSvzQhgSY",
       "lastVerified": "2026-04-22"
     },
     {
@@ -342,7 +342,7 @@
       "address": "Am Hamburger bhf 2a",
       "latitude": "52.531225",
       "longitude": "13.369909",
-      "google_place_id": "ChIJq48f79ZRqEcRhIIApXA7QFE",
+      "googlePlaceId": "ChIJq48f79ZRqEcRhIIApXA7QFE",
       "lastVerified": "2026-04-22"
     },
     {
@@ -352,7 +352,7 @@
       "address": "Sprengelstraße 44",
       "latitude": "52.542307",
       "longitude": "13.358133",
-      "google_place_id": "ChIJXfI_D9VRqEcRJwPow1xV65Y",
+      "googlePlaceId": "ChIJXfI_D9VRqEcRJwPow1xV65Y",
       "lastVerified": "2026-04-22"
     },
     {
@@ -363,7 +363,7 @@
       "address": "Grünberger Str. 24",
       "latitude": "52.512618",
       "longitude": "13.450756",
-      "google_place_id": "ChIJN7dacftPqEcRPj9LDR1yrJw",
+      "googlePlaceId": "ChIJN7dacftPqEcRPj9LDR1yrJw",
       "lastVerified": "2026-04-22"
     },
     {
@@ -373,7 +373,7 @@
       "address": "Niederbarnimstraße 5",
       "latitude": "52.51432",
       "longitude": "13.45904",
-      "google_place_id": "ChIJfTthsPhPqEcRE8s4AQpznSQ",
+      "googlePlaceId": "ChIJfTthsPhPqEcRE8s4AQpznSQ",
       "lastVerified": "2026-04-22"
     },
     {
@@ -382,7 +382,7 @@
       "address": "32 Rue Greneta, 75002 Paris, France",
       "latitude": "48.865327",
       "longitude": "2.349591",
-      "google_place_id": "ChIJebN16Rlu5kcRFwINZ8mm2uk",
+      "googlePlaceId": "ChIJebN16Rlu5kcRFwINZ8mm2uk",
       "lastVerified": "2026-04-22"
     },
     {
@@ -392,7 +392,7 @@
       "address": "Brunnenstraße 158",
       "latitude": "52.535237",
       "longitude": "13.397534",
-      "google_place_id": "ChIJTdxQpTZRqEcRCqDpusto-rQ",
+      "googlePlaceId": "ChIJTdxQpTZRqEcRCqDpusto-rQ",
       "lastVerified": "2026-04-22"
     },
     {
@@ -402,7 +402,7 @@
       "address": "Knesebeckstraße 77",
       "latitude": "52.5041",
       "longitude": "13.322439",
-      "google_place_id": "ChIJLaDLwc9RqEcRTNXDCWcHZb0",
+      "googlePlaceId": "ChIJLaDLwc9RqEcRTNXDCWcHZb0",
       "lastVerified": "2026-04-22"
     }
   ]

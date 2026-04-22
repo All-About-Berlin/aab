@@ -15,8 +15,8 @@
 				{% endif %}
 			</h4>
 			<address>
-				{% if place.google_place_id|default %}
-					<a href="https://www.google.com/maps/search/?api=1&query={{ place.name|urlencode }}%2C%20{{ place.address|urlencode }}&query_place_id={{ place.google_place_id }}" target="_blank" title="Open in Google Maps">
+				{% if place.googlePlaceId|default %}
+					<a href="https://www.google.com/maps/search/?api=1&query={{ place.name|urlencode }}%2C%20{{ place.address|urlencode }}&query_place_id={{ place.googlePlaceId }}" target="_blank" title="Open in Google Maps">
 						{{ place.address }}
 					</a>
 				{% else %}
@@ -31,7 +31,7 @@
 			{%- if place.description|default -%}
 				<p>{{ place.description }}</p>
 			{%- endif -%}
-			{%- if place.accepts_public_insurance|default == 'Yes' -%}
+			{%- if place.acceptsPublicHealthInsurance|default == 'Yes' -%}
 				<p>Accepts public health insurance.</p>
 			{%- endif -%}
 		</li>

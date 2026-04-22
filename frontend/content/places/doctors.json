@@ -7,7 +7,7 @@
       "address": "Askanischer Pl. 1",
       "latitude": "52.504966",
       "longitude": "13.381171",
-      "google_place_id": "ChIJM0to-sxRqEcRkAKeK50xyEY",
+      "googlePlaceId": "ChIJM0to-sxRqEcRkAKeK50xyEY",
       "lastVerified": "2026-04-22"
     },
     {
@@ -16,7 +16,7 @@
       "address": "Tegeler Weg 4",
       "latitude": "52.523491",
       "longitude": "13.299629",
-      "google_place_id": "ChIJ8S8ACjBRqEcRg1So6oVbiHM",
+      "googlePlaceId": "ChIJ8S8ACjBRqEcRg1So6oVbiHM",
       "lastVerified": "2026-04-22"
     },
     {
@@ -25,7 +25,7 @@
       "address": "Zionskirchstraße 23",
       "latitude": "52.5353",
       "longitude": "13.403128",
-      "google_place_id": "ChIJPadC13ghZUERFxoAEZl_krs",
+      "googlePlaceId": "ChIJPadC13ghZUERFxoAEZl_krs",
       "lastVerified": "2026-04-22"
     },
     {
@@ -34,7 +34,7 @@
       "address": "Anton-Wilhelm-Amo-Straße 6",
       "latitude": "52.511767",
       "longitude": "13.386948",
-      "google_place_id": "ChIJRdgYkc9RqEcRzsFFxi55Sv0",
+      "googlePlaceId": "ChIJRdgYkc9RqEcRzsFFxi55Sv0",
       "lastVerified": "2026-04-22"
     },
     {
@@ -43,7 +43,7 @@
       "address": "Elsenstraße 111",
       "latitude": "52.490676",
       "longitude": "13.456679",
-      "google_place_id": "ChIJDWzpck5OqEcRB84iUBz12G0",
+      "googlePlaceId": "ChIJDWzpck5OqEcRB84iUBz12G0",
       "lastVerified": "2026-04-22"
     },
     {
@@ -52,7 +52,7 @@
       "address": "Driesener Str. 20",
       "latitude": "52.55261",
       "longitude": "13.405705",
-      "google_place_id": "ChIJp3G1yRpSqEcRHqdiorpJOm8",
+      "googlePlaceId": "ChIJp3G1yRpSqEcRHqdiorpJOm8",
       "lastVerified": "2026-04-22"
     },
     {
@@ -61,7 +61,7 @@
       "address": "Joachim-Friedrich-Straße 53",
       "latitude": "52.494763",
       "longitude": "13.295429",
-      "google_place_id": "ChIJB2xsasFQqEcREXV7F59rD7Q",
+      "googlePlaceId": "ChIJB2xsasFQqEcREXV7F59rD7Q",
       "lastVerified": "2026-04-22"
     },
     {
@@ -71,7 +71,7 @@
       "address": "Winsstraße 30",
       "latitude": "52.535817",
       "longitude": "13.427394",
-      "google_place_id": "ChIJWxMhygVOqEcRQJ6HDxB3MIw",
+      "googlePlaceId": "ChIJWxMhygVOqEcRQJ6HDxB3MIw",
       "lastVerified": "2026-04-22"
     },
     {
@@ -81,7 +81,7 @@
       "address": "Merseburger Str. 8",
       "latitude": "52.488361",
       "longitude": "13.352604",
-      "google_place_id": "ChIJycEm8ENQqEcRQSJfBIZAXwA",
+      "googlePlaceId": "ChIJycEm8ENQqEcRQSJfBIZAXwA",
       "lastVerified": "2026-04-22"
     },
     {
@@ -91,7 +91,7 @@
       "address": "Rathausstraße 7",
       "latitude": "52.519737",
       "longitude": "13.410822",
-      "google_place_id": "ChIJcaAm0c5PqEcRO7IY9QDlibo",
+      "googlePlaceId": "ChIJcaAm0c5PqEcRO7IY9QDlibo",
       "lastVerified": "2026-04-22"
     },
     {
@@ -101,7 +101,7 @@
       "address": "Warschauer Str. 33",
       "latitude": "52.507789",
       "longitude": "13.449996",
-      "google_place_id": "ChIJ1di4_VpOqEcRfUET9Fa0VGE",
+      "googlePlaceId": "ChIJ1di4_VpOqEcRfUET9Fa0VGE",
       "lastVerified": "2026-04-22"
     },
     {
@@ -111,7 +111,7 @@
       "address": "Kurfürstendamm 42",
       "latitude": "52.502093",
       "longitude": "13.321038",
-      "google_place_id": "ChIJqXX9OftQqEcRRDvBsV2zgs8",
+      "googlePlaceId": "ChIJqXX9OftQqEcRRDvBsV2zgs8",
       "lastVerified": "2026-04-22"
     },
     {
@@ -121,7 +121,7 @@
       "address": "Pestalozzistraße 57A",
       "latitude": "52.507802",
       "longitude": "13.298253",
-      "google_place_id": "ChIJhbq5P9lQqEcRA8RqXlpOr3E",
+      "googlePlaceId": "ChIJhbq5P9lQqEcRA8RqXlpOr3E",
       "lastVerified": "2026-04-22"
     },
     {
@@ -130,7 +130,7 @@
       "address": "Dieffenbachstraße 65",
       "latitude": "52.493532",
       "longitude": "13.413429",
-      "google_place_id": "ChIJi6XzLsxPqEcRzgjFamPcGWI",
+      "googlePlaceId": "ChIJi6XzLsxPqEcRzgjFamPcGWI",
       "lastVerified": "2026-04-22"
     },
     {
@@ -141,7 +141,7 @@
       "address": "Bornholmer Str. 90",
       "latitude": "52.553575",
       "longitude": "13.412207",
-      "google_place_id": "ChIJ7doPJX1NqEcRGUViyBYUULg",
+      "googlePlaceId": "ChIJ7doPJX1NqEcRGUViyBYUULg",
       "lastVerified": "2026-04-22"
     },
     {
@@ -152,7 +152,7 @@
       "address": "Hausvogteipl. 4",
       "latitude": "52.51337",
       "longitude": "13.396012",
-      "google_place_id": "ChIJyRZEwdNRqEcRu3DO-uONcdI",
+      "googlePlaceId": "ChIJyRZEwdNRqEcRu3DO-uONcdI",
       "lastVerified": "2026-04-22"
     },
     {
@@ -162,7 +162,7 @@
       "address": "Hagelberger Str. 19a",
       "latitude": "52.49179",
       "longitude": "13.381992",
-      "google_place_id": "ChIJ44Sqei9QqEcRWwl7Kxjt8wg",
+      "googlePlaceId": "ChIJ44Sqei9QqEcRWwl7Kxjt8wg",
       "lastVerified": "2026-04-22"
     },
     {
@@ -172,7 +172,7 @@
       "address": "Neue Kantstraße 32",
       "latitude": "52.506577",
       "longitude": "13.294302",
-      "google_place_id": "ChIJTdkSJtpQqEcRs-QxUmfZdqc",
+      "googlePlaceId": "ChIJTdkSJtpQqEcRs-QxUmfZdqc",
       "lastVerified": "2026-04-22"
     },
     {
@@ -181,7 +181,7 @@
       "address": "Blenheimstraße 20",
       "latitude": "52.540932",
       "longitude": "13.555371",
-      "google_place_id": "ChIJgxQF8vFLqEcRB9tLnrXpXMA",
+      "googlePlaceId": "ChIJgxQF8vFLqEcRB9tLnrXpXMA",
       "lastVerified": "2026-04-22"
     },
     {
@@ -190,7 +190,7 @@
       "address": "Grolmanstraße 51",
       "latitude": "52.507052",
       "longitude": "13.321791",
-      "google_place_id": "ChIJ__870OJQqEcRJ-gJYjgKaXM",
+      "googlePlaceId": "ChIJ__870OJQqEcRJ-gJYjgKaXM",
       "lastVerified": "2026-04-22"
     },
     {
@@ -201,7 +201,7 @@
       "address": "Freiheit 1",
       "latitude": "52.44718",
       "longitude": "13.57584",
-      "google_place_id": "ChIJ26zoKW5IqEcRcAe4YcTuuoI",
+      "googlePlaceId": "ChIJ26zoKW5IqEcRcAe4YcTuuoI",
       "lastVerified": "2026-04-22"
     },
     {
@@ -212,7 +212,7 @@
       "address": "Bozener Str. 13-14",
       "latitude": "52.486601",
       "longitude": "13.338203",
-      "google_place_id": "ChIJny0StYFRqEcR2xOuGnUA5aU",
+      "googlePlaceId": "ChIJny0StYFRqEcR2xOuGnUA5aU",
       "lastVerified": "2026-04-22"
     },
     {
@@ -223,7 +223,7 @@
       "address": "Boxhagener Str. 82",
       "latitude": "52.508492",
       "longitude": "13.466821",
-      "google_place_id": "ChIJMadZk3BPqEcR-rn1DpXybwA",
+      "googlePlaceId": "ChIJMadZk3BPqEcR-rn1DpXybwA",
       "lastVerified": "2026-04-22"
     },
     {
@@ -232,7 +232,7 @@
       "address": "Schiffbauerdamm 6/7",
       "latitude": "52.521541",
       "longitude": "13.386005",
-      "google_place_id": "ChIJ56LlM8JRqEcRzCnBB9uyz0Q",
+      "googlePlaceId": "ChIJ56LlM8JRqEcRzCnBB9uyz0Q",
       "lastVerified": "2026-04-22"
     },
     {
@@ -241,7 +241,7 @@
       "address": "Hügelschanze 29",
       "latitude": "52.5485",
       "longitude": "13.200443",
-      "google_place_id": "ChIJM1OK8xRWqEcR2A2L0_0CnI0",
+      "googlePlaceId": "ChIJM1OK8xRWqEcR2A2L0_0CnI0",
       "lastVerified": "2026-04-22"
     },
     {
@@ -251,7 +251,7 @@
       "address": "Ansbacher Str. 45",
       "latitude": "52.49842",
       "longitude": "13.34063",
-      "google_place_id": "ChIJGwZnL1dQqEcRoGSfz2j35R8",
+      "googlePlaceId": "ChIJGwZnL1dQqEcRoGSfz2j35R8",
       "lastVerified": "2026-04-22"
     },
     {
@@ -260,7 +260,7 @@
       "address": "Hermannstraße 28",
       "latitude": "52.482002",
       "longitude": "13.424516",
-      "google_place_id": "ChIJwbIPR7lPqEcRSa6Tzqjr3M8",
+      "googlePlaceId": "ChIJwbIPR7lPqEcRSa6Tzqjr3M8",
       "lastVerified": "2026-04-22"
     }
   ]

@@ -7,7 +7,7 @@
       "address": "Berliner Str. 69",
       "latitude": "52.555939",
       "longitude": "13.413001",
-      "google_place_id": "ChIJSZ-A9whSqEcRt_U8PUJ2yes",
+      "googlePlaceId": "ChIJSZ-A9whSqEcRt_U8PUJ2yes",
       "recommended": "Yes",
       "lastVerified": "2026-04-22"
     },
@@ -18,7 +18,7 @@
       "address": "Jungstraße 32",
       "latitude": "52.512485",
       "longitude": "13.466997",
-      "google_place_id": "ChIJcaz22xxPqEcRNx0IeCMtUW0",
+      "googlePlaceId": "ChIJcaz22xxPqEcRNx0IeCMtUW0",
       "recommended": "Yes",
       "lastVerified": "2026-04-22"
     },
@@ -29,7 +29,7 @@
       "address": "Akazienstraße 3A",
       "latitude": "52.486764",
       "longitude": "13.355594",
-      "google_place_id": "ChIJnSdXt05QqEcRxtPkLAvIFhU",
+      "googlePlaceId": "ChIJnSdXt05QqEcRxtPkLAvIFhU",
       "lastVerified": "2026-04-22"
     },
     {
@@ -39,7 +39,7 @@
       "address": "Brahestraße 1",
       "latitude": "52.526926",
       "longitude": "13.303929",
-      "google_place_id": "ChIJATwypJVRqEcRp66GNm6hn9E",
+      "googlePlaceId": "ChIJATwypJVRqEcRp66GNm6hn9E",
       "lastVerified": "2026-04-22"
     },
     {
@@ -50,7 +50,7 @@
       "address": "Nestorstraße 2",
       "latitude": "52.499822",
       "longitude": "13.300086",
-      "google_place_id": "ChIJ_baj2MJQqEcR8rFiZB7WJ4E",
+      "googlePlaceId": "ChIJ_baj2MJQqEcR8rFiZB7WJ4E",
       "lastVerified": "2026-04-22"
     },
     {
@@ -61,7 +61,7 @@
       "address": "Urbanstraße 71",
       "latitude": "52.488105",
       "longitude": "13.423089",
-      "google_place_id": "ChIJ-xjUx89RqEcRQ--n7IgH68c",
+      "googlePlaceId": "ChIJ-xjUx89RqEcRQ--n7IgH68c",
       "lastVerified": "2026-04-22"
     },
     {
@@ -70,7 +70,7 @@
       "address": "Neue Schönhauser Str. 12",
       "latitude": "52.524451",
       "longitude": "13.404204",
-      "google_place_id": "ChIJK9dABp1PqEcRNVxtfLrRVL0",
+      "googlePlaceId": "ChIJK9dABp1PqEcRNVxtfLrRVL0",
       "lastVerified": "2026-04-22"
     },
     {
@@ -81,7 +81,7 @@
       "address": "Langenscheidtstraße 9a",
       "latitude": "52.489632",
       "longitude": "13.362342",
-      "google_place_id": "ChIJ_8W4hphRqEcR8PRJBoSmDqw",
+      "googlePlaceId": "ChIJ_8W4hphRqEcR8PRJBoSmDqw",
       "lastVerified": "2026-04-22"
     },
     {
@@ -91,7 +91,7 @@
       "address": "Leipziger Pl. 15",
       "latitude": "52.510424",
       "longitude": "13.378358",
-      "google_place_id": "ChIJreiFX8lRqEcRGIFGOhyNGEU",
+      "googlePlaceId": "ChIJreiFX8lRqEcRGIFGOhyNGEU",
       "lastVerified": "2026-04-22"
     },
     {
@@ -101,7 +101,7 @@
       "address": "Rudolf-Seiffert-Straße 33",
       "latitude": "52.527137",
       "longitude": "13.472285",
-      "google_place_id": "ChIJTcZOf4dOqEcRAP0GOt4y9mM",
+      "googlePlaceId": "ChIJTcZOf4dOqEcRAP0GOt4y9mM",
       "lastVerified": "2026-04-22"
     },
     {
@@ -112,7 +112,7 @@
       "address": "Goethestraße 32",
       "latitude": "52.442639",
       "longitude": "13.234233",
-      "google_place_id": "ChIJNd14hYVZqEcR-uxJZNLDsW0",
+      "googlePlaceId": "ChIJNd14hYVZqEcR-uxJZNLDsW0",
       "lastVerified": "2026-04-22"
     },
     {
@@ -122,7 +122,7 @@
       "address": "Großbeerenstraße 88",
       "latitude": "52.499505",
       "longitude": "13.385835",
-      "google_place_id": "ChIJFzbqHPFRqEcR1J98FBibcvM",
+      "googlePlaceId": "ChIJFzbqHPFRqEcR1J98FBibcvM",
       "lastVerified": "2026-04-22"
     },
     {

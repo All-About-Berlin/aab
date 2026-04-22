@@ -37,7 +37,7 @@ class PlacesLinter(Linter):
                 if date.today() - verified_date < self.verification_frequency:
                     continue
 
-            if not place.get("google_place_id"):
+            if not place.get("googlePlaceId"):
                 name = place.get("name", f"place #{i + 1}")
                 yield None, f"{name}: Place has no place ID", logging.WARNING
                 continue
@@ -62,7 +62,7 @@ class PlacesLinter(Linter):
         name = place.get("name", f"place #{index + 1}")
 
         try:
-            google_place = self.google_maps.place(place["google_place_id"], language="en")["result"]
+            google_place = self.google_maps.place(place["googlePlaceId"], language="en")["result"]
         except googlemaps.exceptions.ApiError as e:
             yield None, f"{name}: Place error: {e}", logging.ERROR
             return

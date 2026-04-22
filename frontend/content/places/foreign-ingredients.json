@@ -6,7 +6,7 @@
       "address": "Neue Grünstraße 9",
       "latitude": "52.509031",
       "longitude": "13.404911",
-      "google_place_id": "ChIJeRSfLiROqEcRIoaW6mudzKg",
+      "googlePlaceId": "ChIJeRSfLiROqEcRIoaW6mudzKg",
       "lastVerified": "2026-04-22"
     },
     {
@@ -16,7 +16,7 @@
       "address": "Tauentzienstraße 21-24",
       "latitude": "52.501602",
       "longitude": "13.340993",
-      "google_place_id": "ChIJYb9yIlRQqEcR7A7Zwwy7q-0",
+      "googlePlaceId": "ChIJYb9yIlRQqEcR7A7Zwwy7q-0",
       "lastVerified": "2026-04-22"
     },
     {
@@ -25,7 +25,7 @@
       "address": "Arndtstraße 29",
       "latitude": "52.48832",
       "longitude": "13.392297",
-      "google_place_id": "ChIJWT159Z1PqEcRRxmoHOgi-Ec",
+      "googlePlaceId": "ChIJWT159Z1PqEcRRxmoHOgi-Ec",
       "lastVerified": "2026-04-22"
     },
     {
@@ -35,7 +35,7 @@
       "address": "Danziger Str. 118",
       "latitude": "52.536077",
       "longitude": "13.432247",
-      "google_place_id": "ChIJgelcfPRLqEcRq-sFVudpvoA",
+      "googlePlaceId": "ChIJgelcfPRLqEcRq-sFVudpvoA",
       "lastVerified": "2026-04-22"
     },
     {
@@ -45,7 +45,7 @@
       "address": "Forckenbeckstraße 1",
       "latitude": "52.479311",
       "longitude": "13.309926",
-      "google_place_id": "ChIJNTva6pBQqEcRTTDYm0Z-XFk",
+      "googlePlaceId": "ChIJNTva6pBQqEcRTTDYm0Z-XFk",
       "lastVerified": "2026-04-22"
     },
     {
@@ -55,7 +55,7 @@
       "address": "Kantstraße 34",
       "latitude": "52.506321",
       "longitude": "13.316375",
-      "google_place_id": "ChIJ0SpnyONQqEcROLnEoFmB3dM",
+      "googlePlaceId": "ChIJ0SpnyONQqEcROLnEoFmB3dM",
       "lastVerified": "2026-04-22"
     },
     {
@@ -65,7 +65,7 @@
       "address": "Leberstraße 28",
       "latitude": "52.483773",
       "longitude": "13.361226",
-      "google_place_id": "ChIJ5QBazD9QqEcRh_lA8J6Wo1o",
+      "googlePlaceId": "ChIJ5QBazD9QqEcRh_lA8J6Wo1o",
       "lastVerified": "2026-04-22"
     },
     {
@@ -75,7 +75,7 @@
       "address": "Schivelbeiner Str. 49",
       "latitude": "52.550524",
       "longitude": "13.413292",
-      "google_place_id": "ChIJoXx01AVSqEcRbL-wg8rJPsc",
+      "googlePlaceId": "ChIJoXx01AVSqEcRbL-wg8rJPsc",
       "lastVerified": "2026-04-22"
     },
     {
@@ -85,7 +85,7 @@
       "address": "Anzengruberstraße 24",
       "latitude": "52.480356",
       "longitude": "13.437595",
-      "google_place_id": "ChIJp5yRZKRPqEcRdbuYi8kQ6lA",
+      "googlePlaceId": "ChIJp5yRZKRPqEcRdbuYi8kQ6lA",
       "lastVerified": "2026-04-22"
     },
     {
@@ -94,7 +94,7 @@
       "address": "Turmstr. 13",
       "latitude": "52.526521",
       "longitude": "13.350685",
-      "google_place_id": "ChIJ4TK9MKBRqEcRQ3JAX1DBd0Y",
+      "googlePlaceId": "ChIJ4TK9MKBRqEcRQ3JAX1DBd0Y",
       "lastVerified": "2026-04-22"
     }
   ]

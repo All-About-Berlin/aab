@@ -7,7 +7,7 @@
       "address": "Manfred-von-Richthofen-Straße 4",
       "latitude": "52.48446",
       "longitude": "13.384379",
-      "google_place_id": "ChIJDR2nUrZPqEcRU17QkKEsW8U",
+      "googlePlaceId": "ChIJDR2nUrZPqEcRU17QkKEsW8U",
       "recommended": "Yes",
       "lastVerified": "2026-04-22"
     },
@@ -17,7 +17,7 @@
       "address": "Albrechtstraße 10F",
       "latitude": "52.521272",
       "longitude": "13.384151",
-      "google_place_id": "ChIJlR6x3MJRqEcRl6Bly0_ebic",
+      "googlePlaceId": "ChIJlR6x3MJRqEcRl6Bly0_ebic",
       "lastVerified": "2026-04-22"
     },
     {
@@ -26,7 +26,7 @@
       "address": "Charlottenstraße 35/36",
       "latitude": "52.51645",
       "longitude": "13.390928",
-      "google_place_id": "ChIJ4aohKR5OqEcR1uJx8pJtTbo",
+      "googlePlaceId": "ChIJ4aohKR5OqEcR1uJx8pJtTbo",
       "lastVerified": "2026-04-22"
     },
     {
@@ -36,7 +36,7 @@
       "address": "Lietzenburger Str. 46",
       "latitude": "52.50062",
       "longitude": "13.33245",
-      "google_place_id": "ChIJxVGt7fhQqEcRp56CoPXUmiM",
+      "googlePlaceId": "ChIJxVGt7fhQqEcRp56CoPXUmiM",
       "lastVerified": "2026-04-22"
     },
     {
@@ -45,7 +45,7 @@
       "address": "Tauentzienstraße 9-12",
       "latitude": "52.504416",
       "longitude": "13.337976",
-      "google_place_id": "ChIJA23R0fhQqEcRHC7fJK0CT8w",
+      "googlePlaceId": "ChIJA23R0fhQqEcRHC7fJK0CT8w",
       "lastVerified": "2026-04-22"
     },
     {
@@ -54,7 +54,7 @@
       "address": "Schlesische Str. 38",
       "latitude": "52.499931",
       "longitude": "13.444521",
-      "google_place_id": "ChIJKYhzGVJOqEcRw9om0hznCAs",
+      "googlePlaceId": "ChIJKYhzGVJOqEcRw9om0hznCAs",
       "lastVerified": "2026-04-22"
     },
     {
@@ -64,7 +64,7 @@
       "address": "Wallstraße 58/59",
       "latitude": "52.513743",
       "longitude": "13.412872",
-      "google_place_id": "ChIJ_5bWuP1RqEcRNl7881mKyTw",
+      "googlePlaceId": "ChIJ_5bWuP1RqEcRNl7881mKyTw",
       "lastVerified": "2026-04-22"
     },
     {
@@ -73,7 +73,7 @@
       "address": "Prinz-Handjery-Straße 77",
       "latitude": "52.431371",
       "longitude": "13.262168",
-      "google_place_id": "ChIJJ2AlvcpbqEcRRN_EXBB1p9Q",
+      "googlePlaceId": "ChIJJ2AlvcpbqEcRRN_EXBB1p9Q",
       "lastVerified": "2026-04-22"
     },
     {
@@ -83,7 +83,7 @@
       "address": "Brandenburgische Str. 24",
       "latitude": "52.496584",
       "longitude": "13.308402",
-      "google_place_id": "ChIJwf9pgPxQqEcRCjxms4b1c8I",
+      "googlePlaceId": "ChIJwf9pgPxQqEcRCjxms4b1c8I",
       "lastVerified": "2026-04-22"
     },
     {
@@ -92,7 +92,7 @@
       "address": "Schmiljanstraße 7",
       "latitude": "52.470133",
       "longitude": "13.330173",
-      "google_place_id": "ChIJmWIfZHlQqEcRyWyoilXBqtM",
+      "googlePlaceId": "ChIJmWIfZHlQqEcRyWyoilXBqtM",
       "lastVerified": "2026-04-22"
     },
     {
@@ -101,7 +101,7 @@
       "address": "Saarbrücker Str. 24/Haus B",
       "latitude": "52.530507",
       "longitude": "13.41338",
-      "google_place_id": "ChIJfeJtFR1OqEcRW_ewHS0YWIA",
+      "googlePlaceId": "ChIJfeJtFR1OqEcRW_ewHS0YWIA",
       "lastVerified": "2026-04-22"
     },
     {
@@ -111,7 +111,7 @@
       "address": "Katharinenstraße 12",
       "latitude": "52.50011",
       "longitude": "13.292497",
-      "google_place_id": "ChIJxWQD3cRQqEcRktHKu--bALQ",
+      "googlePlaceId": "ChIJxWQD3cRQqEcRktHKu--bALQ",
       "lastVerified": "2026-04-22"
     },
     {
@@ -120,7 +120,7 @@
       "address": "Scharnhorststraße 24",
       "latitude": "52.534057",
       "longitude": "13.370495",
-      "google_place_id": "ChIJqfiRUpBRqEcRGcwTJpg4-8Q",
+      "googlePlaceId": "ChIJqfiRUpBRqEcRGcwTJpg4-8Q",
       "lastVerified": "2026-04-22"
     },
     {
@@ -130,7 +130,7 @@
       "address": "Ballenstedter Str. 16A",
       "latitude": "52.494919",
       "longitude": "13.307412",
-      "google_place_id": "ChIJ03FOXOlQqEcRyGXOtVBaLaU",
+      "googlePlaceId": "ChIJ03FOXOlQqEcRyGXOtVBaLaU",
       "lastVerified": "2026-04-22"
     },
     {
@@ -140,7 +140,7 @@
       "address": "Hohenzollerndamm 122",
       "latitude": "52.48054",
       "longitude": "13.28771",
-      "google_place_id": "ChIJSYcjs7xQqEcRnIPH9_41yW8",
+      "googlePlaceId": "ChIJSYcjs7xQqEcRnIPH9_41yW8",
       "lastVerified": "2026-04-22"
     },
     {
@@ -150,7 +150,7 @@
       "address": "Am Zirkus 4",
       "latitude": "52.52316",
       "longitude": "13.386692",
-      "google_place_id": "ChIJF4Gs36RRqEcRMw8wJMY_hAk",
+      "googlePlaceId": "ChIJF4Gs36RRqEcRMw8wJMY_hAk",
       "lastVerified": "2026-04-22"
     },
     {
@@ -159,7 +159,7 @@
       "address": "Länderallee 27",
       "latitude": "52.511711",
       "longitude": "13.263578",
-      "google_place_id": "ChIJmZAVoihXqEcR-DdQrxTBnvM",
+      "googlePlaceId": "ChIJmZAVoihXqEcR-DdQrxTBnvM",
       "lastVerified": "2026-04-22"
     },
     {
@@ -168,7 +168,7 @@
       "address": "Reinhardtstraße 52",
       "latitude": "52.522512",
       "longitude": "13.377732",
-      "google_place_id": "ChIJA9T1ZcBRqEcRHK2kvX0BW70",
+      "googlePlaceId": "ChIJA9T1ZcBRqEcRHK2kvX0BW70",
       "lastVerified": "2026-04-22"
     },
     {
@@ -178,7 +178,7 @@
       "address": "Gardeschützenweg 98",
       "latitude": "52.445462",
       "longitude": "13.303141",
-      "google_place_id": "ChIJr8eU86ZbqEcRO483mM-DpMg",
+      "googlePlaceId": "ChIJr8eU86ZbqEcRO483mM-DpMg",
       "lastVerified": "2026-04-22"
     },
     {
@@ -188,7 +188,7 @@
       "address": "Knesebeckstraße 32",
       "latitude": "52.503271",
       "longitude": "13.321658",
-      "google_place_id": "ChIJxRMmUftQqEcRsPpT9Xqfh3A",
+      "googlePlaceId": "ChIJxRMmUftQqEcRsPpT9Xqfh3A",
       "lastVerified": "2026-04-22"
     },
     {
@@ -197,7 +197,7 @@
       "address": "Milastraße 2",
       "latitude": "52.5455",
       "longitude": "13.411465",
-      "google_place_id": "ChIJcV4RfQFSqEcRTme2ko-1AKw",
+      "googlePlaceId": "ChIJcV4RfQFSqEcRTme2ko-1AKw",
       "lastVerified": "2026-04-22"
     },
     {
@@ -206,7 +206,7 @@
       "address": "Knesebeckstraße 54",
       "latitude": "52.5002",
       "longitude": "13.32194",
-      "google_place_id": "ChIJkfTV4vpQqEcRlY7NjcAs_mM",
+      "googlePlaceId": "ChIJkfTV4vpQqEcRlY7NjcAs_mM",
       "lastVerified": "2026-04-22"
     },
     {
@@ -215,7 +215,7 @@
       "address": "Wundtstraße 48/50",
       "latitude": "52.508747",
       "longitude": "13.287001",
-      "google_place_id": "ChIJ0d6GmOb3qEcR3nWO7C6NVuU",
+      "googlePlaceId": "ChIJ0d6GmOb3qEcR3nWO7C6NVuU",
       "lastVerified": "2026-04-22"
     },
     {
@@ -225,7 +225,7 @@
       "address": "Kurfürstendamm 40/41",
       "latitude": "52.502159",
       "longitude": "13.321329",
-      "google_place_id": "ChIJMx_B4uVQqEcReZC0OEQGFbg",
+      "googlePlaceId": "ChIJMx_B4uVQqEcReZC0OEQGFbg",
       "lastVerified": "2026-04-22"
     },
     {
@@ -234,7 +234,7 @@
       "address": "Sonnenallee 68",
       "latitude": "52.484118",
       "longitude": "13.434684",
-      "google_place_id": "ChIJ90wq2G8jZUERYEplgUlzDHg",
+      "googlePlaceId": "ChIJ90wq2G8jZUERYEplgUlzDHg",
       "lastVerified": "2026-04-22"
     },
     {
@@ -243,7 +243,7 @@
       "address": "Spittelmarkt 11",
       "latitude": "52.512073",
       "longitude": "13.401733",
-      "google_place_id": "ChIJX2NA1dNRqEcRpUhQXHoko9g",
+      "googlePlaceId": "ChIJX2NA1dNRqEcRpUhQXHoko9g",
       "lastVerified": "2026-04-22"
     },
     {
@@ -252,7 +252,7 @@
       "address": "Alte Jakobstraße 88",
       "latitude": "52.509403",
       "longitude": "13.406671",
-      "google_place_id": "ChIJMaBWlihOqEcRmNsMcOzO3vI",
+      "googlePlaceId": "ChIJMaBWlihOqEcRmNsMcOzO3vI",
       "lastVerified": "2026-04-22"
     },
     {
@@ -261,7 +261,7 @@
       "address": "Transvaalstraße 14",
       "latitude": "52.551951",
       "longitude": "13.341199",
-      "google_place_id": "ChIJ__-PXthTqEcR4tRsRplxFwk",
+      "googlePlaceId": "ChIJ__-PXthTqEcR4tRsRplxFwk",
       "lastVerified": "2026-04-22"
     },
     {
@@ -279,7 +279,7 @@
       "address": "Friedrichstraße 95",
       "latitude": "52.519734",
       "longitude": "13.388942",
-      "google_place_id": "ChIJcQBQMMNRqEcRjcFaNneJe2I",
+      "googlePlaceId": "ChIJcQBQMMNRqEcRjcFaNneJe2I",
       "lastVerified": "2026-04-22"
     },
     {
@@ -289,7 +289,7 @@
       "address": "Bundesallee 205",
       "latitude": "52.494698",
       "longitude": "13.331198",
-      "google_place_id": "ChIJcXkdMHBQqEcRgSy_oX-ovhQ",
+      "googlePlaceId": "ChIJcXkdMHBQqEcRgSy_oX-ovhQ",
       "lastVerified": "2026-04-22"
     },
     {
@@ -298,7 +298,7 @@
       "address": "Lindower Str. 19",
       "latitude": "52.543728",
       "longitude": "13.367631",
-      "google_place_id": "ChIJWVII7tVTqEcRhD79vETHjJc",
+      "googlePlaceId": "ChIJWVII7tVTqEcRhD79vETHjJc",
       "lastVerified": "2026-04-22"
     },
     {
@@ -307,7 +307,7 @@
       "address": "Fasanenstraße 77",
       "latitude": "52.503701",
       "longitude": "13.327866",
-      "google_place_id": "ChIJTd_OwNdQqEcRqm9ryOeOHqs",
+      "googlePlaceId": "ChIJTd_OwNdQqEcRqm9ryOeOHqs",
       "lastVerified": "2026-04-22"
     },
     {
@@ -318,7 +318,7 @@
       "address": "Bessemerstraße 51/1.OG",
       "latitude": "52.463285",
       "longitude": "13.36712",
-      "google_place_id": "ChIJyQxcKopRqEcR7ZQpZXpIurI",
+      "googlePlaceId": "ChIJyQxcKopRqEcR7ZQpZXpIurI",
       "lastVerified": "2026-04-22"
     },
     {
@@ -337,7 +337,7 @@
       "address": "Auerstraße 14",
       "latitude": "52.519052",
       "longitude": "13.444241",
-      "google_place_id": "ChIJ72W4I7FPqEcRML-NbBJWI18",
+      "googlePlaceId": "ChIJ72W4I7FPqEcRML-NbBJWI18",
       "lastVerified": "2026-04-22"
     },
     {
@@ -348,7 +348,7 @@
       "address": "Spichernstraße 1",
       "latitude": "52.49841",
       "longitude": "13.333751",
-      "google_place_id": "ChIJE0p8JBZRqEcRHyVYBjhaLRs",
+      "googlePlaceId": "ChIJE0p8JBZRqEcRHyVYBjhaLRs",
       "lastVerified": "2026-04-22"
     },
     {
@@ -359,7 +359,7 @@
       "address": "Rankestraße 9",
       "latitude": "52.501971",
       "longitude": "13.332908",
-      "google_place_id": "ChIJUxqBlZRRqEcRn47s99bReaY",
+      "googlePlaceId": "ChIJUxqBlZRRqEcRn47s99bReaY",
       "lastVerified": "2026-04-22"
     },
     {
@@ -377,7 +377,7 @@
       "address": "Straßmannstraße 8",
       "latitude": "52.521456",
       "longitude": "13.447762",
-      "google_place_id": "ChIJu7firStPqEcR9OMKeYCAQVU",
+      "googlePlaceId": "ChIJu7firStPqEcR9OMKeYCAQVU",
       "lastVerified": "2026-04-22"
     }
   ]
