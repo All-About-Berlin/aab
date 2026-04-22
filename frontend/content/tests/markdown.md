@@ -3,10 +3,6 @@ Title: Page layout test
 short_title: Layout test
 Description: Test the website layout
 Date_created: 2025-08-26
-Related_places:
-    places/fitx-fitnessstudio-alexanderplatz.md
-    places/fitx-fitnessstudio-hellersdorf.md
-    places/fitx-fitnessstudio-schöneberg.md
 ---
 
 Introduction paragraph followed by a table of contents.

@@ -4,7 +4,7 @@
 		<noscript>This map needs JavaScript to work.</noscript>
 	</div>
 	<ol>
-		{% for place in entry.related_places %}
+		{% for place in places %}
 		<li id="place-{{ loop.index }}">
 			<h4>
 				{% if place.website %}
@@ -55,7 +55,7 @@ function initMap() {
 		fullscreenControl: false
 	});
 	const markers = [];
-	{% for place in entry.related_places %}
+	{% for place in places %}
 		markers.push(new google.maps.Marker({
 			position: {lat: {{ place.latitude }}, lng: {{ place.longitude }} },
 			title: "{{ place.name }}",

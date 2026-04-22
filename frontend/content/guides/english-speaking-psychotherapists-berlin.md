@@ -3,90 +3,6 @@ Title: List of English-speaking psychotherapists in Berlin
 short_title: English-speaking psychotherapists
 Description: A list of therapists who speak English, and how to find a therapist who accepts public health insurance.
 Date_created: 2017-09-12
-Related_places:
-    places/david-barnes.md
-    places/psychotherapie-blagec.md
-    places/praxis-für-paartherapie-julia-bellabarba.md
-    places/dr-med-cordula-dietrich.md
-    places/rodenbergstraße-6.md
-    places/anja-benesch.md
-    places/individual-therapy-berlin-ghazaleh-bailey.md
-    places/the-living-body-julianne-appel-opper.md
-    places/frau-dipl-psych-heidi-hooper-amri.md
-    places/dr-pheasant.md
-    places/auf-dem-helmholtzplatz.md
-    places/dr-christian-dombrowe.md
-    places/frau-dipl-psych-nadja-ursula-gogolin.md
-    places/blanka-leeker-ma.md
-    places/mittelweg-50.md
-    places/dipl-psych-jana-harthauß.md
-    places/sandra-cotta-psychologische-psychotherapeutin.md
-    places/didem-atahan-fabig.md
-    places/dominic-decker.md
-    places/alastair-roberts-counselling.md
-    places/anne-piotrowski.md
-    places/360-psychotherapie.md
-    places/ariane-fuechtner.md
-    places/dr-grace-omalley.md
-    places/dr-birgit-hansen.md
-    places/katie-knight-berlin-counseling.md
-    places/philip-sheldon.md
-    places/dipl-psych-kristina-oelschläger.md
-    places/sean-carden.md
-    places/dr-michael-cugialy.md
-    places/johannes-mittermair.md
-    places/daniel-friedrich.md
-    places/praxis-polina-godau.md
-    places/dr-valentin-zahrnt.md
-    places/dipl-psych-özgür-cengiz.md
-    places/psychotherapist-lisa-maria-aldinger.md
-    places/praxis-berenike-l-franzen.md
-    places/dr-phil-ralph-piotrowski.md
-    places/praxis-für-psychotherapie-hypnotherapie-klangtherapie.md
-    places/archana-golla.md
-    places/dr-med-lazaros-giousmpasis.md
-    places/psychologie-halensee.md
-    places/dott-gaia-porcelli.md
-    places/dipl-psych-christiane-köhler.md
-    places/aloka-levitin.md
-    places/dr-joseph-hamer.md
-    places/ben-lemme.md
-    places/psyshrink-etherapy-and-private-practice.md
-    places/roman-snihurowch-md.md
-    places/my-international-therapy.md
-    places/dr-med-kai-gutzeit.md
-    places/dipl-psych-shireen-kwiatkowska-naqvi.md
-    places/art-therapy-studio.md
-    places/wagner-homunculus-praxis-für-systemische-therapie.md
-    places/marylise-dumont.md
-    places/katrin-forler.md
-    places/katya-rück.md
-    places/ottoline-hart.md
-    places/claudia-dzaack.md
-    places/manuela-luise-creative-therapy.md
-    places/dipl-psych-michael-flor.md
-    places/lorna-schlochtermeier.md
-    places/psychotherapie-mag-michaela-klien.md
-    places/praxis-fur-psychotherapie-ninja-kattenbeck.md
-    places/privatpraxis-fur-psychotherapie-coaching-dr-viola-kappel-kollegen.md
-    places/bertine-de-jongh.md
-    places/psychotherapie-vivian-birchall.md
-    places/mathias-funke.md
-    places/kaleidoscope-coaching-counseling.md
-    places/international-psychotherapy-berlin.md
-    places/angel-candeaux.md
-    places/vibes-praxis.md
-    places/boje-beratung-ole-jaeckel-engler.md
-    places/m-sc-antonia-windsheimer.md
-    places/ovid-clinic-berlin.md
-    places/the-primrose-practice.md
-    places/dr-dafni-milioni.md
-    places/ifs-therapie.md
-    places/dipl-psych-dr-katharina-will.md
-    places/maxim-makhanov.md
-    places/talia-purnell.md
-    places/agnieszka-kieres.md
-    places/peter-bennett.md
 Related_reviews:
     reviews/english-speaking-psychotherapists-berlin/agata-slezak.md
 ---
@@ -101,7 +17,7 @@ This guide explains:
 
 ## List of therapists
 
-{% include "_blocks/placesMap.html" %}
+{% map places="places/psychotherapists.json" %}
 
 To add a therapist, [fill this form](/suggest-therapist).
 

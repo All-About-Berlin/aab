@@ -3,19 +3,6 @@ Title: List of English-speaking psychiatrists in Berlin
 short_title: English-speaking psychiatrists
 Description: A list of psychiatrists who speak English, and how to find a psychiatrist who accepts public health insurance.
 Date_created: 2023-03-30
-Related_places:
-    places/ppcc-dr-ernst-seiffert.md
-    places/dr-med-cordula-dietrich.md
-    places/sabine-liesegang.md
-    places/dr-köller.md
-    places/annette-kreutz-fachärztin-f-psychosomat-med-und-kinderheilkunde.md
-    places/dr-med-gerhard-perchalla.md
-    places/dr-nicolaus-rigas.md
-    places/ole-georg-munkvold.md
-    places/privatpraxis-dima-salloum.md
-    places/psychiatrie-am-sterndamm.md
-    places/praxis-dr-scherf-kollegen.md
-    places/praxis-dr-mungee.md
 ---
 
 This guide explains:
@@ -30,7 +17,7 @@ This guide explains:
 
 ## List of English-speaking psychiatrists
 
-{% include "_blocks/placesMap.html" %}
+{% map places="places/psychiatrists.json" %}
 
 To suggest a psychiatrist, [fill this form](/suggest-therapist).
 

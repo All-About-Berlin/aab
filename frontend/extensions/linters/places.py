@@ -3,9 +3,9 @@ from pathlib import Path
 from typing import Any, List, Tuple
 from urllib.parse import urlparse
 from ursus.config import config
-from ursus.linters import Linter, LinterResult
+from ursus.linters import LinterResult
 from ursus.linters.markdown import HeadMatterLinter
-from ursus.utils import get_files_in_path, parse_markdown_head_matter
+from ursus.utils import parse_markdown_head_matter
 import googlemaps
 import logging
 import re
@@ -76,23 +76,3 @@ class PlacesLinter(HeadMatterLinter):
                     f"Longitude does not match with Google: {lng} -> {g_lng}",
                     logging.ERROR,
                 )
-
-
-class UnusedPlacesLinter(Linter):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.mentioned_places = set()
-        for place_path in get_files_in_path(config.content_path, None, ".md"):
-            with (config.content_path / place_path).open() as place_file:
-                metadata, _ = parse_markdown_head_matter(place_file.readlines())
-                related_places = [
-                    value
-                    for key, values in metadata.items()
-                    for value in values
-                    if key.startswith("related_") and value.startswith("places/")
-                ]
-                self.mentioned_places.update(related_places)
-
-    def lint(self, file_path: Path) -> LinterResult:
-        if file_path.is_relative_to(Path("places")) and str(file_path) not in self.mentioned_places:
-            yield None, "Place is not used anywhere", logging.ERROR

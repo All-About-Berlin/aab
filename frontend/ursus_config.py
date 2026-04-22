@@ -492,11 +492,13 @@ config.jinja_extensions.extend(
         "extensions.renderers.jinja.ToolExtension",
         "extensions.renderers.jinja.EsbuildJsLoaderExtension",
         "extensions.renderers.jinja.TableOfContentsExtension",
+        "extensions.renderers.jinja.MapExtension",
     ]
 )
 
 config.context_processors.extend(
     [
+        "extensions.context_processors.json_entries.JsonContextProcessor",
         "extensions.renderers.entry_images.EntryImageUrlProcessor",
         "ursus.context_processors.git_date.GitDateProcessor",
         "extensions.context_processors.hyphenated_titles.HyphenatedTitleProcessor",
@@ -537,7 +539,6 @@ config.linters = [
     "extensions.linters.lists.MultilineListsLinter",
     "extensions.linters.metadata.DateUpdatedLinter",
     "extensions.linters.metadata.ShortTitleLinter",
-    "extensions.linters.places.UnusedPlacesLinter",
     "extensions.linters.section.SectionSignLinter",
     "extensions.linters.table_of_contents.TableOfContentsLinter",
     "extensions.linters.wikilinks.WikilinksLinter",

@@ -1,0 +1,40 @@
+{
+  "places": [
+    {
+      "name": "Magic John's Pizza",
+      "description": "New York style slices with delivery",
+      "website": "https://www.magicjohns.com/",
+      "address": "Oranienburger Str. 48",
+      "latitude": "52.526143",
+      "longitude": "13.388966",
+      "google_place_id": "ChIJsyy-KBhRqEcRjrSsAn5ukWk"
+    },
+    {
+      "name": "Villa di Wow",
+      "description": "Whether Villa di Wow's pizza is truly New York style is still a source of debate among the reviewers, but in any case, all agree to call it a good pizza.",
+      "website": "https://www.villa-di-wow-berlin.de/contact",
+      "address": "Ohlauer Str. 30",
+      "latitude": "52.495311",
+      "longitude": "13.429802",
+      "google_place_id": "ChIJ8bfq57RPqEcREqXXVD43rh0"
+    },
+    {
+      "name": "Liberty Pizza",
+      "description": "Thick American pizza with a wide choice of toppings, including true American pepperoni. Delivery is only available in Zehlendorf, Kleinmachnow and Lichterfelde",
+      "website": "http://www.libertypizza.de/",
+      "address": "Potsdamer Str. 3",
+      "latitude": "52.435726",
+      "longitude": "13.257914",
+      "google_place_id": "ChIJTVvF5DFaqEcR5gGOFqKOFBU"
+    },
+    {
+      "name": "Manhattan Pizza",
+      "description": "Ironically selling Chicago-style pizza.",
+      "website": "http://www.manhattan-pizza.de/",
+      "address": "Albrechtstr. 114",
+      "latitude": "52.454884",
+      "longitude": "13.327568",
+      "google_place_id": "ChIJ_U3hTYVaqEcRZpawkdHS8vQ"
+    }
+  ]
+}

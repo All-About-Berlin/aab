@@ -3,63 +3,6 @@ Title: List of English-speaking lawyers in Berlin
 short_title: English-speaking lawyers
 Description: This list of English, French and Spanish-speaking lawyers will help you with any legal issues you might encounter while living in Berlin.
 Date_created: 2018-03-21
-Related_places:
-    places/fiona-macdonald.md
-    places/andreas-martin.md
-    places/rechtsanwalt-jean-baptiste-abel.md
-    places/visaguard-berlin.md
-    places/rotwang-law.md
-    places/alexander-von-engelhardt.md
-    places/schönfeld-benedicter-rechtsanwälte.md
-    places/kanzlei-stöbe.md
-    places/vpmk-rechtsanwälte.md
-    places/leonie-thum.md
-    places/anwaltssozietät-jurati.md
-    places/laura-aulmann-lawyer.md
-    places/kanzlei-anne-glinka.md
-    places/wf-frank-partner-rechtsanwälte.md
-    places/legal-skills-international-business-lawyers.md
-    places/büdding-legal.md
-    places/rechtsanwaltskanzlei-andrea-blumenthal.md
-    places/kanzlei-am-oranienplatz.md
-    places/rechtsanwälte-rosbach-fremy.md
-    places/wf-frank-partner-rechtsanwälte.md
-    places/von-boetticher-rechtsanwälte-partnerschaftsgesellschaft-mbh.md
-    places/kanzlei-meinecke-helling.md
-    places/streiff-law.md
-    places/losemann-tax-gmbh-steuerberatungsgesellschaft.md
-    places/piegeler-fachanwaltsbüro-für-familie-und-arbeit.md
-    places/duske-becker-sozien.md
-    places/steltzer-rechtsanwälte-mediatoren.md
-    places/markus-wessel.md
-    places/rechtsanwalt-johann-trülzsch.md
-    places/rechtsanwalt-philipp-schläger.md
-    places/christoph-tometten-ll-m.md
-    places/fürstenow-law-office.md
-    places/dr-jonathan-burmeister-defense-lawyer-attorney.md
-    places/rechtsanwalt-sebastian-dramburg.md
-    places/dr-dirk-böhler-llm.md
-    places/the-startup-lawyers.md
-    places/rechtsanwalt-stephan-sander.md
-    places/rechtsanwaltskanzlei-dr-bianca-müller.md
-    places/rose-partner.md
-    places/kuhlen-partnerschaft-von-rechtsanwalten-mbb.md
-    places/hertin-and-partner.md
-    places/christoph-mueller.md
-    places/bohm-anwaltskanzlei.md
-    places/hogertz.md
-    places/koudous-international.md
-    places/casimir-vogt.md
-    places/hans-kolfen.md
-    places/kanzlei-rechtsanwalt-grueneberg.md
-    places/rechtsanwalt-torsten-hildebrandt.md
-    places/siewer-weizsacker.md
-    places/rechtsanwalt-yeelen-bihn.md
-    places/kanzlei-rechtsanwaltin-eva-witt.md
-    places/fn-legal.md
-    places/vs-legal.md
-    places/goddeke-aakb.md
-    places/anna-prymak.md
 ---
 
 This is a list of lawyers who speak English in Berlin.
@@ -68,7 +11,7 @@ This is a list of lawyers who speak English in Berlin.
 
 ## List of lawyers
 
-{% include "_blocks/placesMap.html" %}
+{% map places="places/lawyers.json" %}
 
 **[Find more lawyers ➞](https://www.rak-berlin.de/anwaltssuche/)** - Search the Berlin *Rechtsanwaltskammer*'s database
 

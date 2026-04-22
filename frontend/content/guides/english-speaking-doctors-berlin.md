@@ -3,35 +3,6 @@ Title: List of English-speaking doctors and GPs in Berlin
 short_title: English-speaking GPs
 Description: These doctors serve their patients in English in Berlin.
 Date_created: 2018-03-01
-Related_places:
-    places/herr-dr-med-anton-kugler.md
-    places/dr-ilker-a-aydin.md
-    places/dr-michael-latzke.md
-    places/dr-med-thomas-raile.md
-    places/gemeinschaftspraxis-schlesisches-tor.md
-    places/dr-med-petra-jordan.md
-    places/dr-med-nadja-dreysse.md
-    places/martina-schreen-allgemeinmedizin-hausarzt-berlin.md
-    places/praxis-dr-peter-oblaski.md
-    places/andreas-stein-facharzt-für-allgemeinmedizin.md
-    places/praxis-dr-peter-oblaski.md
-    places/praxis-dr-cordes.md
-    places/kantpraxis.md
-    places/dr-med-christopher-marchand.md
-    places/dr-med-eva-essers.md
-    places/dr-sophie-rüggeberg.md
-    places/dr-sabina-valentine.md
-    places/praxis-allgemeinmedizin-moore.md
-    places/dr-med-eileen-behrens.md
-    places/dr-med-elke-schröter.md
-    places/dr-johanna-morguet-sahar-abdul-majeed.md
-    places/mvz-kopenick.md
-    places/katharina-dembinski.md
-    places/ovid-clinic-berlin.md
-    places/dr-med-katharina-schieke.md
-    places/herr-dr-med-jurgen-putz.md
-    places/katrin-ludwig.md
-    places/dr-med-julia-ertl.md
 ---
 
 This is how you can find an English-speaking doctor or GP.
@@ -40,7 +11,7 @@ This is how you can find an English-speaking doctor or GP.
 
 ## List of doctors and GPs
 
-{% include "_blocks/placesMap.html" %}
+{% map places="places/doctors.json" %}
 
 To suggest a doctor, [fill this form](/suggest-business).
 

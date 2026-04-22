@@ -1,9 +1,0 @@
----
-Name: Goldstein Consulting GmbH
-Website: https://goldsteinconsulting.de/
-Email: 
-Address: Fasanenstraße 77
-Latitude: 52.503707
-Longitude: 13.327865
-Google_Place_ID: ChIJTd_OwNdQqEcRqm9ryOeOHqs
----

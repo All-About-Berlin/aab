@@ -1,0 +1,524 @@
+{
+  "places": [
+    {
+      "name": "Fiona Macdonald",
+      "description": "Immigration law and administrative law. Native English speaker. This is the immigration lawyer I work with.",
+      "website": "https://en.fmr-legal.de/",
+      "email": "info@fmr-legal.de",
+      "address": "Kurfürstendamm 167-168",
+      "latitude": "52.499778",
+      "longitude": "13.308419",
+      "recommended": "Yes"
+    },
+    {
+      "name": "Andreas Martin",
+      "description": "Employment law. He speaks English and Polish.",
+      "website": "https://rechtsanwalt-arbeitsrecht-in-berlin.de/",
+      "email": "info@rechtsanwalt-arbeitsrecht-in-berlin.de",
+      "address": "Storkower Str. 139B",
+      "latitude": "52.533323",
+      "longitude": "13.455924",
+      "google_place_id": "ChIJE2ABKfRLqEcRcYRZCAtTfAo"
+    },
+    {
+      "name": "Jean-Baptiste Abel",
+      "description": "Employment law, mostly for employees. Speaks German, French and English.",
+      "website": "http://jba.legal/",
+      "email": "jean@jean-abel.de",
+      "address": "Schönleinstraße 4",
+      "latitude": "52.492607",
+      "longitude": "13.421157",
+      "google_place_id": "ChIJqZb7RXFPqEcRQUPWpExQ40Y"
+    },
+    {
+      "name": "VISAGUARD Berlin",
+      "description": "Immigration law",
+      "website": "https://www.visaguard.berlin/",
+      "email": "admin@visaguard.berlin",
+      "address": "Mühlenstraße 8a",
+      "latitude": "52.42998",
+      "longitude": "13.26179",
+      "google_place_id": "ChIJbS9vIfO7_wQRVUJ_BFhpeOY"
+    },
+    {
+      "name": "Rotwang Law",
+      "description": "Employment law. They helped me write about work and unemployment.",
+      "website": "https://www.rotwang-law.de/",
+      "email": "kanzlei@rotwang-law.de",
+      "address": "Reichenberger Str. 120",
+      "latitude": "52.495189",
+      "longitude": "13.432472",
+      "google_place_id": "ChIJhyVnDMNPqEcRiqBJEg_cXyc"
+    },
+    {
+      "name": "Alexander von Engelhardt",
+      "description": "Immigration law and business law.",
+      "website": "https://vonengelhardt.com/",
+      "email": "ahoi@vonengelhardt.com",
+      "address": "Hardenbergstraße 12",
+      "latitude": "52.508052",
+      "longitude": "13.32706",
+      "google_place_id": "ChIJQ97Pfv1QqEcRkDS1cop4ans"
+    },
+    {
+      "name": "Schönfeld Benedicter",
+      "description": "Dr. Gregory Benedicter speaks English fluently.",
+      "website": "http://www.schoenfeld-benedicter.de/",
+      "address": "Fritschestraße 27",
+      "latitude": "52.512291",
+      "longitude": "13.299416",
+      "google_place_id": "ChIJLcyNZSdRqEcRono8qFnQEn8"
+    },
+    {
+      "name": "Kanzlei Stöbe",
+      "website": "http://www.kanzlei-stoebe.de/",
+      "address": "Schönfließer Str. 4",
+      "latitude": "52.552868",
+      "longitude": "13.408748",
+      "google_place_id": "ChIJSWZIiaMhZUERaGuk3QJG2MQ"
+    },
+    {
+      "name": "vpmk Rechtsanwälte",
+      "description": "English, French, Spanish, Russian, Norwegian, Italian and Mandarin-speaking lawyers. They have experience with visas and immigration.",
+      "website": "https://www.vpmk.de/",
+      "address": "Monbijoupl. 3A",
+      "latitude": "52.523239",
+      "longitude": "13.399398",
+      "google_place_id": "ChIJG98KSedRqEcRn_XGxA-sChc"
+    },
+    {
+      "name": "Leonie Thum",
+      "description": "Employment law.",
+      "website": "https://www.rechtsanwaltskanzlei-thum.de/en/home",
+      "email": "mail@rechtsanwaltskanzlei-thum.de",
+      "address": "Friedelstraße 56",
+      "latitude": "52.488121",
+      "longitude": "13.427751",
+      "google_place_id": "ChIJR9b0lC5PqEcRSq2kiqdz-js"
+    },
+    {
+      "name": "Anwaltssozietät Jurati",
+      "description": "Sven Hasse is an English-speaking immigration lawyer.",
+      "website": "https://www.jurati.de/",
+      "address": "Schönhauser Allee 83",
+      "latitude": "52.550966",
+      "longitude": "13.414372",
+      "google_place_id": "ChIJJSr_eQZSqEcR4haPFbM0aYI"
+    },
+    {
+      "name": "Laura Aulmann",
+      "description": "Immigration lawyer.",
+      "website": "http://www.aulmann-anwaeltin.de/en/index.html",
+      "address": "Hochstraße 21",
+      "latitude": "52.545724",
+      "longitude": "13.37933",
+      "google_place_id": "ChIJ_62jHuFRqEcRqF5YuhH2twU"
+    },
+    {
+      "name": "Kanzlei Anne Glinka",
+      "description": "Has experience with visas and immigration",
+      "website": "http://www.glinka-rechtsanwaeltin.de/",
+      "address": "Ansbacher Str. 74",
+      "latitude": "52.495198",
+      "longitude": "13.338093",
+      "google_place_id": "ChIJ70gzKwBRqEcRX4AX8viSX1o"
+    },
+    {
+      "name": "WF Frank & Partner",
+      "description": "Inheritance law. Probate, wills, trusts and estates and international estate planning",
+      "website": "https://www.wf-frank.com/",
+      "address": "Leipziger Pl. 9",
+      "latitude": "52.508952",
+      "longitude": "13.379222",
+      "google_place_id": "ChIJhVckW8lRqEcRegeu4j9-vbg"
+    },
+    {
+      "name": "Legal Skills International Business Lawyers",
+      "description": "Dr. Martin Duerr speaks English",
+      "website": "http://legalskills.berlin/",
+      "address": "Karl-Marx-Allee 90A",
+      "latitude": "52.516371",
+      "longitude": "13.441126",
+      "google_place_id": "ChIJeRP1gihOqEcRdtNMs5Jwu7Y"
+    },
+    {
+      "name": "Büdding Legal",
+      "description": "Business law.",
+      "website": "http://www.budding-legal.net/impressum",
+      "address": "Dircksenstraße 52",
+      "latitude": "52.52327",
+      "longitude": "13.403559",
+      "google_place_id": "ChIJIQ2u9uBRqEcRSbTZ6ZM-GhU"
+    },
+    {
+      "name": "Andrea Blumenthal",
+      "description": "English, French, Spanish and German-speaking lawyer",
+      "website": "http://www.ra-blumenthal.de/en-start.html",
+      "address": "Kreuznacher Str. 16",
+      "latitude": "52.46729",
+      "longitude": "13.31846",
+      "google_place_id": "ChIJVaNhCoBQqEcR2tZBfuC9t2E"
+    },
+    {
+      "name": "Kanzlei am Oranienplatz",
+      "description": "Marie Ellersiek speaks English",
+      "website": "http://www.kanzlei-berlin.net/",
+      "address": "Oranienstraße 166",
+      "latitude": "52.501774",
+      "longitude": "13.417027",
+      "google_place_id": "ChIJDRK3szNOqEcR_o3-1_Rd9j8"
+    },
+    {
+      "name": "Rosbach & Fremy",
+      "description": "Commercial law, business law, civil law and estates",
+      "website": "http://www.ra-rff.de/",
+      "address": "Dietrich-Bonhoeffer-Straße 4",
+      "latitude": "52.5347",
+      "longitude": "13.43313",
+      "google_place_id": "ChIJ10ef2uFRqEcROqpMyzMc5Uw"
+    },
+    {
+      "name": "von Boetticher",
+      "website": "https://www.boetticher.com/?lang=en",
+      "address": "Oranienstraße 164",
+      "latitude": "52.50243",
+      "longitude": "13.414456",
+      "google_place_id": "ChIJ3c3fajJOqEcRarsJTWt1Z20"
+    },
+    {
+      "name": "Kanzlei Meinecke Helling",
+      "description": "Sonja Meinecke speaks English and German, and specializes in tax law.",
+      "website": "http://www.steuern-in-berlin.de/en/",
+      "address": "Pestalozzistraße 87",
+      "latitude": "52.507714",
+      "longitude": "13.310433",
+      "google_place_id": "ChIJx0cFVuBQqEcRgVw90N7Qbfg"
+    },
+    {
+      "name": "Streiff Law",
+      "description": "International business law.",
+      "website": "http://streifflaw.de/en/",
+      "address": "Kolonnenstraße 8",
+      "latitude": "52.486249",
+      "longitude": "13.359912",
+      "google_place_id": "ChIJf566USFQqEcRpKPf2i4oF-g"
+    },
+    {
+      "name": "Losemann Tax",
+      "description": "Tax, legal and accounting services in German, English and Spanish.",
+      "website": "https://www.losemann-legal-tax.com/",
+      "address": "Friedrichstraße 95",
+      "latitude": "52.519734",
+      "longitude": "13.388942",
+      "google_place_id": "ChIJcQBQMMNRqEcRjcFaNneJe2I"
+    },
+    {
+      "name": "Fachanwaltsbüro Piegeler",
+      "website": "http://www.kanzlei-piegeler.de/",
+      "address": "Gubener Str. 51",
+      "latitude": "52.512951",
+      "longitude": "13.448027",
+      "google_place_id": "ChIJg_SZXwROqEcRZ6C_qAv433c"
+    },
+    {
+      "name": "Duske & Partner",
+      "description": "Lawyer and tax advisor firm. Speak German, English and French.",
+      "website": "https://www.duskepartner.de/",
+      "address": "Bundesallee 205",
+      "latitude": "52.494698",
+      "longitude": "13.331198",
+      "google_place_id": "ChIJcXkdMHBQqEcRgSy_oX-ovhQ"
+    },
+    {
+      "name": "Steltzer Rechtsanwälte + Mediatoren",
+      "description": "Family law, inheritance law, business law and mediation",
+      "website": "http://www.steltzer-kanzlei.de/",
+      "email": "steltzer@q-found.de",
+      "address": "Kurfürstendamm 167/168",
+      "latitude": "52.49972",
+      "longitude": "13.30854",
+      "google_place_id": "ChIJtc_bs-BRqEcRJQL9vUUSjKU"
+    },
+    {
+      "name": "Dr. Markus Wessel",
+      "description": "Medical Law, Inheritance, Energy Law, Contract Law including Labor Law, Adminisrative Law and Criminal Law.",
+      "website": "http://www.ra-dr-wessel.de/",
+      "email": "mw@ra-dr-wessel.de",
+      "address": "Katharinenstraße 8",
+      "latitude": "52.499557",
+      "longitude": "13.293288",
+      "google_place_id": "ChIJq1fvFG5RqEcRyGrS-2qtB1U"
+    },
+    {
+      "name": "Johann Trülzsch",
+      "description": "English and German-speaking lawyer",
+      "website": "https://ra-truelzsch.de/german-lawyer-berlin/",
+      "email": "jtruelzsch@yahoo.de",
+      "address": "Schloßstraße 120",
+      "latitude": "52.462834",
+      "longitude": "13.326814",
+      "google_place_id": "ChIJJ0RMToJaqEcRcbmH9jwtlfg"
+    },
+    {
+      "name": "Anwaltskanzlei Schläger",
+      "description": "English and German-speaking lawyer. Specialises in criminal and civil law.",
+      "website": "http://www.kanzleischlaeger.de/English_Speaking_Attorney_in_Germany__Philipp_Schlaeger.html",
+      "email": "ra@kanzleischlaeger.de",
+      "address": "Kluckstraße 36",
+      "latitude": "52.502363",
+      "longitude": "13.360704",
+      "google_place_id": "ChIJM5I9cUtQqEcRdv5Zhoduu9g"
+    },
+    {
+      "name": "Christoph Tometten",
+      "description": "Immigration lawyer.",
+      "website": "http://www.kanzlei-moeckernkiez.de",
+      "address": "Yorckstraße 26",
+      "latitude": "52.492222",
+      "longitude": "13.377543"
+    },
+    {
+      "name": "Fürstenow Law Office",
+      "description": "Lawyer for banking law and capital market law, contract law and commercial contract law, real estate law and corporate law.",
+      "website": "https://www.kanzlei-fuerstenow.de/en/",
+      "email": "kontakt@seoport.de",
+      "address": "Friedrichstraße 95",
+      "latitude": "52.519734",
+      "longitude": "13.388942",
+      "google_place_id": "ChIJ6TQZnzxOqEcRMNd_H8g9r1o"
+    },
+    {
+      "name": "Dr. Jonathan Burmeister",
+      "description": "Defense lawyer and attorney. Criminal law and migration law.",
+      "website": "https://ra-burmeister.de/",
+      "email": "hannesjaacks@gmail.com",
+      "address": "Stralauer Pl. 34",
+      "latitude": "52.508827",
+      "longitude": "13.432486",
+      "google_place_id": "ChIJ2yRY0CROqEcRS4R68BelURo"
+    },
+    {
+      "name": "Sebastian Dramburg",
+      "description": "Copyright lawyer. Certified for copyright, media law and information technology law.",
+      "website": "https://www.medienrechtberlin.de/copyright-lawyer-germany/",
+      "email": "webmaster@medienrechtberlin.de",
+      "address": "Schlüterstraße 29",
+      "latitude": "52.504031",
+      "longitude": "13.316812",
+      "google_place_id": "ChIJuyc42FNOqEcRxt3H1U4FjGo"
+    },
+    {
+      "name": "Dr. Dirk Böhler",
+      "description": "Environmental law, administrative law, litigation, due diligence and zoning law.",
+      "website": "http://www.boehlaw.de/",
+      "email": "kontakt@boehlaw.de",
+      "address": "Bertha-Benz-Straße 5",
+      "latitude": "52.523082",
+      "longitude": "13.36684",
+      "google_place_id": "ChIJNVT_rgtPqEcR37sIhLwLSt4"
+    },
+    {
+      "name": "The Startup Lawyers",
+      "description": "International and bespoke legal consulting for startups, professionals and SMEs",
+      "website": "https://startup-lawyers.eu/contact-us",
+      "email": "devecchi@startup-lawyers.de",
+      "address": "Oranienburger Str. 23",
+      "latitude": "52.524423",
+      "longitude": "13.396007",
+      "google_place_id": "ChIJZVDxr-dRqEcRL-GCM64wwbc"
+    },
+    {
+      "name": "Stephan Sander",
+      "description": "Family law",
+      "website": "https://www.berlin-rechtsanwalt.com/",
+      "email": "ra.sander@berlin-rechtsanwalt.com",
+      "address": "Pacelliallee 8",
+      "latitude": "52.468122",
+      "longitude": "13.289857",
+      "google_place_id": "ChIJbbwvu2VaqEcRSHId44R38uk"
+    },
+    {
+      "name": "Dr. Bianca Müller",
+      "description": "Copyright and media law.",
+      "website": "https://www.entertainmentlaw-berlin.com/",
+      "email": "info@entertainmentlaw-berlin.com",
+      "address": "Fuggerstraße 22",
+      "latitude": "52.499112",
+      "longitude": "13.344484",
+      "google_place_id": "ChIJhVckW8lRqEcRfrsBcWww7QA"
+    },
+    {
+      "name": "Rose & Partner",
+      "website": "https://www.rosepartner.de",
+      "email": "schoenbohm@rosepartner.de",
+      "address": "Jägerstraße 59",
+      "latitude": "52.514127",
+      "longitude": "13.390581",
+      "google_place_id": "ChIJzW_iKN5RqEcR_a9aAEkEFGY"
+    },
+    {
+      "name": "KUHLEN",
+      "description": "They speak English, French and German",
+      "website": "https://kuhlen-berlin.de/",
+      "email": "l@kuhlen-berlin.de",
+      "address": "Uhlandstraße 194A",
+      "latitude": "52.507161",
+      "longitude": "13.326221",
+      "google_place_id": "ChIJw3Mc4O5QqEcR3hawbHNxIIk"
+    },
+    {
+      "name": "Hertin & Partner",
+      "description": "Patent, copyright and intellectual property law",
+      "website": "http://www.hertin.de/",
+      "email": "creutz@hertin.de",
+      "address": "Kurfürstendamm 63",
+      "latitude": "52.500795",
+      "longitude": "13.311403",
+      "google_place_id": "ChIJAQq6ruVQqEcRzzTMP6ygEgQ"
+    },
+    {
+      "name": "Dr. Christoph J. Müller",
+      "description": "Employment lawyer. Speaks English and German.",
+      "website": "https://www.goerg.de/en/our-people/dr-christoph-j-muller",
+      "address": "Kantstraße 164",
+      "latitude": "52.505065",
+      "longitude": "13.332878",
+      "google_place_id": "ChIJiw3bE61RqEcRcBCw_tCQOho"
+    },
+    {
+      "name": "böhm anwaltskanzlei.",
+      "description": "Tax law and tax evasion.",
+      "website": "https://boehmanwaltskanzlei.de/",
+      "email": "boehm@steuerdelikt.de",
+      "address": "Am Borsigturm 11",
+      "latitude": "52.583445",
+      "longitude": "13.285683",
+      "google_place_id": "ChIJD9EsL2pUqEcRhAH47blK0no"
+    },
+    {
+      "name": "Hogertz Rechtsanwälte",
+      "website": "http://www.hogertz.com/",
+      "email": "hogertz@hogertz.com",
+      "address": "Am Kupfergraben 6",
+      "latitude": "52.520212",
+      "longitude": "13.39535",
+      "google_place_id": "ChIJ3Ynert1RqEcRTn0oHXLiasY"
+    },
+    {
+      "name": "Koudous International Law Office",
+      "website": "http://koudous-law.de/",
+      "email": "info@koudous-law.de",
+      "address": "Kurfürstendamm 67",
+      "latitude": "52.500566",
+      "longitude": "13.308988",
+      "google_place_id": "ChIJDQH5RnVRqEcR-vsztHSlxho"
+    },
+    {
+      "name": "Casimir Vogt & Weinreich",
+      "description": "Legal issues for small to mid-sized businesses including bi-lingual contracts.",
+      "website": "http://www.cvw.legal/",
+      "email": "alto@cvw.legal",
+      "address": "Kurfürstendamm 66",
+      "latitude": "52.500579",
+      "longitude": "13.309596",
+      "google_place_id": "ChIJr-FhPuZQqEcRbAF-cCyqXM0"
+    },
+    {
+      "name": "Hans Kölfen",
+      "description": "Immigration lawyer",
+      "website": "https://www.rahak.de/kontakt",
+      "email": "anwalt@rahak.de",
+      "address": "Hochstraße 21",
+      "latitude": "52.545692",
+      "longitude": "13.37933",
+      "google_place_id": "ChIJlVTJ_LdPqEcR-WMiB1G9Qxw"
+    },
+    {
+      "name": "Kanzlei Rechtsanwalt Grueneberg",
+      "description": "Immigration law.",
+      "website": "http://www.kanzlei-grueneberg.de/",
+      "address": "Kurfürstendamm 167-168",
+      "latitude": "52.499795",
+      "longitude": "13.308458",
+      "google_place_id": "ChIJywkqDMxRqEcRIMecg6y3sAA"
+    },
+    {
+      "name": "Torsten Hildebrandt",
+      "description": "Customs law and customs criminal law.",
+      "website": "https://steuerstrafrecht-rechtsanwalt.de/",
+      "email": "mail@steuerstrafrecht-rechtsanwalt.de",
+      "address": "Meinekestraße 4",
+      "latitude": "52.502082",
+      "longitude": "13.328594",
+      "google_place_id": "ChIJY7hpfAtRqEcRllt2DC2fhPk"
+    },
+    {
+      "name": "Siewer Weizsäcker",
+      "description": "Citizenship and immigration law.",
+      "website": "http://www.siewer.net/",
+      "email": "ew@siewer.net",
+      "address": "Potsdamer Str. 86",
+      "latitude": "52.503324",
+      "longitude": "13.36544",
+      "google_place_id": "ChIJyXVUuEpQqEcRZUQVlNvOxvY"
+    },
+    {
+      "name": "Yeelen Bihn",
+      "description": "Criminal and immigration law.",
+      "website": "http://anwalt-bihn.de/",
+      "email": "mail@anwalt-bihn.de",
+      "address": "Hochstraße 21",
+      "latitude": "52.545692",
+      "longitude": "13.37933",
+      "google_place_id": "ChIJR3Os_IlRqEcRwMJMv6xdwbc"
+    },
+    {
+      "name": "Eva Witt",
+      "description": "Immigration law",
+      "email": "info@kanzlei-witt.eu",
+      "address": "Leipziger Pl. 15",
+      "latitude": "52.51044",
+      "longitude": "13.37829",
+      "google_place_id": "ChIJG90-dHxGry0R5wMtHXE0mGM"
+    },
+    {
+      "name": "Franßen & Nusser",
+      "description": "Environmental law",
+      "website": "https://fn.legal/",
+      "email": "klusmeyer@fn.legal",
+      "address": "Fasanenstraße 73",
+      "latitude": "52.502085",
+      "longitude": "13.327603",
+      "google_place_id": "ChIJtS0i-xRRqEcRbg5QfjBmFbA"
+    },
+    {
+      "name": "Vassiliki Siochou",
+      "description": "Tenant law and property law. She speaks English and Greek.",
+      "website": "http://www.siochou-legal.de/",
+      "email": "mail@siochou-legal.de",
+      "address": "Unter den Linden 21",
+      "latitude": "52.516621",
+      "longitude": "13.389776",
+      "google_place_id": "ChIJlRPL1uRRqEcRYsArPu4mgdA"
+    },
+    {
+      "name": "Dr. Henrik Göddeke",
+      "description": "Employment law and wrongful terminations.",
+      "website": "https://anwalt-arbeitsrecht-kuendigung-berlin.de/",
+      "email": "anwalt@aakb.de",
+      "address": "Leipziger Pl. 15",
+      "latitude": "52.510424",
+      "longitude": "13.378358",
+      "google_place_id": "ChIJpbnknddRqEcRQ8Fr_ueoTik"
+    },
+    {
+      "name": "Rechtshilfe Berlin",
+      "description": "Immigration law and criminal law. They speak English, Russian, Ukrainian, French and Mandarin.",
+      "website": "https://rechtshilfe-berlin.de/",
+      "address": "Kastanienallee 61",
+      "latitude": "52.53422",
+      "longitude": "13.405774",
+      "google_place_id": "ChIJjakMq9lRqEcRYR2YXSwLgug"
+    }
+  ]
+}
