@@ -7,7 +7,10 @@
       "latitude": "52.509031",
       "longitude": "13.404911",
       "googlePlaceId": "ChIJeRSfLiROqEcRIoaW6mudzKg",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Luisenstadt"
     },
     {
       "name": "Kaufhaus des Westens (KaDeWe)",
@@ -17,7 +20,10 @@
       "latitude": "52.501602",
       "longitude": "13.340993",
       "googlePlaceId": "ChIJYb9yIlRQqEcR7A7Zwwy7q-0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Schöneberg",
+      "quarter": "Nollendorfkiez"
     },
     {
       "name": "Broken English",
@@ -26,7 +32,10 @@
       "latitude": "52.48832",
       "longitude": "13.392297",
       "googlePlaceId": "ChIJWT159Z1PqEcRRxmoHOgi-Ec",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": null
     },
     {
       "name": "Chili & Paprika",
@@ -36,7 +45,10 @@
       "latitude": "52.536077",
       "longitude": "13.432247",
       "googlePlaceId": "ChIJgelcfPRLqEcRq-sFVudpvoA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Bötzowkiez"
     },
     {
       "name": "LEDO Forckenbeckstraße",
@@ -46,7 +58,10 @@
       "latitude": "52.479311",
       "longitude": "13.309926",
       "googlePlaceId": "ChIJNTva6pBQqEcRTTDYm0Z-XFk",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Schmargendorf",
+      "quarter": null
     },
     {
       "name": "Aqui España",
@@ -56,7 +71,10 @@
       "latitude": "52.506321",
       "longitude": "13.316375",
       "googlePlaceId": "ChIJ0SpnyONQqEcROLnEoFmB3dM",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Mehlstübchen",
@@ -66,7 +84,10 @@
       "latitude": "52.483773",
       "longitude": "13.361226",
       "googlePlaceId": "ChIJ5QBazD9QqEcRh_lA8J6Wo1o",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Schöneberg",
+      "quarter": "Rote Insel"
     },
     {
       "name": "Kasatschok",
@@ -76,7 +97,10 @@
       "latitude": "52.550524",
       "longitude": "13.413292",
       "googlePlaceId": "ChIJoXx01AVSqEcRbL-wg8rJPsc",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Nordisches Viertel"
     },
     {
       "name": "Pyza - Polnische und Schlesische Lebensmittel",
@@ -86,7 +110,10 @@
       "latitude": "52.480356",
       "longitude": "13.437595",
       "googlePlaceId": "ChIJp5yRZKRPqEcRdbuYi8kQ6lA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Neukölln",
+      "suburb": "Neukölln",
+      "quarter": "Donaukiez"
     },
     {
       "name": "u Zosi Polnische Lebensmittel",
@@ -95,7 +122,10 @@
       "latitude": "52.526521",
       "longitude": "13.350685",
       "googlePlaceId": "ChIJ4TK9MKBRqEcRQ3JAX1DBd0Y",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Moabit",
+      "quarter": "Arminiuskiez"
     }
   ]
 }

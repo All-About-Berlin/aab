@@ -7,7 +7,10 @@
       "latitude": "52.530813",
       "longitude": "13.383004",
       "googlePlaceId": "ChIJNXAs7OxRqEcRr4SC2oe8UiQ",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Charitéviertel"
     },
     {
       "name": "Studio Dental Berlin",
@@ -18,7 +21,10 @@
       "latitude": "52.510152",
       "longitude": "13.305993",
       "googlePlaceId": "ChIJFxExkN9QqEcRfS9ieswDsjA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Dr. Jan Effinghausen",
@@ -27,7 +33,10 @@
       "latitude": "52.513837",
       "longitude": "13.386877",
       "googlePlaceId": "ChIJJzE_OMVRqEcR7NrFRbUGhO0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Friedrichstadt"
     },
     {
       "name": "Triadent",
@@ -36,7 +45,10 @@
       "latitude": "52.527931",
       "longitude": "13.403038",
       "googlePlaceId": "ChIJG85h8eNRqEcRo0fkW36H59Y",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Rosenthaler Vorstadt"
     },
     {
       "name": "Dr. Radmann in Gesundbrunnen Center",
@@ -46,7 +58,10 @@
       "latitude": "52.549877",
       "longitude": "13.387692",
       "googlePlaceId": "ChIJIbj6kyFSqEcRhIgr7J6LDZk",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Gesundbrunnen",
+      "quarter": null
     },
     {
       "name": "Zahnartpraxis Dr. Danai",
@@ -56,7 +71,10 @@
       "latitude": "52.434603",
       "longitude": "13.218006",
       "googlePlaceId": "ChIJE0xI_51ZqEcRLJj-HwgLwtQ",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Steglitz-Zehlendorf",
+      "suburb": "Schlachtensee",
+      "quarter": null
     },
     {
       "name": "Dr. Fache, Dr. Khalife",
@@ -65,7 +83,10 @@
       "latitude": "52.506149",
       "longitude": "13.30729",
       "googlePlaceId": "ChIJzUs7puBQqEcR7UYzdDKqxYw",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Ku64",
@@ -75,7 +96,10 @@
       "latitude": "52.500619",
       "longitude": "13.310665",
       "googlePlaceId": "ChIJ79fcE-ZQqEcRn2qA5pOz-Xc",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "KU64 Zahnarzt Berlin Mitte - Dr. Ziegler & Partner",
@@ -84,7 +108,10 @@
       "latitude": "52.513306",
       "longitude": "13.397635",
       "googlePlaceId": "ChIJETSfoJxRqEcReQ9pt5t_ek8",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": null
     },
     {
       "name": "Dr. Stefan Naumann",
@@ -93,7 +120,10 @@
       "latitude": "52.491802",
       "longitude": "13.290637",
       "googlePlaceId": "ChIJXa4cXMdQqEcRthk5mHA5Dms",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Grunewald",
+      "quarter": null
     },
     {
       "name": "Tempeldent - Zahnarztpraxis in Tempelhof",
@@ -102,7 +132,10 @@
       "latitude": "52.468719",
       "longitude": "13.384336",
       "googlePlaceId": "ChIJKXyKJf1PqEcRpP6wrSwhcFA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Tempelhof",
+      "quarter": null
     },
     {
       "name": "Zahnarzt Friedrichshain: F. Yashar",
@@ -111,7 +144,10 @@
       "latitude": "52.51612",
       "longitude": "13.456661",
       "googlePlaceId": "ChIJvRNlXmdOqEcRR4dWygJvcck",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Boxhagener Kiez"
     },
     {
       "name": "Zahnarzt Martin Macha",
@@ -120,7 +156,10 @@
       "latitude": "52.50597",
       "longitude": "13.31535",
       "googlePlaceId": "ChIJf73WwuNQqEcRBFS6ggoGjfk",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Dr. Oliver Redaelli",
@@ -129,7 +168,10 @@
       "latitude": "52.506897",
       "longitude": "13.374546",
       "googlePlaceId": "ChIJ1UFSYqhJqEcRTZCVW0EalF0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Tiergarten",
+      "quarter": null
     },
     {
       "name": "Praxis Grinfeld",
@@ -139,7 +181,10 @@
       "latitude": "52.486689",
       "longitude": "13.321526",
       "googlePlaceId": "ChIJeSL2T4tQqEcR0E80vUXbzJw",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Wilmersdorf",
+      "quarter": "Güntzelkiez"
     },
     {
       "name": "Kottident",
@@ -148,7 +193,10 @@
       "latitude": "52.500749",
       "longitude": "13.418725",
       "googlePlaceId": "ChIJbz4bnjNOqEcR9SxW6-GbRKM",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Luisenstadt"
     },
     {
       "name": "Zahnärzte Künzel",
@@ -157,7 +205,10 @@
       "latitude": "52.500414",
       "longitude": "13.307848",
       "googlePlaceId": "ChIJyTiBf-hQqEcRr-5alarDwcI",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Zahnarztpraxis Breitenbachplatz",
@@ -167,7 +218,10 @@
       "latitude": "52.465967",
       "longitude": "13.307489",
       "googlePlaceId": "ChIJ101tifJbqEcRZe4dTH8mECE",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Steglitz-Zehlendorf",
+      "suburb": "Steglitz",
+      "quarter": null
     },
     {
       "name": "Zahnarztpraxis Dr. dent. Julia Hauschildt",
@@ -178,7 +232,10 @@
       "latitude": "52.5685",
       "longitude": "13.379227",
       "googlePlaceId": "ChIJ-as10ElSqEcRNs4lp5gk3aU",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Reinickendorf",
+      "suburb": "Reinickendorf",
+      "quarter": "Hausotter-Kiez"
     },
     {
       "name": "Zahnarztpraxis Dr. Anne Kehler",
@@ -188,7 +245,10 @@
       "latitude": "52.51241",
       "longitude": "13.497471",
       "googlePlaceId": "ChIJNTFQx79OqEcR3XVKYmBpWuw",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Lichtenberg",
+      "suburb": "Lichtenberg",
+      "quarter": null
     },
     {
       "name": "Zahnarzt Michael",
@@ -197,7 +257,10 @@
       "latitude": "52.54253",
       "longitude": "13.420994",
       "googlePlaceId": "ChIJYzqHyv9NqEcRzpXZfb8bakk",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": null
     },
     {
       "name": "Alt-Marzahn 66",
@@ -206,7 +269,10 @@
       "latitude": "52.542293",
       "longitude": "13.562676",
       "googlePlaceId": "ChIJNSMzPuxLqEcR3z8XUV8e8gI",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Marzahn-Hellersdorf",
+      "suburb": "Marzahn",
+      "quarter": "Marzahn-Süd"
     },
     {
       "name": "Dr. Thorsten John",
@@ -215,7 +281,10 @@
       "latitude": "52.50203",
       "longitude": "13.316568",
       "googlePlaceId": "ChIJy-Dea_tQqEcRmyAzHqsOFe8",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Dr. Sztankay",
@@ -224,7 +293,10 @@
       "latitude": "52.467278",
       "longitude": "13.327913",
       "googlePlaceId": "ChIJkW503XhQqEcRo-iLaihntvE",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Friedenau",
+      "quarter": null
     },
     {
       "name": "Zahnarztpraxis mederi am Roseneck",
@@ -235,7 +307,10 @@
       "latitude": "52.478569",
       "longitude": "13.282512",
       "googlePlaceId": "ChIJOVXI-aRQqEcRHhe1RK4DaAU",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Schmargendorf",
+      "quarter": null
     },
     {
       "name": "Die Praxis Mitte",
@@ -244,7 +319,10 @@
       "latitude": "52.524123",
       "longitude": "13.408772",
       "googlePlaceId": "ChIJm7m4g-1PqEcR9qybv-6X6Ps",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Spandauer Vorstadt"
     },
     {
       "name": "MVZ Volksdent GmbH",
@@ -254,7 +332,10 @@
       "latitude": "52.545547",
       "longitude": "13.427275",
       "googlePlaceId": "ChIJyULcj21NqEcRkDYtea9SUds",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": null
     },
     {
       "name": "DentalFirst",
@@ -265,7 +346,10 @@
       "latitude": "52.510672",
       "longitude": "13.270969",
       "googlePlaceId": "ChIJsfqb5itXqEcRR_FOM2QAmFI",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Westend",
+      "quarter": "Villenkolonie Westend"
     },
     {
       "name": "Berlin Smile Zahnzentrum",
@@ -276,7 +360,10 @@
       "latitude": "52.53182",
       "longitude": "13.367388",
       "googlePlaceId": "ChIJ2VAthaRQqEcRfwxoqURKZRQ",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Moabit",
+      "quarter": "Europacity"
     },
     {
       "name": "High-endo",
@@ -285,7 +372,10 @@
       "latitude": "52.501587",
       "longitude": "13.325441",
       "googlePlaceId": "ChIJ150uuftQqEcRI6sVYv8VU5w",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "torhaus - Your Dentists in Berlin",
@@ -296,7 +386,10 @@
       "latitude": "52.528409",
       "longitude": "13.378451",
       "googlePlaceId": "ChIJ--eWx5RRqEcRdw6wJaph-Ig",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Charitéviertel"
     },
     {
       "name": "Zahnärzte am Mexikoplatz - Lorena Gerlach & Dr. Constantin Wegenstein",
@@ -306,7 +399,10 @@
       "latitude": "52.437317",
       "longitude": "13.233651",
       "googlePlaceId": "ChIJn0xj-oNZqEcRBSp-LkIneWU",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Steglitz-Zehlendorf",
+      "suburb": "Zehlendorf",
+      "quarter": null
     },
     {
       "name": "zmq207 Zahnmedizin Berlin Mitte",
@@ -315,7 +411,10 @@
       "latitude": "52.510106",
       "longitude": "13.383564",
       "googlePlaceId": "ChIJqQAP6dpRqEcRsp7cT19f-HQ",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Friedrichstadt"
     },
     {
       "name": "happybite Zahnzentrum",
@@ -326,7 +425,10 @@
       "latitude": "52.530586",
       "longitude": "13.362309",
       "googlePlaceId": "ChIJJWbB5mxRqEcRuIjz2zWgM0c",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Moabit",
+      "quarter": "Europacity"
     },
     {
       "name": "Dentist Wahid Sarwghad",
@@ -337,7 +439,10 @@
       "latitude": "52.496221",
       "longitude": "13.421872",
       "googlePlaceId": "ChIJ24ds3spPqEcRWBV30EpcOco",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Luisenstadt"
     },
     {
       "name": "Dental Clinic East",
@@ -347,7 +452,10 @@
       "latitude": "52.43816",
       "longitude": "13.54806",
       "googlePlaceId": "ChIJFQ8p0P9LqEcRcbq1XOLXsRw",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Treptow-Köpenick",
+      "suburb": "Adlershof",
+      "quarter": "Adlershof-Nord"
     },
     {
       "name": "Dental Practice Pushpam Sreekumar",
@@ -356,7 +464,10 @@
       "latitude": "52.493978",
       "longitude": "13.337426",
       "googlePlaceId": "ChIJcV4dncUjZUERLpMiQKg_9No",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Schöneberg",
+      "quarter": null
     }
   ]
 }

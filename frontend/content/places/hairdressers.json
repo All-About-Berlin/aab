@@ -7,7 +7,10 @@
       "latitude": "52.48686",
       "longitude": "13.43054",
       "googlePlaceId": "ChIJgaMEvrBPqEcRbKHNprYEXsg",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Neukölln",
+      "suburb": "Neukölln",
+      "quarter": "Reuterkiez"
     },
     {
       "name": "Jack's Barber Shop",
@@ -16,7 +19,10 @@
       "latitude": "52.48669",
       "longitude": "13.42928",
       "googlePlaceId": "ChIJUavMsbBPqEcRGwYeKbghHog",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Neukölln",
+      "suburb": "Neukölln",
+      "quarter": "Reuterkiez"
     },
     {
       "name": "Streetcut",
@@ -26,7 +32,10 @@
       "latitude": "52.48912",
       "longitude": "13.40473",
       "googlePlaceId": "ChIJrYP5VtZPqEcRJEwYIJqbODw",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Bergmannkiez"
     },
     {
       "name": "Haartari",
@@ -35,7 +44,10 @@
       "latitude": "52.518039",
       "longitude": "13.465271",
       "googlePlaceId": "ChIJ15O-uGFOqEcRXCj3zMtR4iY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Samariterviertel"
     },
     {
       "name": "ROWDY Barber Shop",
@@ -45,7 +57,10 @@
       "latitude": "52.537167",
       "longitude": "13.418598",
       "googlePlaceId": "ChIJ63S2ngFOqEcRHW14FpYouL8",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Kollwitzkiez"
     },
     {
       "name": "ROWDY Barbers",
@@ -55,7 +70,10 @@
       "latitude": "52.501529",
       "longitude": "13.328743",
       "googlePlaceId": "ChIJ7-jmXflQqEcRAfMJdpdbjto",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "MAOC (Modern Art of Cutting) Hair",
@@ -64,7 +82,10 @@
       "latitude": "52.529203",
       "longitude": "13.380092",
       "googlePlaceId": "ChIJfQgSVOtRqEcR4XRVAAP3Xfo",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Charitéviertel"
     },
     {
       "name": "Nomad Barber - Berlin",
@@ -74,7 +95,10 @@
       "latitude": "52.492614",
       "longitude": "13.421154",
       "googlePlaceId": "ChIJ_-n5JcpPqEcRCqF4hbAxUJk",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Graefekiez"
     },
     {
       "name": "GOD SAVE the MULLET GSTM.BERLIN",
@@ -83,7 +107,10 @@
       "latitude": "52.500645",
       "longitude": "13.438633",
       "googlePlaceId": "ChIJKeW1L0xOqEcRoZhjU6zLqZY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Luisenstadt"
     },
     {
       "name": "Viktor Leske Kreuzberg",
@@ -92,7 +119,10 @@
       "latitude": "52.500727",
       "longitude": "13.429511",
       "googlePlaceId": "ChIJqwbxakpOqEcRKSYTra4xGTo",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Luisenstadt"
     },
     {
       "name": "Haarspree Frisöre",
@@ -101,7 +131,10 @@
       "latitude": "52.497204",
       "longitude": "13.445046",
       "googlePlaceId": "ChIJ6SRq9k1OqEcRZd-8XLrbsMY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Luisenstadt"
     },
     {
       "name": "NeoBerlin",
@@ -110,7 +143,10 @@
       "latitude": "52.539955",
       "longitude": "13.412548",
       "googlePlaceId": "ChIJW5h0qf9RqEcRppPqWT_3e0o",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Helmholtzkiez"
     },
     {
       "name": "Viktor Leske Mitte",
@@ -119,7 +155,10 @@
       "latitude": "52.527552",
       "longitude": "13.400949",
       "googlePlaceId": "ChIJubD8G-RRqEcRQ8tHxbIkROg",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Spandauer Vorstadt"
     },
     {
       "name": "The Pauls Sisters GmbH",
@@ -129,7 +168,10 @@
       "latitude": "52.488076",
       "longitude": "13.391718",
       "googlePlaceId": "ChIJsZIgZNhPqEcR0CyirGxmrlk",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": null
     },
     {
       "name": "The Banana'd Bouffant",
@@ -139,7 +181,10 @@
       "latitude": "52.493677",
       "longitude": "13.379971",
       "googlePlaceId": "ChIJT8Z9ty9QqEcRbQR43aIgpIk",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": null
     },
     {
       "name": "Friseur Viktor Leske Mitte",
@@ -148,7 +193,10 @@
       "latitude": "52.527552",
       "longitude": "13.400949",
       "googlePlaceId": "ChIJubD8G-RRqEcRQ8tHxbIkROg",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Spandauer Vorstadt"
     },
     {
       "name": "Nomad Barber",
@@ -157,7 +205,10 @@
       "latitude": "52.492614",
       "longitude": "13.421154",
       "googlePlaceId": "ChIJ_-n5JcpPqEcRCqF4hbAxUJk",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Graefekiez"
     },
     {
       "name": "Friseur Viktor Leske",
@@ -166,7 +217,10 @@
       "latitude": "52.500727",
       "longitude": "13.429511",
       "googlePlaceId": "ChIJqwbxakpOqEcRKSYTra4xGTo",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Luisenstadt"
     },
     {
       "name": "Wild Hair",
@@ -176,7 +230,10 @@
       "latitude": "52.539587",
       "longitude": "13.423992",
       "googlePlaceId": "ChIJn3s1SgdOqEcR30AlIauYIhM",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": null
     },
     {
       "name": "Friseur Bernd Kramer Hairdesign",
@@ -194,7 +251,10 @@
       "latitude": "52.487086",
       "longitude": "13.352857",
       "googlePlaceId": "ChIJs2NlZAZRqEcRkHI3InkIbCw",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Schöneberg",
+      "quarter": "Akazienkiez"
     },
     {
       "name": "Shan Rahimkhan",
@@ -203,7 +263,10 @@
       "latitude": "52.502023",
       "longitude": "13.341317",
       "googlePlaceId": "ChIJB2MJJeVQqEcR_hfMBpg115g",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Schöneberg",
+      "quarter": "Nollendorfkiez"
     },
     {
       "name": "Urban Barber",
@@ -213,7 +276,10 @@
       "latitude": "52.4642",
       "longitude": "13.330912",
       "googlePlaceId": "ChIJLwGio4JaqEcRN6_2JZqukYw",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Steglitz-Zehlendorf",
+      "suburb": "Steglitz",
+      "quarter": "Bismarckviertel"
     },
     {
       "name": "Co Barbers",
@@ -224,7 +290,10 @@
       "latitude": "52.529516",
       "longitude": "13.40191",
       "googlePlaceId": "ChIJxbJzYZJRqEcRUVPg19ir-tk",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Rosenthaler Vorstadt"
     },
     {
       "name": "Amywho",
@@ -235,7 +304,10 @@
       "latitude": "52.489173",
       "longitude": "13.397675",
       "googlePlaceId": "ChIJWczGW8VPqEcR8zMYY7Zoqe8",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Bergmannkiez"
     },
     {
       "name": "ESHK Friseur Moabit",
@@ -245,7 +317,10 @@
       "latitude": "52.529987",
       "longitude": "13.342973",
       "googlePlaceId": "ChIJwY0Z9qpRqEcRSNnCSzQWsyk",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Moabit",
+      "quarter": "Stephankiez"
     },
     {
       "name": "ESHK Friseur Neukölln",
@@ -255,7 +330,10 @@
       "latitude": "52.473544",
       "longitude": "13.439184",
       "googlePlaceId": "ChIJ-XbhXJ9PqEcRQ0nwxtRlixQ",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Neukölln",
+      "suburb": "Neukölln",
+      "quarter": "Körnerkiez"
     },
     {
       "name": "wallacewallace",
@@ -265,7 +343,10 @@
       "latitude": "52.535128",
       "longitude": "13.397704",
       "googlePlaceId": "ChIJT7xPfZVRqEcRLen82no-gJs",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Arkonakiez"
     },
     {
       "name": "MaxBarber",
@@ -276,7 +357,10 @@
       "latitude": "52.502033",
       "longitude": "13.324312",
       "googlePlaceId": "ChIJB9KL-cVRqEcRdBAcUXyA5V8",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Salone39",
@@ -286,7 +370,10 @@
       "latitude": "52.515407",
       "longitude": "13.463405",
       "googlePlaceId": "ChIJXSSIhdlPqEcRtyS6SWedMF0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Samariterviertel"
     },
     {
       "name": "Badfish Barbershop",
@@ -296,7 +383,10 @@
       "latitude": "52.510547",
       "longitude": "13.457827",
       "googlePlaceId": "ChIJQRgjmB9PqEcRG8WLLjGbEt4",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Boxhagener Kiez"
     },
     {
       "name": "Fade Club Cutbusser",
@@ -305,7 +395,10 @@
       "latitude": "52.509673",
       "longitude": "13.451704",
       "googlePlaceId": "ChIJ9wxTME9PqEcRWQSf8owWZV8",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Mediaspree"
     },
     {
       "name": "Rechtsanwältin Zeynep Cetin",
@@ -314,7 +407,10 @@
       "latitude": "52.526744",
       "longitude": "13.337364",
       "googlePlaceId": "ChIJqw_YkTVTqEcR8a-YMM9hDNA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Moabit",
+      "quarter": null
     },
     {
       "name": "Mado barber shop",
@@ -324,7 +420,10 @@
       "latitude": "52.542359",
       "longitude": "13.412723",
       "googlePlaceId": "ChIJlQGhf2NNqEcRVm7RjvUXxZA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": null
     },
     {
       "name": "Berlin Barbers Charlottenburg",
@@ -333,7 +432,10 @@
       "latitude": "52.513335",
       "longitude": "13.304512",
       "googlePlaceId": "ChIJ2-Z75yBRqEcRNiQSvzQhgSY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": "Alt-Lietzow"
     },
     {
       "name": "The Blade Barbershop",
@@ -343,7 +445,10 @@
       "latitude": "52.531225",
       "longitude": "13.369909",
       "googlePlaceId": "ChIJq48f79ZRqEcRhIIApXA7QFE",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Moabit",
+      "quarter": "Europacity"
     },
     {
       "name": "Barber Shop by Meti",
@@ -353,7 +458,10 @@
       "latitude": "52.542307",
       "longitude": "13.358133",
       "googlePlaceId": "ChIJXfI_D9VRqEcRJwPow1xV65Y",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Wedding",
+      "quarter": "Sprengelkiez"
     },
     {
       "name": "Renasanz Salon",
@@ -364,7 +472,10 @@
       "latitude": "52.512618",
       "longitude": "13.450756",
       "googlePlaceId": "ChIJN7dacftPqEcRPj9LDR1yrJw",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Boxhagener Kiez"
     },
     {
       "name": "Alchimie",
@@ -374,7 +485,10 @@
       "latitude": "52.51432",
       "longitude": "13.45904",
       "googlePlaceId": "ChIJfTthsPhPqEcRE8s4AQpznSQ",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Boxhagener Kiez"
     },
     {
       "name": "Amber",
@@ -383,7 +497,11 @@
       "latitude": "48.865327",
       "longitude": "2.349591",
       "googlePlaceId": "ChIJebN16Rlu5kcRFwINZ8mm2uk",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": null,
+      "suburb": "Paris 2e Arrondissement",
+      "quarter": null,
+      "city": "Paris"
     },
     {
       "name": "St Leonard",
@@ -393,7 +511,10 @@
       "latitude": "52.535237",
       "longitude": "13.397534",
       "googlePlaceId": "ChIJTdxQpTZRqEcRCqDpusto-rQ",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Arkonakiez"
     },
     {
       "name": "UPPAMAN - Der Herrensalon",
@@ -403,7 +524,10 @@
       "latitude": "52.5041",
       "longitude": "13.322439",
       "googlePlaceId": "ChIJLaDLwc9RqEcRTNXDCWcHZb0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     }
   ]
 }

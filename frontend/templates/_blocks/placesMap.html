@@ -17,13 +17,11 @@
 			<address>
 				{% if place.googlePlaceId|default %}
 					<a href="https://www.google.com/maps/search/?api=1&query={{ place.name|urlencode }}%2C%20{{ place.address|urlencode }}&query_place_id={{ place.googlePlaceId }}" target="_blank" title="Open in Google Maps">
-						{{ place.address }}
-					</a>
 				{% else %}
 					<a href="https://www.google.com/maps/search/?api=1&query={{ place.name|urlencode }}%2C%20{{ place.address|urlencode }}" target="_blank" title="Open in Google Maps">
-						{{ place.address }}
-					</a>
 				{% endif %}
+					{{ place.suburb|default }}
+				</a>
 			</address>
 			{%- if place.recommended|default == 'Yes' -%}
 				{{ RECOMMENDED }}

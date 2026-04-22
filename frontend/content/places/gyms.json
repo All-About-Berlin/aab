@@ -7,7 +7,10 @@
       "latitude": "52.523312",
       "longitude": "13.416616",
       "googlePlaceId": "ChIJ-wBLKBlOqEcRq2t0vHy6S8s",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": null
     },
     {
       "name": "FitX Fitnessstudio Hellersdorf",
@@ -16,7 +19,10 @@
       "latitude": "52.536408",
       "longitude": "13.60287",
       "googlePlaceId": "ChIJkbmFXzNKqEcR_gZvf6LDvYA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Marzahn-Hellersdorf",
+      "suburb": "Hellersdorf",
+      "quarter": "Kastanienallee"
     },
     {
       "name": "FitX Fitnessstudio Schöneberg",
@@ -25,7 +31,10 @@
       "latitude": "52.485422",
       "longitude": "13.356002",
       "googlePlaceId": "ChIJUYomW0BQqEcRamBvYsxKOIM",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Schöneberg",
+      "quarter": "Akazienkiez"
     },
     {
       "name": "FitX Fitnessstudio Südkreuz",
@@ -34,7 +43,10 @@
       "latitude": "52.478143",
       "longitude": "13.364681",
       "googlePlaceId": "ChIJO8BkiD1QqEcRY0TigxJ3xzs",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Schöneberg",
+      "quarter": "Rote Insel"
     },
     {
       "name": "FitX Fitnessstudio Tempelhof",
@@ -43,7 +55,10 @@
       "latitude": "52.454114",
       "longitude": "13.387692",
       "googlePlaceId": "ChIJA-m4LVdFqEcRKLzbJCpa2g0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Mariendorf",
+      "quarter": null
     },
     {
       "name": "FitX Fitnessstudio Waidmannslust",
@@ -52,7 +67,10 @@
       "latitude": "52.607878",
       "longitude": "13.324964",
       "googlePlaceId": "ChIJIwhoXZ1UqEcRxU3Kj70nX2Y",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Reinickendorf",
+      "suburb": "Waidmannslust",
+      "quarter": null
     },
     {
       "name": "FitX Fitnessstudio Wilmersdorf",
@@ -62,7 +80,10 @@
       "longitude": "13.303",
       "googlePlaceId": "ChIJ5WzFn8JQqEcRpBMsUXxpgpE",
       "status": "CLOSED_TEMPORARILY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Wilmersdorf",
+      "quarter": null
     },
     {
       "name": "JOHN REED Fitness Kreuzberg",
@@ -71,7 +92,10 @@
       "latitude": "52.495359",
       "longitude": "13.420099",
       "googlePlaceId": "ChIJv9CiCMtPqEcRF5Fo74udAJA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Graefekiez"
     },
     {
       "name": "JOHN REED Fitness Prenzlauer Berg",
@@ -80,7 +104,10 @@
       "latitude": "52.528426",
       "longitude": "13.416379",
       "googlePlaceId": "ChIJgVtpjBxOqEcR-z-iXveHbcY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Kollwitzkiez"
     },
     {
       "name": "McFit gym Berlin Adlershof",
@@ -89,7 +116,10 @@
       "latitude": "52.430956",
       "longitude": "13.549099",
       "googlePlaceId": "ChIJOaY-59JHqEcRmIPhjqlFPLo",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Treptow-Köpenick",
+      "suburb": "Adlershof",
+      "quarter": "Adlershof-Süd"
     },
     {
       "name": "McFIT Charlottenburg",
@@ -98,7 +128,10 @@
       "latitude": "52.503689",
       "longitude": "13.338794",
       "googlePlaceId": "ChIJG2BavFVQqEcR4l1NW1XMvHY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Schöneberg",
+      "quarter": null
     },
     {
       "name": "McFIT Fitnessstudio Heinersdorf",
@@ -107,7 +140,10 @@
       "latitude": "52.565443",
       "longitude": "13.444232",
       "googlePlaceId": "ChIJtWXu_I1NqEcRAX48yTpM1r0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Heinersdorf",
+      "quarter": null
     },
     {
       "name": "McFIT Fitnessstudio Hohenschönhausen",
@@ -116,7 +152,10 @@
       "latitude": "52.536037",
       "longitude": "13.474682",
       "googlePlaceId": "ChIJ914nWdVNqEcRwQk1hQVD52g",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Lichtenberg",
+      "suburb": "Alt-Hohenschönhausen",
+      "quarter": null
     },
     {
       "name": "McFIT Fitnessstudio Lichtenberg",
@@ -125,7 +164,10 @@
       "latitude": "52.521826",
       "longitude": "13.498887",
       "googlePlaceId": "ChIJ81tm7pdOqEcRIV9FFa9UACc",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Lichtenberg",
+      "suburb": "Lichtenberg",
+      "quarter": null
     },
     {
       "name": "McFIT Fitnessstudio Lichterfelde",
@@ -134,7 +176,10 @@
       "latitude": "52.418455",
       "longitude": "13.287984",
       "googlePlaceId": "ChIJgTjF1ahbqEcRk_UOk9FkBXY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Steglitz-Zehlendorf",
+      "suburb": "Lichterfelde",
+      "quarter": "Lichterfelde West"
     },
     {
       "name": "McFit gym Berlin Mahlsdorf",
@@ -143,7 +188,10 @@
       "latitude": "52.505249",
       "longitude": "13.612179",
       "googlePlaceId": "ChIJ2QJmKpJJqEcRlNWkX-ZtBXE",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Marzahn-Hellersdorf",
+      "suburb": "Mahlsdorf",
+      "quarter": null
     },
     {
       "name": "McFit gym Berlin Marienfelde",
@@ -152,7 +200,10 @@
       "latitude": "52.430767",
       "longitude": "13.375299",
       "googlePlaceId": "ChIJde5x6zBFqEcRwLhmg92-s_Y",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Mariendorf",
+      "quarter": null
     },
     {
       "name": "McFIT Fitnessstudio Marzahn",
@@ -161,7 +212,10 @@
       "latitude": "52.532422",
       "longitude": "13.537356",
       "googlePlaceId": "ChIJF-HETf9LqEcRID7Y-7POGZg",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Marzahn-Hellersdorf",
+      "suburb": "Marzahn",
+      "quarter": "Springpfuhl"
     },
     {
       "name": "McFIT Fitnessstudio Moabit",
@@ -170,7 +224,10 @@
       "latitude": "52.524889",
       "longitude": "13.345577",
       "googlePlaceId": "ChIJh_wCZQpRqEcReTFUGX_9Y-U",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Moabit",
+      "quarter": "Westfälisches Viertel"
     },
     {
       "name": "McFit gym Berlin Niederschöneweide",
@@ -179,7 +236,10 @@
       "latitude": "52.464099",
       "longitude": "13.497954",
       "googlePlaceId": "ChIJ00bGqUtPqEcRCJMlVi46kNU",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Treptow-Köpenick",
+      "suburb": "Niederschöneweide",
+      "quarter": null
     },
     {
       "name": "McFIT Fitnessstudio Neukölln",
@@ -188,7 +248,10 @@
       "latitude": "52.451769",
       "longitude": "13.434731",
       "googlePlaceId": "ChIJ_wOt9X9FqEcRA7GzEzoFRw0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Neukölln",
+      "suburb": "Britz",
+      "quarter": null
     },
     {
       "name": "McFit gym Berlin Reinickendorf",
@@ -197,7 +260,10 @@
       "latitude": "52.607369",
       "longitude": "13.323602",
       "googlePlaceId": "ChIJcdoQr4JUqEcRMy7TGEqeFN0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Reinickendorf",
+      "suburb": "Waidmannslust",
+      "quarter": "Schwarzwaldsiedlung"
     },
     {
       "name": "McFIT Fitnessstudio Spandau",
@@ -206,7 +272,10 @@
       "latitude": "52.537504",
       "longitude": "13.227496",
       "googlePlaceId": "ChIJidksPF9WqEcRJul0BRo5tW8",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": null,
+      "suburb": "Haselhorst",
+      "quarter": null
     },
     {
       "name": "McFit gym Berlin Spandau Klosterfelde",
@@ -215,7 +284,10 @@
       "latitude": "52.532045",
       "longitude": "13.187704",
       "googlePlaceId": "ChIJpZLzMzdWqEcRFiYXI6EasUs",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": null,
+      "suburb": "Spandau",
+      "quarter": "Klosterfelde"
     },
     {
       "name": "McFIT Fitnessstudio Tempelhof",
@@ -224,7 +296,10 @@
       "latitude": "52.469812",
       "longitude": "13.373682",
       "googlePlaceId": "ChIJdyZ2ZQNQqEcROhRoE0Qx1v4",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Tempelhof",
+      "quarter": null
     },
     {
       "name": "McFit gym Berlin Wedding",
@@ -233,7 +308,10 @@
       "latitude": "52.55365",
       "longitude": "13.360847",
       "googlePlaceId": "ChIJb4R5X9NTqEcRl0W9wBdgQps",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Wedding",
+      "quarter": "Leopoldkiez"
     },
     {
       "name": "McFIT Fitnessstudio Wilmersdorf",
@@ -242,7 +320,10 @@
       "latitude": "52.486647",
       "longitude": "13.32839",
       "googlePlaceId": "ChIJ811DAGBQqEcRFzLoxWWPQoo",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Wilmersdorf",
+      "quarter": "Güntzelkiez"
     },
     {
       "name": "SuperFit Charlottenburg",
@@ -251,7 +332,10 @@
       "latitude": "52.50826",
       "longitude": "13.30604",
       "googlePlaceId": "ChIJnRLk2AZRqEcRRJfMw1nL1s8",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "SuperFit Europa-Center",
@@ -260,7 +344,10 @@
       "latitude": "52.504524",
       "longitude": "13.337422",
       "googlePlaceId": "ChIJky6YnVVQqEcRKxPUjz9px8c",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "SuperFit Friedrichshain",
@@ -269,7 +356,10 @@
       "latitude": "52.514228",
       "longitude": "13.473888",
       "googlePlaceId": "ChIJo5HVsYxOqEcRGqNVg_PXGRs",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Travekiez"
     },
     {
       "name": "SuperFit Mitte",
@@ -278,7 +368,10 @@
       "latitude": "52.518306",
       "longitude": "13.416053",
       "googlePlaceId": "ChIJez-RBiJOqEcRDmNJKNVXaXc",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Spandauer Vorstadt"
     },
     {
       "name": "Superfit Neukölln",
@@ -287,7 +380,10 @@
       "latitude": "52.482088",
       "longitude": "13.432858",
       "googlePlaceId": "ChIJhduVJLtPqEcRUSAyyrzp2ZY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Neukölln",
+      "suburb": "Neukölln",
+      "quarter": "Donaukiez"
     },
     {
       "name": "SuperFit Tegel",
@@ -296,7 +392,10 @@
       "latitude": "52.584819",
       "longitude": "13.285833",
       "googlePlaceId": "ChIJYdKLpWlUqEcRE7e4HfI0vV4",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Reinickendorf",
+      "suburb": "Tegel",
+      "quarter": null
     },
     {
       "name": "SuperFit Steglitz",
@@ -305,7 +404,10 @@
       "latitude": "52.464324",
       "longitude": "13.326835",
       "googlePlaceId": "ChIJ23SqdIJaqEcR6Y2dRu0JiRw",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Steglitz-Zehlendorf",
+      "suburb": "Steglitz",
+      "quarter": null
     },
     {
       "name": "Sqwod Pod",
@@ -316,7 +418,10 @@
       "latitude": "52.556083",
       "longitude": "13.434764",
       "googlePlaceId": "ChIJlejeuxJNqEcRZk9PrDh0u-o",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Weißensee",
+      "quarter": "Gründerviertel"
     }
   ]
 }

@@ -9,7 +9,10 @@
       "latitude": "52.467995",
       "longitude": "13.386013",
       "googlePlaceId": "ChIJIx-GwfxPqEcRfvGckyfVPt0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Tempelhof",
+      "quarter": "Gartenstadt Neu-Tempelhof"
     },
     {
       "name": "Dr. Cordula Dietrich",
@@ -19,7 +22,10 @@
       "latitude": "52.53131",
       "longitude": "13.429442",
       "googlePlaceId": "ChIJgeLKog9OqEcRpdlyDPjU_i0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Bötzowkiez"
     },
     {
       "name": "Sabine Liesegang",
@@ -30,7 +36,10 @@
       "latitude": "52.588619",
       "longitude": "13.284193",
       "googlePlaceId": "ChIJyRrxpEJUqEcRMK7fCd_jm9Y",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Reinickendorf",
+      "suburb": "Tegel",
+      "quarter": null
     },
     {
       "name": "Dr. Köller",
@@ -41,7 +50,10 @@
       "latitude": "52.53278",
       "longitude": "13.432052",
       "googlePlaceId": "ChIJd_H14Q5OqEcR7Vu0rZ1gfoo",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Bötzowkiez"
     },
     {
       "name": "Dr. Annette Kreutz",
@@ -51,7 +63,10 @@
       "latitude": "52.522085",
       "longitude": "13.345565",
       "googlePlaceId": "ChIJbWqLFNAjZUERMu6xdgVIhis",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Hansaviertel",
+      "quarter": null
     },
     {
       "name": "Dr. Gerhard Perchalla",
@@ -61,7 +76,10 @@
       "latitude": "52.503729",
       "longitude": "13.322607",
       "googlePlaceId": "ChIJYUQCoPxQqEcRPMsEB3808gk",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Dr. Nikolaos Rigas",
@@ -72,7 +90,10 @@
       "latitude": "52.498496",
       "longitude": "13.306287",
       "googlePlaceId": "ChIJsfh4XOhQqEcRisNwSpNnZ34",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Wilmersdorf",
+      "quarter": null
     },
     {
       "name": "Dr. Ole Georg Munkvold",
@@ -82,7 +103,10 @@
       "latitude": "52.501552",
       "longitude": "13.311188",
       "googlePlaceId": "ChIJTy9oZeZQqEcRepxNbrtZ_YA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Privatpraxis Dima Salloum",
@@ -93,7 +117,10 @@
       "latitude": "52.510291",
       "longitude": "13.465549",
       "googlePlaceId": "ChIJCdtjcd1PqEcRG0H49Dlrd1o",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Travekiez"
     },
     {
       "name": "Beata Jedykiewicz-Riecker - Psychiatrie am Sterndamm",
@@ -105,7 +132,10 @@
       "latitude": "52.452681",
       "longitude": "13.509891",
       "googlePlaceId": "ChIJaRCCo69IqEcRqDkmtq3zmXo",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Treptow-Köpenick",
+      "suburb": "Johannisthal",
+      "quarter": null
     },
     {
       "name": "Praxis Dr. Gerrit Scherf & Kollegen",
@@ -117,7 +147,11 @@
       "latitude": "52.3932",
       "longitude": "13.035609",
       "googlePlaceId": "ChIJ8VBTwDT0qEcRL0h9GXBFVMw",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": null,
+      "suburb": "Auf dem Kiewitt",
+      "quarter": null,
+      "city": "Potsdam"
     },
     {
       "name": "Praxis Dr. Mungee",
@@ -128,7 +162,10 @@
       "latitude": "52.531612",
       "longitude": "13.413167",
       "googlePlaceId": "ChIJN2DbdepPqEcR9TcsDOjbVYg",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Kollwitzkiez"
     }
   ]
 }

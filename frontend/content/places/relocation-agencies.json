@@ -4,12 +4,15 @@
       "name": "Red Tape Translation",
       "description": "Translation and relocation help. We work together since many years.",
       "website": "/out/red-tape-translation",
-      "address": "Berliner Str. 69",
+      "address": "Left entrance, 4th floor, Berliner Str. 69",
       "latitude": "52.555939",
       "longitude": "13.413001",
       "googlePlaceId": "ChIJSZ-A9whSqEcRt_U8PUJ2yes",
       "recommended": "Yes",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Nordisches Viertel"
     },
     {
       "name": "sorted.berlin",
@@ -20,7 +23,10 @@
       "longitude": "13.466997",
       "googlePlaceId": "ChIJcaz22xxPqEcRNx0IeCMtUW0",
       "recommended": "Yes",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Travekiez"
     },
     {
       "name": "Archer Relocation",
@@ -30,7 +36,10 @@
       "latitude": "52.486764",
       "longitude": "13.355594",
       "googlePlaceId": "ChIJnSdXt05QqEcRxtPkLAvIFhU",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Schöneberg",
+      "quarter": "Akazienkiez"
     },
     {
       "name": "Gibbesch Consulting GmbH",
@@ -40,7 +49,10 @@
       "latitude": "52.526926",
       "longitude": "13.303929",
       "googlePlaceId": "ChIJATwypJVRqEcRp66GNm6hn9E",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": "Mierendorffkiez"
     },
     {
       "name": "IRC Relocation",
@@ -51,7 +63,10 @@
       "latitude": "52.499822",
       "longitude": "13.300086",
       "googlePlaceId": "ChIJ_baj2MJQqEcR8rFiZB7WJ4E",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Halensee",
+      "quarter": null
     },
     {
       "name": "relokate",
@@ -62,16 +77,22 @@
       "latitude": "52.488105",
       "longitude": "13.423089",
       "googlePlaceId": "ChIJ-xjUx89RqEcRQ--n7IgH68c",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Graefekiez"
     },
     {
       "name": "Expats in Wonderland",
       "website": "https://expatsinwonderland.com/",
-      "address": "Neue Schönhauser Str. 12",
+      "address": "Neue Schönhauser Str. 12/Hinterhaus Links, 2.O.G",
       "latitude": "52.524451",
       "longitude": "13.404204",
       "googlePlaceId": "ChIJK9dABp1PqEcRNVxtfLrRVL0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Spandauer Vorstadt"
     },
     {
       "name": "Start Relocation Service",
@@ -82,7 +103,10 @@
       "latitude": "52.489632",
       "longitude": "13.362342",
       "googlePlaceId": "ChIJ_8W4hphRqEcR8PRJBoSmDqw",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Schöneberg",
+      "quarter": "Crellekiez"
     },
     {
       "name": "Prime Relocation Services",
@@ -92,7 +116,10 @@
       "latitude": "52.510424",
       "longitude": "13.378358",
       "googlePlaceId": "ChIJreiFX8lRqEcRGIFGOhyNGEU",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": null
     },
     {
       "name": "Impats",
@@ -102,7 +129,10 @@
       "latitude": "52.527137",
       "longitude": "13.472285",
       "googlePlaceId": "ChIJTcZOf4dOqEcRAP0GOt4y9mM",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Lichtenberg",
+      "suburb": "Fennpfuhl",
+      "quarter": null
     },
     {
       "name": "von Wrede Relocation",
@@ -113,7 +143,10 @@
       "latitude": "52.442639",
       "longitude": "13.234233",
       "googlePlaceId": "ChIJNd14hYVZqEcR-uxJZNLDsW0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Steglitz-Zehlendorf",
+      "suburb": "Zehlendorf",
+      "quarter": "Waldsiedlung Krumme Lanke"
     },
     {
       "name": "PROGEDO",
@@ -123,7 +156,10 @@
       "latitude": "52.499505",
       "longitude": "13.385835",
       "googlePlaceId": "ChIJFzbqHPFRqEcR1J98FBibcvM",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Zeitungsviertel"
     },
     {
       "name": "Jetztpat",

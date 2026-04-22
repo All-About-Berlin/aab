@@ -8,7 +8,10 @@
       "latitude": "52.504966",
       "longitude": "13.381171",
       "googlePlaceId": "ChIJM0to-sxRqEcRkAKeK50xyEY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Zeitungsviertel"
     },
     {
       "name": "Dr. Ilker-A.Aydin",
@@ -17,7 +20,10 @@
       "latitude": "52.523491",
       "longitude": "13.299629",
       "googlePlaceId": "ChIJ8S8ACjBRqEcRg1So6oVbiHM",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": "Mierendorffkiez"
     },
     {
       "name": "Dr. Michael Latzke",
@@ -26,7 +32,10 @@
       "latitude": "52.5353",
       "longitude": "13.403128",
       "googlePlaceId": "ChIJPadC13ghZUERFxoAEZl_krs",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Arkonakiez"
     },
     {
       "name": "Dr. Thomas Raile",
@@ -35,7 +44,10 @@
       "latitude": "52.511767",
       "longitude": "13.386948",
       "googlePlaceId": "ChIJRdgYkc9RqEcRzsFFxi55Sv0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Friedrichstadt"
     },
     {
       "name": "Gemeinschaftspraxis Schlesisches Tor",
@@ -44,7 +56,10 @@
       "latitude": "52.490676",
       "longitude": "13.456679",
       "googlePlaceId": "ChIJDWzpck5OqEcRB84iUBz12G0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Treptow-Köpenick",
+      "suburb": "Alt-Treptow",
+      "quarter": "Kungerkiez"
     },
     {
       "name": "Dr. Petra Jordan",
@@ -53,7 +68,10 @@
       "latitude": "52.55261",
       "longitude": "13.405705",
       "googlePlaceId": "ChIJp3G1yRpSqEcRHqdiorpJOm8",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Nordisches Viertel"
     },
     {
       "name": "Dr. Nadja Dreysse",
@@ -62,7 +80,10 @@
       "latitude": "52.494763",
       "longitude": "13.295429",
       "googlePlaceId": "ChIJB2xsasFQqEcREXV7F59rD7Q",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Halensee",
+      "quarter": null
     },
     {
       "name": "Martina Schreen Allgemeinmedizin Hausarzt Berlin",
@@ -72,7 +93,10 @@
       "latitude": "52.535817",
       "longitude": "13.427394",
       "googlePlaceId": "ChIJWxMhygVOqEcRQJ6HDxB3MIw",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Winsviertel"
     },
     {
       "name": "Practice Dr. Peter Oblaski",
@@ -82,7 +106,10 @@
       "latitude": "52.488361",
       "longitude": "13.352604",
       "googlePlaceId": "ChIJycEm8ENQqEcRQSJfBIZAXwA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Schöneberg",
+      "quarter": "Akazienkiez"
     },
     {
       "name": "Dr. Andreas Stein",
@@ -92,7 +119,10 @@
       "latitude": "52.519737",
       "longitude": "13.410822",
       "googlePlaceId": "ChIJcaAm0c5PqEcRO7IY9QDlibo",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Spandauer Vorstadt"
     },
     {
       "name": "Praxis Dr. Cordes",
@@ -102,7 +132,10 @@
       "latitude": "52.507789",
       "longitude": "13.449996",
       "googlePlaceId": "ChIJ1di4_VpOqEcRfUET9Fa0VGE",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Mediaspree"
     },
     {
       "name": "Kantpraxis",
@@ -112,7 +145,10 @@
       "latitude": "52.502093",
       "longitude": "13.321038",
       "googlePlaceId": "ChIJqXX9OftQqEcRRDvBsV2zgs8",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Dr. Christopher Marchand",
@@ -122,7 +158,10 @@
       "latitude": "52.507802",
       "longitude": "13.298253",
       "googlePlaceId": "ChIJhbq5P9lQqEcRA8RqXlpOr3E",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": "Witzleben"
     },
     {
       "name": "Dr. Eva Essers",
@@ -131,7 +170,10 @@
       "latitude": "52.493532",
       "longitude": "13.413429",
       "googlePlaceId": "ChIJi6XzLsxPqEcRzgjFamPcGWI",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Graefekiez"
     },
     {
       "name": "Dr. Sophie Rüggeberg",
@@ -142,7 +184,10 @@
       "latitude": "52.553575",
       "longitude": "13.412207",
       "googlePlaceId": "ChIJ7doPJX1NqEcRGUViyBYUULg",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Nordisches Viertel"
     },
     {
       "name": "Dr. Sabina Valentine",
@@ -153,7 +198,10 @@
       "latitude": "52.51337",
       "longitude": "13.396012",
       "googlePlaceId": "ChIJyRZEwdNRqEcRu3DO-uONcdI",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": null
     },
     {
       "name": "Praxis für Allgemeinmedizin Stephanie Moore",
@@ -163,7 +211,10 @@
       "latitude": "52.49179",
       "longitude": "13.381992",
       "googlePlaceId": "ChIJ44Sqei9QqEcRWwl7Kxjt8wg",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Tempelhofer Vorstadt"
     },
     {
       "name": "Dr. Eileen Behrens",
@@ -173,7 +224,10 @@
       "latitude": "52.506577",
       "longitude": "13.294302",
       "googlePlaceId": "ChIJTdkSJtpQqEcRs-QxUmfZdqc",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": "Witzleben"
     },
     {
       "name": "Dr. Elke Schröter",
@@ -182,7 +236,10 @@
       "latitude": "52.540932",
       "longitude": "13.555371",
       "googlePlaceId": "ChIJgxQF8vFLqEcRB9tLnrXpXMA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Marzahn-Hellersdorf",
+      "suburb": "Marzahn",
+      "quarter": "Marzahn-Süd"
     },
     {
       "name": "Dr. Johanna Morguet & Sahar Abdul Majeed",
@@ -191,7 +248,10 @@
       "latitude": "52.507052",
       "longitude": "13.321791",
       "googlePlaceId": "ChIJ__870OJQqEcRJ-gJYjgKaXM",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Ärzte Zentrum Köpenick",
@@ -202,7 +262,10 @@
       "latitude": "52.44718",
       "longitude": "13.57584",
       "googlePlaceId": "ChIJ26zoKW5IqEcRcAe4YcTuuoI",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Treptow-Köpenick",
+      "suburb": "Köpenick",
+      "quarter": "Dammvorstadt"
     },
     {
       "name": "Meraneum",
@@ -213,7 +276,10 @@
       "latitude": "52.486601",
       "longitude": "13.338203",
       "googlePlaceId": "ChIJny0StYFRqEcR2xOuGnUA5aU",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Schöneberg",
+      "quarter": "Bayerisches Viertel"
     },
     {
       "name": "OVID Clinic Berlin",
@@ -224,7 +290,10 @@
       "latitude": "52.508492",
       "longitude": "13.466821",
       "googlePlaceId": "ChIJMadZk3BPqEcR-rn1DpXybwA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Travekiez"
     },
     {
       "name": "Dr. med. Katharina Schieke",
@@ -233,7 +302,10 @@
       "latitude": "52.521541",
       "longitude": "13.386005",
       "googlePlaceId": "ChIJ56LlM8JRqEcRzCnBB9uyz0Q",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Dorotheenstadt"
     },
     {
       "name": "Herr Dr. med. Jürgen Putz",
@@ -242,7 +314,10 @@
       "latitude": "52.5485",
       "longitude": "13.200443",
       "googlePlaceId": "ChIJM1OK8xRWqEcR2A2L0_0CnI0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": null,
+      "suburb": "Spandau",
+      "quarter": "Neustadt"
     },
     {
       "name": "Katrin Ludwig",
@@ -252,7 +327,10 @@
       "latitude": "52.49842",
       "longitude": "13.34063",
       "googlePlaceId": "ChIJGwZnL1dQqEcRoGSfz2j35R8",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Schöneberg",
+      "quarter": null
     },
     {
       "name": "Dr. med. Julia Ertl",
@@ -261,7 +339,10 @@
       "latitude": "52.482002",
       "longitude": "13.424516",
       "googlePlaceId": "ChIJwbIPR7lPqEcRSa6Tzqjr3M8",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Neukölln",
+      "suburb": "Neukölln",
+      "quarter": "Flughafenkiez"
     }
   ]
 }

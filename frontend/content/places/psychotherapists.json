@@ -10,7 +10,10 @@
       "latitude": "52.504345",
       "longitude": "13.357333",
       "googlePlaceId": "ChIJPVgC10xQqEcRCUHzUIB-Jnc",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Tiergarten",
+      "quarter": null
     },
     {
       "name": "Psychotherapie Blagec",
@@ -18,12 +21,15 @@
       "acceptsPublicHealthInsurance": "No",
       "website": "https://sandra-blagec.com/en/",
       "email": "psychotherapy.blagec@gmail.com",
-      "address": "Bleibtreustraße 12A",
+      "address": "Praxis Dr. Bosse, Bleibtreustraße 12A",
       "latitude": "52.50429",
       "longitude": "13.319632",
       "googlePlaceId": "ChIJ2SnTi-BQqEcRECCiSDiuXkc",
       "status": "CLOSED_TEMPORARILY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Julia Bellabarba",
@@ -35,7 +41,10 @@
       "latitude": "52.510856",
       "longitude": "13.387791",
       "googlePlaceId": "ChIJP540PNBRqEcRfgUKbmGM8rA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Friedrichstadt"
     },
     {
       "name": "Dr. Cordula Dietrich",
@@ -45,7 +54,10 @@
       "latitude": "52.53131",
       "longitude": "13.429442",
       "googlePlaceId": "ChIJgeLKog9OqEcRpdlyDPjU_i0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Bötzowkiez"
     },
     {
       "name": "Dipl.-Psych. Nicholas Bellafiore",
@@ -56,7 +68,10 @@
       "latitude": "52.541889",
       "longitude": "13.417529",
       "googlePlaceId": "ChIJ__9vaQZSqEcRSHABSkOMfdc",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Helmholtzkiez"
     },
     {
       "name": "Anja Benesch",
@@ -66,7 +81,10 @@
       "latitude": "52.565761",
       "longitude": "13.40222",
       "googlePlaceId": "ChIJ__-PiANSqEcRIYxLNBkw87U",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Pankow",
+      "quarter": "Florakiez"
     },
     {
       "name": "Dr. Ghazaleh Bailey",
@@ -78,7 +96,10 @@
       "latitude": "52.530034",
       "longitude": "13.414811",
       "googlePlaceId": "ChIJ0cPlMgRSqEcRW1VH90DIBuQ",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Kollwitzkiez"
     },
     {
       "name": "Julianne Appel-Opper",
@@ -90,7 +111,10 @@
       "latitude": "52.466646",
       "longitude": "13.325499",
       "googlePlaceId": "ChIJG6gGSn9QqEcRBVIZIsfphYo",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Friedenau",
+      "quarter": null
     },
     {
       "name": "Dipl.-Psych. Heidi Hooper Amri",
@@ -101,7 +125,10 @@
       "latitude": "52.495923",
       "longitude": "13.328964",
       "googlePlaceId": "ChIJZ3HeoPdQqEcREVCPXaT8Ux8",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Wilmersdorf",
+      "quarter": "Fasanenkiez"
     },
     {
       "name": "Dr. Brian L. Pheasant",
@@ -112,7 +139,10 @@
       "latitude": "52.55217",
       "longitude": "13.418262",
       "googlePlaceId": "ChIJVVXJ7w5OqEcR5XWdxeBbgYs",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Humann-Kiez"
     },
     {
       "name": "Eva Štajner",
@@ -124,7 +154,10 @@
       "latitude": "52.54301",
       "longitude": "13.417673",
       "googlePlaceId": "ChIJ5-Jw0shTqEcRC6WjjIve7N4",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Helmholtzkiez"
     },
     {
       "name": "Dr. Christian Dombrowe",
@@ -134,7 +167,10 @@
       "latitude": "52.527052",
       "longitude": "13.38881",
       "googlePlaceId": "ChIJ2U6aR5FRqEcRwOpcE8pLctY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Oranienburger Vorstadt"
     },
     {
       "name": "Dipl.-Psych. Nadja Ursula Gogolin",
@@ -146,7 +182,10 @@
       "latitude": "52.48219",
       "longitude": "13.360024",
       "googlePlaceId": "ChIJ7_rpuVBQqEcRauVoYbQ1nVA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Schöneberg",
+      "quarter": "Rote Insel"
     },
     {
       "name": "Blanka Leeker, MA",
@@ -158,7 +197,10 @@
       "latitude": "52.519548",
       "longitude": "13.289076",
       "googlePlaceId": "ChIJJ5UgV5BRqEcRAH4BY5nfJak",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": "Danckelmannkiez"
     },
     {
       "name": "Mittelweg 50",
@@ -169,7 +211,10 @@
       "latitude": "52.475619",
       "longitude": "13.430271",
       "googlePlaceId": "ChIJk9PlUb1PqEcRj0lnuPjkNmE",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Neukölln",
+      "suburb": "Neukölln",
+      "quarter": null
     },
     {
       "name": "Dipl.-Psych. Jana Harthauß",
@@ -179,7 +224,10 @@
       "latitude": "52.467226",
       "longitude": "13.511372",
       "googlePlaceId": "ChIJqY4AH_lJqEcRowM1crFgnYg",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Treptow-Köpenick",
+      "suburb": "Oberschöneweide",
+      "quarter": null
     },
     {
       "name": "Sandra Cotta",
@@ -190,7 +238,10 @@
       "latitude": "52.493146",
       "longitude": "13.456966",
       "googlePlaceId": "ChIJRQfEPnxRqEcRAW3HgWxa8mo",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Treptow-Köpenick",
+      "suburb": "Alt-Treptow",
+      "quarter": "Kungerkiez"
     },
     {
       "name": "Didem Atahan-Fabig",
@@ -198,11 +249,14 @@
       "acceptsPublicHealthInsurance": "No",
       "website": "http://www.crossculturaltherapy.com/",
       "email": "atahan.didem@googlemail.com",
-      "address": "Linienstraße 146",
+      "address": "10115, Linienstraße 146",
       "latitude": "52.52694",
       "longitude": "13.391441",
       "googlePlaceId": "ChIJKY4ovt5RqEcRiTmaanPZEQo",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Oranienburger Vorstadt"
     },
     {
       "name": "Dominic Decker",
@@ -214,7 +268,10 @@
       "latitude": "52.541893",
       "longitude": "13.417521",
       "googlePlaceId": "ChIJq6q-_v9NqEcRJY6-4-pCiX8",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Helmholtzkiez"
     },
     {
       "name": "Alastair Roberts",
@@ -226,7 +283,10 @@
       "latitude": "52.48205",
       "longitude": "13.343319",
       "googlePlaceId": "ChIJE-fMYQhRqEcRQ7g_vIpKhNA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Schöneberg",
+      "quarter": "Akazienkiez"
     },
     {
       "name": "Dipl.-Psych. Anne Piotrowski",
@@ -236,7 +296,10 @@
       "latitude": "52.539287",
       "longitude": "13.415084",
       "googlePlaceId": "ChIJI41afedRqEcRAm3Y7Q-ragY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": null
     },
     {
       "name": "360° Psychotherapie",
@@ -247,7 +310,10 @@
       "latitude": "52.54932",
       "longitude": "13.457131",
       "googlePlaceId": "ChIJ2w8IFsNNqEcROxUgMw5mGvU",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Weißensee",
+      "quarter": "Munizipalviertel"
     },
     {
       "name": "Dr. Grace O'Malley",
@@ -259,7 +325,10 @@
       "latitude": "52.498612",
       "longitude": "13.402474",
       "googlePlaceId": "ChIJH6EcgclPqEcROZpXjCXPM2c",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Luisenstadt"
     },
     {
       "name": "Dipl. Med. Birgit Hansen",
@@ -271,7 +340,10 @@
       "latitude": "52.533489",
       "longitude": "13.476676",
       "googlePlaceId": "ChIJac-UbIBOqEcRKy0ICJoQlBE",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Lichtenberg",
+      "suburb": "Alt-Hohenschönhausen",
+      "quarter": null
     },
     {
       "name": "Katie Knight",
@@ -282,7 +354,10 @@
       "latitude": "52.548137",
       "longitude": "13.398735",
       "googlePlaceId": "ChIJ3UJDP_dRqEcRAZh0m3X-Q2U",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Gesundbrunnen",
+      "quarter": null
     },
     {
       "name": "Philip Sheldon",
@@ -294,7 +369,10 @@
       "latitude": "52.461934",
       "longitude": "13.480376",
       "googlePlaceId": "ChIJOZ0sXblPqEcRCD_WTJRpLFA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Treptow-Köpenick",
+      "suburb": "Baumschulenweg",
+      "quarter": null
     },
     {
       "name": "Dipl.-Psych. Kristina Oelschläger",
@@ -305,7 +383,10 @@
       "latitude": "52.518189",
       "longitude": "13.468864",
       "googlePlaceId": "ChIJf9hYmj9PqEcR5v79axhltkU",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Samariterviertel"
     },
     {
       "name": "Sean Carden",
@@ -317,7 +398,10 @@
       "latitude": "52.482992",
       "longitude": "13.440713",
       "googlePlaceId": "ChIJCy3FCTZTqEcRtofzKPiQ4OY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Neukölln",
+      "suburb": "Neukölln",
+      "quarter": "Weserkiez"
     },
     {
       "name": "Dr. Michael Cugialy",
@@ -329,7 +413,10 @@
       "latitude": "52.755036",
       "longitude": "13.245767",
       "googlePlaceId": "ChIJYQP_yK9bqEcRV_ymuwGgA9c",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": null,
+      "suburb": "Lehnitz",
+      "quarter": null
     },
     {
       "name": "Johannes Mittermair",
@@ -352,7 +439,10 @@
       "latitude": "52.530052",
       "longitude": "13.38698",
       "googlePlaceId": "ChIJAfsc64tTqEcR3hMSm_Rx6g4",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Oranienburger Vorstadt"
     },
     {
       "name": "Praxis Godau",
@@ -364,7 +454,10 @@
       "latitude": "52.48647",
       "longitude": "13.3978",
       "googlePlaceId": "ChIJRR0L0TZRqEcR2FPBbi6bF7o",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Bergmannkiez"
     },
     {
       "name": "Dr. Valentin Zahrnt",
@@ -376,7 +469,10 @@
       "latitude": "52.541516",
       "longitude": "13.416527",
       "googlePlaceId": "ChIJv0eQegNOqEcRllZW2nLyY_Y",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Helmholtzkiez"
     },
     {
       "name": "Dipl.-Psych. Özgür Cengiz",
@@ -388,7 +484,10 @@
       "latitude": "52.434358",
       "longitude": "13.333906",
       "googlePlaceId": "ChIJ__8bh8JaqEcRXCRA8So37k8",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Steglitz-Zehlendorf",
+      "suburb": "Lankwitz",
+      "quarter": "Komponistenviertel"
     },
     {
       "name": "Psychotherapist Lisa-Maria Aldinger",
@@ -399,7 +498,10 @@
       "latitude": "52.579747",
       "longitude": "13.39877",
       "googlePlaceId": "ChIJ974FWJ1TqEcROvyUIIflpLY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Niederschönhausen",
+      "quarter": null
     },
     {
       "name": "M.Sc. Berenike Franzen",
@@ -410,7 +512,10 @@
       "latitude": "52.502628",
       "longitude": "13.476753",
       "googlePlaceId": "ChIJ_Si-poVPqEcRluwtu0GrpTo",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Lichtenberg",
+      "suburb": "Rummelsburg",
+      "quarter": "Victoriastadt"
     },
     {
       "name": "Dr. phil. Alexander Piotrowski",
@@ -422,7 +527,10 @@
       "latitude": "52.539264",
       "longitude": "13.414979",
       "googlePlaceId": "ChIJDUlx1P9RqEcRnUrKW2Khsdk",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Helmholtzkiez"
     },
     {
       "name": "Praxis für Psychotherapie, Hypnotherapie + Klangtherapie",
@@ -434,7 +542,10 @@
       "latitude": "52.475266",
       "longitude": "13.33031",
       "googlePlaceId": "ChIJRyorldpRqEcRdAyC6fVFVtM",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Friedenau",
+      "quarter": null
     },
     {
       "name": "Archana Golla",
@@ -446,7 +557,10 @@
       "latitude": "52.521861",
       "longitude": "13.351843",
       "googlePlaceId": "ChIJI64Ds6ZRqEcR1OAYEoCtyVQ",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Moabit",
+      "quarter": null
     },
     {
       "name": "Dr. Lazaros Giousmpasis",
@@ -458,7 +572,10 @@
       "latitude": "52.492477",
       "longitude": "13.280497",
       "googlePlaceId": "ChIJ08uUXUNRqEcRF00ja-YJxwY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Grunewald",
+      "quarter": null
     },
     {
       "name": "Dr. Dirk Stemper",
@@ -470,7 +587,10 @@
       "latitude": "52.492017",
       "longitude": "13.278896",
       "googlePlaceId": "ChIJ78EDLcZRqEcRzYWybeWpBUY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Grunewald",
+      "quarter": null
     },
     {
       "name": "Dipl.-Psych. Christiane Köhler",
@@ -482,7 +602,10 @@
       "latitude": "52.50998",
       "longitude": "13.403011",
       "googlePlaceId": "ChIJYRx7EihOqEcR4P2Ua_dRxt8",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Luisenstadt"
     },
     {
       "name": "Aloka Levitin",
@@ -494,7 +617,10 @@
       "latitude": "52.44565",
       "longitude": "13.313023",
       "googlePlaceId": "ChIJ99YhZHtbqEcRt2YCmbncyn8",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Steglitz-Zehlendorf",
+      "suburb": "Lichterfelde",
+      "quarter": "Lichterfelde West"
     },
     {
       "name": "Dr. Joseph Hamer",
@@ -506,7 +632,10 @@
       "latitude": "52.524771",
       "longitude": "13.300558",
       "googlePlaceId": "ChIJJ5UgV5BRqEcRwnGl5Fwhhe0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": "Mierendorffkiez"
     },
     {
       "name": "Ben Lemme",
@@ -517,7 +646,10 @@
       "latitude": "52.488881",
       "longitude": "13.360029",
       "googlePlaceId": "ChIJrzmNsfZRqEcRM-VzZgqiODA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Schöneberg",
+      "quarter": "Crellekiez"
     },
     {
       "name": "PsyShrink",
@@ -529,7 +661,10 @@
       "latitude": "52.503268",
       "longitude": "13.346169",
       "googlePlaceId": "ChIJ8yR8iaVRqEcRNGzYb_Ja46k",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Schöneberg",
+      "quarter": "Nollendorfkiez"
     },
     {
       "name": "Roman Snihurowch, MD",
@@ -540,7 +675,10 @@
       "latitude": "52.47587",
       "longitude": "13.423631",
       "googlePlaceId": "ChIJV0ja_3lPqEcRw9oGUQPdw4Q",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Neukölln",
+      "suburb": "Neukölln",
+      "quarter": "Schillerkiez"
     },
     {
       "name": "My International Therapy",
@@ -552,7 +690,10 @@
       "latitude": "52.54356",
       "longitude": "13.412802",
       "googlePlaceId": "ChIJF0ekaYxTqEcRqrA3A4zo0tU",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": null
     },
     {
       "name": "Dr. med Kai Gutzeit",
@@ -564,7 +705,10 @@
       "latitude": "52.490018",
       "longitude": "13.426786",
       "googlePlaceId": "ChIJdcwI9LZPqEcRgUPsvpZ8j9w",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Neukölln",
+      "suburb": "Neukölln",
+      "quarter": "Reuterkiez"
     },
     {
       "name": "Dipl.-Psych. Shireen Kwiatkowska-Naqvi",
@@ -576,7 +720,10 @@
       "latitude": "52.505009",
       "longitude": "13.47696",
       "googlePlaceId": "ChIJFVOr5Y1RqEcRS606L4ejbY8",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Lichtenberg",
+      "suburb": "Rummelsburg",
+      "quarter": "Victoriastadt"
     },
     {
       "name": "Art Therapy Studio",
@@ -588,7 +735,10 @@
       "latitude": "52.545106",
       "longitude": "13.453012",
       "googlePlaceId": "ChIJC0Fprt1NqEcRBF3syO4qbu4",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Weißensee",
+      "quarter": "Komponistenviertel"
     },
     {
       "name": "Wagner & Homunculus, Praxis für Systemische Therapie",
@@ -600,7 +750,10 @@
       "latitude": "52.511503",
       "longitude": "13.287417",
       "googlePlaceId": "ChIJy1ras_dOqEcRJ4QqbTujILU",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": "Witzleben"
     },
     {
       "name": "Marylise Dumont",
@@ -611,7 +764,10 @@
       "latitude": "52.49836",
       "longitude": "13.38375",
       "googlePlaceId": "ChIJDx6boElRqEcRQBEHT0La5CM",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Tempelhofer Vorstadt"
     },
     {
       "name": "Dipl.-Psych. Katrin Forler",
@@ -623,7 +779,10 @@
       "latitude": "52.572396",
       "longitude": "13.404274",
       "googlePlaceId": "ChIJVd_IscdTqEcRPMO-EzlB4eM",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Pankow",
+      "quarter": null
     },
     {
       "name": "Dipl.-Psych. Katja Rück",
@@ -635,7 +794,10 @@
       "latitude": "52.469868",
       "longitude": "13.325879",
       "googlePlaceId": "ChIJKz2yHLVPqEcRzPSsIFh6T5Y",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Friedenau",
+      "quarter": null
     },
     {
       "name": "Ottoline Hart",
@@ -647,7 +809,10 @@
       "latitude": "52.473777",
       "longitude": "13.424308",
       "googlePlaceId": "ChIJLxLNZZZPqEcR55SQh22HQA0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Neukölln",
+      "suburb": "Neukölln",
+      "quarter": "Schillerkiez"
     },
     {
       "name": "Claudia Dzaack",
@@ -658,7 +823,10 @@
       "latitude": "52.537497",
       "longitude": "13.408256",
       "googlePlaceId": "ChIJTcOwqP5RqEcRnmRQGmi2WSc",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Kollwitzkiez"
     },
     {
       "name": "Manuela Luise, Creative Therapy",
@@ -670,7 +838,10 @@
       "latitude": "52.523821",
       "longitude": "13.450998",
       "googlePlaceId": "ChIJrQdC6pPaGEwRjnpbqf0tGrw",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Hausburgviertel"
     },
     {
       "name": "Dipl.-Psych. Michael Flor",
@@ -681,7 +852,10 @@
       "latitude": "52.531869",
       "longitude": "13.381769",
       "googlePlaceId": "ChIJD2K41uxRqEcR4j90K1bgbQQ",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Charitéviertel"
     },
     {
       "name": "Dr. Lorna Schlochtermeier",
@@ -691,7 +865,10 @@
       "latitude": "52.496977",
       "longitude": "13.430582",
       "googlePlaceId": "ChIJe1NK7qhPqEcRpcsr0WV7kX0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Luisenstadt"
     },
     {
       "name": "Mag. Michaela Klien",
@@ -703,7 +880,10 @@
       "latitude": "52.553288",
       "longitude": "13.423639",
       "googlePlaceId": "ChIJ8xN0WAlNqEcRK_RjA4NVIsE",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Pankow",
+      "quarter": "Vinetakiez"
     },
     {
       "name": "Ninja Kattenbeck",
@@ -715,7 +895,10 @@
       "latitude": "52.503126",
       "longitude": "13.366423",
       "googlePlaceId": "ChIJryOnR91RqEcRzjxzuM3IGxA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Tiergarten",
+      "quarter": null
     },
     {
       "name": "Dr. Viola Kappel & Kollegen",
@@ -727,7 +910,10 @@
       "latitude": "52.485576",
       "longitude": "13.363617",
       "googlePlaceId": "ChIJ7WgYynNRqEcR348aynWuCNY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Schöneberg",
+      "quarter": "Rote Insel"
     },
     {
       "name": "Bertine de Jongh",
@@ -739,7 +925,10 @@
       "latitude": "52.524771",
       "longitude": "13.300558",
       "googlePlaceId": "ChIJJ5UgV5BRqEcRwnGl5Fwhhe0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": "Mierendorffkiez"
     },
     {
       "name": "Psychotherapie Vivian Birchall",
@@ -749,7 +938,10 @@
       "longitude": "13.142604",
       "googlePlaceId": "ChIJB4T69ypZqEcRsvWbkWcbeNM",
       "acceptsPublicHealthInsurance": "No",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": null,
+      "suburb": "Kladow",
+      "quarter": null
     },
     {
       "name": "Dipl.-Psych. Mathias Funke, Psychotherapist",
@@ -761,7 +953,10 @@
       "longitude": "13.496978",
       "googlePlaceId": "ChIJa_I65XhQqEcRL9lojdvC-lg",
       "acceptsPublicHealthInsurance": "No",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Lichtenberg",
+      "suburb": "Rummelsburg",
+      "quarter": "Weitlingkiez"
     },
     {
       "name": "kAleiDoscope - Coaching & Counseling",
@@ -772,7 +967,10 @@
       "latitude": "52.432613",
       "longitude": "13.252689",
       "googlePlaceId": "ChIJS_pCzbRbqEcRgiTHrj0CZ18",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Steglitz-Zehlendorf",
+      "suburb": "Zehlendorf",
+      "quarter": null
     },
     {
       "name": "International Psychotherapy Berlin",
@@ -784,7 +982,10 @@
       "longitude": "13.422277",
       "googlePlaceId": "ChIJx6x6Z09QqEcRECKFotXC3ng",
       "acceptsPublicHealthInsurance": "Yes",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Neukölln",
+      "quarter": "Graefekiez"
     },
     {
       "name": "Angel Candeaux",
@@ -796,7 +997,10 @@
       "longitude": "13.423554",
       "googlePlaceId": "ChIJ9RziE3hPqEcR4tDcOeGwoYM",
       "acceptsPublicHealthInsurance": "Yes",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Luisenstadt"
     },
     {
       "name": "Vibes - Praxis für Psychotherapie & Coaching",
@@ -807,7 +1011,10 @@
       "longitude": "13.313165",
       "googlePlaceId": "ChIJEfUtdBJRqEcRoV_fPd03zX4",
       "acceptsPublicHealthInsurance": "Yes",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Reinickendorf",
+      "suburb": "Reinickendorf",
+      "quarter": null
     },
     {
       "name": "BOJE Beratung Ole Jaeckel-Engler",
@@ -819,7 +1026,10 @@
       "longitude": "13.409683",
       "googlePlaceId": "ChIJibfJmQ5OqEcR0pfk9WlloxU",
       "acceptsPublicHealthInsurance": "No",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Pankow",
+      "quarter": "Florakiez"
     },
     {
       "name": "M. Sc. Antonia Windsheimer",
@@ -831,7 +1041,10 @@
       "longitude": "13.384102",
       "googlePlaceId": "ChIJl4sVESpRqEcRnXZXN67_CYE",
       "acceptsPublicHealthInsurance": "No",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Tempelhofer Vorstadt"
     },
     {
       "name": "OVID Clinic Berlin",
@@ -842,7 +1055,10 @@
       "latitude": "52.508492",
       "longitude": "13.466821",
       "googlePlaceId": "ChIJMadZk3BPqEcR-rn1DpXybwA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Travekiez"
     },
     {
       "name": "The Primrose Practice",
@@ -854,7 +1070,10 @@
       "longitude": "13.389712",
       "googlePlaceId": "ChIJG1de0_9RqEcRd0p-aZ27OKk",
       "acceptsPublicHealthInsurance": "No",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Oranienburger Vorstadt"
     },
     {
       "name": "Dr Dafni Milioni",
@@ -866,7 +1085,10 @@
       "longitude": "13.300564",
       "googlePlaceId": "ChIJb_2eF_lRqEcRCD1KpGGfi6A",
       "acceptsPublicHealthInsurance": "No",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": "Mierendorffkiez"
     },
     {
       "name": "Fraeya Whiffin",
@@ -878,7 +1100,10 @@
       "longitude": "13.417072",
       "googlePlaceId": "ChIJx99VeqJPqEcRmB2tkwA4hoI",
       "acceptsPublicHealthInsurance": "No",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Neukölln",
+      "quarter": "Graefekiez"
     },
     {
       "name": "Dipl.-Psych. Dr. Katharina Will",
@@ -890,7 +1115,10 @@
       "longitude": "13.434358",
       "googlePlaceId": "ChIJ51QmCZNRqEcRiGLqi1-V6Ao",
       "acceptsPublicHealthInsurance": "No",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Weißensee",
+      "quarter": "Gründerviertel"
     },
     {
       "name": "Maxim Makhankov",
@@ -902,7 +1130,10 @@
       "longitude": "13.452881",
       "googlePlaceId": "ChIJa9y76WppnmgRlAHpVP63Fh4",
       "acceptsPublicHealthInsurance": "No",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Hausburgviertel"
     },
     {
       "name": "Talia Purnell",
@@ -913,7 +1144,10 @@
       "latitude": "52.523146",
       "longitude": "13.452881",
       "googlePlaceId": "ChIJ9bdNbDpPqEcRLf0SQoHwaak",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Hausburgviertel"
     },
     {
       "name": "Counselling & Couples Therapy - Agnieszka Kieres",
@@ -925,7 +1159,10 @@
       "longitude": "13.455898",
       "googlePlaceId": "ChIJa6w9bpFPqEcRoguAc895v_I",
       "acceptsPublicHealthInsurance": "No",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Hausburgviertel"
     },
     {
       "name": "Peter Bennett",
@@ -934,7 +1171,10 @@
       "latitude": "52.516529",
       "longitude": "13.414033",
       "googlePlaceId": "ChIJwwjPBitPqEcR8tTBsTSXJus",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": null
     }
   ]
 }

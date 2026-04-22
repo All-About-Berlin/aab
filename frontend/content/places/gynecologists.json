@@ -7,7 +7,10 @@
       "latitude": "52.534709",
       "longitude": "13.397697",
       "googlePlaceId": "ChIJ93xmUtFRqEcR_JAbEIZKEJA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Arkonakiez"
     },
     {
       "name": "Praxisverbund Berlin",
@@ -17,7 +20,10 @@
       "latitude": "52.530057",
       "longitude": "13.401883",
       "googlePlaceId": "ChIJXQ6CX-RRqEcRgrvP9gnMOtY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Rosenthaler Vorstadt"
     },
     {
       "name": "Gynäkologin Dr. Anja Fünfstück",
@@ -26,7 +32,10 @@
       "latitude": "52.540331",
       "longitude": "13.418512",
       "googlePlaceId": "ChIJ64U0awBOqEcRz5pf8Va6W3A",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Helmholtzkiez"
     },
     {
       "name": "Dr. Eva Dudik",
@@ -35,7 +44,10 @@
       "latitude": "52.510644",
       "longitude": "13.287398",
       "googlePlaceId": "ChIJm_DGS7dRqEcRR9ySOEerwMk",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": "Witzleben"
     },
     {
       "name": "Dr. Gabriele Ulsemer",
@@ -44,7 +56,10 @@
       "latitude": "52.586174",
       "longitude": "13.406922",
       "googlePlaceId": "ChIJhW7Rw25SqEcRYkOFjc3iKvc",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Niederschönhausen",
+      "quarter": null
     },
     {
       "name": "Frauenarzt Bogdan Myndiuk",
@@ -53,7 +68,10 @@
       "latitude": "52.498023",
       "longitude": "13.289407",
       "googlePlaceId": "ChIJNdXnvsVQqEcRxmziM_hELKE",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Halensee",
+      "quarter": null
     },
     {
       "name": "Dr. Christiane Wessel",
@@ -62,7 +80,10 @@
       "latitude": "52.507641",
       "longitude": "13.394421",
       "googlePlaceId": "ChIJ-UtXldZRqEcRs8lA0PA8qJg",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Zeitungsviertel"
     },
     {
       "name": "Dr. Sybille Görlitz-Novakovic",
@@ -72,7 +93,10 @@
       "latitude": "52.50216",
       "longitude": "13.308126",
       "googlePlaceId": "ChIJ0592Xdz1qEcRfo0k3WQTQlA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Sana Gesundheitszentren",
@@ -82,7 +106,10 @@
       "latitude": "52.512166",
       "longitude": "13.455185",
       "googlePlaceId": "ChIJR5GxMFxOqEcRSBeOG9TwkuA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Boxhagener Kiez"
     },
     {
       "name": "Obenrum-Untenrum - Helen Sange",
@@ -93,7 +120,10 @@
       "latitude": "52.508771",
       "longitude": "13.316662",
       "googlePlaceId": "ChIJAUwNGxpRqEcR3lxxgasrW3Q",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Dipl. Med. Daniel Karohl",
@@ -102,7 +132,10 @@
       "latitude": "52.549106",
       "longitude": "13.413268",
       "googlePlaceId": "ChIJA3r3ngZSqEcRWaaQ6w7ZEeI",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": null
     },
     {
       "name": "Gemeinschaftspraxis FERA",
@@ -112,7 +145,10 @@
       "latitude": "52.458249",
       "longitude": "13.390498",
       "googlePlaceId": "ChIJRTm8YfhPqEcRmC5oK5klTYk",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Tempelhof",
+      "quarter": null
     },
     {
       "name": "Frauenarzt-Zentrum-Neukölln",
@@ -121,7 +157,10 @@
       "latitude": "52.477297",
       "longitude": "13.438445",
       "googlePlaceId": "ChIJo5Sp0aNPqEcRmCzYLU3O9lM",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Neukölln",
+      "suburb": "Neukölln",
+      "quarter": null
     },
     {
       "name": "Frauenärztinnen am Schulenburgpark",
@@ -131,7 +170,10 @@
       "latitude": "52.466058",
       "longitude": "13.470033",
       "googlePlaceId": "ChIJEYoelT9PqEcRHP47jFa92Kk",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Neukölln",
+      "suburb": "Neukölln",
+      "quarter": "High-Deck-Siedlung"
     },
     {
       "name": "Gynecologist Dr. Caroline Labin",
@@ -140,7 +182,10 @@
       "latitude": "52.552756",
       "longitude": "13.467375",
       "googlePlaceId": "ChIJA5xhB1ZQqEcRHssSuOO-I0o",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Weißensee",
+      "quarter": null
     },
     {
       "name": "Dr. med. Berrit Matthies",
@@ -149,7 +194,10 @@
       "latitude": "52.457473",
       "longitude": "13.321701",
       "googlePlaceId": "ChIJf5S0KoRaqEcR6y3oYOYpW7s",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Steglitz-Zehlendorf",
+      "suburb": "Steglitz",
+      "quarter": null
     },
     {
       "name": "Sonnenallee Praxis",
@@ -159,7 +207,10 @@
       "latitude": "52.485767",
       "longitude": "13.431896",
       "googlePlaceId": "ChIJA9W9rTBPqEcRqf41GpU83BA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Neukölln",
+      "suburb": "Neukölln",
+      "quarter": "Donaukiez"
     }
   ]
 }

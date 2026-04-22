@@ -8,6 +8,28 @@ import googlemaps
 import json
 import logging
 import re
+import requests
+import time
+
+
+def reverse_geocode(lat: float, lng: float) -> dict:
+    """
+    Fill the Bezirk, Ortsteil and Kiez information using the Nominatim API.
+    """
+    response = requests.get(
+        "https://nominatim.openstreetmap.org/reverse",
+        params={
+            "format": "json",
+            "lat": lat,
+            "lon": lng,
+            "addressdetails": 1,
+        },
+        headers={
+            "User-Agent": "AllAboutBerlin (contact@allaboutberlin.com)",
+        },
+    )
+    response.raise_for_status()
+    return response.json().get("address", {})
 
 
 class PlacesLinter(Linter):
@@ -32,10 +54,8 @@ class PlacesLinter(Linter):
 
         for i, place in enumerate(data.get("places", [])):
             last_verified = place.get("lastVerified")
-            if last_verified:
-                verified_date = date.fromisoformat(last_verified)
-                if date.today() - verified_date < self.verification_frequency:
-                    continue
+            if last_verified and (date.today() - date.fromisoformat(last_verified)) < self.verification_frequency:
+                continue
 
             if not place.get("googlePlaceId"):
                 name = place.get("name", f"place #{i + 1}")
@@ -91,6 +111,7 @@ class PlacesLinter(Linter):
         else:
             place.pop("status", None)
 
+        location_changed = False
         lat = float(place.get("latitude", 0))
         lng = float(place.get("longitude", 0))
         g_lat = round(google_place["geometry"]["location"]["lat"], 6)
@@ -98,6 +119,22 @@ class PlacesLinter(Linter):
         if str(lat) != str(g_lat):
             yield None, f"{name}: Latitude does not match with Google: {lat} -> {g_lat}", logging.ERROR
             place["latitude"] = str(g_lat)
+            location_changed = True
         if str(lng) != str(g_lng):
             yield None, f"{name}: Longitude does not match with Google: {lng} -> {g_lng}", logging.ERROR
             place["longitude"] = str(g_lng)
+            location_changed = True
+
+        if location_changed or not place.get("borough") or not place.get("suburb"):
+            nominatim_address = reverse_geocode(float(place["latitude"]), float(place["longitude"]))
+            place["borough"] = nominatim_address.get("borough")
+            place["suburb"] = nominatim_address.get("suburb")
+            place["quarter"] = nominatim_address.get("quarter")
+
+            city = nominatim_address.get("city")
+            if city and city != "Berlin":
+                place["city"] = city
+
+            yield None, f"{name}: Missing borough or suburb", logging.ERROR
+
+            time.sleep(1)  # Debounce nominatim requests

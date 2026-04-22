@@ -8,7 +8,10 @@
       "latitude": "52.597486",
       "longitude": "13.332776",
       "googlePlaceId": "ChIJdWE4U3hTqEcR_yPkvGZvFsU",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Reinickendorf",
+      "suburb": "Wittenau",
+      "quarter": null
     },
     {
       "name": "Fahrschule Oscar",
@@ -18,7 +21,10 @@
       "latitude": "52.476396",
       "longitude": "13.341839",
       "googlePlaceId": "ChIJuSTm5G9QqEcR_OQvwfdHMRQ",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Schöneberg",
+      "quarter": null
     },
     {
       "name": "Fahrschule Asphalt Profis",
@@ -28,7 +34,10 @@
       "latitude": "52.528759",
       "longitude": "13.428365",
       "googlePlaceId": "ChIJp4LuPBBOqEcR7JyEDH88H6s",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Winsviertel"
     },
     {
       "name": "Fahrschule IBF",
@@ -39,7 +48,10 @@
       "latitude": "52.467024",
       "longitude": "13.384794",
       "googlePlaceId": "ChIJiy992fxPqEcR51Ux3BYhdgE",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Tempelhof",
+      "quarter": null
     },
     {
       "name": "Fahrschule Aktiv",
@@ -49,7 +61,10 @@
       "latitude": "52.551589",
       "longitude": "13.367659",
       "googlePlaceId": "ChIJNe4EXylSqEcRKV_1eAp4nlc",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Gesundbrunnen",
+      "quarter": "Antonkiez"
     },
     {
       "name": "2Drive Fahrschule",
@@ -59,7 +74,10 @@
       "latitude": "52.505406",
       "longitude": "13.469757",
       "googlePlaceId": "ChIJ5yv_re9PqEcRH1VmlRqySPc",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Travekiez"
     },
     {
       "name": "Fahrschule Sevim",
@@ -69,7 +87,10 @@
       "latitude": "52.554539",
       "longitude": "13.375945",
       "googlePlaceId": "ChIJZ-2Egi9SqEcRD23O5VhKYV8",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Gesundbrunnen",
+      "quarter": null
     },
     {
       "name": "Kiez-Fahrschule Frenzel",
@@ -79,7 +100,10 @@
       "latitude": "52.5317",
       "longitude": "13.43133",
       "googlePlaceId": "ChIJcZQfqw9OqEcRIgNBwfBG6X4",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Bötzowkiez"
     },
     {
       "name": "Fahrschule Südstern",
@@ -88,7 +112,10 @@
       "latitude": "52.489267",
       "longitude": "13.408768",
       "googlePlaceId": "ChIJdQablM9PqEcR73gU3YlwGYo",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Graefekiez"
     },
     {
       "name": "Fahrschule Dynamic",
@@ -97,7 +124,10 @@
       "latitude": "52.483818",
       "longitude": "13.430455",
       "googlePlaceId": "ChIJ_-pg5blPqEcRKETOQf9dAKY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Neukölln",
+      "suburb": "Neukölln",
+      "quarter": "Flughafenkiez"
     },
     {
       "name": "Fahrschule Next in Berlin",
@@ -106,7 +136,10 @@
       "latitude": "52.535647",
       "longitude": "13.357166",
       "googlePlaceId": "ChIJK5dC8JxRqEcRLvhe50X_dpY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Moabit",
+      "quarter": "Stephankiez"
     },
     {
       "name": "Fahrschule Driving School Berlin",
@@ -116,7 +149,10 @@
       "latitude": "52.525348",
       "longitude": "13.304827",
       "googlePlaceId": "ChIJZQ4LrjtRqEcRbYCtZGQ6p9A",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": "Mierendorffkiez"
     },
     {
       "name": "Fahrschule EXAKT Berlin Neukölln",
@@ -126,7 +162,10 @@
       "latitude": "52.470332",
       "longitude": "13.441748",
       "googlePlaceId": "ChIJi-MbE6RPqEcRYrCbYn_6Kks",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Neukölln",
+      "suburb": "Neukölln",
+      "quarter": null
     },
     {
       "name": "Fahrschule Prima",
@@ -137,7 +176,10 @@
       "latitude": "52.485175",
       "longitude": "13.384574",
       "googlePlaceId": "ChIJq47PJSFQqEcRtqcVwtnRGw4",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": null
     }
   ]
 }

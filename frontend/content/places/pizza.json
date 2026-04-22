@@ -8,7 +8,10 @@
       "latitude": "52.526143",
       "longitude": "13.388966",
       "googlePlaceId": "ChIJsyy-KBhRqEcRjrSsAn5ukWk",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Oranienburger Vorstadt"
     },
     {
       "name": "Villa di Wow",
@@ -18,7 +21,10 @@
       "latitude": "52.495311",
       "longitude": "13.429802",
       "googlePlaceId": "ChIJ8bfq57RPqEcREqXXVD43rh0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Luisenstadt"
     },
     {
       "name": "Liberty Pizza",
@@ -28,7 +34,10 @@
       "latitude": "52.435726",
       "longitude": "13.257914",
       "googlePlaceId": "ChIJTVvF5DFaqEcR5gGOFqKOFBU",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Steglitz-Zehlendorf",
+      "suburb": "Zehlendorf",
+      "quarter": null
     },
     {
       "name": "Manhattan Pizza",
@@ -38,7 +47,10 @@
       "latitude": "52.454884",
       "longitude": "13.327568",
       "googlePlaceId": "ChIJ_U3hTYVaqEcRZpawkdHS8vQ",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Steglitz-Zehlendorf",
+      "suburb": "Steglitz",
+      "quarter": null
     }
   ]
 }

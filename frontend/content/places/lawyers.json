@@ -19,7 +19,10 @@
       "latitude": "52.533323",
       "longitude": "13.455924",
       "googlePlaceId": "ChIJE2ABKfRLqEcRcYRZCAtTfAo",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": null
     },
     {
       "name": "Jean-Baptiste Abel",
@@ -30,7 +33,10 @@
       "latitude": "52.492607",
       "longitude": "13.421157",
       "googlePlaceId": "ChIJqZb7RXFPqEcRQUPWpExQ40Y",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Graefekiez"
     },
     {
       "name": "VISAGUARD Berlin",
@@ -41,7 +47,10 @@
       "latitude": "52.42998",
       "longitude": "13.26179",
       "googlePlaceId": "ChIJbS9vIfO7_wQRVUJ_BFhpeOY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Steglitz-Zehlendorf",
+      "suburb": "Zehlendorf",
+      "quarter": null
     },
     {
       "name": "Rotwang Law",
@@ -52,7 +61,10 @@
       "latitude": "52.466368",
       "longitude": "13.43012",
       "googlePlaceId": "ChIJhyVnDMNPqEcRiqBJEg_cXyc",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Neukölln",
+      "suburb": "Neukölln",
+      "quarter": "Körnerkiez"
     },
     {
       "name": "Alexander von Engelhardt",
@@ -63,17 +75,23 @@
       "latitude": "52.508052",
       "longitude": "13.32706",
       "googlePlaceId": "ChIJQ97Pfv1QqEcRkDS1cop4ans",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Schönfeld Benedicter",
       "description": "Dr. Gregory Benedicter speaks English fluently.",
       "website": "http://www.schoenfeld-benedicter.de/",
-      "address": "Fritschestraße 27",
+      "address": "Fritschestraße 27/Aufgang c",
       "latitude": "52.512291",
       "longitude": "13.299416",
       "googlePlaceId": "ChIJLcyNZSdRqEcRono8qFnQEn8",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": "Danckelmannkiez"
     },
     {
       "name": "Kanzlei Stöbe",
@@ -82,7 +100,10 @@
       "latitude": "52.552868",
       "longitude": "13.408748",
       "googlePlaceId": "ChIJSWZIiaMhZUERaGuk3QJG2MQ",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Nordisches Viertel"
     },
     {
       "name": "vpmk Rechtsanwälte",
@@ -92,7 +113,10 @@
       "latitude": "52.523238",
       "longitude": "13.399398",
       "googlePlaceId": "ChIJG98KSedRqEcRn_XGxA-sChc",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Spandauer Vorstadt"
     },
     {
       "name": "Leonie Thum",
@@ -103,7 +127,10 @@
       "latitude": "52.488121",
       "longitude": "13.427751",
       "googlePlaceId": "ChIJR9b0lC5PqEcRSq2kiqdz-js",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Neukölln",
+      "suburb": "Neukölln",
+      "quarter": "Reuterkiez"
     },
     {
       "name": "Anwaltssozietät Jurati",
@@ -113,7 +140,10 @@
       "latitude": "52.550966",
       "longitude": "13.414372",
       "googlePlaceId": "ChIJJSr_eQZSqEcR4haPFbM0aYI",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": null
     },
     {
       "name": "Laura Aulmann",
@@ -123,7 +153,10 @@
       "latitude": "52.545724",
       "longitude": "13.37933",
       "googlePlaceId": "ChIJ_62jHuFRqEcRqF5YuhH2twU",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Gesundbrunnen",
+      "quarter": null
     },
     {
       "name": "Kanzlei Anne Glinka",
@@ -133,7 +166,10 @@
       "latitude": "52.495198",
       "longitude": "13.338093",
       "googlePlaceId": "ChIJ70gzKwBRqEcRX4AX8viSX1o",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Schöneberg",
+      "quarter": null
     },
     {
       "name": "WF Frank & Partner",
@@ -143,7 +179,10 @@
       "latitude": "52.508952",
       "longitude": "13.379222",
       "googlePlaceId": "ChIJhVckW8lRqEcRegeu4j9-vbg",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Friedrichstadt"
     },
     {
       "name": "Legal Skills International Business Lawyers",
@@ -153,7 +192,10 @@
       "latitude": "52.516371",
       "longitude": "13.441126",
       "googlePlaceId": "ChIJeRP1gihOqEcRdtNMs5Jwu7Y",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Richard-Sorge-Viertel"
     },
     {
       "name": "Büdding Legal",
@@ -163,7 +205,10 @@
       "latitude": "52.52327",
       "longitude": "13.403559",
       "googlePlaceId": "ChIJIQ2u9uBRqEcRSbTZ6ZM-GhU",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Spandauer Vorstadt"
     },
     {
       "name": "Andrea Blumenthal",
@@ -173,7 +218,10 @@
       "latitude": "52.46729",
       "longitude": "13.31846",
       "googlePlaceId": "ChIJVaNhCoBQqEcR2tZBfuC9t2E",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Wilmersdorf",
+      "quarter": "Gartenstadt"
     },
     {
       "name": "Kanzlei am Oranienplatz",
@@ -183,7 +231,10 @@
       "latitude": "52.501774",
       "longitude": "13.417027",
       "googlePlaceId": "ChIJDRK3szNOqEcR_o3-1_Rd9j8",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Luisenstadt"
     },
     {
       "name": "Rosbach & Fremy",
@@ -193,7 +244,10 @@
       "latitude": "52.5347",
       "longitude": "13.43313",
       "googlePlaceId": "ChIJ10ef2uFRqEcROqpMyzMc5Uw",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Bötzowkiez"
     },
     {
       "name": "von Boetticher",
@@ -202,7 +256,10 @@
       "latitude": "52.50243",
       "longitude": "13.414456",
       "googlePlaceId": "ChIJ3c3fajJOqEcRarsJTWt1Z20",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Luisenstadt"
     },
     {
       "name": "Kanzlei Meinecke Helling",
@@ -212,7 +269,10 @@
       "latitude": "52.507714",
       "longitude": "13.310433",
       "googlePlaceId": "ChIJx0cFVuBQqEcRgVw90N7Qbfg",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Streiff Law",
@@ -222,7 +282,10 @@
       "latitude": "52.486249",
       "longitude": "13.359912",
       "googlePlaceId": "ChIJf566USFQqEcRpKPf2i4oF-g",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Schöneberg",
+      "quarter": "Rote Insel"
     },
     {
       "name": "Losemann Tax",
@@ -232,7 +295,10 @@
       "latitude": "52.519734",
       "longitude": "13.388942",
       "googlePlaceId": "ChIJcQBQMMNRqEcRjcFaNneJe2I",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Dorotheenstadt"
     },
     {
       "name": "Fachanwaltsbüro Piegeler",
@@ -241,7 +307,10 @@
       "latitude": "52.512951",
       "longitude": "13.448027",
       "googlePlaceId": "ChIJg_SZXwROqEcRZ6C_qAv433c",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": null
     },
     {
       "name": "Duske & Partner",
@@ -251,7 +320,10 @@
       "latitude": "52.494698",
       "longitude": "13.331198",
       "googlePlaceId": "ChIJcXkdMHBQqEcRgSy_oX-ovhQ",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Wilmersdorf",
+      "quarter": "Güntzelkiez"
     },
     {
       "name": "Steltzer Rechtsanwälte + Mediatoren",
@@ -262,7 +334,10 @@
       "latitude": "52.49972",
       "longitude": "13.30854",
       "googlePlaceId": "ChIJtc_bs-BRqEcRJQL9vUUSjKU",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Wilmersdorf",
+      "quarter": "Fasanenkiez"
     },
     {
       "name": "Dr. Markus Wessel",
@@ -273,7 +348,10 @@
       "latitude": "52.499557",
       "longitude": "13.293288",
       "googlePlaceId": "ChIJq1fvFG5RqEcRyGrS-2qtB1U",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Halensee",
+      "quarter": null
     },
     {
       "name": "Johann Trülzsch",
@@ -284,7 +362,10 @@
       "latitude": "52.462834",
       "longitude": "13.326814",
       "googlePlaceId": "ChIJJ0RMToJaqEcRcbmH9jwtlfg",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Steglitz-Zehlendorf",
+      "suburb": "Steglitz",
+      "quarter": "Bismarckviertel"
     },
     {
       "name": "Anwaltskanzlei Schläger",
@@ -295,7 +376,10 @@
       "latitude": "52.502363",
       "longitude": "13.360704",
       "googlePlaceId": "ChIJM5I9cUtQqEcRdv5Zhoduu9g",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Tiergarten",
+      "quarter": null
     },
     {
       "name": "Christoph Tometten",
@@ -314,7 +398,10 @@
       "latitude": "52.519734",
       "longitude": "13.388942",
       "googlePlaceId": "ChIJ6TQZnzxOqEcRMNd_H8g9r1o",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Dorotheenstadt"
     },
     {
       "name": "Dr. Jonathan Burmeister",
@@ -325,7 +412,10 @@
       "latitude": "52.508827",
       "longitude": "13.432486",
       "googlePlaceId": "ChIJ2yRY0CROqEcRS4R68BelURo",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Andreasviertel"
     },
     {
       "name": "Sebastian Dramburg",
@@ -336,7 +426,10 @@
       "latitude": "52.504031",
       "longitude": "13.316812",
       "googlePlaceId": "ChIJuyc42FNOqEcRxt3H1U4FjGo",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Dr. Dirk Böhler",
@@ -347,7 +440,10 @@
       "latitude": "52.523082",
       "longitude": "13.36684",
       "googlePlaceId": "ChIJNVT_rgtPqEcR37sIhLwLSt4",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Moabit",
+      "quarter": "Europacity"
     },
     {
       "name": "The Startup Lawyers",
@@ -358,7 +454,10 @@
       "latitude": "52.524423",
       "longitude": "13.396007",
       "googlePlaceId": "ChIJZVDxr-dRqEcRL-GCM64wwbc",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Spandauer Vorstadt"
     },
     {
       "name": "Stephan Sander",
@@ -369,7 +468,10 @@
       "latitude": "52.468122",
       "longitude": "13.289857",
       "googlePlaceId": "ChIJbbwvu2VaqEcRSHId44R38uk",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Steglitz-Zehlendorf",
+      "suburb": "Dahlem",
+      "quarter": null
     },
     {
       "name": "Dr. Bianca Müller",
@@ -380,7 +482,10 @@
       "latitude": "52.499112",
       "longitude": "13.344484",
       "googlePlaceId": "ChIJhVckW8lRqEcRfrsBcWww7QA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Schöneberg",
+      "quarter": "Nollendorfkiez"
     },
     {
       "name": "Rose & Partner",
@@ -390,7 +495,10 @@
       "latitude": "52.514127",
       "longitude": "13.390581",
       "googlePlaceId": "ChIJzW_iKN5RqEcR_a9aAEkEFGY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Friedrichstadt"
     },
     {
       "name": "KUHLEN",
@@ -401,7 +509,10 @@
       "latitude": "52.507161",
       "longitude": "13.326221",
       "googlePlaceId": "ChIJw3Mc4O5QqEcR3hawbHNxIIk",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Hertin & Partner",
@@ -412,7 +523,10 @@
       "latitude": "52.500795",
       "longitude": "13.311403",
       "googlePlaceId": "ChIJAQq6ruVQqEcRzzTMP6ygEgQ",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Dr. Christoph J. Müller",
@@ -422,7 +536,10 @@
       "latitude": "52.505065",
       "longitude": "13.332878",
       "googlePlaceId": "ChIJiw3bE61RqEcRcBCw_tCQOho",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "böhm anwaltskanzlei.",
@@ -433,7 +550,10 @@
       "latitude": "52.583445",
       "longitude": "13.285683",
       "googlePlaceId": "ChIJD9EsL2pUqEcRhAH47blK0no",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Reinickendorf",
+      "suburb": "Tegel",
+      "quarter": null
     },
     {
       "name": "Hogertz Rechtsanwälte",
@@ -443,7 +563,10 @@
       "latitude": "52.520212",
       "longitude": "13.39535",
       "googlePlaceId": "ChIJ3Ynert1RqEcRTn0oHXLiasY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Spandauer Vorstadt"
     },
     {
       "name": "Koudous International Law Office",
@@ -453,7 +576,10 @@
       "latitude": "52.500566",
       "longitude": "13.308988",
       "googlePlaceId": "ChIJDQH5RnVRqEcR-vsztHSlxho",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Casimir Vogt & Weinreich",
@@ -464,7 +590,10 @@
       "latitude": "52.500579",
       "longitude": "13.309596",
       "googlePlaceId": "ChIJr-FhPuZQqEcRbAF-cCyqXM0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Hans Kölfen",
@@ -476,7 +605,10 @@
       "longitude": "13.37933",
       "googlePlaceId": "ChIJlVTJ_LdPqEcR-WMiB1G9Qxw",
       "status": "CLOSED_TEMPORARILY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Gesundbrunnen",
+      "quarter": null
     },
     {
       "name": "Kanzlei Rechtsanwalt Grueneberg",
@@ -486,7 +618,10 @@
       "latitude": "52.499795",
       "longitude": "13.308458",
       "googlePlaceId": "ChIJywkqDMxRqEcRIMecg6y3sAA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Wilmersdorf",
+      "quarter": null
     },
     {
       "name": "Torsten Hildebrandt",
@@ -497,7 +632,10 @@
       "latitude": "52.502082",
       "longitude": "13.328594",
       "googlePlaceId": "ChIJY7hpfAtRqEcRllt2DC2fhPk",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Siewer Weizsäcker",
@@ -508,7 +646,10 @@
       "latitude": "52.503324",
       "longitude": "13.36544",
       "googlePlaceId": "ChIJyXVUuEpQqEcRZUQVlNvOxvY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Tiergarten",
+      "quarter": null
     },
     {
       "name": "Yeelen Bihn",
@@ -519,7 +660,10 @@
       "latitude": "52.545692",
       "longitude": "13.37933",
       "googlePlaceId": "ChIJR3Os_IlRqEcRwMJMv6xdwbc",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Gesundbrunnen",
+      "quarter": null
     },
     {
       "name": "Eva Witt",
@@ -529,7 +673,10 @@
       "latitude": "52.532911",
       "longitude": "13.349111",
       "googlePlaceId": "ChIJG90-dHxGry0R5wMtHXE0mGM",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Moabit",
+      "quarter": "Stephankiez"
     },
     {
       "name": "Franßen & Nusser",
@@ -540,7 +687,10 @@
       "latitude": "52.502085",
       "longitude": "13.327603",
       "googlePlaceId": "ChIJtS0i-xRRqEcRbg5QfjBmFbA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Vassiliki Siochou",
@@ -551,7 +701,10 @@
       "latitude": "52.516621",
       "longitude": "13.389776",
       "googlePlaceId": "ChIJlRPL1uRRqEcRYsArPu4mgdA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Dorotheenstadt"
     },
     {
       "name": "Dr. Henrik Göddeke",
@@ -562,7 +715,10 @@
       "latitude": "52.510424",
       "longitude": "13.378358",
       "googlePlaceId": "ChIJpbnknddRqEcRQ8Fr_ueoTik",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": null
     },
     {
       "name": "Rechtshilfe Berlin",
@@ -572,7 +728,10 @@
       "latitude": "52.53422",
       "longitude": "13.405774",
       "googlePlaceId": "ChIJjakMq9lRqEcRYR2YXSwLgug",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Rosenthaler Vorstadt"
     }
   ]
 }

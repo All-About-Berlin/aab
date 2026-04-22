@@ -9,7 +9,10 @@
       "longitude": "13.384379",
       "googlePlaceId": "ChIJDR2nUrZPqEcRU17QkKEsW8U",
       "recommended": "Yes",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Tempelhof",
+      "quarter": null
     },
     {
       "name": "Stamms Tax Consulting",
@@ -18,7 +21,10 @@
       "latitude": "52.521272",
       "longitude": "13.384151",
       "googlePlaceId": "ChIJlR6x3MJRqEcRl6Bly0_ebic",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Dorotheenstadt"
     },
     {
       "name": "Steuerberater Thomas Langer",
@@ -27,7 +33,10 @@
       "latitude": "52.51645",
       "longitude": "13.390928",
       "googlePlaceId": "ChIJ4aohKR5OqEcR1uJx8pJtTbo",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Dorotheenstadt"
     },
     {
       "name": "Börsing Pohl & Partner",
@@ -37,7 +46,10 @@
       "latitude": "52.50062",
       "longitude": "13.33245",
       "googlePlaceId": "ChIJxVGt7fhQqEcRp56CoPXUmiM",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Wilmersdorf",
+      "quarter": null
     },
     {
       "name": "Merla Ganschow & Partner",
@@ -46,7 +58,10 @@
       "latitude": "52.504416",
       "longitude": "13.337976",
       "googlePlaceId": "ChIJA23R0fhQqEcRHC7fJK0CT8w",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Steuerberaterin Carola Schumacher",
@@ -55,7 +70,10 @@
       "latitude": "52.499931",
       "longitude": "13.444521",
       "googlePlaceId": "ChIJKYhzGVJOqEcRw9om0hznCAs",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Luisenstadt"
     },
     {
       "name": "Auren",
@@ -65,7 +83,10 @@
       "latitude": "52.513743",
       "longitude": "13.412872",
       "googlePlaceId": "ChIJ_5bWuP1RqEcRNl7881mKyTw",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Luisenstadt"
     },
     {
       "name": "Dr. Georgi Steuerberatung",
@@ -74,7 +95,10 @@
       "latitude": "52.431371",
       "longitude": "13.262168",
       "googlePlaceId": "ChIJJ2AlvcpbqEcRRN_EXBB1p9Q",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Steglitz-Zehlendorf",
+      "suburb": "Zehlendorf",
+      "quarter": null
     },
     {
       "name": "Lanza & Remuss",
@@ -84,7 +108,10 @@
       "latitude": "52.496584",
       "longitude": "13.308402",
       "googlePlaceId": "ChIJwf9pgPxQqEcRCjxms4b1c8I",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Wilmersdorf",
+      "quarter": null
     },
     {
       "name": "Steuerberater Michael Schröder",
@@ -93,7 +120,10 @@
       "latitude": "52.470133",
       "longitude": "13.330173",
       "googlePlaceId": "ChIJmWIfZHlQqEcRyWyoilXBqtM",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Friedenau",
+      "quarter": null
     },
     {
       "name": "Frey Steuerberatungsgesellschaft",
@@ -102,7 +132,10 @@
       "latitude": "52.530507",
       "longitude": "13.41338",
       "googlePlaceId": "ChIJfeJtFR1OqEcRW_ewHS0YWIA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Kollwitzkiez"
     },
     {
       "name": "Americans' Income Tax Service",
@@ -112,7 +145,10 @@
       "latitude": "52.50011",
       "longitude": "13.292497",
       "googlePlaceId": "ChIJxWQD3cRQqEcRktHKu--bALQ",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Halensee",
+      "quarter": null
     },
     {
       "name": "Steuerberatung Sandra Lehmann",
@@ -121,7 +157,10 @@
       "latitude": "52.534057",
       "longitude": "13.370495",
       "googlePlaceId": "ChIJqfiRUpBRqEcRGcwTJpg4-8Q",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Charitéviertel"
     },
     {
       "name": "Stein & Partners",
@@ -131,7 +170,10 @@
       "latitude": "52.494919",
       "longitude": "13.307412",
       "googlePlaceId": "ChIJ03FOXOlQqEcRyGXOtVBaLaU",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Wilmersdorf",
+      "quarter": null
     },
     {
       "name": "Prof. Dr. Jens Poll",
@@ -141,7 +183,10 @@
       "latitude": "52.48054",
       "longitude": "13.28771",
       "googlePlaceId": "ChIJSYcjs7xQqEcRnIPH9_41yW8",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Schmargendorf",
+      "quarter": null
     },
     {
       "name": "Dr. Richard Bosley",
@@ -151,7 +196,10 @@
       "latitude": "52.52316",
       "longitude": "13.386692",
       "googlePlaceId": "ChIJF4Gs36RRqEcRMw8wJMY_hAk",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Dorotheenstadt"
     },
     {
       "name": "Schubert & Kollegen Steuerberatungsgesellschaft mbH",
@@ -160,7 +208,10 @@
       "latitude": "52.511711",
       "longitude": "13.263578",
       "googlePlaceId": "ChIJmZAVoihXqEcR-DdQrxTBnvM",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Westend",
+      "quarter": "Villenkolonie Westend"
     },
     {
       "name": "Klier & Ott GmbH Steuerberatung",
@@ -169,7 +220,10 @@
       "latitude": "52.522512",
       "longitude": "13.377732",
       "googlePlaceId": "ChIJA9T1ZcBRqEcRHK2kvX0BW70",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Friedrich-Wilhelm-Stadt"
     },
     {
       "name": "Kanzlei Besser GmbH",
@@ -179,7 +233,10 @@
       "latitude": "52.445462",
       "longitude": "13.303141",
       "googlePlaceId": "ChIJr8eU86ZbqEcRO483mM-DpMg",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Steglitz-Zehlendorf",
+      "suburb": "Lichterfelde",
+      "quarter": "Lichterfelde West"
     },
     {
       "name": "Steuerkontor Fischer",
@@ -189,7 +246,10 @@
       "latitude": "52.503271",
       "longitude": "13.321658",
       "googlePlaceId": "ChIJxRMmUftQqEcRsPpT9Xqfh3A",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Otto und Miegel Steuerberater",
@@ -198,7 +258,10 @@
       "latitude": "52.5455",
       "longitude": "13.411465",
       "googlePlaceId": "ChIJcV4RfQFSqEcRTme2ko-1AKw",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": null
     },
     {
       "name": "ArtevanaTax Steuerberatungsgesellschaft",
@@ -207,7 +270,10 @@
       "latitude": "52.5002",
       "longitude": "13.32194",
       "googlePlaceId": "ChIJkfTV4vpQqEcRlY7NjcAs_mM",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Eschenhagen Steuerberatungs GmbH",
@@ -216,7 +282,10 @@
       "latitude": "52.508747",
       "longitude": "13.287001",
       "googlePlaceId": "ChIJ0d6GmOb3qEcR3nWO7C6NVuU",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": "Witzleben"
     },
     {
       "name": "Gust & Partner",
@@ -226,7 +295,10 @@
       "latitude": "52.502159",
       "longitude": "13.321329",
       "googlePlaceId": "ChIJMx_B4uVQqEcReZC0OEQGFbg",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Juliane Rupp",
@@ -235,7 +307,10 @@
       "latitude": "52.484118",
       "longitude": "13.434684",
       "googlePlaceId": "ChIJ90wq2G8jZUERYEplgUlzDHg",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Neukölln",
+      "suburb": "Neukölln",
+      "quarter": "Donaukiez"
     },
     {
       "name": "HPTP GmbH & Co. KG",
@@ -244,7 +319,10 @@
       "latitude": "52.512073",
       "longitude": "13.401733",
       "googlePlaceId": "ChIJX2NA1dNRqEcRpUhQXHoko9g",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": null
     },
     {
       "name": "Martin Winkler",
@@ -253,7 +331,10 @@
       "latitude": "52.509403",
       "longitude": "13.406671",
       "googlePlaceId": "ChIJMaBWlihOqEcRmNsMcOzO3vI",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Luisenstadt"
     },
     {
       "name": "Brita Schwanke Steuerberatung",
@@ -262,7 +343,10 @@
       "latitude": "52.551951",
       "longitude": "13.341199",
       "googlePlaceId": "ChIJ__-PXthTqEcR4tRsRplxFwk",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Wedding",
+      "quarter": "Afrikanisches Viertel"
     },
     {
       "name": "Amy Valenzuela CPA",
@@ -280,7 +364,10 @@
       "latitude": "52.519734",
       "longitude": "13.388942",
       "googlePlaceId": "ChIJcQBQMMNRqEcRjcFaNneJe2I",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Dorotheenstadt"
     },
     {
       "name": "Duske & Partner",
@@ -290,7 +377,10 @@
       "latitude": "52.494698",
       "longitude": "13.331198",
       "googlePlaceId": "ChIJcXkdMHBQqEcRgSy_oX-ovhQ",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Wilmersdorf",
+      "quarter": "Güntzelkiez"
     },
     {
       "name": "Böttges-Papendorf-Weller Steuerberater",
@@ -299,16 +389,22 @@
       "latitude": "52.543728",
       "longitude": "13.367631",
       "googlePlaceId": "ChIJWVII7tVTqEcRhD79vETHjJc",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Wedding",
+      "quarter": "Antonkiez"
     },
     {
       "name": "Goldstein Consulting GmbH",
       "website": "https://goldsteinconsulting.de/",
-      "address": "Fasanenstraße 77",
+      "address": "Fasanenstraße 77/5. Obergeschoss",
       "latitude": "52.503701",
       "longitude": "13.327866",
       "googlePlaceId": "ChIJTd_OwNdQqEcRqm9ryOeOHqs",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Millennium Park Taxes",
@@ -319,7 +415,10 @@
       "latitude": "52.463285",
       "longitude": "13.36712",
       "googlePlaceId": "ChIJyQxcKopRqEcR7ZQpZXpIurI",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Schöneberg",
+      "quarter": null
     },
     {
       "name": "Steuerberater Jakub Czaplewski",
@@ -338,7 +437,10 @@
       "latitude": "52.519052",
       "longitude": "13.444241",
       "googlePlaceId": "ChIJ72W4I7FPqEcRML-NbBJWI18",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Richard-Sorge-Viertel"
     },
     {
       "name": "INSIGHT TAX GmbH",
@@ -349,7 +451,10 @@
       "latitude": "52.49841",
       "longitude": "13.333751",
       "googlePlaceId": "ChIJE0p8JBZRqEcRHyVYBjhaLRs",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Wilmersdorf",
+      "quarter": "Güntzelkiez"
     },
     {
       "name": "CICEK GmbH Steuerberatungsgesellschaft",
@@ -360,7 +465,10 @@
       "latitude": "52.501971",
       "longitude": "13.332908",
       "googlePlaceId": "ChIJUxqBlZRRqEcRn47s99bReaY",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Taxes Matter",
@@ -378,7 +486,10 @@
       "latitude": "52.521456",
       "longitude": "13.447762",
       "googlePlaceId": "ChIJu7firStPqEcR9OMKeYCAQVU",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Richard-Sorge-Viertel"
     }
   ]
 }

@@ -7,7 +7,10 @@
       "latitude": "52.511858",
       "longitude": "13.461648",
       "googlePlaceId": "ChIJbRmdW_lOqEcR5HPpJoIMPuA",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Boxhagener Kiez"
     },
     {
       "name": "BABYLON",
@@ -17,17 +20,23 @@
       "latitude": "52.525938",
       "longitude": "13.411423",
       "googlePlaceId": "ChIJq6ra2B1OqEcRtEYQoe9BmTE",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Rosenthaler Vorstadt"
     },
     {
       "name": "Hackesche Höfe Kino",
       "description": "Small kino near Hackescher Markt. Mostly screens independent movies in their original language, sometimes with subtitles.",
       "website": "http://www.hoefekino.de/",
-      "address": "Rosenthaler Str. 40 -41",
+      "address": "Rosenthaler Str. 40-41",
       "latitude": "52.524048",
       "longitude": "13.402226",
       "googlePlaceId": "ChIJFVgg3OBRqEcR1qB4VWlJp-E",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Spandauer Vorstadt"
     },
     {
       "name": "Kino Central",
@@ -36,7 +45,10 @@
       "latitude": "52.524572",
       "longitude": "13.401815",
       "googlePlaceId": "ChIJ71105-BRqEcRpsjmghOEVcQ",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Spandauer Vorstadt"
     },
     {
       "name": "Sommerkino Kulturforum (Yorck)",
@@ -46,7 +58,10 @@
       "latitude": "52.509006",
       "longitude": "13.367258",
       "googlePlaceId": "ChIJ26fE-MlRqEcRSdaXVkAJ_8Q",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Tiergarten",
+      "quarter": null
     },
     {
       "name": "Rollberg (Yorck)",
@@ -55,7 +70,10 @@
       "latitude": "52.478625",
       "longitude": "13.428024",
       "googlePlaceId": "ChIJfdgzWbxPqEcR-uBRMYjSZwg",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Neukölln",
+      "suburb": "Neukölln",
+      "quarter": "Flughafenkiez"
     },
     {
       "name": "Passage (Yorck)",
@@ -64,7 +82,10 @@
       "latitude": "52.477595",
       "longitude": "13.439173",
       "googlePlaceId": "ChIJncRx2aNPqEcRGNu6z9ymrRE",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Neukölln",
+      "suburb": "Neukölln",
+      "quarter": "Körnerkiez"
     },
     {
       "name": "Odeon (Yorck)",
@@ -73,7 +94,10 @@
       "latitude": "52.482131",
       "longitude": "13.349547",
       "googlePlaceId": "ChIJAza0KGpQqEcRhqmME_bfEmo",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Schöneberg",
+      "quarter": "Akazienkiez"
     },
     {
       "name": "Kino International (Yorck)",
@@ -83,7 +107,10 @@
       "latitude": "52.520478",
       "longitude": "13.422848",
       "googlePlaceId": "ChIJH7q9khdOqEcR_AFoi_omA0w",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": null
     },
     {
       "name": "Neues Off (Yorck)",
@@ -92,7 +119,10 @@
       "latitude": "52.483449",
       "longitude": "13.424482",
       "googlePlaceId": "ChIJm_ftFI5ZqEcRflhrA9kr73E",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Neukölln",
+      "suburb": "Neukölln",
+      "quarter": "Flughafenkiez"
     },
     {
       "name": "Filmtheater am Friedrichshain (Yorck)",
@@ -101,7 +131,10 @@
       "latitude": "52.529045",
       "longitude": "13.430353",
       "googlePlaceId": "ChIJV1P1qINPqEcRuySJjy1CI3s",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Bötzowkiez"
     },
     {
       "name": "Kant Kino (Yorck)",
@@ -110,7 +143,10 @@
       "latitude": "52.506783",
       "longitude": "13.308327",
       "googlePlaceId": "ChIJkSloluBQqEcRM5AkRyh-WgE",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Delphi Filmpalast (Yorck)",
@@ -119,7 +155,10 @@
       "latitude": "52.506032",
       "longitude": "13.32851",
       "googlePlaceId": "ChIJm6SNNPxQqEcRq8bcTLwe7y0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Cinema Paris (Yorck)",
@@ -129,7 +168,10 @@
       "latitude": "52.502042",
       "longitude": "13.324787",
       "googlePlaceId": "ChIJmxmTNPxQqEcREhXdT1rk9vQ",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg",
+      "quarter": null
     },
     {
       "name": "Capitol Dahlem (Yorck)",
@@ -138,7 +180,10 @@
       "latitude": "52.453037",
       "longitude": "13.286726",
       "googlePlaceId": "ChIJ74aV7WtaqEcRKrpk-0dm2Z0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Steglitz-Zehlendorf",
+      "suburb": "Dahlem",
+      "quarter": null
     },
     {
       "name": "Blauer Stern (Yorck)",
@@ -147,7 +192,10 @@
       "latitude": "52.580377",
       "longitude": "13.401193",
       "googlePlaceId": "ChIJ0dvTsF1SqEcRS6HA5RRm838",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Pankow",
+      "suburb": "Niederschönhausen",
+      "quarter": null
     },
     {
       "name": "Babylon Kreuzberg (Yorck)",
@@ -156,7 +204,10 @@
       "latitude": "52.500669",
       "longitude": "13.416903",
       "googlePlaceId": "ChIJxea3BzNOqEcRUuCIlU0yxZ0",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Luisenstadt"
     }
   ]
 }

@@ -2859,7 +2859,7 @@ details{
         box-shadow: 0 1px 3px rgba(0,0,0,0.3);
         grid-row: span 2;
 
-        .primary{
+        &.primary{
             z-index: 1; // Bring in front of other markers
         }
 
@@ -2952,7 +2952,6 @@ details{
 
             a{
                 color: var(--c-text-light);
-                white-space: nowrap;
             }
         }
         p, .recommended{
