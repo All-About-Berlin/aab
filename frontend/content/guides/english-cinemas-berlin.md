@@ -5,9 +5,23 @@ Description: This guide helps you find cinemas that play movies in English in Be
 Date_created: 2017-09-28
 ---
 
-This guide helps you find cinemas that play movies in English in Berlin.
+Use this map to see movies in English in Berlin.
 
 {% tableOfContents %}
+
+## List of cinemas
+
+These cinemas usually screen movies in English, with or without subtitles.
+
+{% map places="places/cinemas.json" %}
+
+## English movie playtimes
+
+Use these websites to find movies in English or with English subtitles:
+
+- **[OV-Berlin](https://ov-berlin.info/movies/)**{{ RECOMMENDED }}{{ fail_on('2027-06-01') }}
+- [englishcinemaberlin.com](https://englishcinemaberlin.com/7-day-overview)
+- [Berlin.de](https://www.berlin.de/kino/_bin/azfilm.php/ov)
 
 ## OmU? OV? OmeU?
 
@@ -15,17 +29,3 @@ This guide helps you find cinemas that play movies in English in Berlin.
 - **OmeU** means original version with English subtitles (*Originalversion mit englischen Untertiteln*).
 - **OmU+** means original version with English *and* German subtitles.
 - **OV** means original version. The movie is in its original language, and there are no subtitles.
-
-## English movie playtimes
-
-Berlin.de has a [list of movies in their original language](https://www.berlin.de/kino/_bin/azfilm.php/ov), but it's hard to use. I prefer [OV-Berlin](https://ov-berlin.info/movies/) and [englishcinemaberlin.com].
-
-**[Find movies in English ➞](https://ov-berlin.info/movies/)**{{ fail_on('2026-06-01') }}
-
-## List of cinemas
-
-These cinemas usually screen movies in English, with or without subtitles. [Yorck Kinos](https://www.yorck.de/en) usually have movies in English.
-
-In the summer, some of these cinemas also screen open air movies. You can watch movies outdoors.
-
-{% map places="places/cinemas.json" %}
