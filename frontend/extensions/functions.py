@@ -12,7 +12,10 @@ import urllib
 
 
 def to_currency(value: Decimal) -> str:
-    return "{:0,.2f}".format(value).replace(".00", "") if value is not None else ""
+    try:
+        return "{:0,.2f}".format(value).replace(".00", "") if value is not None else ""
+    except:
+        raise ValueError(f"{value} can't be formatted as currency")
 
 
 def to_percent(value: Decimal, max_decimals: int = 2) -> str:

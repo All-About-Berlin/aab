@@ -329,7 +329,7 @@ ctx["FREELANCE_VISA_MIN_PENSION"] = round(ctx["FREELANCE_VISA_MIN_MONTHLY_PENSIO
 ctx["FREELANCE_VISA_MIN_INCOME"] = fail_on("2026-12-31", 563)
 
 # Minimum gross income (€/y) to get a work visa above age 45 - service.berlin.de/dienstleistung/305304
-ctx["WORK_VISA_MIN_INCOME"] = ctx["BEITRAGSBEMESSUNGSGRENZE"] * Decimal("0.55")
+ctx["WORK_VISA_MIN_INCOME_OVER_45"] = ctx["BEITRAGSBEMESSUNGSGRENZE"] * Decimal("0.55")
 
 # Not watched - https://www.berlin.de/vhs-tempelhof-schoeneberg/kurse/deutsch-als-zweitsprache/pruefungen-und-abschluesse/einbuergerung/
 ctx["CITIZENSHIP_TEST_FEE"] = fail_on("2026-12-31", 25)

@@ -7,7 +7,7 @@
 		{% for place in places %}
 		<li id="place-{{ loop.index }}">
 			<h4>
-				{% if place.website %}
+				{% if place.website|default %}
 					<a title="Website of {{ place.name }}" target="_blank" href="{{ place.website }}" target="_blank" position="{{ loop.index }}">{{ place.name }}</a>
 				{% else %}
 					{{ place.name }}
