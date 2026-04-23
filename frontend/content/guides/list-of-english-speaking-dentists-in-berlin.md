@@ -15,6 +15,8 @@ This is a list of English-speaking dentists in Berlin. You can also find a denti
 
 ## List of dentists
 
-{% map places="places/dentists.json" %}
+{% tool "places-map", category="dentists" %}
 
-To suggest a dentist, [fill this form](/suggest-business).
+### Recommend a dentist
+
+{% tool "place-suggestion-form", category="dentists", static=True %}

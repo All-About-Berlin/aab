@@ -13,7 +13,7 @@ Use this map to see movies in English in Berlin.
 
 These cinemas usually screen movies in English, with or without subtitles.
 
-{% map places="places/cinemas.json" %}
+{% tool "places-map", category="cinemas" %}
 
 ## English movie playtimes
 

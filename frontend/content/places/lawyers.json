@@ -8,7 +8,7 @@
       "address": "Kurfürstendamm 167-168",
       "latitude": "52.499778",
       "longitude": "13.308419",
-      "recommended": "Yes"
+      "recommended": true
     },
     {
       "name": "Andreas Martin",

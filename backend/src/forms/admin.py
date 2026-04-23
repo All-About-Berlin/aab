@@ -4,6 +4,7 @@ from forms.models import (
     PensionRefundReminder,
     PensionRefundRequest,
     PensionRefundQuestion,
+    PlaceSuggestion,
     ResidencePermitFeedback,
 )
 
@@ -70,6 +71,11 @@ class CitizenshipFeedbackAdmin(admin.ModelAdmin):
     has_notes.short_description = "Has notes"
 
 
+class PlaceSuggestionAdmin(admin.ModelAdmin):
+    list_display = ["business_name", "category", "is_owner", "email", "creation_date"]
+
+
+admin.site.register(PlaceSuggestion, PlaceSuggestionAdmin)
 admin.site.register(PensionRefundRequest, PensionRefundRequestAdmin)
 admin.site.register(PensionRefundReminder, PensionRefundReminderAdmin)
 admin.site.register(PensionRefundQuestion, PensionRefundQuestionAdmin)

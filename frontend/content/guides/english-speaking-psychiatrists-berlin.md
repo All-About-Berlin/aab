@@ -15,11 +15,10 @@ This guide explains:
 
 ## List of English-speaking psychiatrists
 
-{% map places="places/psychiatrists.json" %}
-
-To suggest a psychiatrist, [fill this form](/suggest-therapist).
+{% tool "places-map", category="psychiatrists" %}
 
 Looking for a psychotherapist? Use my [list of psychotherapists](/guides/english-speaking-psychotherapists-berlin).
+
 
 ### Other lists of psychiatrists
 
@@ -32,6 +31,10 @@ These directories help you find English-speaking psychiatrists:
 - [Queermed](https://queermed-deutschland.de/en/look-for-recommendations/) - Queer-friendly psychiatrists and therapists
 
 **[More resources and directories ➞](/guides/how-to-find-english-speaking-medical-professionals-in-berlin)**
+
+### Recommend a psychiatrist
+
+{% tool "place-suggestion-form", category="psychiatrists", static=True %}
 
 ### For an ADHD diagnosis
 

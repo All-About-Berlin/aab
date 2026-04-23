@@ -15,7 +15,7 @@
 	body{
 		grid-template-rows: var(--h-header) 1fr auto!important;
 	}
-	#map {
+	.map {
 		min-height: 75vh;
 		color: var(--c-text);
 		background: var(--c-bg-widget-opaque);
@@ -47,7 +47,7 @@
 		}
 	}
 	@include full-width-site{
-		#map{
+		.map{
 			// Remove gap below header
 			margin-top: calc(var(--m)  * -1);
 		}
@@ -105,7 +105,7 @@
 {% endjs %}
 
 {% block main %}
-	<main aria-label="{{ mapName|default("Map") }}" id="map" {% if mapDescribedBy|default %}aria-describedby="{{ mapDescribedBy }}"{% endif %}></main>
+	<main aria-label="{{ mapName|default("Map") }}" id="map" class="map" {% if mapDescribedBy|default %}aria-describedby="{{ mapDescribedBy }}"{% endif %}></main>
 	</main>
 	<aside class="sidebar mobile">
 		{% block sidebar %}

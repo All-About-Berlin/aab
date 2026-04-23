@@ -5,6 +5,7 @@ from forms.views import (
     PensionRefundQuestionViewSet,
     PensionRefundReminderViewSet,
     PensionRefundRequestViewSet,
+    PlaceSuggestionViewSet,
     ResidencePermitFeedbackViewSet,
     TaxIdRequestFeedbackReminderViewSet,
 )
@@ -12,6 +13,7 @@ from rest_framework import routers
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register("citizenship-feedback", CitizenshipFeedbackViewSet)
+router.register("place-suggestion", PlaceSuggestionViewSet)
 router.register("pension-refund-question", PensionRefundQuestionViewSet)
 router.register("pension-refund-reminder", PensionRefundReminderViewSet)
 router.register("pension-refund-request", PensionRefundRequestViewSet)

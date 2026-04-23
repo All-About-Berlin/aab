@@ -4,6 +4,7 @@ from forms.models import (
     PensionRefundQuestion,
     PensionRefundReminder,
     PensionRefundRequest,
+    PlaceSuggestion,
     ResidencePermitFeedback,
     TaxIdRequestFeedbackReminder,
 )
@@ -72,6 +73,12 @@ class PublicCitizenshipFeedbackSerializer(ModelSerializer):
     class Meta:
         model = CitizenshipFeedback
         exclude = ("email", "modification_key")
+
+
+class PlaceSuggestionSerializer(ModelSerializer):
+    class Meta:
+        model = PlaceSuggestion
+        fields = "__all__"
 
 
 class TaxIdRequestFeedbackReminderSerializer(ModelSerializer):

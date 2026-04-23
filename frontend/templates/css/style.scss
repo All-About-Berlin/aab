@@ -171,7 +171,7 @@ $width-main-column: 860px;
  *
 *******************************************************************************/
 
-:root, #map{
+:root, .map{
     color-scheme: light dark;
 
     // Absolute sizes
@@ -527,6 +527,27 @@ $width-main-column: 860px;
         height: 0;
         display: none;  /* Safari and Chrome */
     }
+}
+
+@mixin colored-label{
+    // Pill, tag or label element
+    background: var(--c-bg-widget);
+    box-decoration-break: clone;
+    font-weight: 400;
+    color: var(--c-text-light)!important;
+    white-space: nowrap;
+
+    @include not-print{
+        border-radius: var(--b-radius);
+        padding: 2px var(--xs);
+    }
+}
+
+@mixin form-title{
+    // h2 or h3 for collapsible forms
+    border-bottom: var(--b-box);
+    margin: 0 0 var(--l);
+    padding: 0 0 var(--l);
 }
 
 /*******************************************************************************
@@ -1144,7 +1165,7 @@ small{
     @include text;
 }
 
-a {
+a, .button.link{
     cursor: pointer;
     color: var(--c-text-link);
     text-decoration: var(--text-decoration-link);
@@ -1800,7 +1821,7 @@ input[type=range] {
     }
 }
 
-.button{
+.button:not(.link){
     @include text;
     @include box-s;
     @include box-clickable;
@@ -1808,6 +1829,7 @@ input[type=range] {
     color: var(--c-text)!important;
     display: inline-block;
     text-align: center;
+    white-space: nowrap;
 
     .icon.left, .icon.right{
         position: relative;
@@ -1864,6 +1886,23 @@ input[type=range] {
         color: #000!important;
         background: var(--c-bg-page);
     }
+}
+
+.button.add:before{
+    position: relative;
+    left: 0;
+    transition: left 0.2s;
+    content: '＋'; // Unicode full-width plus sign
+}
+
+.button.link{
+    appearance: none;
+    display: inline;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    cursor: pointer;
+    background: transparent;
 }
 
 .form-group{
@@ -2064,16 +2103,18 @@ input[type=range] {
 
 }
 
-output.placeholder, .recommended:before{
-    background: var(--c-bg-widget);
-    box-decoration-break: clone;
-    font-weight: 400;
-    color: var(--c-text-light)!important;
-    white-space: nowrap;
+output.placeholder, .recommended:before, .pill{
+    @include colored-label;
+}
 
-    @include not-print{
-        border-radius: var(--b-radius);
-        padding: 2px var(--xs);
+.pill{
+    &.yes{
+        &:before{
+            content: '✓';
+            margin: 0 var(--xs) 0 0;
+        }
+        color: #fff!important;
+        background: var(--c-highlight-green);
     }
 }
 
@@ -2835,42 +2876,39 @@ details{
     }
 }
 
-#places{
-    @include text-block;
-    display: grid;
-    grid-template-columns: 1fr minmax(200px,300px);
-    height: 80vh;
-    box-shadow: var(--shadow-s);
-    margin-left: calc(var(--w-page-border) * -1);
-    margin-right: calc(var(--w-page-border) * -1);
-    border-top: var(--b-box);
-    border-bottom: var(--b-box);
+.map{
+    background: var(--c-bg-image);
 
-    .marker{
-        @include box-clickable;
-        box-sizing: content-box;
-        border-radius: 9999px 9999px 9999px 0; // As round as possible, but never oval
-        padding: var(--xs);
-        height: 1em;
-        min-width: 1em;
-        font-size: var(--f-xs);
-        line-height: 1em;
-        cursor: pointer;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-        grid-row: span 2;
+    &.not-loaded{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
 
-        &.primary{
-            z-index: 1; // Bring in front of other markers
+        &:before{
+            content: '';
+            position: absolute;
+            width: calc(100% + 10px);
+            height: calc(100% + 10px);
+            filter: blur(3px);
+            background: url('/staticimages/berlin-map.jpg') center;
+            background-size: cover;
+            top: -5px;
+            left: -5px;
         }
 
-        &:not(.primary){
-            background-color: var(--c-bg-page);
+        .button{
+            position: relative;
+            z-index: 10;
         }
+    }
 
-        &:hover, &:focus-visible{
-            background-color: var(--c-bg-input);
-            color: var(--c-text-heading)!important;
-        }
+    img{
+        background-color:transparent;
+        border: none;
+        margin:0;
     }
 
     .maplibregl-ctrl-attrib{
@@ -2878,90 +2916,133 @@ details{
         margin: var(--xs);
         color: var(--c-text-light);
     }
+}
 
-    #map{
-        background: var(--c-bg-image);
-        img{
-            background-color:transparent;
-            border: none;
-            margin:0;
-        }
+.marker:not(.moreimportantthanjustbutton){ // Markers can be used outside of a .map
+    @include box-clickable;
+    box-sizing: content-box;
+    border-radius: 9999px 9999px 9999px 0; // Round corners, never ovals, even for rectangles
+    padding: var(--xs);
+    height: 1em;
+    min-width: 1em;
+    font-size: var(--f-xs);
+    line-height: 1em;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 
-        &.not-loaded{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
+    &.primary{
+        z-index: 1; // Bring in front of other markers
+    }
 
-            &:before{
-                content: '';
-                position: absolute;
-                width: calc(100% + 10px);
-                height: calc(100% + 10px);
-                filter: blur(3px);
-                background: url('/staticimages/berlin-map.jpg') center;
-                background-size: cover;
-                top: -5px;
-                left: -5px;
-            }
+    &:not(.primary){
+        background-color: var(--c-bg-page);
+    }
 
-            .button{
-                position: relative;
-                z-index: 10;
-            }
-        }
+    &:hover, &:focus-visible{
+        background-color: var(--c-bg-input);
+        color: var(--c-text-heading)!important;
+    }
+}
+
+.place-suggestion-form > h3{
+    @include form-title;
+}
+
+.places-map{
+    @include text-block;
+    display: grid;
+    grid-template-columns: 1fr minmax(200px,300px);
+    grid-template-rows:auto 1fr;
+    grid-template-areas: "map controls" "map list";
+    height: 80vh;
+    box-shadow: var(--shadow-s);
+    margin-left: calc(var(--w-page-border) * -1);
+    margin-right: calc(var(--w-page-border) * -1);
+    border-top: var(--b-box);
+    border-bottom: var(--b-box);
+
+    &.form-open{
+        @include page-borders;
+        background: var(--c-bg-widget);
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .place-suggestion-form :last-child{
+        margin-bottom: 0!important;
+    }
+
+    .map{
+        grid-area: map;
     }
 
     ol{
+        grid-area: list;
         margin: 0;
         padding: 0 var(--m);
         overflow: auto;
         scroll-behavior: smooth;
-    }
 
-    li{
-        border-bottom: var(--b-box);
-        position: relative;
-        display: grid;
-        grid-template-columns:auto 1fr;
-        font-size: var(--f-s);
-        margin: 0;
-        padding:var(--m) 0;
-        line-height: var(--line-height-label);
-        gap: var(--xs) var(--s);
+        li{
+            border-bottom: var(--b-box);
+            position: relative;
+            display: grid;
+            grid-template-columns:auto 1fr;
+            font-size: var(--f-s);
+            margin: 0;
+            padding:var(--m) 0;
+            line-height: var(--line-height-label);
+            gap: var(--xs) var(--s);
+            justify-items: flex-start;
 
-        &:before{position: static;}
+            &:before{position: static;}
 
-        > :not(.marker) {
-            grid-column-start: 2;
-        }
+            > :not(.marker) {
+                grid-column-start: 2;
+            }
 
-        .marker{
-            box-shadow: none;
-            margin:-0.15em 0 0 calc(var(--m) / -2);
-        }
+            .marker{
+                grid-row: span 2;
+                box-shadow: none;
+                margin:-0.15em 0 0 calc(var(--m) / -2);
+            }
 
-        h4{
-            @include text-bold;
-        }
-        address{
-            overflow: hidden;
-            text-overflow: ellipsis;
+            h4{
+                @include text-bold;
+            }
+            address{
+                a{
+                    color: var(--c-text-light);
+                }
+            }
+            p, .recommended{
+                margin: 0;
+                justify-self: flex-start;
+                font-size: var(--f-s);
+            }
 
-            a{
-                color: var(--c-text-light);
+            &:last-child{
+                border-bottom: none
             }
         }
-        p, .recommended{
-            margin: 0;
-            justify-self: flex-start;
-            font-size: var(--f-s);
+    }
+
+    .controls{
+        font-size: var(--f-s);
+        grid-area: controls;
+        padding: var(--xs) var(--m);
+        border-bottom: var(--b-box);
+        display: flex;
+        justify-content: space-between;
+
+        select{
+            display: block;
+            width: 100%;
+            margin: var(--s) 0;
         }
 
-        &:last-child{
-            border-bottom: none
+        details[open] + button{
+            display: none;
         }
     }
 
@@ -2975,7 +3056,10 @@ details{
         margin-left: calc(var(--w-page-border) * -1);
         margin-right: calc(var(--w-page-border) * -1);
 
-        #map{
+        grid-template-columns: 1fr;
+        grid-template-areas: "map" "controls" "list";
+
+        .map{
             height: 60vh;
         }
     }
@@ -3442,7 +3526,6 @@ details{
             }
             overflow: hidden;
             text-align: right;
-            white-space: nowrap;
             transition: width 0.2s, color 0.2s;
             width: 109px; // "Subscribe" text width
             border-top-left-radius: 0;
@@ -3515,9 +3598,7 @@ details{
 .feedback-form, .feedback-list > li, .feedback-summary{
     @include text-block;
     > h3, .notes{
-        border-bottom: var(--b-box);
-        margin: 0 0 var(--l);
-        padding: 0 0 var(--l);
+        @include form-title;
     }
     .notes{
         white-space: pre-wrap;

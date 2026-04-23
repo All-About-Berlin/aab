@@ -1,7 +1,7 @@
 from jinja2_simple_tags import StandaloneTag, InclusionTag
 from subprocess import CalledProcessError, run
 from ursus.config import config
-from ursus.context_processors import EntryURI
+
 from ursus.renderers.jinja import JsLoaderExtension
 import hashlib
 import json
@@ -111,21 +111,6 @@ class EsbuildJsLoaderExtension(JsLoaderExtension):
             self.build_cache[code_hash] = output.stdout
 
         return self.build_cache[code_hash]
-
-
-class MapExtension(InclusionTag, StandaloneTag):
-    """Jinja extension. Adds {% map places="places/gyms.json" %}"""
-
-    tags = {"map"}
-    safe_output = True
-
-    def get_template_names(self, *args, **kwargs) -> str:
-        return "_blocks/placesMap.html"
-
-    def get_context(self, places: str, **kwargs):
-        entries = self.context["entries"]
-        entry = entries[EntryURI(places)]
-        return {"places": [p for p in entry["places"] if p.get("status", "OPERATIONAL") == "OPERATIONAL"]}
 
 
 class TableOfContentsExtension(InclusionTag, StandaloneTag):

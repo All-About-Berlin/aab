@@ -11,11 +11,13 @@ This is a list of lawyers who speak English in Berlin.
 
 ## List of lawyers
 
-{% map places="places/lawyers.json" %}
+{% tool "places-map", category="lawyers" %}
 
 **[Find more lawyers ➞](https://www.rak-berlin.de/anwaltssuche/)** - Search the Berlin *Rechtsanwaltskammer*'s database
 
-**[Suggest a lawyer ➞](/suggest-business)**
+### Recommend a lawyer
+
+{% tool "place-suggestion-form", category="lawyers", static=True %}
 
 ## Cost of a lawyer
 

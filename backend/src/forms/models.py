@@ -493,6 +493,45 @@ class CitizenshipFeedbackReminder(ScheduledMessage):
         pass
 
 
+class PlaceCategories(models.TextChoices):
+    BOARD_GAMES = "board-games"
+    CINEMAS = "cinemas"
+    DENTISTS = "dentists"
+    DOCTORS = "doctors"
+    DRIVING_SCHOOLS = "driving-schools"
+    FOREIGN_INGREDIENTS = "foreign-ingredients"
+    GYMS = "gyms"
+    GYNECOLOGISTS = "gynecologists"
+    HAIRDRESSERS = "hairdressers"
+    LAWYERS = "lawyers"
+    MOTORCYCLE_STORES = "motorcycle-stores"
+    PIZZA = "pizza"
+    PSYCHIATRISTS = "psychiatrists"
+    PSYCHOTHERAPISTS = "psychotherapists"
+    RELOCATION_AGENCIES = "relocation-agencies"
+    STEUERBERATER = "steuerberater"
+    VETERINARIANS = "veterinarians"
+
+
+class PlaceSuggestion(models.Model):
+    creation_date = models.DateTimeField(auto_now_add=True)
+    category = models.CharField(max_length=100, choices=PlaceCategories)
+    business_name = models.CharField(max_length=200)
+    google_maps_id = models.CharField(max_length=200, blank=True)
+    languages = models.CharField(max_length=200, blank=True)
+    notes = models.TextField(blank=True)
+    is_owner = models.BooleanField(default=False)
+    email = models.EmailField(validators=[validate_email], blank=True)
+
+    daily_digest_fields = ["category", "google_maps_id", "languages", "notes", "is_owner"]
+
+    def __str__(self):
+        return self.business_name
+
+    class Meta:
+        ordering = ["-creation_date"]
+
+
 class TaxIdRequestFeedbackReminder(NameMixin, EmailMixin, ScheduledMessage):
     delivery_date = models.DateTimeField(default=in_8_weeks)
 

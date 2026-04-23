@@ -3,7 +3,7 @@
     {
       "name": "David Barnes",
       "description": "Counselling for men.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://www.davidbarnes.de/",
       "email": "info@davidbarnes.de",
       "address": "Lützowstraße",
@@ -18,7 +18,7 @@
     {
       "name": "Psychotherapie Blagec",
       "description": "Speaks English and Croatian. Specialises in anxiety, depression, burnout and stress.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://sandra-blagec.com/en/",
       "email": "psychotherapy.blagec@gmail.com",
       "address": "Praxis Dr. Bosse, Bleibtreustraße 12A",
@@ -35,7 +35,7 @@
       "name": "Julia Bellabarba",
       "description": "Couple's therapist. Speaks English, German and Italian.",
       "website": "http://www.paartherapie-coupletherapy.de/",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "email": "bellabarba@paartherapie-coupletherapy.de",
       "address": "Kronenstraße 4",
       "latitude": "52.510856",
@@ -48,7 +48,7 @@
     },
     {
       "name": "Dr. Cordula Dietrich",
-      "acceptsPublicHealthInsurance": "Yes",
+      "acceptsPublicHealthInsurance": true,
       "website": "http://www.corduladietrich.de/",
       "address": "Käthe-Niederkirchner-Straße 5",
       "latitude": "52.53131",
@@ -61,7 +61,7 @@
     },
     {
       "name": "Dipl.-Psych. Nicholas Bellafiore",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://berlincounselingandtherapy.com/",
       "email": "info@berlincounselingandtherapy.com",
       "address": "Schliemannstraße 41",
@@ -75,7 +75,7 @@
     },
     {
       "name": "Anja Benesch",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://anjabenesch.com/",
       "address": "Florastraße 79A",
       "latitude": "52.565761",
@@ -89,7 +89,7 @@
     {
       "name": "Dr. Ghazaleh Bailey",
       "description": "Speaks English, German and Persian.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://www.individual-therapy-berlin.de/",
       "email": "g.bailey@individual-therapy-berlin.de",
       "address": "Saarbrücker Str. 28",
@@ -104,7 +104,7 @@
     {
       "name": "Julianne Appel-Opper",
       "description": "UKCP-registered psychotherapist.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://thelivingbody.de/",
       "email": "julianne.ao@web.de",
       "address": "Fröaufstraße 6",
@@ -119,7 +119,7 @@
     {
       "name": "Dipl.-Psych. Heidi Hooper Amri",
       "description": "Child behavioural therapist",
-      "acceptsPublicHealthInsurance": "Yes",
+      "acceptsPublicHealthInsurance": true,
       "website": "https://www.jameda.de/berlin/psychotherapeuten-psychologen/heidi-elisabeth-hooper-amri/uebersicht/81079702_1/",
       "address": "Pariser Str. 61",
       "latitude": "52.495923",
@@ -133,7 +133,7 @@
     {
       "name": "Dr. Brian L. Pheasant",
       "description": "American psychotherapist",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://www.pw-psychotherapie.de/",
       "address": "Kuglerstraße 26",
       "latitude": "52.55217",
@@ -147,7 +147,7 @@
     {
       "name": "Eva Štajner",
       "description": "Speaks English and Slovenian.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://www.psychotherapeutic.help/",
       "email": "ebbaebba@gmail.com",
       "address": "Raumerstraße 7",
@@ -161,7 +161,7 @@
     },
     {
       "name": "Dr. Christian Dombrowe",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://www.psychotherapy-dombrowe.com/",
       "address": "Linienstraße 130/2. Hinterhof",
       "latitude": "52.527052",
@@ -175,7 +175,7 @@
     {
       "name": "Dipl.-Psych. Nadja Ursula Gogolin",
       "description": "Psychotherapist, group therapist",
-      "acceptsPublicHealthInsurance": "Yes",
+      "acceptsPublicHealthInsurance": true,
       "website": "http://www.psychotherapy-gogolin.com/contact-to-nadja-gogolin-psychotherapy-in-berlin.html",
       "email": "contact@psychotherapy-gogolin.com",
       "address": "Gotenstraße 14",
@@ -190,7 +190,7 @@
     {
       "name": "Blanka Leeker, MA",
       "description": "US-licensed marriage and family therapist.",
-      "acceptsPublicHealthInsurance": "Yes",
+      "acceptsPublicHealthInsurance": true,
       "website": "https://psychotherapie-leeker.com/",
       "email": "blanka@psychotherapie-leeker.com",
       "address": "Spandauer Damm 54",
@@ -205,7 +205,7 @@
     {
       "name": "Mittelweg 50",
       "description": "10 English-speaking counsellors with different approaches to therapy",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://www.mittelweg50.com/",
       "address": "Mittelweg 50",
       "latitude": "52.475619",
@@ -218,7 +218,7 @@
     },
     {
       "name": "Dipl.-Psych. Jana Harthauß",
-      "acceptsPublicHealthInsurance": "Yes",
+      "acceptsPublicHealthInsurance": true,
       "website": "https://www.therapie.de/psychotherapie/harthauss/",
       "address": "Helmholtzstraße 11",
       "latitude": "52.467226",
@@ -231,7 +231,7 @@
     },
     {
       "name": "Sandra Cotta",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://www.praxis-cotta.de/",
       "email": "s.cotta@gmx.de",
       "address": "Puschkinallee 48",
@@ -246,7 +246,7 @@
     {
       "name": "Didem Atahan-Fabig",
       "description": "Alternative practitioner for psychotherapy. US-licensed mental health counsellor. Speaks English, Turkish and French.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://www.crossculturaltherapy.com/",
       "email": "atahan.didem@googlemail.com",
       "address": "10115, Linienstraße 146",
@@ -261,7 +261,7 @@
     {
       "name": "Dominic Decker",
       "description": "Counsellor",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://dominicdecker.com/",
       "email": "mail@dominicdecker.com",
       "address": "Schliemannstraße 41",
@@ -276,7 +276,7 @@
     {
       "name": "Alastair Roberts",
       "description": "UK-accredited counsellor",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://www.alastairroberts.com/",
       "email": "alastair.roberts@btconnect.com",
       "address": "Hewaldstraße 2",
@@ -290,7 +290,7 @@
     },
     {
       "name": "Dipl.-Psych. Anne Piotrowski",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://www.gestalttherapieberlin.de/",
       "address": "Knaackstraße 84",
       "latitude": "52.539287",
@@ -304,7 +304,7 @@
     {
       "name": "360° Psychotherapie",
       "description": "Multiple locations, some English-speaking therapists",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://www.360grad-psychotherapie.de/",
       "address": "Berliner Allee 88",
       "latitude": "52.54932",
@@ -318,7 +318,7 @@
     {
       "name": "Dr. Grace O'Malley",
       "description": "Counsellor. Clinical psychologist in Ireland.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://www.clinicalpsychology.de/",
       "email": "grace@clinicalpsychology.de",
       "address": "Gitschiner Str. 87",
@@ -333,7 +333,7 @@
     {
       "name": "Dipl. Med. Birgit Hansen",
       "description": "Alternative practitioner for psychotherapy",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://dctlb.de/hansenb",
       "email": "birgit@heilpraxis-hansen.de",
       "address": "Landsberger Allee 201",
@@ -347,7 +347,7 @@
     },
     {
       "name": "Katie Knight",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://www.berlincounseling.com/",
       "email": "katie@berlincounseling.com",
       "address": "Lichtburgring 13",
@@ -362,7 +362,7 @@
     {
       "name": "Philip Sheldon",
       "description": "Counsellor. Specialises in LGBTQ+ issues, couples and individuals.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://www.philipsheldon.com/",
       "email": "philip.sheldon@outlook.com",
       "address": "Heidekampweg 9",
@@ -377,7 +377,7 @@
     {
       "name": "Dipl.-Psych. Kristina Oelschläger",
       "website": "http://www.okpsychologie.de/",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "email": "mail@okpsychologie.de",
       "address": "Voigtstraße 31a",
       "latitude": "52.518189",
@@ -391,7 +391,7 @@
     {
       "name": "Sean Carden",
       "description": "Counsellor specialising in depression, anxiety and addiction.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://person-centered.de/",
       "email": "sean.a.carden@gmail.com",
       "address": "Weserstr. 56",
@@ -406,7 +406,7 @@
     {
       "name": "Dr. Michael Cugialy",
       "description": "Cognitive behavioural therapist.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://www.psychotherapie-cugialy.com/",
       "email": "Michael.Cugialy@fu-berlin.de",
       "address": "Schulstraße 7, 16515 Oranienburg",
@@ -432,7 +432,7 @@
     {
       "name": "Daniel Friedrich",
       "description": "Anxiety, depression and addiction.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://therapie-friedrich.de/",
       "email": "kontakt@therapie-friedrich.de",
       "address": "Schlegelstraße 11",
@@ -447,7 +447,7 @@
     {
       "name": "Praxis Godau",
       "description": "Speaks German, English and Russian. Specialises in psychodynamic psychotherapy.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://www.praxis-godau.de/?lang=en",
       "email": "praxis.godau@gmail.com",
       "address": "Jüterboger Str. 6",
@@ -462,7 +462,7 @@
     {
       "name": "Dr. Valentin Zahrnt",
       "description": "Speaks English, French and German. Specialises in public speaking anxiety and general communication problems.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://www.authentische-rhetorik.de/",
       "email": "zahrnt@authentische-rhetorik.de",
       "address": "Schliemannstraße 45",
@@ -477,7 +477,7 @@
     {
       "name": "Dipl.-Psych. Özgür Cengiz",
       "description": "Speaks English, Turkish and German.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://www.praxis-cengiz.de/",
       "email": "info@praxis-cengiz.de",
       "address": "Beethovenstraße 4",
@@ -491,7 +491,7 @@
     },
     {
       "name": "Psychotherapist Lisa-Maria Aldinger",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://pankowpsychotherapie.de/",
       "email": "pt-aldinger@posteo.de",
       "address": "Grabbeallee 84",
@@ -505,7 +505,7 @@
     },
     {
       "name": "M.Sc. Berenike Franzen",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://franzen-psychotherapie.net/en",
       "email": "berenikelisafranzen@gmail.com",
       "address": "Türrschmidtstraße 4-5",
@@ -520,7 +520,7 @@
     {
       "name": "Dr. phil. Alexander Piotrowski",
       "description": "Couples therapy, individual therapy and business consulting.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://piotrowski.online/en/",
       "email": "optimierung@praxis-paartherapie.berlin",
       "address": "Knaackstraße 84",
@@ -535,7 +535,7 @@
     {
       "name": "Praxis für Psychotherapie, Hypnotherapie + Klangtherapie",
       "description": "Psychotherapists and hypnotherapist",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://psychotherapie-hpp.de/",
       "email": "info@psychotherapie-hpp.de",
       "address": "Elsastraße 4",
@@ -550,7 +550,7 @@
     {
       "name": "Archana Golla",
       "description": "Speaks English, German, Telugu and Tamil.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://www.arzt-auskunft.de/arzt/psychologische-psychotherapeutin/berlin/archana-golla-6744401",
       "email": "archana_golla@hotmail.com",
       "address": "Calvinstraße 23",
@@ -565,7 +565,7 @@
     {
       "name": "Dr. Lazaros Giousmpasis",
       "description": "Psychiatrist, psychotherapist and sex therapist. Speaks English, Greek, Spanish and German.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://www.psychiater-praxis-berlin.de/",
       "email": "kontakt@psychiater-praxis-berlin.de",
       "address": "Koenigsallee 11A",
@@ -580,7 +580,7 @@
     {
       "name": "Dr. Dirk Stemper",
       "description": "Psychotherapist. Speaks English and Romanian. CBT, narrative therapy, psychodynamic therapy.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://www.praxis-psychologie-berlin.de/en/",
       "email": "info@praxis-psychologie-berlin.de",
       "address": "Wallotstraße 8",
@@ -595,7 +595,7 @@
     {
       "name": "Dipl.-Psych. Christiane Köhler",
       "description": "Cognitive behavioural therapy.",
-      "acceptsPublicHealthInsurance": "Yes",
+      "acceptsPublicHealthInsurance": true,
       "website": "https://www.gptg.eu/users/77956593/info.therap",
       "email": "CR.Koehler@t-online.de",
       "address": "Seydelstraße 7",
@@ -610,7 +610,7 @@
     {
       "name": "Aloka Levitin",
       "description": "Alternative practitioner for psychotherapy",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://www.berlinpsychotherapeut.de/",
       "email": "alokalevitin@gmail.com",
       "address": "Lipaer Str. 14",
@@ -625,7 +625,7 @@
     {
       "name": "Dr. Joseph Hamer",
       "description": "Speaks English and German",
-      "acceptsPublicHealthInsurance": "Yes",
+      "acceptsPublicHealthInsurance": true,
       "website": "https://www.berlin-counselling.com/en/joseph-hamer/",
       "email": "joseph.hamer.phd@posteo.de",
       "address": "Mindener Str. 21",
@@ -639,7 +639,7 @@
     },
     {
       "name": "Ben Lemme",
-      "acceptsPublicHealthInsurance": "Yes",
+      "acceptsPublicHealthInsurance": true,
       "website": "https://www.benlemme.de/",
       "email": "ben.lemme@gmail.com",
       "address": "Erdmannstraße 13",
@@ -654,7 +654,7 @@
     {
       "name": "PsyShrink",
       "description": "Multiple English-speaking therapists.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://www.psyshrink.com/",
       "email": "therapist@psyshrink.com",
       "address": "Keithstraße 16",
@@ -668,7 +668,7 @@
     },
     {
       "name": "Roman Snihurowch, MD",
-      "acceptsPublicHealthInsurance": "Yes",
+      "acceptsPublicHealthInsurance": true,
       "website": "https://www.psychotherapyinberlin.net/",
       "email": "r.snihurowych@posteo.de",
       "address": "Kienitzer Str. 110",
@@ -683,7 +683,7 @@
     {
       "name": "My International Therapy",
       "description": "They speak English, French, Spanish and Italian.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://my-international-therapy.com/",
       "email": "contact@my-international-therapy.com",
       "address": "Schönhauser Allee 55",
@@ -698,7 +698,7 @@
     {
       "name": "Dr. med Kai Gutzeit",
       "description": "Speaks English, Spanish and German.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://drgutzeit.de/",
       "email": "dr.gutzeit@gmail.com",
       "address": "Lenaustraße 8",
@@ -713,7 +713,7 @@
     {
       "name": "Dipl.-Psych. Shireen Kwiatkowska-Naqvi",
       "description": "Speaks English, French and Polish.",
-      "acceptsPublicHealthInsurance": "Yes",
+      "acceptsPublicHealthInsurance": true,
       "website": "https://www.therapie.de/profil/kwiatkowskanaqvi/",
       "email": "psychotherapie-praxis@posteo.de",
       "address": "Pfarrstraße 115",
@@ -728,7 +728,7 @@
     {
       "name": "Art Therapy Studio",
       "description": "Alternative practitioner for psychotherapy. Speaks English, Spanish and German.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://www.praxis-guerteltier.de/en",
       "email": "info@praxis-guerteltier.de",
       "address": "Gürtelstraße 12",
@@ -743,7 +743,7 @@
     {
       "name": "Wagner & Homunculus, Praxis für Systemische Therapie",
       "description": "Alternative practitioner for psychotherapy. They speak English, Spanish and German.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://wh-therapie.de/",
       "email": "praxis@wa-hc.de",
       "address": "Philippistraße 4",
@@ -772,7 +772,7 @@
     {
       "name": "Dipl.-Psych. Katrin Forler",
       "description": "Behavior therapy for children and adolescents, counseling for families.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://www.praxis-forler.de/counseling-in-english/",
       "email": "info@praxis-forler.de",
       "address": "Pestalozzistraße 37",
@@ -787,7 +787,7 @@
     {
       "name": "Dipl.-Psych. Katja Rück",
       "description": "Speaks English, Dutch and German. Specialises in mood disorders: depression, anxiety and somatoform disorders.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://www.katjarueck.de/index.php/start.html",
       "email": "praxis@katjarueck.de",
       "address": "Goßlerstraße 23",
@@ -802,7 +802,7 @@
     {
       "name": "Ottoline Hart",
       "description": "UK-licenced therapist. Humanistic therapy - cognitive, anxiety, depression.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://www.ottolinehart.com/",
       "email": "ottoline.hart@gmail.com",
       "address": "Okerstraße 38",
@@ -831,7 +831,7 @@
     {
       "name": "Manuela Luise, Creative Therapy",
       "description": "Alternative practitioner for psychotherapy. Speaks English, Spanish and Italian.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://www.manuelaluise.com/",
       "email": "info@manuelaluise.com",
       "address": "Ebelingstraße 14a",
@@ -845,7 +845,7 @@
     },
     {
       "name": "Dipl.-Psych. Michael Flor",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://psychotherapie-flor.de/index-en.html",
       "email": "mflormail@gmail.com",
       "address": "Chausseestraße 28",
@@ -873,7 +873,7 @@
     {
       "name": "Mag. Michaela Klien",
       "description": "Cognitive behavioral therapy, exposure therapy.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://www.psychotherapie-klien.de/",
       "email": "info@psychotherapie-klien.de",
       "address": "Neumannstraße 135",
@@ -888,7 +888,7 @@
     {
       "name": "Ninja Kattenbeck",
       "description": "Cognitive behavioral therapy, trauma, depression, anxiety and OCD.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://www.kattenbeck-psychotherapie-berlin.de/",
       "email": "mail@kattenbeck-psychotherapie-berlin.de",
       "address": "Lützowstraße 23",
@@ -903,7 +903,7 @@
     {
       "name": "Dr. Viola Kappel & Kollegen",
       "description": "Eating disorders, OCD, anxiety and depression.",
-      "acceptsPublicHealthInsurance": "Yes",
+      "acceptsPublicHealthInsurance": true,
       "website": "https://psychotherapie-kappel.de/",
       "email": "kontakt@psychotherapie-kappel.de",
       "address": "Praxis für Psychotherapie & Coaching Dr. Viola Kappel & Kollegen, Naumannstraße 7",
@@ -918,7 +918,7 @@
     {
       "name": "Bertine de Jongh",
       "description": "Psychologist. Speaks English, Dutch and German.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://www.berlin-counselling.com/",
       "email": "info@berlin-counselling.com",
       "address": "Mindener Str. 21",
@@ -937,7 +937,7 @@
       "latitude": "52.453167",
       "longitude": "13.142604",
       "googlePlaceId": "ChIJB4T69ypZqEcRsvWbkWcbeNM",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "lastVerified": "2026-04-22",
       "borough": null,
       "suburb": "Kladow",
@@ -952,7 +952,7 @@
       "latitude": "52.507444",
       "longitude": "13.496978",
       "googlePlaceId": "ChIJa_I65XhQqEcRL9lojdvC-lg",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "lastVerified": "2026-04-22",
       "borough": "Lichtenberg",
       "suburb": "Rummelsburg",
@@ -981,9 +981,9 @@
       "latitude": "52.493168",
       "longitude": "13.422277",
       "googlePlaceId": "ChIJx6x6Z09QqEcRECKFotXC3ng",
-      "acceptsPublicHealthInsurance": "Yes",
+      "acceptsPublicHealthInsurance": true,
       "lastVerified": "2026-04-22",
-      "borough": "Friedrichshain-Kreuzberg",
+      "borough": "Neukölln",
       "suburb": "Neukölln",
       "quarter": "Graefekiez"
     },
@@ -996,7 +996,7 @@
       "latitude": "52.498887",
       "longitude": "13.423554",
       "googlePlaceId": "ChIJ9RziE3hPqEcR4tDcOeGwoYM",
-      "acceptsPublicHealthInsurance": "Yes",
+      "acceptsPublicHealthInsurance": true,
       "lastVerified": "2026-04-22",
       "borough": "Friedrichshain-Kreuzberg",
       "suburb": "Kreuzberg",
@@ -1010,7 +1010,7 @@
       "latitude": "52.569674",
       "longitude": "13.313165",
       "googlePlaceId": "ChIJEfUtdBJRqEcRoV_fPd03zX4",
-      "acceptsPublicHealthInsurance": "Yes",
+      "acceptsPublicHealthInsurance": true,
       "lastVerified": "2026-04-22",
       "borough": "Reinickendorf",
       "suburb": "Reinickendorf",
@@ -1025,7 +1025,7 @@
       "latitude": "52.571359",
       "longitude": "13.409683",
       "googlePlaceId": "ChIJibfJmQ5OqEcR0pfk9WlloxU",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "lastVerified": "2026-04-22",
       "borough": "Pankow",
       "suburb": "Pankow",
@@ -1040,7 +1040,7 @@
       "latitude": "52.497384",
       "longitude": "13.384102",
       "googlePlaceId": "ChIJl4sVESpRqEcRnXZXN67_CYE",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "lastVerified": "2026-04-22",
       "borough": "Friedrichshain-Kreuzberg",
       "suburb": "Kreuzberg",
@@ -1069,7 +1069,7 @@
       "latitude": "52.529439",
       "longitude": "13.389712",
       "googlePlaceId": "ChIJG1de0_9RqEcRd0p-aZ27OKk",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "lastVerified": "2026-04-22",
       "borough": "Mitte",
       "suburb": "Mitte",
@@ -1084,7 +1084,7 @@
       "latitude": "52.524744",
       "longitude": "13.300564",
       "googlePlaceId": "ChIJb_2eF_lRqEcRCD1KpGGfi6A",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "lastVerified": "2026-04-22",
       "borough": "Charlottenburg-Wilmersdorf",
       "suburb": "Charlottenburg",
@@ -1099,9 +1099,9 @@
       "latitude": "52.48759",
       "longitude": "13.417072",
       "googlePlaceId": "ChIJx99VeqJPqEcRmB2tkwA4hoI",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "lastVerified": "2026-04-22",
-      "borough": "Friedrichshain-Kreuzberg",
+      "borough": "Neukölln",
       "suburb": "Neukölln",
       "quarter": "Graefekiez"
     },
@@ -1114,7 +1114,7 @@
       "latitude": "52.553883",
       "longitude": "13.434358",
       "googlePlaceId": "ChIJ51QmCZNRqEcRiGLqi1-V6Ao",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "lastVerified": "2026-04-22",
       "borough": "Pankow",
       "suburb": "Weißensee",
@@ -1129,7 +1129,7 @@
       "latitude": "52.523146",
       "longitude": "13.452881",
       "googlePlaceId": "ChIJa9y76WppnmgRlAHpVP63Fh4",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "lastVerified": "2026-04-22",
       "borough": "Friedrichshain-Kreuzberg",
       "suburb": "Friedrichshain",
@@ -1158,7 +1158,7 @@
       "latitude": "52.517878",
       "longitude": "13.455898",
       "googlePlaceId": "ChIJa6w9bpFPqEcRoguAc895v_I",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "lastVerified": "2026-04-22",
       "borough": "Friedrichshain-Kreuzberg",
       "suburb": "Friedrichshain",

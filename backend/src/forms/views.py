@@ -4,6 +4,7 @@ from forms.models import (
     PensionRefundQuestion,
     PensionRefundReminder,
     PensionRefundRequest,
+    PlaceSuggestion,
     ResidencePermitFeedback,
     TaxIdRequestFeedbackReminder,
 )
@@ -12,6 +13,7 @@ from forms.serializers import (
     PensionRefundQuestionSerializer,
     PensionRefundReminderSerializer,
     PensionRefundRequestSerializer,
+    PlaceSuggestionSerializer,
     PublicCitizenshipFeedbackSerializer,
     PublicResidencePermitFeedbackSerializer,
     ResidencePermitFeedbackSerializer,
@@ -201,6 +203,24 @@ class CitizenshipFeedbackViewSet(ResidencePermitFeedbackViewSet):
                 extra_filters,
             ),
         }
+
+
+class PlaceSuggestionPermission(permissions.BasePermission):
+    """
+    Place suggestions can be posted anonymously, but only managed by admins
+    """
+
+    def has_permission(self, request, view):
+        if request.method == "POST":
+            return True
+        return request.user and request.user.is_superuser
+
+
+class PlaceSuggestionViewSet(viewsets.ModelViewSet):
+    queryset = PlaceSuggestion.objects.all()
+    serializer_class = PlaceSuggestionSerializer
+    http_method_names = ["get", "post", "put", "delete"]
+    permission_classes = [PlaceSuggestionPermission]
 
 
 class TaxIdRequestFeedbackReminderViewSet(MessageViewSet):

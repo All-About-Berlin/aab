@@ -3,7 +3,7 @@
     {
       "name": "PPCC - Dr. Ernst Seiffert",
       "description": "Speaks English, Italian and Spanish",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "http://www.ppcc-berlin.de/",
       "address": "Tempelhofer Damm 129",
       "latitude": "52.467995",
@@ -16,7 +16,7 @@
     },
     {
       "name": "Dr. Cordula Dietrich",
-      "acceptsPublicHealthInsurance": "Yes",
+      "acceptsPublicHealthInsurance": true,
       "website": "http://www.corduladietrich.de/",
       "address": "Käthe-Niederkirchner-Straße 5",
       "latitude": "52.53131",
@@ -30,7 +30,7 @@
     {
       "name": "Sabine Liesegang",
       "description": "Speaks English and Russian",
-      "acceptsPublicHealthInsurance": "Yes",
+      "acceptsPublicHealthInsurance": true,
       "website": "https://www.jameda.de/sabine-liesegang/facharzt-fuer-psychiatrie-psychotherapie/berlin",
       "address": "Berliner Str. 6",
       "latitude": "52.588619",
@@ -43,7 +43,7 @@
     },
     {
       "name": "Dr. Köller",
-      "acceptsPublicHealthInsurance": "Yes",
+      "acceptsPublicHealthInsurance": true,
       "website": "http://www.praxiskoeller.de/",
       "email": "info@praxiskoeller.de",
       "address": "Esmarchstraße 19",
@@ -57,7 +57,7 @@
     },
     {
       "name": "Dr. Annette Kreutz",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://www.jameda.de/annette-kreutz/arzt/berlin",
       "address": "Holsteiner Ufer 18",
       "latitude": "52.522085",
@@ -70,7 +70,7 @@
     },
     {
       "name": "Dr. Gerhard Perchalla",
-      "acceptsPublicHealthInsurance": "Yes",
+      "acceptsPublicHealthInsurance": true,
       "website": "http://www.dr-perchalla.com/",
       "address": "Knesebeckstraße 74",
       "latitude": "52.503729",
@@ -84,7 +84,7 @@
     {
       "name": "Dr. Nikolaos Rigas",
       "description": "Speaks English and Greek",
-      "acceptsPublicHealthInsurance": "Yes",
+      "acceptsPublicHealthInsurance": true,
       "website": "https://www.dr-rigas.de/",
       "address": "Paulsborner Straße 3 Ecke, Brandenburgische Str.",
       "latitude": "52.498496",
@@ -97,7 +97,7 @@
     },
     {
       "name": "Dr. Ole Georg Munkvold",
-      "acceptsPublicHealthInsurance": "Yes",
+      "acceptsPublicHealthInsurance": true,
       "website": "https://www.mvz-giesebrechtstrasse.de/",
       "address": "Giesebrechtstraße 13",
       "latitude": "52.501552",
@@ -111,7 +111,7 @@
     {
       "name": "Privatpraxis Dima Salloum",
       "description": "Psychiatrist and psychotherapist, specialised in cognitive behavioural therapy and adult ADHD.",
-      "acceptsPublicHealthInsurance": "No",
+      "acceptsPublicHealthInsurance": false,
       "website": "https://www.dima-nathalia-salloum.net/",
       "address": "Weserstraße 29",
       "latitude": "52.510291",
@@ -125,7 +125,7 @@
     {
       "name": "Beata Jedykiewicz-Riecker - Psychiatrie am Sterndamm",
       "description": "Speaks German and English.",
-      "acceptsPublicHealthInsurance": "Yes",
+      "acceptsPublicHealthInsurance": true,
       "website": "https://psychiatrie-am-sterndamm.com/",
       "email": "l.andrychowicz@web.de",
       "address": "Sterndamm 9",
@@ -140,7 +140,7 @@
     {
       "name": "Praxis Dr. Gerrit Scherf & Kollegen",
       "description": "Speaks English, German and French. Specialises in ADHD and autism",
-      "acceptsPublicHealthInsurance": "Yes",
+      "acceptsPublicHealthInsurance": true,
       "website": "https://www.psychiatrie-potsdam.de/",
       "email": "kontakt@praxis-scherf.de",
       "address": "Zeppelinstraße 37, 14471 Potsdam",
@@ -155,7 +155,7 @@
     },
     {
       "name": "Praxis Dr. Mungee",
-      "acceptsPublicHealthInsurance": "Yes",
+      "acceptsPublicHealthInsurance": true,
       "website": "https://drmungee.de/",
       "email": "sm@drmungee.de",
       "address": "Kollwitzstraße 6",

@@ -13,9 +13,11 @@ To [get a German driving licence](/guides/driving-licence), you must take drivin
 
 ## List of English-speaking driving schools
 
-{% map places="places/driving-schools.json" %}
+{% tool "places-map", category="driving-schools" %}
 
-To suggest a driving school, [fill this form](/suggest-business).
+### Recommend a driving school
+
+{% tool "place-suggestion-form", category="driving-schools", static=True %}
 
 ## Convert your foreign driving licence
 

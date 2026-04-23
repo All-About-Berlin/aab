@@ -8,7 +8,7 @@
       "latitude": "52.48446",
       "longitude": "13.384379",
       "googlePlaceId": "ChIJDR2nUrZPqEcRU17QkKEsW8U",
-      "recommended": "Yes",
+      "recommended": true,
       "lastVerified": "2026-04-22",
       "borough": "Tempelhof-Schöneberg",
       "suburb": "Tempelhof",

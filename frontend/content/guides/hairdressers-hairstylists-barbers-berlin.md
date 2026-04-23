@@ -9,6 +9,8 @@ When you get a haircut, it's easier if the barber understands you. This is a lis
 
 ## List of hair salons
 
-To add someone, [fill this form](/suggest-business).
+{% tool "places-map", category="hairdressers" %}
 
-{% map places="places/hairdressers.json" %}
+### Recommend a hair salon
+
+{% tool "place-suggestion-form", category="hairdressers", static=True %}

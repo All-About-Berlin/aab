@@ -11,4 +11,4 @@ Once in a while, the thin Italian slices are not good enough, and you want a thi
 
 If a place is missing, [contact me](/contact)
 
-{% map places="places/pizza.json" %}
+{% tool "places-map", category="pizza" %}

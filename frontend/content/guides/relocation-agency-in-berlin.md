@@ -29,6 +29,8 @@ A relocation agency can help you...
 
 ## List of relocation agencies
 
-To add someone, [fill this form](/suggest-business).
+{% tool "places-map", category="relocation-agencies" %}
 
-{% map places="places/relocation-agencies.json" %}
+### Recommend a relocation agency
+
+{% tool "place-suggestion-form", category="relocation-agencies", static=True %}

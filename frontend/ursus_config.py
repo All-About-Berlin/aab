@@ -443,6 +443,9 @@ ctx["PUBLIC_HOLIDAYS_BY_DATE_JSON"] = json.dumps(
 # ==============================================================================
 
 ctx["SITE_URL"] = os.environ.get("URSUS_SITE_URL", "")  # No trailing slash!
+ctx["GOOGLE_MAPS_JAVASCRIPT_API_KEY"] = os.environ.get(
+    "GOOGLE_MAPS_JAVASCRIPT_API_KEY", ""
+)  # Frontend use, for address autocomplete
 ctx["random_id"] = random_id
 ctx["fail_on"] = fail_on
 ctx["glossary_groups"] = glossary_groups
@@ -491,13 +494,11 @@ config.jinja_extensions.extend(
         "extensions.renderers.jinja.ToolExtension",
         "extensions.renderers.jinja.EsbuildJsLoaderExtension",
         "extensions.renderers.jinja.TableOfContentsExtension",
-        "extensions.renderers.jinja.MapExtension",
     ]
 )
 
 config.context_processors.extend(
     [
-        "extensions.context_processors.json_entries.JsonContextProcessor",
         "extensions.renderers.entry_images.EntryImageUrlProcessor",
         "ursus.context_processors.git_date.GitDateProcessor",
         "extensions.context_processors.hyphenated_titles.HyphenatedTitleProcessor",
@@ -522,6 +523,7 @@ config.renderers.extend(
         "extensions.renderers.entry_images.EntryImageRenderer",
         "extensions.renderers.nginx_map.NginxMapRenderer",
         "extensions.renderers.glossary_audio.GlossaryAudioRenderer",
+        "extensions.renderers.places_json.JsonRenderer",
     ]
 )
 
