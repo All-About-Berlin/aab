@@ -240,7 +240,10 @@
       "website": "https://www.treatwell.de/ort/bernd-kramer-hairdesign/",
       "address": "Tamara-Danz-Straße 11",
       "latitude": "52.506082",
-      "longitude": "13.446568"
+      "longitude": "13.446568",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Friedrichshain",
+      "quarter": "Mediaspree"
     },
     {
       "name": "Princesssofia",

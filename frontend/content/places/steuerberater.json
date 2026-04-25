@@ -354,7 +354,10 @@
       "website": "https://www.alvcpa.com/",
       "address": "Baerwaldstraße 50",
       "latitude": "52.491373",
-      "longitude": "13.401529"
+      "longitude": "13.401529",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Bergmannkiez"
     },
     {
       "name": "Losemann Tax",
@@ -427,7 +430,10 @@
       "email": "jakub@czaplewski.de",
       "address": "Grunewaldstraße 54",
       "latitude": "52.488169",
-      "longitude": "13.337708"
+      "longitude": "13.337708",
+      "borough": "Tempelhof-Schöneberg",
+      "suburb": "Schöneberg",
+      "quarter": "Bayerisches Viertel"
     },
     {
       "name": "Guhr Steuerberatung Berlin",
@@ -476,7 +482,10 @@
       "email": "balte@taxes-matter.de",
       "address": "Kanzowstr. 10",
       "latitude": "52.545912",
-      "longitude": "13.424355"
+      "longitude": "13.424355",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Humann-Kiez"
     },
     {
       "name": "b’steuern",

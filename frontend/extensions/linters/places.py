@@ -53,12 +53,17 @@ class PlacesLinter(Linter):
         to_remove = []
 
         for i, place in enumerate(data.get("places", [])):
+            name = place.get("name", f"place #{i + 1}")
+
+            if not place.get("borough") and not place.get("suburb"):
+                yield from self.fill_nominatim_info(place, name)
+                list_modified = True
+
             last_verified = place.get("lastVerified")
             if last_verified and (date.today() - date.fromisoformat(last_verified)) < self.verification_frequency:
                 continue
 
             if not place.get("googlePlaceId"):
-                name = place.get("name", f"place #{i + 1}")
                 yield None, f"{name}: Place has no place ID", logging.WARNING
                 continue
 
@@ -125,16 +130,19 @@ class PlacesLinter(Linter):
             place["longitude"] = str(g_lng)
             location_changed = True
 
-        if location_changed or not place.get("borough") or not place.get("suburb"):
-            nominatim_address = reverse_geocode(float(place["latitude"]), float(place["longitude"]))
-            place["borough"] = nominatim_address.get("borough")
-            place["suburb"] = nominatim_address.get("suburb")
-            place["quarter"] = nominatim_address.get("quarter")
+        if location_changed:
+            yield from self.fill_nominatim_info(place, name)
 
-            city = nominatim_address.get("city")
-            if city and city != "Berlin":
-                place["city"] = city
+    def fill_nominatim_info(self, place: dict, name: str) -> LinterResult:
+        nominatim_address = reverse_geocode(float(place["latitude"]), float(place["longitude"]))
+        place["borough"] = nominatim_address.get("borough")
+        place["suburb"] = nominatim_address.get("suburb")
+        place["quarter"] = nominatim_address.get("quarter")
 
-            yield None, f"{name}: Missing borough or suburb", logging.ERROR
+        city = nominatim_address.get("city")
+        if city and city != "Berlin":
+            place["city"] = city
 
-            time.sleep(1)  # Debounce nominatim requests
+        yield None, f"{name}: Filled borough/suburb from Nominatim", logging.INFO
+
+        time.sleep(1)  # Debounce nominatim requests

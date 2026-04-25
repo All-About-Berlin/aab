@@ -427,7 +427,10 @@
       "latitude": "52.502628",
       "longitude": "13.476753",
       "googlePlaceId": "ChIJ9RakKO5OqEcR86Sh7h24oaI",
-      "lastVerified": "2026-04-22"
+      "lastVerified": "2026-04-22",
+      "borough": "Lichtenberg",
+      "suburb": "Rummelsburg",
+      "quarter": "Victoriastadt"
     },
     {
       "name": "Daniel Friedrich",

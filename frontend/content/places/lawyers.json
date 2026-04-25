@@ -8,7 +8,10 @@
       "address": "Kurfürstendamm 167-168",
       "latitude": "52.499778",
       "longitude": "13.308419",
-      "recommended": true
+      "recommended": true,
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Wilmersdorf",
+      "quarter": null
     },
     {
       "name": "Andreas Martin",
@@ -387,7 +390,10 @@
       "website": "http://www.kanzlei-moeckernkiez.de",
       "address": "Yorckstraße 26",
       "latitude": "52.492222",
-      "longitude": "13.377543"
+      "longitude": "13.377543",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": null
     },
     {
       "name": "Fürstenow Law Office",

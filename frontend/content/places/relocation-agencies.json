@@ -167,7 +167,10 @@
       "email": "hello@jetztpat.com",
       "address": "Urbanstraße 71/Hof 2",
       "latitude": "52.488062",
-      "longitude": "13.422846"
+      "longitude": "13.422846",
+      "borough": "Friedrichshain-Kreuzberg",
+      "suburb": "Kreuzberg",
+      "quarter": "Graefekiez"
     },
     {
       "name": "ExpatEaze",
@@ -175,7 +178,10 @@
       "email": "khaled@expateaze.com",
       "address": "Erich Weinert Str 46, 10439",
       "latitude": "52.550203",
-      "longitude": "13.421093"
+      "longitude": "13.421093",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg",
+      "quarter": "Humann-Kiez"
     }
   ]
 }
