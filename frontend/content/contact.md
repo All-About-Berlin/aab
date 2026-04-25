@@ -13,15 +13,11 @@ Hi, I'm [Nicolas](/about). You can contact me to…
 - **Say thanks**  
     I *love* to hear from happy readers! You can also [donate €10](/donate) to support my work.
 - **Advertise your business**  
-    Read my [content policy](/terms#content-policy) and my [advertising policy](/terms#advertising-policy) first. I sometimes work with advertisers, but not at the readers' expense.
-    - **Therapists and psychiatrists**  
-        Fill the [form for psychiatrists and therapists](/suggest-therapist). You will get listed for free.
-    - **Doctors, lawyers, tax advisors, etc.**  
-        Fill the [form for other businesses](/suggest-business). You will only get listed if it's relevant to my readers. It can take some time.
+    Read my [content policy](/terms#content-policy) and my [advertising policy](/terms#advertising-policy) first. I work with advertisers, but never at the readers' expense.
 
 ## Contact information
 
-I do not answer visa and residence permit questions, because I can't give legal advice. There are [other people who can help](/guides/help#immigration-questions).
+I do not answer visa and residence permit questions, but there are [other people who can help](/guides/help#immigration-questions).
 
 **Website owner**: [Nicolas Bouliane](/about)
 
