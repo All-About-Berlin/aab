@@ -34,9 +34,19 @@ You can join a **[cannabis club](/guides/is-marijuana-legal)** to legally buy we
 
 You can also **[get a prescription](#cannabis-prescription)** for medical marijuana.
 
+## Cannabis prescription
+
+All doctors can prescribe cannabis, but few doctors do it.
+
+You can get a medical prescription for cannabis online.[^12] It's the easiest way to get medical marijuana. You book a video call with a doctor, pay around €50, and get a prescription for cannabis. You can renew your prescription for around €20.[^13]
+
+You can get a prescription from [TeleCan](https://www.telecan.eu/), [CannGo](https://canngo.express/), [DrAnsay](https://dransay.com/cannabis-rezept-online/) or Algea Care. TeleCan and CannGo have good reviews. Algea has bad reviews.
+
 ## Buying weed on Telegram
 
-Many dealers sell weed and other drugs on Telegram. They advertise on stickers with QR codes. You can find those stickers everywhere in Neukölln, Kreuzberg and Friedrichshain. These Telegram groups often get shut down by the police.
+Many dealers sell weed and other drugs on Whatsapp, Telegram, Signal and Session. They advertise with stickers with QR codes. Those stickers everywhere in Neukölln, Kreuzberg and Friedrichshain. These Telegram groups often get shut down by the police.
+
+![Drug dealer sticker with QR code](/images/berlin-drug-dealer-qr-stickers.jpg "A drug dealer sticker with QR code")
 
 Telegram dealers are better than park dealers, but they are still risky. There are a lot of bad dealers that sell bad products.[^5] [Check your weed](#check-your-weed) before you smoke it.
 
@@ -70,14 +80,6 @@ Synthetic cannabinoids are also common.[^7] They are harder to detect.[^10] The 
 - [Reddit discussion about contaminated cannabis](https://www.reddit.com/r/berlin/comments/kve48s/spice_laced_weed_is_in_berlin_watch_out/)
 - [Other reddit discussion](https://www.reddit.com/r/berlin/comments/kx3x04/marijuana_from_reputable_berlin_delivery_service/)
 - [Discussion about synthetic cannabinoid test kits](https://www.reddit.com/r/berlin/comments/kzwggs/spiced_weed_in_berlin_the_kits_we_have_used_are/)
-
-## Cannabis prescription
-
-All doctors can prescribe cannabis, but few doctors do it.
-
-You can get a medical prescription for cannabis online.[^12] It's the easiest way to get medical marijuana. You book a video call with a doctor, pay around €50, and get a prescription for cannabis. You can renew your prescription for around €20.[^13]
-
-You can get a prescription from [TeleCan](https://www.telecan.eu/), [CannGo](https://canngo.express/), [DrAnsay](https://dransay.com/cannabis-rezept-online/) or Algea Care. TeleCan and CannGo have good reviews. Algea has bad reviews.
 
 [^0]: [Wikipedia](https://en.wikipedia.org/wiki/G%C3%B6rlitzer_Park#Drug_trafficking) (April 2026), [Wikipedia](https://en.wikipedia.org/wiki/Volkspark_Hasenheide#:~:text=the%20hasenheide%20is%20a%20focus%20of%20the%20berlin%20drug%20trade) (April 2026), [berliner-zeitung.de](https://www.berliner-zeitung.de/news/polizeibericht-berlin/statistik-das-sind-die-gefaehrlichsten-parks-in-berlin-li.171833)
 [^1]: [hanfvergleich.de](https://hanfvergleich.de/cannabis-preisindex) (April 2026)
