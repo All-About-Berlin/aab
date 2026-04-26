@@ -4,3 +4,4 @@ tests/snapshot-failures
 .env
 .venv
 *.pid
+.claude
