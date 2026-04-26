@@ -30,6 +30,8 @@ def _load_constants(path):
     casters = {"int": int, "Decimal": Decimal}
     result = {}
     for key, entry in json.loads(Path(path).read_text()).items():
+        if key == "templates":
+            continue
         value = casters.get(entry["type"], str)(entry["value"])
         if "fail_on" in entry:
             value = fail_on(entry["fail_on"], value)
@@ -351,6 +353,7 @@ config.renderers.extend(
 )
 
 config.linters = [
+    "extensions.linters.constants.ConstantsLinter",
     "extensions.linters.places.PlacesLinter",
     # 'ursus.linters.markdown.MarkdownExternalLinksLinter',
     # 'extensions.linters.redirects.RedirectsLinter',

@@ -1,10 +1,36 @@
 {
+  "templates": {
+    "default": {
+      "crawler": "html",
+      "delay": "1s",
+      "every": "30d"
+    },
+    "buzer": {
+      "extends": "default",
+      "url": "https://www.buzer.de/{section}_{law}.htm",
+      "css_selector": ".arttext",
+      "subsection": "the supplied text",
+      "prompt": "You will get the text of § {section} {law}. Using only {subsection}, return {desired_value}.\n\nFormat whole numbers as an integer. Format decimal numbers as floats. Leave out trailing zeroes.\n\nExamples:\n\n- '1 234' -> '1234'\n- '1.234,5' -> '1234.5'\n- '123,0' -> '123' (remove unneeded decimals)\n- '1 234,56' -> '1234.56'\n\nIgnore all information outside of {subsection}. Only return one value. Do not add or concatenate multiple values.\nIf the requested value is not in {subsection}, only return \"ERROR\"."
+    },
+    "zusatzbeitrag": {
+      "extends": "default",
+      "url": "https://www.krankenkassen.de/gesetzliche-krankenkassen/krankenkasse-beitrag/zusatzbeitrag/",
+      "css_selector": "#content table",
+      "prompt": "Read this table. Return the latest Zusatzbeitrag for {insurer} as a percentage (in the leftmost column).\nReturn only the percentage, without rounding, without percent signs and without thousands separators. For decimal values, use a dot as the decimal mark.\nIf the value is not in this table, only return 'ERROR'."
+    }
+  },
   "MINIMUM_WAGE": {
     "value": "13.90",
     "type": "Decimal",
-    "description": "German minimum wage (€/h)",
-    "source_url": "https://www.bmas.de/DE/Arbeit/Arbeitsrecht/Mindestlohn/mindestlohn.html",
-    "fail_on": "2026-06-01"
+    "fail_on": "2026-06-01",
+    "monitor": {
+      "url": "https://www.bmas.de/DE/Arbeit/Arbeitsrecht/Mindestlohn/mindestlohn.html",
+      "crawler": "playwright",
+      "prompt": "Read this page. Return the current minimum wage.\nReturn only the numeric value, with two decimal places, with a dot as the decimal mark, and without a currency symbol.\nIf the value can't be found on this page, only return 'ERROR'.\n",
+      "lastVerified": "2026-04-26",
+      "template": "default",
+      "css_selector": ".typ-quote-3 p.text"
+    }
   },
   "MEDIAN_INCOME_BERLIN": {
     "value": "48250",
@@ -31,50 +57,104 @@
   "GRUNDFREIBETRAG": {
     "value": "12348",
     "type": "int",
-    "description": "Income tax free allowance (€/y) - § 32a EstG",
-    "source_url": "https://www.lohn-info.de/lohnsteuerzahlen.html",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "law": "EStG",
+      "section": "32a",
+      "subsection": "Absatz 1.1",
+      "desired_value": "the Grundfreibetrag (basic tax-free allowance) in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "INCOME_TAX_BRACKET_2_MAX_INCOME": {
     "value": "17799",
     "type": "int",
-    "description": "§ 32a EstG",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "law": "EStG",
+      "section": "32a",
+      "subsection": "Absatz 1.2",
+      "desired_value": "the upper bound of the second income tax bracket in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "INCOME_TAX_BRACKET_3_MAX_INCOME": {
     "value": "69878",
     "type": "int",
-    "description": "§ 32a EstG",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "law": "EStG",
+      "section": "32a",
+      "subsection": "Absatz 1.3",
+      "desired_value": "the upper bound of the third income tax bracket in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "INCOME_TAX_BRACKET_4_MAX_INCOME": {
     "value": "277825",
     "type": "int",
-    "description": "§ 32a EstG",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "law": "EStG",
+      "section": "32a",
+      "subsection": "Absatz 1.4",
+      "desired_value": "the upper bound of the fourth income tax bracket in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "INCOME_TAX_CLASS_56_LIMIT_1": {
     "value": "14071",
     "type": "int",
-    "description": "Upper bound (€/y) of income tax tariff zones for tax classes 5 and 6 - § 39b Abs. 2 Satz 7 EstG",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "law": "EStG",
+      "section": "39b",
+      "subsection": "Absatz 2 Satz 7",
+      "desired_value": "the first and lowest of the 3 income tax thresholds (for Steuerklassen V and VI), in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "INCOME_TAX_CLASS_56_LIMIT_2": {
     "value": "34939",
     "type": "int",
-    "description": "§ 39b Abs. 2 Satz 7 EstG",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "law": "EStG",
+      "section": "39b",
+      "subsection": "Absatz 2 Satz 7",
+      "desired_value": "the amount associated with the '42 Prozent' tax bracket, in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "INCOME_TAX_CLASS_56_LIMIT_3": {
     "value": "222260",
     "type": "int",
-    "description": "§ 39b Abs. 2 Satz 7 EstG",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "law": "EStG",
+      "section": "39b",
+      "subsection": "Absatz 2 Satz 7",
+      "desired_value": "the third and highest of the 3 income tax thresholds (for Steuerklassen V and VI), in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "INCOME_TAX_MAX_RATE": {
     "value": "45",
     "type": "int",
-    "description": "Maximum income tax rate (%) - § 32b EstG"
+    "monitor": {
+      "url": "https://www.finanztip.de/spitzensteuersatz/",
+      "prompt": "In this text, return the maximum income tax rate (Höchststeuersatz) as a percentage.\nOnly return the number, unrounded, without a percent sign, without thousands separator, and with a dot as the decimal mark.\nIf the requested value is not in the supplied text, only return \"ERROR\".\n",
+      "lastVerified": "2026-04-26",
+      "template": "default",
+      "css_selector": ".intro-box .container"
+    }
   },
   "CHURCH_TAX_RATE": {
     "value": "9",
@@ -89,32 +169,70 @@
   "SOLIDARITY_TAX_MILDERUNGSZONE_MIN_INCOME_TAX": {
     "value": "20350",
     "type": "int",
-    "description": "§ 3 SolzG",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "url": "https://www.buzer.de/gesetz/282/a3297.htm",
+      "law": "SolzG",
+      "section": "3",
+      "subsection": "Absatz 3.2",
+      "desired_value": "the minimum income tax to collect solidarity tax (in anderen Fällen), in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "SOLIDARITY_TAX_MILDERUNGSZONE_RATE": {
     "value": "0.119",
     "type": "Decimal",
-    "description": "§ 4 SolzG",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "url": "https://www.buzer.de/gesetz/282/a3298.htm",
+      "law": "SolzG",
+      "section": "4",
+      "subsection": "Satz 2",
+      "desired_value": "the Solidaritätszuschlag, as a decimal (for example '12.4 Prozent' -> '0.124')",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "SOLIDARITY_TAX_MAX_RATE": {
     "value": "0.055",
     "type": "Decimal",
-    "description": "§ 4 SolzG",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "url": "https://www.buzer.de/gesetz/282/a3298.htm",
+      "law": "SolzG",
+      "section": "4",
+      "subsection": "Satz 1",
+      "desired_value": "the Solidaritätszuschlag, as a decimal (for example '2.4 Prozent' -> '0.024')",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "WERBUNGSKOSTEN_PAUSCHALE": {
     "value": "1230",
     "type": "int",
-    "description": "§ 9a Abs. 1 EStG",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "law": "EStG",
+      "section": "9a",
+      "subsection": "Absatz 1",
+      "desired_value": "Arbeitnehmer-Pauschbetrag",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "VORSORGEPAUSCHAL_MIN": {
     "value": "1900",
     "type": "int",
-    "description": "§ 39b Abs. 2.3.e EStG",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "law": "EStG",
+      "section": "39b",
+      "subsection": "Absatz 2.3.e",
+      "desired_value": "the amount the Teilbetrag must not exceed, in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "VORSORGEPAUSCHAL_MIN_TAX_CLASS_3": {
     "value": "3000",
@@ -123,69 +241,145 @@
   "ARBEITNEHMERPAUSCHALE": {
     "value": "1230",
     "type": "int",
-    "description": "Employee lump sum deduction (€/y) - § 9a EStG",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "law": "EStG",
+      "section": "9a",
+      "desired_value": "the Arbeitnehmer-Pauschbetrag amount in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "SONDERAUSGABEN_PAUSCHBETRAG": {
     "value": "36",
     "type": "int",
-    "description": "Special expenses lump sum (€/y) - § 10c EStG",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "law": "EStG",
+      "section": "10c",
+      "desired_value": "the Sonderausgaben-Pauschbetrag amount in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "ARBEITSLOSENVERSICHERUNG_RATE": {
     "value": "2.6",
     "type": "Decimal",
-    "description": "Unemployment insurance rate (%) - § 341 SGB 3"
+    "monitor": {
+      "law": "SGB_3",
+      "section": "341",
+      "desired_value": "the unemployment insurance contribution rate (Beitragssatz) as a percentage",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "KINDERGELD": {
     "value": "259",
     "type": "int",
-    "description": "Kindergeld amount per child (€/m) - § 6 Abs. 1 BKGG, § 66 EStG",
-    "fail_on": "2026-12-31"
+    "description": "§ 6 Abs. 1 BKGG, § 66 EStG",
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "law": "EStG",
+      "section": "66",
+      "desired_value": "the monthly Kindergeld amount per child in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "KINDERFREIBETRAG_PER_PARENT": {
     "value": "3414",
     "type": "int",
-    "description": "Tax break for parents (€/y) - § 32 Abs. 6 S. 1 EStG",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "law": "EStG",
+      "section": "32",
+      "subsection": "Absatz 6 Satz 1",
+      "desired_value": "the Freibetrag for the 'sächliche Existenzminimum des Kindes' in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "KINDERFREIBETRAG_ERZIEHUNGSBEDARF_PER_PARENT": {
     "value": "1464",
     "type": "int",
-    "description": "Tax break for parents (€/y) 'Betreuungs- und Erziehungs- oder Ausbildungsbedarf' - § 32 Abs. 6 S. 1 EStG",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "law": "EStG",
+      "section": "32",
+      "subsection": "Absatz 6 Satz 1",
+      "desired_value": "the Freibetrag for 'Betreuungs- und Erziehungs- oder Ausbildungsbedarf des Kindes' in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "ENTLASTUNGSBETRAG_ALLEINERZIEHENDE": {
     "value": "4260",
     "type": "int",
-    "description": "Tax break for single parents (€/y) - § 24b EStG",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "law": "EStG",
+      "section": "24b",
+      "desired_value": "the Entlastungsbetrag for single parents (Alleinerziehende) in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "ENTLASTUNGSBETRAG_ALLEINERZIEHENDE_EXTRA_CHILD": {
     "value": "240",
     "type": "int",
-    "description": "Additional tax break per extra child for single parents (€/y) - § 24b EStG",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "law": "EStG",
+      "section": "24b",
+      "desired_value": "the additional Entlastungsbetrag per extra child (Erhöhungsbetrag) in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "CAPITAL_GAINS_TAX_RATE": {
     "value": "25",
     "type": "Decimal",
-    "description": "Capital gains tax rate (%) - § 32d EStG"
+    "monitor": {
+      "law": "EStG",
+      "section": "32d",
+      "desired_value": "the flat tax rate for capital gains as a percentage",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "CAPITAL_GAINS_FREIBETRAG": {
     "value": "1000",
     "type": "int",
-    "description": "Sparer-Pauschbetrag - § 20 Abs. 9 EStG"
+    "monitor": {
+      "law": "EStG",
+      "section": "20",
+      "subsection": "Absatz 9",
+      "desired_value": "the Sparer-Pauschbetrag (capital gains tax-free allowance) in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "GEWERBESTEUER_FREIBETRAG": {
     "value": "24500",
     "type": "int",
-    "description": "Below that amount (€/y), you don't pay Gewerbesteuer - § 11 GewStG"
+    "monitor": {
+      "law": "GewStG",
+      "section": "11",
+      "desired_value": "the Gewerbesteuer Freibetrag amount in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "GEWERBESTEUER_RATE": {
     "value": "3.5",
     "type": "Decimal",
-    "description": "Gewerbesteuer base rate (%) - § 11 GewStG"
+    "monitor": {
+      "law": "GewStG",
+      "section": "11",
+      "desired_value": "the Gewerbesteuer Steuermesszahl as a percentage",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "GEWERBESTEUER_TAX_CREDIT": {
     "value": "3.8",
@@ -202,32 +396,72 @@
   "KLEINUNTERNEHMER_MAX_INCOME_FIRST_YEAR": {
     "value": "25000",
     "type": "int",
-    "description": "§ 19 Abs. 1 UStG"
+    "monitor": {
+      "law": "UStG",
+      "section": "19",
+      "subsection": "Absatz 1 Satz 1",
+      "desired_value": "the maximum annual revenue threshold for Kleinunternehmerregelung in the preceding calendar year, in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "KLEINUNTERNEHMER_MAX_INCOME": {
     "value": "100000",
     "type": "int",
-    "description": "§ 19 Abs. 1 UStG"
+    "monitor": {
+      "law": "UStG",
+      "section": "19",
+      "subsection": "Absatz 1 Satz 1",
+      "desired_value": "the maximum annual revenue threshold for Kleinunternehmerregelung in the current calendar year, in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "DOUBLE_ENTRY_MIN_REVENUE": {
     "value": "800000",
     "type": "int",
-    "description": "Above that revenue (€/y), must use double entry bookkeeping - § 241a HGB"
+    "monitor": {
+      "law": "HGB",
+      "section": "241a",
+      "desired_value": "the revenue threshold (Umsatzerlöse) above which double-entry bookkeeping is required, in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "DOUBLE_ENTRY_MIN_INCOME": {
     "value": "80000",
     "type": "int",
-    "description": "Above that income (€/y), must use double entry bookkeeping - § 241a HGB"
+    "monitor": {
+      "law": "HGB",
+      "section": "241a",
+      "desired_value": "the profit threshold (Jahresüberschuss) above which double-entry bookkeeping is required, in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "VAT_RATE": {
     "value": "19",
     "type": "Decimal",
-    "description": "VAT rate (%) - § 12 UStG Abs 1"
+    "monitor": {
+      "law": "UStG",
+      "section": "12",
+      "subsection": "Absatz 1",
+      "desired_value": "the standard VAT rate (Umsatzsteuer) as a percentage",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "VAT_RATE_REDUCED": {
     "value": "7",
     "type": "Decimal",
-    "description": "Reduced VAT rate (%) - § 12 UStG Abs 2"
+    "monitor": {
+      "law": "UStG",
+      "section": "12",
+      "subsection": "Absatz 2",
+      "desired_value": "the reduced VAT rate (ermäßigter Steuersatz) as a percentage",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "EU_VAT_SCHWELLENWERT": {
     "value": "10000",
@@ -237,24 +471,51 @@
   "VAT_MIN_QUARTERLY_AMOUNT": {
     "value": "2000",
     "type": "int",
-    "description": "Minimum VAT for quarterly filing (€/y) - § 18 Abs. 2 S. 3 UStG"
+    "monitor": {
+      "law": "UStG",
+      "section": "18",
+      "subsection": "Absatz 2 Satz 3",
+      "desired_value": "the maximum monthly income according, in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "VAT_MIN_MONTHLY_AMOUNT": {
     "value": "9000",
     "type": "int",
-    "description": "Minimum VAT for monthly filing (€/y) - § 18 Abs. 2 S. 2 UStG"
+    "monitor": {
+      "law": "UStG",
+      "section": "18",
+      "subsection": "Absatz 2 Satz 2",
+      "desired_value": "the minimum amount that requires monthly VAT filing, in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "MIDIJOB_MAX_INCOME": {
     "value": "2000",
     "type": "int",
-    "description": "Below this income (€/mth), you have a midijob - § 20 Abs. 2 SGB IV",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "law": "SGB_IV",
+      "section": "20",
+      "subsection": "Absatz 2",
+      "desired_value": "the upper earnings limit for the Übergangsbereich according to Absatz 2, in euros per month",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "GKV_FACTOR_F": {
     "value": "0.6619",
     "type": "Decimal",
-    "description": "Factor F for midijob health insurance - § 20 SGB IV",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "url": "https://www.tk.de/firmenkunden/versicherung/beitraege-faq/zahlen-und-grenzwerte/faktor-f-2033036",
+      "prompt": "Read this page. Return the latest Faktor F value. Only return the number as a decimal, without any formatting or currency symbol. Use a dot as the decimal mark. Use no thousands separator. If the value can't be found, only return 'ERROR'.\n",
+      "lastVerified": "2026-04-26",
+      "template": "default",
+      "css_selector": ".e-table.e-table__table"
+    }
   },
   "BEZUGSGROESSE": {
     "value": "3955",
@@ -265,12 +526,24 @@
   "GKV_BASE_RATE_EMPLOYEE": {
     "value": "14.6",
     "type": "Decimal",
-    "description": "GKV base contribution including Krankengeld (%) - § 241 SGB V"
+    "monitor": {
+      "law": "SGB_V",
+      "section": "241",
+      "desired_value": "the general GKV contribution rate (allgemeiner Beitragssatz) as a percentage",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "GKV_BASE_RATE_SELF_PAY": {
     "value": "14",
     "type": "Decimal",
-    "description": "GKV base contribution excluding Krankengeld (%) - § 243 SGB V"
+    "monitor": {
+      "law": "SGB_V",
+      "section": "243",
+      "desired_value": "the reduced GKV contribution rate (ermäßigter Beitragssatz) as a percentage",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "GKV_MAX_INCOME_MONTHLY": {
     "value": "5812.50",
@@ -281,8 +554,15 @@
   "GKV_AZUBI_FREIBETRAG": {
     "value": "325",
     "type": "int",
-    "description": "Above this income (€/mth), employer pays for health insurance - § 20 Abs. 3 SGB IV",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "law": "SGB_IV",
+      "section": "20",
+      "subsection": "Absatz 3",
+      "desired_value": "the monthly income threshold for Auszubildende (trainees) above which the employer pays social insurance contributions, in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "GKV_FREIWILLIG_VERSICHERT_MIN_INCOME_MONTHLY": {
     "value": "6450",
@@ -300,52 +580,88 @@
     "value": "2.5",
     "type": "Decimal",
     "description": "Minimum GKV Zusatzbeitrag (%)",
-    "source_url": "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "prompt": "Read this HTML text.\nOnly return the numeric value, without the %% sign. Use a dot as the decimal mark. Use no thousands separator.\nIf the value is not a percentage, only return 'ERROR'.\n",
+      "lastVerified": "2026-04-26",
+      "template": "zusatzbeitrag",
+      "css_selector": ".a11y-table:first-of-type tr:first-of-type td:nth-child(2)"
+    }
   },
   "GKV_MAX_ZUSATZBEITRAG": {
     "value": "4.39",
     "type": "Decimal",
     "description": "Maximum GKV Zusatzbeitrag (%)",
-    "source_url": "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "prompt": "Read this HTML text. Return the text value as a percentage, without rounding, without percent signs and without thousands separators. Use a dot as the decimal mark.\nIf the value is not a percentage, only return 'ERROR'.\n",
+      "lastVerified": "2026-04-26",
+      "template": "zusatzbeitrag",
+      "css_selector": ".a11y-table:first-of-type tr:last-of-type td:nth-child(2)"
+    }
   },
   "GKV_AVG_ZUSATZBEITRAG": {
     "value": "2.9",
     "type": "Decimal",
     "description": "Average GKV Zusatzbeitrag (%)",
-    "source_url": "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "url": "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/",
+      "prompt": "Read this page. Return the average (durchschnittliche) Zusatzbeitrag as a percentage.\nOnly return the number, without the %% sign. Use a dot as the decimal mark. Use no thousands separator.\nIf the value can't be found, only return 'ERROR'.\n",
+      "lastVerified": "2026-04-26",
+      "template": "default",
+      "css_selector": "[component-export=InsuranceSummary]"
+    }
   },
   "GKV_ZUSATZBEITRAG_AOK": {
     "value": "3.5",
     "type": "Decimal",
-    "source_url": "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "insurer": "AOK Nordost",
+      "lastVerified": "2026-04-26",
+      "template": "zusatzbeitrag"
+    }
   },
   "GKV_ZUSATZBEITRAG_BARMER": {
     "value": "3.29",
     "type": "Decimal",
-    "source_url": "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "insurer": "Barmer",
+      "lastVerified": "2026-04-26",
+      "template": "zusatzbeitrag"
+    }
   },
   "GKV_ZUSATZBEITRAG_DAK": {
     "value": "3.2",
     "type": "Decimal",
-    "source_url": "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "insurer": "DAK-Gesundheit",
+      "lastVerified": "2026-04-26",
+      "template": "zusatzbeitrag"
+    }
   },
   "GKV_ZUSATZBEITRAG_HKK": {
     "value": "2.59",
     "type": "Decimal",
-    "source_url": "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "insurer": "hkk",
+      "lastVerified": "2026-04-26",
+      "template": "zusatzbeitrag"
+    }
   },
   "GKV_ZUSATZBEITRAG_TK": {
     "value": "2.69",
     "type": "Decimal",
-    "source_url": "https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "insurer": "Techniker Krankenkasse",
+      "lastVerified": "2026-04-26",
+      "template": "zusatzbeitrag"
+    }
   },
   "TRAVEL_INSURANCE_COST": {
     "value": "40",
@@ -392,47 +708,103 @@
   "BAFOG_BEDARFSSATZ_13_ABS_1_2": {
     "value": "475",
     "type": "int",
-    "description": "BAföG Bedarfssatz (€/mth) - § 13 BAföG Abs 1 S. 2",
-    "fail_on": "2026-06-01"
+    "fail_on": "2026-06-01",
+    "monitor": {
+      "law": "BAfoG",
+      "section": "13",
+      "subsection": "Absatz 1.2",
+      "desired_value": "the monthly Grundbedarf for Höheren Fachschulen, Akademien und Hochschulen in euros per month",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "BAFOG_BEDARFSSATZ_13_ABS_2_2": {
     "value": "380",
     "type": "int",
-    "description": "BAföG Bedarfssatz (€/mth) - § 13 BAföG Abs 2 S. 2",
-    "fail_on": "2026-06-01"
+    "fail_on": "2026-06-01",
+    "monitor": {
+      "law": "BAfoG",
+      "section": "13",
+      "subsection": "Absatz 2.2",
+      "desired_value": "the Wohnpauschale for students living away from parents in euros per month",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "SPERRKONTO_SURCHARGE_INSURANCE": {
     "value": "102",
     "type": "int",
-    "description": "Sperrkonto insurance surcharge (€/mth) - § 13a BAföG Abs 1",
-    "fail_on": "2026-06-01"
+    "fail_on": "2026-06-01",
+    "monitor": {
+      "law": "BAfoG",
+      "section": "13a",
+      "subsection": "Absatz 1 Satz 1",
+      "desired_value": "the monthly Bedarf für Krankenkenversicherungsbeitrag, in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "SPERRKONTO_SURCHARGE_OTHER": {
     "value": "35",
     "type": "int",
     "description": "Sperrkonto other surcharge (€/mth) - § 13a BAföG Abs 1",
-    "fail_on": "2026-06-01"
+    "fail_on": "2026-06-01",
+    "monitor": {
+      "law": "BAfoG",
+      "section": "13a",
+      "subsection": "Absatz 3 Satz 3",
+      "desired_value": "the monthly surcharge for other expenses (sonstige Aufwendungen) in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "PFLEGEVERSICHERUNG_BASE_RATE": {
     "value": "3.6",
     "type": "Decimal",
     "description": "Pflegeversicherung base rate (%) - § 55 Abs. 1 SGB XI",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "url": "https://www.barmer.de/firmenkunden/sozialversicherung/beitraege/pflegeversicherung-beitraege-arbeitgeber",
+      "prompt": "Read this table. Return the total Beitragssatz for a person with 1 child, as a percentage.\nReturn only the percentage, formatted as a float.\nIf the value is not in this table, only return 'ERROR'.\n",
+      "lastVerified": "2026-04-26",
+      "template": "default",
+      "css_selector": "table"
+    }
   },
   "PFLEGEVERSICHERUNG_BASE_RATE_MAX_AGE": {
     "value": "22",
     "type": "int",
-    "description": "Maximum age for base rate - § 55 Abs. 1 SGB XI"
+    "monitor": {
+      "law": "SGB_11",
+      "section": "55",
+      "subsection": "Absatz 3 Satz 1",
+      "desired_value": "the age at which the Beitragssatz increases (one year before the number in Satz 1)",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "PFLEGEVERSICHERUNGS_SURCHARGE": {
     "value": "0.6",
     "type": "Decimal",
-    "description": "Surcharge for people over 23 with no kids (%) - § 55 Abs. 3 SGB XI"
+    "monitor": {
+      "law": "SGB_11",
+      "section": "55",
+      "desired_value": "the Beitragszuschlag für Kinderlose as a percentage",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "PFLEGEVERSICHERUNG_DISCOUNT_PER_CHILD": {
     "value": "0.25",
     "type": "Decimal",
-    "description": "Discount per child (%) - § 55 Abs. 3 SGB XI"
+    "monitor": {
+      "law": "SGB_11",
+      "section": "55",
+      "subsection": "Absatz 3 Satz 4",
+      "desired_value": "the Pflegeversicherung discount per child (Abschlag je Kind) as a percentage",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "PFLEGEVERSICHERUNG_DISCOUNT_MIN_CHILDREN": {
     "value": "2",
@@ -524,22 +896,49 @@
   "SCHENGEN_VISA_FEE": {
     "value": "75",
     "type": "int",
-    "description": "Schengen visa fee (€) - § 46 AufenthV"
+    "monitor": {
+      "law": "AufenthV",
+      "section": "46",
+      "subsection": "Absatz 2 Satz 1",
+      "desired_value": "the category D visa fee in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "NATIONAL_VISA_FEE": {
     "value": "100",
     "type": "int",
-    "description": "National visa fee (€) - § 45 AufenthV"
+    "monitor": {
+      "law": "AufenthV",
+      "section": "45",
+      "subsection": "Absatz 1.a",
+      "desired_value": "the fee for issuing an Aufenthaltserlaubnis in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "NATIONAL_VISA_RENEWAL_FEE": {
     "value": "93",
     "type": "int",
-    "description": "National visa renewal fee (€) - § 45 AufenthV"
+    "monitor": {
+      "law": "AufenthV",
+      "section": "45",
+      "subsection": "Absatz 2.b",
+      "desired_value": "the fee for renewing or extending an Aufenthaltserlaubnis in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "RESIDENCE_PERMIT_REPLACEMENT_FEE": {
     "value": "67",
     "type": "int",
-    "description": "Residence permit replacement fee after passport change (€) - § 45c AufenthG"
+    "monitor": {
+      "law": "AufenthV",
+      "section": "45c",
+      "desired_value": "the fee for replacing a residence permit (e.g. after a passport change) in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "MIN_PERMANENT_RESIDENCE_FEE": {
     "value": "37",
@@ -549,12 +948,24 @@
   "MAX_PERMANENT_RESIDENCE_FEE": {
     "value": "147",
     "type": "int",
-    "description": "Maximum permanent residence fee (€) - § 44 AufenthG"
+    "monitor": {
+      "law": "AufenthV",
+      "section": "44",
+      "desired_value": "the maximum fee for a permanent residence permit (Niederlassungserlaubnis) in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "FAST_TRACK_FEE": {
     "value": "411",
     "type": "int",
-    "description": "Fast track visa fee (€) - § 47 AufenthG"
+    "monitor": {
+      "law": "AufenthV",
+      "section": "47",
+      "desired_value": "the fee for the fast-track visa procedure (beschleunigtes Fachkräfteverfahren) in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "FREELANCE_VISA_MIN_MONTHLY_PENSION": {
     "value": "1612.53",
@@ -614,15 +1025,28 @@
   "KSK_MIN_INCOME": {
     "value": "3900",
     "type": "int",
-    "description": "Minimum KSK income (€/y) - §3 Abs. 1 KSVG",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "url": "https://www.buzer.de/gesetz/1471/a20796.htm",
+      "law": "KSVG",
+      "section": "3",
+      "subsection": "Absatz 1",
+      "desired_value": "the minimum annual income threshold for KSK membership (Geringfügigkeitsgrenze) in euros",
+      "lastVerified": "2026-04-26",
+      "template": "buzer"
+    }
   },
   "KSK_MIN_HEALTH_INSURANCE_INCOME": {
     "value": "7910",
     "type": "int",
     "description": "KSK Mindestbeitragsberechnungsgrundlage (€/y)",
-    "source_url": "https://www.kuenstlersozialkasse.de/service-und-medien/ksk-in-zahlen",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "url": "https://www.kuenstlersozialkasse.de/service-und-medien/ksk-in-zahlen",
+      "prompt": "Read this page. Return the Mindestbeitragsberechnungsgrundlage (minimum income for health insurance calculation) in euros per year.\nIf the value is a whole euro amount, format it as an integer. For example, '1 234' -> '1234' or '123.00' -> '123'.\nIf the value is a euro amount with cents, format it as a float with two decimal places. For example: '1 234,56' -> '1234.56'.\nIf the value can't be found on this page, only return 'ERROR'.\n",
+      "lastVerified": "2026-04-26",
+      "template": "default"
+    }
   },
   "ORDNUNGSAMT_DANGEROUS_DOG_FEE": {
     "value": "30",
@@ -705,8 +1129,13 @@
     "value": "2.99",
     "type": "Decimal",
     "description": "Legal hotline cost per minute (€)",
-    "source_url": "https://www.vonengelhardt.com/en/helpnowen",
-    "fail_on": "2026-12-31"
+    "fail_on": "2026-12-31",
+    "monitor": {
+      "url": "https://www.vonengelhardt.com/en/helpnowen",
+      "prompt": "Read this page. Return the cost per minute for the legal hotline, in euros with cents. If the value can't be found on this page, only return 'ERROR'.",
+      "lastVerified": "2026-04-26",
+      "template": "default"
+    }
   },
   "LEGAL_INSURANCE_MIN_COST": {
     "value": "15",
