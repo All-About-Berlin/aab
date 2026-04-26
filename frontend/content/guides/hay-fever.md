@@ -5,7 +5,7 @@ Description: Tips for fighting a pollen allergy in Germany, and where to get all
 Date_created: 2022-05-23
 ---
 
-This guide explains how to fight hay fever in Germany.
+This guide explains how to deal with a pollen allergy in Germany.
 
 {% tableOfContents %}
 
@@ -48,9 +48,18 @@ You can buy pollen allergy pills in these places:
 
 **Yes.** You can declare allergy pills when you file your taxes, but only if it's prescribed by a doctor.[^11] File it under *außergewöhnlichen Belastungen*.
 
-## Tips to deal with hay fever
+## Other ways to treat hay fever
+
+An ear, nose and throat doctor (*HNO-Arzt*) can test what you are allergic to. This helps you prepare better.
+
+![Allergy test](/images/allergic-to-everything.jpg "An allergy test")
+
+There are immunotherapy treatments for hay fever. You must take a pill every day for a few months, or get a vaccine every few weeks for a few months. Your [health insurance](/glossary/Krankenversicherung) pays for it.[^13]
+
+## Hay fever tips
 
 - Use the [pollen risk index](https://www.dwd.de/DE/leistungen/gefahrenindizespollen/gefahrenindexpollen.html) tool from the German weather service. It shows you what types of pollen are in the air. This helps you find what type of pollen you are allergic to.
+- Keep your bedroom windows closed, and wash your bedsheets more often.
 - Wash your hair before going to bed.[^12]
 - Buy an air purifier and a vacuum robot to remove pollen from your apartment.[^12]
 
@@ -67,3 +76,4 @@ You can buy pollen allergy pills in these places:
 [^10]: [krankenkassenzentrale.de](http://web.archive.org/web/20220629151623/https://www.krankenkassenzentrale.de/wiki/heuschnupfen)
 [^11]: [steuerring.de](https://www.steuerring.de/steuererklaerung-hilfe-news/news/allergien-medikamente-und-therapien-steuerlich-absetzen.html)
 [^12]: [test.de](https://www.test.de/Heuschnupfen-Diese-Medikamente-helfen-und-sind-guenstig-4685480-0/#id5583014)
+[^13]: [AOK](https://www.aok.de/pk/magazin/koerper-psyche/haut-und-allergie/desensibilisierung-endlich-allergiefrei/#:~:text=Kosten%20f%C3%BCr%20die-,immuntherapie.,-Passende%20Artikel%20zum) (2026), [Barmer](https://www.barmer.de/unsere-leistungen/leistungen-a-z/vorsorge/hyposensibilisierung-1055534#:~:text=%20die%20kosten%20fur%20die%20hyposensibilisierung%20werden%20ubernommen.%20sie%20leisten%20lediglich%20die%20zuzahlung%20fur%20die%20notwendigen%20arzneimittel.) (2026)
