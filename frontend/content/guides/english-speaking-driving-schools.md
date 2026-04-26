@@ -15,8 +15,6 @@ To [get a German driving licence](/guides/driving-licence), you must take drivin
 
 {% tool "places-map", category="driving-schools" %}
 
-### Recommend a driving school
-
 {% tool "place-suggestion-form", category="driving-schools", static=True %}
 
 ## Convert your foreign driving licence

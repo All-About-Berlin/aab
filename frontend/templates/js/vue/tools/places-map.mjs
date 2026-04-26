@@ -169,7 +169,10 @@ export default {
 		},
 	},
 	template: `
-		<aside class="places-map" :class="{'form-open': this.showSuggestionForm}">
+		<aside
+			aria-label="Map with list of places"
+			class="places-map"
+			:class="{'form-open': this.showSuggestionForm}">
 			<div ref="mapEl" class="map no-print" :class="{'not-loaded': !this.mapLoaded}" v-show="!showSuggestionForm">
 				<button v-if="!this.mapLoaded" class="load-map-button button primary" @click="loadMap">Show map</button>
 			</div>

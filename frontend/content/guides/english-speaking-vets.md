@@ -11,8 +11,6 @@ If you don't speak German, these veterinarians speak English.
 
 {% tool "places-map", category="veterinarians" %}
 
-### Recommend a vet
-
 {% tool "place-suggestion-form", category="veterinarians", static=True %}
 
 ## Other resources

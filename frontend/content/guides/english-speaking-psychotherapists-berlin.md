@@ -32,8 +32,6 @@ These directories help you find English-speaking therapists:
 
 **[More resources and directories ➞](/guides/how-to-find-english-speaking-medical-professionals-in-berlin)**
 
-### Recommend a therapist
-
 {% tool "place-suggestion-form", category="psychotherapists", static=True %}
 
 ## Psychiatrist, psychotherapist or counsellor?

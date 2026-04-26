@@ -10,6 +10,7 @@ from forms.models import (
     PensionRefundQuestion,
     PensionRefundReminder,
     PensionRefundRequest,
+    PlaceSuggestion,
     ResidencePermitFeedback,
     TaxIdRequestFeedbackReminder,
 )
@@ -734,6 +735,97 @@ class CitizenshipFeedbackTestCase(FeedbackEndpointMixin, APITestCase):
         self.assertEqual(response["stats"]["total"]["count"], 50)
         self.assertEqual(response["stats"]["total"]["percentile_20"], (10 - 1) * 2)
         self.assertEqual(response["stats"]["total"]["percentile_80"], 40 * 2)
+
+
+class PlaceSuggestionTestCase(APITestCase):
+    endpoint = "/api/forms/place-suggestion"
+    example_request = {
+        "category": "veterinarians",
+        "business_name": "Test Vet Clinic",
+        "google_maps_id": "ChIJTestPlaceId123",
+        "languages": "English, German",
+        "notes": "Great vet, very friendly",
+        "is_owner": False,
+        "email": "",
+    }
+
+    def test_create(self):
+        response = self.client.post(self.endpoint, self.example_request, format="json")
+        self.assertEqual(response.status_code, 201, response.json())
+        self.assertEqual(PlaceSuggestion.objects.count(), 1)
+        suggestion = PlaceSuggestion.objects.first()
+        self.assertEqual(suggestion.business_name, "Test Vet Clinic")
+        self.assertEqual(suggestion.category, "veterinarians")
+
+    def test_create_minimal(self):
+        request = {
+            "category": "dentists",
+            "business_name": "Minimal Dentist",
+        }
+        response = self.client.post(self.endpoint, request, format="json")
+        self.assertEqual(response.status_code, 201, response.json())
+
+    def test_create_with_owner_email(self):
+        request = {
+            **self.example_request,
+            "is_owner": True,
+            "email": "tests@allaboutberlin.com",
+        }
+        response = self.client.post(self.endpoint, request, format="json")
+        self.assertEqual(response.status_code, 201, response.json())
+        suggestion = PlaceSuggestion.objects.first()
+        self.assertTrue(suggestion.is_owner)
+        self.assertEqual(suggestion.email, "tests@allaboutberlin.com")
+
+    def test_create_invalid_category_400(self):
+        request = {**self.example_request, "category": "invalid-category"}
+        response = self.client.post(self.endpoint, request, format="json")
+        self.assertEqual(response.status_code, 400)
+
+    def test_create_missing_business_name_400(self):
+        request = {**self.example_request}
+        del request["business_name"]
+        response = self.client.post(self.endpoint, request, format="json")
+        self.assertEqual(response.status_code, 400)
+
+    def test_list_unauthenticated_401(self):
+        response = self.client.get(self.endpoint)
+        self.assertEqual(response.status_code, 401)
+
+    def test_list_invalidcredentials_401(self):
+        User.objects.create_superuser("myuser", "myemail@test.com", "testpassword")
+        response = self.client.get(self.endpoint, headers=basic_auth_headers("myuser", "WRONGpassword"))
+        self.assertEqual(response.status_code, 401)
+
+    def test_list_200(self):
+        User.objects.create_superuser("myuser", "myemail@test.com", "testpassword")
+        PlaceSuggestion.objects.create(**self.example_request)
+        response = self.client.get(self.endpoint, headers=basic_auth_headers("myuser", "testpassword"))
+        self.assertEqual(response.status_code, 200)
+
+    def test_delete_one_unauthenticated_403(self):
+        suggestion = PlaceSuggestion.objects.create(**self.example_request)
+        response = self.client.delete(f"{self.endpoint}/{suggestion.pk}")
+        self.assertEqual(response.status_code, 401)
+        self.assertEqual(PlaceSuggestion.objects.count(), 1)
+
+    def test_delete_one_invalidcredentials_401(self):
+        User.objects.create_superuser("myuser", "myemail@test.com", "testpassword")
+        suggestion = PlaceSuggestion.objects.create(**self.example_request)
+        response = self.client.delete(
+            f"{self.endpoint}/{suggestion.pk}", headers=basic_auth_headers("myuser", "WRONGpassword")
+        )
+        self.assertEqual(response.status_code, 401)
+        self.assertEqual(PlaceSuggestion.objects.count(), 1)
+
+    def test_delete_one_authenticated_204(self):
+        User.objects.create_superuser("myuser", "myemail@test.com", "testpassword")
+        suggestion = PlaceSuggestion.objects.create(**self.example_request)
+        response = self.client.delete(
+            f"{self.endpoint}/{suggestion.pk}", headers=basic_auth_headers("myuser", "testpassword")
+        )
+        self.assertEqual(response.status_code, 204)
+        self.assertEqual(PlaceSuggestion.objects.count(), 0)
 
 
 class ReadableDateRangeTestCase(unittest.TestCase):

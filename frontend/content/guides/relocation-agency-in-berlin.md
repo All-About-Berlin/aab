@@ -31,6 +31,4 @@ A relocation agency can help you...
 
 {% tool "places-map", category="relocation-agencies" %}
 
-### Recommend a relocation agency
-
 {% tool "place-suggestion-form", category="relocation-agencies", static=True %}

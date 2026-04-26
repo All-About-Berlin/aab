@@ -1,0 +1,67 @@
+{
+  "places": [
+    {
+      "name": "Test Place Alpha",
+      "description": "Speaks English and German",
+      "website": "https://example.com/alpha",
+      "address": "Hauptstraße 1",
+      "latitude": "52.520008",
+      "longitude": "13.404954",
+      "googlePlaceId": "ChIJAAAAAAAAAARTest1",
+      "lastVerified": "2026-04-20",
+      "borough": "Mitte",
+      "suburb": "Mitte",
+      "quarter": "Alexanderplatzviertel",
+      "acceptsPublicHealthInsurance": true,
+      "recommended": true
+    },
+    {
+      "name": "Test Place Beta",
+      "website": "https://example.com/beta",
+      "address": "Kurfürstendamm 200",
+      "latitude": "52.503397",
+      "longitude": "13.294678",
+      "googlePlaceId": "ChIJAAAAAAAAAARTest2",
+      "lastVerified": "2026-04-20",
+      "borough": "Charlottenburg-Wilmersdorf",
+      "suburb": "Charlottenburg"
+    },
+    {
+      "name": "Test Place Gamma",
+      "description": "Open on weekends",
+      "website": "https://example.com/gamma",
+      "email": "gamma@example.com",
+      "address": "Sonnenallee 50",
+      "latitude": "52.479180",
+      "longitude": "13.440470",
+      "googlePlaceId": "ChIJAAAAAAAAAARTest3",
+      "lastVerified": "2026-04-20",
+      "borough": "Neukölln",
+      "suburb": "Neukölln",
+      "quarter": "Reuterkiez",
+      "acceptsPublicHealthInsurance": true
+    },
+    {
+      "name": "Test Place Delta",
+      "address": "Schönhauser Allee 80",
+      "latitude": "52.548330",
+      "longitude": "13.413530",
+      "googlePlaceId": "ChIJAAAAAAAAAARTest4",
+      "lastVerified": "2026-04-20",
+      "borough": "Pankow",
+      "suburb": "Prenzlauer Berg"
+    },
+    {
+      "name": "Test Place Epsilon",
+      "description": "Also speaks French",
+      "website": "https://example.com/epsilon",
+      "address": "Karl-Marx-Straße 100",
+      "latitude": "52.478000",
+      "longitude": "13.434000",
+      "googlePlaceId": "ChIJAAAAAAAAAARTest5",
+      "lastVerified": "2026-04-20",
+      "borough": "Neukölln",
+      "suburb": "Neukölln"
+    }
+  ]
+}

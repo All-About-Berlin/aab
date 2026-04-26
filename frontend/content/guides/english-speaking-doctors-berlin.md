@@ -28,8 +28,6 @@ The information on these websites can be inaccurate. Some doctors don't speak th
 
 Ask your health insurance too. [TK](/glossary/Techniker%20Krankenkasse) has a list of English-speaking doctors. They can even [book an appointment for you](https://www.tk.de/service/form/2028156/terminservice.form).
 
-### Recommend a doctor
-
 {% tool "place-suggestion-form", category="doctors", static=True %}
 
 ## Doctor hotlines

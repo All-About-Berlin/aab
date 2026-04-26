@@ -11,6 +11,4 @@ When you get a haircut, it's easier if the barber understands you. This is a lis
 
 {% tool "places-map", category="hairdressers" %}
 
-### Recommend a hair salon
-
 {% tool "place-suggestion-form", category="hairdressers", static=True %}

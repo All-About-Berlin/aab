@@ -13,8 +13,6 @@ In Berlin, most gynaecologists are booked for months. Male gynaecologists are so
 
 {% tool "places-map", category="gynecologists" %}
 
-### Recommend a gynaecologist
-
 {% tool "place-suggestion-form", category="gynecologists", static=True %}
 
 [^0]: [thaispicy.co](https://thaispicy.co/moving-to-germany-while-pregnant/)

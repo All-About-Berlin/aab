@@ -32,8 +32,6 @@ These directories help you find English-speaking psychiatrists:
 
 **[More resources and directories ➞](/guides/how-to-find-english-speaking-medical-professionals-in-berlin)**
 
-### Recommend a psychiatrist
-
 {% tool "place-suggestion-form", category="psychiatrists", static=True %}
 
 ### For an ADHD diagnosis

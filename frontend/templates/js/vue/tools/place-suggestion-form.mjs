@@ -145,7 +145,7 @@ export default {
 				Recommend a {{ categoryDisplay }}
 			</template>
 			<template v-if="stage === 'form'">
-				<h3 v-if="embedded">Recommend a {{ categoryDisplay }}</h3>
+				<h3 v-if="embedded || static">Recommend a {{ categoryDisplay }}</h3>
 				<div class="form-group">
 					<label :for="uid('businessName')">Business name</label>
 					<input
