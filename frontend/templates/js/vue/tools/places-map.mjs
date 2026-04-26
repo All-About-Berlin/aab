@@ -128,7 +128,7 @@ export default {
 			this.highlightPlaceOnMap(place);
 		},
 		highlightPlaceInList(place){
-			this.$refs[`place-${place.id}`][0].scrollIntoView({ block: 'start', behavior: 'auto' });
+			this.$refs[`place-${place.id}`][0].scrollIntoView({ block: 'nearest', behavior: 'auto' });
 		},
 		selectPlaceOnMap(place) {
 			this.togglePlaceSelected(place.id);
