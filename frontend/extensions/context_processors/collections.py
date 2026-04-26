@@ -39,6 +39,10 @@ class CollectionsProcessor(EntryContextProcessor):
 
     def process(self, context: Context, changed_files: set[Path] | None = None) -> Context:
         context = super().process(context, changed_files)
+
+        for entry_uri, entry in context["entries"].items():
+            entry.pop("collections", "")
+
         for collection in get_entries(context["entries"], "collections"):
             for entry_uri in entries_in_collection(collection):
                 context["entries"][entry_uri].setdefault("collections", [])
