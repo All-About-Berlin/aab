@@ -1781,11 +1781,7 @@ input[type=range] {
 
 .show-options, .hide-options{
     flex:0 0 100%;
-    align-self: center;
-    font-size: var(--f-s);
-    margin:0 auto;
-    display:block;
-    text-align:center;
+    font-size: var(--f-s)!important;
 }
     .show-options{
         @include expansible;
@@ -2311,7 +2307,7 @@ details{
         }
     }
 
-    .health-insurance-options .button {
+    .health-insurance-options button {
         padding: var(--l) var(--m);
 
         > div:first-child{
