@@ -320,9 +320,9 @@ export default {
 					:max="incomeInputRange.max"
 					tabindex="0">
 				<span class="range-suffix no-mobile no-print">€</span>
-				<a class="no-print" :class="showExtraQuestions ? 'hide-options' : 'show-options'" @click.prevent="toggleExtraQuestions" href="#">
+				<button class="button link no-print" :class="showExtraQuestions ? 'hide-options' : 'show-options'" @click.prevent="toggleExtraQuestions" href="#">
 					{{ showExtraQuestions ? 'Hide options' : 'Show options' }}
-				</a>
+				</button>
 			</div>
 			<template v-if="showExtraQuestions">
 				<div class="form-group show-errors">
