@@ -26,10 +26,12 @@ ctx = {}
 
 
 def _load_constants(path):
-    """Load constants from JSON, typecasting values and applying fail_on dates."""
+    """Load constants from YAML, typecasting values and applying fail_on dates."""
+    import yaml
+
     casters = {"int": int, "Decimal": Decimal}
     result = {}
-    for key, entry in json.loads(Path(path).read_text()).items():
+    for key, entry in yaml.safe_load(Path(path).read_text()).items():
         if key == "templates":
             continue
         value = casters.get(entry["type"], str)(entry["value"])
@@ -39,7 +41,7 @@ def _load_constants(path):
     return result
 
 
-ctx.update(_load_constants(Path(__file__).parent / "constants.json"))
+ctx.update(_load_constants(Path(__file__).parent / "constants.yaml"))
 
 # ==============================================================================
 # TAXES - Calculated values based on other constants

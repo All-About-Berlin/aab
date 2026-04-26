@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 """
 Linter that monitors external websites for changes to constants.
-Crawls URLs, extracts values via LLM, and updates constants.json directly.
+Crawls URLs, extracts values via LLM, and updates constants.yaml directly.
 """
 
 from datetime import date, timedelta
 from pathlib import Path
 from urllib.parse import urlparse
 from ursus.linters import Linter, LinterResult
-import json
 import logging
 import os
 import re
 import requests
 import time
+import yaml
 
 from bs4 import BeautifulSoup
 
@@ -166,8 +166,8 @@ class ConstantsLinter(Linter):
             return
         self._has_run = True
 
-        constants_path = Path(__file__).parents[2] / "constants.json"
-        data = json.loads(constants_path.read_text())
+        constants_path = Path(__file__).parents[2] / "constants.yaml"
+        data = yaml.safe_load(constants_path.read_text())
         templates = data.get("templates", {})
         constants = {k: v for k, v in data.items() if k != "templates"}
         modified = False
@@ -225,4 +225,6 @@ class ConstantsLinter(Linter):
 
         if modified:
             output = {"templates": templates, **constants}
-            constants_path.write_text(json.dumps(output, indent=2, ensure_ascii=False) + "\n")
+            constants_path.write_text(
+                yaml.dump(output, allow_unicode=True, default_flow_style=False, sort_keys=False, width=120)
+            )
