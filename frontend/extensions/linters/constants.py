@@ -169,7 +169,7 @@ class ConstantsLinter(Linter):
         constants_path = Path(__file__).parents[2] / "constants.yaml"
         data = yaml.safe_load(constants_path.read_text())
         templates = data.get("templates", {})
-        constants = {k: v for k, v in data.items() if k != "templates"}
+        constants = data.get("constants", {})
         modified = False
 
         for const_name in sorted(constants):
@@ -180,10 +180,12 @@ class ConstantsLinter(Linter):
 
             config = resolve_config(templates, monitor)
 
-            last_verified = monitor.get("lastVerified")
+            last_verified = monitor.get("last_verified")
             interval_days = parse_duration(config.get("every", "30d")).days
             if last_verified:
-                if (date.today() - date.fromisoformat(last_verified)).days < interval_days:
+                if isinstance(last_verified, str):
+                    last_verified = date.fromisoformat(last_verified)
+                if (date.today() - last_verified).days < interval_days:
                     continue
 
             url = config.get("url")
@@ -220,11 +222,11 @@ class ConstantsLinter(Linter):
                 yield None, f"{const_name}: {old_value} -> {new_value}", logging.WARNING
                 entry["value"] = new_value
 
-            monitor["lastVerified"] = date.today().isoformat()
+            monitor["last_verified"] = date.today()
             modified = True
 
         if modified:
-            output = {"templates": templates, **constants}
+            output = {"templates": templates, "constants": constants}
             constants_path.write_text(
                 yaml.dump(output, allow_unicode=True, default_flow_style=False, sort_keys=False, width=120)
             )

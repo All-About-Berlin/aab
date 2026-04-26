@@ -104,3 +104,26 @@ def get_public_holidays(years: Iterable[int]):
 
 def count_weekdays(dates: Iterable[date]) -> int:
     return len([d for d in dates if d.weekday() < 5])
+
+
+def load_constants_from_file(path) -> dict:
+    """Load constants from YAML, typecasting values and applying fail_on dates."""
+    import yaml
+    from pathlib import Path
+
+    result = {}
+    for key, entry in yaml.safe_load(Path(path).read_text())["constants"].items():
+        unit = entry.get("unit")
+        raw = entry["value"]
+        if unit == "euro":
+            value = Decimal(str(raw)).quantize(Decimal("0.01"))
+        elif unit == "percent":
+            value = Decimal(str(raw))
+        elif isinstance(raw, str):
+            value = Decimal(raw)
+        else:
+            value = raw
+        if "fail_on" in entry:
+            value = fail_on(str(entry["fail_on"]), value)
+        result[key] = value
+    return result

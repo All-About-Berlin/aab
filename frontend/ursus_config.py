@@ -6,6 +6,7 @@ from extensions.functions import (
     fail_on,
     get_public_holidays,
     glossary_groups,
+    load_constants_from_file,
     or_join,
     patched_slugify,
     random_id,
@@ -25,23 +26,7 @@ import json
 ctx = {}
 
 
-def _load_constants(path):
-    """Load constants from YAML, typecasting values and applying fail_on dates."""
-    import yaml
-
-    casters = {"int": int, "Decimal": Decimal}
-    result = {}
-    for key, entry in yaml.safe_load(Path(path).read_text()).items():
-        if key == "templates":
-            continue
-        value = casters.get(entry["type"], str)(entry["value"])
-        if "fail_on" in entry:
-            value = fail_on(entry["fail_on"], value)
-        result[key] = value
-    return result
-
-
-ctx.update(_load_constants(Path(__file__).parent / "constants.yaml"))
+ctx.update(load_constants_from_file(Path(__file__).parent / "constants.yaml"))
 
 # ==============================================================================
 # TAXES - Calculated values based on other constants
