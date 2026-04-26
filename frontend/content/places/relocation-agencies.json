@@ -65,8 +65,7 @@
       "googlePlaceId": "ChIJ_baj2MJQqEcR8rFiZB7WJ4E",
       "lastVerified": "2026-04-22",
       "borough": "Charlottenburg-Wilmersdorf",
-      "suburb": "Halensee",
-      "quarter": null
+      "suburb": "Halensee"
     },
     {
       "name": "relokate",
@@ -118,8 +117,7 @@
       "googlePlaceId": "ChIJreiFX8lRqEcRGIFGOhyNGEU",
       "lastVerified": "2026-04-22",
       "borough": "Mitte",
-      "suburb": "Mitte",
-      "quarter": null
+      "suburb": "Mitte"
     },
     {
       "name": "Impats",
@@ -131,8 +129,7 @@
       "googlePlaceId": "ChIJTcZOf4dOqEcRAP0GOt4y9mM",
       "lastVerified": "2026-04-22",
       "borough": "Lichtenberg",
-      "suburb": "Fennpfuhl",
-      "quarter": null
+      "suburb": "Fennpfuhl"
     },
     {
       "name": "von Wrede Relocation",

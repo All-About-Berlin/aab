@@ -38,8 +38,7 @@
       "googlePlaceId": "ChIJyRrxpEJUqEcRMK7fCd_jm9Y",
       "lastVerified": "2026-04-22",
       "borough": "Reinickendorf",
-      "suburb": "Tegel",
-      "quarter": null
+      "suburb": "Tegel"
     },
     {
       "name": "Dr. Köller",
@@ -65,8 +64,7 @@
       "googlePlaceId": "ChIJbWqLFNAjZUERMu6xdgVIhis",
       "lastVerified": "2026-04-22",
       "borough": "Mitte",
-      "suburb": "Hansaviertel",
-      "quarter": null
+      "suburb": "Hansaviertel"
     },
     {
       "name": "Dr. Gerhard Perchalla",
@@ -78,8 +76,7 @@
       "googlePlaceId": "ChIJYUQCoPxQqEcRPMsEB3808gk",
       "lastVerified": "2026-04-22",
       "borough": "Charlottenburg-Wilmersdorf",
-      "suburb": "Charlottenburg",
-      "quarter": null
+      "suburb": "Charlottenburg"
     },
     {
       "name": "Dr. Nikolaos Rigas",
@@ -92,8 +89,7 @@
       "googlePlaceId": "ChIJsfh4XOhQqEcRisNwSpNnZ34",
       "lastVerified": "2026-04-22",
       "borough": "Charlottenburg-Wilmersdorf",
-      "suburb": "Wilmersdorf",
-      "quarter": null
+      "suburb": "Wilmersdorf"
     },
     {
       "name": "Dr. Ole Georg Munkvold",
@@ -105,8 +101,7 @@
       "googlePlaceId": "ChIJTy9oZeZQqEcRepxNbrtZ_YA",
       "lastVerified": "2026-04-22",
       "borough": "Charlottenburg-Wilmersdorf",
-      "suburb": "Charlottenburg",
-      "quarter": null
+      "suburb": "Charlottenburg"
     },
     {
       "name": "Privatpraxis Dima Salloum",
@@ -134,8 +129,7 @@
       "googlePlaceId": "ChIJaRCCo69IqEcRqDkmtq3zmXo",
       "lastVerified": "2026-04-22",
       "borough": "Treptow-Köpenick",
-      "suburb": "Johannisthal",
-      "quarter": null
+      "suburb": "Johannisthal"
     },
     {
       "name": "Praxis Dr. Gerrit Scherf & Kollegen",
@@ -148,9 +142,7 @@
       "longitude": "13.035609",
       "googlePlaceId": "ChIJ8VBTwDT0qEcRL0h9GXBFVMw",
       "lastVerified": "2026-04-22",
-      "borough": null,
       "suburb": "Auf dem Kiewitt",
-      "quarter": null,
       "city": "Potsdam"
     },
     {

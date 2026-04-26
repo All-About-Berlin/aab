@@ -10,8 +10,7 @@
       "googlePlaceId": "ChIJdWE4U3hTqEcR_yPkvGZvFsU",
       "lastVerified": "2026-04-22",
       "borough": "Reinickendorf",
-      "suburb": "Wittenau",
-      "quarter": null
+      "suburb": "Wittenau"
     },
     {
       "name": "Fahrschule Oscar",
@@ -23,8 +22,7 @@
       "googlePlaceId": "ChIJuSTm5G9QqEcR_OQvwfdHMRQ",
       "lastVerified": "2026-04-22",
       "borough": "Tempelhof-Schöneberg",
-      "suburb": "Schöneberg",
-      "quarter": null
+      "suburb": "Schöneberg"
     },
     {
       "name": "Fahrschule Asphalt Profis",
@@ -50,8 +48,7 @@
       "googlePlaceId": "ChIJiy992fxPqEcR51Ux3BYhdgE",
       "lastVerified": "2026-04-22",
       "borough": "Tempelhof-Schöneberg",
-      "suburb": "Tempelhof",
-      "quarter": null
+      "suburb": "Tempelhof"
     },
     {
       "name": "Fahrschule Aktiv",
@@ -89,8 +86,7 @@
       "googlePlaceId": "ChIJZ-2Egi9SqEcRD23O5VhKYV8",
       "lastVerified": "2026-04-22",
       "borough": "Mitte",
-      "suburb": "Gesundbrunnen",
-      "quarter": null
+      "suburb": "Gesundbrunnen"
     },
     {
       "name": "Kiez-Fahrschule Frenzel",
@@ -164,8 +160,7 @@
       "googlePlaceId": "ChIJi-MbE6RPqEcRYrCbYn_6Kks",
       "lastVerified": "2026-04-22",
       "borough": "Neukölln",
-      "suburb": "Neukölln",
-      "quarter": null
+      "suburb": "Neukölln"
     },
     {
       "name": "Fahrschule Prima",
@@ -178,8 +173,7 @@
       "googlePlaceId": "ChIJq47PJSFQqEcRtqcVwtnRGw4",
       "lastVerified": "2026-04-22",
       "borough": "Friedrichshain-Kreuzberg",
-      "suburb": "Kreuzberg",
-      "quarter": null
+      "suburb": "Kreuzberg"
     }
   ]
 }

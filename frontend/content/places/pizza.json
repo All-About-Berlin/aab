@@ -36,8 +36,7 @@
       "googlePlaceId": "ChIJTVvF5DFaqEcR5gGOFqKOFBU",
       "lastVerified": "2026-04-22",
       "borough": "Steglitz-Zehlendorf",
-      "suburb": "Zehlendorf",
-      "quarter": null
+      "suburb": "Zehlendorf"
     },
     {
       "name": "Manhattan Pizza",
@@ -49,8 +48,7 @@
       "googlePlaceId": "ChIJ_U3hTYVaqEcRZpawkdHS8vQ",
       "lastVerified": "2026-04-22",
       "borough": "Steglitz-Zehlendorf",
-      "suburb": "Steglitz",
-      "quarter": null
+      "suburb": "Steglitz"
     }
   ]
 }

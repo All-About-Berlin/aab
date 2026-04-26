@@ -12,8 +12,7 @@
       "googlePlaceId": "ChIJPVgC10xQqEcRCUHzUIB-Jnc",
       "lastVerified": "2026-04-22",
       "borough": "Mitte",
-      "suburb": "Tiergarten",
-      "quarter": null
+      "suburb": "Tiergarten"
     },
     {
       "name": "Psychotherapie Blagec",
@@ -28,8 +27,7 @@
       "status": "CLOSED_TEMPORARILY",
       "lastVerified": "2026-04-22",
       "borough": "Charlottenburg-Wilmersdorf",
-      "suburb": "Charlottenburg",
-      "quarter": null
+      "suburb": "Charlottenburg"
     },
     {
       "name": "Julia Bellabarba",
@@ -113,8 +111,7 @@
       "googlePlaceId": "ChIJG6gGSn9QqEcRBVIZIsfphYo",
       "lastVerified": "2026-04-22",
       "borough": "Tempelhof-Schöneberg",
-      "suburb": "Friedenau",
-      "quarter": null
+      "suburb": "Friedenau"
     },
     {
       "name": "Dipl.-Psych. Heidi Hooper Amri",
@@ -213,8 +210,7 @@
       "googlePlaceId": "ChIJk9PlUb1PqEcRj0lnuPjkNmE",
       "lastVerified": "2026-04-22",
       "borough": "Neukölln",
-      "suburb": "Neukölln",
-      "quarter": null
+      "suburb": "Neukölln"
     },
     {
       "name": "Dipl.-Psych. Jana Harthauß",
@@ -226,8 +222,7 @@
       "googlePlaceId": "ChIJqY4AH_lJqEcRowM1crFgnYg",
       "lastVerified": "2026-04-22",
       "borough": "Treptow-Köpenick",
-      "suburb": "Oberschöneweide",
-      "quarter": null
+      "suburb": "Oberschöneweide"
     },
     {
       "name": "Sandra Cotta",
@@ -298,8 +293,7 @@
       "googlePlaceId": "ChIJI41afedRqEcRAm3Y7Q-ragY",
       "lastVerified": "2026-04-22",
       "borough": "Pankow",
-      "suburb": "Prenzlauer Berg",
-      "quarter": null
+      "suburb": "Prenzlauer Berg"
     },
     {
       "name": "360° Psychotherapie",
@@ -342,8 +336,7 @@
       "googlePlaceId": "ChIJac-UbIBOqEcRKy0ICJoQlBE",
       "lastVerified": "2026-04-22",
       "borough": "Lichtenberg",
-      "suburb": "Alt-Hohenschönhausen",
-      "quarter": null
+      "suburb": "Alt-Hohenschönhausen"
     },
     {
       "name": "Katie Knight",
@@ -356,8 +349,7 @@
       "googlePlaceId": "ChIJ3UJDP_dRqEcRAZh0m3X-Q2U",
       "lastVerified": "2026-04-22",
       "borough": "Mitte",
-      "suburb": "Gesundbrunnen",
-      "quarter": null
+      "suburb": "Gesundbrunnen"
     },
     {
       "name": "Philip Sheldon",
@@ -371,8 +363,7 @@
       "googlePlaceId": "ChIJOZ0sXblPqEcRCD_WTJRpLFA",
       "lastVerified": "2026-04-22",
       "borough": "Treptow-Köpenick",
-      "suburb": "Baumschulenweg",
-      "quarter": null
+      "suburb": "Baumschulenweg"
     },
     {
       "name": "Dipl.-Psych. Kristina Oelschläger",
@@ -414,9 +405,7 @@
       "longitude": "13.245767",
       "googlePlaceId": "ChIJYQP_yK9bqEcRV_ymuwGgA9c",
       "lastVerified": "2026-04-22",
-      "borough": null,
-      "suburb": "Lehnitz",
-      "quarter": null
+      "suburb": "Lehnitz"
     },
     {
       "name": "Johannes Mittermair",
@@ -503,8 +492,7 @@
       "googlePlaceId": "ChIJ974FWJ1TqEcROvyUIIflpLY",
       "lastVerified": "2026-04-22",
       "borough": "Pankow",
-      "suburb": "Niederschönhausen",
-      "quarter": null
+      "suburb": "Niederschönhausen"
     },
     {
       "name": "M.Sc. Berenike Franzen",
@@ -547,8 +535,7 @@
       "googlePlaceId": "ChIJRyorldpRqEcRdAyC6fVFVtM",
       "lastVerified": "2026-04-22",
       "borough": "Tempelhof-Schöneberg",
-      "suburb": "Friedenau",
-      "quarter": null
+      "suburb": "Friedenau"
     },
     {
       "name": "Archana Golla",
@@ -562,8 +549,7 @@
       "googlePlaceId": "ChIJI64Ds6ZRqEcR1OAYEoCtyVQ",
       "lastVerified": "2026-04-22",
       "borough": "Mitte",
-      "suburb": "Moabit",
-      "quarter": null
+      "suburb": "Moabit"
     },
     {
       "name": "Dr. Lazaros Giousmpasis",
@@ -577,8 +563,7 @@
       "googlePlaceId": "ChIJ08uUXUNRqEcRF00ja-YJxwY",
       "lastVerified": "2026-04-22",
       "borough": "Charlottenburg-Wilmersdorf",
-      "suburb": "Grunewald",
-      "quarter": null
+      "suburb": "Grunewald"
     },
     {
       "name": "Dr. Dirk Stemper",
@@ -592,8 +577,7 @@
       "googlePlaceId": "ChIJ78EDLcZRqEcRzYWybeWpBUY",
       "lastVerified": "2026-04-22",
       "borough": "Charlottenburg-Wilmersdorf",
-      "suburb": "Grunewald",
-      "quarter": null
+      "suburb": "Grunewald"
     },
     {
       "name": "Dipl.-Psych. Christiane Köhler",
@@ -695,8 +679,7 @@
       "googlePlaceId": "ChIJF0ekaYxTqEcRqrA3A4zo0tU",
       "lastVerified": "2026-04-22",
       "borough": "Pankow",
-      "suburb": "Prenzlauer Berg",
-      "quarter": null
+      "suburb": "Prenzlauer Berg"
     },
     {
       "name": "Dr. med Kai Gutzeit",
@@ -784,8 +767,7 @@
       "googlePlaceId": "ChIJVd_IscdTqEcRPMO-EzlB4eM",
       "lastVerified": "2026-04-22",
       "borough": "Pankow",
-      "suburb": "Pankow",
-      "quarter": null
+      "suburb": "Pankow"
     },
     {
       "name": "Dipl.-Psych. Katja Rück",
@@ -799,8 +781,7 @@
       "googlePlaceId": "ChIJKz2yHLVPqEcRzPSsIFh6T5Y",
       "lastVerified": "2026-04-22",
       "borough": "Tempelhof-Schöneberg",
-      "suburb": "Friedenau",
-      "quarter": null
+      "suburb": "Friedenau"
     },
     {
       "name": "Ottoline Hart",
@@ -900,8 +881,7 @@
       "googlePlaceId": "ChIJryOnR91RqEcRzjxzuM3IGxA",
       "lastVerified": "2026-04-22",
       "borough": "Mitte",
-      "suburb": "Tiergarten",
-      "quarter": null
+      "suburb": "Tiergarten"
     },
     {
       "name": "Dr. Viola Kappel & Kollegen",
@@ -942,9 +922,7 @@
       "googlePlaceId": "ChIJB4T69ypZqEcRsvWbkWcbeNM",
       "acceptsPublicHealthInsurance": false,
       "lastVerified": "2026-04-22",
-      "borough": null,
-      "suburb": "Kladow",
-      "quarter": null
+      "suburb": "Kladow"
     },
     {
       "name": "Dipl.-Psych. Mathias Funke, Psychotherapist",
@@ -972,8 +950,7 @@
       "googlePlaceId": "ChIJS_pCzbRbqEcRgiTHrj0CZ18",
       "lastVerified": "2026-04-22",
       "borough": "Steglitz-Zehlendorf",
-      "suburb": "Zehlendorf",
-      "quarter": null
+      "suburb": "Zehlendorf"
     },
     {
       "name": "International Psychotherapy Berlin",
@@ -1016,8 +993,7 @@
       "acceptsPublicHealthInsurance": true,
       "lastVerified": "2026-04-22",
       "borough": "Reinickendorf",
-      "suburb": "Reinickendorf",
-      "quarter": null
+      "suburb": "Reinickendorf"
     },
     {
       "name": "BOJE Beratung Ole Jaeckel-Engler",
@@ -1176,8 +1152,7 @@
       "googlePlaceId": "ChIJwwjPBitPqEcR8tTBsTSXJus",
       "lastVerified": "2026-04-22",
       "borough": "Mitte",
-      "suburb": "Mitte",
-      "quarter": null
+      "suburb": "Mitte"
     }
   ]
 }

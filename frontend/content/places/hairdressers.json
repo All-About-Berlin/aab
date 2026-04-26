@@ -72,8 +72,7 @@
       "googlePlaceId": "ChIJ7-jmXflQqEcRAfMJdpdbjto",
       "lastVerified": "2026-04-22",
       "borough": "Charlottenburg-Wilmersdorf",
-      "suburb": "Charlottenburg",
-      "quarter": null
+      "suburb": "Charlottenburg"
     },
     {
       "name": "MAOC (Modern Art of Cutting) Hair",
@@ -170,8 +169,7 @@
       "googlePlaceId": "ChIJsZIgZNhPqEcR0CyirGxmrlk",
       "lastVerified": "2026-04-22",
       "borough": "Friedrichshain-Kreuzberg",
-      "suburb": "Kreuzberg",
-      "quarter": null
+      "suburb": "Kreuzberg"
     },
     {
       "name": "The Banana'd Bouffant",
@@ -183,8 +181,7 @@
       "googlePlaceId": "ChIJT8Z9ty9QqEcRbQR43aIgpIk",
       "lastVerified": "2026-04-22",
       "borough": "Friedrichshain-Kreuzberg",
-      "suburb": "Kreuzberg",
-      "quarter": null
+      "suburb": "Kreuzberg"
     },
     {
       "name": "Friseur Viktor Leske Mitte",
@@ -232,8 +229,7 @@
       "googlePlaceId": "ChIJn3s1SgdOqEcR30AlIauYIhM",
       "lastVerified": "2026-04-22",
       "borough": "Pankow",
-      "suburb": "Prenzlauer Berg",
-      "quarter": null
+      "suburb": "Prenzlauer Berg"
     },
     {
       "name": "Friseur Bernd Kramer Hairdesign",
@@ -362,8 +358,7 @@
       "googlePlaceId": "ChIJB9KL-cVRqEcRdBAcUXyA5V8",
       "lastVerified": "2026-04-22",
       "borough": "Charlottenburg-Wilmersdorf",
-      "suburb": "Charlottenburg",
-      "quarter": null
+      "suburb": "Charlottenburg"
     },
     {
       "name": "Salone39",
@@ -412,8 +407,7 @@
       "googlePlaceId": "ChIJqw_YkTVTqEcR8a-YMM9hDNA",
       "lastVerified": "2026-04-22",
       "borough": "Mitte",
-      "suburb": "Moabit",
-      "quarter": null
+      "suburb": "Moabit"
     },
     {
       "name": "Mado barber shop",
@@ -425,8 +419,7 @@
       "googlePlaceId": "ChIJlQGhf2NNqEcRVm7RjvUXxZA",
       "lastVerified": "2026-04-22",
       "borough": "Pankow",
-      "suburb": "Prenzlauer Berg",
-      "quarter": null
+      "suburb": "Prenzlauer Berg"
     },
     {
       "name": "Berlin Barbers Charlottenburg",
@@ -501,9 +494,7 @@
       "longitude": "2.349591",
       "googlePlaceId": "ChIJebN16Rlu5kcRFwINZ8mm2uk",
       "lastVerified": "2026-04-22",
-      "borough": null,
       "suburb": "Paris 2e Arrondissement",
-      "quarter": null,
       "city": "Paris"
     },
     {
@@ -529,8 +520,7 @@
       "googlePlaceId": "ChIJLaDLwc9RqEcRTNXDCWcHZb0",
       "lastVerified": "2026-04-22",
       "borough": "Charlottenburg-Wilmersdorf",
-      "suburb": "Charlottenburg",
-      "quarter": null
+      "suburb": "Charlottenburg"
     }
   ]
 }

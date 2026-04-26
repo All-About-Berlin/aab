@@ -82,8 +82,7 @@
       "googlePlaceId": "ChIJB2xsasFQqEcREXV7F59rD7Q",
       "lastVerified": "2026-04-22",
       "borough": "Charlottenburg-Wilmersdorf",
-      "suburb": "Halensee",
-      "quarter": null
+      "suburb": "Halensee"
     },
     {
       "name": "Martina Schreen Allgemeinmedizin Hausarzt Berlin",
@@ -147,8 +146,7 @@
       "googlePlaceId": "ChIJqXX9OftQqEcRRDvBsV2zgs8",
       "lastVerified": "2026-04-22",
       "borough": "Charlottenburg-Wilmersdorf",
-      "suburb": "Charlottenburg",
-      "quarter": null
+      "suburb": "Charlottenburg"
     },
     {
       "name": "Dr. Christopher Marchand",
@@ -200,8 +198,7 @@
       "googlePlaceId": "ChIJyRZEwdNRqEcRu3DO-uONcdI",
       "lastVerified": "2026-04-22",
       "borough": "Mitte",
-      "suburb": "Mitte",
-      "quarter": null
+      "suburb": "Mitte"
     },
     {
       "name": "Praxis für Allgemeinmedizin Stephanie Moore",
@@ -250,8 +247,7 @@
       "googlePlaceId": "ChIJ__870OJQqEcRJ-gJYjgKaXM",
       "lastVerified": "2026-04-22",
       "borough": "Charlottenburg-Wilmersdorf",
-      "suburb": "Charlottenburg",
-      "quarter": null
+      "suburb": "Charlottenburg"
     },
     {
       "name": "Ärzte Zentrum Köpenick",
@@ -315,7 +311,6 @@
       "longitude": "13.200443",
       "googlePlaceId": "ChIJM1OK8xRWqEcR2A2L0_0CnI0",
       "lastVerified": "2026-04-22",
-      "borough": null,
       "suburb": "Spandau",
       "quarter": "Neustadt"
     },
@@ -329,8 +324,7 @@
       "googlePlaceId": "ChIJGwZnL1dQqEcRoGSfz2j35R8",
       "lastVerified": "2026-04-22",
       "borough": "Tempelhof-Schöneberg",
-      "suburb": "Schöneberg",
-      "quarter": null
+      "suburb": "Schöneberg"
     },
     {
       "name": "Dr. med. Julia Ertl",

@@ -9,8 +9,7 @@
       "googlePlaceId": "ChIJ-wBLKBlOqEcRq2t0vHy6S8s",
       "lastVerified": "2026-04-22",
       "borough": "Mitte",
-      "suburb": "Mitte",
-      "quarter": null
+      "suburb": "Mitte"
     },
     {
       "name": "FitX Fitnessstudio Hellersdorf",
@@ -57,8 +56,7 @@
       "googlePlaceId": "ChIJA-m4LVdFqEcRKLzbJCpa2g0",
       "lastVerified": "2026-04-22",
       "borough": "Tempelhof-Schöneberg",
-      "suburb": "Mariendorf",
-      "quarter": null
+      "suburb": "Mariendorf"
     },
     {
       "name": "FitX Fitnessstudio Waidmannslust",
@@ -69,8 +67,7 @@
       "googlePlaceId": "ChIJIwhoXZ1UqEcRxU3Kj70nX2Y",
       "lastVerified": "2026-04-22",
       "borough": "Reinickendorf",
-      "suburb": "Waidmannslust",
-      "quarter": null
+      "suburb": "Waidmannslust"
     },
     {
       "name": "FitX Fitnessstudio Wilmersdorf",
@@ -82,8 +79,7 @@
       "status": "CLOSED_TEMPORARILY",
       "lastVerified": "2026-04-22",
       "borough": "Charlottenburg-Wilmersdorf",
-      "suburb": "Wilmersdorf",
-      "quarter": null
+      "suburb": "Wilmersdorf"
     },
     {
       "name": "JOHN REED Fitness Kreuzberg",
@@ -130,8 +126,7 @@
       "googlePlaceId": "ChIJG2BavFVQqEcR4l1NW1XMvHY",
       "lastVerified": "2026-04-22",
       "borough": "Charlottenburg-Wilmersdorf",
-      "suburb": "Schöneberg",
-      "quarter": null
+      "suburb": "Schöneberg"
     },
     {
       "name": "McFIT Fitnessstudio Heinersdorf",
@@ -142,8 +137,7 @@
       "googlePlaceId": "ChIJtWXu_I1NqEcRAX48yTpM1r0",
       "lastVerified": "2026-04-22",
       "borough": "Pankow",
-      "suburb": "Heinersdorf",
-      "quarter": null
+      "suburb": "Heinersdorf"
     },
     {
       "name": "McFIT Fitnessstudio Hohenschönhausen",
@@ -154,8 +148,7 @@
       "googlePlaceId": "ChIJ914nWdVNqEcRwQk1hQVD52g",
       "lastVerified": "2026-04-22",
       "borough": "Lichtenberg",
-      "suburb": "Alt-Hohenschönhausen",
-      "quarter": null
+      "suburb": "Alt-Hohenschönhausen"
     },
     {
       "name": "McFIT Fitnessstudio Lichtenberg",
@@ -166,8 +159,7 @@
       "googlePlaceId": "ChIJ81tm7pdOqEcRIV9FFa9UACc",
       "lastVerified": "2026-04-22",
       "borough": "Lichtenberg",
-      "suburb": "Lichtenberg",
-      "quarter": null
+      "suburb": "Lichtenberg"
     },
     {
       "name": "McFIT Fitnessstudio Lichterfelde",
@@ -190,8 +182,7 @@
       "googlePlaceId": "ChIJ2QJmKpJJqEcRlNWkX-ZtBXE",
       "lastVerified": "2026-04-22",
       "borough": "Marzahn-Hellersdorf",
-      "suburb": "Mahlsdorf",
-      "quarter": null
+      "suburb": "Mahlsdorf"
     },
     {
       "name": "McFit gym Berlin Marienfelde",
@@ -202,8 +193,7 @@
       "googlePlaceId": "ChIJde5x6zBFqEcRwLhmg92-s_Y",
       "lastVerified": "2026-04-22",
       "borough": "Tempelhof-Schöneberg",
-      "suburb": "Mariendorf",
-      "quarter": null
+      "suburb": "Mariendorf"
     },
     {
       "name": "McFIT Fitnessstudio Marzahn",
@@ -238,8 +228,7 @@
       "googlePlaceId": "ChIJ00bGqUtPqEcRCJMlVi46kNU",
       "lastVerified": "2026-04-22",
       "borough": "Treptow-Köpenick",
-      "suburb": "Niederschöneweide",
-      "quarter": null
+      "suburb": "Niederschöneweide"
     },
     {
       "name": "McFIT Fitnessstudio Neukölln",
@@ -250,8 +239,7 @@
       "googlePlaceId": "ChIJ_wOt9X9FqEcRA7GzEzoFRw0",
       "lastVerified": "2026-04-22",
       "borough": "Neukölln",
-      "suburb": "Britz",
-      "quarter": null
+      "suburb": "Britz"
     },
     {
       "name": "McFit gym Berlin Reinickendorf",
@@ -273,9 +261,7 @@
       "longitude": "13.227496",
       "googlePlaceId": "ChIJidksPF9WqEcRJul0BRo5tW8",
       "lastVerified": "2026-04-22",
-      "borough": null,
-      "suburb": "Haselhorst",
-      "quarter": null
+      "suburb": "Haselhorst"
     },
     {
       "name": "McFit gym Berlin Spandau Klosterfelde",
@@ -285,7 +271,6 @@
       "longitude": "13.187704",
       "googlePlaceId": "ChIJpZLzMzdWqEcRFiYXI6EasUs",
       "lastVerified": "2026-04-22",
-      "borough": null,
       "suburb": "Spandau",
       "quarter": "Klosterfelde"
     },
@@ -298,8 +283,7 @@
       "googlePlaceId": "ChIJdyZ2ZQNQqEcROhRoE0Qx1v4",
       "lastVerified": "2026-04-22",
       "borough": "Tempelhof-Schöneberg",
-      "suburb": "Tempelhof",
-      "quarter": null
+      "suburb": "Tempelhof"
     },
     {
       "name": "McFit gym Berlin Wedding",
@@ -334,8 +318,7 @@
       "googlePlaceId": "ChIJnRLk2AZRqEcRRJfMw1nL1s8",
       "lastVerified": "2026-04-22",
       "borough": "Charlottenburg-Wilmersdorf",
-      "suburb": "Charlottenburg",
-      "quarter": null
+      "suburb": "Charlottenburg"
     },
     {
       "name": "SuperFit Europa-Center",
@@ -346,8 +329,7 @@
       "googlePlaceId": "ChIJky6YnVVQqEcRKxPUjz9px8c",
       "lastVerified": "2026-04-22",
       "borough": "Charlottenburg-Wilmersdorf",
-      "suburb": "Charlottenburg",
-      "quarter": null
+      "suburb": "Charlottenburg"
     },
     {
       "name": "SuperFit Friedrichshain",
@@ -394,8 +376,7 @@
       "googlePlaceId": "ChIJYdKLpWlUqEcRE7e4HfI0vV4",
       "lastVerified": "2026-04-22",
       "borough": "Reinickendorf",
-      "suburb": "Tegel",
-      "quarter": null
+      "suburb": "Tegel"
     },
     {
       "name": "SuperFit Steglitz",
@@ -406,8 +387,7 @@
       "googlePlaceId": "ChIJ23SqdIJaqEcR6Y2dRu0JiRw",
       "lastVerified": "2026-04-22",
       "borough": "Steglitz-Zehlendorf",
-      "suburb": "Steglitz",
-      "quarter": null
+      "suburb": "Steglitz"
     },
     {
       "name": "Sqwod Pod",
