@@ -1,37 +1,3 @@
-templates:
-  default:
-    crawler: html
-    delay: 1s
-    every: 30d
-  buzer:
-    extends: default
-    url: https://www.buzer.de/{section}_{law}.htm
-    css_selector: .arttext
-    subsection: the supplied text
-    prompt: 'You will get the text of § {section} {law}. Using only {subsection}, return {desired_value}.
-
-      Format whole numbers as an integer. Format decimal numbers as floats. Leave out trailing zeroes.
-
-      Examples:
-
-      - ''1 234'' -> ''1234''
-
-      - ''1.234,5'' -> ''1234.5''
-
-      - ''123,0'' -> ''123'' (remove unneeded decimals)
-
-      - ''1 234,56'' -> ''1234.56''
-
-      Ignore all information outside of {subsection}. Only return one value. Do not add or concatenate multiple values.
-
-      If the requested value is not in {subsection}, only return "ERROR".'
-  zusatzbeitrag:
-    extends: default
-    url: https://www.krankenkassen.de/gesetzliche-krankenkassen/krankenkasse-beitrag/zusatzbeitrag/
-    css_selector: '#content table'
-    prompt: Read this table. Return the latest Zusatzbeitrag for {insurer} as a percentage (in the leftmost column). Return
-      only the percentage, without rounding, without percent signs and without thousands separators. For decimal values, use
-      a dot as the decimal mark. If the value is not in this table, only return 'ERROR'.
 constants:
   MINIMUM_WAGE:
     value: 13.9
@@ -959,3 +925,37 @@ constants:
     unit: euro
     description: Estimated lawyer hourly rate (€/h)
     fail_on: 2026-12-31
+templates:
+  default:
+    crawler: html
+    delay: 1s
+    every: 30d
+  buzer:
+    template: default
+    url: https://www.buzer.de/{section}_{law}.htm
+    css_selector: .arttext
+    subsection: the supplied text
+    prompt: 'You will get the text of § {section} {law}. Using only {subsection}, return {desired_value}.
+
+      Format whole numbers as an integer. Format decimal numbers as floats. Leave out trailing zeroes.
+
+      Examples:
+
+      - ''1 234'' -> ''1234''
+
+      - ''1.234,5'' -> ''1234.5''
+
+      - ''123,0'' -> ''123'' (remove unneeded decimals)
+
+      - ''1 234,56'' -> ''1234.56''
+
+      Ignore all information outside of {subsection}. Only return one value. Do not add or concatenate multiple values.
+
+      If the requested value is not in {subsection}, only return "ERROR".'
+  zusatzbeitrag:
+    template: default
+    url: https://www.krankenkassen.de/gesetzliche-krankenkassen/krankenkasse-beitrag/zusatzbeitrag/
+    css_selector: '#content table'
+    prompt: Read this table. Return the latest Zusatzbeitrag for {insurer} as a percentage (in the leftmost column). Return
+      only the percentage, without rounding, without percent signs and without thousands separators. For decimal values, use
+      a dot as the decimal mark. If the value is not in this table, only return 'ERROR'.

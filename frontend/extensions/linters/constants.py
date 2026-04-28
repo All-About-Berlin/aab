@@ -1,88 +1,141 @@
 #!/usr/bin/env python3
 """
-Linter that monitors external websites for changes to constants.
-Crawls URLs, extracts values via LLM, and updates constants.yaml directly.
+Regularly verifies and updates constants in constants.yaml
 """
 
+from typing import Any
+from bs4 import BeautifulSoup
+from dataclasses import dataclass, field
 from datetime import date, timedelta
+from decimal import Decimal, InvalidOperation
 from pathlib import Path
 from urllib.parse import urlparse
+from ursus.config import config
 from ursus.linters import Linter, LinterResult
 import logging
-import os
 import re
 import requests
 import time
 import yaml
 
-from bs4 import BeautifulSoup
 
-log = logging.getLogger(__name__)
-
-USER_AGENT = "AllAboutBerlin-Monitor/1.0 (+https://allaboutberlin.com)"
-OPENAI_MODEL = "gpt-4.1-mini"
-
-_DURATION_RE = re.compile(r"(\d+)\s*([smhdw])")
+@dataclass
+class MonitorConfig:
+    url: str
+    crawler: str = "html"
+    css_selector: str | None = None
+    prompt: str | None = None
+    delay: str = "1s"
+    every: str = "30d"
+    last_verified: date | None = None
+    extra_attributes: dict[str, Any] = field(default_factory=dict)
 
 
 def parse_duration(duration_str: str) -> timedelta:
-    matches = _DURATION_RE.findall(duration_str.strip().lower())
-    if not matches:
+    """
+    Time delta from a duration like "4w5d15m30s"
+    """
+    duration_matches = re.compile(r"(\d+)\s*([smhdw])").findall(duration_str.strip().lower())
+    if not duration_matches:
         raise ValueError(f"Invalid duration: {duration_str}")
     units = {"s": "seconds", "m": "minutes", "h": "hours", "d": "days", "w": "weeks"}
-    return timedelta(**{units[u]: int(v) for v, u in matches})
+    return timedelta(**{units[u]: int(v) for v, u in duration_matches})
 
 
-def resolve_template(templates: dict, template_name: str, _seen: set | None = None) -> dict:
-    if _seen is None:
-        _seen = set()
-    if template_name in _seen:
-        raise ValueError(f"Circular template inheritance: {template_name}")
-    _seen.add(template_name)
+def recrawl_needed(every: str, last_verified: date | None) -> bool:
+    """
+    Accepts named intervals (every "quarter", "month", "day" or "week") or
+    durations (every "30d" or "4w5d15m30s")
+    """
+    if not last_verified:
+        return True
 
-    if template_name not in templates:
-        raise ValueError(f"Template '{template_name}' not found")
-    template = templates[template_name]
-    parent_name = template.get("extends")
-    if parent_name:
-        parent = resolve_template(templates, parent_name, _seen)
-        return {**parent, **{k: v for k, v in template.items() if k != "extends"}}
-    return {k: v for k, v in template.items() if k != "extends"}
+    today = date.today()
+    if every == "day":
+        return last_verified < today
+    if every == "week":
+        return last_verified.strftime("%G-W%V") < today.strftime("%G-W%V")
+    if every == "month":
+        return last_verified.strftime("%Y-%m") < today.strftime("%Y-%m")
+    if every == "quarter":
+        last_verified_quarter = f"{last_verified.year}-Q{(last_verified.month - 1) // 3 + 1}"  # "2026-Q2"
+        current_quarter = f"{today.year}-Q{(today.month - 1) // 3 + 1}"
+        return last_verified_quarter < current_quarter
+    if every == "year":
+        return last_verified.year < today.year
+    return today - last_verified >= parse_duration(every)
 
 
-def resolve_placeholders(merged: dict) -> dict:
+def parse_value(value: str, unit: str | None) -> Any:
+    try:
+        if unit == "euro":
+            return Decimal(value).quantize(Decimal("0.01"))
+        elif unit == "percent" or unit == "decimal":
+            return Decimal(value)
+        elif unit == "integer":
+            return int(value)
+        else:
+            return value
+    except (ValueError, InvalidOperation):
+        raise ValueError(f"Cannot parse {unit} value: {value!r}")
+
+
+def resolve_template(templates: dict, template_name: str) -> dict:
+    """
+    MonitorConfigs can inherit values from a template. Templates can also have parent templates.
+    """
+    try:
+        resolved_template = {**templates[template_name]}
+    except KeyError as e:
+        raise ValueError(f"Template does not exist: {template_name}") from e
+
+    if parent_template_name := resolved_template.get("template"):
+        parent_template = resolve_template(templates, parent_template_name)
+        resolved_template = {**parent_template, **resolved_template}
+    return resolved_template
+
+
+def resolve_placeholders(monitor_config: dict) -> dict:
+    """
+    String values in monitor configs can contain placeholders which are other monitor config values:
+
+    For example:
+        prompt: "hello {name}",
+        name: "John"
+    """
     resolved = {}
-    for key, value in merged.items():
+    for key, value in monitor_config.items():
         if isinstance(value, str):
-            resolved[key] = value.format_map(merged)
+            resolved[key] = value.format_map(monitor_config)
         else:
             resolved[key] = value
     return resolved
 
 
-def resolve_config(templates: dict, monitor: dict) -> dict:
-    template_name = monitor.get("template")
-    if template_name:
-        template = resolve_template(templates, template_name)
-        merged = {**template, **{k: v for k, v in monitor.items() if k != "template"}}
-    else:
-        merged = dict(monitor)
-    return resolve_placeholders(merged)
+def resolve_monitor_config(templates: dict, monitor_config: dict | None) -> MonitorConfig | None:
+    if not monitor_config:
+        return None
+
+    template_name = monitor_config.get("template")
+    config_from_template = resolve_template(templates, template_name) if template_name else {}
+    resolved_config = {**config_from_template, **monitor_config}
+
+    resolved_config = resolve_placeholders(resolved_config)
+    return MonitorConfig(**resolved_config)
 
 
 def query_llm(name: str, system_prompt: str, user_message: str) -> str:
-    api_key = os.environ.get("OPENAI_API_KEY")
-    if not api_key:
-        raise RuntimeError("OPENAI_API_KEY environment variable is not set")
+    if not config.openai_api_key:
+        raise ValueError("config.openai_api_key is not set")
 
     response = requests.post(
         "https://api.openai.com/v1/chat/completions",
         headers={
-            "Authorization": f"Bearer {api_key}",
+            "Authorization": f"Bearer {config.openai_api_key}",
             "Content-Type": "application/json",
         },
         json={
-            "model": OPENAI_MODEL,
+            "model": "gpt-4.1-mini",
             "messages": [
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_message},
@@ -92,22 +145,25 @@ def query_llm(name: str, system_prompt: str, user_message: str) -> str:
     )
     response.raise_for_status()
     result = response.json()["choices"][0]["message"]["content"].strip()
-    log.debug(f"[{name}] LLM response: {result}")
-    return result
+    logging.debug(f"[{name}] LLM response: {result}")
+    return result.strip()
 
 
-def crawl_html(url: str, config: dict) -> str:
-    response = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=30)
+def crawl_html(monitor_config: MonitorConfig) -> str:
+    response = requests.get(
+        monitor_config.url,
+        headers={"User-Agent": "AllAboutBerlin-Monitor/1.0 (+https://allaboutberlin.com)"},
+        timeout=30,
+    )
     response.raise_for_status()
 
     soup = BeautifulSoup(response.text, "lxml")
 
-    selector = config.get("css_selector")
-    if selector:
-        elements = soup.select(selector)
+    if monitor_config.css_selector:
+        elements = soup.select(monitor_config.css_selector)
         text = "\n".join(el.get_text(strip=True) for el in elements)
         if not text:
-            log.warning(f"Selector '{selector}' matched no text on {url}")
+            raise ValueError(f"Selector '{monitor_config.css_selector}' matched no text on {monitor_config.url}")
     else:
         body = soup.find("body")
         text = body.get_text(strip=True) if body else soup.get_text(strip=True)
@@ -115,20 +171,19 @@ def crawl_html(url: str, config: dict) -> str:
     return text
 
 
-def crawl_playwright(url: str, config: dict) -> str:
+def crawl_playwright(monitor_config: MonitorConfig) -> str:
     from playwright.sync_api import sync_playwright
 
     with sync_playwright() as p:
         browser = p.chromium.launch()
         page = browser.new_page()
-        page.goto(url, wait_until="networkidle")
+        page.goto(monitor_config.url, wait_until="networkidle")
 
-        selector = config.get("css_selector")
-        if selector:
-            elements = page.query_selector_all(selector)
+        if monitor_config.css_selector:
+            elements = page.query_selector_all(monitor_config.css_selector)
             text = "\n".join(el.inner_text() for el in elements)
             if not text:
-                log.warning(f"Selector '{selector}' matched no text on {url}")
+                logging.warning(f"Selector '{monitor_config.css_selector}' matched no text on {monitor_config.url}")
         else:
             text = page.inner_text("body")
 
@@ -140,10 +195,9 @@ def crawl_playwright(url: str, config: dict) -> str:
 class ConstantsLinter(Linter):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self._has_run = False
         self._domain_timestamps: dict[str, float] = {}
 
-    def _debounce_domain(self, url: str, delay_str: str):
+    def wait_between_requests_to_domain(self, url: str, delay_str: str):
         domain = urlparse(url).netloc.removeprefix("www.")
         delay = parse_duration(delay_str).total_seconds()
         last = self._domain_timestamps.get(domain, 0)
@@ -152,81 +206,79 @@ class ConstantsLinter(Linter):
             time.sleep(delay - elapsed)
         self._domain_timestamps[domain] = time.time()
 
-    def _crawl(self, url: str, config: dict) -> str:
-        crawler_type = config.get("crawler", "html")
-        if crawler_type == "html":
-            return crawl_html(url, config)
-        elif crawler_type == "playwright":
-            return crawl_playwright(url, config)
+    def execute_monitor(self, monitor_config: MonitorConfig) -> str:
+        if monitor_config.crawler == "html":
+            return crawl_html(monitor_config)
+        elif monitor_config.crawler == "playwright":
+            return crawl_playwright(monitor_config)
         else:
-            raise ValueError(f"Unknown crawler: {crawler_type}")
+            raise ValueError(f"Unknown crawler: {monitor_config.crawler}")
 
-    def lint(self, file_path: Path) -> LinterResult:  # noqa: ARG002
-        if self._has_run:
+    def lint(self, file_path: Path) -> LinterResult:
+        if file_path.name != "constants.yaml":
             return
-        self._has_run = True
 
-        constants_path = Path(__file__).parents[2] / "constants.yaml"
-        data = yaml.safe_load(constants_path.read_text())
-        templates = data.get("templates", {})
-        constants = data.get("constants", {})
-        modified = False
+        config = yaml.safe_load(file_path.read_text())
+        file_modified = False
 
-        for const_name in sorted(constants):
-            entry = constants[const_name]
-            monitor = entry.get("monitor")
+        for constant_name, constant in config["constants"].items():
+            monitor = resolve_monitor_config(config["templates"], constant["monitor"])
             if not monitor:
+                yield None, f"[{constant_name}] Constant is not monitored", logging.WARNING
                 continue
 
-            config = resolve_config(templates, monitor)
+            if monitor and not constant.get("unit"):
+                yield None, f"[{constant_name}] Constant has no unit", logging.ERROR
 
-            last_verified = monitor.get("last_verified")
-            interval_days = parse_duration(config.get("every", "30d")).days
-            if last_verified:
-                if isinstance(last_verified, str):
-                    last_verified = date.fromisoformat(last_verified)
-                if (date.today() - last_verified).days < interval_days:
-                    continue
-
-            url = config.get("url")
-            if not url:
-                yield None, f"{const_name}: No URL configured", logging.ERROR
+            if not recrawl_needed(monitor.every, monitor.last_verified):
+                yield None, f"[{constant_name}] No recrawl_needed", logging.DEBUG
                 continue
 
-            log.info(f"[{const_name}] Checking {url}")
+            logging.info(f"[{constant_name}] Checking source for updates")
 
-            self._debounce_domain(url, config.get("delay", "1s"))
+            self.wait_between_requests_to_domain(monitor.url, monitor.delay)
 
             try:
-                content = self._crawl(url, config)
+                content = self.execute_monitor(monitor)
             except Exception as e:
-                yield None, f"{const_name}: Crawl failed: {e}", logging.ERROR
+                yield None, f"[{constant_name}] Monitor failed: {e}", logging.ERROR
                 continue
 
-            prompt = config.get("prompt")
-            if prompt:
+            if monitor.prompt:
                 try:
-                    new_value = query_llm(const_name, prompt, content).strip()
+                    raw_value = query_llm(constant_name, monitor.prompt, content)
                 except Exception as e:
-                    yield None, f"{const_name}: LLM failed: {e}", logging.ERROR
+                    yield None, f"[{constant_name}] LLM call failed: {e}", logging.ERROR
                     continue
 
-                if new_value == "ERROR":
-                    yield None, f"{const_name}: LLM could not extract value", logging.ERROR
+                if raw_value == "ERROR":
+                    yield None, f"[{constant_name}] LLM could not extract value", logging.ERROR
                     continue
             else:
-                new_value = content.strip()
+                raw_value = content.strip()
 
-            old_value = entry["value"]
-            if str(old_value) != str(new_value):
-                yield None, f"{const_name}: {old_value} -> {new_value}", logging.WARNING
-                entry["value"] = new_value
+            try:
+                new_value = parse_value(raw_value, constant["unit"])
+            except ValueError as e:
+                yield None, f"[{constant_name}] {e}", logging.ERROR
+                continue
 
-            monitor["last_verified"] = date.today()
-            modified = True
+            if str(constant["value"]) != str(new_value):
+                yield None, f"[{constant_name}] {constant['value']} -> {new_value}", logging.WARNING
+                constant["value"] = new_value
+            else:
+                logging.info(f"[{constant_name}] Value has not changed ({constant['value']})")
 
-        if modified:
-            output = {"templates": templates, "constants": constants}
-            constants_path.write_text(
-                yaml.dump(output, allow_unicode=True, default_flow_style=False, sort_keys=False, width=120)
+            constant["monitor"]["last_verified"] = date.today()
+            file_modified = True
+
+        if file_modified:
+            file_path.write_text(
+                yaml.dump(
+                    config,
+                    allow_unicode=True,
+                    default_flow_style=False,
+                    sort_keys=False,
+                    width=120,
+                )
             )

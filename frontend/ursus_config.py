@@ -286,6 +286,7 @@ config.output_path = (
 
 config.google_maps_places_api_key = os.environ.get("GOOGLE_MAPS_PLACES_API_KEY", "")  # Backend use, to lint places
 config.google_tts_api_key = os.environ.get("GOOGLE_TTS_API_KEY", "")  # Backend use, to generate pronunciation files
+config.openai_api_key = os.environ.get("OPENAI_API_KEY", "")  # Backend use, to monitor constants
 
 config.html_url_extension = ""
 
