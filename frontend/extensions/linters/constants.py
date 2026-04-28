@@ -19,6 +19,25 @@ import time
 import yaml
 
 
+def yaml_multiline_str_representer(dumper: yaml.Dumper, data: str):
+    """
+    Preserve the style of multiline strings in the yaml config, so that prompts
+    remain readable.
+    """
+    if "\n" in data:
+        return dumper.represent_scalar("tag:yaml.org,2002:str", data, style="|")
+    return dumper.represent_scalar("tag:yaml.org,2002:str", data)
+
+
+def yaml_decimal_representer(dumper: yaml.Dumper, data: Decimal):
+    """Dump Decimal values as plain unquoted numbers, preserving formatting (e.g. 13.90)."""
+    return dumper.represent_scalar("tag:yaml.org,2002:float", str(data))
+
+
+yaml.add_representer(str, yaml_multiline_str_representer)
+yaml.add_representer(Decimal, yaml_decimal_representer)
+
+
 class MonitorConfig(TypedDict):
     url: str
     crawler: str
@@ -64,17 +83,22 @@ def recrawl_needed(every: str, last_verified: date | None) -> bool:
     return today - last_verified >= parse_duration(every)
 
 
-def parse_value(value: str, unit: str | None) -> Any:
+def format_yaml_value(value: str, unit: str | None) -> Any:
     normalized_number = re.sub(r"[^\d.,]", "", value)
     try:
         if unit == "euros":
-            return Decimal(normalized_number).quantize(Decimal("0.01"))
+            # Only show cents if it's not a round amount
+            euro_amount = Decimal(normalized_number).quantize(Decimal("0.01"))
+            if str(euro_amount).rstrip("0").endswith("."):
+                return int(euro_amount)
+            else:
+                return Decimal(euro_amount)
         elif unit == "percent" or unit == "decimal":
-            return Decimal(normalized_number).normalize()
+            return Decimal(normalized_number.rstrip("0").rstrip(".")).normalize()
         elif unit == "integer":
-            return int(normalized_number.removesuffix(".00"))
+            return int(normalized_number)
         else:
-            return value
+            return str(value)
     except (ValueError, InvalidOperation):
         raise ValueError(f"Cannot parse {unit} value: {value!r}")
 
@@ -127,6 +151,9 @@ def query_llm(name: str, system_prompt: str, user_message: str) -> str:
     if not config.openai_api_key:
         raise ValueError("config.openai_api_key is not set")
 
+    logging.debug(f"[{name}] System prompt:\n\t{system_prompt}")
+    logging.debug(f"[{name}] User message:\n\t{user_message}")
+
     response = requests.post(
         "https://api.openai.com/v1/chat/completions",
         headers={
@@ -150,7 +177,7 @@ def query_llm(name: str, system_prompt: str, user_message: str) -> str:
 
 def crawl_html(monitor_config: MonitorConfig) -> str:
     response = requests.get(
-        monitor_config.url,
+        monitor_config["url"],
         headers={"User-Agent": "AllAboutBerlin-Monitor/1.0 (+https://allaboutberlin.com)"},
         timeout=30,
     )
@@ -158,11 +185,11 @@ def crawl_html(monitor_config: MonitorConfig) -> str:
 
     soup = BeautifulSoup(response.text, "lxml")
 
-    if monitor_config.css_selector:
-        elements = soup.select(monitor_config.css_selector)
+    if selector := monitor_config.get("css_selector"):
+        elements = soup.select(selector)
         text = "\n".join(el.get_text(strip=True) for el in elements)
         if not text:
-            raise ValueError(f"Selector '{monitor_config.css_selector}' matched no text on {monitor_config.url}")
+            raise ValueError(f"Selector '{selector}' matched no text on {monitor_config['url']}")
     else:
         body = soup.find("body")
         text = body.get_text(strip=True) if body else soup.get_text(strip=True)
@@ -176,13 +203,13 @@ def crawl_playwright(monitor_config: MonitorConfig) -> str:
     with sync_playwright() as p:
         browser = p.chromium.launch()
         page = browser.new_page()
-        page.goto(monitor_config.url, wait_until="networkidle")
+        page.goto(monitor_config["url"], wait_until="networkidle")
 
-        if monitor_config.css_selector:
-            elements = page.query_selector_all(monitor_config.css_selector)
+        if selector := monitor_config.get("css_selector"):
+            elements = page.query_selector_all(selector)
             text = "\n".join(el.inner_text() for el in elements)
             if not text:
-                logging.warning(f"Selector '{monitor_config.css_selector}' matched no text on {monitor_config.url}")
+                logging.warning(f"Selector '{selector}' matched no text on {monitor_config['url']}")
         else:
             text = page.inner_text("body")
 
@@ -206,18 +233,19 @@ class ConstantsLinter(Linter):
         self._domain_timestamps[domain] = time.time()
 
     def execute_monitor(self, monitor_config: MonitorConfig) -> str:
-        if monitor_config.crawler == "html":
+        if monitor_config["crawler"] == "html":
             return crawl_html(monitor_config)
-        elif monitor_config.crawler == "playwright":
+        elif monitor_config["crawler"] == "playwright":
             return crawl_playwright(monitor_config)
         else:
-            raise ValueError(f"Unknown crawler: {monitor_config.crawler}")
+            raise ValueError(f"Unknown crawler: {monitor_config['crawler']}")
 
     def lint(self, file_path: Path) -> LinterResult:
-        if file_path.name != "constants.yaml":
+        abs_file_path = config.content_path / file_path
+        if abs_file_path.name != "constants.yaml":
             return
 
-        constants_config = yaml.safe_load((config.content_path / file_path).read_text())
+        constants_config = yaml.safe_load(abs_file_path.read_text())
         file_modified = False
 
         for constant_name, constant in constants_config["constants"].items():
@@ -232,12 +260,13 @@ class ConstantsLinter(Linter):
 
             if monitor and not constant.get("unit"):
                 yield None, f"[{constant_name}] Constant has no unit", logging.ERROR
-
-            if not recrawl_needed(monitor["every"], monitor.get("last_verified")):
-                yield None, f"[{constant_name}] No recrawl_needed", logging.DEBUG
                 continue
 
-            logging.info(f"[{constant_name}] Checking source for updates")
+            if not recrawl_needed(monitor["every"], monitor.get("last_verified")):
+                logging.debug(f"[{constant_name}] No recrawl_needed")
+                continue
+
+            logging.info(f"[{constant_name}] Checking if value has changed")
 
             self.wait_between_requests_to_domain(monitor["url"], monitor["delay"])
 
@@ -248,13 +277,9 @@ class ConstantsLinter(Linter):
                 continue
 
             if monitor["prompt"]:
-                try:
-                    raw_value = query_llm(
-                        constant_name, f"{monitor['prompt']}\n{monitor.get('formatting_instructions', '')}", content
-                    )
-                except Exception as e:
-                    yield None, f"[{constant_name}] LLM call failed: {e}", logging.ERROR
-                    continue
+                raw_value = query_llm(
+                    constant_name, f"{monitor['prompt']}\n{monitor.get('formatting_instructions', '')}", content
+                )
 
                 if raw_value == "ERROR":
                     yield None, f"[{constant_name}] LLM could not extract value", logging.ERROR
@@ -263,26 +288,27 @@ class ConstantsLinter(Linter):
                 raw_value = content.strip()
 
             try:
-                new_value = parse_value(raw_value, constant["unit"])
+                new_value = format_yaml_value(raw_value, constant["unit"])
             except ValueError as e:
                 yield None, f"[{constant_name}] {e}", logging.ERROR
                 continue
 
             if str(constant["value"]) != str(new_value):
-                yield None, f"[{constant_name}] {constant['value']} -> {new_value}", logging.WARNING
-                constant["value"] = new_value
+                message = f"[{constant_name}] Value has changed: {constant['value']} -> {new_value}"
+                logging.info(message)
+                yield None, message, logging.ERROR
+                constants_config["constants"][constant_name]["value"] = new_value
             else:
-                logging.info(f"[{constant_name}] Value has not changed ({constant['value']})")
+                logging.info(f"[{constant_name}] Value has not changed: {constant['value']}")
 
-            constant["monitor"]["last_verified"] = date.today()
+            constants_config["constants"][constant_name]["monitor"]["last_verified"] = date.today()
             file_modified = True
 
         if file_modified:
-            file_path.write_text(
+            abs_file_path.write_text(
                 yaml.dump(
                     constants_config,
                     allow_unicode=True,
-                    default_flow_style=False,
                     sort_keys=False,
                     width=120,
                 )
