@@ -1,0 +1,169 @@
+- name: Dr. Sepideh Abhari
+  website: http://www.abhari-praxis.de/
+  address: Brunnenstraße 160
+  latitude: '52.534709'
+  longitude: '13.397697'
+  google_place_id: ChIJ93xmUtFRqEcR_JAbEIZKEJA
+  last_verified: 2026-04-22
+  borough: Mitte
+  suburb: Mitte
+  quarter: Arkonakiez
+- name: Praxisverbund Berlin
+  description: Dr Jasmin Malak/Reice speaks English
+  website: http://www.praxisverbund-berlin.de/
+  address: Weinbergsweg 1
+  latitude: '52.530057'
+  longitude: '13.401883'
+  google_place_id: ChIJXQ6CX-RRqEcRgrvP9gnMOtY
+  last_verified: 2026-04-22
+  borough: Mitte
+  suburb: Mitte
+  quarter: Rosenthaler Vorstadt
+- name: Gynäkologin Dr. Anja Fünfstück
+  website: https://www.dr-fuenfstueck.de/
+  address: Danziger Str. 35
+  latitude: '52.540331'
+  longitude: '13.418512'
+  google_place_id: ChIJ64U0awBOqEcRz5pf8Va6W3A
+  last_verified: 2026-04-22
+  borough: Pankow
+  suburb: Prenzlauer Berg
+  quarter: Helmholtzkiez
+- name: Dr. Eva Dudik
+  website: https://www.doctolib.de/einzelpraxis/berlin/dr-med-eva-dudik
+  address: Kaiserdamm 17
+  latitude: '52.510644'
+  longitude: '13.287398'
+  google_place_id: ChIJm_DGS7dRqEcRR9ySOEerwMk
+  last_verified: 2026-04-22
+  borough: Charlottenburg-Wilmersdorf
+  suburb: Charlottenburg
+  quarter: Witzleben
+- name: Dr. Gabriele Ulsemer
+  website: http://www.ulsemer.de/
+  address: Beuthstraße 11
+  latitude: '52.586174'
+  longitude: '13.406922'
+  google_place_id: ChIJhW7Rw25SqEcRYkOFjc3iKvc
+  last_verified: 2026-04-22
+  borough: Pankow
+  suburb: Niederschönhausen
+- name: Frauenarzt Bogdan Myndiuk
+  website: https://mein-frauenarzt-in-berlin.de/
+  address: Ringbahnstraße 3
+  latitude: '52.498023'
+  longitude: '13.289407'
+  google_place_id: ChIJNdXnvsVQqEcRxmziM_hELKE
+  last_verified: 2026-04-22
+  borough: Charlottenburg-Wilmersdorf
+  suburb: Halensee
+- name: Dr. Christiane Wessel
+  website: http://www.frauen-vital.de/
+  address: Markgrafenstraße 20
+  latitude: '52.507641'
+  longitude: '13.394421'
+  google_place_id: ChIJ-UtXldZRqEcRs8lA0PA8qJg
+  last_verified: 2026-04-22
+  borough: Friedrichshain-Kreuzberg
+  suburb: Kreuzberg
+  quarter: Zeitungsviertel
+- name: Dr. Sybille Görlitz-Novakovic
+  description: Also speaks French
+  website: https://www.sgn-berlin.de/
+  address: Wilmersdorfer Str. 98
+  latitude: '52.50216'
+  longitude: '13.308126'
+  google_place_id: ChIJ0592Xdz1qEcRfo0k3WQTQlA
+  last_verified: 2026-04-22
+  borough: Charlottenburg-Wilmersdorf
+  suburb: Charlottenburg
+- name: Sana Gesundheitszentren
+  description: Ingrid Soltmann speaks English.
+  website: https://www.sana.de/gesundheitszentren-berlin/standorte-fachbereiche/friedrichshain
+  address: Grünberger Str. 43-45
+  latitude: '52.512166'
+  longitude: '13.455185'
+  google_place_id: ChIJR5GxMFxOqEcRSBeOG9TwkuA
+  last_verified: 2026-04-22
+  borough: Friedrichshain-Kreuzberg
+  suburb: Friedrichshain
+  quarter: Boxhagener Kiez
+- name: Obenrum-Untenrum - Helen Sange
+  description: Helen speaks English and German. The staff also speaks English.
+  website: https://obenrum-untenrum.de/
+  email: hallo@obenrum-untenrum.de
+  address: Goethestraße 70
+  latitude: '52.508771'
+  longitude: '13.316662'
+  google_place_id: ChIJAUwNGxpRqEcR3lxxgasrW3Q
+  last_verified: 2026-04-22
+  borough: Charlottenburg-Wilmersdorf
+  suburb: Charlottenburg
+- name: Dipl. Med. Daniel Karohl
+  website: https://www.frauenarzt-karohl.com/
+  address: Schönhauser Allee 118
+  latitude: '52.549106'
+  longitude: '13.413268'
+  google_place_id: ChIJA3r3ngZSqEcRWaaQ6w7ZEeI
+  last_verified: 2026-04-22
+  borough: Pankow
+  suburb: Prenzlauer Berg
+- name: Gemeinschaftspraxis FERA
+  description: Multiple English-speaking OB/GYNs
+  website: http://www.fera-berlin.de/
+  address: Wenckebachstraße 23
+  latitude: '52.458249'
+  longitude: '13.390498'
+  google_place_id: ChIJRTm8YfhPqEcRmC5oK5klTYk
+  last_verified: 2026-04-22
+  borough: Tempelhof-Schöneberg
+  suburb: Tempelhof
+- name: Frauenarzt-Zentrum-Neukölln
+  website: https://fzz-berlin.de/
+  address: An der Neuköllner Oper, Karl-Marx-Straße 132
+  latitude: '52.477297'
+  longitude: '13.438445'
+  google_place_id: ChIJo5Sp0aNPqEcRmCzYLU3O9lM
+  last_verified: 2026-04-22
+  borough: Neukölln
+  suburb: Neukölln
+- name: Frauenärztinnen am Schulenburgpark
+  description: Dr. Katharina Krull speaks fluent English.
+  website: https://www.gyn-schulenburgpark.de/
+  address: Sonnenallee 306B
+  latitude: '52.466058'
+  longitude: '13.470033'
+  google_place_id: ChIJEYoelT9PqEcRHP47jFa92Kk
+  last_verified: 2026-04-22
+  borough: Neukölln
+  suburb: Neukölln
+  quarter: High-Deck-Siedlung
+- name: Gynecologist Dr. Caroline Labin
+  website: https://www.sana.de/gesundheitszentren-berlin/standorte-fachbereiche/weissensee/frauenheilkunde-und-geburtshilfe
+  address: Berliner Allee 164
+  latitude: '52.552756'
+  longitude: '13.467375'
+  google_place_id: ChIJA5xhB1ZQqEcRHssSuOO-I0o
+  last_verified: 2026-04-22
+  borough: Pankow
+  suburb: Weißensee
+- name: Dr. med. Berrit Matthies
+  website: https://www.schloss88.de/
+  address: Schloßstraße 88
+  latitude: '52.457473'
+  longitude: '13.321701'
+  google_place_id: ChIJf5S0KoRaqEcR6y3oYOYpW7s
+  last_verified: 2026-04-22
+  borough: Steglitz-Zehlendorf
+  suburb: Steglitz
+- name: Sonnenallee Praxis
+  description: They speak English, Arabic and Croatian
+  email: waleed.shamandi@gmail.com
+  address: Sonnenallee 43
+  latitude: '52.485767'
+  longitude: '13.431896'
+  google_place_id: ChIJA9W9rTBPqEcRqf41GpU83BA
+  last_verified: 2026-04-22
+  borough: Neukölln
+  suburb: Neukölln
+  quarter: Donaukiez

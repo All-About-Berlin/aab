@@ -5,11 +5,11 @@ from urllib.parse import urlparse
 from ursus.config import config
 from ursus.linters import Linter, LinterResult
 import googlemaps
-import json
 import logging
 import re
 import requests
 import time
+import yaml
 
 
 def reverse_geocode(lat: float, lng: float) -> dict:
@@ -44,26 +44,26 @@ class PlacesLinter(Linter):
         self.google_maps = googlemaps.Client(key=config.google_maps_places_api_key)
 
     def lint(self, file_path: Path) -> LinterResult:
-        if file_path.suffix.lower() != ".json" or not file_path.is_relative_to(Path("places")):
+        if file_path.suffix.lower() != ".yaml" or not file_path.is_relative_to(Path("places")):
             return
 
-        json_path = config.content_path / file_path
-        data = json.loads(json_path.read_text())
+        yaml_path = config.content_path / file_path
+        places = yaml.safe_load(yaml_path.read_text())
         list_modified = False
         to_remove = []
 
-        for i, place in enumerate(data.get("places", [])):
+        for i, place in enumerate(places):
             name = place.get("name", f"place #{i + 1}")
 
             if not place.get("borough") and not place.get("suburb"):
                 yield from self.fill_nominatim_info(place, name)
                 list_modified = True
 
-            last_verified = place.get("lastVerified")
-            if last_verified and (date.today() - date.fromisoformat(last_verified)) < self.verification_frequency:
+            last_verified = place.get("last_verified")
+            if last_verified and (date.today() - last_verified) < self.verification_frequency:
                 continue
 
-            if not place.get("googlePlaceId"):
+            if not place.get("google_place_id"):
                 yield None, f"{name}: Place has no place ID", logging.WARNING
                 continue
 
@@ -72,22 +72,22 @@ class PlacesLinter(Linter):
             if place.get("status") == "CLOSED_PERMANENTLY":
                 to_remove.append(i)
             else:
-                place["lastVerified"] = date.today().isoformat()
+                place["last_verified"] = date.today()
 
             list_modified = True
 
         for i in reversed(to_remove):
-            data["places"].pop(i)
+            places.pop(i)
 
         if list_modified:
             logging.info(f"Updating {file_path}")
-            json_path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
+            yaml_path.write_text(yaml.dump(places, allow_unicode=True, sort_keys=False, width=120))
 
     def lint_place(self, place: dict, index: int) -> LinterResult:
         name = place.get("name", f"place #{index + 1}")
 
         try:
-            google_place = self.google_maps.place(place["googlePlaceId"], language="en")["result"]
+            google_place = self.google_maps.place(place["google_place_id"], language="en")["result"]
         except googlemaps.exceptions.ApiError as e:
             yield None, f"{name}: Place error: {e}", logging.ERROR
             return

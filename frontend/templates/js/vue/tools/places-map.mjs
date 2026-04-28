@@ -31,7 +31,7 @@ export default {
 	},
 	computed: {
 		showHealthInsuranceFilter(){
-			return this.places.filter(p => p.acceptsPublicHealthInsurance).length > 0;
+			return this.places.filter(p => p.accepts_public_health_insurance).length > 0;
 		},
 		filteredPlaces(){
 			return this.places
@@ -39,7 +39,7 @@ export default {
 					p => [`borough-${p.borough}`, `suburb-${p.suburb}`, null].includes(this.locationFilter)
 				)
 				.filter(
-					p => !this.healthInsuranceFilter || p.acceptsPublicHealthInsurance
+					p => !this.healthInsuranceFilter || p.accepts_public_health_insurance
 				);
 		},
 		boroughsAndSuburbs(){
@@ -104,7 +104,7 @@ export default {
 			const responseJson = await response.json();
 			this.places = responseJson.places.map((place, index) => {
 				const query = encodeURIComponent(`${place.name}, ${place.address}`);
-				const placeIdParam = place.placeId ? `&query_place_id=${place.googlePlaceId}` : '';
+				const placeIdParam = place.google_place_id ? `&query_place_id=${place.google_place_id}` : '';
 				place.googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${query}${placeIdParam}`;
 				place.id = index + 1;
 				return place;
@@ -208,7 +208,7 @@ export default {
 					</address>
 					<recommended v-if="place.recommended"></recommended>
 					<p v-if="place.description">{{ place.description }}</p>
-					<span class="pill yes" v-if="place.acceptsPublicHealthInsurance && !healthInsuranceFilter" title="Accepts public health insurance">Public health insurance</span>
+					<span class="pill yes" v-if="place.accepts_public_health_insurance && !healthInsuranceFilter" title="Accepts public health insurance">Public health insurance</span>
 				</li>
 				<li v-if="filteredPlaces.length === 0">No places match your criteria</li>
 			</ol>

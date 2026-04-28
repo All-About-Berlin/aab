@@ -1,0 +1,994 @@
+- name: David Barnes
+  description: Counselling for men.
+  accepts_public_health_insurance: false
+  website: http://www.davidbarnes.de/
+  email: info@davidbarnes.de
+  address: Lützowstraße
+  latitude: '52.504345'
+  longitude: '13.357333'
+  google_place_id: ChIJPVgC10xQqEcRCUHzUIB-Jnc
+  last_verified: 2026-04-22
+  borough: Mitte
+  suburb: Tiergarten
+- name: Psychotherapie Blagec
+  description: Speaks English and Croatian. Specialises in anxiety, depression, burnout and stress.
+  accepts_public_health_insurance: false
+  website: https://sandra-blagec.com/en/
+  email: psychotherapy.blagec@gmail.com
+  address: Praxis Dr. Bosse, Bleibtreustraße 12A
+  latitude: '52.50429'
+  longitude: '13.319632'
+  google_place_id: ChIJ2SnTi-BQqEcRECCiSDiuXkc
+  status: CLOSED_TEMPORARILY
+  last_verified: 2026-04-22
+  borough: Charlottenburg-Wilmersdorf
+  suburb: Charlottenburg
+- name: Julia Bellabarba
+  description: Couple's therapist. Speaks English, German and Italian.
+  website: http://www.paartherapie-coupletherapy.de/
+  accepts_public_health_insurance: false
+  email: bellabarba@paartherapie-coupletherapy.de
+  address: Kronenstraße 4
+  latitude: '52.510856'
+  longitude: '13.387791'
+  google_place_id: ChIJP540PNBRqEcRfgUKbmGM8rA
+  last_verified: 2026-04-22
+  borough: Mitte
+  suburb: Mitte
+  quarter: Friedrichstadt
+- name: Dr. Cordula Dietrich
+  accepts_public_health_insurance: true
+  website: http://www.corduladietrich.de/
+  address: Käthe-Niederkirchner-Straße 5
+  latitude: '52.53131'
+  longitude: '13.429442'
+  google_place_id: ChIJgeLKog9OqEcRpdlyDPjU_i0
+  last_verified: 2026-04-22
+  borough: Pankow
+  suburb: Prenzlauer Berg
+  quarter: Bötzowkiez
+- name: Dipl.-Psych. Nicholas Bellafiore
+  accepts_public_health_insurance: false
+  website: https://berlincounselingandtherapy.com/
+  email: info@berlincounselingandtherapy.com
+  address: Schliemannstraße 41
+  latitude: '52.541889'
+  longitude: '13.417529'
+  google_place_id: ChIJ__9vaQZSqEcRSHABSkOMfdc
+  last_verified: 2026-04-22
+  borough: Pankow
+  suburb: Prenzlauer Berg
+  quarter: Helmholtzkiez
+- name: Anja Benesch
+  accepts_public_health_insurance: false
+  website: http://anjabenesch.com/
+  address: Florastraße 79A
+  latitude: '52.565761'
+  longitude: '13.40222'
+  google_place_id: ChIJ__-PiANSqEcRIYxLNBkw87U
+  last_verified: 2026-04-22
+  borough: Pankow
+  suburb: Pankow
+  quarter: Florakiez
+- name: Dr. Ghazaleh Bailey
+  description: Speaks English, German and Persian.
+  accepts_public_health_insurance: false
+  website: http://www.individual-therapy-berlin.de/
+  email: g.bailey@individual-therapy-berlin.de
+  address: Saarbrücker Str. 28
+  latitude: '52.530034'
+  longitude: '13.414811'
+  google_place_id: ChIJ0cPlMgRSqEcRW1VH90DIBuQ
+  last_verified: 2026-04-22
+  borough: Pankow
+  suburb: Prenzlauer Berg
+  quarter: Kollwitzkiez
+- name: Julianne Appel-Opper
+  description: UKCP-registered psychotherapist.
+  accepts_public_health_insurance: false
+  website: http://thelivingbody.de/
+  email: julianne.ao@web.de
+  address: Fröaufstraße 6
+  latitude: '52.466646'
+  longitude: '13.325499'
+  google_place_id: ChIJG6gGSn9QqEcRBVIZIsfphYo
+  last_verified: 2026-04-22
+  borough: Tempelhof-Schöneberg
+  suburb: Friedenau
+- name: Dipl.-Psych. Heidi Hooper Amri
+  description: Child behavioural therapist
+  accepts_public_health_insurance: true
+  website: https://www.jameda.de/berlin/psychotherapeuten-psychologen/heidi-elisabeth-hooper-amri/uebersicht/81079702_1/
+  address: Pariser Str. 61
+  latitude: '52.495923'
+  longitude: '13.328964'
+  google_place_id: ChIJZ3HeoPdQqEcREVCPXaT8Ux8
+  last_verified: 2026-04-22
+  borough: Charlottenburg-Wilmersdorf
+  suburb: Wilmersdorf
+  quarter: Fasanenkiez
+- name: Dr. Brian L. Pheasant
+  description: American psychotherapist
+  accepts_public_health_insurance: false
+  website: http://www.pw-psychotherapie.de/
+  address: Kuglerstraße 26
+  latitude: '52.55217'
+  longitude: '13.418262'
+  google_place_id: ChIJVVXJ7w5OqEcR5XWdxeBbgYs
+  last_verified: 2026-04-22
+  borough: Pankow
+  suburb: Prenzlauer Berg
+  quarter: Humann-Kiez
+- name: Eva Štajner
+  description: Speaks English and Slovenian.
+  accepts_public_health_insurance: false
+  website: http://www.psychotherapeutic.help/
+  email: ebbaebba@gmail.com
+  address: Raumerstraße 7
+  latitude: '52.54301'
+  longitude: '13.417673'
+  google_place_id: ChIJ5-Jw0shTqEcRC6WjjIve7N4
+  last_verified: 2026-04-22
+  borough: Pankow
+  suburb: Prenzlauer Berg
+  quarter: Helmholtzkiez
+- name: Dr. Christian Dombrowe
+  accepts_public_health_insurance: false
+  website: http://www.psychotherapy-dombrowe.com/
+  address: Linienstraße 130/2. Hinterhof
+  latitude: '52.527052'
+  longitude: '13.38881'
+  google_place_id: ChIJ2U6aR5FRqEcRwOpcE8pLctY
+  last_verified: 2026-04-22
+  borough: Mitte
+  suburb: Mitte
+  quarter: Oranienburger Vorstadt
+- name: Dipl.-Psych. Nadja Ursula Gogolin
+  description: Psychotherapist, group therapist
+  accepts_public_health_insurance: true
+  website: http://www.psychotherapy-gogolin.com/contact-to-nadja-gogolin-psychotherapy-in-berlin.html
+  email: contact@psychotherapy-gogolin.com
+  address: Gotenstraße 14
+  latitude: '52.48219'
+  longitude: '13.360024'
+  google_place_id: ChIJ7_rpuVBQqEcRauVoYbQ1nVA
+  last_verified: 2026-04-22
+  borough: Tempelhof-Schöneberg
+  suburb: Schöneberg
+  quarter: Rote Insel
+- name: Blanka Leeker, MA
+  description: US-licensed marriage and family therapist.
+  accepts_public_health_insurance: true
+  website: https://psychotherapie-leeker.com/
+  email: blanka@psychotherapie-leeker.com
+  address: Spandauer Damm 54
+  latitude: '52.519548'
+  longitude: '13.289076'
+  google_place_id: ChIJJ5UgV5BRqEcRAH4BY5nfJak
+  last_verified: 2026-04-22
+  borough: Charlottenburg-Wilmersdorf
+  suburb: Charlottenburg
+  quarter: Danckelmannkiez
+- name: Mittelweg 50
+  description: 10 English-speaking counsellors with different approaches to therapy
+  accepts_public_health_insurance: false
+  website: https://www.mittelweg50.com/
+  address: Mittelweg 50
+  latitude: '52.475619'
+  longitude: '13.430271'
+  google_place_id: ChIJk9PlUb1PqEcRj0lnuPjkNmE
+  last_verified: 2026-04-22
+  borough: Neukölln
+  suburb: Neukölln
+- name: Dipl.-Psych. Jana Harthauß
+  accepts_public_health_insurance: true
+  website: https://www.therapie.de/psychotherapie/harthauss/
+  address: Helmholtzstraße 11
+  latitude: '52.467226'
+  longitude: '13.511372'
+  google_place_id: ChIJqY4AH_lJqEcRowM1crFgnYg
+  last_verified: 2026-04-22
+  borough: Treptow-Köpenick
+  suburb: Oberschöneweide
+- name: Sandra Cotta
+  accepts_public_health_insurance: false
+  website: http://www.praxis-cotta.de/
+  email: s.cotta@gmx.de
+  address: Puschkinallee 48
+  latitude: '52.493146'
+  longitude: '13.456966'
+  google_place_id: ChIJRQfEPnxRqEcRAW3HgWxa8mo
+  last_verified: 2026-04-22
+  borough: Treptow-Köpenick
+  suburb: Alt-Treptow
+  quarter: Kungerkiez
+- name: Didem Atahan-Fabig
+  description: Alternative practitioner for psychotherapy. US-licensed mental health counsellor. Speaks English, Turkish and
+    French.
+  accepts_public_health_insurance: false
+  website: http://www.crossculturaltherapy.com/
+  email: atahan.didem@googlemail.com
+  address: 10115, Linienstraße 146
+  latitude: '52.52694'
+  longitude: '13.391441'
+  google_place_id: ChIJKY4ovt5RqEcRiTmaanPZEQo
+  last_verified: 2026-04-22
+  borough: Mitte
+  suburb: Mitte
+  quarter: Oranienburger Vorstadt
+- name: Dominic Decker
+  description: Counsellor
+  accepts_public_health_insurance: false
+  website: https://dominicdecker.com/
+  email: mail@dominicdecker.com
+  address: Schliemannstraße 41
+  latitude: '52.541893'
+  longitude: '13.417521'
+  google_place_id: ChIJq6q-_v9NqEcRJY6-4-pCiX8
+  last_verified: 2026-04-22
+  borough: Pankow
+  suburb: Prenzlauer Berg
+  quarter: Helmholtzkiez
+- name: Alastair Roberts
+  description: UK-accredited counsellor
+  accepts_public_health_insurance: false
+  website: http://www.alastairroberts.com/
+  email: alastair.roberts@btconnect.com
+  address: Hewaldstraße 2
+  latitude: '52.48205'
+  longitude: '13.343319'
+  google_place_id: ChIJE-fMYQhRqEcRQ7g_vIpKhNA
+  last_verified: 2026-04-22
+  borough: Tempelhof-Schöneberg
+  suburb: Schöneberg
+  quarter: Akazienkiez
+- name: Dipl.-Psych. Anne Piotrowski
+  accepts_public_health_insurance: false
+  website: http://www.gestalttherapieberlin.de/
+  address: Knaackstraße 84
+  latitude: '52.539287'
+  longitude: '13.415084'
+  google_place_id: ChIJI41afedRqEcRAm3Y7Q-ragY
+  last_verified: 2026-04-22
+  borough: Pankow
+  suburb: Prenzlauer Berg
+- name: 360° Psychotherapie
+  description: Multiple locations, some English-speaking therapists
+  accepts_public_health_insurance: false
+  website: https://www.360grad-psychotherapie.de/
+  address: Berliner Allee 88
+  latitude: '52.54932'
+  longitude: '13.457131'
+  google_place_id: ChIJ2w8IFsNNqEcROxUgMw5mGvU
+  last_verified: 2026-04-22
+  borough: Pankow
+  suburb: Weißensee
+  quarter: Munizipalviertel
+- name: Dr. Grace O'Malley
+  description: Counsellor. Clinical psychologist in Ireland.
+  accepts_public_health_insurance: false
+  website: http://www.clinicalpsychology.de/
+  email: grace@clinicalpsychology.de
+  address: Gitschiner Str. 87
+  latitude: '52.498612'
+  longitude: '13.402474'
+  google_place_id: ChIJH6EcgclPqEcROZpXjCXPM2c
+  last_verified: 2026-04-22
+  borough: Friedrichshain-Kreuzberg
+  suburb: Kreuzberg
+  quarter: Luisenstadt
+- name: Dipl. Med. Birgit Hansen
+  description: Alternative practitioner for psychotherapy
+  accepts_public_health_insurance: false
+  website: http://dctlb.de/hansenb
+  email: birgit@heilpraxis-hansen.de
+  address: Landsberger Allee 201
+  latitude: '52.533489'
+  longitude: '13.476676'
+  google_place_id: ChIJac-UbIBOqEcRKy0ICJoQlBE
+  last_verified: 2026-04-22
+  borough: Lichtenberg
+  suburb: Alt-Hohenschönhausen
+- name: Katie Knight
+  accepts_public_health_insurance: false
+  website: http://www.berlincounseling.com/
+  email: katie@berlincounseling.com
+  address: Lichtburgring 13
+  latitude: '52.548137'
+  longitude: '13.398735'
+  google_place_id: ChIJ3UJDP_dRqEcRAZh0m3X-Q2U
+  last_verified: 2026-04-22
+  borough: Mitte
+  suburb: Gesundbrunnen
+- name: Philip Sheldon
+  description: Counsellor. Specialises in LGBTQ+ issues, couples and individuals.
+  accepts_public_health_insurance: false
+  website: https://www.philipsheldon.com/
+  email: philip.sheldon@outlook.com
+  address: Heidekampweg 9
+  latitude: '52.461934'
+  longitude: '13.480376'
+  google_place_id: ChIJOZ0sXblPqEcRCD_WTJRpLFA
+  last_verified: 2026-04-22
+  borough: Treptow-Köpenick
+  suburb: Baumschulenweg
+- name: Dipl.-Psych. Kristina Oelschläger
+  website: http://www.okpsychologie.de/
+  accepts_public_health_insurance: false
+  email: mail@okpsychologie.de
+  address: Voigtstraße 31a
+  latitude: '52.518189'
+  longitude: '13.468864'
+  google_place_id: ChIJf9hYmj9PqEcR5v79axhltkU
+  last_verified: 2026-04-22
+  borough: Friedrichshain-Kreuzberg
+  suburb: Friedrichshain
+  quarter: Samariterviertel
+- name: Sean Carden
+  description: Counsellor specialising in depression, anxiety and addiction.
+  accepts_public_health_insurance: false
+  website: http://person-centered.de/
+  email: sean.a.carden@gmail.com
+  address: Weserstr. 56
+  latitude: '52.482992'
+  longitude: '13.440713'
+  google_place_id: ChIJCy3FCTZTqEcRtofzKPiQ4OY
+  last_verified: 2026-04-22
+  borough: Neukölln
+  suburb: Neukölln
+  quarter: Weserkiez
+- name: Dr. Michael Cugialy
+  description: Cognitive behavioural therapist.
+  accepts_public_health_insurance: false
+  website: https://www.psychotherapie-cugialy.com/
+  email: Michael.Cugialy@fu-berlin.de
+  address: Schulstraße 7, 16515 Oranienburg
+  latitude: '52.755036'
+  longitude: '13.245767'
+  google_place_id: ChIJYQP_yK9bqEcRV_ymuwGgA9c
+  last_verified: 2026-04-22
+  suburb: Lehnitz
+- name: Johannes Mittermair
+  description: Psychotherapist for adolescents and adults. Speaks English and German. Private pay, private insurance and Bahn
+    BKK accepted.
+  website: https://www.johannes-mittermair.de/
+  email: Johannes.Mittermair@gmx.de
+  address: Türrschmidtstraße 4-5
+  latitude: '52.502628'
+  longitude: '13.476753'
+  google_place_id: ChIJ9RakKO5OqEcR86Sh7h24oaI
+  last_verified: 2026-04-22
+  borough: Lichtenberg
+  suburb: Rummelsburg
+  quarter: Victoriastadt
+- name: Daniel Friedrich
+  description: Anxiety, depression and addiction.
+  accepts_public_health_insurance: false
+  website: https://therapie-friedrich.de/
+  email: kontakt@therapie-friedrich.de
+  address: Schlegelstraße 11
+  latitude: '52.530052'
+  longitude: '13.38698'
+  google_place_id: ChIJAfsc64tTqEcR3hMSm_Rx6g4
+  last_verified: 2026-04-22
+  borough: Mitte
+  suburb: Mitte
+  quarter: Oranienburger Vorstadt
+- name: Praxis Godau
+  description: Speaks German, English and Russian. Specialises in psychodynamic psychotherapy.
+  accepts_public_health_insurance: false
+  website: https://www.praxis-godau.de/?lang=en
+  email: praxis.godau@gmail.com
+  address: Jüterboger Str. 6
+  latitude: '52.48647'
+  longitude: '13.3978'
+  google_place_id: ChIJRR0L0TZRqEcR2FPBbi6bF7o
+  last_verified: 2026-04-22
+  borough: Friedrichshain-Kreuzberg
+  suburb: Kreuzberg
+  quarter: Bergmannkiez
+- name: Dr. Valentin Zahrnt
+  description: Speaks English, French and German. Specialises in public speaking anxiety and general communication problems.
+  accepts_public_health_insurance: false
+  website: http://www.authentische-rhetorik.de/
+  email: zahrnt@authentische-rhetorik.de
+  address: Schliemannstraße 45
+  latitude: '52.541516'
+  longitude: '13.416527'
+  google_place_id: ChIJv0eQegNOqEcRllZW2nLyY_Y
+  last_verified: 2026-04-22
+  borough: Pankow
+  suburb: Prenzlauer Berg
+  quarter: Helmholtzkiez
+- name: Dipl.-Psych. Özgür Cengiz
+  description: Speaks English, Turkish and German.
+  accepts_public_health_insurance: false
+  website: https://www.praxis-cengiz.de/
+  email: info@praxis-cengiz.de
+  address: Beethovenstraße 4
+  latitude: '52.434358'
+  longitude: '13.333906'
+  google_place_id: ChIJ__8bh8JaqEcRXCRA8So37k8
+  last_verified: 2026-04-22
+  borough: Steglitz-Zehlendorf
+  suburb: Lankwitz
+  quarter: Komponistenviertel
+- name: Psychotherapist Lisa-Maria Aldinger
+  accepts_public_health_insurance: false
+  website: http://pankowpsychotherapie.de/
+  email: pt-aldinger@posteo.de
+  address: Grabbeallee 84
+  latitude: '52.579747'
+  longitude: '13.39877'
+  google_place_id: ChIJ974FWJ1TqEcROvyUIIflpLY
+  last_verified: 2026-04-22
+  borough: Pankow
+  suburb: Niederschönhausen
+- name: M.Sc. Berenike Franzen
+  accepts_public_health_insurance: false
+  website: https://franzen-psychotherapie.net/en
+  email: berenikelisafranzen@gmail.com
+  address: Türrschmidtstraße 4-5
+  latitude: '52.502628'
+  longitude: '13.476753'
+  google_place_id: ChIJ_Si-poVPqEcRluwtu0GrpTo
+  last_verified: 2026-04-22
+  borough: Lichtenberg
+  suburb: Rummelsburg
+  quarter: Victoriastadt
+- name: Dr. phil. Alexander Piotrowski
+  description: Couples therapy, individual therapy and business consulting.
+  accepts_public_health_insurance: false
+  website: https://piotrowski.online/en/
+  email: optimierung@praxis-paartherapie.berlin
+  address: Knaackstraße 84
+  latitude: '52.539264'
+  longitude: '13.414979'
+  google_place_id: ChIJDUlx1P9RqEcRnUrKW2Khsdk
+  last_verified: 2026-04-22
+  borough: Pankow
+  suburb: Prenzlauer Berg
+  quarter: Helmholtzkiez
+- name: Praxis für Psychotherapie, Hypnotherapie + Klangtherapie
+  description: Psychotherapists and hypnotherapist
+  accepts_public_health_insurance: false
+  website: https://psychotherapie-hpp.de/
+  email: info@psychotherapie-hpp.de
+  address: Elsastraße 4
+  latitude: '52.475266'
+  longitude: '13.33031'
+  google_place_id: ChIJRyorldpRqEcRdAyC6fVFVtM
+  last_verified: 2026-04-22
+  borough: Tempelhof-Schöneberg
+  suburb: Friedenau
+- name: Archana Golla
+  description: Speaks English, German, Telugu and Tamil.
+  accepts_public_health_insurance: false
+  website: https://www.arzt-auskunft.de/arzt/psychologische-psychotherapeutin/berlin/archana-golla-6744401
+  email: archana_golla@hotmail.com
+  address: Calvinstraße 23
+  latitude: '52.521861'
+  longitude: '13.351843'
+  google_place_id: ChIJI64Ds6ZRqEcR1OAYEoCtyVQ
+  last_verified: 2026-04-22
+  borough: Mitte
+  suburb: Moabit
+- name: Dr. Lazaros Giousmpasis
+  description: Psychiatrist, psychotherapist and sex therapist. Speaks English, Greek, Spanish and German.
+  accepts_public_health_insurance: false
+  website: https://www.psychiater-praxis-berlin.de/
+  email: kontakt@psychiater-praxis-berlin.de
+  address: Koenigsallee 11A
+  latitude: '52.492477'
+  longitude: '13.280497'
+  google_place_id: ChIJ08uUXUNRqEcRF00ja-YJxwY
+  last_verified: 2026-04-22
+  borough: Charlottenburg-Wilmersdorf
+  suburb: Grunewald
+- name: Dr. Dirk Stemper
+  description: Psychotherapist. Speaks English and Romanian. CBT, narrative therapy, psychodynamic therapy.
+  accepts_public_health_insurance: false
+  website: https://www.praxis-psychologie-berlin.de/en/
+  email: info@praxis-psychologie-berlin.de
+  address: Wallotstraße 8
+  latitude: '52.492017'
+  longitude: '13.278896'
+  google_place_id: ChIJ78EDLcZRqEcRzYWybeWpBUY
+  last_verified: 2026-04-22
+  borough: Charlottenburg-Wilmersdorf
+  suburb: Grunewald
+- name: Dipl.-Psych. Christiane Köhler
+  description: Cognitive behavioural therapy.
+  accepts_public_health_insurance: true
+  website: https://www.gptg.eu/users/77956593/info.therap
+  email: CR.Koehler@t-online.de
+  address: Seydelstraße 7
+  latitude: '52.50998'
+  longitude: '13.403011'
+  google_place_id: ChIJYRx7EihOqEcR4P2Ua_dRxt8
+  last_verified: 2026-04-22
+  borough: Mitte
+  suburb: Mitte
+  quarter: Luisenstadt
+- name: Aloka Levitin
+  description: Alternative practitioner for psychotherapy
+  accepts_public_health_insurance: false
+  website: http://www.berlinpsychotherapeut.de/
+  email: alokalevitin@gmail.com
+  address: Lipaer Str. 14
+  latitude: '52.44565'
+  longitude: '13.313023'
+  google_place_id: ChIJ99YhZHtbqEcRt2YCmbncyn8
+  last_verified: 2026-04-22
+  borough: Steglitz-Zehlendorf
+  suburb: Lichterfelde
+  quarter: Lichterfelde West
+- name: Dr. Joseph Hamer
+  description: Speaks English and German
+  accepts_public_health_insurance: true
+  website: https://www.berlin-counselling.com/en/joseph-hamer/
+  email: joseph.hamer.phd@posteo.de
+  address: Mindener Str. 21
+  latitude: '52.524771'
+  longitude: '13.300558'
+  google_place_id: ChIJJ5UgV5BRqEcRwnGl5Fwhhe0
+  last_verified: 2026-04-22
+  borough: Charlottenburg-Wilmersdorf
+  suburb: Charlottenburg
+  quarter: Mierendorffkiez
+- name: Ben Lemme
+  accepts_public_health_insurance: true
+  website: https://www.benlemme.de/
+  email: ben.lemme@gmail.com
+  address: Erdmannstraße 13
+  latitude: '52.488881'
+  longitude: '13.360029'
+  google_place_id: ChIJrzmNsfZRqEcRM-VzZgqiODA
+  last_verified: 2026-04-22
+  borough: Tempelhof-Schöneberg
+  suburb: Schöneberg
+  quarter: Crellekiez
+- name: PsyShrink
+  description: Multiple English-speaking therapists.
+  accepts_public_health_insurance: false
+  website: http://www.psyshrink.com/
+  email: therapist@psyshrink.com
+  address: Keithstraße 16
+  latitude: '52.503268'
+  longitude: '13.346169'
+  google_place_id: ChIJ8yR8iaVRqEcRNGzYb_Ja46k
+  last_verified: 2026-04-22
+  borough: Tempelhof-Schöneberg
+  suburb: Schöneberg
+  quarter: Nollendorfkiez
+- name: Roman Snihurowch, MD
+  accepts_public_health_insurance: true
+  website: https://www.psychotherapyinberlin.net/
+  email: r.snihurowych@posteo.de
+  address: Kienitzer Str. 110
+  latitude: '52.47587'
+  longitude: '13.423631'
+  google_place_id: ChIJV0ja_3lPqEcRw9oGUQPdw4Q
+  last_verified: 2026-04-22
+  borough: Neukölln
+  suburb: Neukölln
+  quarter: Schillerkiez
+- name: My International Therapy
+  description: They speak English, French, Spanish and Italian.
+  accepts_public_health_insurance: false
+  website: https://my-international-therapy.com/
+  email: contact@my-international-therapy.com
+  address: Schönhauser Allee 55
+  latitude: '52.54356'
+  longitude: '13.412802'
+  google_place_id: ChIJF0ekaYxTqEcRqrA3A4zo0tU
+  last_verified: 2026-04-22
+  borough: Pankow
+  suburb: Prenzlauer Berg
+- name: Dr. med Kai Gutzeit
+  description: Speaks English, Spanish and German.
+  accepts_public_health_insurance: false
+  website: http://drgutzeit.de/
+  email: dr.gutzeit@gmail.com
+  address: Lenaustraße 8
+  latitude: '52.490018'
+  longitude: '13.426786'
+  google_place_id: ChIJdcwI9LZPqEcRgUPsvpZ8j9w
+  last_verified: 2026-04-22
+  borough: Neukölln
+  suburb: Neukölln
+  quarter: Reuterkiez
+- name: Dipl.-Psych. Shireen Kwiatkowska-Naqvi
+  description: Speaks English, French and Polish.
+  accepts_public_health_insurance: true
+  website: https://www.therapie.de/profil/kwiatkowskanaqvi/
+  email: psychotherapie-praxis@posteo.de
+  address: Pfarrstraße 115
+  latitude: '52.505009'
+  longitude: '13.47696'
+  google_place_id: ChIJFVOr5Y1RqEcRS606L4ejbY8
+  last_verified: 2026-04-22
+  borough: Lichtenberg
+  suburb: Rummelsburg
+  quarter: Victoriastadt
+- name: Art Therapy Studio
+  description: Alternative practitioner for psychotherapy. Speaks English, Spanish and German.
+  accepts_public_health_insurance: false
+  website: https://www.praxis-guerteltier.de/en
+  email: info@praxis-guerteltier.de
+  address: Gürtelstraße 12
+  latitude: '52.545106'
+  longitude: '13.453012'
+  google_place_id: ChIJC0Fprt1NqEcRBF3syO4qbu4
+  last_verified: 2026-04-22
+  borough: Pankow
+  suburb: Weißensee
+  quarter: Komponistenviertel
+- name: Wagner & Homunculus, Praxis für Systemische Therapie
+  description: Alternative practitioner for psychotherapy. They speak English, Spanish and German.
+  accepts_public_health_insurance: false
+  website: https://wh-therapie.de/
+  email: praxis@wa-hc.de
+  address: Philippistraße 4
+  latitude: '52.511503'
+  longitude: '13.287417'
+  google_place_id: ChIJy1ras_dOqEcRJ4QqbTujILU
+  last_verified: 2026-04-22
+  borough: Charlottenburg-Wilmersdorf
+  suburb: Charlottenburg
+  quarter: Witzleben
+- name: Marylise Dumont
+  description: Alternative practitioner for psychotherapy. Couples therapist. Speaks English, French and German.
+  website: https://www.international-coupletherapy-berlin.com/
+  email: marylise@international-coupletherapy-berlin.com
+  address: Tempelhofer Ufer 16A
+  latitude: '52.49836'
+  longitude: '13.38375'
+  google_place_id: ChIJDx6boElRqEcRQBEHT0La5CM
+  last_verified: 2026-04-22
+  borough: Friedrichshain-Kreuzberg
+  suburb: Kreuzberg
+  quarter: Tempelhofer Vorstadt
+- name: Dipl.-Psych. Katrin Forler
+  description: Behavior therapy for children and adolescents, counseling for families.
+  accepts_public_health_insurance: false
+  website: https://www.praxis-forler.de/counseling-in-english/
+  email: info@praxis-forler.de
+  address: Pestalozzistraße 37
+  latitude: '52.572396'
+  longitude: '13.404274'
+  google_place_id: ChIJVd_IscdTqEcRPMO-EzlB4eM
+  last_verified: 2026-04-22
+  borough: Pankow
+  suburb: Pankow
+- name: Dipl.-Psych. Katja Rück
+  description: 'Speaks English, Dutch and German. Specialises in mood disorders: depression, anxiety and somatoform disorders.'
+  accepts_public_health_insurance: false
+  website: http://www.katjarueck.de/index.php/start.html
+  email: praxis@katjarueck.de
+  address: Goßlerstraße 23
+  latitude: '52.469868'
+  longitude: '13.325879'
+  google_place_id: ChIJKz2yHLVPqEcRzPSsIFh6T5Y
+  last_verified: 2026-04-22
+  borough: Tempelhof-Schöneberg
+  suburb: Friedenau
+- name: Ottoline Hart
+  description: UK-licenced therapist. Humanistic therapy - cognitive, anxiety, depression.
+  accepts_public_health_insurance: false
+  website: https://www.ottolinehart.com/
+  email: ottoline.hart@gmail.com
+  address: Okerstraße 38
+  latitude: '52.473777'
+  longitude: '13.424308'
+  google_place_id: ChIJLxLNZZZPqEcR55SQh22HQA0
+  last_verified: 2026-04-22
+  borough: Neukölln
+  suburb: Neukölln
+  quarter: Schillerkiez
+- name: Claudia Dzaack
+  description: Couples and sex therapy.
+  website: https://praxisdzaack.de/
+  email: info@praxisdzaack.de
+  address: Kastanienallee 26
+  latitude: '52.537497'
+  longitude: '13.408256'
+  google_place_id: ChIJTcOwqP5RqEcRnmRQGmi2WSc
+  last_verified: 2026-04-22
+  borough: Pankow
+  suburb: Prenzlauer Berg
+  quarter: Kollwitzkiez
+- name: Manuela Luise, Creative Therapy
+  description: Alternative practitioner for psychotherapy. Speaks English, Spanish and Italian.
+  accepts_public_health_insurance: false
+  website: http://www.manuelaluise.com/
+  email: info@manuelaluise.com
+  address: Ebelingstraße 14a
+  latitude: '52.523821'
+  longitude: '13.450998'
+  google_place_id: ChIJrQdC6pPaGEwRjnpbqf0tGrw
+  last_verified: 2026-04-22
+  borough: Friedrichshain-Kreuzberg
+  suburb: Friedrichshain
+  quarter: Hausburgviertel
+- name: Dipl.-Psych. Michael Flor
+  accepts_public_health_insurance: false
+  website: https://psychotherapie-flor.de/index-en.html
+  email: mflormail@gmail.com
+  address: Chausseestraße 28
+  latitude: '52.531869'
+  longitude: '13.381769'
+  google_place_id: ChIJD2K41uxRqEcR4j90K1bgbQQ
+  last_verified: 2026-04-22
+  borough: Mitte
+  suburb: Mitte
+  quarter: Charitéviertel
+- name: Dr. Lorna Schlochtermeier
+  website: https://www.psychotherapie-schlochtermeier.de/
+  email: l.schlochtermeier@fu-berlin.de
+  address: Praxis in der Remise, Ohlauer Str. 10
+  latitude: '52.496977'
+  longitude: '13.430582'
+  google_place_id: ChIJe1NK7qhPqEcRpcsr0WV7kX0
+  last_verified: 2026-04-22
+  borough: Friedrichshain-Kreuzberg
+  suburb: Kreuzberg
+  quarter: Luisenstadt
+- name: Mag. Michaela Klien
+  description: Cognitive behavioral therapy, exposure therapy.
+  accepts_public_health_insurance: false
+  website: https://www.psychotherapie-klien.de/
+  email: info@psychotherapie-klien.de
+  address: Neumannstraße 135
+  latitude: '52.553288'
+  longitude: '13.423639'
+  google_place_id: ChIJ8xN0WAlNqEcRK_RjA4NVIsE
+  last_verified: 2026-04-22
+  borough: Pankow
+  suburb: Pankow
+  quarter: Vinetakiez
+- name: Ninja Kattenbeck
+  description: Cognitive behavioral therapy, trauma, depression, anxiety and OCD.
+  accepts_public_health_insurance: false
+  website: https://www.kattenbeck-psychotherapie-berlin.de/
+  email: mail@kattenbeck-psychotherapie-berlin.de
+  address: Lützowstraße 23
+  latitude: '52.503126'
+  longitude: '13.366423'
+  google_place_id: ChIJryOnR91RqEcRzjxzuM3IGxA
+  last_verified: 2026-04-22
+  borough: Mitte
+  suburb: Tiergarten
+- name: Dr. Viola Kappel & Kollegen
+  description: Eating disorders, OCD, anxiety and depression.
+  accepts_public_health_insurance: true
+  website: https://psychotherapie-kappel.de/
+  email: kontakt@psychotherapie-kappel.de
+  address: Praxis für Psychotherapie & Coaching Dr. Viola Kappel & Kollegen, Naumannstraße 7
+  latitude: '52.485576'
+  longitude: '13.363617'
+  google_place_id: ChIJ7WgYynNRqEcR348aynWuCNY
+  last_verified: 2026-04-22
+  borough: Tempelhof-Schöneberg
+  suburb: Schöneberg
+  quarter: Rote Insel
+- name: Bertine de Jongh
+  description: Psychologist. Speaks English, Dutch and German.
+  accepts_public_health_insurance: false
+  website: http://www.berlin-counselling.com/
+  email: info@berlin-counselling.com
+  address: Mindener Str. 21
+  latitude: '52.524771'
+  longitude: '13.300558'
+  google_place_id: ChIJJ5UgV5BRqEcRwnGl5Fwhhe0
+  last_verified: 2026-04-22
+  borough: Charlottenburg-Wilmersdorf
+  suburb: Charlottenburg
+  quarter: Mierendorffkiez
+- name: Psychotherapie Vivian Birchall
+  website: https://www.psychotherapie-birchall.de/
+  address: Sakrower Landstraße 4
+  latitude: '52.453167'
+  longitude: '13.142604'
+  google_place_id: ChIJB4T69ypZqEcRsvWbkWcbeNM
+  accepts_public_health_insurance: false
+  last_verified: 2026-04-22
+  suburb: Kladow
+- name: Dipl.-Psych. Mathias Funke, Psychotherapist
+  description: Acceptance and Commitment Therapy (ACT)
+  website: http://www.therapieberlin.de/
+  email: funke@therapieberlin.de
+  address: Weitlingstraße 39
+  latitude: '52.507444'
+  longitude: '13.496978'
+  google_place_id: ChIJa_I65XhQqEcRL9lojdvC-lg
+  accepts_public_health_insurance: false
+  last_verified: 2026-04-22
+  borough: Lichtenberg
+  suburb: Rummelsburg
+  quarter: Weitlingkiez
+- name: kAleiDoscope - Coaching & Counseling
+  description: Brainspotting, EgoState, EMDR, childhood trauma, relationships
+  website: https://www.kaleidoscope-berlin.com/
+  email: contact@kaleidoscope-berlin.com
+  address: Hohenzollernstraße 12
+  latitude: '52.432613'
+  longitude: '13.252689'
+  google_place_id: ChIJS_pCzbRbqEcRgiTHrj0CZ18
+  last_verified: 2026-04-22
+  borough: Steglitz-Zehlendorf
+  suburb: Zehlendorf
+- name: International Psychotherapy Berlin
+  description: Psychodynamic psychotherapy, psychoanalysis and CBT. They speak many different languages.
+  website: https://www.internationalpsychotherapyberlin.com/
+  email: info.internationalpsychotherapy@posteo.de
+  address: Kottbusser Damm 90
+  latitude: '52.493168'
+  longitude: '13.422277'
+  google_place_id: ChIJx6x6Z09QqEcRECKFotXC3ng
+  accepts_public_health_insurance: true
+  last_verified: 2026-04-22
+  borough: Neukölln
+  suburb: Neukölln
+  quarter: Graefekiez
+- name: Angel Candeaux
+  description: Couples therapist. She speaks English and Spanish.
+  website: http://angel-candeaux.com/
+  email: hallo@angel-candeaux.com
+  address: Skalitzer Str. 28
+  latitude: '52.498887'
+  longitude: '13.423554'
+  google_place_id: ChIJ9RziE3hPqEcR4tDcOeGwoYM
+  accepts_public_health_insurance: true
+  last_verified: 2026-04-22
+  borough: Friedrichshain-Kreuzberg
+  suburb: Kreuzberg
+  quarter: Luisenstadt
+- name: Vibes - Praxis für Psychotherapie & Coaching
+  website: http://vibes-therapie.de/
+  email: praxis@vibes-therapie.de
+  address: Zobeltitzstraße 72
+  latitude: '52.569674'
+  longitude: '13.313165'
+  google_place_id: ChIJEfUtdBJRqEcRoV_fPd03zX4
+  accepts_public_health_insurance: true
+  last_verified: 2026-04-22
+  borough: Reinickendorf
+  suburb: Reinickendorf
+- name: BOJE Beratung Ole Jaeckel-Engler
+  description: Systemic psychotherapy and couples therapy.
+  website: http://www.beratung-oje.de/
+  email: info@beratung-oje.de
+  address: Breite Str. 8
+  latitude: '52.571359'
+  longitude: '13.409683'
+  google_place_id: ChIJibfJmQ5OqEcR0pfk9WlloxU
+  accepts_public_health_insurance: false
+  last_verified: 2026-04-22
+  borough: Pankow
+  suburb: Pankow
+  quarter: Florakiez
+- name: M. Sc. Antonia Windsheimer
+  description: Cognitive behavioural therapy
+  website: http://www.kreuzberg-psychotherapie.de/
+  email: aw@kreuzberg-psychotherapie.de
+  address: Großbeerenstraße 16
+  latitude: '52.497384'
+  longitude: '13.384102'
+  google_place_id: ChIJl4sVESpRqEcRnXZXN67_CYE
+  accepts_public_health_insurance: false
+  last_verified: 2026-04-22
+  borough: Friedrichshain-Kreuzberg
+  suburb: Kreuzberg
+  quarter: Tempelhofer Vorstadt
+- name: OVID Clinic Berlin
+  description: Multiple therapists. They speak English, Spanish and Arabic.
+  website: https://www.ovid-clinics.de/
+  email: constanze.lorey@ovid-clinics.com
+  address: Boxhagener Str. 82
+  latitude: '52.508492'
+  longitude: '13.466821'
+  google_place_id: ChIJMadZk3BPqEcR-rn1DpXybwA
+  last_verified: 2026-04-22
+  borough: Friedrichshain-Kreuzberg
+  suburb: Friedrichshain
+  quarter: Travekiez
+- name: The Primrose Practice
+  description: ADHD, Attachment Based Therapy, Psychodynamic Psychotherapy
+  website: http://www.theprimrosepractice.co.uk/
+  email: sophie@theprimrosepractice.co.uk
+  address: Borsigstraße 28/a
+  latitude: '52.529439'
+  longitude: '13.389712'
+  google_place_id: ChIJG1de0_9RqEcRd0p-aZ27OKk
+  accepts_public_health_insurance: false
+  last_verified: 2026-04-22
+  borough: Mitte
+  suburb: Mitte
+  quarter: Oranienburger Vorstadt
+- name: Dr Dafni Milioni
+  description: Speaks English and Greek.
+  website: https://drdafnimilioni.com/
+  email: deva8kaur@yahoo.co.uk
+  address: Mindener Str. 21
+  latitude: '52.524744'
+  longitude: '13.300564'
+  google_place_id: ChIJb_2eF_lRqEcRCD1KpGGfi6A
+  accepts_public_health_insurance: false
+  last_verified: 2026-04-22
+  borough: Charlottenburg-Wilmersdorf
+  suburb: Charlottenburg
+  quarter: Mierendorffkiez
+- name: Fraeya Whiffin
+  description: ADHD, trauma, crisis support, personal development.
+  website: https://ifs-therapy.de/
+  email: fraeya@ifs-therapy.de
+  address: Hasenheide 92
+  latitude: '52.48759'
+  longitude: '13.417072'
+  google_place_id: ChIJx99VeqJPqEcRmB2tkwA4hoI
+  accepts_public_health_insurance: false
+  last_verified: 2026-04-22
+  borough: Neukölln
+  suburb: Neukölln
+  quarter: Graefekiez
+- name: Dipl.-Psych. Dr. Katharina Will
+  description: Cognitive Behavioral Therapy, schema therapy and mindful self-compassion
+  website: http://praxis-will.com/
+  email: info@praxis-will.com
+  address: Langhansstraße 63
+  latitude: '52.553883'
+  longitude: '13.434358'
+  google_place_id: ChIJ51QmCZNRqEcRiGLqi1-V6Ao
+  accepts_public_health_insurance: false
+  last_verified: 2026-04-22
+  borough: Pankow
+  suburb: Weißensee
+  quarter: Gründerviertel
+- name: Maxim Makhankov
+  description: ADHD, autism, mindfulness, anxiety. Speaks English and Russian.
+  website: https://maximtherapy.com/
+  email: contact@maximtherapy.com
+  address: Straßmannstraße 39
+  latitude: '52.523146'
+  longitude: '13.452881'
+  google_place_id: ChIJa9y76WppnmgRlAHpVP63Fh4
+  accepts_public_health_insurance: false
+  last_verified: 2026-04-22
+  borough: Friedrichshain-Kreuzberg
+  suburb: Friedrichshain
+  quarter: Hausburgviertel
+- name: Talia Purnell
+  description: Psychodynamic therapy
+  website: https://purnellcounseling.com/
+  email: purnellcounseling@gmail.com
+  address: Praxisgemeinschaft Moksha, Straßmannstraße 39/c/o
+  latitude: '52.523146'
+  longitude: '13.452881'
+  google_place_id: ChIJ9bdNbDpPqEcRLf0SQoHwaak
+  last_verified: 2026-04-22
+  borough: Friedrichshain-Kreuzberg
+  suburb: Friedrichshain
+  quarter: Hausburgviertel
+- name: Counselling & Couples Therapy - Agnieszka Kieres
+  description: ADHD, anxiety, couples therapy, kink and BDSM. Speaks English, Polish and Spanish.
+  website: http://www.agnieszkakieres.com/
+  email: hello@agnieszkakieres.com
+  address: Rigaer Str. 8
+  latitude: '52.517878'
+  longitude: '13.455898'
+  google_place_id: ChIJa6w9bpFPqEcRoguAc895v_I
+  accepts_public_health_insurance: false
+  last_verified: 2026-04-22
+  borough: Friedrichshain-Kreuzberg
+  suburb: Friedrichshain
+  quarter: Hausburgviertel
+- name: Peter Bennett
+  website: https://berlinpsychotherapy.com/
+  address: Waisenstraße 28
+  latitude: '52.516529'
+  longitude: '13.414033'
+  google_place_id: ChIJwwjPBitPqEcR8tTBsTSXJus
+  last_verified: 2026-04-22
+  borough: Mitte
+  suburb: Mitte

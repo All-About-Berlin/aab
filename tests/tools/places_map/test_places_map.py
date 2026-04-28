@@ -24,7 +24,7 @@ def places_map(page):
 def places_map_no_insurance(page):
     data = json.loads((test_data_dir / "test-places.json").read_text())
     for place in data["places"]:
-        place.pop("acceptsPublicHealthInsurance", None)
+        place.pop("accepts_public_health_insurance", None)
     mock_places_json(page, json.dumps(data))
     page.goto("/tests/tools/places-map")
     return page.get_by_label("Map with list of places")
