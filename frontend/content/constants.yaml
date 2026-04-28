@@ -1,36 +1,36 @@
 constants:
   MINIMUM_WAGE:
     value: 13.9
-    unit: euro
+    unit: euros
     monitor:
       template: default
       url: https://www.bmas.de/DE/Arbeit/Arbeitsrecht/Mindestlohn/mindestlohn.html
       crawler: playwright
-      prompt: ' Read this page. Return the current minimum wage. Return only the numeric value, with two decimal places, with
-        a dot as the decimal mark, and without a currency symbol. If the value can''t be found on this page, only return ''ERROR''.'
+      prompt: 
+        Read this text. Return the current minimum wage.
       css_selector: .typ-quote-3 p.text
       last_verified: 2026-04-26
   MEDIAN_INCOME_BERLIN:
     value: 48250
-    unit: euro
+    unit: euros
     fail_on: 2026-06-01
   MEDIAN_INCOME_GERMANY:
     value: 52159
-    unit: euro
+    unit: euros
     fail_on: 2026-06-01
   AU_PAIR_MIN_ALLOWANCE:
     value: 280
-    unit: euro
+    unit: euros
     description: Minimum allowance for au pairs (€/mth)
     fail_on: 2026-06-01
   BEITRAGSBEMESSUNGSGRENZE_MONTHLY:
     value: 8450
-    unit: euro
+    unit: euros
     description: Maximum income used to calculate pension contributions (€/mth) - § SGB 6 Anlage 2
     fail_on: 2026-12-31
   GRUNDFREIBETRAG:
     value: 12348
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: EStG
@@ -40,7 +40,7 @@ constants:
       last_verified: 2026-04-26
   INCOME_TAX_BRACKET_2_MAX_INCOME:
     value: 17799
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: EStG
@@ -50,7 +50,7 @@ constants:
       last_verified: 2026-04-26
   INCOME_TAX_BRACKET_3_MAX_INCOME:
     value: 69878
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: EStG
@@ -60,7 +60,7 @@ constants:
       last_verified: 2026-04-26
   INCOME_TAX_BRACKET_4_MAX_INCOME:
     value: 277825
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: EStG
@@ -70,7 +70,7 @@ constants:
       last_verified: 2026-04-26
   INCOME_TAX_CLASS_56_LIMIT_1:
     value: 14071
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: EStG
@@ -80,7 +80,7 @@ constants:
       last_verified: 2026-04-26
   INCOME_TAX_CLASS_56_LIMIT_2:
     value: 34939
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: EStG
@@ -90,7 +90,7 @@ constants:
       last_verified: 2026-04-26
   INCOME_TAX_CLASS_56_LIMIT_3:
     value: 222260
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: EStG
@@ -104,9 +104,8 @@ constants:
     monitor:
       template: default
       url: https://www.finanztip.de/spitzensteuersatz/
-      prompt: In this text, return the maximum income tax rate (Höchststeuersatz) as a percentage. Only return the number,
-        unrounded, without a percent sign, without thousands separator, and with a dot as the decimal mark. If the requested
-        value is not in the supplied text, only return "ERROR".
+      prompt:
+        Read this text. Return the maximum income tax rate (Höchststeuersatz) as a percentage.
       css_selector: .intro-box .container
       last_verified: 2026-04-26
   CHURCH_TAX_RATE:
@@ -119,7 +118,7 @@ constants:
     description: Church tax rate for Baden-Württemberg and Bavaria (%)
   SOLIDARITY_TAX_MILDERUNGSZONE_MIN_INCOME_TAX:
     value: 20350
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       url: https://www.buzer.de/gesetz/282/a3297.htm
@@ -152,7 +151,7 @@ constants:
       last_verified: 2026-04-26
   WERBUNGSKOSTEN_PAUSCHALE:
     value: 1230
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: EStG
@@ -162,7 +161,7 @@ constants:
       last_verified: 2026-04-26
   VORSORGEPAUSCHAL_MIN:
     value: 1900
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: EStG
@@ -172,10 +171,10 @@ constants:
       last_verified: 2026-04-26
   VORSORGEPAUSCHAL_MIN_TAX_CLASS_3:
     value: 3000
-    unit: euro
+    unit: euros
   ARBEITNEHMERPAUSCHALE:
     value: 1230
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: EStG
@@ -184,7 +183,7 @@ constants:
       last_verified: 2026-04-26
   SONDERAUSGABEN_PAUSCHBETRAG:
     value: 36
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: EStG
@@ -202,7 +201,7 @@ constants:
       last_verified: 2026-04-26
   KINDERGELD:
     value: 259
-    unit: euro
+    unit: euros
     description: § 6 Abs. 1 BKGG, § 66 EStG
     monitor:
       template: buzer
@@ -212,7 +211,7 @@ constants:
       last_verified: 2026-04-26
   KINDERFREIBETRAG_PER_PARENT:
     value: 3414
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: EStG
@@ -222,7 +221,7 @@ constants:
       last_verified: 2026-04-26
   KINDERFREIBETRAG_ERZIEHUNGSBEDARF_PER_PARENT:
     value: 1464
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: EStG
@@ -232,7 +231,7 @@ constants:
       last_verified: 2026-04-26
   ENTLASTUNGSBETRAG_ALLEINERZIEHENDE:
     value: 4260
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: EStG
@@ -241,7 +240,7 @@ constants:
       last_verified: 2026-04-26
   ENTLASTUNGSBETRAG_ALLEINERZIEHENDE_EXTRA_CHILD:
     value: 240
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: EStG
@@ -259,7 +258,7 @@ constants:
       last_verified: 2026-04-26
   CAPITAL_GAINS_FREIBETRAG:
     value: 1000
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: EStG
@@ -269,7 +268,7 @@ constants:
       last_verified: 2026-04-26
   GEWERBESTEUER_FREIBETRAG:
     value: 24500
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: GewStG
@@ -297,7 +296,7 @@ constants:
     fail_on: 2026-12-31
   KLEINUNTERNEHMER_MAX_INCOME_FIRST_YEAR:
     value: 25000
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: UStG
@@ -308,7 +307,7 @@ constants:
       last_verified: 2026-04-26
   KLEINUNTERNEHMER_MAX_INCOME:
     value: 100000
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: UStG
@@ -318,7 +317,7 @@ constants:
       last_verified: 2026-04-26
   DOUBLE_ENTRY_MIN_REVENUE:
     value: 800000
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: HGB
@@ -327,7 +326,7 @@ constants:
       last_verified: 2026-04-26
   DOUBLE_ENTRY_MIN_INCOME:
     value: 80000
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: HGB
@@ -356,11 +355,11 @@ constants:
       last_verified: 2026-04-26
   EU_VAT_SCHWELLENWERT:
     value: 10000
-    unit: euro
+    unit: euros
     description: Below this amount (€/y) in VAT, simplified rules for intra-EU VAT
   VAT_MIN_QUARTERLY_AMOUNT:
     value: 2000
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: UStG
@@ -370,7 +369,7 @@ constants:
       last_verified: 2026-04-26
   VAT_MIN_MONTHLY_AMOUNT:
     value: 9000
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: UStG
@@ -380,7 +379,7 @@ constants:
       last_verified: 2026-04-26
   MIDIJOB_MAX_INCOME:
     value: 2000
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: SGB_IV
@@ -390,17 +389,17 @@ constants:
       last_verified: 2026-04-26
   GKV_FACTOR_F:
     value: '0.6619'
+    unit: decimal
     monitor:
       template: default
       url: https://www.tk.de/firmenkunden/versicherung/beitraege-faq/zahlen-und-grenzwerte/faktor-f-2033036
-      prompt: Read this page. Return the latest Faktor F value. Only return the number as a decimal, without any formatting
-        or currency symbol. Use a dot as the decimal mark. Use no thousands separator. If the value can't be found, only return
-        'ERROR'.
+      prompt:
+        Read this page. Return the latest Faktor F value.
       css_selector: .e-table.e-table__table
       last_verified: 2026-04-26
   BEZUGSGROESSE:
     value: 3955
-    unit: euro
+    unit: euros
     description: Median income of social contribution payers (€/m) - SGB VI Anlage 1
     fail_on: 2026-12-31
   GKV_BASE_RATE_EMPLOYEE:
@@ -423,12 +422,12 @@ constants:
       last_verified: 2026-04-26
   GKV_MAX_INCOME_MONTHLY:
     value: 5812.5
-    unit: euro
+    unit: euros
     description: Above this income (€/mth), you pay the Höchstbeitrag
     fail_on: 2026-12-31
   GKV_AZUBI_FREIBETRAG:
     value: 325
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: SGB_IV
@@ -439,12 +438,12 @@ constants:
       last_verified: 2026-04-26
   GKV_FREIWILLIG_VERSICHERT_MIN_INCOME_MONTHLY:
     value: 6450
-    unit: euro
+    unit: euros
     description: Versicherungspflichtgrenze (€/mth)
     fail_on: 2026-12-31
   PKV_MIN_INCOME:
     value: 35000
-    unit: euro
+    unit: euros
     description: Minimum income (€/y) for private health insurance
     fail_on: 2026-12-31
   GKV_MIN_ZUSATZBEITRAG:
@@ -452,11 +451,8 @@ constants:
     unit: percent
     monitor:
       template: zusatzbeitrag
-      prompt: 'Read this HTML text.
-
-        Only return the numeric value, without the %% sign. Use a dot as the decimal mark. Use no thousands separator.
-
-        If the value is not a percentage, only return ''ERROR''.'
+      prompt: 
+        Read this HTML text. Return the numeric value as a percentage.
       css_selector: .a11y-table:first-of-type tr:first-of-type td:nth-child(2)
       last_verified: 2026-04-26
   GKV_MAX_ZUSATZBEITRAG:
@@ -464,8 +460,8 @@ constants:
     unit: percent
     monitor:
       template: zusatzbeitrag
-      prompt: Read this HTML text. Return the text value as a percentage, without rounding, without percent signs and without
-        thousands separators. Use a dot as the decimal mark. If the value is not a percentage, only return 'ERROR'.
+      prompt:
+        Read this HTML text. Return the numeric value as a percentage.
       css_selector: .a11y-table:first-of-type tr:last-of-type td:nth-child(2)
       last_verified: 2026-04-26
   GKV_AVG_ZUSATZBEITRAG:
@@ -474,9 +470,9 @@ constants:
     monitor:
       template: default
       url: https://www.check24.de/gesetzliche-krankenversicherung/erhoehung-zusatzbeitraege/
-      prompt: Read this page. Return the average (durchschnittliche) Zusatzbeitrag as a percentage. Only return the number,
-        without the %% sign. Use a dot as the decimal mark. Use no thousands separator. If the value can't be found, only
-        return 'ERROR'.
+      prompt:
+        Read this page. Return the average (durchschnittliche) Zusatzbeitrag as a percentage. Only return the number,
+        without the percent sign.
       css_selector: '[component-export=InsuranceSummary]'
       last_verified: 2026-04-26
   GKV_ZUSATZBEITRAG_AOK:
@@ -516,42 +512,42 @@ constants:
       last_verified: 2026-04-26
   TRAVEL_INSURANCE_COST:
     value: 40
-    unit: euro
+    unit: euros
     description: Estimated travel insurance cost (€/y)
     fail_on: 2026-12-31
   EXPAT_INSURANCE_COST_FEATHER_BASIC:
     value: 72
-    unit: euro
+    unit: euros
     description: Feather basic expat insurance cost (€/mth)
     fail_on: 2026-12-31
   EXPAT_INSURANCE_COST_FEATHER_PREMIUM:
     value: 134
-    unit: euro
+    unit: euros
     description: Feather premium expat insurance cost (€/mth)
     fail_on: 2026-12-31
   EXPAT_INSURANCE_COST_OTTONOVA_EXPAT:
     value: 167
-    unit: euro
+    unit: euros
     description: Ottonova expat insurance cost (€/mth)
     fail_on: 2026-12-31
   EXPAT_INSURANCE_COST_HANSEMERKUR_BASIC:
     value: 51
-    unit: euro
+    unit: euros
     description: HanseMerkur basic expat insurance cost (€/mth)
     fail_on: 2026-12-31
   EXPAT_INSURANCE_COST_HANSEMERKUR_PROFI:
     value: 72
-    unit: euro
+    unit: euros
     description: HanseMerkur profi expat insurance cost (€/mth)
     fail_on: 2026-12-31
   EXPAT_STUDENT_COST:
     value: 72
-    unit: euro
+    unit: euros
     description: Expat student insurance cost (€/mth)
     fail_on: 2026-12-31
   BAFOG_BEDARFSSATZ_13_ABS_1_2:
     value: 475
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: BAfoG
@@ -561,7 +557,7 @@ constants:
       last_verified: 2026-04-26
   BAFOG_BEDARFSSATZ_13_ABS_2_2:
     value: 380
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: BAfoG
@@ -571,7 +567,7 @@ constants:
       last_verified: 2026-04-26
   SPERRKONTO_SURCHARGE_INSURANCE:
     value: 102
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: BAfoG
@@ -581,7 +577,7 @@ constants:
       last_verified: 2026-04-26
   SPERRKONTO_SURCHARGE_OTHER:
     value: 35
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: BAfoG
@@ -596,15 +592,13 @@ constants:
     monitor:
       template: default
       url: https://www.barmer.de/firmenkunden/sozialversicherung/beitraege/pflegeversicherung-beitraege-arbeitgeber
-      prompt: 'Read this table. Return the total Beitragssatz for a person with 1 child, as a percentage.
-
-        Return only the percentage, formatted as a float.
-
-        If the value is not in this table, only return ''ERROR''.'
+      prompt:
+        Read this table. Return the total Beitragssatz for a person with 1 child, as a percentage.
       css_selector: table
       last_verified: 2026-04-26
   PFLEGEVERSICHERUNG_BASE_RATE_MAX_AGE:
     value: 22
+    unit: integer
     monitor:
       template: buzer
       law: SGB_11
@@ -653,11 +647,11 @@ constants:
     description: Fundsback fee (%)
   FUNDSBACK_MIN_FEE:
     value: 854.05
-    unit: euro
+    unit: euros
     description: Fundsback minimum fee (€)
   FUNDSBACK_MAX_FEE:
     value: 2754.05
-    unit: euro
+    unit: euros
     description: Fundsback maximum fee (€)
   GERMANYPENSIONREFUND_FEE:
     value: '9.75'
@@ -669,40 +663,40 @@ constants:
     description: PensionRefundGermany fee (%)
   PENSIONREFUNDGERMANY_MAX_FEE:
     value: 2800
-    unit: euro
+    unit: euros
     description: PensionRefundGermany maximum fee (€)
   GERMANYPENSIONREFUND_MAX_FEE:
     value: 2500
-    unit: euro
+    unit: euros
     description: GermanyPensionRefund maximum fee (€)
   BVG_AB_TICKET:
     value: 4
-    unit: euro
+    unit: euros
     description: BVG AB ticket price (€)
     fail_on: 2026-12-31
   BVG_ABC_TICKET:
     value: 5
-    unit: euro
+    unit: euros
     description: BVG ABC ticket price (€)
     fail_on: 2026-12-31
   BVG_FINE:
     value: 60
-    unit: euro
+    unit: euros
     description: BVG fine for riding without a ticket (€)
     fail_on: 2026-12-31
   BVG_REDUCED_FINE:
     value: 7
-    unit: euro
+    unit: euros
     description: BVG reduced fine (€)
     fail_on: 2026-12-31
   DEUTSCHLAND_TICKET_PRICE:
     value: 63
-    unit: euro
+    unit: euros
     description: Deutschlandticket price (€/mth)
     fail_on: 2026-12-31
   SCHENGEN_VISA_FEE:
     value: 75
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: AufenthV
@@ -712,7 +706,7 @@ constants:
       last_verified: 2026-04-26
   NATIONAL_VISA_FEE:
     value: 100
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: AufenthV
@@ -722,7 +716,7 @@ constants:
       last_verified: 2026-04-26
   NATIONAL_VISA_RENEWAL_FEE:
     value: 93
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: AufenthV
@@ -732,7 +726,7 @@ constants:
       last_verified: 2026-04-26
   RESIDENCE_PERMIT_REPLACEMENT_FEE:
     value: 67
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: AufenthV
@@ -741,11 +735,11 @@ constants:
       last_verified: 2026-04-26
   MIN_PERMANENT_RESIDENCE_FEE:
     value: 37
-    unit: euro
+    unit: euros
     description: Minimum permanent residence fee (€)
   MAX_PERMANENT_RESIDENCE_FEE:
     value: 147
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: AufenthV
@@ -754,7 +748,7 @@ constants:
       last_verified: 2026-04-26
   FAST_TRACK_FEE:
     value: 411
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       law: AufenthV
@@ -763,53 +757,53 @@ constants:
       last_verified: 2026-04-26
   FREELANCE_VISA_MIN_MONTHLY_PENSION:
     value: 1612.53
-    unit: euro
+    unit: euros
     description: Minimum monthly pension for freelance visa above age 45 (€/m)
     fail_on: 2027-02-01
     source_url: https://www.bmas.de/DE/Soziales/Rente-und-Altersvorsorge/rentenversicherungsbericht-art.html
   FREELANCE_VISA_MIN_INCOME:
     value: 563
-    unit: euro
+    unit: euros
     description: Minimum income for freelance visa (€/mth) - Anlage SGB 12
     fail_on: 2026-12-31
   CITIZENSHIP_TEST_FEE:
     value: 25
-    unit: euro
+    unit: euros
     description: Citizenship test fee (€)
     fail_on: 2026-12-31
   BESCHEINIGUNG_IN_STEUERSACHEN_FEE:
     value: 17.9
-    unit: euro
+    unit: euros
     description: Fee for Bescheinigung in Steuersachen (€)
     fail_on: 2026-12-31
   ERWEITERTE_MELDEBESCHEINIGUNG_FEE:
     value: 10
-    unit: euro
+    unit: euros
     description: Fee for erweiterte Meldebescheinigung (€)
     fail_on: 2026-12-31
   GEWERBEANMELDUNG_FEE:
     value: 15
-    unit: euro
+    unit: euros
     description: Gewerbeanmeldung fee (€)
     fail_on: 2026-12-31
   HUNDEREGISTER_FEE:
     value: 17.5
-    unit: euro
+    unit: euros
     description: Dog registration fee (€)
     fail_on: 2026-12-31
   HUNDESTEUER_FIRST_DOG:
     value: 120
-    unit: euro
+    unit: euros
     description: Dog tax for first dog (€/y) - §4 HuStG BE
     fail_on: 2026-12-31
   HUNDESTEUER_MORE_DOGS:
     value: 180
-    unit: euro
+    unit: euros
     description: Dog tax for additional dogs (€/y) - §4 HuStG BE
     fail_on: 2026-12-31
   KSK_MIN_INCOME:
     value: 3900
-    unit: euro
+    unit: euros
     monitor:
       template: buzer
       url: https://www.buzer.de/gesetz/1471/a20796.htm
@@ -820,109 +814,102 @@ constants:
       last_verified: 2026-04-26
   KSK_MIN_HEALTH_INSURANCE_INCOME:
     value: 7910
-    unit: euro
+    unit: euros
     description: KSK Mindestbeitragsberechnungsgrundlage (€/y)
     monitor:
       template: default
       url: https://www.kuenstlersozialkasse.de/service-und-medien/ksk-in-zahlen
-      prompt: 'Read this page. Return the Mindestbeitragsberechnungsgrundlage (minimum income for health insurance calculation)
+      prompt:
+        Read this page. Return the Mindestbeitragsberechnungsgrundlage (minimum income for health insurance calculation)
         in euros per year.
-
-        If the value is a whole euro amount, format it as an integer. For example, ''1 234'' -> ''1234'' or ''123.00'' ->
-        ''123''.
-
-        If the value is a euro amount with cents, format it as a float with two decimal places. For example: ''1 234,56''
-        -> ''1234.56''.
-
-        If the value can''t be found on this page, only return ''ERROR''.'
       last_verified: 2026-04-26
   ORDNUNGSAMT_DANGEROUS_DOG_FEE:
     value: 30
-    unit: euro
+    unit: euros
     description: Dangerous dog registration fee (€)
     fail_on: 2026-12-31
   RUNDFUNKBEITRAG_FEE:
     value: 18.36
-    unit: euro
+    unit: euros
     description: Rundfunkbeitrag fee (€/mth)
     fail_on: 2026-12-31
   SCHUFA_REPORT_FEE:
     value: 29.95
-    unit: euro
+    unit: euros
     description: SCHUFA report fee (€)
     fail_on: 2026-12-31
   VEHICLE_UMMELDUNG_FEE:
     value: 10.8
-    unit: euro
+    unit: euros
     description: Vehicle re-registration fee (€)
     fail_on: 2026-12-31
   LICENSE_PLATE_COST:
     value: 20
-    unit: euro
+    unit: euros
     description: Cost of making license plates (€)
     fail_on: 2027-12-31
   FIRST_AID_COURSE_COST:
     value: 65
-    unit: euro
+    unit: euros
     description: Cost of a first aid course for a driver's licence (€)
     fail_on: 2027-12-31
   DRIVING_LICENCE_CONVERSION_FEE:
     value: 37.5
-    unit: euro
+    unit: euros
     description: Driving licence conversion fee (€)
     fail_on: 2026-12-31
   DRIVING_LICENCE_FEE:
     value: 51.21
-    unit: euro
+    unit: euros
     description: Driving licence fee (€)
   FIRST_AID_COURSE_FEE:
     value: 80
-    unit: euro
+    unit: euros
     description: First aid course fee (€)
     fail_on: 2026-12-31
   DRIVING_SCHOOL_FEE:
     value: 190
-    unit: euro
+    unit: euros
     description: Driving school fee (€)
     fail_on: 2026-12-31
   DRIVING_PRACTICE_FEE:
     value: 60
-    unit: euro
+    unit: euros
     description: Driving practice fee per 45-minute lesson (€)
     fail_on: 2026-12-31
   DRIVING_THEORY_EXAM_FEE:
     value: 25
-    unit: euro
+    unit: euros
     description: Driving theory exam fee (€)
     fail_on: 2026-12-31
   DRIVING_PRACTICAL_EXAM_FEE:
     value: 130
-    unit: euro
+    unit: euros
     description: Driving practical exam fee (€)
     fail_on: 2026-12-31
   LEGAL_HOTLINE_COST_PER_MINUTE:
     value: 2.99
-    unit: euro
+    unit: euros
     description: Legal hotline cost per minute (€)
     monitor:
       template: default
       url: https://www.vonengelhardt.com/en/helpnowen
-      prompt: Read this page. Return the cost per minute for the legal hotline, in euros with cents. If the value can't be
-        found on this page, only return 'ERROR'.
+      prompt:
+        Read this page. Return the cost per minute for the legal hotline, in euros.
       last_verified: 2026-04-26
   LEGAL_INSURANCE_MIN_COST:
     value: 15
-    unit: euro
+    unit: euros
     description: Minimum legal insurance cost (€/mth)
     fail_on: 2026-12-31
   LEGAL_INSURANCE_MAX_COST:
     value: 35
-    unit: euro
+    unit: euros
     description: Maximum legal insurance cost (€/mth)
     fail_on: 2026-12-31
   LAWYER_HOURLY_RATE:
     value: 200
-    unit: euro
+    unit: euros
     description: Estimated lawyer hourly rate (€/h)
     fail_on: 2026-12-31
 templates:
@@ -930,32 +917,27 @@ templates:
     crawler: html
     delay: 1s
     every: 30d
+    formatting_instructions: '
+      Format numbers like this (no rounding, no thousands separators, dot for the decimal mark, no percent symbols, no currency symbols):
+      1 000 -> 1000
+      50,567 -> 50.567
+      1,234,567.89 -> 1234567.89
+      1 234 567,89 -> 1234567.89
+
+      If the requested value is not in the supplied text, only return ERROR.'
   buzer:
     template: default
     url: https://www.buzer.de/{section}_{law}.htm
     css_selector: .arttext
     subsection: the supplied text
-    prompt: 'You will get the text of § {section} {law}. Using only {subsection}, return {desired_value}.
-
-      Format whole numbers as an integer. Format decimal numbers as floats. Leave out trailing zeroes.
-
-      Examples:
-
-      - ''1 234'' -> ''1234''
-
-      - ''1.234,5'' -> ''1234.5''
-
-      - ''123,0'' -> ''123'' (remove unneeded decimals)
-
-      - ''1 234,56'' -> ''1234.56''
-
+    prompt:
+      You will get the text of § {section} {law}. Considering only {subsection}, return {desired_value}.
       Ignore all information outside of {subsection}. Only return one value. Do not add or concatenate multiple values.
-
-      If the requested value is not in {subsection}, only return "ERROR".'
   zusatzbeitrag:
     template: default
     url: https://www.krankenkassen.de/gesetzliche-krankenkassen/krankenkasse-beitrag/zusatzbeitrag/
     css_selector: '#content table'
-    prompt: Read this table. Return the latest Zusatzbeitrag for {insurer} as a percentage (in the leftmost column). Return
+    prompt:
+      Read this table. Return the latest Zusatzbeitrag for {insurer} as a percentage (in the leftmost column). Return
       only the percentage, without rounding, without percent signs and without thousands separators. For decimal values, use
-      a dot as the decimal mark. If the value is not in this table, only return 'ERROR'.
+      a dot as the decimal mark.

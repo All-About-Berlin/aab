@@ -3,11 +3,11 @@
 Regularly verifies and updates constants in constants.yaml
 """
 
-from typing import Any
+from typing import Any, NotRequired, TypedDict
 from bs4 import BeautifulSoup
-from dataclasses import dataclass, field
 from datetime import date, timedelta
 from decimal import Decimal, InvalidOperation
+from extensions.functions import fail_on
 from pathlib import Path
 from urllib.parse import urlparse
 from ursus.config import config
@@ -19,16 +19,14 @@ import time
 import yaml
 
 
-@dataclass
-class MonitorConfig:
+class MonitorConfig(TypedDict):
     url: str
-    crawler: str = "html"
-    css_selector: str | None = None
-    prompt: str | None = None
-    delay: str = "1s"
-    every: str = "30d"
-    last_verified: date | None = None
-    extra_attributes: dict[str, Any] = field(default_factory=dict)
+    crawler: str
+    css_selector: NotRequired[str]
+    prompt: str
+    delay: str
+    every: str
+    last_verified: NotRequired[date]
 
 
 def parse_duration(duration_str: str) -> timedelta:
@@ -67,13 +65,14 @@ def recrawl_needed(every: str, last_verified: date | None) -> bool:
 
 
 def parse_value(value: str, unit: str | None) -> Any:
+    normalized_number = re.sub(r"[^\d.,]", "", value)
     try:
-        if unit == "euro":
-            return Decimal(value).quantize(Decimal("0.01"))
+        if unit == "euros":
+            return Decimal(normalized_number).quantize(Decimal("0.01"))
         elif unit == "percent" or unit == "decimal":
-            return Decimal(value)
+            return Decimal(normalized_number).normalize()
         elif unit == "integer":
-            return int(value)
+            return int(normalized_number.removesuffix(".00"))
         else:
             return value
     except (ValueError, InvalidOperation):
@@ -119,8 +118,8 @@ def resolve_monitor_config(templates: dict, monitor_config: dict | None) -> Moni
     template_name = monitor_config.get("template")
     config_from_template = resolve_template(templates, template_name) if template_name else {}
     resolved_config = {**config_from_template, **monitor_config}
-
     resolved_config = resolve_placeholders(resolved_config)
+    resolved_config.pop("template")
     return MonitorConfig(**resolved_config)
 
 
@@ -218,11 +217,15 @@ class ConstantsLinter(Linter):
         if file_path.name != "constants.yaml":
             return
 
-        config = yaml.safe_load(file_path.read_text())
+        constants_config = yaml.safe_load((config.content_path / file_path).read_text())
         file_modified = False
 
-        for constant_name, constant in config["constants"].items():
-            monitor = resolve_monitor_config(config["templates"], constant["monitor"])
+        for constant_name, constant in constants_config["constants"].items():
+            monitor = resolve_monitor_config(constants_config["templates"], constant.get("monitor"))
+
+            if constant.get("fail_on"):
+                fail_on(str(constant["fail_on"]))
+
             if not monitor:
                 yield None, f"[{constant_name}] Constant is not monitored", logging.WARNING
                 continue
@@ -230,13 +233,13 @@ class ConstantsLinter(Linter):
             if monitor and not constant.get("unit"):
                 yield None, f"[{constant_name}] Constant has no unit", logging.ERROR
 
-            if not recrawl_needed(monitor.every, monitor.last_verified):
+            if not recrawl_needed(monitor["every"], monitor.get("last_verified")):
                 yield None, f"[{constant_name}] No recrawl_needed", logging.DEBUG
                 continue
 
             logging.info(f"[{constant_name}] Checking source for updates")
 
-            self.wait_between_requests_to_domain(monitor.url, monitor.delay)
+            self.wait_between_requests_to_domain(monitor["url"], monitor["delay"])
 
             try:
                 content = self.execute_monitor(monitor)
@@ -244,9 +247,11 @@ class ConstantsLinter(Linter):
                 yield None, f"[{constant_name}] Monitor failed: {e}", logging.ERROR
                 continue
 
-            if monitor.prompt:
+            if monitor["prompt"]:
                 try:
-                    raw_value = query_llm(constant_name, monitor.prompt, content)
+                    raw_value = query_llm(
+                        constant_name, f"{monitor['prompt']}\n{monitor.get('formatting_instructions', '')}", content
+                    )
                 except Exception as e:
                     yield None, f"[{constant_name}] LLM call failed: {e}", logging.ERROR
                     continue
@@ -275,7 +280,7 @@ class ConstantsLinter(Linter):
         if file_modified:
             file_path.write_text(
                 yaml.dump(
-                    config,
+                    constants_config,
                     allow_unicode=True,
                     default_flow_style=False,
                     sort_keys=False,

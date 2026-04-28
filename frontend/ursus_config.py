@@ -22,11 +22,12 @@ import os
 import git
 import json
 
+config.content_path = Path(__file__).parent / "content"
+config.templates_path = Path(__file__).parent / "templates"
 
 ctx = {}
 
-
-ctx.update(load_constants_from_file(Path(__file__).parent / "constants.yaml"))
+ctx.update(load_constants_from_file(config.content_path / "constants.yaml"))
 
 # ==============================================================================
 # TAXES - Calculated values based on other constants
@@ -266,10 +267,7 @@ ctx["RECOMMENDED"] = Markup(
     '&nbsp; <a target="_blank" class="recommended" aria-label="Recommended option" href="/glossary/Recommended"></a>'
 )
 
-content_path = Path(__file__).parent / "content"
-templates_path = Path(__file__).parent / "templates"
-
-ctx["commit_id"] = git.Repo(content_path, search_parent_directories=True).head.commit.hexsha
+ctx["commit_id"] = git.Repo(config.content_path, search_parent_directories=True).head.commit.hexsha
 
 
 # ==============================================================================
@@ -277,12 +275,8 @@ ctx["commit_id"] = git.Repo(content_path, search_parent_directories=True).head.c
 # ==============================================================================
 
 config.site_url = ctx["SITE_URL"]
-config.content_path = content_path
-config.templates_path = templates_path
 
-config.output_path = (
-    Path(env_output_dir) if (env_output_dir := os.environ.get("URSUS_OUTPUT_DIR")) else Path(__file__).parent / "output"
-)
+config.output_path = Path(os.environ.get("URSUS_OUTPUT_DIR") or (Path(__file__).parent / "output"))
 
 config.google_maps_places_api_key = os.environ.get("GOOGLE_MAPS_PLACES_API_KEY", "")  # Backend use, to lint places
 config.google_tts_api_key = os.environ.get("GOOGLE_TTS_API_KEY", "")  # Backend use, to generate pronunciation files

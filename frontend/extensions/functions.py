@@ -1,6 +1,7 @@
 from datetime import date, datetime
 from decimal import Decimal
 from markdown.extensions.toc import slugify
+from pathlib import Path
 from typing import Iterable, Match, Any
 from ursus.context_processors import Entry
 import holidays
@@ -9,6 +10,7 @@ import re
 import secrets
 import string
 import urllib
+import yaml
 
 
 def to_currency(value: Decimal) -> str:
@@ -106,24 +108,18 @@ def count_weekdays(dates: Iterable[date]) -> int:
     return len([d for d in dates if d.weekday() < 5])
 
 
-def load_constants_from_file(path) -> dict:
-    """Load constants from YAML, typecasting values and applying fail_on dates."""
-    import yaml
-    from pathlib import Path
-
-    result = {}
-    for key, entry in yaml.safe_load(Path(path).read_text())["constants"].items():
-        unit = entry.get("unit")
-        raw = entry["value"]
-        if unit == "euro":
-            value = Decimal(str(raw)).quantize(Decimal("0.01"))
-        elif unit == "percent":
-            value = Decimal(str(raw))
-        elif isinstance(raw, str):
-            value = Decimal(raw)
+def load_constants_from_file(path: Path) -> dict:
+    constants_config = yaml.safe_load(path.read_text())
+    constants = {}
+    for constant_name, constant in constants_config["constants"].items():
+        unit = constant.get("unit")
+        if unit == "euros":
+            value = Decimal(str(constant["value"])).quantize(Decimal("0.01"))
+        elif unit == "percent" or unit == "decimal":
+            value = Decimal(str(constant["value"]))
+        elif unit == "integer":
+            value = int(constant["value"])
         else:
-            value = raw
-        if "fail_on" in entry:
-            value = fail_on(str(entry["fail_on"]), value)
-        result[key] = value
-    return result
+            value = constant["value"]
+        constants[constant_name] = value
+    return constants
