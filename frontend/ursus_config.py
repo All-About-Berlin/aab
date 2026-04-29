@@ -278,6 +278,8 @@ config.site_url = ctx["SITE_URL"]
 
 config.output_path = Path(os.environ.get("URSUS_OUTPUT_DIR") or (Path(__file__).parent / "output"))
 
+config.allaboutberlin_api_username = os.environ.get("ALLABOUTBERLIN_API_USERNAME", "")
+config.allaboutberlin_api_password = os.environ.get("ALLABOUTBERLIN_API_PASSWORD", "")
 config.google_maps_places_api_key = os.environ.get("GOOGLE_MAPS_PLACES_API_KEY", "")  # Backend use, to lint places
 config.google_tts_api_key = os.environ.get("GOOGLE_TTS_API_KEY", "")  # Backend use, to generate pronunciation files
 config.openai_api_key = os.environ.get("OPENAI_API_KEY", "")  # Backend use, to monitor constants

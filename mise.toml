@@ -111,6 +111,12 @@ run = """
 frontend/scripts/add_places.py
 """
 
+[tasks.import-places]
+description = "Fetch place suggestions from the API and add them to the places yaml files"
+run = """
+frontend/scripts/import_places.py
+"""
+
 [tasks.add-review]
 description = "Add a review to a guide"
 run = """
