@@ -64,15 +64,9 @@ Uses SQLite in development. Runs under Gunicorn in Docker.
 
 Playwright tests using `pytest-playwright`. Tests run on three device profiles (mobile/tablet/desktop) defined in `conftest.py`. Visual regression snapshots are in `tests/snapshots/`. Default timeout is 2 seconds.
 
-### Monitor (`monitor/`)
-
-Standalone ETL pipeline that monitors external websites for relevant changes. Uses an LLM to filter content and triggers actions when relevant changes are detected.
-
-Crawlers and actions are discovered via Python entry points defined in `pyproject.toml` (`aab_monitor.crawlers` and `aab_monitor.actions` groups). Domain-level config (delay, selector) is merged with monitor-level config, with monitor-level taking precedence.
-
 ### Infrastructure
 
-Docker Compose runs four services: `frontend`, `backend`, `proxy`, `monitor`. Caddy routes `/api/*` to Django and everything else to the static frontend.
+Docker Compose runs four services: `frontend`, `backend`, `proxy`. Caddy routes `/api/*` to Django and everything else to the static frontend.
 
 ## Commit Messages
 
