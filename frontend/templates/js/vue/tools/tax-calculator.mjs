@@ -723,7 +723,7 @@ export default {
 			<template v-if="privateHealthInsuranceSavings">
 				<hr>
 				<p>
-					You can save up to <eur :amount="privateHealthInsuranceSavings"></eur></strong> per {{ monthOrYear }} if you <a target="_blank" href="/guides/german-health-insurance#private-health-insurance">switch to private health insurance</a>.
+					You can save up to <eur :amount="privateHealthInsuranceSavings"></eur></strong> per {{ monthOrYear }} if you <a target="_blank" href="/guides/german-health-insurance">switch to private health insurance</a>.
 				</p>
 			</template>
 		</collapsible>
