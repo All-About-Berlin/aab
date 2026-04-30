@@ -123,7 +123,7 @@ export default {
 			return healthInsuranceTypes;
 		},
 		privateHealthInsuranceSavings() {
-			if(this.healthInsuranceType.startsWith('public') && this.availableHealthInsuranceTypes.private){
+			if((this.healthInsuranceType === 'unknown' || this.healthInsuranceType.startsWith('public')) && this.availableHealthInsuranceTypes.private){
 				const options = pkvOptions({
 					occupation: this.occupation,
 					monthlyIncome: this.monthlyIncome,
