@@ -674,7 +674,7 @@
   borough: Tempelhof-Schöneberg
   suburb: Friedenau
 - name: Ottoline Hart
-  description: UK-licenced therapist. Humanistic therapy - cognitive, anxiety, depression.
+  description: UK-licenced therapist. Humanistic therapy for anxiety and depression.
   accepts_public_health_insurance: false
   website: https://www.ottolinehart.com/
   email: ottoline.hart@gmail.com
@@ -807,7 +807,7 @@
   borough: Lichtenberg
   suburb: Rummelsburg
   quarter: Weitlingkiez
-- name: kAleiDoscope - Coaching & Counseling
+- name: kAleiDoscope
   description: Brainspotting, EgoState, EMDR, childhood trauma, relationships
   website: https://www.kaleidoscope-berlin.com/
   email: contact@kaleidoscope-berlin.com
@@ -855,7 +855,7 @@
   last_verified: 2026-04-22
   borough: Reinickendorf
   suburb: Reinickendorf
-- name: BOJE Beratung Ole Jaeckel-Engler
+- name: Ole Jaeckel-Engler
   description: Systemic psychotherapy and couples therapy.
   website: http://www.beratung-oje.de/
   email: info@beratung-oje.de
@@ -932,7 +932,7 @@
   borough: Neukölln
   suburb: Neukölln
   quarter: Graefekiez
-- name: Dipl.-Psych. Dr. Katharina Will
+- name: Dr. Katharina Will
   description: Cognitive Behavioral Therapy, schema therapy and mindful self-compassion
   website: http://praxis-will.com/
   email: info@praxis-will.com
@@ -970,7 +970,7 @@
   borough: Friedrichshain-Kreuzberg
   suburb: Friedrichshain
   quarter: Hausburgviertel
-- name: Counselling & Couples Therapy - Agnieszka Kieres
+- name: Agnieszka Kieres
   description: ADHD, anxiety, couples therapy, kink and BDSM. Speaks English, Polish and Spanish.
   website: http://www.agnieszkakieres.com/
   email: hello@agnieszkakieres.com
@@ -1006,7 +1006,7 @@
   borough: Pankow
   suburb: Prenzlauer Berg
   quarter: Winsviertel
-- name: Bertram Wohlenberg - Paartherapie, Psychotherapie, Supervision
+- name: Bertram Wohlenberg
   description: Couples therapy and individual psychotherapy.
   email: b.wohlenberg@gmail.com
   address: Körtestraße 4
