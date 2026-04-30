@@ -10,15 +10,16 @@
   quarter: Charitéviertel
 - name: Studio Dental Berlin
   description: They speak English, Russian, Bulgarian and Croatian
-  website: http://studiodentalberlin.de/
+  website: https://www.studiodentalberlin.de/
   email: info@studiodentalberlin.de
   address: Wilmersdorfer Str. 128
-  latitude: '52.510152'
-  longitude: '13.305993'
+  latitude: 52.510152
+  longitude: 13.305993
   google_place_id: ChIJFxExkN9QqEcRfS9ieswDsjA
-  last_verified: 2026-04-22
+  last_verified: 2026-04-30
   borough: Charlottenburg-Wilmersdorf
   suburb: Charlottenburg
+  quarter: Alt-Lietzow
 - name: Dr. Jan Effinghausen
   website: https://www.zahnaerzte-berlin-mitte.de/
   address: Jägerstraße 70
@@ -372,3 +373,23 @@
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
   suburb: Schöneberg
+- name: The Urban Dentist
+  website: https://theurbandentist.de/?utm_source=gmb&utm_medium=organic&utm_campaign=Google%20My%20Business
+  address: Warschauer Str. 32
+  latitude: '52.508031'
+  longitude: '13.450169'
+  google_place_id: ChIJ49JgUgxPqEcRw0lTZyk0IT0
+  last_verified: 2026-04-30
+  borough: Friedrichshain-Kreuzberg
+  suburb: Friedrichshain
+  quarter: Mediaspree
+- name: Zahnarztpraxis Im Torbogen
+  website: http://www.zahnarztpraxis-im-torbogen.de/
+  address: Berliner Str. 61/61a
+  latitude: 52.439822
+  longitude: 13.27416
+  google_place_id: ChIJG8deATNaqEcRRQNHZ-O2RYs
+  last_verified: 2026-04-30
+  borough: Steglitz-Zehlendorf
+  suburb: Zehlendorf
+  quarter: null

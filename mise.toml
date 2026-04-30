@@ -113,12 +113,6 @@ rm "$TMP_DB"
 
 # = WRITE ======================================================================
 
-[tasks.add-places]
-description = "Create place entries"
-run = """
-frontend/scripts/add_places.py
-"""
-
 [tasks.import-places]
 description = "Fetch place suggestions from the API and add them to the places yaml files"
 run = """

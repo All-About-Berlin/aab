@@ -588,9 +588,10 @@
   latitude: '52.510424'
   longitude: '13.378358'
   google_place_id: ChIJpbnknddRqEcRQ8Fr_ueoTik
-  last_verified: 2026-04-22
+  last_verified: 2026-04-30
   borough: Mitte
   suburb: Mitte
+  quarter: Friedrichstadt
 - name: Rechtshilfe Berlin
   description: Immigration law and criminal law. They speak English, Russian, Ukrainian, French and Mandarin.
   website: https://rechtshilfe-berlin.de/
@@ -602,3 +603,14 @@
   borough: Mitte
   suburb: Mitte
   quarter: Rosenthaler Vorstadt
+- name: Kanzlei GOLDWACHT
+  description: Tax law. They speak English, Spanish, Turkish, Arabic, Italian and French.
+  website: https://www.kanzlei-goldwacht.de/
+  address: Stresemannstraße 123C
+  latitude: 52.507517
+  longitude: 13.377879
+  google_place_id: ChIJHYkf-XJRqEcRPXZ4PAz7ibM
+  last_verified: 2026-04-30
+  borough: Mitte
+  suburb: Kreuzberg
+  quarter: Friedrichstadt

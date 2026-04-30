@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).parent.parent))
+
 from datetime import date
 from extensions.linters.places import get_google_place, fill_area_information
 from ursus.config import config
 from ursus.utils import import_module_or_path
 import difflib
 import logging
-import os
 import requests
 import subprocess
 import yaml
@@ -78,8 +81,8 @@ def get_full_place_information(suggestion: dict) -> dict:
         place["email"] = suggestion["email"]
 
     place["address"] = google_place["address"]
-    place["latitude"] = google_place["latitude"]
-    place["longitude"] = google_place["longitude"]
+    place["latitude"] = float(google_place["latitude"])
+    place["longitude"] = float(google_place["longitude"])
     place["google_place_id"] = suggestion["google_maps_id"]
     place["last_verified"] = date.today()
 
@@ -102,10 +105,7 @@ def import_place_suggestions(suggestion: dict):
     places_by_id = {place_id: p for p in places if (place_id := p.get("google_place_id"))}
     new_place_id = suggestion["google_maps_id"]
     if existing_place := places_by_id.get(new_place_id):
-        logging.warning(
-            f"Duplicate place in {yaml_path.name}: {new_place['name']}\n{diff_places(existing_place, new_place)}"
-        )
-        return
+        logging.warning(f"This place already exists:\n{diff_places(existing_place, new_place)}")
 
     logging.info(
         f"\n{new_place['name']} → {yaml_path.relative_to(config.content_path.parent)}\n"
@@ -113,22 +113,27 @@ def import_place_suggestions(suggestion: dict):
     )
 
     while True:
-        choice = input("(a)dd, add and (e)dit, (i)gnore? ").strip().lower()
-        if choice in ("a", "e", "i"):
+        choice = input("(a)dd, add and (e)dit, (s)kip, (d)elete? ").strip().lower()
+        if choice in ("a", "e", "s", "d"):
             break
 
-    if choice == "i":
+    if choice == "s":
         return
 
-    places.append(new_place)
-    yaml_path.write_text(yaml.dump(places, allow_unicode=True, sort_keys=False, width=120))
+    if choice != "d":
+        if existing_place:
+            existing_place.update(new_place)
+        else:
+            places.append(new_place)
+        yaml_path.write_text(yaml.dump(places, allow_unicode=True, sort_keys=False, width=120))
+        logging.info(f"Added {new_place['name']} to {yaml_path.name}")
 
     if choice == "e":
-        editor = os.environ.get("EDITOR") or "vi"
-        subprocess.run([editor, str(yaml_path)])
+        # Open with Sublime Text
+        subprocess.run(["subl", str(yaml_path)])
 
     delete_suggestion(suggestion["id"])
-    logging.info(f"Added {new_place['name']} to {yaml_path.name}")
+    logging.info(f"Deleted {new_place['name']} from suggestions")
 
 
 if __name__ == "__main__":
@@ -141,4 +146,4 @@ if __name__ == "__main__":
         except Exception:
             logging.exception(f"Error processing suggestion #{suggestion.get('id')}")
     else:
-        logging.info("No place suggestions found")
+        logging.info("There are no more place suggestions")

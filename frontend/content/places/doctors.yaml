@@ -283,3 +283,13 @@
   borough: Neukölln
   suburb: Neukölln
   quarter: Flughafenkiez
+- name: avi Hausarztpraxis Am Friedrichshain
+  website: https://www.avimedical.com/en/practice/berlin-am-friedrichshain
+  address: Greifswalder Str. 207
+  latitude: 52.532824
+  longitude: 13.42868
+  google_place_id: ChIJqzgCiJpPqEcRnKQUDGIU2MA
+  last_verified: 2026-04-30
+  borough: Pankow
+  suburb: Prenzlauer Berg
+  quarter: Winsviertel

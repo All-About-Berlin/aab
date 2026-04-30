@@ -401,3 +401,14 @@
   borough: Friedrichshain-Kreuzberg
   suburb: Friedrichshain
   quarter: Richard-Sorge-Viertel
+- name: GOLDWACHT Steuerberatung
+  description: They speak English, Spanish, Turkish, Arabic, Italian and French.
+  website: https://www.kanzlei-goldwacht.de/
+  address: Stresemannstraße 123C
+  latitude: 52.507517
+  longitude: 13.377879
+  google_place_id: ChIJHYkf-XJRqEcRPXZ4PAz7ibM
+  last_verified: 2026-04-30
+  borough: Mitte
+  suburb: Kreuzberg
+  quarter: Friedrichstadt
