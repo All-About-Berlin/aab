@@ -150,3 +150,15 @@
   borough: Pankow
   suburb: Prenzlauer Berg
   quarter: Humann-Kiez
+- name: Sarah Dudley
+  description: Relocation consultant and translator.
+  website: http://www.dudley-translation.com/
+  email: sarah@dudley-translation.com
+  address: Paul-Lincke-Ufer 33
+  latitude: 52.49581
+  longitude: 13.42502
+  google_place_id: ChIJ-_ce_TCw_QgRIOJmgP2IpSA
+  last_verified: 2026-04-30
+  borough: Friedrichshain-Kreuzberg
+  suburb: Kreuzberg
+  quarter: Luisenstadt

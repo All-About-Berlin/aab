@@ -167,3 +167,15 @@
   borough: Neukölln
   suburb: Neukölln
   quarter: Donaukiez
+- name: MVZ Minerva Steglitz
+  description: Dr. med. Valantina Sbahi speaks English.
+  website: https://minerva-steglitz.de/
+  address: Unterschiedliche Öffnungszeiten Gynäkologie und Allgemeinmedizin entnehmen Sie bitte der Website, Schloßstraße
+    40 - 1/OG - links
+  latitude: 52.456636
+  longitude: 13.319581
+  google_place_id: ChIJf3cQ0JhbqEcRi28Kh31wQoI
+  last_verified: 2026-04-30
+  borough: Steglitz-Zehlendorf
+  suburb: Steglitz
+  quarter: null

@@ -145,3 +145,14 @@
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
   suburb: Kreuzberg
+- name: Fahrschule Spur 2
+  description: They speak English and Kurdish.
+  website: http://www.fahrschule-spur.de/
+  address: Alboinstraße 71
+  latitude: 52.463892
+  longitude: 13.370289
+  google_place_id: ChIJyyAzE59RqEcR0dOiDRbnAck
+  last_verified: 2026-04-30
+  borough: Tempelhof-Schöneberg
+  suburb: Tempelhof
+  quarter: null

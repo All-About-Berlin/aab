@@ -412,3 +412,14 @@
   borough: Mitte
   suburb: Kreuzberg
   quarter: Friedrichstadt
+- name: Braun Schulze Steuerberatung
+  website: https://www.braunschulze.de/
+  email: anfrage@braunschulze.de
+  address: Friedrichstraße 68
+  latitude: 52.51248
+  longitude: 13.390478
+  google_place_id: ChIJ8fkz97eHsIYRpwDqrDWYh1Q
+  last_verified: 2026-04-30
+  borough: Mitte
+  suburb: Mitte
+  quarter: Friedrichstadt

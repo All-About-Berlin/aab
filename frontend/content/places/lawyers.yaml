@@ -614,3 +614,38 @@
   borough: Mitte
   suburb: Kreuzberg
   quarter: Friedrichstadt
+- name: Anwaltskanzlei Godbersen
+  description: German lawyer, English barrister, English and Irish solicitor. They speak English and Spanish.
+  website: http://www.anwaltskanzlei-godbersen.de/
+  address: Hansa-Ufer 4
+  latitude: 52.518903
+  longitude: 13.336223
+  google_place_id: ChIJvRiwN_pRqEcRGa3mRJ0E4ck
+  last_verified: 2026-04-30
+  borough: Mitte
+  suburb: Moabit
+  quarter: null
+- name: Reboot Legal
+  description: Immigration law. They speak English, Russian, Ukranian and Spanish.
+  website: https://www.rebootlegal.de/en/
+  email: marketing@rebootlegal.de
+  address: Invalidenstraße 7
+  latitude: 52.532194
+  longitude: 13.392615
+  google_place_id: ChIJeQl82xVPqEcRn5IG6TGVL1o
+  last_verified: 2026-04-30
+  borough: Mitte
+  suburb: Mitte
+  quarter: Oranienburger Vorstadt
+- name: Rechtsanwalt und Notar Uwe J. Fischer
+  description: Property law. They can do notarizations in English.
+  website: http://www.rechtundgrund.de/
+  email: fischer@rechtundgrund.de
+  address: Leipziger Pl. 11
+  latitude: 52.509419
+  longitude: 13.379762
+  google_place_id: ChIJFXVSvs5RqEcRVdq9j1s8IkM
+  last_verified: 2026-04-30
+  borough: Mitte
+  suburb: Mitte
+  quarter: Friedrichstadt

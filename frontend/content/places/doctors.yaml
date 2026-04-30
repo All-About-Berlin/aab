@@ -293,3 +293,25 @@
   borough: Pankow
   suburb: Prenzlauer Berg
   quarter: Winsviertel
+- name: Praxis City Ost
+  website: http://www.praxiscityost.de/
+  address: Gubener Str. 37
+  latitude: 52.510213
+  longitude: 13.450439
+  google_place_id: ChIJ_3dLzbgjZUERDOOwS-Bj3Fg
+  last_verified: 2026-04-30
+  borough: Friedrichshain-Kreuzberg
+  suburb: Friedrichshain
+  quarter: Mediaspree
+- name: Next Step Berlin
+  description: They speak English and Norwegian.
+  website: https://www.next-step-berlin-relocation.de/home-eng
+  email: relocation.grosswendt@gmail.com
+  address: Pfalzburger Str. 5
+  latitude: 52.49894
+  longitude: 13.32256
+  google_place_id: ChIJFxi7YvpQqEcR3D-CmNDlE7g
+  last_verified: 2026-04-30
+  borough: Charlottenburg-Wilmersdorf
+  suburb: Wilmersdorf
+  quarter: Fasanenkiez

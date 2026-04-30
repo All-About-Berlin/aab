@@ -436,3 +436,15 @@
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
   suburb: Charlottenburg
+- name: Roberto's Gentlemen's Suppliers
+  description: They speak English, Italian and Spanish.
+  website: https://robertosgs.com/
+  email: info@robertosgs.com
+  address: Charlottenstraße 35
+  latitude: 52.516182
+  longitude: 13.391034
+  google_place_id: ChIJCxHtQdtRqEcRyvfkH3RRiHY
+  last_verified: 2026-04-30
+  borough: Mitte
+  suburb: Mitte
+  quarter: Dorotheenstadt

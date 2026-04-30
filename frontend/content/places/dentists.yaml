@@ -393,3 +393,24 @@
   borough: Steglitz-Zehlendorf
   suburb: Zehlendorf
   quarter: null
+- name: Dentklar
+  description: They speak English and Turkish.
+  website: https://www.dentklar.com/
+  address: Nassauische Str. 30
+  latitude: 52.488465
+  longitude: 13.325973
+  google_place_id: ChIJwwSrckJRqEcR4tjkiIlwGtM
+  last_verified: 2026-04-30
+  borough: Charlottenburg-Wilmersdorf
+  suburb: Wilmersdorf
+  quarter: Güntzelkiez
+- name: iDentis
+  website: https://www.identis.net/?utm_source=maps
+  address: Schloßstraße 110
+  latitude: 52.46108
+  longitude: 13.324997
+  google_place_id: ChIJaTkb64NaqEcRsCzgXeiXnFA
+  last_verified: 2026-04-30
+  borough: Steglitz-Zehlendorf
+  suburb: Steglitz
+  quarter: null

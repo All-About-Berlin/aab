@@ -984,11 +984,130 @@
   suburb: Friedrichshain
   quarter: Hausburgviertel
 - name: Peter Bennett
+  description: Specialises in trauma, anxiety and depression.
   website: https://berlinpsychotherapy.com/
+  email: peterbennett@berlinpsychotherapy.com
   address: Waisenstraße 28
   latitude: 52.516529
   longitude: 13.414033
   google_place_id: ChIJwwjPBitPqEcR8tTBsTSXJus
+  accepts_public_health_insurance: false
   last_verified: 2026-04-22
   borough: Mitte
   suburb: Mitte
+- name: Kate Hanlon
+  website: https://www.katehanlon.de/
+  email: hello@katehanlon.de
+  address: Winsstraße 68
+  latitude: 52.532088
+  longitude: 13.423089
+  google_place_id: ChIJCSIamPBPqEcRnCV2APZ5X00
+  last_verified: 2026-04-30
+  borough: Pankow
+  suburb: Prenzlauer Berg
+  quarter: Winsviertel
+- name: Bertram Wohlenberg - Paartherapie, Psychotherapie, Supervision
+  description: Couples therapy and individual psychotherapy.
+  email: b.wohlenberg@gmail.com
+  address: Körtestraße 4
+  latitude: 52.491576
+  longitude: 13.411684
+  google_place_id: ChIJZyXgjqFPqEcR1wEwvVPgaRY
+  last_verified: 2026-04-30
+  borough: Friedrichshain-Kreuzberg
+  suburb: Kreuzberg
+  quarter: Graefekiez
+- name: Counselling Kollektiv Berlin
+  description: They speak Spanish, Finnish and English.
+  website: https://counsellingkollektivberlin.com/
+  address: Friedelstraße 40
+  latitude: 52.491811
+  longitude: 13.42755
+  google_place_id: ChIJo9d_lL5PqEcRBIlGNhGEwOE
+  last_verified: 2026-04-30
+  borough: Neukölln
+  suburb: Neukölln
+  quarter: Reuterkiez
+- name: Andreas Siebörger
+  description: Cognitive behavioral therapy for ADHD, trauma, PTSD and depression.
+  website: https://psychotherapiesieboerger.de/
+  email: kontakt@praxissieboerger.de
+  address: Proskauer Str. 6
+  latitude: 52.51619
+  longitude: 13.460995
+  google_place_id: ChIJqT_CIYpPqEcRJ0HCwndeAdE
+  last_verified: 2026-04-30
+  borough: Friedrichshain-Kreuzberg
+  suburb: Friedrichshain
+  quarter: Samariterviertel
+- name: Friedemann Vopel
+  description: Psychotherapy, Gestalt therapy, coaching for anxiety and crisis support.
+  website: https://friedemannvopel.de/
+  email: kontakt@friedemannvopel.de
+  address: Pflugstraße 8
+  latitude: 52.536656
+  longitude: 13.380311
+  google_place_id: ChIJG_FzXA9TqEcRE3KrufIyGGw
+  last_verified: 2026-04-30
+  borough: Mitte
+  suburb: Mitte
+  quarter: Charitéviertel
+- name: Dr. Anna Perlina
+  description: Relationship crises, depression, anxiety, stress and burnout. She speaks English and Russian.
+  website: http://www.annaperlina.com/
+  email: perlina.anna@gmail.com
+  address: Luisenstraße 45
+  latitude: 52.523069
+  longitude: 13.379764
+  google_place_id: ChIJH4DPO2UXoAsRoyIKXdyZL18
+  last_verified: 2026-04-30
+  borough: Mitte
+  suburb: Mitte
+  quarter: Friedrich-Wilhelm-Stadt
+- name: Linus Günther
+  description: He speaks English and Spanish.
+  website: https://linus-therapie.de/
+  email: kimani.daniel@outlook.com
+  address: Wilmsstraße 15
+  latitude: 52.495163
+  longitude: 13.405739
+  google_place_id: ChIJ1atQ8bgUswsR9ovruF53oUU
+  last_verified: 2026-04-30
+  borough: Friedrichshain-Kreuzberg
+  suburb: Kreuzberg
+  quarter: Graefekiez
+- name: Meno-Life
+  description: Female counselling. Medical and psychosocial counselling for  menopause.
+  website: https://meno-life.com/
+  email: info@meno-life.com
+  address: Niebuhrstraße 63
+  latitude: 52.504393
+  longitude: 13.311072
+  google_place_id: ChIJUTJd0-tHLG8RmqpZOdA8wyQ
+  last_verified: 2026-04-30
+  borough: Charlottenburg-Wilmersdorf
+  suburb: Charlottenburg
+  quarter: null
+- name: Sergey Sonntag
+  description: Psychodynamic therapy for ADHD, depression, anxiety and burn out.
+  website: https://www.sergey-sonntag.de/
+  email: psychotherapie.sonntag@gmail.com
+  address: Eisenacher Str. 2
+  latitude: 52.499872
+  longitude: 13.349207
+  google_place_id: ChIJT7IVivpRqEcRIQPh8HvPNoo
+  last_verified: 2026-04-30
+  borough: Tempelhof-Schöneberg
+  suburb: Schöneberg
+  quarter: Nollendorfkiez
+- name: Stefanie Behrendt
+  description: Integrative gestalt therapy.
+  website: http://www.stefanie-behrendt.com/
+  address: Auguststraße 49a
+  latitude: 52.52789
+  longitude: 13.400814
+  google_place_id: ChIJV4Jb6-HEB6URnwLseObhlKY
+  last_verified: 2026-04-30
+  borough: Mitte
+  suburb: Mitte
+  quarter: Spandauer Vorstadt
