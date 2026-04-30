@@ -522,6 +522,7 @@ class PlaceSuggestion(models.Model):
     notes = models.TextField(blank=True)
     is_owner = models.BooleanField(default=False)
     email = models.EmailField(validators=[validate_email], blank=True)
+    accepts_public_health_insurance = models.BooleanField(null=True, default=None)
 
     daily_digest_fields = ["category", "google_maps_id", "languages", "notes", "is_owner"]
 

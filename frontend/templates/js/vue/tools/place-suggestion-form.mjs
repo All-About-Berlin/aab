@@ -1,7 +1,9 @@
 import Checkbox from '/js/vue/components/checkbox.mjs';
 import Collapsible from '/js/vue/components/collapsible.mjs';
 import EmailInput from '/js/vue/components/email-input.mjs';
+import Glossary from '/js/vue/components/glossary.mjs';
 import IconDonate from '/js/vue/components/icons/donate.mjs';
+import Radio from '/js/vue/components/radio.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { googleMapsApiKey } from '/js/utils/constants.mjs';
 import { validateForm } from '/js/utils/form.mjs';
@@ -11,7 +13,9 @@ export default {
 		Checkbox,
 		Collapsible,
 		EmailInput,
+		Glossary,
 		IconDonate,
+		Radio,
 	},
 	mixins: [uniqueIdsMixin],
 	props: {
@@ -29,6 +33,7 @@ export default {
 			businessName: '',
 			selectedPlace: null,
 			languages: '',
+			acceptsPublicHealthInsurance: null,
 			notes: '',
 			isOwner: false,
 			email: '',
@@ -45,6 +50,9 @@ export default {
 		}
 	},
 	computed: {
+		showHealthInsuranceField(){
+			return ["doctors", "psychotherapists", "psychiatrists", "gynecologists"].includes(this.category);
+		},
 		categoryDisplay(){
 			return {
 				'cinemas': "cinema",
@@ -122,6 +130,7 @@ export default {
 					notes: this.notes,
 					is_owner: this.isOwner,
 					email: this.email,
+					accepts_public_health_insurance: this.acceptsPublicHealthInsurance,
 				}),
 			});
 			this.isLoading = false;
@@ -170,6 +179,24 @@ export default {
 							placeholder="English, German"
 						/>
 						<span class="input-instructions">In which languages do they serve customers?</span>
+					</div>
+					<div class="form-group" v-if="showHealthInsuranceField">
+						<label :for="uid('acceptsPublicHealthInsurance')">Health insurance</label>
+						<radio
+							v-model="acceptsPublicHealthInsurance"
+							:value="true">
+							<span>They accept <glossary term="gesetzliche Krankenversicherung">public health insurance</glossary></span>
+						</radio>
+						<radio
+							v-model="acceptsPublicHealthInsurance"
+							:value="false">
+							They don't accept public health insurance
+						</radio>
+						<radio
+							v-model="acceptsPublicHealthInsurance"
+							:value="null">
+							I don't know
+						</radio>
 					</div>
 					<div class="form-group">
 						<label :for="uid('notes')">Notes</label>

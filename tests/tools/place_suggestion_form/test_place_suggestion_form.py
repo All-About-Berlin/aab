@@ -8,10 +8,16 @@ def suggestion_form(page):
     return page.get_by_label("Recommend a vet")
 
 
-def select_place(page, suggestion_form):
+@pytest.fixture
+def psychotherapist_form(page):
+    page.goto("/tests/tools/place-suggestion-form-psychotherapists")
+    return page.get_by_label("Recommend a therapist")
+
+
+def select_place(page, suggestion_form, query="Tierarztpraxis Anne Gamalski"):
     """Type a query into the autocomplete input and select the first result."""
     input = suggestion_form.get_by_label("Business name").first
-    input.fill("Tierarztpraxis Anne Gamalski")
+    input.fill(query)
     page.locator(".pac-item").first.click()
 
 
@@ -70,6 +76,55 @@ def test_form_submission(page, suggestion_form, test_screenshot):
 
     expect(suggestion_form).to_contain_text("Thank you")
     test_screenshot(page, suggestion_form)
+
+
+def test_health_insurance_field_hidden_for_vets(page, suggestion_form):
+    select_place(page, suggestion_form)
+    expect(suggestion_form.get_by_label("Health insurance")).not_to_be_visible()
+
+
+def test_psychotherapist_form_submission_public_health_insurance(page, psychotherapist_form):
+    select_place(page, psychotherapist_form, query="Dipl.-Psych. Nicholas Bellafiore")
+
+    psychotherapist_form.get_by_label("They accept public health insurance").check()
+
+    with page.expect_response("**/api/forms/place-suggestion") as api_response:
+        psychotherapist_form.get_by_role("button", name="Submit").click()
+
+    assert api_response.value.ok
+    response_data = api_response.value.json()
+    assert response_data["category"] == "psychotherapists"
+    assert response_data["accepts_public_health_insurance"] is True
+
+    expect(psychotherapist_form).to_contain_text("Thank you")
+
+
+def test_psychotherapist_form_submission_no_public_health_insurance(page, psychotherapist_form):
+    select_place(page, psychotherapist_form, query="Dipl.-Psych. Nicholas Bellafiore")
+
+    psychotherapist_form.get_by_label("They don't accept public health insurance").check()
+
+    with page.expect_response("**/api/forms/place-suggestion") as api_response:
+        psychotherapist_form.get_by_role("button", name="Submit").click()
+
+    assert api_response.value.ok
+    response_data = api_response.value.json()
+    assert response_data["category"] == "psychotherapists"
+    assert response_data["accepts_public_health_insurance"] is False
+
+
+def test_psychotherapist_form_submission_no_health_insurance_info(page, psychotherapist_form):
+    select_place(page, psychotherapist_form, query="Dipl.-Psych. Nicholas Bellafiore")
+
+    with page.expect_response("**/api/forms/place-suggestion") as api_response:
+        psychotherapist_form.get_by_role("button", name="Submit").click()
+
+    assert api_response.value.ok
+    response_data = api_response.value.json()
+    assert response_data["category"] == "psychotherapists"
+    assert response_data["accepts_public_health_insurance"] is None
+
+    expect(psychotherapist_form).to_contain_text("Thank you")
 
 
 def test_error_go_back(page, suggestion_form, test_screenshot):
