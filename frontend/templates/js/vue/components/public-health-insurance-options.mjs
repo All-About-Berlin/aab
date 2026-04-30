@@ -5,10 +5,11 @@ import LogoTk from '/js/vue/components/icons/logo-tk.mjs';
 import Price from '/js/vue/components/price.mjs';
 
 import healthInsuranceOptionsMixin from '/js/vue/mixins/healthInsuranceOptions.mjs';
-import { healthInsurance, occupations, pflegeversicherung } from '/js/utils/constants.mjs';
+import { healthInsurance, pflegeversicherung } from '/js/utils/constants.mjs';
 import { formatCurrency } from '/js/utils/currency.mjs';
 import { isWerkstudent } from '/js/utils/healthInsurance.mjs';
 import { formatPercent } from '/js/utils/number.mjs';
+import { isStudent, isEmployed, isMinijob } from '/js/utils/occupations.mjs';
 
 export default {
 	components: {
@@ -51,22 +52,22 @@ export default {
 			return this.results.public.options.at(-1);
 		},
 		technikerKrankenkasseUrl() {
-			if(occupations.isStudent(this.occupation)){
+			if(isStudent(this.occupation)){
 				return "/out/tk-signup-students";
 			}
-			else if(occupations.isEmployed(this.occupation)){
+			else if(isEmployed(this.occupation)){
 				return "/out/tk-signup-employees";
 			}
 			return "/out/feather-tk-signup";
 		},
 		isMinijobTariff(){
 			return (
-				occupations.isMinijob(this.occupation, this.monthlyIncome)
+				isMinijob(this.occupation, this.monthlyIncome)
 				&& this.tariff === 'selfPay'  // You could have a minijob with the student tariff
 			);
 		},
 		isStudentOver30(){
-			return occupations.isStudent(this.occupation) && this.age >= 30;
+			return isStudent(this.occupation) && this.age >= 30;
 		},
 		isMinContribution(){
 			return this.monthlyIncome <= healthInsurance.minMonthlyIncome;
@@ -75,7 +76,7 @@ export default {
 			return this.monthlyIncome >= healthInsurance.maxMonthlyIncome;
 		},
 		isNotWerkstudent(){
-			return occupations.isStudent(this.occupation) && !isWerkstudent(this.occupation, this.monthlyIncome, this.hoursWorkedPerWeek);
+			return isStudent(this.occupation) && !isWerkstudent(this.occupation, this.monthlyIncome, this.hoursWorkedPerWeek);
 		},
 		isPublicOnlyOption() {
 			return (

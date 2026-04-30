@@ -10,11 +10,12 @@ import Radio from '/js/vue/components/radio.mjs';
 import StateInput from '/js/vue/components/state-input.mjs';
 import Tabs from '/js/vue/components/tabs.mjs';
 
-import { healthInsurance, pensions, occupations, pflegeversicherung, taxes } from '/js/utils/constants.mjs';
+import { healthInsurance, pensions, pflegeversicherung, taxes } from '/js/utils/constants.mjs';
 import { roundCurrency } from '/js/utils/currency.mjs';
 import { germanStateNames, isEastGerman } from '/js/utils/germanStates.mjs';
 import { pkvOptions } from '/js/utils/healthInsurance.mjs';
 import { formatPercent } from '/js/utils/number.mjs';
+import { isLowIncome, isEmployed, salaryOrIncome } from '/js/utils/occupations.mjs'
 import { calculateTax } from '/js/utils/tax.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
@@ -70,7 +71,6 @@ export default {
 			},
 			formatPercent,
 			germanStateNames,
-			occupations,
 			pensions,
 			pflegeversicherung,
 			healthInsuranceMaxMonthlyIncome: healthInsurance.maxMonthlyIncome,
@@ -86,6 +86,9 @@ export default {
 		}
 	},
 	computed: {
+		isEmployed() {
+			return isEmployed(this.occupation);
+		},
 		isPayingNormalHealthInsurancePrice() {
 			return !this.flag('kv-public-min-contribution') && !this.flag('kv-public-max-contribution')
 		},
@@ -159,11 +162,11 @@ export default {
 		availableTaxClasses() {
 			const taxClasses = Object.entries({
 				1: !this.isMarried,
-				2: !this.isMarried && !occupations.isLowIncome(this.monthlyIncome) && this.childrenCount > 0,
+				2: !this.isMarried && !isLowIncome(this.monthlyIncome) && this.childrenCount > 0,
 				3: this.isMarried,
-				4: this.isMarried && !occupations.isLowIncome(this.monthlyIncome),
+				4: this.isMarried && !isLowIncome(this.monthlyIncome),
 				5: this.isMarried,
-				6: occupations.isEmployed(this.occupation),
+				6: this.isEmployed,
 			})
 				.filter(([key, value]) => value)
 				.map(([key, value]) => parseInt(key, 10));
@@ -226,7 +229,7 @@ export default {
 
 		// UI stuff
 		salaryOrIncome() {
-			return occupations.salaryOrIncome(this.occupation);
+			return salaryOrIncome(this.occupation);
 		},
 		svgPaths() {
 			// Generate the paths for the SVG pie chart
@@ -404,7 +407,7 @@ export default {
 						<income-input :id="uid('health-insurance-cost')" v-model="privateHealthInsuranceCost"></income-input>
 						€&nbsp;per month
 					</div>
-					<span class="input-instructions" v-if="occupations.isEmployed(occupation)">Enter the total cost, even if your employer pays half of it.</span>
+					<span class="input-instructions" v-if="isEmployed">Enter the total cost, even if your employer pays half of it.</span>
 				</div>
 				<div class="form-group show-errors" v-if="healthInsuranceType === 'public-custom'">
 					<label :for="uid('zusatzbeitrag')">
@@ -441,8 +444,8 @@ export default {
 					</label>
 					<children-input :id="uid('children-count')" v-model="childrenCount"></children-input>
 				</div>
-				<hr v-if="occupations.isEmployed(occupation)">
-				<div class="form-group" v-if="occupations.isEmployed(occupation)">
+				<hr v-if="isEmployed">
+				<div class="form-group" v-if="isEmployed">
 					<span class="label">
 						<glossary term="Steuerklasse">Tax class</glossary>
 					</span>
@@ -652,7 +655,7 @@ export default {
 							Income tax
 							<price :amount="result.incomeTax"></price>
 						</summary>
-						<p v-if="occupations.isEmployed(occupation)">
+						<p v-if="isEmployed">
 							This is the <glossary term="Einkommensteuer">income tax</glossary> you pay directly from your paycheque. It's missing some {{ childrenCount > 0 ? 'big ' : '' }}tax deductions. When you file a <glossary term="Steuererklärung">tax declaration</glossary>, you can get {{ childrenCount > 0 ? 'a lot of ' : 'some ' }}money back{{ childrenCount > 0 ? ', especially when you have children' : '' }}.
 						</p>
 						<p class="price-line">
@@ -702,7 +705,7 @@ export default {
 							You pay {{ formatPercent(100 - disposableIncomeRatio) }}
 							<price :amount="result.totalDeductions"></price>
 						</summary>
-						<p>This is what you pay for all taxes and social contributions. <template v-if="occupations.isEmployed(occupation)">They take this from your paycheck.</template></p>
+						<p>This is what you pay for all taxes and social contributions. <template v-if="isEmployed">They take this from your paycheck.</template></p>
 					</details>
 					<details class="total">
 						<summary class="price-line" :class="{highlighted: highlightedSection === 'disposableIncome' || !highlightedSection}">

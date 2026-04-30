@@ -1,7 +1,8 @@
 import { roundCurrency } from '/js/utils/currency.mjs';
-import { healthInsurance, occupations, pensions, taxes } from '/js/utils/constants.mjs';
+import { healthInsurance, pensions, taxes } from '/js/utils/constants.mjs';
 import { isEastGerman } from '/js/utils/germanStates.mjs';
 import { getHealthInsuranceOptions } from '/js/utils/healthInsurance.mjs';
+import { isEmployed, isSelfEmployed, isMinijob, isUnemployed } from '/js/utils/occupations.mjs';
 import { estimateYearlyPensionContributions } from '/js/utils/pensionRefund.mjs';
 
 export function calculateTax(yearlyIncome, {
@@ -12,7 +13,7 @@ export function calculateTax(yearlyIncome, {
 	healthInsuranceType, // public-[krankenkasseKey], public-custom, ehic, familienversicherung-spouse, familienversicherung-parents, private, unknown
 	isMarried,  // Bool
 	isPayingChurchTax,  // Bool
-	occupation,  // String. See constants.js > occupations
+	occupation,  // String
 	taxClass,  // Number
 	zusatzbeitrag,
 }) {
@@ -87,7 +88,7 @@ export function calculateTax(yearlyIncome, {
 
 	/* Pension insurance ******************************/
 
-	if(occupations.isEmployed(occupation)) {
+	if(isEmployed(occupation)) {
 		// TODO: Set rv-max-contribution flag
 		// TODO: What about Werkstudents?
 		result.publicPension = roundCurrency(estimateYearlyPensionContributions(year, yearlyIncome, isInEastGermany));
@@ -108,7 +109,7 @@ export function calculateTax(yearlyIncome, {
 		result.taxableIncome -= taxes.sonderausgabenPauschbetrag;
 	}
 
-	if(occupations.isEmployed(occupation)) {
+	if(isEmployed(occupation)) {
 		/* Flat rate Lohnsteuer deductions ******************************/
 		if(taxClass < 6) {
 			result.taxableIncome -= taxes.arbeitnehmerpauschale;
@@ -172,10 +173,10 @@ export function calculateTax(yearlyIncome, {
 	* AFTER INCOME TAX
 	***************************************************/
 
-	const isSplittingTarif = occupations.isEmployed(occupation) && taxClass === 3;
+	const isSplittingTarif = isEmployed(occupation) && taxClass === 3;
 
 	let incomeTaxResult = null;
-	if (occupations.isEmployed(occupation) && (taxClass === 5 || taxClass === 6)) {
+	if (isEmployed(occupation) && (taxClass === 5 || taxClass === 6)) {
 		incomeTaxResult = calculateIncomeTaxClass56(result.taxableIncome)
 	}
 	else {
@@ -281,14 +282,14 @@ export function calculateUnemploymentInsurance(yearlyIncome, occupation='employe
 	const flags = new Set();
 	let unemploymentInsurance = 0;
 
-	if(occupations.isSelfEmployed(occupation)) {
+	if(isSelfEmployed(occupation)) {
 		flags.add('optional');
 	}
-	else if(occupations.isMinijob(occupation, yearlyIncome/12)) {
+	else if(isMinijob(occupation, yearlyIncome/12)) {
 		flags.add('minijob');
 		flags.add('none');
 	}
-	else if(occupations.isUnemployed(occupation)) {
+	else if(isUnemployed(occupation)) {
 		flags.add('unemployed');
 		flags.add('none');
 	}

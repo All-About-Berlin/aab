@@ -27,11 +27,12 @@ import multiStageMixin from '/js/vue/mixins/multiStage.mjs';
 import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import QRCode from '/js/libs/qrcode.mjs';
-import { healthInsurance, occupations, pflegeversicherung } from '/js/utils/constants.mjs';
+import { healthInsurance, pflegeversicherung } from '/js/utils/constants.mjs';
 import { formatCurrency } from '/js/utils/currency.mjs';
 import { getHealthInsuranceOptions } from '/js/utils/healthInsurance.mjs';
 import { validateForm } from '/js/utils/form.mjs';
 import { getReferrer } from '/js/utils/tracking.mjs';
+import { isStudent, isSelfEmployed, isUnemployed, salaryOrIncome } from '/js/utils/occupations.mjs'
 
 export default {
 	components: {
@@ -137,9 +138,9 @@ export default {
 		this.inputIncome = this.useMonthlyIncome ? this.monthlyIncome : this.yearlyIncome;
 	},
 	computed: {
-		isStudent(){ return occupations.isStudent(this.occupation) },
-		isSelfEmployed(){ return occupations.isSelfEmployed(this.occupation) },
-		isUnemployed(){ return occupations.isUnemployed(this.occupation) },
+		isStudent(){ return isStudent(this.occupation) },
+		isSelfEmployed(){ return isSelfEmployed(this.occupation) },
+		isUnemployed(){ return isUnemployed(this.occupation) },
 		monthlyIncome(){ return this.yearlyIncome / 12 },
 		progressBarLength(){ return this.stages.filter(s => !['publicOptions', 'privateOptions', 'expatOptions', 'thank-you', 'error'].includes(s)).length - 1 },
 		progressBarValue(){ return Math.min(this.stageIndex, this.progressBarLength) },
@@ -274,7 +275,7 @@ export default {
 		},
 
 		// Printed values
-		salaryOrIncome(){ return occupations.salaryOrIncome(this.occupation) === 'salary' ? 'Salary' : 'Income' },
+		salaryOrIncome(){ return salaryOrIncome(this.occupation) === 'salary' ? 'Salary' : 'Income' },
 		childOrChildren(){ return this.childrenCount === 1 ? 'child' : 'children' },
 
 		trackedStagesExtraData() {

@@ -8,8 +8,8 @@ import IconPassport from '/js/vue/components/icons/passport.mjs';
 import Price from '/js/vue/components/price.mjs';
 import PublicHealthInsuranceOptions from '/js/vue/components/public-health-insurance-options.mjs';
 
+import { isStudent, isSelfEmployed, isEmployed } from '/js/utils/occupations.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
-import { occupations } from '/js/utils/constants.mjs';
 import { formatCurrency } from '/js/utils/currency.mjs';
 import healthInsuranceOptionsMixin from '/js/vue/mixins/healthInsuranceOptions.mjs';
 
@@ -71,13 +71,13 @@ export default {
 		***************************************************/
 
 		clarification(){
-			if(occupations.isStudent(this.occupation)){
+			if(isStudent(this.occupation)){
 				return this.studentClarification;
 			}
-			else if(occupations.isSelfEmployed(this.occupation)){
+			else if(isSelfEmployed(this.occupation)){
 				return this.selfEmployedClarification;
 			}
-			else if(occupations.isEmployed(this.occupation)){
+			else if(isEmployed(this.occupation)){
 				return this.employeeClarification;
 			}
 			// There is no Azubi or unemployed clarification

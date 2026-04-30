@@ -1,4 +1,5 @@
-import { bafog, healthInsurance, occupations, pflegeversicherung, taxes } from '/js/utils/constants.mjs';
+import { bafog, healthInsurance, pflegeversicherung, taxes } from '/js/utils/constants.mjs';
+import { isStudent, isSelfEmployed, isUnemployed, isEmployed, isMinijob, isMidijob } from '/js/utils/occupations.mjs';
 import { roundCurrency } from '/js/utils/currency.mjs';
 
 function getAdjustedMonthlyIncome(tariff, monthlyIncome){
@@ -73,25 +74,25 @@ function gkvTariff(age, occupation, monthlyIncome, hoursWorkedPerWeek){
 		// When the Azubi's pay is too low, the employer pays for everything - § 20 Abs. 3 SGB IV
 		tariff = monthlyIncome <= healthInsurance.azubiFreibetrag ? 'azubiFree' : 'azubi';
 	}
-	else if(occupations.isStudent(occupation) && age < 30) {
+	else if(isStudent(occupation) && age < 30) {
 		tariff = 'student';
 
 		if(!isWerkstudent(occupation, monthlyIncome, hoursWorkedPerWeek)){
-			tariff = occupations.isSelfEmployed(occupation) ? 'selfEmployed' : 'employee';
+			tariff = isSelfEmployed(occupation) ? 'selfEmployed' : 'employee';
 		}
 	}
-	else if(occupations.isSelfEmployed(occupation)) {
+	else if(isSelfEmployed(occupation)) {
 		tariff = 'selfEmployed';
 	}
-	else if(occupations.isUnemployed(occupation)) {
+	else if(isUnemployed(occupation)) {
 		tariff = 'selfPay';
 	}
-	else if(occupations.isEmployed('employee')) {
+	else if(isEmployed('employee')) {
 		tariff = 'employee';
 	}
 
 	if(tariff === 'employee'){
-		if(occupations.isMinijob(occupation, monthlyIncome)) {
+		if(isMinijob(occupation, monthlyIncome)) {
 			tariff = 'selfPay';
 		}
 		else if(isMidijob(occupation, monthlyIncome)) {
@@ -282,7 +283,7 @@ export function pkvOptions({occupation, monthlyIncome, hoursWorkedPerWeek, age, 
 	}
 
 	// Students get a different price
-	const canHaveStudentTariff = occupations.isStudent(occupation) && isWerkstudent(occupation, monthlyIncome, hoursWorkedPerWeek);
+	const canHaveStudentTariff = isStudent(occupation) && isWerkstudent(occupation, monthlyIncome, hoursWorkedPerWeek);
 
 	// For PKV, the employer contribution capped at what they would pay for GKV (with an average Zusatzbeitrag)
 	// The contribution could be 0, if the employer does not contribute to health insurance
@@ -365,21 +366,10 @@ function canHaveEHIC(hasEUPublicHealthInsurance, hasGermanPublicHealthInsurance,
 	);
 }
 
-function isMidijob(occupation, monthlyIncome){
-	// No midijob tariff for Azubis
-	// https://www.haufe.de/sozialwesen/versicherungen-beitraege/auszubildende-besonderheiten-bei-den-neuen/besonderheiten-bei-der-beitragsberechnung_240_94670.html
-	return (
-		occupations.isEmployed(occupation)
-		&& occupation !== 'azubi'
-		&& !occupations.isMinijob(occupation, monthlyIncome)
-		&& monthlyIncome <= healthInsurance.maxMidijobIncome
-	);
-}
-
 function _canHaveFamilienversicherung(occupation, monthlyIncome){
 	// The max income you can have before you're disqualified from Familienversicherung
 	// The threshold is different for minijobs - §8 SGB V
-	const maxIncome = occupations.isEmployed(occupation) ? taxes.maxMinijobIncome : healthInsurance.maxFamilienversicherungIncome;
+	const maxIncome = isEmployed(occupation) ? taxes.maxMinijobIncome : healthInsurance.maxFamilienversicherungIncome;
 
 	// Azubis can't use Familienversicherung - krankenkasse-vergleich-direkt.de/ratgeber/krankenversicherung-fuer-auszubildende.html
 	return (
@@ -401,14 +391,14 @@ function canHaveFamilienversicherungFromParents(occupation, monthlyIncome, age){
 		age < 23
 		|| (
 			age < 25
-			&& occupations.isStudent(occupation)
+			&& isStudent(occupation)
 		)
 	);
 }
 
 function canBePaidBySocialBenefits(occupation, monthlyIncome, isApplyingForFirstVisa){
 	return (
-		occupations.isUnemployed(occupation)
+		isUnemployed(occupation)
 		&& monthlyIncome <= healthInsurance.maxFamilienversicherungIncome
 		&& !isApplyingForFirstVisa
 	);
@@ -425,15 +415,15 @@ function isPflichtversichertAzubi(occupation, monthlyIncome){
 function isHighPaidEmployee(occupation, monthlyIncome){
 	// Those can choose private health insurance, but public is still forced to accept them at first
 	return (
-		occupations.isEmployed(occupation)
+		isEmployed(occupation)
 		&& monthlyIncome >= healthInsurance.minFreiwilligMonthlyIncome
 	);
 }
 
 function isPflichtversichertEmployee(occupation, monthlyIncome, hoursWorkedPerWeek, age){
 	return (
-		occupations.isEmployed(occupation)
-		&& !occupations.isMinijob(occupation, monthlyIncome)
+		isEmployed(occupation)
+		&& !isMinijob(occupation, monthlyIncome)
 		&& !isHighPaidEmployee(occupation, monthlyIncome)
 		&& !isWerkstudent(occupation, monthlyIncome, hoursWorkedPerWeek)
 	);
@@ -448,7 +438,7 @@ function isPflichtversichert(occupation, monthlyIncome, hoursWorkedPerWeek, age)
 
 function canHaveStudentTarif(occupation, monthlyIncome, hoursWorkedPerWeek, age){
 	return (
-		occupations.isStudent(occupation)
+		isStudent(occupation)
 		&& age < 30
 		&& isWerkstudent(occupation, monthlyIncome, hoursWorkedPerWeek)
 	)
@@ -470,8 +460,8 @@ function canHavePrivateHealthInsurance(occupation, monthlyIncome, hoursWorkedPer
 		&& (
 			!isPflichtversichert(occupation, monthlyIncome, hoursWorkedPerWeek, age)
 			|| isWerkstudent(occupation, monthlyIncome, hoursWorkedPerWeek)
-			|| occupations.isSelfEmployed(occupation)
-			|| occupations.isUnemployed(occupation)
+			|| isSelfEmployed(occupation)
+			|| isUnemployed(occupation)
 		)
 	);
 }
@@ -481,7 +471,7 @@ function incomeIsEnoughForPrivate(occupation, monthlyIncome){
 	// Students are often exempt from that, so they can get insured on a low income.
 	return (
 		monthlyIncome > healthInsurance.minPrivateMonthlyIncome
-		|| occupations.isStudent(occupation)
+		|| isStudent(occupation)
 	);
 }
 
@@ -503,12 +493,12 @@ function canHaveExpatHealthInsurance(occupation, monthlyIncome, hoursWorkedPerWe
 function canHaveKSK(occupation, monthlyIncome, hoursWorkedPerWeek){
 	// Künstlersozialkasse
 	return (
-		occupations.isSelfEmployed(occupation)
+		isSelfEmployed(occupation)
 		&& (monthlyIncome * 12) >= healthInsurance.kskMinimumIncome
 
 		// The KSK only covers a student's health insurance if they work under 20 hours per week
 		&& !(
-			occupations.isStudent(occupation)
+			isStudent(occupation)
 			&& hoursWorkedPerWeek > 20
 		)
 	);
@@ -517,7 +507,7 @@ function canHaveKSK(occupation, monthlyIncome, hoursWorkedPerWeek){
 export function isWerkstudent(occupation, monthlyIncome, hoursWorkedPerWeek){
 	// A Werkstudent keeps their student insurance even if their income is above the Familienversicherung threshold
 	return (
-		occupations.isStudent(occupation)
+		isStudent(occupation)
 
 		// TODO: Unless it's an internship during studies
 		&& hoursWorkedPerWeek <= 20
@@ -581,7 +571,7 @@ export function getHealthInsuranceOptions({
 		options: [],
 	}
 
-	if(occupations.isStudent(occupation)){
+	if(isStudent(occupation)){
 		if(age >= 30) {
 			output.flags.add('public-student-over-30');
 		}
@@ -602,7 +592,7 @@ export function getHealthInsuranceOptions({
 		const tariff = gkvTariff(age, occupation, monthlyIncome, hoursWorkedPerWeek);
 		output.flags.add(`public-tariff-${tariff}`);
 
-		if(occupations.isStudent(occupation)){
+		if(isStudent(occupation)){
 			if(!isWerkstudent(occupation, monthlyIncome, hoursWorkedPerWeek)){
 				output.flags.add('public-not-werkstudent');
 			}
@@ -616,7 +606,7 @@ export function getHealthInsuranceOptions({
 			output.flags.add('public-min-contribution');
 		}
 
-		if(tariff !== 'student' && occupations.isMinijob(occupation, monthlyIncome)) {
+		if(tariff !== 'student' && isMinijob(occupation, monthlyIncome)) {
 			output.flags.add('public-minijob');
 		}
 
@@ -718,7 +708,7 @@ export function getHealthInsuranceOptions({
 	if(age >= 55){
 		output.asList = [output.public, output.expat, output.private];
 	}
-	else if(occupations.isStudent(occupation)){
+	else if(isStudent(occupation)){
 		if(output.flags.has('public-student-over-30')){
 			// Public is more expensive for older students
 			// Expat makes more sense. They can switch to public once they start working.
@@ -729,16 +719,16 @@ export function getHealthInsuranceOptions({
 			output.asList = [output.public, output.expat, output.private];
 		}
 	}
-	else if(occupations.isMinijob(occupation, monthlyIncome)){
+	else if(isMinijob(occupation, monthlyIncome)){
 		// Minijobbers can still have expat
 		// Private usually refuses them
 		output.asList = [output.public, output.expat, output.private];
 	}
-	else if(occupations.isUnemployed(occupation)){
+	else if(isUnemployed(occupation)){
 		// Expat is cheaper for unemployed people
 		output.asList = [output.expat, output.public, output.private];
 	}
-	else if(occupations.isSelfEmployed(occupation)){
+	else if(isSelfEmployed(occupation)){
 		if(monthlyIncome * 12 > 60000){
 			// Private makes sense from about €60000 per year
 			output.asList = [output.private, output.public, output.expat];
