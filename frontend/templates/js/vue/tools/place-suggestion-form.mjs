@@ -125,6 +125,7 @@ export default {
 				}),
 			});
 			this.isLoading = false;
+			this.$el.scrollIntoView({ block: 'start', behavior: 'auto' });
 			this.stage = response.ok ? 'thank-you' : 'error';
 		},
 	},
