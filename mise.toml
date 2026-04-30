@@ -17,7 +17,6 @@ editorconfig-checker = "latest"
 
 [tasks.setup]
 description = "Install local dependencies to run the project"
-alias = "i"
 silent = true
 run = """
 uv pip install -r frontend/requirements.txt
@@ -35,16 +34,22 @@ enter = { task = "setup" }
 
 [tasks.site]
 description = "Serve the frontend, reload on changes. Fast and resource-efficient."
-alias = "r"
 run = """
 ursus -wfs -c frontend/ursus_config.py
 """
 
 [tasks.dev]
 description = "Serve the frontend and the backend in docker."
-alias = "d"
+usage = '''
+flag "--bundle-js"
+'''
+
 quiet = true
 run = """
+if [ "${usage_bundle_js:-false}" = "true" ]; then
+  export BUNDLE_JS=1
+fi
+
 if ! docker info >/dev/null 2>&1; then
   echo "[$(date +'%H:%M:%S')] Starting docker daemon"
   open -a Docker;
@@ -55,7 +60,7 @@ while ! docker ps > /dev/null 2>&1; do
   sleep 1;
 done
 
-echo "[$(date +'%H:%M:%S')] Starting docker containers"
+echo "[$(date +'%H:%M:%S')] Starting docker containers (BUNDLE_JS=${BUNDLE_JS})"
 compose_output=$(docker compose up --build -d --force-recreate 2>&1) || { echo "$compose_output"; exit 1; }
 
 max_attempts=10
@@ -73,7 +78,10 @@ done
 
 [tasks.wait-for-frontend]
 quiet = true
-depends = ["dev"]
+usage = '''
+flag "--bundle-js"
+'''
+depends = ["dev {% if usage.bundle_js %}--bundle-js{% endif %}"]
 run = """
 max_attempts=30
 attempt=1
@@ -126,33 +134,29 @@ frontend/scripts/add_review.py
 # = TEST =======================================================================
 
 [tasks.test-api]
-env = { "BUNDLE_JS" = "1" }
 quiet = true
-depends = ["dev"]
+depends = ["wait-for-frontend --bundle-js"]
 run = """
 echo "[$(date +'%H:%M:%S')] Running API tests..."
 test_output=$(docker compose exec backend python3 manage.py test -b --verbosity 0 2>&1) || { echo "$test_output"; exit 1; }
 """
 
 [tasks.test-ui]
-env = { "BUNDLE_JS" = "1" }
 quiet = true
-depends = ["dev", "wait-for-frontend"]
+depends = ["wait-for-frontend --bundle-js"]
 run = """
 echo "[$(date +'%H:%M:%S')] Running UI tests..."
 pytest tests
 """
 
 [tasks.update-snapshots]
-env = { "BUNDLE_JS" = "1" }
-depends = ["dev", "wait-for-frontend"]
+depends = ["wait-for-frontend --bundle-js"]
 run = """
 rm -rf tests/snapshots/*
 pytest tests --update-snapshots
 """
 
 [tasks.test]
-env = { "BUNDLE_JS" = "1" }
 quiet = true
 depends = ["test-api", "test-ui"]
 run = """
@@ -171,7 +175,6 @@ for file in $(find . -type f -name "*.sh" -not -path '*/[@.]*'); do shellcheck $
 [tasks.lint]
 description = "Run various linters for the project"
 quiet = true
-alias = "l"
 run = """
 echo "[$(date +'%H:%M:%S')] Running shellcheck..."
 mise shellcheck
@@ -188,20 +191,17 @@ ursus lint --level=ERROR -c frontend/ursus_config.py
 
 [tasks.format]
 description = "Automatically format the code"
-alias = "f"
 run = """
 ruff format
 """
 
 [tasks.pre-commit]
-description = "Run git pre-commit checks"
 run = """
 mise format
 mise lint
 """
 
 [tasks.pre-push]
-description = "Run git pre-push checks"
 run = """
 mise lint
 mise test
