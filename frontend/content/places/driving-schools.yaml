@@ -2,8 +2,8 @@
   description: Theory classes and driving lessons in English.
   website: https://fahrschule-asma.de/
   address: Oranienburger Str. 98
-  latitude: '52.597486'
-  longitude: '13.332776'
+  latitude: 52.597486
+  longitude: 13.332776
   google_place_id: ChIJdWE4U3hTqEcR_yPkvGZvFsU
   last_verified: 2026-04-22
   borough: Reinickendorf
@@ -12,8 +12,8 @@
   description: Theory classes and driving lessons in English.
   website: http://www.fahrschule-oscar.de/
   address: Hauptstraße 92
-  latitude: '52.476396'
-  longitude: '13.341839'
+  latitude: 52.476396
+  longitude: 13.341839
   google_place_id: ChIJuSTm5G9QqEcR_OQvwfdHMRQ
   last_verified: 2026-04-22
   borough: Tempelhof-Schöneberg
@@ -22,8 +22,8 @@
   description: Theory classes and driving lessons in English.
   website: http://www.asphalt-profis.de/
   address: Am Friedrichshain 23
-  latitude: '52.528759'
-  longitude: '13.428365'
+  latitude: 52.528759
+  longitude: 13.428365
   google_place_id: ChIJp4LuPBBOqEcR7JyEDH88H6s
   last_verified: 2026-04-22
   borough: Pankow
@@ -34,8 +34,8 @@
   website: http://www.fahrschule-ibf.de/
   email: jonas.hammann17@gmail.com
   address: Fahrschule IBF, Borussiastraße 19
-  latitude: '52.467024'
-  longitude: '13.384794'
+  latitude: 52.467024
+  longitude: 13.384794
   google_place_id: ChIJiy992fxPqEcR51Ux3BYhdgE
   last_verified: 2026-04-22
   borough: Tempelhof-Schöneberg
@@ -44,8 +44,8 @@
   description: Theory classes and driving lessons in English and Turkish.
   website: http://www.fahrschuleaktiv.de/
   address: Reinickendorfer Str. 54
-  latitude: '52.551589'
-  longitude: '13.367659'
+  latitude: 52.551589
+  longitude: 13.367659
   google_place_id: ChIJNe4EXylSqEcRKV_1eAp4nlc
   last_verified: 2026-04-22
   borough: Mitte
@@ -55,8 +55,8 @@
   description: Theory classes and driving lessons in English, Russian and Romanian.
   website: http://www.fahrschule-2drive.de/
   address: Neue Bahnhofstraße 5
-  latitude: '52.505406'
-  longitude: '13.469757'
+  latitude: 52.505406
+  longitude: 13.469757
   google_place_id: ChIJ5yv_re9PqEcRH1VmlRqySPc
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -66,8 +66,8 @@
   description: Driving lessons in English and Turkish.
   website: https://www.fahrschule-sevim.de/
   address: Schwedenstraße 18
-  latitude: '52.554539'
-  longitude: '13.375945'
+  latitude: 52.554539
+  longitude: 13.375945
   google_place_id: ChIJZ-2Egi9SqEcRD23O5VhKYV8
   last_verified: 2026-04-22
   borough: Mitte
@@ -76,8 +76,8 @@
   description: Some instructors speak English.
   website: http://www.kiezfahrschule.de/
   address: Esmarchstraße 4
-  latitude: '52.5317'
-  longitude: '13.43133'
+  latitude: 52.5317
+  longitude: 13.43133
   google_place_id: ChIJcZQfqw9OqEcRIgNBwfBG6X4
   last_verified: 2026-04-22
   borough: Pankow
@@ -86,8 +86,8 @@
 - name: Fahrschule Südstern
   website: http://www.fahrschule-suedstern.de/
   address: Hasenheide 58
-  latitude: '52.489267'
-  longitude: '13.408768'
+  latitude: 52.489267
+  longitude: 13.408768
   google_place_id: ChIJdQablM9PqEcR73gU3YlwGYo
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -96,8 +96,8 @@
 - name: Fahrschule Dynamic
   website: https://www.fahrschuledynamic.de/
   address: Karl-Marx-Straße 43
-  latitude: '52.483818'
-  longitude: '13.430455'
+  latitude: 52.483818
+  longitude: 13.430455
   google_place_id: ChIJ_-pg5blPqEcRKETOQf9dAKY
   last_verified: 2026-04-22
   borough: Neukölln
@@ -106,8 +106,8 @@
 - name: Fahrschule Next in Berlin
   website: https://fahrschule-next.de/
   address: Perleberger Str. 65
-  latitude: '52.535647'
-  longitude: '13.357166'
+  latitude: 52.535647
+  longitude: 13.357166
   google_place_id: ChIJK5dC8JxRqEcRLvhe50X_dpY
   last_verified: 2026-04-22
   borough: Mitte
@@ -117,8 +117,8 @@
   description: One instructor speaks English.
   website: http://www.driving-school-berlin.de/
   address: Mierendorffpl. 10
-  latitude: '52.525348'
-  longitude: '13.304827'
+  latitude: 52.525348
+  longitude: 13.304827
   google_place_id: ChIJZQ4LrjtRqEcRbYCtZGQ6p9A
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -128,8 +128,8 @@
   description: They speak English, Turkish and Arabic.
   website: http://www.fahrschuleexakt.com/
   address: Karl-Marx-Straße 221
-  latitude: '52.470332'
-  longitude: '13.441748'
+  latitude: 52.470332
+  longitude: 13.441748
   google_place_id: ChIJi-MbE6RPqEcRYrCbYn_6Kks
   last_verified: 2026-04-22
   borough: Neukölln
@@ -139,8 +139,8 @@
   website: http://www.fahrschule-prima.de/
   email: info@fahrschule-prima.de
   address: Dudenstraße 8
-  latitude: '52.485175'
-  longitude: '13.384574'
+  latitude: 52.485175
+  longitude: 13.384574
   google_place_id: ChIJq47PJSFQqEcRtqcVwtnRGw4
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg

@@ -2,8 +2,8 @@
   description: The largest motorcycle equipment store in Berlin
   website: https://www.louis.de/service/filialen/louis-gigastore-berlin-reinickendorf
   address: Holzhauser Str. 148/152
-  latitude: '52.584926'
-  longitude: '13.312785'
+  latitude: 52.584926
+  longitude: 13.312785
   google_place_id: ChIJBZe5IIhTqEcRHv33gtTgg4I
   last_verified: 2026-04-22
   borough: Reinickendorf
@@ -11,8 +11,8 @@
 - name: Louis Mega Shop Schöneweide
   website: https://www.louis.de/filialen/louis-berlin-schoeneweide
   address: Schnellerstraße 20g
-  latitude: '52.458101'
-  longitude: '13.505772'
+  latitude: 52.458101
+  longitude: 13.505772
   google_place_id: ChIJIR_U07NIqEcRwOar1JG7MBA
   last_verified: 2026-04-22
   borough: Treptow-Köpenick
@@ -21,8 +21,8 @@
   description: A fairly large store with a vast selection of products
   website: https://www.polo-motorrad.com/de-de/stores/polo-motorrad-store-berlin-reinickendorf/
   address: Holzhauser Str. 62-68
-  latitude: '52.580883'
-  longitude: '13.303636'
+  latitude: 52.580883
+  longitude: 13.303636
   google_place_id: ChIJHdB3-nNUqEcR4ttBz3wcw64
   last_verified: 2026-04-22
   borough: Reinickendorf
@@ -30,8 +30,8 @@
 - name: Louis Mega Shop Lichtenberg
   website: https://www.louis.de/filialen/louis-berlin-lichtenberg
   address: Siegfriedstraße 65
-  latitude: '52.527165'
-  longitude: '13.500267'
+  latitude: 52.527165
+  longitude: 13.500267
   google_place_id: ChIJT1FXA59OqEcRLePreILaixc
   last_verified: 2026-04-22
   borough: Lichtenberg
@@ -39,8 +39,8 @@
 - name: POLO Motorrad Mahlsdorf
   website: https://www.polo-motorrad.com/de-de/stores/polo-motorrad-store-berlin-mahlsdorf/
   address: Alt-Mahlsdorf 26
-  latitude: '52.5052'
-  longitude: '13.612323'
+  latitude: 52.5052
+  longitude: 13.612323
   google_place_id: ChIJwZ6NqzVKqEcRRb3NQqfuNyI
   last_verified: 2026-04-22
   borough: Marzahn-Hellersdorf
@@ -48,8 +48,8 @@
 - name: POLO Motorrad Wilmersdorf
   website: https://www.polo-motorrad.com/de-de/stores/polo-motorrad-store-berlin-mariendorf/
   address: Großbeerenstraße 2
-  latitude: '52.439577'
-  longitude: '13.380533'
+  latitude: 52.439577
+  longitude: 13.380533
   google_place_id: ChIJqeA-9UhFqEcR5_CC8G5AoRw
   last_verified: 2026-04-22
   borough: Tempelhof-Schöneberg
@@ -58,8 +58,8 @@
   description: The official Dainese shop in Berlin. The most knowledgeable saleswoman I've met works here.
   website: https://www.dainese.com/de/de/store/dainese-store-berlin.html
   address: Hohenzollerndamm 12
-  latitude: '52.494688'
-  longitude: '13.325519'
+  latitude: 52.494688
+  longitude: 13.325519
   google_place_id: ChIJZ9Gx2_ZQqEcR2QJmVJEu79U
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -69,8 +69,8 @@
   description: Motorcycle helmet shop
   website: http://www.bandit.de/
   address: Darwinstraße 2
-  latitude: '52.520974'
-  longitude: '13.314829'
+  latitude: 52.520974
+  longitude: 13.314829
   google_place_id: ChIJD1xeexhRqEcRXfy1xEgVa8A
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf

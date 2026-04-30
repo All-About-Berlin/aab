@@ -1,8 +1,8 @@
 - name: Anne Gamalski
   website: https://www.berlin-english-vet.com/
   address: Greifenhagener Str. 45
-  latitude: '52.549645'
-  longitude: '13.416853'
+  latitude: 52.549645
+  longitude: 13.416853
   google_place_id: ChIJy8UN_wZSqEcR-k_-PkvsA7U
   last_verified: 2026-04-25
   borough: Pankow
@@ -10,8 +10,8 @@
 - name: Ellen Laskawy
   website: https://laskawy.jimdofree.com/
   address: Bänschstraße 58
-  latitude: '52.51766'
-  longitude: '13.466337'
+  latitude: 52.51766
+  longitude: 13.466337
   google_place_id: ChIJZ3MH0GFOqEcRAlDyXqdn1Vs
   last_verified: 2026-04-25
   borough: Friedrichshain-Kreuzberg
@@ -20,8 +20,8 @@
 - name: Dr. Beck
   website: http://www.tierarztpraxis-dr-beck.de/
   address: Weichselstraße 25
-  latitude: '52.486971'
-  longitude: '13.436771'
+  latitude: 52.486971
+  longitude: 13.436771
   google_place_id: ChIJy2oP2a9PqEcRyWvPB8t_hLk
   last_verified: 2026-04-25
   borough: Neukölln
@@ -30,8 +30,8 @@
 - name: Dr. Layla Hourani
   website: https://tierarztpraxis-am-lietzenseepark.de/team/
   address: Riehlstraße 3
-  latitude: '52.509276'
-  longitude: '13.28588'
+  latitude: 52.509276
+  longitude: 13.28588
   google_place_id: ChIJX1oRn9ZQqEcRIqQV9ihuq-E
   last_verified: 2026-04-25
   borough: Charlottenburg-Wilmersdorf
@@ -40,8 +40,8 @@
 - name: Dr. Manuela Wight
   website: https://www.tierarztpraxisgruenau.de/
   address: Regattastraße 87
-  latitude: '52.420183'
-  longitude: '13.578411'
+  latitude: 52.420183
+  longitude: 13.578411
   google_place_id: ChIJIflYY-lHqEcRwy1wGgqiqQI
   last_verified: 2026-04-25
   borough: Treptow-Köpenick
@@ -49,8 +49,8 @@
 - name: Dr. Michael Förster
   website: https://www.tierarzt-onlineverzeichnis.de/tierarztpraxis/10559-berlin/dr-michael-foerster/2252/
   address: Birkenstraße 58
-  latitude: '52.531001'
-  longitude: '13.345588'
+  latitude: 52.531001
+  longitude: 13.345588
   google_place_id: ChIJEymS_3RRqEcREoOKJtqpmGk
   last_verified: 2026-04-25
   borough: Mitte
@@ -59,8 +59,8 @@
 - name: Dr. Miriam Bertram
   website: https://www.facebook.com/praxistierzuliebe/
   address: Edisonstraße 12
-  latitude: '52.463189'
-  longitude: '13.514088'
+  latitude: 52.463189
+  longitude: 13.514088
   google_place_id: ChIJqye9GLdIqEcR-DuVymFQcv4
   last_verified: 2026-04-25
   borough: Treptow-Köpenick
@@ -68,8 +68,8 @@
 - name: Dr. Pastor
   website: https://www.tierarztpraxis-pastor.de/
   address: Brüsseler Str. 52A
-  latitude: '52.54868'
-  longitude: '13.35316'
+  latitude: 52.54868
+  longitude: 13.35316
   google_place_id: ChIJQ2dWIX5RqEcRqpQ3prmBRRE
   last_verified: 2026-04-25
   borough: Mitte
@@ -78,8 +78,8 @@
 - name: Dr. Peter Vogel
   website: https://www.drpetervogel.de/en
   address: Finowstraße 14
-  latitude: '52.511403'
-  longitude: '13.466605'
+  latitude: 52.511403
+  longitude: 13.466605
   google_place_id: ChIJv21pAl5OqEcR_5WtvO1OgT0
   last_verified: 2026-04-25
   borough: Friedrichshain-Kreuzberg
@@ -88,8 +88,8 @@
 - name: Dr. Rotgang Praxis
   website: https://www.tierarztpraxis-rotgang.de/en-gb
   address: 'Greifswalder Str: 21'
-  latitude: '52.531018'
-  longitude: '13.427835'
+  latitude: 52.531018
+  longitude: 13.427835
   google_place_id: ChIJc55ylY1PqEcRcc2G0Gx7sms
   last_verified: 2026-04-25
   borough: Pankow
@@ -98,8 +98,8 @@
 - name: Dr. Sven Stahlhut
   website: https://www.tierarztamwestend.de/
   address: Sophie-Charlotten-Straße 22
-  latitude: '52.517998'
-  longitude: '13.286294'
+  latitude: 52.517998
+  longitude: 13.286294
   google_place_id: ChIJcawfl8UjZUERgmsDmsvPeP0
   last_verified: 2026-04-25
   borough: Charlottenburg-Wilmersdorf
@@ -108,8 +108,8 @@
 - name: Dr. Till Robl
   website: https://www.tierarztpraxis-robl.de/
   address: Stettiner Str. 5
-  latitude: '52.552065'
-  longitude: '13.384819'
+  latitude: 52.552065
+  longitude: 13.384819
   google_place_id: ChIJ1dWf7CNSqEcRvSFAk6HGgug
   last_verified: 2026-04-25
   borough: Mitte
@@ -117,8 +117,8 @@
 - name: Dr. Uwe Lenk
   website: https://tierarztpraxis-lenk.de/
   address: Schönfließer Str. 1
-  latitude: '52.550188'
-  longitude: '13.408333'
+  latitude: 52.550188
+  longitude: 13.408333
   google_place_id: ChIJiTZh5ARSqEcRp6ScxP0qAIA
   last_verified: 2026-04-25
   borough: Pankow
@@ -128,8 +128,8 @@
   description: Mobile vet, also speaks French
   website: https://tierarzt-mobil-berlin.de/
   address: Gutzkowstraße 4
-  latitude: '52.479769'
-  longitude: '13.348978'
+  latitude: 52.479769
+  longitude: 13.348978
   google_place_id: ChIJDX2T0wRRqEcRcYe5WryMN5A
   last_verified: 2026-04-25
   borough: Tempelhof-Schöneberg
@@ -138,8 +138,8 @@
   description: English website, online appointments
   website: https://tierarzt-baerenwiese.de/en/home/
   address: Uhlandstraße 151
-  latitude: '52.497414'
-  longitude: '13.324851'
+  latitude: 52.497414
+  longitude: 13.324851
   google_place_id: ChIJnWFGyfBQqEcRPdUp-g9guVM
   last_verified: 2026-04-25
   borough: Charlottenburg-Wilmersdorf
@@ -149,8 +149,8 @@
   description: English website, online appointments
   website: https://tierarztpraxis-chung-wahle.com/en/home/
   address: Hauptstraße 89
-  latitude: '52.475141'
-  longitude: '13.340041'
+  latitude: 52.475141
+  longitude: 13.340041
   google_place_id: ChIJ2TbwkSxRqEcRqZp2xmoPpW0
   last_verified: 2026-04-25
   borough: Tempelhof-Schöneberg
@@ -158,8 +158,8 @@
 - name: Tierarztpraxis Watson
   website: https://www.tierarzt-watson.de/
   address: Altenbraker Str. 29
-  latitude: '52.468627'
-  longitude: '13.433142'
+  latitude: 52.468627
+  longitude: 13.433142
   google_place_id: ChIJxa1I3ZtPqEcROSVpNEkug4w
   last_verified: 2026-04-25
   borough: Neukölln

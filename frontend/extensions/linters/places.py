@@ -145,7 +145,7 @@ class PlacesLinter(Linter):
                 f"{name}: Latitude does not match with Google: {lat} -> {google_place['latitude']}",
                 logging.ERROR,
             )
-            place["latitude"] = google_place["latitude"]
+            place["latitude"] = float(google_place["latitude"])
             location_changed = True
         if lng != google_place["longitude"]:
             yield (
@@ -153,7 +153,7 @@ class PlacesLinter(Linter):
                 f"{name}: Longitude does not match with Google: {lng} -> {google_place['longitude']}",
                 logging.ERROR,
             )
-            place["longitude"] = google_place["longitude"]
+            place["longitude"] = float(google_place["longitude"])
             location_changed = True
 
         if location_changed:

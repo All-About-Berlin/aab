@@ -1,8 +1,8 @@
 - name: Shagis Friseursalon
   website: https://shagis-friseursalon.business.site/
   address: Pannierstraße 58
-  latitude: '52.48686'
-  longitude: '13.43054'
+  latitude: 52.48686
+  longitude: 13.43054
   google_place_id: ChIJgaMEvrBPqEcRbKHNprYEXsg
   last_verified: 2026-04-22
   borough: Neukölln
@@ -11,8 +11,8 @@
 - name: Jack's Barber Shop
   website: http://www.jacks-barber-shop.de/
   address: Sonnenallee 25
-  latitude: '52.48669'
-  longitude: '13.42928'
+  latitude: 52.48669
+  longitude: 13.42928
   google_place_id: ChIJUavMsbBPqEcRGwYeKbghHog
   last_verified: 2026-04-22
   borough: Neukölln
@@ -22,8 +22,8 @@
   description: Has English-speaking barbers
   website: https://www.facebook.com/streetcut/
   address: Gneisenaustraße 54
-  latitude: '52.48912'
-  longitude: '13.40473'
+  latitude: 52.48912
+  longitude: 13.40473
   google_place_id: ChIJrYP5VtZPqEcRJEwYIJqbODw
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -32,8 +32,8 @@
 - name: Haartari
   website: http://www.haartari-friseure.de/
   address: Bänschstraße 52
-  latitude: '52.518039'
-  longitude: '13.465271'
+  latitude: 52.518039
+  longitude: 13.465271
   google_place_id: ChIJ15O-uGFOqEcRXCj3zMtR4iY
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -43,8 +43,8 @@
   description: A barber shop run by Englishmen. Appointments can be made online.
   website: https://www.rowdy-barber.de/
   address: Kollwitzstraße 71
-  latitude: '52.537167'
-  longitude: '13.418598'
+  latitude: 52.537167
+  longitude: 13.418598
   google_place_id: ChIJ63S2ngFOqEcRHW14FpYouL8
   last_verified: 2026-04-22
   borough: Pankow
@@ -54,8 +54,8 @@
   description: A barber shop run by Englishmen. Appointments can be made online.
   website: http://rowdy-barber.de/
   address: Meinekestraße 6
-  latitude: '52.501529'
-  longitude: '13.328743'
+  latitude: 52.501529
+  longitude: 13.328743
   google_place_id: ChIJ7-jmXflQqEcRAfMJdpdbjto
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -63,8 +63,8 @@
 - name: MAOC (Modern Art of Cutting) Hair
   website: http://www.maochair.de/
   address: Hessische Str. 5
-  latitude: '52.529203'
-  longitude: '13.380092'
+  latitude: 52.529203
+  longitude: 13.380092
   google_place_id: ChIJfQgSVOtRqEcR4XRVAAP3Xfo
   last_verified: 2026-04-22
   borough: Mitte
@@ -74,8 +74,8 @@
   description: English barber. Appointments can be made online.
   website: http://www.nomadbarber.com/
   address: Schönleinstraße 4
-  latitude: '52.492614'
-  longitude: '13.421154'
+  latitude: 52.492614
+  longitude: 13.421154
   google_place_id: ChIJ_-n5JcpPqEcRCqF4hbAxUJk
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -84,8 +84,8 @@
 - name: GOD SAVE the MULLET GSTM.BERLIN
   website: http://www.gstmberlin.com/
   address: Skalitzer Str. 83
-  latitude: '52.500645'
-  longitude: '13.438633'
+  latitude: 52.500645
+  longitude: 13.438633
   google_place_id: ChIJKeW1L0xOqEcRoZhjU6zLqZY
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -94,8 +94,8 @@
 - name: Viktor Leske Kreuzberg
   website: https://www.viktorleske.net/
   address: Lausitzer Pl. 1
-  latitude: '52.500727'
-  longitude: '13.429511'
+  latitude: 52.500727
+  longitude: 13.429511
   google_place_id: ChIJqwbxakpOqEcRKSYTra4xGTo
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -104,8 +104,8 @@
 - name: Haarspree Frisöre
   website: http://www.haarspree.de/
   address: Wrangelstraße 65
-  latitude: '52.497204'
-  longitude: '13.445046'
+  latitude: 52.497204
+  longitude: 13.445046
   google_place_id: ChIJ6SRq9k1OqEcRZd-8XLrbsMY
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -114,8 +114,8 @@
 - name: NeoBerlin
   website: http://www.neoberlin.com/
   address: Schönhauser Allee 42
-  latitude: '52.539955'
-  longitude: '13.412548'
+  latitude: 52.539955
+  longitude: 13.412548
   google_place_id: ChIJW5h0qf9RqEcRppPqWT_3e0o
   last_verified: 2026-04-22
   borough: Pankow
@@ -124,8 +124,8 @@
 - name: Viktor Leske Mitte
   website: https://www.viktorleske.net/
   address: Joachimstraße 8
-  latitude: '52.527552'
-  longitude: '13.400949'
+  latitude: 52.527552
+  longitude: 13.400949
   google_place_id: ChIJubD8G-RRqEcRQ8tHxbIkROg
   last_verified: 2026-04-22
   borough: Mitte
@@ -135,8 +135,8 @@
   description: According to reviewers, they are especially skilled with curly hair
   website: http://die-pauls-sisters.de/
   address: Chamissopl. 6
-  latitude: '52.488076'
-  longitude: '13.391718'
+  latitude: 52.488076
+  longitude: 13.391718
   google_place_id: ChIJsZIgZNhPqEcR0CyirGxmrlk
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -145,8 +145,8 @@
   description: According to reviewers, Fairy speaks good English and is skilled with curly hair
   website: https://placenearme.org/frisuren-trends/?q=the+banada'd+bouffant
   address: Möckernstraße 96
-  latitude: '52.493677'
-  longitude: '13.379971'
+  latitude: 52.493677
+  longitude: 13.379971
   google_place_id: ChIJT8Z9ty9QqEcRbQR43aIgpIk
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -154,8 +154,8 @@
 - name: Friseur Viktor Leske Mitte
   website: https://www.viktorleske.net/
   address: Joachimstraße 8
-  latitude: '52.527552'
-  longitude: '13.400949'
+  latitude: 52.527552
+  longitude: 13.400949
   google_place_id: ChIJubD8G-RRqEcRQ8tHxbIkROg
   last_verified: 2026-04-22
   borough: Mitte
@@ -164,8 +164,8 @@
 - name: Nomad Barber
   website: http://www.nomadbarber.com/
   address: Schönleinstraße 4
-  latitude: '52.492614'
-  longitude: '13.421154'
+  latitude: 52.492614
+  longitude: 13.421154
   google_place_id: ChIJ_-n5JcpPqEcRCqF4hbAxUJk
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -174,8 +174,8 @@
 - name: Friseur Viktor Leske
   website: https://www.viktorleske.net/
   address: Lausitzer Pl. 1
-  latitude: '52.500727'
-  longitude: '13.429511'
+  latitude: 52.500727
+  longitude: 13.429511
   google_place_id: ChIJqwbxakpOqEcRKSYTra4xGTo
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -185,8 +185,8 @@
   description: Susie speaks English
   website: http://www.wild-hair-berlin.de/
   address: Prenzlauer Allee 195A
-  latitude: '52.539587'
-  longitude: '13.423992'
+  latitude: 52.539587
+  longitude: 13.423992
   google_place_id: ChIJn3s1SgdOqEcR30AlIauYIhM
   last_verified: 2026-04-22
   borough: Pankow
@@ -194,8 +194,8 @@
 - name: Friseur Bernd Kramer Hairdesign
   website: https://www.treatwell.de/ort/bernd-kramer-hairdesign/
   address: Tamara-Danz-Straße 11
-  latitude: '52.506082'
-  longitude: '13.446568'
+  latitude: 52.506082
+  longitude: 13.446568
   borough: Friedrichshain-Kreuzberg
   suburb: Friedrichshain
   quarter: Mediaspree
@@ -204,8 +204,8 @@
   website: http://www.princesssofia.de/
   email: connely.elissa@gmail.com
   address: Belziger Str. 30
-  latitude: '52.487086'
-  longitude: '13.352857'
+  latitude: 52.487086
+  longitude: 13.352857
   google_place_id: ChIJs2NlZAZRqEcRkHI3InkIbCw
   last_verified: 2026-04-22
   borough: Tempelhof-Schöneberg
@@ -214,8 +214,8 @@
 - name: Shan Rahimkhan
   website: http://www.shanrahimkhan.com/
   address: Tauentzienstraße 21-24
-  latitude: '52.502023'
-  longitude: '13.341317'
+  latitude: 52.502023
+  longitude: 13.341317
   google_place_id: ChIJB2MJJeVQqEcR_hfMBpg115g
   last_verified: 2026-04-22
   borough: Tempelhof-Schöneberg
@@ -225,8 +225,8 @@
   description: Erik speaks English, German and Dutch
   website: http://www.urbanbarber.de/
   address: Schöneberger Str. 11
-  latitude: '52.4642'
-  longitude: '13.330912'
+  latitude: 52.4642
+  longitude: 13.330912
   google_place_id: ChIJLwGio4JaqEcRN6_2JZqukYw
   last_verified: 2026-04-22
   borough: Steglitz-Zehlendorf
@@ -237,8 +237,8 @@
   website: https://www.cobarbers.com/
   email: kerrsutherland.barber@gmail.com
   address: Rosenthaler Str. 72A
-  latitude: '52.529516'
-  longitude: '13.40191'
+  latitude: 52.529516
+  longitude: 13.40191
   google_place_id: ChIJxbJzYZJRqEcRUVPg19ir-tk
   last_verified: 2026-04-22
   borough: Mitte
@@ -249,8 +249,8 @@
   website: https://www.amywhoberlin.com/
   email: kpintye@gmail.com
   address: Schleiermacherstraße 25
-  latitude: '52.489173'
-  longitude: '13.397675'
+  latitude: 52.489173
+  longitude: 13.397675
   google_place_id: ChIJWczGW8VPqEcR8zMYY7Zoqe8
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -260,8 +260,8 @@
   website: https://www.eshk-hair.com/salons/berlin-friseur-moabit/
   email: info@eedsgn.com
   address: Stromstraße 44
-  latitude: '52.529987'
-  longitude: '13.342973'
+  latitude: 52.529987
+  longitude: 13.342973
   google_place_id: ChIJwY0Z9qpRqEcRSNnCSzQWsyk
   last_verified: 2026-04-22
   borough: Mitte
@@ -271,8 +271,8 @@
   website: https://www.eshk-hair.com/salons/berlin-friseur-neukolln/
   email: info@eedsgn.com
   address: Thomasstraße 11
-  latitude: '52.473544'
-  longitude: '13.439184'
+  latitude: 52.473544
+  longitude: 13.439184
   google_place_id: ChIJ-XbhXJ9PqEcRQ0nwxtRlixQ
   last_verified: 2026-04-22
   borough: Neukölln
@@ -282,8 +282,8 @@
   description: Owned by a New Zealander. They speak English and French.
   website: https://www.wallacewallace.de
   address: Brunnenstraße 159
-  latitude: '52.535128'
-  longitude: '13.397704'
+  latitude: 52.535128
+  longitude: 13.397704
   google_place_id: ChIJT7xPfZVRqEcRLen82no-gJs
   last_verified: 2026-04-22
   borough: Mitte
@@ -294,8 +294,8 @@
   website: https://maxbarber.berlin
   email: chopshop.berlin@gmail.com
   address: Parlour&Places, Kurfürstendamm 210/1 Floor
-  latitude: '52.502033'
-  longitude: '13.324312'
+  latitude: 52.502033
+  longitude: 13.324312
   google_place_id: ChIJB9KL-cVRqEcRdBAcUXyA5V8
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -304,8 +304,8 @@
   description: They speak English and Italian
   website: https://www.salone39.com
   address: Silvio-Meier-Str. 2
-  latitude: '52.515407'
-  longitude: '13.463405'
+  latitude: 52.515407
+  longitude: 13.463405
   google_place_id: ChIJXSSIhdlPqEcRtyS6SWedMF0
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -315,8 +315,8 @@
   description: Irish barber. They also have a bar and serve Guinness.
   website: http://badfishbarbershop.com/
   address: Krossener Str. 18
-  latitude: '52.510547'
-  longitude: '13.457827'
+  latitude: 52.510547
+  longitude: 13.457827
   google_place_id: ChIJQRgjmB9PqEcRG8WLLjGbEt4
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -325,8 +325,8 @@
 - name: Fade Club Cutbusser
   website: http://www.fadeclub.de/
   address: Warschauer Str. 60
-  latitude: '52.509673'
-  longitude: '13.451704'
+  latitude: 52.509673
+  longitude: 13.451704
   google_place_id: ChIJ9wxTME9PqEcRWQSf8owWZV8
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -335,8 +335,8 @@
 - name: Rechtsanwältin Zeynep Cetin
   website: http://www.rechtsanwaeltin-cetin.de/
   address: Turmstr. 35 A
-  latitude: '52.526744'
-  longitude: '13.337364'
+  latitude: 52.526744
+  longitude: 13.337364
   google_place_id: ChIJqw_YkTVTqEcR8a-YMM9hDNA
   last_verified: 2026-04-22
   borough: Mitte
@@ -345,8 +345,8 @@
   description: Abbas speaks English
   website: http://mado-barbershop.com
   address: Schönhauser Allee 49
-  latitude: '52.542359'
-  longitude: '13.412723'
+  latitude: 52.542359
+  longitude: 13.412723
   google_place_id: ChIJlQGhf2NNqEcRVm7RjvUXxZA
   last_verified: 2026-04-22
   borough: Pankow
@@ -354,8 +354,8 @@
 - name: Berlin Barbers Charlottenburg
   website: https://berlin-barbers.com/
   address: Zillestraße 79
-  latitude: '52.513335'
-  longitude: '13.304512'
+  latitude: 52.513335
+  longitude: 13.304512
   google_place_id: ChIJ2-Z75yBRqEcRNiQSvzQhgSY
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -365,8 +365,8 @@
   website: https://theblade.berlin/
   email: johannes@theblade.berlin
   address: Am Hamburger bhf 2a
-  latitude: '52.531225'
-  longitude: '13.369909'
+  latitude: 52.531225
+  longitude: 13.369909
   google_place_id: ChIJq48f79ZRqEcRhIIApXA7QFE
   last_verified: 2026-04-22
   borough: Mitte
@@ -376,8 +376,8 @@
   website: https://barber-shop-by-meti.business.site/
   email: vullnetveliaj@gmail.com
   address: Sprengelstraße 44
-  latitude: '52.542307'
-  longitude: '13.358133'
+  latitude: 52.542307
+  longitude: 13.358133
   google_place_id: ChIJXfI_D9VRqEcRJwPow1xV65Y
   last_verified: 2026-04-22
   borough: Mitte
@@ -388,8 +388,8 @@
   website: https://www.renasanzsalon.com/
   email: santiagolobov@gmail.com
   address: Grünberger Str. 24
-  latitude: '52.512618'
-  longitude: '13.450756'
+  latitude: 52.512618
+  longitude: 13.450756
   google_place_id: ChIJN7dacftPqEcRPj9LDR1yrJw
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -399,8 +399,8 @@
   description: They speak English and Italian
   website: http://www.alchimie-hairdressing.de/
   address: Niederbarnimstraße 5
-  latitude: '52.51432'
-  longitude: '13.45904'
+  latitude: 52.51432
+  longitude: 13.45904
   google_place_id: ChIJfTthsPhPqEcRE8s4AQpznSQ
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -409,8 +409,8 @@
 - name: Amber
   website: https://www.amber-saloncoiffure.com/
   address: 32 Rue Greneta, 75002 Paris, France
-  latitude: '48.865327'
-  longitude: '2.349591'
+  latitude: 48.865327
+  longitude: 2.349591
   google_place_id: ChIJebN16Rlu5kcRFwINZ8mm2uk
   last_verified: 2026-04-22
   suburb: Paris 2e Arrondissement
@@ -419,8 +419,8 @@
   description: All barbers speak English. One speaks Polish.
   website: http://stleonard.de/
   address: Brunnenstraße 158
-  latitude: '52.535237'
-  longitude: '13.397534'
+  latitude: 52.535237
+  longitude: 13.397534
   google_place_id: ChIJTdxQpTZRqEcRCqDpusto-rQ
   last_verified: 2026-04-22
   borough: Mitte
@@ -430,8 +430,8 @@
   website: https://uppaman.com/
   email: info@uppaman.com
   address: Knesebeckstraße 77
-  latitude: '52.5041'
-  longitude: '13.322439'
+  latitude: 52.5041
+  longitude: 13.322439
   google_place_id: ChIJLaDLwc9RqEcRTNXDCWcHZb0
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf

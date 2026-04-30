@@ -1,8 +1,8 @@
 - name: FitX Fitnessstudio Alexanderplatz
   website: https://www.fitx.de/studio/berlin-alexanderplatz
   address: Alexanderstraße 7
-  latitude: '52.523312'
-  longitude: '13.416616'
+  latitude: 52.523312
+  longitude: 13.416616
   google_place_id: ChIJ-wBLKBlOqEcRq2t0vHy6S8s
   last_verified: 2026-04-22
   borough: Mitte
@@ -10,8 +10,8 @@
 - name: FitX Fitnessstudio Hellersdorf
   website: https://www.fitx.de/fitnessstudios/berlin-hellersdorf?utm_source=google&utm_medium=yext&utm_campaign=00061
   address: Hellersdorfer Str. 235
-  latitude: '52.536408'
-  longitude: '13.60287'
+  latitude: 52.536408
+  longitude: 13.60287
   google_place_id: ChIJkbmFXzNKqEcR_gZvf6LDvYA
   last_verified: 2026-04-22
   borough: Marzahn-Hellersdorf
@@ -20,8 +20,8 @@
 - name: FitX Fitnessstudio Schöneberg
   website: https://www.fitx.de/fitnessstudios/berlin-schoeneberg
   address: Hauptstraße 141
-  latitude: '52.485422'
-  longitude: '13.356002'
+  latitude: 52.485422
+  longitude: 13.356002
   google_place_id: ChIJUYomW0BQqEcRamBvYsxKOIM
   last_verified: 2026-04-22
   borough: Tempelhof-Schöneberg
@@ -30,8 +30,8 @@
 - name: FitX Fitnessstudio Südkreuz
   website: https://www.fitx.de/studio/berlin-suedkreuz
   address: Wilhelm-Kabus-Straße 77
-  latitude: '52.478143'
-  longitude: '13.364681'
+  latitude: 52.478143
+  longitude: 13.364681
   google_place_id: ChIJO8BkiD1QqEcRY0TigxJ3xzs
   last_verified: 2026-04-22
   borough: Tempelhof-Schöneberg
@@ -40,8 +40,8 @@
 - name: FitX Fitnessstudio Tempelhof
   website: https://www.fitx.de/fitnessstudios/berlin-tempelhof
   address: Ullsteinstraße 128
-  latitude: '52.454114'
-  longitude: '13.387692'
+  latitude: 52.454114
+  longitude: 13.387692
   google_place_id: ChIJA-m4LVdFqEcRKLzbJCpa2g0
   last_verified: 2026-04-22
   borough: Tempelhof-Schöneberg
@@ -49,8 +49,8 @@
 - name: FitX Fitnessstudio Waidmannslust
   website: https://www.fitx.de/fitnessstudios/berlin-waidmannslust
   address: Oraniendamm 6
-  latitude: '52.607878'
-  longitude: '13.324964'
+  latitude: 52.607878
+  longitude: 13.324964
   google_place_id: ChIJIwhoXZ1UqEcRxU3Kj70nX2Y
   last_verified: 2026-04-22
   borough: Reinickendorf
@@ -58,8 +58,8 @@
 - name: FitX Fitnessstudio Wilmersdorf
   website: https://www.fitx.de/studio/berlin-wilmersdorf
   address: Kurfürstendamm 156
-  latitude: '52.49875'
-  longitude: '13.303'
+  latitude: 52.49875
+  longitude: 13.303
   google_place_id: ChIJ5WzFn8JQqEcRpBMsUXxpgpE
   status: CLOSED_TEMPORARILY
   last_verified: 2026-04-22
@@ -68,8 +68,8 @@
 - name: JOHN REED Fitness Kreuzberg
   website: https://johnreed.fitness/de/club-berlin-kreuzberg/
   address: Kottbusser Damm 1
-  latitude: '52.495359'
-  longitude: '13.420099'
+  latitude: 52.495359
+  longitude: 13.420099
   google_place_id: ChIJv9CiCMtPqEcRF5Fo74udAJA
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -78,8 +78,8 @@
 - name: JOHN REED Fitness Prenzlauer Berg
   website: https://johnreed.fitness/club-berlin-prenzlauer-berg
   address: Prenzlauer Allee 248-251
-  latitude: '52.528426'
-  longitude: '13.416379'
+  latitude: 52.528426
+  longitude: 13.416379
   google_place_id: ChIJgVtpjBxOqEcR-z-iXveHbcY
   last_verified: 2026-04-22
   borough: Pankow
@@ -88,8 +88,8 @@
 - name: McFit gym Berlin Adlershof
   website: https://www.mcfit.com/de/studios/studiosuche/studiodetails/studio/berlin-adlershof/
   address: Adlergestell 299
-  latitude: '52.430956'
-  longitude: '13.549099'
+  latitude: 52.430956
+  longitude: 13.549099
   google_place_id: ChIJOaY-59JHqEcRmIPhjqlFPLo
   last_verified: 2026-04-22
   borough: Treptow-Köpenick
@@ -98,8 +98,8 @@
 - name: McFIT Charlottenburg
   website: https://www.mcfit.com/de/studios/studiosuche/studiodetails/studio/berlin-charlottenburg/
   address: Tauentzienstraße 8
-  latitude: '52.503689'
-  longitude: '13.338794'
+  latitude: 52.503689
+  longitude: 13.338794
   google_place_id: ChIJG2BavFVQqEcR4l1NW1XMvHY
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -107,8 +107,8 @@
 - name: McFIT Fitnessstudio Heinersdorf
   website: https://www.mcfit.com/de/studios/studiosuche/studiodetails/studio/berlin-heinersdorf/
   address: Romain-Rolland-Straße 32
-  latitude: '52.565443'
-  longitude: '13.444232'
+  latitude: 52.565443
+  longitude: 13.444232
   google_place_id: ChIJtWXu_I1NqEcRAX48yTpM1r0
   last_verified: 2026-04-22
   borough: Pankow
@@ -116,8 +116,8 @@
 - name: McFIT Fitnessstudio Hohenschönhausen
   website: https://www.mcfit.com/de/studios/studiosuche/studiodetails/studio/berlin-hohenschoenhausen/
   address: Konrad-Wolf-Straße 56-60
-  latitude: '52.536037'
-  longitude: '13.474682'
+  latitude: 52.536037
+  longitude: 13.474682
   google_place_id: ChIJ914nWdVNqEcRwQk1hQVD52g
   last_verified: 2026-04-22
   borough: Lichtenberg
@@ -125,8 +125,8 @@
 - name: McFIT Fitnessstudio Lichtenberg
   website: https://www.mcfit.com/de/studios/studiosuche/studiodetails/studio/berlin-lichtenberg/
   address: Siegfriedstraße 177
-  latitude: '52.521826'
-  longitude: '13.498887'
+  latitude: 52.521826
+  longitude: 13.498887
   google_place_id: ChIJ81tm7pdOqEcRIV9FFa9UACc
   last_verified: 2026-04-22
   borough: Lichtenberg
@@ -134,8 +134,8 @@
 - name: McFIT Fitnessstudio Lichterfelde
   website: https://www.mcfit.com/de/studios/studiosuche/studiodetails/studio/berlin-lichterfelde/
   address: Goerzallee 190-238
-  latitude: '52.418455'
-  longitude: '13.287984'
+  latitude: 52.418455
+  longitude: 13.287984
   google_place_id: ChIJgTjF1ahbqEcRk_UOk9FkBXY
   last_verified: 2026-04-22
   borough: Steglitz-Zehlendorf
@@ -144,8 +144,8 @@
 - name: McFit gym Berlin Mahlsdorf
   website: https://www.mcfit.com/de/studios/studiosuche/studiodetails/studio/berlin-mahlsdorf/
   address: Alt-Mahlsdorf 24
-  latitude: '52.505249'
-  longitude: '13.612179'
+  latitude: 52.505249
+  longitude: 13.612179
   google_place_id: ChIJ2QJmKpJJqEcRlNWkX-ZtBXE
   last_verified: 2026-04-22
   borough: Marzahn-Hellersdorf
@@ -153,8 +153,8 @@
 - name: McFit gym Berlin Marienfelde
   website: https://www.mcfit.com/de/studios/studiosuche/studiodetails/studio/berlin-marienfelde/
   address: Großbeerenstraße 148-158
-  latitude: '52.430767'
-  longitude: '13.375299'
+  latitude: 52.430767
+  longitude: 13.375299
   google_place_id: ChIJde5x6zBFqEcRwLhmg92-s_Y
   last_verified: 2026-04-22
   borough: Tempelhof-Schöneberg
@@ -162,8 +162,8 @@
 - name: McFIT Fitnessstudio Marzahn
   website: https://www.mcfit.com/de/studios/studiosuche/studiodetails/studio/berlin-marzahn/
   address: Märkische Allee 160a
-  latitude: '52.532422'
-  longitude: '13.537356'
+  latitude: 52.532422
+  longitude: 13.537356
   google_place_id: ChIJF-HETf9LqEcRID7Y-7POGZg
   last_verified: 2026-04-22
   borough: Marzahn-Hellersdorf
@@ -172,8 +172,8 @@
 - name: McFIT Fitnessstudio Moabit
   website: https://www.mcfit.com/de/studios/studiosuche/studiodetails/studio/berlin-moabit/
   address: Alt-Moabit 96d
-  latitude: '52.524889'
-  longitude: '13.345577'
+  latitude: 52.524889
+  longitude: 13.345577
   google_place_id: ChIJh_wCZQpRqEcReTFUGX_9Y-U
   last_verified: 2026-04-22
   borough: Mitte
@@ -182,8 +182,8 @@
 - name: McFit gym Berlin Niederschöneweide
   website: https://www.mcfit.com/de/studios/studiosuche/studiodetails/studio/berlin-niederschoeneweide/
   address: Schnellerstraße 1-5
-  latitude: '52.464099'
-  longitude: '13.497954'
+  latitude: 52.464099
+  longitude: 13.497954
   google_place_id: ChIJ00bGqUtPqEcRCJMlVi46kNU
   last_verified: 2026-04-22
   borough: Treptow-Köpenick
@@ -191,8 +191,8 @@
 - name: McFIT Fitnessstudio Neukölln
   website: https://www.mcfit.com/de/studios/studiosuche/studiodetails/studio/berlin-neukoelln/
   address: Tempelhofer Weg 91-99
-  latitude: '52.451769'
-  longitude: '13.434731'
+  latitude: 52.451769
+  longitude: 13.434731
   google_place_id: ChIJ_wOt9X9FqEcRA7GzEzoFRw0
   last_verified: 2026-04-22
   borough: Neukölln
@@ -200,8 +200,8 @@
 - name: McFit gym Berlin Reinickendorf
   website: https://www.mcfit.com/de/studios/studiosuche/studiodetails/studio/berlin-reinickendorf/
   address: Oraniendamm 64
-  latitude: '52.607369'
-  longitude: '13.323602'
+  latitude: 52.607369
+  longitude: 13.323602
   google_place_id: ChIJcdoQr4JUqEcRMy7TGEqeFN0
   last_verified: 2026-04-22
   borough: Reinickendorf
@@ -210,16 +210,16 @@
 - name: McFIT Fitnessstudio Spandau
   website: https://www.mcfit.com/de/studios/studiosuche/studiodetails/studio/berlin-spandau/
   address: Am Juliusturm 21
-  latitude: '52.537504'
-  longitude: '13.227496'
+  latitude: 52.537504
+  longitude: 13.227496
   google_place_id: ChIJidksPF9WqEcRJul0BRo5tW8
   last_verified: 2026-04-22
   suburb: Haselhorst
 - name: McFit gym Berlin Spandau Klosterfelde
   website: https://www.mcfit.com/de/studios/studiosuche/studiodetails/studio/berlin-spandau-west/
   address: Altonaer Str. 59-61
-  latitude: '52.532045'
-  longitude: '13.187704'
+  latitude: 52.532045
+  longitude: 13.187704
   google_place_id: ChIJpZLzMzdWqEcRFiYXI6EasUs
   last_verified: 2026-04-22
   suburb: Spandau
@@ -227,8 +227,8 @@
 - name: McFIT Fitnessstudio Tempelhof
   website: https://www.mcfit.com/de/studios/studiosuche/studiodetails/studio/berlin-tempelhof/
   address: Schöneberger Str. 11-15
-  latitude: '52.469812'
-  longitude: '13.373682'
+  latitude: 52.469812
+  longitude: 13.373682
   google_place_id: ChIJdyZ2ZQNQqEcROhRoE0Qx1v4
   last_verified: 2026-04-22
   borough: Tempelhof-Schöneberg
@@ -236,8 +236,8 @@
 - name: McFit gym Berlin Wedding
   website: https://www.mcfit.com/de/studios/studiosuche/studiodetails/studio/berlin-wedding/
   address: Forum, Seestraße 64
-  latitude: '52.55365'
-  longitude: '13.360847'
+  latitude: 52.55365
+  longitude: 13.360847
   google_place_id: ChIJb4R5X9NTqEcRl0W9wBdgQps
   last_verified: 2026-04-22
   borough: Mitte
@@ -246,8 +246,8 @@
 - name: McFIT Fitnessstudio Wilmersdorf
   website: https://www.mcfit.com/de/studios/studiosuche/studiodetails/studio/berlin-wilmersdorf/
   address: Berliner Straße 148
-  latitude: '52.486647'
-  longitude: '13.32839'
+  latitude: 52.486647
+  longitude: 13.32839
   google_place_id: ChIJ811DAGBQqEcRFzLoxWWPQoo
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -256,8 +256,8 @@
 - name: SuperFit Charlottenburg
   website: http://superfit.club/
   address: Wilmersdorfer Str. 54
-  latitude: '52.50826'
-  longitude: '13.30604'
+  latitude: 52.50826
+  longitude: 13.30604
   google_place_id: ChIJnRLk2AZRqEcRRJfMw1nL1s8
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -265,8 +265,8 @@
 - name: SuperFit Europa-Center
   website: http://superfit.club/
   address: Tauentzienstraße 9-12
-  latitude: '52.504524'
-  longitude: '13.337422'
+  latitude: 52.504524
+  longitude: 13.337422
   google_place_id: ChIJky6YnVVQqEcRKxPUjz9px8c
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -274,8 +274,8 @@
 - name: SuperFit Friedrichshain
   website: http://superfit.club/
   address: Ring-Center, Frankfurter Allee 111/2. OG
-  latitude: '52.514228'
-  longitude: '13.473888'
+  latitude: 52.514228
+  longitude: 13.473888
   google_place_id: ChIJo5HVsYxOqEcRGqNVg_PXGRs
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -284,8 +284,8 @@
 - name: SuperFit Mitte
   website: http://superfit.club/
   address: Grunerstraße 20
-  latitude: '52.518306'
-  longitude: '13.416053'
+  latitude: 52.518306
+  longitude: 13.416053
   google_place_id: ChIJez-RBiJOqEcRDmNJKNVXaXc
   last_verified: 2026-04-22
   borough: Mitte
@@ -294,8 +294,8 @@
 - name: Superfit Neukölln
   website: http://superfit.club/
   address: Karl-Marx-Straße 66
-  latitude: '52.482088'
-  longitude: '13.432858'
+  latitude: 52.482088
+  longitude: 13.432858
   google_place_id: ChIJhduVJLtPqEcRUSAyyrzp2ZY
   last_verified: 2026-04-22
   borough: Neukölln
@@ -304,8 +304,8 @@
 - name: SuperFit Tegel
   website: http://www.superfit.club/
   address: Am Borsigturm 2
-  latitude: '52.584819'
-  longitude: '13.285833'
+  latitude: 52.584819
+  longitude: 13.285833
   google_place_id: ChIJYdKLpWlUqEcRE7e4HfI0vV4
   last_verified: 2026-04-22
   borough: Reinickendorf
@@ -313,8 +313,8 @@
 - name: SuperFit Steglitz
   website: http://superfit.club/
   address: Schloßstraße 1
-  latitude: '52.464324'
-  longitude: '13.326835'
+  latitude: 52.464324
+  longitude: 13.326835
   google_place_id: ChIJ23SqdIJaqEcR6Y2dRu0JiRw
   last_verified: 2026-04-22
   borough: Steglitz-Zehlendorf
@@ -324,8 +324,8 @@
   website: https://sqwodpod.com/
   email: tee@teemajor.com
   address: Jacobsohnstraße 27
-  latitude: '52.556083'
-  longitude: '13.434764'
+  latitude: 52.556083
+  longitude: 13.434764
   google_place_id: ChIJlejeuxJNqEcRZk9PrDh0u-o
   last_verified: 2026-04-22
   borough: Pankow

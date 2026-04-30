@@ -2,8 +2,8 @@
   description: Translation and relocation help. We work together since many years.
   website: /out/red-tape-translation
   address: Left entrance, 4th floor, Berliner Str. 69
-  latitude: '52.555939'
-  longitude: '13.413001'
+  latitude: 52.555939
+  longitude: 13.413001
   google_place_id: ChIJSZ-A9whSqEcRt_U8PUJ2yes
   recommended: true
   last_verified: 2026-04-22
@@ -14,8 +14,8 @@
   description: Elliot Herman has a lot of experience with German immigration.
   website: http://www.sorted.berlin/
   address: Jungstraße 32
-  latitude: '52.512485'
-  longitude: '13.466997'
+  latitude: 52.512485
+  longitude: 13.466997
   google_place_id: ChIJcaz22xxPqEcRNx0IeCMtUW0
   recommended: true
   last_verified: 2026-04-22
@@ -26,8 +26,8 @@
   description: Emily has helped me write guides about the work visa and the Blue Card.
   website: http://www.archer-relocation.com/
   address: Akazienstraße 3A
-  latitude: '52.486764'
-  longitude: '13.355594'
+  latitude: 52.486764
+  longitude: 13.355594
   google_place_id: ChIJnSdXt05QqEcRxtPkLAvIFhU
   last_verified: 2026-04-22
   borough: Tempelhof-Schöneberg
@@ -37,8 +37,8 @@
   website: https://www.gibbesch-consulting.com/
   email: info@gibbesch-consulting.com
   address: Brahestraße 1
-  latitude: '52.526926'
-  longitude: '13.303929'
+  latitude: 52.526926
+  longitude: 13.303929
   google_place_id: ChIJATwypJVRqEcRp66GNm6hn9E
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -49,8 +49,8 @@
   website: https://www.irc-relocation.com/
   email: n.almerood@irc-berlin.com
   address: Nestorstraße 2
-  latitude: '52.499822'
-  longitude: '13.300086'
+  latitude: 52.499822
+  longitude: 13.300086
   google_place_id: ChIJ_baj2MJQqEcR8rFiZB7WJ4E
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -60,8 +60,8 @@
   website: https://www.relokatehr.com/
   email: germany@relokate.de
   address: Urbanstraße 71
-  latitude: '52.488105'
-  longitude: '13.423089'
+  latitude: 52.488105
+  longitude: 13.423089
   google_place_id: ChIJ-xjUx89RqEcRQ--n7IgH68c
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -70,8 +70,8 @@
 - name: Expats in Wonderland
   website: https://expatsinwonderland.com/
   address: Neue Schönhauser Str. 12/Hinterhaus Links, 2.O.G
-  latitude: '52.524451'
-  longitude: '13.404204'
+  latitude: 52.524451
+  longitude: 13.404204
   google_place_id: ChIJK9dABp1PqEcRNVxtfLrRVL0
   last_verified: 2026-04-22
   borough: Mitte
@@ -82,8 +82,8 @@
   website: https://start-relocation.com/
   email: kb@startcon.berlin
   address: Langenscheidtstraße 9a
-  latitude: '52.489632'
-  longitude: '13.362342'
+  latitude: 52.489632
+  longitude: 13.362342
   google_place_id: ChIJ_8W4hphRqEcR8PRJBoSmDqw
   last_verified: 2026-04-22
   borough: Tempelhof-Schöneberg
@@ -93,8 +93,8 @@
   website: http://www.berlin-relocation.com/
   email: Info@Prime-Relocation.de
   address: Leipziger Pl. 15
-  latitude: '52.510424'
-  longitude: '13.378358'
+  latitude: 52.510424
+  longitude: 13.378358
   google_place_id: ChIJreiFX8lRqEcRGIFGOhyNGEU
   last_verified: 2026-04-22
   borough: Mitte
@@ -103,8 +103,8 @@
   website: https://www.impats.co/
   email: rolf@impats.co
   address: Rudolf-Seiffert-Straße 33
-  latitude: '52.527137'
-  longitude: '13.472285'
+  latitude: 52.527137
+  longitude: 13.472285
   google_place_id: ChIJTcZOf4dOqEcRAP0GOt4y9mM
   last_verified: 2026-04-22
   borough: Lichtenberg
@@ -114,8 +114,8 @@
   website: https://www.vonwrede-relocation.com
   email: contact@vonwrede-relocation.com
   address: Goethestraße 32
-  latitude: '52.442639'
-  longitude: '13.234233'
+  latitude: 52.442639
+  longitude: 13.234233
   google_place_id: ChIJNd14hYVZqEcR-uxJZNLDsW0
   last_verified: 2026-04-22
   borough: Steglitz-Zehlendorf
@@ -125,8 +125,8 @@
   website: https://www.relocation.de/de/
   email: theresa.walther@progedo.de
   address: Großbeerenstraße 88
-  latitude: '52.499505'
-  longitude: '13.385835'
+  latitude: 52.499505
+  longitude: 13.385835
   google_place_id: ChIJFzbqHPFRqEcR1J98FBibcvM
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -136,8 +136,8 @@
   website: http://www.velt.studio/
   email: hello@jetztpat.com
   address: Urbanstraße 71/Hof 2
-  latitude: '52.488062'
-  longitude: '13.422846'
+  latitude: 52.488062
+  longitude: 13.422846
   borough: Friedrichshain-Kreuzberg
   suburb: Kreuzberg
   quarter: Graefekiez
@@ -145,8 +145,8 @@
   website: https://www.expateaze.de/
   email: khaled@expateaze.com
   address: Erich Weinert Str 46, 10439
-  latitude: '52.550203'
-  longitude: '13.421093'
+  latitude: 52.550203
+  longitude: 13.421093
   borough: Pankow
   suburb: Prenzlauer Berg
   quarter: Humann-Kiez

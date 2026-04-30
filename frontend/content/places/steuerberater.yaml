@@ -2,8 +2,8 @@
   description: Suat is my tax advisor since 2018.
   website: https://www.stb-goeydeniz.de/english-tax-advisor-berlin/
   address: Manfred-von-Richthofen-Straße 4
-  latitude: '52.48446'
-  longitude: '13.384379'
+  latitude: 52.48446
+  longitude: 13.384379
   google_place_id: ChIJDR2nUrZPqEcRU17QkKEsW8U
   recommended: true
   last_verified: 2026-04-22
@@ -12,8 +12,8 @@
 - name: Stamms Tax Consulting
   website: https://www.steuerberater-stamms.de/
   address: Albrechtstraße 10F
-  latitude: '52.521272'
-  longitude: '13.384151'
+  latitude: 52.521272
+  longitude: 13.384151
   google_place_id: ChIJlR6x3MJRqEcRl6Bly0_ebic
   last_verified: 2026-04-22
   borough: Mitte
@@ -22,8 +22,8 @@
 - name: Steuerberater Thomas Langer
   website: https://www.stblanger.de/en/
   address: Charlottenstraße 35/36
-  latitude: '52.51645'
-  longitude: '13.390928'
+  latitude: 52.51645
+  longitude: 13.390928
   google_place_id: ChIJ4aohKR5OqEcR1uJx8pJtTbo
   last_verified: 2026-04-22
   borough: Mitte
@@ -33,8 +33,8 @@
   description: They speak German, English, Spanish and Russian.
   website: https://www.boersing-pohl.de/
   address: Lietzenburger Str. 46
-  latitude: '52.50062'
-  longitude: '13.33245'
+  latitude: 52.50062
+  longitude: 13.33245
   google_place_id: ChIJxVGt7fhQqEcRp56CoPXUmiM
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -42,8 +42,8 @@
 - name: Merla Ganschow & Partner
   website: https://www.mgp-steuerberater.de/
   address: Tauentzienstraße 9-12
-  latitude: '52.504416'
-  longitude: '13.337976'
+  latitude: 52.504416
+  longitude: 13.337976
   google_place_id: ChIJA23R0fhQqEcRHC7fJK0CT8w
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -51,8 +51,8 @@
 - name: Steuerberaterin Carola Schumacher
   website: http://www.stb-carola-schumacher.de/index_en.html
   address: Schlesische Str. 38
-  latitude: '52.499931'
-  longitude: '13.444521'
+  latitude: 52.499931
+  longitude: 13.444521
   google_place_id: ChIJKYhzGVJOqEcRw9om0hznCAs
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -62,8 +62,8 @@
   description: They speak German, English and Polish.
   website: http://www.barnbrook.tax/
   address: Wallstraße 58/59
-  latitude: '52.513743'
-  longitude: '13.412872'
+  latitude: 52.513743
+  longitude: 13.412872
   google_place_id: ChIJ_5bWuP1RqEcRNl7881mKyTw
   last_verified: 2026-04-22
   borough: Mitte
@@ -72,8 +72,8 @@
 - name: Dr. Georgi Steuerberatung
   website: https://www.steuerberater-berlin.de/
   address: Prinz-Handjery-Straße 77
-  latitude: '52.431371'
-  longitude: '13.262168'
+  latitude: 52.431371
+  longitude: 13.262168
   google_place_id: ChIJJ2AlvcpbqEcRRN_EXBB1p9Q
   last_verified: 2026-04-22
   borough: Steglitz-Zehlendorf
@@ -82,8 +82,8 @@
   description: They speak German, English and Spanish.
   website: https://www.lanza-remuss.de/
   address: Brandenburgische Str. 24
-  latitude: '52.496584'
-  longitude: '13.308402'
+  latitude: 52.496584
+  longitude: 13.308402
   google_place_id: ChIJwf9pgPxQqEcRCjxms4b1c8I
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -91,8 +91,8 @@
 - name: Steuerberater Michael Schröder
   website: http://www.steuerschroeder.de/
   address: Schmiljanstraße 7
-  latitude: '52.470133'
-  longitude: '13.330173'
+  latitude: 52.470133
+  longitude: 13.330173
   google_place_id: ChIJmWIfZHlQqEcRyWyoilXBqtM
   last_verified: 2026-04-22
   borough: Tempelhof-Schöneberg
@@ -100,8 +100,8 @@
 - name: Frey Steuerberatungsgesellschaft
   website: http://www.frey-steuerberatung.de/
   address: Saarbrücker Str. 24/Haus B
-  latitude: '52.530507'
-  longitude: '13.41338'
+  latitude: 52.530507
+  longitude: 13.41338
   google_place_id: ChIJfeJtFR1OqEcRW_ewHS0YWIA
   last_verified: 2026-04-22
   borough: Pankow
@@ -111,8 +111,8 @@
   description: American and German tax return services.
   website: http://usataxberlin.com/
   address: Katharinenstraße 12
-  latitude: '52.50011'
-  longitude: '13.292497'
+  latitude: 52.50011
+  longitude: 13.292497
   google_place_id: ChIJxWQD3cRQqEcRktHKu--bALQ
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -120,8 +120,8 @@
 - name: Steuerberatung Sandra Lehmann
   website: https://www.taxconsulting-lehmann.de/english/
   address: Scharnhorststraße 24
-  latitude: '52.534057'
-  longitude: '13.370495'
+  latitude: 52.534057
+  longitude: 13.370495
   google_place_id: ChIJqfiRUpBRqEcRGcwTJpg4-8Q
   last_verified: 2026-04-22
   borough: Mitte
@@ -131,8 +131,8 @@
   description: They speak German, English, French, Polish, Russian and Chinese (Cantonese and Mandarin).
   website: http://www.stein-partners.com/
   address: Ballenstedter Str. 16A
-  latitude: '52.494919'
-  longitude: '13.307412'
+  latitude: 52.494919
+  longitude: 13.307412
   google_place_id: ChIJ03FOXOlQqEcRyGXOtVBaLaU
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -141,8 +141,8 @@
   description: Specialized tax law services offered in German and English.
   website: http://www.jenspoll.de/?lang=en
   address: Hohenzollerndamm 122
-  latitude: '52.48054'
-  longitude: '13.28771'
+  latitude: 52.48054
+  longitude: 13.28771
   google_place_id: ChIJSYcjs7xQqEcRnIPH9_41yW8
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -151,8 +151,8 @@
   description: American and German tax return services.
   website: http://stb-bosley.de/
   address: Am Zirkus 4
-  latitude: '52.52316'
-  longitude: '13.386692'
+  latitude: 52.52316
+  longitude: 13.386692
   google_place_id: ChIJF4Gs36RRqEcRMw8wJMY_hAk
   last_verified: 2026-04-22
   borough: Mitte
@@ -161,8 +161,8 @@
 - name: Schubert & Kollegen Steuerberatungsgesellschaft mbH
   website: https://www.schubert-stb.de/
   address: Länderallee 27
-  latitude: '52.511711'
-  longitude: '13.263578'
+  latitude: 52.511711
+  longitude: 13.263578
   google_place_id: ChIJmZAVoihXqEcR-DdQrxTBnvM
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -171,8 +171,8 @@
 - name: Klier & Ott GmbH Steuerberatung
   website: http://www.klier-ott.de/index.html?L=1
   address: Reinhardtstraße 52
-  latitude: '52.522512'
-  longitude: '13.377732'
+  latitude: 52.522512
+  longitude: 13.377732
   google_place_id: ChIJA9T1ZcBRqEcRHK2kvX0BW70
   last_verified: 2026-04-22
   borough: Mitte
@@ -182,8 +182,8 @@
   website: http://www.kanzlei-besser.de/en/
   email: Andreas.Besser@kanzlei-besser.de
   address: Gardeschützenweg 98
-  latitude: '52.445462'
-  longitude: '13.303141'
+  latitude: 52.445462
+  longitude: 13.303141
   google_place_id: ChIJr8eU86ZbqEcRO483mM-DpMg
   last_verified: 2026-04-22
   borough: Steglitz-Zehlendorf
@@ -193,8 +193,8 @@
   description: They specialise in property investments.
   website: http://www.steuerkontor-fischer.de/
   address: Knesebeckstraße 32
-  latitude: '52.503271'
-  longitude: '13.321658'
+  latitude: 52.503271
+  longitude: 13.321658
   google_place_id: ChIJxRMmUftQqEcRsPpT9Xqfh3A
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -202,8 +202,8 @@
 - name: Otto und Miegel Steuerberater
   website: https://www.otto-derr.de/en/welcome
   address: Milastraße 2
-  latitude: '52.5455'
-  longitude: '13.411465'
+  latitude: 52.5455
+  longitude: 13.411465
   google_place_id: ChIJcV4RfQFSqEcRTme2ko-1AKw
   last_verified: 2026-04-22
   borough: Pankow
@@ -211,8 +211,8 @@
 - name: ArtevanaTax Steuerberatungsgesellschaft
   website: http://www.artevana.de/
   address: Knesebeckstraße 54
-  latitude: '52.5002'
-  longitude: '13.32194'
+  latitude: 52.5002
+  longitude: 13.32194
   google_place_id: ChIJkfTV4vpQqEcRlY7NjcAs_mM
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -220,8 +220,8 @@
 - name: Eschenhagen Steuerberatungs GmbH
   website: http://www.eschenhagen.berlin/
   address: Wundtstraße 48/50
-  latitude: '52.508747'
-  longitude: '13.287001'
+  latitude: 52.508747
+  longitude: 13.287001
   google_place_id: ChIJ0d6GmOb3qEcR3nWO7C6NVuU
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -231,8 +231,8 @@
   description: Matthias Gust speaks English
   website: http://www.gust-partner.de/
   address: Kurfürstendamm 40/41
-  latitude: '52.502159'
-  longitude: '13.321329'
+  latitude: 52.502159
+  longitude: 13.321329
   google_place_id: ChIJMx_B4uVQqEcReZC0OEQGFbg
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -240,8 +240,8 @@
 - name: Juliane Rupp
   website: http://www.julianerupp.com/
   address: Sonnenallee 68
-  latitude: '52.484118'
-  longitude: '13.434684'
+  latitude: 52.484118
+  longitude: 13.434684
   google_place_id: ChIJ90wq2G8jZUERYEplgUlzDHg
   last_verified: 2026-04-22
   borough: Neukölln
@@ -250,8 +250,8 @@
 - name: HPTP GmbH & Co. KG
   website: http://www.hptp.de/en/
   address: Spittelmarkt 11
-  latitude: '52.512073'
-  longitude: '13.401733'
+  latitude: 52.512073
+  longitude: 13.401733
   google_place_id: ChIJX2NA1dNRqEcRpUhQXHoko9g
   last_verified: 2026-04-22
   borough: Mitte
@@ -259,8 +259,8 @@
 - name: Martin Winkler
   website: http://winkler-tax.com/
   address: Alte Jakobstraße 88
-  latitude: '52.509403'
-  longitude: '13.406671'
+  latitude: 52.509403
+  longitude: 13.406671
   google_place_id: ChIJMaBWlihOqEcRmNsMcOzO3vI
   last_verified: 2026-04-22
   borough: Mitte
@@ -269,8 +269,8 @@
 - name: Brita Schwanke Steuerberatung
   website: http://schwanke-steuerberatung.de/
   address: Transvaalstraße 14
-  latitude: '52.551951'
-  longitude: '13.341199'
+  latitude: 52.551951
+  longitude: 13.341199
   google_place_id: ChIJ__-PXthTqEcR4tRsRplxFwk
   last_verified: 2026-04-22
   borough: Mitte
@@ -280,8 +280,8 @@
   description: American tax and accounting services
   website: https://www.alvcpa.com/
   address: Baerwaldstraße 50
-  latitude: '52.491373'
-  longitude: '13.401529'
+  latitude: 52.491373
+  longitude: 13.401529
   borough: Friedrichshain-Kreuzberg
   suburb: Kreuzberg
   quarter: Bergmannkiez
@@ -289,8 +289,8 @@
   description: Tax, legal and accounting services in German, English and Spanish.
   website: https://www.losemann-legal-tax.com/
   address: Friedrichstraße 95
-  latitude: '52.519734'
-  longitude: '13.388942'
+  latitude: 52.519734
+  longitude: 13.388942
   google_place_id: ChIJcQBQMMNRqEcRjcFaNneJe2I
   last_verified: 2026-04-22
   borough: Mitte
@@ -300,8 +300,8 @@
   description: Lawyer and tax advisor firm. Speak German, English and French.
   website: https://www.duskepartner.de/
   address: Bundesallee 205
-  latitude: '52.494698'
-  longitude: '13.331198'
+  latitude: 52.494698
+  longitude: 13.331198
   google_place_id: ChIJcXkdMHBQqEcRgSy_oX-ovhQ
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -310,8 +310,8 @@
 - name: Böttges-Papendorf-Weller Steuerberater
   website: http://www.bpw-online.de/
   address: Lindower Str. 19
-  latitude: '52.543728'
-  longitude: '13.367631'
+  latitude: 52.543728
+  longitude: 13.367631
   google_place_id: ChIJWVII7tVTqEcRhD79vETHjJc
   last_verified: 2026-04-22
   borough: Mitte
@@ -320,8 +320,8 @@
 - name: Goldstein Consulting GmbH
   website: https://goldsteinconsulting.de/
   address: Fasanenstraße 77/5. Obergeschoss
-  latitude: '52.503701'
-  longitude: '13.327866'
+  latitude: 52.503701
+  longitude: 13.327866
   google_place_id: ChIJTd_OwNdQqEcRqm9ryOeOHqs
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -331,8 +331,8 @@
   website: https://millenniumparktaxes.com/
   email: info@millenniumparktaxes.com
   address: Bessemerstraße 51/1.OG
-  latitude: '52.463285'
-  longitude: '13.36712'
+  latitude: 52.463285
+  longitude: 13.36712
   google_place_id: ChIJyQxcKopRqEcR7ZQpZXpIurI
   last_verified: 2026-04-22
   borough: Tempelhof-Schöneberg
@@ -342,8 +342,8 @@
   website: https://www.steuerberatung-schöneberg.de/
   email: jakub@czaplewski.de
   address: Grunewaldstraße 54
-  latitude: '52.488169'
-  longitude: '13.337708'
+  latitude: 52.488169
+  longitude: 13.337708
   borough: Tempelhof-Schöneberg
   suburb: Schöneberg
   quarter: Bayerisches Viertel
@@ -351,8 +351,8 @@
   website: https://guhr-steuerberatung.de/en/
   email: info@guhr-steuerberatung.de
   address: Auerstraße 14
-  latitude: '52.519052'
-  longitude: '13.444241'
+  latitude: 52.519052
+  longitude: 13.444241
   google_place_id: ChIJ72W4I7FPqEcRML-NbBJWI18
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -363,8 +363,8 @@
   website: https://www.insight-tax.de/
   email: office@insight-tax.de
   address: Spichernstraße 1
-  latitude: '52.49841'
-  longitude: '13.333751'
+  latitude: 52.49841
+  longitude: 13.333751
   google_place_id: ChIJE0p8JBZRqEcRHyVYBjhaLRs
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -375,8 +375,8 @@
   website: https://www.cicek-stb.com/
   email: f.cibir@cicek-stb.com
   address: Rankestraße 9
-  latitude: '52.501971'
-  longitude: '13.332908'
+  latitude: 52.501971
+  longitude: 13.332908
   google_place_id: ChIJUxqBlZRRqEcRn47s99bReaY
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -385,8 +385,8 @@
   website: https://www.taxes-matter.de/eng/
   email: balte@taxes-matter.de
   address: Kanzowstr. 10
-  latitude: '52.545912'
-  longitude: '13.424355'
+  latitude: 52.545912
+  longitude: 13.424355
   borough: Pankow
   suburb: Prenzlauer Berg
   quarter: Humann-Kiez
@@ -394,8 +394,8 @@
   description: They speak English, German, Spanish, Turkish and Russian
   website: https://www.bsteuern.com/
   address: Straßmannstraße 8
-  latitude: '52.521456'
-  longitude: '13.447762'
+  latitude: 52.521456
+  longitude: 13.447762
   google_place_id: ChIJu7firStPqEcR9OMKeYCAQVU
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg

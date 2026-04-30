@@ -1,8 +1,8 @@
 - name: b-ware Ladenkino
   website: http://www.ladenkino.de/
   address: Gärtnerstraße 19
-  latitude: '52.511858'
-  longitude: '13.461648'
+  latitude: 52.511858
+  longitude: 13.461648
   google_place_id: ChIJbRmdW_lOqEcR5HPpJoIMPuA
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -12,8 +12,8 @@
   description: Independent cinema. Hosts free silent film nights on occasion.
   website: http://babylonberlin.eu/
   address: Rosa-Luxemburg-Straße 30
-  latitude: '52.525938'
-  longitude: '13.411423'
+  latitude: 52.525938
+  longitude: 13.411423
   google_place_id: ChIJq6ra2B1OqEcRtEYQoe9BmTE
   last_verified: 2026-04-22
   borough: Mitte
@@ -24,8 +24,8 @@
     subtitles.
   website: http://www.hoefekino.de/
   address: Rosenthaler Str. 40-41
-  latitude: '52.524048'
-  longitude: '13.402226'
+  latitude: 52.524048
+  longitude: 13.402226
   google_place_id: ChIJFVgg3OBRqEcR1qB4VWlJp-E
   last_verified: 2026-04-22
   borough: Mitte
@@ -34,8 +34,8 @@
 - name: Kino Central
   website: http://www.kino-central.de/
   address: Rosenthaler Str. 39
-  latitude: '52.524572'
-  longitude: '13.401815'
+  latitude: 52.524572
+  longitude: 13.401815
   google_place_id: ChIJ71105-BRqEcRpsjmghOEVcQ
   last_verified: 2026-04-22
   borough: Mitte
@@ -45,8 +45,8 @@
   description: Open air cinema
   website: https://yorck.de/filme/english
   address: Matthäikirchplatz 4
-  latitude: '52.509006'
-  longitude: '13.367258'
+  latitude: 52.509006
+  longitude: 13.367258
   google_place_id: ChIJ26fE-MlRqEcRSdaXVkAJ_8Q
   last_verified: 2026-04-22
   borough: Mitte
@@ -54,8 +54,8 @@
 - name: Rollberg (Yorck)
   website: https://www.yorck.de/filme/english
   address: Rollbergstraße 70
-  latitude: '52.478625'
-  longitude: '13.428024'
+  latitude: 52.478625
+  longitude: 13.428024
   google_place_id: ChIJfdgzWbxPqEcR-uBRMYjSZwg
   last_verified: 2026-04-22
   borough: Neukölln
@@ -64,8 +64,8 @@
 - name: Passage (Yorck)
   website: https://www.yorck.de/kinos/passage
   address: Karl-Marx-Straße 131
-  latitude: '52.477595'
-  longitude: '13.439173'
+  latitude: 52.477595
+  longitude: 13.439173
   google_place_id: ChIJncRx2aNPqEcRGNu6z9ymrRE
   last_verified: 2026-04-22
   borough: Neukölln
@@ -74,8 +74,8 @@
 - name: Odeon (Yorck)
   website: https://yorck.de/filme/english
   address: Hauptstraße 116
-  latitude: '52.482131'
-  longitude: '13.349547'
+  latitude: 52.482131
+  longitude: 13.349547
   google_place_id: ChIJAza0KGpQqEcRhqmME_bfEmo
   last_verified: 2026-04-22
   borough: Tempelhof-Schöneberg
@@ -85,8 +85,8 @@
   description: Gorgeous interior. Worth a visit.
   website: https://www.yorck.de/filme/english
   address: Karl-Marx-Allee 33
-  latitude: '52.520478'
-  longitude: '13.422848'
+  latitude: 52.520478
+  longitude: 13.422848
   google_place_id: ChIJH7q9khdOqEcR_AFoi_omA0w
   last_verified: 2026-04-22
   borough: Mitte
@@ -94,8 +94,8 @@
 - name: Neues Off (Yorck)
   website: https://yorck.de/filme/english
   address: Hermannstraße 20
-  latitude: '52.483449'
-  longitude: '13.424482'
+  latitude: 52.483449
+  longitude: 13.424482
   google_place_id: ChIJm_ftFI5ZqEcRflhrA9kr73E
   last_verified: 2026-04-22
   borough: Neukölln
@@ -104,8 +104,8 @@
 - name: Filmtheater am Friedrichshain (Yorck)
   website: https://www.yorck.de/kinos/filmtheater-am-friedrichshain
   address: Bötzowstraße 1-5
-  latitude: '52.529045'
-  longitude: '13.430353'
+  latitude: 52.529045
+  longitude: 13.430353
   google_place_id: ChIJV1P1qINPqEcRuySJjy1CI3s
   last_verified: 2026-04-22
   borough: Pankow
@@ -114,8 +114,8 @@
 - name: Kant Kino (Yorck)
   website: https://yorck.de/filme/english
   address: Kantstraße 54
-  latitude: '52.506783'
-  longitude: '13.308327'
+  latitude: 52.506783
+  longitude: 13.308327
   google_place_id: ChIJkSloluBQqEcRM5AkRyh-WgE
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -123,8 +123,8 @@
 - name: Delphi Filmpalast (Yorck)
   website: https://www.yorck.de/en/cinemas/delphi-filmpalast
   address: Kantstraße 12A
-  latitude: '52.506032'
-  longitude: '13.32851'
+  latitude: 52.506032
+  longitude: 13.32851
   google_place_id: ChIJm6SNNPxQqEcRq8bcTLwe7y0
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -133,8 +133,8 @@
   description: They play French movies in their original language.
   website: https://www.yorck.de/en/cinemas/cinema-paris
   address: Kurfürstendamm 211
-  latitude: '52.502042'
-  longitude: '13.324787'
+  latitude: 52.502042
+  longitude: 13.324787
   google_place_id: ChIJmxmTNPxQqEcREhXdT1rk9vQ
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -142,8 +142,8 @@
 - name: Capitol Dahlem (Yorck)
   website: http://www.yorck.de/
   address: Thielallee 36
-  latitude: '52.453037'
-  longitude: '13.286726'
+  latitude: 52.453037
+  longitude: 13.286726
   google_place_id: ChIJ74aV7WtaqEcRKrpk-0dm2Z0
   last_verified: 2026-04-22
   borough: Steglitz-Zehlendorf
@@ -151,8 +151,8 @@
 - name: Blauer Stern (Yorck)
   website: https://yorck.de/
   address: Hermann-Hesse-Straße 11
-  latitude: '52.580377'
-  longitude: '13.401193'
+  latitude: 52.580377
+  longitude: 13.401193
   google_place_id: ChIJ0dvTsF1SqEcRS6HA5RRm838
   last_verified: 2026-04-22
   borough: Pankow
@@ -160,8 +160,8 @@
 - name: Babylon Kreuzberg (Yorck)
   website: https://www.yorck.de/kinos/babylon-kreuzberg
   address: Dresdener Str. 126
-  latitude: '52.500669'
-  longitude: '13.416903'
+  latitude: 52.500669
+  longitude: 13.416903
   google_place_id: ChIJxea3BzNOqEcRUuCIlU0yxZ0
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg

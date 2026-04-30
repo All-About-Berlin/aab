@@ -1,8 +1,8 @@
 - name: Australia Shop
   website: https://australiashopping.de/
   address: Neue Grünstraße 9
-  latitude: '52.509031'
-  longitude: '13.404911'
+  latitude: 52.509031
+  longitude: 13.404911
   google_place_id: ChIJeRSfLiROqEcRIoaW6mudzKg
   last_verified: 2026-04-22
   borough: Mitte
@@ -12,8 +12,8 @@
   description: General store with an international foods section
   website: https://www.kadewe.de/
   address: Tauentzienstraße 21-24
-  latitude: '52.501602'
-  longitude: '13.340993'
+  latitude: 52.501602
+  longitude: 13.340993
   google_place_id: ChIJYb9yIlRQqEcR7A7Zwwy7q-0
   last_verified: 2026-04-22
   borough: Tempelhof-Schöneberg
@@ -22,8 +22,8 @@
 - name: Broken English
   website: http://www.brokenenglish.de/
   address: Arndtstraße 29
-  latitude: '52.48832'
-  longitude: '13.392297'
+  latitude: 52.48832
+  longitude: 13.392297
   google_place_id: ChIJWT159Z1PqEcRRxmoHOgi-Ec
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -32,8 +32,8 @@
   description: Sells South American products
   website: http://www.chiliundpaprika.de/
   address: Danziger Str. 118
-  latitude: '52.536077'
-  longitude: '13.432247'
+  latitude: 52.536077
+  longitude: 13.432247
   google_place_id: ChIJgelcfPRLqEcRq-sFVudpvoA
   last_verified: 2026-04-22
   borough: Pankow
@@ -43,8 +43,8 @@
   description: Russian supermarket
   website: http://www.ledo-supermarkt.de/
   address: Forckenbeckstraße 1
-  latitude: '52.479311'
-  longitude: '13.309926'
+  latitude: 52.479311
+  longitude: 13.309926
   google_place_id: ChIJNTva6pBQqEcRTTDYm0Z-XFk
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -53,8 +53,8 @@
   description: Sells Spanish products, as well as some Latin American products.
   website: http://www.aqui-espana.de/
   address: Kantstraße 34
-  latitude: '52.506321'
-  longitude: '13.316375'
+  latitude: 52.506321
+  longitude: 13.316375
   google_place_id: ChIJ0SpnyONQqEcROLnEoFmB3dM
   last_verified: 2026-04-22
   borough: Charlottenburg-Wilmersdorf
@@ -63,8 +63,8 @@
   description: Various flour types from all over the world
   website: https://www.mehlstuebchen.de/
   address: Leberstraße 28
-  latitude: '52.483773'
-  longitude: '13.361226'
+  latitude: 52.483773
+  longitude: 13.361226
   google_place_id: ChIJ5QBazD9QqEcRh_lA8J6Wo1o
   last_verified: 2026-04-22
   borough: Tempelhof-Schöneberg
@@ -74,8 +74,8 @@
   description: Russian grocery store
   website: https://maps.google.com/?cid=14357134533733695340
   address: Schivelbeiner Str. 49
-  latitude: '52.550524'
-  longitude: '13.413292'
+  latitude: 52.550524
+  longitude: 13.413292
   google_place_id: ChIJoXx01AVSqEcRbL-wg8rJPsc
   last_verified: 2026-04-22
   borough: Pankow
@@ -85,8 +85,8 @@
   description: Polish supermarket
   website: http://m.yelp.de/biz/pyza-berlin
   address: Anzengruberstraße 24
-  latitude: '52.480356'
-  longitude: '13.437595'
+  latitude: 52.480356
+  longitude: 13.437595
   google_place_id: ChIJp5yRZKRPqEcRdbuYi8kQ6lA
   last_verified: 2026-04-22
   borough: Neukölln
@@ -95,8 +95,8 @@
 - name: u Zosi Polnische Lebensmittel
   description: Polish supermarket
   address: Turmstr. 13
-  latitude: '52.526521'
-  longitude: '13.350685'
+  latitude: 52.526521
+  longitude: 13.350685
   google_place_id: ChIJ4TK9MKBRqEcRQ3JAX1DBd0Y
   last_verified: 2026-04-22
   borough: Mitte

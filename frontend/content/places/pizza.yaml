@@ -2,8 +2,8 @@
   description: New York style slices with delivery
   website: https://www.magicjohns.com/
   address: Oranienburger Str. 48
-  latitude: '52.526143'
-  longitude: '13.388966'
+  latitude: 52.526143
+  longitude: 13.388966
   google_place_id: ChIJsyy-KBhRqEcRjrSsAn5ukWk
   last_verified: 2026-04-22
   borough: Mitte
@@ -14,8 +14,8 @@
     any case, all agree to call it a good pizza.
   website: https://www.villa-di-wow-berlin.de/contact
   address: Ohlauer Str. 30
-  latitude: '52.495311'
-  longitude: '13.429802'
+  latitude: 52.495311
+  longitude: 13.429802
   google_place_id: ChIJ8bfq57RPqEcREqXXVD43rh0
   last_verified: 2026-04-22
   borough: Friedrichshain-Kreuzberg
@@ -26,8 +26,8 @@
     in Zehlendorf, Kleinmachnow and Lichterfelde
   website: http://www.libertypizza.de/
   address: Potsdamer Str. 3
-  latitude: '52.435726'
-  longitude: '13.257914'
+  latitude: 52.435726
+  longitude: 13.257914
   google_place_id: ChIJTVvF5DFaqEcR5gGOFqKOFBU
   last_verified: 2026-04-22
   borough: Steglitz-Zehlendorf
@@ -36,8 +36,8 @@
   description: Ironically selling Chicago-style pizza.
   website: http://www.manhattan-pizza.de/
   address: Albrechtstr. 114
-  latitude: '52.454884'
-  longitude: '13.327568'
+  latitude: 52.454884
+  longitude: 13.327568
   google_place_id: ChIJ_U3hTYVaqEcRZpawkdHS8vQ
   last_verified: 2026-04-22
   borough: Steglitz-Zehlendorf
