@@ -32,7 +32,9 @@ def get_daily_digest_models(since: datetime) -> list[dict[str, Any]]:
         {
             "name": model._meta.verbose_name_plural.capitalize(),
             "url": get_admin_url(model),
-            "last_created": model.objects.order_by("-creation_date").first().creation_date,
+            "last_created": (
+                latest.creation_date if (latest := model.objects.order_by("-creation_date").first()) else None
+            ),
             "instances": [
                 {
                     "name": str(instance),
