@@ -237,10 +237,10 @@ None of these banks give you a [[Girocard]]. If you need one, [C24](/out/c24) is
 [^13]: [Twitter](https://twitter.com/sasaraber/status/1504429265445703681), [Screenshot](/images/Screenshot-2022-04-21-at-10.57.38.png)
 [^14]: [Reddit](https://old.reddit.com/r/germany/comments/qdr746/card_requirements_and_details_in_germany_eg_dkb/), [community.finanztip.de](https://community.finanztip.de/thema/80-erfahrungen-mit-der-dkb/?pageNo=3), [wer-weiss-was.de](https://www.wer-weiss-was.de/t/dkb-lehnt-kunden-ab/6515086), [kontofinder.de](https://www.kontofinder.de/ratgeber/girokonto-fuer-auslaender/), [Reddit](https://old.reddit.com/r/germany/comments/la6nrx/deutsche_bank_vs_dkb_vs_n26/), reader feedback (July 2025)
 [^15]: [Reddit](https://old.reddit.com/r/germany/comments/qilicq/deleted_by_user/), [Twitter](https://twitter.com/cyrill_7/status/1502574559630958592), [Twitter](https://twitter.com/baykara__/status/1425369761504968706)
-[^16]: Tobias Arnold from bunq (February 2025){{ fail_on('2026-04-30') }}
+[^16]: Tobias Arnold from bunq (February 2025){{ fail_on('2026-05-30') }}
 [^17]: [Reddit](https://old.reddit.com/r/germany/comments/18puh8o/about_blocked_account/) (2024)
 [^18]: [1822direkt.de](https://www.1822direkt.de/girokonto/leistungen-konditionen/)
-[^19]: Tobias Arnold from bunq (February 2025){{ fail_on('2026-04-30') }}
+[^19]: Tobias Arnold from bunq (February 2025){{ fail_on('2026-05-30') }}
 [^20]: [comdirect.de](https://www.comdirect.de/cms/ueberuns/de/presse/neues-mobiles-girokonto-von-comdirect.html)
 [^21]: [commerzbank.de](https://www.commerzbank.de/portal/media/efw-dokumente/preis_leistungsverzeichnis.pdf)
 [^22]: [§ 13 BAföG](https://www.buzer.de/13_BAfoG.htm) and [§ 13a BAföG](https://www.buzer.de/13a_BAfoG.htm), [VAB A2.3.5](/out/vab) (October 2025)

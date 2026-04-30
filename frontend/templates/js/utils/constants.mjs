@@ -1,53 +1,54 @@
+const { backendConstants } = window;
+
 export const site = {
-	url: "{{ SITE_URL }}",
+	url: backendConstants.SITE_URL,
 };
 
-export const googleMapsApiKey = "{{ GOOGLE_MAPS_JAVASCRIPT_API_KEY }}";
+export const googleMapsApiKey = backendConstants.GOOGLE_MAPS_JAVASCRIPT_API_KEY;
 
 export const bafog = {
-	bedarfssatz: {{ BAFOG_BEDARFSSATZ }},
+	bedarfssatz: backendConstants.BAFOG_BEDARFSSATZ,
 }
 
 export const healthInsurance = {
-	defaultRate: {{ GKV_BASE_RATE_EMPLOYEE }}/100,
-	selfPayRate: {{ GKV_BASE_RATE_SELF_PAY }}/100,  // Rate without Krankengeld
-	studentRate: {{ GKV_BASE_RATE_STUDENT }}/100,
-	minMonthlyIncome: {{ GKV_MIN_INCOME }},
-	maxMonthlyIncome: {{ GKV_MAX_INCOME }}/12,
-	minPrivateMonthlyIncome: {{ PKV_MIN_INCOME }}/12, // Below this amount you get rejected
-	minFreiwilligMonthlyIncome: {{ GKV_FREIWILLIG_VERSICHERT_MIN_INCOME }}/12,
-	maxFamilienversicherungIncome: {{ GKV_FAMILIENVERSICHERUNG_MAX_INCOME }},
-	maxMidijobIncome: {{ MIDIJOB_MAX_INCOME }},
-	azubiFreibetrag: {{ GKV_AZUBI_FREIBETRAG }},
-	maxNebenjobIncome: {{ GKV_NEBENJOB_MAX_INCOME }},
-	factorF: {{ GKV_FACTOR_F }},
-	kskMinimumIncome: {{ KSK_MIN_INCOME }},
-	kskMinimumHealthInsuranceIncome: {{ KSK_MIN_HEALTH_INSURANCE_INCOME }},
-	averageZusatzbeitrag: {{ GKV_ZUSATZBEITRAG_AVERAGE }}/100,
+	defaultRate: backendConstants.GKV_BASE_RATE_EMPLOYEE/100,
+	selfPayRate: backendConstants.GKV_BASE_RATE_SELF_PAY/100,  // Rate without Krankengeld
+	studentRate: backendConstants.GKV_BASE_RATE_STUDENT/100,
+	minMonthlyIncome: backendConstants.GKV_MIN_INCOME,
+	maxMonthlyIncome: backendConstants.GKV_MAX_INCOME/12,
+	minPrivateMonthlyIncome: backendConstants.PKV_MIN_INCOME/12, // Below this amount you get rejected
+	minFreiwilligMonthlyIncome: backendConstants.GKV_FREIWILLIG_VERSICHERT_MIN_INCOME/12,
+	maxFamilienversicherungIncome: backendConstants.GKV_FAMILIENVERSICHERUNG_MAX_INCOME,
+	maxMidijobIncome: backendConstants.MIDIJOB_MAX_INCOME,
+	azubiFreibetrag: backendConstants.GKV_AZUBI_FREIBETRAG,
+	maxNebenjobIncome: backendConstants.GKV_NEBENJOB_MAX_INCOME,
+	factorF: backendConstants.GKV_FACTOR_F,
+	kskMinimumIncome: backendConstants.KSK_MIN_INCOME,
+	kskMinimumHealthInsuranceIncome: backendConstants.KSK_MIN_HEALTH_INSURANCE_INCOME,
+	averageZusatzbeitrag: backendConstants.GKV_ZUSATZBEITRAG_AVERAGE/100,
 	companies: {
 		aok: {
 			name: 'AOK Nordost',
-			zusatzbeitrag: {{ GKV_ZUSATZBEITRAG_AOK }}/100,
+			zusatzbeitrag: backendConstants.GKV_ZUSATZBEITRAG_AOK/100,
 		},
 		barmer: {
 			name: 'Barmer',
-			zusatzbeitrag: {{ GKV_ZUSATZBEITRAG_BARMER }}/100,
+			zusatzbeitrag: backendConstants.GKV_ZUSATZBEITRAG_BARMER/100,
 		},
 		dak: {
 			name: 'DAK',
-			zusatzbeitrag: {{ GKV_ZUSATZBEITRAG_DAK }}/100,
+			zusatzbeitrag: backendConstants.GKV_ZUSATZBEITRAG_DAK/100,
 		},
 		hkk: {
 			name: 'hkk',
-			zusatzbeitrag: {{ GKV_ZUSATZBEITRAG_HKK }}/100,
+			zusatzbeitrag: backendConstants.GKV_ZUSATZBEITRAG_HKK/100,
 		},
 		tk: {
 			name: 'Techniker Krankenkasse',
-			zusatzbeitrag: {{ GKV_ZUSATZBEITRAG_TK }}/100,
+			zusatzbeitrag: backendConstants.GKV_ZUSATZBEITRAG_TK/100,
 		},
 	},
 	private: {
-		{{ fail_on('2026-04-30') }}
 		pflegeversicherung: [  // Ages 0-99
 			45.82,
 			45.82,
@@ -476,30 +477,26 @@ export const healthInsurance = {
 			},
 		},
 	},
-	expat: {
-		{% for id, cost in EXPAT_INSURANCE_COST.items() %}
-			"{{ id }}": {{ cost }},
-		{% endfor %}
-	},
+	expat: backendConstants.EXPAT_INSURANCE_COST,
 }
 
 export const pflegeversicherung = {
-	defaultRate: {{ PFLEGEVERSICHERUNG_BASE_RATE }}/100,
-	surchargeRate: {{ PFLEGEVERSICHERUNG_MAX_RATE }}/100,
-	discountPerChild: {{ PFLEGEVERSICHERUNG_DISCOUNT_PER_CHILD }}/100,
-	minimumChildCountForDiscount: {{ PFLEGEVERSICHERUNG_DISCOUNT_MIN_CHILDREN }},
-	maximumChildCountForDiscount: {{ PFLEGEVERSICHERUNG_DISCOUNT_MAX_CHILDREN }},
-	employerRate: {{ PFLEGEVERSICHERUNG_BASE_RATE }}/100/2, // Employer doesn't contribute to surcharge
-	defaultRateMaxAge: {{ PFLEGEVERSICHERUNG_BASE_RATE_MAX_AGE }}, // Above this age, if you don't have kids, you pay the surchargeRate
+	defaultRate: backendConstants.PFLEGEVERSICHERUNG_BASE_RATE/100,
+	surchargeRate: backendConstants.PFLEGEVERSICHERUNG_MAX_RATE/100,
+	discountPerChild: backendConstants.PFLEGEVERSICHERUNG_DISCOUNT_PER_CHILD/100,
+	minimumChildCountForDiscount: backendConstants.PFLEGEVERSICHERUNG_DISCOUNT_MIN_CHILDREN,
+	maximumChildCountForDiscount: backendConstants.PFLEGEVERSICHERUNG_DISCOUNT_MAX_CHILDREN,
+	employerRate: backendConstants.PFLEGEVERSICHERUNG_BASE_RATE/100/2, // Employer doesn't contribute to surcharge
+	defaultRateMaxAge: backendConstants.PFLEGEVERSICHERUNG_BASE_RATE_MAX_AGE, // Above this age, if you don't have kids, you pay the surchargeRate
 };
 
 export const taxes = {
 	church: {
-		default: {{ CHURCH_TAX_RATE }} / 100,
-		bw: {{ CHURCH_TAX_RATE_BW_BY }} / 100,
-		by: {{ CHURCH_TAX_RATE_BW_BY }} / 100,
+		default: backendConstants.CHURCH_TAX_RATE / 100,
+		bw: backendConstants.CHURCH_TAX_RATE_BW_BY / 100,
+		by: backendConstants.CHURCH_TAX_RATE_BW_BY / 100,
 	},
-	arbeitslosenversicherungRate: {{ ARBEITSLOSENVERSICHERUNG_EMPLOYEE_RATE }}/100,
+	arbeitslosenversicherungRate: backendConstants.ARBEITSLOSENVERSICHERUNG_EMPLOYEE_RATE/100,
 	beitragsbemessungsgrenze: {
 		2000: { west: 4500 * 12, east: 3750 * 12 },
 		2001: { west: 4500 * 12, east: 3750 * 12 },
@@ -527,58 +524,57 @@ export const taxes = {
 		2023: { west: 7300 * 12, east: 7100 * 12 },
 		2024: { west: 7550 * 12, east: 7450 * 12 },
 		2025: { west: 8050 * 12, east: 8050 * 12 },
-		2026: { west: {{ BEITRAGSBEMESSUNGSGRENZE }}, east: {{ BEITRAGSBEMESSUNGSGRENZE }} },
-		currentYear: { west: {{ BEITRAGSBEMESSUNGSGRENZE }}, east: {{ BEITRAGSBEMESSUNGSGRENZE }} }, // {{ fail_on('2026-12-31') }}
-		2027: { west: {{ BEITRAGSBEMESSUNGSGRENZE }}, east: {{ BEITRAGSBEMESSUNGSGRENZE }} }, // ESTIMATED (2026)
+		2026: { west: backendConstants.BEITRAGSBEMESSUNGSGRENZE, east: backendConstants.BEITRAGSBEMESSUNGSGRENZE },
+		currentYear: { west: backendConstants.BEITRAGSBEMESSUNGSGRENZE, east: backendConstants.BEITRAGSBEMESSUNGSGRENZE },
+		2027: { west: backendConstants.BEITRAGSBEMESSUNGSGRENZE, east: backendConstants.BEITRAGSBEMESSUNGSGRENZE }, // ESTIMATED (2026)
 	},
-	grundfreibetrag: {{ GRUNDFREIBETRAG }},
-	kinderfreibetrag: {{ KINDERFREIBETRAG }},
-	entlastungsbetragAlleinerziehende: {{ ENTLASTUNGSBETRAG_ALLEINERZIEHENDE }},
-	entlastungsbetragAlleinerziehendePerChild: {{ ENTLASTUNGSBETRAG_ALLEINERZIEHENDE_EXTRA_CHILD }},
-	kindergeldPerChild: {{ KINDERGELD }},
+	grundfreibetrag: backendConstants.GRUNDFREIBETRAG,
+	kinderfreibetrag: backendConstants.KINDERFREIBETRAG,
+	entlastungsbetragAlleinerziehende: backendConstants.ENTLASTUNGSBETRAG_ALLEINERZIEHENDE,
+	entlastungsbetragAlleinerziehendePerChild: backendConstants.ENTLASTUNGSBETRAG_ALLEINERZIEHENDE_EXTRA_CHILD,
+	kindergeldPerChild: backendConstants.KINDERGELD,
 	solidarity: { // https://www.finanztip.de/solidaritaetszuschlag/
-		minIncomeTax: {{ SOLIDARITY_TAX_MILDERUNGSZONE_MIN_INCOME_TAX }},  // Above this, you pay solidarity tax
-		milderungszoneRate: {{ SOLIDARITY_TAX_MILDERUNGSZONE_RATE }}, // percent of incomeTax - minIncomeTax
-		maxRate: {{ SOLIDARITY_TAX_MAX_RATE }},
+		minIncomeTax: backendConstants.SOLIDARITY_TAX_MILDERUNGSZONE_MIN_INCOME_TAX,  // Above this, you pay solidarity tax
+		milderungszoneRate: backendConstants.SOLIDARITY_TAX_MILDERUNGSZONE_RATE, // percent of incomeTax - minIncomeTax
+		maxRate: backendConstants.SOLIDARITY_TAX_MAX_RATE,
 	},
-	minVorsorgepauschal: {{ VORSORGEPAUSCHAL_MIN }},
-	minVorsorgepauschalTaxClass3: {{ VORSORGEPAUSCHAL_MIN_TAX_CLASS_3 }},
-	{{ fail_on('2026-12-31') }}
+	minVorsorgepauschal: backendConstants.VORSORGEPAUSCHAL_MIN,
+	minVorsorgepauschalTaxClass3: backendConstants.VORSORGEPAUSCHAL_MIN_TAX_CLASS_3,
 	incomeTaxBrackets: {  // § 32a EStG - https://www.lohn-info.de/lohnsteuerzahlen.html
 		1: {
 			formula: (x, y, z) => 0,
 			minIncome: -Infinity,
-			maxIncome: {{ GRUNDFREIBETRAG }},
+			maxIncome: backendConstants.GRUNDFREIBETRAG,
 		},
 		2: {
 			formula: (x, y, z) => (914.51 * y + 1400) * y,
-			minIncome: {{ GRUNDFREIBETRAG }},
-			maxIncome: {{ INCOME_TAX_BRACKET_2_MAX_INCOME }},
+			minIncome: backendConstants.GRUNDFREIBETRAG,
+			maxIncome: backendConstants.INCOME_TAX_BRACKET_2_MAX_INCOME,
 		},
 		3: {
 			formula: (x, y, z) => (173.10 * z + 2397) * z + 1034.87,
-			minIncome: {{ INCOME_TAX_BRACKET_2_MAX_INCOME }},
-			maxIncome: {{ INCOME_TAX_BRACKET_3_MAX_INCOME }},
+			minIncome: backendConstants.INCOME_TAX_BRACKET_2_MAX_INCOME,
+			maxIncome: backendConstants.INCOME_TAX_BRACKET_3_MAX_INCOME,
 		},
 		4: {
 			formula: (x, y, z) => 0.42 * x - 11135.63,
-			minIncome: {{ INCOME_TAX_BRACKET_3_MAX_INCOME }},
-			maxIncome: {{ INCOME_TAX_BRACKET_4_MAX_INCOME }},
+			minIncome: backendConstants.INCOME_TAX_BRACKET_3_MAX_INCOME,
+			maxIncome: backendConstants.INCOME_TAX_BRACKET_4_MAX_INCOME,
 		},
 		5: {
-			formula: (x, y, z) => {{ INCOME_TAX_MAX_RATE }} / 100 * x - 19470.38,
-			minIncome: {{ INCOME_TAX_BRACKET_4_MAX_INCOME }},
+			formula: (x, y, z) => backendConstants.INCOME_TAX_MAX_RATE / 100 * x - 19470.38,
+			minIncome: backendConstants.INCOME_TAX_BRACKET_4_MAX_INCOME,
 			maxIncome: Infinity,
 		},
 	},
 	incomeTaxClass56: {
-		maxIncome1: {{ INCOME_TAX_CLASS_56_LIMIT_1 }},
-		maxIncome2: {{ INCOME_TAX_CLASS_56_LIMIT_2 }},
-		maxIncome3: {{ INCOME_TAX_CLASS_56_LIMIT_3 }},
+		maxIncome1: backendConstants.INCOME_TAX_CLASS_56_LIMIT_1,
+		maxIncome2: backendConstants.INCOME_TAX_CLASS_56_LIMIT_2,
+		maxIncome3: backendConstants.INCOME_TAX_CLASS_56_LIMIT_3,
 	},
-	maxMinijobIncome: {{ MINIJOB_MAX_INCOME }}, // Max monthly income to be considered a minijobber
-	arbeitnehmerpauschale: {{ ARBEITNEHMERPAUSCHALE }}, // Fixed yearly income tax deduction for employees
-	sonderausgabenPauschbetrag: {{ SONDERAUSGABEN_PAUSCHBETRAG }}, // Fixed yearly income tax deduction
+	maxMinijobIncome: backendConstants.MINIJOB_MAX_INCOME, // Max monthly income to be considered a minijobber
+	arbeitnehmerpauschale: backendConstants.ARBEITNEHMERPAUSCHALE, // Fixed yearly income tax deduction for employees
+	sonderausgabenPauschbetrag: backendConstants.SONDERAUSGABEN_PAUSCHBETRAG, // Fixed yearly income tax deduction
 };
 
 export const pensions = {
@@ -613,49 +609,28 @@ export const pensions = {
 		2024: 18.6,
 		2025: 18.6,
 		2026: 18.6,
-		currentYear: {{ RV_BASE_RATE }}, // {{ fail_on('2026-12-31') }}
-		2027: 18.6, // ESTIMATED (2025)
+		currentYear: backendConstants.RV_BASE_RATE,
+		2027: 18.6, // ESTIMATED (2026)
 	},
 	companies: {
 		pensionRefundGermany: {
-			fee: {{ PENSIONREFUNDGERMANY_FEE }}/100,
-			maxFee: {{ PENSIONREFUNDGERMANY_MAX_FEE }}, // €
+			fee: backendConstants.PENSIONREFUNDGERMANY_FEE/100,
+			maxFee: backendConstants.PENSIONREFUNDGERMANY_MAX_FEE, // €
 		},
 		fundsback: {
-			fee: {{ FUNDSBACK_FEE }}/100,
-			minFee: {{ FUNDSBACK_MIN_FEE }}, // €
-			maxFee: {{ FUNDSBACK_MAX_FEE }}, // €
+			fee: backendConstants.FUNDSBACK_FEE/100,
+			minFee: backendConstants.FUNDSBACK_MIN_FEE, // €
+			maxFee: backendConstants.FUNDSBACK_MAX_FEE, // €
 		},
 		germanyPensionRefund: {
-			fee: {{ GERMANYPENSIONREFUND_FEE }}/100,
-			maxFee: {{ GERMANYPENSIONREFUND_MAX_FEE }}, // €
+			fee: backendConstants.GERMANYPENSIONREFUND_FEE/100,
+			maxFee: backendConstants.GERMANYPENSIONREFUND_MAX_FEE, // €
 		},
 	}
 };
 
 export const salaries = {
-	medianIncome: {{ MEDIAN_INCOME_GERMANY }},
+	medianIncome: backendConstants.MEDIAN_INCOME_GERMANY,
 }
 
-// Full list: azubi, employee, selfEmployed, studentEmployee, studentSelfEmployed, studentUnemployed, unemployed
-// TODO: Move to another file
-export const occupations = {
-	salaryOrIncome: (occupation) => (['employee', 'azubi'].includes(occupation) ? 'salary' : 'income'),
-	isEmployed: (occupation) => ['employee', 'azubi', 'studentEmployee'].includes(occupation),
-	isSelfEmployed: (occupation) => ['selfEmployed', 'studentSelfEmployed'].includes(occupation),
-	isUnemployed: (occupation) => ['unemployed', 'studentUnemployed'].includes(occupation),
-	isStudent: (occupation) => ['studentUnemployed', 'studentEmployee', 'studentSelfEmployed'].includes(occupation),
-	isLowIncome: (monthlyIncome) => monthlyIncome <= taxes.maxMinijobIncome,
-	isMinijob: function(occupation, monthlyIncome){
-		// Note: A minijob does not guarantee the minijob (self-pay) tariff.
-		// A student with a minijob would still pay the student tariff.
-		return (
-			occupations.isEmployed(occupation)
-			&& occupation !== 'azubi' // No minijob tariff for an Ausbildung
-			&& monthlyIncome <= taxes.maxMinijobIncome
-		);
-	},
-};
-
-// TODO: Use <eur> symbol instead of |cur filter.
-export const bescheinigungInSteuersachenFee = {{ BESCHEINIGUNG_IN_STEUERSACHEN_FEE|cur }};
+export const bescheinigungInSteuersachenFee = backendConstants.BESCHEINIGUNG_IN_STEUERSACHEN_FEE;
