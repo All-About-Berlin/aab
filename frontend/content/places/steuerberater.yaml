@@ -414,7 +414,7 @@
   quarter: Friedrichstadt
 - name: Braun Schulze Steuerberatung
   website: https://www.braunschulze.de/
-  email: anfrage@braunschulze.de
+  email: t.braun@braunschulze.de
   address: Friedrichstraße 68
   latitude: 52.51248
   longitude: 13.390478
@@ -423,3 +423,15 @@
   borough: Mitte
   suburb: Mitte
   quarter: Friedrichstadt
+  description: For businesses and freelancers.
+- name: ttax Steuerberatung
+  website: http://www.ttax.de/
+  email: k.tkacheva@ttax.de
+  address: Neues Kranzler Eck, Kurfürstendamm 22
+  latitude: 52.504626
+  longitude: 13.330951
+  google_place_id: ChIJ5y8R3tFRqEcR_cbAZ_hwN7k
+  last_verified: 2026-04-30
+  borough: Charlottenburg-Wilmersdorf
+  suburb: Charlottenburg
+  quarter: null

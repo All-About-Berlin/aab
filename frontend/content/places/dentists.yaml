@@ -414,3 +414,23 @@
   borough: Steglitz-Zehlendorf
   suburb: Steglitz
   quarter: null
+- name: Zahnarztpraxis Doumit
+  website: https://www.zahnarztpraxis-doumit.de/?utm_source=maps
+  address: Bundesallee 67
+  latitude: 52.475905
+  longitude: 13.328179
+  google_place_id: ChIJ_RDGNGNQqEcRVNGFfKLxL6Y
+  last_verified: 2026-04-30
+  borough: Tempelhof-Schöneberg
+  suburb: Friedenau
+  quarter: null
+- name: Zahnarztpraxis Matthias Schütze
+  website: https://www.adlershof-zahnarzt.de/
+  address: Dörpfeldstraße 11
+  latitude: 52.436348
+  longitude: 13.544262
+  google_place_id: ChIJheB4XfJHqEcRg9ilys-03qI
+  last_verified: 2026-04-30
+  borough: Treptow-Köpenick
+  suburb: Adlershof
+  quarter: Adlershof-Nord

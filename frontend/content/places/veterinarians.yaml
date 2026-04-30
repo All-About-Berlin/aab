@@ -165,3 +165,13 @@
   borough: Neukölln
   suburb: Neukölln
   quarter: Körnerkiez
+- name: Tierarzt Stolle-Malorny & Vöster
+  website: https://www.tierarztpraxis-berlin.net/
+  address: Hohenzollerndamm 185
+  latitude: 52.491482
+  longitude: 13.31823
+  google_place_id: ChIJ5Rv0TvJQqEcRyPe6x2kHX_0
+  last_verified: 2026-04-30
+  borough: Charlottenburg-Wilmersdorf
+  suburb: Wilmersdorf
+  quarter: Güntzelkiez

@@ -649,3 +649,24 @@
   borough: Mitte
   suburb: Mitte
   quarter: Friedrichstadt
+- name: Vera Zambrano & Associates
+  website: http://www.lawyer-berlin.com/
+  address: Kurfürstendamm 234
+  latitude: 52.503961
+  longitude: 13.333822
+  google_place_id: ChIJwx7sksBbqEcRuE0kX0sxvzc
+  last_verified: 2026-04-30
+  borough: Charlottenburg-Wilmersdorf
+  suburb: Charlottenburg
+  quarter: null
+- name: Morgan Hangartner
+  description: U.S. tax, immigration and business law.
+  website: http://www.hangartner.de/
+  address: Holbeinstraße 56
+  latitude: 52.43965
+  longitude: 13.304969
+  google_place_id: ChIJZ0OuunFbqEcRKNC1pjFmJEs
+  last_verified: 2026-04-30
+  borough: Steglitz-Zehlendorf
+  suburb: Lichterfelde
+  quarter: Lichterfelde West

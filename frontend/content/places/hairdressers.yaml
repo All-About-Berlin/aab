@@ -448,3 +448,14 @@
   borough: Mitte
   suburb: Mitte
   quarter: Dorotheenstadt
+- name: Hairmood
+  description: They specialize in hair extensions and curly hair.
+  website: https://hairmood.mytreatwell.de/
+  address: Dahlmannstraße 32
+  latitude: 52.503123
+  longitude: 13.304178
+  google_place_id: ChIJjao9vllRqEcRAS9MGSxGoO4
+  last_verified: 2026-04-30
+  borough: Charlottenburg-Wilmersdorf
+  suburb: Charlottenburg
+  quarter: Witzleben

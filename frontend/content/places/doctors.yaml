@@ -315,3 +315,25 @@
   borough: Charlottenburg-Wilmersdorf
   suburb: Wilmersdorf
   quarter: Fasanenkiez
+- name: Dr. med. Mahtala Thiele
+  website: http://www.arztpraxis-wilmersdorf.de/
+  email: kontakt@arztpraxis-wilmersdorf.de
+  address: Pariser Str. 35
+  latitude: 52.498379
+  longitude: 13.316667
+  google_place_id: ChIJozU_-u9QqEcRh2bejGAVMmk
+  last_verified: 2026-04-30
+  borough: Charlottenburg-Wilmersdorf
+  suburb: Wilmersdorf
+  quarter: Fasanenkiez
+- name: Praxis Bergmann 23
+  description: They speak Croatian, English.
+  website: https://www.praxis-bergmann23.de/
+  address: Bergmannstraße 23
+  latitude: 52.488946
+  longitude: 13.393868
+  google_place_id: ChIJ6etEJC9QqEcRTIqOZPPcT1c
+  last_verified: 2026-04-30
+  borough: Friedrichshain-Kreuzberg
+  suburb: Kreuzberg
+  quarter: Bergmannkiez
