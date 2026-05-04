@@ -2,34 +2,38 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>{% if metatitle|default %}{{ metatitle }}{% if metatitle|length < 50 %} - {% endif %}{% if metatitle|length < 50 %}All About Berlin{% endif %}{% else %}All About Berlin{% endif %}</title>
-	{% if metadescription|default %}<meta name="description" content="{{ metadescription }}">{% endif %}
+	{% block head %}
+		<title>{% if metatitle|default %}{{ metatitle }}{% if metatitle|length < 50 %} - {% endif %}{% if metatitle|length < 50 %}All About Berlin{% endif %}{% else %}All About Berlin{% endif %}</title>
+		{% if metadescription|default %}<meta name="description" content="{{ metadescription }}">{% endif %}
 
-	<link rel="preload" as="font" href="/fonts/librefranklin-variable.woff2" type="font/woff2" crossorigin>
-	<link rel="preload" as="font" href="/fonts/librefranklin-variable-i.woff2" type="font/woff2" crossorigin>
-	<link rel="preload" as="fetch" href="/api/exchangerates.json" crossorigin>
-	<link rel="preload" as="script" href="/whoisthere.js">
-	<script async defer data-api="{{ SITE_URL }}/whoisthere/event" data-domain="allaboutberlin.com" src="{{ SITE_URL }}/whoisthere.js"></script>
+		<link rel="preload" as="font" href="/fonts/librefranklin-variable.woff2" type="font/woff2" crossorigin>
+		<link rel="preload" as="font" href="/fonts/librefranklin-variable-i.woff2" type="font/woff2" crossorigin>
+		<link rel="preload" as="fetch" href="/api/exchangerates.json" crossorigin>
+		<link rel="preload" as="script" href="/whoisthere.js">
+		<script async defer data-api="{{ SITE_URL }}/whoisthere/event" data-domain="allaboutberlin.com" src="{{ SITE_URL }}/whoisthere.js"></script>
 
-	<link rel="home" href="{{ SITE_URL }}/">
-	<link rel="icon" type="image/svg+xml" href="/staticimages/favicon.svg">
-	<link rel="icon" type="image/png" sizes="32x32" href="/staticimages/favicon.png">
-	<link rel="apple-touch-icon" href="/staticimages/favicon-180.png">
+		<link rel="home" href="{{ SITE_URL }}/">
+		<link rel="icon" type="image/svg+xml" href="/staticimages/favicon.svg">
+		<link rel="icon" type="image/png" sizes="32x32" href="/staticimages/favicon.png">
+		<link rel="apple-touch-icon" href="/staticimages/favicon-180.png">
 
-	<link rel="alternate" type="application/rss+xml" title="All About Berlin newsletter" href="{{ SITE_URL }}/newsletter/feed.rss">
-	<link rel="alternate" type="application/rss+xml" title="All About Berlin's latest guides" href="{{ SITE_URL }}/guides/feed.rss">
-	<link rel="author" href="{{ SITE_URL }}/about">
-	<link rel="privacy-policy" href="{{ SITE_URL }}/terms#privacy-policy">
-	<link rel="terms-of-service" href="{{ SITE_URL }}/terms">
+		<link rel="alternate" type="application/rss+xml" title="All About Berlin newsletter" href="{{ SITE_URL }}/newsletter/feed.rss">
+		<link rel="alternate" type="application/rss+xml" title="All About Berlin's latest guides" href="{{ SITE_URL }}/guides/feed.rss">
+		<link rel="alternate" type="application/rss+xml" title="All About Berlin newsletter" href="{{ SITE_URL }}/newsletter/feed.rss">
+		<link rel="alternate" type="application/rss+xml" title="All About Berlin's latest guides" href="{{ SITE_URL }}/guides/feed.rss">
+		<link rel="author" href="{{ SITE_URL }}/about">
+		<link rel="privacy-policy" href="{{ SITE_URL }}/terms#privacy-policy">
+		<link rel="terms-of-service" href="{{ SITE_URL }}/terms">
 
-	<meta name="theme-color" media="(prefers-color-scheme: light)" content="#da513d">
-	<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#9f3a2b">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" media="(prefers-color-scheme: light)" content="#da513d">
+		<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#9f3a2b">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta property="og:site_name" content="All About Berlin">
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:creator" content="@aboutberlin">
-	<meta name="twitter:site" content="@aboutberlin">
+		<meta property="og:site_name" content="All About Berlin">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:creator" content="@aboutberlin">
+		<meta name="twitter:site" content="@aboutberlin">
+	{% endblock %}
 	{% block postHead %}
 		{% if entry|default %}
 			<meta property="og:type" content="article">
@@ -67,7 +71,7 @@
 </head>
 <body>
 {% block body %}
-	<header id="main-nav" aria-label="Main menu" class="no-print">
+	<header aria-label="Main menu" class="no-print">
 		<a class="logo" href="{{ SITE_URL }}/" rel="home" title="All About Berlin">
 			All About Berlin
 		</a>

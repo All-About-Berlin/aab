@@ -1,8 +1,6 @@
-<!DOCTYPE html>
+{% extends "_layout.html" %}
 {% set SITE_NAME = "A Good Start" %}
-<html lang="en">
-<head>
-	<meta charset="utf-8">
+{% block head %}
 	<title>{% if metatitle|default %}{{ metatitle }}{% if metatitle|length < 50 %} - {% endif %}{% if metatitle|length < 50 %}{{ SITE_NAME }}{% endif %}{% else %}{{ SITE_NAME }}{% endif %}</title>
 	{% if metadescription|default %}<meta name="description" content="{{ metadescription }}">{% endif %}
 
@@ -26,48 +24,81 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:creator" content="@aboutberlin">
 	<meta name="twitter:site" content="@aboutberlin">
-	{% block postHead %}
-		{% if entry|default %}
-			<meta property="og:type" content="article">
-			<meta property="og:url" content="{{ entry.url }}">
-			<meta property="og:title" content="{{ entry.title }}">
-			<meta property="og:description" content="{{ entry.description }}">
-			{% if entry.image_url|default %}
-				<meta property="og:image" content="{{ entry.image_url }}">
-			{% endif %}
-			<link rel="canonical" href="{{ entry.url }}">
-		{% else %}
-			<meta property="og:type" content="website">
-			<meta property="og:title" content="{% if metatitle|default %}{{ metatitle }}{% else %}{{ SITE_NAME }}{% endif%}">
-			<meta property="og:description" content="{{ metadescription }}">
-			<meta property="og:image" content="{{ SERVICES_SITE_URL }}/staticimages/cover.png">
+{% endblock %}
+
+{% block postHead %}
+	{% if entry|default %}
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="{{ entry.url }}">
+		<meta property="og:title" content="{{ entry.title }}">
+		<meta property="og:description" content="{{ entry.description }}">
+		{% if entry.image_url|default %}
+			<meta property="og:image" content="{{ entry.image_url }}">
 		{% endif %}
-		<meta property="og:logo" content="{{ SERVICES_SITE_URL }}/staticimages/logo.png" />
-	{% endblock %}
-	<style>
-		{% scss %}
-			{% include "css/style.scss" %}
-			{% include "services/css/style.scss" %}
-			{% block extraScss %}
-			{% endblock %}
-		{% endscss %}
-	</style>
-	<noscript>
-		<style>
-			[v-cloak]:before, [v-cloak]:after{content:none}
-		</style>
-	</noscript>
-</head>
-<body>
+		<link rel="canonical" href="{{ entry.url }}">
+	{% else %}
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="{% if metatitle|default %}{{ metatitle }}{% else %}{{ SITE_NAME }}{% endif%}">
+		<meta property="og:description" content="{{ metadescription }}">
+		<meta property="og:image" content="{{ SERVICES_SITE_URL }}/staticimages/cover.png">
+	{% endif %}
+	<meta property="og:logo" content="{{ SERVICES_SITE_URL }}/staticimages/logo.png" />
+{% endblock %}
+
+{% block extraScss %}
+	{% include "services/css/style.scss" %}
+{% endblock %}
+
 {% block body %}
-	<header id="main-nav" aria-label="Main menu" class="no-print">
+	<header aria-label="Main menu" class="no-print">
 		<a class="logo" href="{{ SERVICES_SITE_URL }}" rel="home">
 			{{ SITE_NAME }}
 		</a>
 		<nav id="sections" aria-label="Website sections">
-			<a title="Get German insurance" href="{{ SERVICES_SITE_URL }}/services/insurance">Insurance</a>
-			<a class="no-mobile" href="{{ SERVICES_SITE_URL }}/contact">Contact</a>
+			<button
+				aria-label="Show insurance menu"
+				aria-controls="menu-insurance"
+				aria-hasmenu="true">Insurance</button>
+			<button
+				aria-label="Show about us menu"
+				aria-controls="menu-about"
+				aria-hasmenu="true">About us</button>
 		</nav>
+		<div class="submenu" id="menu-insurance" hidden>
+			<ul>
+				<li>
+					<a href="{{ SERVICES_SITE_URL }}/health-insurance">Health insurance</a>
+					Pays for your healthcare. Required in Germany.
+				</li>
+				<li>
+					<a href="{{ SERVICES_SITE_URL }}/legal-insurance">Legal insurance</a>
+					Covers hiring a lawyer and defending your rights.
+				</li>
+				<li>
+					<a href="{{ SERVICES_SITE_URL }}/liability-insurance">Liability insurance</a>
+					Covers when you injure others or break their things. Really good to have.
+				</li>
+			</ul>
+		</div>
+		<div class="submenu" id="menu-about" hidden>
+			<ul>
+				<li><a href="{{ SERVICES_SITE_URL }}/contact">Ask us anything</a></li>
+				<li><a href="{{ SERVICES_SITE_URL }}/partners">Work with us</a></li>
+			</ul>
+		</div>
+		{% js %}
+			document.addEventListener("DOMContentLoaded", () => {
+				document.querySelectorAll('#sections button').forEach(
+					button => button.addEventListener("click",
+						e => {
+							const menuId = button.getAttribute("aria-controls");
+							document.querySelectorAll('.submenu').forEach(m => m.hidden = m.id !== menuId);
+						}
+					)
+				);
+			});
+			console.log("poop")
+		{% endjs %}
 	</header>
 	{% block main %}
 		<main aria-label="Main page">
@@ -85,5 +116,3 @@
 		</footer>
 	{% endblock %}
 {% endblock %}
-</body>
-</html>

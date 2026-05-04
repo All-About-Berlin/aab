@@ -689,7 +689,7 @@ body{
     gap: var(--m) 0;
     grid-template-areas: ". header header ." ". sidebar main ." ". footer footer .";
     grid-template-columns: 1fr auto var(--w-main-column) 1fr;
-    grid-template-rows: var(--h-header) auto;
+    grid-template-rows: auto auto;
 
     scroll-behavior:smooth;
 
@@ -705,15 +705,21 @@ body > header {
 
     padding: 0 calc(var(--w-page-border) - var(--padding-header-item));
 
-    background: var(--c-highlight);
+    background: linear-gradient(
+        to bottom,
+        var(--c-highlight) var(--h-header),
+        var(--c-bg-page) var(--h-header)
+    );
     grid-area: header;
     border-radius: 0 0 var(--b-radius) var(--b-radius);
     box-shadow: var(--shadow-l);
 
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: var(--h-header) auto;
+    grid-template-areas: "logo menu" "submenu submenu";
+
     align-items: stretch;
-    height: var(--h-header);
 
     font-size: var(--f-header-item);
     line-height: var(--h-header);
@@ -723,24 +729,25 @@ body > header {
     #sections{
         display: flex;
         justify-content: flex-end;
-        flex-grow: 1;
-        flex-wrap: wrap;
     }
 
     @mixin header-link{
         color: #fff;
         padding: 0 var(--padding-header-item);
         cursor: pointer;
+        background: transparent;
         &:hover{
             background-color: #fff2;
             text-decoration: none;
         }
     }
 
-    .logo, #sections > a, #sections > a:visited{
+    .logo, #sections > :is(a, button), #sections > a:visited{
         @include header-link;
+        white-space: nowrap;
         display: block;
-        flex: 0 0 auto;
+        flex: 0 0 fit-content;
+        height: var(--h-header);
     }
 
     .search-form{
@@ -767,10 +774,10 @@ body > header {
         }
 
         &:focus-within {
-            flex-grow: 1;
+            flex: 1 1 auto;
             align-self: center;
 
-            ~ a{
+            ~ :is(a, button){
                 display: none!important;
             }
 
@@ -791,13 +798,12 @@ body > header {
         line-height: var(--height-header);
         font-family: var(--font-family-header);
         letter-spacing:-0.03em;
-        flex: 0 0 auto;
 
         // Hide "All About Berlin" in the header if it doesn't fit
         @media screen and (max-width: 720px){
             color: transparent;
             overflow: hidden;
-            width: var(--w-logo);
+            max-width: var(--w-logo);
             padding:0 var(--padding-header-item);
         }
     }
