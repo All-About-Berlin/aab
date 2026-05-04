@@ -1,0 +1,14 @@
+{% extends "services/_layout.html" %}
+{% set metatitle = entry.title %}
+{% set metadescription = entry.description %}
+
+{% block main %}
+	<main aria-label="Main page">
+		<header class="intro">
+			<h1>{{ entry.title }}</h1>
+		</header>
+		<article class="section article-body" aria-label="Main content">
+			{{ entry.body|render|safe }}
+		</article>
+	</main>
+{% endblock %}

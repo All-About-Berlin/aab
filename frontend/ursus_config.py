@@ -247,6 +247,7 @@ ctx["PUBLIC_HOLIDAYS_BY_DATE_JSON"] = json.dumps(
 # ==============================================================================
 
 ctx["SITE_URL"] = os.environ.get("URSUS_SITE_URL", "")  # No trailing slash!
+ctx["SERVICES_SITE_URL"] = os.environ.get("URSUS_SITE_URL", "") + "/services"  # No trailing slash!
 ctx["GOOGLE_MAPS_JAVASCRIPT_API_KEY"] = os.environ.get(
     "GOOGLE_MAPS_JAVASCRIPT_API_KEY", ""
 )  # Frontend use, for address autocomplete

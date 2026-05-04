@@ -1,4 +1,4 @@
-{% extends "_layout.html" %}
+{% extends "services/_layout.html" %}
 {% set metatitle = "" %}
 {% set metadescription = "Guides for people who want to settle in Berlin. Information about getting a visa, finding a job, finding an apartment, and a lot more." %}
 
@@ -9,52 +9,13 @@
 {% block main %}
 	<main aria-label="Main page">
 		<header class="intro">
-			<h1>Welcome to Berlin</h1>
+			<h1>One less thing to worry about.</h1>
 			<p>
-				This is the start of a great adventure! Let's get you ready for it.
+				Modern, flexible insurance for your life in Germany.
 			</p>
 		</header>
 		<nav class="intersection" aria-label="Most important guides">
-			<ul class="buttons grid" aria-label="Guides for basic goals">
-				<li>
-					<a title="How to move to Berlin" href="{{ SITE_URL }}/guides/moving-to-berlin">
-						{% include "_icons/moving.svg" %}
-						Move to Berlin
-					</a>
-				</li>
-				<li>
-					<a title="How to find a job in Berlin" href="{{ SITE_URL }}/guides/find-a-job-in-berlin">
-						{% include "_icons/employee.svg" %}
-						Find a job
-					</a>
-				</li>
-				<li>
-					<a title="How to start a business in Germany" href="{{ SITE_URL }}/guides/start-a-business-in-germany">
-						{% include "_icons/freelancer.svg" %}
-						Start a business
-					</a>
-				</li>
-			</ul>
-			<h3>What do you need?</h3>
 			<ul class="buttons grid" aria-label="Other important guides">
-				<li>
-					<a title="How to find an apartment in Berlin" href="{{ SITE_URL }}/guides/find-a-flat-in-berlin">
-						{% include "_icons/apartment.svg" %}
-						An apartment
-					</a>
-				</li>
-				<li>
-					<a title="How to register your address in Berlin" href="{{ SITE_URL }}/guides/anmeldung-in-english-berlin">
-						{% include "_icons/anmeldung.svg" %}
-						An Anmeldung
-					</a>
-				</li>
-				<li>
-					<a title="Best bank account in Germany" href="{{ SITE_URL }}/guides/best-bank-germany">
-						{% include "_icons/bank.svg" %}
-						A bank account
-					</a>
-				</li>
 				<li>
 					<a title="How to choose German health insurance" href="{{ SITE_URL }}/guides/german-health-insurance">
 						{% include "_icons/health.svg" %}
@@ -65,24 +26,6 @@
 					<a title="What is liability insurance?" href="{{ SITE_URL }}/guides/haftpflichtversicherung">
 						{% include "_icons/liability.svg" %}
 						Liability insurance
-					</a>
-				</li>
-				<li>
-					<a title="How to get a free Schufa" href="{{ SITE_URL }}/guides/schufa">
-						{% include "_icons/schufa.svg" %}
-						A Schufa
-					</a>
-				</li>
-				<li>
-					<a title="" href="{{ SITE_URL }}/guides/bicycle-in-berlin">
-						{% include "_icons/bicycle.svg" %}
-						A bicycle
-					</a>
-				</li>
-				<li>
-					<a title="" href="{{ SITE_URL }}/guides/buying-used-car-in-germany">
-						{% include "_icons/car.svg" %}
-						A vehicle
 					</a>
 				</li>
 				<li>
