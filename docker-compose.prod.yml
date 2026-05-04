@@ -14,6 +14,7 @@ services:
     environment:
       - "BUNDLE_JS=1"
       - "URSUS_SITE_URL=https://allaboutberlin.com"
+      - "URSUS_SERVICES_SITE_URL=https://agoodstart.de"
       - "CLOUDFLARE_ZONE"
       - "CLOUDFLARE_API_KEY"
     volumes: !override
