@@ -51,53 +51,85 @@
 
 {% block body %}
 	<header aria-label="Main menu" class="no-print">
-		<a class="logo" href="{{ SERVICES_SITE_URL }}" rel="home">
-			{{ SITE_NAME }}
-		</a>
-		<nav id="sections" aria-label="Website sections">
+		<nav aria-label="Website sections">
+			<a href="{{ SERVICES_SITE_URL }}" rel="home">
+				{{ SITE_NAME }}
+			</a>
 			<button
 				aria-label="Show insurance menu"
 				aria-controls="menu-insurance"
+				aria-expanded="false"
 				aria-hasmenu="true">Insurance</button>
 			<button
 				aria-label="Show about us menu"
 				aria-controls="menu-about"
+				aria-expanded="false"
 				aria-hasmenu="true">About us</button>
 		</nav>
-		<div class="submenu" id="menu-insurance" hidden>
+		<nav aria-label="Insurance menu" class="submenu" id="menu-insurance" hidden>
+			<div>
+				<ul>
+					<li>
+						<img src="">
+						<h4><a href="{{ SERVICES_SITE_URL }}/health-insurance">Health insurance</a></h4>
+						<p>For getting healthcare. You need it to get a visa and live in Germany.</p>
+					</li>
+					<li>
+						<img src="">
+						<h4><a href="{{ SERVICES_SITE_URL }}/liability-insurance">Liability insurance</a></h4>
+						<p>When you injure people or damage their things.</p>
+					</li>
+					<li>
+						<img src="">
+						<h4><a href="{{ SERVICES_SITE_URL }}/legal-insurance">Legal insurance</a></h4>
+						<p>For getting legal advice or suing someone.</p>
+					</li>
+					<li>
+						<img src="">
+						<h4><a href="{{ SERVICES_SITE_URL }}/dental-insurance">Dental insurance</a></h4>
+						<p>For getting dental care in Germany.</p>
+					</li>
+					<li>
+						<img src="">
+						<h4><a href="{{ SERVICES_SITE_URL }}/dental-insurance">Travel insurance</a></h4>
+						<p>For cancelled trips and medical emergencies abroad.</p>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<nav aria-label="About us menu" class="submenu" id="menu-about" hidden>
 			<ul>
 				<li>
-					<a href="{{ SERVICES_SITE_URL }}/health-insurance">Health insurance</a>
-					Pays for your healthcare. Required in Germany.
+					<img src="">
+					<h4><a href="{{ SERVICES_SITE_URL }}/contact">Ask us anything</a></h4>
+					<p>Talk to an insurance expert on WhatsApp or by email.</p>
 				</li>
 				<li>
-					<a href="{{ SERVICES_SITE_URL }}/legal-insurance">Legal insurance</a>
-					Covers hiring a lawyer and defending your rights.
-				</li>
-				<li>
-					<a href="{{ SERVICES_SITE_URL }}/liability-insurance">Liability insurance</a>
-					Covers when you injure others or break their things. Really good to have.
+					<img src="">
+					<h4><a href="{{ SERVICES_SITE_URL }}/partners">Work with us</a></h4>
+					<p>We make it easy to insure your employees and students.</p>
 				</li>
 			</ul>
-		</div>
-		<div class="submenu" id="menu-about" hidden>
-			<ul>
-				<li><a href="{{ SERVICES_SITE_URL }}/contact">Ask us anything</a></li>
-				<li><a href="{{ SERVICES_SITE_URL }}/partners">Work with us</a></li>
-			</ul>
-		</div>
+		</nav>
 		{% js %}
 			document.addEventListener("DOMContentLoaded", () => {
-				document.querySelectorAll('#sections button').forEach(
+				document.querySelectorAll('header > nav > button').forEach(
 					button => button.addEventListener("click",
 						e => {
 							const menuId = button.getAttribute("aria-controls");
-							document.querySelectorAll('.submenu').forEach(m => m.hidden = (m.id !== menuId) || !m.hidden);
+							const shouldShowMenu = document.getElementById(menuId).hidden;
+
+							// Update aria-expanded on all buttons
+							document.querySelectorAll('header > nav > button').forEach(
+								b => b.setAttribute('aria-expanded', b.getAttribute('aria-controls') === menuId && shouldShowMenu)
+							);
+
+							// Show the correct submenu
+							document.querySelectorAll('.submenu').forEach(m => m.hidden = !shouldShowMenu || m.id !== menuId);
 						}
 					)
 				);
 			});
-			console.log("poop")
 		{% endjs %}
 	</header>
 	{% block main %}

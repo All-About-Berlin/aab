@@ -60,10 +60,3 @@
         --c-bg-clickable-hover: #0001;
     }
 }
-
-.submenu{
-    flex:1 0 100%;
-    box-sizing: border-box;
-    grid-area: submenu;
-    padding: 0 calc(var(--w-page-border) - var(--padding-header-item));
-}

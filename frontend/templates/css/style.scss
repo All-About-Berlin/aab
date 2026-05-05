@@ -700,121 +700,187 @@ body{
 }
 
 body > header {
-    --padding-header-item: var(--m);
-    --f-header-item: var(--m);
-
-    padding: 0 calc(var(--w-page-border) - var(--padding-header-item));
-
-    background: linear-gradient(
-        to bottom,
-        var(--c-highlight) var(--h-header),
-        var(--c-bg-page) var(--h-header)
-    );
     grid-area: header;
-    border-radius: 0 0 var(--b-radius) var(--b-radius);
+    display: grid;
     box-shadow: var(--shadow-l);
 
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: var(--h-header) auto;
-    grid-template-areas: "logo menu" "submenu submenu";
-
-    align-items: stretch;
-
-    font-size: var(--f-header-item);
-    line-height: var(--h-header);
-
-    color: #fff;
-
-    #sections{
-        display: flex;
-        justify-content: flex-end;
+    // Narrower page borders on the parent element, because nav
+    // items have padding to highlight their background on hover.
+    --padding-nav-item: var(--m);
+    @include only-phone{
+        font-size: var(--f-s);
+        --padding-nav-item: var(--s);
     }
 
-    @mixin header-link{
+    @mixin main-nav-item{
         color: #fff;
-        padding: 0 var(--padding-header-item);
+        padding: 0 var(--padding-nav-item);
         cursor: pointer;
         background: transparent;
         &:hover{
-            background-color: #fff2;
+            background-color: #fff2!important;
             text-decoration: none;
         }
     }
 
-    .logo, #sections > :is(a, button), #sections > a:visited{
-        @include header-link;
-        white-space: nowrap;
-        display: block;
-        flex: 0 0 fit-content;
-        height: var(--h-header);
-    }
+    // Main nav
+    > nav:first-child {
+        background: var(--c-highlight);
 
-    .search-form{
-        order: 999;
-        box-shadow: none!important;
-        border: none!important;
+        display: flex;
+        padding: 0 calc(var(--w-page-border) - var(--padding-nav-item));
 
-        &:not(:focus-within){
-            background-color: transparent;
-            box-shadow: none;
-            border-radius: 0;
-            border: none;
-            padding: 0;
-            overflow: hidden;
+        > :is(button, a, a:visited) {
+            @include main-nav-item;
+            white-space: nowrap;
+            display: block;
+            line-height: var(--h-header);
 
-            label{
-                @include header-link;
+            flex: 0 0 fit-content;
+            height: var(--h-header);
+
+            &[aria-expanded]{
+                @include expansible;
+            }
+            &[aria-expanded=true]{
+                background: var(--c-bg-page)!important;
+                color: var(--c-text-heading);
+                @include collapsible;
             }
 
-            input{  // It can't be hidden, because hidden elements don't get focus
-                width: 0;
-                flex: 0!important;
+            &[rel=home]{  // Logo
+                background: var(--i-logo) no-repeat var(--padding-nav-item) center / var(--w-logo) auto;
+                font-size: var(--xl);
+                padding-left: calc(var(--padding-nav-item) + var(--w-logo) + var(--s));
+                line-height: var(--height-header);
+                font-family: var(--font-family-header);
+                letter-spacing:-0.03em;
+
+                // Hide "All About Berlin" in the header if it doesn't fit
+                @media screen and (max-width: 720px){
+                    color: transparent;
+                    overflow: hidden;
+                    max-width: var(--w-logo);
+                    padding:0 var(--padding-nav-item);
+                }
             }
         }
 
-        &:focus-within {
-            flex: 1 1 auto;
-            align-self: center;
+        // Space after logo
+        // The search form is technically the next item, but is pushed to the end unless open.
+        :is(a[rel=home], .search-form) + :is(a, button, .search-form:focus-within){
+            margin-left: auto;
+        }
 
-            ~ :is(a, button){
-                display: none!important;
+        .search-form{
+            order: 999;
+            box-shadow: none!important;
+            border: none!important;
+
+            &:not(:focus-within){
+                background-color: transparent;
+                box-shadow: none;
+                border-radius: 0;
+                border: none;
+                padding: 0;
+                overflow: hidden;
+
+                label{
+                    @include main-nav-item;
+                }
+
+                input{  // It can't be hidden, because hidden elements don't get focus
+                    width: 0;
+                    flex: 0!important;
+                }
             }
 
-            border-color: var(--c-highlight);
-            box-shadow: var(--shadow-l), 0 0 0 1px var(--c-highlight);
+            &:focus-within {
+                flex: 1 1 auto;
+                align-self: center;
 
-            .search-results{
+                ~ *{
+                    display: none!important;
+                }
+
                 border-color: var(--c-highlight);
-                outline-color: var(--c-highlight);
+                box-shadow: var(--shadow-l), 0 0 0 1px var(--c-highlight);
+
+                .search-results{
+                    border-color: var(--c-highlight);
+                    outline-color: var(--c-highlight);
+                }
             }
         }
     }
 
-    .logo{
-        background: var(--i-logo) no-repeat var(--padding-header-item) center / var(--w-logo) auto;
-        font-size: var(--xl);
-        padding-left: calc(var(--padding-header-item) + var(--w-logo) + var(--s));
-        line-height: var(--height-header);
-        font-family: var(--font-family-header);
-        letter-spacing:-0.03em;
 
-        // Hide "All About Berlin" in the header if it doesn't fit
-        @media screen and (max-width: 720px){
-            color: transparent;
-            overflow: hidden;
-            max-width: var(--w-logo);
-            padding:0 var(--padding-header-item);
+    > nav.submenu{
+        background: var(--c-bg-page);
+        padding: var(--l) var(--w-page-border);
+        max-width: var(--w-main-column);
+        box-sizing: border-box;
+        border:var(--b-box);
+        border-top:none;
+
+        display: grid;
+        gap: var(--l);
+
+        &[hidden]{
+            display: none;
+        }
+
+        :is(h3, h4){
+            margin: 0;
+            a{
+                color: inherit!important;
+            }
+        }
+
+        p{
+            font-size: var(--f-s);
+            line-height: var(--line-height-label);
+            color: var(--c-text-light);
+            margin: 0;
+        }
+
+        ul{
+            display: grid;
+            gap: var(--l);
+            margin: 0;
+
+            li{
+                display: grid;
+                grid-template-columns: var(--h-icon-l) 1fr;
+                gap: 0 var(--m);
+                justify-items: flex-start;
+
+                img{
+                    display: block;
+                    grid-row: 1 / span 999;
+                    width: 100%;
+                    aspect-ratio: 1 / 1;
+                    border-radius: var(--b-radius);
+                    background: var(--c-bg-image);
+                }
+
+                :not(img){
+                    grid-column-start: 2;
+                }
+            }
         }
     }
 
-    @include full-width-site{
-        border-radius: 0;
+    > nav {
+        border-radius: 0 0 var(--b-radius) var(--b-radius);
+        &:has([aria-expanded=true]){
+            border-radius: 0;    
+        }
     }
-
-    @include only-phone{
-        --f-header-item: var(--f-s);
-        --padding-header-item: var(--s);
+    @include full-width-site{
+        > nav{
+            border-radius: 0!important;
+        }
     }
 }
 
