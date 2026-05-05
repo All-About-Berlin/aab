@@ -18,9 +18,9 @@ This website sometimes saves form data in your browser's local storage. This pre
 
 ### Forms
 
-The forms and tools on this website are designed for privacy. Your data stays in your browser. It is not shared your information with anyone, not even All About Berlin.
+The forms and tools on this website are designed for privacy. Your data stays in your browser. It is not shared your information with anyone, not even us.
 
-When you ask a question or request a service on All About Berlin, your request is sent to All About Berlin's server. Your request is processed, then your data is deleted as fast as possible. In most cases, your data is deleted after a few minutes. No personal data is sent without a clear action from you.
+When you ask a question or request a service from us, your request is sent to out server. Your request is processed, then your data is deleted as fast as possible. In most cases, your data is deleted after a few minutes. No personal data is sent without a clear action from you.
 
 ### Other
 
