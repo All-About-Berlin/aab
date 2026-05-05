@@ -92,7 +92,7 @@
 					button => button.addEventListener("click",
 						e => {
 							const menuId = button.getAttribute("aria-controls");
-							document.querySelectorAll('.submenu').forEach(m => m.hidden = m.id !== menuId);
+							document.querySelectorAll('.submenu').forEach(m => m.hidden = (m.id !== menuId) || !m.hidden);
 						}
 					)
 				);
