@@ -1105,6 +1105,8 @@ main{
 
     #related .collection{
         padding: 0;
+        box-shadow: none;
+
         @include full-width-site{
             + .collection{
                 margin-top: var(--l);
@@ -1121,13 +1123,12 @@ main{
     }
 
     .collection{
-        box-sizing: border-box;
-        background: var(--c-bg-page);
         margin-bottom: var(--m);
 
         padding: var(--m) var(--w-page-border);
         box-sizing: border-box;
         background: var(--c-bg-page);
+        box-shadow: var(--shadow-l);
         border-radius: var(--b-radius);
 
         h3{
