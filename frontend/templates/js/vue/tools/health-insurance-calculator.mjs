@@ -11,7 +11,7 @@ import IconFamily from '/js/vue/components/icons/family.mjs';
 import IconFreelancer from '/js/vue/components/icons/freelancer.mjs';
 import IconLeasure from '/js/vue/components/icons/leasure.mjs';
 import IconMoving from '/js/vue/components/icons/moving.mjs';
-import IconProtection from '/js/vue/components/icons/protection.mjs';
+import IconInsurance from '/js/vue/components/icons/insurance/insurance.mjs';
 import IconStudent from '/js/vue/components/icons/student.mjs';
 import IconSupport from '/js/vue/components/icons/support.mjs';
 import IconWhatsapp from '/js/vue/components/icons/whatsapp.mjs';
@@ -51,7 +51,7 @@ export default {
 		IconMoving,
 		IconStudent,
 		IconSupport,
-		IconProtection,
+		IconInsurance,
 		IconWhatsapp,
 		LogoFeather,
 		HealthInsuranceOptions,
@@ -425,7 +425,7 @@ export default {
 				<hr>
 				<ul class="benefits">
 					<li v-if="initialOccupation !== 'employee'">
-						<icon-protection/>
+						<icon-insurance/>
 						<div>
 							<strong>Low price, great coverage</strong>
 							<br>Find affordable health insurance that works when you need it.

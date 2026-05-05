@@ -64,3 +64,8 @@
 main .intro{
     text-align: left;
 }
+
+main > .collapsible{
+    border: none;
+    background-color: var(--c-bg-page);
+}

@@ -9,32 +9,28 @@
 {% block main %}
 	<main aria-label="Main page">
 		<header class="intro">
-			<h1>One less thing to worry about.</h1>
+			<h1>One less thing to worry about</h1>
 			<p>
-				Flexible insurance coverage that gives you peace of mind.
+				Get peace of mind with the right insurance coverage.
 			</p>
 		</header>
-		<nav class="intersection" aria-label="Most important guides">
-			<ul class="buttons grid" aria-label="Other important guides">
+
+		{% tool "insurance-checklist", static=True %}
+
+		<section class="article-body">
+			<h2>Why us?</h2>
+			<ul>
 				<li>
-					<a title="How to choose German health insurance" href="{{ SITE_URL }}/guides/german-health-insurance">
-						{% include "_icons/health.svg" %}
-						Health insurance
-					</a>
+					<strong>Honest insurance advice, in English</strong>
+					<br>
+					Get the coverage you need, explained to you in your language.
 				</li>
 				<li>
-					<a title="What is liability insurance?" href="{{ SITE_URL }}/guides/haftpflichtversicherung">
-						{% include "_icons/liability.svg" %}
-						Liability insurance
-					</a>
-				</li>
-				<li>
-					<a title="What is liability insurance?" href="{{ SITE_URL }}/guides/help">
-						{% include "_icons/support.svg" %}
-						Professional help
-					</a>
+					<strong>Made for immigrants</strong>
+					<br>
+					We've been helping immigrants settle in Berlin for {{ now.year - 2017 }} years.
 				</li>
 			</ul>
-		</nav>
+		</section>
 	</main>
 {% endblock %}

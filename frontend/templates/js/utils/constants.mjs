@@ -480,6 +480,15 @@ export const healthInsurance = {
 	expat: backendConstants.EXPAT_INSURANCE_COST,
 }
 
+export const insuranceCosts = {
+	health: { min: backendConstants.HEALTH_INSURANCE_MIN_COST, max: backendConstants.HEALTH_INSURANCE_MAX_COST },
+	liability: { min: backendConstants.LIABILITY_INSURANCE_MIN_COST, max: backendConstants.LIABILITY_INSURANCE_MAX_COST },
+	legal: { min: backendConstants.LEGAL_INSURANCE_MIN_COST, max: backendConstants.LEGAL_INSURANCE_MAX_COST },
+	disability: { min: backendConstants.DISABILITY_INSURANCE_MIN_COST, max: backendConstants.DISABILITY_INSURANCE_MAX_COST },
+	life: { min: backendConstants.LIFE_INSURANCE_MIN_COST, max: backendConstants.LIFE_INSURANCE_MAX_COST },
+	dental: { min: backendConstants.DENTAL_INSURANCE_MIN_COST, max: backendConstants.DENTAL_INSURANCE_MAX_COST },
+};
+
 export const pflegeversicherung = {
 	defaultRate: backendConstants.PFLEGEVERSICHERUNG_BASE_RATE/100,
 	surchargeRate: backendConstants.PFLEGEVERSICHERUNG_MAX_RATE/100,

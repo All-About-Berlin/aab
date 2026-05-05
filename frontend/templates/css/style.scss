@@ -865,7 +865,7 @@ body > header {
                 justify-items: flex-start;
                 border-radius: var(--b-radius);
 
-                :is(img, svg){
+                svg{
                     display: block;
                     grid-row: 1 / span 999;
                     width: var(--h-icon-l);
@@ -876,7 +876,7 @@ body > header {
                     color: var(--c-text-heading);
                 }
 
-                :not(img, svg){
+                :not(svg){
                     grid-column-start: 2;
                 }
 
@@ -1835,7 +1835,7 @@ label.checkbox{
     &:has(input[disabled]){
         color: var(--c-text-light);
     }
-    :not(input){
+    > :not(input){
         grid-column-start: 2;
     }
 }
@@ -2525,6 +2525,54 @@ details{
         }
     }
 
+}
+
+.insurance-checklist{
+    .checkbox{
+        grid-template-columns: auto auto 1fr;
+        align-items: center;
+        gap: var(--xs) var(--m);
+        border-radius: var(--b-radius);
+        padding: var(--s);
+        margin: calc(var(--s) * -1);
+        box-sizing: border-box;
+        border: 1px solid transparent; // Changed on hover
+
+        line-height: var(--line-height-label);
+
+        &:hover{
+            text-decoration: none!important;
+            @include box-clickable-hover;
+        }
+
+        svg{
+            display: block;
+            width: var(--h-icon-l);
+            padding: var(--xs);
+            aspect-ratio: 1 / 1;
+            border-radius: var(--b-radius);
+            background: var(--c-bg-image);
+            color: var(--c-text-heading);
+        }
+
+        :checked ~ svg{
+            background: color-mix(var(--c-highlight) 30%, transparent 70%)
+        }
+
+        div{
+            grid-column-start: 3;
+        }
+
+        p{
+            margin: 0;
+            color: var(--c-text-light);
+            font-size: var(--f-s);
+        }
+
+        + .checkbox{
+            margin-top: var(--s);
+        }
+    }
 }
 
 .two-columns{

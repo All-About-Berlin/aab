@@ -981,6 +981,56 @@ constants:
       template: residence_permit_wait_time
       residence_permit_type: ''
       last_verified: 2026-06-01
+  HEALTH_INSURANCE_MIN_COST:
+    value: 90
+    unit: euros
+    description: Minimum health insurance cost (€/mth)
+    fail_on: 2026-12-31
+  HEALTH_INSURANCE_MAX_COST:
+    value: 400
+    unit: euros
+    description: Maximum health insurance cost (€/mth)
+    fail_on: 2026-12-31
+  LIABILITY_INSURANCE_MIN_COST:
+    value: 3
+    unit: euros
+    description: Minimum liability insurance cost (€/mth)
+    fail_on: 2026-12-31
+  LIABILITY_INSURANCE_MAX_COST:
+    value: 15
+    unit: euros
+    description: Maximum liability insurance cost (€/mth)
+    fail_on: 2026-12-31
+  DISABILITY_INSURANCE_MIN_COST:
+    value: 30
+    unit: euros
+    description: Minimum disability insurance cost (€/mth)
+    fail_on: 2026-12-31
+  DISABILITY_INSURANCE_MAX_COST:
+    value: 100
+    unit: euros
+    description: Maximum disability insurance cost (€/mth)
+    fail_on: 2026-12-31
+  LIFE_INSURANCE_MIN_COST:
+    value: 20
+    unit: euros
+    description: Minimum life insurance cost (€/mth)
+    fail_on: 2026-12-31
+  LIFE_INSURANCE_MAX_COST:
+    value: 80
+    unit: euros
+    description: Maximum life insurance cost (€/mth)
+    fail_on: 2026-12-31
+  DENTAL_INSURANCE_MIN_COST:
+    value: 10
+    unit: euros
+    description: Minimum dental insurance cost (€/mth)
+    fail_on: 2026-12-31
+  DENTAL_INSURANCE_MAX_COST:
+    value: 50
+    unit: euros
+    description: Maximum dental insurance cost (€/mth)
+    fail_on: 2026-12-31
 templates:
   residence_permit_wait_time:
     template: default

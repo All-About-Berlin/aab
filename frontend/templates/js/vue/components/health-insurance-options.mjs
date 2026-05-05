@@ -3,7 +3,7 @@ import ExpatHealthInsuranceOptions from '/js/vue/components/expat-health-insuran
 import Glossary from '/js/vue/components/glossary.mjs';
 import IconBank from '/js/vue/components/icons/bank.mjs';
 import IconFamily from '/js/vue/components/icons/family.mjs';
-import IconProtection from '/js/vue/components/icons/protection.mjs';
+import IconInsurance from '/js/vue/components/icons/insurance/insurance.mjs';
 import IconPassport from '/js/vue/components/icons/passport.mjs';
 import Price from '/js/vue/components/price.mjs';
 import PublicHealthInsuranceOptions from '/js/vue/components/public-health-insurance-options.mjs';
@@ -22,7 +22,7 @@ export default {
 		Glossary,
 		IconBank,
 		IconFamily,
-		IconProtection,
+		IconInsurance,
 		IconPassport,
 		Price,
 		PublicHealthInsuranceOptions,
@@ -269,7 +269,7 @@ export default {
 							<price :amount="0" per-month></price>
 						</a>
 						<a v-if="subOption.id === 'ksk'" @click="selectOption(subOption.id)" title="Learn more about the KSK" href="/guides/ksk-kuenstlersozialkasse" target="_blank">
-							<icon-protection/>
+							<icon-insurance/>
 							<div>
 								<h3>Join the <glossary>Künstlersozialkasse</glossary></h3>
 								<p>If you are an artist, the KSK can pay half of your public health insurance. This is a really good deal.</p>
