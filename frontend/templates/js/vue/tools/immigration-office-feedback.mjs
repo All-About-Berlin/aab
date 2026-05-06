@@ -69,13 +69,14 @@ export default {
 			return this.isLoading ? 0 : Math.ceil(this.resultCount / this.itemsPerPage);
 		},
 		feedbackCount(){
-			return this.stats?.first_response_date?.count || 0;
+			console.log(this.stats)
+			return this.stats?.first_response_date?.all_time?.count || 0;
 		},
-		totalWaitAverage(){
-			return this.stats?.total?.readable_average ?? 'unknown';
+		startToFinishWaitMedian(){
+			return this.stats?.start_to_finish?.all_time?.readable_median ?? 'unknown';
 		},
-		totalWaitRange(){
-			return this.stats?.total?.readable_range ?? 'a few months';
+		startToFinishWaitRange(){
+			return this.stats?.start_to_finish?.all_time?.readable_range ?? 'a few months';
 		},
 		residencePermitDepartments(){
 			return residencePermitDepartments(this.residencePermitType);
@@ -132,10 +133,10 @@ export default {
 			if(this.isLoading){
 				return 'Loading…';
 			}
-			const range = this.stats[stepKey]?.readable_range;
-			const average = this.stats[stepKey]?.readable_average;
-			return range && average ?
-				`Wait ${range} — ${average} on average`
+			const range = this.stats[stepKey]?.all_time?.readable_range;
+			const median = this.stats[stepKey]?.all_time?.readable_median;
+			return range && median ?
+				`Wait ${range} — ${median} on average`
 				: 'Wait for an unknown duration';
 		},
 		waitTime(date1, date2, stillWaiting=false) {
@@ -245,11 +246,11 @@ export default {
 			</div>
 
 			<p>
-				In Berlin, it takes <strong v-text="totalWaitRange">a few months</strong> to
+				In Berlin, it takes <strong v-text="startToFinishWaitRange">a few months</strong> to
 				<template v-if="isCitizenship">become a German citizen.</template>
 				<template v-else>get a <glossary :term="residencePermitName(residencePermitType).glossaryTerm">{{ residencePermitName(residencePermitType).normal }}</glossary>.</template>
 
-				The average wait time is <span v-text="totalWaitAverage">unknown</span>.
+				The median wait time is <span v-text="startToFinishWaitMedian">unknown</span>.
 
 				Wait times vary by <a href="/guides/immigration-office#departments">department</a><span v-if="!residencePermitType">&nbsp;and residence permit type</span>.
 
@@ -340,10 +341,10 @@ export default {
 							<span class="description">
 								Applied <span class="no-mobile">on {{ formatLongDate(result.application_date) }}</span>
 								<small class="extra" v-if="healthInsuranceType(result)">
-									Using
+									With
 									<glossary v-if="healthInsuranceType(result).glossaryTerm" :term="healthInsuranceType(result).glossaryTerm">{{ healthInsuranceType(result).name }}</glossary>
 									<template v-else>{{ healthInsuranceType(result).name }}</template>
-									<template v-if="result.health_insurance_name">(“{{ result.health_insurance_name }}”)</template>
+									<template v-if="result.health_insurance_name">from “{{ result.health_insurance_name }}”</template>
 								</small>
 							</span>
 							<time v-text="formatLongDate(result.application_date)"></time>

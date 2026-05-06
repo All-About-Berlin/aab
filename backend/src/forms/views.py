@@ -166,12 +166,22 @@ class ResidencePermitFeedbackViewSet(FeedbackViewSet):
                 column_end="pick_up_date",
                 extra_filters=extra_filters,
             ),
-            "total": ResidencePermitFeedback.objects.wait_times(
+            "start_to_finish": ResidencePermitFeedback.objects.wait_times(
                 column_start="application_date",
                 column_end="pick_up_date",
                 extra_filters=extra_filters,
             ),
         }
+
+    def _add_human_readable_range(self, stats_dict: dict[str, Any]) -> None:
+        if stats_dict["percentile_20"] is not None and stats_dict["percentile_80"] is not None:
+            stats_dict["readable_range"] = readable_date_range(
+                days_1=stats_dict["percentile_20"], days_2=stats_dict["percentile_80"]
+            )
+            stats_dict["readable_median"] = readable_duration(stats_dict["median"])
+        else:
+            stats_dict["readable_range"] = None
+            stats_dict["readable_median"] = None
 
     def list(self, request, *args, **kwargs):
         response = super().list(request, *args, **kwargs)
@@ -179,16 +189,11 @@ class ResidencePermitFeedbackViewSet(FeedbackViewSet):
 
         response.data["stats"] = self.get_stats(request)
 
-        # Add human-readable range string like "1 week to 6 months"
-        for stats_dict in response.data["stats"].values():
-            if stats_dict["percentile_20"] is not None and stats_dict["percentile_80"] is not None:
-                stats_dict["readable_range"] = readable_date_range(
-                    days_1=stats_dict["percentile_20"], days_2=stats_dict["percentile_80"]
-                )
-                stats_dict["readable_average"] = readable_duration(stats_dict["average"])
-            else:
-                stats_dict["readable_range"] = None
-                stats_dict["readable_average"] = None
+        for stats_subset in response.data["stats"].values():
+            self._add_human_readable_range(stats_subset["all_time"])
+            self._add_human_readable_range(stats_subset["last_12_months"])
+            for monthly_stats in stats_subset["per_month"]:
+                self._add_human_readable_range(monthly_stats)
 
         return response
 
@@ -212,7 +217,7 @@ class CitizenshipFeedbackViewSet(ResidencePermitFeedbackViewSet):
                 column_end="appointment_date",
                 extra_filters=extra_filters,
             ),
-            "total": CitizenshipFeedback.objects.wait_times(
+            "start_to_finish": CitizenshipFeedback.objects.wait_times(
                 column_start="application_date",
                 column_end="appointment_date",
                 extra_filters=extra_filters,

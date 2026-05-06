@@ -509,24 +509,24 @@ class ResidencePermitFeedbackTestCase(FeedbackEndpointMixin, APITestCase):
         response = self.client.get(self.endpoint, format="json").json()
 
         # 3 out of 5 objects. Percentiles are 1st and 3rd objects.
-        self.assertEqual(response["stats"]["total"]["count"], 3)
-        self.assertEqual(response["stats"]["total"]["percentile_20"], 9)
-        self.assertEqual(response["stats"]["total"]["percentile_80"], 15)
+        self.assertEqual(response["stats"]["start_to_finish"]["all_time"]["count"], 3)
+        self.assertEqual(response["stats"]["start_to_finish"]["all_time"]["percentile_20"], 9)
+        self.assertEqual(response["stats"]["start_to_finish"]["all_time"]["percentile_80"], 15)
 
         # 5 out of 5 objects. Percentiles are 1st and 5th objects.
-        self.assertEqual(response["stats"]["first_response_date"]["count"], 5)
-        self.assertEqual(response["stats"]["first_response_date"]["percentile_20"], 3)
-        self.assertEqual(response["stats"]["first_response_date"]["percentile_80"], 7)
+        self.assertEqual(response["stats"]["first_response_date"]["all_time"]["count"], 5)
+        self.assertEqual(response["stats"]["first_response_date"]["all_time"]["percentile_20"], 3)
+        self.assertEqual(response["stats"]["first_response_date"]["all_time"]["percentile_80"], 7)
 
         # 4 out of 5 objects. Percentiles are 1st and 4rd objects.
-        self.assertEqual(response["stats"]["appointment_date"]["count"], 4)
-        self.assertEqual(response["stats"]["appointment_date"]["percentile_20"], 6 - 3)
-        self.assertEqual(response["stats"]["appointment_date"]["percentile_80"], 12 - 6)
+        self.assertEqual(response["stats"]["appointment_date"]["all_time"]["count"], 4)
+        self.assertEqual(response["stats"]["appointment_date"]["all_time"]["percentile_20"], 6 - 3)
+        self.assertEqual(response["stats"]["appointment_date"]["all_time"]["percentile_80"], 12 - 6)
 
         # 3 out of 5 objects. Percentiles are 1st and 3rd objects.
-        self.assertEqual(response["stats"]["pick_up_date"]["count"], 3)
-        self.assertEqual(response["stats"]["pick_up_date"]["percentile_20"], 9 - 6)
-        self.assertEqual(response["stats"]["pick_up_date"]["percentile_80"], 15 - 10)
+        self.assertEqual(response["stats"]["pick_up_date"]["all_time"]["count"], 3)
+        self.assertEqual(response["stats"]["pick_up_date"]["all_time"]["percentile_20"], 9 - 6)
+        self.assertEqual(response["stats"]["pick_up_date"]["all_time"]["percentile_80"], 15 - 10)
 
     def test_stats_more_rows(self):
         date_start = date.today()
@@ -542,9 +542,9 @@ class ResidencePermitFeedbackTestCase(FeedbackEndpointMixin, APITestCase):
         response = self.client.get(self.endpoint, format="json").json()
 
         # 50 objects. Percentiles are 10th and 40th objects.
-        self.assertEqual(response["stats"]["total"]["count"], 50)
-        self.assertEqual(response["stats"]["total"]["percentile_20"], (10 - 1) * 3)
-        self.assertEqual(response["stats"]["total"]["percentile_80"], 40 * 3)
+        self.assertEqual(response["stats"]["start_to_finish"]["all_time"]["count"], 50)
+        self.assertEqual(response["stats"]["start_to_finish"]["all_time"]["percentile_20"], (10 - 1) * 3)
+        self.assertEqual(response["stats"]["start_to_finish"]["all_time"]["percentile_80"], 40 * 3)
 
     def test_stats_filtered_rows(self):
         date_start = date.today()
@@ -582,9 +582,9 @@ class ResidencePermitFeedbackTestCase(FeedbackEndpointMixin, APITestCase):
         response = self.client.get(
             self.endpoint + "?residence_permit_type=BLUE_CARD&department=B1_B2_B3_B4", format="json"
         ).json()
-        self.assertEqual(response["stats"]["total"]["count"], 50)
-        self.assertEqual(response["stats"]["total"]["percentile_20"], (10 - 1) * 3)
-        self.assertEqual(response["stats"]["total"]["percentile_80"], 40 * 3)
+        self.assertEqual(response["stats"]["start_to_finish"]["all_time"]["count"], 50)
+        self.assertEqual(response["stats"]["start_to_finish"]["all_time"]["percentile_20"], (10 - 1) * 3)
+        self.assertEqual(response["stats"]["start_to_finish"]["all_time"]["percentile_80"], 40 * 3)
 
 
 class CitizenshipFeedbackTestCase(FeedbackEndpointMixin, APITestCase):
@@ -716,9 +716,9 @@ class CitizenshipFeedbackTestCase(FeedbackEndpointMixin, APITestCase):
         response = self.client.get(self.endpoint, format="json").json()
 
         # 3 out of 5 objects. Percentiles are 1st and 3rd objects.
-        self.assertEqual(response["stats"]["total"]["count"], 3)
-        self.assertEqual(response["stats"]["total"]["percentile_20"], 6)
-        self.assertEqual(response["stats"]["total"]["percentile_80"], 10)
+        self.assertEqual(response["stats"]["start_to_finish"]["all_time"]["count"], 3)
+        self.assertEqual(response["stats"]["start_to_finish"]["all_time"]["percentile_20"], 6)
+        self.assertEqual(response["stats"]["start_to_finish"]["all_time"]["percentile_80"], 10)
 
     def test_stats_more_rows(self):
         date_start = date.today()
@@ -732,9 +732,9 @@ class CitizenshipFeedbackTestCase(FeedbackEndpointMixin, APITestCase):
         response = self.client.get(self.endpoint, format="json").json()
 
         # 50 objects. Percentiles are 10th and 40th objects.
-        self.assertEqual(response["stats"]["total"]["count"], 50)
-        self.assertEqual(response["stats"]["total"]["percentile_20"], (10 - 1) * 2)
-        self.assertEqual(response["stats"]["total"]["percentile_80"], 40 * 2)
+        self.assertEqual(response["stats"]["start_to_finish"]["all_time"]["count"], 50)
+        self.assertEqual(response["stats"]["start_to_finish"]["all_time"]["percentile_20"], (10 - 1) * 2)
+        self.assertEqual(response["stats"]["start_to_finish"]["all_time"]["percentile_80"], 40 * 2)
 
 
 class PlaceSuggestionTestCase(APITestCase):

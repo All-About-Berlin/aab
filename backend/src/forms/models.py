@@ -241,16 +241,18 @@ class FeedbackManager(models.Manager):
         column_start = connection.ops.quote_name(column_start)
         column_end = connection.ops.quote_name(column_end)
 
-        where_extras = []
+        where_clauses = ""
         query_params = {}
         for column_name, value in extra_filters.items():
             if value:
-                where_extras.append(f"{column_name} = %({column_name})s")
+                where_clauses += f" AND {column_name} = %({column_name})s"
                 query_params[column_name] = value
 
         if date_range:
-            where_extras.append(f"{column_start} >= %(range_start)s AND {column_end} < %(range_end)s")
+            where_clauses += f" AND {column_end} >= %(range_start)s"
             query_params["range_start"] = date_range[0].isoformat()
+
+            where_clauses += f" AND {column_end} < %(range_end)s"
             query_params["range_end"] = date_range[1].isoformat()
 
         db_table = connection.ops.quote_name(self.model._meta.db_table)
@@ -259,9 +261,9 @@ class FeedbackManager(models.Manager):
                 SELECT CAST((julianday({column_end}) - julianday({column_start})) AS INT) AS time_diff
                 FROM {db_table}
                 WHERE
-                    {column_end} IS NOT NULL
-                    AND {column_start} IS NOT NULL
-                    {" AND ".join(where_extras)}
+                    {column_start} IS NOT NULL
+                    AND {column_end} IS NOT NULL
+                    {where_clauses}
             ),
             counts AS (
                 SELECT COUNT(*) AS row_count FROM time_diffs
@@ -273,7 +275,6 @@ class FeedbackManager(models.Manager):
             )
             SELECT
                 row_count,
-                AVG(time_diff) AS average,
                 AVG(
                     CASE WHEN rownum BETWEEN (row_count + 1) / 2 AND (row_count + 2) / 2
                     THEN CAST(time_diff AS REAL) END
@@ -294,54 +295,52 @@ class FeedbackManager(models.Manager):
             row = cursor.fetchone()
 
         if row and row[0]:
-            row_count, average, median, percentile_20, percentile_80 = row
+            row_count, median, percentile_20, percentile_80 = row
             return {
-                "median": median,
+                "median": int(median),
                 "percentile_20": percentile_20,
                 "percentile_80": percentile_80,
                 "count": row_count,
-                "average": average,
             }
         return {
             "median": None,
             "percentile_20": None,
             "percentile_80": None,
             "count": 0,
-            "average": None,
         }
 
     def wait_times(self, column_start: str, column_end: str, extra_filters: dict[str, str] = {}) -> dict[str, Any]:
-        six_months_ago = date.today().replace(day=1) - relativedelta(months=6)  # First day of the month
+        twelve_months_ago = date.today().replace(day=1) - relativedelta(months=12)  # First day of the month
 
         return {
-            "total": self._compute_stats(
+            "all_time": self._compute_stats(
                 column_start=column_start,
                 column_end=column_end,
                 extra_filters=extra_filters,
             ),
-            "last_6_months": self._compute_stats(
+            "last_12_months": self._compute_stats(
                 column_start=column_start,
                 column_end=column_end,
                 extra_filters=extra_filters,
                 date_range=(
-                    six_months_ago,
+                    twelve_months_ago,
                     date.today().replace(day=1),
                 ),
             ),
             "per_month": [
                 {
-                    "month": (six_months_ago + relativedelta(months=i)).strftime("%Y-%m"),
+                    "month": (twelve_months_ago + relativedelta(months=i)).strftime("%Y-%m"),
                     **self._compute_stats(
                         column_start=column_start,
                         column_end=column_end,
                         extra_filters=extra_filters,
                         date_range=(
-                            six_months_ago + relativedelta(months=i),
-                            six_months_ago + relativedelta(months=i + 1),
+                            twelve_months_ago + relativedelta(months=i),
+                            twelve_months_ago + relativedelta(months=i + 1),
                         ),
                     ),
                 }
-                for i in range(6)
+                for i in range(12)
             ],
         }
 
