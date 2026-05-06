@@ -145,23 +145,38 @@ class ResidencePermitFeedbackViewSet(FeedbackViewSet):
             filters["first_response_date__isnull"] = False
         return self.queryset.filter(**filters)
 
+    def get_extra_filters(self, request):
+        return {param: v for param in self.filter_params if (v := request.query_params.get(param))}
+
     def get_stats(self, request) -> dict[str, Any]:
-        extra_filters = {param: request.query_params.get(param) for param in self.filter_params}
+        extra_filters = self.get_extra_filters(request)
         return {
-            "first_response_date": ResidencePermitFeedback.objects.wait_time(
-                "application_date", "first_response_date", extra_filters
+            "first_response_date": ResidencePermitFeedback.objects.wait_times(
+                column_start="application_date",
+                column_end="first_response_date",
+                extra_filters=extra_filters,
             ),
-            "appointment_date": ResidencePermitFeedback.objects.wait_time(
-                "first_response_date", "appointment_date", extra_filters
+            "appointment_date": ResidencePermitFeedback.objects.wait_times(
+                column_start="first_response_date",
+                column_end="appointment_date",
+                extra_filters=extra_filters,
             ),
-            "pick_up_date": ResidencePermitFeedback.objects.wait_time(
-                "appointment_date", "pick_up_date", extra_filters
+            "pick_up_date": ResidencePermitFeedback.objects.wait_times(
+                column_start="appointment_date",
+                column_end="pick_up_date",
+                extra_filters=extra_filters,
             ),
-            "total": ResidencePermitFeedback.objects.wait_time("application_date", "pick_up_date", extra_filters),
+            "total": ResidencePermitFeedback.objects.wait_times(
+                column_start="application_date",
+                column_end="pick_up_date",
+                extra_filters=extra_filters,
+            ),
         }
 
     def list(self, request, *args, **kwargs):
         response = super().list(request, *args, **kwargs)
+        response.data = response.data or {}
+
         response.data["stats"] = self.get_stats(request)
 
         # Add human-readable range string like "1 week to 6 months"
@@ -185,22 +200,22 @@ class CitizenshipFeedbackViewSet(ResidencePermitFeedbackViewSet):
     filter_params = ["department"]
 
     def get_stats(self, request):
-        extra_filters = {param: request.query_params.get(param) for param in self.filter_params}
+        extra_filters = self.get_extra_filters(request)
         return {
-            "first_response_date": CitizenshipFeedback.objects.wait_time(
-                "application_date",
-                "first_response_date",
-                extra_filters,
+            "first_response_date": CitizenshipFeedback.objects.wait_times(
+                column_start="application_date",
+                column_end="first_response_date",
+                extra_filters=extra_filters,
             ),
-            "appointment_date": CitizenshipFeedback.objects.wait_time(
-                "first_response_date",
-                "appointment_date",
-                extra_filters,
+            "appointment_date": CitizenshipFeedback.objects.wait_times(
+                column_start="first_response_date",
+                column_end="appointment_date",
+                extra_filters=extra_filters,
             ),
-            "total": CitizenshipFeedback.objects.wait_time(
-                "application_date",
-                "appointment_date",
-                extra_filters,
+            "total": CitizenshipFeedback.objects.wait_times(
+                column_start="application_date",
+                column_end="appointment_date",
+                extra_filters=extra_filters,
             ),
         }
 

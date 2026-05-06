@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 from dateutil.relativedelta import relativedelta
 from django.conf import settings
 from django.core.exceptions import ValidationError
@@ -231,79 +231,118 @@ def in_8_weeks():
 
 
 class FeedbackManager(models.Manager):
-    def wait_time(self, date_column_start: str, date_column_end: str, extra_filters: dict[str, str]) -> dict[str, Any]:
-        where_extras = ""
+    def _compute_stats(
+        self,
+        column_start: str,
+        column_end: str,
+        date_range: tuple[date, date] | None = None,
+        extra_filters: dict[str, str] = {},
+    ) -> dict[str, Any]:
+        column_start = connection.ops.quote_name(column_start)
+        column_end = connection.ops.quote_name(column_end)
+
+        where_extras = []
+        query_params = {}
         for column_name, value in extra_filters.items():
-            where_extras += f" AND {column_name}=%({column_name})s" if value else ""
+            if value:
+                where_extras.append(f"{column_name} = %({column_name})s")
+                query_params[column_name] = value
+
+        if date_range:
+            where_extras.append(f"{column_start} >= %(range_start)s AND {column_end} < %(range_end)s")
+            query_params["range_start"] = date_range[0].isoformat()
+            query_params["range_end"] = date_range[1].isoformat()
 
         db_table = connection.ops.quote_name(self.model._meta.db_table)
-        column_start = connection.ops.quote_name(date_column_start)
-        column_end = connection.ops.quote_name(date_column_end)
-
-        percentiles_query = f"""
+        query = f"""
             WITH time_diffs AS (
-                SELECT
-                    CAST( (julianday({column_end}) - julianday({column_start})) AS INT) AS time_diff
+                SELECT CAST((julianday({column_end}) - julianday({column_start})) AS INT) AS time_diff
                 FROM {db_table}
                 WHERE
                     {column_end} IS NOT NULL
                     AND {column_start} IS NOT NULL
-                    {where_extras}
-                ORDER BY time_diff ASC
+                    {" AND ".join(where_extras)}
             ),
-            row_count AS (
+            counts AS (
                 SELECT COUNT(*) AS row_count FROM time_diffs
             ),
-            percentile_rows AS(
-                SELECT
-                    CAST(CEIL(row_count * 0.2) AS INT) AS row_20,
-                    CAST(FLOOR(row_count * 0.8) AS INT) + 1 AS row_80
-                FROM row_count
-            ),
-            numbered_rows AS (
-                SELECT
-                    time_diff,
-                    row_20,
-                    row_80,
-                    ROW_NUMBER() over (order by time_diff) as rownum
-                FROM time_diffs, percentile_rows
+            numbered AS (
+                SELECT time_diff, row_count,
+                    ROW_NUMBER() OVER (ORDER BY time_diff) AS rownum
+                FROM time_diffs, counts
             )
             SELECT
-                time_diff,
                 row_count,
-                AVG(time_diff) OVER () AS average
-            FROM numbered_rows, row_count
-            WHERE
-                rownum >= row_20
-                AND rownum <= row_80
+                AVG(time_diff) AS average,
+                AVG(
+                    CASE WHEN rownum BETWEEN (row_count + 1) / 2 AND (row_count + 2) / 2
+                    THEN CAST(time_diff AS REAL) END
+                ) AS median,
+                MIN(
+                    CASE WHEN rownum = CAST(CEIL(row_count * 0.2) AS INT)
+                    THEN time_diff END
+                ) AS percentile_20,
+                MIN(
+                    CASE WHEN rownum = CAST(FLOOR(row_count * 0.8) AS INT) + 1
+                    THEN time_diff END
+                ) AS percentile_80
+            FROM numbered
         """
 
         with connection.cursor() as cursor:
-            cursor.execute(
-                percentiles_query,
-                {
-                    "date_column_start": date_column_start,
-                    "date_column_end": date_column_end,
-                    **extra_filters,
-                },
-            )
-            results = list(zip(*cursor.fetchall()))
-        if results and len(results[0]) >= 2:
-            percentile_20 = results[0][0]
-            percentile_80 = results[0][-1]
-            row_count = results[1][0]
-            average = results[2][0]
-        else:  # No data
-            percentile_20 = None
-            percentile_80 = None
-            row_count = 0
-            average = None
+            cursor.execute(query, query_params)
+            row = cursor.fetchone()
+
+        if row and row[0]:
+            row_count, average, median, percentile_20, percentile_80 = row
+            return {
+                "median": median,
+                "percentile_20": percentile_20,
+                "percentile_80": percentile_80,
+                "count": row_count,
+                "average": average,
+            }
+        return {
+            "median": None,
+            "percentile_20": None,
+            "percentile_80": None,
+            "count": 0,
+            "average": None,
+        }
+
+    def wait_times(self, column_start: str, column_end: str, extra_filters: dict[str, str] = {}) -> dict[str, Any]:
+        six_months_ago = date.today().replace(day=1) - relativedelta(months=6)  # First day of the month
 
         return {
-            "percentile_20": percentile_20,
-            "percentile_80": percentile_80,
-            "count": row_count,
-            "average": average,
+            "total": self._compute_stats(
+                column_start=column_start,
+                column_end=column_end,
+                extra_filters=extra_filters,
+            ),
+            "last_6_months": self._compute_stats(
+                column_start=column_start,
+                column_end=column_end,
+                extra_filters=extra_filters,
+                date_range=(
+                    six_months_ago,
+                    date.today().replace(day=1),
+                ),
+            ),
+            "per_month": [
+                {
+                    "month": (six_months_ago + relativedelta(months=i)).strftime("%Y-%m"),
+                    **self._compute_stats(
+                        column_start=column_start,
+                        column_end=column_end,
+                        extra_filters=extra_filters,
+                        date_range=(
+                            six_months_ago + relativedelta(months=i),
+                            six_months_ago + relativedelta(months=i + 1),
+                        ),
+                    ),
+                }
+                for i in range(6)
+            ],
         }
 
 
