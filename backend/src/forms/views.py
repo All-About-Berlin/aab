@@ -179,9 +179,13 @@ class ResidencePermitFeedbackViewSet(FeedbackViewSet):
                 days_1=stats_dict["percentile_20"], days_2=stats_dict["percentile_80"]
             )
             stats_dict["readable_median"] = readable_duration(stats_dict["median"])
+            stats_dict["readable_percentile_20"] = readable_duration(stats_dict["percentile_20"])
+            stats_dict["readable_percentile_80"] = readable_duration(stats_dict["percentile_80"])
         else:
             stats_dict["readable_range"] = None
             stats_dict["readable_median"] = None
+            stats_dict["readable_percentile_20"] = None
+            stats_dict["readable_percentile_80"] = None
 
     def list(self, request, *args, **kwargs):
         response = super().list(request, *args, **kwargs)
@@ -192,7 +196,7 @@ class ResidencePermitFeedbackViewSet(FeedbackViewSet):
         for stats_subset in response.data["stats"].values():
             self._add_human_readable_range(stats_subset["all_time"])
             self._add_human_readable_range(stats_subset["last_12_months"])
-            for monthly_stats in stats_subset["per_month"]:
+            for monthly_stats in stats_subset["by_month"]:
                 self._add_human_readable_range(monthly_stats)
 
         return response

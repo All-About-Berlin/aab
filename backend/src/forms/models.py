@@ -312,6 +312,9 @@ class FeedbackManager(models.Manager):
     def wait_times(self, column_start: str, column_end: str, extra_filters: dict[str, str] = {}) -> dict[str, Any]:
         twelve_months_ago = date.today().replace(day=1) - relativedelta(months=12)  # First day of the month
 
+        months_to_show = 24
+        x_months_ago = date.today().replace(day=1) - relativedelta(months=months_to_show)
+
         return {
             "all_time": self._compute_stats(
                 column_start=column_start,
@@ -327,20 +330,20 @@ class FeedbackManager(models.Manager):
                     date.today().replace(day=1),
                 ),
             ),
-            "per_month": [
+            "by_month": [
                 {
-                    "month": (twelve_months_ago + relativedelta(months=i)).strftime("%Y-%m"),
+                    "month": (x_months_ago + relativedelta(months=i)).strftime("%Y-%m"),
                     **self._compute_stats(
                         column_start=column_start,
                         column_end=column_end,
                         extra_filters=extra_filters,
                         date_range=(
-                            twelve_months_ago + relativedelta(months=i),
-                            twelve_months_ago + relativedelta(months=i + 1),
+                            x_months_ago + relativedelta(months=i),
+                            x_months_ago + relativedelta(months=i + 1),
                         ),
                     ),
                 }
-                for i in range(12)
+                for i in range(months_to_show)
             ],
         }
 

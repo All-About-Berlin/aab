@@ -2,6 +2,7 @@ import CitizenshipFeedbackForm from '/js/vue/tools/citizenship-feedback-form.mjs
 import Glossary from '/js/vue/components/glossary.mjs';
 import ResidencePermitFeedbackForm from '/js/vue/tools/residence-permit-feedback-form.mjs';
 import Pagination from '/js/vue/components/pagination.mjs';
+import SteamGraph from '/js/vue/components/steam-graph.mjs';
 import Tabs from '/js/vue/components/tabs.mjs';
 import { citizenshipDepartments } from '/js/utils/immigrationOffice.mjs'
 import { formatLongDate, formatTimeDelta } from '/js/utils/date.mjs';
@@ -13,6 +14,7 @@ export default {
 		Glossary,
 		ResidencePermitFeedbackForm,
 		Pagination,
+		SteamGraph,
 		Tabs,
 	},
 	data() {
@@ -69,11 +71,10 @@ export default {
 			return this.isLoading ? 0 : Math.ceil(this.resultCount / this.itemsPerPage);
 		},
 		feedbackCount(){
-			console.log(this.stats)
 			return this.stats?.first_response_date?.all_time?.count || 0;
 		},
 		startToFinishWaitMedian(){
-			return this.stats?.start_to_finish?.all_time?.readable_median ?? 'unknown';
+			return this.stats?.start_to_finish?.all_time?.readable_median;
 		},
 		startToFinishWaitRange(){
 			return this.stats?.start_to_finish?.all_time?.readable_range ?? 'a few months';
@@ -137,7 +138,7 @@ export default {
 			const median = this.stats[stepKey]?.all_time?.readable_median;
 			return range && median ?
 				`Wait ${range} — ${median} on average`
-				: 'Wait for an unknown duration';
+				: 'Wait for a few weeks';
 		},
 		waitTime(date1, date2, stillWaiting=false) {
 			if(stillWaiting){
@@ -250,11 +251,11 @@ export default {
 				<template v-if="isCitizenship">become a German citizen.</template>
 				<template v-else>get a <glossary :term="residencePermitName(residencePermitType).glossaryTerm">{{ residencePermitName(residencePermitType).normal }}</glossary>.</template>
 
-				The median wait time is <span v-text="startToFinishWaitMedian">unknown</span>.
+				<template v-if="startToFinishWaitMedian">The median wait time is <span v-text="startToFinishWaitMedian">a few months</span>.</template>
 
 				Wait times vary by <a href="/guides/immigration-office#departments">department</a><span v-if="!residencePermitType">&nbsp;and residence permit type</span>.
 
-				Based on <a href="#feedback-from-other-people">feedback from <span v-text="feedbackCount">many</span> people</a>.
+				<template v-if="feedbackCount">Based on <a href="#feedback-from-other-people">feedback from <span v-text="feedbackCount">many</span> people</a>.</template>
 			</p>
 
 			<div class="feedback-summary">
@@ -291,10 +292,15 @@ export default {
 				<strong><a :href="guideUrl" class="internal-link">How to apply for the {{ residencePermitTypes[residencePermitType].normal }}</a></strong>
 			</p>
 
+			<template v-if="stats?.start_to_finish?.all_time?.count">
+				<h3>Total wait time by month</h3>
+				<steam-graph :data="stats"></steam-graph>
+			</template>
+
 			<citizenship-feedback-form v-if="isCitizenship" static></citizenship-feedback-form>
 			<residence-permit-feedback-form v-else static></residence-permit-feedback-form>
 
-			<h2 id="feedback-from-other-people">Feedback from other people</h2>
+			<h2 id="feedback-from-other-people">Feedback from others</h2>
 
 			<div class="filters">
 				<tabs
@@ -382,7 +388,7 @@ export default {
 								<template v-if="result.pick_up_date && isInTheFuture(result.pick_up_date)">
 									Will pick up residence card after {{ formatTimeDelta(result.appointment_date, result.pick_up_date) }}
 								</template>
-								<template v-if="result.pick_up_date && !isInTheFuture(result.pick_up_date)">
+								<template v-else-if="result.pick_up_date && !isInTheFuture(result.pick_up_date)">
 									Picked up residence card {{ formatTimeDelta(result.appointment_date, result.pick_up_date) }} later
 								</template>
 								<template v-else>
