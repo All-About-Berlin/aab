@@ -152,7 +152,7 @@ If you [quit or lose your job](/guides/losing-your-job), and you are in your [no
 
 [^0]: [destatis.de](https://www.destatis.de/DE/Themen/Arbeit/Arbeitsmarkt/Qualitaet-Arbeit/Dimension-2/krankenstand.html)
 [^1]: [wirtschaftsforum.de](https://www.wirtschaftsforum.de/tipps/welche-anzahl-an-krankentagen-ist-fuer-den-arbeitgeber-zumutbar)
-[^2]: [gesetze-im-internet.de](https://www.gesetze-im-internet.de/sgb_9_2018/__167.html), [gesetze-im-internet.de](https://www.gesetze-im-internet.de/sgb_9_2018/__167.html)
+[^2]: [§ 167 SGB IX](https://www.buzer.de/167_SGB_IX.htm) (May 2026)
 [^3]: [vice.com](https://www.vice.com/de/article/538n9q/darfst-du-wirklich-nicht-feiern-gehen-wenn-du-krankgeschrieben-bist)
 [^4]: [impulse.de](https://www.impulse.de/personal/was-chefs-bei-verdacht-auf-krankfeiern-tun-koennen/2024707.html#:~:text=einem%20krankgeschriebenen%20arbeitnehmer%2C%20der%20in%20der%20nacht%20als%20dj%20arbeitete)
 [^5]: [sueddeutsche.de](https://www.sueddeutsche.de/karriere/frage-an-den-sz-jobcoach-muss-ich-am-ersten-krankheitstag-ein-attest-einreichen-1.4230872#:~:text=ihren%20arbeitgeber%20mussen%20sie%20selbstverstandlich%20am%20ersten%20tag%20ihrer%20krankheit%20informieren.%20am%20besten%20gleich%20am%20morgen%20durch%20einen%20anruf)

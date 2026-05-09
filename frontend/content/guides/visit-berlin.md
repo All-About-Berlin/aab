@@ -195,7 +195,7 @@ Berlin is famous for its techno clubs. It can be hard to get into certain clubs.
 
 In Berlin, people don't wear fancy clothes to go clubbing. If you dress too nice, you won't get in.[^8] Each club has its own unofficial dress code. Ask the locals what the dress code is.
 
-Most clubs have a cover charge. You must pay €5 to €25 to get in. Clubs in Berlin stay open all night. The party starts late, and the busiest time is around 2AM. You can buy presale tickets for club events on [Resident Advisor](https://ra.co/guide/de/berlin). When you have tickets, it's easier to get in.[^9] If you don't get in, you get your money back.[^5]
+Most clubs have a cover charge. You must pay around €25 to get in. Clubs in Berlin stay open all night. The party starts late, and the busiest time is around 2AM. You can buy presale tickets for club events on [Resident Advisor](https://ra.co/guide/de/berlin). When you have tickets, it's easier to get in.[^9] If you don't get in, you get your money back.[^5]
 
 Find club events on [Resident Advisor](https://ra.co/guide/de/berlin), or follow clubs on Facebook and Instagram.
 
