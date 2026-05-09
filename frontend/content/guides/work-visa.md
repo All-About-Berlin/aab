@@ -84,7 +84,7 @@ You can apply in Germany if...
 
 If you can't apply in Germany, you must [apply in your home country](#how-to-apply-in-your-country).
 
-Usually, you can't work while you wait for your work visa.[^35] You might wait [a few months](/guides/immigration-office/wait-times) with no income. To get a work visa faster, you can also apply through the [Business Immigration Service](https://www.businesslocationcenter.de/en/our-services/bis-business-immigration-service).[^28]
+Usually, you can't work while you wait for your work visa.[^35] You might wait [{{ WAIT_TIME_WORK_VISA }}](/guides/immigration-office/wait-times) with no income. To get a work visa faster, you can also apply through the [Business Immigration Service](https://www.businesslocationcenter.de/en/our-services/bis-business-immigration-service).[^28]
 
 It's cheaper and safer if you [apply in your home country](#how-to-apply-in-your-country), then come to Germany when you have permission to work.
 
@@ -156,7 +156,7 @@ You can also apply through the [Business Immigration Service](https://www.busine
 
 ### 5. Wait
 
-The *Ausländerbehörde* will process your application. There is no way to track your application. You must wait for their response. It takes [a few months](/guides/immigration-office/wait-times).
+The *Ausländerbehörde* will process your application. It takes [{{ WAIT_TIME_WORK_VISA }}](/guides/immigration-office/wait-times). You must wait for their response. There is no way to track your application. If you wait more than 3 months, you can [sue the *Ausländerbehörde*](/guides/immigration-office#sue-the-auslanderbehorde).
 
 While you wait, your current [[National Visa]] or residence permit might expire. It's extended until the *Ausländerbehörde* processes your application.[^7]
 
@@ -252,9 +252,7 @@ When you [go to to your appointment](#go-to-your-appointment), print everything.
 
 Tell me how long it took to get your work visa. Your feedback helps thousands of people plan their application.
 
-{% tool "residence-permit-feedback-form", type='WORK_VISA' %}
-
-**[Read other people's feedback ➞](/guides/immigration-office/wait-times)**
+{% tool "residence-permit-feedback-form", type='WORK_VISA', static=True %}
 
 ### If you change or lose your job
 

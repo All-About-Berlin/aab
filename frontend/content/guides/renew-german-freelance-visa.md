@@ -224,9 +224,7 @@ Keep the receipts. Those expenses are [tax-deductible](/glossary/steuerlich%20ab
 
 Your feedback helps thousands of people plan their freelance visa application.
 
-{% tool "residence-permit-feedback-form", type='FREELANCE_VISA' %}
-
-**[Read other people's feedback ➞](/guides/immigration-office/wait-times)**
+{% tool "residence-permit-feedback-form", type='FREELANCE_VISA', static=True %}
 
 ### Apply for permanent residence
 

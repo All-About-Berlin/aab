@@ -13,7 +13,7 @@ This guide explains how the *Fiktionsbescheinigung* works, how to apply for it, 
 
 ## What is a Fiktionsbescheinigung?
 
-It takes [a few months](/guides/immigration-office/wait-times) to get a new [residence permit](/glossary/Aufenthaltstitel). [If your visa or residence permit expires](/guides/residence-permit#if-your-visa-or-residence-permit-expires) while you wait, nothing happens. Your residence status stays valid until your application is approved or rejected. You can still live, work, study and freelance like before.
+It takes [{{ WAIT_TIME_RESIDENCE_PERMIT }}](/guides/immigration-office/wait-times) to get a new [residence permit](/glossary/Aufenthaltstitel). [If your visa or residence permit expires](/guides/residence-permit#if-your-visa-or-residence-permit-expires) while you wait, nothing happens. Your residence status stays valid until your application is approved or rejected. You can still live, work, study and freelance like before.
 
 The *Fiktionsbescheinigung* **proves that your residence status is still valid**, even if your visa or residence permit has expired. It's not a permit, only a confirmation. Your residence status stays valid even without a *Fiktionsbescheinigung*.
 

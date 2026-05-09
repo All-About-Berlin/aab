@@ -34,11 +34,11 @@ There are 3 ways to register your business with the *[[Finanzamt]]*:
 
 ### Can you be self-employed?
 
-You might need a [residence permit](/glossary/Aufenthaltstitel) to live in Germany. Your current residence permit might not allow you to be self-employed. It usually takes [a few months](/guides/immigration-office/wait-times) to change your residence permit.
+You might need a [residence permit](/glossary/Aufenthaltstitel) to live in Germany. Your current residence permit might not allow you to be self-employed. It usually takes [{{ WAIT_TIME_RESIDENCE_PERMIT }}](/guides/immigration-office/wait-times) to change your residence permit.
 
 **[Do you need a residence permit? ➞](/guides/residence-permit)**
 
-If you [apply for the German freelance visa](/guides/freelance-visa), you can register your business after you apply for the visa. When you [renew your freelance visa](/guides/renew-german-freelance-visa), your business should already be registered.
+If you [apply for the German freelance visa](/guides/freelance-visa), you can register your business after you apply for the visa. When you [renew your freelance visa](/guides/renew-german-freelance-visa), your business should already be registered. It takes [{{ WAIT_TIME_FREELANCE_VISA }}](/guides/immigration-office/wait-times) to get a freelance visa.
 
 ### Are you a Freiberufler or a Gewerbe?
 

@@ -12,6 +12,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 from ursus.config import config
 from ursus.linters import Linter, LinterResult
+import jmespath
 import logging
 import re
 import requests
@@ -42,7 +43,8 @@ class MonitorConfig(TypedDict):
     url: str
     crawler: str
     css_selector: NotRequired[str]
-    prompt: str
+    json_path: NotRequired[str]
+    prompt: NotRequired[str]
     delay: str
     every: str
     last_verified: NotRequired[date]
@@ -97,8 +99,9 @@ def format_yaml_value(value: str, unit: str | None) -> Any:
             return Decimal(normalized_number.rstrip("0").rstrip(".")).normalize()
         elif unit == "integer":
             return int(normalized_number)
-        else:
+        elif unit == "text":
             return str(value)
+        raise ValueError(f"Invalid unit: {unit}")
     except (ValueError, InvalidOperation):
         raise ValueError(f"Cannot parse {unit} value: {value!r}")
 
@@ -197,6 +200,27 @@ def crawl_html(monitor_config: MonitorConfig) -> str:
     return text
 
 
+def crawl_json(monitor_config: MonitorConfig) -> str:
+    response = requests.get(
+        monitor_config["url"],
+        headers={"User-Agent": "AllAboutBerlin-Monitor/1.0 (+https://allaboutberlin.com)"},
+        timeout=30,
+    )
+    response.raise_for_status()
+
+    json_path = monitor_config.get("json_path")
+    if not json_path:
+        raise ValueError("json crawler requires a json_path")
+
+    data = response.json()
+    result = jmespath.search(json_path, data)
+
+    if result is None:
+        raise ValueError(f"json_path '{json_path}' matched nothing in response from {monitor_config['url']}")
+
+    return str(result)
+
+
 def crawl_playwright(monitor_config: MonitorConfig) -> str:
     from playwright.sync_api import sync_playwright
 
@@ -237,6 +261,8 @@ class ConstantsLinter(Linter):
             return crawl_html(monitor_config)
         elif monitor_config["crawler"] == "playwright":
             return crawl_playwright(monitor_config)
+        elif monitor_config["crawler"] == "json":
+            return crawl_json(monitor_config)
         else:
             raise ValueError(f"Unknown crawler: {monitor_config['crawler']}")
 
@@ -276,10 +302,8 @@ class ConstantsLinter(Linter):
                 yield None, f"[{constant_name}] Monitor failed: {e}", logging.ERROR
                 continue
 
-            if monitor["prompt"]:
-                raw_value = query_llm(
-                    constant_name, f"{monitor['prompt']}\n{monitor.get('formatting_instructions', '')}", content
-                )
+            if prompt := monitor.get("prompt"):
+                raw_value = query_llm(constant_name, f"{prompt}\n{monitor.get('formatting_instructions', '')}", content)
 
                 if raw_value == "ERROR":
                     yield None, f"[{constant_name}] LLM could not extract value", logging.ERROR

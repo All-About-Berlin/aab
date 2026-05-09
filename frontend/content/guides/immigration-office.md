@@ -17,12 +17,13 @@ This is a guide for the *Landesamt für Einwanderung*, the immigration office in
 
 Some [residence permits](/glossary/Aufenthaltstitel) have their own online application form:
 
+- [Opportunity card](https://service.berlin.de/dienstleistung/354301/en/)
+- [Student visa](https://service.berlin.de/dienstleistung/305244/en/)
 - [Blue Card](https://service.berlin.de/dienstleistung/324659/en/)
 - [Work visa for people with a university degree](https://service.berlin.de/dienstleistung/329328/en/)
 - [Work visa for people with professional training](https://service.berlin.de/dienstleistung/305304/en/)
+- [Freelance visa](/out/auslanderbehorde-freelance-visa)
 - [Citizenship](https://service.berlin.de/dienstleistung/318998/)
-- [Student visa](https://service.berlin.de/dienstleistung/305244/en/)
-- [Opportunity card](https://service.berlin.de/dienstleistung/354301/en/)
 - [Permanent residence](https://service.berlin.de/dienstleistung/121864/en/)
     - [For Blue Card holders](https://service.berlin.de/dienstleistung/326556/en/)
     - [For the family of German citizens](https://service.berlin.de/dienstleistung/327012/en/)
@@ -32,7 +33,7 @@ Some [residence permits](/glossary/Aufenthaltstitel) have their own online appli
 
 **[See the full list ➞](https://www.berlin.de/einwanderung/en/services/our-services/artikel.878424.en.php)**
 
-If your residence permit is not in this list, send your application through the [contact form](#use-the-contact-form).
+If your residence permit is not in this list, use the [contact form](#use-the-contact-form) to send your application.
 
 ### Use the contact form
 
@@ -99,19 +100,19 @@ The Berlin immigration office has multiple departments. Send your application to
 
 To visit the *Ausländerbehörde*, you need an appointment. If you go without an appointment, they will not help you.[^3]
 
-**You can't book an appointment yourself.**[^2] You must [apply for a residence permit](/guides/residence-permit#how-to-apply-in-germany) or [use their contact form](#how-to-contact-the-auslanderbehorde). They decide when they give you an appointment. They can take [weeks or months](/guides/immigration-office/wait-times) to reply.
+**You can't book an appointment yourself.**[^2] You must [apply for a residence permit](/guides/residence-permit#how-to-apply-in-germany) or [use their contact form](#how-to-contact-the-auslanderbehorde). They decide when they give you an appointment. They usually take [months](/guides/immigration-office/wait-times) to reply.
 
 ## Wait times
 
-It usually takes a few months to get a residence permit in Berlin. The wait times vary by department and residence permit type.
+It takes {{WAIT_TIME_RESIDENCE_PERMIT}} to get a [residence permit](/glossary/Aufenthaltstitel) in Berlin. The wait times vary by department and residence permit type.
 
 **[Ausländerbehörde wait times ➞](/guides/immigration-office/wait-times)**
 
-Usually, you can't work before you get your residence permit. It might be cheaper to apply in your home country. You can move to Berlin after you get permission to work. You don't need to wait in Berlin without an income.
-
-You don't need a residence permit to start studying. You can start studying as soon as you arrive in Germany.[^18]
+Usually, you can't [start working](/guides/find-a-job-in-berlin#start-working) before you get your residence permit. It might be cheaper to apply in your home country, and move to Berlin after you get permission to work. You don't need to wait in Berlin without an income.
 
 **[How to apply in your country ➞](/guides/residence-permit#how-to-apply-in-your-country)**
+
+You don't need a residence permit to start studying. You can start studying as soon as you arrive in Germany.[^18]
 
 {% tool "residence-permit-feedback-form" %}
 

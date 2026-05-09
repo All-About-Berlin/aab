@@ -100,7 +100,7 @@ You can apply in Germany if...
 
 If you can't apply in Germany, you must [apply in your home country](#how-to-apply-in-your-country).
 
-Your current residence permit [might allow self-employment](/guides/residence-permit#for-self-employment). If not, you must wait for your freelance visa to start working.[^35] This can take [a few months](/guides/immigration-office/wait-times). It might be cheaper and safer if you [apply in your home country](#how-to-apply-in-your-country), then come to Germany when you have permission to start your business.
+Your current residence permit [might allow self-employment](/guides/residence-permit#for-self-employment). If not, you must [wait {{WAIT_TIME_FREELANCE_VISA}}](/guides/immigration-office/wait-times) for your freelance visa before you start working.[^35] It might be cheaper and safer if you [apply in your home country](#how-to-apply-in-your-country), then come to Germany when you have permission to start your business.
 
 **If you need help**, an [immigration lawyer](/guides/english-speaking-lawyers-berlin) or a [relocation consultant](/guides/relocation-agency-in-berlin) can take care of everything. It costs €500 to €2,000.[^45] It's a [tax-deductible](/glossary/steuerlich%20absetzbar) expense.
 
@@ -156,7 +156,7 @@ After you pay and send your application, you can download a PDF. This is your pr
 
 ### 4. Wait
 
-The *Ausländerbehörde* will process your application. There is no way to track your application. You must wait for their response. It takes [a few months](/guides/immigration-office/wait-times).
+The *Ausländerbehörde* will process your application. It takes [{{ WAIT_TIME_FREELANCE_VISA }}](/guides/immigration-office/wait-times). You must wait for their response. There is no way to track your application. If you wait more than 3 months, you can [sue the *Ausländerbehörde*](/guides/immigration-office#sue-the-auslanderbehorde).
 
 While you wait, your current [[National Visa]] or residence permit might expire. It's extended until the *Ausländerbehörde* processes your application.[^36]
 
@@ -328,8 +328,6 @@ These documents are not required, but some *Ausländerbehörde* employees ask fo
 Tell me how long it took to get your freelance visa. Your feedback helps thousands of people plan their application.
 
 {% tool "residence-permit-feedback-form", type='FREELANCE_VISA', static=True %}
-
-**[Read other people's feedback ➞](/guides/immigration-office/wait-times)**
 
 ### Travel with a freelance visa
 

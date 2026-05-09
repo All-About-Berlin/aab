@@ -238,7 +238,7 @@ The requirements and the application process are the same. If you qualify for th
 
 ## How to apply in Berlin
 
-In Berlin, you must apply online. **It takes [3 to 9 months](/guides/immigration-office/wait-times)** to get permanent residence.[^5]{{ fail_on('2026-12-31') }}.
+In Berlin, you must apply online. **It takes [{{ WAIT_TIME_PERMANENT_RESIDENCE }}](/guides/immigration-office/wait-times)** to get permanent residence.[^5]
 
 If you don't live in Berlin, you must [find your local *Ausländerbehörde*](https://bamf-navi.bamf.de/de/Themen/Behoerden/) and apply there. The application process can be different.
 
@@ -279,7 +279,7 @@ After you pay and send your application, you can download a PDF. This is your pr
 
 ### 4. Wait
 
-The *Ausländerbehörde* will process your application. There is no way to track your application. You must wait for their response. It takes [a few months](/guides/immigration-office/wait-times).
+The *Ausländerbehörde* will process your application. It takes [{{ WAIT_TIME_PERMANENT_RESIDENCE }}](/guides/immigration-office/wait-times). You must wait for their response. There is no way to track your application. If you wait more than 3 months, you can [sue the *Ausländerbehörde*](/guides/immigration-office#sue-the-auslanderbehorde).
 
 While you wait, your current [[National Visa]] or residence permit might expire. It's extended until the *Ausländerbehörde* processes your application.[^34]
 
@@ -413,9 +413,7 @@ If you depend on your spouse's income, bring...[^50]
 
 Your feedback helps thousands of people plan their permanent residence application.
 
-{% tool "residence-permit-feedback-form", type='PERMANENT_RESIDENCE' %}
-
-**[Read other people's feedback ➞](/guides/immigration-office/wait-times)**
+{% tool "residence-permit-feedback-form", type='PERMANENT_RESIDENCE', static=True %}
 
 ### Activate your [[eID]]
 

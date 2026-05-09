@@ -84,7 +84,7 @@ You can apply in Germany if...
 
 If you can't apply in Germany, you must [apply in your home country](#how-to-apply-in-your-country).
 
-Usually, you can't work before you get your Blue Card.[^35] It can take [a long time](/guides/immigration-office/wait-times). You might wait a few months with no income. To get a Blue Card faster, you can also apply through the [Business Immigration Service](https://www.businesslocationcenter.de/en/our-services/bis-business-immigration-service).[^28]
+Usually, you can't [start working](/guides/find-a-job-in-berlin#start-working) before you get your Blue Card.[^35] You might [wait {{ WAIT_TIME_BLUE_CARD }}](/guides/immigration-office/wait-times) with no income. To get a Blue Card faster, use the [Business Immigration Service](https://www.businesslocationcenter.de/en/our-services/bis-business-immigration-service).[^28]
 
 It's cheaper and safer if you [apply in your home country](#how-to-apply-in-your-country), then come to Germany when you have permission to work.
 
@@ -153,7 +153,7 @@ You can also apply through the [Business Immigration Service](https://www.busine
 
 ### 5. Wait
 
-The *Ausländerbehörde* will process your application. There is no way to track your application. You must wait for their response. It takes [a few months](/guides/immigration-office/wait-times).
+The *Ausländerbehörde* will process your application. It takes [{{ WAIT_TIME_BLUE_CARD }}](/guides/immigration-office/wait-times). You must wait for their response. There is no way to track your application. If you wait more than 3 months, you can [sue the *Ausländerbehörde*](/guides/immigration-office#sue-the-auslanderbehorde).
 
 While you wait, your current [[National Visa]] or residence permit might expire. It's extended until the *Ausländerbehörde* processes your application.[^20]
 
@@ -165,7 +165,7 @@ If you have an [opportunity card](/glossary/Chancenkarte), you can work 20 hours
 
 ### 6. Go to your appointment
 
-[A few weeks later](/guides/immigration-office/wait-times), the *[[Ausländerbehörde]]* will email you an appointment date. If you get an appointment, you are almost guaranteed to get your Blue Card.
+[A few weeks later](/guides/immigration-office/wait-times), the *[[Ausländerbehörde]]* will give you an appointment date by email. If you get an appointment, you are almost guaranteed to get your Blue Card.
 
 Follow the instructions in the email. You might need to send extra documents, or bring them to your appointment.
 
@@ -244,9 +244,7 @@ These are the required documents **in Berlin**.[^2] If you apply elsewhere, they
 
 Tell me how long it took to get your Blue Card. Your feedback helps thousands of people plan their application.
 
-{% tool "residence-permit-feedback-form", type='BLUE_CARD' %}
-
-**[Read other people's feedback ➞](/guides/immigration-office/wait-times)**
+{% tool "residence-permit-feedback-form", type='BLUE_CARD', static=True %}
 
 ### Renew your Blue Card
 
@@ -325,7 +323,7 @@ An [immigration lawyer](/guides/english-speaking-lawyers-berlin) or a [relocatio
 [^31]: [make-it-in-germany.com](https://www.make-it-in-germany.com/en/visa-residence/skilled-immigration-act#:~:text=it%20specialists%20will%20be%20able%20to%20obtain%20an%20eu%20blue%20card)
 [^32]: [§ 18g AufenthG](https://www.buzer.de/18g_AufenthG.htm), [make-it-in-germany.com](https://www.make-it-in-germany.com/en/visa-residence/skilled-immigration-act#:~:text=group%20of%20people%3A-,new%20entrants%20to%20the%20labour%20market,-%3A%20The%20possibility%20of)
 [^33]: [§ 18i Abs. 1 AufenthG](https://www.buzer.de/18i_AufenthG.htm), [make-it-in-germany.com](https://www.make-it-in-germany.com/en/visa-residence/skilled-immigration-act#:~:text=after%20a%20minimum%20stay%20of%20twelve%20months)
-[^35]: [Berlin.de](https://www.berlin.de/einwanderung/service/faq/artikel.1021739.php#:~:text=sie%20sind%20ohne%20visum%20eingereist)
+[^35]: [Berlin.de](https://www.berlin.de/einwanderung/service/faq/artikel.1021739.php#:~:text=sie%20sind%20ohne%20visum%20eingereist). It depends on your current visa or residence permit.
 [^37]: [Berlin.de](https://service.berlin.de/dienstleistung/324659/en/#:~:text=in%20pdf%20format%20if%20possible)
 [^38]: [Berlin.de](https://www.berlin.de/einwanderung/en/entry/visa-extension/artikel.1049092.en.php#:~:text=if%20you%20have%20a%20residence%20title%20of%20another%20schengen%20country)
 [^41]: [BAMF](https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/MobilitaetEU/MobilitaetBlaueKarteEU/mobilitaet-blauekarteeu-node.html#:~:text=you%20will%20then%20have%20to%20apply%20for%20the%20eu%20blue%20card)

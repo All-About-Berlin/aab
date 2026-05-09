@@ -166,11 +166,11 @@ If you are not sure about your contract, [ask for help](/guides/help#legal-quest
 
 ## 5. Get a residence permit
 
-If you are not a citizen of the [EU](/glossary/European%20Union), [[EEA]] or Switzerland, you need a [residence permit](/glossary/Aufenthaltstitel) to live in Germany. Sometimes, you must wait for your residence permit to start working. It can take [a few months](/guides/immigration-office/wait-times).
+If you are not a citizen of the [EU](/glossary/European%20Union), [[EEA]] or Switzerland, you need a [residence permit](/glossary/Aufenthaltstitel) to live in Germany. Sometimes, you must wait for your residence permit to start working. It takes [{{ WAIT_TIME_RESIDENCE_PERMIT }}](/guides/immigration-office/wait-times) to get a new residence permit.
 
 **[How to get a residence permit ➞](/guides/residence-permit)**
 
-If you already have a residence permit, you might need the *[[Ausländerbehörde]]*'s permission to change jobs. Sometimes, you can start your new job immediately. Sometimes, you must wait for your new residence permit. This can take [a few weeks](/guides/immigration-office/wait-times).
+If you already have a residence permit, you might need the *[[Ausländerbehörde]]*'s permission to change jobs. Sometimes, you can start your new job immediately.
 
 **[How to change jobs ➞](/guides/losing-your-job#what-happens-to-your-residence-permit)**
 
@@ -193,7 +193,7 @@ You can start working without these things. Your employer can't require an [addr
 
 ### Things you must know
 
-In Germany, most people are paid once per month, usually on the 1st or 15th day of the month. You get your first paycheck after 30 or 45 days after you start working. You usually get paid by [bank transfer](/glossary/SEPA-Überweisung).
+In Germany, most people are paid once per month. You usually get paid on the 1st or 15th day of the month. You get your first paycheck 30 to 45 days after you start working. You usually get paid by [bank transfer](/glossary/SEPA-Überweisung).
 
 Most employees in Germany are paid by [bank transfer](/glossary/SEPA-%C3%9Cberweisung) once per month, [on the first day of the month](/guides/salaries-in-germany#when-do-i-get-paid).[^3] Your employer takes [salary tax](/glossary/Lohnsteuer), [health insurance](/glossary/Krankenversicherung), [pension insurance](/glossary/gesetzliche%20Rentenversicherung) and [unemployment insurance](/glossary/Arbeitslosenversicherung) from your paycheck. 
 

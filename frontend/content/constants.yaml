@@ -1,6 +1,6 @@
 constants:
   MINIMUM_WAGE:
-    value: 13.90
+    value: 13.9
     unit: euros
     monitor:
       template: default
@@ -903,7 +903,86 @@ constants:
     unit: euros
     description: Estimated lawyer hourly rate (€/h)
     fail_on: 2026-12-31
+  WAIT_TIME_BLUE_CARD:
+    value: 2 to 5 months
+    unit: text
+    description: Blue Card residence permit wait time (last 12 months)
+    monitor:
+      template: residence_permit_wait_time
+      residence_permit_type: BLUE_CARD
+      last_verified: 2026-05-07
+  WAIT_TIME_CITIZENSHIP:
+    value: 4 to 12 months
+    unit: text
+    description: Citizenship application wait time (last 12 months)
+    monitor:
+      template: default
+      crawler: json
+      url: https://allaboutberlin.com/api/forms/citizenship-feedback.json?page=1&count=1
+      json_path: stats.start_to_finish.last_12_months.readable_range
+      last_verified: 2026-05-09
+  WAIT_TIME_FAMILY_REUNION_VISA:
+    value: 3 to 5 months
+    unit: text
+    description: Family reunion visa wait time (last 12 months)
+    monitor:
+      template: residence_permit_wait_time
+      residence_permit_type: FAMILY_REUNION_VISA
+      last_verified: 2026-05-07
+  WAIT_TIME_FREELANCE_VISA:
+    value: 2 to 7 months
+    unit: text
+    description: Freelance visa wait time (last 12 months)
+    monitor:
+      template: residence_permit_wait_time
+      residence_permit_type: FREELANCE_VISA
+      last_verified: 2026-05-07
+  WAIT_TIME_JOB_SEEKER_VISA:
+    value: 2 to 5 months
+    unit: text
+    description: Job seeker visa wait time (last 12 months)
+    monitor:
+      template: residence_permit_wait_time
+      residence_permit_type: JOB_SEEKER_VISA
+      last_verified: 2026-05-07
+  WAIT_TIME_PERMANENT_RESIDENCE:
+    value: 3 to 7 months
+    unit: text
+    description: Permanent residence permit wait time (last 12 months)
+    monitor:
+      template: residence_permit_wait_time
+      residence_permit_type: PERMANENT_RESIDENCE
+      last_verified: 2026-05-07
+  WAIT_TIME_STUDENT_VISA:
+    value: 3 to 5 months
+    unit: text
+    description: Student visa wait time (last 12 months)
+    monitor:
+      template: residence_permit_wait_time
+      residence_permit_type: STUDENT_VISA
+      last_verified: 2026-05-07
+  WAIT_TIME_WORK_VISA:
+    value: 2 to 5 months
+    unit: text
+    description: Work visa wait time (last 12 months)
+    monitor:
+      template: residence_permit_wait_time
+      residence_permit_type: WORK_VISA
+      last_verified: 2026-05-07
+  WAIT_TIME_RESIDENCE_PERMIT:
+    value: 3 to 6 months
+    unit: text
+    description: Overall residence permit wait time (last 12 months)
+    monitor:
+      template: residence_permit_wait_time
+      residence_permit_type: ''
+      last_verified: 2026-05-09
 templates:
+  residence_permit_wait_time:
+    template: default
+    crawler: json
+    url: https://allaboutberlin.com/api/forms/residence-permit-feedback.json?page=1&count=1&residence_permit_type={residence_permit_type}
+    json_path: stats.start_to_finish.last_12_months.readable_range
   default:
     crawler: html
     delay: 1s
