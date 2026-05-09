@@ -194,7 +194,7 @@ You can also [rent a car when you need it](/guides/public-transit#rent-a-car). I
 [^13]: [§ 28 Abs. 1 FeV](https://www.buzer.de/28_FeV.htm) (2025)
 [^14]: [ArbeitNow](https://www.arbeitnow.com/blog/drivers-license-in-germany#:~:text=it%20is%20overall%20for%20around%2055%20minutes.%20) (2025)
 [^15]: [rbb24.de](https://www.rbb24.de/panorama/beitrag/2024/01/berlin-senat-fuehrerschein-praktische-fahrpruefung.html#:~:text=in%20berlin%20fallen%2044%20prozent) (2024), [bussgeldkatalog.org](https://www.bussgeldkatalog.org/news/alarmierende-statistik-durchfallquote-bei-der-fahrpruefung-erneut-gestiegen-667751/), [Allianz](https://www.allianzdirect.de/kfz-versicherung/fahrpruefung-durchfallquoten/) (2023)
-[^16]: [rbb24.de](https://www.rbb24.de/panorama/beitrag/2024/01/berlin-senat-fuehrerschein-praktische-fahrpruefung.html#:~:text=etwa%20vier%20monate%20warten) (2024)
+[^16]: [rbb24.de](https://www.rbb24.de/panorama/beitrag/2024/01/berlin-senat-fuehrerschein-praktische-fahrpruefung.html#:~:text=etwa%20vier%20monate%20warten) (2024), [Reddit](https://old.reddit.com/r/askberliners/comments/1t5azce/is_it_normal_to_wait_months_for_driving_exam/) (2026)
 [^17]: [§ 12 Abs. 7 FeV](https://www.buzer.de/12_FeV.htm), [brille24.de](https://www.brille24.de/ratgeber/augenoptik/fuehrerschein-sehtest#:~:text=Pkw%20leider%20verzichten.-,fuhrerschein%20mit%20brille%3A%20was%20musst%20du%20wissen%3F%20,-Grunds%C3%A4tzlich%20musst%20du), [Apollo.de](https://www.apollo.de/service/fuehrerschein-sehtest) (2024)
 [^18]: [§ 12 Abs. 2 FeV](https://www.buzer.de/12_FeV.htm)
 [^19]: [§ 17 FeV](https://www.buzer.de/17_FeV.htm)
