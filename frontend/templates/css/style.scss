@@ -1167,12 +1167,17 @@ main{
     }
 
     @include full-width-site{
-        .collection {
-            width: 100%;
+        .collections{
+            height: auto!important;
+            margin: 0 var(--w-page-border);
+            display: grid;
+            gap: var(--l);
         }
 
-        > .section:first-child{
-            margin-top: calc(var(--m) * -1);
+        .collection {
+            width: 100%!important;
+            position: static!important;
+            margin:0!important;
         }
     }
 }
