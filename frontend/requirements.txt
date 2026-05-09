@@ -2,6 +2,6 @@ ursus-ssg==1.4.6
 pyphen==0.17.2
 pyyaml==6.0.3
 holidays
-beautifulsoup4>=4.12
+beautifulsoup4>=4.14.3
 lxml>=5.0
 jmespath==1.1.0
