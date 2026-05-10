@@ -41,7 +41,7 @@
 			<meta property="og:type" content="website">
 			<meta property="og:title" content="{% if metatitle|default %}{{ metatitle }}{% else %}All About Berlin{% endif%}">
 			<meta property="og:description" content="{{ metadescription }}">
-			<meta property="og:image" content="{{ SITE_URL }}/staticimages/cover.png">
+			<meta property="og:image" content="{{ SITE_URL }}{{ metaimage|default('/staticimages/cover.png') }}">
 		{% endif %}
 		<meta property="og:logo" content="{{ SITE_URL }}/staticimages/logo.png" />
 	{% endblock %}

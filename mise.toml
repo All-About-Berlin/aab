@@ -113,6 +113,16 @@ rm "$TMP_DB"
 
 # = WRITE ======================================================================
 
+[tasks.make-title-image]
+description = "Generate an entry image with a given title"
+usage = '''
+arg "<title>" help="Title text to render on the image"
+arg "<output>" help="Output path for the PNG file"
+'''
+run = """
+frontend/scripts/make_title_image.py "${usage_title}" "${usage_output}"
+"""
+
 [tasks.import-places]
 description = "Fetch place suggestions from the API and add them to the places yaml files"
 run = """
