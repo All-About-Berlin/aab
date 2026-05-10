@@ -2,7 +2,7 @@ import CitizenshipFeedbackForm from '/js/vue/tools/citizenship-feedback-form.mjs
 import Glossary from '/js/vue/components/glossary.mjs';
 import ResidencePermitFeedbackForm from '/js/vue/tools/residence-permit-feedback-form.mjs';
 import Pagination from '/js/vue/components/pagination.mjs';
-import SteamGraph from '/js/vue/components/steam-graph.mjs';
+import WaitTimesGraph from '/js/vue/components/wait-times-graph.mjs';
 import Tabs from '/js/vue/components/tabs.mjs';
 import { citizenshipDepartments } from '/js/utils/immigrationOffice.mjs'
 import { formatLongDate, formatTimeDelta } from '/js/utils/date.mjs';
@@ -14,7 +14,7 @@ export default {
 		Glossary,
 		ResidencePermitFeedbackForm,
 		Pagination,
-		SteamGraph,
+		WaitTimesGraph,
 		Tabs,
 	},
 	data() {
@@ -294,7 +294,7 @@ export default {
 
 			<template v-if="stats?.start_to_finish?.all_time?.count">
 				<h3>Total wait time by month</h3>
-				<steam-graph :data="stats"></steam-graph>
+				<wait-times-graph :data="stats"></wait-times-graph>
 			</template>
 
 			<citizenship-feedback-form v-if="isCitizenship" static></citizenship-feedback-form>

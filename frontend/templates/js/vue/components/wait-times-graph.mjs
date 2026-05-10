@@ -198,7 +198,7 @@ export default {
 		},
 	},
 	template: `
-		<div class="steam-graph">
+		<div class="wait-times-graph">
 			<figure>
 				<svg :viewBox="chart.viewbox" width="100%" :height="fullHeight" role="img">
 					<title>Immigration office wait times, by month</title>
