@@ -416,11 +416,11 @@ $width-main-column: 860px;
         min-width: 600px;
         width: 100%;
         height: auto;
+        cursor: pointer;
 
         .datapoint-bounds{
             fill: transparent;
             pointer-events: all;
-            cursor: pointer;
         }
 
         .variance-band{
@@ -442,7 +442,7 @@ $width-main-column: 860px;
             opacity: 0.5
         }
 
-        &:hover{
+        &:hover, &:has(.selected){
             .year-label {
                 display: none; // Leave room for the month label
             }

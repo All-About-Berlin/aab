@@ -174,8 +174,13 @@ export default {
 			}).join(' ');
 		},
 		lockMonth(index) {
-			this.lockedMonth = this.monthlyData[index];
-			this.selectedMonth = this.lockedMonth;
+			if (this.lockedMonth === this.monthlyData[index]) {
+				this.lockedMonth = null;
+				this.selectedMonth = null;
+			} else {
+				this.lockedMonth = this.monthlyData[index];
+				this.selectedMonth = this.lockedMonth;
+			}
 		},
 		contiguousSegments(predicate, mapper) {
 			const segments = [];
