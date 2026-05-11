@@ -6,10 +6,10 @@
 	<main aria-label="Main page">
 		<header class="section intro article-body">
 			<h1>{{ entry.intro_title }}</h1>
-			<small>From €250 per month</small>
+			<small>From €{{HEALTH_INSURANCE_MIN_COST|cur}} per month</small>
 			<ul>
-				<li class="list-yes">Digital, English-speaking support</li>
 				<li class="list-yes">Valid for your visa application</li>
+				<li class="list-yes">Digital, English-speaking support</li>
 			</ul>
 			<div class="buttons bar left">
 				<a class="button primary" href="#calculator">Get insured</a>

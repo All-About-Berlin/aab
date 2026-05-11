@@ -8,5 +8,5 @@ Date_created: 2026-05-04
 
 ## Other ways to contact us
 
-- Write to us at [contact@agoodstart.de](mailto:contact@agoodstart.de)
+- Write to [contact@agoodstart.de](mailto:contact@agoodstart.de)
 - Message [+49 162 6969454](https://wa.me/+491626969454) on WhatsApp.

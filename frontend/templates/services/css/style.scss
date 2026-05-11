@@ -79,7 +79,7 @@ main .intro{
         color: #fff;
     }
 
-    .button{
+    .button:not(.link){
         background: #0002;
 
         &:hover{
