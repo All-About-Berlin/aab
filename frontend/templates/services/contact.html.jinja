@@ -8,7 +8,6 @@
 			<h1>{{ entry.intro_title }}</h1>
 			<p>{{ entry.intro_subtitle }}</p>
 		</header>
-		{% tool "health-insurance-calculator", static=True %}
 		{% tool "health-insurance-calculator", mode="question", static=True %}
 		<article class="section article-body" aria-label="Main content">
 			{{ entry.body|render|safe }}

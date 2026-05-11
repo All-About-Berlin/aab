@@ -1,7 +1,8 @@
 ---
 Title: Health insurance
-Subtitle: ...
-Description: ...
+Intro_title: Health insurance that works
+Intro_subtitle: Get affordable coverage, picked just for you.
+Description: Our expert helps you choose the best German health insurance.
 Date_created: 2026-05-04
 ---
 

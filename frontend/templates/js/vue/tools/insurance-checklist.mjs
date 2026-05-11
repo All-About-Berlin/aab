@@ -56,7 +56,6 @@ export default {
 			email: userDefaults.empty,
 			fullName: userDefaults.empty,
 			phone: '',
-			subscribeToNewsletter: false,
 			isLoading: false,
 			trackAs: 'Insurance checklist',
 		};
@@ -151,7 +150,6 @@ export default {
 						disability_insurance: this.selectedInsurances.disability,
 						life_insurance: this.selectedInsurances.life,
 						dental_insurance: this.selectedInsurances.dental,
-						subscribe_to_newsletter: this.subscribeToNewsletter,
 						referrer: getReferrer() || '',
 					}),
 				}
@@ -192,7 +190,6 @@ export default {
 			<div class="form-group required">
 				<label :for="uid('email')">Email address</label>
 				<email-input v-model="email" :id="uid('email')" required></email-input>
-				<checkbox class="newsletter-checkbox" v-model="subscribeToNewsletter"><span>Subscribe to my <a href="/newsletter" target="_blank">monthly newsletter</a></span></checkbox>
 			</div>
 			<input type="text" name="username" value="" autocomplete="off" hidden role="presentation" required/>
 			<hr>
