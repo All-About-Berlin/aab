@@ -178,12 +178,9 @@ export default {
 					<p>{{ t.description }}</p>
 				</div>
 			</checkbox>
-			<template v-if="hasSelectedOptions">
-				<hr>
-				<div class="buttons bar">
-					<button class="button primary no-print" @click="goToContactInfo">Continue <i class="icon right" aria-hidden="true"></i></button>
-				</div>
-			</template>
+			<div class="buttons bar" v-if="hasSelectedOptions">
+				<button class="button primary no-print" @click="goToContactInfo">Continue <i class="icon right" aria-hidden="true"></i></button>
+			</div>
 		</template>
 		<template v-if="stage === 'contactInfo'">
 			<p>Where can we send your insurance contract and documents?</p>
