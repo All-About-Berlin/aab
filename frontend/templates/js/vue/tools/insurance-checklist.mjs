@@ -4,6 +4,7 @@ import EmailInput from '/js/vue/components/email-input.mjs';
 import FullNameInput from '/js/vue/components/full-name-input.mjs';
 import Price from '/js/vue/components/price.mjs';
 
+import IconDental from '/js/vue/components/icons/insurance/dental.mjs';
 import IconHousehold from '/js/vue/components/icons/insurance/household.mjs';
 import IconHealth from '/js/vue/components/icons/insurance/health.mjs';
 import IconInsurance from '/js/vue/components/icons/insurance/insurance.mjs';
@@ -25,6 +26,7 @@ export default {
 		EmailInput,
 		FullNameInput,
 		Price,
+		IconDental,
 		IconHousehold,
 		IconHealth,
 		IconInsurance,
@@ -106,6 +108,7 @@ export default {
 					description: 'For getting dental care in Germany.',
 					minCost: insuranceCosts.dental.min,
 					maxCost: insuranceCosts.dental.max,
+					icon: 'dental',
 				},
 			];
 		},
