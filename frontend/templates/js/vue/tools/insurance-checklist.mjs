@@ -91,14 +91,14 @@ export default {
 				{
 					key: 'disability',
 					label: 'Disability',
-					description: '',
+					description: "Gives you an income if you can't work because of a disability.",
 					minCost: insuranceCosts.disability.min,
 					maxCost: insuranceCosts.disability.max,
 				},
 				{
 					key: 'life',
 					label: 'Life',
-					description: '',
+					description: "Supports your family after your death.",
 					minCost: insuranceCosts.life.min,
 					maxCost: insuranceCosts.life.max,
 				},
@@ -170,8 +170,7 @@ export default {
 		<template v-slot:header>Insurance checklist</template>
 
 		<template v-if="stage === 'checklist'">
-			<h3 v-if="static">Get all your insurances at once</h3>
-			<hr>
+			<p><strong>Let's get you covered.</strong> Choose the insurances you need.</p>
 			<checkbox v-for="t in insuranceTypes" :key="t.key" v-model="selectedInsurances[t.key]">
 				<component :is="'icon-' + (t.icon || 'insurance')"></component>
 				<div>

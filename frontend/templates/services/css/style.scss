@@ -63,9 +63,17 @@
 
 main .intro{
     text-align: left;
+    background: var(--c-highlight);
+    padding-top: var(--xxxl);
+    padding-bottom: var(--xxxl);
+
+    * {
+        color: #fff!important;
+    }
 }
 
 main > .collapsible{
     border: none;
     background-color: var(--c-bg-page);
+    margin: 0;
 }

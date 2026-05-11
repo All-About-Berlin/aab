@@ -8,7 +8,7 @@
 {% endblock %}
 {% block main %}
 	<main aria-label="Main page">
-		<header class="intro">
+		<header class="section intro">
 			<h1>One less thing to worry about</h1>
 			<p>
 				Get peace of mind with the right insurance coverage.
@@ -16,21 +16,5 @@
 		</header>
 
 		{% tool "insurance-checklist", static=True %}
-
-		<section class="article-body">
-			<h2>Why us?</h2>
-			<ul>
-				<li>
-					<strong>Honest insurance advice, in English</strong>
-					<br>
-					Get the coverage you need, explained to you in your language.
-				</li>
-				<li>
-					<strong>Made for immigrants</strong>
-					<br>
-					We've been helping immigrants settle in Berlin for {{ now.year - 2017 }} years.
-				</li>
-			</ul>
-		</section>
 	</main>
 {% endblock %}
