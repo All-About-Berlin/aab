@@ -4,14 +4,19 @@
 
 {% block main %}
 	<main aria-label="Main page">
-		<header class="section intro">
+		<header class="section intro article-body">
 			<h1>{{ entry.intro_title }}</h1>
-			<p>{{ entry.intro_subtitle }}</p>
+			<small>From €250 per month</small>
+			<ul>
+				<li class="list-yes">Digital, English-speaking support</li>
+				<li class="list-yes">Valid for your visa application</li>
+			</ul>
+			<div class="buttons bar left">
+				<a class="button primary" href="#calculator">Get insured</a>
+				<a class="button" href="#contact">Talk to an expert</a>
+			</div>
 		</header>
-		{% tool "health-insurance-calculator", static=True %}
-		{% tool "health-insurance-calculator", mode="question", static=True %}
-		<article class="section article-body" aria-label="Main content">
-			{{ entry.body|render|safe }}
-		</article>
+		{% tool "health-insurance-calculator", static=True, id="calculator" %}
+		{% tool "health-insurance-calculator", mode="question", static=True, id="contact" %}
 	</main>
 {% endblock %}

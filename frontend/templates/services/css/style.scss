@@ -64,13 +64,27 @@
 }
 
 main .intro{
+
     text-align: left;
     background: var(--c-highlight);
     padding-top: var(--xxxl);
     padding-bottom: var(--xxxl);
 
     * {
-        color: #fff!important;
+        --c-text-heading: #fff;
+        --c-text: #fff;
+        --c-highlight: #1E7F5B;
+        --c-highlight-green: transparent;
+        --c-border-clickable-hover: #1E7F5B;
+        color: #fff;
+    }
+
+    .button{
+        background: #0002;
+
+        &:hover{
+            --c-text-heading: #000;
+        }
     }
 }
 
