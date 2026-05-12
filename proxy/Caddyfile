@@ -49,9 +49,7 @@
 
     # Favicon and apple-touch-icon handling
     redir /favicon.ico /staticimages/favicon.png 301
-    handle_path /apple-touch-icon* {
-        respond "" 204
-    }
+    redir /apple-touch-icon* /staticimages/favicon-180.png 301
 
     # Pass /api requests to the backend
     handle /api/* {
