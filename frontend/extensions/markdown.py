@@ -6,8 +6,32 @@ from markdown.preprocessors import Preprocessor
 from markdown.treeprocessors import InlineProcessor, Treeprocessor
 from typing import Callable
 from ursus.config import config
+from ursus.context_processors.markdown import BaseUrlExtension, BaseUrlProcessor
 from xml.etree import ElementTree
 import re
+
+
+class ServicesAwareBaseUrlProcessor(BaseUrlProcessor):
+    """
+    Extends the BaseUrlProcessor to also replace /services/* URLs with https://agoodstart.de/* URLs.
+
+    - Converts /guides/mail-a-letter to https://allaboutberlin.com/guides/mail-a-letter (or https://localhost/* in dev)
+    - Converts /services/health-insurance to https://agoodstart.de/health-insurance (or https://services.localhost/* in dev)
+    """
+
+    def run(self, root):
+        services_url = getattr(config, "services_site_url", None)
+        for el in root.iter("a"):
+            href = el.get("href", "")
+            if services_url and (href == "/services" or href.startswith("/services/")):
+                el.set("href", services_url + href[len("/services") :])
+            elif href.startswith("/"):
+                el.set("href", config.site_url + href)
+
+
+class ServicesAwareBaseUrlExtension(BaseUrlExtension):
+    def extendMarkdown(self, md):
+        md.treeprocessors.register(ServicesAwareBaseUrlProcessor(md), "baseurl", 15)
 
 
 def process_element_text(element: ElementTree.Element, operation: Callable) -> None:

@@ -70,6 +70,17 @@ After the `<hr>` element.
 
 **[Link below ➞](#code)**
 
+## Services site links
+
+Links to /services paths should point to the services site.
+
+- **[A link to /services](/services)**  
+    Should become an agoodstart.de URL
+- **[A link to /services/health-insurance](/services/health-insurance)**  
+    Should become an agoodstart.de URL
+- **[A link to /guides/abmeldung](/guides/abmeldung#who-must-deregister)**  
+    Should become an absolute URL
+
 ## Inline elements
 
 **Bold** and *italic*, `code`.

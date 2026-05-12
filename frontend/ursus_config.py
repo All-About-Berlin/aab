@@ -267,6 +267,7 @@ ctx["commit_id"] = git.Repo(config.content_path, search_parent_directories=True)
 # ==============================================================================
 
 config.site_url = ctx["SITE_URL"]
+config.services_site_url = ctx["SERVICES_SITE_URL"]
 
 config.output_path = Path(os.environ.get("URSUS_OUTPUT_DIR") or (Path(__file__).parent / "output"))
 
@@ -308,6 +309,8 @@ config.context_processors.extend(
     ]
 )
 
+del config.markdown_extensions["base_url"]
+
 config.markdown_extensions["toc"]["slugify"] = patched_slugify
 config.markdown_extensions["wikilinks"]["base_url"] = f"{config.site_url}/glossary/"
 config.markdown_extensions["wikilinks"]["build_url"] = build_wikilinks_url
@@ -318,6 +321,7 @@ config.add_markdown_extension("extensions.markdown:CurrencyExtension")
 config.add_markdown_extension("extensions.markdown:HyphenatedTitleExtension")
 config.add_markdown_extension("extensions.markdown:TypographyExtension")
 config.add_markdown_extension("extensions.markdown:CheckCrossListExtension")
+config.add_markdown_extension("extensions.markdown:ServicesAwareBaseUrlExtension")
 
 config.renderers.extend(
     [
