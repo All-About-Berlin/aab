@@ -11,6 +11,7 @@ services:
     environment:
       - "BUNDLE_JS"
       - "URSUS_SITE_URL=https://localhost"
+      - "URSUS_SERVICES_SITE_URL=https://services.localhost"
       - "GOOGLE_MAPS_PLACES_API_KEY"
       - "GOOGLE_MAPS_JAVASCRIPT_API_KEY"
       - "GOOGLE_TTS_API_KEY"

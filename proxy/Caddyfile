@@ -197,6 +197,15 @@
         }
     }
 
+    # Redirect /services and /services/* to the services site
+    @servicesRedirect path /services /services/*
+    handle @servicesRedirect {
+        route {
+            uri strip_prefix /services
+            redir * https://{$SERVICES_SSL_DOMAIN:services.localhost}{uri} 301
+        }
+    }
+
     # Permanent (301) redirects
     map {path} {permanent_redirect_url} {
         import redirects/permanent.map
