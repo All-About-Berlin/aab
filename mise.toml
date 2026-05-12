@@ -18,6 +18,7 @@ editorconfig-checker = "latest"
 [tasks.setup]
 description = "Install local dependencies to run the project"
 silent = true
+depends = ["update-hosts-file"]
 run = """
 uv pip install -r frontend/requirements.txt
 uv pip install -r backend/requirements.txt
@@ -25,6 +26,15 @@ uv pip install -r requirements-dev.txt
 playwright install --with-deps
 mise generate git-pre-commit --hook=pre-commit --write --task=pre-commit
 mise generate git-pre-commit --hook=pre-push --write --task=pre-push
+"""
+
+[tasks.update-hosts-file]
+description = "Add services.localhost to /etc/hosts, so that https://services.localhost works"
+run = """
+if ! grep -q 'services.localhost' /etc/hosts; then
+  echo "[$(date +'%H:%M:%S')] Adding 'services.localhost' to /etc/hosts (requires sudo)"
+  echo '127.0.0.1 services.localhost' | sudo tee -a /etc/hosts > /dev/null
+fi
 """
 
 [hooks]
