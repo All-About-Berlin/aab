@@ -10,11 +10,13 @@ The frontend is a static website built with [ursus](https://github.com/all-about
 
 Directory structure:
 
-- `frontend` contains all files needed to render the website
-- `frontend/templates` contains the templates used to generate the website's pages. That's also where the frontend code for the calculators is stored.
-- `frontend/content` contains the website's content: guides, tools, glossary entries, images etc.
-- `frontend/extensions` contains ursus extensions and linters that are specific to All About Berlin.
-- `frontend/scripts` contains utility scripts
+- `./frontend` contains all files needed to render the website
+- `./frontend/templates` contains the templates used to generate the website's pages. That's also where the frontend code for the calculators is stored.
+    - `./frontend/templates/services` for the templates of [A Good Start](https://agoodstart.de)
+- `./frontend/content` contains the website's content: guides, tools, glossary entries, images etc.
+    - `./frontend/content/services` for the content of [A Good Start](https://agoodstart.de)
+- `./frontend/extensions` contains ursus extensions and linters that are specific to All About Berlin.
+- `./frontend/scripts` contains utility scripts. Use `mise run` to run them.
 
 ### Backend
 
@@ -22,9 +24,17 @@ The backend a REST API built with Django and Django REST Framework. The API hand
 
 Most tools on the website entirely run in the browser, so they don't call the API.
 
+### Proxy
+
+The website is served by Caddy. All requests first go through Caddy, and are routed to the frontend and backend services. The Caddy configuration is under `./proxy`.
+
+When running in production, the server responds to <https://allaboutberlin.com> and <https://agoodstart.de>.
+
+When running locally, the server responds to <https://localhost> (All About Berlin) and <https://services.localhost> (A Good Start).
+
 ## Building
 
-This project uses [mise](https://mise.jdx.dev/) to simplify dev tasks. You must install it first.
+This project uses [mise](https://mise.jdx.dev/) to set up the development environment and run various task. You must install it first.
 
 1. Run `mise install` to install required tools.
 2. Run `mise setup` to install local dependencies, set up commit hooks, etc.
