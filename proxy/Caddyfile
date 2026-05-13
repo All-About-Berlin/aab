@@ -27,15 +27,8 @@
     }
 }
 
-# =============================================================================
-# Services site (agoodstart.de)
-# =============================================================================
-
-{$SERVICES_SSL_DOMAIN:services.localhost} {
-    tls {$SSL_EMAIL:internal}
-    encode gzip
-
-    # Block any request that ends with .html
+# Don't allow the .html extension on URLs, even if that file exists
+(block_html) {
     @html path_regexp html \.html$
     handle @html {
         error 404
@@ -44,17 +37,10 @@
     handle @htmlIndex {
         error 404
     }
+}
 
-    # Shared assets served from the AAB output root
-    @sharedAssets {
-        path /fonts/* /css/* /js/* /staticimages/* /images/* /illustrations/* /documents/*
-    }
-    handle @sharedAssets {
-        file_server
-        root * /var/www/html
-    }
-
-    # Cache assets in the browser
+# Set cache headers for files that don't change
+(cache_static) {
     @assets {
         path_regexp assets .*\.(css|js|jpg|jpeg|gif|png|ico|cur|gz|svg|svgz|mp3|mp4|ogg|ogv|webm|htc|webp)$
     }
@@ -63,16 +49,17 @@
     header @assets -ETag
     header @assets -Access-Control-Allow-Origin
 
-    # Cache fonts in the browser
     @fonts {
         path_regexp fonts .*\.(ttf|ttc|otf|eot|woff|woff2)$
     }
     header @fonts Cache-Control "public"
-    header @fonts Cache-Control  "max-age=31536000"
+    header @fonts Cache-Control "max-age=31536000"
     header @fonts -ETag
     header @fonts Access-Control-Allow-Origin "*"
+}
 
-    # Various security headers
+# Set security headers
+(security_headers) {
     header {
         -Server
         Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
@@ -80,6 +67,35 @@
         X-XSS-Protection "1; mode=block"
         X-Content-Type-Options nosniff
         Permissions-Policy "interest-cohort=()"
+    }
+}
+
+# Remove trailing slashes by default
+(strip_trailing_slash) {
+    @hasTrailingSlash path_regexp dir (.+)/$
+    redir @hasTrailingSlash {re.dir.1} 301
+    uri strip_suffix /
+}
+
+# =============================================================================
+# Services site (agoodstart.de)
+# =============================================================================
+
+{$SERVICES_SSL_DOMAIN:services.localhost} {
+    tls {$SSL_EMAIL:internal}
+    encode gzip
+
+    import block_html
+    import cache_static
+    import security_headers
+
+    # Shared assets served from the AAB output root
+    @sharedAssets {
+        path /fonts/* /css/* /js/* /staticimages/* /images/* /illustrations/* /documents/*
+    }
+    handle @sharedAssets {
+        file_server
+        root * /var/www/html
     }
 
     # Custom 404 page
@@ -100,12 +116,7 @@
 
     # Static site; default option
     handle {
-        # Remove trailing slashes
-        @hasTrailingSlash path_regexp dir (.+)/$
-        redir @hasTrailingSlash {re.dir.1} 301
-
-        # Serve static files correctly with or without trailing slash
-        uri strip_suffix /
+        import strip_trailing_slash
 
         # Send Link headers for Cloudflare Early Hints
         header +Link "</fonts/librefranklin-variable.woff2>; rel=preload; as=font; crossorigin"
@@ -115,7 +126,7 @@
         root * /var/www/html/services
         @notInServices not file {
             root /var/www/html/services
-            try_files {path}.html {path}/index.html
+            try_files {path} {path}.html {path}/index.html
         }
         root @notInServices /var/www/html
 
@@ -132,43 +143,9 @@
     tls {$SSL_EMAIL:internal}
     encode gzip
 
-    # Block any request that ends with .html
-    @html path_regexp html \.html$
-    handle @html {
-        error 404
-    }
-    @htmlIndex path_regexp htmlIndex /index$
-    handle @htmlIndex {
-        error 404
-    }
-
-    # Cache assets in the browser
-    @assets {
-        path_regexp assets .*\.(css|js|jpg|jpeg|gif|png|ico|cur|gz|svg|svgz|mp3|mp4|ogg|ogv|webm|htc|webp)$
-    }
-    header @assets Cache-Control "public"
-    header @assets Cache-Control "max-age=31536000"
-    header @assets -ETag
-    header @assets -Access-Control-Allow-Origin
-
-    # Cache fonts in the browser
-    @fonts {
-        path_regexp fonts .*\.(ttf|ttc|otf|eot|woff|woff2)$
-    }
-    header @fonts Cache-Control "public"
-    header @fonts Cache-Control  "max-age=31536000"
-    header @fonts -ETag
-    header @fonts Access-Control-Allow-Origin "*"
-
-    # Various security headers
-    header {
-        -Server
-        Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
-        X-Frame-Options SAMEORIGIN
-        X-XSS-Protection "1; mode=block"
-        X-Content-Type-Options nosniff
-        Permissions-Policy "interest-cohort=()"
-    }
+    import block_html
+    import cache_static
+    import security_headers
 
     # Custom 404 page
     handle_errors 404 410 {
@@ -181,19 +158,13 @@
     redir /favicon.ico /staticimages/favicon.png 301
     redir /apple-touch-icon* /staticimages/favicon-180.png 301
 
-    # Pass /api requests to the backend
-    handle /api/* {
+    # Pass /api and /admin requests to the backend
+    @backend path /api/* /admin/*
+    handle @backend {
         @hasCfIp header CF-Connecting-IP *
         request_header @hasCfIp X-Real-IP {header.CF-Connecting-IP}
         @noCfIp not header CF-Connecting-IP *
         request_header @noCfIp X-Real-IP {remote_host}
-        reverse_proxy backend:80
-    }
-    handle /admin/* {
-        @hasCfIp2 header CF-Connecting-IP *
-        request_header @hasCfIp2 X-Real-IP {header.CF-Connecting-IP}
-        @noCfIp2 not header CF-Connecting-IP *
-        request_header @noCfIp2 X-Real-IP {remote_host}
         reverse_proxy backend:80
     }
     handle_path /admin/static/* {
@@ -247,12 +218,7 @@
 
     # Static site; default option
     handle {
-        # Remove trailing slashes
-        @hasTrailingSlash path_regexp dir (.+)/$
-        redir @hasTrailingSlash {re.dir.1} 301
-
-        # Serve static files correctly with or without trailing slash
-        uri strip_suffix /
+        import strip_trailing_slash
 
         # Send Link headers for Cloudflare Early Hints
         header +Link "</fonts/librefranklin-variable.woff2>; rel=preload; as=font; crossorigin"
