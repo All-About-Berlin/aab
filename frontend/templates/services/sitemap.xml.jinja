@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>{{ SERVICES_SITE_URL }}</loc>
+	</url>
+	{% for entry in get_entries('services', sort_by='date_updated', reverse=True) %}
+		<url>
+			<loc>{{ entry.url }}</loc>
+			<lastmod>{{ entry.date_updated.isoformat(timespec="seconds") }}</lastmod>
+		</url>
+	{% endfor %}
+</urlset>
