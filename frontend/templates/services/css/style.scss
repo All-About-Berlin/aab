@@ -32,7 +32,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root{
-        --c-highlight: #9f3a2b;
+        --c-highlight: #{darken(#2fc68e, 20%)};
         --c-highlight-green: #{darken(#0c8, 20%)};
         --c-text: #bbb;
         --c-text-error: #{lighten(#9f3a2b, 20%)};
