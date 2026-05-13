@@ -4,15 +4,11 @@
 	<li class="{{ entryType }}">
 		<h3>
 			<a href="{{ entry.url }}" rel="bookmark">
-				{% if entry.url.startswith('guides/') %}
-					{{ entry.pageTitle | default(entry.title) }}
+				{% if entry.short_title|default %}
+					<span class="no-mobile">{{ entry.title }}</span>
+					<span class="only-mobile no-print" aria-hidden="true">{{ entry.short_title }}</span>
 				{% else %}
-					{% if entry.short_title|default %}
-						<span class="no-mobile">{{ entry.title }}</span>
-						<span class="only-mobile no-print" aria-hidden="true">{{ entry.short_title }}</span>
-					{% else %}
-						{{ entry.title }}
-					{% endif %}
+					{{ entry.title }}
 				{% endif %}
 			</a>
 			{% if showDateUpdated|default or showDatePosted|default %}
