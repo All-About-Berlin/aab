@@ -39,3 +39,54 @@
 		{% include "_blocks/sidebar.html" %}
 	{% endwith %}
 {% endblock %}
+
+{% block postFooter %}
+	{{ super() }}
+	<script type="application/ld+json">
+		[{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": {{ entry.title|tojson }},
+			"description": {{ entry.description|tojson }},
+			"breadcrumb": {
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"item": {
+							"@id": "{{ SITE_URL }}/",
+							"name": "Home"
+						}
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"item": {
+							"@id": "{{ SITE_URL }}/tools",
+							"name": "Tools"
+						}
+					},
+					{
+						"@type": "ListItem",
+						"position": 3,
+						"item": {
+							"@id": "{{ entry.url }}",
+							"name": {{ entry.title|tojson }}
+						}
+					}
+				]
+			},
+			"author": {
+				"@type": "Person",
+				"@id": "https://nicolasbouliane.com"
+			},
+			"publisher": {
+				"@type": "Organization",
+				"@id": "{{ SITE_URL }}/#organization"
+			},
+			"dateModified": "{{ entry.date_updated.isoformat() }}",
+			"datePublished": "{{ entry.date_created.isoformat() }}"
+		}]
+	</script>
+{% endblock %}

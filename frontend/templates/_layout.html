@@ -34,7 +34,7 @@
 	{% endblock %}
 	{% block postHead %}
 		{% if entry|default %}
-			<meta property="og:type" content="article">
+			<meta property="og:type" content="{{ ogtype|default('article') }}">
 			<meta property="og:url" content="{{ entry.url }}">
 			<meta property="og:title" content="{{ entry.title }}">
 			<meta property="og:description" content="{{ entry.description }}">

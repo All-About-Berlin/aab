@@ -2,6 +2,7 @@
 {% set metatitle = entry.title %}
 {% set metadescription = entry.description %}
 {% set collection = entry %}
+{% set ogtype = 'website' %}
 
 
 {% block postHead %}
@@ -65,4 +66,53 @@
 			</nav>
 		</div>
 	</main>
+{% endblock %}
+
+{% block postFooter %}
+	{{ super() }}
+	<script type="application/ld+json">
+		[{
+			"@context": "https://schema.org",
+			"@type": "CollectionPage",
+			"name": {{ entry.title|tojson }},
+			"description": {{ entry.description|tojson }},
+			"breadcrumb": {
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"item": {
+							"@id": "{{ SITE_URL }}/",
+							"name": "Home"
+						}
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"item": {
+							"@id": "{{ SITE_URL }}/guides",
+							"name": "Guides"
+						}
+					},
+					{
+						"@type": "ListItem",
+						"position": 3,
+						"item": {
+							"@id": "{{ entry.url }}",
+							"name": {{ entry.title|tojson }}
+						}
+					}
+				]
+			},
+			"author": {
+				"@type": "Person",
+				"@id": "https://nicolasbouliane.com"
+			},
+			"publisher": {
+				"@type": "Organization",
+				"@id": "{{ SITE_URL }}/#organization"
+			}
+		}]
+	</script>
 {% endblock %}
