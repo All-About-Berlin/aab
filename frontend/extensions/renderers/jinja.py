@@ -78,7 +78,7 @@ class ToolExtension(StandaloneTag):
 
         # Add a <noscript> tag for AI crawlers and people with JS disabled
         noscript = ET.SubElement(html_element, "noscript")
-        noscript_p = ET.SubElement(noscript, "noscript")
+        noscript_p = ET.SubElement(noscript, "p")
         noscript_p.text = "This tool requires JavaScript to work."
 
         return ET.tostring(html_element, method="html", encoding="unicode")
