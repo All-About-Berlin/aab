@@ -8,6 +8,8 @@ import LetterGenerator from '/js/vue/components/letter-generator.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 
+import metadata from '/js/vue/tools/abmeldung-email.metadata.json' with { type: 'json' };
+
 export default {
 	components: {
 		AddressInput,
@@ -23,6 +25,7 @@ export default {
 	},
 	data(){
 		return {
+			metadata,
 			fullName: userDefaults.empty,
 			newAddress: '',
 			isNewAddressAbroad: true,
@@ -49,7 +52,8 @@ export default {
 	},
 	template: `
 		<letter-generator
-			aria-label="Letter generator to deregister your address"
+			:aria-label="metadata.label"
+			:aria-description="metadata.description"
 			track-as="Abmeldung email"
 			:printable="false"
 			:static="static">

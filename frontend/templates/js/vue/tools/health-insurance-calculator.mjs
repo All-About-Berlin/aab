@@ -34,6 +34,8 @@ import { validateForm } from '/js/utils/form.mjs';
 import { getReferrer } from '/js/utils/tracking.mjs';
 import { isStudent, isSelfEmployed, isUnemployed, salaryOrIncome } from '/js/utils/occupations.mjs'
 
+import metadata from '/js/vue/tools/health-insurance-calculator.metadata.json' with { type: 'json' };
+
 export default {
 	components: {
 		AgeInput,
@@ -75,6 +77,7 @@ export default {
 	},
 	data() {
 		return {
+			metadata,
 			// Insurance questions
 			age: null,
 			childrenCount: null,
@@ -408,7 +411,8 @@ export default {
 	template: `
 		<collapsible
 			class="health-insurance-calculator"
-			:aria-label="trackAs"
+			:aria-label="metadata.label"
+			:aria-description="metadata.description"
 			:data-stage="stage"
 			:static="static">
 			<template v-slot:header>

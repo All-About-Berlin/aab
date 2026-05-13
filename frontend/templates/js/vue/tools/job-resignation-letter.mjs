@@ -15,6 +15,8 @@ import { formatName, formatSalutations } from '/js/utils/letter.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 
+import metadata from '/js/vue/tools/job-resignation-letter.metadata.json' with { type: 'json' };
+
 export default {
 	components: {
 		AddressInput,
@@ -35,6 +37,7 @@ export default {
 	},
 	data() {
 		return {
+			metadata,
 			fullName: userDefaults.empty,
 			address: '',
 			recipientGender: 'man',
@@ -64,8 +67,8 @@ export default {
 	},
 	template: `
 		<letter-generator
-			aria-label="Job resignation letter generator"
-			aria-description="Generate a letter to officially quit your job"
+			:aria-label="metadata.label"
+			:aria-description="metadata.description"
 			track-as="Job resignation letter"
 			:static="static">
 			<template v-slot:header>Job resignation letter</template>

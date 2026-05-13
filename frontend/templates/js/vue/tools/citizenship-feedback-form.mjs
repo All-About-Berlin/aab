@@ -12,6 +12,8 @@ import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs
 import { validateForm } from '/js/utils/form.mjs';
 import { citizenshipDepartments } from '/js/utils/immigrationOffice.mjs';
 
+import metadata from '/js/vue/tools/citizenship-feedback-form.metadata.json' with { type: 'json' };
+
 export default {
 	components: {
 		Checkbox,
@@ -27,6 +29,7 @@ export default {
 	},
 	data() {
 		return {
+			metadata,
 			isLoading: false,
 
 			citizenshipModificationKey: userDefaults.empty,
@@ -197,7 +200,8 @@ export default {
 	},
 	template: `
 		<collapsible
-			aria-label="Feedback form: Citizenship processing time"
+			:aria-label="metadata.label"
+			:aria-description="metadata.description"
 			class="feedback-form"
 			:static="static">
 			<template v-slot:header>

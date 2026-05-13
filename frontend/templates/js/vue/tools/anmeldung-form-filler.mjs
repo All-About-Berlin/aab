@@ -26,6 +26,8 @@ import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs
 import { getNearestHeadingId } from '/js/utils/tracking.mjs';
 import { fillAndSavePDF } from '/js/utils/pdf.mjs';
 
+import metadata from '/js/vue/tools/anmeldung-form-filler.metadata.json' with { type: 'json' };
+
 export default {
 	components: {
 		Checkbox,
@@ -51,6 +53,7 @@ export default {
 	},
 	data() {
 		return {
+			metadata,
 			trackAs: 'Anmeldung form',
 
 			moveInDate: '',
@@ -226,7 +229,8 @@ export default {
 	},
 	template: `
 		<collapsible
-			aria-label="Tool to fill the Anmeldung form"
+			:aria-label="metadata.label"
+			:aria-description="metadata.description"
 			class="anmeldung-form"
 			:static="static">
 			<template v-slot:header>

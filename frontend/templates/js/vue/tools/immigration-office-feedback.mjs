@@ -8,6 +8,8 @@ import { citizenshipDepartments } from '/js/utils/immigrationOffice.mjs'
 import { formatLongDate, formatTimeDelta } from '/js/utils/date.mjs';
 import { residencePermitTypes, residencePermitDepartments, oldResidencePermitDepartments } from '/js/utils/immigrationOffice.mjs';
 
+import metadata from '/js/vue/tools/immigration-office-feedback.metadata.json' with { type: 'json' };
+
 export default {
 	components: {
 		CitizenshipFeedbackForm,
@@ -19,6 +21,7 @@ export default {
 	},
 	data() {
 		return {
+			metadata,
 			isCitizenship: false,
 			department: null,
 			citizenshipDepartments,
@@ -221,7 +224,9 @@ export default {
 		},
 	},
 	template: `
-		<div class="component-group">
+		<div class="component-group"
+			:aria-label="metadata.label"
+			:aria-description="metadata.description">
 			<div class="filters">
 				<tabs
 					id="is-citizenship-top"

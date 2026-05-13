@@ -11,6 +11,8 @@ import { dateFromString, formatDate } from '/js/utils/date.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 
+import metadata from '/js/vue/tools/auslaenderbehoerde-job-change-letter.metadata.json' with { type: 'json' };
+
 export default {
 	components: {
 		AddressInput,
@@ -28,6 +30,7 @@ export default {
 	},
 	data() {
 		return {
+			metadata,
 			fullName: userDefaults.empty,
 			address: '',
 			dateOfBirth: userDefaults.empty,
@@ -72,8 +75,8 @@ export default {
 	},
 	template: `
 		<letter-generator
-			aria-description="Generate a letter to notify the Berlin immigration office of a job change"
-			aria-label="Ausländerbehörde job change notice letter generator"
+			:aria-description="metadata.description"
+			:aria-label="metadata.label"
 			track-as="Ausländerbehörde job change"
 			:static="static">
 			<template v-slot:header>Ausländerbehörde – Job change notice</template>

@@ -21,7 +21,7 @@ def test_data_remembered(page, test_screenshot):
     expect(page.get_by_label("Building details")).to_have_value(address["zusatz"])
     expect(page.get_by_label("Move-out date")).to_have_value(people[0]["move_out_date"])
 
-    form = page.get_by_role("group", name="Tool to fill the Abmeldung form")
+    form = page.get_by_role("group", name="Abmeldung form filler")
     test_screenshot(page, form)
 
 
@@ -43,5 +43,5 @@ def test_data_validity_check(page, test_screenshot):
 
     expect(page.get_by_label("Move-out date")).to_have_js_property("validity.valid", False)
 
-    form = page.get_by_role("group", name="Tool to fill the Abmeldung form")
+    form = page.get_by_role("group", name="Abmeldung form filler")
     test_screenshot(page, form)

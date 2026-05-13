@@ -27,6 +27,8 @@ import { validateForm } from '/js/utils/form.mjs';
 import { getNearestHeadingId } from '/js/utils/tracking.mjs';
 import { fillAndSavePDF } from '/js/utils/pdf.mjs';
 
+import metadata from '/js/vue/tools/tax-id-request-form-filler.metadata.json' with { type: 'json' };
+
 export default {
 	components: {
 		Checkbox,
@@ -52,6 +54,7 @@ export default {
 	},
 	data() {
 		return {
+			metadata,
 			trackAs: 'Tax ID request form',
 
 			purpose: null,
@@ -235,8 +238,8 @@ export default {
 	},
 	template: `
 		<collapsible
-			aria-description="Fill this form to request a German tax ID from the Finanzamt"
-			aria-label="Tax ID request form"
+			:aria-description="metadata.description"
+			:aria-label="metadata.label"
 			class="tax-id-form"
 			:static="static">
 			<template v-slot:header>

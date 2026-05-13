@@ -13,38 +13,49 @@ logger = logging.getLogger(__name__)
 
 class ToolExtension(StandaloneTag):
     """Jinja extension. Adds tag for cleanly including Vue widgets in markdown.
-    Usage: {% tool "health-insurance-calculator", initial_occupation="hello", static=True %}
+    Usage: {% tool "health-insurance-calculator", initial_occupation="hello", static=True, html_attribute=value %}
 
-    Outputs <health-insurance-calculator initial-occupation="hello" static="static" v-cloak></health-insurance-calculator>
-
-    Also queues the Javascript to load the Vue component from /js/tools/health-insurance-calculator.mjs
+    Outputs all the code needed to render a Vue component from /js/vue/tools.
     """
 
     tags = {"tool"}
     safe_output = True
 
-    def render(self, html_tag: str, **kwargs):
-        js_path = f"js/vue/tools/{html_tag}.mjs"
+    def render(self, component_name: str, **kwargs):
+        js_path = f"js/vue/tools/{component_name}.mjs"
         abs_js_path = config.templates_path / js_path
-        assert abs_js_path.exists(), f"Component <{html_tag}> does not exist at {abs_js_path}"
+        assert abs_js_path.exists(), f"Component <{component_name}> does not exist at {abs_js_path}"
 
-        js_class = "".join(word.title() for word in html_tag.split("-"))
+        # HTML component names are kebab-case. VueJS component class names are CamelCase.
+        js_class = "".join(word.title() for word in component_name.split("-"))
 
-        # js_fragments are output only once by {% alljs %}
+        # js_fragments are output only once by {% alljs %}. Load each line as a fragment so that it's only included once
         self.environment.js_fragments.add("import Vue from '/js/vue/vue.mjs';")
+        self.environment.js_fragments.add(f"import {js_class} from '/{js_path}';")
         self.environment.js_fragments.add(f"""
-            import {js_class} from '/{js_path}';
-            document.querySelectorAll('{html_tag}').forEach(el => new Vue({{
-                el,
-                components: {{
-                    '{html_tag}': {js_class},
-                }},
-            }}));
+            document.querySelectorAll('section[is={component_name}]').forEach(
+                el => new Vue({{
+                    el,
+                    components: {{ '{component_name}': {js_class} }},
+                }})
+            );
         """)
 
+        # Create the HTML for the unloaded tool. This will be replaced with the JS component.
         html_attrs = {
             "v-cloak": "",
+            "is": component_name,  # <section is="tax-calculator"> instead of <tax-calculator>. Better for accessibility.
         }
+
+        # Set the element title and description for crawlers, screen readers and users without JS
+        metadata_path = abs_js_path.with_suffix(".metadata.json")
+        metadata = json.loads(metadata_path.read_text()) if metadata_path.exists() else {}
+        if label := metadata.get("label"):
+            html_attrs["aria-label"] = label
+        if description := metadata.get("description"):
+            html_attrs["aria-description"] = description
+
+        # Set all other attributes passed to the tag: {% tool ..., attribute=value %}
         for attr, value in kwargs.items():
             attr = attr.replace("_", "-")
             if value is True:
@@ -55,10 +66,22 @@ class ToolExtension(StandaloneTag):
             else:
                 html_attrs[attr] = value
 
-        html_element = ET.Element(html_tag, html_attrs)
+        # Use <section> as the base tag
+        # Set a helpful title and placeholder text for crawlers that don't use JS
+        html_element = ET.Element("section", html_attrs)
+        if label:
+            temporary_title = ET.SubElement(html_element, "h4")
+            temporary_title.text = label
+        if description:
+            temporary_description = ET.SubElement(html_element, "p")
+            temporary_description.text = description
+
+        # Add a <noscript> tag for AI crawlers and people with JS disabled
         noscript = ET.SubElement(html_element, "noscript")
-        noscript.text = "This tool requires JavaScript."
-        return ET.tostring(html_element, short_empty_elements=False).decode()
+        noscript_p = ET.SubElement(noscript, "noscript")
+        noscript_p.text = "This tool requires JavaScript to work."
+
+        return ET.tostring(html_element, method="html", encoding="unicode")
 
     def get_context(self, *args, **kwargs):
         return kwargs

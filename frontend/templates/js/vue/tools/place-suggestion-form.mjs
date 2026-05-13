@@ -8,6 +8,8 @@ import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { googleMapsApiKey } from '/js/utils/constants.mjs';
 import { validateForm } from '/js/utils/form.mjs';
 
+import metadata from '/js/vue/tools/place-suggestion-form.metadata.json' with { type: 'json' };
+
 export default {
 	components: {
 		Checkbox,
@@ -19,6 +21,7 @@ export default {
 	},
 	mixins: [uniqueIdsMixin],
 	props: {
+		ariaLabel: String, // Catch the initial aria-label attribute, so it doesn't override ours
 		category: {
 			type: String,
 			required: true,
@@ -28,6 +31,7 @@ export default {
 	},
 	data() {
 		return {
+			metadata,
 			stage: 'form',
 			isLoading: false,
 			businessName: '',
@@ -148,6 +152,7 @@ export default {
 	template: `
 		<component
 			:aria-label="'Recommend a ' + categoryDisplay"
+			:aria-description="metadata.description"
 			class="place-suggestion-form"
 			:static="static"
 			:is="embedded ? 'div' : 'collapsible'">

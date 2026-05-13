@@ -17,6 +17,8 @@ import { formatName, formatSalutations } from '/js/utils/letter.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 
+import metadata from '/js/vue/tools/apartment-deposit-return-letter.metadata.json' with { type: 'json' };
+
 export default {
 	components: {
 		AddressInput,
@@ -39,6 +41,7 @@ export default {
 	},
 	data() {
 		return {
+			metadata,
 			fullName: userDefaults.empty,
 			oldAddress: '',
 			newAddress: '',
@@ -83,7 +86,8 @@ export default {
 	},
 	template: `
 		<letter-generator
-			aria-label="Letter generator to ask for your apartment deposit back"
+			:aria-label="metadata.label"
+			:aria-description="metadata.description"
 			track-as="Return of apartment deposit letter generator"
 			:static="static">
 			<template v-slot:header>Return of apartment deposit</template>

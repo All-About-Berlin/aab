@@ -16,6 +16,8 @@ import { getMoveOutDate, getLatestNoticeDate } from '/js/utils/lease.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 
+import metadata from '/js/vue/tools/lease-termination-letter.metadata.json' with { type: 'json' };
+
 export default {
 	components: {
 		AddressInput,
@@ -36,6 +38,7 @@ export default {
 	},
 	data() {
 		return {
+			metadata,
 			people: [],
 			address: '',
 			fullName: userDefaults.empty,  // Just used to load the name from userdefaults
@@ -117,7 +120,8 @@ export default {
 	},
 	template: `
 		<letter-generator
-			aria-label="Lease termination letter generator"
+			:aria-label="metadata.label"
+			:aria-description="metadata.description"
 			class="lease-termination-letter"
 			track-as="Lease termination letter"
 			:static="static">

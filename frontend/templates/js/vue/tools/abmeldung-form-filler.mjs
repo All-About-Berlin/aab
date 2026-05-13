@@ -24,6 +24,8 @@ import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs
 import { getNearestHeadingId } from '/js/utils/tracking.mjs';
 import { fillAndSavePDF } from '/js/utils/pdf.mjs';
 
+import metadata from '/js/vue/tools/abmeldung-form-filler.metadata.json' with { type: 'json' };
+
 export default {
 	components: {
 		Collapsible,
@@ -47,6 +49,7 @@ export default {
 	},
 	data() {
 		return {
+			metadata,
 			trackAs: 'Abmeldung form',
 
 			moveOutDate: '',
@@ -198,7 +201,8 @@ export default {
 	},
 	template: `
 		<collapsible
-			aria-label="Tool to fill the Abmeldung form"
+			:aria-label="metadata.label"
+			:aria-description="metadata.description"
 			class="abmeldung-form"
 			:static="static">
 

@@ -20,6 +20,8 @@ import { calculateTax } from '/js/utils/tax.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 
+import metadata from '/js/vue/tools/tax-calculator.metadata.json' with { type: 'json' };
+
 export default {
 	components: {
 		AgeInput,
@@ -40,6 +42,7 @@ export default {
 	},
 	data() {
 		return {
+			metadata,
 			age: userDefaults.age,
 			childrenCount: userDefaults.childrenCount,
 			church: userDefaults.church,
@@ -300,8 +303,8 @@ export default {
 	// TODO: Spouse's familienversicherung
 	template: `
 		<collapsible
-			aria-description="Calculate how much income tax and social contributions you pay on your salary."
-			aria-label="German tax calculator"
+			:aria-description="metadata.description"
+			:aria-label="metadata.label"
 			class="income-tax-calculator"
 			ref="collapsible"
 			:static="static">

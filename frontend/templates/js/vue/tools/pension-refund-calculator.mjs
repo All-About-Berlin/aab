@@ -26,6 +26,8 @@ import { getReferrer } from '/js/utils/tracking.mjs';
 
 const { pensionRefundGermany, fundsback, germanyPensionRefund } = pensions.companies;
 
+import metadata from '/js/vue/tools/pension-refund-calculator.metadata.json' with { type: 'json' };
+
 export default {
 	components: {
 		Checkbox,
@@ -50,6 +52,7 @@ export default {
 	},
 	data() {
 		return {
+			metadata,
 			trackAs: 'Pension refund calculator',
 
 			stage: 'start',
@@ -269,8 +272,8 @@ export default {
 	},
 	template: `
 		<collapsible
-			aria-description="Calculate how much money you get back when you request a refund of your German pension payments."
-			aria-label="Pension refund calculator"
+			:aria-description="metadata.description"
+			:aria-label="metadata.label"
 			class="pension-refund-calculator"
 			:static="static">
 			<template v-slot:header>Calculate your pension refund</template>

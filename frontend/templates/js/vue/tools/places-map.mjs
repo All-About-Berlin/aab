@@ -1,6 +1,8 @@
 import PlaceSuggestionForm from '/js/vue/tools/place-suggestion-form.mjs';
 import Recommended from '/js/vue/components/recommended.mjs';
 
+import metadata from '/js/vue/tools/places-map.metadata.json' with { type: 'json' };
+
 export default {
 	components: {
 		PlaceSuggestionForm,
@@ -14,6 +16,7 @@ export default {
 	},
 	data() {
 		return {
+			metadata,
 			places: [],
 			selectedPlaceId: null,
 			mapReadyPromise: null,
@@ -170,7 +173,8 @@ export default {
 	},
 	template: `
 		<aside
-			aria-label="Map with list of places"
+			:aria-label="metadata.label"
+			:aria-description="metadata.description"
 			class="places-map"
 			:class="{'form-open': this.showSuggestionForm}">
 			<div ref="mapEl" class="map no-print" :class="{'not-loaded': !this.mapLoaded}" v-show="!showSuggestionForm">

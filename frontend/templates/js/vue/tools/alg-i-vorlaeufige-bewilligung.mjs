@@ -9,6 +9,8 @@ import { formatName, formatSalutations } from '/js/utils/letter.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 
+import metadata from '/js/vue/tools/alg-i-vorlaeufige-bewilligung.metadata.json' with { type: 'json' };
+
 export default{
 	components: {
 		AddressInput,
@@ -25,6 +27,7 @@ export default{
 	},
 	data() {
 		return {
+			metadata,
 			fullName: userDefaults.empty,
 			address: '',
 			agenturFurArbeitAddress: '',
@@ -41,7 +44,8 @@ export default{
 	},
 	template: `
 		<letter-generator
-			aria-label="Letter generator to request a preliminary decision for ALG I"
+			:aria-label="metadata.label"
+			:aria-description="metadata.description"
 			track-as="ALG I vorläufige Bewilligung"
 			:static="static">
 			<template v-slot:header>ALG I – Request a preliminary decision</template>

@@ -21,7 +21,7 @@ def test_data_remembered(page, test_screenshot):
     expect(page.get_by_label("My name is on my mailbox")).not_to_be_checked()
     expect(page.get_by_label("Name on mailbox")).to_have_value("Müller")
 
-    form = page.get_by_role("group", name="Tool to fill the Anmeldung form")
+    form = page.get_by_role("group", name="Anmeldung form filler")
     test_screenshot(page, form)
 
 

@@ -4,6 +4,8 @@ import { isoDay, isoMonth } from '/js/utils/date.mjs';
 
 const ding = new Audio('/js/ding.wav');
 
+import metadata from '/js/vue/tools/anmeldung-appointment-finder.metadata.json' with { type: 'json' };
+
 export default {
 	components: {
 		Checkbox,
@@ -14,6 +16,7 @@ export default {
 	},
 	data() {
 		return {
+			metadata,
 			isConnected: null,
 			hasError: false,
 			originalPageTitle: document.title,
@@ -202,7 +205,8 @@ export default {
 	},
 	template: `
 		<collapsible
-			aria-label="Anmeldung appointment finder"
+			:aria-label="metadata.label"
+			:aria-description="metadata.description"
 			class="appointment-finder no-print"
 			:static="static">
 

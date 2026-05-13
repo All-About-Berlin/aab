@@ -30,5 +30,5 @@ def test_download_buttons(page, test_screenshot, tmp_path):
     expect(download_1).not_to_be_disabled()
     expect(download_2).not_to_be_disabled()
 
-    form = page.get_by_role("group", name="Tool to fill the Abmeldung form")
+    form = page.get_by_role("group", name="Abmeldung form filler")
     test_screenshot(page, form)

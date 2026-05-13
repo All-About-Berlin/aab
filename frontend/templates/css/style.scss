@@ -273,6 +273,7 @@ $width-main-column: 860px;
     --i-verified: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 700 700'><path d='M439 215a26 26 0 0 1 0 37l-94 93c-5 5-11 8-18 8s-14-3-19-8l-47-46a26 26 0 0 1 38-38l28 29 74-75a26 26 0 0 1 38 0zm147 269a26 26 0 0 1-26 32h-6l-102-22a236 236 0 1 1 111-111zm-74-118a184 184 0 1 0-76 76c6-3 12-4 18-2l71 15-15-70c-2-6-1-13 2-19z'/></svg>");
     --i-sound: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M73 33.1c-1.1-1.3-3-1.3-4.2-.1l-3 3.1c-1 1-1.1 2.6-.2 3.7 2.3 2.9 3.5 6.5 3.5 10.3 0 3.8-1.2 7.3-3.5 10.3-.9 1.1-.7 2.7.2 3.7l3 3.1c1.2 1.2 3.1 1.2 4.2-.1 3.9-4.7 6.1-10.7 6.1-16.9 0-6.5-2.1-12.4-6.1-17.1z'/><path d='M84.7 18.5a2.9 2.9 0 0 0-4.2.1l-2.8 3.2c-1 1.1-1 2.8.1 3.9 6.3 6.5 9.8 15.2 9.8 24.3 0 9.1-3.6 17.8-9.8 24.4a2.9 2.9 0 0 0-.1 3.9l2.9 3.2c1.1 1.2 3 1.3 4.2.1 8.2-8.4 12.8-19.7 12.8-31.5-.1-11.9-4.7-23.2-12.9-31.6zM47.6 5.2 25 29.8H7.5c-2.7 0-5 2.2-5 5v30.5c0 2.7 2.2 5 5 5H25l22.6 24.5c3.1 3.3 8.6 1.2 8.6-3.4V8.6c0-4.5-5.5-6.7-8.6-3.4z'/></svg>");
     --i-table-of-contents: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='M21.4 14H2.6c-.3 0-.6.3-.6.6v2.8c0 .3.3.6.6.6h18.8c.3 0 .6-.3.6-.6v-2.8c0-.3-.3-.6-.6-.6zm8 0h-2.8c-.3 0-.6.3-.6.6v2.8c0 .3.3.6.6.6h2.8c.3 0 .6-.3.6-.6v-2.8c0-.3-.3-.6-.6-.6zm-8 8H2.6c-.3 0-.6.3-.6.6v2.8c0 .3.3.6.6.6h18.8c.3 0 .6-.3.6-.6v-2.8c0-.3-.3-.6-.6-.6zm8 0h-2.8c-.3 0-.6.3-.6.6v2.8c0 .3.3.6.6.6h2.8c.3 0 .6-.3.6-.6v-2.8c0-.3-.3-.6-.6-.6zm-8-16H2.6c-.3 0-.6.3-.6.6v2.8c0 .3.3.6.6.6h18.8c.3 0 .6-.3.6-.6V6.6c0-.3-.3-.6-.6-.6zm8 0h-2.8c-.3 0-.6.3-.6.6v2.8c0 .3.3.6.6.6h2.8c.3 0 .6-.3.6-.6V6.6c0-.3-.3-.6-.6-.6z'/></svg>");
+    --i-loading: url("data:image/svg+xml;utf8,<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M10.14,1.16a11,11,0,0,0-9,8.92A1.59,1.59,0,0,0,2.46,12,1.52,1.52,0,0,0,4.11,10.7a8,8,0,0,1,6.66-6.61A1.42,1.42,0,0,0,12,2.69h0A1.57,1.57,0,0,0,10.14,1.16Z' class='spinner'/>%3Cstyle%3E.spinner%7Btransform-origin%3Acenter%3Banimation%3Aspinner_svv2%20.75s%20infinite%20linear%7D%40keyframes%20spinner_svv2%7B100%25%7Btransform%3Arotate%28360deg%29%7D%7D%3C%2Fstyle%3E%3Cpath%20d%3D%22M10.14%2C1.16a11%2C11%2C0%2C0%2C0-9%2C8.92A1.59%2C1.59%2C0%2C0%2C0%2C2.46%2C12%2C1.52%2C1.52%2C0%2C0%2C0%2C4.11%2C10.7a8%2C8%2C0%2C0%2C1%2C6.66-6.61A1.42%2C1.42%2C0%2C0%2C0%2C12%2C2.69h0A1.57%2C1.57%2C0%2C0%2C0%2C10.14%2C1.16Z%22%20class%3D%22spinner%22%2F%3E</svg>");
 }
 
 @include only-phone{
@@ -1997,10 +1998,10 @@ input[type=range] {
 // loaded yet.
 .loading, [v-cloak]{
     min-height: var(--w-icon-s);
-    color: var(--c-text-light);
+    --c-text: var(--c-text-light);
+    --c-text-heading: var(--c-text-light);
     position: relative;
 
-    // Standalone: fill entire parent with spinner
     &:before{
         position: absolute;
         top: 0;
@@ -2011,11 +2012,36 @@ input[type=range] {
         width: 100%;
         display: inline-block;
         vertical-align: middle;
-        mask-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M10.14,1.16a11,11,0,0,0-9,8.92A1.59,1.59,0,0,0,2.46,12,1.52,1.52,0,0,0,4.11,10.7a8,8,0,0,1,6.66-6.61A1.42,1.42,0,0,0,12,2.69h0A1.57,1.57,0,0,0,10.14,1.16Z' class='spinner'/>%3Cstyle%3E.spinner%7Btransform-origin%3Acenter%3Banimation%3Aspinner_svv2%20.75s%20infinite%20linear%7D%40keyframes%20spinner_svv2%7B100%25%7Btransform%3Arotate%28360deg%29%7D%7D%3C%2Fstyle%3E%3Cpath%20d%3D%22M10.14%2C1.16a11%2C11%2C0%2C0%2C0-9%2C8.92A1.59%2C1.59%2C0%2C0%2C0%2C2.46%2C12%2C1.52%2C1.52%2C0%2C0%2C0%2C4.11%2C10.7a8%2C8%2C0%2C0%2C1%2C6.66-6.61A1.42%2C1.42%2C0%2C0%2C0%2C12%2C2.69h0A1.57%2C1.57%2C0%2C0%2C0%2C10.14%2C1.16Z%22%20class%3D%22spinner%22%2F%3E</svg>");
+        mask-image: var(--i-loading);
         mask-position: center;
         mask-repeat: no-repeat;
         mask-size: var(--w-icon-s);
-        background-color:currentColor;
+        background-color: currentColor;
+    }
+}
+
+[v-cloak]{  // Vue element before it loads
+    @include box-l;
+
+    // Size like a .collapsible summary, leave space for spinner
+    padding: var(--m) var(--w-page-border);
+    padding-right: calc(var(--w-page-border) + var(--s) + var(--w-icon-s));
+
+    display: grid;
+    gap: var(--s);
+
+    color: var(--c-text-light);
+    line-height: var(--line-height-heading);
+
+    &:before{ // Spinner
+        width: var(--w-icon-s);
+        left: auto;
+        right: var(--w-page-border);
+    }
+
+    p {
+        font-size: var(--f-s);
+        margin: 0;
     }
 }
 
@@ -2453,32 +2479,6 @@ details{
 
     &[open] > summary {
         @include collapsible;
-    }
-}
-
-[v-cloak]{  // Vue element before it loads
-    @include widget;
-    background: transparent!important;
-    box-shadow: none;
-    display: block;
-    padding: var(--m) var(--w-page-border);
-    color: var(--c-text-light);
-    &:after{
-        content: 'Loading…';
-    }
-
-    &:before{
-        position: relative;
-        width: 1em;
-        height: 1em;
-        mask-size: 1em;
-        margin-right: var(--s);
-    }
-
-    noscript{
-        font-size: var(--f-s);
-        display: block;
-        color: var(--c-text-light);
     }
 }
 

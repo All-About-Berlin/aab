@@ -19,6 +19,8 @@ import { getReferrer } from '/js/utils/tracking.mjs';
 import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 import { validateForm } from '/js/utils/form.mjs';
 
+import metadata from '/js/vue/tools/insurance-checklist.metadata.json' with { type: 'json' };
+
 export default {
 	components: {
 		Checkbox,
@@ -39,6 +41,7 @@ export default {
 	},
 	data: function() {
 		return {
+			metadata,
 			selectedInsurances: {
 				health: false,
 				liability: false,
@@ -160,8 +163,8 @@ export default {
 	},
 	template: `
 	<collapsible
-		aria-description="Pick the insurances you need and get a cost estimate"
-		aria-label="Insurance checklist"
+		:aria-description="metadata.description"
+		:aria-label="metadata.label"
 		class="insurance-checklist"
 		ref="collapsible"
 		:static="static">

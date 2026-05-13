@@ -11,6 +11,8 @@ import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 import { bescheinigungInSteuersachenFee } from '/js/utils/constants.mjs';
 
+import metadata from '/js/vue/tools/bescheinigung-in-steuersachen-email.metadata.json' with { type: 'json' };
+
 export default {
 	components: {
 		AddressInput,
@@ -26,6 +28,7 @@ export default {
 	},
 	data() {
 		return {
+			metadata,
 			fullName: userDefaults.empty,
 			address: '',
 			dateOfBirth: userDefaults.empty,
@@ -43,8 +46,8 @@ export default {
 	},
 	template: `
 		<letter-generator
-			aria-label="Bescheinigung in Steuersachen email generator"
-			aria-description="Generate an email to request a Bescheinigung in Steuersachen from your Finanzamt"
+			:aria-label="metadata.label"
+			:aria-description="metadata.description"
 			track-as="Bescheinigung in Steuersachen letter"
 			:printable="false"
 			:static="static">

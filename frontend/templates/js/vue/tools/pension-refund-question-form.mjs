@@ -13,6 +13,8 @@ import { getReferrer } from '/js/utils/tracking.mjs';
 import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 import { validateForm } from '/js/utils/form.mjs';
 
+import metadata from '/js/vue/tools/pension-refund-question-form.metadata.json' with { type: 'json' };
+
 export default {
 	components: {
 		Checkbox,
@@ -29,6 +31,7 @@ export default {
 	},
 	data: function() {
 		return {
+			metadata,
 			isLoading: false,
 			email: userDefaults.empty,
 			subscribeToNewsletter: false,
@@ -91,8 +94,8 @@ export default {
 	},
 	template: `
 	<collapsible
-		aria-description="Ask an expert about German pension payments refunds"
-		aria-label="Pension refund question form"
+		:aria-description="metadata.description"
+		:aria-label="metadata.label"
 		class="pension-refund-question"
 		ref="collapsible"
 		:static="static">

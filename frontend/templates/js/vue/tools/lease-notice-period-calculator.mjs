@@ -5,6 +5,8 @@ import { dateFromString, formatLongDate, isoDay } from '/js/utils/date.mjs';
 import { getMoveOutDate, getLatestNoticeDate } from '/js/utils/lease.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 
+import metadata from '/js/vue/tools/lease-notice-period-calculator.metadata.json' with { type: 'json' };
+
 export default {
 	components: {
 		Collapsible,
@@ -17,6 +19,7 @@ export default {
 	},
 	data() {
 		return {
+			metadata,
 			inputNoticeDate: '',  // YYYY-MM-DD string
 		};
 	},
@@ -51,8 +54,8 @@ export default {
 	},
 	template: `
 		<collapsible
-			aria-label="Lease notice period calculator"
-			aria-description="Calculate the notice period of your apartment lease"
+			:aria-label="metadata.label"
+			:aria-description="metadata.description"
 			class="lease-notice-period-calculator"
 			:static="static">
 

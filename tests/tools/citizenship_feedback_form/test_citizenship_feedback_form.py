@@ -6,7 +6,7 @@ import pytest
 def citizenship_feedback_form(page):
     page.clock.set_fixed_time("2026-02-22T10:00:00")
     page.goto("/tests/tools/citizenship-feedback-form")
-    return page.get_by_role("group", name="Feedback form")
+    return page.get_by_role("group", name="Feedback form: Citizenship processing time")
 
 
 application_label = "I have applied in Berlin"

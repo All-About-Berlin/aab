@@ -8,6 +8,8 @@ import { estimateMonthlyPensionContributions } from '/js/utils/pensionRefund.mjs
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 
+import metadata from '/js/vue/tools/ksk-cost-difference-calculator.metadata.json' with { type: 'json' };
+
 export default {
 	components: {
 		Collapsible,
@@ -21,6 +23,7 @@ export default {
 	},
 	data() {
 		return {
+			metadata,
 			yearlyIncome: userDefaults.yearlyIncome,
 		}
 	},
@@ -53,8 +56,8 @@ export default {
 	},
 	template: `
 		<collapsible
-			aria-label="Künstlersozialkasse cost difference calculator"
-			aria-description="Calculate the cost difference between Künstlersozialkasse members and regular freelancers."
+			:aria-label="metadata.label"
+			:aria-description="metadata.description"
 			class="ksk-cost-difference-calculator"
 			:static="static">
 

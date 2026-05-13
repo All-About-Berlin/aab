@@ -5,7 +5,7 @@ import pytest
 def deposit_return_letter_generator(page):
     page.clock.set_fixed_time("2026-02-22T10:00:00")
     page.goto("/tests/tools/apartment-deposit-return-letter")
-    return page.get_by_role("group", name="Letter generator to ask for your apartment deposit back")
+    return page.get_by_role("group", name="Letter generator: request for apartment deposit return")
 
 
 def test_snapshot(page, deposit_return_letter_generator, test_screenshot):

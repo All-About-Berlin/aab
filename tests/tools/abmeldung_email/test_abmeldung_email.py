@@ -5,7 +5,7 @@ import pytest
 def abmeldung_email_generator(page):
     page.clock.set_fixed_time("2026-02-22T10:00:00")
     page.goto("/tests/tools/abmeldung-email")
-    return page.get_by_role("group", name="Letter generator to deregister your address")
+    return page.get_by_role("group", name="Online Abmeldung email template")
 
 
 def test_snapshot(page, abmeldung_email_generator, test_screenshot):

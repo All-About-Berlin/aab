@@ -5,7 +5,7 @@ import pytest
 def alg_i_letter_generator(page):
     page.clock.set_fixed_time("2026-02-22T10:00:00")
     page.goto("/tests/tools/alg-i-vorlaeufige-bewilligung")
-    return page.get_by_role("group", name="Letter generator to request a preliminary decision for ALG I")
+    return page.get_by_role("group", name="Letter generator: request for an ALG I preliminary decision")
 
 
 def test_snapshot(page, alg_i_letter_generator, test_screenshot):

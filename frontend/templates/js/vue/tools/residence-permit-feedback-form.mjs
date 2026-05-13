@@ -13,6 +13,8 @@ import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs
 import { validateForm } from '/js/utils/form.mjs';
 import { residencePermitTypes, residencePermitDepartments, oldResidencePermitDepartments } from '/js/utils/immigrationOffice.mjs';
 
+import metadata from '/js/vue/tools/residence-permit-feedback-form.metadata.json' with { type: 'json' };
+
 export default {
 	components: {
 		AgeInput,
@@ -33,6 +35,7 @@ export default {
 	mixins: [userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin],
 	data() {
 		return {
+			metadata,
 			department: null,
 			oldDepartments: oldResidencePermitDepartments,
 			residencePermitTypes,
@@ -154,9 +157,6 @@ export default {
 		},
 		trackAs(){
 			return `Feedback (${this.residencePermitType})`;
-		},
-		ariaLabel(){
-			return `Feedback form: ${this.residencePermitName} processing time`;
 		},
 		residencePermitName(){
 			return this.residencePermitTypes[this.residencePermitType]?.normal || "residence permit";
@@ -288,8 +288,8 @@ export default {
 	},
 	template: `
 		<collapsible
-			:aria-label="ariaLabel"
-			aria-description="Share your experience applying for a residence permit in Berlin."
+			:aria-label="metadata.label"
+			:aria-description="metadata.description"
 			class="feedback-form"
 			:static="static">
 			<template v-slot:header>

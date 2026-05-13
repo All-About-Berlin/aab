@@ -6,14 +6,14 @@ import pytest
 def residence_permit_feedback_form(page):
     page.clock.set_fixed_time("2026-02-22T10:00:00")
     page.goto("/tests/tools/residence-permit-feedback-form")
-    return page.get_by_role("group", name="Feedback form")
+    return page.get_by_role("group", name="Feedback form: residence permit processing time")
 
 
 @pytest.fixture
 def blue_card_feedback_form(page):
     page.clock.set_fixed_time("2026-02-22T10:00:00")
     page.goto("/tests/tools/residence-permit-feedback-form-blue-card")
-    return page.get_by_role("group", name="Feedback form: Blue Card processing time")
+    return page.get_by_role("group", name="Feedback form: residence permit processing time")
 
 
 application_label = "I have applied in Berlin"
