@@ -89,15 +89,6 @@
     import cache_static
     import security_headers
 
-    # Shared assets served from the AAB output root
-    @sharedAssets {
-        path /fonts/* /css/* /js/* /staticimages/* /images/* /illustrations/* /documents/*
-    }
-    handle @sharedAssets {
-        file_server
-        root * /var/www/html
-    }
-
     # Custom 404 page
     handle_errors 404 410 {
         file_server
@@ -122,11 +113,17 @@
         header +Link "</fonts/librefranklin-variable.woff2>; rel=preload; as=font; crossorigin"
         header +Link "</fonts/librefranklin-variable-i.woff2>; rel=preload; as=font; crossorigin"
 
-        # Try serving from /services, fall back to /
+        # Try serving from /services, fall back to / for assets only (not HTML pages).
         root * /var/www/html/services
-        @notInServices not file {
-            root /var/www/html/services
-            try_files {path} {path}.html {path}/index.html
+        @notInServices {
+            not file {
+                root /var/www/html/services
+                try_files {path} {path}.html {path}/index.html
+            }
+            file {
+                root /var/www/html
+                try_files {path}
+            }
         }
         root @notInServices /var/www/html
 
