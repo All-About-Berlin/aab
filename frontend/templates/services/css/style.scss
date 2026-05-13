@@ -1,6 +1,6 @@
 :root, .map{
     --c-highlight: #2fc68e;
-    --c-highlight-green: #0c8;
+    --c-highlight-green: #2fc68e;
     --c-text-error: #{darken(#da513d, 20%)};
     --c-text-heading: #000;
     --c-text-light: #757575;
@@ -32,8 +32,8 @@
 
 @media (prefers-color-scheme: dark) {
     :root{
-        --c-highlight: #{darken(#2fc68e, 20%)};
-        --c-highlight-green: #{darken(#0c8, 20%)};
+        --c-highlight: #1b7453;  // 20% darker
+        --c-highlight-green: #1b7453;
         --c-text: #bbb;
         --c-text-error: #{lighten(#9f3a2b, 20%)};
         --c-text-heading: #ddd;
