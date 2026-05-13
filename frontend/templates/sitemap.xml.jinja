@@ -21,7 +21,7 @@
 		<loc>{{ SITE_URL }}/newsletter</loc>
 		<lastmod>{{ get_entries('newsletter', sort_by='date_updated', reverse=True)[0].date_updated.isoformat(timespec="seconds") }}</lastmod>
 	</url>
-	{% for uri in ['contact.md', 'terms.md'] %}
+	{% for uri in ['about.md', 'contact.md', 'terms.md'] %}
 		<url>
 			<loc>{{ entries[uri].url }}</loc>
 			<lastmod>{{ entries[uri].date_updated.isoformat(timespec="seconds") }}</lastmod>

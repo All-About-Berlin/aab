@@ -49,6 +49,7 @@
 				"@type": "WebPage",
 				"name": {{ entry.title|tojson }},
 				"description": {{ entry.description|tojson }},
+				{% if entry.image_url|default %}"image": "{{ entry.image_url }}",{% endif %}
 				"breadcrumb": {
 					"@context": "https://schema.org",
 					"@type": "BreadcrumbList",

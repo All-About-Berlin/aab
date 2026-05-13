@@ -46,75 +46,77 @@
 {% block postFooter %}
 	{{ super() }}
 	<script type="application/ld+json">
-		[
-			{
-				"@context": "https://schema.org",
-				"@type": "WebPage",
-				"name": {{ entry.title|tojson }},
-				"description": {{ entry.description|tojson }},
-				{% if entry.image_url|default %}"image": "{{ entry.image_url }}",{% endif %}
-				"breadcrumb": {
-					"@context": "https://schema.org",
-					"@type": "BreadcrumbList",
-					"itemListElement": [
-						{
-							"@type": "ListItem",
-							"position": 1,
-							"item": {
-								"@id": "{{ SITE_URL }}/",
-								"name": "Home"
+		{
+			"@context": "https://schema.org",
+			"@graph": [
+				{
+					"@type": "WebPage",
+					"@id": "{{ entry.url }}",
+					"name": {{ entry.title|tojson }},
+					"description": {{ entry.description|tojson }},
+					{% if entry.image_url|default %}"image": "{{ entry.image_url }}",{% endif %}
+					"breadcrumb": {
+						"@type": "BreadcrumbList",
+						"itemListElement": [
+							{
+								"@type": "ListItem",
+								"position": 1,
+								"item": {
+									"@id": "{{ SITE_URL }}/",
+									"name": "Home"
+								}
+							},
+							{
+								"@type": "ListItem",
+								"position": 2,
+								"item": {
+									"@id": "{{ SITE_URL }}/guides",
+									"name": "Guides"
+								}
+							},
+							{
+								"@type": "ListItem",
+								"position": 3,
+								"item": {
+									"@id": "{{ entry.url }}",
+									"name": {{ entry.title|tojson }}
+								}
 							}
-						},
-						{
-							"@type": "ListItem",
-							"position": 2,
-							"item": {
-								"@id": "{{ SITE_URL }}/guides",
-								"name": "Guides"
-							}
-						},
-						{
-							"@type": "ListItem",
-							"position": 3,
-							"item": {
-								"@id": "{{ entry.url }}",
-								"name": {{ entry.title|tojson }}
-							}
-						}
-					]
+						]
+					},
+					"author": {
+						"@type": "Person",
+						"@id": "https://nicolasbouliane.com"
+					},
+					"reviewedBy": [
+						{% set reviews = entry.related_reviews|default([]) %}
+						{% for review in reviews %}
+							{% set reviewer = review.related_expert[0] %}
+							{
+								"@type": "Person",
+								"jobTitle": {{ reviewer.job_title|tojson }},
+								"name": {{ reviewer.name|tojson }},
+								"email": {{ reviewer.email|tojson }}
+								{% if reviewer.picture|default %}, "image": "{{ SITE_URL }}/{{ reviewer.picture }}"{% endif %}
+								{% if reviewer.website|default %}
+									, "sameAs": [
+										{{ reviewer.website|tojson }}
+									]
+								{% endif %}
+							}{% if not loop.last %},{% endif %}
+						{% endfor %}
+					],
+					{% if reviews|length %}
+						"lastReviewed": "{{ reviews[0].date_reviewed.strftime('%Y-%m-%d') }}",
+					{% endif %}
+					"mainEntity": {"@id": "{{ entry.url }}#article"},
+					"publisher": {
+						"@type": "Organization",
+						"@id": "{{ SITE_URL }}/#organization"
+					}
 				},
-				"author": {
-					"@type": "Person",
-					"@id": "https://nicolasbouliane.com"
-				},
-				"reviewedBy": [
-					{% set reviews = entry.related_reviews|default([]) %}
-					{% for review in reviews %}
-						{% set reviewer = review.related_expert[0] %}
-						{
-							"@context": "https://schema.org/",
-							"@type": "Person",
-							"jobTitle": {{ reviewer.job_title|tojson }},
-							"name": {{ reviewer.name|tojson }},
-							"email": {{ reviewer.email|tojson }}
-							{% if reviewer.picture|default %}, "image": "{{ SITE_URL }}/{{ reviewer.picture }}"{% endif %}
-							{% if reviewer.website|default %}
-								, "sameAs": [
-									{{ reviewer.website|tojson }}
-								]
-							{% endif %}
-						}{% if not loop.last %},{% endif %}
-					{% endfor %}
-				],
-				{% if reviews|length %}
-					"lastReviewed": "{{ reviews[0].date_reviewed.strftime('%Y-%m-%d') }}",
-				{% endif %}
-				"publisher": {
-					"@type": "Organization",
-					"@id": "{{ SITE_URL }}/#organization"
-				}
-			},
-			{% include "_blocks/guideJsonld.json" %}
-		]
+				{% include "_blocks/guideJsonld.json" %}
+			]
+		}
 	</script>
 {% endblock %}
