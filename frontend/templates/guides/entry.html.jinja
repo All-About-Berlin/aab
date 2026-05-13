@@ -110,6 +110,10 @@
 						"lastReviewed": "{{ reviews[0].date_reviewed.strftime('%Y-%m-%d') }}",
 					{% endif %}
 					"mainEntity": {"@id": "{{ entry.url }}#article"},
+					"speakable": {
+						"@type": "SpeakableSpecification",
+						"cssSelector": [".article-body"]
+					},
 					"publisher": {
 						"@type": "Organization",
 						"@id": "{{ SITE_URL }}/#organization"

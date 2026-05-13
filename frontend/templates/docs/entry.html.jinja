@@ -85,6 +85,10 @@
 				"@type": "Organization",
 				"@id": "{{ SITE_URL }}/#organization"
 			},
+			"speakable": {
+				"@type": "SpeakableSpecification",
+				"cssSelector": [".article-body"]
+			},
 			"dateModified": "{{ entry.date_updated.isoformat() }}",
 			"datePublished": "{{ entry.date_created.isoformat() }}"
 		}]

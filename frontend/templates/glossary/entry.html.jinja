@@ -35,6 +35,20 @@
 		[
 			{
 				"@context": "https://schema.org",
+				"@type": "WebPage",
+				"name": {{ metatitle|tojson }},
+				"description": {{ metadescription|tojson }},
+				"speakable": {
+					"@type": "SpeakableSpecification",
+					"cssSelector": [".article-body"]
+				},
+				"publisher": {
+					"@type": "Organization",
+					"@id": "{{ SITE_URL }}/#organization"
+				}
+			},
+			{
+				"@context": "https://schema.org",
 				"@type": "DefinedTerm",
 				"name": {{ entry.german_term|tojson }},
 				"description": {{ metadescription|tojson }},
