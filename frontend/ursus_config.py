@@ -306,6 +306,7 @@ config.context_processors.extend(
         "extensions.context_processors.hyphenated_titles.HyphenatedTitleProcessor",
         "extensions.context_processors.tool_tests.ToolTestEntriesProcessor",
         "extensions.context_processors.collections.CollectionsProcessor",
+        "extensions.context_processors.services_url.ServicesUrlProcessor",
     ]
 )
 
