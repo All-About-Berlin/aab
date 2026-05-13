@@ -14,12 +14,8 @@
 		<lastmod>{{ get_entries('glossary', sort_by='date_updated', reverse=True)[0].date_updated.isoformat(timespec="seconds") }}</lastmod>
 	</url>
 	<url>
-		<loc>{{ SITE_URL }}/docs</loc>
-		<lastmod>{{ get_entries('docs', sort_by='date_updated', reverse=True)[0].date_updated.isoformat(timespec="seconds") }}</lastmod>
-	</url>
-	<url>
 		<loc>{{ SITE_URL }}/tools</loc>
-		<lastmod>{{ get_entries('tools', sort_by='date_updated', reverse=True)[0].date_updated.isoformat(timespec="seconds") }}</lastmod>
+		<lastmod>{{ get_entries(['tools', 'docs'], sort_by='date_updated', reverse=True)[0].date_updated.isoformat(timespec="seconds") }}</lastmod>
 	</url>
 	<url>
 		<loc>{{ SITE_URL }}/newsletter</loc>
