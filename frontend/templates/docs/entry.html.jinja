@@ -1,0 +1,41 @@
+{% extends "_layout.html" %}
+{% set metatitle = entry.title %}
+{% set metadescription = entry.description %}
+{% set related_entries = entry.related_guides|default([]) %}
+
+{% block postHead %}
+	{{ super() }}
+	<link rel="index" href="{{ SITE_URL }}/docs">
+{% endblock %}
+
+{% block main %}
+	<main aria-label="Main page">
+		{% block precontent %}{% endblock %}
+		<article class="section">
+			<h1>{{ entry.title }}</h1>
+			{% include "_blocks/postMeta.html" %}
+			<div class="article-body">
+				{{ entry.body|render|safe }}
+			</div>
+		</article>
+
+		{% with pageType='document' %}
+			{% include "_blocks/footerDonationPrompt.html" %}
+		{% endwith %}
+
+		{% if related_entries|length %}
+			<aside class="section" aria-labelledby="h-related-guides">
+				<h2 id="h-related-guides">Related guides</h2>
+				{% with entries=related_entries, showDateUpdated=true %}
+					{% include "_blocks/entryPreviews.html" %}
+				{% endwith %}
+			</aside>
+		{% endif %}
+
+		{% include "_blocks/affiliateNotice.html" %}
+	</main>
+
+	{% with entry=entry, showRelatedEntriesLink=related_entries|length %}
+		{% include "_blocks/sidebar.html" %}
+	{% endwith %}
+{% endblock %}
