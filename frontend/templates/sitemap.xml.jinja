@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	{% set all_entries = get_entries(['guides', 'docs', 'glossary', 'tools', 'collections', 'newsletter'], sort_by='date_updated', reverse=True) %}
 	<url>
 		<loc>{{ SITE_URL }}</loc>
+		<lastmod>{{ all_entries[0].date_updated.isoformat(timespec="seconds") }}</lastmod>
 	</url>
 	<url>
 		<loc>{{ SITE_URL }}/guides</loc>
+		<lastmod>{{ get_entries('guides', sort_by='date_updated', reverse=True)[0].date_updated.isoformat(timespec="seconds") }}</lastmod>
 	</url>
 	<url>
 		<loc>{{ SITE_URL }}/glossary</loc>
+		<lastmod>{{ get_entries('glossary', sort_by='date_updated', reverse=True)[0].date_updated.isoformat(timespec="seconds") }}</lastmod>
 	</url>
 	<url>
 		<loc>{{ SITE_URL }}/docs</loc>
+		<lastmod>{{ get_entries('docs', sort_by='date_updated', reverse=True)[0].date_updated.isoformat(timespec="seconds") }}</lastmod>
 	</url>
 	<url>
 		<loc>{{ SITE_URL }}/tools</loc>
+		<lastmod>{{ get_entries('tools', sort_by='date_updated', reverse=True)[0].date_updated.isoformat(timespec="seconds") }}</lastmod>
 	</url>
 	<url>
 		<loc>{{ SITE_URL }}/newsletter</loc>
+		<lastmod>{{ get_entries('newsletter', sort_by='date_updated', reverse=True)[0].date_updated.isoformat(timespec="seconds") }}</lastmod>
 	</url>
 	{% for uri in ['contact.md', 'terms.md'] %}
 		<url>
