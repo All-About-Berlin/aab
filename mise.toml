@@ -56,8 +56,10 @@ flag "--bundle-js"
 
 quiet = true
 run = """
+JS_BUNDLING_IS="disabled"
 if [ "${usage_bundle_js:-false}" = "true" ]; then
   export BUNDLE_JS=1
+  JS_BUNDLING_IS="enabled"
 fi
 
 if ! docker info >/dev/null 2>&1; then
@@ -70,7 +72,7 @@ while ! docker ps > /dev/null 2>&1; do
   sleep 1;
 done
 
-echo "[$(date +'%H:%M:%S')] Starting docker containers (BUNDLE_JS=${BUNDLE_JS})"
+echo "[$(date +'%H:%M:%S')] Starting docker containers with JS bundling ${JS_BUNDLING_IS}"
 compose_output=$(docker compose up --build -d --force-recreate 2>&1) || { echo "$compose_output"; exit 1; }
 
 max_attempts=10
