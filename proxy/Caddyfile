@@ -1,3 +1,32 @@
+(openexchangerates_proxy) {
+    handle /api/exchangerates.json {
+        cache {
+            ttl 24h
+            mode bypass_request
+        }
+        rewrite * /api/latest.json?app_id={$OPENEXCHANGERATES_API_KEY}
+        reverse_proxy https://openexchangerates.org {
+            header_up Host openexchangerates.org
+        }
+    }
+}
+
+(plausible_proxy) {
+    @plausible {
+        path /whoisthere.js /whoisthere/event
+    }
+    handle @plausible {
+        rewrite /whoisthere.js /js/plausible.file-downloads.js
+        rewrite /whoisthere/event /api/event
+        reverse_proxy plausible.io:443 {
+            transport http {
+                tls
+            }
+            header_up Host plausible.io
+        }
+    }
+}
+
 # =============================================================================
 # Services site (agoodstart.de)
 # =============================================================================
@@ -60,6 +89,9 @@
         rewrite * /404.html
     }
 
+    import openexchangerates_proxy
+    import plausible_proxy
+
     # Favicon and apple-touch-icon handling
     redir /favicon.ico /staticimages/favicon.png 301
     handle_path /apple-touch-icon* {
@@ -79,9 +111,16 @@
         header +Link "</fonts/librefranklin-variable.woff2>; rel=preload; as=font; crossorigin"
         header +Link "</fonts/librefranklin-variable-i.woff2>; rel=preload; as=font; crossorigin"
 
-        file_server
+        # Try serving from /services, fall back to /
         root * /var/www/html/services
-        try_files {path} {path}.html {path}/index.html
+        @notInServices not file {
+            root /var/www/html/services
+            try_files {path}.html {path}/index.html
+        }
+        root @notInServices /var/www/html
+
+        file_server
+        try_files {path}.html {path}/index.html
     }
 }
 
@@ -170,32 +209,8 @@
         }
     }
 
-    # OpenExchangeRates API proxy
-    handle /api/exchangerates.json {
-        cache {
-            ttl 24h
-            mode bypass_request
-        }
-        rewrite * /api/latest.json?app_id={$OPENEXCHANGERATES_API_KEY}
-        reverse_proxy https://openexchangerates.org {
-            header_up Host openexchangerates.org
-        }
-    }
-
-    # Plausible.io tracking passthrough
-    @plausible {
-        path /whoisthere.js /whoisthere/event
-    }
-    handle @plausible {
-        rewrite /whoisthere.js /js/plausible.file-downloads.js
-        rewrite /whoisthere/event /api/event
-        reverse_proxy plausible.io:443 {
-            transport http {
-                tls
-            }
-            header_up Host plausible.io
-        }
-    }
+    import openexchangerates_proxy
+    import plausible_proxy
 
     # Redirect /services and /services/* to the services site
     @servicesRedirect path /services /services/*
