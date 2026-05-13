@@ -28,3 +28,61 @@
 		</aside>
 	{% endif %}
 {% endblock %}
+
+{% block postFooter %}
+	{{ super() }}
+	<script type="application/ld+json">
+		[
+			{
+				"@context": "https://schema.org",
+				"@type": "DefinedTerm",
+				"name": {{ entry.german_term|tojson }},
+				"description": {{ metadescription|tojson }},
+				"url": "{{ entry.url }}",
+				"inDefinedTermSet": {
+					"@type": "DefinedTermSet",
+					"name": "All About Berlin Glossary",
+					"url": "{{ SITE_URL }}/glossary"
+				},
+				"author": {
+					"@type": "Person",
+					"@id": "https://nicolasbouliane.com"
+				},
+				"publisher": {
+					"@type": "Organization",
+					"@id": "{{ SITE_URL }}/#organization"
+				}
+			},
+			{
+				"@context": "https://schema.org",
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"item": {
+							"@id": "{{ SITE_URL }}/",
+							"name": "Home"
+						}
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"item": {
+							"@id": "{{ SITE_URL }}/glossary",
+							"name": "Glossary"
+						}
+					},
+					{
+						"@type": "ListItem",
+						"position": 3,
+						"item": {
+							"@id": "{{ entry.url }}",
+							"name": {{ entry.german_term|tojson }}
+						}
+					}
+				]
+			}
+		]
+	</script>
+{% endblock %}
