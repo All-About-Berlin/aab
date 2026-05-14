@@ -61,6 +61,7 @@ class Case(models.Model):
 
     broker = models.CharField(max_length=30, choices=Brokers, default=Brokers.SEAMUS_WOLF)
     referrer = models.CharField(blank=True, help_text="Part of the commissions will be paid out to that referrer")
+    site = models.CharField(max_length=100, blank=True, default="allaboutberlin.com")
 
     daily_digest_fields = [
         "contact_method",

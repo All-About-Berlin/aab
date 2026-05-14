@@ -7,3 +7,4 @@ class CaseSerializer(CountryFieldMixin, ModelSerializer):
     class Meta:
         model = Case
         fields = "__all__"
+        read_only_fields = ["site"]
