@@ -1,7 +1,7 @@
 {% extends "_layout.html" %}
 {% set SITE_NAME = "A Good Start" %}
 {% block head %}
-	<title>{% if metatitle|default %}{{ metatitle }}{% if metatitle|length < 50 %} - {% endif %}{% if metatitle|length < 50 %}{{ SITE_NAME }}{% endif %}{% else %}{{ SITE_NAME }}{% endif %}</title>
+	<title>{% if metatitle|default %}{{ metatitle }}{% if metatitle|length < 50 %} - {% endif %}{% if metatitle|length < 50 %}A Good Start{% endif %}{% else %}A Good Start - German insurance made easy{% endif %}</title>
 	{% if metadescription|default %}<meta name="description" content="{{ metadescription }}">{% endif %}
 
 	<link rel="preload" as="font" href="/fonts/librefranklin-variable.woff2" type="font/woff2" crossorigin>
