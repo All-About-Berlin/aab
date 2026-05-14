@@ -816,7 +816,6 @@ body > header {
         }
     }
 
-
     > nav.submenu{
         background: var(--c-bg-page);
         padding: var(--l) var(--w-page-border);
@@ -898,6 +897,11 @@ body > header {
     @include full-width-site{
         > nav{
             border-radius: 0!important;
+        }
+
+        // Remove gap before content
+        + main > article:first-child{
+            margin-top: calc(var(--m) * -1);
         }
     }
 }
