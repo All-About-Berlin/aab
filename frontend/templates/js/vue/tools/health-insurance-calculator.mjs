@@ -99,18 +99,9 @@ export default {
 			isLoading: false,
 			intent: 'other',
 			broker: {
-				id: 'seamus-wolf',
-				name: 'Seamus',
-				fullName: 'Seamus Wolf',
 				phoneNumber: '+491626969454',
 				phoneNumberPretty: '+49 162 6969454',
 				email: 'seamus.wolf@horizon65.com',
-				he: 'he',
-				him: 'him',
-				his: 'his',
-				He: 'He',
-				Him: 'Him',
-				His: 'His',
 			},
 
 			// Component settings
@@ -256,7 +247,7 @@ export default {
 			}[this.intent] || 'choose the best health insurance'
 		},
 		whatsappMessage(){
-			return `Hi ${this.broker.name}, I am ${this.fullName}. Can you help me ${this.intentString}? ${this.personSummary}`;
+			return `Hi Seamus, I am ${this.fullName}. Can you help me ${this.intentString}? ${this.personSummary}`;
 		},
 		whatsappUrl(){
 			return `https://wa.me/${this.broker.phoneNumber}?text=${encodeURIComponent(this.whatsappMessage)}`;
@@ -283,7 +274,7 @@ export default {
 
 		trackedStagesExtraData() {
 			const data = {
-				partner: this.broker.id,
+				partner: 'seamus-wolf',
 			};
 			if(this.contactMethod){
 				data.contactMethod = this.contactMethod;
@@ -380,7 +371,6 @@ export default {
 
 							referrer: getReferrer() || '',
 							contact_method: this.contactMethod || 'EMAIL',
-							broker: this.broker.id,
 						}),
 					},
 				);
@@ -536,7 +526,7 @@ export default {
 
 			<template v-if="stage === 'questions'">
 				<h2>Tell us a bit more about you&hellip;</h2>
-				<p v-if="mode === 'question'">You can skip this step, but this information helps {{ broker.name }} recommend the right health insurance.</p>
+				<p v-if="mode === 'question'">You can skip this step, but this information helps Seamus recommend the right health insurance.</p>
 				<p v-else>It helps us calculate prices and recommend the right health insurance.</p>
 				<hr>
 				<div class="form-group">
@@ -648,12 +638,12 @@ export default {
 							<i class="icon left" aria-hidden="true"></i> <span :class="{'no-mobile': !!contactMethod}">Go back</span>
 						</button>
 						<button v-if="contactMethod === 'EMAIL'" class="button primary" @click="createCase" :disabled="isLoading" :class="{loading: isLoading}">
-							Ask {{ broker.name }}
+							Ask Seamus
 						</button>
 						<a v-if="contactMethod === 'WHATSAPP'" :href="whatsappUrl" @click="createCase" class="button whatsapp" :disabled="isLoading" target="_blank">
 							<icon-whatsapp/>
 							<span class="only-mobile">Start chat</span>
-							<span class="no-mobile">Chat with {{ broker.name }}</span>
+							<span class="no-mobile">Chat with Seamus</span>
 						</a>
 					</template>
 				</div>
@@ -673,7 +663,7 @@ export default {
 							<icon-support/>
 							<div>
 								<h3 :id="uid('h-askOurExpert')">Ask our expert</h3>
-								<p>Let {{ broker.name }} find the best health insurance for you. It's 100% free.</p>
+								<p>Let Seamus find the best health insurance for you. It's 100% free.</p>
 							</div>
 						</button>
 					</li>
@@ -720,12 +710,12 @@ export default {
 				<div class="form-recipient">
 					<div>
 						<p v-if="occupation === 'other'">If your situation is complicated, let our expert help you.</p>
-						<p>{{ broker.name }} will help you <strong v-text="intentString">choose the best health insurance</strong>. I work with {{ broker.him }} because {{ broker.he }} is honest and knowledgeable.</p>
-						<p>{{ broker.He }} replies on the same day. {{ broker.His }} help is <strong>100% free</strong>.</p>
+						<p>Seamus will help you <strong v-text="intentString">choose the best health insurance</strong>. I work with him because he is honest and knowledgeable.</p>
+						<p>He replies on the same day. His help is <strong>100% free</strong>.</p>
 					</div>
 					<img
-						:srcset="'/experts/photos/bioLarge1x/' + broker.id + '.jpg, /experts/photos/bioLarge2x/' + broker.id + '.jpg 2x'"
-						:alt="broker.fullName" width="125" height="125"
+						srcset="/experts/photos/bioLarge1x/seamus-wolf.jpg, /experts/photos/bioLarge2x/seamus-wolf.jpg 2x"
+						alt="Seamus Wolf" width="125" height="125"
 						sizes="125px">
 				</div>
 				<hr>
@@ -763,7 +753,7 @@ export default {
 							<label :for="uid('question')">
 								Your question
 							</label>
-							<textarea :id="uid('question')" v-model="question" :placeholder="'How can ' + broker.name + ' help you?'" :required="occupation === 'other'"></textarea>
+							<textarea :id="uid('question')" v-model="question" placeholder="How can Seamus help you?" :required="occupation === 'other'"></textarea>
 						</div>
 					</template>
 				</template>
@@ -777,12 +767,12 @@ export default {
 							Continue <i class="icon right" aria-hidden="true"></i>
 						</button>
 						<button v-if="mode === 'calculator' && contactMethod === 'EMAIL'" class="button primary" @click="createCase" :disabled="isLoading" :class="{loading: isLoading}">
-							Ask {{ broker.name }}
+							Ask Seamus
 						</button>
 						<a v-if="mode === 'calculator' && contactMethod === 'WHATSAPP'" :href="whatsappUrl" @click="createCase" class="button whatsapp" :disabled="isLoading" target="_blank">
 							<icon-whatsapp/>
 							<span class="only-mobile">Start chat</span>
-							<span class="no-mobile">Chat with {{ broker.name }}</span>
+							<span class="no-mobile">Chat with Seamus</span>
 						</a>
 					</div>
 				</template>
@@ -792,10 +782,10 @@ export default {
 				<div class="form-recipient">
 					<div>
 						<p>
-							To chat with {{ broker.name }}, <a :href="whatsappUrl" target="_blank">open WhatsApp</a> <span class="no-mobile">or scan this QR code</span>.
+							To chat with Seamus, <a :href="whatsappUrl" target="_blank">open WhatsApp</a> <span class="no-mobile">or scan this QR code</span>.
 						</p>
 						<p>
-							{{ broker.His }} number is <strong class="selectable">{{ broker.phoneNumberPretty }}</strong>.
+							His number is <strong class="selectable">{{ broker.phoneNumberPretty }}</strong>.
 						</p>
 					</div>
 					<svg class="no-mobile" v-html="qrCode" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 150 150"></svg>
@@ -813,7 +803,7 @@ export default {
 			</template>
 
 			<template v-if="stage === 'thank-you' && contactMethod === 'EMAIL'">
-				<p><strong>Thank you!</strong> {{ broker.name }} got your message. You will get an email from <a :href="'mailto:' + broker.email">{{ broker.email }}</a> in the next 24 hours. If you don't get a response, check your spam folder.</p>
+				<p><strong>Thank you!</strong> Seamus got your message. You will get an email from <a :href="'mailto:' + broker.email">{{ broker.email }}</a> in the next 24 hours. If you don't get a response, check your spam folder.</p>
 				<hr>
 				<div class="buttons bar">
 					<button aria-label="Go back" class="button" @click="goToStart()">
