@@ -76,6 +76,19 @@
 				"publisher": {
 					"@type": "Organization",
 					"@id": "{{ SITE_URL }}/#organization"
+				},
+				"mainEntity": {
+					"@type": "ItemList",
+					"itemListElement": [
+						{% for collection in get_entries('collections') %}
+							{
+								"@type": "ListItem",
+								"position": {{ loop.index }},
+								"name": {{ collection.title|tojson }},
+								"url": "{{ collection.url }}"
+							}{% if not loop.last %},{% endif %}
+						{% endfor %}
+					]
 				}
 			}
 		]
