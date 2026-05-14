@@ -19,6 +19,7 @@ class CaseAdmin(admin.ModelAdmin):
                     "children_count",
                     "intent",
                     "question",
+                    "site",
                     "referrer",
                 ),
             },
@@ -47,6 +48,7 @@ class CaseAdmin(admin.ModelAdmin):
         "age",
         "is_married",
         "children_count",
+        "site",
         "referrer",
     ]
 
