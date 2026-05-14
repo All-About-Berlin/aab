@@ -112,6 +112,25 @@
 			"publisher": {
 				"@type": "Organization",
 				"@id": "{{ SITE_URL }}/#organization"
+			},
+			"mainEntity": {
+				"@type": "ItemList",
+				"itemListElement": [
+					{% set ns = namespace(pos=0) %}
+					{% for item in collection.entries recursive %}
+						{% if item.uri|default %}
+							{% if ns.pos > 0 %},{% endif %}
+							{% set ns.pos = ns.pos + 1 %}
+							{
+								"@type": "ListItem",
+								"position": {{ ns.pos }},
+								"name": {{ entries[item.uri].title|tojson }},
+								"url": "{{ entries[item.uri].url }}"
+							}
+						{% endif %}
+						{% if item.entries|default %}{{ loop(item.entries) }}{% endif %}
+					{% endfor %}
+				]
 			}
 		}]
 	</script>
