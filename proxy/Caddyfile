@@ -1,4 +1,8 @@
 (backend_proxy) {
+    handle_path /admin/static/* {
+        root * /var/www/api/staticfiles
+        file_server
+    }
     @backend path /api/* /admin/*
     handle @backend {
         @hasCfIp header CF-Connecting-IP *
@@ -6,10 +10,6 @@
         @noCfIp not header CF-Connecting-IP *
         request_header @noCfIp X-Real-IP {remote_host}
         reverse_proxy backend:80
-    }
-    handle_path /admin/static/* {
-        root * /var/www/api/staticfiles
-        file_server
     }
 }
 
