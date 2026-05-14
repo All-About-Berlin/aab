@@ -1,5 +1,5 @@
 ---
-Title: Health insurance
+Title: German health insurance
 Intro_title: Health insurance that works
 Intro_subtitle: Get affordable coverage, picked just for you.
 Description: Our expert helps you choose the best German health insurance.
