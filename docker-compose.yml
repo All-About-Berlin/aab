@@ -22,10 +22,10 @@ services:
     build:
       context: backend
       target: dev
-      args:
-        - "SSL_DOMAIN=localhost"
     environment:
       - "BUTTONDOWN_API_KEY"
+      - "DOMAIN=localhost"
+      - "SERVICES_DOMAIN=services.localhost"
     volumes:
       - "api_db:/var/db"
       - "api_staticfiles:/var/www/api/staticfiles"

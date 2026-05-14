@@ -14,8 +14,11 @@ MAILGUN_API_KEY = os.environ.get("MAILGUN_API_KEY")
 DEBUG = bool(int(os.environ.get("DEBUG", "0")))
 DEBUG_EMAILS = DEBUG  # Print emails instead of sending them
 
-ALLOWED_HOSTS = ["allaboutberlin.com", "localhost"]
-CSRF_TRUSTED_ORIGINS = ["https://localhost", "https://allaboutberlin.com"]
+ssl_domain = os.environ.get("DOMAIN", "localhost")
+services_domain = os.environ.get("SERVICES_DOMAIN", "services.localhost")
+
+ALLOWED_HOSTS = [ssl_domain, services_domain]
+CSRF_TRUSTED_ORIGINS = [f"https://{ssl_domain}", f"https://{services_domain}"]
 
 INSTALLED_APPS = [
     "django.contrib.humanize",

@@ -32,6 +32,8 @@ services:
     environment:
       - "MAILGUN_API_KEY"
       - "REMOTE_DB_BACKUPS_PATH"
+      - "DOMAIN=allaboutberlin.com"
+      - "SERVICES_DOMAIN=agoodstart.de"
     volumes: !override
       - "api_db:/var/db"
       - "api_staticfiles:/var/www/api/staticfiles"
