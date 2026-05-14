@@ -165,11 +165,10 @@ echo "[$(date +'%H:%M:%S')] Running UI tests..."
 pytest tests
 """
 
-[tasks.update-snapshots]
+[tasks.fix-snapshots]
 depends = ["wait-for-frontend --bundle-js"]
 run = """
-rm -rf tests/snapshots/*
-pytest tests --update-snapshots
+pytest tests --lf --update-snapshots
 """
 
 [tasks.test]
