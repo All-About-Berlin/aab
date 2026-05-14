@@ -35,8 +35,6 @@ def entries_in_collection(collection: Entry) -> set[EntryURI]:
 
 
 class CollectionsProcessor(EntryContextProcessor):
-    hyphenated_attributes = ("title", "short_title", "german_term")
-
     def process(self, context: Context, changed_files: set[Path] | None = None) -> Context:
         context = super().process(context, changed_files)
 
