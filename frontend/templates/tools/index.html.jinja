@@ -13,8 +13,8 @@
 		{% set id = random_id() %}
 		<li class="document" aria-labelledby="h-doc-{{ id }}">
 			<h3 id="h-doc-{{ id }}">
-				<a title="{{ entry.german_term }}" rel="bookmark" href="{{ entry.url }}" lang="de">{{ entry.german_term }}</a>
-				{{ entry.english_term }}
+				<a rel="bookmark" href="{{ entry.url }}">{{ entry.english_term }}</a>
+				<span lang="de">{{ entry.german_term }}</span>
 			</h3>
 			<p>{{ entry.description }}</p>
 		</li>

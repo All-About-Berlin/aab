@@ -3,14 +3,17 @@
 	{% set entryType = entry.entry_uri.split('/')[0] %}
 	<li class="{{ entryType }}">
 		<h3>
-			<a href="{{ entry.url }}" rel="bookmark">
-				{% if entry.short_title|default %}
+			{% if entryType == 'docs' %}
+				<a href="{{ entry.url }}" rel="bookmark">{{ entry.english_term }}</a>
+				<span lang="de">{{ entry.german_term }}</span>
+			{% elif entry.short_title|default %}
+				<a href="{{ entry.url }}" rel="bookmark">
 					<span class="no-mobile">{{ entry.title }}</span>
 					<span class="only-mobile no-print" aria-hidden="true">{{ entry.short_title }}</span>
-				{% else %}
-					{{ entry.title }}
-				{% endif %}
-			</a>
+				</a>
+			{% else %}
+				<a href="{{ entry.url }}" rel="bookmark">{{ entry.title }}</a>
+			{% endif %}
 			{% if showDateUpdated|default or showDatePosted|default %}
 				{% if showDateUpdated|default %}
 					<time title="Last updated on {{ entry.date_updated.strftime('%B %-d, %Y') }}" datetime="{{ entry.date_updated.isoformat(timespec='seconds') }}">{{ entry.date_updated.strftime('%B %-d, %Y') }}</time>
