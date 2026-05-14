@@ -37,19 +37,19 @@
 		{% endif %}
 	</div>
 	{% set reviews = entry.related_reviews|default([]) %}
-	{% if reviews|length == 1 %}
+	{% if reviews|length %}
 		<div class="post-reviewers">
 			<i class="icon verified" aria-hidden="true"></i>
-			Verified by <a class="reviewers-link" href="#reviewers">1 expert</a>
-		</div>
-	{% elif reviews|length > 1 %}
-		<div class="post-reviewers">
-			<i class="icon verified" aria-hidden="true"></i>
-			Verified by <a href="#reviewers">{{ reviews|length }} experts</a>
+			Verified by <button
+				aria-label="Show list of reviewers"
+				aria-controls="reviewers"
+				aria-expanded="false"
+				aria-hasmenu="true"
+				class="button link">{{ reviews|length }} expert{% if reviews|length > 1 %}s{% endif %}</button>
 		</div>
 	{% endif %}
 	{% if reviews %}
-		<ul class="hidden" id="reviewers" aria-label="Experts who reviewed this page">
+		<ul id="reviewers" aria-label="Experts who reviewed this page" hidden>
 			{% for review in reviews %}
 				{% set reviewer = review.related_expert[0] %}
 				<li>

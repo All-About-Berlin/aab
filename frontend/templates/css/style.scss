@@ -1158,10 +1158,10 @@ main{
             }
         }
 
-        .post-reviewers a{
+        .post-reviewers button{
             @include expansible;
 
-            &.expanded{
+            &[aria-expanded=true]{
                 @include collapsible;
             }
         }
