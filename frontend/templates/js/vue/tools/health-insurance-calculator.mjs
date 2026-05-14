@@ -466,7 +466,8 @@ export default {
 			</template>
 
 			<template v-if="stage === 'occupation' && !initialOccupation">
-				<p v-if="mode === 'calculator'"><strong>Let's find the right health insurance.</strong> What is your occupation?</p>
+				<h2 v-if="static">Choose health insurance</h2>
+				<p v-if="mode === 'calculator'">Let's find the right health insurance. What is your occupation?</p>
 				<template v-if="mode === 'question'">
 					<h3>What is your occupation?</h3>
 					<p>Your health insurance options depend on what you do.</p>
@@ -707,6 +708,7 @@ export default {
 			<template v-if="stage === 'askABroker'">
 				<div class="form-recipient">
 					<div>
+						<h2 v-if="static">Ask our insurance expert</h2>
 						<p v-if="occupation === 'other'">If your situation is complicated, let our expert help you.</p>
 						<p>Seamus will help you <strong v-text="intentString">choose the best health insurance</strong>. I work with him because he is honest and knowledgeable.</p>
 						<p>He replies on the same day. His help is <strong>100% free</strong>.</p>

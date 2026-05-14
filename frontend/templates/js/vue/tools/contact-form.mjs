@@ -113,6 +113,7 @@ export default {
 			<template v-if="stage === 'contact'">
 				<div class="form-recipient">
 					<div>
+						<h2>Ask our insurance expert</h2>
 						<p>Seamus will answer your questions. He is an insurance expert with {{ broker.yearsOfExperience }} years of experience.</p>
 						<p>He replies on the same day. His help is <strong>100% free</strong>.</p>
 					</div>
