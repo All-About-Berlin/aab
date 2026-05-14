@@ -1,3 +1,18 @@
+(backend_proxy) {
+    @backend path /api/* /admin/*
+    handle @backend {
+        @hasCfIp header CF-Connecting-IP *
+        request_header @hasCfIp X-Real-IP {header.CF-Connecting-IP}
+        @noCfIp not header CF-Connecting-IP *
+        request_header @noCfIp X-Real-IP {remote_host}
+        reverse_proxy backend:80
+    }
+    handle_path /admin/static/* {
+        root * /var/www/api/staticfiles
+        file_server
+    }
+}
+
 (openexchangerates_proxy) {
     handle /api/exchangerates.json {
         cache {
@@ -96,6 +111,7 @@
         rewrite * /404.html
     }
 
+    import backend_proxy
     import openexchangerates_proxy
     import plausible_proxy
 
@@ -156,18 +172,7 @@
     redir /apple-touch-icon* /staticimages/favicon-180.png 301
 
     # Pass /api and /admin requests to the backend
-    @backend path /api/* /admin/*
-    handle @backend {
-        @hasCfIp header CF-Connecting-IP *
-        request_header @hasCfIp X-Real-IP {header.CF-Connecting-IP}
-        @noCfIp not header CF-Connecting-IP *
-        request_header @noCfIp X-Real-IP {remote_host}
-        reverse_proxy backend:80
-    }
-    handle_path /admin/static/* {
-        root * /var/www/api/staticfiles
-        file_server
-    }
+    import backend_proxy
 
     # Appointments API proxy (websockets)
     handle /api/appointments* {
