@@ -23,10 +23,11 @@ class Occupation(models.TextChoices):
 
 
 class Intent(models.TextChoices):
-    GENERAL = "general", "General question"
-    PRIVATE = "private", "Choose private health insurance"
-    PUBLIC = "public", "Choose public health insurance"
-    EXPAT = "expat", "Choose expat health insurance"
+    HEALTH_GENERAL = "health", "Health insurance question"
+    HEALTH_PRIVATE = "private", "Choose private health insurance"
+    HEALTH_PUBLIC = "public", "Choose public health insurance"
+    HEALTH_EXPAT = "expat", "Choose expat health insurance"
+    OTHER = "other", "Other/unknown"
 
 
 class Brokers(models.TextChoices):
@@ -54,7 +55,7 @@ class Case(models.Model):
     has_german_public_insurance = models.BooleanField(default=None, null=True)
     has_eu_public_insurance = models.BooleanField(default=None, null=True)
 
-    intent = models.CharField(max_length=50, choices=Intent, default=Intent.GENERAL)
+    intent = models.CharField(max_length=50, choices=Intent, default=Intent.OTHER)
 
     creation_date = models.DateTimeField(auto_now_add=True)
     question = models.TextField("Question", blank=True)

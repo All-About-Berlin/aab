@@ -97,12 +97,12 @@ export default {
 			email: '',
 			question: '',
 			isLoading: false,
-			intent: 'other',
 			broker: {
 				phoneNumber: '+491626969454',
 				phoneNumberPretty: '+49 162 6969454',
 				email: 'seamus.wolf@horizon65.com',
 			},
+			intent: 'health',
 
 			// Component settings
 			trackAs: `Health insurance ${this.mode}`,
@@ -371,6 +371,8 @@ export default {
 
 							referrer: getReferrer() || '',
 							contact_method: this.contactMethod || 'EMAIL',
+
+							intent: this.intent,
 						}),
 					},
 				);
