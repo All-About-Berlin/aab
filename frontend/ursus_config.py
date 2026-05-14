@@ -242,6 +242,8 @@ ctx["PUBLIC_HOLIDAYS_BY_DATE_JSON"] = json.dumps(
     list(d.isoformat() for d in get_public_holidays(range(date.today().year, date.today().year + 3)).keys())
 )
 
+ctx["SEAMUS_YEARS_OF_EXPERIENCE"] = date.today().year - 2013
+
 # ==============================================================================
 # TECHNICAL
 # ==============================================================================

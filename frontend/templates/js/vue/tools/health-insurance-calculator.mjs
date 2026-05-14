@@ -27,7 +27,7 @@ import multiStageMixin from '/js/vue/mixins/multiStage.mjs';
 import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import QRCode from '/js/libs/qrcode.mjs';
-import { healthInsurance, pflegeversicherung } from '/js/utils/constants.mjs';
+import { healthInsurance, pflegeversicherung, seamusWolf } from '/js/utils/constants.mjs';
 import { formatCurrency } from '/js/utils/currency.mjs';
 import { getHealthInsuranceOptions } from '/js/utils/healthInsurance.mjs';
 import { validateForm } from '/js/utils/form.mjs';
@@ -97,12 +97,8 @@ export default {
 			email: '',
 			question: '',
 			isLoading: false,
-			broker: {
-				phoneNumber: '+491626969454',
-				phoneNumberPretty: '+49 162 6969454',
-				email: 'seamus.wolf@horizon65.com',
-			},
 			intent: 'health',
+			broker: seamusWolf,
 
 			// Component settings
 			trackAs: `Health insurance ${this.mode}`,

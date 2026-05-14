@@ -10,6 +10,13 @@ export const bafog = {
 	bedarfssatz: backendConstants.BAFOG_BEDARFSSATZ,
 }
 
+export const seamusWolf = {
+	email: 'seamus.wolf@horizon65.com',
+	phoneNumber: '+491626969454',
+	phoneNumberPretty: '+49 162 6969454',
+	yearsOfExperience: backendConstants.SEAMUS_YEARS_OF_EXPERIENCE,
+}
+
 export const healthInsurance = {
 	defaultRate: backendConstants.GKV_BASE_RATE_EMPLOYEE/100,
 	selfPayRate: backendConstants.GKV_BASE_RATE_SELF_PAY/100,  // Rate without Krankengeld
