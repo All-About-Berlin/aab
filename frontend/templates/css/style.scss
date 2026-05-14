@@ -274,6 +274,7 @@ $width-main-column: 860px;
     --i-sound: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M73 33.1c-1.1-1.3-3-1.3-4.2-.1l-3 3.1c-1 1-1.1 2.6-.2 3.7 2.3 2.9 3.5 6.5 3.5 10.3 0 3.8-1.2 7.3-3.5 10.3-.9 1.1-.7 2.7.2 3.7l3 3.1c1.2 1.2 3.1 1.2 4.2-.1 3.9-4.7 6.1-10.7 6.1-16.9 0-6.5-2.1-12.4-6.1-17.1z'/><path d='M84.7 18.5a2.9 2.9 0 0 0-4.2.1l-2.8 3.2c-1 1.1-1 2.8.1 3.9 6.3 6.5 9.8 15.2 9.8 24.3 0 9.1-3.6 17.8-9.8 24.4a2.9 2.9 0 0 0-.1 3.9l2.9 3.2c1.1 1.2 3 1.3 4.2.1 8.2-8.4 12.8-19.7 12.8-31.5-.1-11.9-4.7-23.2-12.9-31.6zM47.6 5.2 25 29.8H7.5c-2.7 0-5 2.2-5 5v30.5c0 2.7 2.2 5 5 5H25l22.6 24.5c3.1 3.3 8.6 1.2 8.6-3.4V8.6c0-4.5-5.5-6.7-8.6-3.4z'/></svg>");
     --i-table-of-contents: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='M21.4 14H2.6c-.3 0-.6.3-.6.6v2.8c0 .3.3.6.6.6h18.8c.3 0 .6-.3.6-.6v-2.8c0-.3-.3-.6-.6-.6zm8 0h-2.8c-.3 0-.6.3-.6.6v2.8c0 .3.3.6.6.6h2.8c.3 0 .6-.3.6-.6v-2.8c0-.3-.3-.6-.6-.6zm-8 8H2.6c-.3 0-.6.3-.6.6v2.8c0 .3.3.6.6.6h18.8c.3 0 .6-.3.6-.6v-2.8c0-.3-.3-.6-.6-.6zm8 0h-2.8c-.3 0-.6.3-.6.6v2.8c0 .3.3.6.6.6h2.8c.3 0 .6-.3.6-.6v-2.8c0-.3-.3-.6-.6-.6zm-8-16H2.6c-.3 0-.6.3-.6.6v2.8c0 .3.3.6.6.6h18.8c.3 0 .6-.3.6-.6V6.6c0-.3-.3-.6-.6-.6zm8 0h-2.8c-.3 0-.6.3-.6.6v2.8c0 .3.3.6.6.6h2.8c.3 0 .6-.3.6-.6V6.6c0-.3-.3-.6-.6-.6z'/></svg>");
     --i-loading: url("data:image/svg+xml;utf8,<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M10.14,1.16a11,11,0,0,0-9,8.92A1.59,1.59,0,0,0,2.46,12,1.52,1.52,0,0,0,4.11,10.7a8,8,0,0,1,6.66-6.61A1.42,1.42,0,0,0,12,2.69h0A1.57,1.57,0,0,0,10.14,1.16Z' class='spinner'/>%3Cstyle%3E.spinner%7Btransform-origin%3Acenter%3Banimation%3Aspinner_svv2%20.75s%20infinite%20linear%7D%40keyframes%20spinner_svv2%7B100%25%7Btransform%3Arotate%28360deg%29%7D%7D%3C%2Fstyle%3E%3Cpath%20d%3D%22M10.14%2C1.16a11%2C11%2C0%2C0%2C0-9%2C8.92A1.59%2C1.59%2C0%2C0%2C0%2C2.46%2C12%2C1.52%2C1.52%2C0%2C0%2C0%2C4.11%2C10.7a8%2C8%2C0%2C0%2C1%2C6.66-6.61A1.42%2C1.42%2C0%2C0%2C0%2C12%2C2.69h0A1.57%2C1.57%2C0%2C0%2C0%2C10.14%2C1.16Z%22%20class%3D%22spinner%22%2F%3E</svg>");
+    --i-folder: url("data:image/svg+xml;utf8,<svg viewBox='-150 -150 1500 1600' xmlns='http://www.w3.org/2000/svg'><path d='M1050 1043.6H150a56 56 0 0 1-56.2-56.3V212.6a56 56 0 0 1 56.2-56.3h300c15 0 29.2 6 39.8 16.5L648 331.1h402a56 56 0 0 1 56.3 56.2v600a56 56 0 0 1-56.3 56.3M206.3 931.1h787.5V443.6H625c-14.9 0-29.2-6-39.7-16.5L427 268.8H206.3z'/></svg>");
 }
 
 @include only-phone{
@@ -1112,23 +1113,48 @@ main{
     }
 
     .post-meta {
-        font-size: var(--f-s);
-
         margin: 0 0 var(--xl);
         padding: 0 0 var(--xl);
 
+        display: flex;
+        flex-wrap: wrap;
+        align-items: end;
+        gap: var(--xs) var(--l);
+
         border-bottom: var(--b-box);
 
-        span{
-            white-space: nowrap;
+        .icon{
+            flex: 0 0 auto;
         }
 
-        span + span {
-            margin: 0 0 0 var(--m);
+        > :not(#reviewers), .breadcrumbs :is(ol, li) {
+            font-size: var(--f-s);
+            display: flex;
+            align-items: center;
+            gap: var(--xs);
+            margin: 0;
+        }
 
-            @include only-phone{
-                margin: var(--xs) 0 0;
-                display: block;
+        .breadcrumbs {
+            order: 999;
+
+            li + li:before{ // Separator arrow
+                content: '';
+                display: inline-block;
+                width: 0.8em;
+                height: 0.8em;
+                align-self: center;
+                mask-image: var(--i-expand);
+                mask-position: center right;
+                mask-repeat: no-repeat;
+                background-color: currentColor;
+                opacity: 0.5;
+                transition: transform 0.2s;
+                transform: rotate(-90deg);
+            }
+
+            li:has([aria-current]){
+                display: none;
             }
         }
 
@@ -1143,31 +1169,37 @@ main{
         #reviewers{
             @include widget;
             margin-top: var(--m);
-            font-size: var(--m);
 
             li{
                 display: grid;
-                grid-template-columns: var(--w-img-bio-s) 1fr;
-                grid-template-areas: "photo description";
-                gap: var(--m);
+                grid-template-columns: auto 1fr;
+                grid-template-areas: "photo title" "photo description";
+                gap: var(--xs) var(--m);
                 align-items: center;
 
                 :is(picture, .placeholder){
+                    grid-area: photo;
                     background: var(--c-bg-image) var(--i-logo) no-repeat center / var(--w-logo) auto;
                     width: var(--w-img-bio-s);
-                    height: var(--w-img-bio-s);
+                    aspect-ratio: 1 / 1;
                     border-radius: 50%;
                     overflow: hidden;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
                 }
 
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
+                .reviewer-byline{
+                    grid-area: title;
                 }
-
-                p{
-                    margin: var(--xs) 0;
+                .reviewer-description{
+                    grid-area: description;
+                    > * {
+                        margin: 0;
+                    }
                 }
 
                 + li{
@@ -1177,6 +1209,9 @@ main{
                 }
 
                 @include only-phone{
+                    grid-template-columns: 1fr auto;
+                    grid-template-areas: "title photo" "description description";
+
                     time{
                         display: block;
                         color: var(--c-text-light);
@@ -2940,6 +2975,9 @@ details{
     }
     &.table-of-contents:after{
         mask-image: var(--i-table-of-contents);
+    }
+    &.folder:after{
+        mask-image: var(--i-folder);
     }
 }
 .icon-paragraph{

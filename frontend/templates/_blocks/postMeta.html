@@ -1,14 +1,30 @@
-<div class="post-meta no-print" aria-label="Author and publication date">
-	{% set reviews = entry.related_reviews|default([]) %}
-	<span>
+<div class="post-meta no-print" aria-label="Author, publication date, categories and reviewers">
+	{% if entry.collections|default %}
+		<nav class="breadcrumbs" aria-label="Breadcrumbs">
+			<i class="icon folder" aria-hidden="true"></i>
+			<ol>
+				<li><a href="">Guides</a></li>
+				<li><a href="{{ entry.collections[0].url }}">{{ entry.collections[0].short_title|default(entry.collections[0].title) }}</a></li>
+				<li><a href="{{ entry.url }}" aria-current="page">{{ entry.short_title|default(entry.title) }}</a></li>
+			</ol>
+		</nav>
+	{% endif %}
+	<div>
 		<i class="icon calendar" aria-hidden="true"></i>
+		<span>
 		{% if showPublicationDate|default %}
-			<time datetime="{{ entry.date_created.isoformat(timespec='seconds') }}">Published on {{ entry.date_created.strftime('%B %-d, %Y') }}</time>
+			Published on
 		{% else %}
-			<time datetime="{{ entry.date_updated.isoformat(timespec='seconds') }}">Updated on {{ entry.date_updated.strftime('%B %-d, %Y') }}</time>
+			Updated on
 		{% endif %}
-	</span>
-	<span>
+		{% if showPublicationDate|default %}
+			<time datetime="{{ entry.date_created.isoformat(timespec='seconds') }}">{{ entry.date_created.strftime('%B %-d, %Y') }}</time>
+		{% else %}
+			<time datetime="{{ entry.date_updated.isoformat(timespec='seconds') }}">{{ entry.date_updated.strftime('%B %-d, %Y') }}</time>
+		{% endif %}
+		</span>
+	</div>
+	<div>
 		<i class="icon person" aria-hidden="true"></i>
 		{% if entry.author|default %}
 			{% if entry.author_url|default %}
@@ -19,36 +35,37 @@
 		{% else %}
 			By <a rel="author nofollow" href="{{ SITE_URL }}/about">Nicolas Bouliane</a>
 		{% endif %}
-	</span>
+	</div>
+	{% set reviews = entry.related_reviews|default([]) %}
 	{% if reviews|length == 1 %}
-		<span class="post-reviewers">
+		<div class="post-reviewers">
 			<i class="icon verified" aria-hidden="true"></i>
 			Verified by <a class="reviewers-link" href="#reviewers">1 expert</a>
-		</span>
+		</div>
 	{% elif reviews|length > 1 %}
-		<span class="post-reviewers">
+		<div class="post-reviewers">
 			<i class="icon verified" aria-hidden="true"></i>
 			Verified by <a href="#reviewers">{{ reviews|length }} experts</a>
-		</span>
+		</div>
 	{% endif %}
 	{% if reviews %}
-		<ul class="hidden" id="reviewers">
+		<ul class="hidden" id="reviewers" aria-label="Experts who reviewed this page">
 			{% for review in reviews %}
 				{% set reviewer = review.related_expert[0] %}
 				<li>
 					{% if reviewer.picture|default %}
-						{% image reviewer.picture, css_class="profile-picture", alt=reviewer.name, sizes="75px" %}
+						{% image reviewer.picture, alt=reviewer.name, sizes="75px" %}
 					{% else%}
-						<div class="placeholder"></div>
+						<div class="placeholder no-mobile" aria-hidden="true"></div>
 					{% endif %}
-					<div>
-						<p>
+						<div class="reviewer-byline">
 							<strong><span class="no-mobile">Verified by </span> {{ reviewer.name }}</strong>
 							<span class="no-mobile"> on </span>
 							<time datetime="{{ review.date_reviewed.isoformat(timespec='seconds') }}">{{ review.date_reviewed.strftime('%B %-d, %Y') }}</time>
-						</p>
-						{{ reviewer.body|render|safe }}
-					</div>
+						</div>
+						<div class="reviewer-description">
+							{{ reviewer.body|render|safe }}
+						</div>
 				</li>
 			{% endfor %}
 		</ul>

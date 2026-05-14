@@ -74,14 +74,34 @@
 									"name": "Guides"
 								}
 							},
-							{
-								"@type": "ListItem",
-								"position": 3,
-								"item": {
-									"@id": "{{ entry.url }}",
-									"name": {{ entry.title|tojson }}
+							{% if entry.collections|default %}
+								{% set collection = entry.collections[0] %}
+								{
+									"@type": "ListItem",
+									"position": 3,
+									"item": {
+										"@id": "{{ collection.url }}",
+										"name": {{ collection.short_title|default(collection.title)|tojson }}
+									}
+								},
+								{
+									"@type": "ListItem",
+									"position": 4,
+									"item": {
+										"@id": "{{ entry.url }}",
+										"name": {{ entry.title|tojson }}
+									}
 								}
-							}
+							{% else %}
+								{
+									"@type": "ListItem",
+									"position": 3,
+									"item": {
+										"@id": "{{ entry.url }}",
+										"name": {{ entry.title|tojson }}
+									}
+								}
+							{% endif %}
 						]
 					},
 					"author": {
