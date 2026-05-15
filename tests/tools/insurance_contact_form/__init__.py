@@ -1,9 +1,9 @@
 def get_form(page):
-    return page.get_by_role("group", name="Contact form")
+    return page.get_by_role("group", name="Insurance contact form")
 
 
 def load_form(page):
-    page.goto("/tests/tools/contact-form?ref=test-referrer")
+    page.goto("/tests/tools/insurance-contact-form?ref=test-referrer")
 
 
 def assert_stage(page, expected_stage: str):

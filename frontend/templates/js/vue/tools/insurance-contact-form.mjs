@@ -12,7 +12,7 @@ import { seamusWolf } from '/js/utils/constants.mjs';
 import { validateForm } from '/js/utils/form.mjs';
 import { getReferrer } from '/js/utils/tracking.mjs';
 
-import metadata from '/js/vue/tools/contact-form.metadata.json' with { type: 'json' };
+import metadata from '/js/vue/tools/insurance-contact-form.metadata.json' with { type: 'json' };
 
 export default {
 	components: {
@@ -34,7 +34,7 @@ export default {
 			email: '',
 			question: '',
 			isLoading: false,
-			trackAs: 'Contact form',
+			trackAs: 'Insurance contact form',
 			stages: ['contact', 'thank-you', 'error'],
 			broker: seamusWolf,
 		};
@@ -103,7 +103,7 @@ export default {
 	},
 	template: `
 		<collapsible
-			class="contact-form"
+			class="insurance-contact-form"
 			:aria-label="metadata.label"
 			:aria-description="metadata.description"
 			:data-stage="stage"
