@@ -3,12 +3,9 @@
 		{% include "_blocks/tableOfContents.html" %}
 	{% endwith %}
 	{% if entry.get('call_to_action') == 'askOurInsuranceExpert' %}
-		<hr>
-		<h2>Need help?</h2>
 		<a class="button whatsapp cta" href="/guides/german-health-insurance#need-help">
 			{% include "_icons/whatsapp.svg" %} Ask our insurance expert
 		</a>
-		<small>Get free advice in English on WhatsApp</small>
 	{% else %}
 		{% include "_blocks/newsletterForm.html" %}
 	{% endif %}
