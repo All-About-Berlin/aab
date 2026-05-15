@@ -1,4 +1,6 @@
 :root, .map{
+    --b-radius: var(--m);
+
     --c-highlight: #2fc68e;
     --c-highlight-green: #2fc68e;
     --c-text-error: #{darken(#da513d, 20%)};
@@ -64,26 +66,35 @@
 }
 
 main .intro{
-
     text-align: left;
-    background: var(--c-highlight);
-    padding-top: var(--xxxl);
-    padding-bottom: var(--xxxl);
+    padding-top: var(--m);
+    padding-bottom: var(--m);
 
-    * {
-        --c-text-heading: #fff;
-        --c-text: #fff;
-        --c-highlight: #1E7F5B;
-        --c-highlight-green: transparent;
-        --c-border-clickable-hover: #1E7F5B;
-        color: #fff;
+    &:has(h1:last-child){
+        box-shadow: none;
     }
 
-    .button:not(.link){
-        background: #0002;
+    &:has(h1:not(:last-child)){
+        text-align: left;
+        background: var(--c-highlight);
+        padding-top: var(--xxxl);
+        padding-bottom: var(--xxxl);
 
-        &:hover{
-            --c-text-heading: #000;
+        * {
+            --c-text-heading: #fff;
+            --c-text: #fff;
+            --c-highlight: #1E7F5B;
+            --c-highlight-green: transparent;
+            --c-border-clickable-hover: #1E7F5B;
+            color: #fff;
+        }
+
+        .button:not(.link){
+            background: #0002;
+
+            &:hover{
+                --c-text-heading: #000;
+            }
         }
     }
 }

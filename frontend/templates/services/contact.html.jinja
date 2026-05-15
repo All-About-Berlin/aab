@@ -4,6 +4,9 @@
 
 {% block main %}
 	<main aria-label="Main page">
+		<header class="section intro">
+			<h1>{{ entry.intro_title }}</h1>
+		</header>
 		{% tool "contact-form", static=True %}
 	</main>
 {% endblock %}

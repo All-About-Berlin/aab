@@ -466,7 +466,6 @@ export default {
 			</template>
 
 			<template v-if="stage === 'occupation' && !initialOccupation">
-				<h2 v-if="static">Choose health insurance</h2>
 				<p v-if="mode === 'calculator'">Let's find the right health insurance. What is your occupation?</p>
 				<template v-if="mode === 'question'">
 					<h3>What is your occupation?</h3>
