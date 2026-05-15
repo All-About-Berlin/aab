@@ -1,35 +1,43 @@
 import re
+import pytest
 from playwright.sync_api import expect
-from . import assert_stage, get_form, load_form
 
 
-def test_snapshot(page, test_screenshot):
-    load_form(page)
-    assert_stage(page, "contact")
-    test_screenshot(page, get_form(page))
+@pytest.fixture
+def insurance_form(page):
+    page.goto("/tests/tools/insurance-contact-form?ref=test-referrer")
+    return page.get_by_role("group", name="Insurance contact form")
 
 
-def test_snapshot_whatsapp(page, test_screenshot):
-    load_form(page)
+def assert_stage(form, expected_stage: str):
+    stage = form.get_attribute("data-stage")
+    assert stage == expected_stage, f"Expected stage '{expected_stage}', got '{stage}'"
+
+
+def test_snapshot(insurance_form, test_screenshot):
+    assert_stage(insurance_form, "contact")
+    test_screenshot(insurance_form.page, insurance_form)
+
+
+def test_snapshot_whatsapp(insurance_form, test_screenshot):
+    insurance_form.page.click("text=WhatsApp")
+    test_screenshot(insurance_form.page, insurance_form)
+
+
+def test_snapshot_email(insurance_form, test_screenshot):
+    insurance_form.page.click("text=Email")
+    test_screenshot(insurance_form.page, insurance_form)
+
+
+def test_by_whatsapp(insurance_form, test_screenshot):
+    page = insurance_form.page
     page.click("text=WhatsApp")
-    test_screenshot(page, get_form(page))
 
-
-def test_snapshot_email(page, test_screenshot):
-    load_form(page)
-    page.click("text=Email")
-    test_screenshot(page, get_form(page))
-
-
-def test_by_whatsapp(page, test_screenshot):
-    load_form(page)
-    page.click("text=WhatsApp")
-
-    expect(get_form(page)).not_to_have_class(re.compile(r".*show-errors.*"))
+    expect(insurance_form).not_to_have_class(re.compile(r".*show-errors.*"))
     page.locator(".button.whatsapp").click()
-    expect(get_form(page)).to_have_class(re.compile(r".*show-errors.*"))
-    test_screenshot(page, get_form(page))
-    assert_stage(page, "contact")
+    expect(insurance_form).to_have_class(re.compile(r".*show-errors.*"))
+    test_screenshot(page, insurance_form)
+    assert_stage(insurance_form, "contact")
 
     page.get_by_label("Your name").fill("John Doe")
 
@@ -43,22 +51,22 @@ def test_by_whatsapp(page, test_screenshot):
     assert response_data["contact_method"] == "WHATSAPP"
     assert response_data["referrer"] == "test-referrer"
 
-    test_screenshot(page, get_form(page))
-    assert_stage(page, "thank-you")
+    test_screenshot(page, insurance_form)
+    assert_stage(insurance_form, "thank-you")
 
     page.get_by_label("Go back").click()
-    assert_stage(page, "contact")
+    assert_stage(insurance_form, "contact")
 
 
-def test_by_email(page, test_screenshot):
-    load_form(page)
+def test_by_email(insurance_form, test_screenshot):
+    page = insurance_form.page
     page.click("text=Email")
 
-    expect(get_form(page)).not_to_have_class(re.compile(r".*show-errors.*"))
+    expect(insurance_form).not_to_have_class(re.compile(r".*show-errors.*"))
     page.get_by_role("button", name="Ask Seamus").click()
-    expect(get_form(page)).to_have_class(re.compile(r".*show-errors.*"))
-    test_screenshot(page, get_form(page))
-    assert_stage(page, "contact")
+    expect(insurance_form).to_have_class(re.compile(r".*show-errors.*"))
+    test_screenshot(page, insurance_form)
+    assert_stage(insurance_form, "contact")
 
     page.get_by_label("Your name").fill("John Doe")
     page.get_by_label("Email address").fill("j.doe@example.com")
@@ -75,8 +83,8 @@ def test_by_email(page, test_screenshot):
     assert response_data["contact_method"] == "EMAIL"
     assert response_data["referrer"] == "test-referrer"
 
-    test_screenshot(page, get_form(page))
-    assert_stage(page, "thank-you")
+    test_screenshot(page, insurance_form)
+    assert_stage(insurance_form, "thank-you")
 
     page.get_by_label("Go back").click()
-    assert_stage(page, "contact")
+    assert_stage(insurance_form, "contact")

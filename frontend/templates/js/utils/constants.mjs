@@ -12,8 +12,7 @@ export const bafog = {
 
 export const seamusWolf = {
 	email: 'seamus.wolf@horizon65.com',
-	phoneNumber: '+491626969454',
-	phoneNumberPretty: '+49 162 6969454',
+	phoneNumber: '+49 162 6969454',
 	yearsOfExperience: backendConstants.SEAMUS_YEARS_OF_EXPERIENCE,
 }
 

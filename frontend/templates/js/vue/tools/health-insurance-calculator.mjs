@@ -98,7 +98,6 @@ export default {
 			question: '',
 			isLoading: false,
 			intent: 'health',
-			broker: seamusWolf,
 
 			// Component settings
 			trackAs: `Health insurance ${this.mode}`,
@@ -242,15 +241,24 @@ export default {
 				expat: 'choose expat health insurance',
 			}[this.intent] || 'choose the best health insurance'
 		},
+		recipientEmail() {
+			return seamusWolf.email;
+		},
+		recipientWhatsapp() {
+			return seamusWolf.phoneNumber;
+		},
+		cleanRecipientWhatsapp() {
+			return this.recipientWhatsapp.replace(/[^0-9+]/g, '');
+		},
 		whatsappMessage(){
 			return `Hi Seamus, I am ${this.fullName}. Can you help me ${this.intentString}? ${this.personSummary}`;
 		},
 		whatsappUrl(){
-			return `https://wa.me/${this.broker.phoneNumber}?text=${encodeURIComponent(this.whatsappMessage)}`;
+			return `https://wa.me/${this.cleanRecipientWhatsapp}?text=${encodeURIComponent(this.whatsappMessage)}`;
 		},
 		qrCode(){
 			var qrcode = new QRCode({
-				content: `https://wa.me/${this.broker.phoneNumber}`,
+				content: `https://wa.me/${this.cleanRecipientWhatsapp}`,
 				width: 150,
 				height: 150,
 				padding: 0,
@@ -466,7 +474,7 @@ export default {
 			</template>
 
 			<template v-if="stage === 'occupation' && !initialOccupation">
-				<p v-if="mode === 'calculator'">Let's find the right health insurance. What is your occupation?</p>
+				<p v-if="mode === 'calculator'"><strong>Let's find the right health insurance.</strong> What is your occupation?</p>
 				<template v-if="mode === 'question'">
 					<h3>What is your occupation?</h3>
 					<p>Your health insurance options depend on what you do.</p>
@@ -707,7 +715,6 @@ export default {
 			<template v-if="stage === 'askABroker'">
 				<div class="form-recipient">
 					<div>
-						<h2 v-if="static">Ask our insurance expert</h2>
 						<p v-if="occupation === 'other'">If your situation is complicated, let our expert help you.</p>
 						<p>Seamus will help you <strong v-text="intentString">choose the best health insurance</strong>. I work with him because he is honest and knowledgeable.</p>
 						<p>He replies on the same day. His help is <strong>100% free</strong>.</p>
@@ -784,7 +791,7 @@ export default {
 							To chat with Seamus, <a :href="whatsappUrl" target="_blank">open WhatsApp</a> <span class="no-mobile">or scan this QR code</span>.
 						</p>
 						<p>
-							His number is <strong class="selectable">{{ broker.phoneNumberPretty }}</strong>.
+							His number is <strong class="selectable">{{ recipientWhatsapp }}</strong>.
 						</p>
 					</div>
 					<svg class="no-mobile" v-html="qrCode" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 150 150"></svg>
@@ -802,7 +809,7 @@ export default {
 			</template>
 
 			<template v-if="stage === 'thank-you' && contactMethod === 'EMAIL'">
-				<p><strong>Thank you!</strong> Seamus got your message. You will get an email from <a :href="'mailto:' + broker.email">{{ broker.email }}</a> in the next 24 hours. If you don't get a response, check your spam folder.</p>
+				<p><strong>Thank you!</strong> Seamus got your message. You will get an email from <a :href="'mailto:' + recipientEmail">{{ recipientEmail }}</a> in the next 24 hours. If you don't get a response, check your spam folder.</p>
 				<hr>
 				<div class="buttons bar">
 					<button aria-label="Go back" class="button" @click="goToStart()">
