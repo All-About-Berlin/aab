@@ -104,3 +104,8 @@ main > .collapsible{
     background-color: var(--c-bg-page);
     margin: 0;
 }
+
+.form-recipient img{
+    border-radius: var(--b-radius);
+    transform: rotate(3deg);
+}
