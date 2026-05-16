@@ -161,8 +161,7 @@ export default {
 						</button>
 						<a v-if="contactMethod === 'WHATSAPP'" :href="whatsappUrl" @click="createCase" class="button whatsapp" :disabled="isLoading" target="_blank">
 							<icon-whatsapp/>
-							<span class="only-mobile">Start chat</span>
-							<span class="no-mobile">Start WhatsApp chat</span>
+							Chat with {{ recipientName }}
 						</a>
 					</div>
 				</template>

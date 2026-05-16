@@ -25,7 +25,7 @@ export default {
 			:static="static">
 			<template v-slot:header>Ask our health insurance expert</template>
 			<template v-slot:description>
-				<h2>Ask our insurance expert</h2>
+				<h2 class="no-mobile">Ask our insurance expert</h2>
 				<p>Seamus will answer your questions. He is an insurance expert with {{ seamusWolf.yearsOfExperience }} years of experience.</p>
 				<p>He replies on the same day. His help is <strong>100% free</strong>.</p>
 			</template>

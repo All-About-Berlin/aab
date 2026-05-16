@@ -3776,6 +3776,11 @@ details{
 
     @include only-phone{
         grid-template-columns: 1fr;
+
+        > img{
+            order: -1; // Put before text
+            width: var(--w-img-bio-l);
+        }
     }
 }
 
