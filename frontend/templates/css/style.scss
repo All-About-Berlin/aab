@@ -755,7 +755,6 @@ body > header {
                 font-size: var(--xl);
                 padding-left: calc(var(--padding-nav-item) + var(--w-logo) + var(--s));
                 line-height: var(--height-header);
-                font-family: var(--font-family-header);
                 letter-spacing:-0.03em;
 
                 // Hide "All About Berlin" in the header if it doesn't fit
