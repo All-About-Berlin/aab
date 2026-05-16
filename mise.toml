@@ -162,13 +162,14 @@ quiet = true
 depends = ["wait-for-frontend --bundle-js"]
 run = """
 echo "[$(date +'%H:%M:%S')] Running UI tests..."
-pytest tests
+pytest ${@:-tests}
 """
 
 [tasks.fix-snapshots]
 depends = ["wait-for-frontend --bundle-js"]
 run = """
-pytest tests --lf --update-snapshots
+echo "[$(date +'%H:%M:%S')] Updating snapshots for UI tests..."
+pytest ${@:-tests} --update-snapshots
 """
 
 [tasks.test]
