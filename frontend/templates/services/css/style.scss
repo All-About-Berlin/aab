@@ -96,6 +96,11 @@ main .intro{
                 --c-text-heading: #000;
             }
         }
+
+        @include full-width-site{
+            // Remove gap before header
+            margin-top: calc(var(--m) * -1);
+        }
     }
 }
 

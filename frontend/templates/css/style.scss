@@ -899,7 +899,7 @@ body > header {
         }
 
         // Remove gap before content
-        + main > article:first-child{
+        + main > :is(article):first-child{
             margin-top: calc(var(--m) * -1);
         }
     }
