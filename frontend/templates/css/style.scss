@@ -704,7 +704,6 @@ body{
 body > header {
     grid-area: header;
     display: grid;
-    box-shadow: var(--shadow-l);
 
     // Narrower page borders on the parent element, because nav
     // items have padding to highlight their background on hover.
@@ -741,13 +740,15 @@ body > header {
             flex: 0 0 fit-content;
             height: var(--h-header);
 
-            &[aria-expanded]{
-                @include expansible;
-            }
-            &[aria-expanded=true]{
-                background: var(--c-bg-page)!important;
-                color: var(--c-text-heading);
-                @include collapsible;
+            @include not-phone{
+                &[aria-expanded]{
+                    @include expansible;
+                }
+                &[aria-expanded=true]{
+                    background: var(--c-bg-page)!important;
+                    color: var(--c-text-heading);
+                    @include collapsible;
+                }
             }
 
             &[rel=home]{  // Logo
@@ -822,6 +823,12 @@ body > header {
         box-sizing: border-box;
         border:var(--b-box);
         border-top:none;
+        box-shadow: var(--shadow-l);
+
+        position: absolute;
+        z-index: 9999;
+        justify-self: flex-end;
+        top: var(--h-header);
 
         display: grid;
         gap: var(--l);
@@ -884,6 +891,13 @@ body > header {
                     margin-top: var(--xs);
                 }
             }
+        }
+
+        > a {
+            font-weight: 600;
+            border-top: var(--b-box);
+            padding-top: var(--l);
+            text-align: center;
         }
     }
 
