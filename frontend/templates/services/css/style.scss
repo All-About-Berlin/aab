@@ -90,7 +90,16 @@ main .intro{
         }
 
         .button:not(.link){
-            background: #0002;
+            background: transparent;
+
+            &.primary{
+                color: #000!important;
+                border-color: transparent;
+                background: #fff;
+                &:hover{
+                    border-color: var(--c-highlight);
+                }
+            }
 
             &:hover{
                 --c-text-heading: #000;
@@ -110,7 +119,37 @@ main > .collapsible{
     margin: 0;
 }
 
+.section.transparent{
+    background: transparent;
+    box-shadow: none;
+}
+
+.two-columns{
+    :is(h2, h3, h4){
+        color: var(--c-text);
+    }
+}
+
 .form-recipient img{
     border-radius: var(--b-radius);
     transform: rotate(3deg);
+}
+
+.price-table{
+    min-width: 100%;
+
+    th{
+        font-weight: bold;
+        color: var(--c-text-heading);
+    }
+    tbody{
+        border-top: var(--b-box);
+    }
+    :is(th, td){
+        padding: var(--xs) var(--m);
+
+        &:not(:first-child){
+            border-left: var(--b-box);
+        }
+    }
 }

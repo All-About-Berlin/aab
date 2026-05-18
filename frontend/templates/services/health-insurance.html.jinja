@@ -5,18 +5,92 @@
 {% block main %}
 	<main aria-label="Main page">
 		<header class="section intro article-body">
-			<h1>{{ entry.intro_title }}</h1>
-			<small>From €{{HEALTH_INSURANCE_MIN_COST|cur}} per month</small>
-			<ul>
-				<li class="list-yes">Valid for your visa application</li>
-				<li class="list-yes">Digital, English-speaking support</li>
-			</ul>
+			<h1>Health insurance? Sorted.</h1>
+			<p>We help you get the right coverage for the best price, for free.</p>
 			<div class="buttons bar left">
-				<a class="button primary" href="#calculator">Get insured</a>
-				<a class="button" href="#contact">Talk to an expert</a>
+				<a class="button primary" href="#calculator">Choose health insurance</a>
+				<a class="button" href="#contact">Ask our expert</a>
 			</div>
 		</header>
 		{% tool "health-insurance-calculator", static=True, id="calculator" %}
+		<section class="section">
+			<h2>Prices</h2>
+			<p>To get an accurate price, <a href="">tell us more about you</a>. Your options depend on your situation.</p>
+			<table class="price-table">
+				<thead>
+					<tr>
+						<th></th>
+						<th scope="col">Expat</th>
+						<th scope="col">Public</th>
+						<th scope="col">Private</th>
+					</tr>
+					<tr>
+						<th scope="row">Price</th>
+						<td>From €200/month</td>
+						<td>From €200/month</td>
+						<td>From €200/month</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row"></th>
+						<td>From €200/month</td>
+						<td>From €200/month</td>
+						<td>From €200/month</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th scope="row"></th>
+						<td scope="col">
+							<a href="">Choose expat</a>
+						</td>
+						<td scope="col">
+							<a href="">Choose public</a>
+						</td>
+						<td scope="col">
+							<a href="">Choose private</a>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</section>
+		<section class="section transparent">
+			<div class="two-columns">
+				<div>
+					<h3>Why get health insurance?</h3>
+					<p>Because it's required to live in Germany or apply for a German visa. It pays for your healthcare when you are sick.</p>
+				</div>
+				<div>
+					<h3>Public, private or expat?</h3>
+					<p>There are 3 types of health insurance and hundreds of options. We help you pick the best option for your situation.</p>
+				</div>
+			</div>
+			<div class="buttons bar">
+				<a href="https://allaboutberlin.com/guides/german-health-insurance" class="internal-link">Learn how health insurance works</a>
+			</div>
+		</section>
 		{% tool "health-insurance-calculator", mode="question", static=True, id="contact" %}
+		<section class="section transparent">
+			<h2 align="center">Why get insured with us?</h2>
+			<div class="two-columns">
+				<div>
+					<h3>Perfect for a German visa</h3>
+					<p>Our insurance is accepted by German embassies, consulates and immigration offices, for any type of visa.</p>
+				</div>
+				<div>
+					<h3>Get more, pay less</h3>
+					<p>Are you paying too much for health insurance? We help you get better coverage at a lower price, for free.</p>
+				</div>
+				<div>
+					<h3>We're on your side</h3>
+					<p>We are independent brokers. We give honest, neutral advice, and we only sell you something when you need it.</p>
+				</div>
+				<div>
+					<h3>Truly personalised advice</h3>
+					<p>When it comes to your future, we don't believe in "one size fits all". Each decision is a conversation, and we're here for it.</p>
+				</div>
+			</div>
+		</section>
 	</main>
 {% endblock %}

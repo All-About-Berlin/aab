@@ -1,6 +1,6 @@
 ---
-Title: German health insurance
-Intro_title: Health insurance that works
+Title: Get German health insurance
+Intro_title: The right health insurance
 Intro_subtitle: Get affordable coverage, picked just for you.
 Description: Our expert helps you choose the best German health insurance.
 Date_created: 2026-05-04
