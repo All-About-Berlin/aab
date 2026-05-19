@@ -9,3 +9,4 @@ class CaseViewSet(MessageViewSet):
 
     def perform_create(self, serializer):
         serializer.save(site=self.request.get_host())
+        self._maybe_subscribe_to_newsletter(self.request, serializer.instance.email)
