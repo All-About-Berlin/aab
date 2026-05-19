@@ -146,7 +146,7 @@ class ResidencePermitFeedbackViewSet(FeedbackViewSet):
             filters["first_response_date__isnull"] = False
         queryset = self.queryset.filter(**filters)
         if self.action == "list":
-            order_by = self.request.query_params.get("order_by", "creation_date")
+            order_by = self.request.query_params.get("order_by", "modification_date")
             valid_fields = {f.name for f in self.queryset.model._meta.get_fields() if hasattr(f, "name")}
             if order_by not in valid_fields:
                 raise DRFValidationError({"order_by": f"Invalid field: {order_by}"})
