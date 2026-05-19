@@ -586,6 +586,42 @@ class ResidencePermitFeedbackTestCase(FeedbackEndpointMixin, APITestCase):
         self.assertEqual(response["stats"]["start_to_finish"]["all_time"]["percentile_20"], (10 - 1) * 3)
         self.assertEqual(response["stats"]["start_to_finish"]["all_time"]["percentile_80"], 40 * 3)
 
+    def _make_feedback(self, application_date, first_response_date, pick_up_date=None):
+        return self.model.objects.create(
+            application_date=application_date,
+            first_response_date=first_response_date,
+            pick_up_date=pick_up_date,
+            department="E2",
+            residence_permit_type="BLUE_CARD",
+        )
+
+    def test_order_by_default(self):
+        obj1 = self._make_feedback(date(2023, 1, 1), date(2023, 2, 1))
+        obj2 = self._make_feedback(date(2022, 1, 1), date(2022, 2, 1))
+        obj3 = self._make_feedback(date(2024, 1, 1), date(2024, 2, 1))
+        self.model.objects.filter(pk=obj1.pk).update(creation_date=timezone.now() - timedelta(days=10))
+        self.model.objects.filter(pk=obj2.pk).update(creation_date=timezone.now() - timedelta(days=5))
+        self.model.objects.filter(pk=obj3.pk).update(creation_date=timezone.now() - timedelta(days=1))
+
+        response = self.client.get(self.endpoint).json()
+
+        dates = [r["application_date"] for r in response["results"]]
+        self.assertEqual(dates, ["2024-01-01", "2022-01-01", "2023-01-01"])
+
+    def test_order_by_valid_field(self):
+        self._make_feedback(date(2022, 1, 1), date(2022, 2, 1), pick_up_date=date(2024, 6, 1))
+        self._make_feedback(date(2024, 1, 1), date(2024, 2, 1), pick_up_date=None)
+        self._make_feedback(date(2023, 1, 1), date(2023, 2, 1), pick_up_date=date(2023, 6, 1))
+
+        response = self.client.get(f"{self.endpoint}?order_by=pick_up_date").json()
+
+        pick_up_dates = [r["pick_up_date"] for r in response["results"]]
+        self.assertEqual(pick_up_dates, ["2024-06-01", "2023-06-01", None])
+
+    def test_order_by_invalid_field_400(self):
+        response = self.client.get(f"{self.endpoint}?order_by=not_a_real_field")
+        self.assertEqual(response.status_code, 400)
+
 
 class CitizenshipFeedbackTestCase(FeedbackEndpointMixin, APITestCase):
     model = CitizenshipFeedback
@@ -735,6 +771,28 @@ class CitizenshipFeedbackTestCase(FeedbackEndpointMixin, APITestCase):
         self.assertEqual(response["stats"]["start_to_finish"]["all_time"]["count"], 50)
         self.assertEqual(response["stats"]["start_to_finish"]["all_time"]["percentile_20"], (10 - 1) * 2)
         self.assertEqual(response["stats"]["start_to_finish"]["all_time"]["percentile_80"], 40 * 2)
+
+    def _make_feedback(self, application_date, first_response_date, appointment_date=None):
+        return self.model.objects.create(
+            application_date=application_date,
+            first_response_date=first_response_date,
+            appointment_date=appointment_date,
+            department="S2",
+        )
+
+    def test_order_by_valid_field(self):
+        self._make_feedback(date(2024, 1, 1), date(2024, 2, 1), appointment_date=None)
+        self._make_feedback(date(2023, 1, 1), date(2023, 2, 1), appointment_date=date(2023, 6, 1))
+        self._make_feedback(date(2022, 1, 1), date(2022, 2, 1), appointment_date=date(2024, 6, 1))
+
+        response = self.client.get(f"{self.endpoint}?order_by=appointment_date").json()
+
+        appointment_dates = [r["appointment_date"] for r in response["results"]]
+        self.assertEqual(appointment_dates, ["2024-06-01", "2023-06-01", None])
+
+    def test_order_by_invalid_field_400(self):
+        response = self.client.get(f"{self.endpoint}?order_by=not_a_real_field")
+        self.assertEqual(response.status_code, 400)
 
 
 class PlaceSuggestionTestCase(APITestCase):

@@ -20,6 +20,7 @@ from forms.serializers import (
     TaxIdRequestFeedbackReminderSerializer,
 )
 from forms.utils import readable_date_range, readable_duration, subscribe_to_newsletter
+from django.db.models import F
 from rest_framework import mixins, permissions, viewsets
 from rest_framework.exceptions import ValidationError as DRFValidationError
 from rest_framework.serializers import as_serializer_error
@@ -143,33 +144,45 @@ class ResidencePermitFeedbackViewSet(FeedbackViewSet):
         if self.action == "list":
             # Filter out useless feedback, but allow retrieving a single item anyway
             filters["first_response_date__isnull"] = False
-        return self.queryset.filter(**filters)
+        queryset = self.queryset.filter(**filters)
+        if self.action == "list":
+            order_by = self.request.query_params.get("order_by", "creation_date")
+            valid_fields = {f.name for f in self.queryset.model._meta.get_fields() if hasattr(f, "name")}
+            if order_by not in valid_fields:
+                raise DRFValidationError({"order_by": f"Invalid field: {order_by}"})
+            queryset = queryset.order_by(F(order_by).desc(nulls_last=True))
+        return queryset
 
     def get_extra_filters(self, request):
         return {param: v for param in self.filter_params if (v := request.query_params.get(param))}
 
     def get_stats(self, request) -> dict[str, Any]:
         extra_filters = self.get_extra_filters(request)
+        order_by = request.query_params.get("order_by")
         return {
             "first_response_date": ResidencePermitFeedback.objects.wait_times(
                 column_start="application_date",
                 column_end="first_response_date",
                 extra_filters=extra_filters,
+                order_by=order_by,
             ),
             "appointment_date": ResidencePermitFeedback.objects.wait_times(
                 column_start="first_response_date",
                 column_end="appointment_date",
                 extra_filters=extra_filters,
+                order_by=order_by,
             ),
             "pick_up_date": ResidencePermitFeedback.objects.wait_times(
                 column_start="appointment_date",
                 column_end="pick_up_date",
                 extra_filters=extra_filters,
+                order_by=order_by,
             ),
             "start_to_finish": ResidencePermitFeedback.objects.wait_times(
                 column_start="application_date",
                 column_end="pick_up_date",
                 extra_filters=extra_filters,
+                order_by=order_by,
             ),
         }
 
@@ -210,21 +223,25 @@ class CitizenshipFeedbackViewSet(ResidencePermitFeedbackViewSet):
 
     def get_stats(self, request):
         extra_filters = self.get_extra_filters(request)
+        order_by = request.query_params.get("order_by")
         return {
             "first_response_date": CitizenshipFeedback.objects.wait_times(
                 column_start="application_date",
                 column_end="first_response_date",
                 extra_filters=extra_filters,
+                order_by=order_by,
             ),
             "appointment_date": CitizenshipFeedback.objects.wait_times(
                 column_start="first_response_date",
                 column_end="appointment_date",
                 extra_filters=extra_filters,
+                order_by=order_by,
             ),
             "start_to_finish": CitizenshipFeedback.objects.wait_times(
                 column_start="application_date",
                 column_end="appointment_date",
                 extra_filters=extra_filters,
+                order_by=order_by,
             ),
         }
 

@@ -309,7 +309,9 @@ class FeedbackManager(models.Manager):
             "count": 0,
         }
 
-    def wait_times(self, column_start: str, column_end: str, extra_filters: dict[str, str] = {}) -> dict[str, Any]:
+    def wait_times(
+        self, column_start: str, column_end: str, extra_filters: dict[str, str] = {}, order_by: str | None = None
+    ) -> dict[str, Any]:
         twelve_months_ago = date.today().replace(day=1) - relativedelta(months=12)  # First day of the month
 
         months_to_show = 24
