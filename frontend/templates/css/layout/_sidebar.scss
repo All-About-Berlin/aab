@@ -63,7 +63,7 @@
             inset: auto var(--w-page-border) var(--w-page-border) auto;
             display: flex;
             gap: var(--s);
-            animation: 0.2s fade-in;
+            animation: 0.2s fade-in; // Fade in on scroll
 
             .button{
                 background: var(--c-bg-widget-opaque);

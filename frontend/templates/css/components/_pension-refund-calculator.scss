@@ -1,0 +1,24 @@
+.pension-refund-calculator {
+    .form-group{
+        grid-template-columns: 215px minmax(0, 1fr);
+        @include only-phone{
+            grid-template-columns: minmax(0, 1fr);
+        }
+    }
+
+    // TODO: Merge with .email-form
+    .email-reminder{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: var(--s);
+        margin-bottom: var(--s);
+
+        input{
+            max-width: none;
+        }
+
+        @include only-phone{
+            grid-template-columns: 1fr;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-import { showTooltip } from '/js/components/tooltip.mjs';
+import { showTooltip } from '/js/components/glossary-tooltip.mjs';
 
 export default {
 	data() {

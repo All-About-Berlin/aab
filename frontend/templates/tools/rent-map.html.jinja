@@ -6,7 +6,7 @@
 	{{ super() }}
 	{% js %}
 		import { formatCurrency } from '/js/utils/currency.mjs';
-		import { showTooltip } from '/js/components/tooltip.mjs';
+		import { showTooltip } from '/js/components/glossary-tooltip.mjs';
 
 		function highlightPlz(map, feature){
 			map.fitBounds(getFeatureBounds(feature), {

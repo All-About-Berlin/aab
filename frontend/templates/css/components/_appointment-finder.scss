@@ -1,0 +1,89 @@
+.appointment-finder {
+    h3{ margin: 0 0 var(--m); }
+    p{ @include text-block-compact; }
+
+    .months{
+        display: grid;
+        gap: var(--m);
+        grid-template-columns: 1fr 1fr;
+
+        @include only-phone{
+            grid-template-columns: 1fr;
+
+            .month.unavailable:last-child{
+                display: none;
+            }
+        }
+
+        .month{
+            border-radius: var(--b-radius);
+            overflow: hidden;
+            border: var(--b-box);
+
+            & > time{
+                @include heading;
+                display: block;
+                text-align: center;
+                padding: var(--xs) 0;
+            }
+
+            .no-appointments{
+                border-top: var(--b-box);
+                text-align: center;
+                color: var(--c-text-light);
+                padding: var(--xs) 0;
+            }
+
+            .days{
+                &.weekdays{
+                    color: var(--c-text-heading);
+                    abbr{ text-decoration: none; }
+                }
+
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                border-top: var(--b-box);
+                margin: 0;
+                padding: var(--xs) 0;
+
+                .day{
+                    font-size: var(--f-s);
+                    text-align: center;
+
+                    > :is(a, time){
+                        display: block;
+                        border-radius: var(--b-radius);
+                        padding: calc(var(--xs) / 2);
+                    }
+
+                    &:is(.available, .today){
+                        font-weight: 500;
+                    }
+                    &.unavailable time{
+                        opacity: 0.4;
+                    }
+                    &.past time{
+                        opacity: 0.1;
+                    }
+                    &.today a{
+                        background-color: var(--c-bg-widget);
+                    }
+                }
+            }
+        }
+    }
+
+    .day[data-weekday="0"]{ grid-column-start: 7 }
+    .day[data-weekday="1"]{ grid-column-start: 1 }
+    .day[data-weekday="2"]{ grid-column-start: 2 }
+    .day[data-weekday="3"]{ grid-column-start: 3 }
+    .day[data-weekday="4"]{ grid-column-start: 4 }
+    .day[data-weekday="5"]{ grid-column-start: 5 }
+    .day[data-weekday="6"]{ grid-column-start: 6 }
+
+    .checkbox{
+        border-top: var(--b-box);
+        margin-top: var(--m);
+        padding-top: var(--m);
+    }
+}

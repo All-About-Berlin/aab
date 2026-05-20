@@ -1,6 +1,6 @@
 import { getNearestHeadingId } from '/js/utils/tracking.mjs';
 
-const tooltip = document.getElementById('tooltip');
+const tooltip = document.getElementById('glossary-tooltip');
 let pronounciationAudio = null;
 
 export function showTooltip(clickEvent) {
@@ -68,7 +68,7 @@ function pronounceTerm(event){
 	pronounciationAudio.play();
 }
 
-export function initializeTooltip(){
+export function initializeGlossaryTooltip(){
 	window.addEventListener("DOMContentLoaded", function() {
 		tooltip.querySelector('.close-button').addEventListener('click', hideTooltip);
 		tooltip.addEventListener('click', clickEvent => {

@@ -10,11 +10,6 @@
     100% { opacity: 1; }
 }
 
-@keyframes highlight { // Highlight an element after scrolling
-    from { background-color:var(--c-text-selection); box-shadow: 0 0 0 var(--s) var(--c-text-selection);}
-    to { background-color:transparent; box-shadow: 0 0 0 var(--s) transparent; }
-}
-
 @media (prefers-reduced-motion: reduce) { // Disable all animations
     *,:before,:after {
         animation-delay: -1ms !important;

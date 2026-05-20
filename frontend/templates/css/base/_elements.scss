@@ -1,19 +1,20 @@
 ::selection, mark{background:var(--c-text-selection)}
 mark{color:var(--c-text-heading)}
 
-h1{
+:is(h1, h2, h3){
     @include heading;
+}
+
+h1{
     font-size: var(--xxl);
     margin: 0 0 var(--m);
 }
 
 h2{
-    @include heading;
     font-size: var(--xl);
 }
 
 h3{
-    @include heading;
     font-size: var(--l);
 }
 
@@ -23,30 +24,6 @@ hr{
     background:var(--c-border-box);
     height:1px;
     border:none;
-}
-
-progress{
-    display: block;
-    margin: var(--xl) 0;
-    background: var(--c-border-box);
-    height: var(--s);
-    border: none;
-    width: 100%;
-    accent-color: var(--c-highlight);
-    appearance: none;
-    -webkit-appearance: none;
-    overflow: hidden; // Otherwise border radius does not work in Chrome
-
-    &::-webkit-progress-bar{
-        background-color: var(--c-border-box);
-    }
-    &::-moz-progress-bar{
-        background-color: var(--c-highlight)!important;
-    }
-}
-::-webkit-progress-value{
-    /* Does not work if there are other selectors around it */
-    background-color: var(--c-highlight)!important;
 }
 
 :is(ul, ol) {

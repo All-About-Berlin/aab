@@ -7,14 +7,27 @@
         @include full-width-site{
             float:none;
             margin: 0 auto;
-
-            label {
-                flex-grow: 1;
-            }
         }
     }
 
-    .letter-template{
+    .language-picker label{
+        flex-grow: 1;
+    }
+
+    .letter-body{
+        @include only-phone{
+            font-size: var(--f-s);
+        }
+
+        ul > li {
+            @include list-marker-ul;
+        }
+        ol > li {
+            @include list-marker-ol;
+        }
+    }
+
+    .letter-template {  // The formatted-for-print page
         // DIN 5008 pages are measured in millimetres. A page is 210mm x 296.
         // We create a scale where 1mm == 1/210%. If we multiply the mm size by
         // that unit, we get the percentage size.
@@ -86,17 +99,6 @@
             padding-left: 25 / $pageScaleWidth;
             padding-top: 8.46 / $pageScaleHeight;
             width: 160 / $pageScaleWidth;
-
-            @include only-phone{
-                font-size: var(--f-s);
-            }
-
-            ul > li {
-                @include list-marker-ul;
-            }
-            ol > li {
-                @include list-marker-ol;
-            }
         }
 
         .signature{

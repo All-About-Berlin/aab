@@ -1,0 +1,60 @@
+.insurance-checklist{
+    .checkbox{
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: var(--xs) var(--m);
+        border-radius: var(--b-radius);
+        padding: var(--s);
+        margin: calc(var(--s) * -1)!important;
+        box-sizing: border-box;
+        border: 1px solid transparent; // Changed on hover
+
+        line-height: var(--line-height-label);
+
+        + .checkbox{
+            margin-top: var(--s)!important;
+        }
+
+        input[type="checkbox"]{
+            position: absolute;
+            opacity: 0;
+            width: 1px;
+            height: 1px;
+        }
+
+        &:hover{
+            text-decoration: none!important;
+            @include box-clickable-hover;
+        }
+
+        &:has(input:focus-visible){
+            @include box-clickable-hover;
+        }
+
+        svg{
+            display: block;
+            width: var(--h-icon-l);
+            padding: var(--xs);
+            aspect-ratio: 1 / 1;
+            border-radius: var(--b-radius);
+            background: var(--c-bg-image);
+            color: var(--c-text-heading);
+            grid-column: 1;
+        }
+
+        :checked ~ svg{
+            background: color-mix(var(--c-highlight) 50%, transparent 50%);
+            box-shadow: inset 0 3px 5px 0 var(--c-highlight);
+        }
+
+        div{
+            grid-column: 2;
+        }
+
+        p{
+            margin: 0;
+            color: var(--c-text-light);
+            font-size: var(--f-s);
+        }
+    }
+}

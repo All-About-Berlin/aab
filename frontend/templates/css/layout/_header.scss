@@ -54,6 +54,14 @@ body > header {
                 padding-left: calc(var(--padding-nav-item) + var(--w-logo) + var(--s));
                 line-height: var(--h-header);
                 letter-spacing:-0.03em;
+
+                // Hide "All About Berlin" in the header if it doesn't fit
+                @media screen and (max-width: 720px){
+                    color: transparent;
+                    overflow: hidden;
+                    max-width: var(--w-logo);
+                    padding:0 var(--padding-nav-item);
+                }
             }
         }
 
@@ -204,33 +212,6 @@ body > header {
         // Remove gap before content
         + main > :is(article):first-child{
             margin-top: calc(var(--m) * -1);
-        }
-    }
-}
-
-.table-of-contents{
-    @include only-phone{
-        h2{
-            font-size: var(--l);
-        }
-    }
-
-    ol > li{
-        @include list-marker-ul;
-        @include list-marker-light;
-        &:not(.expanded) ol {
-            display: none;
-        }
-        > .expand {
-            display: inline-block;
-            margin-left: var(--s);
-            float: right;
-            @include expansible;
-        }
-        &.expanded {
-            > .expand{
-                @include collapsible;
-            }
         }
     }
 }
