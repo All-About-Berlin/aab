@@ -1,0 +1,115 @@
+.sidebar{
+    grid-area: sidebar;
+    align-self: start;
+
+    @include page-borders;
+
+    @include only-desktop{
+        width: var(--w-sidebar);
+        box-sizing: border-box;
+        position:sticky;
+        top:0;
+        margin-top:var(--s);
+    }
+
+    #floating-nav{
+        display: none;
+    }
+
+    h2{
+        margin: calc((var(--xxl) - var(--l)) / 2) 0 var(--m);
+        font-size: var(--l);
+    }
+
+    li{
+        @include list-marker-ul-compact;
+        @include list-marker-light;
+        :is(a, a:hover){
+            color: var(--c-text);
+        }
+        &.current > a{
+            @include text-bold;
+        }
+    }
+
+    small{
+        display: block;
+        color: var(--c-text-light);
+        margin-top: var(--s);
+    }
+
+    .newsletter-form{
+        text-align: left;
+        padding-top: var(--l);
+        border-top: var(--b-box);
+        color: var(--c-text-light);
+        font-size: var(--f-s);
+    }
+}
+@include not-desktop{
+    // Floating sidebar
+    .sidebar:not(.mobile){
+        position: fixed;
+        border-radius: var(--b-radius);
+        box-sizing: border-box;
+        padding: 0;
+        inset: auto var(--w-page-border) var(--w-page-border) auto;
+        width: fit-content;
+        z-index: 999;
+        max-width: var(--w-sidebar);
+
+        #floating-nav.visible{
+            position: fixed;
+            inset: auto var(--w-page-border) var(--w-page-border) auto;
+            display: flex;
+            gap: var(--s);
+            animation: 0.2s fade-in;
+
+            .button{
+                background: var(--c-bg-widget-opaque);
+            }
+
+            .open-close{
+                line-height: 1;
+            }
+        }
+
+        > :not(#floating-nav){
+            display:none;
+        }
+
+        &.open {
+            @include box-m;
+            width: calc(100% - var(--w-page-border) * 2);
+            max-height: calc(100vh - var(--w-page-border) * 2);
+            overflow-y: auto;
+            background: var(--c-bg-widget-opaque);
+            box-shadow: var(--shadow-l);
+
+            > .table-of-contents{
+                > ol{
+                    margin: 0;
+                }
+                display: block!important;
+            }
+
+            #floating-nav{
+                display: none;
+            }
+        }
+    }
+
+    body.sidebar-open{
+        overflow: hidden!important;
+        &:after{
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: var(--c-bg-widget);
+            backdrop-filter: blur(2px);
+        }
+    }
+}

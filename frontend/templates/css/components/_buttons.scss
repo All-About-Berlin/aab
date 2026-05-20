@@ -1,0 +1,255 @@
+.button:not(.link){
+    @include text;
+    @include box-s;
+    @include box-clickable;
+
+    color: var(--c-text)!important;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+
+    .icon.left, .icon.right{
+        position: relative;
+        left: 0;
+        transition: left 0.2s;
+    }
+
+    svg{
+        vertical-align: text-top;
+        width: var(--l);
+        height: var(--l);
+        margin-right: var(--xs);
+    }
+
+    &:not([disabled]):hover .icon.left{
+        left: calc(var(--xs) * -1);
+    }
+    &:not([disabled]):hover .icon.right{
+        left: var(--xs);
+    }
+
+    &.primary:not([disabled]){
+        background-color: var(--c-highlight);
+        border-color: var(--c-highlight);
+        color: #fff!important;
+
+        &:hover, &:focus-visible{
+            background-color: var(--c-bg-input);
+            color: var(--c-text-heading)!important;
+        }
+    }
+
+    &.whatsapp{
+        background-color: #4ab969;
+        border-color: #4ab969;
+        color: #fff!important;
+
+        &:hover, &:focus-visible{
+            background-color: var(--c-bg-input);
+            color: var(--c-text-heading)!important;
+        }
+    }
+
+    &.loading{
+        color: transparent!important;
+
+        .icon{
+            opacity: 0;
+        }
+    }
+
+    @include only-print{
+        text-decoration: none;
+        color: #000!important;
+        background: var(--c-bg-page);
+    }
+}
+
+.button.add:before{
+    position: relative;
+    left: 0;
+    transition: left 0.2s;
+    content: '＋'; // Unicode full-width plus sign
+}
+
+.button.link{
+    appearance: none;
+    display: inline;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    cursor: pointer;
+    background: transparent;
+}
+
+.buttons{
+    @include text-block;
+    gap: var(--m);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+
+    @include only-phone{
+        gap: var(--s);
+    }
+
+    > li{
+        padding:0;
+        margin:0;
+
+        > :is(a, button){
+            @include box-m;
+            @include box-clickable;
+
+            text-align: left;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: var(--l-relative);
+            align-items: center;
+
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+
+            position: relative; // For the .recommended flair
+
+            @include only-phone{
+                text-align: left;
+                gap: var(--m);
+                align-items: center;
+            }
+
+            &.recommended{
+                @include box-clickable-hover;
+
+                &:before{
+                    position: absolute;
+                    right: var(--m);
+                    top: calc(var(--m) * var(--line-height-text) * -1/2);
+                    color: #fff!important;
+                    background: var(--c-highlight);
+
+                    @include box-clickable-hover;
+                }
+            }
+
+            svg{
+                display: block;
+                width: var(--h-icon-l);
+                height: var(--h-icon-l);
+            }
+
+            h3{
+                @include text;
+                @include text-bold;
+            }
+
+            p{
+                margin: 0;
+                color: var(--c-text);
+                font-size: var(--f-s);
+            }
+
+            .price{
+                padding: var(--s) var(--m);
+                background: var(--c-bg-widget);
+                border-radius: var(--b-radius);
+                text-align: center;
+                line-height: var(--line-height-label);
+                font-size: var(--l);
+
+                span{
+                    @include heading;
+                }
+                small {
+                    color: var(--c-text-light);
+                    @include not-phone{
+                        display: block;
+                    }
+                }
+
+                @include only-phone{
+                    grid-column: 1 / -1;
+                }
+            }
+
+            .two-columns{
+                grid-column: 1/-1;
+                margin: 0;
+                line-height: var(--line-height-label);
+                gap: var(--s) var(--l);
+
+                .pros, .cons{
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                }
+
+                @include not-phone{
+                    border-top:var(--b-box);
+                    padding-top: var(--m);
+                }
+            }
+        }
+    }
+
+    &.list{
+        @include only-phone{
+            > li > :is(a, button){
+                grid-template-columns: 1fr;
+                svg {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &.grid{
+        @include only-phone{
+            > li > :is(a, button){
+                @include box-s;
+            }
+        }
+
+        @include not-phone{
+            grid-template-columns: 1fr 1fr 1fr;
+
+            > li > :is(a, button){
+                text-align: center;
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            svg{
+                margin:0 auto var(--s)!important;
+            }
+        }
+    }
+
+    // Navigation bar for collapsibles - "Go back" and "Continue" buttons
+    &.bar{
+        display: flex;
+        justify-content: center;
+
+        &.left{
+            justify-content: flex-start;
+        }
+
+        > *{
+            margin: 0;
+            flex: 0 0 auto;
+            align-content: center;
+        }
+
+        @include only-phone{ // Vertical buttons
+            flex-wrap: wrap;
+            gap: var(--s);
+
+            > *{
+                flex: 1 0 auto;
+                max-width: 15rem;
+                margin: 0 auto;
+            }
+        }
+    }
+}

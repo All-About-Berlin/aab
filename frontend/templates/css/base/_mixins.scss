@@ -1,0 +1,222 @@
+@mixin page-borders{
+    padding: var(--xl) var(--w-page-border);
+}
+
+@mixin box{
+    border: var(--b-box);
+    border-radius: var(--b-radius);
+
+    > :first-child{margin-top: 0;}
+    > :last-child{margin-bottom: 0;}
+}
+
+@mixin box-l{
+    // Large elements
+    @include box;
+    @include page-borders;
+    margin: var(--l) 0;
+}
+@mixin box-m{
+    // Large buttons
+    @include box;
+    padding: var(--m) var(--m);
+    background: transparent;
+}
+@mixin box-s{
+    // Buttons
+    @include box;
+    padding: var(--xs) var(--m);
+    background: transparent;
+}
+
+@mixin box-clickable-hover{
+    color: var(--c-text-heading);
+    border-color:var(--c-border-clickable-hover);
+    box-shadow: var(--shadow-s), 0 0 0 1px var(--c-border-clickable-hover);
+    text-decoration: none!important;
+    cursor: pointer;
+}
+
+@mixin box-clickable{
+    appearance: none;
+    border-color:var(--c-border-clickable);
+    color: var(--c-text-heading);
+    box-shadow: var(--shadow-s), 0 0 0 1px transparent;
+    outline: none;
+    text-decoration: none!important;
+
+    &[disabled]{
+        background: transparent;
+        box-shadow: none;
+        color: var(--c-text-placeholder)!important;
+        cursor: not-allowed;
+        * {
+            color: var(--c-text-placeholder)!important;
+        }
+    }
+
+    &:not([disabled]){
+        &:focus-visible, &:active{
+            @include box-clickable-hover;
+        }
+
+        // Prevents Safari requiring two taps to click things
+        @media (hover: hover) {
+            &:hover{
+                @include box-clickable-hover;
+            }
+        }
+    }
+}
+
+@mixin heading{
+    font-weight: 500;
+    line-height: var(--line-height-heading);
+    color: var(--c-text-heading);
+
+    // Break long words
+    overflow: hidden;
+}
+
+@mixin text{
+    font: 400 var(--m) / var(--line-height-text) 'Libre Franklin', sans-serif;
+    color: var(--c-text);
+}
+
+@mixin text-hint{
+    color:inherit!important;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: var(--c-border-hint);
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 1.5px;
+
+    &:hover{
+        text-decoration-color:var(--c-border-hint-hover);
+    }
+}
+
+@mixin text-block{
+    margin: var(--s-text-block) 0;
+}
+
+@mixin text-block-compact{
+    margin: var(--s-relative) 0;
+}
+
+@mixin text-block-quote{
+    @include text-block;
+    background: var(--c-bg-widget);
+    border-radius: var(--b-radius);
+    padding: var(--l-relative) var(--m);
+
+    > :first-child{margin-top: 0;}
+    > :last-child{margin-bottom: 0;}
+
+    @include only-print{
+        border: var(--b-box);
+    }
+}
+
+@mixin text-bold{
+    font-weight: 600;
+    color: var(--c-text-heading);
+}
+
+@mixin expansible{
+    &:after{
+        content: '';
+        width: 1em;
+        height: calc(var(--line-height-text) * 1em);
+        display: inline-block;
+        margin-left: var(--s);
+        vertical-align: middle;
+        mask-image: var(--i-expand);
+        mask-position: center right;
+        mask-repeat: no-repeat;
+        background-color:currentColor;
+        opacity: 0.5;
+        transition: transform 0.2s;
+    }
+
+    @media (hover: hover) {
+        &:hover:after{
+            opacity: 1;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+    }
+}
+@mixin collapsible{
+    &:after{
+        transform: scaleY(-1);
+    }
+}
+
+@mixin widget{
+    @include box-l;
+    background: var(--c-bg-widget);
+    box-shadow: var(--shadow-s);
+}
+
+@mixin list-marker-ul{
+    @include text-block-compact;
+
+    padding-left: var(--xl);
+    position: relative;
+    list-style: none;
+
+    &:before {
+        position: absolute;
+        left: 0;
+        content:'–';
+    }
+    &:first-child{margin-top:0}
+    &:last-child{margin-bottom:0}
+}
+@mixin list-marker-ul-compact{
+    @include list-marker-ul;
+    padding-left: var(--l);
+}
+@mixin list-marker-ol{
+    @include list-marker-ul;
+    &:before {
+        counter-increment: list;
+        content: counter(list) ". ";
+    }
+}
+@mixin list-marker-light{
+    &:before {
+        color: var(--c-text-light);
+    }
+}
+
+@mixin no-scroll-bar{
+    scrollbar-width: none; /* Firefox */
+
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        display: none;  /* Safari and Chrome */
+    }
+}
+
+@mixin colored-label{
+    // Pill, tag or label element
+    background: var(--c-bg-widget);
+    box-decoration-break: clone;
+    font-weight: 400;
+    color: var(--c-text-light)!important;
+    white-space: nowrap;
+
+    @include not-print{
+        border-radius: var(--b-radius);
+        padding: 2px var(--xs);
+    }
+}
+
+@mixin form-title{
+    // h2 or h3 for collapsible forms
+    border-bottom: var(--b-box);
+    margin: 0 0 var(--l);
+    padding: 0 0 var(--l);
+}

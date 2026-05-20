@@ -1,0 +1,390 @@
+::selection, mark{background:var(--c-text-selection)}
+mark{color:var(--c-text-heading)}
+
+h1{
+    @include heading;
+    font-size: var(--xxl);
+    margin: 0 0 var(--m);
+}
+
+h2{
+    @include heading;
+    font-size: var(--xl);
+}
+
+h3{
+    @include heading;
+    font-size: var(--l);
+}
+
+hr{
+    margin: var(--xl) 0;
+
+    background:var(--c-border-box);
+    height:1px;
+    border:none;
+}
+
+progress{
+    display: block;
+    margin: var(--xl) 0;
+    background: var(--c-border-box);
+    height: var(--s);
+    border: none;
+    width: 100%;
+    accent-color: var(--c-highlight);
+    appearance: none;
+    -webkit-appearance: none;
+    overflow: hidden; // Otherwise border radius does not work in Chrome
+
+    &::-webkit-progress-bar{
+        background-color: var(--c-border-box);
+    }
+    &::-moz-progress-bar{
+        background-color: var(--c-highlight)!important;
+    }
+}
+::-webkit-progress-value{
+    /* Does not work if there are other selectors around it */
+    background-color: var(--c-highlight)!important;
+}
+
+:is(ul, ol) {
+    counter-reset: list;
+    :is(ul, ol) {
+        @include text-block-compact;
+    }
+
+    li {
+        list-style: none;
+        > blockquote{
+            margin:var(--s) 0
+        }
+    }
+}
+
+p, pre, blockquote, ul, ol {
+    @include text-block;
+}
+
+strong, b, h4{
+    @include text-bold;
+}
+em, i{font-style:italic}
+small{
+    font-size: var(--f-s)!important;
+    @include text;
+}
+
+a, .button.link{
+    cursor: pointer;
+    color: var(--c-text-link);
+    text-decoration: var(--text-decoration-link);
+
+    strong, b{color: inherit;}
+
+    &:visited{
+        color: var(--c-text-link-visited);
+    }
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.internal-link, .external-link, .section-link{
+    &:after{
+        content: '';
+        width: 1em;
+        height: calc(1em * var(--line-height-text));
+        display: inline-block;
+        mask-position: center;
+        mask-repeat: no-repeat;
+        mask-size: cover;
+        background-color:currentColor;
+        vertical-align: middle;
+
+        margin-left:var(--s);
+        margin-top: 1px;
+        transition: transform 0.2s;
+
+        mask-image: var(--i-right);
+    }
+}
+.internal-link:hover:after{
+    transform: translateX(var(--xs));
+}
+.external-link:after{
+    mask-image: var(--i-external);
+}
+
+sup, sub{
+    font-size: var(--f-footnote);
+    line-height: 0;
+    position: relative;
+    top: -0.75em;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+sup:target a{
+    background: var(--c-text-selection);
+    border-radius: var(--b-radius);
+    box-shadow: 0 0 0 var(--xs) var(--c-text-selection);
+    color:var(--c-text-heading)!important;
+}
+
+:is(.article-body, .component-group){
+    > :last-child{margin-bottom: 0}
+
+    > * + h2{
+        border-top: var(--b-box);
+        padding-top: var(--xxxl);
+        margin: var(--xxxl) 0 var(--xl);
+    }
+
+    > h3{
+        margin: var(--xxl) 0 var(--l);
+    }
+
+    .currency[data-currencies]{
+        @include text-hint;
+        position: relative;
+    }
+    .currency[data-currencies]:hover:after{
+        @include box-s;
+        z-index: 1000;
+        position: absolute;
+        background: var(--c-bg-widget-opaque);
+        display: block;
+        top: 100%;
+        left: 0;
+        white-space: pre;
+        padding:var(--s);
+
+        content: attr(data-currencies);
+        font-size: var(--f-s);
+        line-height: var(--line-height-label);
+        box-shadow: var(--shadow-s);
+        font-weight: 400!important;
+        text-align: right;
+    }
+
+    .section-link.before{
+        &:after{
+            transform: rotate(-90deg);
+        }
+        &:hover:after{
+            transform: rotate(-90deg) translateX(var(--xs));
+        }
+    }
+    .section-link.after{
+        &:after{
+            transform: rotate(90deg);
+        }
+        &:hover:after{
+            transform: rotate(90deg) translateX(var(--xs));
+        }
+    }
+
+    img{
+        @include box;
+        background: var(--c-bg-widget);
+        color: var(--c-text-light)!important;
+        font-size:var(--f-s);
+        box-shadow: var(--shadow-s);
+
+        &[src*="/illustrations/"]{
+            box-shadow: none;
+            border-color: transparent;
+            background-color:transparent;
+        }
+    }
+
+    a img{
+        @include box-clickable;
+    }
+
+    :is(figure, picture, img){
+        @include text-block;
+        display:block;
+        max-width:100%;
+        height: auto;
+    }
+    figure{
+        :is(picture, img){
+            margin:0 auto;
+        }
+    }
+    figcaption, caption{
+        font-size: var(--f-s);
+        text-align: center;
+        margin-top:var(--xs);
+    }
+
+    :is(blockquote, pre){
+        @include text-block-quote;
+    }
+    pre{
+        font-family:monospace;
+        overflow:auto
+    }
+
+    .table-wrapper{
+        margin: var(--l-relative) calc(var(--w-page-border) * -1);
+        padding: 0 var(--w-page-border);
+        overflow-x: auto;
+    }
+    table {
+        :is(td, th){
+            padding: var(--xs) var(--s);
+            line-height: var(--line-height-label);
+            border:var(--b-box);
+            border-color: var(--c-border-box-opaque);
+        }
+
+        th{
+            @include text-bold;
+            text-align: left;
+            background: var(--c-bg-widget);
+
+            small{
+                font-weight: 400;
+            }
+        }
+
+        :is(td, th){
+            &:last-child .currency[data-currencies]:hover:after{
+                left: auto!important;
+                right: 0!important;
+            }
+        }
+
+        @include only-phone{
+            font-size:var(--f-s);
+        }
+
+        caption{
+            caption-side: bottom;
+        }
+    }
+
+    dl{
+        display: grid;
+        line-height: var(--line-height-label);
+
+        dt{
+            @include text-bold;
+            padding: var(--s) var(--m) 0 0;
+        }
+
+        dd:not(:last-child){
+            box-shadow: 0 1px 0 0 var(--c-border-box);
+            padding-bottom: var(--s);
+        }
+
+        @include not-phone{
+            gap: var(--s) 0;
+            grid-template-columns: auto 1fr;
+
+            dt{
+                box-shadow: 0 1px 0 0 var(--c-border-box);
+                padding-top: 0;
+                padding-bottom: var(--s);
+            }
+            *:nth-last-child(-n+2){
+                box-shadow: none;
+            }
+        }
+
+        time.weekend{
+            text-decoration: line-through;
+            color: var(--c-text-error);
+        }
+
+        small{
+            color: var(--c-text-light);
+        }
+    }
+
+    > ol:not(.previews) > li, > :is(ol, ul) ol > li{
+        @include list-marker-ol;
+    }
+    > ul:not(.feedback-list, .buttons) > li, > :is(ol, ul) ul > li{
+        @include list-marker-ul;
+    }
+    li.checkbox{
+        position:relative;
+        > input[type=checkbox]:first-child{
+            position:absolute;
+            left: 0;
+            margin-top: calc(((var(--line-height-text) * 1em) - 1.1em) / 2);
+            width: 1.1em;
+            height: 1.1em;
+            font-size: inherit;
+            &:after{
+                line-height: calc(1.1em - 2px);
+            }
+        }
+    }
+
+    .table-of-contents{
+        @include widget;
+
+        @include only-desktop{
+            display: none;
+        }
+
+        > ol{margin: var(--m) 0 0}
+
+        @include not-desktop{
+            + h2{
+                border-top: 0;
+                padding-top: 0;
+            }
+        }
+    }
+
+    .footnote-ref{
+        margin-left:2px;
+        color: var(--c-text-light);
+    }
+    #footnotes{
+        margin-top: var(--l-relative);
+        padding-top: var(--m);
+        border-top: var(--b-box);
+
+        font-size: var(--f-s);
+
+        ol{
+            column-count: 2;
+            column-gap: var(--l);
+            column-rule: var(--b-box);
+            line-height: var(--line-height-label);
+
+            @include only-phone{column-count: 1;}
+        }
+        li{
+            @include list-marker-ol;
+            break-inside: avoid;
+            &:target{
+                background: var(--c-text-selection);
+                outline: 2px solid var(--c-text-selection);
+            }
+        }
+
+        p:first-child{margin-top: 0}
+        p:last-child{margin-bottom: 0}
+    }
+}
+:is(.article-body, .sidebar) a[href*="/glossary/"]:not(.recommended){
+    @include text-hint;
+    cursor: help;
+}
+
+.hidden{
+    display: none!important;
+}
+
+.selectable{
+    // Simplifies selecting values like phone numbers
+    user-select: all;
+}

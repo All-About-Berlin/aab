@@ -1,0 +1,30 @@
+.filters{
+    @include text-block;
+    display: grid;
+    gap: var(--m);
+    grid-template-columns: max-content;
+    grid-auto-flow: column;
+    justify-content: stretch;
+
+    .tabs{
+        display: flex;
+    }
+
+    select{
+        max-width: none;
+    }
+
+    @include full-width-site{
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: row;
+
+        .tabs{
+            grid-column: 1 / -1;
+        }
+    }
+
+    @include only-phone{
+        grid-template-columns: 1fr;
+        gap: var(--s);
+    }
+}

@@ -292,6 +292,7 @@ config.jinja_filters = {
     "percent": to_percent,
 }
 
+config.renderers.remove("ursus.renderers.sass.SassRenderer")
 config.jinja_extensions.remove("ursus.renderers.jinja.JsLoaderExtension")
 config.jinja_extensions.extend(
     [

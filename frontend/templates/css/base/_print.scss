@@ -1,0 +1,67 @@
+@mixin only-print {
+    @media print{
+        @content;
+    }
+}
+
+@include only-print {
+    .no-print{
+        display: none!important;
+    }
+
+    body{
+        display: block!important;
+    }
+}
+
+@mixin not-print {
+    @media not print{
+        @content;
+    }
+}
+
+@include not-print {
+    .only-print{
+        display: none!important;
+    }
+}
+
+@page {
+    size: A4;
+    margin: 0!important;
+}
+
+@include only-print{
+    :root{
+        --c-text: #000;
+        --c-text-light: #000;
+        --c-text-placeholder: transparent;
+        --c-text-heading: #000;
+        --c-bg-input: #fff;
+        --c-bg-website: #fff;
+        --c-bg-page: #fff;
+        --c-bg-widget: #fff;
+        --c-bg-widget-opaque: #fff;
+        --c-bg-image: #fff;
+        --c-border-box: #000;
+        --c-border-box-opaque: #000;
+        --c-border-input: #000;
+        --c-border-input-focused: #000;
+
+        --c-border-clickable: #000;
+        --c-border-clickable-hover: #000;
+
+        --c-bg-clickable: transparent;
+
+        --text-decoration-link: underline;
+
+        --shadow-s: none;
+        --shadow-l: none;
+    }
+
+    body, main{display:block;}
+
+    sup, #footnotes, a.recommended, .icon.left, .icon.right, .buttons.bar{
+        display:none!important;
+    }
+}

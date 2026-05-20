@@ -1,0 +1,55 @@
+.newsletter-checkbox{
+    font-size: var(--f-s);
+    color: var(--c-text-light);
+}
+
+.newsletter-form{
+    margin: var(--s-text-block) auto;
+    display: grid;
+    gap: var(--m);
+    text-align: center;
+
+    .email-form{
+        width: 100%;
+        max-width: 400px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        margin:0 auto;
+
+        [type="email"]{
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-right: none;
+            text-overflow: ellipsis;
+
+            &:is(:hover, :focus) + .button{
+                box-shadow: 0 0 0 1px var(--c-highlight);
+            }
+            &:focus + .button{
+                width: 50px; // Icon width
+                color: transparent!important;
+                .icon{
+                    color: #fff;
+                    display: inline-block;
+                }
+                span{
+                    display: none;
+                }
+            }
+        }
+        .button{
+            .icon{
+                transition: color 0.2s;
+                color: transparent;
+                display: none;
+            }
+            overflow: hidden;
+            text-align: right;
+            transition: width 0.2s, color 0.2s;
+            width: 109px; // "Subscribe" text width
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            padding: 0 var(--s);
+        }
+    }
+}

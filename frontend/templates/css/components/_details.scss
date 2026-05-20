@@ -1,0 +1,111 @@
+details{
+    summary{
+        display: block;
+        cursor: pointer;
+
+        small{
+            display: block;
+        }
+
+        &::marker, &::-webkit-details-marker{
+            display: none;
+        }
+
+        @include expansible;
+
+        &[hidden] + * {margin-top: 0}
+    }
+
+    details:not(.collapsible, .input-instructions){
+        @include text-block-compact;
+
+        &[open]{
+            margin-bottom:var(--l-relative);
+        }
+    }
+
+    details:not(.collapsible) {
+        summary{
+            font-size: var(--f-s);
+        }
+
+        :is(p, ul) {
+            @include text-block-compact;
+            font-size: var(--f-s);
+            li{
+                @include list-marker-ul-compact;
+            }
+        }
+    }
+
+    &:not(.total) + details.total{
+        margin-top: var(--l-relative);
+    }
+
+    &[open] > summary {
+        @include collapsible;
+    }
+}
+
+.collapsible{
+    @include widget;
+    > summary {
+        padding: var(--m) var(--w-page-border);
+
+        @include text-bold;
+        @include expansible;
+        &:after{
+            float: right;
+        }
+    }
+
+    &[open]{
+        > summary {
+            width: 100%;
+            margin: calc(var(--xl) * -1) 0 var(--xl) calc(var(--w-page-border) * -1);
+            border-bottom: var(--b-box);
+            @include collapsible;
+
+            &[hidden]{
+                display: none;
+            }
+
+            + progress{
+                margin: calc(var(--xl) * -1) 0 var(--xl) calc(var(--w-page-border) * -1);
+                width: calc(100% + 2 * var(--w-page-border));
+            }
+
+            &[hidden] + progress{
+                border-radius: var(--b-radius) var(--b-radius) 0 0;
+            }
+        }
+    }
+
+    &:not([open]){
+        @include box-clickable;
+        padding: 0;
+
+        &:focus-within{
+            @include box-clickable-hover;
+        }
+        summary:focus-visible{
+            outline: none;
+        }
+    }
+
+    + h2{
+        border-top: 0;
+        padding-top: 0;
+    }
+
+    .cost-explanation {
+        > p{
+            font-size: var(--m);
+        }
+
+        > summary{
+            text-align: center;
+            color: var(--c-text-light);
+        }
+    }
+}

@@ -32,7 +32,7 @@ export default {
 					<head>
 						<meta charset="utf-8">
 						<title>${document.title}</title>
-						<link rel="stylesheet" href="/css/style.css">
+						<link rel="stylesheet" href="/css/print-preview.css">
 					</head>
 					<body class="letter-template">${this.$refs.template.innerHTML}</body>
 				</html>
@@ -49,7 +49,7 @@ export default {
 		},
 	},
 	template: `
-		<details class="collapsible" ref="collapsible" :open="static">
+		<details class="collapsible letter-generator" ref="collapsible" :open="static">
 			<summary :hidden="static">
 				<small>Letter generator</small>
 				<slot name="header"></slot>

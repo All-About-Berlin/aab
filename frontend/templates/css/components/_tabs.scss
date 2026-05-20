@@ -1,0 +1,60 @@
+.tabs{
+    display: grid;
+    width: fit-content;
+    grid-template-columns: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    border: var(--b-box);
+    border-radius: var(--b-radius);
+    overflow: hidden;
+    background: var(--c-bg-widget);
+    box-shadow: inset var(--shadow-s);
+
+    input{
+        clip-path: polygon(0 0); // Hidden but not for screen readers
+        position: absolute;
+
+        &:checked + label{
+            cursor: default;
+            color: var(--c-text-light);
+            background: transparent;
+            z-index: 0;
+            box-shadow: 0px -7px 0 0px #0003, inset 0px 0px 2px 0 #0003;
+            position: relative;
+            top: 1px;
+        }
+
+        &:first-child + label{
+            border-radius: var(--b-radius) 0 0 var(--b-radius);
+        }
+    }
+
+    label{
+        padding: var(--xs) var(--m);
+        color: var(--c-text);
+        background: transparent;
+        text-align: center;
+
+        cursor: pointer;
+        background: var(--c-bg-widget-opaque);
+        box-shadow: inset 0 -4px 5px -5px #0005, 0 0 0 1px var(--c-border-clickable);
+        position: relative;
+        z-index: 1;
+
+        display: grid;
+        align-items: center;
+
+        &:last-child{
+            border-radius: 0 var(--b-radius) var(--b-radius) 0;
+        }
+    }
+
+    label:focus-visible, input:focus-visible + label{
+        box-shadow: inset 0 -4px 5px -5px var(--c-border-clickable), 0 0 0 1px var(--c-border-clickable), inset 0 0 0 2px var(--c-border-input-focused);
+        cursor: pointer;
+    }
+
+    @include full-width-site{
+        display: flex; // Items have equal width on desktop, not on mobile
+    }
+}

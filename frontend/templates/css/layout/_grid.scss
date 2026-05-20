@@ -1,0 +1,35 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    scroll-behavior:smooth;
+
+    @include text;
+
+    @include only-phone{
+        text-size-adjust: none;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+}
+
+body{
+    height: auto;
+
+    background: var(--c-bg-website);
+
+    display: grid;
+    gap: var(--m) 0;
+    grid-template-areas: ". header header ." ". sidebar main ." ". footer footer .";
+    grid-template-columns: 1fr auto var(--w-main-column) 1fr;
+    grid-template-rows: auto auto;
+
+    scroll-behavior:smooth;
+
+    @include not-desktop{
+        grid-template-columns: 1fr calc(min(var(--w-main-column), 100%)) 1fr;
+        grid-template-areas: ". header ." ". main ." ". footer .";
+    }
+}

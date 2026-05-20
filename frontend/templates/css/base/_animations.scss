@@ -1,0 +1,28 @@
+@keyframes shake { // Shake the tip jar
+    0% { transform:rotate(0deg)}
+    20% { transform:rotate(2deg)}
+    50% { transform:rotate(-3deg)}
+    80% { transform:rotate(2deg)}
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes highlight { // Highlight an element after scrolling
+    from { background-color:var(--c-text-selection); box-shadow: 0 0 0 var(--s) var(--c-text-selection);}
+    to { background-color:transparent; box-shadow: 0 0 0 var(--s) transparent; }
+}
+
+@media (prefers-reduced-motion: reduce) { // Disable all animations
+    *,:before,:after {
+        animation-delay: -1ms !important;
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        background-attachment: initial !important;
+        scroll-behavior: auto !important;
+        transition-delay: 0s !important;
+        transition-duration: 0s !important;
+    }
+}

@@ -1,0 +1,11 @@
+footer{
+    grid-area: footer;
+    text-align: center;
+    font-size: var(--f-s);
+    padding:0 var(--w-page-border) var(--m);
+    color: var(--c-text-light);
+
+    :is(a, a:visited){
+        color: inherit;
+    }
+}

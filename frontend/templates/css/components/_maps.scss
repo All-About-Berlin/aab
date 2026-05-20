@@ -1,0 +1,288 @@
+.glossary-sections{
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    gap:var(--s);
+    text-align: center;
+
+    @include only-phone{
+        grid-template-columns: repeat(12, 1fr);
+    }
+}
+
+.map{
+    background: var(--c-bg-image);
+
+    &.not-loaded{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+
+        &:before{
+            content: '';
+            position: absolute;
+            width: calc(100% + 10px);
+            height: calc(100% + 10px);
+            filter: blur(3px);
+            background: url('/staticimages/berlin-map.jpg') center;
+            background-size: cover;
+            top: -5px;
+            left: -5px;
+        }
+
+        .button{
+            position: relative;
+            z-index: 10;
+        }
+    }
+
+    img{
+        background-color:transparent;
+        border: none;
+        margin:0;
+    }
+
+    .maplibregl-ctrl-attrib{
+        background: #fffc;
+        margin: var(--xs);
+        color: var(--c-text-light);
+    }
+}
+
+.marker:not(.moreimportantthanjustbutton){ // Markers can be used outside of a .map
+    @include box-clickable;
+    box-sizing: content-box;
+    border-radius: 9999px 9999px 9999px 0; // Round corners, never ovals, even for rectangles
+    padding: var(--xs);
+    height: 1em;
+    min-width: 1em;
+    font-size: var(--f-xs);
+    line-height: 1em;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+
+    &.primary{
+        z-index: 1; // Bring in front of other markers
+    }
+
+    &:not(.primary){
+        background-color: var(--c-bg-page);
+    }
+
+    &:hover, &:focus-visible{
+        background-color: var(--c-bg-input);
+        color: var(--c-text-heading)!important;
+    }
+}
+
+.place-suggestion-form > h3{
+    @include form-title;
+}
+
+.places-map{
+    @include text-block;
+    display: grid;
+    grid-template-columns: 1fr minmax(200px,300px);
+    grid-template-rows:auto 1fr;
+    grid-template-areas: "map controls" "map list";
+    height: 80vh;
+    box-shadow: var(--shadow-s);
+    margin-left: calc(var(--w-page-border) * -1);
+    margin-right: calc(var(--w-page-border) * -1);
+    border-top: var(--b-box);
+    border-bottom: var(--b-box);
+
+    &.form-open{
+        @include page-borders;
+        background: var(--c-bg-widget);
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .place-suggestion-form :last-child{
+        margin-bottom: 0!important;
+    }
+
+    .map{
+        grid-area: map;
+    }
+
+    ol{
+        grid-area: list;
+        margin: 0;
+        padding: 0 var(--m);
+        overflow: auto;
+        scroll-behavior: smooth;
+
+        li{
+            border-bottom: var(--b-box);
+            position: relative;
+            display: grid;
+            grid-template-columns:auto 1fr;
+            font-size: var(--f-s);
+            margin: 0;
+            padding:var(--m) 0;
+            line-height: var(--line-height-label);
+            gap: var(--xs) var(--s);
+            justify-items: flex-start;
+
+            &:before{position: static;}
+
+            > :not(.marker) {
+                grid-column-start: 2;
+            }
+
+            .marker{
+                grid-row: span 2;
+                box-shadow: none;
+                margin:-0.15em 0 0 calc(var(--m) / -2);
+            }
+
+            h4{
+                @include text-bold;
+            }
+            address{
+                a{
+                    color: var(--c-text-light);
+                }
+            }
+            p, .recommended{
+                margin: 0;
+                justify-self: flex-start;
+                font-size: var(--f-s);
+            }
+
+            &:last-child{
+                border-bottom: none
+            }
+        }
+    }
+
+    .controls{
+        font-size: var(--f-s);
+        grid-area: controls;
+        padding: var(--xs) var(--m);
+        border-bottom: var(--b-box);
+        display: flex;
+        justify-content: space-between;
+
+        select{
+            display: block;
+            width: 100%;
+            margin: var(--s) 0;
+        }
+
+        details[open] + button{
+            display: none;
+        }
+    }
+
+    @include only-phone{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        margin-left: calc(var(--w-page-border) * -1);
+        margin-right: calc(var(--w-page-border) * -1);
+
+        grid-template-columns: 1fr;
+        grid-template-areas: "map" "controls" "list";
+
+        .map{
+            height: 60vh;
+        }
+    }
+
+    @include only-print{
+        display: block;
+        margin: 0;
+        padding: 0;
+        height: auto;
+        border: none;
+    }
+}
+
+#tooltip{
+    &[open]{
+        @include text;
+        @include box-l;
+        border: none;
+        max-width: calc(min(var(--w-main-column), calc(100% - 2 * var(--w-page-border))));
+        margin: var(--w-page-border) auto;
+        box-sizing: border-box;
+        background: var(--c-bg-page);
+        box-shadow: var(--shadow-l);
+        width: 100%;
+    }
+
+    header{
+        display:grid;
+        align-items: center;
+        grid-template-columns: 1fr auto auto;
+        grid-template-areas: "title pronounce close";
+        gap: 0 var(--m);
+        padding-bottom: var(--xl);
+        margin-bottom: var(--xl);
+        border-bottom: var(--b-box);
+
+        @include only-phone{
+            grid-template-columns: 1fr auto;
+            grid-template-areas: "title close" "title pronounce";
+        }
+    }
+
+
+    &::backdrop{
+        backdrop-filter: blur(3px) contrast(0.9) brightness(0.8) grayscale(0.2);
+        -webkit-backdrop-filter: blur(3px) contrast(0.9) brightness(0.8) grayscale(0.2);
+        background: transparent;
+    }
+
+    h2 {
+        grid-area: title;
+        small {
+            display: block;
+            margin-top: var(--xs);
+        }
+    }
+
+    :is(h2 a, h2 a:visited){
+        color: var(--c-text-heading);
+        &:hover{
+            text-decoration: none;
+            dfn{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .close-button{
+        grid-area: close;
+    }
+    .pronounce-button{
+        grid-area: pronounce;
+    }
+
+    :is(.close-button, .pronounce-button){
+        padding: var(--s);
+        margin-right: calc(var(--s) * -1);
+        color: var(--c-border-input);
+        background: transparent;
+
+        &:hover{
+            color: var(--c-border-input-focused);
+            cursor: pointer;
+        }
+        .icon{
+            display: block;
+        }
+    }
+
+    .footnote-ref{
+        display: none
+    }
+}

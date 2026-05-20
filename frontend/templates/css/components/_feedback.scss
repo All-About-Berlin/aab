@@ -1,0 +1,116 @@
+.feedback-table, .feedback-summary {
+    margin-bottom: var(--xxxl)!important;
+
+    li{margin: 0};
+    li + li{margin-top: var(--s-text-block)}
+
+    .vote-count{
+        float: right;
+    }
+}
+.feedback-summary .description{
+    @include text-bold;
+}
+.feedback-form, .feedback-list > li, .feedback-summary{
+    @include text-block;
+    > h3, .notes{
+        @include form-title;
+    }
+    .notes{
+        white-space: pre-wrap;
+    }
+    .steps{
+        .step{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            position: relative;
+            margin-left: calc(var(--w-checkbox) / 2);
+            padding-bottom: var(--m);
+            border-left: var(--b-input);
+            align-items: flex-start;
+            line-height: var(--line-height-label);
+
+            [type=checkbox]{
+                position: relative;
+                left: calc(var(--w-checkbox) / -2);
+                border-radius: 50%;
+                background-color: var(--c-bg-input);  // Undo the disabled input styles
+                border-color: var(--c-border-input);
+
+                @include not-print{
+                    &:checked{
+                        border-color: transparent;
+                        background: var(--c-text-light);
+                        &:after{
+                            color: var(--c-bg-page);
+                        }
+                    }
+                }
+            }
+
+            .description{
+                flex:1 1;
+            }
+
+            .extra{
+                display: block;
+                margin-top: var(--s);
+                color: var(--c-text-light);
+            }
+
+            time{
+                font-size: var(--f-s);
+                color: var(--c-text-light);
+
+                @include only-phone{
+                    flex: 0 0 100%;
+                    margin: var(--xs) 0 0 var(--w-checkbox);
+                }
+            }
+
+            .duration{
+                flex: 0 0 100%;
+                margin: var(--m) 0 0 var(--w-checkbox);
+                color: var(--c-text-light);
+            }
+
+            &:last-child{
+                padding-bottom: 0;
+                border-left-color: transparent;
+            }
+        }
+    }
+}
+.feedback-list > li{
+    @include box-l;
+    h3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: var(--s);
+
+        .validity{
+            flex: 1 0 100%;
+        }
+
+        .department, .validity{
+            font-size: var(--f-s);
+            font-weight: normal;
+            color: var(--c-text-light);
+            @include only-phone{
+                flex:1 0 100%
+            }
+            @include not-phone{
+                span{
+                    @include heading;
+                    font-size: var(--m);
+                }
+            }
+        }
+    }
+    .button{
+        float:right;
+    }
+}

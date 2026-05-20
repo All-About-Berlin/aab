@@ -1,0 +1,261 @@
+main{
+    grid-area: main;
+    display: grid;
+    gap: var(--m);
+    grid-template-columns: 100%;
+
+    .section{
+        background: var(--c-bg-page);
+        border-radius: var(--b-radius);
+        box-shadow: var(--shadow-l);
+        @include page-borders;
+
+        @include full-width-site{
+            border-radius: 0;
+        }
+
+        > h2:first-child{margin-bottom: var(--xl)}
+
+        > :first-child{margin-top: 0;}
+        > :last-child{margin-bottom: 0;}
+    }
+
+    .intersection{
+        text-align: center;
+        padding-top: calc(var(--xl) - var(--m)); // Default padding - grid gap
+        padding-bottom: calc(var(--xl) - var(--m));
+
+        h2{
+            margin:var(--xxxl) 0 var(--l)
+        }
+
+        p{
+            margin:var(--m) 0 var(--l)
+        }
+
+        .buttons.grid a{
+            background: var(--c-bg-page);
+        }
+
+        @include full-width-site{
+            @include page-borders;
+        }
+
+        > :first-child{margin-top:0}
+        > :last-child{margin-bottom:0}
+    }
+    .intro + .intersection {padding-top: 0}
+
+    .intro{
+        margin: 0;
+        text-align: center;
+        background:transparent;
+        @include page-borders;
+
+        h1{
+            margin:0
+        }
+
+        p{
+            margin: var(--s-relative) 0 0;
+        }
+
+        .search-form{
+            margin: var(--l-relative) auto 0;
+        }
+    }
+
+    .post-meta {
+        margin: 0 0 var(--xl);
+        padding: 0 0 var(--xl);
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: end;
+        gap: var(--xs) var(--l);
+
+        border-bottom: var(--b-box);
+
+        .icon{
+            flex: 0 0 auto;
+        }
+
+        > :not(#reviewers), .breadcrumbs :is(ol, li) {
+            font-size: var(--f-s);
+            display: flex;
+            align-items: center;
+            gap: var(--xs);
+            margin: 0;
+        }
+
+        .breadcrumbs {
+            order: 999;
+
+            li + li:before{ // Separator arrow
+                content: '';
+                display: inline-block;
+                width: 0.8em;
+                height: 0.8em;
+                align-self: center;
+                mask-image: var(--i-expand);
+                mask-position: center right;
+                mask-repeat: no-repeat;
+                background-color: currentColor;
+                opacity: 0.5;
+                transition: transform 0.2s;
+                transform: rotate(-90deg);
+            }
+
+            li:has([aria-current]){
+                display: none;
+            }
+        }
+
+        .post-reviewers button{
+            @include expansible;
+
+            &[aria-expanded=true]{
+                @include collapsible;
+            }
+        }
+
+        #reviewers{
+            @include widget;
+            margin-top: var(--m);
+
+            li{
+                display: grid;
+                grid-template-columns: auto 1fr;
+                grid-template-areas: "photo title" "photo description";
+                gap: var(--xs) var(--m);
+                align-items: center;
+
+                :is(picture, .placeholder){
+                    grid-area: photo;
+                    background: var(--c-bg-image) var(--i-logo) no-repeat center / var(--w-logo) auto;
+                    width: var(--w-img-bio-s);
+                    aspect-ratio: 1 / 1;
+                    border-radius: 50%;
+                    overflow: hidden;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .reviewer-byline{
+                    grid-area: title;
+                }
+                .reviewer-description{
+                    grid-area: description;
+                    > * {
+                        margin: 0;
+                    }
+                }
+
+                + li{
+                    border-top: var(--b-box);
+                    margin-top: var(--m);
+                    padding-top: var(--m);
+                }
+
+                @include only-phone{
+                    grid-template-columns: 1fr auto;
+                    grid-template-areas: "title photo" "description description";
+
+                    time{
+                        display: block;
+                        color: var(--c-text-light);
+                    }
+                }
+            }
+        }
+    }
+
+    #related .collection{
+        padding: 0;
+        box-shadow: none;
+
+        @include full-width-site{
+            + .collection{
+                margin-top: var(--l);
+            }
+        }
+    }
+
+    .collections{
+        margin-bottom: calc(var(--m) * -1)
+    }
+
+    .collection:not(:only-of-type){
+        width: calc(50% - 19px / 2);
+    }
+
+    .collection{
+        margin-bottom: var(--m);
+
+        padding: var(--m) var(--w-page-border);
+        box-sizing: border-box;
+        background: var(--c-bg-page);
+        box-shadow: var(--shadow-l);
+        border-radius: var(--b-radius);
+
+        h3{
+            margin: 0 0 var(--m);
+            padding: 0 0 var(--m);
+            border-bottom: var(--b-box);
+
+            a{
+                color: var(--c-text-heading)
+            }
+        }
+
+        h4{
+            color: var(--c-text);
+        }
+
+        > :is(ol, ul) {
+            margin-bottom: 0;
+
+            > li + li {
+                margin-top: var(--m);
+            }
+        }
+
+        li li {
+            @include list-marker-ul-compact;
+            @include list-marker-light;
+        }
+
+        @include full-width-site{
+            width: 100%;
+        }
+    }
+    @include only-print{
+        // Undo masonry.js layout, because it does not print well
+        .collections{
+            height: auto!important;
+            .collection{
+                position: static!important;
+                width: 100%;
+            }
+        }
+    }
+
+    @include full-width-site{
+        .collections{
+            height: auto!important;
+            margin: 0 var(--w-page-border);
+            display: grid;
+            gap: var(--l);
+        }
+
+        .collection {
+            width: 100%!important;
+            position: static!important;
+            margin:0!important;
+        }
+    }
+}

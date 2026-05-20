@@ -1,0 +1,111 @@
+.letter-generator {
+    // Only the one on the first step, not above the print preview
+    > .language-picker{
+        float: right;
+        margin-left: var(--m);
+
+        @include full-width-site{
+            float:none;
+            margin: 0 auto;
+
+            label {
+                flex-grow: 1;
+            }
+        }
+    }
+
+    .letter-template{
+        // DIN 5008 pages are measured in millimetres. A page is 210mm x 296.
+        // We create a scale where 1mm == 1/210%. If we multiply the mm size by
+        // that unit, we get the percentage size.
+        $pageScaleWidth: 210 / 100cqw;
+        $pageScaleHeight: 296 / 100cqh;
+        $fontSizeScale: 0.185cqw;
+        display: block;
+        margin: 0;
+        background: #fff!important;
+        color: #000!important;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+        page-break-after: always;
+        width: 210 / 100%;
+        aspect-ratio: 210 / 296;
+        padding: 0;
+        border: none;
+        line-height: 1.15;
+
+        container: letter / size;
+
+        @include not-print{
+            border: var(--b-box);
+            box-shadow: var(--shadow-l);
+        }
+
+        .no-print{
+            display: none!important;
+        }
+        .only-print{
+            display: block!important;
+        }
+
+        * {
+            color: #000!important;
+            font-size: 10 * $fontSizeScale;
+        }
+
+        .letter-recipient-address {
+            .letter-return-address{
+                font-size: 8 * $fontSizeScale;
+                height: 17.7 / $pageScaleHeight;
+                display: table-cell;
+                vertical-align: bottom;
+                * {
+                    font-size: 8 * $fontSizeScale;
+                }
+            }
+            position: absolute;
+            top: 27 / $pageScaleHeight;
+            left: 20 / $pageScaleWidth;
+            width: 85 / $pageScaleWidth;
+            height: 45 / $pageScaleHeight;
+        }
+        .letter-details {
+            padding-top: 32 / $pageScaleHeight;
+            padding-left: 125 / $pageScaleWidth;
+            width: 75 / $pageScaleWidth;
+            min-height: 40 / $pageScaleHeight;
+        }
+        .letter-footer {
+            position: absolute;
+            bottom: 6.5 / $pageScaleHeight;
+            left: 25 / $pageScaleWidth;
+            width: 165 / $pageScaleWidth;
+        }
+        .letter-body {
+            padding-left: 25 / $pageScaleWidth;
+            padding-top: 8.46 / $pageScaleHeight;
+            width: 160 / $pageScaleWidth;
+
+            @include only-phone{
+                font-size: var(--f-s);
+            }
+
+            ul > li {
+                @include list-marker-ul;
+            }
+            ol > li {
+                @include list-marker-ol;
+            }
+        }
+
+        .signature{
+            max-width: 15rem;
+            border-top: 1px solid var(--c-text);
+            color: var(--c-text-light);
+            font-size: 8 * $fontSizeScale;
+            margin-top:calc(var(--l-relative) + var(--xxl));
+            padding-top:var(--xs);
+        }
+    }
+}
