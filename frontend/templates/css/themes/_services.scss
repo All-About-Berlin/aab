@@ -13,22 +13,6 @@
     --c-text: #444;
 
     --c-text-selection: #fd6;
-    --c-bg-error: #da513d44;
-    --c-bg-input-error: #da513d09;
-    --c-bg-website: #f9f9f9;
-    --c-bg-page: #fff;
-    --c-bg-widget: #00000009;
-    --c-bg-widget-opaque: #f6f6f6;
-    --c-border-box: #0002;
-    --c-border-box-opaque: #ddd;
-    --c-border-input: #0005;
-    --c-border-input-focused: #0008;
-
-    --c-border-hint: #0004; // Also update --i-expand
-    --c-border-hint-hover: var(--c-border-input-focused);
-
-    --c-bg-clickable: transparent;
-    --c-bg-clickable-hover: #fff1;
 
     --i-logo: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='5 10 90 80'><path fill='white' d='M45.09 34.51a39 39 0 0 0-14.78-9.99A39 39 0 0 0 16.9 21.9c-3.65-.03-7.3 0-10.96 0L5 21.88c0 1.4.36 2.98.4 3.37.1 1.16.14 2.33.3 3.47a35 35 0 0 0 3.9 11.43c5.53 10.2 13.94 16.81 25.15 19.83a38 38 0 0 0 9.25 1.2c.32 0 .47.04.47.43l-.02 22.92c0 .77-.03 1.54.08 2.3.08.52.3 1.06.61 1.48.58.8 1.46 1.1 2.41 1.1q2.43.02 4.85 0c1.94 0 3.17-1.23 3.17-3.19l.02-24.52a39 39 0 0 0-10.51-27.2zm49.9-23.94h-10.3q-4.7 0-9.27 1.01a39 39 0 0 0-18.18 9.45 40 40 0 0 0-7.4 9.14c-.3.5-.3.77.09 1.22a45 45 0 0 1 9.9 18.36C84.23 46.6 95.4 25.8 94.98 10.57z'/></svg>");
 }
@@ -38,32 +22,7 @@
         --c-highlight: #1b7453;  // 20% darker
         --c-error: #9f3a2b;
         --c-highlight-green: #1b7453;
-        --c-text: #bbb;
         --c-text-error: #{lighten(#9f3a2b, 20%)};
-        --c-text-heading: #ddd;
-        --c-text-light: #999;
-
-        --c-text-link: #cc5;
-        --c-text-link-visited: #bb7;
-
-        --c-text-placeholder: #bbb7;
-        --c-text-selection: #550;
-        --c-bg-website: #111;
-        --c-bg-page: #222;
-        --c-bg-widget: #ffffff0c;
-        --c-bg-widget-opaque: #2c2c2c;
-        --c-bg-image: var(--c-bg-widget);
-        --c-bg-error: #9f3a2b44;
-        --c-bg-input-error: #9f3a2b11;
-        --c-border-box: #fff3;
-        --c-border-box-opaque: #4f4f4f;
-        --c-border-input: #fff5;
-        --c-border-input-focused: #fff8;
-
-        --c-border-hint: #fff6;
-
-        --c-bg-clickable: transparent;
-        --c-bg-clickable-hover: #0001;
     }
 }
 
@@ -126,9 +85,22 @@ main > .collapsible{
     box-shadow: none;
 }
 
+.buttons > li > :is(a, button){
+    box-shadow: none;
+}
+
 .two-columns{
     :is(h2, h3, h4){
         color: var(--c-text);
+    }
+
+    h3{
+        font-size: var(--m);
+        margin: 0 0 var(--s);
+    }
+
+    p{
+        margin: 0;
     }
 }
 
@@ -141,32 +113,79 @@ main > .collapsible{
     min-width: 100%;
     font-size: var(--f-s);
 
-    th{
-        font-weight: bold;
-        color: var(--c-text-heading);
-        &:is([scope=row], [colspan="4"]){
-            font-weight: normal;
-            padding-left: 0;
-            text-align: left;
+    table-layout: fixed;
+    position: relative;
+
+    .plan-names{
+        @include heading;
+        font-size: var(--m);
+        background: var(--c-bg-page);
+        position: sticky;
+        top: 0;
+        border-bottom: var(--b-box);
+
+        th:first-child{
+            width: var(--w-label-column);
         }
 
-        &[colspan="4"]{
-            background: var(--c-bg-widget);
+        th[scope="col"]{
+            width: 200px
         }
     }
-    tbody{
-        border-top: var(--b-box);
+
+    .section-heading th{
+        @include heading;
+        text-align: left;
+        font-size: var(--l);
+        background: transparent;
+        padding-top: var(--xxl);
+        padding-bottom: var(--m);
+        border-bottom: var(--b-box);
+    }
+
+    .section-heading + tr > *{
+        padding-top: var(--m);
+    }
+
+    th[scope=row]{
+        font-weight: normal;
+        text-align: left;
+        border-right: var(--b-box);
     }
     :is(th, td){
         line-height: var(--line-height-label);
-        padding: var(--s) var(--m);
+        padding: var(--s);
+    }
 
-        &:not(:first-child){
-            border-left: var(--b-box);
-        }
+    .subfeature > :first-child{
+        padding-left: calc(var(--s) + var(--l));
+    }
+
+    tr:not(.section-heading):hover{
+        background: var(--c-bg-image);
+    }
+
+    tr > :first-child{
+        padding-left: 0;
     }
 
     td{
         text-align: center;
+        vertical-align: middle;
+    }
+
+    .yes, .no{
+        font-size: var(--l);
+        &:before{
+            content: '✓';
+            line-height: 1em;
+            vertical-align: center;
+            color: var(--c-text-heading);
+        }
+    }
+    .no:before{
+        font-size: 1.4em;
+        content: '×';
+        color: var(--c-text-light);
     }
 }

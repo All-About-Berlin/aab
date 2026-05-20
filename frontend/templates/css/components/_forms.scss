@@ -586,15 +586,16 @@ output.placeholder, .recommended:before, .pill{
     @include colored-label;
 }
 
-.pill{
-    &.yes{
-        &:before{
-            content: '✓';
-            margin: 0 var(--xs) 0 0;
-        }
-        color: #fff!important;
-        background: var(--c-highlight-green);
+.pill.yes{
+    &:before{
+        content: '✓';
+        text-align: center;
     }
+    &:not(:empty):before{
+        margin-right: var(--xs);
+    }
+    color: #fff!important;
+    background: var(--c-highlight-green);
 }
 
 output.placeholder{

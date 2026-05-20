@@ -352,7 +352,7 @@ sup:target a{
         p:last-child{margin-bottom: 0}
     }
 }
-:is(.article-body, .sidebar) a[href*="/glossary/"]:not(.recommended){
+:is(.article-body, .sidebar, .price-table) a[href*="/glossary/"]:not(.recommended){
     @include text-hint;
     cursor: help;
 }
