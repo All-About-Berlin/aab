@@ -55,22 +55,29 @@
     }
 }
 
+.icon-paragraph{
+    @include text-block;
+    display: flex;
+    gap: var(--m);
+    align-items: flex-start;
+
+    svg{
+        flex: 0 0 auto;
+        color: var(--c-text-heading);
+    }
+    p{
+        margin: 0;
+    }
+}
+
 .two-columns{
-    margin: var(--l-relative) 0;
+    @include text-block;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-size: var(--f-s);
     gap: var(--l);
     align-items: flex-start;
-
-    ul{
-        margin: 0;
-    }
-
-    li{
-        @include list-marker-ul-compact;
-        margin: var(--s) 0;
-    }
 
     @include only-phone{
         grid-template-columns: 1fr;
@@ -91,10 +98,6 @@
         margin: 0 0 var(--m);
     }
 
-    .pros, .cons{
-        margin: var(--s) 0;
-    }
-
     > * > .price{
         display: block!important;
         margin: var(--m) 0 0;
@@ -112,7 +115,7 @@
     }
 }
 
-:is(.pros, .cons) li, .list-yes, .list-no{
+li.yes, li.no{
     padding-left: calc(var(--l-relative) + var(--s));
 
     &:before{
@@ -128,7 +131,7 @@
         margin-top: calc((var(--m) * var(--line-height-label) - var(--m-relative)) / 2);
     }
 }
-.pros li:before, .list-yes:before{
+li.yes:before{
     color: #fff;
     background: var(--c-highlight-green);
     content: '✓'!important;
@@ -282,46 +285,6 @@
             animation: 0.3s 2 shake;
             top: -7px;
             animation-delay: 0.3s;
-        }
-    }
-}
-
-.form-recipient, .qr-code{
-    display: grid;
-    align-items:center;
-    gap: var(--m);
-    grid-template-columns: 1fr auto;
-
-    > img{
-        margin: 0 auto;
-        width: calc(var(--w-img-bio-l) * 1.5);
-        height: auto;
-        border:none;
-        border-radius:100%
-    }
-    > svg {
-        margin: 0 auto;
-        width: var(--w-img-bio-l);
-        color: var(--c-text-heading);
-    }
-
-    h2, h3{
-        margin: 0 0 var(--l)
-    }
-    p{
-        margin: 0;
-
-        + p {
-            margin-top: var(--m);
-        }
-    }
-
-    @include only-phone{
-        grid-template-columns: 1fr;
-
-        > img{
-            order: -1; // Put before text
-            width: var(--w-img-bio-l);
         }
     }
 }

@@ -20,24 +20,22 @@ export default {
 		<div class="health-insurance-options">
 			<h2>Private health insurance options</h2>
 			<hr>
-			<div class="two-columns private-cost">
+			<div class="two-columns">
 				<div>
 					<h3>Basic coverage</h3>
-					<ul class="pros">
-						<li>Covers all necessary healthcare</li>
-					</ul>
-					<ul class="cons">
-						<li>High <glossary term="Selbstbeteiligung">deductible</glossary> (<eur :amount="option('basic').deductible"></eur>/year)</li>
-						<li>No <glossary term="Krankentagegeld">sickness allowance</glossary></li>
+					<ul>
+						<li class="list-yes">Covers all necessary healthcare</li>
+						<li class="list-no">High <glossary term="Selbstbeteiligung">deductible</glossary>: <eur :amount="option('basic').deductible"></eur>/year</li>
+						<li class="list-no">No <glossary term="Krankentagegeld">sickness allowance</glossary></li>
 					</ul>
 					<price :amount="option('basic').total.personalContribution" per-month></price>
 				</div>
 				<div>
 					<h3>Premium coverage</h3>
-					<ul class="pros">
-						<li>Covers the best available healthcare</li>
-						<li>No <glossary term="Selbstbeteiligung">deductible</glossary></li>
-						<li>Generous <glossary term="Krankentagegeld">sickness allowance</glossary></li>
+					<ul>
+						<li class="list-yes">Covers the best available healthcare</li>
+						<li class="list-yes">No <glossary term="Selbstbeteiligung">deductible</glossary></li>
+						<li class="list-yes">Generous <glossary term="Krankentagegeld">sickness allowance</glossary></li>
 					</ul>
 					<price :amount="option('premium').total.personalContribution" per-month></price>
 				</div>

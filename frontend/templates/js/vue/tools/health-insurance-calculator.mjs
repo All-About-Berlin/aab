@@ -423,43 +423,43 @@ export default {
 				<p v-else-if="initialOccupation === 'selfEmployed'">This tool helps you <strong>find the best health insurance</strong> for freelancers in a few seconds.</p>
 				<p v-else>This tool helps you <strong>find the best health insurance</strong> in a few seconds.</p>
 				<hr>
-				<ul class="benefits">
-					<li v-if="initialOccupation !== 'employee'">
+				<ul>
+					<li class="icon-paragraph" v-if="initialOccupation !== 'employee'">
 						<icon-insurance/>
 						<div>
 							<strong>Low price, great coverage</strong>
 							<br>Find affordable health insurance that works when you need it.
 						</div>
 					</li>
-					<li v-if="initialOccupation === 'employee'">
+					<li class="icon-paragraph" v-if="initialOccupation === 'employee'">
 						<icon-family/>
 						<div>
 							<strong>For you and your family</strong>
 							<br>Find health insurance that covers your spouse and your children.
 						</div>
 					</li>
-					<li v-if="initialOccupation === 'employee'">
+					<li class="icon-paragraph" v-if="initialOccupation === 'employee'">
 						<icon-employee/>
 						<div>
 							<strong>Perfect for your visa <span class="no-mobile">application</span></strong>
 							<br>Get the right insurance for your work visa, Blue Card or Chancenkarte.
 						</div>
 					</li>
-					<li v-if="initialOccupation === 'studentUnemployed'">
+					<li class="icon-paragraph" v-if="initialOccupation === 'studentUnemployed'">
 						<icon-moving/>
 						<div>
 							<strong>Perfect for a student visa</strong>
 							<br>Get the right insurance for your National Visa application.
 						</div>
 					</li>
-					<li v-if="initialOccupation === 'selfEmployed'">
+					<li class="icon-paragraph" v-if="initialOccupation === 'selfEmployed'">
 						<icon-moving/>
 						<div>
 							<strong>Perfect for your <span class="no-mobile">freelance</span> visa</strong>
 							<br>Get insurance that's accepted by the immigration office.
 						</div>
 					</li>
-					<li>
+					<li class="icon-paragraph">
 						<icon-support/>
 						<div>
 							<strong>Free expert advice</strong>
@@ -712,7 +712,7 @@ export default {
 				</button>
 			</div>
 
-			<template v-if="stage === 'askABroker'">
+			<div v-if="stage === 'askABroker'" class="contact-form component-group">
 				<div class="form-recipient">
 					<div>
 						<p v-if="occupation === 'other'">If your situation is complicated, let our expert help you.</p>
@@ -782,7 +782,7 @@ export default {
 						</a>
 					</div>
 				</template>
-			</template>
+			</div>
 
 			<template v-if="stage === 'thank-you' && contactMethod === 'WHATSAPP'">
 				<div class="form-recipient">

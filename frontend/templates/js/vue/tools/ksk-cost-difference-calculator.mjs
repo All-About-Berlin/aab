@@ -83,7 +83,7 @@ export default {
 					tabindex="0">
 				<span class="range-suffix no-mobile no-print" @click="yearlyIncome += (yearlyIncome + 1000) >= maxIncome ? 0 : 1000">€</span>
 			</div>
-			<div class="two-columns private-cost">
+			<div class="two-columns">
 				<div>
 					<h3>KSK members</h3>
 					<p class="price-line">

@@ -59,16 +59,3 @@
         mask-image: var(--i-folder);
     }
 }
-.icon-paragraph{
-    @include text-block;
-    display: flex;
-    gap: var(--m);
-    align-items: center;
-    svg{
-        flex: 0 0 auto;
-        color: var(--c-text-heading);
-    }
-    p{
-        margin: 0;
-    }
-}

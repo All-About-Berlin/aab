@@ -1,0 +1,51 @@
+.contact-form{
+    .contact-method{
+        h3{
+            text-align: center;
+        }
+
+        > .tabs{
+            margin: var(--l-relative) auto;
+        }
+    }
+}
+
+.form-recipient{
+    display: grid;
+    align-items:center;
+    gap: var(--m);
+    grid-template-columns: 1fr auto;
+
+    > img{
+        margin: 0 auto;
+        width: calc(var(--w-img-bio-l) * 1.5);
+        height: auto;
+        border:none;
+        border-radius:100%
+    }
+    > svg {
+        margin: 0 auto;
+        width: var(--w-img-bio-l);
+        color: var(--c-text-heading);
+    }
+
+    h2, h3{
+        margin: 0 0 var(--l)
+    }
+    p{
+        margin: 0;
+
+        + p {
+            margin-top: var(--m);
+        }
+    }
+
+    @include only-phone{
+        grid-template-columns: 1fr;
+
+        > img{
+            order: -1; // Put before text
+            width: var(--w-img-bio-l);
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.health-insurance-calculator{
+    .health-insurance-options{
+        button {
+            padding: var(--l) var(--m);
+
+            > div:first-child{
+                grid-column: 1/-2;
+            }
+
+            p{
+                margin-top: var(--s);
+            }
+
+            > .two-columns { // Pros/cons on button
+                grid-column: 1 / -1;
+                margin: 0;
+                color: var(--c-text-light);
+                line-height: var(--line-height-label);
+                gap: var(--s);
+
+                @include not-phone{
+                    padding-top: var(--l-relative);
+                    border-top: var(--b-box);
+                }
+
+                > :first-child{
+                    padding: 0;
+                    border: none;
+                }
+
+                li{
+                    @include list-marker-ul;
+                }
+            }
+        }
+
+        .two-columns{
+            ul{
+                margin: 0;
+            }
+
+            li{
+                @include list-marker-ul;
+            }
+        }
+    }
+}

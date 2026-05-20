@@ -172,24 +172,6 @@
                     grid-column: 1 / -1;
                 }
             }
-
-            .two-columns{
-                grid-column: 1/-1;
-                margin: 0;
-                line-height: var(--line-height-label);
-                gap: var(--s) var(--l);
-
-                .pros, .cons{
-                    margin: 0;
-                    padding: 0;
-                    border: none;
-                }
-
-                @include not-phone{
-                    border-top:var(--b-box);
-                    padding-top: var(--m);
-                }
-            }
         }
     }
 
