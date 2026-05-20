@@ -137,16 +137,27 @@ main > .collapsible{
 
 .price-table{
     min-width: 100%;
+    font-size: var(--f-s);
 
     th{
         font-weight: bold;
         color: var(--c-text-heading);
+        &:is([scope=row], [colspan="4"]){
+            font-weight: normal;
+            padding-left: 0;
+            text-align: left;
+        }
+
+        &[colspan="4"]{
+            background: var(--c-bg-widget);
+        }
     }
     tbody{
         border-top: var(--b-box);
     }
     :is(th, td){
-        padding: var(--xs) var(--m);
+        line-height: var(--line-height-label);
+        padding: var(--s) var(--m);
 
         &:not(:first-child){
             border-left: var(--b-box);

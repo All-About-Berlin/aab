@@ -1,6 +1,6 @@
 {% extends "services/_layout.html" %}
-{% set metatitle = entry.title %}
-{% set metadescription = entry.description %}
+{% set metatitle = "Get German health insurance" %}
+{% set metadescription = "Our expert helps you choose the best German health insurance." %}
 
 {% block main %}
 	<main aria-label="Main page">
@@ -13,16 +13,34 @@
 			</div>
 		</header>
 		{% tool "health-insurance-calculator", static=True, id="calculator" %}
-		<section class="section">
-			<h2>Prices</h2>
-			<p>To get an accurate price, <a href="">tell us more about you</a>. Your options depend on your situation.</p>
+		<section class="section" aria-label="German health insurance prices">
+			<h2>Health insurance prices</h2>
+			<p>Your options depend on your situation. <a href="">Tell us more about you</a> to get an accurate price.</p>
 			<table class="price-table">
 				<thead>
 					<tr>
 						<th></th>
-						<th scope="col">Expat</th>
-						<th scope="col">Public</th>
-						<th scope="col">Private</th>
+						<th scope="col">
+							⭐
+							<br>
+							Expat
+							<br>
+							<small>Basic coverage until you are settled.</small>
+						</th>
+						<th scope="col">
+							⭐⭐⭐
+							<br>
+							Public
+							<br>
+							<small>The simplest long-term option.</small>
+						</th>
+						<th scope="col">
+							🌟🌟🌟
+							<br>
+							Private
+							<br>
+							<small>Choose your coverage, see doctors faster.</small>
+						</th>
 					</tr>
 					<tr>
 						<th scope="row">Price</th>
@@ -33,23 +51,67 @@
 				</thead>
 				<tbody>
 					<tr>
-						<th scope="row"></th>
-						<td>From €200/month</td>
-						<td>From €200/month</td>
-						<td>From €200/month</td>
+						<th colspan="4">By purpose</th>
+					</tr>
+					<tr>
+						<th scope="row">Get a Schengen Visa</th>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">Get a National Visa</th>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">Renew a <a href="/glossary/Aufenthaltstitel">residence permit</a></th>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">Work</th>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">Study</th>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<th colspan="4">Features</th>
+					</tr>
+					<tr>
+						<th scope="row">Choose your coverage</th>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">Change your mind later</th>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 				</tbody>
 				<tfoot>
 					<tr>
 						<th scope="row"></th>
 						<td scope="col">
-							<a href="">Choose expat</a>
+							<a class="internal-link" href="">Choose expat</a>
 						</td>
 						<td scope="col">
-							<a href="">Choose public</a>
+							<a class="internal-link" href="">Choose public</a>
 						</td>
 						<td scope="col">
-							<a href="">Choose private</a>
+							<a class="internal-link" href="">Choose private</a>
 						</td>
 					</tr>
 				</tfoot>
@@ -67,7 +129,7 @@
 				</div>
 			</div>
 			<div class="buttons bar">
-				<a href="https://allaboutberlin.com/guides/german-health-insurance" class="internal-link">Learn how health insurance works</a>
+				<strong><a href="https://allaboutberlin.com/guides/german-health-insurance" class="internal-link">Learn how health insurance works</a></strong>
 			</div>
 		</section>
 		{% tool "health-insurance-calculator", mode="question", static=True, id="contact" %}
@@ -88,7 +150,7 @@
 				</div>
 				<div>
 					<h3>Truly personalised advice</h3>
-					<p>When it comes to your future, we don't believe in "one size fits all". Each decision is a conversation, and we're here for it.</p>
+					<p>When it comes to your future, we don't believe in "one size fits all". Each case is a conversation, and we're happy to talk.</p>
 				</div>
 			</div>
 		</section>
