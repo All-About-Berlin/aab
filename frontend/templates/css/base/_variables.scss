@@ -45,6 +45,7 @@
 
     // Colours
     --c-highlight: #da513d;
+    --c-error: #da513d;
     --c-highlight-green: #0c8;
     --c-text-error: #{darken(#da513d, 20%)};
     --c-text-heading: #000;
@@ -102,6 +103,7 @@
 @media (prefers-color-scheme: dark) {
     :root{
         --c-highlight: #9f3a2b;
+        --c-error: #9f3a2b;
         --c-highlight-green: #{darken(#0c8, 20%)};
         --c-text: #bbb;
         --c-text-error: #{lighten(#9f3a2b, 20%)};

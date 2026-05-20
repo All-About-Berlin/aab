@@ -2,6 +2,7 @@
     --b-radius: var(--m);
 
     --c-highlight: #2fc68e;
+    --c-error: #da513d;
     --c-highlight-green: #2fc68e;
     --c-text-error: #{darken(#da513d, 20%)};
     --c-text-heading: #000;
@@ -35,6 +36,7 @@
 @media (prefers-color-scheme: dark) {
     :root{
         --c-highlight: #1b7453;  // 20% darker
+        --c-error: #9f3a2b;
         --c-highlight-green: #1b7453;
         --c-text: #bbb;
         --c-text-error: #{lighten(#9f3a2b, 20%)};
@@ -162,5 +164,9 @@ main > .collapsible{
         &:not(:first-child){
             border-left: var(--b-box);
         }
+    }
+
+    td{
+        text-align: center;
     }
 }

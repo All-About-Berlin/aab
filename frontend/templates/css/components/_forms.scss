@@ -487,9 +487,9 @@ input[type=range] {
 .show-errors .tabs:has(:invalid),
 .pension-refund-calculator .error
 {
-    border-color: var(--c-highlight)!important;
+    border-color: var(--c-error)!important;
     background-color: var(--c-bg-input-error)!important;
-    box-shadow: var(--shadow-s), 0 0 0 1px var(--c-highlight)!important;
+    box-shadow: var(--shadow-s), 0 0 0 1px var(--c-error)!important;
 }
 
 .show-errors .tabs :invalid + label{
