@@ -227,10 +227,10 @@ export default {
 						<price v-if="minCostByOption[option.id]" :amount="minCostByOption[option.id]" per-month></price>
 						<div class="two-columns" v-if="prosAndCons(option.id)">
 							<ul>
-								<li class="list-yes" v-for="pro in prosAndCons(option.id).pros" v-text="pro" :key="pro"></li>
+								<li class="yes" v-for="pro in prosAndCons(option.id).pros" v-text="pro" :key="pro"></li>
 							</ul>
 							<ul>
-								<li class="list-no" v-for="con in prosAndCons(option.id).cons" v-text="con" :key="con"></li>
+								<li class="no" v-for="con in prosAndCons(option.id).cons" v-text="con" :key="con"></li>
 							</ul>
 						</div>
 					</button>

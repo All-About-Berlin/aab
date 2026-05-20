@@ -219,8 +219,8 @@ class WrappedTableExtension(Extension):
 
 class CheckCrossListProcessor(Treeprocessor):
     markers = {
-        "✓ ": "list-yes",
-        "✗ ": "list-no",
+        "✓ ": "yes",
+        "✗ ": "no",
     }
 
     def run(self, root: ElementTree.Element) -> ElementTree.Element:
@@ -240,8 +240,8 @@ class CheckCrossListExtension(Extension):
     """
     Adds CSS classes to list items starting with ✓ or ✗:
 
-    - ✓ Good thing  → <li class="list-yes">Good thing</li>
-    - ✗ Bad thing   → <li class="list-no">Bad thing</li>
+    - ✓ Good thing  → <li class="yes">Good thing</li>
+    - ✗ Bad thing   → <li class="no">Bad thing</li>
     """
 
     def extendMarkdown(self, md):
