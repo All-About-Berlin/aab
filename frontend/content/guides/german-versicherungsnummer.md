@@ -83,6 +83,12 @@ There are many ways to do this:
 
 1 to 6 weeks later, you will get a letter with your *Sozialversicherungsnummer*.[^10] Most of the time, it takes less than 2 weeks. If you go in person, you will get it instantly.
 
+### If you apply for the KSK
+
+When you apply for the *[[Künstlersozialkasse]]*, you need a *Sozialversicherungsnummer*. If you don't have one, the KSK will get one for you.
+
+**[How to apply for the KSK ➞](/guides/ksk-kuenstlersozialkasse)**
+
 ### Other ways to find your social insurance number
 
 - **On your payslips**  

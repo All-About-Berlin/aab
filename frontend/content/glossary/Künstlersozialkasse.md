@@ -13,7 +13,7 @@ Related_guides:
 
 The Künstlersozialkasse (KSK) is a social fund for freelance artists, publicists and art teachers. It's funded by the government, and by businesses who hire freelance artists.[^0]
 
-When you are a KSK member, they pay half of your [health insurance](/glossary/gesetzliche%20Krankenversicherung), and half of your [public pension insurance](/glossary/gesetzliche%20Krankenversicherung).
+When you are a member, the KSK pays half of your [health insurance](/glossary/gesetzliche%20Krankenversicherung), [long-term care insurance](/glossary/Pflegeversicherung) and [public pension insurance](/glossary/gesetzliche%20Krankenversicherung).
 
 **[How to join the KSK ➞](/guides/ksk-kuenstlersozialkasse)**
 

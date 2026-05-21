@@ -17,7 +17,7 @@ If you are a freelance artist, publicist or art teacher, you should apply for th
 
 The Künstlersozialkasse (KSK) is a social fund for freelance artists, publicists and art teachers. It's funded by the government, and by businesses who hire freelance artists.[^0]
 
-When you are a KSK member, **they pay half of your [health insurance](/glossary/gesetzliche%20Krankenversicherung), and half of your [public pension insurance](/glossary/gesetzliche%20Krankenversicherung)**. There is no membership fee.
+When you are a KSK member, **they pay half of your [health insurance](/glossary/gesetzliche%20Krankenversicherung), [long-term care insurance](/glossary/Pflegeversicherung) and [public pension insurance](/glossary/gesetzliche%20Krankenversicherung)**. There is no membership fee.
 
 ## Why join the KSK?
 
@@ -34,20 +34,20 @@ When you are a KSK member, **they pay half of your [health insurance](/glossary/
 - ✓ **It helps you get [permanent residence](/glossary/Niederlassungserlaubnis)**  
     Before you apply for [permanent residence](/glossary/Niederlassungserlaubnis), you must pay [public pension insurance](/glossary/gesetzliche%20Krankenversicherung) for 60 months. The KSK makes public pension insurance more affordable for freelancers.
 - ✓ **You get more things for the same price**  
-    If you earn less than €{{GKV_MAX_INCOME|cur}} per year, your [net income](/glossary/Netto%20income) stays the same. If you earn more, [you pay a little more](/guides/ksk-kuenstlersozialkasse#how-much-does-it-cost), but it's still a really good deal.
+    If you earn less than €{{GKV_MAX_INCOME|cur}} per year, your [net income](/glossary/Netto%20income) stays the same. If you earn more, [you pay a little more](#how-much-does-it-cost), but it's still a really good deal.
 
 ### Disadvantages
 
 - ✗ **There is a lot of paperwork**  
-    The KSK application process is a bit hard. It takes a few months to get accepted. If you don't speak German, you might need a translator.
+    The KSK application process is a bit hard. It takes a few months to get accepted. You might need to try multiple times. If you don't speak German, you might need a translator.
 - ✗ **They reject a lot of people**  
     You might need to try multiple times, and still get rejected. Some people give up. Others sue the KSK to get accepted.
-- ✗ **You can't always keep your private health insurance**  
-    With the KSK, if you earn less than €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year, you must switch to [public health insurance](/glossary/gesetzliche%20Krankenversicherung). Most of the time, it's a good thing, but you might prefer to keep your private health insurance. [More information here.](/guides/ksk-kuenstlersozialkasse#can-i-have-private-health-insurance-with-the-ksk)
+- ✗ **You can't always [keep your private health insurance](#can-i-have-private-health-insurance-with-the-ksk)**  
+    If you earn less than €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year, you must switch to [public health insurance](/glossary/gesetzliche%20Krankenversicherung). It's usually a good thing, but you might prefer to keep your private health insurance.
 - ✗ **It can limit your options**  
-    If you have other sources of income, [it can be complicated](/guides/ksk-kuenstlersozialkasse#can-i-have-another-source-of-income-while-in-the-ksk). You can't earn more than €{{MINIJOB_MAX_INCOME|cur}} per month from other freelance activities. You might need to refuse some contracts to stay in the KSK. You can still have a side job and stay in the KSK.
-- ✗ **Backpayments**  
-    When the KSK accepts you, your membership starts on the date you applied. You must pay health insurance and pension insurance for the time you waited. If they take 5 months to accept you, you must pay KSK contributions for those 5 months. These backpayments can be very expensive. [More information about KSK backpayments.](/guides/ksk-kuenstlersozialkasse#backpayments)
+    Artistic/journalistic activities must be your main source of income. If you have other sources of income, [it can be complicated](#can-i-have-another-source-of-income-while-in-the-ksk). You might need to refuse some contracts to stay in the KSK. You can still have a side job and stay in the KSK.
+- ✗ **[Backpayments](#backpayments)**  
+    When the KSK accepts you, your membership starts from the date you applied. If they take 5 months to accept you, you are a member for those 5 months. In some cases, you must make health insurance and pension insurance backpayments for that period.
 
 ### How much does it cost?
 
@@ -80,7 +80,7 @@ If you earn more than €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year, 
 - ✓ **Musicians**  
     This includes singers, DJs,[^7] audio designers, voice actors, and many more. Your music must be the focus of the event. For example, wedding musicians are not accepted.
     - **DJs** must prove that they create art.[^8] Making music is art, so it's accepted. Playing someone else's music is technical work, so it's not accepted.
-    - **Orchestra musicians** are rarely accepted, because they are rarely self-employed.
+    - **Orchestra musicians** are only accepted if they are self-employed. Most orchestra musicians are employees.
     - **Wedding singers** sometimes get rejected, because their music is not the focus of the event. Some get accepted. You never know.
 - ✓ **Publicists**  
     This includes writers, journalists, bloggers,[^9] authors, reporters, copywriters, copy editors, YouTubers,[^10] influencers, some translators, and many more. You must work in an artistic or journalistic context. It must require some creativity. Working on artistic texts is art, so it's accepted. Working on scientific texts is journalism, so it's accepted. In general, if you get credit for your work, it's probably artistic or journalistic enough.
@@ -88,7 +88,7 @@ If you earn more than €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year, 
     - **Publishers** are rarely accepted, because they are distributors, not artists or publicists. They don't create their own texts.
     - **Curators** are not always accepted. They must make money from their own content (books, catalogues), not from administrative tasks.
 - ✓ **Teachers**  
-    This includes art, design, writing and music teachers. You must teach other people to become professional artists or publicists.[^12] You can't only teach refugees or old people, because that's social work.[^13]
+    This includes art, design, writing and music teachers. You must teach other people to become professional artists or publicists.[^12] If you teach art as therapy, entertainment or social work, the KSK might reject you.[^13]
     - **Dance teachers** are only covered if they teach dance as art, not as entertainment, sport or therapy.[^14]
 
 **[Full list of job titles](https://www.kuenstlersozialkasse.de/fileadmin/Dokumente/Mediencenter_Unternehmer_Verwerter/Informationsschriften/Info_06_-_Kuenstlerische_publizistische_Taetigkeiten_und_Abgabesaetze.pdf)** (PDF, in German)
@@ -96,17 +96,17 @@ If you earn more than €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year, 
 The KSK does not accept...
 
 - ✗ **Programmers**  
-    Software developers, web developers and other IT workers can't join the KSK, because it's technical work, not art.[^12] Bloggers and web designers can join the KSK, because they are publicists.
+    Software developers, web developers and IT workers are usually rejected. Most of their income is from technical work, not artistic work.[^56] Bloggers and web designers can join the KSK, because they are publicists.
 - ✗ **Artisans**  
-    If the biggest part of your job is to *make* things - even things that you design yourself - you are probably an artisan. The KSK might reject your application. The KSK often rejects photographers, tattoo artists and fashion designers because of this.[^15]
+    If the biggest part of your job is to *make* things - even things that you design yourself - you are probably an artisan. The KSK often rejects photographers, tattoo artists and fashion designers because of this.[^15] Try applying anyway; they might still accept you.[^57]
 
-For some professions, it's harder to apply. You need really strong proof that you are an artist, not an artisan or a technical worker. In that situation, I recommend to hire an expert to help you.
+For some professions, it's harder to apply. You need really strong proof that you are an artist, not an artisan or a technical worker. In that situation, I recommend to [hire an expert](#kunstlersozialkasse-experts) to help you.
 
 **Students** can join the KSK. If you work less than 20 hours per week, the KSK does not pay half of your health insurance, but it pays half of your public pension.[^55]
 
-## What are the KSK requirements?
+## KSK requirements
 
-When you apply for the KSK, you must prove that you meet those requirements.[^16] You must send a lot of [documents](/guides/ksk-kuenstlersozialkasse#required-documents) to prove that.
+When you apply for the KSK, you must prove that you meet those requirements.[^16] You must send a lot of [documents](#required-documents) to prove that.
 
 ### You are an artist, publicist or art teacher
 
@@ -115,7 +115,7 @@ This means that...
 - [ ] **You work in an artistic or journalistic context**  
     Creativity and originality is a big part of your work. If your work is original enough to have copyright, it should be okay. If you don't get credited for your work, it's probably not creative enough. For example, wedding singers don't work in an artistic context, so they sometimes get rejected. Some dance teachers teach fitness, not art.
 - [ ] **It's your main job**  
-    Creative work must be the biggest part of your work, and the biggest part of your income. You can have other sources of income, but [it gets complicated](/guides/ksk-kuenstlersozialkasse#can-i-have-another-source-of-income-while-in-the-ksk). Students can also join the KSK.[^55]
+    Creative work must be the biggest part of your work, and the biggest part of your income. You can have other sources of income, but [it gets complicated](#can-i-have-another-source-of-income-while-in-the-ksk). Students can also join the KSK.[^55]
 - [ ] **It's not temporary**  
     You plan to do this kind of work for a long time, not just a few months.[^17]
 
@@ -154,34 +154,36 @@ This means that...
 - [ ] **You work from Germany**  
     You must work from Germany at least 25% of the time, even if your clients are in other countries. You don't need German clients to join the KSK.[^22]
 
-All German residents can join the KSK. You don't need German citizenship. Your nationality does not affect your application.
+All German residents can join the KSK. Your nationality does not affect your application. You don't need German citizenship or permanent residence.
+
+Your current [residence permit](/glossary/Aufenthaltstitel) can affect your application. For example, if you apply as a writer, but you have a [freelance visa](/glossary/Freelance%20visa) for marketing, the KSK might ask you to change your residence permit.[^58]
 
 ### You are not an employer
 
 This means that...
 
 - [ ] **You have maximum one employee**  
-    You can only hire one other employee.[^23] You can hire as many [apprentices](/glossary/Azubi), [minijob](/glossary/Minijob) employees, and freelancers as you want.[^23]
+    You can only hire one other employee.[^23] You can hire as many contractors, freelancers, [apprentices](/glossary/Azubi), [minijob](/glossary/Minijob) employees as you want.[^23]
 
-## How to apply for the KSK?
+## How to apply for the KSK
 
 You do not automatically join the KSK. You must apply for it. If you don't join the KSK, nobody will force you.
 
 ### Is it hard to apply?
 
-**It's not that hard.** If you clearly meet the [requirements](/guides/ksk-kuenstlersozialkasse#what-are-the-ksk-requirements), then it's easy. If your case is not clear, then it's a bit harder.
+**It's not that hard.** If you clearly meet the [requirements](#ksk-requirements), then it's easy. If your case is not clear, then it's a bit harder.
 
-You must send [a lot of documents](/guides/ksk-kuenstlersozialkasse#required-documents) to prove that you are an artist, publicist or art teacher. This includes a resume, a portfolio, bank statements, letters of reference, reviews, contracts, invoices and more.[^24] It takes a few days to gather all the documents.
+You must send [a lot of documents](#required-documents) to prove that you are an artist, publicist or art teacher. This includes a resume, a portfolio, bank statements, letters of reference, reviews, contracts, invoices and more.[^24] It takes a few days to gather all the documents.
 
 **You must do everything in German**. If you don't speak German, you will need a translator.[^25] The KSK often asks more questions in German.
 
-**Staying in the KSK is easy**. Once a year, you must [tell them your predicted income](/guides/ksk-kuenstlersozialkasse#costs-depend-on-predicted-income). Each year, the KSK [audits 5% of its members](/guides/ksk-kuenstlersozialkasse#random-audits). If this happens to you, you must show tax declarations and other documents from the last 4 years. It's more work, but it's not hard.
+**Staying in the KSK is easy**. Once a year, you must [tell them your predicted income](#costs-depend-on-predicted-income). Each year, the KSK [audits 5% of its members](#random-audits). If this happens to you, you must show tax declarations and other documents from the last 4 years. It's more work, but it's not hard.
 
 ### How long does it take?
 
 The KSK needs **2 to 4 months** to decide, but they can take up to 1 year.[^26] If you prepare your application well, the KSK sometimes decides faster.
 
-After you fill the registration form, you have 4 weeks to send the [required documents](/guides/ksk-kuenstlersozialkasse#required-documents). Then the KSK needs 2 to 4 months to make a decision. They often ask more questions, or ask for more documents. Each time, it takes a few weeks.
+After you fill the registration form, you have 4 weeks to send the [required documents](#required-documents). Then the KSK needs 2 to 4 months to make a decision. They often ask more questions, or ask for more documents. Each time, it takes a few weeks.
 
 If the KSK rejects you, you must send more documents to appeal their decision. This takes more time.
 
@@ -198,7 +200,7 @@ There are good reasons to hire an expert:
 - **They tell you exactly what to do**  
     They give you clear instructions and tell you exactly what documents you need. They can explain everything to you. It makes the application process less confusing.
 
-**[People who can help you ➞](/guides/ksk-kuenstlersozialkasse#need-help)**
+**[People who can help you ➞](#need-help)**
 
 ### 0. Get your residence permit
 
@@ -208,7 +210,7 @@ If you need a [residence permit](/glossary/Aufenthaltstitel) to work in Germany,
 
 ### 1. Get health insurance
 
-The KSK is not a health insurer. You must [choose health insurance](/guides/german-health-insurance) yourself, and the KSK will pay for half of it. You can choose any [public health insurance](/glossary/gesetzliche%20Krankenversicherung).[^27] [In some cases](/guides/ksk-kuenstlersozialkasse#can-i-have-private-health-insurance-with-the-ksk), you can also choose [private health insurance](/glossary/private%20Krankenversicherung).
+The KSK is not a health insurer. You must [choose health insurance](/guides/german-health-insurance) yourself, and the KSK will pay for half of it. You can choose any [public health insurance](/glossary/gesetzliche%20Krankenversicherung).[^27] [In some cases](#can-i-have-private-health-insurance-with-the-ksk), you can also choose [private health insurance](/glossary/private%20Krankenversicherung).
 
 **[How to choose German health insurance ➞](/guides/german-health-insurance)**
 
@@ -216,9 +218,9 @@ The KSK is not a health insurer. You must [choose health insurance](/guides/germ
 
 {% tool "health-insurance-calculator", mode="question", static=True %}
 
-**While you wait for the KSK's decision**, you also need health insurance. During that time, it's better to have public health insurance to avoid [KSK backpayments](/guides/ksk-kuenstlersozialkasse#backpayments).
+**While you wait for the KSK's decision**, you also need health insurance. During that time, it's better to have public health insurance to avoid [KSK backpayments](#backpayments).
 
-**When the KSK accepts you**, you might need to switch to public health insurance. In some cases, you can also [keep your private health insurance](/guides/ksk-kuenstlersozialkasse#can-i-have-private-health-insurance-with-the-ksk).
+**When the KSK accepts you**, you might need to switch to public health insurance. In some cases, you can also [keep your private health insurance](#can-i-have-private-health-insurance-with-the-ksk).
 
 ### 2. Fill the registration form
 
@@ -226,13 +228,13 @@ Fill [the registration form](https://www.kuenstlersozialkasse.de/kuenstler-und-p
 
 **[KSK online registration form ➞](https://www.kuenstlersozialkasse.de/kuenstler-und-publizisten/anmeldung)**
 
-You will get a confirmation email a few minutes later. You will get another email with a reference number (*Aktenzeichen*) a few hours later. You need this number when you fill the application form.
+You will get a confirmation email a few minutes later. You usually get another email with a reference number (*Aktenzeichen*) a few hours later.[^59] You need this number when you fill the application form.
 
-After you fill this form, you have 4 weeks to send the [required documents](/guides/ksk-kuenstlersozialkasse#required-documents).[^29]
+After you fill this form, you have 4 weeks to send the [required documents](#required-documents).[^29]
 
 ### 3. Fill the application form
 
-Download [the application form](/out/ksk-application-form) and fill it. This takes around 1 hour. You must know your [social insurance number](/glossary/Sozialversicherungsnummer) and your [tax ID](/glossary/Steueridentifikationsnummer).
+Download [the application form](/out/ksk-application-form) and fill it. This takes around 1 hour. You must know your [social insurance number](/glossary/Sozialversicherungsnummer) and your [tax ID](/glossary/Steueridentifikationsnummer). If you don't have a social insurance number, the KSK will get one for you.[^60]
 
 The application form is in German. The instructions are at the end of the form. [These English instructions](https://www.settle-in-berlin.com/wp-content/uploads/2021/01/ZineFGRG_KSK_Desktop.pdf) can help.
 
@@ -242,13 +244,13 @@ The application form is in German. The instructions are at the end of the form. 
 
 ### 4. Collect the required documents
 
-Collect the [required documents](/guides/ksk-kuenstlersozialkasse#required-documents). This takes a few hours.
+Collect the [required documents](#required-documents). This takes a few hours.
 
-These documents must prove that you meet the [KSK requirements](/guides/ksk-kuenstlersozialkasse#what-are-the-ksk-requirements). If you prepare well, your application will go faster.
+These documents must prove that you meet the [KSK requirements](#ksk-requirements). If you prepare well, your application will go faster.
 
-You can [hire an expert](/guides/ksk-kuenstlersozialkasse#need-help) to review your documents. They can improve your chances of getting accepted.
+You can [hire an expert](#need-help) to review your documents. They can improve your chances of getting accepted.
 
-**[List of required documents ➞](/guides/ksk-kuenstlersozialkasse#required-documents)**
+**[List of required documents ➞](#required-documents)**
 
 ### 5. Send everything to the KSK
 
@@ -263,7 +265,7 @@ There are 2 ways to send your documents:
 
 Print all your documents on A4 paper. If you have documents in other sizes, make an A4 photocopy. Do not staple the documents. They will be scanned page by page.[^30]
 
-Do not include books, pamphlets, business cards, CDs, DVDs or USB drives, only A4 documents. If you want to show external websites, print screenshots of them.
+Send copies, not the original documents. Do not include books, pamphlets, business cards, CDs, DVDs or USB drives, only A4 documents. If you want to show external websites, print screenshots of them.
 
 **[How to mail a letter](/guides/mail-a-letter)** — from your computer, without a printer
 
@@ -289,7 +291,7 @@ For example, the KSK rejected me because my income comes from advertising, not s
 
 ## Required documents
 
-You don't need to include *every* document in this list. You must only prove that you meet the [KSK requirements](/guides/ksk-kuenstlersozialkasse#what-are-the-ksk-requirements). You must help a stranger understand what you do, how you earn money, and why you are eligible for the KSK.
+You don't need to include *every* document in this list. You must only prove that you meet the [KSK requirements](#ksk-requirements). You must help a stranger understand what you do, how you earn money, and why you are eligible for the KSK.
 
 ### Application documents
 
@@ -347,7 +349,7 @@ If you can, include proof that you have upcoming projects. Proofs of future inco
 - [ ] **Proof of health insurance** (*[[Mitgliedsbescheinigung]]*)  
     You get this from your health insurer, or from your health insurance broker. If you don't have health insurance yet, get a *vorläufige Mitgliedsbescheinigung* from any public health insurer, or [ask my insurance expert](/guides/german-health-insurance#need-help) to help you [choose health insurance](/guides/german-health-insurance/for-freelancers). His help is free.
     - **[Public health insurance exemption form](https://www.kuenstlersozialkasse.de/fileadmin/Dokumente/Mediencenter_K%C3%BCnstler_Publizisten/Vordrucke_und_Formulare/Befreiung_von_der_gesetzl._KV.pdf)**  
-        If you want to [keep your private health insurance](/guides/ksk-kuenstlersozialkasse#can-i-have-private-health-insurance-with-the-ksk) after you join the KSK, include this form.
+        If you want to [keep your private health insurance](#can-i-have-private-health-insurance-with-the-ksk) after you join the KSK, include this form.
     - **Private health insurance contract**  
         If you want to keep your private health insurance after you join the KSK, include your private health insurance contract.
 
@@ -374,13 +376,20 @@ If you have children, you need these documents.
 
 ### Backpayments
 
-When the KSK accepts you, your membership starts on the date you applied. You must pay health insurance and [pension insurance](/glossary/gesetzliche%20Rentenversicherung) for the time you waited. If they take 5 months to accept you, you must pay KSK contributions for those 5 months.
+Your KSK membership starts on the day you applied, not on the day they accept you. For example, if you apply in February, and the KSK approves your application in October, you are a KSK member since February.
 
-What happens depends on the health insurance you had while you waited:
+This means that after the KSK accepts you, you must make **retroactive pension payments** for the months you waited. For example, if they take 8 months to accept your application, you must make 8 months of [pension insurance](/glossary/gesetzliche%20Rentenversicherung) backpayments.
 
-- **If you had [public health insurance](/glossary/gesetzliche%20Krankenversicherung)**, you can get a refund from your health insurer. You can use your refund to pay the KSK. The cost will be almost the same. If you earn over €{{GKV_MAX_INCOME|cur}} per year, you could pay a little more.
-- **If you had [private health insurance](/glossary/private%20Krankenversicherung)**, you can *sometimes* get a refund from your health insurer. You can use your refund to pay the KSK backpayments. If you don't get a refund, you will pay twice for your health insurance for the months you were waiting.
-- **If you had [expat health insurance](/glossary/Expat%20health%20insurance)**, you can *sometimes* get a refund from your health insurer.
+If you have public health insurance, the KSK also retroactively pays half of your health insurance.
+
+What happens depends on which health insurance you had while you waited:
+
+- **If you had [public health insurance](/glossary/gesetzliche%20Krankenversicherung)**  
+    The KSK refunds half of your health insurance payments since the date you applied. You can keep the same health insurance.
+- **If you had [private health insurance](/glossary/private%20Krankenversicherung)**  
+    The KSK *sometimes* refunds half of your private health insurance payments. You must usually switch to public health insurance one full month after the KSK accepts you. For example, if they accept you at the end of June, you must switch to public health insurance in August.[^61] You can sometimes [keep your private health insurance](#can-i-have-private-health-insurance-with-the-ksk).
+- **If you had [expat health insurance](/glossary/Expat%20health%20insurance)**  
+    The KSK does not refund half of your expat health insurance payments. You must switch to public health insurance as soon as the KSK accepts you.
 
 ### You pay every month
 
@@ -404,7 +413,7 @@ If your predicted income is wrong, it's okay.
 
 Every year, the KSK verifies 5% of its members. They choose at random. If they verify you, you have 4 weeks to send them your [tax declarations](/glossary/Steuerbescheid) of the last 4 years.[^39] They will check two things:
 
-1. you still meet the [KSK requirements](/guides/ksk-kuenstlersozialkasse#what-are-the-ksk-requirements)
+1. you still meet the [KSK requirements](#ksk-requirements)
 2. you did not lie about your predicted income
 
 ### When you leave Germany
@@ -421,20 +430,18 @@ If you can't get your pension payments back, you will get a German pension when 
 
 ### Can I have private health insurance with the KSK?
 
-**It depends.**[^27] You can only have private health insurance if...[^40]
+**It depends.**[^27] After you join the KSK, you can keep your private health insurance if...[^40]
 
-- You were a freelancer for less than 3 years[^49]
-- or you earn more than €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year for 3 years in a row.[^51]
+- You were self-employed for less than 3 years[^49]
+- or you earned more than €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year for 3 years in a row.[^51]
+
+**The KSK pays half of your private health insurance.** They pay up to {{GKV_RATE_EMPLOYER|percent(1)}}% of your income, or up to €{{(GKV_RATE_EMPLOYER/100 * GKV_MAX_INCOME/12)|round}} per month. That's half the cost of [public health insurance](/glossary/gesetzliche%20Krankenversicherung) and [long-term care insurance](/glossary/Pflegeversicherung).[^41] If your private health insurance costs more than that, you must pay the extra cost alone.
 
 Your private health insurance must offer similar coverage to public health insurance. [[Expat health insurance]] is not accepted.
 
-**The KSK will pay half of your private health insurance**.[^41] They will pay up to 9.65% of your income; half of the cost of public health insurance. If your health insurance costs more than that, you pay the extra cost alone.
+You must pay the private health insurer yourself. Instead of giving you money for health insurance, the KSK lowers your pension insurance payments.[^41]
 
-You must pay the private health insurer yourself. The KSK will not give you money back, but they will lower your pension insurance payments.[^41]
-
-For most KSK members, private health insurance is a bad idea. Public health insurance is a better, safer option for you. Private health insurance only makes sense if you have a very high income, and you don't plan to have children.
-
-If you are not sure about this, [talk to a health insurance broker](/guides/german-health-insurance#need-help). They will help you choose the best health insurance for your needs.
+**[How to choose health insurance ➞](/guides/german-health-insurance/for-freelancers)**
 
 ### Can I have another source of income while in the KSK?
 
@@ -475,10 +482,6 @@ If you have private health insurance, you usually need to pay more to cover your
 
 ## Need help?
 
-There are people who can help you apply for the KSK. They can review your documents, answer your questions, and talk to the KSK for you.
-
-A consultation costs between €75 and €200. Keep the invoice; it's a [tax-deductible](/glossary/steuerlich%20absetzbar) expense.[^46]
-
 ### Contact the KSK
 
 If you speak German, you can [call or email the Künstlersozialkasse](https://www.kuenstlersozialkasse.de/service/kontakt).
@@ -491,8 +494,10 @@ If you speak German, you can [call or email the Künstlersozialkasse](https://ww
 
 ### Künstlersozialkasse experts
 
-- **Alex Holz at [Kulturspace](https://www.kulturspace.com/ksk)**  
-    KSK and health insurance expert, native English speaker. His consultation fees are low. Alex helped me write this guide.
+These experts can help you apply for the KSK. They can review your documents, answer your questions, and talk to the KSK for you. Their fee is [tax-deductible](/glossary/steuerlich%20absetzbar).[^46]
+
+- **Alex Holz at [Kulturspace](https://www.kulturspace.com/ksk)**{{ RECOMMENDED }}  
+    KSK and health insurance expert. He speaks English, Ukrainian, Russian and German. He worked for an insurer for 10 years. He offers different packages, from a simple consultation to taking care of everything.
 - **Kathleen Parker at [Red Tape Translation](/out/red-tape-translation)**  
     Relocation consultant with a lot of KSK experience,[^47] native English speaker. Their consultation fees are low. Kathleen reviewed this guide.
 - **[Andri Jürgensen](https://www.kunstrecht.de/)** (Kiel)  
@@ -517,6 +522,8 @@ If you speak German, you can [call or email the Künstlersozialkasse](https://ww
 - **[Berlin Freelancers](https://www.facebook.com/groups/518304044916651)** on Facebook  
     Group for general questions about freelancing in Berlin.
 
+The information in these communities can be inaccurate. The advice is often based on personal experience or incorrect information.
+
 [^0]: [kuenstlersozialabgabe-hilfe.de](https://www.kuenstlersozialabgabe-hilfe.de/)
 [^1]: [Facebook](https://www.facebook.com/groups/berlinfreelancers/posts/4135582286522124/?comment_id=4136430659770620)
 [^2]: [alltageinesfotoproduzenten.de](https://www.alltageinesfotoproduzenten.de/2015/10/19/was-macht-die-kuenstlersozialkasse-nicht-nur-fuer-fotografen/)
@@ -529,7 +536,7 @@ If you speak German, you can [call or email the Künstlersozialkasse](https://ww
 [^9]: [akademie.de](https://www.akademie.de/de/wissen/werbefinanzierte-website-trotzdem-ksk), [Facebook](https://www.facebook.com/groups/398576963891545/posts/1420761465006418/?comment_id=1420782691670962)
 [^10]: [Facebook](https://www.facebook.com/groups/398576963891545/posts/1420761465006418/?comment_id=1420782691670962)
 [^11]: [fgvw.de](https://www.fgvw.de/neues/archiv-2019/sozialrecht-lektoren-und-uebersetzer-wissenschaftlicher-texte-sind-in-der-kuenstlersozialkasse-zu-versichern)
-[^12]: [ksk-rechtshilfe.de](https://www.ksk-rechtshilfe.de/urteile/)
+[^12]: [ksk-rechtshilfe.de](https://www.ksk-rechtshilfe.de/urteile/), [Alex Holz](https://www.linkedin.com/in/alex-holz) (May 2026)
 [^13]: [kunstrecht.de](https://www.kunstrecht.de/kuenstlersozialkasse/versicherungspflicht.html#:~:text=bei%20der%20lehre%20von%20kunst)
 [^14]: [ksk-rechtshilfe.de](https://www.ksk-rechtshilfe.de/urteile/bsg-25-11-2015-b-3-ks-3-14-r/), [ksk-rechtshilfe.de](https://www.ksk-rechtshilfe.de/urteile/#:~:text=und%20nicht%20sportliche%20fitness%20im%20vordergrund%20stehen.), [Facebook](https://www.facebook.com/groups/398576963891545/posts/1511621872587043/?__cft__[0]=AZXVYFKZh6-qThc-vlQ_YmAr53Qj82GX1WUNmDueR4jv4aqpAjuZjpu6sx5pUJRz3gIh5vdp_cW-rH3HlBizogVDW3WveUrbSEIWAgPQuPDp2gkAV-2yp6ocT3lU6toY7gtbuD3lRtFu6luDFR_w9oeOzbZE7-2MbCjFpIBrbvFi8UyYeRQR6Hdws_lOnMJuBJk&__tn__=%2CO%2CP-R)
 [^15]: [kunstrecht.de](https://www.kunstrecht.de/kuenstlersozialkasse/versicherungspflicht.html#:~:text=auch%20modedesigner%20kommen%20nur%20in%20die%20ksk), [tattoo-recht.de](https://tattoo-recht.de/taetowierer-sind-keine-kuenstler/), [rechtslupe.de](https://www.rechtslupe.de/sozialrecht/fotografen-sind-keine-kuenstler-317944)
@@ -573,3 +580,9 @@ If you speak German, you can [call or email the Künstlersozialkasse](https://ww
 [^53]: Letter from the KSK (2023)
 [^54]: Sebastian Hoffmann at [Smart Coop](https://smart-eg.de/en/) (2022)
 [^55]: [kuenstlersozialkasse.de](https://www.kuenstlersozialkasse.de/fileadmin/Dokumente/Mediencenter_K%C3%BCnstler_Publizisten/Informationsschriften/Versicherung_bei_der_KSK_f%C3%BCr_Studierende.pdf) (January 2025)
+[^56]: [ksk-rechtshilfe.de](https://www.ksk-rechtshilfe.de/urteile/), [Alex Holz](https://www.linkedin.com/in/alex-holz) (May 2026)
+[^57]: [Alex Holz](https://www.linkedin.com/in/alex-holz) (May 2026)
+[^58]: [Alex Holz](https://www.linkedin.com/in/alex-holz) (May 2026)
+[^59]: [Alex Holz](https://www.linkedin.com/in/alex-holz) (May 2026)
+[^60]: [Alex Holz](https://www.linkedin.com/in/alex-holz) (May 2026)
+[^61]: [Alex Holz](https://www.linkedin.com/in/alex-holz) (May 2026)

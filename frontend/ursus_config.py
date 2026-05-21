@@ -108,44 +108,35 @@ ctx["PFLEGEVERSICHERUNG_MAX_RATE"] = (
 # Public pension contribution (%) - RVBeitrSBek 202X
 ctx["RV_MIN_CONTRIBUTION"] = (ctx["RV_BASE_RATE"] * ctx["MINIJOB_MAX_INCOME"] / 100).normalize()
 
-
-gkv_min_rate_employee = (  # Total rate for employees
+# Total rate for employees (%)
+gkv_min_total_rate_employee = (
     ctx["GKV_BASE_RATE_EMPLOYEE"] + ctx["PFLEGEVERSICHERUNG_MIN_RATE"] + ctx["GKV_AVG_ZUSATZBEITRAG"]
 )
-
-gkv_max_rate_employee = (  # Total rate for employees
+gkv_max_total_rate_employee = (
     ctx["GKV_BASE_RATE_EMPLOYEE"] + ctx["PFLEGEVERSICHERUNG_MAX_RATE"] + ctx["GKV_AVG_ZUSATZBEITRAG"]
 )
 
-# Min/max health insurance rate for employees (%), with avg. Zusatzbeitrag
-ctx["GKV_MIN_RATE_EMPLOYEE"] = (
-    gkv_min_rate_employee
-    - (  # Employer's contribution
-        ctx["GKV_BASE_RATE_EMPLOYEE"] + ctx["PFLEGEVERSICHERUNG_BASE_RATE"] + ctx["GKV_AVG_ZUSATZBEITRAG"]
-    )
-    / 2
-).normalize()
-ctx["GKV_MAX_RATE_EMPLOYEE"] = (
-    (  # Total cost
-        ctx["GKV_BASE_RATE_EMPLOYEE"] + ctx["PFLEGEVERSICHERUNG_MAX_RATE"] + ctx["GKV_AVG_ZUSATZBEITRAG"]
-    )
-    - (  # Employer's contribution
-        ctx["GKV_BASE_RATE_EMPLOYEE"] + ctx["PFLEGEVERSICHERUNG_BASE_RATE"] + ctx["GKV_AVG_ZUSATZBEITRAG"]
-    )
-    / 2
-).normalize()
+# The employer's share of the total rate (%)
+gkv_employer_rate = (
+    ctx["GKV_BASE_RATE_EMPLOYEE"] + ctx["PFLEGEVERSICHERUNG_BASE_RATE"] + ctx["GKV_AVG_ZUSATZBEITRAG"]
+) / 2
+ctx["GKV_RATE_EMPLOYER"] = gkv_employer_rate.normalize()
 
+# The employee's share of the total rate (%)
+ctx["GKV_MIN_RATE_EMPLOYEE"] = (gkv_min_total_rate_employee - gkv_employer_rate).normalize()
+ctx["GKV_MAX_RATE_EMPLOYEE"] = (gkv_max_total_rate_employee - gkv_employer_rate).normalize()
+
+# Min/max health insurance cost for employees (€/mth), with avg. Zusatzbeitrag
+ctx["GKV_MIN_COST_EMPLOYEE"] = round(ctx["GKV_MIN_INCOME"] * ctx["GKV_MIN_RATE_EMPLOYEE"] / 100, -1)
+ctx["GKV_MAX_COST_EMPLOYEE"] = round(ctx["GKV_MAX_INCOME"] / 12 * ctx["GKV_MAX_RATE_EMPLOYEE"] / 100, -1)
+
+# Total rate for self-employed people
 ctx["GKV_MIN_RATE_SELF_PAY"] = (
     ctx["GKV_BASE_RATE_SELF_PAY"] + ctx["PFLEGEVERSICHERUNG_MIN_RATE"] + ctx["GKV_MIN_ZUSATZBEITRAG"]
 ).normalize()
 ctx["GKV_MAX_RATE_SELF_PAY"] = (
     ctx["GKV_BASE_RATE_SELF_PAY"] + ctx["PFLEGEVERSICHERUNG_MAX_RATE"] + ctx["GKV_MAX_ZUSATZBEITRAG"]
 ).normalize()
-
-# Min/max health insurance cost for employees (€/mth), with avg. Zusatzbeitrag
-ctx["GKV_MIN_COST_EMPLOYEE"] = round(ctx["GKV_MIN_INCOME"] * ctx["GKV_MIN_RATE_EMPLOYEE"] / 100, -1)
-ctx["GKV_MAX_COST_EMPLOYEE"] = round(ctx["GKV_MAX_INCOME"] / 12 * ctx["GKV_MAX_RATE_EMPLOYEE"] / 100, -1)
-
 
 # Contribution (€/mth) for self-pay tariff without right to Krankengeld
 ctx["GKV_MIN_COST_SELF_PAY"] = round(ctx["GKV_MIN_INCOME"] * ctx["GKV_MIN_RATE_SELF_PAY"] / 100, -1)
