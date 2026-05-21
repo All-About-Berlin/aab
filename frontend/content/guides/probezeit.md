@@ -1,8 +1,8 @@
 ---
-Title: The probation period (Probezeit) in Germany
-Short_title: What is the probation period?
-Description: When you start a new job in Germany, you are in your probation period (Probezeit). This guide explains what it means.
-Date_created: 2022-07-12
+title: The probation period (Probezeit) in Germany
+short_title: What is the probation period?
+description: When you start a new job in Germany, you are in your probation period (Probezeit). This guide explains what it means.
+date_created: 2022-07-12
 ---
 
 When you start a new job in Germany, you are in your probation period (*[[Probezeit]]*). During that time, it's easier to lose your job. This guide explains how the *Probezeit* works.

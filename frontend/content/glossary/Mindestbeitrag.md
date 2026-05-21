@@ -1,14 +1,14 @@
 ---
-Title: What is the Mindestbeitrag for German health insurance?
-German_term: Mindestbeitrag
-English_term: Minimum contribution
-Description: The minimum cost of public health insurance.
-Date_created: 2019-01-31
-Related_guides:
-    guides/german-health-insurance.md
-    guides/german-health-insurance/for-a-visa-application.md
-    guides/german-health-insurance/when-unemployed.md
-    tools/health-insurance-calculator.md
+title: What is the Mindestbeitrag for German health insurance?
+german_term: Mindestbeitrag
+english_term: Minimum contribution
+description: The minimum cost of public health insurance.
+date_created: 2019-01-31
+related_guides:
+    - guides/german-health-insurance.md
+    - guides/german-health-insurance/for-a-visa-application.md
+    - guides/german-health-insurance/when-unemployed.md
+    - tools/health-insurance-calculator.md
 ---
 
 The cost of [public health insurance](/glossary/gesetzliche%20Krankenversicherung) is based on your income. If you have a low income, your health insurance is cheaper.

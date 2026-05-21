@@ -1,17 +1,17 @@
 ---
-Title: What is liability insurance (Haftpflichtversicherung)?
-German_term: Haftpflichtversicherung
-English_term: Liability insurance
-Description: An insurance that protects you against liability claims and lawsuits. It covers accidents that are your fault.
-Date_created: 2018-08-21
-Related_guides:
-    guides/haftpflichtversicherung.md
-    guides/insurance.md
-    guides/find-a-flat-in-berlin.md
-    guides/moving-in.md
-    guides/lost-keys.md
-    guides/legal-insurance.md
-    guides/car-insurance-germany.md
+title: What is liability insurance (Haftpflichtversicherung)?
+german_term: Haftpflichtversicherung
+english_term: Liability insurance
+description: An insurance that protects you against liability claims and lawsuits. It covers accidents that are your fault.
+date_created: 2018-08-21
+related_guides:
+    - guides/haftpflichtversicherung.md
+    - guides/insurance.md
+    - guides/find-a-flat-in-berlin.md
+    - guides/moving-in.md
+    - guides/lost-keys.md
+    - guides/legal-insurance.md
+    - guides/car-insurance-germany.md
 ---
 
 Liability insurance (*Haftpflichtversicherung*) covers accidents that are your fault. It pays to fix the damage that you caused.

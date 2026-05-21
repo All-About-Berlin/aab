@@ -1,8 +1,8 @@
 ---
-Title: How banking works in Germany
-Short_title: Banking in Germany
-Description: An introduction to banking, credit cards, savings and bank accounts in Germany.
-Date_created: 2024-04-10
+title: How banking works in Germany
+short_title: Banking in Germany
+description: An introduction to banking, credit cards, savings and bank accounts in Germany.
+date_created: 2024-04-10
 ---
 
 This guide explains how bank accounts, credit cards and bank transfers work in Germany. It's an introduction to banking for immigrants.

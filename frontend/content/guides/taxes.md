@@ -1,8 +1,8 @@
 ---
-Title: How taxes work in Germany
-Short_title: Taxes in Germany
-Description: Information about income tax, health insurance and other German taxes, and ways to pay less taxes.
-Date_created: 2023-10-30
+title: How taxes work in Germany
+short_title: Taxes in Germany
+description: Information about income tax, health insurance and other German taxes, and ways to pay less taxes.
+date_created: 2023-10-30
 ---
 
 This guide explains how taxes work in Germany, and how to pay less taxes.

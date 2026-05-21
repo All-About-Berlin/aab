@@ -1,18 +1,18 @@
 ---
-Title: What is the EU Blue Card?
-German_term: Blaue Karte
-English_term: Blue Card
-Description: A residence permit for skilled workers. It allows you to live and work in Germany.
-Date_created: 2019-09-03
-Related_guides:
-    guides/blue-card.md
-    guides/work-visa.md
-    guides/residence-permit.md
-    guides/permanent-residence.md
-    guides/find-a-job-in-berlin.md
-    guides/immigration-office.md
-    guides/immigration-office/wait-times.md
-    guides/german-health-insurance/for-employees.md
+title: What is the EU Blue Card?
+german_term: Blaue Karte
+english_term: Blue Card
+description: A residence permit for skilled workers. It allows you to live and work in Germany.
+date_created: 2019-09-03
+related_guides:
+    - guides/blue-card.md
+    - guides/work-visa.md
+    - guides/residence-permit.md
+    - guides/permanent-residence.md
+    - guides/find-a-job-in-berlin.md
+    - guides/immigration-office.md
+    - guides/immigration-office/wait-times.md
+    - guides/german-health-insurance/for-employees.md
 ---
 
 The EU Blue Card (*Blaue Karte*) is a [residence permit](/glossary/Aufenthaltstitel) for skilled workers.

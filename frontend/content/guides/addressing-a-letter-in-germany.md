@@ -1,8 +1,8 @@
 ---
-Title: How to write a German address
-Short_title: How to write a German address
-Description: This is how you address letters and packages to Germany, and how you write your address on German forms.
-Date_created: 2017-12-04
+title: How to write a German address
+short_title: How to write a German address
+description: This is how you address letters and packages to Germany, and how you write your address on German forms.
+date_created: 2017-12-04
 ---
 
 This guide shows you how to write a German address and send letters to Germany.

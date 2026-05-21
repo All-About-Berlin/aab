@@ -1,8 +1,8 @@
 ---
-Title: Degiro review: there are better options
-Short_title: Review of Degiro
-Description: This is my experience with Degiro, an online stock broker in Germany. I use Degiro since 2018.
-Date_created: 2018-01-23
+title: 'Degiro review: there are better options'
+short_title: Review of Degiro
+description: This is my experience with Degiro, an online stock broker in Germany. I use Degiro since 2018.
+date_created: 2018-01-23
 ---
 
 Degiro is an online broker with low fees. You can buy and sell stocks, and their fees are much lower than most German banks.

@@ -1,8 +1,8 @@
 ---
-Title: How to get a Bürgeramt appointment in Berlin
-Short_title: How to get a Bürgeramt appointment
-Description: This is how you get an appointment at the citizens' office in Berlin. This is required for the Anmeldung and many other services.
-Date_created: 2017-09-18
+title: How to get a Bürgeramt appointment in Berlin
+short_title: How to get a Bürgeramt appointment
+description: This is how you get an appointment at the citizens' office in Berlin. This is required for the Anmeldung and many other services.
+date_created: 2017-09-18
 ---
 
 This guide explains how to get an appointment at the [[Bürgeramt]] in Berlin.

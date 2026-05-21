@@ -1,8 +1,8 @@
 ---
-Title: Where to get help in Berlin
-Short_title: Where to find help
-Description: Communities, experts and resources that can answer your questions about life in Berlin.
-Date_created: 2017-09-27
+title: Where to get help in Berlin
+short_title: Where to find help
+description: Communities, experts and resources that can answer your questions about life in Berlin.
+date_created: 2017-09-27
 ---
 
 If I can't answer your questions, these resources can help.

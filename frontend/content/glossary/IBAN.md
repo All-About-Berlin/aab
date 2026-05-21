@@ -1,13 +1,13 @@
 ---
-Title: What is an IBAN number?
-German_term: IBAN
-English_term: International Bank Account Number
-Description: A number you use for bank transfers in Europe.
-Date_created: 2018-10-23
-Related_guides:
-    guides/banking.md
-    guides/best-bank-germany.md
-    guides/gez-rundfunkbeitrag.md
+title: What is an IBAN number?
+german_term: IBAN
+english_term: International Bank Account Number
+description: A number you use for bank transfers in Europe.
+date_created: 2018-10-23
+related_guides:
+    - guides/banking.md
+    - guides/best-bank-germany.md
+    - guides/gez-rundfunkbeitrag.md
 ---
 
 IBAN means International Bank Account Number. It's a bank account's unique number. IBANs are used to make [SEPA transfers](/glossary/SEPA-%C3%9Cberweisung).

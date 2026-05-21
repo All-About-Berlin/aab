@@ -1,8 +1,8 @@
 ---
-Title: How to buy a Deutschland Ticket
-Short_title: How to buy a Deutschland Ticket
-Description: This guide explains how the Deutschland Ticket or D-Ticket works as a tourist or as a resident.
-Date_created: 2023-04-13
+title: How to buy a Deutschland Ticket
+short_title: How to buy a Deutschland Ticket
+description: This guide explains how the Deutschland Ticket or D-Ticket works as a tourist or as a resident.
+date_created: 2023-04-13
 ---
 
 This guide explains how the [[Deutschland Ticket]] works in Berlin.

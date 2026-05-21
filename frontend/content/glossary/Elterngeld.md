@@ -1,13 +1,13 @@
 ---
-Title: What is Elterngeld?
-German_term: Elterngeld
-English_term: Parental allowance
-Description: An income parents receive during parental leave.
-Date_created: 2025-05-28
-Related_guides:
-    guides/german-health-insurance.md
-    guides/kitagutschein.md
-    guides/kita.md
+title: What is Elterngeld?
+german_term: Elterngeld
+english_term: Parental allowance
+description: An income parents receive during parental leave.
+date_created: 2025-05-28
+related_guides:
+    - guides/german-health-insurance.md
+    - guides/kitagutschein.md
+    - guides/kita.md
 ---
 
 *Elterngeld* is financial support for parents. It gives parents an income when they stop working to raise their newborn child.

@@ -1,7 +1,7 @@
 ---
-Title: Contact me
-Description: My name, email, address, IBAN, tax number and other contact information, and information on how to donate to this website.
-Date_created: 2022-01-27
+title: Contact me
+description: My name, email, address, IBAN, tax number and other contact information, and information on how to donate to this website.
+date_created: 2022-01-27
 ---
 
 Hi, I'm [Nicolas](/about). You can contact me to…

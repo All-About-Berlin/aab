@@ -1,15 +1,15 @@
 ---
-Title: What is Hausratversicherung?
-German_term: Hausratversicherung
-English_term: Home contents insurance
-Description: Insurance that insures your furniture, appliances, bicycle and other things you own.
-Date_created: 2018-09-28
-Related_guides:
-    guides/haftpflichtversicherung.md
-    guides/insurance.md
-    guides/moving-in.md
-    guides/lost-keys.md
-    guides/bicycle-in-berlin.md
+title: What is Hausratversicherung?
+german_term: Hausratversicherung
+english_term: Home contents insurance
+description: Insurance that insures your furniture, appliances, bicycle and other things you own.
+date_created: 2018-09-28
+related_guides:
+    - guides/haftpflichtversicherung.md
+    - guides/insurance.md
+    - guides/moving-in.md
+    - guides/lost-keys.md
+    - guides/bicycle-in-berlin.md
 ---
 
 Home contents insurance or household insurance (*Hausratversicherung*) insures your furniture, your appliances, and the other movable things in your house.

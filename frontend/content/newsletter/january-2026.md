@@ -1,7 +1,7 @@
 ---
-Title: What's new in January 2026
-Description: Berlin rent map, changes to medical cannabis law and what to expect in 2026
-Date_created: 2026-01-01
+title: What's new in January 2026
+description: Berlin rent map, changes to medical cannabis law and what to expect in 2026
+date_created: 2026-01-01
 ---
 
 Happy new year! I hope that your neighbours have lit the last of their fireworks. Orange-clad BSR employees are already hard at work cleaning up the mess.

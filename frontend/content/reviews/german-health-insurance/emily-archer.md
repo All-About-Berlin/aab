@@ -1,4 +1,4 @@
 ---
-Related_expert: experts/emily-archer.md
-Date_reviewed: 2025-04-28
+related_expert: experts/emily-archer.md
+date_reviewed: 2025-04-28
 ---

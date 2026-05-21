@@ -1,8 +1,8 @@
 ---
-Title: Berlin travel guide: what to see, do and eat in Berlin
-Short_title: Visiting Berlin
-Description: If you are visiting Berlin, these are the things you should see and do, and the things you should know.
-Date_created: 2017-09-15
+title: 'Berlin travel guide: what to see, do and eat in Berlin'
+short_title: Visiting Berlin
+description: If you are visiting Berlin, these are the things you should see and do, and the things you should know.
+date_created: 2017-09-15
 ---
 
 This guide is for tourists who want to visit Berlin. If you want to move to Berlin, read my [moving to Berlin guide](/guides/moving-to-berlin).

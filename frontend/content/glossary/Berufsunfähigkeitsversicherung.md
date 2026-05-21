@@ -1,13 +1,13 @@
 ---
-Title: What is Berufsunfähigkeitsversicherung?
-German_term: Berufsunfähigkeitsversicherung
-English_term: Job disability insurance
-Description: Insurance that gives you an income if you are too sick or injured to work.
-Date_created: 2018-12-11
-Related_guides:
-    guides/sick-leave.md
-    guides/insurance.md
-    guides/freelance-visa.md
+title: What is Berufsunfähigkeitsversicherung?
+german_term: Berufsunfähigkeitsversicherung
+english_term: Job disability insurance
+description: Insurance that gives you an income if you are too sick or injured to work.
+date_created: 2018-12-11
+related_guides:
+    - guides/sick-leave.md
+    - guides/insurance.md
+    - guides/freelance-visa.md
 ---
 
 Job disability insurance (*Berufsunfähigkeitsversicherung*) gives you an income if you are too sick or injured to work. It covers you after you stop getting [paid sick leave](/glossary/Krankengeld). It's also called income protection insurance.

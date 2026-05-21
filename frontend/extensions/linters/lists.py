@@ -14,14 +14,30 @@ class MultilineListsLinter(LineLinter):
     previous_file_path = None
     item_indent = None
     item_has_double_space = None
+    _line_count = 0
+    _in_frontmatter = False
     list_regex = re.compile(r"^(?P<indent> *)(?P<bullet>[-*+]|\d+\.) (?P<content>.*)")
 
     def lint_line(self, file_path: Path, line: str) -> LineLinterResult:
-        match = self.list_regex.match(line)
-
         if self.previous_file_path != file_path:
             self.item_indent = None
             self.previous_file_path = file_path
+            self._line_count = 0
+            self._in_frontmatter = False
+
+        self._line_count += 1
+        stripped = line.rstrip("\n")
+
+        # Skip front matter
+        if self._line_count == 1 and stripped == "---":
+            self._in_frontmatter = True
+            return
+        if self._in_frontmatter:
+            if stripped == "---":
+                self._in_frontmatter = False
+            return
+
+        match = self.list_regex.match(line)
 
         # List item first line
         if match:

@@ -1,8 +1,8 @@
 ---
-Title: What is open on Sundays and public holidays in Berlin?
-Short_title: What is open on Sundays?
-Description: A complete guide to grocery stores, Apothekes and other businesses that open on Sundays and public holidays in Berlin.
-Date_created: 2017-12-06
+title: What is open on Sundays and public holidays in Berlin?
+short_title: What is open on Sundays?
+description: A complete guide to grocery stores, Apothekes and other businesses that open on Sundays and public holidays in Berlin.
+date_created: 2017-12-06
 ---
 
 On Sundays and [public holidays](/guides/public-holidays), most shops in Berlin must close, but there are exceptions. This guide shows you where to buy groceries and other things when all the stores are closed.

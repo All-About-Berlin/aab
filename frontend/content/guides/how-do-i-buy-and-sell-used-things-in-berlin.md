@@ -1,8 +1,8 @@
 ---
-Title: Where to buy, sell and donate things in Berlin?
-Short_title: How to buy, sell and donate things
-Description: This is how you trade used clothes, vehicles, electronics and other things in Berlin.
-Date_created: 2017-09-02
+title: Where to buy, sell and donate things in Berlin?
+short_title: How to buy, sell and donate things
+description: This is how you trade used clothes, vehicles, electronics and other things in Berlin.
+date_created: 2017-09-02
 ---
 
 This is how you trade used clothes, vehicles, electronics and other things in Berlin.

@@ -1,4 +1,4 @@
 ---
-Related_expert: experts/elodie-roux.md
-Date_reviewed: 2026-02-10
+related_expert: experts/elodie-roux.md
+date_reviewed: 2026-02-10
 ---

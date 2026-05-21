@@ -1,12 +1,12 @@
 ---
-Title: What is a Hundesteuermarke?
-German_term: Hundesteuermarke
-English_term: Dog tax collar tag
-Description: The Hundesteuermarke was a dog tag you get when you register your dog.
-Date_created: 2020-12-17
-Related_guides:
-    guides/dog-ownership.md
-    guides/taxes.md
+title: What is a Hundesteuermarke?
+german_term: Hundesteuermarke
+english_term: Dog tax collar tag
+description: The Hundesteuermarke was a dog tag you get when you register your dog.
+date_created: 2020-12-17
+related_guides:
+    - guides/dog-ownership.md
+    - guides/taxes.md
 ---
 
 Before 2024, you got a special dog tag when you registered your dog with the *Finanzamt*. You do not need a *Hundesteuermarke* any more.[^1]

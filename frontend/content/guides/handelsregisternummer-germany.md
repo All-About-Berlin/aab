@@ -1,7 +1,7 @@
 ---
-Title: What is a Handelsregisternummer?
-Description: The German Registernummer, what it looks like and where to find it.
-Date_created: 2018-03-14
+title: What is a Handelsregisternummer?
+description: The German Registernummer, what it looks like and where to find it.
+date_created: 2018-03-14
 ---
 
 When you [start a business](/guides/start-a-business-in-germany) and list it in the German Trade Register (*[[Handelsregister]]*), you get a *Handelsregisternummer*.

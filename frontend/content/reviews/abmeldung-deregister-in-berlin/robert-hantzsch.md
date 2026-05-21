@@ -1,4 +1,4 @@
 ---
-Related_expert: experts/robert-hantzsch.md
-Date_reviewed: 2025-08-10
+related_expert: experts/robert-hantzsch.md
+date_reviewed: 2025-08-10
 ---

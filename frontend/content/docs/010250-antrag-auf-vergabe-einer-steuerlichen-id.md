@@ -1,16 +1,16 @@
 ---
-Title: German tax ID application form
-German_term: Antrag auf Vergabe einer steuerlichen Identifikationsnummer für nicht meldepflichtige Personen
-English_term: Tax ID application form
-German_document: documents/010250-Antrag-auf-Vergabe-einer-steuerlichen-Identifikationsnummer-für-nicht-meldepflichtige-Personen-durch-das-Finanzamt-Deutsch.pdf
-English_document: documents/010250-Antrag-auf-Vergabe-einer-steuerlichen-Identifikationsnummer-für-nicht-meldepflichtige-Personen-durch-das-Finanzamt-English.pdf
-Description: Use this form to get a tax ID without an Anmeldung. This form is for people who can't register their address, or who don't live in Germany.
-Date_created: 2022-12-21
-Related_guides:
-    guides/german-tax-id-steuernummer.md
-    guides/anmeldung-in-english-berlin.md
-Categories:
-    finanzamt
+title: German tax ID application form
+german_term: Antrag auf Vergabe einer steuerlichen Identifikationsnummer für nicht meldepflichtige Personen
+english_term: Tax ID application form
+german_document: documents/010250-Antrag-auf-Vergabe-einer-steuerlichen-Identifikationsnummer-für-nicht-meldepflichtige-Personen-durch-das-Finanzamt-Deutsch.pdf
+english_document: documents/010250-Antrag-auf-Vergabe-einer-steuerlichen-Identifikationsnummer-für-nicht-meldepflichtige-Personen-durch-das-Finanzamt-English.pdf
+description: Use this form to get a tax ID without an Anmeldung. This form is for people who can't register their address, or who don't live in Germany.
+date_created: 2022-12-21
+related_guides:
+    - guides/german-tax-id-steuernummer.md
+    - guides/anmeldung-in-english-berlin.md
+categories:
+    - finanzamt
 ---
 
 This form helps you request a [tax ID](/glossary/Steueridentifikationsnummer) without [registering your address](/glossary/Anmeldung). It works in all of Germany.

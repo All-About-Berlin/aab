@@ -1,10 +1,10 @@
 ---
-Title: How to apply for a German residence permit
-Short_title: How to get a residence permit
-Description: This guide shows you if you need a residence permit (Aufenthaltstitel) to live, work or study in Germany.
-Date_created: 2022-06-23
-Related_reviews:
-    reviews/residence-permit/mirko-vorreuter.md
+title: How to apply for a German residence permit
+short_title: How to get a residence permit
+description: This guide shows you if you need a residence permit (Aufenthaltstitel) to live, work or study in Germany.
+date_created: 2022-06-23
+related_reviews:
+    - reviews/residence-permit/mirko-vorreuter.md
 ---
 
 You might need a residence permit (*[[Aufenthaltstitel]]*) to live, work and study in Germany.

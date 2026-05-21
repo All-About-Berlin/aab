@@ -1,9 +1,9 @@
 ---
-Title: Should you trust Ottonova? An objective review
-Short_title: Review of Ottonova
-Description: Before you choose Ottonova as your German health insurer, you should consider these points.
-Call_to_action: askOurInsuranceExpert
-Date_created: 2019-06-29
+title: Should you trust Ottonova? An objective review
+short_title: Review of Ottonova
+description: Before you choose Ottonova as your German health insurer, you should consider these points.
+call_to_action: askOurInsuranceExpert
+date_created: 2019-06-29
 ---
 
 [Ottonova](/out/ottonova) is an insurance company in Germany. They sell their own [private health insurance](/glossary/private%20Krankenversicherung) and [dental insurance](/glossary/Zahnzusatzversicherung).

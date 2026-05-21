@@ -1,8 +1,8 @@
 ---
-Title: List of relocation consultants and agencies in Berlin
-Short_title: Relocation consultants in Berlin
-Description: These relocation consultants can help you get the right residence permit and visa to live, work and freelance in Germany.
-Date_created: 2018-03-26
+title: List of relocation consultants and agencies in Berlin
+short_title: Relocation consultants in Berlin
+description: These relocation consultants can help you get the right residence permit and visa to live, work and freelance in Germany.
+date_created: 2018-03-26
 ---
 
 Relocation agencies make it easier to [move to Germany](/guides/moving-to-berlin).

@@ -1,15 +1,15 @@
 ---
-Title: What is the VAT number or Umsatzsteuernummer?
-German_term: Umsatzsteuernummer
-English_term: VAT number
-Description: A unique number that identifies a business that charges VAT.
-Date_created: 2018-07-31
-Related_guides:
-    guides/value-added-tax.md
-    guides/german-tax-id-steuernummer.md
-    guides/freelance-visa.md
-    guides/fragebogen-zur-steuerlichen-erfassung.md
-    guides/start-a-business-in-germany.md
+title: What is the VAT number or Umsatzsteuernummer?
+german_term: Umsatzsteuernummer
+english_term: VAT number
+description: A unique number that identifies a business that charges VAT.
+date_created: 2018-07-31
+related_guides:
+    - guides/value-added-tax.md
+    - guides/german-tax-id-steuernummer.md
+    - guides/freelance-visa.md
+    - guides/fragebogen-zur-steuerlichen-erfassung.md
+    - guides/start-a-business-in-germany.md
 ---
 
 The VAT number (*Umsatzsteuernummer*, *Umsatzsteuer-Identifikationsnummer* or *USt-IdNr.*) is for businesses that charge [VAT](/glossary/Umsatzsteuer). In Germany, the VAT number has this format: **DE123456789**.

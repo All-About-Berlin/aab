@@ -1,13 +1,13 @@
 ---
-Title: What is an Arbeitgeberbescheinigung?
-German_term: Arbeitgeberbescheinigung
-English_term: Certificate of employment
-Description: A document from your employer. It confirms that you work there. It usually lists your salary and your position. You might need it to renew your residence permit.
-Date_created: 2024-07-23
-Related_guides:
-    guides/permanent-residence.md
-    guides/find-a-flat-in-berlin.md
-    guides/find-a-job-in-berlin.md
+title: What is an Arbeitgeberbescheinigung?
+german_term: Arbeitgeberbescheinigung
+english_term: Certificate of employment
+description: A document from your employer. It confirms that you work there. It usually lists your salary and your position. You might need it to renew your residence permit.
+date_created: 2024-07-23
+related_guides:
+    - guides/permanent-residence.md
+    - guides/find-a-flat-in-berlin.md
+    - guides/find-a-job-in-berlin.md
 ---
 
 A certificate of employment (*Arbeitgeberbescheinigung*) proves that you work for your employer. It describes your job, your responsibilities, your salary and other details.

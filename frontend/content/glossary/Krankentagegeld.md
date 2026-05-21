@@ -1,12 +1,12 @@
 ---
-Title: What is Krankentagegeld?
-German_term: Krankentagegeld
-English_term: Sickness allowance
-Description: An allowance you get from your health insurer if you are sick for a long time.
-Date_created: 2022-08-30
-Related_guides:
-    guides/sick-leave.md
-    guides/german-health-insurance.md
+title: What is Krankentagegeld?
+german_term: Krankentagegeld
+english_term: Sickness allowance
+description: An allowance you get from your health insurer if you are sick for a long time.
+date_created: 2022-08-30
+related_guides:
+    - guides/sick-leave.md
+    - guides/german-health-insurance.md
 ---
 
 If you are too sick to work, your employer pays your full salary for 6 weeks. After 6 weeks, you stop getting paid.

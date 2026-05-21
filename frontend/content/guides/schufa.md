@@ -1,8 +1,8 @@
 ---
-Title: How to get a free Schufa
-Short_title: How to get a Schufa
-Description: If you are applying for an apartment in Berlin, you will almost always be asked to include a Schufa in your application. This is how you obtain a Schufa-Auskunft for free
-Date_created: 2017-09-01
+title: How to get a free Schufa
+short_title: How to get a Schufa
+description: If you are applying for an apartment in Berlin, you will almost always be asked to include a Schufa in your application. This is how you obtain a Schufa-Auskunft for free
+date_created: 2017-09-01
 ---
 
 If you [apply for an apartment](/guides/find-a-flat-in-berlin), you might need a *Schufa* report. Most landlords require it.[^7] This is how you get one.

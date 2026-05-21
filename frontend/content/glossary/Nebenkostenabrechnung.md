@@ -1,12 +1,12 @@
 ---
-Title: What is the Nebenkostenabrechnung?
-German_term: Nebenkostenabrechnung
-English_term: Utility costs calculation
-Description: A yearly invoice that shows how much utilities you used.
-Date_created: 2021-06-04
-Related_guides:
-    guides/mietkaution.md
-    guides/moving-out.md
+title: What is the Nebenkostenabrechnung?
+german_term: Nebenkostenabrechnung
+english_term: Utility costs calculation
+description: A yearly invoice that shows how much utilities you used.
+date_created: 2021-06-04
+related_guides:
+    - guides/mietkaution.md
+    - guides/moving-out.md
 ---
 
 The utility bill (*Nebenkostenabrechnung* or *Betriebskostenabrechnung*) is calculated every year. It shows how much hot water and electricity you really used.

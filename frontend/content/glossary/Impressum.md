@@ -1,13 +1,13 @@
 ---
-Title: What is an Impressum?
-German_term: Impressum
-English_term: Imprint
-Description: A page on a website that lists a company's contact information and legal information.
-Date_created: 2018-07-31
-Related_guides:
-    guides/handelsregisternummer-germany.md
-    guides/website-compliance-germany.md
-    guides/start-a-business-in-germany.md
+title: What is an Impressum?
+german_term: Impressum
+english_term: Imprint
+description: A page on a website that lists a company's contact information and legal information.
+date_created: 2018-07-31
+related_guides:
+    - guides/handelsregisternummer-germany.md
+    - guides/website-compliance-germany.md
+    - guides/start-a-business-in-germany.md
 ---
 
 The imprint (*Impressum*) is a page on a website. It shows important information about the owners of the website: their address, their contact information, their *[VAT ID](/glossary/Umsatzsteuernummer)* and their *[[Handelsregisternummer]]*.

@@ -1,8 +1,8 @@
 ---
-Title: How to make a noise complaint in Berlin
-Short_title: How to make a noise complaint
-Description: If you are dealing with loud neighbours in Berlin, this is how you file a noise complaint with the Ordnungsamt.
-Date_created: 2018-06-01
+title: How to make a noise complaint in Berlin
+short_title: How to make a noise complaint
+description: If you are dealing with loud neighbours in Berlin, this is how you file a noise complaint with the Ordnungsamt.
+date_created: 2018-06-01
 ---
 
 This guide shows you how to deal with noise problems in Berlin.

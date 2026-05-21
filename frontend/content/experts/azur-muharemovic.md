@@ -1,9 +1,9 @@
 ---
-Name: Azur Muharemovic
-Job_title: Bicycle repairsman
-Email: azur.muharemovic@gmail.com
-Website: https://recyclies.com
-Picture: experts/photos/azur-muharemovic.jpg
+name: Azur Muharemovic
+job_title: Bicycle repairsman
+email: azur.muharemovic@gmail.com
+website: https://recyclies.com
+picture: experts/photos/azur-muharemovic.jpg
 ---
 
 Azur is the founder of [Recyclies](https://recyclies.com), a business that refurbishes and rents bicycles in Berlin.

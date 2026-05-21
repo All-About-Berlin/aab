@@ -1,18 +1,18 @@
 ---
-Title: What is the German student visa?
-German_term: Studentenvisum
-English_term: Student visa
-Description: A residence permit to study in Germany.
-Date_created: 2019-08-07
-Related_guides:
-    guides/residence-permit.md
-    guides/moving-to-berlin.md
-    guides/german-health-insurance/for-students.md
-    guides/work-visa.md
-    guides/blue-card.md
-    guides/freelance-visa.md
-    guides/permanent-residence.md
-    guides/find-a-job-in-berlin.md
+title: What is the German student visa?
+german_term: Studentenvisum
+english_term: Student visa
+description: A residence permit to study in Germany.
+date_created: 2019-08-07
+related_guides:
+    - guides/residence-permit.md
+    - guides/moving-to-berlin.md
+    - guides/german-health-insurance/for-students.md
+    - guides/work-visa.md
+    - guides/blue-card.md
+    - guides/freelance-visa.md
+    - guides/permanent-residence.md
+    - guides/find-a-job-in-berlin.md
 ---
 
 The German student visa (*Studentenvisum*) is a [residence permit](/glossary/Aufenthaltstitel) to study in Germany.

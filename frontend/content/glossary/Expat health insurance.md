@@ -1,15 +1,15 @@
 ---
-Title: What is German expat insurance?
-German_term: Gästeversicherung
-English_term: Expat health insurance
-Description: A type of short-term health insurance that is useful when applying for a German residence permit.
-Date_created: 2020-02-21
-Related_guides:
-    guides/german-health-insurance.md
-    guides/german-health-insurance/for-a-visa-application.md
-    guides/german-health-insurance/for-students.md
-    guides/german-health-insurance/for-freelancers.md
-    tools/health-insurance-calculator.md
+title: What is German expat insurance?
+german_term: Gästeversicherung
+english_term: Expat health insurance
+description: A type of short-term health insurance that is useful when applying for a German residence permit.
+date_created: 2020-02-21
+related_guides:
+    - guides/german-health-insurance.md
+    - guides/german-health-insurance/for-a-visa-application.md
+    - guides/german-health-insurance/for-students.md
+    - guides/german-health-insurance/for-freelancers.md
+    - tools/health-insurance-calculator.md
 ---
 
 Expat health insurance or incoming health insurance is a temporary health insurance. It covers you during your first few months in Germany. You might need it to apply for a German [National Visa](/glossary/National%20Visa).

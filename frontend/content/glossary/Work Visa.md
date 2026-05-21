@@ -1,22 +1,22 @@
 ---
-Title: What is the German Work Visa?
-German_term: Arbeitsvisum
-English_term: Work Visa
+title: What is the German Work Visa?
+german_term: Arbeitsvisum
+english_term: Work Visa
 ssml: <voice language="en-GB">Work visa</voice>
-Description: A type of residence permit that lets you work in Germany.
-Date_created: 2019-07-13
-Related_guides:
-    guides/work-visa.md
-    guides/residence-permit.md
-    guides/blue-card.md
-    guides/immigration-office.md
-    guides/immigration-office/wait-times.md
-    guides/find-a-job-in-berlin.md
-    guides/moving-to-berlin.md
-    guides/german-health-insurance/for-employees.md
-    guides/freelance-visa.md
-    guides/permanent-residence.md
-    guides/fragebogen-zur-steuerlichen-erfassung.md
+description: A type of residence permit that lets you work in Germany.
+date_created: 2019-07-13
+related_guides:
+    - guides/work-visa.md
+    - guides/residence-permit.md
+    - guides/blue-card.md
+    - guides/immigration-office.md
+    - guides/immigration-office/wait-times.md
+    - guides/find-a-job-in-berlin.md
+    - guides/moving-to-berlin.md
+    - guides/german-health-insurance/for-employees.md
+    - guides/freelance-visa.md
+    - guides/permanent-residence.md
+    - guides/fragebogen-zur-steuerlichen-erfassung.md
 ---
 
 The German work visa (*Aufenthaltserlaubnis zur Aufnahme einer Beschäftigung*) is a type of [residence permit](/glossary/Aufenthaltstitel). It's also called a work permit.

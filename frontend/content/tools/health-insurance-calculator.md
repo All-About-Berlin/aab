@@ -1,19 +1,19 @@
 ---
-Title: German health insurance calculator
-Short_title: Health insurance calculator
-Description: Calculate the cost of health insurance, and choose the right German health insurance for your needs.
-Date_created: 2022-01-18
-Call_to_action: askOurInsuranceExpert
-Categories:
-    calculator
-Related_guides:
-    guides/german-health-insurance.md
-    guides/german-health-insurance/for-a-visa-application.md
-    guides/german-health-insurance/for-employees.md
-    guides/german-health-insurance/for-students.md
-    guides/german-health-insurance/for-freelancers.md
-    guides/german-health-insurance/for-apprentices.md
-    guides/german-health-insurance/when-unemployed.md
+title: German health insurance calculator
+short_title: Health insurance calculator
+description: Calculate the cost of health insurance, and choose the right German health insurance for your needs.
+date_created: 2022-01-18
+call_to_action: askOurInsuranceExpert
+categories:
+    - calculator
+related_guides:
+    - guides/german-health-insurance.md
+    - guides/german-health-insurance/for-a-visa-application.md
+    - guides/german-health-insurance/for-employees.md
+    - guides/german-health-insurance/for-students.md
+    - guides/german-health-insurance/for-freelancers.md
+    - guides/german-health-insurance/for-apprentices.md
+    - guides/german-health-insurance/when-unemployed.md
 ---
 
 This tool helps you choose the best German health insurance. It explains your options, and shows how much [health insurance](/glossary/Krankenversicherung) costs in {{ now.strftime('%Y') }}.

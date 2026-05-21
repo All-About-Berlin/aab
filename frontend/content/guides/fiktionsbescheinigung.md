@@ -1,10 +1,10 @@
 ---
-Title: How the German Fiktionsbescheinigung works
-Short_title: How to get a Fiktionsbescheinigung
-Description: This guide explains what a Fiktionsbescheinigung is, how it works, and how to get one. It explains how to travel with a Fiktionsbescheinigung.
-Date_created: 2023-03-02
-Related_reviews:
-    reviews/fiktionsbescheinigung/mirko-vorreuter.md
+title: How the German Fiktionsbescheinigung works
+short_title: How to get a Fiktionsbescheinigung
+description: This guide explains what a Fiktionsbescheinigung is, how it works, and how to get one. It explains how to travel with a Fiktionsbescheinigung.
+date_created: 2023-03-02
+related_reviews:
+    - reviews/fiktionsbescheinigung/mirko-vorreuter.md
 ---
 
 This guide explains how the *Fiktionsbescheinigung* works, how to apply for it, and how to travel with an expired [residence permit](/glossary/Aufenthaltstitel).

@@ -1,8 +1,8 @@
 ---
-Title: How to move out of an apartment in Germany
-Short_title: How to move out of an apartment
-Description: Everything you must do when leaving your apartment: ending your lease, changing your address, hiring a moving company and more.
-Date_created: 2019-10-05
+title: How to move out of an apartment in Germany
+short_title: How to move out of an apartment
+description: 'Everything you must do when leaving your apartment: ending your lease, changing your address, hiring a moving company and more.'
+date_created: 2019-10-05
 ---
 
 This guide explains what to do before you move out of an apartment.

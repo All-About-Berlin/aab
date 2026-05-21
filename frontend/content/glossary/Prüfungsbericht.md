@@ -1,12 +1,12 @@
 ---
-Title: What is a Prüfungsbericht?
-German_term: Prüfungsbericht
-English_term: Audit report
-Description: An audit report created by a tax advisor.
-Date_created: 2021-02-08
-Related_guides:
-    guides/steuerberater-vs-buchhalter.md
-    guides/renew-german-freelance-visa.md
+title: What is a Prüfungsbericht?
+german_term: Prüfungsbericht
+english_term: Audit report
+description: An audit report created by a tax advisor.
+date_created: 2021-02-08
+related_guides:
+    - guides/steuerberater-vs-buchhalter.md
+    - guides/renew-german-freelance-visa.md
 ---
 
 An audit report (*Prüfungsbericht* or *Prüfbericht*) is a document created by a tax advisor. You might need one to [renew your freelance visa](/guides/renew-german-freelance-visa).

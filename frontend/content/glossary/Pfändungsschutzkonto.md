@@ -1,13 +1,13 @@
 ---
-Title: What is a Pfändungsschutzkonto (P-Konto)?
-German_term: Pfändungsschutzkonto
-English_term: Garnishment protection for bank accounts
-Description: A bank account that is protected against garnishment if you don't pay your debts.
-Date_created: 2021-07-16
-Related_guides:
-    guides/banking.md
-    guides/best-bank-germany.md
-    guides/start-a-business-in-germany.md
+title: What is a Pfändungsschutzkonto (P-Konto)?
+german_term: Pfändungsschutzkonto
+english_term: Garnishment protection for bank accounts
+description: A bank account that is protected against garnishment if you don't pay your debts.
+date_created: 2021-07-16
+related_guides:
+    - guides/banking.md
+    - guides/best-bank-germany.md
+    - guides/start-a-business-in-germany.md
 ---
 
 A *Pfändungsschutzkonto* (*P-Konto*) is a special type of bank account. It lets you access some of your money, even when your bank account is frozen.[^0] That gives you enough money to buy food and pay your bills.[^1] You can convert your bank account to a *P-Konto* for free.[^1]

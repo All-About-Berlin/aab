@@ -1,12 +1,12 @@
 ---
-Title: How to find a Kita in Berlin
-Short_title: How to find a Kita
-Description: This guide shows how to find a place for your child in a Kindergarten.
-Date_created: 2025-12-05
-Related_reviews:
-    reviews/kita/elodie-roux.md
-    reviews/kita/lisa-hübner-moreno.md
-    reviews/kita/amy-deverell.md
+title: How to find a Kita in Berlin
+short_title: How to find a Kita
+description: This guide shows how to find a place for your child in a Kindergarten.
+date_created: 2025-12-05
+related_reviews:
+    - reviews/kita/elodie-roux.md
+    - reviews/kita/lisa-hübner-moreno.md
+    - reviews/kita/amy-deverell.md
 ---
 
 In Germany, most children go to *[[Kita]]* until around 6 years old. It's a free daycare for young children.

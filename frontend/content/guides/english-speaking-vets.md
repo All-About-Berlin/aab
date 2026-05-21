@@ -1,8 +1,8 @@
 ---
-Title: English-speaking veterinarians in Berlin
+title: English-speaking veterinarians in Berlin
 short_title: English-speaking veterinarians
-Description: This list helps you find a Tierarzt who speak English in Berlin.
-Date_created: 2023-05-02
+description: This list helps you find a Tierarzt who speak English in Berlin.
+date_created: 2023-05-02
 ---
 
 If you don't speak German, these veterinarians speak English.

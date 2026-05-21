@@ -1,12 +1,12 @@
 ---
-Title: What is the Maklergebühr or Provision?
-German_term: Provision
-English_term: Agent fee
-Description: A fee you pay to an agent when they help you find an apartment.
-Date_created: 2018-08-21
-Related_guides:
-    guides/find-a-flat-in-berlin.md
-    guides/housing-scams.md
+title: What is the Maklergebühr or Provision?
+german_term: Provision
+english_term: Agent fee
+description: A fee you pay to an agent when they help you find an apartment.
+date_created: 2018-08-21
+related_guides:
+    - guides/find-a-flat-in-berlin.md
+    - guides/housing-scams.md
 ---
 
 When you hire an agent (*[[Makler]]*) to [find an apartment](/guides/find-a-flat-in-berlin), you pay a commission (*Provision* or *Maklergebühr*). [If you did not hire the agent, you should not pay a commission](/guides/housing-scams#agent-fees).[^2]

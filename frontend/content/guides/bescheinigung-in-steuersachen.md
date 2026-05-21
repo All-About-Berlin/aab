@@ -1,12 +1,12 @@
 ---
-Title: How to get a Bescheinigung in Steuersachen
-Short_title: How to get a Bescheinigung in Steuersachen
-Description: This is how you get an certificate of tax matters or Unbedenklichkeitsbescheinigung from the Finanzamt. You might need it for your residence permit or permanent residence.
-German_document: documents/antrag-auf-erteilung-einer-bescheinigung-in-steuersachen.pdf
-English_document: documents/antrag-auf-erteilung-einer-bescheinigung-in-steuersachen.pdf
-German_term: Antrag auf Erteilung einer Bescheinigung in Steuersachen
-English_term: Request for a Bescheinigung in Steuersachen
-Date_created: 2024-07-30
+title: How to get a Bescheinigung in Steuersachen
+short_title: How to get a Bescheinigung in Steuersachen
+description: This is how you get an certificate of tax matters or Unbedenklichkeitsbescheinigung from the Finanzamt. You might need it for your residence permit or permanent residence.
+german_document: documents/antrag-auf-erteilung-einer-bescheinigung-in-steuersachen.pdf
+english_document: documents/antrag-auf-erteilung-einer-bescheinigung-in-steuersachen.pdf
+german_term: Antrag auf Erteilung einer Bescheinigung in Steuersachen
+english_term: Request for a Bescheinigung in Steuersachen
+date_created: 2024-07-30
 ---
 
 When you [apply for a freelance visa](/guides/freelance-visa) or for [permanent residence](/guides/permanent-residence), you might need a certificate of tax matters (*Bescheinigung in Steuersachen* or *steuerliche Unbedenklichkeitsbescheinigung*). This document confirms that you paid your taxes on time, and that you don't owe the *[[Finanzamt]]* money.

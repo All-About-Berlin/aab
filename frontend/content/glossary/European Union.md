@@ -1,9 +1,9 @@
 ---
-Title: What is the European Union (EU)?
-German_term: Europäischer Wirtschaftsraum
-English_term: Europäische Union
-Description: The European Union is an economic union of European countries.
-Date_created: 2023-07-10
+title: What is the European Union (EU)?
+german_term: Europäischer Wirtschaftsraum
+english_term: Europäische Union
+description: The European Union is an economic union of European countries.
+date_created: 2023-07-10
 ---
 
 The European Union (EU) is a group of countries in Europe. If you are an EU citizen, you can live in other EU countries. You don't need a visa or a [residence permit](/glossary/Aufenthaltstitel). Most EU countries use the Euro as their currency.

@@ -1,8 +1,8 @@
 ---
-Title: How to get married in Germany
-Short_title: How to get married
-Description: This guide explains the process of getting married in Germany.
-Date_created: 2017-10-09
+title: How to get married in Germany
+short_title: How to get married
+description: This guide explains the process of getting married in Germany.
+date_created: 2017-10-09
 ---
 
 This guide explains how to get married in Berlin and the rest of Germany. It explains how to register your marriage and make it official (the *Eheschließung*), not how to plan a wedding ceremony.

@@ -1,10 +1,10 @@
 ---
-Title: How to find your Sozialversicherungsnummer
-Short_title: Your Sozialversicherungsnummer
-Description: This is how you find you German social insurance number or social security number. It's also called Versicherungsnummer, Rentenversicherungsnummer or RNVR.
-Date_created: 2018-03-18
-Related_reviews:
-    reviews/german-versicherungsnummer/johannes-kühn.md
+title: How to find your Sozialversicherungsnummer
+short_title: Your Sozialversicherungsnummer
+description: This is how you find you German social insurance number or social security number. It's also called Versicherungsnummer, Rentenversicherungsnummer or RNVR.
+date_created: 2018-03-18
+related_reviews:
+    - reviews/german-versicherungsnummer/johannes-kühn.md
 ---
 
 The *[[Deutsche Rentenversicherung]]* uses your *Sozialversicherungsnummer* to identify you. It looks like this: **12 123456 A 123**. It's a unique number, and it never changes.

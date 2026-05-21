@@ -1,7 +1,7 @@
 ---
-Title: Salaries in Germany
-Description: An overview of salaries in Germany, including the median income, and how to negotiate a better salary.
-Date_created: 2022-07-20
+title: Salaries in Germany
+description: An overview of salaries in Germany, including the median income, and how to negotiate a better salary.
+date_created: 2022-07-20
 ---
 
 When you [look for a job in Germany](/guides/find-a-job-in-berlin), you must know what salary you should get. This helps you negotiate a better salary.

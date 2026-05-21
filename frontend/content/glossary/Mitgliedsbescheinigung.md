@@ -1,14 +1,14 @@
 ---
-Title: What is a Mitgliedsbescheinigung?
-German_term: Mitgliedsbescheinigung
-English_term: Health insurance certificate
-Description: A document that proves that you have health insurance.
-Date_created: 2025-05-28
-Related_guides:
-    guides/german-health-insurance.md
-    guides/german-health-insurance/for-a-visa-application.md
-    guides/residence-permit.md
-    guides/ksk-kuenstlersozialkasse.md
+title: What is a Mitgliedsbescheinigung?
+german_term: Mitgliedsbescheinigung
+english_term: Health insurance certificate
+description: A document that proves that you have health insurance.
+date_created: 2025-05-28
+related_guides:
+    - guides/german-health-insurance.md
+    - guides/german-health-insurance/for-a-visa-application.md
+    - guides/residence-permit.md
+    - guides/ksk-kuenstlersozialkasse.md
 ---
 
 A *Mitgliedsbescheinigung* or *Versicherungsbescheinigung* proves that you have [health insurance](/glossary/Krankenversicherung). You get this document from your health insurer after you [choose health insurance](/guides/german-health-insurance).

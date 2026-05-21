@@ -1,7 +1,7 @@
 ---
-Title: What's new in April 2026
-Description: Public holidays, cherry blossom, labour rights, ADHD, and a few UX improvements.
-Date_created: 2026-04-01
+title: What's new in April 2026
+description: Public holidays, cherry blossom, labour rights, ADHD, and a few UX improvements.
+date_created: 2026-04-01
 ---
 
 ## What's new in Berlin

@@ -1,13 +1,13 @@
 ---
-Title: What is a Mietkautionskonto?
-German_term: Mietkautionskonto
-English_term: Rent deposit account
-Description: A special bank account to hold a rent deposit (Mietkaution).
-Date_created: 2018-07-31
-Related_guides:
-    guides/mietkaution.md
-    guides/find-a-flat-in-berlin.md
-    guides/banking.md
+title: What is a Mietkautionskonto?
+german_term: Mietkautionskonto
+english_term: Rent deposit account
+description: A special bank account to hold a rent deposit (Mietkaution).
+date_created: 2018-07-31
+related_guides:
+    - guides/mietkaution.md
+    - guides/find-a-flat-in-berlin.md
+    - guides/banking.md
 ---
 
 A *Mietkautionskonto* is a special bank account. You deposit your apartment's security deposit (*[[Kaution]]*) in this account. The money stays there until you [move out](/guides/moving-out).

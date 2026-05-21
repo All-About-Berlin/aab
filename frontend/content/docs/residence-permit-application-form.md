@@ -1,23 +1,23 @@
 ---
-Title: German visa application form
-German_term: Antrag auf Erteilung eines Aufenthaltstitels
-English_term: Application for a residence permit
-German_document: documents/residence-permit-application-form-2021.pdf
-English_document: documents/residence-permit-application-form-2021.pdf
-Description: Fill this form to apply for a German residence permit like the work visa or freelance visa. It's in English, German and 9 other languages.
-Date_created: 2018-06-07
-Related_guides:
-    guides/residence-permit.md
-    guides/freelance-visa.md
-    guides/work-visa.md
-    guides/start-a-business-in-germany.md
-    guides/fragebogen-zur-steuerlichen-erfassung.md
-    guides/immigration-office.md
-    guides/immigration-office/wait-times.md
-    guides/german-health-insurance/for-a-visa-application.md
-    guides/freelance-visa-letter-of-intent.md
-Categories:
-    auslaenderbehoerde
+title: German visa application form
+german_term: Antrag auf Erteilung eines Aufenthaltstitels
+english_term: Application for a residence permit
+german_document: documents/residence-permit-application-form-2021.pdf
+english_document: documents/residence-permit-application-form-2021.pdf
+description: Fill this form to apply for a German residence permit like the work visa or freelance visa. It's in English, German and 9 other languages.
+date_created: 2018-06-07
+related_guides:
+    - guides/residence-permit.md
+    - guides/freelance-visa.md
+    - guides/work-visa.md
+    - guides/start-a-business-in-germany.md
+    - guides/fragebogen-zur-steuerlichen-erfassung.md
+    - guides/immigration-office.md
+    - guides/immigration-office/wait-times.md
+    - guides/german-health-insurance/for-a-visa-application.md
+    - guides/freelance-visa-letter-of-intent.md
+categories:
+    - auslaenderbehoerde
 ---
 
 When you apply for a [residence permit](/glossary/Aufenthaltstitel), you must include this form with your application.

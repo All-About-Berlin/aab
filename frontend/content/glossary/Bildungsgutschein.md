@@ -1,15 +1,15 @@
 ---
-Title: What is a Bildungsgutschein?
-German_term: Bildungsgutschein
-English_term: Education voucher
-Description: A voucher for unemployed people. It pays for language classes and professional training.
-Date_created: 2021-04-01
-Related_guides:
-    guides/unemployment-benefits.md
-    guides/losing-your-job.md
-    guides/bildungsurlaub.md
-    guides/learn-german.md
-    guides/start-a-business-in-germany.md
+title: What is a Bildungsgutschein?
+german_term: Bildungsgutschein
+english_term: Education voucher
+description: A voucher for unemployed people. It pays for language classes and professional training.
+date_created: 2021-04-01
+related_guides:
+    - guides/unemployment-benefits.md
+    - guides/losing-your-job.md
+    - guides/bildungsurlaub.md
+    - guides/learn-german.md
+    - guides/start-a-business-in-germany.md
 ---
 
 The *Bildungsgutschein* is a voucher from the *[[Agentur für Arbeit]]*. It allows unemployed people to take language classes and professional training for free. It's a type of [unemployment benefit](/guides/unemployment-benefits).

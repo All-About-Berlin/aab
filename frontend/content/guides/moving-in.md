@@ -1,8 +1,8 @@
 ---
-Title: How to move into an apartment in Germany
-Short_title: How to move into an apartment
-Description: All the little things you should do when moving to a new address in Germany: address changes, mail forwarding and more.
-Date_created: 2019-10-25
+title: How to move into an apartment in Germany
+short_title: How to move into an apartment
+description: 'All the little things you should do when moving to a new address in Germany: address changes, mail forwarding and more.'
+date_created: 2019-10-25
 ---
 
 After you [move to Berlin](/guides/find-a-flat-in-berlin) and [find an apartment](/guides/find-a-flat-in-berlin), you must move in. This guide shows you how it works.

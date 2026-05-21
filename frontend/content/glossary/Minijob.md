@@ -1,12 +1,12 @@
 ---
-Title: What is a minijob?
-German_term: Minijob
-English_term: Minijob
-Description: A low-income, part-time job.
-Date_created: 2018-12-14
-Related_guides:
-    guides/fragebogen-zur-steuerlichen-erfassung.md
-    guides/german-health-insurance.md
+title: What is a minijob?
+german_term: Minijob
+english_term: Minijob
+description: A low-income, part-time job.
+date_created: 2018-12-14
+related_guides:
+    - guides/fragebogen-zur-steuerlichen-erfassung.md
+    - guides/german-health-insurance.md
 ---
 
 In Germany, a minijob is a job that pays €{{MINIJOB_MAX_INCOME|cur}} per month or less.[^0]

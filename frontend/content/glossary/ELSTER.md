@@ -1,13 +1,13 @@
 ---
-Title: What is ELSTER?
-German_term: ELSTER
-English_term: Electronic tax declaration tool
-Description: An online platform to take care of tax-related matters.
-Date_created: 2021-05-13
-Related_guides:
-    guides/german-tax-software.md
-    guides/fragebogen-zur-steuerlichen-erfassung.md
-    guides/value-added-tax.md
+title: What is ELSTER?
+german_term: ELSTER
+english_term: Electronic tax declaration tool
+description: An online platform to take care of tax-related matters.
+date_created: 2021-05-13
+related_guides:
+    - guides/german-tax-software.md
+    - guides/fragebogen-zur-steuerlichen-erfassung.md
+    - guides/value-added-tax.md
 ---
 
 ELSTER (for *ELektronische STeuerERklärung*) is the online platform to [register a business](/guides/fragebogen-zur-steuerlichen-erfassung), file [tax declarations](/glossary/Steuererklärung), file [VAT declarations](/glossary/Umsatzsteuererklärung), change your [tax class](/glossary/Steuerklasse) and other tax matters. It's like an online *[[Finanzamt]]*.

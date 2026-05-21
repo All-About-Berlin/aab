@@ -1,12 +1,12 @@
 ---
-Title: How to join the Künstlersozialkasse (KSK)
-Short_title: How to join the KSK
-Description: This guide shows you how to apply for the Künstlersozialkasse. If you are a freelancer, this can save you hundreds of euros per month.
-Date_created: 2022-06-06
-Related_reviews:
-    reviews/ksk-kuenstlersozialkasse/kathleen-parker.md
-    reviews/ksk-kuenstlersozialkasse/alex-holz.md
-    reviews/ksk-kuenstlersozialkasse/sebastian-hoffmann.md
+title: How to join the Künstlersozialkasse (KSK)
+short_title: How to join the KSK
+description: This guide shows you how to apply for the Künstlersozialkasse. If you are a freelancer, this can save you hundreds of euros per month.
+date_created: 2022-06-06
+related_reviews:
+    - reviews/ksk-kuenstlersozialkasse/kathleen-parker.md
+    - reviews/ksk-kuenstlersozialkasse/alex-holz.md
+    - reviews/ksk-kuenstlersozialkasse/sebastian-hoffmann.md
 ---
 
 If you are a freelance artist, publicist or art teacher, you should apply for the Künstlersozialkasse (KSK). This guide explains why and how.

@@ -1,14 +1,14 @@
 ---
-Title: What is revenue (Umsatz)?
-German_term: Umsatz
-English_term: Revenue
-Description: How much money you earn, ignoring expenses
-Date_created: 2021-01-19
-Related_guides:
-    guides/freiberufler-or-gewerbe.md
-    guides/gewerbesteuer.md
-    guides/taxes.md
-    tools/tax-calculator.md
+title: What is revenue (Umsatz)?
+german_term: Umsatz
+english_term: Revenue
+description: How much money you earn, ignoring expenses
+date_created: 2021-01-19
+related_guides:
+    - guides/freiberufler-or-gewerbe.md
+    - guides/gewerbesteuer.md
+    - guides/taxes.md
+    - tools/tax-calculator.md
 ---
 
 Revenue (*Umsatz* or *Ertrag*) is how much money you earn, ignoring expenses. It's not the same as profit (*[[Gewinn]]*).

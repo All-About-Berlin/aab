@@ -1,8 +1,8 @@
 ---
-Title: How to tip in Germany
-Short_title: How to tip in Germany
-Description: This guide tells how tipping works in German restaurants, bars, taxis, hair salons and more. It explains when to leave a tip, and how much you should tip.
-Date_created: 2023-03-14
+title: How to tip in Germany
+short_title: How to tip in Germany
+description: This guide tells how tipping works in German restaurants, bars, taxis, hair salons and more. It explains when to leave a tip, and how much you should tip.
+date_created: 2023-03-14
 ---
 
 In Germany, **tipping is optional**. There are no rules and everyone tips differently. This guide explains how people *usually* tip.

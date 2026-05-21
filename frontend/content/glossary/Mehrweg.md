@@ -1,10 +1,11 @@
 ---
-Title: What does Mehrweg mean?
-German_term: Mehrweg
-English_term: Multiple-use container
-Description: 
-Date_created: 2018-10-27
-Related_guides: guides/pfand-bottles.md
+title: What does Mehrweg mean?
+german_term: Mehrweg
+english_term: Multiple-use container
+description: A container that is cleaned and reused, instead of destroyed and recycled.
+date_created: 2018-10-27
+related_guides:
+    - guides/pfand-bottles.md
 ---
 
 When a container is *Mehrweg*, it means that it's a multiple-use container. It will be washed and reused. For example, most beer bottles are *Mehrweg*.

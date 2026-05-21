@@ -1,8 +1,8 @@
 ---
-Title: What does "m/w/d" mean in German job offers?
-Short_title: What does "m/w/d" mean?
-Description: German job offers often show "m/w/d" in the title. It's an abbreviation for "male/female/diverse".
-Date_created: 2022-06-09
+title: What does "m/w/d" mean in German job offers?
+short_title: What does "m/w/d" mean?
+description: German job offers often show "m/w/d" in the title. It's an abbreviation for "male/female/diverse".
+date_created: 2022-06-09
 ---
 
 "m/w/d" is an abbreviation of "männlich, weiblich oder divers". This guide explains why it appears on German job listings.

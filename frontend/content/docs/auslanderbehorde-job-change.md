@@ -1,16 +1,16 @@
 ---
-Title: Inform the Ausländerbehörde of a job change
-German_term: Mitteilung über Jobwechsel
-English_term: Job change notice
-Description: Letter to inform the Ausländerbehörde when you change jobs or lose your job.
-Date_created: 2023-07-17
-Related_guides:
-    guides/losing-your-job.md
-    guides/residence-permit.md
-    guides/immigration-office.md
-    docs/resignation-letter.md
-Categories:
-    auslaenderbehoerde
+title: Inform the Ausländerbehörde of a job change
+german_term: Mitteilung über Jobwechsel
+english_term: Job change notice
+description: Letter to inform the Ausländerbehörde when you change jobs or lose your job.
+date_created: 2023-07-17
+related_guides:
+    - guides/losing-your-job.md
+    - guides/residence-permit.md
+    - guides/immigration-office.md
+    - docs/resignation-letter.md
+categories:
+    - auslaenderbehoerde
 ---
 
 If you have a [residence permit](/glossary/Aufenthaltstitel), and you [lose your job](/guides/losing-your-job), you must [tell the *Ausländerbehörde*](/guides/losing-your-job#tell-the-auslanderbehorde).[^2] Use this letter template to do it.{{ fail_on('2026-12-31') }}

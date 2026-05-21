@@ -1,10 +1,10 @@
 ---
-Title: What is the FairWertung logo?
-German_term: FairWertung
-English_term: 
-Description: A logo for clothes donation bins that are run by charities.
-Date_created: 2022-05-18
-Related_guides: guides/donate-clothes.md
+title: What is the FairWertung logo?
+german_term: FairWertung
+description: A logo for clothes donation bins that are run by charities.
+date_created: 2022-05-18
+related_guides:
+    - guides/donate-clothes.md
 ---
 
 Some clothes donation bins are operated by businesses. They sell the donated clothes for a profit.

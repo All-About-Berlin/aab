@@ -1,8 +1,8 @@
 ---
-Title: My honest N26 review — 7 years with N26
-Short_title: Review of N26
-Description: My opinion of N26 bank after 7 years. Is N26 safe? Is it good? Should you use it as your main bank in Germany? Here's what I think.
-Date_created: 2017-09-02
+title: My honest N26 review — 7 years with N26
+short_title: Review of N26
+description: My opinion of N26 bank after 7 years. Is N26 safe? Is it good? Should you use it as your main bank in Germany? Here's what I think.
+date_created: 2017-09-02
 ---
 
 In 2016, I switched to [N26](/out/n26). I left [Commerzbank](/out/commerzbank) because they charge fees for everything.

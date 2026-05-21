@@ -1,12 +1,12 @@
 ---
-Title: What is an Arbeitszeugnis
-German_term: Arbeitszeugnis
-English_term: Job reference letter
-Description: A letter you get from your employer that confirms that you worked there.
-Date_created: 2023-03-28
-Related_guides:
-    docs/resignation-letter.md
-    guides/losing-your-job.md
+title: What is an Arbeitszeugnis
+german_term: Arbeitszeugnis
+english_term: Job reference letter
+description: A letter you get from your employer that confirms that you worked there.
+date_created: 2023-03-28
+related_guides:
+    - docs/resignation-letter.md
+    - guides/losing-your-job.md
 ---
 
 When you [leave a job](/guides/losing-your-job), you ask for a letter of reference (*Arbeitszeugnis*).

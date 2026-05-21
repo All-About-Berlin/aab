@@ -1,4 +1,4 @@
 ---
-Related_expert: experts/graham-pugh.md
-Date_reviewed: 2024-07-08
+related_expert: experts/graham-pugh.md
+date_reviewed: 2024-07-08
 ---

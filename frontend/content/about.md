@@ -1,7 +1,7 @@
 ---
-Title: About the author
-Description: A few words about Nicolas Bouliane, the man behind All About Berlin.
-Date_created: 2025-01-14
+title: About the author
+description: A few words about Nicolas Bouliane, the man behind All About Berlin.
+date_created: 2025-01-14
 ---
 
 Hi, I'm Nicolas Bouliane. I run this website since 2017, and it's my full-time job since 2020. I have built All About Berlin from scratch and written every word published on it.

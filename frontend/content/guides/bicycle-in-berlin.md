@@ -1,10 +1,10 @@
 ---
-Title: How to buy and ride a bicycle in Berlin
-Short_title: How to buy and ride a bicycle
-Description: Everything cyclists should know about riding a bicycle in Berlin: where to buy a bicycle, what equipment is required and what the rules are and more.
-Date_created: 2020-08-21
-Related_reviews:
-    reviews/bicycle-in-berlin/azur-muharemovic.md
+title: How to buy and ride a bicycle in Berlin
+short_title: How to buy and ride a bicycle
+description: 'Everything cyclists should know about riding a bicycle in Berlin: where to buy a bicycle, what equipment is required and what the rules are and more.'
+date_created: 2020-08-21
+related_reviews:
+    - reviews/bicycle-in-berlin/azur-muharemovic.md
 ---
 
 Berlin is better on a bicycle. The city is very flat, and it has a big network of bike paths. In the summer, it's the best way to get around.

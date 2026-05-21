@@ -1,13 +1,13 @@
 ---
-Title: What is profit (Gewinn)?
-German_term: Gewinn
-English_term: Profit is how much income you have left after expenses.
-Description: Profit
-Date_created: 2021-01-19
-Related_guides:
-    guides/freiberufler-or-gewerbe.md
-    guides/gewerbesteuer.md
-    guides/taxes.md
+title: What is profit (Gewinn)?
+german_term: Gewinn
+english_term: Profit is how much income you have left after expenses.
+description: Profit
+date_created: 2021-01-19
+related_guides:
+    - guides/freiberufler-or-gewerbe.md
+    - guides/gewerbesteuer.md
+    - guides/taxes.md
 ---
 
 Profit (*Gewinn*) is how much money you make after expenses. Profit is not the same as revenue (*[[Umsatz]]*).

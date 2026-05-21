@@ -1,9 +1,10 @@
 ---
-Title: How to find a job in Berlin
-Short_title: How to find a job
-Description: This guide shows you how to get a job in Germany, from the job search to your first day at work.
-Date_created: 2017-09-21
-Related_reviews: reviews/find-a-job-in-berlin/greg-tomasik.md
+title: How to find a job in Berlin
+short_title: How to find a job
+description: This guide shows you how to get a job in Germany, from the job search to your first day at work.
+date_created: 2017-09-21
+related_reviews:
+    - reviews/find-a-job-in-berlin/greg-tomasik.md
 ---
 
 This guide helps you find a job in Berlin, from finding job listings to your first day at work.

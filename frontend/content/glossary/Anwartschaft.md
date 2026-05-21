@@ -1,12 +1,12 @@
 ---
-Title: What is an Anwartschaft?
-German_term: Anwartschaft
-English_term: Prospective entitlement
-Description: It lets you pause your health insurance when you leave Germany, and resume it when you come back.
-Date_created: 2026-01-21
-Related_guides:
-    guides/german-health-insurance.md
-    guides/leaving-germany.md
+title: What is an Anwartschaft?
+german_term: Anwartschaft
+english_term: Prospective entitlement
+description: It lets you pause your health insurance when you leave Germany, and resume it when you come back.
+date_created: 2026-01-21
+related_guides:
+    - guides/german-health-insurance.md
+    - guides/leaving-germany.md
 ---
 
 An *Anwartschaft* is something you get when you [leave Germany](/guides/leaving-germany), but plan to return.

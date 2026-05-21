@@ -1,8 +1,8 @@
 ---
-Title: How to get your DHL, GLS, DPD and Hermes packages
-Short_title: How to get your packages
-Description: Did your package get delivered to a neighbour, or not at all? Is it completely lost? Here's what to do.
-Date_created: 2019-02-05
+title: How to get your DHL, GLS, DPD and Hermes packages
+short_title: How to get your packages
+description: Did your package get delivered to a neighbour, or not at all? Is it completely lost? Here's what to do.
+date_created: 2019-02-05
 ---
 
 Delivery services in Germany are bad:

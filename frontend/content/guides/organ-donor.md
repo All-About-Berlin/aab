@@ -1,10 +1,10 @@
 ---
-Title: How to register as an organ donor in Germany
-Short_title: How to become an organ donor
-Description: This guide shows you how to organ donations work in Germany, and how to register as a donor.
-Date_created: 2023-06-03
-Author: Jack Stephan
-Author_URL: https://stephanjack.com/
+title: How to register as an organ donor in Germany
+short_title: How to become an organ donor
+description: This guide shows you how to organ donations work in Germany, and how to register as a donor.
+date_created: 2023-06-03
+author: Jack Stephan
+author_url: https://stephanjack.com/
 ---
 
 This guide explains how to donate your organs after your death. It's very easy: just [get an organ donor card](https://www.ueber-leben.de/organspendeausweis/#kostenlos-bestellen).

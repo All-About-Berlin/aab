@@ -1,11 +1,11 @@
 ---
-Title: What is an Altbau?
-German_term: Altbauwohnung
-English_term: Old building
-Description: An older apartment building.
-Date_created: 2024-04-04
-Related_guides:
-    guides/find-a-flat-in-berlin.md
+title: What is an Altbau?
+german_term: Altbauwohnung
+english_term: Old building
+description: An older apartment building.
+date_created: 2024-04-04
+related_guides:
+    - guides/find-a-flat-in-berlin.md
 ---
 
 An *Altbau* or *Altbauwohnung* is an older apartment. *Altbau* apartments are often prized for their charm.

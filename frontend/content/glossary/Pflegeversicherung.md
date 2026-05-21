@@ -1,13 +1,13 @@
 ---
-Title: What is Pflegeversicherung?
-German_term: Pflegeversicherung
-English_term: Long-term care insurance
-Description: It pays for your healthcare when you are old.
-Date_created: 2018-12-11
-Related_guides:
-    guides/german-health-insurance.md
-    tools/health-insurance-calculator.md
-    guides/taxes.md
+title: What is Pflegeversicherung?
+german_term: Pflegeversicherung
+english_term: Long-term care insurance
+description: It pays for your healthcare when you are old.
+date_created: 2018-12-11
+related_guides:
+    - guides/german-health-insurance.md
+    - tools/health-insurance-calculator.md
+    - guides/taxes.md
 ---
 
 If you have [public health insurance](/glossary/gesetzliche%20Krankenversicherung), you must pay for long-term care insurance (*Pflegeversicherung*). It pays for your healthcare when you are old.

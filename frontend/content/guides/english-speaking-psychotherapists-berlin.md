@@ -1,10 +1,10 @@
 ---
-Title: List of English-speaking psychotherapists in Berlin
+title: List of English-speaking psychotherapists in Berlin
 short_title: English-speaking psychotherapists
-Description: A list of therapists who speak English, and how to find a therapist who accepts public health insurance.
-Date_created: 2017-09-12
-Related_reviews:
-    reviews/english-speaking-psychotherapists-berlin/agata-slezak.md
+description: A list of therapists who speak English, and how to find a therapist who accepts public health insurance.
+date_created: 2017-09-12
+related_reviews:
+    - reviews/english-speaking-psychotherapists-berlin/agata-slezak.md
 ---
 
 This guide explains:

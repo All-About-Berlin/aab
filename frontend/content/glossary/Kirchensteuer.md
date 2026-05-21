@@ -1,14 +1,14 @@
 ---
-Title: What is the church tax (Kirchensteuer)?
-German_term: Kirchensteuer
-English_term: Church tax
-Description: A type of income tax paid by members of certain churches.
-Date_created: 2018-08-15
-Related_guides:
-    guides/taxes.md
-    tools/tax-calculator.md
-    guides/anmeldung-in-english-berlin.md
-    guides/cost-of-living.md
+title: What is the church tax (Kirchensteuer)?
+german_term: Kirchensteuer
+english_term: Church tax
+description: A type of income tax paid by members of certain churches.
+date_created: 2018-08-15
+related_guides:
+    - guides/taxes.md
+    - tools/tax-calculator.md
+    - guides/anmeldung-in-english-berlin.md
+    - guides/cost-of-living.md
 ---
 
 Members of certain churches must pay the church tax (*Kirchensteuer*). It's **9% of your [income tax](/glossary/Einkommensteuer)**, or 8% in Bavaria and Baden-Württemberg.[^2]

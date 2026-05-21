@@ -1,8 +1,8 @@
 ---
-Title: How to change your address in Germany
-Short_title: How to change your address
-Description: This guide explains how to change your address and redirect your mail.
-Date_created: 2022-09-24
+title: How to change your address in Germany
+short_title: How to change your address
+description: This guide explains how to change your address and redirect your mail.
+date_created: 2022-09-24
 ---
 
 This guide helps you update your address after you [move into a new apartment](/guides/moving-in). It's not automatic.

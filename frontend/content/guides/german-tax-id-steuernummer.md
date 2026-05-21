@@ -1,8 +1,8 @@
 ---
-Title: How to find your German tax ID, tax number or VAT number
-Short_title: Tax ID, tax number and VAT number
-Description: A brief guide to obtaining or finding your tax identification number in Germany
-Date_created: 2017-12-07
+title: How to find your German tax ID, tax number or VAT number
+short_title: Tax ID, tax number and VAT number
+description: A brief guide to obtaining or finding your tax identification number in Germany
+date_created: 2017-12-07
 ---
 
 German residents have different tax identification numbers. This guide explains what they are, and where to find them.

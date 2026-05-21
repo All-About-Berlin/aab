@@ -1,4 +1,4 @@
 ---
-Related_expert: experts/sebastian-hoffmann.md
-Date_reviewed: 2023-07-17
+related_expert: experts/sebastian-hoffmann.md
+date_reviewed: 2023-07-17
 ---

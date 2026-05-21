@@ -1,10 +1,10 @@
 ---
-Title: The Anmeldung — How to register your address in Berlin
-Short_title: How to register your address
-Description: This guide explains how to do your Anmeldung in Berlin. This is how you register your address, and how you get a Meldebescheinigung and a tax ID.
-Date_created: 2018-04-30
-Related_reviews:
-    reviews/anmeldung-in-english-berlin/kathleen-parker.md
+title: The Anmeldung — How to register your address in Berlin
+short_title: How to register your address
+description: This guide explains how to do your Anmeldung in Berlin. This is how you register your address, and how you get a Meldebescheinigung and a tax ID.
+date_created: 2018-04-30
+related_reviews:
+    - reviews/anmeldung-in-english-berlin/kathleen-parker.md
 ---
 
 After you [move to Berlin](/guides/moving-to-berlin), [find a place to live](/guides/find-a-flat-in-berlin) and [move in](/guides/moving-in), you must register your address at the *[[Bürgeramt]]*. This is called the *Anmeldung*.

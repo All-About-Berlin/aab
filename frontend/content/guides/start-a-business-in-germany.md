@@ -1,10 +1,10 @@
 ---
-Title: How to start a business in Germany
-Short_title: How to start a business
-Description: A detailed guide to all the rules you must follow when starting a business in Germany, from registering as a freelancer to paying your taxes.
-Date_created: 2018-04-03
-Related_reviews:
-    reviews/start-a-business-in-germany/alexander-baron-von-engelhardt.md
+title: How to start a business in Germany
+short_title: How to start a business
+description: A detailed guide to all the rules you must follow when starting a business in Germany, from registering as a freelancer to paying your taxes.
+date_created: 2018-04-03
+related_reviews:
+    - reviews/start-a-business-in-germany/alexander-baron-von-engelhardt.md
 ---
 
 This guide explains how to start a business or become a freelancer in Germany.

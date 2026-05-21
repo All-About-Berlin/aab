@@ -1,17 +1,17 @@
 ---
-Title: What is the Anmeldebestätigung?
-German_term: Anmeldebestätigung
-English_term: Registration certificate
-Description: A registration certificate (Anmeldebestätigung or Meldebestätigung) proves that you live at a certain address.
-Date_created: 2018-07-31
-Related_guides:
-    guides/anmeldung-in-english-berlin.md
-    guides/find-a-flat-in-berlin.md
-    guides/moving-to-berlin.md
-    guides/moving-in.md
-    guides/address-change.md
-    guides/replacement-meldebescheinigung.md
-    guides/best-bank-germany.md
+title: What is the Anmeldebestätigung?
+german_term: Anmeldebestätigung
+english_term: Registration certificate
+description: A registration certificate (Anmeldebestätigung or Meldebestätigung) proves that you live at a certain address.
+date_created: 2018-07-31
+related_guides:
+    - guides/anmeldung-in-english-berlin.md
+    - guides/find-a-flat-in-berlin.md
+    - guides/moving-to-berlin.md
+    - guides/moving-in.md
+    - guides/address-change.md
+    - guides/replacement-meldebescheinigung.md
+    - guides/best-bank-germany.md
 ---
 
 A registration certificate (*Anmeldebestätigung* or *Meldebestätigung*) proves that you live at a certain address. You get an *Anmeldebestätigung* when you register your address (the *[[Anmeldung]]*). You get it during the appointment.

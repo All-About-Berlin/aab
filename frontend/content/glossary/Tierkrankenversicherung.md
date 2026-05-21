@@ -1,12 +1,12 @@
 ---
-Title: What is pet health insurance (Tierkrankenversicherung)?
-German_term: Tierkrankenversicherung
-English_term: Pet health insurance
-Description: Insurance that covers healthcare for your pet.
-Date_created: 2020-12-20
-Related_guides:
-    guides/dog-ownership.md
-    guides/insurance.md
+title: What is pet health insurance (Tierkrankenversicherung)?
+german_term: Tierkrankenversicherung
+english_term: Pet health insurance
+description: Insurance that covers healthcare for your pet.
+date_created: 2020-12-20
+related_guides:
+    - guides/dog-ownership.md
+    - guides/insurance.md
 ---
 
 Pet health insurance (*Tierkrankenversicherung* or *Hundekrankenversicherung*) covers the veterinary bills if your pet gets sick. Usually, it does not cover routine operations like vaccines or castration.[^0] However, it covers expensive operations. This can be important when your dog gets old.

@@ -1,11 +1,11 @@
 ---
-Title: What is a Neubau?
-German_term: Neubauwohnung
-English_term: New building
-Description: An apartment building that uses modern construction methods.
-Date_created: 2024-04-04
-Related_guides:
-    guides/find-a-flat-in-berlin.md
+title: What is a Neubau?
+german_term: Neubauwohnung
+english_term: New building
+description: An apartment building that uses modern construction methods.
+date_created: 2024-04-04
+related_guides:
+    - guides/find-a-flat-in-berlin.md
 ---
 
 A *Neubau* or *Neubauwohnung* is a modern apartment.

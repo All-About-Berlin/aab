@@ -1,19 +1,19 @@
 ---
-Title: Wohnungsgeberbestätigung template in English
-German_term: Wohnungsgeberbestätigung
-English_term: Confirmation from the landlord
-German_document: documents/wohnungsgeberbestaetigung.pdf
-English_document: documents/wohnungsgeberbestaetigung-english-final.pdf
-Description: English and German Wohnungsgeberbestätigung template. Fill it with your landlord. You need it for your Anmeldung.
-Date_created: 2019-10-26
-Related_guides:
-    guides/anmeldung-in-english-berlin.md
-    guides/find-a-flat-in-berlin.md
-    guides/moving-in.md
-    guides/berlin-burgeramt-appointment.md
-    guides/moving-to-berlin.md
-Categories:
-    buergeramt
+title: Wohnungsgeberbestätigung template in English
+german_term: Wohnungsgeberbestätigung
+english_term: Confirmation from the landlord
+german_document: documents/wohnungsgeberbestaetigung.pdf
+english_document: documents/wohnungsgeberbestaetigung-english-final.pdf
+description: English and German Wohnungsgeberbestätigung template. Fill it with your landlord. You need it for your Anmeldung.
+date_created: 2019-10-26
+related_guides:
+    - guides/anmeldung-in-english-berlin.md
+    - guides/find-a-flat-in-berlin.md
+    - guides/moving-in.md
+    - guides/berlin-burgeramt-appointment.md
+    - guides/moving-to-berlin.md
+categories:
+    - buergeramt
 ---
 
 The *[[Wohnungsgeberbestätigung]]* is a document you need to [register your address](/glossary/Anmeldung). It must be signed by the landlord or [main tenant](/glossary/Hauptmieter) when you [move into an apartment](/guides/moving-in).[^0]

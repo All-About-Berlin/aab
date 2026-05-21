@@ -1,9 +1,9 @@
 ---
-Title: German health insurance for employees
-Short_title: Health insurance for employees
-Description: This guide explains how to choose the best health insurance to work in Germany.
-Date_created: 2025-06-02
-Call_to_action: askOurInsuranceExpert
+title: German health insurance for employees
+short_title: Health insurance for employees
+description: This guide explains how to choose the best health insurance to work in Germany.
+date_created: 2025-06-02
+call_to_action: askOurInsuranceExpert
 ---
 
 If you [work in Germany](/guides/find-a-job-in-berlin), you must have health insurance. This guide helps you choose the best health insurance for employees.

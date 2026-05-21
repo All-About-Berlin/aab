@@ -1,8 +1,8 @@
 ---
-Title: How to make friends in Berlin
-Short_title: How to make friends
-Description: Ways to meet people and improve your social life in Berlin.
-Date_created: 2019-11-12
+title: How to make friends in Berlin
+short_title: How to make friends
+description: Ways to meet people and improve your social life in Berlin.
+date_created: 2019-11-12
 ---
 
 This guide shows you how to meet new people and make friends after you [move to Berlin](/guides/moving-to-berlin).

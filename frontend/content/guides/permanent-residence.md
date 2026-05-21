@@ -1,8 +1,8 @@
 ---
-Title: How to apply for German permanent residence
-Short_title: How to get permanent residence
-Description: The process and the requirements to get a Niederlassungserlaubnis and become a permanent resident.
-Date_created: 2024-07-30
+title: How to apply for German permanent residence
+short_title: How to get permanent residence
+description: The process and the requirements to get a Niederlassungserlaubnis and become a permanent resident.
+date_created: 2024-07-30
 ---
 
 If you lived in Germany for a few years, you can become a permanent resident.

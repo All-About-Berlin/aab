@@ -1,16 +1,16 @@
 ---
-Title: What is a Mieterverein?
-German_term: Mieterverein
-English_term: Tenant association
-Description: Affordable legal assistance for apartment renters.
-Date_created: 2020-02-02
-Related_guides:
-    guides/moving-in.md
-    guides/conny-review.md
-    guides/legal-insurance.md
-    guides/housing-scams.md
-    guides/find-a-flat-in-berlin.md
-    guides/help.md
+title: What is a Mieterverein?
+german_term: Mieterverein
+english_term: Tenant association
+description: Affordable legal assistance for apartment renters.
+date_created: 2020-02-02
+related_guides:
+    - guides/moving-in.md
+    - guides/conny-review.md
+    - guides/legal-insurance.md
+    - guides/housing-scams.md
+    - guides/find-a-flat-in-berlin.md
+    - guides/help.md
 ---
 
 A tenant association (*Mieterverein* or *Mieterschutzverein*) gives legal assistance to renters.

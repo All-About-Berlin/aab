@@ -1,13 +1,13 @@
 ---
-Title: What is an Abmahnung?
-German_term: Abmahnung
-English_term: Cease and desist letter
-Description: A formal request to stop doing something. A last warning before suing someone.
-Date_created: 2018-05-06
-Related_guides:
-    guides/pirating-streaming-movies-in-germany.md
-    guides/website-compliance-germany.md
-    guides/english-speaking-lawyers-berlin.md
+title: What is an Abmahnung?
+german_term: Abmahnung
+english_term: Cease and desist letter
+description: A formal request to stop doing something. A last warning before suing someone.
+date_created: 2018-05-06
+related_guides:
+    - guides/pirating-streaming-movies-in-germany.md
+    - guides/website-compliance-germany.md
+    - guides/english-speaking-lawyers-berlin.md
 ---
 
 A written warning (*Abmahnung*) is a formal request to stop doing something. It's usually the last warning before suing someone. It gives the person a chance to fix the problem without going to court.

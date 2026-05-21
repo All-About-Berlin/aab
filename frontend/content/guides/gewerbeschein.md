@@ -1,8 +1,8 @@
 ---
-Title: How to do your Gewerbeanmeldung in Berlin
-Short_title: How to do the Gewerbeanmeldung
-Description: The Gewerbeanmeldung is how you get a trade licence (Gewerbeschein) and register for the trade tax (Gewerbesteuer).
-Date_created: 2021-05-14
+title: How to do your Gewerbeanmeldung in Berlin
+short_title: How to do the Gewerbeanmeldung
+description: The Gewerbeanmeldung is how you get a trade licence (Gewerbeschein) and register for the trade tax (Gewerbesteuer).
+date_created: 2021-05-14
 ---
 
 When you [start a business](/guides/start-a-business-in-germany), you must register your trade. This is called the *Gewerbeanmeldung*.

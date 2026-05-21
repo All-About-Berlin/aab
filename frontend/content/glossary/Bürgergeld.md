@@ -1,12 +1,12 @@
 ---
-Title: What is Bürgergeld?
-German_term: Bürgergeld
-English_term: Citizen's income
-Description: German social security. It replaces ALG II.
-Date_created: 2024-04-01
-Related_guides:
-    guides/unemployment-benefits.md
-    guides/losing-your-job.md
+title: What is Bürgergeld?
+german_term: Bürgergeld
+english_term: Citizen's income
+description: German social security. It replaces ALG II.
+date_created: 2024-04-01
+related_guides:
+    - guides/unemployment-benefits.md
+    - guides/losing-your-job.md
 ---
 
 Bürgergeld is a type of social assistance in Germany. It helps you pay for basic needs when you have no income. It replaced *[[ALG II]]* in 2023.[^0] It was replaced by *[[Grundsicherung]]* in 2026.[^1]

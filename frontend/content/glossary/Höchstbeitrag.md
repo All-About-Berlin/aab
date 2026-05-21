@@ -1,13 +1,13 @@
 ---
-Title: What is the Höchstbeitrag for German health insurance?
-German_term: Höchstbeitrag
-English_term: Maximum health insurance contribution
-Description: The maximum cost of public health insurance.
-Date_created: 2019-01-31
-Related_guides:
-    guides/german-health-insurance.md
-    guides/german-health-insurance/for-a-visa-application.md
-    tools/health-insurance-calculator.md
+title: What is the Höchstbeitrag for German health insurance?
+german_term: Höchstbeitrag
+english_term: Maximum health insurance contribution
+description: The maximum cost of public health insurance.
+date_created: 2019-01-31
+related_guides:
+    - guides/german-health-insurance.md
+    - guides/german-health-insurance/for-a-visa-application.md
+    - tools/health-insurance-calculator.md
 ---
 
 The cost of [public health insurance](/glossary/gesetzliche%20Krankenversicherung) is based on your income. If you have a high income, your health insurance is more expensive.

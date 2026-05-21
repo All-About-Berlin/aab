@@ -1,8 +1,8 @@
 ---
-Title: What is the trade tax (Gewerbesteuer)?
-Short_title: How the trade tax works
-Description: If you are self-employed in Germany, you might need to pay a trade tax. This is how it works, and how much it costs.
-Date_created: 2021-01-19
+title: What is the trade tax (Gewerbesteuer)?
+short_title: How the trade tax works
+description: If you are self-employed in Germany, you might need to pay a trade tax. This is how it works, and how much it costs.
+date_created: 2021-01-19
 ---
 
 Most German businesses must pay a trade tax (*[[Gewerbesteuer]]*) on their [profits](/glossary/Gewinn). If you [start a business in Germany](/guides/start-a-business-in-germany), you must understand how the trade tax works. This guide explains it.

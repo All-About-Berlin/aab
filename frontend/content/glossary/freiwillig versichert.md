@@ -1,16 +1,16 @@
 ---
-Title: What does freiwillig versichert mean?
-German_term: freiwillig versichert
-English_term: Voluntarily insured
-Description: If you are freiwillig versichert, you can choose public or private health insurance.
-Date_created: 2019-02-14
-Related_guides:
-    guides/german-health-insurance.md
-    tools/health-insurance-calculator.md
-    guides/german-health-insurance/for-a-visa-application.md
-    guides/german-health-insurance/for-employees.md
-    guides/german-health-insurance/for-students.md
-    guides/german-health-insurance/when-unemployed.md
+title: What does freiwillig versichert mean?
+german_term: freiwillig versichert
+english_term: Voluntarily insured
+description: If you are freiwillig versichert, you can choose public or private health insurance.
+date_created: 2019-02-14
+related_guides:
+    - guides/german-health-insurance.md
+    - tools/health-insurance-calculator.md
+    - guides/german-health-insurance/for-a-visa-application.md
+    - guides/german-health-insurance/for-employees.md
+    - guides/german-health-insurance/for-students.md
+    - guides/german-health-insurance/when-unemployed.md
 ---
 
 If you are voluntarily insured (*freiwillig versichert*), you can choose [public](/glossary/gesetzliche%20Krankenversicherung) or [private health insurance](/glossary/private%20Krankenversicherung).

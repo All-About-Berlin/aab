@@ -1,14 +1,14 @@
 ---
-Title: What is the Künstlersozialkasse (KSK)?
-German_term: Künstlersozialkasse
-English_term: Artists' Social Security Fund
-Description: A fund that helps artists and publicists afford health insurance and public pension insurance.
-Date_created: 2020-02-22
-Related_guides:
-    guides/ksk-kuenstlersozialkasse.md
-    guides/german-health-insurance.md
-    guides/german-health-insurance/for-freelancers.md
-    guides/saving-money-germany.md
+title: What is the Künstlersozialkasse (KSK)?
+german_term: Künstlersozialkasse
+english_term: Artists' Social Security Fund
+description: A fund that helps artists and publicists afford health insurance and public pension insurance.
+date_created: 2020-02-22
+related_guides:
+    - guides/ksk-kuenstlersozialkasse.md
+    - guides/german-health-insurance.md
+    - guides/german-health-insurance/for-freelancers.md
+    - guides/saving-money-germany.md
 ---
 
 The Künstlersozialkasse (KSK) is a social fund for freelance artists, publicists and art teachers. It's funded by the government, and by businesses who hire freelance artists.[^0]

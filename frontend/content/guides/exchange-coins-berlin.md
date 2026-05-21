@@ -1,8 +1,8 @@
 ---
-Title: How to exchange or deposit coins in Berlin
-Short_title: How to exchange coins
-Description: This is how you get rid of your small change in Berlin.
-Date_created: 2017-10-10
+title: How to exchange or deposit coins in Berlin
+short_title: How to exchange coins
+description: This is how you get rid of your small change in Berlin.
+date_created: 2017-10-10
 ---
 
 This guide shows you how to deposit a lot of coins, or exchange them for euro bills. The German term is *Bargeldeinzahlung*.

@@ -1,8 +1,8 @@
 ---
-Title: How to choose car insurance in Germany
-Short_title: How to choose car insurance
-Description: An introduction to auto insurance (Kfz-Versicherung) in Germany. It explains the types of car insurance, what they cover, and how to choose the best German car insurance.
-Date_created: 2020-08-07
+title: How to choose car insurance in Germany
+short_title: How to choose car insurance
+description: An introduction to auto insurance (Kfz-Versicherung) in Germany. It explains the types of car insurance, what they cover, and how to choose the best German car insurance.
+date_created: 2020-08-07
 ---
 
 In Germany, car insurance (*Kfz-Versicherung*) is mandatory. It's part of the [cost of owning a car in Germany](/guides/car-cost-of-ownership-germany). If your vehicle is not insured, you can't register it, and you can't drive it. This guide shows you how to choose insurance for your car or motorcycle.

@@ -1,8 +1,8 @@
 ---
-Title: How to choose Germany liability insurance
-Short_title: How to choose liability insurance
-Description: What liability insurance covers, why you must have it, and how to pick the best German liability insurance.
-Date_created: 2018-09-28
+title: How to choose Germany liability insurance
+short_title: How to choose liability insurance
+description: What liability insurance covers, why you must have it, and how to pick the best German liability insurance.
+date_created: 2018-09-28
 ---
 
 Liability insurance (*[[Haftpflichtversicherung]]*) is **the most important insurance** after [health insurance](/glossary/Krankenversicherung). Most Germans have it. It costs around €5 per month.

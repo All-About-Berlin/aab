@@ -1,9 +1,9 @@
 ---
-Title: My honest Techniker Krankenkasse review
-Short_title: Review of Techniker Krankenkasse
-Description: My experience with TK health insurance after 5 years. Is TK a good public health insurance? Here's my opinion.
-Call_to_action: askOurInsuranceExpert
-Date_created: 2019-03-19
+title: My honest Techniker Krankenkasse review
+short_title: Review of Techniker Krankenkasse
+description: My experience with TK health insurance after 5 years. Is TK a good public health insurance? Here's my opinion.
+call_to_action: askOurInsuranceExpert
+date_created: 2019-03-19
 ---
 
 It's hard to [choose German health insurance](/guides/german-health-insurance). There are *hundreds* of options, both public and private. You might have heard of Techniker Krankenkasse already. It's the largest public health insurer in Germany.

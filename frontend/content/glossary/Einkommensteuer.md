@@ -1,16 +1,16 @@
 ---
-Title: What is the income tax (Einkommensteuer) in Germany?
-German_term: Einkommensteuer
-English_term: Income tax
-Description: A tax all German residents must pay. It's a percentage of their total income.
-Date_created: 2018-10-17
-Related_guides:
-    guides/taxes.md
-    guides/cost-of-living.md
-    tools/tax-calculator.md
-    guides/salaries-in-germany.md
-    guides/anmeldung-in-english-berlin.md
-    guides/gewerbesteuer.md
+title: What is the income tax (Einkommensteuer) in Germany?
+german_term: Einkommensteuer
+english_term: Income tax
+description: A tax all German residents must pay. It's a percentage of their total income.
+date_created: 2018-10-17
+related_guides:
+    - guides/taxes.md
+    - guides/cost-of-living.md
+    - tools/tax-calculator.md
+    - guides/salaries-in-germany.md
+    - guides/anmeldung-in-english-berlin.md
+    - guides/gewerbesteuer.md
 ---
 
 Income tax (*Einkommensteuer*) is the percentage of your income that goes to the German tax office (*[[Finanzamt]]*). The amount of income tax you pay depends on your total income. The maximum income tax rate in Germany is {{INCOME_TAX_MAX_RATE}}%.[^0]

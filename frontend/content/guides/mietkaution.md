@@ -1,8 +1,8 @@
 ---
-Title: How the apartment deposit (Kaution) works in Germany
-Short_title: How apartment deposits work
-Description: Here's how you pay your apartment deposit (Mietkaution) in Germany, and how you get all of it back when you move out.
-Date_created: 2018-06-19
+title: How the apartment deposit (Kaution) works in Germany
+short_title: How apartment deposits work
+description: Here's how you pay your apartment deposit (Mietkaution) in Germany, and how you get all of it back when you move out.
+date_created: 2018-06-19
 ---
 
 When you [move into an apartment](/guides/moving-in), you must pay a deposit (*Kaution*). If you break something in the apartment, your landlord uses your *Kaution* to pay for the repairs. You get your *Kaution* back after you [move out](/guides/moving-out).

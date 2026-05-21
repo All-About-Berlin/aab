@@ -1,8 +1,8 @@
 ---
-Title: How to fill the Fragebogen zur steuerlichen Erfassung
-Short_title: How to register your business
-Description: This is how you fill the Fragebogen zur steuerlichen Erfassung and register your business with the Finanzamt.
-Date_created: 2018-03-14
+title: How to fill the Fragebogen zur steuerlichen Erfassung
+short_title: How to register your business
+description: This is how you fill the Fragebogen zur steuerlichen Erfassung and register your business with the Finanzamt.
+date_created: 2018-03-14
 ---
 
 When you [start a business in Germany](/guides/start-a-business-in-germany), you must fill the *Fragebogen zur steuerlichen Erfassung*. This is how you register your business with the *[[Finanzamt]]*. All businesses and self-employed people must do this.

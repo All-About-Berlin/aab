@@ -1,8 +1,8 @@
 ---
-Title: What fonts do German signs use?
-Short_title: Fonts used on German signs
-Description: A list of common typefaces in Germany. It includes fonts used by the BVG, the Deutsche Bahn and other German organisations.
-Date_created: 2020-01-20
+title: What fonts do German signs use?
+short_title: Fonts used on German signs
+description: A list of common typefaces in Germany. It includes fonts used by the BVG, the Deutsche Bahn and other German organisations.
+date_created: 2020-01-20
 ---
 
 This guide lists fonts that are used in Germany.

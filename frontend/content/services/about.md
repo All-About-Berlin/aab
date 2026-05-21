@@ -1,7 +1,7 @@
 ---
-Title: About us
-Description: Learn more about A Good Start and why you should work with us.
-Date_created: 2026-05-04
+title: About us
+description: Learn more about A Good Start and why you should work with us.
+date_created: 2026-05-04
 ---
 
 ## Insurance with a human touch

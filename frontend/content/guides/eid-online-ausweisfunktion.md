@@ -1,8 +1,8 @@
 ---
-Title: How to activate the eID on your residence permit
-Short_title: How to activate your eID
-Description: This is how you activate the Online-Ausweisfunktion of your elektronischer Aufenthaltstitel (eAT).
-Date_created: 2023-10-23
+title: How to activate the eID on your residence permit
+short_title: How to activate your eID
+description: This is how you activate the Online-Ausweisfunktion of your elektronischer Aufenthaltstitel (eAT).
+date_created: 2023-10-23
 ---
 
 You can use your [residence permit](/glossary/Aufenthaltstitel) as an [[eID]]. This allows you to log into online government services. This feature is not always activated. This guide explains how to activate it.

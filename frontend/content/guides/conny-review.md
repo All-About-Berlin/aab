@@ -1,8 +1,8 @@
 ---
-Title: Review of Conny, the rent reduction service
-Short_title: Review of Conny rent reduction
-Description: A neutral, independent review of Conny's rent reduction service.
-Date_created: 2020-07-29
+title: Review of Conny, the rent reduction service
+short_title: Review of Conny rent reduction
+description: A neutral, independent review of Conny's rent reduction service.
+date_created: 2020-07-29
 ---
 
 Berlin has [rent control laws](/glossary/Mietpreisbremse). If your rent is too high, you can get it reduced. [Conny](/out/conny) helps people reduce their rents. You only pay them if it works.

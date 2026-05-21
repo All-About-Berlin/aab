@@ -1,8 +1,8 @@
 ---
-Title: Having a dog in Berlin
-Short_title: Having a dog in Berlin
-Description: If you want to adopt a dog in Berlin or Germany, these are the things you must know.
-Date_created: 2020-12-16
+title: Having a dog in Berlin
+short_title: Having a dog in Berlin
+description: If you want to adopt a dog in Berlin or Germany, these are the things you must know.
+date_created: 2020-12-16
 ---
 
 This guide explains what all dog owners in Berlin must know. The rules can be different in the rest of Germany.

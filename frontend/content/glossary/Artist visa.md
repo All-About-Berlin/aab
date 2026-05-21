@@ -1,15 +1,15 @@
 ---
-Title: What is the German Artist Visa?
-German_term: Artist visa
-English_term: Artist visa
-Description: A variant of the German freelance visa for artists.
-Date_created: 2018-08-28
-Related_guides:
-    guides/freelance-visa.md
-    guides/german-health-insurance/for-freelancers.md
-    guides/immigration-office.md
-    guides/immigration-office/wait-times.md
-    guides/ksk-kuenstlersozialkasse.md
+title: What is the German Artist Visa?
+german_term: Artist visa
+english_term: Artist visa
+description: A variant of the German freelance visa for artists.
+date_created: 2018-08-28
+related_guides:
+    - guides/freelance-visa.md
+    - guides/german-health-insurance/for-freelancers.md
+    - guides/immigration-office.md
+    - guides/immigration-office/wait-times.md
+    - guides/ksk-kuenstlersozialkasse.md
 ---
 
 The artist visa does not exist. It's just a [freelance visa](/glossary/Freelance%20visa).

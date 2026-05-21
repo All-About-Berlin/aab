@@ -1,8 +1,8 @@
 ---
-Title: The Pfand system: how to return bottles in Germany
-Short_title: How to return empty bottles
-Description: This quick guide shows you which bottles and cans have a deposit in Germany, and how you can recognize them.
-Date_created: 2018-10-27
+title: 'The Pfand system: how to return bottles in Germany'
+short_title: How to return empty bottles
+description: This quick guide shows you which bottles and cans have a deposit in Germany, and how you can recognize them.
+date_created: 2018-10-27
 ---
 
 In Germany, there is a bottle return system. When you buy certain products, you pay a deposit (*Pfand*) for the container. When you return the empty container, you get your deposit back. The empty bottles are recycled or reused.

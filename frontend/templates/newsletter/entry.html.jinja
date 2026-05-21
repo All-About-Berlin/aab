@@ -1,6 +1,6 @@
 {% extends "_layout.html" %}
 {% set metatitle = entry.title %}
-{% set metadescription = entry.description %}
+{% set metadescription = entry.description|default('') %}
 
 {# Get the previous and next entries for navigation #}
 {% set previousEntry = None %}
@@ -73,7 +73,7 @@
 				"@context": "https://schema.org",
 				"@type": "WebPage",
 				"name": {{ entry.title|tojson }},
-				"description": {{ entry.description|tojson }},
+				"description": {{ entry.description|default('')|tojson }},
 				{% if entry.image_url|default %}"image": "{{ entry.image_url }}",{% endif %}
 				"breadcrumb": {
 					"@context": "https://schema.org",

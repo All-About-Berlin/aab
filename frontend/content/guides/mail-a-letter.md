@@ -1,8 +1,8 @@
 ---
-Title: How to mail a letter in Germany
-Short_title: How to mail a letter
-Description: This is how you send a letter when you live in Germany. This guide also shows you how to mail a letter online.
-Date_created: 2022-12-01
+title: How to mail a letter in Germany
+short_title: How to mail a letter
+description: This is how you send a letter when you live in Germany. This guide also shows you how to mail a letter online.
+date_created: 2022-12-01
 ---
 
 This is how you can send a letter by post in Germany, even if you don't have a printer.

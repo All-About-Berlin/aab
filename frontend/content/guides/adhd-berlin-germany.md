@@ -1,8 +1,8 @@
 ---
-Title: How to get diagnosed with ADHD in Germany
-Short_title: How to get diagnosed with ADHD
-Description: Explains how to find a psychiatrist, get diagnosed and get medicated for ADHD.
-Date_created: 2017-12-13
+title: How to get diagnosed with ADHD in Germany
+short_title: How to get diagnosed with ADHD
+description: Explains how to find a psychiatrist, get diagnosed and get medicated for ADHD.
+date_created: 2017-12-13
 ---
 
 This guide shows explains how to get treated for ADHD in Germany, step by step.

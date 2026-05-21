@@ -1,15 +1,15 @@
 ---
-Title: What are Nebenkosten?
-German_term: Nebenkosten
-English_term: Utility costs
-Description: What you pay for utilities every month. It includes hot water, heating, trash collection, etc. It's included in your rent.
-Date_created: 2018-08-21
-Related_guides:
-    guides/find-a-flat-in-berlin.md
-    tools/rent-map.md
-    guides/moving-in.md
-    guides/electric-bill-berlin.md
-    guides/cost-of-living.md
+title: What are Nebenkosten?
+german_term: Nebenkosten
+english_term: Utility costs
+description: What you pay for utilities every month. It includes hot water, heating, trash collection, etc. It's included in your rent.
+date_created: 2018-08-21
+related_guides:
+    - guides/find-a-flat-in-berlin.md
+    - tools/rent-map.md
+    - guides/moving-in.md
+    - guides/electric-bill-berlin.md
+    - guides/cost-of-living.md
 ---
 
 Utility costs (*Nebenkosten*) are services that are included in your [warm rent](/glossary/Warmmiete).

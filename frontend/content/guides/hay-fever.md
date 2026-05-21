@@ -1,8 +1,8 @@
 ---
-Title: How to deal with hay fever in Germany
-Short_title: How to deal with hay fever
-Description: Tips for fighting a pollen allergy in Germany, and where to get allergy pills.
-Date_created: 2022-05-23
+title: How to deal with hay fever in Germany
+short_title: How to deal with hay fever
+description: Tips for fighting a pollen allergy in Germany, and where to get allergy pills.
+date_created: 2022-05-23
 ---
 
 This guide explains how to deal with a pollen allergy in Germany.

@@ -1,8 +1,8 @@
 ---
-Title: Where to find foreign cooking ingredients in Berlin
-Short_title: Where to find foreign ingredients
-Description: This guide shows you where to get exotic foods and ingredients in Berlin.
-Date_created: 2017-09-27
+title: Where to find foreign cooking ingredients in Berlin
+short_title: Where to find foreign ingredients
+description: This guide shows you where to get exotic foods and ingredients in Berlin.
+date_created: 2017-09-27
 ---
 
 This is a list of foreign cooking ingredients, and where to find them in Berlin. If something is missing, [let me know](/contact).

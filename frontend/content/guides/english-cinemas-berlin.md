@@ -1,8 +1,8 @@
 ---
-Title: Cinemas with English movies in Berlin
-Short_title: Where to watch movies in English
-Description: This guide helps you find cinemas that play movies in English in Berlin.
-Date_created: 2017-09-28
+title: Cinemas with English movies in Berlin
+short_title: Where to watch movies in English
+description: This guide helps you find cinemas that play movies in English in Berlin.
+date_created: 2017-09-28
 ---
 
 Use this map to see movies in English in Berlin.

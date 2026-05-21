@@ -1,10 +1,10 @@
 ---
-Title: How educational leave works (Bildungsurlaub)
-Short_title: How educational leave works
-Description: How to take a paid vacation to improve your education in Berlin. It's also called "Bildungszeit".
-Date_created: 2024-05-28
-Related_reviews:
-    reviews/bildungsurlaub/lara-koerber.md
+title: How educational leave works (Bildungsurlaub)
+short_title: How educational leave works
+description: How to take a paid vacation to improve your education in Berlin. It's also called "Bildungszeit".
+date_created: 2024-05-28
+related_reviews:
+    - reviews/bildungsurlaub/lara-koerber.md
 ---
 
 In Berlin, you can take educational leave. You get a paid vacation to improve your education. It's called *Bildungsurlaub* or *Bildungszeit*.

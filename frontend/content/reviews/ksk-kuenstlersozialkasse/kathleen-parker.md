@@ -1,4 +1,4 @@
 ---
-Related_expert: experts/kathleen-parker.md
-Date_reviewed: 2022-07-22
+related_expert: experts/kathleen-parker.md
+date_reviewed: 2022-07-22
 ---

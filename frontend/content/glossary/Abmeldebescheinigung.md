@@ -1,13 +1,13 @@
 ---
-Title: What is an Abmeldebescheinigung?
-German_term: Abmeldebescheinigung
-English_term: Deregistration certificate
-Description: A certificate you get when you do your Anmeldung. It confirms that you deregistered your address.
-Date_created: 2020-02-06
-Related_guides:
-    guides/abmeldung.md
-    guides/moving-out.md
-    guides/leaving-germany.md
+title: What is an Abmeldebescheinigung?
+german_term: Abmeldebescheinigung
+english_term: Deregistration certificate
+description: A certificate you get when you do your Anmeldung. It confirms that you deregistered your address.
+date_created: 2020-02-06
+related_guides:
+    - guides/abmeldung.md
+    - guides/moving-out.md
+    - guides/leaving-germany.md
 ---
 
 When you [deregister your address](/glossary/Abmeldung), you get a deregistration certificate (*Abmeldebescheinigung*).

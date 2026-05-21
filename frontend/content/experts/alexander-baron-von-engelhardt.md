@@ -1,9 +1,9 @@
 ---
-Name: Alexander Baron von Engelhardt
-Job_title: Lawyer
-Email: ahoi@vonengelhardt.com
-Website: https://www.vonengelhardt.com/en
-Picture: experts/photos/alexander-von-engelhardt-berlin.jpg
+name: Alexander Baron von Engelhardt
+job_title: Lawyer
+email: ahoi@vonengelhardt.com
+website: https://www.vonengelhardt.com/en
+picture: experts/photos/alexander-von-engelhardt-berlin.jpg
 ---
 
 Alexander is a [business and immigration lawyer in Berlin](https://www.vonengelhardt.com/en) with over 25 years of experience.

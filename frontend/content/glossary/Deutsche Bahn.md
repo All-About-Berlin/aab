@@ -1,13 +1,13 @@
 ---
-Title: What is the Deutsche Bahn?
-German_term: Deutsche Bahn
-English_term: German railway company
-Description: 
-Date_created: 2019-11-28
-Related_guides:
-    guides/lost-and-found-berlin.md
-    guides/germany-sign-fonts.md
-    guides/public-transit.md
+title: What is the Deutsche Bahn?
+german_term: Deutsche Bahn
+english_term: German railway company
+description: The company that runs most of Germany's railways.
+date_created: 2019-11-28
+related_guides:
+    - guides/lost-and-found-berlin.md
+    - guides/germany-sign-fonts.md
+    - guides/public-transit.md
 ---
 
 The Deutsche Bahn is the company that runs most railways in Germany.

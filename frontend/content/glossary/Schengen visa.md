@@ -1,15 +1,15 @@
 ---
-Title: What is the Schengen visa or Tourist Visa?
-German_term: Schengen Visum
-English_term: Schengen visa
-Description: A visa that lets you visit Schengen countries, including Germany.
-Date_created: 2018-07-31
-Related_guides:
-    guides/freelance-visa.md
-    guides/blue-card.md
-    guides/work-visa.md
-    guides/residence-permit.md
-    guides/german-health-insurance/for-a-visa-application.md
+title: What is the Schengen visa or Tourist Visa?
+german_term: Schengen Visum
+english_term: Schengen visa
+description: A visa that lets you visit Schengen countries, including Germany.
+date_created: 2018-07-31
+related_guides:
+    - guides/freelance-visa.md
+    - guides/blue-card.md
+    - guides/work-visa.md
+    - guides/residence-permit.md
+    - guides/german-health-insurance/for-a-visa-application.md
 ---
 
 The Schengen visa (also called tourist visa, short stay visa or Category C visa)[^0] lets you visit Germany and the [[Schengen area]]. They are valid for up to 90 days.

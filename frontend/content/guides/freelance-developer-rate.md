@@ -1,8 +1,8 @@
 ---
-Title: Freelance developer rates in Berlin
-Short_title: Freelance developer salaries
-Description: Detailed information about what to charge your freelance client. This guide is frequently updated.
-Date_created: 2018-09-14
+title: Freelance developer rates in Berlin
+short_title: Freelance developer salaries
+description: Detailed information about what to charge your freelance client. This guide is frequently updated.
+date_created: 2018-09-14
 ---
 
 To [become a freelancer in Germany](/guides/start-a-business-in-germany), you must know how much you should charge.

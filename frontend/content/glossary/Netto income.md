@@ -1,14 +1,14 @@
 ---
-Title: What is the Netto income? (Germany)
-German_term: Nettoeinkommen
-English_term: Net income
-Description: Your income after taxes and social contributions.
-Date_created: 2020-03-05
-Related_guides:
-    guides/taxes.md
-    tools/tax-calculator.md
-    guides/find-a-job-in-berlin.md
-    guides/cost-of-living.md
+title: What is the Netto income? (Germany)
+german_term: Nettoeinkommen
+english_term: Net income
+description: Your income after taxes and social contributions.
+date_created: 2020-03-05
+related_guides:
+    - guides/taxes.md
+    - tools/tax-calculator.md
+    - guides/find-a-job-in-berlin.md
+    - guides/cost-of-living.md
 ---
 
 Your net income (*Nettoeinkommen*) is your income after taxes, [health insurance](/guides/german-health-insurance) and social security contributions. It's the part of your paycheck that you keep.

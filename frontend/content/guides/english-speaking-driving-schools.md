@@ -1,8 +1,8 @@
 ---
-Title: List of English-speaking driving schools in Berlin
+title: List of English-speaking driving schools in Berlin
 short_title: English-speaking driving schools
-Description: A guide to find an English-speaking driving school for your car or motorcycle driving licence.
-Date_created: 2017-08-31
+description: A guide to find an English-speaking driving school for your car or motorcycle driving licence.
+date_created: 2017-08-31
 ---
 
 To [get a German driving licence](/guides/driving-licence), you must take driving lessons. These driving schools speak English.

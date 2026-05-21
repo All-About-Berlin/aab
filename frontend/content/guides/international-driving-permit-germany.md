@@ -1,8 +1,8 @@
 ---
-Title: How to get an International Driving Permit in Berlin
-Short_title: How to get an International Driving Permit
-Description: How to get your IDP in Berlin and the rest of Germany, both with German and foreign driver licences.
-Date_created: 2017-11-20
+title: How to get an International Driving Permit in Berlin
+short_title: How to get an International Driving Permit
+description: How to get your IDP in Berlin and the rest of Germany, both with German and foreign driver licences.
+date_created: 2017-11-20
 ---
 
 The International Driving Permit is an official translation of your driver's licence. It is recognised in 200 countries.[^0] When you drive in other countries, you should carry it with your original driver's licence.

@@ -1,8 +1,8 @@
 ---
-Title: How to get a Meldebescheinigung or Anmeldebestätigung
-Short_title: How to get a Meldebescheinigung
-Description: This is how you get a Meldebescheinigung - a copy of your Anmeldebestätigung - in Berlin.
-Date_created: 2018-02-28
+title: How to get a Meldebescheinigung or Anmeldebestätigung
+short_title: How to get a Meldebescheinigung
+description: This is how you get a Meldebescheinigung - a copy of your Anmeldebestätigung - in Berlin.
+date_created: 2018-02-28
 ---
 
 This guide explains how to get a *Meldebescheinigung*. This document is a **copy** of your original [registration certificate](/glossary/Anmeldebestätigung).

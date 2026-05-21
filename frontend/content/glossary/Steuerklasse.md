@@ -1,14 +1,14 @@
 ---
-Title: What are tax classes (Steuerklassen) in Germany?
-German_term: Steuerklasse
-English_term: Tax class
-Description: Tax categories that define how much salary tax you pay.
-Date_created: 2018-08-15
-Related_guides:
-    guides/taxes.md
-    tools/tax-calculator.md
-    guides/anmeldung-in-english-berlin.md
-    guides/english-speaking-steuerberater-berlin.md
+title: What are tax classes (Steuerklassen) in Germany?
+german_term: Steuerklasse
+english_term: Tax class
+description: Tax categories that define how much salary tax you pay.
+date_created: 2018-08-15
+related_guides:
+    - guides/taxes.md
+    - tools/tax-calculator.md
+    - guides/anmeldung-in-english-berlin.md
+    - guides/english-speaking-steuerberater-berlin.md
 ---
 
 Your tax class (*Steuerklasse*) decides how much [salary tax](/glossary/Lohnsteuer) you pay. It does not affect how much [income tax](/glossary/Einkommensteuer) you pay. It only affects how much income tax you pay *in advance*, as salary tax.

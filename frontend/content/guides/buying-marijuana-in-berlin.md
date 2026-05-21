@@ -1,8 +1,8 @@
 ---
-Title: How to buy weed in Berlin
-Short_title: How to buy weed
-Description: Different ways of safely buying cannabis, CBD, extracts and edibles in Berlin.
-Date_created: 2017-09-01
+title: How to buy weed in Berlin
+short_title: How to buy weed
+description: Different ways of safely buying cannabis, CBD, extracts and edibles in Berlin.
+date_created: 2017-09-01
 ---
 
 This guide explains how people usually buy recreational marijuana in Berlin.

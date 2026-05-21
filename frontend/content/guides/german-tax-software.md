@@ -1,8 +1,8 @@
 ---
-Title: English-speaking tax software for Germany
-Short_title: English-speaking tax software
-Description: A list of software that can help you file your German taxes in English, and alternative options.
-Date_created: 2023-05-08
+title: English-speaking tax software for Germany
+short_title: English-speaking tax software
+description: A list of software that can help you file your German taxes in English, and alternative options.
+date_created: 2023-05-08
 ---
 
 This guide lists software that can help you file a tax declaration in Germany. It also shows alternatives to tax software.

@@ -1,8 +1,8 @@
 ---
-Title: My review of Kontist: it's not worth it
-Short_title: Review of Kontist
-Description: I use Kontist as my business bank since January 2022. All of my business goes through it. This is my honest review of their service.
-Date_created: 2023-03-10
+title: 'My review of Kontist: it''s not worth it'
+short_title: Review of Kontist
+description: I use Kontist as my business bank since January 2022. All of my business goes through it. This is my honest review of their service.
+date_created: 2023-03-10
 ---
 
 [Kontist](/out/kontist) is a German bank. They offer business bank accounts (*[[Geschäftskonto]]*) for freelancers.

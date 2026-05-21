@@ -1,9 +1,10 @@
 ---
-Title: How electric bills work in Germany
-Short_title: How electric bills work
-Description: This guide explains how you pay for electricity in Germany, and how to lower your power bills.
-Date_created: 2018-11-27
-Related_reviews: reviews/electric-bill-berlin/matthias-martensen.md
+title: How electric bills work in Germany
+short_title: How electric bills work
+description: This guide explains how you pay for electricity in Germany, and how to lower your power bills.
+date_created: 2018-11-27
+related_reviews:
+    - reviews/electric-bill-berlin/matthias-martensen.md
 ---
 
 This guide explains how you pay for heating, hot water and electricity in Germany.

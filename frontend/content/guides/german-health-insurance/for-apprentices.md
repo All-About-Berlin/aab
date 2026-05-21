@@ -1,9 +1,9 @@
 ---
-Title: German health insurance for Azubis
-Short_title: Health insurance for Azubis
-Description: This guide helps you choose the best health insurance for an apprenticeship (Ausbildung).
-Date_created: 2025-06-02
-Call_to_action: askOurInsuranceExpert
+title: German health insurance for Azubis
+short_title: Health insurance for Azubis
+description: This guide helps you choose the best health insurance for an apprenticeship (Ausbildung).
+date_created: 2025-06-02
+call_to_action: askOurInsuranceExpert
 ---
 
 This guide helps you choose the best health insurance for an apprenticeship (*Ausbildung*).

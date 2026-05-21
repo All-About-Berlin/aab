@@ -1,11 +1,11 @@
 ---
-Title: How to get a Kitagutschein
-Description: This is how you get a Kitagutschein, the document you need when looking for a Kita in Germany.
-Date_created: 2025-12-05
-Related_reviews:
-    reviews/kitagutschein/elodie-roux.md
-    reviews/kitagutschein/amy-deverell.md
-    reviews/kitagutschein/lisa-hübner-moreno.md
+title: How to get a Kitagutschein
+description: This is how you get a Kitagutschein, the document you need when looking for a Kita in Germany.
+date_created: 2025-12-05
+related_reviews:
+    - reviews/kitagutschein/elodie-roux.md
+    - reviews/kitagutschein/amy-deverell.md
+    - reviews/kitagutschein/lisa-hübner-moreno.md
 ---
 
 To [send your child to the *Kita*](/guides/kita), you need a *[[Kitagutschein]]*. It's a voucher for free childcare.

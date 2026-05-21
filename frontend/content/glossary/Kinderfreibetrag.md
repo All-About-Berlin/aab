@@ -1,12 +1,12 @@
 ---
-Title: What is the Kinderfreibetrag?
-German_term: Kinderfreibetrag
-English_term: Child allowance
-Description: A tax deduction for each child you have. It lowers your income tax.
-Date_created: 2022-05-24
-Related_guides:
-    guides/taxes.md
-    tools/tax-calculator.md
+title: What is the Kinderfreibetrag?
+german_term: Kinderfreibetrag
+english_term: Child allowance
+description: A tax deduction for each child you have. It lowers your income tax.
+date_created: 2022-05-24
+related_guides:
+    - guides/taxes.md
+    - tools/tax-calculator.md
 ---
 
 The *Kinderfreibetrag* is a tax deduction for parents in Germany. You can choose between the *Kinderfreibetrag* or *[[Kindergeld]]*.

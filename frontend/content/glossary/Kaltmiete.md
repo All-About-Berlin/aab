@@ -1,17 +1,17 @@
 ---
-Title: What is the Kaltmiete?
-German_term: Kaltmiete
-English_term: Cold rent
-Description: The rent you pay, before utilities are included.
-Date_created: 2018-08-21
-Related_guides:
-    guides/find-a-flat-in-berlin.md
-    tools/rent-map.md
-    guides/moving-in.md
-    guides/mietkaution.md
-    guides/electric-bill-berlin.md
-    guides/cost-of-living.md
-    guides/housing-scams.md
+title: What is the Kaltmiete?
+german_term: Kaltmiete
+english_term: Cold rent
+description: The rent you pay, before utilities are included.
+date_created: 2018-08-21
+related_guides:
+    - guides/find-a-flat-in-berlin.md
+    - tools/rent-map.md
+    - guides/moving-in.md
+    - guides/mietkaution.md
+    - guides/electric-bill-berlin.md
+    - guides/cost-of-living.md
+    - guides/housing-scams.md
 ---
 
 The cold rent (*Kaltmiete*) is your rent without utilities (*[[Nebenkosten]]*).

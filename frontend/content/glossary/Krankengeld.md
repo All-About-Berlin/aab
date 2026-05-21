@@ -1,12 +1,12 @@
 ---
-Title: What is Krankengeld?
-German_term: Krankengeld
-English_term: Sick pay
-Description: The money your employer or health insurance pays you when you are too sick to work.
-Date_created: 2020-03-04
-Related_guides:
-    guides/sick-leave.md
-    guides/vacation-days.md
+title: What is Krankengeld?
+german_term: Krankengeld
+english_term: Sick pay
+description: The money your employer or health insurance pays you when you are too sick to work.
+date_created: 2020-03-04
+related_guides:
+    - guides/sick-leave.md
+    - guides/vacation-days.md
 ---
 
 If you are an employee, you get sick pay (*Krankengeld*) when you are too sick to work. For the first 6 weeks, your employer pays your full salary. After 6 weeks, your [health insurance](/glossary/Krankenkasse) pays 70% of your salary (up to €{{GKV_KRANKENGELD_DAILY_LIMIT|cur}} per day).[^0] After 78 weeks, you get nothing, unless you have [job disability insurance](/glossary/Berufsunfähigkeitsversicherung).

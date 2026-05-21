@@ -1,8 +1,8 @@
 ---
-Title: List of 24 hour gyms in Berlin
+title: List of 24 hour gyms in Berlin
 short_title: 24-hour gyms
-Description: All the gyms and fitness studios that are open 24/7 in Berlin. In those gyms, you can train and get fit all day, every day.
-Date_created: 2018-03-16
+description: All the gyms and fitness studios that are open 24/7 in Berlin. In those gyms, you can train and get fit all day, every day.
+date_created: 2018-03-16
 ---
 
 This is a map of gyms that are open 24 hour a day in Berlin. If a place is missing, [contact me](/contact).

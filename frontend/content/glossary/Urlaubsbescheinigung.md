@@ -1,13 +1,13 @@
 ---
-Title: What is an Urlaubsbescheinigung?
-German_term: Urlaubsbescheinigung
-English_term: Vacation certificate
-Description: A document that shows how many vacation days you have used, and how many you have left.
-Date_created: 2023-08-06
-Related_guides:
-    guides/losing-your-job.md
-    guides/vacation-days.md
-    docs/resignation-letter.md
+title: What is an Urlaubsbescheinigung?
+german_term: Urlaubsbescheinigung
+english_term: Vacation certificate
+description: A document that shows how many vacation days you have used, and how many you have left.
+date_created: 2023-08-06
+related_guides:
+    - guides/losing-your-job.md
+    - guides/vacation-days.md
+    - docs/resignation-letter.md
 ---
 
 A vacation certificate (*Urlaubsbescheinigung*) is a document you get from your employer when you [leave your job](/guides/losing-your-job). It tells your next employer how many vacation days you have used this year, and how many vacation days you have left.[^1]

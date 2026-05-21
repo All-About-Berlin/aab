@@ -1,10 +1,10 @@
 ---
-Title: What is legal insurance? Is it worth it?
-Short_title: What is legal insurance?
-Description: This guide explains what Rechtsschutzversicherung is, what it covers, and when it's worth it.
-Date_created: 2021-09-04
-Related_reviews:
-    reviews/legal-insurance/fiona-macdonald.md
+title: What is legal insurance? Is it worth it?
+short_title: What is legal insurance?
+description: This guide explains what Rechtsschutzversicherung is, what it covers, and when it's worth it.
+date_created: 2021-09-04
+related_reviews:
+    - reviews/legal-insurance/fiona-macdonald.md
 ---
 
 Legal insurance (*Rechtsschutzversicherung*) covers the cost of hiring a lawyer and going to court. It helps you get legal advice and solve legal problems. It costs €{{LEGAL_INSURANCE_MIN_COST|cur}} to €{{LEGAL_INSURANCE_MAX_COST|cur}} per month.[^20]

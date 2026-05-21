@@ -1,8 +1,8 @@
 ---
-Title: Berlin immigration office wait times
-Short_title: Immigration office wait times
-Description: See how long it takes to get citizenship, a residence permit or permanent residence in Berlin.
-Date_created: 2024-11-27
+title: Berlin immigration office wait times
+short_title: Immigration office wait times
+description: See how long it takes to get citizenship, a residence permit or permanent residence in Berlin.
+date_created: 2024-11-27
 ---
 
 {% tool "immigration-office-feedback" %}

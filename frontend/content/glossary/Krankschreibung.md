@@ -1,13 +1,13 @@
 ---
-Title: What is a Krankschreibung or AU-Bescheinigung?
-German_term: Krankschreibung
-English_term: Sick note
-Description: Sick note from a doctor to take a sick day.
-Date_created: 2020-03-10
-Related_guides: 
-    guides/vacation-days.md
-    guides/sick-leave.md
-    guides/german-health-insurance.md
+title: What is a Krankschreibung or AU-Bescheinigung?
+german_term: Krankschreibung
+english_term: Sick note
+description: Sick note from a doctor to take a sick day.
+date_created: 2020-03-10
+related_guides:
+    - guides/vacation-days.md
+    - guides/sick-leave.md
+    - guides/german-health-insurance.md
 ---
 
 A sick note (*Krankschreibung*, *Arbeitsunfähigkeitsbescheinigung*, *AU-Bescheinigung* or *gelber Schein*) is a document you get from a doctor. It confirms that you are sick, and that you should get [sick leave](/guides/sick-leave).

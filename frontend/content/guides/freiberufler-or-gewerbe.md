@@ -1,8 +1,8 @@
 ---
-Title: Freiberufler or Gewerbe: what's the difference?
-Short_title: Are you a Freiberufler or a Gewerbe?
-Description: Learn the differences between being a freelancer (Freiberufler) and a tradesperson (Gewerbetreibender). It's not as easy as it seems!
-Date_created: 2018-03-31
+title: 'Freiberufler or Gewerbe: what''s the difference?'
+short_title: Are you a Freiberufler or a Gewerbe?
+description: Learn the differences between being a freelancer (Freiberufler) and a tradesperson (Gewerbetreibender). It's not as easy as it seems!
+date_created: 2018-03-31
 ---
 
 In Germany, there are two types of self-employed people:

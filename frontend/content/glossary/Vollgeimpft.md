@@ -1,9 +1,9 @@
 ---
-Title: What does "Vollgeimpft" mean?
-German_term: Vollgeimpft
-English_term: Fully vaccinated
-Description: People are fully vaccinated (Vollgeimpft) 14 days after they received all doses of their coronavirus vaccines.
-Date_created: 2021-05-10
+title: What does "Vollgeimpft" mean?
+german_term: Vollgeimpft
+english_term: Fully vaccinated
+description: People are fully vaccinated (Vollgeimpft) 14 days after they received all doses of their coronavirus vaccines.
+date_created: 2021-05-10
 ---
 
 Fully vaccinated (*Vollgeimpft*) people have received all doses of the coronavirus vaccine.[^0] During the COVID-19 pandemic, some restrictions did not apply to them.

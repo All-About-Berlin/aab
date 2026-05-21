@@ -1,9 +1,9 @@
 ---
-Title: German health insurance for freelancers
-Short_title: Health insurance for freelancers
-Description: This guide helps you choose the best health insurance for self-employment in Germany.
-Date_created: 2025-06-02
-Call_to_action: askOurInsuranceExpert
+title: German health insurance for freelancers
+short_title: Health insurance for freelancers
+description: This guide helps you choose the best health insurance for self-employment in Germany.
+date_created: 2025-06-02
+call_to_action: askOurInsuranceExpert
 ---
 
 This guide helps you choose the best German health insurance for self-employment, and to [apply for a freelance visa](/guides/freelance-visa).

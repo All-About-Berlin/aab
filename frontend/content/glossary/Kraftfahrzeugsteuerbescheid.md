@@ -1,12 +1,12 @@
 ---
-Title: What is a Kraftfahrzeugsteuerbescheid?
-German_term: Kraftfahrzeugsteuerbescheid
-English_term: Vehicle tax notification
-Description: The Kraftfahrzeugsteuerbescheid tells you how much vehicle tax you owe.
-Date_created: 2018-04-12
-Related_guides:
-    guides/buying-used-car-in-germany.md
-    guides/car-cost-of-ownership-germany.md
+title: What is a Kraftfahrzeugsteuerbescheid?
+german_term: Kraftfahrzeugsteuerbescheid
+english_term: Vehicle tax notification
+description: The Kraftfahrzeugsteuerbescheid tells you how much vehicle tax you owe.
+date_created: 2018-04-12
+related_guides:
+    - guides/buying-used-car-in-germany.md
+    - guides/car-cost-of-ownership-germany.md
 ---
 
 The *Kraftfahrzeugsteuerbescheid* tells you how much [vehicle tax](/glossary/Kraftfahrzeugsteuer) you owe. You get this letter by post once per year.

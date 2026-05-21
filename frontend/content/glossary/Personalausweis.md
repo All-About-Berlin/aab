@@ -1,9 +1,9 @@
 ---
-Title: What is a Personalausweis?
-German_term: Personalausweis
-English_term: Personal identification card
-Description: An official ID issued by the German government.
-Date_created: 2023-09-11
+title: What is a Personalausweis?
+german_term: Personalausweis
+english_term: Personal identification card
+description: An official ID issued by the German government.
+date_created: 2023-09-11
 ---
 
 A personal ID (*Personalausweis*) is an identification card that [EU](/glossary/European%20Union) citizens have.

@@ -1,15 +1,15 @@
 ---
-Title: What is Arbeitslosengeld I or ALG I?
-German_term: ALG I
-English_term: Unemployment benefits
+title: What is Arbeitslosengeld I or ALG I?
+german_term: ALG I
+english_term: Unemployment benefits
 ssml: <say-as interpret-as="characters">ALG 1</say-as>
-Description: Arbeitslosengeld I: social benefits for unemployed people.
-Date_created: 2020-04-07
-Related_guides:
-    guides/unemployment-benefits.md
-    guides/losing-your-job.md
-    guides/german-health-insurance.md
-    guides/cost-of-living.md
+description: 'Arbeitslosengeld I: social benefits for unemployed people.'
+date_created: 2020-04-07
+related_guides:
+    - guides/unemployment-benefits.md
+    - guides/losing-your-job.md
+    - guides/german-health-insurance.md
+    - guides/cost-of-living.md
 ---
 
 When you [lose your job](/guides/losing-your-job), you can get financial help from the state. It's called *Arbeitslosengeld I* or *ALG I*. You apply for *ALG I* at the *[[Agentur für Arbeit]]*.

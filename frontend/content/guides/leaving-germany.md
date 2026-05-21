@@ -1,10 +1,10 @@
 ---
-Title: How to leave Germany
-Description: Instructions for leaving Germany and moving to another country.
-Date_created: 2026-01-21
-Related_reviews:
-    reviews/leaving-germany/elliot-herman.md
-    reviews/leaving-germany/oliver-sympatme.md
+title: How to leave Germany
+description: Instructions for leaving Germany and moving to another country.
+date_created: 2026-01-21
+related_reviews:
+    - reviews/leaving-germany/elliot-herman.md
+    - reviews/leaving-germany/oliver-sympatme.md
 ---
 
 This checklist helps you move from Germany to another country.

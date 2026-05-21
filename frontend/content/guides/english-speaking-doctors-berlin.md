@@ -1,8 +1,8 @@
 ---
-Title: List of English-speaking doctors and GPs in Berlin
+title: List of English-speaking doctors and GPs in Berlin
 short_title: English-speaking GPs
-Description: Use this map to find an English-speaking Hausarzt in Berlin.
-Date_created: 2018-03-01
+description: Use this map to find an English-speaking Hausarzt in Berlin.
+date_created: 2018-03-01
 ---
 
 This page helps you find an English-speaking *[[Hausarzt]]* in Berlin.

@@ -1,10 +1,11 @@
 ---
-Title: What is an insurance Green Card?
-German_term: Grüne Karte
-English_term: Insurance green card
-Description: 
-Date_created: 2020-08-11
-Related_guides: guides/car-insurance-germany.md
+title: What is an insurance Green Card?
+german_term: Grüne Karte
+english_term: Insurance green card
+description: A proof of vehicle insurance coverage that is valid in most countries.
+date_created: 2020-08-11
+related_guides:
+    - guides/car-insurance-germany.md
 ---
 
 A Green Card (*Grüne Karte*) is a document that lists the countries where your car insurance is valid. When you cross a border with your vehicle, you usually need to show your Green Card. [This map](https://en.wikipedia.org/wiki/International_Motor_Insurance_Card_System#/media/File:International_Motor_Insurance_Systems.png) shows where the Green Card is accepted.

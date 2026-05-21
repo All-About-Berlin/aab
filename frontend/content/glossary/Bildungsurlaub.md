@@ -1,12 +1,12 @@
 ---
-Title: What is a Bildungsurlaub?
-German_term: Bildungsurlaub
-English_term: Training leave
-Description: Take a vacation from work to improve your education.
-Date_created: 2021-04-01
-Related_guides:
-    guides/bildungsurlaub.md
-    guides/learn-german.md
+title: What is a Bildungsurlaub?
+german_term: Bildungsurlaub
+english_term: Training leave
+description: Take a vacation from work to improve your education.
+date_created: 2021-04-01
+related_guides:
+    - guides/bildungsurlaub.md
+    - guides/learn-german.md
 ---
 
 In Germany, the *Bildungsurlaub* or *Bildungszeit* is a paid education leave. It allows you to take time off work to get professional training. During that time, you still get paid.

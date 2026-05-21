@@ -1,13 +1,13 @@
 ---
-Title: What is Hundehaftpflichtversicherung?
-German_term: Hundehaftpflichtversicherung
-English_term: Dog liability insurance
-Description: Insurance that covers damage caused by your dog.
-Date_created: 2020-12-16
-Related_guides:
-    guides/haftpflichtversicherung.md
-    guides/insurance.md
-    guides/dog-ownership.md
+title: What is Hundehaftpflichtversicherung?
+german_term: Hundehaftpflichtversicherung
+english_term: Dog liability insurance
+description: Insurance that covers damage caused by your dog.
+date_created: 2020-12-16
+related_guides:
+    - guides/haftpflichtversicherung.md
+    - guides/insurance.md
+    - guides/dog-ownership.md
 ---
 
 Dog liability insurance (*Hundehaftpflichtversicherung*) pays for the damages caused by your dog. For example, if your dog bites someone, or destroys another person's things, your insurance pays for the damages.

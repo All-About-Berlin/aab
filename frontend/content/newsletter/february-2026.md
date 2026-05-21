@@ -1,7 +1,7 @@
 ---
-Title: What's new in February 2026
-Description: BVG strike, Berlinale, leaving Germany, kettle cleaning and upcoming guides.
-Date_created: 2026-02-01
+title: What's new in February 2026
+description: BVG strike, Berlinale, leaving Germany, kettle cleaning and upcoming guides.
+date_created: 2026-02-01
 ---
 
 ## BVG strike

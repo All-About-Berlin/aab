@@ -1,20 +1,20 @@
 ---
-Title: What is a Krankenkasse?
-German_term: Krankenkasse
-English_term: Health insurance fund
-Description: A public health insurance company.
-Date_created: 2019-03-19
-Related_guides:
-    guides/techniker-krankenkasse-review.md
-    guides/german-health-insurance.md
-    tools/health-insurance-calculator.md
-    guides/german-health-insurance/for-a-visa-application.md
-    guides/german-health-insurance/for-employees.md
-    guides/german-health-insurance/for-students.md
-    guides/german-health-insurance/for-freelancers.md
-    guides/german-health-insurance/for-apprentices.md
-    guides/german-health-insurance/when-unemployed.md
-    guides/ottonova-review.md
+title: What is a Krankenkasse?
+german_term: Krankenkasse
+english_term: Health insurance fund
+description: A public health insurance company.
+date_created: 2019-03-19
+related_guides:
+    - guides/techniker-krankenkasse-review.md
+    - guides/german-health-insurance.md
+    - tools/health-insurance-calculator.md
+    - guides/german-health-insurance/for-a-visa-application.md
+    - guides/german-health-insurance/for-employees.md
+    - guides/german-health-insurance/for-students.md
+    - guides/german-health-insurance/for-freelancers.md
+    - guides/german-health-insurance/for-apprentices.md
+    - guides/german-health-insurance/when-unemployed.md
+    - guides/ottonova-review.md
 ---
 
 A *Krankenkasse* is a [public health insurance](/glossary/gesetzliche%20Krankenversicherung) company.

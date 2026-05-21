@@ -1,7 +1,7 @@
 ---
-Title: Imprint
-Description: Our name, email, address, IBAN, tax number and other contact information.
-Date_created: 2026-05-04
+title: Imprint
+description: Our name, email, address, IBAN, tax number and other contact information.
+date_created: 2026-05-04
 ---
 
 ## Website information

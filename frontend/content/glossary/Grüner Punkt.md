@@ -1,10 +1,11 @@
 ---
-Title: What does the Grüner Punkt symbol mean?
-German_term: Grüner Punkt
-English_term: Green Dot
-Description: 
-Date_created: 2022-05-17
-Related_guides: guides/sorting-trash-in-germany.md
+title: What does the Grüner Punkt symbol mean?
+german_term: Grüner Punkt
+english_term: Green Dot
+description: A symbol that a container is recyclable, and goes in the yellow bin.
+date_created: 2022-05-17
+related_guides:
+    - guides/sorting-trash-in-germany.md
 ---
 
 When you see a Green Dot (*Grüner Punkt*) on packaging, it means that the manufacturer paid to recycle it. Products with a Green Dot go in the yellow recycling bin,[^1] or in the glass recycling bins.

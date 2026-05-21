@@ -1,10 +1,11 @@
 ---
-Title: What is German public health insurance?
-German_term: Verkaufsoffen Sonntag
-English_term: Sunday shopping day
-Description: A day when 
-Date_created: 2023-03-19
-Related_guides: guides/open-on-sundays-in-berlin.md
+title: What is German public health insurance?
+german_term: Verkaufsoffen Sonntag
+english_term: Sunday shopping day
+description: A day when
+date_created: 2023-03-19
+related_guides:
+    - guides/open-on-sundays-in-berlin.md
 ---
 
 Sunday shopping days (*Verkaufsoffene Sonntage*) are days when businesses are allowed to open.

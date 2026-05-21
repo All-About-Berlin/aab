@@ -1,13 +1,13 @@
 ---
-Title: How to find an apartment in Berlin
-Short_title: How to find an apartment
-Description: This guide helps you find an apartment for rent in Berlin. It explains everything from the housing search to moving in.
-Date_created: 2017-09-20
-Related_reviews:
-    reviews/find-a-flat-in-berlin/graham-pugh.md
-    reviews/find-a-flat-in-berlin/tal-gibbesch.md
-    reviews/find-a-flat-in-berlin/kevin-hiller.md
-    reviews/find-a-flat-in-berlin/christine-gerkrath.md
+title: How to find an apartment in Berlin
+short_title: How to find an apartment
+description: This guide helps you find an apartment for rent in Berlin. It explains everything from the housing search to moving in.
+date_created: 2017-09-20
+related_reviews:
+    - reviews/find-a-flat-in-berlin/graham-pugh.md
+    - reviews/find-a-flat-in-berlin/tal-gibbesch.md
+    - reviews/find-a-flat-in-berlin/kevin-hiller.md
+    - reviews/find-a-flat-in-berlin/christine-gerkrath.md
 ---
 
 This guide helps you rent an apartment or a room when you [move to Berlin](/guides/moving-to-berlin).

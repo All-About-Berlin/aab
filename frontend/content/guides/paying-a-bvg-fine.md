@@ -1,8 +1,8 @@
 ---
-Title: How to pay (or avoid paying) a BVG fine
-Short_title: How to pay a BVG fine
-Description: If you are caught on the train without a valid ticket, you will get a fine. This is how you pay, reduce or avoid a BVG fine.
-Date_created: 2017-09-29
+title: How to pay (or avoid paying) a BVG fine
+short_title: How to pay a BVG fine
+description: If you are caught on the train without a valid ticket, you will get a fine. This is how you pay, reduce or avoid a BVG fine.
+date_created: 2017-09-29
 ---
 
 If you use public transit without a valid ticket, the [[BVG]] can give you a €{{BVG_FINE|cur}} fine. This guide shows you what to do when you get a fine.

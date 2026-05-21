@@ -1,17 +1,17 @@
 ---
-Title: What is a Gewerbe?
-German_term: Gewerbe
-English_term: Trade
-Description: A type of business in Germany.
-Date_created: 2018-07-31
-Related_guides:
-    guides/freiberufler-or-gewerbe.md
-    guides/gewerbesteuer.md
-    guides/gewerbeschein.md
-    guides/start-a-business-in-germany.md
-    guides/freelance-visa.md
-    guides/fragebogen-zur-steuerlichen-erfassung.md
-    guides/website-compliance-germany.md
+title: What is a Gewerbe?
+german_term: Gewerbe
+english_term: Trade
+description: A type of business in Germany.
+date_created: 2018-07-31
+related_guides:
+    - guides/freiberufler-or-gewerbe.md
+    - guides/gewerbesteuer.md
+    - guides/gewerbeschein.md
+    - guides/start-a-business-in-germany.md
+    - guides/freelance-visa.md
+    - guides/fragebogen-zur-steuerlichen-erfassung.md
+    - guides/website-compliance-germany.md
 ---
 
 In Germany, there are two types of self-employed people:

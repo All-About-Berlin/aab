@@ -1,8 +1,8 @@
 ---
-Title: How to dispose of a Christmas tree in Berlin
-Short_title: How to get rid of a Christmas tree
-Description: When the holidays are over, this is how you get rid of your old Christmas tree.
-Date_created: 2021-01-03
+title: How to dispose of a Christmas tree in Berlin
+short_title: How to get rid of a Christmas tree
+description: When the holidays are over, this is how you get rid of your old Christmas tree.
+date_created: 2021-01-03
 ---
 
 Every year in January, [BSR](/glossary/Berliner%20Stadtreinigung) collects old Christmas trees in Berlin. This is a free service. The Christmas tree pickup dates can be found on the [BSR website](https://www.bsr.de/frohe-umwelt-fur-unsere-weihnachten-23170.php).

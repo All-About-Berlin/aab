@@ -1,11 +1,11 @@
 ---
-Title: What is a Grundschule?
-German_term: Grundschule
-English_term: Elementary school
-Description: A school for children between 6 and 9 years old
-Date_created: 2018-08-27
-Related_guides:
-    guides/kita.md
+title: What is a Grundschule?
+german_term: Grundschule
+english_term: Elementary school
+description: A school for children between 6 and 9 years old
+date_created: 2018-08-27
+related_guides:
+    - guides/kita.md
 ---
 
 Elementary school (*Grundschule*) is a school for children between 6 and 9 years old.[^0]

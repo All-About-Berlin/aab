@@ -1,8 +1,8 @@
 ---
-Title: How to get key doubles in Germany
-Short_title: How to get key doubles
-Description: This is how you make copies of your apartment keys for cheap.
-Date_created: 2024-11-02
+title: How to get key doubles in Germany
+short_title: How to get key doubles
+description: This is how you make copies of your apartment keys for cheap.
+date_created: 2024-11-02
 ---
 
 This guide explains how to make a copy of your apartment keys in Germany.

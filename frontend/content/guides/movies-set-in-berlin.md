@@ -1,8 +1,8 @@
 ---
-Title: Which movies are set in Berlin?
-Short_title: Movies set in Berlin
-Description: These movies were filmed in Berlin, and prominently feature the German capital.
-Date_created: 2017-10-03
+title: Which movies are set in Berlin?
+short_title: Movies set in Berlin
+description: These movies were filmed in Berlin, and prominently feature the German capital.
+date_created: 2017-10-03
 ---
 
 Below is a list of movies in which Berlin is a prominently featured location. They are listed in no particular order.

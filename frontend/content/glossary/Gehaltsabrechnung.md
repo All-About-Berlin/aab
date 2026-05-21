@@ -1,14 +1,14 @@
 ---
-Title: What is a Gehaltsabrechnung? What does it look like?
-German_term: Gehaltsabrechnung
-English_term: Pay slip
-Description: It shows how much your employer paid you, and how much social contributions you paid. It's also called a Lohnabrechnung.
-Date_created: 2020-07-18
-Related_guides:
-    guides/taxes.md
-    guides/german-tax-id-steuernummer.md
-    guides/german-versicherungsnummer.md
-    guides/losing-your-job.md
+title: What is a Gehaltsabrechnung? What does it look like?
+german_term: Gehaltsabrechnung
+english_term: Pay slip
+description: It shows how much your employer paid you, and how much social contributions you paid. It's also called a Lohnabrechnung.
+date_created: 2020-07-18
+related_guides:
+    - guides/taxes.md
+    - guides/german-tax-id-steuernummer.md
+    - guides/german-versicherungsnummer.md
+    - guides/losing-your-job.md
 ---
 
 A pay slip (*Gehaltsabrechnung* or *Lohnabrechnung*) shows how much you earned, and what contributions you have paid. You get a *Gehaltsabrechnung* from your employer every month.

@@ -1,11 +1,11 @@
 ---
-Title: What was the Mietendeckel?
-German_term: Mietendeckel
-English_term: Rent cap
-Description: A rent cap that was repealed after 1 year.
-Date_created: 2021-04-15
-Related_guides:
-    guides/find-a-flat-in-berlin.md
+title: What was the Mietendeckel?
+german_term: Mietendeckel
+english_term: Rent cap
+description: A rent cap that was repealed after 1 year.
+date_created: 2021-04-15
+related_guides:
+    - guides/find-a-flat-in-berlin.md
 ---
 
 The rent cap (*Mietendeckel*) was a rent control law in Berlin. It set rent limits in each area, and it stopped all rent increases for 5 years. If a landlord charged too much rent, they could get a big fine.

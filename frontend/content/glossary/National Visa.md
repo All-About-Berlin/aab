@@ -1,16 +1,16 @@
 ---
-Title: What is a National Visa or Category D visa?
-German_term: Nationale Visa
-English_term: National Visa
-Description: A visa that lets you enter Germany to work, study or start a business. It must be converted into a residence permit.
-Date_created: 2018-08-28
-Related_guides:
-    guides/residence-permit.md
-    guides/freelance-visa.md
-    guides/moving-to-berlin.md
-    guides/blue-card.md
-    guides/work-visa.md
-    guides/german-health-insurance/for-a-visa-application.md
+title: What is a National Visa or Category D visa?
+german_term: Nationale Visa
+english_term: National Visa
+description: A visa that lets you enter Germany to work, study or start a business. It must be converted into a residence permit.
+date_created: 2018-08-28
+related_guides:
+    - guides/residence-permit.md
+    - guides/freelance-visa.md
+    - guides/moving-to-berlin.md
+    - guides/blue-card.md
+    - guides/work-visa.md
+    - guides/german-health-insurance/for-a-visa-application.md
 ---
 
 A National Visa (or Category D visa) lets you move to Germany and start working or studying. It's valid for 3 to 12 months.[^1]

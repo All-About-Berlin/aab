@@ -1,8 +1,8 @@
 ---
-Title: What is the best German bank for expats?
-Short_title: How to choose a bank
-Description: This guide compares the best bank accounts for foreigners. It reviews the features, fees and requirements of each bank.
-Date_created: 2017-09-01
+title: What is the best German bank for expats?
+short_title: How to choose a bank
+description: This guide compares the best bank accounts for foreigners. It reviews the features, fees and requirements of each bank.
+date_created: 2017-09-01
 ---
 
 This guide helps you pick a bank in Germany. You need a bank account to pay rent, get paid by your employer, and many other things.

@@ -1,8 +1,8 @@
 ---
-Title: How to renew a German freelance visa
-Short_title: How to renew a freelance visa
-Description: When your German freelance visa is about to expire, you must renew it. This is how you must do it.
-Date_created: 2020-08-27
+title: How to renew a German freelance visa
+short_title: How to renew a freelance visa
+description: When your German freelance visa is about to expire, you must renew it. This is how you must do it.
+date_created: 2020-08-27
 ---
 
 This guide shows you how to **renew** a [German freelance visa](/glossary/Freelance%20visa) before it expires. To apply for a new German freelance visa, read [this guide](/guides/freelance-visa).

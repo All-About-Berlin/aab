@@ -1,14 +1,14 @@
 ---
-Title: What is a Finanzierungsnachweis?
-German_term: Finanzierungsnachweis
-English_term: Proof of financial resources
-Description: This document is required to apply for certain German visas and residence permits.
-Date_created: 2018-07-31
-Related_guides:
-    guides/banking.md
-    guides/best-bank-germany.md
-    guides/residence-permit.md
-    guides/german-health-insurance/for-students.md
+title: What is a Finanzierungsnachweis?
+german_term: Finanzierungsnachweis
+english_term: Proof of financial resources
+description: This document is required to apply for certain German visas and residence permits.
+date_created: 2018-07-31
+related_guides:
+    - guides/banking.md
+    - guides/best-bank-germany.md
+    - guides/residence-permit.md
+    - guides/german-health-insurance/for-students.md
 ---
 
 A proof of financing (*Finanzierungsnachweis*) is required to apply for a [[National Visa]]. It shows that you can cover your cost of living during your first year in Germany.

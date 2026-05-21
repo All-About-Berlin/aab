@@ -1,10 +1,11 @@
 ---
-Title: What is a Glasiglu?
-German_term: Altglascontainer
-English_term: Glass recycling bin
-Description: A container where you throw away your used glass containers.
-Date_created: 2022-05-18
-Related_guides: guides/sorting-trash-in-germany.md
+title: What is a Glasiglu?
+german_term: Altglascontainer
+english_term: Glass recycling bin
+description: A container where you throw away your used glass containers.
+date_created: 2022-05-18
+related_guides:
+    - guides/sorting-trash-in-germany.md
 ---
 
 Glass recycling bins (*Altglascontainer, Glastonne* or *Glasiglu*) are recycling bins for glass. You can find them around your neighbourhood. Some apartment buildings have their own glass recycling bins.

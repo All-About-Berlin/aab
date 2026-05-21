@@ -1,8 +1,8 @@
 ---
-Title: How being a Kleinunternehmer works
-Short_title: Being a Kleinunternehmer
-Description: This guide explains what a Kleinunternehmer is, and when it makes sense to be one.
-Date_created: 2023-03-09
+title: How being a Kleinunternehmer works
+short_title: Being a Kleinunternehmer
+description: This guide explains what a Kleinunternehmer is, and when it makes sense to be one.
+date_created: 2023-03-09
 ---
 
 If you have a small business with a low [revenue](/glossary/Umsatz), you can be a *Kleinunternehmer*. A *Kleinunternehmer* does not charge VAT.

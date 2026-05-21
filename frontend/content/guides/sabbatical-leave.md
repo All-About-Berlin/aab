@@ -1,8 +1,8 @@
 ---
-Title: How to take a sabbatical in Germany
-Short_title: How to take a sabbatical
-Description: This guide shows you how to take a long vacation in Germany, also known as a sabbatical.
-Date_created: 2022-09-07
+title: How to take a sabbatical in Germany
+short_title: How to take a sabbatical
+description: This guide shows you how to take a long vacation in Germany, also known as a sabbatical.
+date_created: 2022-09-07
 ---
 
 Sabbatical leave is a long, unpaid vacation from work. People usually take a sabbatical to travel, study, relax, or work on personal projects.

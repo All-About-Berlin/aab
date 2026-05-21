@@ -1,8 +1,8 @@
 ---
-Title: How job notice periods work in Germany
-Short_title: Job notice periods
-Description: When you quit your job in Germany, you must give your employer a notice period. When you get laid off or fired, your employer must give you a notice period.
-Date_created: 2023-04-19
+title: How job notice periods work in Germany
+short_title: Job notice periods
+description: When you quit your job in Germany, you must give your employer a notice period. When you get laid off or fired, your employer must give you a notice period.
+date_created: 2023-04-19
 ---
 
 German jobs have a notice period (*Kündigungsfrist*). If you [lose your job or quit](/guides/losing-your-job), you must work until the end of your notice period.

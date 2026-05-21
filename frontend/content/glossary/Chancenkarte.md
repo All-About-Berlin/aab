@@ -1,18 +1,18 @@
 ---
-Title: What is the German opportunity card (Chancenkarte)?
-German_term: Chancenkarte
-English_term: Opportunity card
-Description: A visa that lets you come to Germany to look for a job. It replaces the job seeker visa.
-Date_created: 2024-10-16
-Related_guides:
-    guides/residence-permit.md
-    guides/find-a-job-in-berlin.md
-    guides/immigration-office.md
-    guides/immigration-office/wait-times.md
-    guides/freelance-visa.md
-    guides/work-visa.md
-    guides/blue-card.md
-    guides/german-health-insurance/for-a-visa-application.md
+title: What is the German opportunity card (Chancenkarte)?
+german_term: Chancenkarte
+english_term: Opportunity card
+description: A visa that lets you come to Germany to look for a job. It replaces the job seeker visa.
+date_created: 2024-10-16
+related_guides:
+    - guides/residence-permit.md
+    - guides/find-a-job-in-berlin.md
+    - guides/immigration-office.md
+    - guides/immigration-office/wait-times.md
+    - guides/freelance-visa.md
+    - guides/work-visa.md
+    - guides/blue-card.md
+    - guides/german-health-insurance/for-a-visa-application.md
 ---
 
 The opportunity card (*Chancenkarte*) is a [[National Visa]]. It allows you to come to Germany to [look for a job](/guides/find-a-job-in-berlin). It mostly replaces the [job seeker visa](/glossary/Job%20seeker%20visa).

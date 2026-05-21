@@ -1,8 +1,8 @@
 ---
-Title: Where to donate clothes in Berlin
-Short_title: Where to donate clothes
-Description: How to get rid of your old clothes and shoes in Berlin.
-Date_created: 2020-09-05
+title: Where to donate clothes in Berlin
+short_title: Where to donate clothes
+description: How to get rid of your old clothes and shoes in Berlin.
+date_created: 2020-09-05
 ---
 
 If you must get rid of old clothes and shoes, you can [resell them](/guides/how-do-i-buy-and-sell-used-things-in-berlin), or you can donate them. This guide shows you where to donate clothes and shoes in Berlin.

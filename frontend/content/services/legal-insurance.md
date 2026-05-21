@@ -1,7 +1,7 @@
 ---
-Title: Legal insurance
-Description: ...
-Date_created: 2026-05-04
+title: Legal insurance
+description: '...'
+date_created: 2026-05-04
 ---
 
 Yep

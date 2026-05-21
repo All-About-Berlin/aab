@@ -1,8 +1,8 @@
 ---
-Title: How to read your Zusatzblatt
-Short_title: How to read your Zusatzblatt
-Description: This guide helps you understand the Zusatzblatt that you received with your German residence permit.
-Date_created: 2024-12-17
+title: How to read your Zusatzblatt
+short_title: How to read your Zusatzblatt
+description: This guide helps you understand the Zusatzblatt that you received with your German residence permit.
+date_created: 2024-12-17
 ---
 
 Your residence permit comes with a *[Zusatzblatt](/glossary/Zusatzblatt%20%28residence%20permit%29)*. This piece of paper explains the conditions of your residence permit. For example, what kind of work you can do, and which employer you can work for.

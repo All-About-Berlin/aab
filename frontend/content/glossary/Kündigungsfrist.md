@@ -1,15 +1,15 @@
 ---
-Title: What is a Kündigungsfrist?
-German_term: Kündigungsfrist
-English_term: Notice period
-Description: A mandatory notice period for ending a contract, quitting a job or firing an employee.
-Date_created: 2019-10-25
-Related_guides:
-    guides/moving-out.md
-    guides/losing-your-job.md
-    docs/resignation-letter.md
-    guides/saving-money-germany.md
-    guides/probezeit.md
+title: What is a Kündigungsfrist?
+german_term: Kündigungsfrist
+english_term: Notice period
+description: A mandatory notice period for ending a contract, quitting a job or firing an employee.
+date_created: 2019-10-25
+related_guides:
+    - guides/moving-out.md
+    - guides/losing-your-job.md
+    - docs/resignation-letter.md
+    - guides/saving-money-germany.md
+    - guides/probezeit.md
 ---
 
 The notice period (*Kündigungsfrist*) is how long you need to cancel a contract, fire an employee, or [quit your job](/guides/losing-your-job).

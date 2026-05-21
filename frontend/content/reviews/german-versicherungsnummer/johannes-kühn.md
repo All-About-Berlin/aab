@@ -1,4 +1,4 @@
 ---
-Related_expert: experts/johannes-kühn.md
-Date_reviewed: 2022-01-05
+related_expert: experts/johannes-kühn.md
+date_reviewed: 2022-01-05
 ---

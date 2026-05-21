@@ -1,7 +1,7 @@
 ---
-Title: What's new in December 2025
-Description: Christmas markets, tax saving tips, good news for parents, and big changes in 2026.
-Date_created: 2025-12-01
+title: What's new in December 2025
+description: Christmas markets, tax saving tips, good news for parents, and big changes in 2026.
+date_created: 2025-12-01
 ---
 
 ## Christmas markets tip

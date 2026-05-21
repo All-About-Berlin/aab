@@ -1,12 +1,12 @@
 ---
-Title: What is a Hausarzt
-German_term: Hausarzt
-English_term: General practitioner
-Description: A family doctor or general practitioner practices general medicine.
-Date_created: 2020-12-11
-Related_guides:
-    guides/english-speaking-doctors-berlin.md
-    guides/german-health-insurance.md
+title: What is a Hausarzt
+german_term: Hausarzt
+english_term: General practitioner
+description: A family doctor or general practitioner practices general medicine.
+date_created: 2020-12-11
+related_guides:
+    - guides/english-speaking-doctors-berlin.md
+    - guides/german-health-insurance.md
 ---
 
 Your family doctor, general practitioner or GP (*Hausarzt*) is a type of doctor.

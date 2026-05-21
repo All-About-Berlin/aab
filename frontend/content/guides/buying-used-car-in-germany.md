@@ -1,8 +1,8 @@
 ---
-Title: How to buy a car in Germany
-Short_title: How to buy a car
-Description: A step by step guide to buying, registering and insuring a vehicle in Berlin and the rest of Germany. Also works for motorcycles.
-Date_created: 2019-01-06
+title: How to buy a car in Germany
+short_title: How to buy a car
+description: A step by step guide to buying, registering and insuring a vehicle in Berlin and the rest of Germany. Also works for motorcycles.
+date_created: 2019-01-06
 ---
 
 This is how you buy a car or a motorcycle in Germany. This guide tells you how to buy a vehicle from another person, and from a dealership.

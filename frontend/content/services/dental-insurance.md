@@ -1,7 +1,7 @@
 ---
-Title: Dental insurance
-Description: ...
-Date_created: 2026-05-04
+title: Dental insurance
+description: '...'
+date_created: 2026-05-04
 ---
 
 Yep

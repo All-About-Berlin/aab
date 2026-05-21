@@ -1,12 +1,12 @@
 ---
-Title: What does B2B mean?
-German_term: B2B
-English_term: Business to business
+title: What does B2B mean?
+german_term: B2B
+english_term: Business to business
 ssml: <voice language="en-GB">B2B</voice>
-Description: When a business sells goods or services to another business
-Date_created: 2022-10-20
-Related_guides:
-    guides/value-added-tax.md
+description: When a business sells goods or services to another business
+date_created: 2022-10-20
+related_guides:
+    - guides/value-added-tax.md
 ---
 
 Business-to-business (B2B) is when a business sells goods or services to another business. It's the opposite of business-to-consumer ([[B2C]]) transactions.

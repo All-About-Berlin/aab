@@ -1,8 +1,8 @@
 ---
-Title: How to run a website in Germany
-Short_title: How to run a website
-Description: The laws and regulations you must follow to run a website legally in Germany: the Impressum, analytics, cookie banners, GDPR, etc.
-Date_created: 2018-05-07
+title: How to run a website in Germany
+short_title: How to run a website
+description: 'The laws and regulations you must follow to run a website legally in Germany: the Impressum, analytics, cookie banners, GDPR, etc.'
+date_created: 2018-05-07
 ---
 
 This guide explains the rules to follow when you run a website in Germany.

@@ -1,16 +1,16 @@
 ---
-Title: What is Arbeitslosenversicherung?
-German_term: Arbeitslosenversicherung
-English_term: Unemployment insurance
-Description: A mandatory insurance for most employees. It pays for unemployment benefits if you lose your job.
-Date_created: 2021-01-18
-Related_guides:
-    guides/losing-your-job.md
-    guides/find-a-job-in-berlin.md
-    guides/unemployment-benefits.md
-    tools/tax-calculator.md
-    guides/german-health-insurance/when-unemployed.md
-    guides/sabbatical-leave.md
+title: What is Arbeitslosenversicherung?
+german_term: Arbeitslosenversicherung
+english_term: Unemployment insurance
+description: A mandatory insurance for most employees. It pays for unemployment benefits if you lose your job.
+date_created: 2021-01-18
+related_guides:
+    - guides/losing-your-job.md
+    - guides/find-a-job-in-berlin.md
+    - guides/unemployment-benefits.md
+    - tools/tax-calculator.md
+    - guides/german-health-insurance/when-unemployed.md
+    - guides/sabbatical-leave.md
 ---
 
 Unemployment insurance (*Arbeitslosenversicherung*) pays for [unemployment benefits](/glossary/ALG%20I) if you [lose your job](/guides/losing-your-job). If you are an employee, unemployment insurance is mandatory. If you are self-employed, it's optional.[^1]

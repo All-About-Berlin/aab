@@ -1,13 +1,13 @@
 ---
-Title: How to apply for a German freelance visa
-Short_title: How to get a freelance visa
-Description: The process and the requirements to get a German freelance visa or artist visa. This is how you become self-employed in Germany.
-Date_created: 2023-12-20
-Related_reviews:
-    reviews/freelance-visa/mirko-vorreuter.md
-    reviews/freelance-visa/sebastian-hoffmann.md
-    reviews/freelance-visa/kathleen-parker.md
-    reviews/freelance-visa/johanna-sieben.md
+title: How to apply for a German freelance visa
+short_title: How to get a freelance visa
+description: The process and the requirements to get a German freelance visa or artist visa. This is how you become self-employed in Germany.
+date_created: 2023-12-20
+related_reviews:
+    - reviews/freelance-visa/mirko-vorreuter.md
+    - reviews/freelance-visa/sebastian-hoffmann.md
+    - reviews/freelance-visa/kathleen-parker.md
+    - reviews/freelance-visa/johanna-sieben.md
 ---
 
 The freelance visa is a [residence permit](/glossary/Aufenthaltstitel) for self-employed immigrants.

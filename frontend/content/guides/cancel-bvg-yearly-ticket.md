@@ -1,7 +1,7 @@
 ---
-Title: How to cancel a BVG ticket subscription
-Description: This is how you cancel a BVG monthly, yearly Abo. It also works for the Deutschland Ticket.
-Date_created: 2018-06-01
+title: How to cancel a BVG ticket subscription
+description: This is how you cancel a BVG monthly, yearly Abo. It also works for the Deutschland Ticket.
+date_created: 2018-06-01
 ---
 
 This is how you cancel a [[BVG]] ticket subscription (*Abo*). If you don't cancel it, it's renewed automatically.

@@ -1,8 +1,8 @@
 ---
-Title: How to get a driving licence in Germany
-Short_title: How to get a driving licence
-Description: Instructions for getting a German driver's licence, from start to finish.
-Date_created: 2017-10-23
+title: How to get a driving licence in Germany
+short_title: How to get a driving licence
+description: Instructions for getting a German driver's licence, from start to finish.
+date_created: 2017-10-23
 ---
 
 This guide explains how to get a car or motorcycle licence in Berlin.

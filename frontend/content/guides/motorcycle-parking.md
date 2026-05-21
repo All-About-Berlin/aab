@@ -1,8 +1,8 @@
 ---
-Title: Can you park a motorcycle on the sidewalk in Berlin?
-Short_title: Parking motorcycles on the sidewalk
-Description: With so few parking spaces, it's tempting to park your motorcycle on the sidewalk, but is it legal?
-Date_created: 2018-05-24
+title: Can you park a motorcycle on the sidewalk in Berlin?
+short_title: Parking motorcycles on the sidewalk
+description: With so few parking spaces, it's tempting to park your motorcycle on the sidewalk, but is it legal?
+date_created: 2018-05-24
 ---
 
 **Yes**, you can park on the sidewalk in Berlin. It's normal to leave your scooter or motorcycle on the sidewalk here. If the motorcycle doesn't block the path, and doesn't sit on private property, you will not have any problems. You don't need a parking sticker (*Anwohnerparkausweis*) for your motorcycle, even if your neighbourhood requires it.[^0]

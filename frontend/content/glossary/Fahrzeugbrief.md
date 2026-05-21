@@ -1,10 +1,11 @@
 ---
-Title: What is a Fahrzeugbrief?
-German_term: Fahrzeugbrief
-English_term: Vehicle registration papers
-Description: 
-Date_created: 2019-01-18
-Related_guides: guides/buying-used-car-in-germany.md
+title: What is a Fahrzeugbrief?
+german_term: Fahrzeugbrief
+english_term: Vehicle registration papers
+description: The old vehicle registration papers, before the Zulassungsbescheinigung.
+date_created: 2019-01-18
+related_guides:
+    - guides/buying-used-car-in-germany.md
 ---
 
 The *Fahrzeugbrief* is the old type of vehicle registration papers. [It looks like this](/images/Fahrzeugbrief.jpg). It was replaced by the *[[Zulassungsbescheinigung]]*.

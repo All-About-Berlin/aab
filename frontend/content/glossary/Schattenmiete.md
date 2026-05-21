@@ -1,12 +1,12 @@
 ---
-Title: What is the shadow rent (Schattenmiete)?
-German_term: Schattenmiete
-English_term: Shadow rent
-Description: 
-Date_created: 2021-04-15
-Related_guides:
-    guides/housing-scams.md
-    guides/find-a-flat-in-berlin.md
+title: What is the shadow rent (Schattenmiete)?
+german_term: Schattenmiete
+english_term: Shadow rent
+description: A different rent that applies if the Mietendeckel is repealed.
+date_created: 2021-04-15
+related_guides:
+    - guides/housing-scams.md
+    - guides/find-a-flat-in-berlin.md
 ---
 
 The shadow rent (*Schattenmiete*) is a clause is some leases in Berlin.

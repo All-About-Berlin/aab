@@ -349,6 +349,7 @@ config.linters = [
     "extensions.linters.internal_links.MarkdownInternalLinksLinter",
     "extensions.linters.lists.MultilineListsLinter",
     "extensions.linters.metadata.DateUpdatedLinter",
+    "extensions.linters.metadata.DescriptionLinter",
     "extensions.linters.metadata.ShortTitleLinter",
     "extensions.linters.section.SectionSignLinter",
     "extensions.linters.table_of_contents.TableOfContentsLinter",

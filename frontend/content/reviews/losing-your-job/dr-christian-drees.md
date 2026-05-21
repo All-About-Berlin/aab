@@ -1,4 +1,4 @@
 ---
-Related_expert: experts/dr-christian-drees.md
-Date_reviewed: 2024-07-09
+related_expert: experts/dr-christian-drees.md
+date_reviewed: 2024-07-09
 ---

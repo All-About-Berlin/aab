@@ -1,15 +1,15 @@
 ---
-Title: What is the Steuernummer?
-German_term: Steuernummer
-English_term: Tax number
-Description: A number that identifies your business with the Finanzamt.
-Date_created: 2018-07-31
-Related_guides:
-    guides/german-tax-id-steuernummer.md
-    guides/freelance-visa.md
-    guides/fragebogen-zur-steuerlichen-erfassung.md
-    guides/start-a-business-in-germany.md
-    guides/website-compliance-germany.md
+title: What is the Steuernummer?
+german_term: Steuernummer
+english_term: Tax number
+description: A number that identifies your business with the Finanzamt.
+date_created: 2018-07-31
+related_guides:
+    - guides/german-tax-id-steuernummer.md
+    - guides/freelance-visa.md
+    - guides/fragebogen-zur-steuerlichen-erfassung.md
+    - guides/start-a-business-in-germany.md
+    - guides/website-compliance-germany.md
 ---
 
 The tax number (*Steuernummer*) is a unique number for businesses and freelancers. It's a 10 or 11 digit number, and has the format "**12/345/67890**". It's sometimes written as "30**12**0**34567890**", where the first two digits are the number of your *Bundesland*.[^0]

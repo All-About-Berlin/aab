@@ -1,12 +1,12 @@
 ---
-Title: What is the Consular Services Portal (CSP)?
-German_term: Auslandsportal
-English_term: Consular Services Portal
-Description: An online portal where you can apply for a German National Visa or Schengen visa.
-Date_created: 2019-08-07
-Related_guides:
-    guides/residence-permit.md
-    guides/moving-to-berlin.md
+title: What is the Consular Services Portal (CSP)?
+german_term: Auslandsportal
+english_term: Consular Services Portal
+description: An online portal where you can apply for a German National Visa or Schengen visa.
+date_created: 2019-08-07
+related_guides:
+    - guides/residence-permit.md
+    - guides/moving-to-berlin.md
 ---
 
 The Consular Services Portal (CSP) is where you apply for a German [[National Visa]] or [[Schengen visa]].

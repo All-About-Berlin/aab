@@ -1,14 +1,14 @@
 ---
-Title: What is a Monatskarte?
-German_term: Monatskarte
-English_term: Monthly pass
-Description: A public transit pass that is valid for a month.
-Date_created: 2020-11-29
-Related_guides:
-    guides/public-transit.md
-    guides/deutschland-ticket.md
-    guides/saving-money-germany.md
-    guides/cancel-bvg-yearly-ticket.md
+title: What is a Monatskarte?
+german_term: Monatskarte
+english_term: Monthly pass
+description: A public transit pass that is valid for a month.
+date_created: 2020-11-29
+related_guides:
+    - guides/public-transit.md
+    - guides/deutschland-ticket.md
+    - guides/saving-money-germany.md
+    - guides/cancel-bvg-yearly-ticket.md
 ---
 
 A *Monatskarte* is a monthly pass.

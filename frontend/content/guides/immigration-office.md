@@ -1,8 +1,8 @@
 ---
-Title: How the Berlin immigration office works
-Short_title: How the immigration office works
-Description: How the Berlin Landesamt für Einwanderung works. This guide explains how to get an appointment, apply for a residence permit, and more.
-Date_created: 2024-12-17
+title: How the Berlin immigration office works
+short_title: How the immigration office works
+description: How the Berlin Landesamt für Einwanderung works. This guide explains how to get an appointment, apply for a residence permit, and more.
+date_created: 2024-12-17
 ---
 
 This is a guide for the *Landesamt für Einwanderung*, the immigration office in Berlin. To apply for a residence permit, read my [residence permit guide](/guides/residence-permit) instead.

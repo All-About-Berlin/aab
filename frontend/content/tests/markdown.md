@@ -1,8 +1,8 @@
 ---
-Title: Page layout test
+title: Page layout test
 short_title: Layout test
-Description: Test the website layout
-Date_created: 2025-08-26
+description: Test the website layout
+date_created: 2025-08-26
 ---
 
 Introduction paragraph followed by a table of contents.

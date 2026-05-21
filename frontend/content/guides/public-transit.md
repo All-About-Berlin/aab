@@ -1,8 +1,8 @@
 ---
-Title: How to use public transit in Berlin
-Short_title: How to use public transit
-Description: This guide explains how public transportation works in Berlin. It explains how to ride the BVG and DB trains, buses and trams. It also lists other options like car sharing, bike sharing and taxis.
-Date_created: 2021-08-13
+title: How to use public transit in Berlin
+short_title: How to use public transit
+description: This guide explains how public transportation works in Berlin. It explains how to ride the BVG and DB trains, buses and trams. It also lists other options like car sharing, bike sharing and taxis.
+date_created: 2021-08-13
 ---
 
 This guide explains how to use trains, trams, buses and ride sharing in Berlin.

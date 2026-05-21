@@ -1,9 +1,10 @@
 ---
-Title: How to learn German in Berlin
-Short_title: How to learn German
-Description: A list of German schools, language learning apps and other resources to improve your German in Berlin.
-Date_created: 2017-09-30
-Related_reviews: reviews/learn-german/tia-robinson.md
+title: How to learn German in Berlin
+short_title: How to learn German
+description: A list of German schools, language learning apps and other resources to improve your German in Berlin.
+date_created: 2017-09-30
+related_reviews:
+    - reviews/learn-german/tia-robinson.md
 ---
 
 If you [move to Berlin](/guides/moving-to-berlin), you should learn German. In this guide, I show you different ways of learning German in Berlin: language schools, German apps, language tandems and more. I also show you how to get free German classes.

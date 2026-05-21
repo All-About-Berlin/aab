@@ -1,8 +1,8 @@
 ---
-Title: Where to get passport photos in Berlin
-Short_title: Where to get passport photos
-Description: Getting biometric pictures taken for passports, visas and drivers' licences is quite simple in Berlin. Here's how it's done.
-Date_created: 2017-10-06
+title: Where to get passport photos in Berlin
+short_title: Where to get passport photos
+description: Getting biometric pictures taken for passports, visas and drivers' licences is quite simple in Berlin. Here's how it's done.
+date_created: 2017-10-06
 ---
 
 This guide shows you how to get biometric pictures or passport photos in Berlin. You need biometric pictures to apply for a [residence permit](/glossary/Aufenthaltstitel), a driving licence, a German passport or a *[[Personalausweis]]*.

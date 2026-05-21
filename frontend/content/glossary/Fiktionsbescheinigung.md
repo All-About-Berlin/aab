@@ -1,18 +1,18 @@
 ---
-Title: What is a Fiktionsbescheinigung?
-German_term: Fiktionsbescheinigung
-English_term: Temporary residence permit
-Description: Temporary residence permit given to those who wait for another residence permit to be approved.
-Date_created: 2018-07-31
-Related_guides:
-    guides/fiktionsbescheinigung.md
-    guides/immigration-office.md
-    guides/immigration-office/wait-times.md
-    guides/freelance-visa.md
-    guides/blue-card.md
-    guides/work-visa.md
-    guides/permanent-residence.md
-    guides/renew-german-freelance-visa.md
+title: What is a Fiktionsbescheinigung?
+german_term: Fiktionsbescheinigung
+english_term: Temporary residence permit
+description: Temporary residence permit given to those who wait for another residence permit to be approved.
+date_created: 2018-07-31
+related_guides:
+    - guides/fiktionsbescheinigung.md
+    - guides/immigration-office.md
+    - guides/immigration-office/wait-times.md
+    - guides/freelance-visa.md
+    - guides/blue-card.md
+    - guides/work-visa.md
+    - guides/permanent-residence.md
+    - guides/renew-german-freelance-visa.md
 ---
 
 The *Fiktionsbescheinigung* **proves that your residence status is still valid**, even if your visa or residence permit has expired. It's not a permit, only a confirmation. Your residence status stays valid even without a *Fiktionsbescheinigung*.

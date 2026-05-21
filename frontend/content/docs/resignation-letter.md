@@ -1,17 +1,17 @@
 ---
-Title: German resignation letter generator
-German_term: Kündigungsschreiben
-English_term: Job resignation letter
-Description: Learn how to write and hand a resignation notice (Kündigungsschreiben) when you quit your job in Germany. This resignation letter template will help.
-Date_created: 2023-07-21
-Related_guides:
-    guides/losing-your-job.md
-    guides/unemployment-benefits.md
-    docs/auslanderbehorde-job-change.md
-Categories:
-    employer
-Related_reviews:
-    reviews/resignation-letter/andreas-martin.md
+title: German resignation letter generator
+german_term: Kündigungsschreiben
+english_term: Job resignation letter
+description: Learn how to write and hand a resignation notice (Kündigungsschreiben) when you quit your job in Germany. This resignation letter template will help.
+date_created: 2023-07-21
+related_guides:
+    - guides/losing-your-job.md
+    - guides/unemployment-benefits.md
+    - docs/auslanderbehorde-job-change.md
+categories:
+    - employer
+related_reviews:
+    - reviews/resignation-letter/andreas-martin.md
 ---
 
 To [quit your job](/guides/losing-your-job), you must give a resignation letter (*[[Kündigungsschreiben]]* or *Kündigungserklärung*) to your employer. Your [notice period](/glossary/Kündigungsfrist) starts when your employer receives your resignation letter.

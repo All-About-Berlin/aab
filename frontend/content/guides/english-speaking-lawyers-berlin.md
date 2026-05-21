@@ -1,8 +1,8 @@
 ---
-Title: List of English-speaking lawyers in Berlin
+title: List of English-speaking lawyers in Berlin
 short_title: English-speaking lawyers
-Description: This list of English, French and Spanish-speaking lawyers will help you with any legal issues you might encounter while living in Berlin.
-Date_created: 2018-03-21
+description: This list of English, French and Spanish-speaking lawyers will help you with any legal issues you might encounter while living in Berlin.
+date_created: 2018-03-21
 ---
 
 This is a list of lawyers who speak English in Berlin.

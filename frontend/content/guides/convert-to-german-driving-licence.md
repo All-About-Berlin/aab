@@ -1,8 +1,8 @@
 ---
-Title: How to trade your foreign driver licence for a German one
-Short_title: How to convert a foreign driving licence
-Description: This is you can exchange a driving licence from another country for a German one.
-Date_created: 2018-02-28
+title: How to trade your foreign driver licence for a German one
+short_title: How to convert a foreign driving licence
+description: This is you can exchange a driving licence from another country for a German one.
+date_created: 2018-02-28
 ---
 
 If you have a foreign driving licence, you can exchange it for a German driving licence. This guide shows you how.

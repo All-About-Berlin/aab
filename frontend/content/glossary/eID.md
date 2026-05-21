@@ -1,12 +1,12 @@
 ---
-Title: What is an eID or Online-Ausweis?
-German_term: eID
-English_term: eID
-Description: A function of German ID cards that lets you use online services.
-Date_created: 2024-07-30
+title: What is an eID or Online-Ausweis?
+german_term: eID
+english_term: eID
+description: A function of German ID cards that lets you use online services.
+date_created: 2024-07-30
 ssml: <say-as interpret-as="characters">eID</say-as>
-Related_guides:
-    guides/eid-online-ausweisfunktion.md
+related_guides:
+    - guides/eid-online-ausweisfunktion.md
 ---
 
 German ID cards have a chip in them. You can use your ID card and the [AusweisApp](https://www.ausweisapp.bund.de/en/home) to log into online government services. This is feature is called *Online-Ausweisfunktion*, *eID*, *elektronischer Aufenthaltstitel* or *eAT*.

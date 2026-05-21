@@ -1,16 +1,16 @@
 ---
-Title: What is the Kaution or Mietkaution?
-German_term: Kaution
-English_term: Rent deposit
-Description: Money that pays for apartment repairs when you move out.
-Date_created: 2018-06-19
-Related_guides:
-    guides/mietkaution.md
-    guides/find-a-flat-in-berlin.md
-    guides/housing-scams.md
-    guides/moving-out.md
-    guides/moving-in.md
-    guides/lost-keys.md
+title: What is the Kaution or Mietkaution?
+german_term: Kaution
+english_term: Rent deposit
+description: Money that pays for apartment repairs when you move out.
+date_created: 2018-06-19
+related_guides:
+    - guides/mietkaution.md
+    - guides/find-a-flat-in-berlin.md
+    - guides/housing-scams.md
+    - guides/moving-out.md
+    - guides/moving-in.md
+    - guides/lost-keys.md
 ---
 
 The apartment deposit (*Kaution*, *Mietkaution* or *Mietsicherheit*) pays for repairs after you [move out of an apartment](/guides/moving-out). If there is nothing to repair, you get your full *Kaution* back.

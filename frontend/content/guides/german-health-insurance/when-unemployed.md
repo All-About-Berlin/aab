@@ -1,9 +1,9 @@
 ---
-Title: German health insurance when unemployed
-Short_title: Health insurance when unemployed
-Description: This guide helps you choose German health insurance when you have no income.
-Date_created: 2025-06-02
-Call_to_action: askOurInsuranceExpert
+title: German health insurance when unemployed
+short_title: Health insurance when unemployed
+description: This guide helps you choose German health insurance when you have no income.
+date_created: 2025-06-02
+call_to_action: askOurInsuranceExpert
 ---
 
 All German residents need health insurance, even when unemployed. This guide explains how health insurance works when you have no income.
