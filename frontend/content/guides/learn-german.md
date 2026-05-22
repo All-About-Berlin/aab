@@ -209,7 +209,7 @@ If you learn another language (like Spanish or Italian), and it's required for y
 
 ## Personal recommendations
 
-Since I moved to Berlin in 2015, I have tried different ways of learning German. I was not always motivated, but I finally found good resources to help me.
+Since I [moved to Berlin](/guides/moving-to-berlin) in 2015, I have tried different ways of learning German. I was not always motivated, but I finally found good resources to help me.
 
 ### German classes
 

@@ -65,7 +65,7 @@ Click *Weiter* to continue.
 
 - Email address (*E-Mail*)
 - Birth date (*Geburtsdatum*) - for example "23.09.1970"
-- [Tax ID](/glossary/Steueridentifikationsnummer) (*Identifikationsnummer*) - [more information](/guides/german-tax-id-steuernummer#the-tax-id-steuer-id)
+- [Tax ID](/guides/german-tax-id-steuernummer#the-tax-id-steuer-id) (*[Identifikationsnummer](/glossary/Steueridentifikationsnummer)*)
 - Username (*Benutzername*) - maximum 8 characters
 - Security question (*Sicherheitsabfrage*)
 - Answer to the security question (*Antwort*) - maximum 40 characters

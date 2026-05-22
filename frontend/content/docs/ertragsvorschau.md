@@ -37,8 +37,8 @@ This form describes your *estimated* income and expenses. Your estimated income 
     You can write your own name.[^2]
 - **Rent**  
     For example, rent for a store, an office or a co-working space. Do not include your apartment rent.
-- **Trade tax** (*[[Gewerbesteuer]]*)  
-    Use the [*Gewerbesteuer* calculator](https://www.zinsen-berechnen.de/gewerbesteuer-rechner.php) to calculate your trade tax. If you are a *[[Freiberufler]]*, you don't pay trade tax. - [More information](/guides/gewerbesteuer)
+- **[Trade tax](/guides/gewerbesteuer)** (*[[Gewerbesteuer]]*)  
+    Use the [*Gewerbesteuer* calculator](https://www.zinsen-berechnen.de/gewerbesteuer-rechner.php) to calculate your trade tax. If you are a *[[Freiberufler]]*, you don't pay trade tax.
 - **Other business taxes**  
     Include your estimated [income tax](/glossary/Einkommensteuer), or leave this field empty. If you pay trade tax (*[[Gewerbesteuer]]*), you pay less income tax. Write your total income tax minus your total trade tax.
 

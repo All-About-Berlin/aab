@@ -369,7 +369,7 @@ To apply for an apartment, you need these documents:[^19]
 - [ ] **Application form** (optional)  
     If an agency listed the apartment, download their application form (*Selbstauskunft*) and fill it in advance.
 - [ ] **Proof of [liability insurance](/glossary/Haftpflichtversicherung)** (very optional)  
-    Landlords can't require liability insurance, but some ask for it anyway. Having it can make a small difference. You should have liability insurance anyway.[^53] - [More information](/guides/haftpflichtversicherung)
+    Landlords can't require liability insurance, but some ask for it anyway. Having it can make a small difference. [Get liability insurance](/guides/haftpflichtversicherung) because it's important to have, but it won't help your apartment search.[^53]
 - [ ] **Copies of everything**  
     Use them to apply for the apartment during the visit. Keep the originals.
 
@@ -466,7 +466,7 @@ You can also get luxury student housing. It's very expensive, but it's easier to
 
 ### Buying an apartment
 
-If you just moved to Berlin, **don't buy an apartment**. Buying is harder than renting. If you just started a new job, you won't get a mortgage. If you don't have EU citizenship or [permanent residence](/glossary/Niederlassungserlaubnis), you won't get a mortgage. If you don't know the housing market well, you can make really bad decisions.
+If you just [moved to Berlin](/guides/moving-to-berlin), **don't buy an apartment**. Buying is harder than renting. If you just started a new job, you won't get a mortgage. If you don't have EU citizenship or [permanent residence](/glossary/Niederlassungserlaubnis), you won't get a mortgage. If you don't know the housing market well, you can make really bad decisions.
 
 ## Important knowledge
 
@@ -574,7 +574,7 @@ A [real estate agent](#real-estate-agents) can help you find an apartment. A *[[
 [^40]: [mieterbund.de](https://www.mieterbund.de/service/hausordnung.html), [justlanded.com](https://www.justlanded.com/english/Germany/Germany-Guide/Housing-Rentals/Contracts)
 [^41]: [reddit.com/r/de](https://old.reddit.com/r/de/comments/93edik/wie_stellt_man_sich_bei_einer_wg_besichtigung_vor/), [reddit.com/r/germany](https://old.reddit.com/r/germany/comments/v8cvvd/what_is_your_experience_with_wg_interviews/ibpp63p/?context=3)
 [^42]: Christine Gerkrath (March 2024), Nerea Lopez (March 2024), [Reddit](https://old.reddit.com/r/berlin/comments/11c7ypi/foreigners_how_long_did_it_take_you_to_find_an/ja2ahd2/) (2023)
-[^43]: [rbb24](https://www.rbb24.de/panorama/beitrag/2023/10/semesterstart-berlin-studierende-ohne-wohnung-universitaet.html) (2023), [Reddit](https://old.reddit.com/r/rwth/comments/15mw8d7/warteliste_studierendenwerk/)
+[^43]: [rbb24](https://web.archive.org/web/20250321095322/https://www.rbb24.de/panorama/beitrag/2023/10/semesterstart-berlin-studierende-ohne-wohnung-universitaet.html) (2023), [Reddit](https://old.reddit.com/r/rwth/comments/15mw8d7/warteliste_studierendenwerk/)
 [^44]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/x94o8z/28_tips_for_flathunt_my_flathunt_journey/)
 [^45]: [Spotahome](https://help.spotahome.com/hc/en-us/articles/360019389160-What-is-virtual-verification) (2024)
 [^46]: [Spotahome](https://help.spotahome.com/hc/en-us/articles/360014619980-When-will-I-receive-the-first-payment) (2024)

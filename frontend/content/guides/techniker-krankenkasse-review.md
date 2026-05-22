@@ -32,7 +32,7 @@ TK does have English phone and chat support, so you can always get help in Engli
 
 ## My personal experience with TK
 
-I was a TK customer since I moved to Berlin in 2015. I was with TK until 2021. I had a very positive experience with them.
+I was a TK customer since I [moved to Berlin](/guides/moving-to-berlin) in 2015. I was with TK until 2021. I had a very positive experience with them.
 
 ### Excellent coverage
 

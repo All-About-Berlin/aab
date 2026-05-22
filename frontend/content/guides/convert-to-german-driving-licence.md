@@ -53,7 +53,7 @@ You can convert an expired EU or [[EEA]] driving licence.[^8] You can't convert 
 
 You must get your foreign driving licence before you move to Germany. You can't move to Germany, get a driving licence elsewhere, then convert it.
 
-I renewed my Canadian licence after I moved to Berlin. The date on the driving licence was after my *[[Anmeldung]]* date. I had to prove that I got my driving licence before I moving to Germany. I showed photocopies of my old Canadian licence, and a certificate from my Canadian driving school.
+I renewed my Canadian licence after I [moved to Berlin](/guides/moving-to-berlin). The date on the driving licence was after my *[[Anmeldung]]* date. I had to prove that I got my driving licence before I moving to Germany. I showed photocopies of my old Canadian licence, and a certificate from my Canadian driving school.
 
 ### 1. Register your address
 
