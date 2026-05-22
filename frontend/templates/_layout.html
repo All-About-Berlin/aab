@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	{% block head %}
-		<title>{% if metatitle|default %}{{ metatitle }}{% if metatitle|length < 50 %} - {% endif %}{% if metatitle|length < 50 %}All About Berlin{% endif %}{% else %}All About Berlin - Guides and tools to live in Germany{% endif %}</title>
+		<title>{% if metatitle|default %}{{ metatitle }}{% if metatitle|length < 50 %} - {% endif %}{% if metatitle|length < 50 %}All About Berlin{% endif %}{% else %}All About Berlin - Free guides and tools to live in Germany{% endif %}</title>
 		{% if metadescription|default %}<meta name="description" content="{{ metadescription }}">{% endif %}
 
 		<link rel="preload" as="font" href="/fonts/librefranklin-variable.woff2" type="font/woff2" crossorigin>
@@ -290,7 +290,7 @@
 					"@type": "Person",
 					"@id": "https://nicolasbouliane.com"
 				},
-				"description": "All About Berlin helps people settle in Berlin and navigate German bureaucracy.",
+				"description": "All About Berlin offers free guides and tools for settling in Berlin and navigating German bureaucracy.",
 				"inLanguage": "en",
 				"url": "{{ SITE_URL }}/",
 				"publisher": {
@@ -318,7 +318,7 @@
 					"postalCode": "13127",
 					"streetAddress": "Pasewalker Straße 65"
 				},
-				"description": "All About Berlin helps people settle in Berlin and navigate German bureaucracy.",
+				"description": "All About Berlin offers free guides and tools for settling in Berlin and navigating German bureaucracy.",
 				"foundingDate": "2017-09-01",
 				"logo": "{{ SITE_URL }}/staticimages/logo.png",
 				"name": "All About Berlin",
