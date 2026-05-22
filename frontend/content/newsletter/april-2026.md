@@ -30,7 +30,7 @@ Every year in April, you start to see wild garlic (*Bärlauch*) sprout in Berlin
 
 ### Immigration office wait times
 
-Since October 2024, I collect feedback about immigration office wait times. We now have over 1,300 responses! No one - not even the immigration office - had such data before. This information lets you plan around *Ausländerbehörde* delays.
+Since October 2024, I collect feedback about immigration office wait times. We now have over 1,300 responses! No one - not even the immigration office - had such data before. This information lets you plan around *[[Ausländerbehörde]]* delays.
 
 In March, I have redesigned the [feedback page](/guides/immigration-office/wait-times). It's less cluttered, and it combines residence permit and citizenship feedback.
 

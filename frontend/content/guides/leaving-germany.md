@@ -192,7 +192,7 @@ To cancel your health insurance, you need an *[[Abmeldebescheinigung]]*.[^7] Whe
 
 ### Income tax
 
-Usually, when you leave Germany, you stop paying income tax in Germany.
+Usually, when you leave Germany, you stop paying [income tax](/glossary/Einkommensteuer) in Germany.
 
 You might still have to pay taxes in Germany if...[^27]
 
