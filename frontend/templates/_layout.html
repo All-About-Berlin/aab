@@ -273,6 +273,7 @@
 		{% alljs %}
 	</script>
 	<script type="application/ld+json">
+	{% block jsonld %}
 		[
 			{
 				"@context": "https://schema.org",
@@ -344,6 +345,7 @@
 				"jobTitle": "German immigration specialist"
 			}
 		]
+	{% endblock %}
 	</script>
 {% endblock %}
 </body>

@@ -24,8 +24,8 @@
 
 	<meta property="og:site_name" content="{{ SITE_NAME }}">
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:creator" content="@aboutberlin">
-	<meta name="twitter:site" content="@aboutberlin">
+	<meta name="twitter:creator" content="@agoodstartDE">
+	<meta name="twitter:site" content="@agoodstartDE">
 {% endblock %}
 
 {% block postHead %}
@@ -45,6 +45,85 @@
 		<meta property="og:image" content="{{ SERVICES_SITE_URL }}/staticimages/cover.png">
 	{% endif %}
 	<meta property="og:logo" content="{{ SERVICES_SITE_URL }}/staticimages/logo.png" />
+{% endblock %}
+
+{% block jsonld %}
+	[
+		{
+			"@context": "https://schema.org",
+			"@type": "WebSite",
+			"@id": "{{ SERVICES_SITE_URL }}/#site",
+			"author": {
+				"@type": "Person",
+				"@id": "https://nicolasbouliane.com"
+			},
+			"accountablePerson": {
+				"@type": "Person",
+				"@id": "https://nicolasbouliane.com"
+			},
+			"maintainer": {
+				"@type": "Person",
+				"@id": "https://nicolasbouliane.com"
+			},
+			"description": "A Good Start helps you get the right German insurance.",
+			"inLanguage": "en",
+			"url": "{{ SERVICES_SITE_URL }}/",
+			"publisher": {
+				"@type": "Organization",
+				"@id": "{{ SERVICES_SITE_URL }}/#organization"
+			},
+			"sameAs": [
+				"https://x.com/agoodstartDE",
+				"https://reddit.com/r/agoodstartde"
+			]
+		},
+		{
+			"@context": "https://schema.org",
+			"@id": "{{ SERVICES_SITE_URL }}/#organization",
+			"@type": "Organization",
+			"description": "A Good Start helps you get the right German insurance.",
+			"foundingDate": "2026-05-01",
+			"logo": "{{ SERVICES_SITE_URL }}/staticimages/logo.png",
+			"name": "A Good Start",
+			"sameAs": [
+				"https://x.com/agoodstartDE",
+				"https://reddit.com/r/agoodstartde"
+			],
+			"url": "{{ SERVICES_SITE_URL }}/"
+		},
+		{
+			"@context": "https://schema.org",
+			"@type": "InsuranceAgency",
+			"@id": "{{ SERVICES_SITE_URL }}/#business",
+			"name": "A Good Start",
+			"description": "A Good Start helps you get the right German insurance.",
+			"url": "{{ SERVICES_SITE_URL }}/",
+			"email": "contact@agoodstart.de",
+			"address": {
+				"@type": "PostalAddress",
+				"addressCountry": "DE",
+				"addressLocality": "Berlin",
+				"addressRegion": "Berlin",
+				"postalCode": "13127",
+				"streetAddress": "Pasewalker Straße 65"
+			},
+			"logo": "{{ SERVICES_SITE_URL }}/staticimages/logo.png",
+			{# "vatID": "DE318085089", #}
+			"founder": {
+				"@type": "Person",
+				"@id": "https://nicolasbouliane.com"
+			}
+		},
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"@id": "https://nicolasbouliane.com",
+			"name": "Nicolas Bouliane",
+			"email": "contact@allaboutberlin.com",
+			"url": "https://nicolasbouliane.com",
+			"jobTitle": "German insurance broker and immigration specialist"
+		}
+	]
 {% endblock %}
 
 {% block extraScss %}
