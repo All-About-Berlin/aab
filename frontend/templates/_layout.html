@@ -120,26 +120,6 @@
 			{% set guideCount = get_entries('guides')|length %}
 			<a class="internal-link" href="{{ SITE_URL }}/guides">See all {{ guideCount }} guides</a>
 		</nav>
-		{% js %}
-			document.addEventListener("DOMContentLoaded", () => {
-				document.querySelectorAll('header > nav > button').forEach(
-					button => button.addEventListener("click",
-						e => {
-							const menuId = button.getAttribute("aria-controls");
-							const shouldShowMenu = document.getElementById(menuId).hidden;
-
-							// Update aria-expanded on all buttons
-							document.querySelectorAll('header > nav > button').forEach(
-								b => b.setAttribute('aria-expanded', b.getAttribute('aria-controls') === menuId && shouldShowMenu)
-							);
-
-							// Show the correct submenu
-							document.querySelectorAll('.submenu').forEach(m => m.hidden = !shouldShowMenu || m.id !== menuId);
-						}
-					)
-				);
-			});
-		{% endjs %}
 	</header>
 	{% block main %}
 		<main aria-label="Main page">
@@ -263,11 +243,13 @@
 			import initializeCurrencyTooltips from '/js/components/currency.mjs';
 			import initializeChecklists from '/js/components/checklist.mjs';
 			import initializeFootnotes from '/js/components/footnotes.mjs';
+			import initializeCollapsibleMenus from '/js/components/collapsible-menu.mjs';
 
 			initializeTracking();
 			initializeChecklists();
 			initializeCurrencyTooltips();
 			initializeFootnotes();
+			initializeCollapsibleMenus();
 		{% endjs %}
 
 		{% alljs %}
