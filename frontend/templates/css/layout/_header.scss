@@ -116,9 +116,10 @@ body > header {
     > nav.submenu{
         background: var(--c-bg-page);
         padding: var(--l) var(--w-page-border);
-        max-width: var(--w-main-column);
+        width: var(--w-tablet);
+        max-width: 100%;
         box-sizing: border-box;
-        border:var(--b-box);
+        border: var(--b-box);
         border-top:none;
         box-shadow: var(--shadow-l);
 
@@ -148,7 +149,7 @@ body > header {
         ul{
             display: grid;
             gap: calc(var(--m) - var(--s) * 2);
-            margin: 0;
+            margin: calc(var(--s) * -1);
 
             li a{
                 padding: var(--s);
@@ -195,6 +196,11 @@ body > header {
             border-top: var(--b-box);
             padding-top: var(--l);
             text-align: center;
+        }
+
+        @include only-phone{
+            border: none;
+            border-bottom: var(--b-box);
         }
     }
 
