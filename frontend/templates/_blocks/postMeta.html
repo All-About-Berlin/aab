@@ -8,6 +8,14 @@
 				<li><a href="{{ entry.url }}" aria-current="page">{{ entry.short_title|default(entry.title) }}</a></li>
 			</ol>
 		</nav>
+	{% elif entry.german_term|default %}
+		<nav class="breadcrumbs" aria-label="Breadcrumbs">
+			<i class="icon folder" aria-hidden="true"></i>
+			<ol>
+				<li><a href="{{ SITE_URL }}/glossary">Glossary</a></li>
+				<li><a href="{{ entry.url }}" aria-current="page">{{ entry.german_term }}</a></li>
+			</ol>
+		</nav>
 	{% endif %}
 	<div>
 		<i class="icon calendar" aria-hidden="true"></i>

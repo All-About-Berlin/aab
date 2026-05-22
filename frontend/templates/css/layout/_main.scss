@@ -106,6 +106,18 @@ main{
                 transform: rotate(-90deg);
             }
 
+            // Hide current page in breadcrumbs
+            li:has([aria-current]):not(:has([href*="/glossary/"])){
+                display: none;
+            }
+        }
+
+        @include only-phone{
+            > :not(#reviewers){
+                flex: 1 0 100%;
+            }
+
+            // Hide glossary term in breadcrumbs, but only on mobile because they are too wide.
             li:has([aria-current]){
                 display: none;
             }
