@@ -29,16 +29,6 @@
   borough: Pankow
   suburb: Prenzlauer Berg
   quarter: Helmholtzkiez
-- name: Dr. Eva Dudik
-  website: https://www.doctolib.de/einzelpraxis/berlin/dr-med-eva-dudik
-  address: Kaiserdamm 17
-  latitude: 52.510644
-  longitude: 13.287398
-  google_place_id: ChIJm_DGS7dRqEcRR9ySOEerwMk
-  last_verified: 2026-04-22
-  borough: Charlottenburg-Wilmersdorf
-  suburb: Charlottenburg
-  quarter: Witzleben
 - name: Dr. Gabriele Ulsemer
   website: http://www.ulsemer.de/
   address: Beuthstraße 11
