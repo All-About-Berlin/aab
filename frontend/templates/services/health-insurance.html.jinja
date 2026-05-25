@@ -13,9 +13,9 @@
 			</div>
 		</header>
 		{% tool "health-insurance-calculator", static=True, id="calculator" %}
-		<section class="section" aria-label="German health insurance prices">
+		<section class="section price-table" aria-label="German health insurance prices">
 			<h2>Health insurance prices</h2>
-			<p>Your options depend on your situation. <a href="">Tell us more about you</a> to get an accurate price.</p>
+			<p>Your options depend on your situation. <a href="#calculator">Tell us more about you</a> to get an accurate price.</p>
 			<hr>
 			<table class="price-table">
 				<thead>
@@ -55,19 +55,19 @@
 						<th colspan="4">What it's good for</th>
 					</tr>
 					<tr>
-						<th scope="row">Schengen Visa</th>
+						<th scope="row"><glossary term="Schengen visa">Schengen Visa</glossary></th>
 						<td><span class="yes"></span></td>
 						<td><span class="yes"></span></td>
 						<td><span class="yes"></span></td>
 					</tr>
 					<tr>
-						<th scope="row">National Visa</th>
+						<th scope="row"><glossary>National Visa</glossary></th>
 						<td><span class="yes"></span></td>
 						<td><span class="yes"></span></td>
 						<td><span class="yes"></span></td>
 					</tr>
 					<tr>
-						<th scope="row"><a href="/glossary/Aufenthaltstitel">Residence permit</a></th>
+						<th scope="row"><glossary term="Aufenthaltstitel">Residence permit</glossary></th>
 						<td><span class="yes"></span></td>
 						<td><span class="yes"></span></td>
 						<td><span class="yes"></span></td>
@@ -166,3 +166,8 @@
 		</section>
 	</main>
 {% endblock %}
+
+{% js %}
+	import initializePriceTable from '/js/components/health-insurance-price-table.mjs';
+	initializePriceTable();
+{% endjs %}
