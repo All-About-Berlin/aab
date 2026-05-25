@@ -53,7 +53,7 @@ To buy a local public transit ticket...
 3. **Choose the [type of ticket ➞](#ticket-types)**  
     There are cheaper tickets for children, students, apprentices and [dogs](#dogs-on-public-transit). You need a [ticket for your bicycle](#bicycles-on-public-transit). Daily, weekly and monthly passes sometimes let you bring people for free.
 
-Your ticket is valid for the [[S-Bahn]], the [[U-Bahn]], trams, buses, ferries, regional trains (RE) and [*some* IC and ICE trains](https://www.vbb.de/vbb-services/umsteigen-und-weiterfahren/bahn/#c1155). It's not valid for private buses (Flixbus, *Hop-On, Hop-Off*) and tour boats.
+Your ticket is valid on the [[S-Bahn]], [[U-Bahn]], trams, buses, ferries and regional trains (RE). It's not valid on intercity trains (IC and ICE), private operators (Flixtrain, Flixbus, European Sleeper, *Hop-On, Hop-Off*) or tour boats.[^14]
 
 ![A digital Deutschland Ticket in the BVG app](/images/bvg-app-digital-deutschland-ticket.jpg "A digital ticket in the BVG app")
 
@@ -263,4 +263,5 @@ These tickets do not let you bring children and other people with you:[^12]
 [^11]: [bvg.de](https://www.bvg.de/de/abos-und-tickets/tarifzonen-und-tarifbestimmungen), [vbb.de](https://www.vbb.de/tickets/tarifinformationen-services/mitnahmemoeglichkeiten/), [bvg.de](https://www.bvg.de/de/abos-und-tickets/alle-abos/schuelerticket-berlin)
 [^12]: [Students and apprentices](https://sbahn.berlin/en/tickets/all-tickets/school-students-apprentice-students/monthly-subscription-ticket-for-apprentices/school-students/?tabs=tbc-tfeatures), [10-Uhr-Karte](https://sbahn.berlin/en/tickets/all-tickets/weekly-monthly-annual-tickets/10am-ticket/?tabs=tbc-tfeatures), [short trip ticket](https://sbahn.berlin/en/tickets/all-tickets/single-tickets/short-trip-ticket/), [FlexTicket](https://sbahn.berlin/en/tickets/all-tickets/weekly-monthly-annual-tickets/vbb-flexticket/?tabs=tbc-tfeatures)
 [^13]: [Weekly](https://sbahn.berlin/en/tickets/all-tickets/weekly-monthly-annual-tickets/7-day-ticket/?tabs=tbc-tfeatures) and [monthly](https://sbahn.berlin/en/tickets/all-tickets/weekly-monthly-annual-tickets/vbb-umweltkarte/?tabs=tbc-tfeatures) tickets
+[^14]: [vbb.de](https://www.vbb.de/pendlerinfos/weiterfahren-mit-der-bahn/#c1155) (May 2026)
 [^16]: [reddit.com](https://old.reddit.com/r/berlin/comments/16rtm7a/do_you_show_your_bus_tickets_to_the_bus_driver/)

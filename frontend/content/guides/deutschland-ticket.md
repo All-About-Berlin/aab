@@ -24,7 +24,7 @@ The Deutschland Ticket always **starts on the first day of the month**.[^3] This
 |     | [mo.pla](https://en.mopla.solutions/en/tickets/deutschlandticket){{ RECOMMENDED }} | [hvv Switch](https://www.hvv-switch.de/en/) | [BVG](/out/deutschland-ticket-bvg) | [Deutsche Bahn](/out/deutschland-ticket-db) |
 |-|:-:|:-:|:-:|:-:|
 | **Buy a ticket for the current month** | ✓ | ✓ | ✗ | ✓ |
-| **Cancellation deadline** | Anytime | 10th of the month | 25th of the month | 10th of the month |
+| **Cancellation deadline** | 10th of the month | 10th of the month | 25th of the month | 10th of the month |
 | **Pay with foreign credit card** | ✓ | ✓ | ✗ | ✗ |
 | **Pay with German credit card** | ✓ | ✗ | ✗ | ✗ |
 | **Pay with PayPal** | ✓ | ✓ | ✗ | ✗ |
