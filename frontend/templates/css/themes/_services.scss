@@ -118,24 +118,46 @@ main > .collapsible{
 
     .plan-names{
         @include heading;
-        font-size: var(--m);
+        font-size: var(--l);
         background: var(--c-bg-page);
         position: sticky;
         top: 0;
-        border-bottom: var(--b-box);
 
         th:first-child{
-            width: var(--w-label-column);
+            width: 250px;
         }
 
         th[scope="col"]{
-            width: 200px
+            padding: 0;
+            width: 200px;
+            text-align: center;
+            > small{
+                line-height: var(--line-height-label);
+                display: block;
+                color: var(--c-text-light);
+            }
         }
+    }
+
+    .price-and-description td{
+        border-top: none;
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .price{
+        margin-top: var(--s);
+        display: block;
+        font-size: var(--m);
+    }
+
+    .calculate-price{
+        display: block;
+        text-align: center;
     }
 
     .section-heading th{
         @include heading;
-        text-align: left;
         font-size: var(--l);
         background: transparent;
         padding-top: var(--xxl);
@@ -149,11 +171,20 @@ main > .collapsible{
 
     th[scope=row]{
         font-weight: normal;
-        text-align: left;
         border-right: var(--b-box);
+    }
+    th{
+        &[aria-expanded]{
+            cursor: pointer;
+            @include expansible;
+        }
+        &[aria-expanded=true]{
+            @include collapsible;
+        }
     }
     :is(th, td){
         line-height: var(--line-height-label);
+        text-align: left;
         padding: var(--s);
     }
 
@@ -161,17 +192,15 @@ main > .collapsible{
         padding-left: calc(var(--s) + var(--l));
     }
 
-    tr:not(.section-heading):hover{
+    tr.feature:hover{
         background: var(--c-bg-image);
+        + tr.instructions{
+            background: var(--c-bg-image);
+        }
     }
 
     tr > :first-child{
         padding-left: 0;
-    }
-
-    td{
-        text-align: center;
-        vertical-align: middle;
     }
 
     .yes, .no{
@@ -179,8 +208,10 @@ main > .collapsible{
         &:before{
             content: '✓';
             line-height: 1em;
-            vertical-align: center;
+            vertical-align: top;
             color: var(--c-text-heading);
+            display: block;
+            text-align: center;
         }
     }
     .no:before{

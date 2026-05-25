@@ -8,77 +8,78 @@
 			<h1>Health insurance? Sorted.</h1>
 			<p>We help you get the right coverage for the best price, for free.</p>
 			<div class="buttons bar left">
-				<a class="button primary" href="#calculator">Choose health insurance</a>
+				<a class="button primary" href="#prices">Choose health insurance</a>
 				<a class="button" href="#contact">Ask our expert</a>
 			</div>
 		</header>
-		{% tool "health-insurance-calculator", static=True, id="calculator" %}
-		<section class="section price-table" aria-label="German health insurance prices">
+		<section class="section price-table" id="prices" aria-label="German health insurance prices">
 			<h2>Health insurance prices</h2>
-			<p>Your options depend on your situation. <a href="#calculator">Tell us more about you</a> to get an accurate price.</p>
 			<hr>
 			<table class="price-table">
 				<thead>
 					<tr class="plan-names">
 						<th></th>
 						<th scope="col">
-							⭐
-							<br>
 							Expat
 						</th>
 						<th scope="col">
-							⭐⭐⭐
-							<br>
 							Public
 						</th>
 						<th scope="col">
-							🌟🌟🌟
-							<br>
 							Private
 						</th>
 					</tr>
-					<tr>
-						<th scope="row">Summary</th>
-						<td>Basic coverage for your first visa.</td>
-						<td>The simple long-term option.</td>
-						<td>Choose your coverage, see doctors faster.</td>
+					<tr class="price-and-description">
+						<td></td>
+						<td>
+							<small>Basic coverage for your first visa.</small>
+							<price :amount="200" per-month>From €200/month</price>
+						</td>
+						<td>
+							<small>The simple long-term option.</small>
+							<price :amount="200" per-month>From €200/month</price>
+						</td>
+						<td>
+							<small>Custom coverage, faster healthcare.</small>
+							<price :amount="200" per-month>From €200/month</price>
+						</td>
 					</tr>
 					<tr>
-						<th scope="row">Price</th>
-						<td>From €200/month</td>
-						<td>From €200/month</td>
-						<td>From €200/month</td>
+						<td></td>
+						<td colspan="3">
+							<a class="calculate-price" href="#calculator">Get an accurate price</a>
+						</td>
 					</tr>
 				</thead>
 				<tbody>
 					<tr class="section-heading">
-						<th colspan="4">What it's good for</th>
+						<th colspan="4">What you can use it for</th>
 					</tr>
-					<tr>
+					<tr class="feature">
 						<th scope="row"><glossary term="Schengen visa">Schengen Visa</glossary></th>
 						<td><span class="yes"></span></td>
 						<td><span class="yes"></span></td>
 						<td><span class="yes"></span></td>
 					</tr>
-					<tr>
+					<tr class="feature">
 						<th scope="row"><glossary>National Visa</glossary></th>
 						<td><span class="yes"></span></td>
 						<td><span class="yes"></span></td>
 						<td><span class="yes"></span></td>
 					</tr>
-					<tr>
+					<tr class="feature">
 						<th scope="row"><glossary term="Aufenthaltstitel">Residence permit</glossary></th>
 						<td><span class="yes"></span></td>
 						<td><span class="yes"></span></td>
 						<td><span class="yes"></span></td>
 					</tr>
-					<tr class="subfeature">
+					<tr class="feature subfeature">
 						<th scope="row">First application</th>
 						<td><span class="no"></span></td>
 						<td><span class="yes"></span></td>
 						<td><span class="yes"></span></td>
 					</tr>
-					<tr class="subfeature">
+					<tr class="feature subfeature">
 						<th scope="row">Renewal</th>
 						<td><span class="no"></span></td>
 						<td><span class="yes"></span></td>
@@ -89,44 +90,33 @@
 					<tr class="section-heading">
 						<th colspan="4">Features</th>
 					</tr>
-					<tr>
+					<tr class="feature">
 						<th scope="row">Choose your coverage</th>
+						<td><span class="yes"></span></td>
 						<td></td>
-						<td></td>
-						<td></td>
+						<td><span class="yes"></span></td>
 					</tr>
-					<tr>
+					<tr class="feature">
 						<th scope="row">Cancellation period</th>
 						<td></td>
 						<td></td>
 						<td></td>
 					</tr>
-					<tr>
+					<tr class="feature">
 						<th scope="row">Switch insurances</th>
 						<td></td>
-						<td></td>
-						<td></td>
+						<td><span class="yes"></span></td>
+						<td><span class="no"></span></td>
 					</tr>
 				</tbody>
-				<tfoot>
-					<tr>
-						<th scope="row"></th>
-						<td scope="col">
-							<a href="">Choose expat</a>
-						</td>
-						<td scope="col">
-							<a href="">Choose public</a>
-						</td>
-						<td scope="col">
-							<a href="">Choose private</a>
-						</td>
-					</tr>
-				</tfoot>
 			</table>
+			<hr>
 			<div class="buttons bar">
-				<a href="" class="internal-link">Help me choose</a>
+				<a href="#calculator" class="button">Calculate prices</a>
+				<a href="#contact" class="button primary">Get insured <i class="icon right" aria-hidden="true"></i></a>
 			</div>
 		</section>
+		{% tool "health-insurance-calculator", static=True, id="calculator" %}
 		<section class="section transparent">
 			<div class="two-columns">
 				<div>

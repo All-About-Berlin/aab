@@ -1,4 +1,5 @@
 import Glossary from '/js/vue/components/glossary.mjs';
+import Price from '/js/vue/components/price.mjs';
 import Vue from '/js/vue/vue.mjs';
 
 export default function initializePriceTable() {
@@ -10,6 +11,7 @@ export default function initializePriceTable() {
 			el,
 			components: {
 				Glossary,
+				Price,
 			},
 			data() {
 				return {
