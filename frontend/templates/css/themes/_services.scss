@@ -94,11 +94,6 @@ main > .collapsible{
         color: var(--c-text);
     }
 
-    h3{
-        font-size: var(--m);
-        margin: 0 0 var(--s);
-    }
-
     p{
         margin: 0;
     }
@@ -151,11 +146,6 @@ main > .collapsible{
         font-size: var(--m);
     }
 
-    .calculate-price{
-        display: block;
-        text-align: center;
-    }
-
     .section-heading th{
         @include heading;
         font-size: var(--l);
@@ -186,6 +176,7 @@ main > .collapsible{
         line-height: var(--line-height-label);
         text-align: left;
         padding: var(--s);
+        vertical-align: top;
     }
 
     .subfeature > :first-child{

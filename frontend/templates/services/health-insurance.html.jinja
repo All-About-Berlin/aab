@@ -6,27 +6,27 @@
 	<main aria-label="Main page">
 		<header class="section intro article-body">
 			<h1>Health insurance? Sorted.</h1>
-			<p>We help you get the right coverage for the best price, for free.</p>
+			<p>You need health insurance to live in Germany or apply for a German visa. We get you the right coverage for the best price.</p>
 			<div class="buttons bar left">
-				<a class="button primary" href="#prices">Choose health insurance</a>
+				<a class="button primary" href="#calculator">Find health insurance</a>
 				<a class="button" href="#contact">Ask our expert</a>
 			</div>
 		</header>
 		<section class="section price-table" id="prices" aria-label="German health insurance prices">
-			<h2>Health insurance prices</h2>
+			<p>In Germany, there is <a href="/glossary/Expat health insurance">expat</a>, <a href="/glossary/gesetzliche Krankenversicherung">public</a> and <a href="/glossary/private Krankenversicherung">private</a> health insurance. The best option depends on our situation. <a href="https://allaboutberlin.com/guides/german-health-insurance">Learn how health insurance works</a>, use our <a href="#calculator">recommendation tool</a> or <a href="#contact">ask our expert</a> to help you choose.</p>
 			<hr>
 			<table class="price-table">
 				<thead>
 					<tr class="plan-names">
 						<th></th>
 						<th scope="col">
-							Expat
+							<glossary term="Expat health insurance">Expat</glossary>
 						</th>
 						<th scope="col">
-							Public
+							<glossary term="gesetzliche Krankenversicherung">Public</glossary>
 						</th>
 						<th scope="col">
-							Private
+							<glossary term="private Krankenversicherung">Private</glossary>
 						</th>
 					</tr>
 					<tr class="price-and-description">
@@ -36,7 +36,7 @@
 							<price :amount="200" per-month>From €200/month</price>
 						</td>
 						<td>
-							<small>The simple long-term option.</small>
+							<small>The simple, reliable long-term option.</small>
 							<price :amount="200" per-month>From €200/month</price>
 						</td>
 						<td>
@@ -44,13 +44,33 @@
 							<price :amount="200" per-month>From €200/month</price>
 						</td>
 					</tr>
-					<tr>
-						<td></td>
-						<td colspan="3">
-							<a class="calculate-price" href="#calculator">Get an accurate price</a>
-						</td>
-					</tr>
 				</thead>
+				<tbody>
+					<tr class="feature">
+						<th scope="row">Cover your family for free</th>
+						<td><span class="no"></span></td>
+						<td><span class="yes"></span></td>
+						<td><span class="no"></span></td>
+					</tr>
+					<tr class="feature">
+						<th scope="row">Choose your coverage</th>
+						<td><span class="yes"></span></td>
+						<td><span class="no"></span></td>
+						<td><span class="yes"></span></td>
+					</tr>
+					<tr class="feature">
+						<th scope="row">Switch easily</th>
+						<td></td>
+						<td><span class="yes"></span></td>
+						<td><span class="no"></span></td>
+					</tr>
+					<tr class="feature">
+						<th scope="row">Cancellation period</th>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
 				<tbody>
 					<tr class="section-heading">
 						<th colspan="4">What you can use it for</th>
@@ -86,59 +106,21 @@
 						<td><span class="yes"></span></td>
 					</tr>
 				</tbody>
-				<tbody>
-					<tr class="section-heading">
-						<th colspan="4">Features</th>
-					</tr>
-					<tr class="feature">
-						<th scope="row">Choose your coverage</th>
-						<td><span class="yes"></span></td>
-						<td></td>
-						<td><span class="yes"></span></td>
-					</tr>
-					<tr class="feature">
-						<th scope="row">Cancellation period</th>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr class="feature">
-						<th scope="row">Switch insurances</th>
-						<td></td>
-						<td><span class="yes"></span></td>
-						<td><span class="no"></span></td>
-					</tr>
-				</tbody>
 			</table>
 			<hr>
 			<div class="buttons bar">
-				<a href="#calculator" class="button">Calculate prices</a>
-				<a href="#contact" class="button primary">Get insured <i class="icon right" aria-hidden="true"></i></a>
+				<a href="#contact" class="button primary">Ask our expert</a>
+				<a href="#calculator" class="button">Find the best option</a>
 			</div>
 		</section>
 		{% tool "health-insurance-calculator", static=True, id="calculator" %}
-		<section class="section transparent">
-			<div class="two-columns">
-				<div>
-					<h3>Why get health insurance?</h3>
-					<p>Because it's required to live in Germany or apply for a German visa. It pays for your healthcare when you are sick.</p>
-				</div>
-				<div>
-					<h3>Public, private or expat?</h3>
-					<p>There are 3 types of health insurance and hundreds of options. We help you pick the best option for your situation.</p>
-				</div>
-			</div>
-			<div class="buttons bar">
-				<strong><a href="https://allaboutberlin.com/guides/german-health-insurance" class="internal-link">Learn how health insurance works</a></strong>
-			</div>
-		</section>
 		{% tool "health-insurance-calculator", mode="question", static=True, id="contact" %}
 		<section class="section transparent">
 			<h2 align="center">Why get insured with us?</h2>
 			<div class="two-columns">
 				<div>
-					<h3>Perfect for a German visa</h3>
-					<p>Our insurance is accepted by German embassies, consulates and immigration offices, for any type of visa.</p>
+					<h3>Perfect for your German visa</h3>
+					<p>Our health insurance is accepted by German embassies, consulates and immigration offices. It works for any type of visa.</p>
 				</div>
 				<div>
 					<h3>Get more, pay less</h3>
