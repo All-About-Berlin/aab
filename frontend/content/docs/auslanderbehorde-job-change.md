@@ -9,8 +9,6 @@ related_guides:
     - guides/residence-permit.md
     - guides/immigration-office.md
     - docs/resignation-letter.md
-categories:
-    - auslaenderbehoerde
 ---
 
 If you have a [residence permit](/glossary/Aufenthaltstitel), and you [lose your job](/guides/losing-your-job), you must [tell the *Ausländerbehörde*](/guides/losing-your-job#tell-the-auslanderbehorde).[^2] Use this letter template to do it.{{ fail_on('2026-12-31') }}

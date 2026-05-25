@@ -9,8 +9,6 @@ date_created: 2022-12-21
 related_guides:
     - guides/german-tax-id-steuernummer.md
     - guides/anmeldung-in-english-berlin.md
-categories:
-    - finanzamt
 ---
 
 This form helps you request a [tax ID](/glossary/Steueridentifikationsnummer) without [registering your address](/glossary/Anmeldung). It works in all of Germany.

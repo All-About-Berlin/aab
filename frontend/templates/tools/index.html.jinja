@@ -35,77 +35,16 @@
 			<h1>Tools, forms and document templates</h1>
 			<div class="article-body">
 				<p>These documents and tools make your life in Berlin easier.</p>
-				<h2 id="calculators">Calculators</h2>
-				<ol class="previews">
-				{% for entry in get_entries(['docs', 'tools'], sort_by=('german_term', 'short_title', 'title')) %}
-					{% if 'calculator' in entry.categories %}
-						{{ preview(entry) }}
+				{% for collection in get_entries('collections') %}
+					{% if collection.type == 'tools' %}
+						<h2 id="{{ collection.id }}">{{ collection.title }}</h2>
+						<ol class="previews">
+						{% for item in collection.entries %}
+							{{ preview(entries[item.uri]) }}
+						{% endfor %}
+						</ol>
 					{% endif %}
 				{% endfor %}
-				</ol>
-
-				<h2 id="maps">Maps</h2>
-				<ol class="previews">
-				{% for entry in get_entries(['docs', 'tools'], sort_by=('german_term', 'short_title', 'title')) %}
-					{% if 'maps' in entry.categories %}
-						{{ preview(entry) }}
-					{% endif %}
-				{% endfor %}
-				</ol>
-
-				<h2 id="burgeramt">For the <a href="/glossary/Bürgeramt">Bürgeramt</a></h2>
-				<ol class="previews">
-				{% for entry in get_entries(['docs', 'tools'], sort_by=('german_term', 'short_title', 'title')) %}
-					{% if 'buergeramt' in entry.categories %}
-						{{ preview(entry) }}
-					{% endif %}
-				{% endfor %}
-				</ol>
-
-				<h2 id="auslanderbehorde">For the <a href="/glossary/Ausländerbehörde">Ausländerbehörde</a></h2>
-				<ol class="previews">
-				{% for entry in get_entries(['docs', 'tools'], sort_by=('german_term', 'short_title', 'title')) %}
-					{% if 'auslaenderbehoerde' in entry.categories %}
-						{{ preview(entry) }}
-					{% endif %}
-				{% endfor %}
-				</ol>
-
-				<h2 id="finanzamt">For the <a href="/glossary/Finanzamt">Finanzamt</a></h2>
-				<ol class="previews">
-				{% for entry in get_entries(['docs', 'tools'], sort_by=('german_term', 'short_title', 'title')) %}
-					{% if 'finanzamt' in entry.categories %}
-						{{ preview(entry) }}
-					{% endif %}
-				{% endfor %}
-				</ol>
-
-				<h2 id="agentur-fur-arbeit">For the <a href="/glossary/Agentur für Arbeit">Agentur für Arbeit</a></h2>
-				<ol class="previews">
-				{% for entry in get_entries(['docs', 'tools'], sort_by=('german_term', 'short_title', 'title')) %}
-					{% if 'agentur_fuer_arbeit' in entry.categories %}
-						{{ preview(entry) }}
-					{% endif %}
-				{% endfor %}
-				</ol>
-
-				<h2 id="employer">For your employer</h2>
-				<ol class="previews">
-				{% for entry in get_entries(['docs', 'tools'], sort_by=('german_term', 'short_title', 'title')) %}
-					{% if 'employer' in entry.categories %}
-						{{ preview(entry) }}
-					{% endif %}
-				{% endfor %}
-				</ol>
-
-				<h2 id="landlord">For your landlord</h2>
-				<ol class="previews">
-				{% for entry in get_entries(['docs', 'tools'], sort_by=('german_term', 'short_title', 'title')) %}
-					{% if 'landlord' in entry.categories %}
-						{{ preview(entry) }}
-					{% endif %}
-				{% endfor %}
-				</ol>
 			</div>
 		</article>
 	</main>
@@ -113,14 +52,11 @@
 		<nav class="table-of-contents no-print" aria-label="Tool categories">
 			<h2>Categories</h2>
 			<ol>
-				<li><a href="#calculators">Calculators</a></li>
-				<li><a href="#maps">Maps</a></li>
-				<li><a href="#burgeramt">For the Bürgeramt</a></li>
-				<li><a href="#auslanderbehorde">For the Ausländerbehörde</a></li>
-				<li><a href="#finanzamt">For the Finanzamt</a></li>
-				<li><a href="#agentur-fur-arbeit">For the Agentur für Arbeit</a></li>
-				<li><a href="#employer">For your employer</a></li>
-				<li><a href="#landlord">For your landlord</a></li>
+				{% for collection in get_entries('collections') | selectattr('type', 'equalto', 'tools') %}
+					{% if collection.type == 'tools' %}
+						<li><a href="#{{ collection.id }}">{{ collection.short_title|default(collection.title) }}</a></li>
+					{% endif %}
+				{% endfor %}
 			</ol>
 		</nav>
 		<div id="floating-nav">

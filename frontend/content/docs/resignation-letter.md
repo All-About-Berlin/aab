@@ -8,8 +8,6 @@ related_guides:
     - guides/losing-your-job.md
     - guides/unemployment-benefits.md
     - docs/auslanderbehorde-job-change.md
-categories:
-    - employer
 related_reviews:
     - reviews/resignation-letter/andreas-martin.md
 ---

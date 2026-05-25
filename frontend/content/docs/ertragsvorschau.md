@@ -11,8 +11,6 @@ related_guides:
     - guides/start-a-business-in-germany.md
     - guides/fragebogen-zur-steuerlichen-erfassung.md
     - guides/immigration-office.md
-categories:
-    - auslaenderbehoerde
 ---
 
 You need this form to [apply for a freelance visa](/guides/freelance-visa) in Berlin. It's called the revenue forecast (*Ertragsvorschau*).

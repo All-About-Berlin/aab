@@ -1,4 +1,5 @@
 - id: housing
+  type: guides
   title: Housing in Germany
   short_title: Housing
   description: Guides about finding an apartment, tenant rights, moving in and moving out.
@@ -52,6 +53,7 @@
             - title: Getting a pension refund
               uri: guides/pension-payments-refund.md
 - id: work
+  type: guides
   title: Working in Germany
   short_title: Work
   description: Guides about finding a job, the German workplace and employee rights.
@@ -85,6 +87,7 @@
         - title: Educational leave
           uri: guides/bildungsurlaub.md
 - id: immigration
+  type: guides
   title: German visas and immigration
   short_title: Visas and immigration
   description: Guides about German visas, residence permits, permanent residence and citizenship.
@@ -117,6 +120,7 @@
         - title: Immigration office wait times
           uri: guides/immigration-office/wait-times.md
 - id: living-in-germany
+  type: guides
   title: Living in Germany
   description: Guides about the basics of life in Germany.
   entries:
@@ -169,6 +173,7 @@
         - title: Movies set in Berlin
           uri: guides/movies-set-in-berlin.md
 - id: personal-finance
+  type: guides
   title: Personal finance in Germany
   short_title: Personal finance
   description: Guides about German taxes, banking, insurance and pensions.
@@ -237,6 +242,7 @@
         - title: Legal insurance
           uri: guides/legal-insurance.md
 - id: family-friends-pets
+  type: guides
   title: Family, friends and pets in Germany
   short_title: Family, friends and pets
   description: Guides for you and the people you love
@@ -258,6 +264,7 @@
         - title: Burying a pet
           uri: guides/dead-animal-disposal-berlin.md
 - id: health
+  type: guides
   title: Doctors and healthcare in Berlin
   short_title: Health
   description: Guides about finding English-speaking doctors, choosing health insurance and getting healthcare in Germany.
@@ -288,6 +295,7 @@
         - title: Registering as an organ donor
           uri: guides/organ-donor.md
 - id: getting-around
+  type: guides
   title: Getting around in Berlin
   short_title: Getting around
   description: Guides about Berlin public transit and driving in Germany.
@@ -322,6 +330,7 @@
         - title: English-speaking driving schools
           uri: guides/english-speaking-driving-schools.md
 - id: where-to-find
+  type: guides
   title: Where to find...
   description: Guides for finding the products and services you need in Berlin.
   entries:
@@ -358,6 +367,7 @@
     - title: 24-hour gyms
       uri: guides/24-hour-gym-berlin.md
 - id: self-employment
+  type: guides
   title: Self-employment in Germany
   short_title: Self-employment
   description: Guides for starting a business and becoming a freelancer in Berlin.
@@ -385,6 +395,7 @@
         - title: Freelance developer salaries
           uri: guides/freelance-developer-rate.md
 - id: help
+  type: guides
   title: Where to get help in Berlin
   short_title: Getting help
   description: Guides about finding help and answers to your questions about Berlin.
@@ -396,3 +407,55 @@
           uri: guides/relocation-agency-in-berlin.md
         - title: English-speaking lawyers
           uri: guides/english-speaking-lawyers-berlin.md
+- id: calculators
+  type: tools
+  title: Calculators
+  entries:
+    - uri: tools/health-insurance-calculator.md
+    - uri: tools/pension-refund-calculator.md
+    - uri: tools/tax-calculator.md
+- id: maps
+  type: tools
+  title: Maps
+  entries:
+    - uri: tools/rent-map.md
+    - uri: tools/noise-map.md
+- id: burgeramt
+  type: tools
+  title: For the Bürgeramt
+  entries:
+    - uri: tools/appointment-finder.md
+    - uri: docs/anmeldung.md
+    - uri: docs/abmeldung.md
+    - uri: docs/wohnungsgeberbestatigung.md
+- id: auslanderbehorde
+  type: tools
+  title: For the Ausländerbehörde
+  entries:
+    - uri: docs/residence-permit-application-form.md
+    - uri: docs/auslanderbehorde-job-change.md
+    - uri: docs/ertragsvorschau.md
+    - uri: docs/financing-plan-template.md
+    - uri: docs/freelance-visa-cover-letter.md
+    - uri: docs/german-freelance-visa-letter-of-intent.md
+- id: finanzamt
+  type: tools
+  title: For the Finanzamt
+  entries:
+    - uri: docs/010250-antrag-auf-vergabe-einer-steuerlichen-id.md
+    - uri: docs/fragebogen-zur-steuerlichen-erfassung.md
+- id: agentur-fur-arbeit
+  type: tools
+  title: For the Agentur für Arbeit
+  entries:
+    - uri: docs/alg-i-vorlaeufige-entscheidung.md
+- id: employer
+  type: tools
+  title: For your employer
+  entries:
+    - uri: docs/resignation-letter.md
+- id: landlord
+  type: tools
+  title: For your landlord
+  entries:
+    - uri: docs/deposit-return.md

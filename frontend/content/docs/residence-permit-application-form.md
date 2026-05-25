@@ -16,8 +16,6 @@ related_guides:
     - guides/immigration-office/wait-times.md
     - guides/german-health-insurance/for-a-visa-application.md
     - guides/freelance-visa-letter-of-intent.md
-categories:
-    - auslaenderbehoerde
 ---
 
 When you apply for a [residence permit](/glossary/Aufenthaltstitel), you must include this form with your application.

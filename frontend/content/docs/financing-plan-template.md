@@ -10,8 +10,6 @@ related_guides:
     - guides/freelance-visa.md
     - guides/start-a-business-in-germany.md
     - guides/immigration-office.md
-categories:
-    - auslaenderbehoerde
 ---
 
 You need this form to [apply for a freelance visa](/guides/freelance-visa) in Berlin. This document is called a financing plan (*Finanzierungsplan*) or a capital budget.

@@ -12,8 +12,6 @@ related_guides:
     - guides/leaving-germany.md
     - guides/berlin-burgeramt-appointment.md
     - guides/anmeldung-in-english-berlin.md
-categories:
-    - buergeramt
 ---
 
 Fill this form to deregister your address in Berlin (*[[Abmeldung]]*). You can send this form to any *[[Bürgeramt]]* in Berlin. You can deliver the form in person, by email, or by [registered mail](/glossary/Einschreibebrief).

@@ -13,8 +13,6 @@ related_guides:
     - guides/residence-permit.md
     - guides/start-a-business-in-germany.md
     - guides/renew-german-freelance-visa.md
-categories:
-    - auslaenderbehoerde
 ---
 
 When you [apply for the German freelance visa](/guides/freelance-visa), you must include [letters of intent](/glossary/Absichtserkl%C3%A4rung) from potential clients. It shows that you will find clients in Germany.

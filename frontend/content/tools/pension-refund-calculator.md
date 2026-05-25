@@ -3,8 +3,6 @@ title: German pension refund calculator
 short_title: Pension refund calculator
 description: Check if you can get a pension refund after you leave Germany, and calculate how much money you will get back.
 date_created: 2022-02-12
-categories:
-    - calculator
 related_guides:
     - guides/pension-payments-refund.md
     - guides/leaving-germany.md

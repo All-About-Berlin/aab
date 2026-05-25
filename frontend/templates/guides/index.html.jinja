@@ -9,6 +9,7 @@
 {% endblock %}
 
 {% block main %}
+	{% set guideCollections = get_entries('collections') | selectattr('type', 'equalto', 'guides') | list %}
 	<main aria-label="Main page">
 		<header class="intro" aria-label="Title and search box">
 			<h1>Guides for living in Germany</h1>
@@ -17,7 +18,7 @@
 			{% endwith %}
 		</header>
 		<section aria-label="Guide collections">
-			{% with currentEntry=null, collections=get_entries('collections') %}
+			{% with currentEntry=null, collections=guideCollections %}
 				{% include "_blocks/collections.html" %}
 			{% endwith %}
 		</section>
@@ -80,7 +81,7 @@
 				"mainEntity": {
 					"@type": "ItemList",
 					"itemListElement": [
-						{% for collection in get_entries('collections') %}
+						{% for collection in guideCollections %}
 							{
 								"@type": "ListItem",
 								"position": {{ loop.index }},

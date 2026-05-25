@@ -4,8 +4,6 @@ short_title: Health insurance calculator
 description: Calculate the cost of health insurance, and choose the right German health insurance for your needs.
 date_created: 2022-01-18
 call_to_action: askOurInsuranceExpert
-categories:
-    - calculator
 related_guides:
     - guides/german-health-insurance.md
     - guides/german-health-insurance/for-a-visa-application.md

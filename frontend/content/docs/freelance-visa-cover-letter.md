@@ -10,8 +10,6 @@ related_guides:
     - guides/freelance-visa.md
     - guides/freelance-visa-letter-of-intent.md
     - guides/residence-permit.md
-categories:
-    - auslaenderbehoerde
 ---
 
 This is the cover letter I submitted when I [applied for a German freelance visa](/guides/freelance-visa) in 2018. It's based on [this cover letter](/images/German-freelance-visa-cover-letter-example.png).
