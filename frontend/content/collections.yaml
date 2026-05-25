@@ -410,19 +410,25 @@
 - id: calculators
   type: tools
   title: Calculators
+  short_title: Calculators
+  description: German tax calculators, health insurance calculators and more.
   entries:
     - uri: tools/health-insurance-calculator.md
     - uri: tools/pension-refund-calculator.md
     - uri: tools/tax-calculator.md
 - id: maps
   type: tools
-  title: Maps
+  title: Useful maps of Berlin
+  short_title: Maps
+  description: Berlin rent maps, noise maps and other helpful maps for Berliners.
   entries:
     - uri: tools/rent-map.md
     - uri: tools/noise-map.md
 - id: burgeramt
   type: tools
-  title: For the Bürgeramt
+  title: Tools and documents the Bürgeramt
+  short_title: For the Bürgeramt
+  description: Berlin Bürgeramt appointment finder, form fillers and form templates.
   entries:
     - uri: tools/appointment-finder.md
     - uri: docs/anmeldung.md
@@ -430,7 +436,9 @@
     - uri: docs/wohnungsgeberbestatigung.md
 - id: auslanderbehorde
   type: tools
-  title: For the Ausländerbehörde
+  title: Tools and documents the Ausländerbehörde
+  short_title: For the Ausländerbehörde
+  description: Berlin immigration office tools, translated documents, form templates and examples.
   entries:
     - uri: docs/residence-permit-application-form.md
     - uri: docs/auslanderbehorde-job-change.md
@@ -440,22 +448,30 @@
     - uri: docs/german-freelance-visa-letter-of-intent.md
 - id: finanzamt
   type: tools
-  title: For the Finanzamt
+  title: Tools and documents the Finanzamt
+  short_title: For the Finanzamt
+  description: Letter templates, translated forms and form fillers for the berlin tax office.
   entries:
     - uri: docs/010250-antrag-auf-vergabe-einer-steuerlichen-id.md
     - uri: docs/fragebogen-zur-steuerlichen-erfassung.md
 - id: agentur-fur-arbeit
   type: tools
-  title: For the Agentur für Arbeit
+  title: Tools and documents for the Agentur für Arbeit
+  short_title: For the Agentur für Arbeit
+  description: Letter templates, example documents and form fillers for the Berlin unemployment office.
   entries:
     - uri: docs/alg-i-vorlaeufige-entscheidung.md
 - id: employer
   type: tools
-  title: For your employer
+  title: Tools and documents for employees
+  short_title: For your employer
+  description: Letter templates, example documents and form fillers for employees in Germany.
   entries:
     - uri: docs/resignation-letter.md
 - id: landlord
   type: tools
-  title: For your landlord
+  title: Tools and documents for tenants
+  short_title: For your landlord
+  description: Letter templates, example documents and form fillers for renters in Germany.
   entries:
     - uri: docs/deposit-return.md
