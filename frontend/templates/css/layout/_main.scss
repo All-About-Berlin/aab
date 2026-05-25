@@ -134,6 +134,8 @@ main{
         #reviewers{
             @include widget;
             margin-top: var(--m);
+            flex: 1 0 100%;
+            box-sizing: border-box;
 
             li{
                 display: grid;
