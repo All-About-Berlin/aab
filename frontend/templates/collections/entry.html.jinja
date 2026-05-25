@@ -1,5 +1,10 @@
 {% extends "_layout.html" %}
-{% set metatitle = "Guide collection: " ~ entry.title %}
+{% from "_blocks/toolPreview.html" import preview with context %}
+{% if entry.type == 'guides' %}
+	{% set metatitle = "Guide collection: " ~ entry.title %}
+{% elif entry.type == 'tools' %}
+	{% set metatitle = "Tool collection: " ~ entry.title %}
+{% endif %}
 {% set metadescription = entry.description %}
 {% set collection = entry %}
 {% set ogtype = 'website' %}
@@ -7,7 +12,11 @@
 
 {% block postHead %}
 	{{ super() }}
-	<link rel="index" href="{{ SITE_URL }}/guides">
+	{% if entry.type == 'guides' %}
+		<link rel="index" href="{{ SITE_URL }}/guides">
+	{% elif entry.type == 'tools' %}
+		<link rel="index" href="{{ SITE_URL }}/tools">
+	{% endif %}
 {% endblock %}
 
 {% macro collectionItem(item, isSubitem=false) %}
@@ -38,31 +47,45 @@
 			<h1>{{ entry.title }}</h1>
 			{% if entry.description %}<p>{{ entry.description }}</p>{% endif %}
 		</header>
-		<div class="section" aria-label="Guides in this collection">
+		<div class="section" aria-label="Guides and tools in this collection">
 			<div class="article-body">
-			{% for item in collection.entries %}
-				<h2>
+			{% if collection.type == 'tools' %}
+				<ol class="previews">
+				{% for item in collection.entries %}
 					{% if item.uri|default %}
-						<a title="{{ entries[item.uri].title }}" href="{{ entries[item.uri].url }}">{{ item.title }}</a>
-					{% else %}
-						{{ item.title }}
+						{{ preview(entries[item.uri]) }}
 					{% endif %}
-				</h2>
-				{% if item.uri|default %}
-					<p>{{ entries[item.uri].description }}</p>
-				{% endif %}
-				{% if item.entries|default %}
-					<ul>
-						{% for item in item.entries %}
-							{{ collectionItem(item) }}
-						{% endfor %}
-					</ul>
-				{% endif %}
-			{% endfor %}
+				{% endfor %}
+				</ol>
+			{% else %}
+				{% for item in collection.entries %}
+					<h2>
+						{% if item.uri|default %}
+							<a title="{{ entries[item.uri].title }}" href="{{ entries[item.uri].url }}">{{ item.title|default(entries[item.uri].short_title|default(entries[item.uri].title)) }}</a>
+						{% else %}
+							{{ item.title }}
+						{% endif %}
+					</h2>
+					{% if item.uri|default %}
+						<p>{{ entries[item.uri].description }}</p>
+					{% endif %}
+					{% if item.entries|default %}
+						<ul>
+							{% for item in item.entries %}
+								{{ collectionItem(item) }}
+							{% endfor %}
+						</ul>
+					{% endif %}
+				{% endfor %}
+			{% endif %}
 			</div>
 			<hr>
-			<nav class="previous-next">
-				<a rel="index" href="/guides"><i class="icon left"></i> See all other guides</a>
+			<nav class="buttons bar previous-next">
+				{% if entry.type == 'guides' %}
+					<a rel="index" href="/guides"><i class="icon left"></i> See all other guides</a>
+				{% elif entry.type == 'tools' %}
+					<a rel="index" href="/tools"><i class="icon left"></i> See all other tools</a>
+				{% endif %}
 			</nav>
 		</div>
 	</main>

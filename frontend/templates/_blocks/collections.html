@@ -2,7 +2,7 @@
 	<li>
 		{% if not isSubitem %}<h4>{% endif %}
 			{% if item.uri|default %}
-				<a title="{{ entries[item.uri].title }}" href="{{ entries[item.uri].url }}">{{ item.title }}</a>
+				<a title="{{ entries[item.uri].title }}" href="{{ entries[item.uri].url }}">{{ item.title|default(entries[item.uri].short_title|default(entries[item.uri].title)) }}</a>
 			{% else %}
 				{{ item.title }}
 			{% endif %}

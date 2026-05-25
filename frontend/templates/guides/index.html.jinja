@@ -2,6 +2,7 @@
 {% set metatitle = "Guides for living in Germany" %}
 {% set metadescription = "Guides for moving to Berlin and Germany: all about housing, work, residence permits, health insurance and more." %}
 {% set metaimage = "/staticimages/guides.png" %}
+{% set guideCollections = get_entries('collections') | selectattr('type', 'equalto', 'guides') | list %}
 
 {% block postHead %}
 	{{ super() }}
@@ -9,7 +10,6 @@
 {% endblock %}
 
 {% block main %}
-	{% set guideCollections = get_entries('collections') | selectattr('type', 'equalto', 'guides') | list %}
 	<main aria-label="Main page">
 		<header class="intro" aria-label="Title and search box">
 			<h1>Guides for living in Germany</h1>
