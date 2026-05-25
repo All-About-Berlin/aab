@@ -217,6 +217,11 @@
             justify-content: flex-start;
         }
 
+        &.previous-next{
+            justify-content: space-between;
+            font-weight: 600;
+        }
+
         > *{
             margin: 0;
             flex: 0 0 auto;

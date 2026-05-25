@@ -33,3 +33,63 @@ body{
         grid-template-areas: ". header ." ". main ." ". footer .";
     }
 }
+
+.two-columns{
+    @include text-block;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: var(--f-s);
+    gap: var(--l);
+    align-items: flex-start;
+
+    @include only-phone{
+        grid-template-columns: 1fr;
+
+        > :first-child{
+            padding-bottom: var(--l);
+            border-bottom: var(--b-box);
+        }
+    }
+    @include not-phone{
+        > :first-child{
+            padding-right: var(--l);
+            border-right: var(--b-box);
+        }
+    }
+
+    h3 {
+        margin: 0 0 var(--m);
+    }
+
+    > * > .price{
+        display: block!important;
+        margin: var(--m) 0 0;
+        font-size: var(--m);
+
+        @include only-phone{
+            grid-column: 1 / -1;
+        }
+    }
+
+    @include full-width-site{
+        .price-line .price small{
+            display: none; // Hide "/month" as soon as the columns get narrower
+        }
+    }
+}
+
+.icon-paragraph{
+    @include text-block;
+    display: flex;
+    gap: var(--m);
+    align-items: flex-start;
+
+    svg{
+        flex: 0 0 auto;
+        color: var(--c-text-heading);
+    }
+    p{
+        margin: 0;
+    }
+}

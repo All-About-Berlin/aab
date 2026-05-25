@@ -39,7 +39,7 @@
 				</div>
 			{% endwith %}
 			<hr>
-			<nav class="previous-next">
+			<nav class="buttons bar previous-next">
 			{% for e in get_entries('newsletter', sort_by='date_created', reverse=True) %}
 				{% if e.entry_uri == entry.entry_uri %}
 					{% if not loop.first %}
