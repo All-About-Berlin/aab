@@ -6,14 +6,14 @@
 	<main aria-label="Main page">
 		<header class="section intro article-body">
 			<h1>Health insurance? Sorted.</h1>
-			<p>You need health insurance to live in Germany or apply for a German visa. We get you the right coverage for the best price.</p>
+			<p>We get you the right coverage for the best price.</p>
 			<div class="buttons bar left">
 				<a class="button primary" href="#calculator">Find health insurance</a>
 				<a class="button" href="#contact">Ask our expert</a>
 			</div>
 		</header>
 		<section class="section price-table" id="prices" aria-label="German health insurance prices">
-			<p>In Germany, there is <a href="/glossary/Expat health insurance">expat</a>, <a href="/glossary/gesetzliche Krankenversicherung">public</a> and <a href="/glossary/private Krankenversicherung">private</a> health insurance. The best option depends on your situation.  Read our <a target="_blank" href="https://allaboutberlin.com/guides/german-health-insurance">health insurance guide</a>, use our <a href="#calculator">recommendation tool</a> or <a href="#contact">ask our expert</a> to help you choose.</p>
+			<p>To live in Germany or apply for a German visa, you need <a target="_blank" href="/glossary/gesetzliche%20Krankenversicherung">health insurance</a>. There are 3 type of health insurance. Use our <a href="#calculator">recommendation tool</a> or <a href="#contact">ask our expert</a> to find the best option.</p>
 			<hr>
 			<table class="price-table">
 				<thead>
@@ -46,12 +46,6 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr class="feature">
-						<th scope="row">Cover your family for free</th>
-						<td><span class="no"></span></td>
-						<td><span class="yes"></span></td>
-						<td><span class="no"></span></td>
-					</tr>
 					<tr class="feature">
 						<th scope="row">Adjust what it covers</th>
 						<td><span class="yes"></span></td>
@@ -106,12 +100,38 @@
 						<td><span class="yes"></span></td>
 					</tr>
 				</tbody>
+				<tbody>
+					<tr class="section-heading">
+						<th colspan="4">What it covers</th>
+					</tr>
+					<tr class="feature">
+						<th scope="row">Pre-existing conditions</th>
+						<td><span class="no"></span></td>
+						<td><span class="yes"></span></td>
+						<td><span class="no"></span></td>
+					</tr>
+					<tr class="feature">
+						<th scope="row">Mental healthcare</th>
+						<td><span class="no"></span></td>
+						<td><span class="yes"></span></td>
+						<td><span class="yes"></span></td>
+					</tr>
+					<tr class="feature">
+						<th scope="row">Your children</th>
+						<td><span class="no"></span></td>
+						<td><span class="yes"></span></td>
+						<td><span class="no"></span></td>
+					</tr>
+					<tr class="feature">
+						<th scope="row">Your unemployed spouse</th>
+						<td><span class="no"></span></td>
+						<td><span class="yes"></span></td>
+						<td><span class="no"></span></td>
+					</tr>
+				</tbody>
 			</table>
 			<hr>
-			<div class="buttons bar">
-				<a href="#contact" class="button primary">Ask our expert</a>
-				<a href="#calculator" class="button">Find the best option</a>
-			</div>
+			<p><strong>Need help choosing?</strong> Read our <a target="_blank" href="https://allaboutberlin.com/guides/german-health-insurance">health insurance guide</a>, use our <a href="#calculator">recommendation tool</a> or <a href="#contact">ask our expert</a> to help you. It's completely free.</p>
 		</section>
 		{% tool "health-insurance-calculator", static=True, id="calculator" %}
 		{% tool "health-insurance-calculator", mode="question", static=True, id="contact" %}
