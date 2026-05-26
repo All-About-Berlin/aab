@@ -109,13 +109,14 @@ main > .collapsible{
         background: var(--c-bg-page);
         position: sticky;
         top: 0;
+        z-index: 999;
 
         th:first-child{
             width: 250px;
         }
 
         th[scope="col"]{
-            padding: 0;
+            padding: var(--xs);
             width: 200px;
             text-align: center;
             > small{
@@ -200,6 +201,6 @@ main > .collapsible{
     .no:before{
         font-size: 1.4em;
         content: '×';
-        color: var(--c-text-light);
+        opacity: 0.2;
     }
 }
