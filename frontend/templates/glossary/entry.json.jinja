@@ -1,5 +1,5 @@
 {
-	"title": {{ entry.german_term|tojson|safe }},
+	"germanTerm": {{ entry.german_term|tojson|safe }},
 	"englishTerm": {{ entry.english_term|default('')|tojson|safe }},
 	"definition": {{ entry.body|render|tojson|safe }},
 	"audioUrl": "{{ entry.url|replace("/glossary/","/glossary/audio/") ~ '.mp3' }}"

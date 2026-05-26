@@ -18,8 +18,8 @@ export function showTooltip(clickEvent) {
 	}
 	fetch(anchor.getAttribute('href') + '.json').then(r => r.json()).then(data => {
 		tooltip.querySelector('h2 a').setAttribute('href', anchor.getAttribute('href'));
-		tooltip.querySelector('h2 a dfn').innerHTML = data.title;
-		tooltip.querySelector('h2 a small').innerHTML = data.englishTerm || '';
+		tooltip.querySelector('h2 a dfn').innerHTML = data.englishTerm || data.germanTerm;
+		tooltip.querySelector('h2 a small').innerHTML = data.germanTerm || '';
 		tooltip.querySelector('h2 a small').classList.toggle('hidden', (!data.englishTerm || data.englishTerm == data.germanTerm));
 		tooltipBody.innerHTML = data.definition;
 		tooltipBody.querySelectorAll('a').forEach(a => a.target = '_blank');
