@@ -21,7 +21,7 @@ related_guides:
     - guides/eyeglasses.md
 ---
 
-Germany has two types of health insurance: [public](/glossary/gesetzliche%20Krankenversicherung) and private.
+Germany has 3 types of health insurance: [expat](/glossary/Expat%20health%20insurance), [public](/glossary/gesetzliche%20Krankenversicherung), and private.
 
 Private health insurance (*private Krankenversicherung* or *PKV*) is managed by for-profit insurance companies. The cost depends on your health and your age when you sign up.
 
