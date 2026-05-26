@@ -426,7 +426,7 @@
     - uri: tools/noise-map.md
 - id: burgeramt
   type: tools
-  title: Tools and documents the Bürgeramt
+  title: Tools and documents for the Bürgeramt
   short_title: For the Bürgeramt
   description: Berlin Bürgeramt appointment finder, form fillers and form templates.
   entries:
@@ -436,7 +436,7 @@
     - uri: docs/wohnungsgeberbestatigung.md
 - id: auslanderbehorde
   type: tools
-  title: Tools and documents the Ausländerbehörde
+  title: Tools and documents for the Ausländerbehörde
   short_title: For the Ausländerbehörde
   description: Berlin immigration office tools, translated documents, form templates and examples.
   entries:
@@ -448,7 +448,7 @@
     - uri: docs/german-freelance-visa-letter-of-intent.md
 - id: finanzamt
   type: tools
-  title: Tools and documents the Finanzamt
+  title: Tools and documents for the Finanzamt
   short_title: For the Finanzamt
   description: Letter templates, translated forms and form fillers for the berlin tax office.
   entries:

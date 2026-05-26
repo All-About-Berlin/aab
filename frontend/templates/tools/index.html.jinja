@@ -18,7 +18,7 @@
 				<p>These documents and tools make your life in Berlin easier.</p>
 				{% for collection in get_entries('collections') %}
 					{% if collection.type == 'tools' %}
-						<h2 id="{{ collection.id }}">{{ collection.title }}</h2>
+						<h2 id="{{ collection.id }}">{{ collection.short_title }}</h2>
 						<ol class="previews">
 						{% for item in collection.entries %}
 							{{ preview(entries[item.uri]) }}

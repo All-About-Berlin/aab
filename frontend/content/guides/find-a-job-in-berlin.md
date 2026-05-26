@@ -19,7 +19,7 @@ Know [how much you should earn](/guides/salaries-in-germany), and [how much taxe
 
 ### Permission to work
 
-You might need a [[National Visa]] or [residence permit](/glossary/Aufenthaltstitel) to work in Germany. It can take a few months to get. When you [change jobs](/guides/losing-your-job), you might need to apply for a new residence permit.
+You might need a [[National Visa]] or [residence permit](/glossary/Aufenthaltstitel) to work in Germany. It can take [a few months](/guides/immigration-office/wait-times) to get. When you [change jobs](/guides/losing-your-job), you might need to apply for a new residence permit.
 
 **[Who needs a residence permit? ➞](/guides/residence-permit#who-needs-a-residence-permit)**
 
