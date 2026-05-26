@@ -48,7 +48,7 @@ If you buy a used bicycle, get it fitted and adjusted at a bicycle shop. Your bi
 
 ### Buying a stolen bicycle
 
-Many used bicycles are stolen. Before you buy a used bicycle, [find its frame number](https://www.krist.com/glossar/rahmennummer---wo-ist-die-nur__61.php) (*Rahmennummer*) or registration tag (*Fahrradkennzeichen*), and enter it in [this database](https://www.rahmennummern-check.de/), [this database](https://bikefinder.de/diebstahldatenbank/) and [this database](https://fahrradnummer.de/).
+Many used bicycles are stolen. Before you buy a used bicycle, [find its frame number](https://www.krist.com/glossar/rahmennummer---wo-ist-die-nur__61.php) (*Rahmennummer*) or registration tag (*Fahrradkennzeichen*), and enter it in [this database](https://bikefinder.de/diebstahldatenbank/) and [this database](https://fahrradnummer.de/).
 
 Sign a sales contract (*Kaufvertrag*) like [this one](https://www.adfc.de/fileadmin/user_upload/Im-Alltag/Fahrradkauf/Download/ADFC_Musterkaufvertrag_2018-08.pdf). If the bike is stolen, the seller usually refuses to sign a contract.[^1]
 
