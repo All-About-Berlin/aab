@@ -7,4 +7,6 @@ Description: A nickname for ALG II social benefits. It was replaced by Bürgerge
 Date_created: 2018-07-31
 ---
 
-Another name for [[ALG II]]. It was replaced by [[Bürgergeld]] in 2023.
+Another name for [[ALG II]]. It was replaced by *[[Bürgergeld]]* in 2023, then by *Grundsicherung* in 2026.[^1]
+
+[^1]: [Bundesregierung.de](https://www.bundesregierung.de/breg-de/themen/entlastung-fuer-deutschland/buergergeld-2125010) (2023), [Bundesregierung.de](https://www.bundesregierung.de/breg-de/aktuelles/bundesrat-neue-grundsicherung-2399562) (2026)
