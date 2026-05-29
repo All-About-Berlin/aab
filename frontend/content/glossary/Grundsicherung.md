@@ -5,8 +5,8 @@ English_term: Basic income support
 Description: German social security. It replaces Bürgergeld.
 Date_created: 2026-05-29
 Related_guides:
-    guides/unemployment-benefits.md
-    guides/losing-your-job.md
+    - guides/unemployment-benefits.md
+    - guides/losing-your-job.md
 ---
 
 Grundsicherung is a type of social assistance in Germany. It helps you pay for basic needs when you have no income. It replaced *[[Bürgergeld]]* in 2026.[^0]
