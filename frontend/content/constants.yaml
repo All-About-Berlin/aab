@@ -292,10 +292,14 @@ constants:
     description: Part of Gewerbesteuer credited from income tax (%)
     fail_on: 2026-12-31
   GEWERBESTEUER_HEBESATZ_BERLIN:
-    value: 4.1
-    unit: percent
-    description: Berlin Gewerbesteuer Hebesatz (%)
-    fail_on: 2026-12-31
+    value: 410
+    unit: integer
+    monitor:
+      template: default
+      url: https://www.gewerbesteuer.de/gewerbesteuerhebesatz/berlin-kreis
+      prompt: Return this number as-is.
+      css_selector: .gewerbesteuer-data-table td:last-child
+      last_verified: 2026-06-02
   KLEINUNTERNEHMER_MAX_INCOME_FIRST_YEAR:
     value: 25000
     unit: euros

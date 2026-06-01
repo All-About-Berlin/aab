@@ -33,13 +33,15 @@ ctx.update(load_constants_from_file(config.content_path / "constants.yaml"))
 # TAXES - Calculated values based on other constants
 # ==============================================================================
 
+hebesatz = Decimal(ctx["GEWERBESTEUER_HEBESATZ_BERLIN"]) / 100
+
 ctx["BEITRAGSBEMESSUNGSGRENZE"] = ctx["BEITRAGSBEMESSUNGSGRENZE_MONTHLY"] * 12
 ctx["ARBEITSLOSENVERSICHERUNG_EMPLOYEE_RATE"] = ctx["ARBEITSLOSENVERSICHERUNG_RATE"] / 2  # § 341 SGB 3, BeiSaV 2019
-ctx["GEWERBESTEUER_RATE_BERLIN"] = (ctx["GEWERBESTEUER_RATE"] * ctx["GEWERBESTEUER_HEBESATZ_BERLIN"]).normalize()
+ctx["GEWERBESTEUER_RATE_BERLIN"] = (ctx["GEWERBESTEUER_RATE"] * hebesatz).normalize()
 
 # The effective cost of the Gewerbesteuer when accounting for the income tax credit, for Berlin - (%)
 ctx["GEWERBESTEUER_EXTRA_COST_BERLIN"] = (
-    ctx["GEWERBESTEUER_RATE"] * (ctx["GEWERBESTEUER_HEBESATZ_BERLIN"] - ctx["GEWERBESTEUER_TAX_CREDIT"])
+    ctx["GEWERBESTEUER_RATE"] * (hebesatz - ctx["GEWERBESTEUER_TAX_CREDIT"])
 ).normalize()
 
 ctx["KINDERFREIBETRAG"] = 2 * (ctx["KINDERFREIBETRAG_PER_PARENT"] + ctx["KINDERFREIBETRAG_ERZIEHUNGSBEDARF_PER_PARENT"])
