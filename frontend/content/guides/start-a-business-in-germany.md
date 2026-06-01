@@ -176,7 +176,7 @@ You must also pay for your taxes, health insurance and your retirement. It costs
 
 This is why you must **charge more than employees**. Take the hourly rate you would make as an employee, and double it.[^8] This is not a reliable rule, but it's a good start.
 
-**[Income survey for solo freelancers ➞](https://www.so-los.de/material/SO_LOS-Ergebnisse.pdf)**{{ fail_on('2026-06-01') }} (2022)
+**[Income survey for solo freelancers ➞](https://www.so-los.de/material/SO_LOS-Ergebnisse.pdf)**{{ fail_on('2026-12-31') }} (2022)
 
 Freelancers usually charge higher prices for short contracts. Longer contracts are more stable, and have less overhead. You spend less time finding clients, interviewing and writing contracts. In some industries, you charge clients per day, not per hour.[^7] If you get this wrong, it can look unprofessional.
 

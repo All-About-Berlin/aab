@@ -31,11 +31,11 @@ These tools help you find how much you should earn.
 
 When you negotiate your salary, you negotiate your [gross income](/glossary/Brutto%20income). The amount you keep after taxes is your [net income](/glossary/Netto%20income).
 
-In Germany, you pay [around 35% of your salary](/tools/tax-calculator) in taxes and social contributions.[^0] Your employer takes them directly from your paycheck.
+In Germany, you pay [around 35% of your salary](/tools/tax-calculator) in taxes and social contributions. Your employer takes them directly from your paycheck.
 
 **[How taxes work ➞](/guides/taxes)**
 
-**[Tax calculator ➞](/tools/tax-calculator)**
+**[Income tax calculator ➞](/tools/tax-calculator)**
 
 ## Minimum wage and median income
 
@@ -47,9 +47,9 @@ Around 4% of jobs pay the minimum wage.[^4]
 
 ### Median income
 
-The median income **in Germany** is €{{MEDIAN_INCOME_GERMANY|cur}} per year before taxes.
+The median income **in Germany** is €{{MEDIAN_INCOME_GERMANY|cur}} per year before taxes.[^1]
 
-The median income **in Berlin** is €{{MEDIAN_INCOME_BERLIN|cur}} per year before taxes.[^1]
+The median income **in Berlin** is €{{MEDIAN_INCOME_BERLIN|cur}} per year before taxes.[^2]
 
 This is only for full-time employees. The median income for all German residents is much lower: in 2019, it was €2109 per month.[^6] The median income for immigrants is lower.
 
@@ -87,8 +87,8 @@ In Germany, most people are paid **once per month, usually on the 1st or 15th** 
 
 Almost everyone is paid by [bank transfer](/glossary/SEPA-%C3%9Cberweisung). If you start working in Germany, [open a bank account](/guides/best-bank-germany) that supports [SEPA transfers](/glossary/SEPA-%C3%9Cberweisung). Your bank can be in another European country.
 
-[^0]: [destatis.de](https://www.destatis.de/DE/Themen/Arbeit/Verdienste/Realloehne-Nettoverdienste/Tabellen/liste-entwicklung-nettoverdienste.html)
-[^1]: [finanz.de](https://www.finanz.de/gehalt/#geh%C3%A4lter_nach_st%C3%A4dten) (2024), [Arbeitsagentur](https://statistik.arbeitsagentur.de/SiteGlobals/Forms/Suche/Einzelheftsuche_Formular.html?nn=21424&topic_f=beschaeftigung-entgelt-entgelt), [focus.de](https://www.focus.de/finanzen/interaktive-karte-mit-3426-euro-gehoeren-sie-in-deutschland-zur-oberen-haelfte-jedoch-nicht-in-allen-regionen_id_13522236.html) (2020), [bz-berlin.de](https://www.bz-berlin.de/berlin/tabuthema-gehalt-das-verdienen-die-berliner) (2020), [sparkasse.de](https://www.sparkasse.de/aktuelles/einkommen-wohlhabend-im-vergleich.html) (2025)
+[^1]: [destatis.de](https://www.destatis.de/DE/Themen/Arbeit/Verdienste/Verdienste-Branche-Berufe/_inhalt.html) (2026)
+[^2]: [destatis.de](https://www.statistik-berlin-brandenburg.de/081-2025) (2025)
 [^3]: [destatis.de](https://www.destatis.de/DE/Themen/Arbeit/Verdienste/Mindestloehne/_inhalt.html), [zoll.de](https://www.zoll.de/EN/Businesses/Work/Foreign-domiciled-employers-posting/Minimum-conditions-of-employment/Minimum-pay-pursuant-Minimum-Wage-Act/minimum-pay-pursuant-minimum-wage-act_node.html)
 [^4]: [destatis.de](https://www.destatis.de/DE/Themen/Arbeit/Verdienste/_Grafik/_Interaktiv/beschaeftigungsverhaeltnisse-anteil-ml.html)
 [^5]: [wirtschaftsforum.de](https://www.wirtschaftsforum.de/tipps/13-monatsgehalt-das-muessen-sie-darueber-wissen)
