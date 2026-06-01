@@ -38,7 +38,7 @@ Conny charges **6 months of rent reduction**, plus [VAT](/glossary/Umsatzsteuer)
 > New rent: €900 per month  
 > Rent reduction: €100 per month
 > 
-> Conny's fee: €100 × 6 months + 19% VAT = **€714**
+> Conny's fee: €100 × 6 months + {{ VAT_RATE }}% VAT = **€714**
 
 When you lower your rent, you get money back for all the months that you paid too much rent. If you lived in this apartment for 3 years, you might get 3 years of extra payments back. **Conny keeps that money too.**
 
@@ -50,7 +50,7 @@ When you lower your rent, you get money back for all the months that you paid to
 > Time in this apartment: 18 months  
 > Total rent reduction: €100 × 18 months = €1800
 > 
-> Conny's fee: €100 × 6 months + €1800 + 19% VAT = **€2856**
+> Conny's fee: €100 × 6 months + €1800 + {{ VAT_RATE }}% VAT = **€2856**
 
 In my opinion, this is **too expensive**. There are [cheaper ways to lower your rent](#conny-alternatives).
 

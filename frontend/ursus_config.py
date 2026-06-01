@@ -33,7 +33,7 @@ ctx.update(load_constants_from_file(config.content_path / "constants.yaml"))
 # TAXES - Calculated values based on other constants
 # ==============================================================================
 
-hebesatz = Decimal(ctx["GEWERBESTEUER_HEBESATZ_BERLIN"]) / 100
+hebesatz = ctx["GEWERBESTEUER_HEBESATZ_BERLIN"] / 100
 
 ctx["BEITRAGSBEMESSUNGSGRENZE"] = ctx["BEITRAGSBEMESSUNGSGRENZE_MONTHLY"] * 12
 ctx["ARBEITSLOSENVERSICHERUNG_EMPLOYEE_RATE"] = ctx["ARBEITSLOSENVERSICHERUNG_RATE"] / 2  # § 341 SGB 3, BeiSaV 2019

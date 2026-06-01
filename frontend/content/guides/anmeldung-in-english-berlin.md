@@ -232,7 +232,7 @@ Translators like [Red Tape Translation](/out/red-tape-translation-interpreter) c
 
 **It depends.** When you register for the first time, they ask you what your religion is. Depending on your answer, you might start paying [church tax](/glossary/Kirchensteuer).
 
-Church tax is 8% or 9% of your [income tax](/glossary/Einkommensteuer) (not 8-9% of your income).[^26] It's taken directly from your paycheck. A single person earning €50,000 a year would pay €800 to €900 per year in church tax.[^26]
+Church tax is {{CHURCH_TAX_RATE_BW_BY}}% or {{CHURCH_TAX_RATE}}% of your [income tax](/glossary/Einkommensteuer) (not 8-9% of your income).[^26] It's taken directly from your paycheck. A single person earning €50,000 a year would pay €800 to €900 per year in church tax.[^26]
 
 **[Calculate your church tax ➞](/tools/tax-calculator)**
 

@@ -293,7 +293,7 @@ constants:
     fail_on: 2026-12-31
   GEWERBESTEUER_HEBESATZ_BERLIN:
     value: 410
-    unit: integer
+    unit: percent
     monitor:
       template: default
       url: https://www.gewerbesteuer.de/gewerbesteuerhebesatz/berlin-kreis
