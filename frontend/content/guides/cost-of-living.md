@@ -167,7 +167,7 @@ My rent is also very low, because I have an old rent contract, and I live far fr
 | Electricity                      | €60  | €720   |
 | Public transit pass              | €{{DEUTSCHLAND_TICKET_PRICE|cur}} | €{{(DEUTSCHLAND_TICKET_PRICE*12)|cur}} |
 | Internet                         | €40  | €480   |
-| [TV tax (*Rundfunkbeitrag*)](/glossary/Rundfunkbeitrag) | €18  | €210   |
+| [TV tax (*Rundfunkbeitrag*)](/glossary/Rundfunkbeitrag) | €{{RUNDFUNKBEITRAG_FEE|round|cur}}  | €210   |
 | Mobile phone                     | €10  | €120   |
 | [Liability insurance](/glossary/Haftpflichtversicherung)        | €5   | €60  |
 | **Total**<br>This is how much I need to pay the bills | **€1,046** | **€12,552** |
