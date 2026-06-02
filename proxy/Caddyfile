@@ -111,9 +111,9 @@
         rewrite * /404.html
     }
 
-    import backend_proxy
     import openexchangerates_proxy
     import plausible_proxy
+    import backend_proxy
 
     # Favicon and apple-touch-icon handling
     redir /favicon.ico /staticimages/favicon.png 301
@@ -171,9 +171,6 @@
     redir /favicon.ico /staticimages/favicon.png 301
     redir /apple-touch-icon* /staticimages/favicon-180.png 301
 
-    # Pass /api and /admin requests to the backend
-    import backend_proxy
-
     # Appointments API proxy (websockets)
     handle /api/appointments* {
         reverse_proxy 128.140.76.17:80 {
@@ -184,6 +181,7 @@
 
     import openexchangerates_proxy
     import plausible_proxy
+    import backend_proxy
 
     # Redirect /services and /services/* to the services site
     @servicesRedirect path /services /services/*
