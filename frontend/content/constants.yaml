@@ -1035,6 +1035,16 @@ constants:
     unit: euros
     description: Maximum dental insurance cost (€/mth)
     fail_on: 2026-12-31
+  PFAND_CAR_BATTERIES:
+    value: 7.50
+    unit: euros
+    monitor:
+      template: buzer
+      law: BattDG
+      section: 19
+      subsection: Absatz 1 Satz 1
+      desired_value: the deposit amount (Pfand) for batteries in euros
+      last_verified: 2026-06-02
 templates:
   residence_permit_wait_time:
     template: default

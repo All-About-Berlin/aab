@@ -136,7 +136,7 @@ Recycling centres accept all electronics and appliances.
     If they are still good, [sell or donate them](/guides/how-do-i-buy-and-sell-used-things-in-berlin). You can also bring them to a repair café.
 - **Electronics ➞ [electronics stores](/guides/where-to-buy-what#electronics), [hardware stores](/guides/where-to-buy-what#hardware-and-home-improvement), [supermarkets](/guides/where-to-buy-what#groceries), [recycling centres](https://www.remap-berlin.de/karte?c=Elektro&s=1)**  
 - **Batteries ➞ [electronics stores](/guides/where-to-buy-what#electronics), [hardware stores](/guides/where-to-buy-what#hardware-and-home-improvement), [supermarkets](/guides/where-to-buy-what#groceries), [recycling centres](https://www.bsr.de/recyclinghoefe-20503.php)**  
-    Supermarkets have a collection box near the cash registers. Car and motorcycle batteries have a *[[Pfand]]*. If you still have the receipt, bring them back to the store where you bought them, and you will get some money back.
+    Supermarkets have a collection box near the cash registers. Car and motorcycle batteries have a *[[Pfand]]* of €{{PFAND_CAR_BATTERIES|cur}}. Return car batteries where you bought them, with your receipt.[^23]
 
 ### Batteries
 
@@ -144,7 +144,7 @@ Recycling centres accept all electronics and appliances.
 
 - **Batteries ➞ [electronics stores](/guides/where-to-buy-what#electronics), [hardware stores](/guides/where-to-buy-what#hardware-and-home-improvement) and [supermarkets](/guides/where-to-buy-what#groceries)**
 - **Car batteries ➞ [auto parts store](/guides/where-to-buy-what#car-and-motorcycle-parts), some [recycling centres](https://www.bsr.de/recyclinghoefe-20503.php)**  
-    They have a €7.50 *[[Pfand]]*.[^17] [A.T.U](https://www.atu.de/filialen/) accepts car batteries. You must have the receipt to get the *Pfand* backs. Some recycling centres recycle batteries for free, but only if they accept dangerous materials (*Schadstoffe*).
+    They have a *[[Pfand]]* of €{{PFAND_CAR_BATTERIES|cur}}.[^17] Return the battery to the store where you bought it, with your receipt. Some recycling centres recycle batteries for free, but only if they accept dangerous materials (*Schadstoffe*).[^23]
 
 ![Battery recycling bin at Lidl](/images/lidl-battery-recycling-akku-entsorgung.jpg "A battery recycling bin in a Lidl supermarket")
 
@@ -214,9 +214,10 @@ Cartridges and toners do not go in the yellow bin. Recycle them [where you recyc
 [^14]: [utopia.de](https://utopia.de/ratgeber/gluehbirnen-und-energiesparlampen-entsorgen-so-gehts/), [berlin-recycling.de](https://www.berlin-recycling.de/entsorgung/weitere-entsorgungen/haushalt/gluehbirnen-entsorgen)
 [^15]: [berlin-recycling.de](https://www.berlin-recycling.de/wissen/muelltrennung/was-gehoert-in-welche-tonne/gelbe-tonne)
 [^16]: [oekotest.de](https://www.oekotest.de/bauen-wohnen/Speiseoel-entsorgen-Das-gilt-es-bei-Fondue-Oel-und-Frittierfett-zu-beachten_11534_1.html#:~:text=auf%20keinen%20fall%20in%20abfluss%20oder%20toilette%20gegossen%20werden)
-[^17]: [wagenheber24.de](https://wagenheber24.de/autobatterie-pfand/)
+[^17]: [§ 19 BattDG](https://www.buzer.de/19_BattDG.htm)
 [^18]: [berlin-recycling.de](https://www.berlin-recycling.de/entsorgung/weitere-entsorgungen/auto/altoel-entsorgen)
 [^19]: [berlin-recycling.de](https://www.berlin-recycling.de/wissen/muelltrennung/was-gehoert-in-welche-tonne/restmuell)
 [^20]: [bundesgesundheitsministerium.de](https://www.bundesgesundheitsministerium.de/arzneimittelentsorgung-und-aufbewahrung.html)
 [^21]: [Deutsche Umwelthilfe](https://www.duh.de/presse/pressemitteilungen/pressemitteilung/ruecknahmepflicht-von-elektroschrott-praxistests-belegen-zahlreiche-verstoesse-deutsche-umwelthilfe/), [Twitter](https://twitter.com/tagesschau/status/1602966772965056512)
 [^22]: [§ 17 ElektroG](https://www.buzer.de/17_ElektroG.htm), [chip.de](https://www.chip.de/news/Discounter-und-Supermaerkte-druecken-sich-So-geht-uns-tonnenweise-Gold-verloren_184583059.html)
+[^23]: [Akkuline](https://www.akkuline.de/blog/batteriepfand) (2026), [BSR](https://www.berlin-recycling.de/entsorgung/abfall-abc/autobatterie-entsorgen) (2026)
