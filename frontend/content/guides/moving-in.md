@@ -168,7 +168,7 @@ Landlords often [try to scam](/guides/housing-scams#scams-by-landlords-and-tenan
 - **Join a tenants' association** (*[[Mieterverein]]*){{ RECOMMENDED }}  
     If you are a member, you get free help from their lawyers. They can check your lease, help you with a bad landlord, lower your rent, and help you sublet your apartment. It costs around €5 per month. The [Berliner Mieterverein](https://www.berliner-mieterverein.de/sprachen/englisch.htm) and [Mieterschutzbund Berlin](https://www.mieterschutzbund-berlin.de/) are the biggest ones in Berlin. The Berliner Mieterverein speaks English.[^10]
 - or **get legal insurance** (*[[Rechtsschutzversicherung]]*)  
-    It pays for your legal costs. You get free access to a lawyer. It's more expensive than a *[[Mieterverein]]*, but you get better service, and you can choose any [English-speaking lawyer](/guides/english-speaking-lawyers-berlin). [Feather](/out/feather-rechtsschutz) and [Getsafe](/out/getsafe-rechtsschutz) sell legal insurance, and they speak in English.
+    It pays for your legal costs. You get free access to a lawyer. It's more expensive than a *[[Mieterverein]]*, but you get better service, and you can choose any [English-speaking lawyer](/guides/english-speaking-lawyers-berlin). [Feather](/out/feather-rechtsschutz) sells legal insurance, and they speak in English.
 - or **get help from the [Mieterberatung](https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeraemter/artikel.244745.php)**  
     This is a free service from the city of Berlin. They might not speak English.
 

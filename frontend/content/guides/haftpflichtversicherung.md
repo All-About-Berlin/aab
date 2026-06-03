@@ -161,7 +161,7 @@ Legal insurance (*[[Rechtsschutzversicherung]]*) gives you free access to a lawy
 
 There is private legal insurance (for you), and professional legal insurance (for your business). Private legal insurance costs €16 to €24 per month.[^29] Professional legal insurance is more expensive. The price depends on what type of business you run.
 
-[Feather](/out/feather-rechtsschutz) and [Getsafe](/out/getsafe-rechtsschutz) sell legal insurance, and they speak English. [Tarifcheck](/out/tarifcheck-rechtsschutz) lets you compare insurances, but it's only in German.
+[Feather](/out/feather-rechtsschutz) sells legal insurance, and they speak English. [Tarifcheck](/out/tarifcheck-rechtsschutz) lets you compare insurances, but it's only in German.
 
 **[How to choose legal insurance ➞](/guides/legal-insurance)**
 

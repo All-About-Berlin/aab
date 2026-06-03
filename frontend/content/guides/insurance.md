@@ -79,7 +79,7 @@ There is private legal insurance (for you), and professional legal insurance (fo
 
 Around 46% of Germans have legal insurance.[^4] It's not as important as liability insurance, but it's good to have. I recommend it for recent immigrants.
 
-If you don't speak German, [Feather](/out/feather-rechtsschutz) and [Getsafe](/out/getsafe-rechtsschutz) offer legal insurance, and they speak English. Use [Tarifcheck](/out/tarifcheck-rechtsschutz) to compare options.
+If you don't speak German, [Feather](/out/feather-rechtsschutz) sell legal insurance, and they speak English. Use [Tarifcheck](/out/tarifcheck-rechtsschutz) to compare options.
 
 **[How to choose legal insurance ➞](/guides/legal-insurance)**
 

@@ -273,7 +273,7 @@ You must get *professional* legal insurance. Personal legal insurance does not c
 
 **[What does legal insurance cover? ➞](/guides/legal-insurance)**
 
-[Feather](/out/feather-rechtsschutz) and [Getsafe](/out/getsafe-rechtsschutz) sell legal insurance, and they speak English. [Tarifcheck](/out/tarifcheck-rechtsschutz) helps you compare insurances, but it's only in German.
+[Feather](/out/feather-rechtsschutz) sells legal insurance, and they speak English. [Tarifcheck](/out/tarifcheck-rechtsschutz) helps you compare insurances, but it's only in German.
 
 ### Get disability insurance
 

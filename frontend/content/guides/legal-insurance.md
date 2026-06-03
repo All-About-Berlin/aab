@@ -142,7 +142,7 @@ You can choose what your legal insurance covers. It can cover...
 
 My independent insurance expert recommends **ARAG's legal insurance**.[^49]
 
-If you don't speak German, [Feather](/out/feather-rechtsschutz) has legal insurance with their own English-speaking support. [Getsafe](/out/getsafe-rechtsschutz) sells the same insurance, but I do not recommend them.[^41]
+If you don't speak German, [Feather](/out/feather-rechtsschutz) sells legal insurance. They have their own English-speaking support.
 
 Use [Tarifcheck](/out/tarifcheck-rechtsschutz) to compare legal insurances.
 
@@ -208,7 +208,6 @@ Use [Tarifcheck](/out/tarifcheck-rechtsschutz) to compare legal insurances.
 [^38]: [beratungshilfe-berlin.de](http://www.beratungshilfe-berlin.de/beratungshilfe)
 [^39]: Fiona Macdonald, [immigration lawyer](https://www.fmr-legal.de/) (February 2023)
 [^40]: [Rotwang Law](https://rotwang-law.de/en/) (July 2023), [Andreas Martin](https://rechtsanwalt-arbeitsrecht-in-berlin.de/) (June 2025), [Jean-Baptiste Abel](http://jba.legal/) (February 2026)
-[^41]: Repeated reader complaints, backed by insurance experts (March 2026)
 [^42]: [Not Feather and Getsafe](https://faq.feather-insurance.com/en/articles/45291-does-my-legal-insurance-policy-cover-the-review-of-legal-contracts)
 [^45]: [Feather](https://faq.feather-insurance.com/en/articles/28679-how-can-i-request-a-phone-consultation-with-a-lawyer-through-my-legal-insurance?utm_source=allaboutberlin)
 [^46]: [Andreas Martin](https://rechtsanwalt-arbeitsrecht-in-berlin.de/) (August 2025)
