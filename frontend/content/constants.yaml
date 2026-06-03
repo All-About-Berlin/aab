@@ -514,7 +514,7 @@ constants:
     description: Estimated travel insurance cost (€/y)
     fail_on: 2026-12-31
   EXPAT_INSURANCE_COST_FEATHER_BASIC:
-    value: 75
+    value: 72
     unit: euros
     description: Feather basic expat insurance cost (€/mth)
     fail_on: 2026-12-31
