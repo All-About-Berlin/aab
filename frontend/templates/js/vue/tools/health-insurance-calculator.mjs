@@ -700,7 +700,7 @@ export default {
 						<logo-feather/>
 						<div>
 							<h3 :id="uid('h-getInsuredDirectly')">Get insured now</h3>
-							<p>Skip the consultation, and get insured with Feather.</p>
+							<p>Skip the consultation, and get insured with Feather. Prices can differ.</p>
 						</div>
 					</a>
 				</li>
