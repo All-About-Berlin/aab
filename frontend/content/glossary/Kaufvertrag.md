@@ -8,4 +8,4 @@ related_guides:
     - guides/buying-used-car-in-germany.md
 ---
 
-A sale contract (*Kaufvertrag*) is a contract you sign when you buy or sell something. In Germany, sale contracts are common when you buy or sell a car.
+A sale contract (*Kaufvertrag*) is a contract you sign when you buy or sell something. Sale contracts are common when [buying a car](/guides/buying-used-car-in-germany).

@@ -9,6 +9,14 @@ related_guides:
     - guides/car-cost-of-ownership-germany.md
 ---
 
-In Germany, vehicles must be inspected regularly - usually every 2 years. If a vehicle does not pass inspection, it can't drive on Germany roads. The inspection is very thorough. They check everything: lights, brakes, seats, seatbelts, horn, leaks, emissions, and much more.
+In Germany, vehicles must be inspected every 2 years at a [[TÜV]], Dekra or KÜS garage.[^3] This inspection is called *Hauptuntersuchung*, *HU* or sometimes *TÜV*.[^2]
 
-This inspection is called the *Hauptuntersuchung*, but people sometimes call it *TÜV*. TÜV and Dekra are the authorities that inspect German vehicles.
+This inspection is thorough. They check everything: lights, brakes, seats, seatbelts, horn, leaks, gas emissions, and more.
+
+If your vehicle passes this inspection, you get a sticker for your licence plate, and updated [registration papers](/glossary/Zulassungsbescheinigung). If it fails the inspection, you can't [register it](/guides/buying-used-car-in-germany#register-your-vehicle), and you can't drive it on German roads.
+
+The inspection costs around €{{VEHICLE_INSPECTION_FEE|cur}}.[^1]
+
+[^1]: [adac.de](https://www.adac.de/rund-ums-fahrzeug/reparatur-pflege-wartung/hu-und-au/tuev-kosten/) (2026)
+[^2]: [Wikipedia](https://de.wikipedia.org/wiki/Hauptuntersuchung) (2026)
+[^3]: [§ 29 StVZO Anlage VIII](https://www.gesetze-im-internet.de/stvzo_2012/anlage_viii.html) (2026)

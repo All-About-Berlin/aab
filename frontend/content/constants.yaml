@@ -848,6 +848,11 @@ constants:
     unit: euros
     description: Cost of making license plates (€)
     fail_on: 2027-12-31
+  VEHICLE_INSPECTION_FEE:
+    value: 150
+    unit: euros
+    description: The cost of the Hauptuntersuchung + Abgasuntersuchung - https://www.adac.de/rund-ums-fahrzeug/reparatur-pflege-wartung/hu-und-au/tuev-kosten/#kosten-der-hauptuntersuchung-
+    fail_on: 2027-06-01
   FIRST_AID_COURSE_COST:
     value: 65
     unit: euros
