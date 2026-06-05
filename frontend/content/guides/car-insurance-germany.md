@@ -58,7 +58,7 @@ Use [Verivox](/out/verivox-kfz) or [Tarifcheck](/out/tarifcheck-kfz) to compare 
 
 You can also talk to an [insurance broker](/glossary/Makler). They can help you transfer your driving experience from another country. You will get a much better price for your car insurance. Few brokers sell car insurance, because it's not profitable.
 
-After you pick the right insurance, ask for an [eVB number](/glossary/eVB-Nummer). You will get it in less than a day.[^16] When you [buy a vehicle](/guides/buying-used-car-in-germany) and [register it](/guides/buying-used-car-in-germany#register-the-vehicle) at the *[[Kfz-Zulassungsstelle]]*, you must have that eVB number.
+After you pick the right insurance, ask for an [eVB number](/glossary/eVB-Nummer). You will get it in less than a day.[^16] When you [buy a vehicle](/guides/buying-used-car-in-germany) and [register it](/guides/buying-used-car-in-germany#register-your-vehicle) at the *[[Kfz-Zulassungsstelle]]*, you must have that eVB number.
 
 ## How to pay less for German car insurance
 
@@ -88,9 +88,9 @@ If you choose a higher deductible, your car insurance will be cheaper.[^4] [Fina
 
 Make yearly payments instead of monthly payments. If you make yearly payments, you will pay 4% to 9% less.[^4]
 
-### Get Saisonkennzeichen
+### Get seasonal plates
 
-Seasonal plates (*[[Saisonkennzeichen]]*) are vehicle registration plates that only let you drive during certain months. For example, a motorcycle can have *Saisonkennzeichen* from April to October, or March to November. You don't pay insurance for the months you can't drive, so it's cheaper. Out of season, you can't drive the vehicle, and you can't park it in public spaces.[^5] You must put it in storage, or find a private parking space.
+Seasonal plates (*[[Saisonkennzeichen]]*) are vehicle registration plates that only let you drive during certain months. For example, a motorcycle can have *Saisonkennzeichen* for the summer months. You don't pay insurance for the months that you can't drive, so it's cheaper. Out of season, you can't drive the vehicle, and you can't park it in public spaces.[^5] You must put it in storage, or find a private parking space.
 
 ### Get a Werkstattbindung
 

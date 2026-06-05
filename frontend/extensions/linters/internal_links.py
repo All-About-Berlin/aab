@@ -9,6 +9,7 @@ import re
 
 class MarkdownInternalLinksLinter(OriginalInternalLinksLinter):
     ignored_urls = (
+        re.compile("^/guides$"),
         re.compile("^/newsletter$"),
         re.compile("^/donate$"),
         re.compile("^/services$"),

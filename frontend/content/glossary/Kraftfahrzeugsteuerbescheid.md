@@ -9,9 +9,9 @@ related_guides:
     - guides/car-cost-of-ownership-germany.md
 ---
 
-The *Kraftfahrzeugsteuerbescheid* tells you how much [vehicle tax](/glossary/Kraftfahrzeugsteuer) you owe. You get this letter by post once per year.
+The *Kraftfahrzeugsteuerbescheid* tells you how much [vehicle tax](/glossary/Kraftfahrzeugsteuer) you owe. You get a *Kraftfahrzeugsteuerbescheid* by post every year.
 
-Vehicle tax is paid automatically by direct debit authorisation (*[[SEPA-Lastschriftmandat]]*). You don't need to do anything. If your bank details changed, [contact the *Hauptzollamt*](https://www.zoll.de/DE/Kontakt/Auskuenfte/Kraftfahrzeugsteuer/kraftfahrzeugsteuer_node.html) and tell them.
+Vehicle tax is paid automatically by [direct debit authorisation](/glossary/SEPA-Lastschriftmandat). You don't need to do anything. If your bank details changed, [contact the *Hauptzollamt*](https://www.zoll.de/DE/Kontakt/Auskuenfte/Kraftfahrzeugsteuer/kraftfahrzeugsteuer_node.html) and tell them.
 
 [![Kraftfahrzeugsteuerbescheid example](/images/Kraftfahrzeugsteuerbescheid-p1.png)](/images/Kraftfahrzeugsteuerbescheid-p1.png)
 

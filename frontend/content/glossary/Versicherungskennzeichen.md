@@ -9,4 +9,6 @@ related_guides:
     - guides/car-insurance-germany.md
 ---
 
-Scooters and mopeds don't need to be registered at the *Kfz-Zulassungsstelle*. They only need to have insurance plates (*Versicherungskennzeichen*). Insurance plates [look like this](/images/Versicherungskennzeichen.jpg).
+Scooters (🛴 and 🛵) under 50cc don't need to be registered at the *[[Kfz-Zulassungsstelle]]*. Instead of normal vehicle licence plates, you get insurance plates (*Versicherungskennzeichen*) from your insurer. The *Versicherungskennzeichen* that you have valid insurance.
+
+![German Versicherungskennzeichen](/images/Versicherungskennzeichen.jpg "German Versicherungskennzeichen for a scooter")

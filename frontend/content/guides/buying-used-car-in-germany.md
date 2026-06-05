@@ -1,11 +1,11 @@
 ---
 title: How to buy a car in Germany
 short_title: How to buy a car
-description: A step by step guide to buying, registering and insuring a vehicle in Berlin and the rest of Germany. Also works for motorcycles.
+description: How to find, buy, insure and register a car or a motorcycle in Germany. Everything you must know about car ownership.
 date_created: 2019-01-06
 ---
 
-This is how you buy a car or a motorcycle in Germany. This guide tells you how to buy a vehicle from another person, and from a dealership.
+This guide explains how to find, buy, insure and register a vehicle in Germany. It also explains everything what you must do after you get a car or motorcycle.
 
 {% tableOfContents %}
 
@@ -19,28 +19,19 @@ Public transportation is better, cheaper and often faster. A car is more useful 
 
 ## 1. Look at vehicles
 
-### Where to look for a vehicle
-
-Germans use two websites to find vehicles:
-
-- [Mobile.de](https://www.mobile.de/)
-- [Kleinanzeigen](https://www.kleinanzeigen.de/stadt/berlin/)
-
-You can also visit car dealerships, but their cars are usually listed online. It's easier to look online.
-
-### Visiting a seller
+Use [Mobile.de](https://www.mobile.de/) and [Kleinanzeigen](https://www.kleinanzeigen.de/stadt/berlin/) to find cars. You can visit car dealerships, but their cars are also listed on those websites.
 
 When you see a vehicle that you like, contact the seller, and schedule a visit. When you go to see the vehicle, you can usually go on a test drive.
 
 ### Dealership or private sale?
 
-**Taxes:** When you buy from a dealership (a business that sells cars), you pay a {{ VAT_RATE }}% [VAT](/glossary/Umsatzsteuer).[^0] This tax is included in the price. When you buy a vehicle from a private seller, you do not pay VAT.
+You can buy vehicles from a dealership (a business that sells cars) or from a person selling their own car.
 
-**Warranty:** At the dealership, all new vehicles come with a 2 year warranty (*Gewährleistung*), and all used vehicles come with a 1 year warranty.[^1] If you buy from a private seller, there is no warranty. If you buy the vehicle for your business, there is no warranty.
+When you buy from a private seller, you pay no [VAT](/glossary/Umsatzsteuer), and there is no warranty. If the car has defects, it's usually your problem.
 
-The warranty covers *current* problems with the vehicle, not future problems. In other words, if you buy a vehicle with hidden defects, the seller has to fix them.[^2] It does not cover oil changes, normal wear, or problems that are your fault.[^3] If there are too many defects, you can even give the vehicle back. Most dealerships also offer an optional warranty (*Garantie*) that costs money.[^3]
+When you buy from a dealership, the price includes a {{ VAT_RATE }}% [VAT](/glossary/Umsatzsteuer).[^0] Dealership vehicles come with a [warranty](#warranty).
 
-If a dealership says that they are selling a car for someone else, it means that you do not pay taxes, and that you do not have any warranty.[^4] It's like buying a car from a private seller. Some dealers try to make you sign a paper that removes the warranty. Read everything before you sign.
+If a dealership says that they are selling a car for someone else, it means that it's a private sale. You pay no VAT, and there is no warranty.[^4]
 
 ### Papers and registration
 
@@ -124,9 +115,9 @@ After you bought the car, the rest is your problem. You will not need to talk to
 
 When you register a vehicle, you must prove that it will have insurance. You must get a quote from a car insurance company, and ask for an [eVB number](/glossary/eVB-Nummer). You can usually do this online. You will need this number when you register the vehicle.
 
-Use [Verivox](/out/verivox-kfz) or [Tarifcheck](/out/tarifcheck-kfz) to compare car insurance prices.
+[Feather](/out/feather-car) is the only English-speaking option. Use [Verivox](/out/verivox-kfz) or [Tarifcheck](/out/tarifcheck-kfz) to compare car insurance prices.
 
-**[Car insurance in Germany ➞](/guides/car-insurance-germany)**
+**[How to choose car insurance ➞](/guides/car-insurance-germany)**
 
 Your eVB number is only valid for the type of insurance you asked for. If you requested insurance from March to October, your eVB number is only valid for *[[Saisonkennzeichen]]*. You can't ask for full-year plates at the *[[Kfz-Zulassungsstelle]]* with that eVB number.
 
@@ -199,7 +190,7 @@ If you buy a vehicle at the dealership, they can usually register it for you. It
 
 You are now ready to drive! Don't forget that you must still pay the vehicle tax (*[[Kraftfahrzeugsteuer]]*). This tax will be taken directly from your bank account once a year. You get a confirmation (*[[Kraftfahrzeugsteuerbescheid]]*) by post.
 
-## 7. Look for cheaper car insurance
+## 7. Find cheaper car insurance
 
 Most car insurance contracts are for 1 year. Every year, 1 or 2 months before your contract expires, look for cheaper car insurance. Add it to your calendar.
 
@@ -213,10 +204,12 @@ If you sell your car, you can end your insurance contract immediately. You do no
 [^1]: [spiegel.de](https://www.spiegel.de/auto/aktuell/das-folgt-aus-bgh-urteil-zu-maengelhaftung-bei-gebrauchtwagen-a-1031320.html), [telecom-handel.de](https://www.telecom-handel.de/point-of-sale/fachhandel/gewaehrleistung-pflichten-haendler-1108535.html)
 [^2]: [gesetze-im-internet.de](https://www.gesetze-im-internet.de/englisch_bgb/englisch_bgb.html#p1584)
 [^3]: [spiegel.de](https://www.spiegel.de/auto/aktuell/das-folgt-aus-bgh-urteil-zu-maengelhaftung-bei-gebrauchtwagen-a-1031320.html)
-[^4]: [autokaufrecht-frankfurt.de](https://autokaufrecht-frankfurt.de/agenturgeschaeft-eigengeschaeft-und-umgehungsgeschaeft-im-kfz-handel/), [spiegel.de](https://www.spiegel.de/auto/aktuell/das-folgt-aus-bgh-urteil-zu-maengelhaftung-bei-gebrauchtwagen-a-1031320.html)
+[^4]: [autokaufrecht-frankfurt.de](https://autokaufrecht-frankfurt.de/agenturgeschaeft-eigengeschaeft-und-umgehungsgeschaeft-im-kfz-handel/) (2026), [spiegel.de](https://www.spiegel.de/auto/aktuell/das-folgt-aus-bgh-urteil-zu-maengelhaftung-bei-gebrauchtwagen-a-1031320.html)
 [^5]: [financescout24.de](https://www.financescout24.de/wissen/ratgeber/versicherungskennzeichen-roller), [helvetia.com](https://www.helvetia.com/de/web/de/ratgeber/fahrzeuge/kleinkraftraeder/moped/moped-anmelden.html)
 [^6]: [Settle in Berlin](https://www.settle-in-berlin.com/buy-car-germany-register/#Buying_a_second-hand_car_in_Germany)
 [^7]: [adac.de](https://www.adac.de/rund-ums-fahrzeug/reparatur-pflege-wartung/hu-und-au/tuev-kosten/)
 [^8]: [berlin.de](https://service.berlin.de/dienstleistung/120906/)
 [^9]: [berlin.de](https://service.berlin.de/dienstleistung/120906/standort/121362/)
 [^10]: [financescout24.de](https://www.financescout24.de/wissen/ratgeber/versicherungskennzeichen-roller)
+[^11]: Personal experience (2018)
+[^12]: [Berlin.de](https://service.berlin.de/dienstleistung/121479/) (2026)

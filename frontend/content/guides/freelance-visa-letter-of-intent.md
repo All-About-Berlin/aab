@@ -47,7 +47,7 @@ To get letters of intent...
 - **Ask your old clients**  
     If you were a freelancer before, or if you currently are, you can ask your old clients to sign a letter of intent. You need two letters of intent from German companies, but those from other countries also help.[^7]
 
-People are happy to help you if you **make it easy for them**. Send potential clients a [letter of intent template](https://allaboutberlin.com/docs/german-freelance-visa-letter-of-intent), and tell them exactly what to do. Explain that a letter of intent is not a contract, and that they are not forced to hire you.
+People are happy to help you if you **make it easy for them**. Send potential clients a [letter of intent template](/docs/german-freelance-visa-letter-of-intent), and tell them exactly what to do. Explain that a letter of intent is not a contract, and that they are not forced to hire you.
 
 **Do not write fake letters of intent**. Fraud is never a good idea.
 

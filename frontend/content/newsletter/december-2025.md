@@ -17,19 +17,19 @@ New year, new laws, new prices. These are the big changes I noticed while prepar
 - 💺 More expensive public transit: €63 Deutschland Ticket, €4 AB ticket, €5 ABC ticket
 - 🍽️ Reduced VAT in cafés and restaurants: previously 19%, now 7%
 - 💶 Higher minimum wage: previously €12.82, now €13.90 per hour
-- 👷‍♀️ Higher minimum salary for [Blue Cards](https://allaboutberlin.com/guides/blue-card): previously €48,300, now €50,700
-- 👨‍💻 Higher income requirement for [freelance visas](https://allaboutberlin.com/guides/freelance-visa) and student visas.
-- 🩹 More expensive health insurance; the starkest price hike in years. Use my [health insurance calculator](https://allaboutberlin.com/tools/health-insurance-calculator) to see the new prices. [Ask my health insurance expert](https://allaboutberlin.com/guides/german-health-insurance#insurance-brokers) if switching to another insurance makes sense.
+- 👷‍♀️ Higher minimum salary for [Blue Cards](/guides/blue-card): previously €48,300, now €50,700
+- 👨‍💻 Higher income requirement for [freelance visas](/guides/freelance-visa) and student visas.
+- 🩹 More expensive health insurance; the starkest price hike in years. Use my [health insurance calculator](/tools/health-insurance-calculator) to see the new prices. [Ask my health insurance expert](/guides/german-health-insurance#ask-our-expert) if switching to another insurance makes sense.
 
 ## Nebenkostenabrechnung deadline
 
-If you don’t receive your <u>2024</u> [*Nebenkostenabrechnung*](https://allaboutberlin.com/glossary/Nebenkostenabrechnung) by December 31, you can ignore it. Your landlord can’t make claims after that date.
+If you don’t receive your <u>2024</u> [*Nebenkostenabrechnung*](/glossary/Nebenkostenabrechnung) by December 31, you can ignore it. Your landlord can’t make claims after that date.
 
 These *Nebenkostenabrechnungen* often contain errors and invalid claims. If you are in a Mieterverein or you have legal insurance, you can get yours checked for free. You can also use legaltech services like Mineko.
 
 ## Pay less income tax
 
-December is the time to max out your pension contributions. If you had a good year, put some of your income in a pension before the end of the year. Pension contributions are [tax-deductible](https://allaboutberlin.com/glossary/steuerlich%20absetzbar), so they lower your taxable income.
+December is the time to max out your pension contributions. If you had a good year, put some of your income in a pension before the end of the year. Pension contributions are [tax-deductible](/glossary/steuerlich%20absetzbar), so they lower your taxable income.
 
 For example, if you earned €100,000, and you put €20,000 in a Rürup pension, your taxable income is €80,000. You would pay €9,700 less income tax.
 
@@ -41,11 +41,11 @@ Finding a Kita used to be damn near impossible. Children were put on waiting lis
 
 Now, there are too many spots, and not enough children. Some Kitas must even lay off staff or close.
 
-I have updated my [Kita](https://allaboutberlin.com/guides/kita) and [Kitagutschein](https://allaboutberlin.com/guides/kitagutschein) guides. Two experts will review them this week.
+I have updated my [Kita](/guides/kita) and [Kitagutschein](/guides/kitagutschein) guides. Two experts will review them this week.
 
 ## Immigration office wait times
 
-Since last winter, I [collect feedback](https://allaboutberlin.com/guides/immigration-office/wait-times) from residence permit applicants. This helps you predict *[[Ausländerbehörde]]* delays and plan around them. In September, I started measuring [citizenship processing times](https://allaboutberlin.com/guides/immigration-office/wait-times) too.
+Since last winter, I [collect feedback](/guides/immigration-office/wait-times) from residence permit applicants. This helps you predict *[[Ausländerbehörde]]* delays and plan around them. In September, I started measuring [citizenship processing times](/guides/immigration-office/wait-times) too.
 
 Last week, I made the page easier to read and added two useful pieces of information:
 
@@ -67,6 +67,6 @@ I got access to a *lot* of housing data from [Stekkies](https://www.stekkies.com
 
 If you are reading this, you are one of the first 200 subscribers. Do you know someone else who would love these updates? Why not send them a link?
 
-The newsletter’s permanent home is at [https://allaboutberlin.com/newsletter](https://allaboutberlin.com/newsletter)
+The newsletter’s permanent home is at [https://allaboutberlin.com/newsletter](/newsletter)
 
 The next update is scheduled for January 1st. This is my last chance to wish you happy holidays, and a *guten Rutsch* into 2026.

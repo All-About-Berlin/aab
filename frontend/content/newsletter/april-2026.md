@@ -12,7 +12,7 @@ April 3 is Good Friday (*Karfreitag*) and April 6 is Easter Monday (*Ostermontag
 
 **[Public holidays in Germany ➞](/guides/public-holidays)**
 
-[![“Frühling im Tiergarten” by Erich Büttner](https://allaboutberlin.com/images/fruehling-im-tiergarten-erich-buettner.jpg "“Frühling im Tiergarten” by Erich Büttner")](https://allaboutberlin.com/images/fruehling-im-tiergarten-erich-buettner.jpg)
+[![“Frühling im Tiergarten” by Erich Büttner](/images/fruehling-im-tiergarten-erich-buettner.jpg "“Frühling im Tiergarten” by Erich Büttner")](/images/fruehling-im-tiergarten-erich-buettner.jpg)
 
 ### Cherry blossom
 
@@ -59,7 +59,7 @@ Since 2025, I prefer curation to aggregation. I pick winning products instead of
 
 ### New guides page
 
-I have redesigned the [guides page](https://allaboutberlin.com/guides). It uses shorter titles and clearer categories to make guides easier to find.
+I have redesigned the [guides page](/guides). It uses shorter titles and clearer categories to make guides easier to find.
 
 [![Redesigned guides page](/images/new-guides-page-2026-03-15.png)](/images/new-guides-page-2026-03-15.png)
 

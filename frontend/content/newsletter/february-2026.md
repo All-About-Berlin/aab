@@ -10,7 +10,7 @@ Tomorrow, February 2, [the BVG will be on strike](https://www.bvg.de/de/streik),
 
 ## What's happening in February
 
-Nothing! February is the quietest month of the year. There are no [public holidays](https://allaboutberlin.com/guides/public-holidays) and no [shopping Sundays](https://allaboutberlin.com/guides/open-on-sundays-in-berlin), and although the days are slowly getting longer, it's still too damn cold. It's a great time to travel and wait the winter out in a sunnier place.
+Nothing! February is the quietest month of the year. There are no [public holidays](/guides/public-holidays) and no [shopping Sundays](/guides/open-on-sundays-in-berlin), and although the days are slowly getting longer, it's still too damn cold. It's a great time to travel and wait the winter out in a sunnier place.
 
 There are still a few good reasons to stick around:
 

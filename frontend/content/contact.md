@@ -27,7 +27,7 @@ I do not answer visa and residence permit questions, but there are [other people
 
 **Social media:**
 
-- [Newsletter](https://allaboutberlin.com/newsletter)
+- [Newsletter](/newsletter)
 - [Reddit](https://reddit.com/r/allaboutberlin)
 - [LinkedIn](https://www.linkedin.com/in/nicolasbouliane/)
 - [Twitter](https://twitter.com/aboutberlin)

@@ -8,8 +8,9 @@ related_guides:
     - guides/haftpflichtversicherung.md
     - guides/insurance.md
     - guides/car-insurance-germany.md
+    - guides/buying-used-car-in-germany.md
 ---
 
-In Germany, you can only drive a car if it has vehicle insurance (*Kfz-Versicherung*). It covers the damage you cause to other people and other vehicles. It can also cover damage to your own vehicle and theft.
+If you drive a car in Germany, the car must be insured. Car insurance (*Kfz-Versicherung*) covers the damage you cause while driving your car. It covers damage to other people and other vehicles. It can cover theft and damage to your own vehicle.
 
-**[How to choose car insurance ➞](/guides/car-insurance-germany)**
+**[How German car insurance works ➞](/guides/car-insurance-germany)**
