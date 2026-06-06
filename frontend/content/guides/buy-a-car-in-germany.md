@@ -203,7 +203,7 @@ Most car insurance contracts are for 1 year. Every year, 1 or 2 months before yo
 
 Use [Verivox](/out/verivox-kfz) or [Tarifcheck](/out/tarifcheck-kfz) to compare vehicle insurance options. If you find something cheaper, cancel your current contract, and switch to the cheaper insurance. You can save a lot of money by doing this.
 
-**[How to find cheaper car insurance ➞](/guides/car-insurance-germany#how-to-pay-less-for-german-car-insurance)**
+**[How to get cheaper car insurance ➞](/guides/car-insurance-germany#how-to-get-cheaper-car-insurance)**
 
 [^0]: [ec.europa.eu](https://taxation-customs.ec.europa.eu/buying-and-selling-cars_en)
 [^1]: [spiegel.de](https://www.spiegel.de/auto/aktuell/das-folgt-aus-bgh-urteil-zu-maengelhaftung-bei-gebrauchtwagen-a-1031320.html), [telecom-handel.de](https://www.telecom-handel.de/point-of-sale/fachhandel/gewaehrleistung-pflichten-haendler-1108535.html)

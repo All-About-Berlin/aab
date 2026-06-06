@@ -9,8 +9,12 @@ related_guides:
     - guides/buy-a-car-in-germany.md
 ---
 
-A Green Card (*Grüne Karte*) is a document that lists the countries where your [car insurance](/glossary/Kfz-Versicherung) is valid. When you cross a border with your vehicle, you usually need to show your Green Card. [This map](https://en.wikipedia.org/wiki/International_Motor_Insurance_Card_System#/media/File:International_Motor_Insurance_Systems.png) shows where the Green Card is accepted.
+A Green Card (*Grüne Karte*, *Internationale Versicherungskarte für Kraftverkehr* or *IVK*) lists the countries where your [car insurance](/glossary/Kfz-Versicherung) is valid. They often ask for it at border crossings. If your green card is not accepted, you can usually buy car insurance at the border.
 
-You can request a Green Card from your car insurance company. This is usually free.[^0]
+You can get a Green Card from your car insurer. It's usually free.[^0]
 
-[^0]: [Wikipedia](https://en.wikipedia.org/wiki/International_Motor_Insurance_Card_System#cite_ref-5:~:text=Insurers%20do%20not%20make%20people%20pay%20to%20have%20a%20Green%20Card)
+[![German car insurance green card](/images/car-insurance-green-card.png "Example car insurance green card")](/images/car-insurance-green-card.png)
+
+**[Countries that accept insurance green cards ➞](https://en.wikipedia.org/wiki/International_Motor_Insurance_Card_System#/media/File:International_Motor_Insurance_Systems.png)**
+
+[^0]: [Wikipedia](https://en.wikipedia.org/wiki/International_Motor_Insurance_Card_System#cite_ref-5:~:text=Insurers%20do%20not%20make%20people%20pay%20to%20have%20a%20Green%20Card), personal experience (2026)

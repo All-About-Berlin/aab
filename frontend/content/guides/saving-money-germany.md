@@ -76,15 +76,14 @@ Use my [health insurance recommendation tool](/tools/health-insurance-calculator
 ## Transportation
 
 - **[Get the Deutschland Ticket](/guides/deutschland-ticket)**{{ RECOMMENDED }}  
-    It's the cheapest monthly ticket, and it lets you use public transit everywhere in Germany.
+    It's the cheapest monthly ticket, and it lets you [use public transit](/guides/public-transit) everywhere in Germany.
 - **Get a yearly ticket**  
     If you can't get the Deutschland Ticket, [get a yearly subscription](https://www.bvg.de/de/abos-und-tickets/alle-abos/vbb-umweltkarte) from BVG or the Deutsche Bahn. Yearly tickets are cheaper than monthly tickets.
 - **Get a student ticket**  
     If you are a student or an [apprentice](/glossary/Azubi), get a student ticket. It's usually included in your school fees.
 - **Don't drive**  
     In most cities, [you don't need a car](/guides/buy-a-car-in-germany#do-you-need-a-car). [Buy a bicycle](/guides/bicycle-in-berlin) or [use public transit](/guides/public-transit) instead. When you really need to drive, [rent a car](/guides/public-transit#rent-a-car).
-- **Save on car insurance**  
-    If you drive a car, there are many [ways to pay less for car insurance](/guides/car-insurance-germany#how-to-pay-less-for-german-car-insurance). You can save a few euros per month.
+- **[Get cheaper car insurance](/guides/car-insurance-germany#how-to-get-cheaper-car-insurance)**
 
 ## Finances
 

@@ -9,10 +9,8 @@ related_guides:
     - guides/buy-a-car-in-germany.md
 ---
 
-A *Schadenfreiheitsklasse* is a rating that car insurance companies give to drivers. A higher class means that you are a safe driver, and your [car insurance](/glossary/Kfz-Versicherung) is cheaper.
+A *Schadenfreiheitsklasse*, *SF-Klasse* or *Schadenfreiheitsrabatt* is a rating that car insurance companies give to drivers. A higher class means that you are a safe driver, and it makes your [car insurance](/glossary/Kfz-Versicherung) cheaper.
 
 Your *Schadenfreiheitsklasse* goes up every year. If you have an accident and make an insurance claim, your *Schadenfreiheitsklasse* goes down.
-
-When you [move to Germany](/guides/moving-to-berlin), the insurer can recognize your previous driving experience and give you a higher *Schadenfreiheitsklasse*.
 
 **[How German car insurance works ➞](/guides/car-insurance-germany)**
