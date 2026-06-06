@@ -3,6 +3,7 @@
 /api/event "/whoisthere/event"
 
 # Old URLs
+/guides/buying-used-car-in-germany /guides/buy-a-car-in-germany
 "/glossary/Bundesagentur für Arbeit" "/glossary/Agentur für Arbeit"
 "/glossary/Bundesagentur für Arbeit​" "/glossary/Agentur für Arbeit"
 "/glossary/zertifierte Teststelle" /guides

@@ -58,7 +58,7 @@ Use [Verivox](/out/verivox-kfz) or [Tarifcheck](/out/tarifcheck-kfz) to compare 
 
 You can also talk to an [insurance broker](/glossary/Makler). They can help you transfer your driving experience from another country. You will get a much better price for your car insurance. Few brokers sell car insurance, because it's not profitable.
 
-After you pick the right insurance, ask for an [eVB number](/glossary/eVB-Nummer). You will get it in less than a day.[^16] When you [buy a vehicle](/guides/buying-used-car-in-germany) and [register it](/guides/buying-used-car-in-germany#register-your-vehicle) at the *[[Kfz-Zulassungsstelle]]*, you must have that eVB number.
+After you pick the right insurance, ask for an [eVB number](/glossary/eVB-Nummer). You will get it in less than a day.[^16] When you [buy a vehicle](/guides/buy-a-car-in-germany) and [register it](/guides/buy-a-car-in-germany#register-your-vehicle) at the *[[Kfz-Zulassungsstelle]]*, you must have that eVB number.
 
 ## How to pay less for German car insurance
 
@@ -152,7 +152,7 @@ You can request a Green Card from your car insurance company. This is usually fr
 
 ## What to do next
 
-Before you [buy a vehicle](/guides/buying-used-car-in-germany), you must also think about [other costs](/guides/car-cost-of-ownership-germany) like maintenance, tires, fuel and taxes.
+Before you [buy a vehicle](/guides/buy-a-car-in-germany), you must also think about [other costs](/guides/car-cost-of-ownership-germany) like maintenance, tires, fuel and taxes.
 
 [^0]: [sparkasse.de](https://www.sparkasse.de/themen/autokauf-ratgeber/teilkasko-vollkasko-autoversicherungen.html), [Settle in Berlin](https://www.settle-in-berlin.com/car-insurance-in-germany-guide/)
 [^1]: [test.de](https://www.test.de/Autoversicherung-und-Fahrerkreis-Zusatzfahrer-versichern-so-gelingt-es-am-guenstigsten-5295104-0/), [Finanztip](https://www.finanztip.de/kfz-versicherung/fahranfaenger/)

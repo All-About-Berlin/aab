@@ -10,7 +10,7 @@ The *Umwelt-Plakette* or *Feinstaubplakette* is a sticker you put on your car's 
 
 ![A green environmental sticker (Umwelt-Plakette) on a car windscreen](/images/Umweltplakette-DE.jpg "A green Umwelt-Plakette")
 
-You get that sticker when you [register your vehicle](/guides/buying-used-car-in-germany#register-your-vehicle). You can also buy it from garages and gas stations.
+You get that sticker when you [register your vehicle](/guides/buy-a-car-in-germany#register-your-vehicle). You can also buy it from garages and gas stations.
 
 Motorcycles don't need an *Umwelt-Plakette*; they are always allowed inside environmental zones.
 

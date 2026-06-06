@@ -19,7 +19,7 @@ German ID cards have a chip in them. You can use your ID card and the [AusweisAp
 
 - Applying for [unemployment benefits](/glossary/ALG%20I) when you [lose your job](/guides/losing-your-job)
 - Applying for *[[Kindergeld]]*[^5]
-- Registering a vehicle after you [buy it](/guides/buying-used-car-in-germany)
+- Registering a vehicle after you [buy it](/guides/buy-a-car-in-germany)
 - [Requesting a replacement](/guides/replacement-meldebescheinigung) of your [registration certificate](/glossary/Meldebescheinigung)
 - [Registering as an organ donor](/guides/organ-donor)
 

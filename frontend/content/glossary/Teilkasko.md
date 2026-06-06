@@ -6,7 +6,7 @@ description: Car insurance that does not cover damage you cause to your own vehi
 date_created: 2018-12-12
 related_guides:
     - guides/car-insurance-germany.md
-    - guides/buying-used-car-in-germany.md
+    - guides/buy-a-car-in-germany.md
     - guides/car-cost-of-ownership-germany.md
     - guides/insurance.md
 ---

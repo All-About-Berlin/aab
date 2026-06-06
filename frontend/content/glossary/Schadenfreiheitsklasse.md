@@ -6,7 +6,7 @@ description: A rating that gets better if you never make car insurance claims.
 date_created: 2020-08-10
 related_guides:
     - guides/car-insurance-germany.md
-    - guides/buying-used-car-in-germany.md
+    - guides/buy-a-car-in-germany.md
 ---
 
 A *Schadenfreiheitsklasse* is a rating that car insurance companies give to drivers. A higher class means that you are a safe driver, and your [car insurance](/glossary/Kfz-Versicherung) is cheaper.

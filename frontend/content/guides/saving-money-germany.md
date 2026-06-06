@@ -82,7 +82,7 @@ Use my [health insurance recommendation tool](/tools/health-insurance-calculator
 - **Get a student ticket**  
     If you are a student or an [apprentice](/glossary/Azubi), get a student ticket. It's usually included in your school fees.
 - **Don't drive**  
-    In most cities, [you don't need a car](/guides/buying-used-car-in-germany#do-you-need-a-car). [Buy a bicycle](/guides/bicycle-in-berlin) or [use public transit](/guides/public-transit) instead. When you really need to drive, [rent a car](/guides/public-transit#rent-a-car).
+    In most cities, [you don't need a car](/guides/buy-a-car-in-germany#do-you-need-a-car). [Buy a bicycle](/guides/bicycle-in-berlin) or [use public transit](/guides/public-transit) instead. When you really need to drive, [rent a car](/guides/public-transit#rent-a-car).
 - **Save on car insurance**  
     If you drive a car, there are many [ways to pay less for car insurance](/guides/car-insurance-germany#how-to-pay-less-for-german-car-insurance). You can save a few euros per month.
 

@@ -8,7 +8,7 @@ related_guides:
     - guides/banking.md
     - guides/best-bank-germany.md
     - guides/gez-rundfunkbeitrag.md
-    - guides/buying-used-car-in-germany.md
+    - guides/buy-a-car-in-germany.md
 ---
 
 A SEPA transfer (*SEPA-Überweisung*) is a free, instant bank transfer. It works between all European banks. It's the most common way to send money in Germany. It's how your employer pays you, and how you pay your rent.

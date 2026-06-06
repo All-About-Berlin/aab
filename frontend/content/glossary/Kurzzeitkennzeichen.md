@@ -5,7 +5,7 @@ english_term: Temporary licence plate
 description: Temporary licence plates to drive a vehicle for a short time.
 date_created: 2019-01-17
 related_guides:
-    - guides/buying-used-car-in-germany.md
+    - guides/buy-a-car-in-germany.md
     - guides/car-insurance-germany.md
 ---
 

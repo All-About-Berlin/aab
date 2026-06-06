@@ -174,7 +174,7 @@ Your German driving licence is valid in all [[European Union]] countries. Outsid
 
 ### Buy a car
 
-**[How to buy a vehicle in Germany ➞](/guides/buying-used-car-in-germany)**
+**[How to buy a vehicle in Germany ➞](/guides/buy-a-car-in-germany)**
 
 You can also [rent a car when you need it](/guides/public-transit#rent-a-car). If you don't drive often, car sharing is better.
 

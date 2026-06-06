@@ -5,7 +5,7 @@ english_term: Scooter licence plates
 description: A type of licence plate for scooters and mopeds.
 date_created: 2019-01-13
 related_guides:
-    - guides/buying-used-car-in-germany.md
+    - guides/buy-a-car-in-germany.md
     - guides/car-insurance-germany.md
 ---
 

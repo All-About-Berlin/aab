@@ -5,7 +5,7 @@ english_term: Vehicle tax notification
 description: The Kraftfahrzeugsteuerbescheid tells you how much vehicle tax you owe.
 date_created: 2018-04-12
 related_guides:
-    - guides/buying-used-car-in-germany.md
+    - guides/buy-a-car-in-germany.md
     - guides/car-cost-of-ownership-germany.md
 ---
 

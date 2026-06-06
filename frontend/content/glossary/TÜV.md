@@ -5,7 +5,7 @@ english_term: Vehicle inspection authority
 description: Technischer Überwachungsverein is the authority that inspects vehicles, elevators and many other things in Germany.
 date_created: 2019-01-08
 related_guides:
-    - guides/buying-used-car-in-germany.md
+    - guides/buy-a-car-in-germany.md
     - guides/driving-licence.md
     - guides/car-cost-of-ownership-germany.md
 ---

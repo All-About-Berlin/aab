@@ -150,7 +150,7 @@ Berlin has excellent public transit. You should also get a bike; it's a good way
 
 **[How to buy a bicycle ➞](/guides/bicycle-in-berlin)**
 
-You don't need to [buy a car](/guides/buying-used-car-in-germany) in Berlin. They are [expensive](/guides/car-cost-of-ownership-germany), and [not so useful](/guides/buying-used-car-in-germany#do-you-need-a-car).
+You don't need to [buy a car](/guides/buy-a-car-in-germany) in Berlin. They are [expensive](/guides/car-cost-of-ownership-germany), and [not so useful](/guides/buy-a-car-in-germany#do-you-need-a-car).
 
 Your foreign driving licence [might be valid in Germany](/guides/convert-to-german-driving-licence#can-you-already-drive-in-germany). You can sometimes convert it to a German driving licence. You can also take driving lessons in Berlin.
 

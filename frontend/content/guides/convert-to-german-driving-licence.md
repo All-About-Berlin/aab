@@ -155,7 +155,7 @@ After a few weeks, you get a letter. It tells you to pick up your new driver lic
 ## What to do next
 
 - Read Route to Germany's [guide to driving in Germany](https://routetogermany.com/). If you come from North America, this is very important.
-- [Buy a car](/guides/buying-used-car-in-germany)
+- [Buy a car](/guides/buy-a-car-in-germany)
 - [Use car sharing services](/guides/public-transit#rent-a-car)
 
 [^0]: [bmvi.de](https://www.bmvi.de/SharedDocs/EN/Articles/StV/Roadtraffic/validity-foreign-driving-licences-in-germany.html), [bussgeldkatalog.de](https://www.bussgeldkatalog.de/auslaendischer-fuehrerschein/#:~:text=innerhalb%20der%20eu%20sind%20fuhrerscheine%20grenzubergreifend%20gultig), [bmdv.bund.de](https://bmdv.bund.de/SharedDocs/DE/Anlage/StV/auslaendische-fahrerlaubnisse-merkblatt-ausserhalb-eu-und-ewr-staaten-englisch.pdf?__blob=publicationFile)

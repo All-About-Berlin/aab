@@ -213,7 +213,7 @@ In Berlin, **you can't be picky**, but you can still avoid [scams](/guides/housi
 - [ ] **Crime**  
     Use the [crime atlas](https://www.kriminalitaetsatlas.berlin.de/K-Atlas/atlas.html) to find a safe area. Areas next to some big train stations (Alexanderplatz, Görlitzer Bahnhof, Kottbusser Tor, Hermannplatz, Leopoldplatz) are more dangerous.[^14] There are more drunk people, drug addicts, street fights, vandalism and theft in those areas. You don't need to avoid the entire area, just the busy streets.
 - [ ] **Parking**  
-    [You don't need a car in Berlin](/guides/buying-used-car-in-germany#do-you-need-a-car). Is enough street parking? Do you need a [parking permit](/guides/car-cost-of-ownership-germany#parking)? Does your building have basement parking? How much does it cost? You can [park motorcycles on the sidewalk](/guides/motorcycle-parking).
+    [You don't need a car in Berlin](/guides/buy-a-car-in-germany#do-you-need-a-car). Is enough street parking? Do you need a [parking permit](/guides/car-cost-of-ownership-germany#parking)? Does your building have basement parking? How much does it cost? You can [park motorcycles on the sidewalk](/guides/motorcycle-parking).
 - [ ] **Nearby services**  
     Check if there are supermarkets, [Spätis](/glossary/Späti), cafés and other businesses nearby.
 - [ ] **Noise**  

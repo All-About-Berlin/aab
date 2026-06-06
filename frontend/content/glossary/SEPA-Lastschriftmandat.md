@@ -7,7 +7,7 @@ date_created: 2019-01-13
 related_guides:
     - guides/banking.md
     - guides/gez-rundfunkbeitrag.md
-    - guides/buying-used-car-in-germany.md
+    - guides/buy-a-car-in-germany.md
     - guides/dog-ownership.md
 ---
 

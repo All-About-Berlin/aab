@@ -5,7 +5,7 @@ english_term: Seasonal licence plates
 description: Vehicle licence plates that are only valid for part of the year.
 date_created: 2019-01-08
 related_guides:
-    - guides/buying-used-car-in-germany.md
+    - guides/buy-a-car-in-germany.md
     - guides/car-insurance-germany.md
     - guides/motorcycle-parking.md
 ---

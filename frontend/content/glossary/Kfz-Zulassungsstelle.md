@@ -5,7 +5,7 @@ english_term: Vehicle registration office
 description: The office where you register your vehicle after you buy it.
 date_created: 2019-01-07
 related_guides:
-    - guides/buying-used-car-in-germany.md
+    - guides/buy-a-car-in-germany.md
     - guides/moving-in.md
     - guides/car-insurance-germany.md
 ---

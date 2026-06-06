@@ -5,7 +5,7 @@ description: What it costs to own and drive a car in Germany. The cost of car in
 date_created: 2020-10-04
 ---
 
-This is how much it costs to drive a car or motorcycle in Germany. This is important to know before [buying a car](/guides/buying-used-car-in-germany).
+This is how much it costs to drive a car or motorcycle in Germany. This is important to know before [buying a car](/guides/buy-a-car-in-germany).
 
 {% tableOfContents %}
 

@@ -6,7 +6,7 @@ description: Cheaper car insurance if you repair your car at selected garages.
 date_created: 2020-08-11
 related_guides:
     - guides/car-insurance-germany.md
-    - guides/buying-used-car-in-germany.md
+    - guides/buy-a-car-in-germany.md
     - guides/car-cost-of-ownership-germany.md
     - guides/insurance.md
 ---

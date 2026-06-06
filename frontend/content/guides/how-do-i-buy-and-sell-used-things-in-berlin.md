@@ -32,9 +32,9 @@ If you want to trade with English-speaking Berliners, try [Sell Your Stuff Berli
 - [Mobile.de](https://www.mobile.de/)
 - [Kleinanzeigen](https://www.kleinanzeigen.de/stadt/berlin/)
 
-You really [don't need a car](/guides/buying-used-car-in-germany#do-you-need-a-car) in Berlin. [Buying a bicycle](/guides/bicycle-in-berlin#where-to-buy-a-bicycle-in-berlin) or [using public transit](/guides/public-transit) is a better choice. You can also [rent a car](/guides/public-transit#rent-a-car) when you need it.
+You really [don't need a car](/guides/buy-a-car-in-germany#do-you-need-a-car) in Berlin. [Buying a bicycle](/guides/bicycle-in-berlin#where-to-buy-a-bicycle-in-berlin) or [using public transit](/guides/public-transit) is a better choice. You can also [rent a car](/guides/public-transit#rent-a-car) when you need it.
 
-**[How to buy a car in Germany ➞](/guides/buying-used-car-in-germany)**
+**[How to buy a car in Germany ➞](/guides/buy-a-car-in-germany)**
 
 **[How to buy a bicycle in Berlin ➞](/guides/bicycle-in-berlin#where-to-buy-a-bicycle-in-berlin)**
 
