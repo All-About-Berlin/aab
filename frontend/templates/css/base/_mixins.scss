@@ -158,7 +158,14 @@
     box-shadow: var(--shadow-s);
 }
 
+@mixin list-item{
+    @include text-block-compact;
+    &:first-child{margin-top:0}
+    &:last-child{margin-bottom:0}
+}
+
 @mixin list-marker-ul{
+    @include list-item;
     @include text-block-compact;
 
     padding-left: var(--xl);
@@ -170,8 +177,6 @@
         left: 0;
         content:'–';
     }
-    &:first-child{margin-top:0}
-    &:last-child{margin-bottom:0}
 }
 @mixin list-marker-ul-compact{
     @include list-marker-ul;

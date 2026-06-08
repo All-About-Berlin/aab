@@ -8,66 +8,54 @@
 			<h1>Health insurance? Sorted.</h1>
 			<p>We get you the right coverage for the best price.</p>
 			<div class="buttons bar left">
-				<a class="button primary" href="#calculator">Find health insurance</a>
+				<a class="button" href="#calculator">Find health insurance</a>
 				<a class="button" href="#contact">Ask our expert</a>
 			</div>
 		</header>
 		<section class="section price-table" id="prices" aria-label="German health insurance prices">
-			<p>To live in Germany or apply for a German visa, you need <a target="_blank" href="/glossary/gesetzliche%20Krankenversicherung">health insurance</a>. There are 3 type of health insurance. Use our <a href="#calculator">recommendation tool</a> or <a href="#contact">ask our expert</a> to find the best option.</p>
+			{% tool "health-insurance-price-table" %}
+			<div class="buttons bar">
+				<a href="#calculator" class="button primary internal-link">Calculate your price</a>
+			</div>
+		</section>
+		<section class="section price-table" id="prices" aria-label="German health insurance prices">
+			<h2>Compare health insurance options</h2>
 			<hr>
+			<p>There are 3 types of German health insurance: expat, public and private. Use our <a href="#calculator">recommendation tool</a> or <a href="#contact">ask our expert</a> to find the best option.</p>
 			<table class="price-table">
-				<thead>
-					<tr class="plan-names">
-						<th></th>
-						<th scope="col">
-							<glossary term="Expat health insurance">Expat</glossary>
-						</th>
-						<th scope="col">
-							<glossary term="gesetzliche Krankenversicherung">Public</glossary>
-						</th>
-						<th scope="col">
-							<glossary term="private Krankenversicherung">Private</glossary>
-						</th>
-					</tr>
-					<tr class="price-and-description">
-						<td></td>
-						<td>
-							<small>Basic coverage for your first visa.</small>
-							<price :amount="200" per-month>From €200/month</price>
-						</td>
-						<td>
-							<small>The simple, reliable long-term option.</small>
-							<price :amount="200" per-month>From €200/month</price>
-						</td>
-						<td>
-							<small>Custom coverage, faster healthcare.</small>
-							<price :amount="200" per-month>From €200/month</price>
-						</td>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="feature">
-						<th scope="row">Adjust what it covers</th>
-						<td><span class="yes"></span></td>
-						<td><span class="no"></span></td>
-						<td><span class="yes"></span></td>
-					</tr>
-					<tr class="feature">
-						<th scope="row">Switch to another option</th>
-						<td></td>
-						<td><span class="yes"></span></td>
-						<td><span class="no"></span></td>
-					</tr>
-					<tr class="feature">
-						<th scope="row">Cancellation period</th>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-				</tbody>
 				<tbody>
 					<tr class="section-heading">
-						<th colspan="4">What it's good for</th>
+						<th colspan="4">How you can use it</th>
+					</tr>
+					<tr class="plan-names">
+						<td></td>
+						<th scope="col"><glossary term="Expat health insurance">Expat</glossary></th>
+						<th scope="col"><glossary term="gesetzliche Krankenversicherung">Public</glossary></th>
+						<th scope="col"><glossary term="private Krankenversicherung">Private</glossary></th>
+					</tr>
+					<tr class="feature">
+						<th scope="row">Who it's for</th>
+						<td>
+							<ul>
+								<li>Visa applicants</li>
+								<li>Students</li>
+								<li>Digital nomads</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Employees</li>
+								<li>Students</li>
+								<li>Freelance artists</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Employees</li>
+								<li>Students over 30</li>
+								<li>Freelancers</li>
+							</ul>
+						</td>
 					</tr>
 					<tr class="feature">
 						<th scope="row"><glossary term="Schengen visa">Schengen Visa</glossary></th>
@@ -99,10 +87,34 @@
 						<td><span class="yes"></span></td>
 						<td><span class="yes"></span></td>
 					</tr>
+					<tr class="feature">
+						<th scope="row">Employees</th>
+						<td><span class="no"></span></td>
+						<td><span class="yes"></span></td>
+						<td><span class="yes"></span></td>
+					</tr>
+					<tr class="feature">
+						<th scope="row">Freelancers</th>
+						<td><span class="yes"></span></td>
+						<td><span class="yes"></span></td>
+						<td><span class="yes"></span></td>
+					</tr>
 				</tbody>
 				<tbody>
 					<tr class="section-heading">
 						<th colspan="4">What it covers</th>
+					</tr>
+					<tr class="plan-names">
+						<td></td>
+						<th scope="col"><glossary term="Expat health insurance">Expat</glossary></th>
+						<th scope="col"><glossary term="gesetzliche Krankenversicherung">Public</glossary></th>
+						<th scope="col"><glossary term="private Krankenversicherung">Private</glossary></th>
+					</tr>
+					<tr class="feature">
+						<th scope="row">Adjustable coverage</th>
+						<td><span class="yes"></span></td>
+						<td><span class="no"></span></td>
+						<td><span class="yes"></span></td>
 					</tr>
 					<tr class="feature">
 						<th scope="row">Pre-existing conditions</th>
@@ -117,21 +129,19 @@
 						<td><span class="yes"></span></td>
 					</tr>
 					<tr class="feature">
-						<th scope="row">Your children</th>
+						<th scope="row">Covers children for free</th>
 						<td><span class="no"></span></td>
 						<td><span class="yes"></span></td>
 						<td><span class="no"></span></td>
 					</tr>
 					<tr class="feature">
-						<th scope="row">Your unemployed spouse</th>
+						<th scope="row">Covers unemployed spouse for free</th>
 						<td><span class="no"></span></td>
 						<td><span class="yes"></span></td>
 						<td><span class="no"></span></td>
 					</tr>
 				</tbody>
 			</table>
-			<hr>
-			<p><strong>Need help choosing?</strong> Read our <a target="_blank" href="https://allaboutberlin.com/guides/german-health-insurance">health insurance guide</a>, use our <a href="#calculator">recommendation tool</a> or <a href="#contact">ask our expert</a> to help you. It's 100% free.</p>
 		</section>
 		{% tool "health-insurance-calculator", static=True, id="calculator" %}
 		{% tool "health-insurance-calculator", mode="question", static=True, id="contact" %}
@@ -158,8 +168,3 @@
 		</section>
 	</main>
 {% endblock %}
-
-{% js %}
-	import initializePriceTable from '/js/components/health-insurance-price-table.mjs';
-	initializePriceTable();
-{% endjs %}

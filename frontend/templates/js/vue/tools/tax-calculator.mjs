@@ -326,7 +326,7 @@ export default {
 					:max="incomeInputRange.max"
 					tabindex="0">
 				<span class="range-suffix no-mobile no-print">€</span>
-				<button class="button link no-print" :class="showExtraQuestions ? 'hide-options' : 'show-options'" @click.prevent="toggleExtraQuestions" href="#">
+				<button class="button link no-print" :class="showExtraQuestions ? 'hide-options' : 'show-options'" @click.prevent="toggleExtraQuestions">
 					{{ showExtraQuestions ? 'Hide options' : 'Show options' }}
 				</button>
 			</div>

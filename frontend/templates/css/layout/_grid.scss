@@ -34,25 +34,25 @@ body{
     }
 }
 
-.two-columns{
+.two-columns, .three-columns{
     @include text-block;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-size: var(--f-s);
     gap: var(--l);
     align-items: flex-start;
+
+    font-size: var(--f-s);
 
     @include only-phone{
         grid-template-columns: 1fr;
 
-        > :first-child{
+        > :not(:last-child){
             padding-bottom: var(--l);
             border-bottom: var(--b-box);
         }
     }
     @include not-phone{
-        > :first-child{
+        > :not(:last-child){
             padding-right: var(--l);
             border-right: var(--b-box);
         }
@@ -61,22 +61,13 @@ body{
     h3 {
         margin: 0 0 var(--m);
     }
+}
 
-    > * > .price{
-        display: block!important;
-        margin: var(--m) 0 0;
-        font-size: var(--m);
-
-        @include only-phone{
-            grid-column: 1 / -1;
-        }
-    }
-
-    @include full-width-site{
-        .price-line .price small{
-            display: none; // Hide "/month" as soon as the columns get narrower
-        }
-    }
+.two-columns{
+    grid-template-columns: 1fr 1fr;
+}
+.three-columns{
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .icon-paragraph{

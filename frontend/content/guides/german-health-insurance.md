@@ -26,11 +26,11 @@ There is [public](/glossary/gesetzliche%20Krankenversicherung), [private](/gloss
 
 87% of Germans have [public health insurance](/glossary/gesetzliche%20Krankenversicherung).[^2] It might be your only option.
 
-Public health insurance is run by [non-profit insurance funds](/glossary/Krankenkasse), not by the state. There are dozens of insurers, but their cost and coverage are almost the same.[^85]
+Public health insurance is run by [non-profit insurance funds](/glossary/Krankenkasse). There are dozens of insurers, but their cost and coverage are almost exactly the same.[^85]
 
 ### Cost of public health insurance
 
-Public health insurance costs a percentage of your income. The cost does not depend on your age, your health condition, or how often you get sick.
+Public health insurance costs **a percentage of your income**. The cost does not depend on your age, your health condition, or how often you get sick.
 
 Use my [health insurance recommendation tool](#your-options) to calculate the cost.
 
