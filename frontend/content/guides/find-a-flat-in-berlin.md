@@ -80,6 +80,7 @@ Start looking 3 to 5 months before your move. If you start too early or too late
 - **[WG-Gesucht](https://www.wg-gesucht.de/)**{{ RECOMMENDED }}  
     The most popular website for shared apartments. It's very competitive. You might send hundreds of messages and never get a reply.
 - [WG Suche](https://www.wg-suche.de/wg-zimmer/deutschland-berlin)
+- [NestQuest app](https://nest-quest.eu/app)
 
 Short-term furnished rooms are cheaper on [Kleinanzeigen](https://www.kleinanzeigen.de/) and [Facebook](#facebook-groups) than on [short-term housing websites](#short-term-and-furnished-apartments).[^55]
 
