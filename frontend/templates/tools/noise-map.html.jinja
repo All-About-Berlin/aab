@@ -75,7 +75,8 @@
 	{% endqueueJs %}
 {% endblock %}
 
-{% css %}
+{% block extraScss %}
+	{{ super() }}
 	#map-description{
 		@include box;
 		@include text-block;
@@ -96,7 +97,7 @@
 			color: transparent;
 		}
 	}
-{% endcss %}
+{% endblock %}
 
 {% block sidebar %}
 	<h2>Noise pollution in Berlin</h2>

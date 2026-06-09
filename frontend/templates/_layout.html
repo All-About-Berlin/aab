@@ -55,7 +55,8 @@
 	<style>
 		{% scss %}
 			{% include "css/style.scss" %}
-			{% allCss %}
+			{% block extraScss %}
+			{% endblock %}
 		{% endscss %}
 	</style>
 </head>
