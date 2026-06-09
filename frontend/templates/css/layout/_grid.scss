@@ -34,7 +34,13 @@ body{
     }
 }
 
-.two-columns, .three-columns{
+.two-columns{
+    grid-template-columns: 1fr 1fr;
+}
+.three-columns{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+:is(.two-columns, .three-columns){
     @include text-block;
 
     display: grid;
@@ -61,13 +67,23 @@ body{
     h3 {
         margin: 0 0 var(--m);
     }
-}
 
-.two-columns{
-    grid-template-columns: 1fr 1fr;
-}
-.three-columns{
-    grid-template-columns: 1fr 1fr 1fr;
+    :not(.price-line) > .price{
+        // Full-width price blocks
+        display: block;
+        text-align: center;
+        margin-top: var(--m);
+        padding: var(--s); // Less padding on the sides, to avoid line breaks.
+        span{
+            font-size: var(--m);
+        }
+    }
+
+    @include full-width-site{
+        .price-line .price small{
+            display: none; // Hide "/month"
+        }
+    }
 }
 
 .icon-paragraph{

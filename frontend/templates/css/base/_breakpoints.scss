@@ -14,12 +14,6 @@ $width-main-column: 860px;
     }
 }
 
-@mixin only-tablet {
-    @media screen and (min-width: #{$width-tablet}) and (max-width: #{$width-desktop - 1px}) {
-        @content;
-    }
-}
-
 @mixin full-width-site {
     @media screen and (max-width: $width-main-column) {
         @content;

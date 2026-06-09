@@ -1,0 +1,33 @@
+.health-insurance-price-table{
+    display: grid;
+    grid-template-areas: "title tabs" "prices prices";
+    gap: var(--m);
+
+    h2{
+        grid-area: title;
+    }
+
+    .tabs{
+        --c-bg-widget: var(--c-bg-page);
+        --c-bg-widget-opaque: var(--c-bg-page);
+        display: flex; // Button width fits content
+        grid-area: tabs;
+        justify-self: flex-end;
+    }
+
+    .three-columns{
+        grid-area: prices;
+        margin: 0;
+    }
+
+    .buttons{
+        grid-area: buttons;
+    }
+
+    @include full-width-site{
+        grid-template-areas: "title" "tabs" "prices";
+        .tabs{
+            justify-self: flex-start;
+        }
+    }
+}

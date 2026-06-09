@@ -863,6 +863,11 @@ constants:
     unit: euros
     description: Driving licence conversion fee (€)
     fail_on: 2026-12-31
+  INTERNATIONAL_DRIVING_PERMIT_FEE:
+    value: 15
+    unit: euros
+    description: https://service.berlin.de/dienstleistung/121591/
+    fail_on: 2026-12-31
   DRIVING_LICENCE_FEE:
     value: 51.21
     unit: euros

@@ -3,6 +3,7 @@ import Price from '/js/vue/components/price.mjs';
 import Tabs from '/js/vue/components/tabs.mjs';
 import { healthInsurance } from '/js/utils/constants.mjs';
 import { getHealthInsuranceOptions } from '/js/utils/healthInsurance.mjs';
+import metadata from '/js/vue/tools/health-insurance-price-table.metadata.json' with { type: 'json' };
 
 const studentAge = 22;
 const employeeAge = 30;
@@ -128,15 +129,16 @@ export default {
 	},
 	data() {
 		return {
+			metadata,
 			occupation: 'employee',
 		};
 	},
 	computed: {
 		occupationTabs() {
 			return [
-				{ value: 'employee',   label: 'Employees'   },
-				{ value: 'student',    label: 'Students'    },
-				{ value: 'freelancer', label: 'Freelancers' },
+				{ value: 'employee',   label: 'Employee'   },
+				{ value: 'student',    label: 'Student'    },
+				{ value: 'freelancer', label: 'Freelancer' },
 			];
 		},
 		priceMatrix() {
@@ -160,10 +162,11 @@ export default {
 		},
 	},
 	template: `
-		<div class="health-insurance-price-table">
+		<div class="health-insurance-price-table"
+			:aria-label="metadata.label"
+			:aria-description="metadata.description">
 			<tabs v-model="occupation" :options="occupationTabs"></tabs>
 			<h2>Our prices</h2>
-			<hr>
 			<div class="three-columns">
 				<div>
 					<h3><glossary term="Expat health insurance">Expat</glossary></h3>

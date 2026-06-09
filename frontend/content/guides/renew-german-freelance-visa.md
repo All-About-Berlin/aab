@@ -207,7 +207,7 @@ Use PDF files or photos. Don't use Word documents or other file formats. Put dat
 
 A freelance visa renewal costs **€{{NATIONAL_VISA_RENEWAL_FEE|cur}}**. It's cheaper for Turkish citizens.[^12] If you get a *[[Fiktionsbescheinigung]]*, it might cost €13.[^13]
 
-Some of the [required documents](/guides/renew-german-freelance-visa#required-documents) also cost money:{{ fail_on('2026-06-01') }}
+Some of the [required documents](/guides/renew-german-freelance-visa#required-documents) also cost money:{{ fail_on('2026-12-31') }}
 
 - *Aktuelle Handelsregisterauszug*: €10 if you need it[^7]
 - *Bescheinigung in Steuersachen*: €{{ BESCHEINIGUNG_IN_STEUERSACHEN_FEE|cur }}[^8]

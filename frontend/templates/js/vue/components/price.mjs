@@ -49,7 +49,9 @@ export default {
 	},
 	template: `
 		<span class="price">
-			<small v-if="showFrom">From&nbsp;</small>€<span class="currency" :data-currencies="fromTooltipText">{{ formattedAmount(from ?? amount) }}</span><template v-if="showRange">&ndash;<span class="currency" :data-currencies="toTooltipText">{{ formattedAmount(to) }}</span></template><small v-if="perMonth">&nbsp;/&nbsp;month</small>
+			<small v-if="showFrom">From&nbsp;</small>
+			<span>€<span class="currency" :data-currencies="fromTooltipText">{{ formattedAmount(from ?? amount) }}</span><template v-if="showRange">&ndash;<span class="currency" :data-currencies="toTooltipText">{{ formattedAmount(to) }}</span></template></span>
+			<small v-if="perMonth">&nbsp;/&nbsp;month</small>
 		</span>
 	`,
 }

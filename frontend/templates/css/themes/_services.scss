@@ -95,20 +95,6 @@ main > .collapsible{
     }
 }
 
-.health-insurance-price-table{
-    .tabs{
-        --c-bg-widget: var(--c-bg-page);
-        --c-bg-widget-opaque: var(--c-bg-page);
-
-        float: right;
-        display: flex; // Button width fits content
-    }
-
-    .three-columns{
-        margin: 0 0 var(--xxl);
-    }
-}
-
 .form-recipient img{
     border-radius: var(--b-radius);
     transform: rotate(3deg);
@@ -135,36 +121,14 @@ main > .collapsible{
         }
     }
 
-    small{
-        display: block;
-        line-height: var(--line-height-heading);
-    }
-
-    .prices {
-        .component-group{
-            @include heading;
-            font-size: var(--l);
-        }
-
-        a{
-            display:block;
-            margin-top:var(--s);
-        }
-    }
-
-    .price-link td{
-        text-align: center;
-        padding-top: var(--m);
-        padding-bottom: 0;
-    }
-
     .section-heading th{
         @include heading;
         font-size: var(--l);
         background: transparent;
-        padding-top: var(--xxl);
+        padding-top: var(--xl);
         padding-bottom: var(--m);
         border-bottom: var(--b-box);
+        border-top: var(--b-box);
     }
 
     th[scope=row]{
