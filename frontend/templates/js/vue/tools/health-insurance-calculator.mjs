@@ -723,7 +723,7 @@ export default {
 			<div v-if="stage === 'askABroker'" class="contact-form component-group">
 				<div class="form-recipient">
 					<div>
-						<h2 v-if="showHeading">Ask our insurance expert</h2>
+						<h2>Ask our insurance expert</h2>
 						<p v-if="occupation === 'other'">If your situation is complicated, let our expert help you.</p>
 						<p>Seamus will help you <strong v-text="intentString">choose the best health insurance</strong>. I work with him because he is honest and knowledgeable.</p>
 						<p>He replies on the same day. His help is <strong>100% free</strong>.</p>

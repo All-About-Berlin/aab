@@ -11,7 +11,7 @@ class ToolTestEntriesProcessor(ContextProcessor):
     Creates an Entry for each JS tool, so that a test page can be generated for that tool.
     """
 
-    def process(self, context: Context, changed_files: set[Path] | None = None) -> Context:
+    def process(self, context: Context, changed_files: set[Path] | None = None) -> None:
         for file_path in get_files_in_path(config.templates_path, changed_files, ".mjs"):
             if file_path.is_relative_to("js/vue/tools"):
                 relative_path = file_path.relative_to("js/vue/tools")
@@ -22,5 +22,3 @@ class ToolTestEntriesProcessor(ContextProcessor):
                         "tag": file_path.stem,
                     }
                 )
-
-        return context

@@ -11,3 +11,8 @@ def test_first_step(page, test_screenshot):
 def test_first_step_preset_occupation(page, test_screenshot, occupation):
     fill_calculator_until(page, "occupation", preset_occupation=True, occupation=occupation)
     test_screenshot(page, get_calculator(page))
+
+
+def test_show_heading(page, test_screenshot):
+    page.goto("/tests/tools/health-insurance-calculator-show-heading")
+    test_screenshot(page, get_calculator(page))

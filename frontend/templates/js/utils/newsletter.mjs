@@ -8,4 +8,4 @@ function addNewsletterSubscriber(email) {
 		body: JSON.stringify({email}),
 	});
 }
-{% endQueueJs %}
+{% endqueueJs %}

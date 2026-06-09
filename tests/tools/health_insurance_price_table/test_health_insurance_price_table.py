@@ -8,5 +8,5 @@ def price_table(page):
 
 
 def test_snapshot(price_table, test_screenshot):
-    price_table.get_by_role("button", name="Freelancers").click()
+    price_table.get_by_text("Freelancer", exact=True).set_checked(True)
     test_screenshot(price_table.page, price_table)
