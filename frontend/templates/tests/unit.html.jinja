@@ -22,7 +22,7 @@
 
 {% endblock %}
 
-{% block extraScss %}
+{% css %}
 	#mocha-stats{margin:0;padding:var(--m);background:var(--c-bg-widget);border-radius:var(--b-radius)}
 		.progress-contain, .duration, .replay, .result{display:none}
 
@@ -54,7 +54,7 @@
 	}
 
 	#mocha-report .test.fail h2{color:red;font-weight: bold;}
-{% endblock %}
+{% endcss %}
 
 {% block postFooter %}
 	<script class="mocha-exec">
