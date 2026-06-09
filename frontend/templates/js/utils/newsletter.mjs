@@ -1,4 +1,4 @@
-{% js %}
+{% queueJs %}
 function addNewsletterSubscriber(email) {
 	return fetch('/api/forms/newsletter', {
 		method: "POST",
@@ -8,4 +8,4 @@ function addNewsletterSubscriber(email) {
 		body: JSON.stringify({email}),
 	});
 }
-{% endjs %}
+{% endQueueJs %}

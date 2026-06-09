@@ -1,4 +1,4 @@
-ursus-ssg==1.5.0
+ursus-ssg==1.6.0
 pyphen==0.17.2
 pyyaml~=6.0
 holidays

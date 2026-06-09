@@ -236,7 +236,7 @@
 		};
 	</script>
 	<script type="module">
-		{% js %}
+		{% queueJs %}
 			import { getCurrencyTooltipText } from '/js/utils/exchangeRates.mjs';
 			import { validateForm } from '/js/utils/form.mjs';
 			import { initializeTracking } from '/js/utils/tracking.mjs';
@@ -250,7 +250,7 @@
 			initializeCurrencyTooltips();
 			initializeFootnotes();
 			initializeCollapsibleMenus();
-		{% endjs %}
+		{% endQueueJs %}
 
 		{% alljs %}
 	</script>

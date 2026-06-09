@@ -11,7 +11,7 @@
 	<div id="search-results-{{ random_id() }}" role="listbox" class="search-results"></div>
 </div>
 
-{% js %}
+{% queueJs %}
 	import initializeSearchForm from '/js/components/search-form.mjs'
 	initializeSearchForm();
-{% endjs %}
+{% endQueueJs %}

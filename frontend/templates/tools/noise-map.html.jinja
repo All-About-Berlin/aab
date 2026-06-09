@@ -4,7 +4,7 @@
 
 {% block postHead %}
 	{{ super() }}
-	{% js %}
+	{% queueJs %}
 		map.on('load', () => {
 			let hoveredFeature = undefined;
 
@@ -72,7 +72,7 @@
 				}
 			}, "Grenzen_Staatsgrenze");
 		});
-	{% endjs %}
+	{% endQueueJs %}
 {% endblock %}
 
 {% block extraScss %}

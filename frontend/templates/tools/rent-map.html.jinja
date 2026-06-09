@@ -4,7 +4,7 @@
 
 {% block postHead %}
 	{{ super() }}
-	{% js %}
+	{% queueJs %}
 		import { formatCurrency } from '/js/utils/currency.mjs';
 		import { showTooltip } from '/js/components/glossary-tooltip.mjs';
 
@@ -175,7 +175,7 @@
 				map.getCanvas().style.cursor = '';
 			});
 		});
-	{% endjs %}
+	{% endQueueJs %}
 {% endblock %}
 
 {% block sidebar %}

@@ -107,7 +107,7 @@ class EsbuildJsLoaderExtension(JsLoaderExtension):
             },
         }
 
-    def minify_js(self, js_code: str) -> str:
+    def minify(self, js_code: str) -> str:
         """
         esbuild doubles the build time. Many pages have the same JS code.
         Use caching to avoid rebundling the same code again and again.

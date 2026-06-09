@@ -85,8 +85,8 @@
 </div>
 
 {% if reviews|length %}
-	{% js %}
+	{% queueJs %}
 		import initializeReviewers from '/js/components/reviewers.mjs';
 		initializeReviewers();
-	{% endjs %}
+	{% endQueueJs %}
 {% endif %}

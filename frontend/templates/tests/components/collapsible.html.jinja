@@ -1,6 +1,6 @@
 {% extends "tests/components/entry.html.jinja" %}
 
-{% js %}
+{% queueJs %}
 	import Vue from '/js/vue/vue.mjs';
 	import Collapsible from '/js/vue/components/collapsible.mjs';
 	import IconWhatsapp from '/js/vue/components/icons/whatsapp.mjs';
@@ -12,7 +12,7 @@
 			IconWhatsapp,
 		},
 	})
-{% endjs %}
+{% endQueueJs %}
 
 {% block component %}
 	<collapsible>

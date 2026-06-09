@@ -1,6 +1,6 @@
 {% extends "tests/components/entry.html.jinja" %}
 
-{% js %}
+{% queueJs %}
 	import Vue from '/js/vue/vue.mjs';
 	import Eur from '/js/vue/components/eur.mjs';
 	import Price from '/js/vue/components/price.mjs';
@@ -12,7 +12,7 @@
 			Price,
 		},
 	})
-{% endjs %}
+{% endQueueJs %}
 
 {% block component %}
 	<h2>Currency tag</h2>

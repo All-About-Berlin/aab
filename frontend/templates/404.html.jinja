@@ -4,10 +4,10 @@
 
 {% block postHead %}
 	<meta name="robots" content="noindex">
-	{% js %}
+	{% queueJs %}
 		window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) };
 		plausible("404", { props: { path: document.location.pathname } });
-	{% endjs %}
+	{% endQueueJs %}
 {% endblock %}
 
 {% block main %}

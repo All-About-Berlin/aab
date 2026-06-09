@@ -1,6 +1,6 @@
 {% extends "tests/components/entry.html.jinja" %}
 
-{% js %}
+{% queueJs %}
 	import Vue from '/js/vue/vue.mjs';
 	import Glossary from '/js/vue/components/glossary.mjs';
 	new Vue({
@@ -9,7 +9,7 @@
 			Glossary,
 		},
 	})
-{% endjs %}
+{% endQueueJs %}
 
 {% block component %}
 	<p>

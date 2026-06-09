@@ -1,6 +1,6 @@
 {% extends "tests/components/entry.html.jinja" %}
 
-{% js %}
+{% queueJs %}
 	import Vue from '/js/vue/vue.mjs';
 	import Recommended from '/js/vue/components/recommended.mjs';
 
@@ -10,7 +10,7 @@
 			Recommended
 		}
 	});
-{% endjs %}
+{% endQueueJs %}
 
 {% block component %}
 	<p>Recommended option <recommended></recommended></p>
