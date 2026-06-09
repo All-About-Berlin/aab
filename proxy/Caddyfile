@@ -121,6 +121,8 @@
         respond "" 204
     }
 
+    redir / /health-insurance 302
+
     # Static site; default option
     handle {
         import strip_trailing_slash
