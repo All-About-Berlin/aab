@@ -74,6 +74,10 @@ export default {
 			type: String,
 			default: null,
 		},
+		showHeading: {
+			type: Boolean,
+			default: false,
+		},
 	},
 	data() {
 		return {
@@ -474,11 +478,15 @@ export default {
 			</template>
 
 			<template v-if="stage === 'occupation' && !initialOccupation">
-				<slot name="intro" :mode="mode"><strong>Let's find the right health insurance.</strong> What is your occupation?</slot>
-				<template v-if="mode === 'question'">
-					<h3>What is your occupation?</h3>
-					<p>Your health insurance options depend on what you do.</p>
+				<template v-if="showHeading">
+					<h2>Find the right health insurance</h2>
+					<p v-if="mode === 'calculator'">Prices and options depend on what you do. What is your occupation?</p>
+					<template v-if="mode === 'question'">
+						<h3>What is your occupation?</h3>
+						<p>Your health insurance options depend on what you do.</p>
+					</template>
 				</template>
+				<p v-else><strong>Let's find the right health insurance.</strong> What is your occupation?</p>
 				<ul class="buttons grid" aria-label="Occupations">
 					<li>
 						<button data-occupation="employee" @click="selectOccupation('employee')">
@@ -715,7 +723,7 @@ export default {
 			<div v-if="stage === 'askABroker'" class="contact-form component-group">
 				<div class="form-recipient">
 					<div>
-						<h2>Ask our insurance expert</h2>
+						<h2 v-if="showHeading">Ask our insurance expert</h2>
 						<p v-if="occupation === 'other'">If your situation is complicated, let our expert help you.</p>
 						<p>Seamus will help you <strong v-text="intentString">choose the best health insurance</strong>. I work with him because he is honest and knowledgeable.</p>
 						<p>He replies on the same day. His help is <strong>100% free</strong>.</p>
