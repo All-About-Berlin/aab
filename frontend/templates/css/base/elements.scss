@@ -109,7 +109,7 @@ sup:target a{
     color:var(--c-text-heading)!important;
 }
 
-:is(.article-body, .component-group){
+.article-body{
     > :last-child{margin-bottom: 0}
 
     > * + h2{

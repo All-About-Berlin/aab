@@ -305,7 +305,7 @@ export default {
 		<collapsible
 			:aria-description="metadata.description"
 			:aria-label="metadata.label"
-			class="income-tax-calculator"
+			class="tax-calculator"
 			ref="collapsible"
 			:static="static">
 			<template v-slot:header>German tax calculator</template>

@@ -224,7 +224,7 @@ export default {
 		},
 	},
 	template: `
-		<div class="glossary-links"
+		<div class="immigration-office-wait-times glossary-links"
 			:aria-label="metadata.label"
 			:aria-description="metadata.description">
 			<div class="filters">

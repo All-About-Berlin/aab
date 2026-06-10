@@ -720,7 +720,7 @@ export default {
 				</button>
 			</div>
 
-			<div v-if="stage === 'askABroker'" class="contact-form component-group">
+			<div v-if="stage === 'askABroker'" class="contact-form article-body">
 				<div class="form-recipient">
 					<div>
 						<h2>Ask our insurance expert</h2>

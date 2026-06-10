@@ -1,0 +1,112 @@
+.immigration-office-wait-times{
+    .feedback-form{
+        margin: var(--xxxl) 0;
+    }
+
+    .wait-times-graph{
+        figure{
+            width: 100%;
+            overflow-x: auto;
+
+            // Scroll to the right end of the graph
+            display: flex;
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+            position: relative;
+            margin-bottom: 0;
+        }
+
+        svg{
+            display: block;
+            min-width: 600px;
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+
+            .datapoint-bounds{
+                fill: transparent;
+                pointer-events: all;
+            }
+
+            .variance-band{
+                fill: var(--c-bg-widget);
+            }
+            .variance-band-highlight {
+                fill: transparent;
+            }
+
+            .median-line{
+                fill: none;
+                stroke-width: 2px;
+                stroke: var(--c-highlight);
+                stroke-linecap: round;
+            }
+
+            .median-dotted-line{
+                stroke-dasharray: 2 4;
+                opacity: 0.5
+            }
+
+            &:hover, &:has(.selected){
+                .year-label {
+                    display: none; // Leave room for the month label
+                }
+            }
+
+            .month{
+                .month-label, .year-label{
+                    dominant-baseline: text-bottom;
+                    font-size: var(--f-s);
+                    fill: var(--c-text-light);
+                }
+
+                .median-point{
+                    stroke: var(--c-highlight);
+                    stroke-width: 0;
+                    fill: var(--c-highlight);
+                }
+                .month-label{
+                    dominant-baseline: text-bottom;
+                    fill: transparent;
+                }
+                .year-label{
+                    fill: var(--c-text-light);
+                }
+
+                &:is(:hover, .selected){
+                    .variance-band-highlight {
+                        fill: var(--c-bg-error)
+                    }
+                    .median-point{
+                        stroke-width: var(--xs);
+                    }
+                    .month-label{
+                        fill: var(--c-text-light);
+                    }
+                }
+            }
+
+            .x-axis, .x-axis-tick{
+                stroke: var(--c-border-box);
+                stroke-width: 1px;
+            }
+
+        }
+
+        details{
+            padding: 0 8px!important;
+            margin: 0!important;
+            summary{
+                font-size: var(--f-s);
+                color: var(--c-text-light);
+            }
+            table{
+                margin-top:var(--s-text-block);
+            }
+
+            :is(th, td){
+                white-space: nowrap;
+            }
+        }
+    }
+}

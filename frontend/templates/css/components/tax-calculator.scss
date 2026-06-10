@@ -1,0 +1,39 @@
+.tax-calculator{
+    .pie-chart{
+        transform: rotate(-90deg);
+    }
+    .column-with-pie-chart{
+        display: grid;
+        grid-template-columns: var(--w-label-column) 1fr;
+        gap: var(--m);
+        align-items: center;
+        margin-top: var(--m);
+
+        > .pie-chart{
+            display: block;
+            margin: 0 auto;
+            padding: var(--m);
+            width: 100%;
+            max-width: 250px;
+            box-sizing: border-box;
+        }
+
+        details {
+            .pie-chart{
+                height: var(--w-mini-pie-chart);
+                margin:0 var(--m) 0 0;
+                display:inline-block;
+                vertical-align:middle;
+                color:var(--c-bg-image);
+            }
+
+            p {
+                margin-left: calc(var(--w-mini-pie-chart) + var(--m)) !important;
+            }
+        }
+
+        @include only-phone{
+            grid-template-columns: 1fr;
+        }
+    }
+}
