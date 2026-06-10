@@ -8,7 +8,7 @@
 			<h1>{{ entry.intro_title|default(entry.title) }}</h1>
 			{% if entry.intro_subtitle|default %}<p>{{ entry.intro_subtitle }}</p>{% endif %}
 		</header>
-		<article class="section article-body" aria-label="Main content">
+		<article class="section article-body glossary-links" aria-label="Main content">
 			{{ entry.body|render|safe }}
 		</article>
 	</main>

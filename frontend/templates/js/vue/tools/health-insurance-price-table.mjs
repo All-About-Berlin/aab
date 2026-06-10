@@ -162,7 +162,7 @@ export default {
 		},
 	},
 	template: `
-		<div class="health-insurance-price-table"
+		<div class="health-insurance-price-table glossary-links"
 			:aria-label="metadata.label"
 			:aria-description="metadata.description">
 			<tabs v-model="occupation" :options="occupationTabs"></tabs>

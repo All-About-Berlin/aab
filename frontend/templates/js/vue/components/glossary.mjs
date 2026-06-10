@@ -13,6 +13,6 @@ export default {
 		}
 	},
 	template: `
-		<a target="_blank" ref="element" :href="getUrl()" @click.prevent="showTooltip"><slot></slot></a>
+		<a class="glossary-link" target="_blank" ref="element" :href="getUrl()" @click.prevent="showTooltip"><slot></slot></a>
 	`,
 }

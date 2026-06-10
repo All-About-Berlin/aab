@@ -224,7 +224,7 @@ export default {
 		},
 	},
 	template: `
-		<div class="component-group"
+		<div class="glossary-links"
 			:aria-label="metadata.label"
 			:aria-description="metadata.description">
 			<div class="filters">

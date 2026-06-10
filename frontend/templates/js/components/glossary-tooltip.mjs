@@ -56,6 +56,10 @@ function setTooltipLinks(element){
 				event.stopPropagation();
 				showTooltip(event);
 			});
+
+			if(!anchor.classList.contains('recommended')){
+				anchor.classList.add('glossary-link')
+			}
 		}
 		else {
 			anchor.setAttribute('target', '_blank');
@@ -76,7 +80,7 @@ export function initializeGlossaryTooltip(){
 				tooltip.close();
 			}
 		});
-		document.querySelectorAll('main .article-body, .sidebar, .price-table').forEach(el => setTooltipLinks(el));
+		document.querySelectorAll('.glossary-links').forEach(el => setTooltipLinks(el));
 		tooltip.querySelector('.pronounce-button').addEventListener('click', pronounceTerm);
 	});
 }

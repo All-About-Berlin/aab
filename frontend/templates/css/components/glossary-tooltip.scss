@@ -79,7 +79,7 @@
     }
 }
 
-:is(.article-body, .sidebar, .price-table) a[href*="/glossary/"]:not(.recommended){
+.glossary-link{
     @include text-hint;
     cursor: help;
 }

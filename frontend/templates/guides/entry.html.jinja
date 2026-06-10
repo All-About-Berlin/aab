@@ -16,7 +16,7 @@
 				{% include "_blocks/postMeta.html" %}
 			{% endblock %}
 			{% with entry=entry, showRelatedEntriesLink=entry.collections|default %}
-				<div class="article-body">
+				<div class="article-body glossary-links">
 					{{ entry.body|render|safe }}
 				</div>
 			{% endwith %}

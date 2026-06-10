@@ -162,6 +162,7 @@
     import cache_static
     import security_headers
 
+    # Allow agoodstart.de to load glossary tooltips
     @glossaryJson path /glossary/*.json
     header @glossaryJson Access-Control-Allow-Origin "https://{$SERVICES_SSL_DOMAIN:services.localhost}"
 
