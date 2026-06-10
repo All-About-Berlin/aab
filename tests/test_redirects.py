@@ -24,8 +24,7 @@ def test_services_redirect(path, expected_location, base_url):
     "path",
     [
         "/health-insurance",
-        "/dental-insurance",
-        "/about",
+        "/contact",
     ],
 )
 def test_services_pages(path):
