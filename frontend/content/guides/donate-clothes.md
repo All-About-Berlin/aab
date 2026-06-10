@@ -11,7 +11,7 @@ If you must get rid of old clothes and shoes, you can [resell them](/guides/how-
 
 ## Clothes donation bins
 
-![Red Cross clothes donation bin](/images/red-cross-donation-bin-berlin.jpg "A Red Cross donation bin")
+![Red Cross clothes donation bin](/images/red-cross-donation-bin-berlin.jpg "A Red Cross donation bin for clothes")
 
 There are over 6000 donation bins for clothes in Berlin.[^0] They are often near supermarkets and gas stations.
 
