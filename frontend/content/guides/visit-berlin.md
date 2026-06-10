@@ -333,9 +333,7 @@ Berlin is a safe city even at night, but crimes still happen. Pickpockets steal 
 
 ### Drugs
 
-[Cannabis is illegal in Germany](/guides/is-marijuana-legal). You can still buy it from dealers in parks, but it's a really bad idea. You will get bad weed, and it's often contaminated with chemicals.
-
-Magic mushrooms, cocaine and MDMA are also illegal. If you buy MDMA or ecstasy in Berlin, the [KnowDrugs](https://knowdrugs.app/) app can help you verify what you buy.
+[Cannabis is legal in Germany](/guides/is-marijuana-legal), but it's hard to buy weed legally as a tourist. Magic mushrooms, cocaine and MDMA are also illegal. If you buy MDMA or ecstasy in Berlin, the [KnowDrugs](https://knowdrugs.app/) app helps you verify what you buy.
 
 **[How to buy weed in Berlin ➞](/guides/buying-marijuana-in-berlin)**
 
