@@ -162,6 +162,9 @@
     import cache_static
     import security_headers
 
+    @glossaryJson path /glossary/*.json
+    header @glossaryJson Access-Control-Allow-Origin "https://{$SERVICES_SSL_DOMAIN:services.localhost}"
+
     # Custom 404 page
     handle_errors 404 410 {
         file_server
