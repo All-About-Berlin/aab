@@ -64,10 +64,31 @@ export default {
 			},
 
 			isLoading: true,
+			hasFeedbackKey: false,
 		};
+	},
+	created(){
+		// The URL hash can contain a feedbackKey which allows a user to complete
+		// their earlier feedback by following a link emailed to them.
+
+		// If the feedbackKey is for a citizenship application (no ~ separator),
+		// switch to citizenship mode before mounting the form, so that the correct
+		// form reads and clears the hash.
+		const keyFromHash = (new URLSearchParams(window.location.hash.substring(1))).get('feedbackKey');
+		if(keyFromHash){
+			this.hasFeedbackKey = true;
+			if(!keyFromHash.includes('~')){
+				this.isCitizenship = true;
+			}
+		}
 	},
 	async mounted(){
 		this.loadPage();
+		if(this.hasFeedbackKey){
+			this.$nextTick(() => {
+				this.$el.querySelector('#give-feedback').scrollIntoView({ behavior: 'smooth', block: 'start' });
+			});
+		}
 	},
 	computed: {
 		pageCount(){
@@ -302,8 +323,8 @@ export default {
 				<wait-times-graph :data="stats"></wait-times-graph>
 			</template>
 
-			<citizenship-feedback-form v-if="isCitizenship" static></citizenship-feedback-form>
-			<residence-permit-feedback-form v-else static></residence-permit-feedback-form>
+			<citizenship-feedback-form v-if="isCitizenship" id="give-feedback" static></citizenship-feedback-form>
+			<residence-permit-feedback-form v-else id="give-feedback" static></residence-permit-feedback-form>
 
 			<h2 id="feedback-from-other-people">Feedback from others</h2>
 
