@@ -5,23 +5,49 @@
 {% block main %}
 	<main aria-label="Main page">
 		<header class="section intro article-body">
-			<h1>Health insurance? Sorted.</h1>
-			<p>We get you the right coverage for the best price.</p>
-			<div class="buttons bar left">
-				<a class="button" href="#calculator">Find health insurance</a>
-				<a class="button" href="#contact">Ask our expert</a>
+			<div class="intro-text">
+				<h1>Health insurance? Sorted.</h1>
+				<p>We help you get the right German health insurance for the best price.</p>
+				<div class="buttons bar left">
+					<a class="button" href="#calculator">Find health insurance</a>
+					<a class="button" href="#contact">Ask our expert</a>
+				</div>
 			</div>
+			<img class="intro-image" src="/staticimages/hero.png" alt="">
 		</header>
-		<section class="section price-table" id="prices" aria-label="German health insurance prices">
+		{% tool "health-insurance-calculator", static=True, show_heading=True, id="calculator" %}
+		{% tool "health-insurance-calculator", mode="question", static=True, show_heading=True, id="contact" %}
+		<section class="section transparent">
+			<h2 align="center">Why get insured with us?</h2>
+			<div class="two-columns">
+				<div>
+					<h3>Perfect for your German visa</h3>
+					<p>Our health insurance is accepted by German embassies, consulates and immigration offices. It works for any type of visa.</p>
+				</div>
+				<div>
+					<h3>Get more, pay less</h3>
+					<p>Are you paying too much for health insurance? We help you get better coverage at a lower price, for free.</p>
+				</div>
+				<div>
+					<h3>We're on your side</h3>
+					<p>We are independent brokers. We give honest, neutral advice, and we only sell you something when you need it.</p>
+				</div>
+				<div>
+					<h3>Truly personalised advice</h3>
+					<p>When it comes to your future, we don't believe in "one size fits all". Each case is a conversation, and we're happy to talk.</p>
+				</div>
+			</div>
+		</section>
+		<section class="section" aria-label="German health insurance prices">
 			{% tool "health-insurance-price-table" %}
 			<div class="buttons bar">
 				<a href="#calculator" class="button primary internal-link">Calculate your price</a>
 			</div>
 		</section>
-		<section class="section price-table" id="prices" aria-label="German health insurance prices">
+		<section class="section" aria-label="German health insurance comparison">
 			<h2>Compare health insurance options</h2>
-			<p>There are 3 types of German health insurance: expat, public and private. Use our <a href="#calculator">recommendation tool</a> or <a href="#contact">ask our expert</a> to find the best option.</p>
-			<table class="price-table">
+			<p>We offer 3 types of German health insurance: <a href="{{ SITE_URL }}/glossary/Expat%20health%20insurance" target="_blank">expat</a>, <a href="{{ SITE_URL }}/glossary/gesetzliche%20Krankenversicherung" target="_blank">public</a> and <a href="{{ SITE_URL }}/glossary/private%20Krankenversicherung" target="_blank">private</a>. Use our <a href="#calculator">recommendation tool</a> or <a href="#contact">ask our expert</a> to find the best option.</p>
+			<table class="feature-table">
 				<tbody>
 					<tr class="section-heading">
 						<th colspan="4">How you can use it</th>
@@ -141,29 +167,6 @@
 					</tr>
 				</tbody>
 			</table>
-		</section>
-		{% tool "health-insurance-calculator", static=True, show_heading=True, id="calculator" %}
-		{% tool "health-insurance-calculator", mode="question", static=True, show_heading=True, id="contact" %}
-		<section class="section transparent">
-			<h2 align="center">Why get insured with us?</h2>
-			<div class="two-columns">
-				<div>
-					<h3>Perfect for your German visa</h3>
-					<p>Our health insurance is accepted by German embassies, consulates and immigration offices. It works for any type of visa.</p>
-				</div>
-				<div>
-					<h3>Get more, pay less</h3>
-					<p>Are you paying too much for health insurance? We help you get better coverage at a lower price, for free.</p>
-				</div>
-				<div>
-					<h3>We're on your side</h3>
-					<p>We are independent brokers. We give honest, neutral advice, and we only sell you something when you need it.</p>
-				</div>
-				<div>
-					<h3>Truly personalised advice</h3>
-					<p>When it comes to your future, we don't believe in "one size fits all". Each case is a conversation, and we're happy to talk.</p>
-				</div>
-			</div>
 		</section>
 	</main>
 {% endblock %}

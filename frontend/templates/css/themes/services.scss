@@ -27,6 +27,26 @@ main .intro{
         box-shadow: none;
     }
 
+    &:has(.intro-image){
+        display: flex;
+        align-items: center;
+        gap: var(--xl);
+
+        .intro-text{
+            flex: 1 1 auto;
+        }
+
+        .intro-image{
+            flex: 0 0 auto;
+            max-width: 40%;
+            border-radius: var(--b-radius);
+
+            @include only-phone{
+                display: none;
+            }
+        }
+    }
+
     &:has(h1:not(:last-child)){
         text-align: left;
         background: var(--c-highlight);
@@ -100,7 +120,7 @@ main > .collapsible{
     transform: rotate(3deg);
 }
 
-.price-table table{
+.feature-table{
     min-width: 100%;
     font-size: var(--f-s);
 
