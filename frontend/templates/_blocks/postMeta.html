@@ -1,23 +1,27 @@
 <div class="post-meta no-print" aria-label="Author, publication date, categories and reviewers">
-	{% if entry.collections|default %}
+	{% set uri_root = entry.entry_uri.split('/')[0] %}
+	{% if uri_root == 'guides' %}
+		{% set root_label = 'Guides' %}
+		{% set root_url = SITE_URL ~ '/guides' %}
+	{% elif uri_root == 'tools' %}
+		{% set root_label = 'Tools' %}
+		{% set root_url = SITE_URL ~ '/tools' %}
+	{% elif uri_root == 'newsletter' %}
+		{% set root_label = 'Newsletter' %}
+		{% set root_url = SITE_URL ~ '/newsletter' %}
+	{% elif uri_root == 'glossary' %}
+		{% set root_label = 'Glossary' %}
+		{% set root_url = SITE_URL ~ '/glossary' %}
+	{% endif %}
+	{% if root_label|default %}
 		<nav class="breadcrumbs" aria-label="Breadcrumbs">
 			<i class="icon folder" aria-hidden="true"></i>
 			<ol>
-				{% if entry.collections[0].type == 'guides' %}
-					<li><a href="{{ SITE_URL }}/guides">Guides</a></li>
-				{% elif entry.collections[0].type == 'tools' %}
-					<li><a href="{{ SITE_URL }}/guides">Tools</a></li>
+				<li><a href="{{ root_url }}">{{ root_label }}</a></li>
+				{% if entry.collections|default %}
+					<li><a href="{{ root_url }}#{{ entry.collections[0].id }}">{{ entry.collections[0].short_title|default(entry.collections[0].title) }}</a></li>
 				{% endif %}
-				<li><a href="{{ entry.collections[0].url }}">{{ entry.collections[0].short_title|default(entry.collections[0].title) }}</a></li>
 				<li><a href="{{ entry.url }}" aria-current="page">{{ entry.short_title|default(entry.title) }}</a></li>
-			</ol>
-		</nav>
-	{% elif entry.german_term|default %}
-		<nav class="breadcrumbs" aria-label="Breadcrumbs">
-			<i class="icon folder" aria-hidden="true"></i>
-			<ol>
-				<li><a href="{{ SITE_URL }}/glossary">Glossary</a></li>
-				<li><a href="{{ entry.url }}" aria-current="page">{{ entry.german_term }}</a></li>
 			</ol>
 		</nav>
 	{% endif %}
@@ -45,7 +49,7 @@
 				By {{ entry.author }}
 			{% endif %}
 		{% else %}
-			By <a rel="author nofollow" href="{{ SITE_URL }}/about">Nicolas Bouliane</a>
+			By <a rel="author" href="{{ SITE_URL }}/about">Nicolas Bouliane</a>
 		{% endif %}
 	</div>
 	{% set reviews = entry.related_reviews|default([]) %}
