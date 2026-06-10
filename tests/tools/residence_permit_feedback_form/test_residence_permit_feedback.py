@@ -159,6 +159,32 @@ def test_partial_submission(page, residence_permit_feedback_form, test_screensho
     expect(tool.get_by_label("Appointment date", exact=True)).to_have_value("2020-03-05")
 
 
+def test_clear_form(page, residence_permit_feedback_form):
+    tool = residence_permit_feedback_form
+
+    tool.get_by_label(reply_label).check()
+    tool.get_by_label("Application date", exact=True).fill("2020-01-01")
+    tool.get_by_label("First response date", exact=True).fill("2020-02-01")
+    tool.get_by_label("Residence permit").select_option("Blue Card")
+    tool.get_by_label("Department").select_option("BIS — Business Immigration Service")
+
+    with page.expect_response("**/api/forms/residence-permit-feedback") as api_response:
+        tool.get_by_role("button", name="Send feedback").click()
+    modification_key = api_response.value.json()["modification_key"]
+
+    page.evaluate("localStorage.clear()")
+    page.goto(f"/tests/tools/residence-permit-feedback-form#feedbackKey={modification_key}~BLUE_CARD")
+    expect(tool).to_contain_text("You are updating the feedback you submitted on January 1.")
+
+    tool.get_by_role("button", name="clear the form").click()
+
+    expect(tool).not_to_contain_text("You are updating")
+    expect(tool.get_by_label(application_label)).not_to_be_checked()
+    expect(tool.get_by_label(reply_label)).not_to_be_checked()
+    expect(tool.get_by_label(appointment_label)).not_to_be_checked()
+    expect(tool.get_by_label(pick_up_date_label)).not_to_be_checked()
+
+
 def test_full_submission(page, residence_permit_feedback_form, test_screenshot):
     tool = residence_permit_feedback_form
     test_screenshot(page, tool)

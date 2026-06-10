@@ -134,6 +134,30 @@ def test_partial_submission(page, citizenship_feedback_form, test_screenshot):
     expect(tool.get_by_label(appointment_label)).not_to_be_checked()
 
 
+def test_clear_form(page, citizenship_feedback_form):
+    tool = citizenship_feedback_form
+
+    tool.get_by_label(reply_label).check()
+    tool.get_by_label("Application date", exact=True).fill("2020-01-01")
+    tool.get_by_label("First response date", exact=True).fill("2020-02-01")
+    tool.get_by_label("Department").select_option("S3 — Asia")
+
+    with page.expect_response("**/api/forms/citizenship-feedback") as api_response:
+        tool.get_by_role("button", name="Send feedback").click()
+    modification_key = api_response.value.json()["modification_key"]
+
+    page.evaluate("localStorage.clear()")
+    page.goto(f"/tests/tools/citizenship-feedback-form#feedbackKey={modification_key}")
+    expect(tool).to_contain_text("You are updating the feedback you submitted on January 1.")
+
+    tool.get_by_role("button", name="clear the form").click()
+
+    expect(tool).not_to_contain_text("You are updating")
+    expect(tool.get_by_label(application_label)).not_to_be_checked()
+    expect(tool.get_by_label(reply_label)).not_to_be_checked()
+    expect(tool.get_by_label(appointment_label)).not_to_be_checked()
+
+
 def test_full_submission(page, citizenship_feedback_form, test_screenshot):
     tool = citizenship_feedback_form
     test_screenshot(page, tool)

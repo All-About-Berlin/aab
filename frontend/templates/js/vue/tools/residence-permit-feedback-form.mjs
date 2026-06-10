@@ -161,6 +161,11 @@ export default {
 		residencePermitName(){
 			return this.residencePermitTypes[this.residencePermitType]?.normal || "residence permit";
 		},
+		submittedOnDate(){
+			return this.steps.application.date
+				? new Date(this.steps.application.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric' })
+				: null;
+		},
 		showFeedbackLink(){
 			return !window.location.pathname.startsWith('/guides/immigration-office/wait-times');
 		},
@@ -257,6 +262,19 @@ export default {
 				}
 			}
 		},
+		clearForm(){
+			this.modificationKey = null;
+			Object.values(this.steps).forEach(step => {
+				step.completed = null;
+				step.date = null;
+			});
+			this.notes = '';
+			this.department = null;
+			this.healthInsurance = null;
+			this.healthInsuranceName = null;
+			this.validity = null;
+			this.validityUnit = 'months';
+		},
 		stepName(key){
 			return {
 				application: "I have applied in Berlin",
@@ -297,6 +315,10 @@ export default {
 			</template>
 			<template v-if="stage === 'start'">
 				<h3 v-if="static">How is your {{ residencePermitName }} application going?</h3>
+				<template v-if="modificationKeyMatchesResidencePermitType && submittedOnDate">
+					<p>You are updating the feedback you submitted on {{ submittedOnDate }}. To give new feedback about a different application, <button class="button link" @click="clearForm">clear the form</button>.</p>
+					<hr>
+				</template>
 				<div class="steps">
 					<div class="step" v-for="(step, key, index) in steps" :key="key">
 						<input :id="uid('checkbox' + key)" type="checkbox" v-model="step.completed" @change="onStepCompletionChange(key)">

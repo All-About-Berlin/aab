@@ -109,6 +109,11 @@ export default {
 			}
 			return '/api/forms/citizenship-feedback';
 		},
+		submittedOnDate(){
+			return this.steps.application.date
+				? new Date(this.steps.application.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric' })
+				: null;
+		},
 		showFeedbackLink(){
 			return !window.location.pathname.startsWith('/guides/immigration-office/wait-times');
 		},
@@ -185,6 +190,15 @@ export default {
 				}
 			}
 		},
+		clearForm(){
+			this.citizenshipModificationKey = null;
+			Object.values(this.steps).forEach(step => {
+				step.completed = null;
+				step.date = null;
+			});
+			this.notes = '';
+			this.department = null;
+		},
 		stepName(key){
 			return {
 				application: "I have applied in Berlin",
@@ -209,6 +223,10 @@ export default {
 			</template>
 			<template v-if="stage === 'start'">
 				<h3 v-if="static">How is your citizenship application going?</h3>
+				<template v-if="citizenshipModificationKey && submittedOnDate">
+					<p>You are updating the feedback you submitted on {{ submittedOnDate }}. To give new feedback about a different application, <button class="button link" @click="clearForm">clear the form</button>.</p>
+					<hr>
+				</template>
 				<div class="steps">
 					<div class="step" v-for="(step, key, index) in steps" :key="key">
 						<input :id="uid('checkbox' + key)" type="checkbox" v-model="step.completed" @change="onStepCompletionChange(key)">
