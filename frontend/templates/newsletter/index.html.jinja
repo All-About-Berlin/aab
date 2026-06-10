@@ -11,7 +11,9 @@
 	<main aria-label="Main page">
 		<header class="intro">
 			<h1>Newsletter</h1>
-			{% include "_blocks/newsletterForm.html" %}
+			{% with text="Subscribe to our newsletter to get Berlin tips and updates once per month." %}
+				{% include "_blocks/newsletterForm.html" %}
+			{% endwith %}
 		</header>
 		<section class="section" aria-label="Previous emails">
 			{% with entries=get_entries('newsletter', sort_by='date_created', reverse=True), showDatePosted=true %}
