@@ -140,7 +140,6 @@
 	{% endblock %}
 {% endblock %}
 {% block postFooter %}
-	{% include "_blocks/glossaryTooltip.html" %}
 	<script>
 		// Pass constants from ursus context to JS
 		window.backendConstants = {
@@ -240,16 +239,18 @@
 			import { getCurrencyTooltipText } from '/js/utils/exchangeRates.mjs';
 			import { validateForm } from '/js/utils/form.mjs';
 			import { initializeTracking } from '/js/utils/tracking.mjs';
-			import initializeCurrencyTooltips from '/js/components/currency.mjs';
 			import initializeChecklists from '/js/components/checklist.mjs';
-			import initializeFootnotes from '/js/components/footnotes.mjs';
 			import initializeCollapsibleMenus from '/js/components/collapsible-menu.mjs';
+			import initializeCurrencyTooltips from '/js/components/currency.mjs';
+			import initializeFootnotes from '/js/components/footnotes.mjs';
+			import initializeGlossaryTooltip from '/js/components/glossary-tooltip.mjs';
 
-			initializeTracking();
 			initializeChecklists();
+			initializeCollapsibleMenus();
 			initializeCurrencyTooltips();
 			initializeFootnotes();
-			initializeCollapsibleMenus();
+			initializeGlossaryTooltip();
+			initializeTracking();
 		{% endqueueJs %}
 
 		{% alljs %}
