@@ -1,7 +1,8 @@
 .health-insurance-price-table{
     display: grid;
     grid-template-areas: "title tabs" "prices prices";
-    gap: var(--m);
+    gap: var(--xl) var(--m);
+    margin: var(--xl) 0;
 
     h2{
         grid-area: title;
