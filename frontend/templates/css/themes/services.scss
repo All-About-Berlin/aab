@@ -1,9 +1,9 @@
 :root, .map{
     --b-radius: var(--m);
 
-    --c-highlight: #2fc68e;
+    --c-highlight: #2fc67f;
     --c-error: #da513d;
-    --c-highlight-green: #2fc68e;
+    --c-highlight-green: #2fc67f;
     --c-text-error: #{darken(#da513d, 20%)};
 
     --i-logo: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='5 10 90 80'><path fill='white' d='M45.09 34.51a39 39 0 0 0-14.78-9.99A39 39 0 0 0 16.9 21.9c-3.65-.03-7.3 0-10.96 0L5 21.88c0 1.4.36 2.98.4 3.37.1 1.16.14 2.33.3 3.47a35 35 0 0 0 3.9 11.43c5.53 10.2 13.94 16.81 25.15 19.83a38 38 0 0 0 9.25 1.2c.32 0 .47.04.47.43l-.02 22.92c0 .77-.03 1.54.08 2.3.08.52.3 1.06.61 1.48.58.8 1.46 1.1 2.41 1.1q2.43.02 4.85 0c1.94 0 3.17-1.23 3.17-3.19l.02-24.52a39 39 0 0 0-10.51-27.2zm49.9-23.94h-10.3q-4.7 0-9.27 1.01a39 39 0 0 0-18.18 9.45 40 40 0 0 0-7.4 9.14c-.3.5-.3.77.09 1.22a45 45 0 0 1 9.9 18.36C84.23 46.6 95.4 25.8 94.98 10.57z'/></svg>");
@@ -27,23 +27,41 @@ main .intro{
         box-shadow: none;
     }
 
-    &:has(.intro-image){
-        display: flex;
+    &:has(svg){
+        display: grid;
+        grid-template-columns: 1fr 2fr;
         align-items: center;
-        gap: var(--xl);
+        gap: var(--l);
+
+        grid-template-areas: "image intro" "image buttons";
 
         .intro-text{
-            flex: 1 1 auto;
+            grid-area: intro;
         }
 
-        .intro-image{
-            flex: 0 0 auto;
-            max-width: 40%;
-            border-radius: var(--b-radius);
+        .buttons{
+            grid-area: buttons;
+            margin: 0;
+        }
 
-            @include only-phone{
-                display: none;
-            }
+        svg{
+            grid-area: image;
+            max-width: 50vw;
+            margin: 0 auto;
+        }
+
+
+        @include only-phone{
+            grid-template-columns: 1fr;
+            grid-template-areas: "intro" "buttons" "image";
+        }
+
+        @include not-phone{
+            svg{
+                margin: calc((var(--xxxl)) * -1) 0 calc(var(--xxxl) * -1) calc(var(--w-page-border) * -1)!important;
+                transform: rotate(-5deg) translateY(calc(var(--s) * -1));
+                margin: 0 auto;
+            }   
         }
     }
 
@@ -100,12 +118,21 @@ main > .collapsible{
 
 
 .two-columns{
-    :is(h2, h3, h4){
-        color: var(--c-text);
+    svg{
+        align-self: center;
+        border-left: none;
+        max-width: 50vw;
+        margin: 0 auto;
     }
 
-    p{
-        margin: 0;
+    h3{
+        font-size: var(--m);
+        margin: var(--xl) 0 var(--m);
+    }
+
+    > * {
+        padding: 0!important;
+        border: none!important;
     }
 }
 
