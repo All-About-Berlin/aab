@@ -148,7 +148,8 @@ main > .collapsible{
 }
 
 .feature-table{
-    min-width: 100%;
+    width: 100%;
+    min-width: 800px;
     font-size: var(--f-s);
 
     table-layout: fixed;

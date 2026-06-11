@@ -24,3 +24,20 @@
         }
     }
 }
+
+.article-body .table-of-contents{
+    @include widget;
+
+    @include only-desktop{
+        display: none;
+    }
+
+    > ol{margin: var(--m) 0 0}
+
+    @include not-desktop{
+        + h2{
+            border-top: 0;
+            padding-top: 0;
+        }
+    }
+}

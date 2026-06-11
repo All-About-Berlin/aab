@@ -205,11 +205,6 @@ sup:target a{
         overflow:auto
     }
 
-    .table-wrapper{
-        margin: var(--l-relative) calc(var(--w-page-border) * -1);
-        padding: 0 var(--w-page-border);
-        overflow-x: auto;
-    }
     table {
         :is(td, th){
             padding: var(--xs) var(--s);
@@ -303,23 +298,6 @@ sup:target a{
         }
     }
 
-    .table-of-contents{
-        @include widget;
-
-        @include only-desktop{
-            display: none;
-        }
-
-        > ol{margin: var(--m) 0 0}
-
-        @include not-desktop{
-            + h2{
-                border-top: 0;
-                padding-top: 0;
-            }
-        }
-    }
-
     .footnote-ref{
         margin-left:2px;
         color: var(--c-text-light);
@@ -351,6 +329,11 @@ sup:target a{
         p:first-child{margin-top: 0}
         p:last-child{margin-bottom: 0}
     }
+}
+.table-wrapper{
+    margin: var(--l-relative) calc(var(--w-page-border) * -1);
+    padding: 0 var(--w-page-border);
+    overflow-x: auto;
 }
 
 .hidden{
