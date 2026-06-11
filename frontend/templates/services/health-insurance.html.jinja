@@ -13,7 +13,7 @@
 					<a class="button" href="#contact">Ask our expert</a>
 				</div>
 			</div>
-			<img class="intro-image" src="/staticimages/hero.png" alt="">
+			{% include "staticimages/services/health-insurance.svg" %}
 		</header>
 		{% tool "health-insurance-calculator", static=True, show_heading=True, id="calculator" %}
 		{% tool "health-insurance-calculator", mode="question", static=True, show_heading=True, id="contact" %}
