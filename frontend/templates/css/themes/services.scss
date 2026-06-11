@@ -30,24 +30,27 @@ main .intro{
     &:has(svg){
         display: grid;
         grid-template-columns: 1fr 2fr;
-        align-items: center;
         gap: var(--l);
 
         grid-template-areas: "image intro" "image buttons";
 
         .intro-text{
             grid-area: intro;
+            align-self: flex-end;
         }
 
         .buttons{
             grid-area: buttons;
             margin: 0;
+            align-self: flex-start;
         }
 
         svg{
             grid-area: image;
             max-width: 50vw;
             margin: 0 auto;
+            align-self: center;
+            margin-bottom: calc(var(--xxxl) * -1 + var(--m))!important;
         }
 
 
@@ -67,34 +70,19 @@ main .intro{
 
     &:has(h1:not(:last-child)){
         text-align: left;
-        background: var(--c-highlight);
+        background: hsl(151.8, 95%, 84%);
         padding-top: var(--xxxl);
         padding-bottom: var(--xxxl);
 
-        * {
-            --c-text-heading: #fff;
-            --c-text: #fff;
-            --c-highlight: #1E7F5B;
-            --c-highlight-green: transparent;
-            --c-border-clickable-hover: #1E7F5B;
-            color: #fff;
-        }
 
         .button:not(.link){
             --shadow-s: 0 0 0 0 transparent;
             background: transparent;
 
-            &.primary{
-                color: #000!important;
-                border-color: transparent;
-                background: #fff;
-                &:hover{
-                    border-color: var(--c-highlight);
-                }
-            }
-
             &:hover{
                 --c-text-heading: #000;
+                color: #fff!important;
+                background: var(--c-highlight);
             }
         }
 
@@ -123,6 +111,7 @@ main > .collapsible{
         border-left: none;
         max-width: 50vw;
         margin: 0 auto;
+        color: var(--c-text-heading);
     }
 
     h3{
