@@ -51,15 +51,6 @@ export default {
 		mostExpensiveOption() {
 			return this.results.public.options.at(-1);
 		},
-		technikerKrankenkasseUrl() {
-			if(isStudent(this.occupation)){
-				return "/out/tk-signup-students";
-			}
-			else if(isEmployed(this.occupation)){
-				return "/out/tk-signup-employees";
-			}
-			return "/out/feather-tk-signup";
-		},
 		isMinijobTariff(){
 			return (
 				isMinijob(this.occupation, this.monthlyIncome)
@@ -103,7 +94,7 @@ export default {
 
 			<ul class="buttons list">
 				<li>
-					<a class="recommended" title="Sign up with Techniker Krankenkasse" :href="technikerKrankenkasseUrl" target="_blank">
+					<a class="recommended" title="Sign up with Techniker Krankenkasse" href="/out/feather-tk-signup" target="_blank">
 						<logo-tk/>
 						<div>
 							<h3 v-text="option('tk').name"></h3>
