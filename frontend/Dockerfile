@@ -1,4 +1,4 @@
-FROM ghcr.io/astral-sh/uv:0.9.1-python3.13-bookworm-slim AS base
+FROM ghcr.io/astral-sh/uv:0.9.30-python3.13-bookworm-slim AS base
 
 # Rsync needed for prod builds
 # Git needed by ursus to build the site
