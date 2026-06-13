@@ -127,12 +127,10 @@ If you want small groups, or one-to-one lessons, get a private teacher. This is 
 
 Most language schools offer private lessons.
 
-- **[Chatterbug](/out/chatterbug)**{{ RECOMMENDED }}  
-    This is my favourite way to learn German. You get one-to-one online video lessons with German teachers. There are lessons every hour, so you can make your own schedule. If you don't like your teacher, you can always pick a different one. It's also very cheap.
 - **[Italki](https://www.italki.com/)**  
-    Similar to Chatterbug. You get one-to-one online video lessons with German teachers. Each teacher charges a different price.
+    You get one-to-one online video lessons with German teachers. Each teacher charges a different price.
 - **[Lingoda](/out/lingoda)**  
-    Lingoda lets you have video classes with a teacher. You can have 1-to-1 classes, or join a group of 3 to 5 people. Lingoda is not as good as Chatterbug: the platform is worse, you can't keep the same teachers, it's harder to cancel classes, and it's twice as expensive. You receive a certificate when you complete a level.
+    Lingoda lets you have video classes with a teacher. You can have 1-to-1 classes, or join a group of 3 to 5 people. You get a certificate when you complete a level.
 
 ## German classes online
 
@@ -140,18 +138,16 @@ Most of the language schools in Berlin offer online classes.
 
 There are also many language learning apps for German:
 
-- **[Chatterbug](/out/chatterbug)**{{ RECOMMENDED }}  
-    Private video lessons with a private teacher. You can book lessons every hour, so you can make your own schedule. Your teacher helps you complete exercises, and asks you questions. You can skip exercises you understand, or slow down to ask questions. If you don't like your teacher, you can find a new one. It's a great way to practice German conversations. In my opinion, this is the best way to learn German. Many of my friends also love it.
 - **[Babbel](/out/babbel)**  
     Regular language lesson without a teacher. You learn German vocabulary and grammar, one module at the time. I used Babbel a lot when I moved to Germany. I like that it teaches you the grammar, and lets you choose what to study. I found it too boring.
 - **[Duolingo](https://www.duolingo.com/)** - free  
-    This is a famous language learning app. It's more interesting than Babbel, but the mobile app does not explain the grammar really well. I find Duolingo too limited. I recommend [Babbel](/out/babbel) or [Chatterbug](/out/chatterbug) instead.
+    This is a famous language learning app. It's more interesting than Babbel, but the mobile app does not explain the grammar really well. I find Duolingo too limited. I prefer [Babbel](/out/babbel).
 - **[Deutschable](https://deutschable.com/enjoy-10e-off-a-premium-membership-all-about-berlin/)**  
     Stream recorded videos of real beginner German lessons online.
 - **[Italki](https://www.italki.com/)**  
     Private video lessons with language teachers. Each teacher charges a different price. You can talk with your teacher on the Italki website, Zoom, Facetime, Skype or another tool.[^10]
 - **[Lingoda](/out/lingoda)** - from €11 per lesson  
-    Lingoda lets you have video classes with a teacher. You can have 1-to-1 classes, or join a group of 3-5 people. Lingoda is not as good as Chatterbug: the platform is worse, you can't keep the same teachers, it's harder to cancel classes, and it's twice as expensive. You receive a certificate when you complete a level.
+    Lingoda lets you have video classes with a teacher. You can have 1-to-1 classes, or join a group of 3-5 people. You get a certificate when you complete a level.
 - **[Memrise](https://www.memrise.com/)** - €5 per month  
     Regular language lesson without a teacher.
 
@@ -221,7 +217,7 @@ Later, I wanted to take classes at the *[[Volkshochschule]]*, but I could not un
 
 When you take German classes, the teacher makes a big difference. If you get a good teacher, you learn a lot faster. Group size is also important. In a small group, you can ask a lot of questions. Private lessons are even better, because you control the lesson.
 
-Now, **I use [Chatterbug](/out/chatterbug), and I love it**. Many of my friends also love it. I can book 45 minute blocks anytime I want, with any teacher I want. It's very flexible. I can't stay focused in class, so I take 45 minute lessons in the morning. Sometimes, I do the exercises, and sometimes I just talk with my teacher. It's a great way to practice German conversation. There are also self-study exercises, but I don't use them.
+I used Chatterbug and I loved it. It does not exist anymore, but [Italki](https://www.italki.com/) and [Lingoda](/out/lingoda) are similar. I liked to book 45 minute blocks when I had time, with any teacher I wanted. It was very flexible. I could not stay focused in class, so I took short lessons in the morning. Sometimes, I did the exercises, and sometimes I just talked with my teacher. It was a great way to practice German conversation. There are also self-study exercises, but I don't use them.
 
 ### Useful websites and apps
 
