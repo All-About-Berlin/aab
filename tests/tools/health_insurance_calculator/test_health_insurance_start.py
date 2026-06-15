@@ -13,6 +13,6 @@ def test_first_step_preset_occupation(page, test_screenshot, occupation):
     test_screenshot(page, get_calculator(page))
 
 
-def test_show_heading(page, test_screenshot):
-    page.goto("/tests/tools/health-insurance-calculator-show-heading")
+def test_landing_page(page, test_screenshot):
+    page.goto("/tests/tools/health-insurance-calculator-landing-page")
     test_screenshot(page, get_calculator(page))

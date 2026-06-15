@@ -74,7 +74,7 @@ export default {
 			type: String,
 			default: null,
 		},
-		showHeading: {
+		landingPage: {
 			type: Boolean,
 			default: false,
 		},
@@ -478,7 +478,7 @@ export default {
 			</template>
 
 			<template v-if="stage === 'occupation' && !initialOccupation">
-				<template v-if="showHeading">
+				<template v-if="landingPage">
 					<h2>Find the right health insurance</h2>
 					<p v-if="mode === 'calculator'">Prices and options depend on what you do. What is your occupation?</p>
 					<template v-if="mode === 'question'">

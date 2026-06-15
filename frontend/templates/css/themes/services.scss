@@ -22,6 +22,7 @@ main .intro{
     text-align: left;
     padding-top: var(--m);
     padding-bottom: var(--m);
+    box-shadow: none;
 
     &:has(h1:last-child){
         box-shadow: none;
