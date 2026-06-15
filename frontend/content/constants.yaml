@@ -1046,7 +1046,7 @@ constants:
     description: Maximum dental insurance cost (€/mth)
     fail_on: 2026-12-31
   PFAND_CAR_BATTERIES:
-    value: 7.50
+    value: 7.5
     unit: euros
     monitor:
       template: buzer
@@ -1055,6 +1055,16 @@ constants:
       subsection: Absatz 1 Satz 1
       desired_value: the deposit amount (Pfand) for batteries in euros
       last_verified: 2026-06-02
+  EU_COUNTRIES_COUNT:
+    value: 27
+    unit: integer
+    description: Number of EU countries
+    monitor:
+      template: default
+      crawler: json
+      url: https://api.worldbank.org/v2/region/EUU/country?format=json&per_page=100
+      json_path: '[0].total'
+      last_verified: 2026-06-15
 templates:
   residence_permit_wait_time:
     template: default
