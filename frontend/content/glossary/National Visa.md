@@ -19,7 +19,7 @@ You apply for a National Visa at the German embassy or consulate in your home co
 
 **[How to apply for a National Visa ➞](/guides/residence-permit#how-to-apply-in-your-country)**
 
-If you are a citizen of {{AUFENTHV_41_COUNTRIES|or_list}}, you do not need a National Visa. You can visit Germany without a visa. You still need a [residence permit](/glossary/Aufenthaltstitel) to live, work or study in Germany.
+If you are a citizen of {{AUFENTHV_41_COUNTRIES}}, you do not need a National Visa. You can visit Germany without a visa. You still need a [residence permit](/glossary/Aufenthaltstitel) to live, work or study in Germany.
 
 The [[Schengen visa]] is not a National Visa.
 

@@ -65,16 +65,18 @@ If you can't get a Blue Card, there are [other residence permits](/guides/reside
 
 ## How to apply in Berlin
 
-You can apply for a Blue Card **after you move to Germany**:
+You can apply for a Blue Card before or after you [move to Germany](/guides/moving-to-berlin).
+
+To apply **after moving to Germany**, you must...
 
 1. Come to Germany
-2. Apply for a Blue Card at your local *[[Ausländerbehörde]]*. In Berlin, you must apply online. If you don't live in Berlin, [find your local *Ausländerbehörde*](https://bamf-navi.bamf.de/de/Themen/Behoerden/) and apply there.
+2. Apply for a Blue Card at your local *[[Ausländerbehörde]]*. In Berlin, you must apply online. If you don't live in Berlin, [find your local *Ausländerbehörde*](https://bamf-navi.bamf.de/de/Themen/Behoerden/) and follow their instructions.
 3. Get your Blue Card
 4. Start working
 
 You can apply in Germany if...
 
-- You are a citizen of {{AUFENTHV_41_COUNTRIES|or_list}}[^9]
+- You are a citizen of {{AUFENTHV_41_COUNTRIES}}[^9]
 - **or** you already have a German [residence permit](/glossary/Aufenthaltstitel), and you want to change it or renew it
 - **or** you have a Blue Card from another EU country
 - **or** you have an [EU Permanent Residence](/guides/permanent-residence#eu-permanent-residence) in another country
@@ -122,7 +124,7 @@ Before you apply for the Blue Card...
 - [ ] **[Find a place to live](/guides/find-a-flat-in-berlin)**  
     It's really hard to find an apartment. Start looking as soon as you can.
     - [ ] You must be allowed to [register your address](/glossary/Anmeldung). Your landlord must give you a [tenancy confirmation](/glossary/Wohnungsgeberbestätigung). If you can't get a tenancy confirmation, you might not get a Blue Card.[^1]
-    - [ ] Your rent must be affordable. Your total cost of living must be less than your income.
+    - [ ] Your rent must be affordable. Your total [cost of living](/guides/cost-of-living) must be less than your [net income](/glossary/Netto%20income).
     - [ ] Your apartment must be big enough. You need 9 m^2^ per adult, and 6 m^2^ per child.[^49]
 - [ ] **[Get health insurance](/guides/german-health-insurance/for-employees#for-a-blue-card-or-a-work-visa)**  
     You need valid [health insurance](/glossary/Krankenversicherung). [Ask my insurance expert](/guides/german-health-insurance#need-help) to help you choose the correct health insurance.

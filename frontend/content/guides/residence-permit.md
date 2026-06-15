@@ -128,7 +128,9 @@ There are two ways to get a residence permit:[^12]
 
 ## How to apply in Germany
 
-You can only apply in Germany if...
+You can apply for a residence permit before or after you [move to Germany](/guides/moving-to-berlin).
+
+You can only apply after moving to Germany if...
 
 - You are a citizen of {{AUFENTHV_41_COUNTRIES}}[^15]
 - **or** you already have a German [residence permit](/glossary/Aufenthaltstitel), and you want to change it or [renew it](#how-to-renew-a-residence-permit)
@@ -139,7 +141,7 @@ You can only apply in Germany if...
 
 If you can't apply in Germany, you must [apply in your home country](#how-to-apply-in-your-country).
 
-The instructions below are for Berlin only. Other immigration offices have different rules and wait times. If you don't live in Berlin, [find your local immigration office](https://bamf-navi.bamf.de/de/Themen/Behoerden/) and apply there.
+The instructions below are for Berlin only. Other immigration offices have different rules and wait times. If you don't live in Berlin, [find your local immigration office](https://bamf-navi.bamf.de/de/Themen/Behoerden/) and follow their instructions.
 
 ### 1. Prepare your application
 
@@ -150,7 +152,7 @@ Before you apply for a residence permit...
 - [ ] **[Find a place to live](/guides/find-a-flat-in-berlin)**  
     It's really hard to find an apartment. Start looking as soon as you can.
     - [ ] You must be allowed to [register your address](/glossary/Anmeldung). Your landlord must give you a [tenancy confirmation](/glossary/Wohnungsgeberbestätigung). If you can't get a tenancy confirmation, you might not get a residence permit.[^23]
-    - [ ] Your rent must be affordable. Your total cost of living must be less than your income.
+    - [ ] Your rent must be affordable. Your total [cost of living](/guides/cost-of-living) must be less than your [net income](/glossary/Netto%20income).
     - [ ] Your apartment must be big enough. In Berlin, you need 9 m^2^ per adult, and 6 m^2^ per child.[^20]
 - [ ] **[Get health insurance](/guides/german-health-insurance/for-a-visa-application)**  
     You need valid [health insurance](/glossary/Krankenversicherung). [Ask my insurance expert](/guides/german-health-insurance#need-help) to help you choose the correct health insurance.

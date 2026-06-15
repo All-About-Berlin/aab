@@ -53,7 +53,7 @@ The difference is important, because they have **different requirements**. For e
 To get a freelance visa, you need...[^18]
 
 - [ ] **Enough income**  
-    In Berlin, your [gross income](/glossary/Brutto%20income) must be more than your rent + your [health insurance](/glossary/Krankenversicherung) + €{{FREELANCE_VISA_MIN_INCOME|cur}} per month.[^53] If you support children or a spouse, you need a higher income.[^79]
+    In Berlin, your [net income](/glossary/Netto%20income) must be more than your rent + your [health insurance](/glossary/Krankenversicherung) + €{{FREELANCE_VISA_MIN_INCOME|cur}} per month.[^53] If you support children or a spouse, you need a higher income.[^79] See the [cost of living](/guides/cost-of-living) in Berlin.
 - [ ] **Self-employed work**  
     You must be self-employed.[^73] You can't be an employee with social benefits. [Fake self-employment](/glossary/Scheinselbstständigkeit) is not allowed.[^3] If you only have one client, you might not get a freelance visa.
 - [ ] **Permission to do this job**  
@@ -82,10 +82,12 @@ If you can't get a freelance visa, there are [other residence permits](/guides/r
 
 ## How to apply in Berlin
 
-You can apply for a freelance visa **after you move to Germany**:
+You can apply for a freelance visa before or after you [move to Germany](/guides/moving-to-berlin).
+
+To apply **after moving to Germany**, you must...
 
 1. Come to Germany
-2. Apply for a freelance visa at your local *[[Ausländerbehörde]]*. If you don't live in Berlin, [find your local *Ausländerbehörde*](https://bamf-navi.bamf.de/de/Themen/Behoerden/) and apply there.
+2. Apply for a freelance visa at your local *[[Ausländerbehörde]]*. If you don't live in Berlin, [find your local *Ausländerbehörde*](https://bamf-navi.bamf.de/de/Themen/Behoerden/) and follow their instructions.
 3. Get your freelance visa
 4. Start your business
 

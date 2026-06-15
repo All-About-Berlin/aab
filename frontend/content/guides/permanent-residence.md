@@ -240,7 +240,7 @@ The requirements and the application process are the same. If you qualify for th
 
 In Berlin, you must apply online. **It takes [{{ WAIT_TIME_PERMANENT_RESIDENCE }}](/guides/immigration-office/wait-times)** to get permanent residence.[^5]
 
-If you don't live in Berlin, you must [find your local *Ausländerbehörde*](https://bamf-navi.bamf.de/de/Themen/Behoerden/) and apply there. The application process can be different.
+If you don't live in Berlin, you must [find your local *Ausländerbehörde*](https://bamf-navi.bamf.de/de/Themen/Behoerden/) and follow their instructions. The application process can be different.
 
 **If you need help**, an [immigration lawyer](/guides/english-speaking-lawyers-berlin) or a [relocation consultant](/guides/relocation-agency-in-berlin) can take care of everything. It costs €500 to €2,000.[^45] It's a [tax-deductible](/glossary/steuerlich%20absetzbar) expense.
 
