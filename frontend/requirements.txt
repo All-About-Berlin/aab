@@ -1,5 +1,6 @@
 ursus-ssg==1.6.0
 pyphen==0.17.2
+pycountry==26.2.16
 pyyaml~=6.0
 holidays
 beautifulsoup4~=4.14

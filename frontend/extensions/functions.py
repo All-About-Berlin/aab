@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Iterable, Match
 from ursus.context_processors import Entry
 import holidays
+import pycountry
 import pyphen
 import re
 import secrets
@@ -42,6 +43,30 @@ def patched_slugify(value: str, separator: str, keep_unicode: bool = False) -> s
 
 def or_join(items: list[str]) -> str:
     return ", ".join(items[:-1]) + " or " + items[-1]
+
+
+def country_list(countries: list[str], join_with: str = "or") -> str:
+    _COUNTRY_OVERRIDES = {
+        "XK": "Kosovo",
+    }
+
+    _COUNTRIES_WITH_THE_PREFIX = {"DO", "GB", "US"}
+
+    names = []
+    for code in countries:
+        if code in _COUNTRY_OVERRIDES:
+            names.append(_COUNTRY_OVERRIDES[code])
+        else:
+            country = pycountry.countries.get(alpha_2=code)
+            if not country:
+                raise ValueError(f"Unknown country code: {code}")
+            name = getattr(country, "common_name", None) or country.name
+            if code in _COUNTRIES_WITH_THE_PREFIX:
+                name = f"the {name}"
+            names.append(name)
+    if len(names) == 1:
+        return names[0]
+    return ", ".join(names[:-1]) + f" {join_with} " + names[-1]
 
 
 def remove_accents(string: str) -> str:

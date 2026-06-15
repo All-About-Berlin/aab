@@ -3,6 +3,7 @@ from decimal import Decimal
 from extensions.functions import (
     build_wikilinks_url,
     count_weekdays,
+    country_list,
     get_public_holidays,
     glossary_groups,
     load_constants_from_file,
@@ -172,30 +173,13 @@ ctx["FREELANCE_VISA_MIN_PENSION"] = round(ctx["FREELANCE_VISA_MIN_MONTHLY_PENSIO
 # Minimum gross income (€/y) to get a work visa above age 45 - service.berlin.de/dienstleistung/305304
 ctx["WORK_VISA_MIN_INCOME_OVER_45"] = ctx["BEITRAGSBEMESSUNGSGRENZE"] * Decimal("0.55")
 
-# Nationalities that can apply for a residence permit directly in Germany - § 41 AufenthV
-beschv_26_1_countries = [
-    "Australia",
-    "Canada",
-    "Israel",
-    "Japan",
-    "Monaco",
-    "New Zealand",
-    "San Marino",
-    "South Korea",
-    "the United Kingdom",
-    "the United States",
-]
-beschv_26_2_countries = [
-    "Albania",
-    "Bosnia-Herzegovina",
-    "Kosovo",
-    "North Macedonia",
-    "Montenegro",
-    "Serbia",
-]
-ctx["BESCHV_26_COUNTRIES"] = or_join(sorted(beschv_26_1_countries + beschv_26_2_countries))
-ctx["BESCHV_26_1_COUNTRIES"] = or_join(beschv_26_1_countries)
-ctx["BESCHV_26_2_COUNTRIES"] = or_join(beschv_26_2_countries)
+# Nationalities that can apply for a residence permit directly in Germany - § 41 AufenthV + § 26 BeschV
+beschv_26_1_codes = ctx["BESCHV_26_1_COUNTRIES"].split(",")
+beschv_26_2_codes = ctx["BESCHV_26_2_COUNTRIES"].split(",")
+all_beschv_26_codes = sorted(beschv_26_1_codes + beschv_26_2_codes, key=lambda c: country_list([c]))
+ctx["BESCHV_26_COUNTRIES"] = country_list(all_beschv_26_codes, join_with="or")
+ctx["BESCHV_26_1_COUNTRIES"] = country_list(beschv_26_1_codes, join_with="or")
+ctx["BESCHV_26_2_COUNTRIES"] = country_list(beschv_26_2_codes, join_with="or")
 
 # Exempt from freelance visa pension requirement
 ctx["AUFENTHG_21_2_COUNTRIES"] = or_join(

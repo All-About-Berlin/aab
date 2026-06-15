@@ -1055,6 +1055,32 @@ constants:
       subsection: Absatz 1 Satz 1
       desired_value: the deposit amount (Pfand) for batteries in euros
       last_verified: 2026-06-02
+  BESCHV_26_1_COUNTRIES:
+    value: AD,AU,IL,JP,CA,KR,MC,NZ,SM,GB,US
+    unit: text
+    description: ISO 3166-1 alpha-2 codes for countries in §26 Abs. 1 BeschV
+    monitor:
+      template: buzer
+      law: BeschV
+      section: '26'
+      subsection: Absatz 1
+      desired_value: a comma-separated list of two-letter ISO 3166-1 alpha-2 country codes
+      formatting_instructions: Return only the country codes as a comma-separated list without spaces. If the codes are not
+        in the supplied text, only return ERROR.
+      last_verified: 2026-06-15
+  BESCHV_26_2_COUNTRIES:
+    value: AL,BA,XK,ME,MK,RS
+    unit: text
+    description: ISO 3166-1 alpha-2 codes for countries in §26 Abs. 2 BeschV (Western Balkans)
+    monitor:
+      template: buzer
+      law: BeschV
+      section: '26'
+      subsection: Absatz 2
+      desired_value: a comma-separated list of two-letter ISO 3166-1 alpha-2 country codes
+      formatting_instructions: Return only the country codes as a comma-separated list without spaces. If the codes are not
+        in the supplied text, only return ERROR.
+      last_verified: 2026-06-15
   EU_COUNTRIES_COUNT:
     value: 27
     unit: integer
