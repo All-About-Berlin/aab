@@ -16,7 +16,7 @@ This guide explains how people usually buy recreational marijuana in Berlin.
 Medical and recreational marijuana [are legal in Germany](/guides/is-marijuana-legal). It's hard to buy recreational marijuana legally, so people use other methods.
 
 - ✓ **[By prescription](#cannabis-prescription)**{{ RECOMMENDED }}  
-    It's currently the easiest way to get weed. You get a prescription from an online doctor, and buy medical cannabis from an online pharmacy. It's 100% legal. You can choose different strains, and you pay around €9 per gram.[^1]{{ fail_on('2026-06-15') }} They also sell extracts and edibles.[^16]
+    It's currently the easiest way to get weed. You get a prescription from an online doctor, and buy medical cannabis from an online pharmacy. It's 100% legal. You can choose different strains, and you pay around €9 per gram.[^1]{{ fail_on('2027-06-15') }} They also sell extracts and edibles.[^16]
 - ✓ **Online**  
     Websites like [Leafz](https://leafz.de/) sell THC edibles.[^14] It's easy and it works, but it's in a legal grey area.{{ fail_on('2026-12-31') }}
 - ✓ **Your friends**  
