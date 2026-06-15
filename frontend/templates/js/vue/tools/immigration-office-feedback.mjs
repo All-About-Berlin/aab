@@ -398,7 +398,10 @@ export default {
 						<div class="step" v-if="!!result.first_response_date" :class="{completed: !!result.appointment_date}">
 							<input type="checkbox" :checked="result.appointment_date" disabled>
 							<span class="description">
-								<template v-if="result.appointment_date">
+								<template v-if="result.appointment_date && isInTheFuture(result.appointment_date)">
+									Appointment scheduled for {{ formatLongDate(result.appointment_date) }}
+								</template>
+								<template v-else-if="result.appointment_date && !isInTheFuture(result.appointment_date)">
 									Went to appointment {{ formatTimeDelta(result.first_response_date, result.appointment_date) }} later
 								</template>
 								<template v-else>
