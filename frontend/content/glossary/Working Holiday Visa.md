@@ -17,17 +17,7 @@ The Working Holiday Visa is a type of [[National Visa]]. It allows you to live a
 
 Only citizens of these countries can get a Working Holiday Visa:
 
-- Argentina
-- Australia
-- Brazil
-- Chile
-- Hong Kong
-- Israel
-- Japan
-- New Zealand
-- South Korea
-- Taiwan
-- Uruguay citizens
+{{WORKING_HOLIDAY_VISA_COUNTRIES_LIST|safe}}
 
 Canadian citizens can apply for a [[Youth Mobility Visa]]. It's almost the same thing.
 

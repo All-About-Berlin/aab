@@ -670,6 +670,32 @@ constants:
     value: 2500
     unit: euros
     description: GermanyPensionRefund maximum fee (€)
+  PENSION_CONTRACTING_COUNTRIES:
+    value: AL,AU,BR,CA,CL,IN,IL,JP,KR,MA,ME,PH,TN,TR,UY,US
+    unit: countries
+    description: Countries with a bilateral pension agreement with Germany (Sozialversicherungsabkommen)
+  PENSION_BALKAN_BLOCK_COUNTRIES:
+    value: BA,MK,RS,XK,ME
+    unit: countries
+    description: Balkan countries with a pension agreement with Germany that has special refund rules
+  PENSION_DISQUALIFYING_COUNTRIES:
+    value: BA,MK,RS,XK,ME,TR
+    unit: countries
+    description: Countries where residing disqualifies you from a German pension refund (Balkan block + Turkey)
+  WORKING_HOLIDAY_VISA_COUNTRIES:
+    value: AR,AU,BR,CL,HK,IL,JP,KR,NZ,TW,UY
+    unit: countries
+    description: Countries whose citizens can get a Working Holiday Visa in Germany
+    monitor:
+      template: default
+      url: https://www.auswaertiges-amt.de/en/visa-service/buergerservice/faq/06-workingholiday-606672
+      css_selector: .c-rte--teaser
+      prompt: 'Read this text. It lists countries eligible for a Working Holiday Visa in Germany. Return their ISO 3166-1
+        alpha-2 country codes, sorted, as a comma-separated list. Example output: AR,AU,BR'
+      formatting_instructions: Return only the country codes as a comma-separated list without spaces. If the codes are not
+        in the supplied text, only return ERROR.
+      every: quarter
+      last_verified: 2026-06-15
   BVG_AB_TICKET:
     value: 4
     unit: euros

@@ -593,9 +593,9 @@ export const taxes = {
 };
 
 export const pensions = {
-	contractingCountries: new Set(['AL', 'AU', 'BR', 'CA', 'CL', 'IN', 'IL', 'JP', 'KR', 'MA', 'ME', 'PH', 'TN', 'TR', 'UY', 'US']),
-	balkanBlockCountries: new Set(['BA', 'MK', 'RS', 'XK', 'ME']),
-	disqualifyingCountries: new Set(['BA', 'MK', 'RS', 'XK', 'ME', 'TR']),
+	contractingCountries: new Set(backendConstants.PENSION_CONTRACTING_COUNTRIES),
+	balkanBlockCountries: new Set(backendConstants.PENSION_BALKAN_BLOCK_COUNTRIES),
+	disqualifyingCountries: new Set(backendConstants.PENSION_DISQUALIFYING_COUNTRIES),
 	contributionRates: {
 		2000: 19.3,
 		2001: 19.1,

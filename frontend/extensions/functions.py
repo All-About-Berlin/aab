@@ -43,7 +43,9 @@ def patched_slugify(value: str, separator: str, keep_unicode: bool = False) -> s
 
 
 _COUNTRY_OVERRIDES = {
-    "CD": "the Democratic Republic of the Congo",
+    "CD": "Democratic Republic of the Congo",
+    "KR": "South Korea",
+    "TW": "Taiwan",
     "XK": "Kosovo",
 }
 
@@ -163,7 +165,13 @@ def load_constants_from_file(path: Path) -> dict:
         elif unit == "integer":
             value = int(constant["value"])
         elif unit == "countries":
-            value = country_list(str(constant["value"]).split(","))
+            codes = str(constant["value"]).split(",")
+            constants[f"{constant_name}_CODES"] = codes
+            countries = country_list(codes)
+            constants[f"{constant_name}_LIST"] = (
+                "<ul>" + "".join([f"<li>{country}</li>" for country in countries]) + "</ul>"
+            )
+            value = countries
         else:
             value = constant["value"]
         constants[constant_name] = value
