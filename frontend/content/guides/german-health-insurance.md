@@ -282,7 +282,7 @@ Travel health insurance covers medical emergencies in other countries. It does n
 - **If you [move to Germany](/guides/moving-to-berlin)**  
     You need travel or expat health insurance for your [[National Visa]] application. It covers you until your public or private health insurance starts. If you have visa-free entry, travel health insurance is optional but recommended. [HanseMerkur Visa Plus](/out/hansemerkur-travel) is valid for a [[National Visa]] application.
 - **If you live in Germany**  
-    It covers medical emergencies in other countries. It costs around €{{TRAVEL_INSURANCE_COST|cur}} per year.[^78] Get it from [Feather](/out/feather-travel), [Envivas](https://www.envivas.de/en/insurance/travelling-abroad) or [Allianz](https://www.allianzdirect.de/reiseversicherung/). Your [private health insurance](/glossary/private%20Krankenversicherung) or your bank account might include travel insurance.
+    It covers medical emergencies in other countries. It costs around €{{TRAVEL_INSURANCE_COST|cur}} per year.[^78] Get it from [Envivas](https://www.envivas.de/en/insurance/travelling-abroad) or [Allianz](https://www.allianzdirect.de/reiseversicherung/). Your [private health insurance](/glossary/private%20Krankenversicherung) or your bank account might include travel insurance.
 
 **[Health insurance for a visa application ➞](/guides/german-health-insurance/for-a-visa-application)**
 
@@ -432,7 +432,7 @@ When you are self-employed, the cost of public health insurance is based on your
 - [ ] **Get [liability insurance](/glossary/Haftpflichtversicherung)**{{ RECOMMENDED }}  
     It's the second most important insurance. Most Germans have it. I got mine from [Feather](/out/feather-haftpflicht). It costs €5 per month.
 - [ ] **Get travel health insurance**  
-    It covers you when you travel outside of Germany. It costs around €{{TRAVEL_INSURANCE_COST|cur}} per year.[^78] You can get travel insurance from [Feather](/out/feather-travel), [Envivas](https://www.envivas.de/en/insurance/travelling-abroad) or [Allianz](https://www.allianzdirect.de/reiseversicherung/). Your [private health insurance](/glossary/private%20Krankenversicherung) might include travel insurance. Some banks accounts like [N26 Metal](/out/n26-metal) include travel insurance.
+    It covers you when you travel outside of Germany. It costs around €{{TRAVEL_INSURANCE_COST|cur}} per year.[^78] You can get travel insurance from [Envivas](https://www.envivas.de/en/insurance/travelling-abroad) or [Allianz](https://www.allianzdirect.de/reiseversicherung/). Your [private health insurance](/glossary/private%20Krankenversicherung) might include travel insurance. Some banks accounts like [N26 Metal](/out/n26-metal) include travel insurance.
 - [ ] **[Become an organ donor](/guides/organ-donor)**{{ RECOMMENDED }}  
     It's really easy. It can save another person's life.
 - [ ] **Get [job disability insurance](/glossary/Berufsunfähigkeitsversicherung)**  
@@ -507,7 +507,7 @@ Talk to a broker (*Makler*), not an agent (*Vertreter*). Brokers are independent
 [^75]: [Seamus Wolf](https://horizon65.com/) (April 2025)
 [^76]: [Seamus Wolf](https://horizon65.com/) (April 2025)
 [^77]: [Seamus Wolf](https://horizon65.com/) (April 2025)
-[^78]: [Feather Insurance](/out/feather-travel), [Seamus Wolf](https://horizon65.com/) (April 2025)
+[^78]: [Seamus Wolf](https://horizon65.com/) (April 2025)
 [^80]: [Emily Archer](https://www.archer-relocation.com/) (April 2025)
 [^81]: [Mona Anbari](https://versicherungsbuero-weiss.com/) (April 2025)
 [^82]: [Seamus Wolf](https://horizon65.com/) (April 2025)
