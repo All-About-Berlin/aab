@@ -166,9 +166,9 @@ pytest tests $@
 """
 
 [tasks.fix-snapshots]
-depends = ["test-ui"]
 run = """
 echo "[$(date +'%H:%M:%S')] Updating snapshots for UI tests..." \
+mise test-ui
 pytest tests --lf --update-snapshots
 """
 

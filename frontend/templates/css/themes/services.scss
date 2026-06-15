@@ -138,11 +138,6 @@ main > .collapsible{
         border-radius: var(--b-radius);
         transform: rotate(3deg);
     }
-
-    svg:not(.qr-code){
-        width: 350px;
-        margin-top: calc((var(--xl) + var(--m)) * -1)
-    }
 }
 
 .feature-table{

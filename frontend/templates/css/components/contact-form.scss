@@ -29,6 +29,12 @@
         color: var(--c-text-heading);
     }
 
+    > svg:not(.qr-code){
+        width: 350px;
+        margin-top: calc((var(--xl) + var(--m)) * -1);
+        max-width: 30vw;
+    }
+
     h2, h3{
         margin: 0 0 var(--l)
     }
@@ -46,6 +52,10 @@
         > img{
             order: -1; // Put before text
             width: var(--w-img-bio-l);
+        }
+
+        > svg:not(.qr-code){
+            margin: 0 auto;
         }
     }
 }
