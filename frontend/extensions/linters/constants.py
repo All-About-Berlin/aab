@@ -5,9 +5,8 @@ Regularly verifies and updates constants in constants.yaml
 
 from typing import Any, NotRequired, TypedDict
 from bs4 import BeautifulSoup
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from decimal import Decimal, InvalidOperation
-from extensions.functions import fail_on
 from pathlib import Path
 from urllib.parse import urlparse
 from ursus.config import config
@@ -278,7 +277,9 @@ class ConstantsLinter(Linter):
             monitor = resolve_monitor_config(constants_config["templates"], constant.get("monitor"))
 
             if constant.get("fail_on"):
-                fail_on(str(constant["fail_on"]))
+                expiration_date = str(constant["fail_on"])
+                if datetime.strptime(expiration_date, "%Y-%m-%d") < datetime.now():
+                    yield None, f"[{constant_name}] Content expired on {expiration_date}", logging.ERROR
 
             if not monitor:
                 yield None, f"[{constant_name}] Constant is not monitored", logging.WARNING

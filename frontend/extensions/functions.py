@@ -1,8 +1,8 @@
-from datetime import date, datetime
+from datetime import date
 from decimal import Decimal
 from markdown.extensions.toc import slugify
 from pathlib import Path
-from typing import Iterable, Match, Any
+from typing import Iterable, Match
 from ursus.context_processors import Entry
 import holidays
 import pyphen
@@ -38,12 +38,6 @@ def patched_slugify(value: str, separator: str, keep_unicode: bool = False) -> s
     Removes leading numbers from slugs
     """
     return slugify(value.lstrip(" 0123456789"), separator, keep_unicode)
-
-
-def fail_on(expiration_date: str, value: Any | None = None) -> Any:
-    # Fails when the expiration date is reached. Used to set content date limits.
-    assert datetime.strptime(expiration_date, "%Y-%m-%d") >= datetime.now(), f"Content expired on {expiration_date}"
-    return "" if value is None else value
 
 
 def or_join(items: list[str]) -> str:

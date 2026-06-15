@@ -3,7 +3,6 @@ from decimal import Decimal
 from extensions.functions import (
     build_wikilinks_url,
     count_weekdays,
-    fail_on,
     get_public_holidays,
     glossary_groups,
     load_constants_from_file,
@@ -13,6 +12,7 @@ from extensions.functions import (
     to_currency,
     to_percent,
 )
+from extensions.linters.fail_on import fail_on
 from markupsafe import Markup
 from pathlib import Path
 from ursus.config import config
@@ -339,6 +339,7 @@ config.renderers.extend(
 )
 
 config.linters = [
+    "extensions.linters.fail_on.FailOnLinter",
     "extensions.linters.constants.ConstantsLinter",
     "extensions.linters.places.PlacesLinter",
     # 'ursus.linters.markdown.MarkdownExternalLinksLinter',
