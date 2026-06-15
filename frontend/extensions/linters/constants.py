@@ -98,7 +98,7 @@ def format_yaml_value(value: str, unit: str | None) -> Any:
             return Decimal(normalized_number.rstrip("0").rstrip(".")).normalize()
         elif unit == "integer":
             return int(normalized_number)
-        elif unit == "text":
+        elif unit == "text" or unit == "countries":
             return str(value)
         raise ValueError(f"Invalid unit: {unit}")
     except (ValueError, InvalidOperation):

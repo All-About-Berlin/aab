@@ -1057,7 +1057,7 @@ constants:
       last_verified: 2026-06-02
   BESCHV_26_1_COUNTRIES:
     value: AD,AU,IL,JP,CA,KR,MC,NZ,SM,GB,US
-    unit: text
+    unit: countries
     description: ISO 3166-1 alpha-2 codes for countries in §26 Abs. 1 BeschV
     monitor:
       template: buzer
@@ -1070,14 +1070,46 @@ constants:
       last_verified: 2026-06-15
   BESCHV_26_2_COUNTRIES:
     value: AL,BA,XK,ME,MK,RS
-    unit: text
+    unit: countries
     description: ISO 3166-1 alpha-2 codes for countries in §26 Abs. 2 BeschV (Western Balkans)
     monitor:
       template: buzer
-      law: BeschV
       section: '26'
       subsection: Absatz 2
+      law: BeschV
       desired_value: a comma-separated list of two-letter ISO 3166-1 alpha-2 country codes
+      formatting_instructions: Return only the country codes as a comma-separated list without spaces. If the codes are not
+        in the supplied text, only return ERROR.
+      last_verified: 2026-06-15
+  AUFENTHG_21_2_COUNTRIES:
+    value: DO,ID,JP,LK,PH
+    unit: countries
+    source_url: https://service.berlin.de/dienstleistung/305249/
+    description: Countries exempt from freelance visa pension requirement (VAB, section 21.2)
+    fail_on: 2027-03-01
+  AUFENTHV_41_1_COUNTRIES:
+    value: AU,IL,JP,KR,CA,NZ,GB,US
+    unit: countries
+    description: Countries exempt with visa-free entry with intent to apply for a residence permit
+    monitor:
+      template: buzer
+      section: '41'
+      subsection: Absatz 1
+      law: AufenthV
+      desired_value: a sorted, comma-separated list of two-letter ISO 3166-1 alpha-2 country codes
+      formatting_instructions: Return only the country codes as a comma-separated list without spaces. If the codes are not
+        in the supplied text, only return ERROR.
+      last_verified: 2026-06-15
+  AUFENTHV_41_2_COUNTRIES:
+    value: AD,BR,SV,HN,MC,SM
+    unit: countries
+    description: Countries exempt with visa-free entry with intent to apply for a residence permit
+    monitor:
+      template: buzer
+      section: '41'
+      subsection: Absatz 2
+      law: AufenthV
+      desired_value: a sorted, comma-separated list of two-letter ISO 3166-1 alpha-2 country codes
       formatting_instructions: Return only the country codes as a comma-separated list without spaces. If the codes are not
         in the supplied text, only return ERROR.
       last_verified: 2026-06-15

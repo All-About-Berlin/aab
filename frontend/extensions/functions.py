@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Iterable, Match
 from ursus.context_processors import Entry
 import holidays
+from ordered_set import OrderedSet
 import pycountry
 import pyphen
 import re
@@ -41,17 +42,34 @@ def patched_slugify(value: str, separator: str, keep_unicode: bool = False) -> s
     return slugify(value.lstrip(" 0123456789"), separator, keep_unicode)
 
 
-def or_join(items: list[str]) -> str:
-    return ", ".join(items[:-1]) + " or " + items[-1]
+_COUNTRY_OVERRIDES = {
+    "CD": "the Democratic Republic of the Congo",
+    "XK": "Kosovo",
+}
+
+_COUNTRIES_WITH_THE_PREFIX = {
+    "AE",  # United Arab Emirates
+    "BS",  # Bahamas
+    "CF",  # Central African Republic
+    "CG",  # Congo
+    "CK",  # Cook Islands
+    "DO",  # Dominican Republic
+    "FK",  # Falkland Islands (Malvinas)
+    "FO",  # Faroe Islands
+    "GB",  # United Kingdom
+    "GM",  # Gambia
+    "MH",  # Marshall Islands
+    "NE",  # Niger
+    "NL",  # Netherlands
+    "PH",  # Philippines
+    "RU",  # Russian Federation
+    "SD",  # Sudan
+    "US",  # United States
+    "VA",  # Holy See
+}
 
 
-def country_list(countries: list[str], join_with: str = "or") -> str:
-    _COUNTRY_OVERRIDES = {
-        "XK": "Kosovo",
-    }
-
-    _COUNTRIES_WITH_THE_PREFIX = {"DO", "GB", "US"}
-
+def country_list(countries: list[str]) -> list[str]:
     names = []
     for code in countries:
         if code in _COUNTRY_OVERRIDES:
@@ -64,9 +82,15 @@ def country_list(countries: list[str], join_with: str = "or") -> str:
             if code in _COUNTRIES_WITH_THE_PREFIX:
                 name = f"the {name}"
             names.append(name)
-    if len(names) == 1:
-        return names[0]
-    return ", ".join(names[:-1]) + f" {join_with} " + names[-1]
+    names.sort(key=lambda n: n.removeprefix("the "))
+    return names
+
+
+def or_list(items: list[str]) -> str:
+    unique = list(OrderedSet(items))
+    if len(unique) == 1:
+        return unique[0]
+    return ", ".join(unique[:-1]) + " or " + unique[-1]
 
 
 def remove_accents(string: str) -> str:
@@ -138,6 +162,8 @@ def load_constants_from_file(path: Path) -> dict:
             value = Decimal(str(constant["value"]))
         elif unit == "integer":
             value = int(constant["value"])
+        elif unit == "countries":
+            value = country_list(str(constant["value"]).split(","))
         else:
             value = constant["value"]
         constants[constant_name] = value

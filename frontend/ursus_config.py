@@ -3,11 +3,10 @@ from decimal import Decimal
 from extensions.functions import (
     build_wikilinks_url,
     count_weekdays,
-    country_list,
     get_public_holidays,
     glossary_groups,
     load_constants_from_file,
-    or_join,
+    or_list,
     patched_slugify,
     random_id,
     to_currency,
@@ -173,41 +172,10 @@ ctx["FREELANCE_VISA_MIN_PENSION"] = round(ctx["FREELANCE_VISA_MIN_MONTHLY_PENSIO
 # Minimum gross income (€/y) to get a work visa above age 45 - service.berlin.de/dienstleistung/305304
 ctx["WORK_VISA_MIN_INCOME_OVER_45"] = ctx["BEITRAGSBEMESSUNGSGRENZE"] * Decimal("0.55")
 
-# Nationalities that can apply for a residence permit directly in Germany - § 41 AufenthV + § 26 BeschV
-beschv_26_1_codes = ctx["BESCHV_26_1_COUNTRIES"].split(",")
-beschv_26_2_codes = ctx["BESCHV_26_2_COUNTRIES"].split(",")
-all_beschv_26_codes = sorted(beschv_26_1_codes + beschv_26_2_codes, key=lambda c: country_list([c]))
-ctx["BESCHV_26_COUNTRIES"] = country_list(all_beschv_26_codes, join_with="or")
-ctx["BESCHV_26_1_COUNTRIES"] = country_list(beschv_26_1_codes, join_with="or")
-ctx["BESCHV_26_2_COUNTRIES"] = country_list(beschv_26_2_codes, join_with="or")
-
-# Exempt from freelance visa pension requirement
-ctx["AUFENTHG_21_2_COUNTRIES"] = or_join(
-    [
-        "the Dominican Republic",
-        "Indonesia",
-        # "Iran",  # Missing from VAB since at least 2018
-        "Japan",
-        "Philippines",
-        "Sri Lanka",
-        "Turkey",
-        "the United States",
-    ]
-)
-
-# Visa-free entry to apply for a residence permit
-ctx["AUFENTHV_41_COUNTRIES"] = or_join(
-    [
-        "Australia",
-        "Canada",
-        "Israel",
-        "Japan",
-        "New Zealand",
-        "South Korea",
-        "the United Kingdom",
-        "the United States",
-    ]
-)
+ctx["BESCHV_26_COUNTRIES"] = or_list(ctx["BESCHV_26_1_COUNTRIES"] + ctx["BESCHV_26_2_COUNTRIES"])
+ctx["BESCHV_26_1_COUNTRIES"] = or_list(ctx["BESCHV_26_1_COUNTRIES"])
+ctx["AUFENTHG_21_2_COUNTRIES"] = or_list(ctx["AUFENTHG_21_2_COUNTRIES"])
+ctx["AUFENTHV_41_COUNTRIES"] = or_list(ctx["AUFENTHV_41_1_COUNTRIES"] + ctx["AUFENTHV_41_2_COUNTRIES"])
 
 # ==============================================================================
 # ADMINISTRATION

@@ -74,7 +74,7 @@ You can apply for a Blue Card **after you move to Germany**:
 
 You can apply in Germany if...
 
-- You are a citizen of {{AUFENTHV_41_COUNTRIES}}[^9]
+- You are a citizen of {{AUFENTHV_41_COUNTRIES|or_list}}[^9]
 - **or** you already have a German [residence permit](/glossary/Aufenthaltstitel), and you want to change it or renew it
 - **or** you have a Blue Card from another EU country
 - **or** you have an [EU Permanent Residence](/guides/permanent-residence#eu-permanent-residence) in another country
