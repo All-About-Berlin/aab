@@ -277,7 +277,7 @@ In this section, you share information about the business you register.
 - **Bezeichnung des Unternehmens** - Name of the business  
     This is the name of your business. For example, "All About Berlin", or "John Smith, painter".
 - **Beginn der Tätigkeit** - Start of the occupation  
-    The date when you officially started working on your business, including opening bank accounts, reserving domain names, contracting other people etc. If you already started, you can use a date in the past.
+    The date when you officially started working on your business, including opening bank accounts, reserving domain names, hiring employees and contractors etc. If you already started, you can use a date in the past.
 
 **Adresse des Unternehmens** - Address of the business  
 The address of your business.
