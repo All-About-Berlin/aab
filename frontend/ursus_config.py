@@ -356,7 +356,7 @@ config.linters = [
     "extensions.linters.section.SectionSignLinter",
     "extensions.linters.table_of_contents.TableOfContentsLinter",
     "extensions.linters.wikilinks.WikilinksLinter",
-    # 'extensions.linters.titles.DuplicateTitlesLinter',
+    "extensions.linters.titles.DuplicateTitlesLinter",
     "extensions.linters.titles.SequentialTitlesLinter",
     "extensions.linters.titles.TitleCountLinter",
     "ursus.linters.footnotes.OrphanFootnotesLinter",

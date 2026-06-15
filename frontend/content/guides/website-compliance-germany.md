@@ -30,7 +30,7 @@ The basic principles of GDPR:
 
 All websites that serve people in the [[European Union]], no matter who runs the website or where it is hosted. It applies to personal, non-commercial websites too. See **[Who does the data protection law apply to?](https://commission.europa.eu/law/law-topic/data-protection/reform/rules-business-and-organisations/application-regulation/who-does-data-protection-law-apply_en)** for more details.
 
-### Legal basis
+### GDPR legal basis
 
 - [General Data Protection Regulation](https://gdpr-info.eu/) ([[DSGVO]] in German)
 
@@ -68,11 +68,11 @@ These articles helped me understand how cookies work with the GDPR:
 
 Tools like [CookieBot](https://www.cookiebot.com/en/cookie-consent/) can help you implement a cookie notice that is GDPR compliant.
 
-### Legal basis
+### Cookie banners legal basis
 
 In the [[European Union]], cookies were regulated by the [Cookie Directive](https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2009:337:0011:0036:En:PDF) and now by the [General Data Protection Regulation (GDPR)](https://gdpr-info.eu/), particularly articles 6 and 7.
 
-### Examples
+### Cookie banner examples
 
 - [CookieBot](https://www.cookiebot.com/en/cookie-consent/)'s cookie notice lets you choose which cookies you want to allow. Analytics cookies are enabled by default, and marketing cookies are disabled by default. Essential cookies cannot be disabled.
 - [Gruender.de](https://www.gruender.de/recht/dsgvo-cookie-law/)'s cookie notice lets you choose which cookies you want to allow, with no pre-selected answer.
@@ -93,11 +93,11 @@ If you use Google Analytics, you *must* get consent from your visitors before yo
 
 Other tracking options like [Plausible](https://plausible.io) are privacy-friendly, and don't require a cookie notice. This is what I use on All About Berlin.
 
-### Who needs to do this?
+### Who needs consent for tracking?
 
 Any EU resident or company who uses Google Analytics on their website.
 
-### Legal basis
+### Tracking legal basis
 
 The rules for tracking users are defined by the GDPR ([[DSGVO]] in German).
 
@@ -135,19 +135,19 @@ It's important to have a complete Impressum. You can get sued for damages if it'
 
 If you can, [hide your Impressum page from Google](https://developers.google.com/search/docs/crawling-indexing/control-what-you-share).
 
-### Who needs to do this?
+### Who needs an Impressum?
 
 Any German resident or company who runs a commercial website, even if the website is hosted in another country, or has a .com domain.[^2] Personal, non-commercial websites do not need an Impressum.[^3]
 
 **Commercial Facebook, Instagram and social media pages** must also have an Impressum.[^5]
 
-### Legal basis
+### Impressum legal basis
 
 - [§ 5 Digitale-Dienst-Gesetz (DDG)](https://www.buzer.de/5_DDG.htm)
 - [§ 55 Rundfunkstaatsvertrag (RStV)](http://www.urheberrecht.org/law/normen/rstv/RStV-13/text/2010_06.php3)
 - [§ 2 DL-InfoV](https://www.buzer.de/gesetz/9221/a165923.htm)
 
-### Examples
+### Impressum examples
 
 - [SAP's Impressum](https://www.sap.com/germany/about/legal/impressum.html)
 - [BMW's Impressum](https://www.bmw.com/en/footer/imprint.html)
@@ -169,15 +169,15 @@ Your website must have a privacy policy (*Datenschutzerklärung*) where you outl
 
 If you need help with your privacy policy, you can either [hire a lawyer](/guides/english-speaking-lawyers-berlin), or use a [privacy policy generator](https://www.iubenda.com/en/privacy-and-cookie-policy-generator).
 
-### Who needs to do this?
+### Who needs a privacy policy?
 
 Any German resident or company who runs a website, even for non-commercial purposes.[^12]
 
-### Legal basis
+### Privacy policy legal basis
 
 A privacy policy is required by Articles 13 and 14 of the [[DSGVO]].[^13]
 
-### Examples
+### Privacy policy examples
 
 - [Stripe's privacy policy](https://stripe.com/de/privacy) contains detailed information about how they collect and process data about their users
 - [N26's privacy policy](https://docs.n26.com/legal/01+DE/03+Privacy%20Policy/en/01privacy-policy-en.pdf) is a PDF file linked at the bottom of every page on their website
@@ -194,15 +194,15 @@ Your website should have a terms and conditions ([[AGB]] or *Allgemeine Geschäf
 
 The terms in conditions must be available in the same languages as your website.[^14]
 
-### Who needs to do this?
+### Who needs an AGB page?
 
 It is not required unless you have customers, but it's always a good idea.[^15]
 
-### Legal basis
+### AGB legal basis
 
 The AGB is required by [§ 312d BGB](https://www.buzer.de/312d_BGB.htm) if you have customers.
 
-### Terms and conditions checklist
+### AGB checklist
 
 - [ ] Add a terms and conditions page to your website. There are many AGB generators and templates online. Most of them are in German.
 - [ ] Add a link to your terms an conditions to your website's footer.
@@ -217,15 +217,15 @@ Here are the basic guidelines about using Creative Commons images on your websit
 - **Understand that "free images" sometimes come with conditions.** Some variants of the Creative Commons licence require attribution to the author, prohibit commercial use, and even prohibit derivative works. See [this overview](https://creativecommons.org/licenses/) for more details.
 - **Use the correct format when giving credit to the author.** Proper credit includes the Title, the Author, the Source and the Licence. See [this guide](https://wiki.creativecommons.org/wiki/Best_practices_for_attribution#Title.2C_Author.2C_Source.2C_License) for more details.
 
-### Who needs to do this?
+### Which images need attribution?
 
 Anyone who uses Creative Commons media on their website. Most images that come from Wikipedia are under a Creative Commons licence, so you need to give credit to their author.
 
-### Legal basis
+### Attribution legal basis
 
 The requirement for appropriate attribution is found in the [Creative Commons licence](https://creativecommons.org/licenses/by-sa/2.0/). Later versions of the licence have more relaxed requirements.
 
-### Examples
+### Attribution examples
 
 The correct attribution format for Creative Commons images is described [in this handy guide](https://wiki.creativecommons.org/wiki/Best_practices_for_attribution#Title.2C_Author.2C_Source.2C_License).
 
@@ -247,7 +247,7 @@ Here are the basic guidelines for ads and sponsored content on your website:
 
 [According to Kanzlei Plutte](https://www.ra-plutte.de/schleichwerbung-sponsored-hinweis-reicht-nicht-aus/), "sponsored content" is not a sufficient label, and you should use a clear word like "advertisement" to label advertising on your website. He backs his opinion with court cases, but admits that Twitter, Facebook and Instagram use the term "sponsored".
 
-### Who needs to do this?
+### Who needs to mark affiliate links?
 
 Any German resident or company who uses affiliate links, sponsored content or ads on their website.
 
@@ -255,7 +255,7 @@ Any German resident or company who uses affiliate links, sponsored content or ad
 
 According to [§ 6 DDG](https://www.buzer.de/6_DDG.htm), "commercial communications must be clearly recognizable as such."
 
-### Examples
+### Sponsored link examples
 
 Google [marks sponsored search results as ads](/images/google-sponsored-link.png). I disclose affiliate links on this website.
 
@@ -280,7 +280,7 @@ If your website generates income, it's a business. If it's not part of a registe
     - [How to apply for a trade licence (*Gewerbeschein*)](/guides/gewerbeschein)
     - [How to register a business with the ](/guides/fragebogen-zur-steuerlichen-erfassung)*[Finanzamt](/guides/fragebogen-zur-steuerlichen-erfassung)*
 
-### Who needs to do this?
+### Who needs to register a business?
 
 Any German resident or who runs a website as a stand-alone business.
 

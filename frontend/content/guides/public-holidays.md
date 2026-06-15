@@ -9,15 +9,15 @@ These are the {{ now.year }} public holidays in Berlin. On public holidays, most
 
 {% tableOfContents %}
 
-## 2026 public holidays in Berlin
+## Berlin public holidays in 2026
 
 {% with year=2026 %}{% include "_blocks/publicHolidaysList.html" %}{% endwith %}
 
-## 2027 public holidays in Berlin
+## Berlin public holidays in 2027
 
 {% with year=2027 %}{% include "_blocks/publicHolidaysList.html" %}{% endwith %}
 
-## 2028 public holidays in Berlin
+## Berlin public holidays in 2028
 
 {% with year=2028 %}{% include "_blocks/publicHolidaysList.html" %}{% endwith %}
 
