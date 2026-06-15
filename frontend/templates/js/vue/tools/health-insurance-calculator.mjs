@@ -803,7 +803,7 @@ export default {
 							His number is <strong class="selectable">{{ recipientWhatsapp }}</strong>.
 						</p>
 					</div>
-					<svg class="no-mobile" v-html="qrCode" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 150 150"></svg>
+					<svg class="no-mobile qr-code" v-html="qrCode" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 150 150"></svg>
 				</div>
 				<hr>
 				<div class="buttons bar">
