@@ -15,7 +15,7 @@
     :root{
         --c-error: #9f3a2b;
         --c-text-error: #{lighten(#9f3a2b, 20%)};
-        --c-bg-intro: transparent;
+        --c-bg-intro: var(--c-bg-page);
     }
 }
 
