@@ -730,7 +730,7 @@ export default {
 						<p>He replies on the same day. His help is <strong>100% free</strong>.</p>
 					</div>
 					<img
-						srcset="/experts/photos/bioLarge1x/seamus-wolf.jpg, /experts/photos/bioLarge2x/seamus-wolf.jpg 2x"
+						srcset="/experts/photos/bioLarge1x/seamus-wolf.png, /experts/photos/bioLarge2x/seamus-wolf.png 2x"
 						alt="Seamus Wolf" width="125" height="125"
 						sizes="125px">
 				</div>
