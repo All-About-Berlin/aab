@@ -65,6 +65,8 @@ These websites only have English-speaking jobs, or let you filter by language:
 - [English-speaking jobs in Berlin](https://www.facebook.com/groups/jobinberlin/) - Facebook group, 89,000+ members
 - [English jobs in Berlin](https://www.facebook.com/groups/English.Jobs.Berlin/) - Facebook group, 43,000+ members
 
+**[Companies that hire English speakers ➞](https://hisignal.io/jobs/top-english-speaking-companies-berlin/)**
+
 ### Tech jobs
 
 - **[GermanTechJobs](https://germantechjobs.de/jobs/all/Berlin)** - You can filter by language and technology.
