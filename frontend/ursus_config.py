@@ -206,8 +206,11 @@ ctx["SEAMUS_YEARS_OF_EXPERIENCE"] = date.today().year - 2013
 # TECHNICAL
 # ==============================================================================
 
-ctx["SITE_URL"] = os.environ.get("URSUS_SITE_URL", "")  # No trailing slash!
-ctx["SERVICES_SITE_URL"] = os.environ.get("URSUS_SERVICES_SITE_URL", ctx["SITE_URL"] + "/services")
+domain = os.environ.get("DOMAIN", "localhost")
+services_domain = os.environ.get("SERVICES_DOMAIN") or f"{domain}/services"
+
+ctx["SITE_URL"] = f"https://{domain}"  # No trailing slash!
+ctx["SERVICES_SITE_URL"] = f"https://{services_domain}"  # No trailing slash!
 ctx["GOOGLE_MAPS_JAVASCRIPT_API_KEY"] = os.environ.get(
     "GOOGLE_MAPS_JAVASCRIPT_API_KEY", ""
 )  # Frontend use, for address autocomplete

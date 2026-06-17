@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 
 
 def purge_cloudflare_cache(cloudflare_zone: str, cloudflare_api_key: str):
-    logger.info("Purging Cloudflare cache")
+    logger.info(f"Purging Cloudflare cache for zone {cloudflare_zone}")
     assert cloudflare_zone and cloudflare_api_key
     headers = {
         "Authorization": f"Bearer {cloudflare_api_key}",

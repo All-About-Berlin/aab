@@ -13,8 +13,8 @@ services:
       target: prod
     environment:
       - "BUNDLE_JS=1"
-      - "URSUS_SITE_URL=https://allaboutberlin.com"
-      - "URSUS_SERVICES_SITE_URL=https://agoodstart.de"
+      - "DOMAIN=allaboutberlin.com"
+      - "SERVICES_DOMAIN=agoodstart.de"
       - "CLOUDFLARE_ZONE"
       - "CLOUDFLARE_API_KEY"
       - "SERVICES_CLOUDFLARE_ZONE"
