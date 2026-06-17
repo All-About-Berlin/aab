@@ -17,6 +17,8 @@ services:
       - "URSUS_SERVICES_SITE_URL=https://agoodstart.de"
       - "CLOUDFLARE_ZONE"
       - "CLOUDFLARE_API_KEY"
+      - "SERVICES_CLOUDFLARE_ZONE"
+      - "SERVICES_CLOUDFLARE_API_KEY"
     volumes: !override
       - ".:/var/project:ro"
       - "temp_static_site:/var/output"

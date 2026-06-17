@@ -68,6 +68,8 @@ if __name__ == "__main__":
 
     cloudflare_zone = os.environ["CLOUDFLARE_ZONE"]
     cloudflare_api_key = os.environ["CLOUDFLARE_API_KEY"]
+    services_cloudflare_zone = os.environ["SERVICES_CLOUDFLARE_ZONE"]
+    services_cloudflare_api_key = os.environ["SERVICES_CLOUDFLARE_API_KEY"]
 
     ursus_path = Path("/usr/lib/ursus")
     site_path = Path("/var/project/frontend")
@@ -77,5 +79,6 @@ if __name__ == "__main__":
     try:
         build_site(site_path, tmp_output_path, final_output_path)
         purge_cloudflare_cache(cloudflare_zone, cloudflare_api_key)
+        purge_cloudflare_cache(services_cloudflare_zone, services_cloudflare_api_key)
     except:  # noqa
         logger.exception("Failed to build site")
