@@ -25,6 +25,10 @@ main .intro{
     padding-bottom: var(--m);
     box-shadow: none;
 
+    * {
+        color: var(--c-text-heading)!important;
+    }
+
     &:has(h1:last-child){
         box-shadow: none;
     }
