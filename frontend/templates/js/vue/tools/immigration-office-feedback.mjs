@@ -7,6 +7,8 @@ import Tabs from '/js/vue/components/tabs.mjs';
 import { citizenshipDepartments } from '/js/utils/immigrationOffice.mjs'
 import { formatLongDate, formatTimeDelta } from '/js/utils/date.mjs';
 import { residencePermitTypes, residencePermitDepartments, oldResidencePermitDepartments } from '/js/utils/immigrationOffice.mjs';
+import { residencePermitWaitTime } from '/js/utils/constants.mjs';
+
 
 import metadata from '/js/vue/tools/immigration-office-feedback.metadata.json' with { type: 'json' };
 
@@ -101,7 +103,7 @@ export default {
 			return this.stats?.start_to_finish?.all_time?.readable_median;
 		},
 		startToFinishWaitRange(){
-			return this.stats?.start_to_finish?.all_time?.readable_range ?? 'a few months';
+			return this.stats?.start_to_finish?.all_time?.readable_range ?? residencePermitWaitTime;
 		},
 		residencePermitDepartments(){
 			return residencePermitDepartments(this.residencePermitType);

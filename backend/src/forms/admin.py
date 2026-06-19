@@ -1,6 +1,7 @@
 from django.contrib import admin
 from forms.models import (
     CitizenshipFeedback,
+    ImmigrationOfficeLawsuit,
     PensionRefundReminder,
     PensionRefundRequest,
     PensionRefundQuestion,
@@ -75,9 +76,21 @@ class PlaceSuggestionAdmin(admin.ModelAdmin):
     list_display = ["business_name", "category", "is_owner", "email", "creation_date"]
 
 
+class ImmigrationOfficeLawsuitAdmin(admin.ModelAdmin):
+    list_display = [
+        "name",
+        "email",
+        "application_type",
+        "city",
+        "application_date",
+        "creation_date",
+    ]
+
+
 admin.site.register(PlaceSuggestion, PlaceSuggestionAdmin)
 admin.site.register(PensionRefundRequest, PensionRefundRequestAdmin)
 admin.site.register(PensionRefundReminder, PensionRefundReminderAdmin)
 admin.site.register(PensionRefundQuestion, PensionRefundQuestionAdmin)
 admin.site.register(ResidencePermitFeedback, ResidencePermitFeedbackAdmin)
 admin.site.register(CitizenshipFeedback, CitizenshipFeedbackAdmin)
+admin.site.register(ImmigrationOfficeLawsuit, ImmigrationOfficeLawsuitAdmin)

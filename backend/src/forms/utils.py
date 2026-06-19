@@ -1,13 +1,24 @@
+from datetime import timedelta
 from django.conf import settings
 from django.core.exceptions import ValidationError
+from django.utils import timezone
 from email_validator import validate_email as original_validate_email, EmailNotValidError
 from typing import List, Tuple
+import functools
 import logging
 import random
 import requests
 
 
 logger = logging.getLogger(__name__)
+
+
+def _offset_from_now(**kwargs):
+    return timezone.now() + timedelta(**kwargs)
+
+
+def relative_default_date(**kwargs):
+    return functools.partial(_offset_from_now, **kwargs)
 
 
 def random_key() -> str:

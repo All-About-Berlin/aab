@@ -414,7 +414,6 @@ export default {
 			class="health-insurance-calculator"
 			:aria-label="metadata.label"
 			:aria-description="metadata.description"
-			:data-stage="stage"
 			:static="static">
 			<template v-slot:header>
 				<template v-if="mode === 'question'">Ask our<span class="no-mobile"> health</span> insurance expert</template>

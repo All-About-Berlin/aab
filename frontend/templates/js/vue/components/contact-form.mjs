@@ -109,7 +109,6 @@ export default {
 			class="contact-form"
 			:aria-label="ariaLabel"
 			:aria-description="ariaDescription"
-			:data-stage="stage"
 			:static="static">
 			<template v-slot:header>
 				<slot name="header"></slot>

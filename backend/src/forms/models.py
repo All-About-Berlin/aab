@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta, date
+from datetime import datetime, date
 from dateutil.relativedelta import relativedelta
 from django.conf import settings
 from django.core.exceptions import ValidationError
@@ -6,7 +6,7 @@ from django.db import models, connection
 from django.template.loader import render_to_string
 from django.utils import timezone
 from django_countries.fields import CountryField
-from forms.utils import random_key, validate_email
+from forms.utils import random_key, relative_default_date, validate_email
 from typing import Any, List
 import logging
 
@@ -224,10 +224,6 @@ class PensionRefundReminder(EmailMixin, ScheduledMessage):
 
     class Meta(ScheduledMessage.Meta):
         pass
-
-
-def in_8_weeks():
-    return timezone.now() + timedelta(weeks=8)
 
 
 class FeedbackManager(models.Manager):
@@ -536,6 +532,87 @@ class CitizenshipFeedbackReminder(ScheduledMessage):
         pass
 
 
+class ImmigrationOfficeLawsuit(NameMixin, EmailMixin, models.Model):
+    creation_date = models.DateTimeField(auto_now_add=True)
+
+    application_type = models.CharField(max_length=30, choices=ResidencePermitTypes)
+    city = models.CharField(max_length=100)
+    application_date = models.DateField()
+    immigration_office_has_replied = models.BooleanField(null=True, default=None)
+    meets_requirements = models.BooleanField(null=True, default=None)
+    has_submitted_documents = models.BooleanField(null=True, default=None)
+    message = models.TextField(blank=True)
+
+    daily_digest_fields = ["application_type", "city", "application_date", "message"]
+
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+        ImmigrationOfficeLawsuitCustomerNotification.objects.get_or_create(case=self)
+        ImmigrationOfficeLawsuitLawyerNotification.objects.get_or_create(case=self)
+        ImmigrationOfficeLawsuitFeedbackNotification.objects.get_or_create(case=self)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        ordering = ["-creation_date"]
+
+
+class ImmigrationOfficeLawsuitNotificationMixin(ScheduledMessage):
+    case = models.OneToOneField(ImmigrationOfficeLawsuit, on_delete=models.CASCADE)
+
+    class Meta:
+        abstract = True
+
+
+class ImmigrationOfficeLawsuitCustomerNotification(ImmigrationOfficeLawsuitNotificationMixin):
+    template = "immigration-office-lawsuit-customer-notification.html"
+
+    @property
+    def recipients(self) -> list[str]:
+        return [self.case.email]
+
+    @property
+    def subject(self) -> str:
+        return "An immigration lawyer will contact you soon"
+
+    class Meta(ScheduledMessage.Meta):
+        pass
+
+
+class ImmigrationOfficeLawsuitLawyerNotification(ImmigrationOfficeLawsuitNotificationMixin):
+    template = "immigration-office-lawsuit-lawyer-notification.html"
+
+    recipients = ["contact@legalweg.com"]
+
+    @property
+    def subject(self) -> str:
+        return f"Untätigkeitsklage case from {self.case.name} (All About Berlin)"
+
+    @property
+    def reply_to(self) -> str:
+        return self.case.email
+
+    class Meta(ScheduledMessage.Meta):
+        pass
+
+
+class ImmigrationOfficeLawsuitFeedbackNotification(ImmigrationOfficeLawsuitNotificationMixin):
+    template = "immigration-office-lawsuit-feedback-notification.html"
+    delivery_date = models.DateTimeField(default=relative_default_date(weeks=1))
+
+    @property
+    def recipients(self) -> list[str]:
+        return [self.case.email]
+
+    @property
+    def subject(self) -> str:
+        return "Did Artjom help you sue the immigration office?"
+
+    class Meta(ScheduledMessage.Meta):
+        pass
+
+
 class PlaceCategories(models.TextChoices):
     BOARD_GAMES = "board-games"
     CINEMAS = "cinemas"
@@ -577,7 +654,7 @@ class PlaceSuggestion(models.Model):
 
 
 class TaxIdRequestFeedbackReminder(NameMixin, EmailMixin, ScheduledMessage):
-    delivery_date = models.DateTimeField(default=in_8_weeks)
+    delivery_date = models.DateTimeField(default=relative_default_date(weeks=8))
 
     subject = "Did you receive your tax ID?"
     template = "tax-id-request-feedback-reminder.html"

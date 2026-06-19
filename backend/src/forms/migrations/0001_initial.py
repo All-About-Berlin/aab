@@ -3,8 +3,8 @@
 import django.db.models.deletion
 import django.utils.timezone
 import django_countries.fields
-import forms.models
 import forms.utils
+import functools
 from django.db import migrations, models
 
 
@@ -179,7 +179,10 @@ class Migration(migrations.Migration):
                     ),
                 ),
                 ("name", models.CharField(max_length=150)),
-                ("delivery_date", models.DateTimeField(default=forms.models.in_8_weeks)),
+                (
+                    "delivery_date",
+                    models.DateTimeField(default=functools.partial(forms.utils._offset_from_now, weeks=8)),
+                ),
             ],
             options={
                 "abstract": False,

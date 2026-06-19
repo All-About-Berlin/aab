@@ -1,8 +1,7 @@
-from datetime import timedelta
 from django.core.exceptions import ValidationError
 from django.db import models
-from django.utils import timezone
 from forms.models import ScheduledMessage
+from forms.utils import relative_default_date
 
 
 class ContactMethod(models.TextChoices):
@@ -116,10 +115,6 @@ class Case(models.Model):
         return self.name
 
 
-def in_1_week():
-    return timezone.now() + timedelta(weeks=1)
-
-
 class CaseNotificationMixin(ScheduledMessage):
     case = models.ForeignKey(Case, on_delete=models.CASCADE)
 
@@ -167,7 +162,7 @@ class BrokerNotification(CaseNotificationMixin, ScheduledMessage):
 
 class FeedbackNotification(CaseNotificationMixin):
     template = "feedback-notification.html"
-    delivery_date = models.DateTimeField(default=in_1_week)
+    delivery_date = models.DateTimeField(default=relative_default_date(weeks=1))
 
     @property
     def subject(self) -> str:

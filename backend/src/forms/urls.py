@@ -1,6 +1,7 @@
 from django.urls import include, path
 from forms.views import (
     CitizenshipFeedbackViewSet,
+    ImmigrationOfficeLawsuitViewSet,
     NewsletterSignupView,
     PensionRefundQuestionViewSet,
     PensionRefundReminderViewSet,
@@ -19,6 +20,7 @@ router.register("pension-refund-reminder", PensionRefundReminderViewSet)
 router.register("pension-refund-request", PensionRefundRequestViewSet)
 router.register("residence-permit-feedback", ResidencePermitFeedbackViewSet)
 router.register("tax-id-request-feedback-reminder", TaxIdRequestFeedbackReminderViewSet)
+router.register("immigration-office-lawsuit", ImmigrationOfficeLawsuitViewSet)
 
 urlpatterns = [
     path("", include(router.urls)),

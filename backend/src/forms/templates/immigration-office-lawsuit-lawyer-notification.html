@@ -1,0 +1,14 @@
+<p>Hi Artjom,</p>
+
+<p>Someone asked about suing the immigration office on All About Berlin.</p>
+
+<p><strong>Name:</strong> {{ message.case.name|default:"Not specified" }}</p>
+<p><strong>Email:</strong> {{ message.case.email|default:"Not specified" }}</p>
+<hr>
+<p><strong>Application type:</strong> {{ message.case.get_application_type_display }}</p>
+<p><strong>City:</strong> {{ message.case.city|default:"Not specified" }}</p>
+<p><strong>Application date:</strong> {{ message.case.application_date|date:"F j, Y" }}</p>
+<p><strong>Immigration office has replied:</strong> {{ message.case.immigration_office_has_replied|yesno:"Yes,No,Not specified" }}</p>
+<p><strong>Meets requirements:</strong> {{ message.case.meets_requirements|yesno:"Yes,No,Not specified" }}</p>
+<p><strong>Has submitted documents:</strong> {{ message.case.has_submitted_documents|yesno:"Yes,No,Not specified" }}</p>
+<p><strong>Extra details:</strong><br>{{ message.case.message|default:"Not specified"|linebreaksbr }}</p>

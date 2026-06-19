@@ -7,6 +7,10 @@ from django.core.cache import cache
 from django.utils import timezone
 from forms.models import (
     CitizenshipFeedback,
+    ImmigrationOfficeLawsuit,
+    ImmigrationOfficeLawsuitCustomerNotification,
+    ImmigrationOfficeLawsuitFeedbackNotification,
+    ImmigrationOfficeLawsuitLawyerNotification,
     PensionRefundQuestion,
     PensionRefundReminder,
     PensionRefundRequest,
@@ -884,6 +888,54 @@ class PlaceSuggestionTestCase(APITestCase):
         )
         self.assertEqual(response.status_code, 204)
         self.assertEqual(PlaceSuggestion.objects.count(), 0)
+
+
+class ImmigrationOfficeLawsuitTestCase(ScheduledMessageEndpointMixin, APITestCase):
+    model = ImmigrationOfficeLawsuit
+    endpoint = "/api/forms/immigration-office-lawsuit"
+
+    example_request = {
+        "name": "John Test",
+        "email": "contact@nicolasbouliane.com",
+        "application_type": "BLUE_CARD",
+        "city": "Berlin",
+        "application_date": "2023-01-01",
+        "immigration_office_has_replied": False,
+        "meets_requirements": True,
+        "has_submitted_documents": True,
+        "message": "",
+    }
+
+    def test_notifications_scheduled(self):
+        self.client.post(self.endpoint, self.example_request, format="json")
+        case = ImmigrationOfficeLawsuit.objects.get(email=self.example_request["email"])
+
+        customer = ImmigrationOfficeLawsuitCustomerNotification.objects.get(case=case)
+        self.assertEqual(customer.recipients, [self.example_request["email"]])
+        self.assertEqual(
+            customer.delivery_date.replace(second=0, microsecond=0),
+            timezone.now().replace(second=0, microsecond=0),
+        )
+
+        lawyer = ImmigrationOfficeLawsuitLawyerNotification.objects.get(case=case)
+        self.assertEqual(lawyer.recipients, ["contact@legalweg.com"])
+        self.assertEqual(lawyer.reply_to, self.example_request["email"])
+        self.assertEqual(
+            lawyer.delivery_date.replace(second=0, microsecond=0),
+            timezone.now().replace(second=0, microsecond=0),
+        )
+
+        feedback = ImmigrationOfficeLawsuitFeedbackNotification.objects.get(case=case)
+        self.assertEqual(feedback.recipients, [self.example_request["email"]])
+        self.assertEqual(
+            feedback.delivery_date.replace(second=0, microsecond=0),
+            (timezone.now() + timedelta(weeks=1)).replace(second=0, microsecond=0),
+        )
+
+    def test_create_invalid_application_type_400(self):
+        bad_request = {**self.example_request, "application_type": "INVALID"}
+        response = self.client.post(self.endpoint, bad_request, format="json")
+        self.assertEqual(response.status_code, 400, response.json())
 
 
 class ReadableDateRangeTestCase(unittest.TestCase):

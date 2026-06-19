@@ -122,7 +122,7 @@ At the *Ausländerbehörde*, you can pay with Visa, Mastercard, cash or [[Giroca
 
 When you apply for a residence permit online, you sometimes need to pay in advance, during your application. You can pay with Visa, Mastercard or PayPal. You can't pay with cash or [[Girocard]].[^5]
 
-### How to pay
+### How to pay your application fees
 
 At the end of your appointment, you get a plastic [payment card](/images/auslanderbehoerde-kassenkarte.jpg) (*Kassenkarte*). Bring it to a [payment machine](/images/auslaenderbehoerde-kassenautomat.jpg) (*Kassenautomat*). Follow [the signs](/images/auslanderbehoerde-signs.jpg) to find it. These machines accept cash, EC cards, Visa and Mastercard.[^4] If your card is not accepted, get cash from an ATM.
 
@@ -130,11 +130,13 @@ At the end of your appointment, you get a plastic [payment card](/images/ausland
 
 ![Ausländerbehörde Kassenautomat](/images/auslaenderbehoerde-kassenautomat-2.jpg "Payment machines at the Ausländerbehörde")
 
-After you paid, you can go home. You don't need to go back to your case worker. The fee is [tax-deductible](/glossary/steuerlich%20absetzbar), so keep the receipt. 
+After you have paid, you can go home. You don't need to go back to your case worker. The fee is [tax-deductible](/glossary/steuerlich%20absetzbar), so keep the receipt. 
 
 ## Sue the Ausländerbehörde
 
 The *Ausländerbehörde* has 3 months to process your [residence permit](/glossary/Aufenthaltstitel) application. If it takes longer, you can sue them.[^11] It costs €700 to €3000.[^16] Suing does not always work. The *Ausländerbehörde* sometimes ignores court orders.[^15]
+
+{% tool "immigration-office-lawsuit" %}
 
 First, your lawyer sends a scary letter to the *Ausländerbehörde*. The *Ausländerbehörde* wants to avoid a lawsuit, so they process your application faster.
 

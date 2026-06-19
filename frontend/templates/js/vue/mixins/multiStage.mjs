@@ -13,6 +13,9 @@ export default {
 			return this.stages[this.stageIndex];
 		},
 	},
+	mounted(){
+		this.$el.setAttribute('data-stage', this.stage);
+	},
 	methods: {
 		goToStart(){
 			this.stageIndex = 0;
@@ -30,6 +33,9 @@ export default {
 		}
 	},
 	watch: {
+		stage(newStage){
+			this.$el.setAttribute('data-stage', newStage);
+		},
 		stageIndex(newStageIndex){
 			this.$nextTick(() => {
 				this.$el.scrollIntoView({ block: 'start', behavior: 'auto' });

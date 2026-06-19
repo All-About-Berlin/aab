@@ -3,7 +3,8 @@
 import django.db.models.deletion
 import django.utils.timezone
 import django_countries.fields
-import insurance.models
+import forms.utils
+import functools
 from django.db import migrations, models
 
 
@@ -154,7 +155,10 @@ class Migration(migrations.Migration):
                         default=0,
                     ),
                 ),
-                ("delivery_date", models.DateTimeField(default=insurance.models.in_1_week)),
+                (
+                    "delivery_date",
+                    models.DateTimeField(default=functools.partial(forms.utils._offset_from_now, weeks=1)),
+                ),
                 ("case", models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to="insurance.case")),
             ],
             options={
