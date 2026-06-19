@@ -682,7 +682,7 @@ export default {
 						</button>
 					</li>
 					<li v-if="showGuideLink" :aria-labelledby="uid('h-readGuide')">
-						<a href="/guides/german-health-insurance" @click="selectOption('guide')" target="_blank">
+						<a href="https://allaboutberlin.com/guides/german-health-insurance" @click="selectOption('guide')" target="_blank">
 							<icon-student/>
 							<div>
 								<h3 :id="uid('h-readGuide')">Learn how to choose</h3>
@@ -704,7 +704,7 @@ export default {
 					</button>
 				</li>
 				<li>
-					<a href="/out/feather-private-direct" target="_blank" :aria-labelledby="uid('h-getInsuredDirectly')">
+					<a href="https://allaboutberlin.com/out/feather-private-direct" target="_blank" :aria-labelledby="uid('h-getInsuredDirectly')">
 						<logo-feather/>
 						<div>
 							<h3 :id="uid('h-getInsuredDirectly')">Get insured now</h3>
