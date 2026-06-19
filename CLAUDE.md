@@ -11,7 +11,7 @@ All About Berlin is a website for people moving to or living in Berlin. It consi
 
 ## Development Commands
 
-All tasks are run via `mise` (task runner defined in `mise.toml`).
+All tasks are run via `mise` (task runner defined in `mise.toml`). Always use these commands to run the website, run tests, etc. Never run `docker compose`, `pytest` and other commands directly.
 
 | Command | Description |
 |---|---|
@@ -24,19 +24,6 @@ All tasks are run via `mise` (task runner defined in `mise.toml`).
 | `mise lint` | Run all linters (shellcheck, ruff, ursus) |
 | `mise format` | Auto-format code (ruff) |
 | `mise update-snapshots` | Regenerate visual regression snapshots |
-
-### Running a single test
-
-**UI tests (Playwright):**
-```bash
-pytest tests/tools/health_insurance_calculator/test_health_insurance_start.py
-pytest tests/tools/health_insurance_calculator/test_health_insurance_start.py::test_function_name
-```
-
-**Backend tests (Django):**
-```bash
-docker compose exec backend python3 manage.py test forms.tests
-```
 
 ## Architecture
 
