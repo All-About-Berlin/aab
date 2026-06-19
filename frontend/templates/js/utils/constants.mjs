@@ -649,3 +649,5 @@ export const salaries = {
 }
 
 export const bescheinigungInSteuersachenFee = backendConstants.BESCHEINIGUNG_IN_STEUERSACHEN_FEE;
+
+export const residencePermitWaitTime = backendConstants.WAIT_TIME_RESIDENCE_PERMIT;
