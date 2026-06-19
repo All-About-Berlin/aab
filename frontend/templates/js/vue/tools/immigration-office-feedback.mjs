@@ -275,7 +275,9 @@ export default {
 			<p>
 				In Berlin, it takes <strong v-text="startToFinishWaitRange">a few months</strong> to
 				<template v-if="isCitizenship">become a German citizen.</template>
+				<a :href="guideUrl" v-else-if="guideUrl">get a {{ residencePermitName(residencePermitType).normal }}.</a>
 				<template v-else>get a <glossary :term="residencePermitName(residencePermitType).glossaryTerm">{{ residencePermitName(residencePermitType).normal }}</glossary>.</template>
+
 
 				<template v-if="startToFinishWaitMedian">The median wait time is <span v-text="startToFinishWaitMedian">a few months</span>.</template>
 
