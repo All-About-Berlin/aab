@@ -68,7 +68,7 @@ export function showTooltip(clickEvent) {
 		}
 		setDialogLinks(dialogBody);
 
-		plausible('Glossary dialog', { props: {
+		plausible('Glossary tooltip', { props: {
 			url: anchor.getAttribute('href'),
 			pageSection: getNearestHeadingId(anchor)
 		}});
