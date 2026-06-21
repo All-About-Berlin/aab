@@ -44,7 +44,7 @@ You get a tax ID when you [register your address](/glossary/Anmeldung) for the f
 
 **If you registered your address before**, you already have a tax ID. You just need to [find it](/guides/german-tax-id-steuernummer#where-to-find-your-tax-id).
 
-**If you did not get your tax ID** after 6 weeks, [request it again](https://www.bzst.de/SiteGlobals/Kontaktformulare/DE/Steuerliche_IDNr/Mitteilung_IdNr/mitteilung_IdNr_node.html). You can also go to [your local *Finanzamt*](/out/finanzamt-finder) with your passport, and ask for your tax ID.[^2] You don't need an appointment. A lot of people never get their tax ID letter.
+**If you did not get your tax ID** after 6 weeks, [request it again](https://www.bzst.de/SiteGlobals/Kontaktformulare/DE/IdNr/Mitteilung_IdNr/mitteilung_IdNr_node.html). You can also go to [your local *Finanzamt*](/out/finanzamt-finder) with your passport, and ask for your tax ID.[^2] You don't need an appointment. A lot of people never get their tax ID letter.
 
 ### Where to find your tax ID
 
@@ -59,7 +59,7 @@ If you already have a tax ID, you can find it on...
 If you can't find your tax ID...
 
 - Go to your [local *Finanzamt*](/out/finanzamt-finder) with your passport, and ask for your tax ID.[^2] You don't need an appointment. If they won't help you, go to another *Finanzamt*.
-- Fill [this form](https://www.bzst.de/SiteGlobals/Kontaktformulare/DE/Steuerliche_IDNr/Mitteilung_IdNr/mitteilung_IdNr_node.html), and get a letter from the *[[Finanzamt]]* in around 4 weeks. They will send it to the address you [registered](/glossary/Anmeldung), not anywhere else. Make sure that [your name is on your mailbox](/guides/moving-in#put-your-name-on-your-mailbox).
+- Fill [this form](https://www.bzst.de/SiteGlobals/Kontaktformulare/DE/IdNr/Mitteilung_IdNr/mitteilung_IdNr_node.html), and get a letter from the *[[Finanzamt]]* in around 4 weeks. They will send it to the address you [registered](/glossary/Anmeldung), not anywhere else. Make sure that [your name is on your mailbox](/guides/moving-in#put-your-name-on-your-mailbox).
 
 Your employer and your [tax advisor](/glossary/Steuerberater) also know your tax ID. Ask them.
 
