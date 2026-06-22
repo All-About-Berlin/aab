@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="300px" aria-hidden="true">
   <defs>
     <pattern id="halftone-pattern" width="170.3" height="170.2" x="0" y="0" patternTransform="matrix(3 0 0 3 10793.9 3520.2)" patternUnits="userSpaceOnUse">
       <path fill="none" d="M0 0h170.3v170.2H0z"/>
