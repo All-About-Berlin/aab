@@ -1,6 +1,7 @@
 body > header {
     grid-area: header;
     display: grid;
+    position: relative;
 
     // Narrower page borders on the parent element, because nav
     // items have padding to highlight their background on hover.
@@ -124,12 +125,18 @@ body > header {
         box-shadow: var(--shadow-l);
 
         position: absolute;
+        right:0;
         z-index: 9999;
         justify-self: flex-end;
         top: var(--h-header);
 
         display: grid;
         gap: var(--l);
+
+        @include only-phone{
+            border: none;
+            border-bottom: var(--b-box);
+        }
 
         &[hidden]{
             display: none;
@@ -199,19 +206,23 @@ body > header {
         }
 
         @include only-phone{
-            border: none;
-            border-bottom: var(--b-box);
+            border-radius: 0;
         }
     }
 
     > nav {
         border-radius: 0 0 var(--b-radius) var(--b-radius);
+
         &:has([aria-expanded=true]){
-            border-radius: 0;
+            border-bottom-right-radius: 0;
+
+            @mixin only-phone{
+                border-bottom-left-radius: 0;
+            }
         }
     }
     @include full-width-site{
-        > nav{
+        > nav:not(.submenu){
             border-radius: 0!important;
         }
 
