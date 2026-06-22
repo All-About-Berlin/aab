@@ -61,6 +61,11 @@ input[type=number] {
 input[type=date] {
     width: fit-content;
     min-width: 9.5em;
+
+    // Fix zero-height date inputs in Safari on iOS - 2026-06-22
+    &::-webkit-date-and-time-value{
+        min-height: calc(var(--line-height-text) * var(--m));
+    }
 }
 
 textarea{
