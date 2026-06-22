@@ -9,6 +9,8 @@ Related_guides:
     - guides/losing-your-job.md
 ---
 
-Grundsicherung is a type of social assistance in Germany. It helps you pay for basic needs when you have no income. It replaced *[[Bürgergeld]]* in 2026.[^0]
+Grundsicherung is a type of social assistance in Germany. It helps you pay for basic needs when you have no income.
+
+Grundsicherung replaces *[[Bürgergeld]]*, *[[ALG II]]* and *[[Hartz IV]]* since 2026.[^0] It's not the same as unemployment benefits (*[[ALG I]]*).
 
 [^0]: [Bundesregierung.de](https://www.bundesregierung.de/breg-de/aktuelles/bundesrat-neue-grundsicherung-2399562) (2026)

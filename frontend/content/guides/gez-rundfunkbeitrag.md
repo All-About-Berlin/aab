@@ -75,8 +75,8 @@ Some people pay less, or don't pay anything:
     If you get financial aid ([*BAföG*](/glossary/BAföG)),[^6] you don't pay the TV tax.
 - **Apprentices** ([*Azubis*](/glossary/Azubi))  
     If you get financial aid (*Ausbildungsgeld*), you don't pay the TV tax. Most apprentices have to pay the TV tax.[^7]
-- **[[Bürgergeld]] and social benefit recipients**  
-    If you receive *Bürgergeld* or *Grundsicherung*, you do not pay the TV tax. If you receive [[ALG I]], *Wohngeld* or *Übergangsgeld*, you must still pay the TV tax.[^6]
+- **[[Grundsicherung]] and social benefit recipients**  
+    If you receive *Grundsicherung*, you do not pay the TV tax. If you receive [[ALG I]], *Wohngeld* or *Übergangsgeld*, you must still pay the TV tax.[^6]
 - **People with disabilities**   
     If you have *RF* in your disabled person's pass (*Schwerbehindertenausweis*), you pay 1/3 of the fee.[^9]
 - **Senior citizens**  

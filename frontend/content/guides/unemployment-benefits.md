@@ -43,7 +43,7 @@ If you *currently* get *ALG I*, it can affect your [permanent residence](/glossa
 
 If you got *ALG I* in the past, it does not affect your [permanent residence](/glossary/Niederlassungserlaubnis) or citizenship application.[^32]
 
-Usually, you can't get **[[Bürgergeld]]** with a residence permit. [Check your *Zusatzblatt*.](/guides/zusatzblatt) If it says "Erlischt mit Bezug von Leistungen nach dem SGB II oder SGB XII", you can't get *Bürgergeld*.[^33]
+Usually, you can't get **[[Bürgergeld]]** with a residence permit. [Check your *Zusatzblatt*.](/guides/zusatzblatt) If it says "Erlischt mit Bezug von Leistungen nach dem SGB II oder SGB XII", you can't get *[[Grundsicherung]]*.[^33]
 
 ## When do I get unemployment benefits?
 

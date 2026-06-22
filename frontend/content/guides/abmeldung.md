@@ -153,7 +153,7 @@ German health insurance is only for German residents. When you deregister, you c
 
 ### Social security
 
-When you deregister, you might stop receiving *[[Bürgergeld]]*, *[[Elterngeld]]* *[[Kindergeld]]* and other social services.[^16] Those services are only for German residents. You can get *[[ALG I]]* in another EU country for up to 6 months.
+When you deregister, you might stop receiving *[[Grundsicherung]]*, *[[Elterngeld]]* *[[Kindergeld]]* and other social services.[^16] Those services are only for German residents. You can get *[[ALG I]]* in another EU country for up to 6 months.
 
 ### Bank account
 

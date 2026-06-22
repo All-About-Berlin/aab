@@ -233,9 +233,9 @@ The state can help you start a business. There are many options:
 - **Start-up grant** (*Gründungszuschuss*)  
     If you get *[[ALG I]]*, the *[[Agentur für Arbeit]]* can give you more money to help you start your business. Ask them when you [register for unemployment benefits](/guides/unemployment-benefits).
 - **Initial funding** (*Einstiegsgeld*)  
-    If you already get [[Bürgergeld]], the *[[Agentur für Arbeit]]* can give 50% more money to help you start your business.[^10] More information [here](https://redtapetranslation.com/algii-and-einstiegsgeld-a-government-grant-to-start-your-business/).
+    If you already get *[[Grundsicherung]]*, the *[[Agentur für Arbeit]]* can give 50% more money to help you start your business.[^10] More information [here](https://redtapetranslation.com/algii-and-einstiegsgeld-a-government-grant-to-start-your-business/).
 - **Investment grant** (*Investitionszuschuss*)  
-    If you already get [[Bürgergeld]], the *[[Agentur für Arbeit]]* can give you up to €5,000 to buy equipment for your business.[^11]
+    If you already get *[[Grundsicherung]]*, the *[[Agentur für Arbeit]]* can give you up to €5,000 to buy equipment for your business.[^11]
 - **EXIST start-up grant**  
     If you are a student, a graduate or a scientist working in an innovative technology, you can apply for this grant. - [More information](https://www.exist.de/EXIST/Navigation/EN/Start-upFunding/EXIST-Business-Start-up-Grant/exist-business-start-up-grant.html)
 
@@ -340,7 +340,7 @@ There are tools that make it easier:
 [^8]: [Reddit](https://old.reddit.com/r/berlin/comments/4szbve/freelancing_in_germany_help_and_questions/d5dggy0/) (2016), [Reddit](https://old.reddit.com/r/berlin/comments/9b8tm8/a_few_questions_for_berlinbased_freelancers/e51c3tk/) (2018)
 [^9]: [medium.com](https://tiahardyrobinson.medium.com/in-berlin-depending-on-which-finanzamt-is-responsible-for-you-it-can-take-4-6-weeks-to-get-the-3e8e30ce5ea2)
 [^10]: [existenzgruender.de](https://www.existenzgruender.de/DE/Gruendung-vorbereiten/Entscheidung/Ihre-Startposition/Gruendung-aus-Arbeitslosigkeit/Einstiegsgeld/inhalt.html), [deutschland-startet.de](https://www.deutschland-startet.de/einstiegsgeld-investitionszuschuss/)
-[^11]: [deutschland-startet.de](https://www.deutschland-startet.de/einstiegsgeld-investitionszuschuss/)
+[^11]: [deutschland-startet.de](https://www.deutschland-startet.de/einstiegsgeld-investitionszuschuss/), [Agentur für Arbeit](https://www.arbeitsagentur.de/arbeitslos-arbeit-finden/buergergeld/arbeit-finden/einstiegsgeld-fuer-selbststaendigkeit) (June 2026), [§ 16b SGB II](https://www.buzer.de/16b_SGB_II.htm)
 [^12]: [hartz4widerspruch.de](https://hartz4widerspruch.de/ratgeber/basic/wann-erhalten-eu-buerger-und-andere-auslaender-hartz-4/#alg_i_und_alg_ii_-_wann_haben_eu-auslander_anspruch), Carina Senf at [Rotwang Law](https://rotwang-law.de/en/) (July 2023)
 [^14]: [anny.co](https://docs.anny.co/de/articles/1451-preise-in-netto-oder-in-brutto-anzeigen) (2024), [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/9mdenm/how_much_should_a_freelance_developer_earn_in/) (2018)
 [^15]: Suat Göydeniz, tax advisor (2022)

@@ -45,7 +45,7 @@ When you move, you must change your address in these places:
 - [ ] **[Beitragsservice](https://www.rundfunkbeitrag.de/buergerinnen_und_buerger/formulare/aendern/index_ger.html)** for the [TV tax](/glossary/Rundfunkbeitrag)
 - [ ] **[Finanzamt](https://www.elster.de/eportal/formulare-leistungen/alleformulare/aenderungadresse)**  
     Do it online in [[ELSTER]], ask your [tax advisor](/glossary/Steuerberater) to do it, or email your old *[[Finanzamt]]*.[^11]
-- [ ] **[Jobcenter](https://www.arbeitsagentur.de/arbeitslos-arbeit-finden/buergergeld/pflichten-verstehen-und-beachten/aenderungen-nachweise)** if you get *[[Bürgergeld]]*
+- [ ] **[Jobcenter](https://www.arbeitsagentur.de/arbeitslos-arbeit-finden/buergergeld/pflichten-verstehen-und-beachten/aenderungen-nachweise)** if you get *[[Grundsicherung]]*
 - [ ] **Jugendamt**  
     If your children go to *[[Kita]]*, [get a new Kitagutschein](/guides/kitagutschein).
 - [ ] **[Hunderegister](https://hunderegister.berlin.de/)** if you have a dog

@@ -10,4 +10,4 @@ related_guides:
     - guides/find-a-job-in-berlin.md
 ---
 
-The *Jobcenter* is the agency responsible for *[[Bürgergeld]]*. It is not the same thing as the *[[Agentur für Arbeit]]*.
+The *Jobcenter* is the agency responsible for *[[Grundsicherung]]*. It is not the same thing as the *[[Agentur für Arbeit]]*.

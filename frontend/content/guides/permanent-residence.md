@@ -39,7 +39,7 @@ You might also [qualify for German citizenship](#citizenship). Citizenship is be
 To become a permanent resident, you must...
 
 - [ ] **Support yourself**  
-    Your income or your spouse's income must cover your cost of living.[^60] It must also cover your children and unemployed spouse's cost of living.[^40] Income from social benefits like *[[Bürgergeld]]* and *Sozialhilfe* do not count. Income from *[[Kindergeld]]*, *[[Elterngeld]]*, *Kinderzuschlag* and *Erziehungsgeld* counts.[^16]
+    Your income or your spouse's income must cover your cost of living.[^60] It must also cover your children and unemployed spouse's cost of living.[^40] Income from social benefits like *[[Grundsicherung]]* and *Sozialhilfe* do not count. Income from *[[Kindergeld]]*, *[[Elterngeld]]*, *Kinderzuschlag* and *Erziehungsgeld* counts.[^16]
 - [ ] **Have a place to live**  
     Your apartment must be big enough for you and your family. You need 9 m^2^ per adult, and 6 m^2^ per child.[^51]
 - [ ] **Have [health insurance](/glossary/Krankenversicherung)**  

@@ -256,7 +256,7 @@ export default {
 							<icon-bank/>
 							<div>
 								<h3>Social benefits</h3>
-								<p>If you get <glossary term="ALG I">unemployment benefits</glossary>, <glossary>Bürgergeld</glossary> or <glossary>Elterngeld</glossary>, you get free public health insurance.</p>
+								<p>If you get <glossary term="ALG I">unemployment benefits</glossary>, <glossary>Grundsicherung</glossary> or <glossary>Elterngeld</glossary>, you get free public health insurance.</p>
 							</div>
 							<price :amount="0" per-month></price>
 						</a>

@@ -268,7 +268,7 @@ Your employer pays for your health insurance if...[^48]
 The state pays for your public health insurance if...[^45]
 
 - You get [unemployment benefits](/glossary/ALG%20I)
-- or you get *[[Bürgergeld]]*
+- or you get *[[Grundsicherung]]*
 - or you get *[[Elterngeld]]* (in some cases)
 
 [When you lose your job](/guides/german-health-insurance/when-unemployed), your public health insurance is sometimes free for 1 month (*nachgehender Leistungsanspruch*). This happens automatically; you don't need to apply for it.

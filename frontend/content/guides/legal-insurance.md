@@ -151,7 +151,7 @@ Use [Tarifcheck](/out/tarifcheck-rechtsschutz) to compare legal insurances.
 - **Tenant association** (*[[Mieterverein]]*){{RECOMMENDED}}  
     Cheaper than legal insurance.[^12] They also answer small questions, draft letters to your landlord, and check your [utility bills](/glossary/Nebenkostenabrechnung).
 - **Legal aid** (*Beratungshilfe*)  
-    If you have a low income, you can apply for legal help  at your [local *Amtsgericht*](https://www.gerichtsverzeichnis.de/verzeichnis.php).[^37] You get a certificate (*Beratungshilfeschein*) that pays for your legal costs. If you get *[[Bürgergeld]]* or *Sozialhilfe*, or if you are an asylum seeker, you are eligible.[^38] You usually need to speak German.
+    If you have a low income, you can apply for legal help  at your [local *Amtsgericht*](https://www.gerichtsverzeichnis.de/verzeichnis.php).[^37] You get a certificate (*Beratungshilfeschein*) that pays for your legal costs. If you get *[[Grundsicherung]]* or *Sozialhilfe*, or if you are an asylum seeker, you are eligible.[^38] You usually need to speak German.
 - **Legal hotline**  
     For quick business or immigration questions, use Alexander von Engelhardt's legal hotline: [09008 529 366 11](tel:0900852936611). It costs €{{LEGAL_HOTLINE_COST_PER_MINUTE|cur}} per minute.
 - **Legal services**  

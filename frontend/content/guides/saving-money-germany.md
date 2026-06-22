@@ -70,7 +70,7 @@ Use my [health insurance recommendation tool](/tools/health-insurance-calculator
 
 - **Change electricity and gas providers**  
     Energy companies give rebates to new customers. When the rebate expires, switch to another company.[^0] Do this every year before your contract renews. You can save around €100 to €200 per year. Use [Verivox](/out/verivox-electricity) or [Check24](/out/check24-electricity) to find another energy company.
-- **Stop paying the TV tax**  
+- **Stop paying the [TV tax](/glossary/Rundfunkbeitrag)**  
     When you receive financial aid (*[[Bürgergeld]]* or *[[BAföG]]*), fill [this form](https://www.rundfunkbeitrag.de/buergerinnen_und_buerger/formulare/befreiung_oder_ermaessigung_beantragen/index_ger.html) to stop paying the TV tax.
 
 ## Transportation

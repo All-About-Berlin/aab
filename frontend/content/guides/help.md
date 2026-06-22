@@ -113,7 +113,7 @@ Don't be afraid to use a lawyer. Your employer can't fire you or blacklist you b
 - **Legaltech** (*Rechtsdienstleister*)  
     Legal services can help you with specific legal problems. For example, [Conny](/out/conny-mietpreisbremse) specialises in tenant law. They can [lower your rent](/guides/moving-in#lower-your-rent) and many other things. I reviewed them [here](/guides/conny-review). Usually, their services cost nothing if you lose. If you win, they keep a part of the money you get back.
 
-**If you have a low income**, you can apply for legal help (*Beratungshilfe*) at the [local *Amtsgericht*](https://www.gerichtsverzeichnis.de/verzeichnis.php).[^5] You will get a certificate (*Beratungshilfeschein*) that pays for your legal costs. If you get [[Bürgergeld]] or *Sozialhilfe*, or if you are an asylum seeker, you are eligible.[^6] You will probably need to speak German.
+**If you have a low income**, you can apply for legal help (*Beratungshilfe*) at the [local *Amtsgericht*](https://www.gerichtsverzeichnis.de/verzeichnis.php).[^5] You will get a certificate (*Beratungshilfeschein*) that pays for your legal costs. If you get *[[Grundsicherung]]* or *Sozialhilfe*, or if you are an asylum seeker, you are eligible.[^6] You will probably need to speak German.
 
 **If you have [legal insurance](/glossary/Rechtsschutzversicherung)**, it covers talking to a lawyer. They usually have a legal hotline that you can call for free.
 

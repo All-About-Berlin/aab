@@ -38,7 +38,7 @@ This is what each lines on your *Zusatzblatt* means:
 - **"Erwerbstätigkeit nicht erlaubt"**  
     You can't work, and you can't be self-employed.
 - **"Erlischt mit Bezug von Leistungen nach dem SGB II oder SGB XII"**  
-    You can't receive *[[Bürgergeld]]*.[^1] You can still receive [unemployment benefits](/glossary/ALG%20I).
+    You can't receive *[[Grundsicherung]]*, but you can receive [unemployment benefits](/glossary/ALG%20I).[^1]
 - **"Erlischt bei Wegfall des gültigen Krankenversicherungsschutzes"**  
     If you lose your health insurance, your residence permit expires.
 - **"Nach 1 jähr. versicherungspfl. Beschäftig. ist Beschäftig. jeder Art erlaubt"**  

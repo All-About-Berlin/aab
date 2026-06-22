@@ -52,7 +52,7 @@ The *Kaution* can be thousands of euros. If you don't have enough money, you can
 - **Borrow money**[^23]  
     Get a loan from a bank or a friend, and pay it back when you can. If you just moved to Germany, it's harder to get a loan.
 - **Get help from the Agentur für Arbeit**[^4]  
-    If you receive [[ALG I]] or [[Bürgergeld]], the *[[Agentur für Arbeit]]* or the *[[Jobcenter]]* can pay your *Kaution*.
+    If you receive *[[ALG I]]* or *[[Grundsicherung]]*, the *[[Agentur für Arbeit]]* or the *[[Jobcenter]]* can pay your *Kaution*.
 - **Find cheaper housing**  
     The deposit for a room in a [[WG]] is lower, because the rent is lower. [Short-term housing](/guides/find-a-flat-in-berlin#short-term-housing) usually has a smaller deposit, but the rent is much higher.
 
