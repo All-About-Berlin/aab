@@ -180,20 +180,16 @@ export default {
 				</div>
 				<hr>
 				<div class="form-group">
-					<span class="label">Extra questions</span>
-					<checkbox v-model="immigrationOfficeHasReplied">
-						The immigration office has replied <template v-if="monthsAgo > 6">in the last 6 months</template>
-					</checkbox>
+					<span class="label">Extra information</span>
 					<checkbox v-model="meetsRequirements">
 						I meet all the application requirements
 					</checkbox>
 					<checkbox v-model="hasSubmittedDocuments">
 						I have sent all required application documents
 					</checkbox>
-				</div>
-				<hr>
-				<div class="form-group">
-					<label :for="uid('message')">Extra details</label>
+					<checkbox v-model="immigrationOfficeHasReplied">
+						The immigration office has replied <template v-if="monthsAgo > 6">in the last 6 months</template>
+					</checkbox>
 					<textarea :id="uid('message')" v-model="message" placeholder="What else should Artjom know?"></textarea>
 				</div>
 				<hr>
