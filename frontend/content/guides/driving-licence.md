@@ -148,15 +148,17 @@ You will get your plastic driving licence by post 2 to 6 weeks later.[^36]
 
 ## Other ways to get a licence
 
-### Use your EU or EEA driving licence
+### Use your EU, EEA or Ukrainian driving licence
 
-Your driving licence from another [EU](/glossary/European%20Union) or [[EEA]] country is valid in Germany.[^13] When it expires, you can [convert it to a German driving licence](/guides/convert-to-german-driving-licence). You don't need to take driving classes or a driving exam.
+[EU](/glossary/European%20Union), [[EEA]] and Ukrainian driving licences are valid in Germany.[^13] When it expires, you can [convert it to a German driving licence](/guides/convert-to-german-driving-licence).{{ fail_on('2027-04-01') }}
+
+**[Use your foreign driving licence in Germany ➞](/guides/convert-to-german-driving-licence#if-you-live-in-germany)**
 
 ### Convert your foreign driving licence
 
 If you have a driving licence from another country, you can convert it. It's cheaper and faster. You might not need to take driving classes or a driving exam.
 
-**[How to convert a foreign driving licence ➞](/guides/convert-to-german-driving-licence)**
+**[Convert your foreign driving licence ➞](/guides/convert-to-german-driving-licence)**
 
 ### Get your licence in another country
 

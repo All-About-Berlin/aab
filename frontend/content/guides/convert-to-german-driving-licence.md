@@ -28,36 +28,45 @@ You usually need a translation of your driving licence. There are 2 ways to get 
 
 You **don't** need a driving licence translation if...[^0]
 
-- Your driving licence is from the EU, [[EEA]], Andorra, Hong Kong, Monaco, New Zealand, San Marino, Senegal or Switzerland.
+- Your driving licence is from the [EU](/glossary/European%20Union), [[EEA]], Andorra, Hong Kong, Monaco, New Zealand, San Marino, Senegal or Switzerland.[^25]
 - or it follows [these rules](https://treaties.un.org/doc/Treaties/1977/05/19770524%2000-13%20AM/Ch_XI_B_19.pdf#page=146) (Vienna Convention on Road Traffic, Annex 6, page 146)
 - or it's in German
 
 ### If you live in Germany
 
-After you move to Germany, your foreign driving licence is valid for 6 months.[^18] If you have an EU or [[EEA]] driving licence, it's valid until it expires.[^17]
+Foreign driving licences are sometimes valid in Germany:
 
-When your driving licence becomes invalid, you can...
-
-- Convert your foreign driving licence to a German driving licence
-- or [take driving lessons](/guides/english-speaking-driving-schools), pass the driving exam, and get a new driving licence
+- **[EU](/glossary/European%20Union) or [[EEA]] driving licences**  
+    Your driving licence is valid in Germany until it expires.[^17] After it expires, you can [exchange it for a German driving licence](https://service.berlin.de/dienstleistung/121598/) at the *[[Bürgeramt]]*. You don't need to take driving classes.
+    - **Converted driving licences**  
+        If you got a driving licence outside of [[EEA]] and [Annex 11 countries](https://www.gesetze-im-internet.de/fev_2010/anlage_11.html), then converted it to a EU driving licence without taking a driving exam, your EU driving licence is only valid for 6 months after you move to Germany.[^23] You might need to take driving classes to get a German driving licence.
+- **Ukrainian driving licences**  
+    If you are a Ukrainian asylum seeker, your driving licence is valid in Germany.[^22] If it expires after the Russian invasion of Ukraine, it's still valid in Germany.{{ fail_on('2027-04-01') }}
+- **Other driving licences**  
+    After you [move to Germany](/guides/moving-to-berlin) and [register your address](/glossary/Anmeldung), your driving licence is valid for 6 months.[^18] After 6 months, you must convert it to a German driving licence.
 
 ## How to convert your driving licence
 
 ### Basic requirements
 
-You can convert **driving licences from any other country**. You can do this **anytime after you move to Germany**.[^7] I applied over 1 year after my *[[Anmeldung]]*.
+You can convert any foreign driving licence. You can do this any time after moving to Germany.[^7] Depending on the country where you got your driving licence, you might need to take driving lessons or a driving exam.
 
-You can't always convert truck or motorcycle licences. It depends on the country it comes from. For example, you can't convert a Canadian motorcycle licence. This is not a problem with EU and [[EEA]] driving licences.
+There are a few conditions:
 
-You can convert an expired EU or [[EEA]] driving licence.[^8] You can't convert an expired driving licence from other countries.[^6] You can't convert a temporary licence or a learner's permit.
+- [ ] **You got it before moving to Germany**  
+    You must have received your foreign driving licence before you moved to Germany. I renewed my Canadian driving licence after moving to Berlin. I had to show photocopies of my old Canadian licence, to prove that I had a Canadian driving licence before moving to Germany.
+- [ ] **It's not expired**[^6]  
+    Your foreign driving licence must still be valid. Expired [EU](/glossary/European%20Union) and [[EEA]] driving licences can still be converted.[^8]
+- [ ] **It's a full driving licence**  
+    You can't convert a temporary licence or a learner's permit.[^26]
 
-You must get your foreign driving licence before you move to Germany. You can't move to Germany, get a driving licence elsewhere, then convert it.
+Sometimes, truck and motorcycle licences from non-[EU](/glossary/European%20Union) countries can't be converted. See the [rules for your country](https://www.gesetze-im-internet.de/fev_2010/anlage_11.html).
 
-I renewed my Canadian licence after I [moved to Berlin](/guides/moving-to-berlin). The date on the driving licence was after my *[[Anmeldung]]* date. I had to prove that I got my driving licence before I moving to Germany. I showed photocopies of my old Canadian licence, and a certificate from my Canadian driving school.
+When you convert your driving licence, they check **where you got driving lessons**. For example, if you converted your Iranian driving licence to a Spanish driving licence, they will follow the rules for Iranian driving licences, because that's where you passed your driving exam.[^24]
 
 ### 1. Register your address
 
-Register your address (*[[Anmeldung]]*) first. You need a registration certificate (*[[Anmeldebestätigung]]*) to convert your driving licence.
+Register your address (*[[Anmeldung]]*) first. You need an [address registration certificate](/glossary/Anmeldebestätigung) to convert your driving licence.
 
 **[How to register your address in Berlin ➞](/guides/anmeldung-in-english-berlin)**
 
@@ -165,7 +174,7 @@ After a few weeks, you get a letter. It tells you to pick up your new driver lic
 [^4]: [caasco.com](https://www.caasco.com/travel/travel-information/international-driving-permit), [caaquebec.com](https://www.caaquebec.com/en/contact-us/travel-centres/)
 [^5]: [travel.gc.ca](https://travel.gc.ca/travelling/documents/international-driving-permit)
 [^6]: [berlin.de](https://service.berlin.de/dienstleistung/327537/#:~:text=der%20deutschen%20Fahrerlaubnis-,noch%20gultig%20sein,-und%20im%20Original), [ebureaucracy.com](https://ebureaucracy.com/germany/how-to-convert-a-foreign-driving-license#:~:text=it%20is%20okay%20if%20your%20home-country%E2%80%99s%20license%20has%20expired%20since%20moving%20to%20germany%2C%20but%20then%20you%20need%20to%20obtain%20a%20renewed%20version)
-[^7]: [Red Tape Translation](https://redtapetranslation.com/exchanging-your-foreign-drivers-licence-in-germany/)
+[^7]: [Red Tape Translation](https://redtapetranslation.com/exchanging-your-foreign-drivers-licence-in-germany/), personal experience (2016)
 [^8]: [berlin.de](https://service.berlin.de/dienstleistung/121598/#:~:text=bereits%20abgelaufen%20ist)
 [^9]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/qr1w7o/credit_cards_are_finally_accepted_at_the/hk6mpwi/?context=3)
 [^10]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/6bilah/getting_an_update_from_the_b%C3%BCrgeramt/), [toytowngermany.com](https://web.archive.org/web/20230520093526/https://www.toytowngermany.com/forum/topic/130747-changing-a-canadian-drivers-licence-to-german/#comment-1611766), [awesomesauceasshattery.wordpress.com](http://web.archive.org/web/20211205222224/https://awesomesauceasshattery.wordpress.com/2011/10/22/canadian-to-german-driving-licence-in-just-4-steps/), [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/8paad4/the_wait_time_for_a_drivers_licence_is_five/), [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/9bj5dm/to_anyone_waiting_for_his_driving_licence_to_be/), [ebureaucracy.com](https://ebureaucracy.com/germany/how-to-convert-a-foreign-driving-license#:~:text=then%20some%20weeks%20later%20i%20got%20a%20letter%20saying)
@@ -176,7 +185,12 @@ After a few weeks, you get a letter. It tells you to pick up your new driver lic
 [^15]: [reddit.com/r/germany](https://old.reddit.com/r/germany/comments/6h6adp/trading_a_foreign_driver_licence_for_a_german_one/)
 [^16]: [Fahrschule Oscar](https://first-aid-courses-berlin.myshopify.com/collections/fahrschule-oscar)
 [^17]: [Directive 2006/126/EC, Article 2](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32006L0126), [Article 7](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32006L0126), [Article 11](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32006L0126), [bussgeldkatalog.de](https://www.bussgeldkatalog.de/auslaendischer-fuehrerschein/#:~:text=wurde%20ihr%20auslandischer%20fuhrerschein%20in%20einem%20anderen%20eu-mitgliedsstaat%20ausgestellt)
-[^18]: [bmdv.bund.de](https://bmdv.bund.de/SharedDocs/DE/Anlage/StV/auslaendische-fahrerlaubnisse-merkblatt-ausserhalb-eu-und-ewr-staaten-englisch.pdf?__blob=publicationFile), [bussgeldkatalog.de](https://www.bussgeldkatalog.de/auslaendischer-fuehrerschein/#:~:text=in%20der%20regel%20bis%20zu%20sechs%20monate%20gultig), [bussgeldkatalog.org](https://www.bussgeldkatalog.org/auslaendischer-fuehrerschein/#:~:text=sie%20mussen%20mindestens%20sechs%20monate%20lang%20ihren%20hauptwohnsitz%20in%20dem%20land%20haben%2C%20in%20dem%20sie%20den%20neuen%20eu-fuhrerschein%20machen.)
+[^18]: [bmdv.bund.de](https://bmdv.bund.de/SharedDocs/DE/Anlage/StV/auslaendische-fahrerlaubnisse-merkblatt-ausserhalb-eu-und-ewr-staaten-englisch.pdf?__blob=publicationFile), [bussgeldkatalog.de](https://www.bussgeldkatalog.de/auslaendischer-fuehrerschein/#:~:text=in%20der%20regel%20bis%20zu%20sechs%20monate%20gultig), [bussgeldkatalog.org](https://www.bussgeldkatalog.org/auslaendischer-fuehrerschein/#:~:text=sie%20mussen%20mindestens%20sechs%20monate%20lang%20ihren%20hauptwohnsitz%20in%20dem%20land%20haben%2C%20in%20dem%20sie%20den%20neuen%20eu-fuhrerschein%20machen.), [ADAC](https://www.adac.de/verkehr/rund-um-den-fuehrerschein/auslaendische-fuehrerscheine/fuehrerscheinumschreibung-fluechtlinge/#:~:text=fuhrerscheine%20aus%20nicht-eu-landern%20gelten%20in%20deutschland%20sechs%20monate%20und%20mussen%20danach%20umgeschrieben%20werden.)
 [^19]: Bürgeramt (2024)
 [^20]: [berlin.de](https://service.berlin.de/dienstleistung/121598/)
 [^21]: Emily Archer (November 2024)
+[^22]: [germany4ukraine.de](https://www.germany4ukraine.de/DE/mobilitaet/ukrainischer-fuehrerschein/seite_node.html) (June 2026), [ADAC](https://www.adac.de/verkehr/rund-um-den-fuehrerschein/auslaendische-fuehrerscheine/fuehrerscheinumschreibung-fluechtlinge/#:~:text=fur%20menschen%20aus%20der%20ukraine%20gilt%20eine%20sonderregel%3A%20ihr%20fuhrerschein%20ist%20auch%20ohne%20umschreibung%20gultig.) (June 2026)
+[^23]: [§ 28 Abs. 4 FeV](https://www.buzer.de/28_FeV.htm), [ADAC](https://www.adac.de/verkehr/rund-um-den-fuehrerschein/auslaendische-fuehrerscheine/gueltigkeit/#keine-umschreibung-erforderlich) (June 2026)
+[^24]: Reader feedback, [§ 28 Abs. 4 FeV](https://www.buzer.de/28_FeV.htm), [ADAC](https://www.adac.de/verkehr/rund-um-den-fuehrerschein/auslaendische-fuehrerscheine/gueltigkeit/#keine-umschreibung-erforderlich) (June 2026)
+[^25]: [ADAC](https://www.adac.de/verkehr/rund-um-den-fuehrerschein/auslaendische-fuehrerscheine/staaten-auserhalb/#uebersetzung-erforderlich) (June 2026)
+[^26]: [§ 28 Abs. 4 FeV](https://www.buzer.de/28_FeV.htm)
