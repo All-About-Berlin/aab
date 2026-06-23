@@ -6,6 +6,7 @@ import EmailInput from '/js/vue/components/email-input.mjs';
 import IconDonate from '/js/vue/components/icons/donate.mjs';
 import IconSupport from '/js/vue/components/icons/support.mjs';
 
+import feedbackFormMixin from '/js/vue/mixins/feedbackForm.mjs';
 import multiStageMixin from '/js/vue/mixins/multiStage.mjs';
 import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
@@ -32,7 +33,7 @@ export default {
 			default: null,
 		}
 	},
-	mixins: [userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin],
+	mixins: [userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin, feedbackFormMixin],
 	data() {
 		return {
 			metadata,
@@ -42,14 +43,9 @@ export default {
 			residencePermitType: null,
 
 			showResidencePermitField: true,
-			isLoading: false,
 
 			// The primary key of the Feedback item, plus a two-letter prefix denoting the residencePermitType
 			modificationKey: userDefaults.empty,
-
-			notes: '',
-			email: userDefaults.empty,
-			subscribeToNewsletter: false,
 
 			healthInsurance: null,
 			healthInsuranceName: null,
@@ -78,16 +74,6 @@ export default {
 					completed: null,
 					date: null,
 				},
-			},
-
-			stages: [
-				'start',
-				'email',
-				'finish',
-				'error',
-			],
-			inputsToFocus: {
-				email: () => this.$refs.emailInput.$el,
 			},
 		};
 	},
@@ -134,7 +120,7 @@ export default {
 			this.healthInsurance = responseJson.health_insurance_type;
 			this.healthInsuranceName = responseJson.health_insurance_name;
 
-			this.email = responseJson.email || this.email;
+			this.emailAddress = responseJson.email || this.emailAddress;
 			this.department = responseJson.department;
 			this.notes = responseJson.notes;
 			this.validity = responseJson.validity;
@@ -161,17 +147,6 @@ export default {
 		residencePermitName(){
 			return this.residencePermitTypes[this.residencePermitType]?.normal || "residence permit";
 		},
-		submittedOnDate(){
-			return this.steps.application.date
-				? new Date(this.steps.application.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric' })
-				: null;
-		},
-		showFeedbackLink(){
-			return !window.location.pathname.startsWith('/guides/immigration-office/wait-times');
-		},
-		showRestOfForm(){
-			return this.steps.application.completed;
-		},
 		departments(){
 			return residencePermitDepartments(this.residencePermitType);
 		},
@@ -187,45 +162,16 @@ export default {
 			}
 			return this.validity * (this.validityUnit === 'years' ? 12 : 1);
 		},
-		feedbackComplete(){
-			return Object.values(this.steps).every(s => s.completed);
-		},
 	},
 	methods: {
-		async nextStage(){
-			if(validateForm(this.$el)){
-				if(this.stage === 'start'){
-					this.goToStage((this.email || this.feedbackComplete) ? 'finish' : 'email');
-				}
-				else{
-					this.goToStage('finish');
-				}
-			}
-		},
-		onStepCompletionChange(key){
-			const changedStepIndex = Object.keys(this.steps).indexOf(key);
-			Object.values(this.steps).forEach((step, index) => {
-				// Tick all previous steps
-				if(index < changedStepIndex && this.steps[key].completed){
-					step.completed = true;
-				}
-
-				// Untick all following steps
-				if(index > changedStepIndex && !this.steps[key].completed){
-					step.completed = false;
-				}
-			})
-		},
 		async submitFeedback(){
 			if(validateForm(this.$el)){
 				this.isLoading = true;
 
-				// Don't set the email before the email stage, even if it's not empty. The email might be prefilled by
-				// userDefaultsMixin, but that does not mean the user consented to email notifications.
 				const emailAddress = (
-					(this.stage === 'email' && this.email)
-					|| (this.stage === 'start' && this.modificationKey && this.email)
-				) ? this.email : null;
+					(this.stage === 'email' && this.emailAddress)
+					|| (this.stage === 'start' && this.modificationKey && this.emailAddress)
+				) ? this.emailAddress : null;
 
 				const response = await fetch(
 					this.apiEndpoint,
@@ -282,11 +228,6 @@ export default {
 				appointment: "I have an appointment",
 				pickup: "I have a pick-up date for the residence card",
 			}[key];
-		},
-		minimumStepDate(step){
-			const stepList = Object.values(this.steps);
-			const previousStep = stepList[stepList.indexOf(step) - 1];
-			return previousStep?.date ? previousStep.date : null;
 		},
 	},
 	watch: {
@@ -410,7 +351,7 @@ export default {
 				<p><strong>Thank you!</strong> Please complete your feedback when you get your {{ residencePermitName }}. I can remind you by email.</p>
 				<div class="form-group">
 					<label :for="uid('email')">Email address</label>
-					<email-input ref="emailInput" v-model="email" :id="uid('email')" required></email-input>
+					<email-input ref="emailInput" v-model="emailAddress" :id="uid('email')" required></email-input>
 					<span v-if="!subscribeToNewsletter" class="input-instructions">You will get two email reminders, nothing else.</span>
 					<checkbox class="newsletter-checkbox" v-model="subscribeToNewsletter"><span>Subscribe to the <a href="/newsletter" target="_blank">monthly newsletter</a></span></checkbox>
 				</div>

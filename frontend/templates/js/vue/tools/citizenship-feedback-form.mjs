@@ -5,9 +5,11 @@ import EmailInput from '/js/vue/components/email-input.mjs';
 import IconDonate from '/js/vue/components/icons/donate.mjs';
 import IconSupport from '/js/vue/components/icons/support.mjs';
 
+import feedbackFormMixin from '/js/vue/mixins/feedbackForm.mjs';
 import multiStageMixin from '/js/vue/mixins/multiStage.mjs';
 import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
+import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 import { validateForm } from '/js/utils/form.mjs';
 import { citizenshipDepartments } from '/js/utils/immigrationOffice.mjs';
 
@@ -22,22 +24,18 @@ export default {
 		IconDonate,
 		IconSupport,
 	},
-	mixins: [uniqueIdsMixin, multiStageMixin, trackedStagesMixin],
+	mixins: [userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin, feedbackFormMixin],
 	props: {
 		static: Boolean,
 	},
 	data() {
 		return {
 			metadata,
-			isLoading: false,
 
-			citizenshipModificationKey: null,
+			citizenshipModificationKey: userDefaults.empty,
 
 			department: null,
 			departments: citizenshipDepartments,
-			notes: '',
-			email: null,
-			subscribeToNewsletter: false,
 
 			steps: {
 				application: {
@@ -58,15 +56,6 @@ export default {
 			},
 
 			trackAs: 'Feedback (citizenship)',
-			stages: [
-				'start',
-				'email',
-				'finish',
-				'error',
-			],
-			inputsToFocus: {
-				email: () => this.$refs.emailInput.$el,
-			},
 		};
 	},
 	async mounted(){
@@ -95,7 +84,7 @@ export default {
 			this.steps.appointment.date = responseJson.appointment_date;
 			this.steps.appointment.completed = !!responseJson.appointment_date;
 
-			this.email = responseJson.email || this.email;
+			this.emailAddress = responseJson.email || this.emailAddress;
 			this.notes = responseJson.notes;
 
 			this.department = responseJson.department;
@@ -108,50 +97,12 @@ export default {
 			}
 			return '/api/forms/citizenship-feedback';
 		},
-		submittedOnDate(){
-			return this.steps.application.date
-				? new Date(this.steps.application.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric' })
-				: null;
-		},
-		showFeedbackLink(){
-			return !window.location.pathname.startsWith('/guides/immigration-office/wait-times');
-		},
-		showRestOfForm(){
-			return this.steps.application.completed;
-		},
-		feedbackComplete(){
-			return Object.values(this.steps).every(s => s.completed);
-		},
 		isEmailRequired(){
 			// Require an email if the feedback is not complete enough to be useful
 			return Object.values(this.steps).filter(s => s.completed).length <= 1;
 		},
 	},
 	methods: {
-		async nextStage(){
-			if(validateForm(this.$el)){
-				if(this.stage === 'start'){
-					this.goToStage((this.email || this.feedbackComplete) ? 'finish' : 'email');
-				}
-				else{
-					this.goToStage('finish');
-				}
-			}
-		},
-		onStepCompletionChange(key){
-			const changedStepIndex = Object.keys(this.steps).indexOf(key);
-			Object.values(this.steps).forEach((step, index) => {
-				// Tick all previous steps
-				if(index < changedStepIndex && this.steps[key].completed){
-					step.completed = true;
-				}
-
-				// Untick all following steps
-				if(index > changedStepIndex && !this.steps[key].completed){
-					step.completed = false;
-				}
-			})
-		},
 		async submitFeedback(){
 			if(validateForm(this.$el)){
 				this.isLoading = true;
@@ -165,7 +116,7 @@ export default {
 						body: JSON.stringify({
 							application_date: this.steps.application.date,
 							appointment_date: (this.steps.appointment.completed ? this.steps.appointment.date : null),
-							email: this.email,
+							email: this.emailAddress,
 							first_response_date: (this.steps.response.completed ? this.steps.response.date : null),
 							notes: this.notes,
 							department: this.department,
@@ -201,11 +152,6 @@ export default {
 				response: "I got a reply",
 				appointment: "I got an appointment",
 			}[key];
-		},
-		minimumStepDate(step){
-			const stepList = Object.values(this.steps);
-			const previousStep = stepList[stepList.indexOf(step) - 1];
-			return previousStep ? previousStep.date : null;
 		},
 	},
 	template: `
@@ -275,7 +221,7 @@ export default {
 				</p>
 				<div class="form-group">
 					<label :for="uid('email')">Email address</label>
-					<email-input ref="emailInput" v-model="email" :id="uid('email')" required></email-input>
+					<email-input ref="emailInput" v-model="emailAddress" :id="uid('email')" required></email-input>
 					<checkbox class="newsletter-checkbox" v-model="subscribeToNewsletter"><span>Subscribe to the <a href="/newsletter" target="_blank">monthly newsletter</a></span></checkbox>
 					<span class="input-instructions">
 						You will get 2 reminders,
