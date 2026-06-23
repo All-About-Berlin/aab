@@ -465,7 +465,7 @@ export default {
 					<email-input ref="emailInput" v-model="email" :id="uid('email')"></email-input>
 					<span class="input-instructions" v-if="!email">You will get a single email in 8 weeks. Nothing else.</span>
 					<span class="input-instructions" v-if="email">Thank you! Your feedback will be really helpful.</span>
-					<checkbox class="newsletter-checkbox" v-model="subscribeToNewsletter"><span>Subscribe to my <a href="/newsletter" target="_blank">monthly newsletter</a></span></checkbox>
+					<checkbox class="newsletter-checkbox" v-model="subscribeToNewsletter"><span>Subscribe to the <a href="/newsletter" target="_blank">monthly newsletter</a></span></checkbox>
 				</div>
 			</template>
 			<template v-if="stage === 'options'">

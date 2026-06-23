@@ -118,7 +118,7 @@ export default {
 					Email address
 				</label>
 				<email-input v-model="email" :id="uid('email')" required></email-input>
-				<checkbox class="newsletter-checkbox" v-model="subscribeToNewsletter"><span>Subscribe to my <a href="/newsletter" target="_blank">monthly newsletter</a></span></checkbox>
+				<checkbox class="newsletter-checkbox" v-model="subscribeToNewsletter"><span>Subscribe to the <a href="/newsletter" target="_blank">monthly newsletter</a></span></checkbox>
 			</div>
 			<hr>
 			<div class="form-group">
