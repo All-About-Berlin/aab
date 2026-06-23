@@ -8,7 +8,6 @@ import IconSupport from '/js/vue/components/icons/support.mjs';
 import multiStageMixin from '/js/vue/mixins/multiStage.mjs';
 import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
-import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 import { validateForm } from '/js/utils/form.mjs';
 import { citizenshipDepartments } from '/js/utils/immigrationOffice.mjs';
 
@@ -23,7 +22,7 @@ export default {
 		IconDonate,
 		IconSupport,
 	},
-	mixins: [userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin],
+	mixins: [uniqueIdsMixin, multiStageMixin, trackedStagesMixin],
 	props: {
 		static: Boolean,
 	},
@@ -32,12 +31,12 @@ export default {
 			metadata,
 			isLoading: false,
 
-			citizenshipModificationKey: userDefaults.empty,
+			citizenshipModificationKey: null,
 
 			department: null,
 			departments: citizenshipDepartments,
 			notes: '',
-			email: userDefaults.empty,
+			email: null,
 			subscribeToNewsletter: false,
 
 			steps: {
@@ -123,6 +122,10 @@ export default {
 		feedbackComplete(){
 			return Object.values(this.steps).every(s => s.completed);
 		},
+		isEmailRequired(){
+			// Require an email if the feedback is not complete enough to be useful
+			return Object.values(this.steps).filter(s => s.completed).length <= 1;
+		},
 	},
 	methods: {
 		async nextStage(){
@@ -153,13 +156,6 @@ export default {
 			if(validateForm(this.$el)){
 				this.isLoading = true;
 
-				// Don't set the email before the email stage, even if it's not empty. The email might be prefilled by
-				// userDefaultsMixin, but that does not mean the user consented to email notifications.
-				const emailAddress = (
-					(this.stage === 'email' && this.email)
-					|| (this.stage === 'start' && this.citizenshipModificationKey && this.email)
-				) ? this.email : null;
-
 				const response = await fetch(
 					this.apiEndpoint,
 					{
@@ -169,7 +165,7 @@ export default {
 						body: JSON.stringify({
 							application_date: this.steps.application.date,
 							appointment_date: (this.steps.appointment.completed ? this.steps.appointment.date : null),
-							email: emailAddress,
+							email: this.email,
 							first_response_date: (this.steps.response.completed ? this.steps.response.date : null),
 							notes: this.notes,
 							department: this.department,
@@ -271,12 +267,21 @@ export default {
 				</template>
 			</template>
 			<template v-if="stage === 'email'">
-				<p><strong>Thank you!</strong> Please complete your feedback when you get your citizenship. I can remind you by email.</p>
+				<h2 v-if="isEmailRequired">One last thing&hellip;</h2>
+				<p>
+					<template v-if="isEmailRequired">Your email is required.</template>
+					<template v-else><strong>Thank you!</strong> Your feedback will help others. If you enter your email,</template>
+					I will send you a reminder with a link. You can click this link to complete your feedback later.
+				</p>
 				<div class="form-group">
 					<label :for="uid('email')">Email address</label>
 					<email-input ref="emailInput" v-model="email" :id="uid('email')" required></email-input>
-					<span v-if="!subscribeToNewsletter" class="input-instructions">You will get two email reminders, nothing else.</span>
-					<checkbox class="newsletter-checkbox" v-model="subscribeToNewsletter"><span>Subscribe to my <a href="/newsletter" target="_blank">monthly newsletter</a></span></checkbox>
+					<checkbox class="newsletter-checkbox" v-model="subscribeToNewsletter"><span>Subscribe to the <a href="/newsletter" target="_blank">monthly newsletter</a></span></checkbox>
+					<span class="input-instructions">
+						You will get 2 reminders,
+						<template v-if="subscribeToNewsletter">and the monthly newsletter.</template>
+						<template v-else>no spam.</template>
+					</span>
 				</div>
 			</template>
 			<template v-if="stage === 'finish'">
@@ -306,7 +311,7 @@ export default {
 						:disabled="isLoading"
 						:class="{loading: isLoading}"
 						@click="submitFeedback">{{ citizenshipModificationKey ? 'Update' : 'Send' }} feedback</button>
-					<button class="button primary" v-if="stage === 'email'" @click="submitFeedback">Remind me</button>
+					<button class="button primary" v-if="stage === 'email'" @click="submitFeedback">{{ isEmailRequired ? 'Finish' : 'Remind me' }}</button>
 				</div>
 			</template>
 		</collapsible>

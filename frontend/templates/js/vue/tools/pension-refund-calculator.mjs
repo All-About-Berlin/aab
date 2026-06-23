@@ -406,7 +406,7 @@ export default {
 										Remind me in {{ monthsUntilEligible }}
 									</button>
 								</div>
-								<checkbox class="newsletter-checkbox" v-model="subscribeToNewsletter"><span>Subscribe to my <a href="/newsletter" target="_blank">monthly newsletter</a></span></checkbox>
+								<checkbox class="newsletter-checkbox" v-model="subscribeToNewsletter"><span>Subscribe to the <a href="/newsletter" target="_blank">monthly newsletter</a></span></checkbox>
 							</template>
 						</template>
 					</template>
@@ -493,7 +493,7 @@ export default {
 					<div class="form-group">
 						<label :for="uid('email')">Email address</label>
 						<email-input v-model="email" :id="uid('email')" required></email-input>
-						<checkbox class="newsletter-checkbox" v-model="subscribeToNewsletter"><span>Subscribe to my <a href="/newsletter" target="_blank">monthly newsletter</a></span></checkbox>
+						<checkbox class="newsletter-checkbox" v-model="subscribeToNewsletter"><span>Subscribe to the <a href="/newsletter" target="_blank">monthly newsletter</a></span></checkbox>
 					</div>
 					<div class="form-group">
 						<label :for="uid('date-of-birth')">Date of birth</label>
