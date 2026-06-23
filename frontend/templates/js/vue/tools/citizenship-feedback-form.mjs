@@ -97,10 +97,6 @@ export default {
 			}
 			return '/api/forms/citizenship-feedback';
 		},
-		isEmailRequired(){
-			// Require an email if the feedback is not complete enough to be useful
-			return Object.values(this.steps).filter(s => s.completed).length <= 1;
-		},
 	},
 	methods: {
 		async submitFeedback(){
@@ -215,9 +211,12 @@ export default {
 			<template v-if="stage === 'email'">
 				<h2 v-if="isEmailRequired">One last thing&hellip;</h2>
 				<p>
-					<template v-if="isEmailRequired">Your email is required.</template>
-					<template v-else><strong>Thank you!</strong> Your feedback will help others. If you enter your email,</template>
-					I will send you a reminder with a link. You can click this link to complete your feedback later.
+					<template v-if="isEmailRequired">
+						Your email is required because your feedback is incomplete. I will send you a link. You can use that link to complete your feedback later.
+					</template>
+					<template v-else>
+						<strong>Thank you for your feedback!</strong> If you enter your email, I will send you a link. You can use this link to complete your feedback later.
+					</template>
 				</p>
 				<div class="form-group">
 					<label :for="uid('email')">Email address</label>

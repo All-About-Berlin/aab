@@ -33,6 +33,10 @@ export default {
 		feedbackComplete(){
 			return Object.values(this.steps).every(s => s.completed);
 		},
+		isEmailRequired(){
+			// Require an email if the feedback is not complete enough to be useful
+			return Object.values(this.steps).filter(s => s.completed).length <= 1;
+		},
 	},
 	methods: {
 		async nextStage(){

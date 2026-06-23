@@ -168,11 +168,6 @@ export default {
 			if(validateForm(this.$el)){
 				this.isLoading = true;
 
-				const emailAddress = (
-					(this.stage === 'email' && this.emailAddress)
-					|| (this.stage === 'start' && this.modificationKey && this.emailAddress)
-				) ? this.emailAddress : null;
-
 				const response = await fetch(
 					this.apiEndpoint,
 					{
@@ -184,7 +179,7 @@ export default {
 							health_insurance_name: this.healthInsuranceName || '',
 							application_date: this.steps.application.date,
 							appointment_date: (this.steps.appointment.completed ? this.steps.appointment.date : null),
-							email: emailAddress,
+							email: this.emailAddress,
 							first_response_date: (this.steps.response.completed ? this.steps.response.date : null),
 							department: this.department,
 							notes: this.notes,
@@ -348,12 +343,24 @@ export default {
 				</template>
 			</template>
 			<template v-if="stage === 'email'">
-				<p><strong>Thank you!</strong> Please complete your feedback when you get your {{ residencePermitName }}. I can remind you by email.</p>
+				<h2 v-if="isEmailRequired">One last thing&hellip;</h2>
+				<p>
+					<template v-if="isEmailRequired">
+						Your email is required because your feedback is incomplete. I will send you a link. You can use that link to complete your feedback later.
+					</template>
+					<template v-else>
+						<strong>Thank you for your feedback!</strong> If you enter your email, I will send you a link. You can use this link to complete your feedback later.
+					</template>
+				</p>
 				<div class="form-group">
 					<label :for="uid('email')">Email address</label>
 					<email-input ref="emailInput" v-model="emailAddress" :id="uid('email')" required></email-input>
-					<span v-if="!subscribeToNewsletter" class="input-instructions">You will get two email reminders, nothing else.</span>
 					<checkbox class="newsletter-checkbox" v-model="subscribeToNewsletter"><span>Subscribe to the <a href="/newsletter" target="_blank">monthly newsletter</a></span></checkbox>
+					<span class="input-instructions">
+						You will get 2 reminders,
+						<template v-if="subscribeToNewsletter">and the monthly newsletter.</template>
+						<template v-else>no spam.</template>
+					</span>
 				</div>
 			</template>
 			<template v-if="stage === 'finish'">
@@ -383,7 +390,7 @@ export default {
 						:disabled="isLoading"
 						:class="{loading: isLoading}"
 						@click="submitFeedback">{{ modificationKeyMatchesResidencePermitType ? 'Update' : 'Send' }} feedback</button>
-					<button class="button primary" v-if="stage === 'email'" @click="submitFeedback">Remind me</button>
+					<button class="button primary" v-if="stage === 'email'" @click="submitFeedback">{{ isEmailRequired ? 'Finish' : 'Remind me' }}</button>
 				</div>
 			</template>
 		</collapsible>
