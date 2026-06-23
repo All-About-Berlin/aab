@@ -30,7 +30,6 @@ export const userDefaultsMixin = {
 			'germanState',
 			'healthInsuranceType',
 			'modificationKey',
-			'citizenshipModificationKey',
 			'nationality',
 			'occupation',
 			'phone',

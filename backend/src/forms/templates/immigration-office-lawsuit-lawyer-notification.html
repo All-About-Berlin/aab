@@ -11,4 +11,4 @@
 <p><strong>Immigration office has replied:</strong> {{ message.case.immigration_office_has_replied|yesno:"Yes,No,Not specified" }}</p>
 <p><strong>Meets requirements:</strong> {{ message.case.meets_requirements|yesno:"Yes,No,Not specified" }}</p>
 <p><strong>Has submitted documents:</strong> {{ message.case.has_submitted_documents|yesno:"Yes,No,Not specified" }}</p>
-<p><strong>Extra details:</strong><br>{{ message.case.message|default:"Not specified"|linebreaksbr }}</p>
+<p><strong>Comments:</strong><br>{{ message.case.message|default:"Not specified"|linebreaksbr }}</p>

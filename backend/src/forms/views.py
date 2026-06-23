@@ -133,8 +133,17 @@ class ResidencePermitFeedbackViewSet(FeedbackViewSet):
     filter_params = ["residence_permit_type", "department"]
 
     def get_serializer_class(self):
-        if self.request.method == "GET" and not self.request.user.is_authenticated:
-            return self.public_serializer_class
+        if self.request.user.is_superuser:
+            return self.admin_serializer_class
+
+        if self.request.method == "GET":
+            if self.action == "retrieve":
+                # Retrieving own records with modification_key
+                return self.admin_serializer_class
+            else:
+                # Retrieving all records
+                return self.public_serializer_class
+
         return self.admin_serializer_class
 
     def get_queryset(self):

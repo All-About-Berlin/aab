@@ -190,6 +190,9 @@ export default {
 					<checkbox v-model="immigrationOfficeHasReplied">
 						The immigration office has replied <template v-if="monthsAgo > 6">in the last 6 months</template>
 					</checkbox>
+				</div>
+				<div class="form-group">
+					<label :for="uid('message')">Comments</label>
 					<textarea :id="uid('message')" v-model="message" placeholder="What else should Artjom know?"></textarea>
 				</div>
 				<hr>

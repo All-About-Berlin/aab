@@ -79,14 +79,14 @@ def test_partial_submission(page, citizenship_feedback_form, test_screenshot):
         assert first_response_data[key] == value
 
     modification_key = first_response_data["modification_key"]
-    assert page.evaluate("localStorage.getItem('citizenshipModificationKey')") == modification_key
+    assert page.evaluate("localStorage.getItem('modificationKey')") == f"{modification_key}~CITIZENSHIP"
 
     test_screenshot(page, tool)
     tool.get_by_label("Email address").fill("j.smith@gmail.com")
 
     # Feedback is updated with the email address
     with page.expect_response(f"**/api/forms/citizenship-feedback/{modification_key}") as second_api_response:
-        tool.get_by_role("button", name="Remind me").click()
+        tool.get_by_role("button", name="Finish").click()
     second_expected_response = {
         **first_expected_response,
         "email": "j.smith@gmail.com",
@@ -97,7 +97,7 @@ def test_partial_submission(page, citizenship_feedback_form, test_screenshot):
         assert response_data[key] == value
 
     expect(tool).to_contain_text("Support this website")
-    assert page.evaluate("localStorage.getItem('citizenshipModificationKey')") == modification_key
+    assert page.evaluate("localStorage.getItem('modificationKey')") == f"{modification_key}~CITIZENSHIP"
 
     # Test that the modification key works properly, and that the feedback can be ammended
     page.reload()
@@ -122,11 +122,11 @@ def test_partial_submission(page, citizenship_feedback_form, test_screenshot):
 
     # Email is already set, so skip asking for email
     expect(tool).to_contain_text("Support this website")
-    assert page.evaluate("localStorage.getItem('citizenshipModificationKey')") == modification_key
+    assert page.evaluate("localStorage.getItem('modificationKey')") == f"{modification_key}~CITIZENSHIP"
 
     # Load modification key from URL, instead of localStorage
-    page.evaluate("localStorage.setItem('citizenshipModificationKey', 'invalid')")
-    page.goto(f"/tests/tools/citizenship-feedback-form#feedbackKey={modification_key}")
+    page.evaluate("localStorage.setItem('modificationKey', 'invalid~CITIZENSHIP')")
+    page.goto(f"/tests/tools/citizenship-feedback-form#feedbackKey={modification_key}~CITIZENSHIP")
     expect(tool.get_by_label(application_label)).to_be_checked()
     expect(tool.get_by_label("Application date", exact=True)).to_have_value("2020-01-01")
     expect(tool.get_by_label(reply_label)).to_be_checked()
@@ -147,7 +147,7 @@ def test_clear_form(page, citizenship_feedback_form):
     modification_key = api_response.value.json()["modification_key"]
 
     page.evaluate("localStorage.clear()")
-    page.goto(f"/tests/tools/citizenship-feedback-form#feedbackKey={modification_key}")
+    page.goto(f"/tests/tools/citizenship-feedback-form#feedbackKey={modification_key}~CITIZENSHIP")
     expect(tool).to_contain_text("You are updating the feedback you submitted on January 1.")
 
     tool.get_by_role("button", name="clear the form").click()
@@ -193,4 +193,4 @@ def test_full_submission(page, citizenship_feedback_form, test_screenshot):
     expect(tool).to_contain_text("Thank you")
 
     # No modification key for complete feedback
-    assert page.evaluate("localStorage.getItem('citizenshipModificationKey')") is None
+    assert page.evaluate("localStorage.getItem('modificationKey')") is None

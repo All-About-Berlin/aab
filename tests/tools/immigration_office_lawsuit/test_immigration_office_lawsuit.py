@@ -45,7 +45,7 @@ def test_submit(lawsuit_form, test_screenshot):
 
     lawsuit_form.get_by_role("button", name="Continue").click()
     fill_questions(lawsuit_form)
-    lawsuit_form.get_by_label("Extra details").fill("Some extra details")
+    lawsuit_form.get_by_label("Comments").fill("Some extra details")
 
     lawsuit_form.get_by_role("button", name="Continue").click()
     assert_stage(lawsuit_form, "contact")

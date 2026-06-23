@@ -56,8 +56,11 @@ def test_form_validation(page, residence_permit_feedback_form, test_screenshot):
     assert tool.get_by_label("Pick-up date", exact=True).evaluate("e => !e.validity.valid")  # Required but empty
     assert tool.get_by_label("Residence permit", exact=True).evaluate("e => !e.validity.valid")  # Required but empty
     assert tool.get_by_label("Department", exact=True).evaluate("e => !e.validity.valid")  # Required but empty
-    assert tool.get_by_label("Permit validity").evaluate("e => e.validity.valid")  # Not required
     assert tool.get_by_label("Notes and advice").evaluate("e => e.validity.valid")  # Not required
+
+    tool.get_by_label("Residence permit").select_option("Freelance visa")
+    assert tool.get_by_label("Permit validity").evaluate("e => e.validity.valid")  # Not required
+    assert tool.get_by_label("Health insurance").evaluate("e => e.validity.valid")  # Not required
 
     tool.get_by_role("button", name="Send feedback").click()
 
@@ -108,7 +111,7 @@ def test_partial_submission(page, residence_permit_feedback_form, test_screensho
 
     # Feedback is updated with the email address
     with page.expect_response(f"**/api/forms/residence-permit-feedback/{modification_key}") as second_api_response:
-        tool.get_by_role("button", name="Remind me").click()
+        tool.get_by_role("button", name="Finish").click()
     second_expected_response = {
         **first_expected_response,
         "email": "j.smith@gmail.com",
@@ -198,6 +201,9 @@ def test_full_submission(page, residence_permit_feedback_form, test_screenshot):
     tool.get_by_label("Pick-up date", exact=True).fill("2020-08-01")
 
     expect(tool.get_by_label("Health insurance")).to_have_count(0)
+    expect(tool.get_by_label("Permit validity")).to_have_count(0)
+
+    tool.get_by_label("Residence permit").select_option("Blue Card")
     expect(tool.get_by_label("Permit validity")).to_have_count(1)
 
     tool.get_by_label("Residence permit").select_option("Permanent residence")

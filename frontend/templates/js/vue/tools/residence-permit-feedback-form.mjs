@@ -6,15 +6,15 @@ import EmailInput from '/js/vue/components/email-input.mjs';
 import IconDonate from '/js/vue/components/icons/donate.mjs';
 import IconSupport from '/js/vue/components/icons/support.mjs';
 
-import feedbackFormMixin from '/js/vue/mixins/feedbackForm.mjs';
 import multiStageMixin from '/js/vue/mixins/multiStage.mjs';
 import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 import { validateForm } from '/js/utils/form.mjs';
-import { residencePermitTypes, residencePermitDepartments, oldResidencePermitDepartments } from '/js/utils/immigrationOffice.mjs';
+import { citizenshipDepartments, residencePermitTypes, residencePermitDepartments, oldResidencePermitDepartments } from '/js/utils/immigrationOffice.mjs';
 
-import metadata from '/js/vue/tools/residence-permit-feedback-form.metadata.json' with { type: 'json' };
+import citizenshipMetadata from '/js/vue/tools/citizenship-feedback-form.metadata.json' with { type: 'json' };
+import residencePermitMetadata from '/js/vue/tools/residence-permit-feedback-form.metadata.json' with { type: 'json' };
 
 export default {
 	components: {
@@ -33,70 +33,106 @@ export default {
 			default: null,
 		}
 	},
-	mixins: [userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin, feedbackFormMixin],
+	mixins: [userDefaultsMixin, uniqueIdsMixin, multiStageMixin, trackedStagesMixin],
 	data() {
 		return {
-			metadata,
+			// Common fields
+			modificationKey: userDefaults.empty,  // Format: [unique hash]~[permit type]
+			documentType: null,
 			department: null,
-			oldDepartments: oldResidencePermitDepartments,
-			residencePermitTypes,
-			residencePermitType: null,
+			notes: '',
+			emailAddress: null, // Not named 'email' so userDefaultsMixin doesn't load it from localStorage
 
-			showResidencePermitField: true,
-
-			// The primary key of the Feedback item, plus a two-letter prefix denoting the residencePermitType
-			modificationKey: userDefaults.empty,
-
-			healthInsurance: null,
-			healthInsuranceName: null,
-
-			validityUnit: 'months',
-			validity: null,
-
-			steps: {
+			// Citizenship only
+			citizenshipSteps: {
 				application: {
+					name: "I have applied in Berlin",
 					dateFieldTitle: "Application date",
 					completed: null,
-					date: null,
+					date: null
 				},
 				response: {
+					name: "I got a reply",
 					dateFieldTitle: "First response date",
 					completed: null,
-					date: null,
+					date: null
 				},
 				appointment: {
+					name: "I got an appointment",
 					dateFieldTitle: "Appointment date",
 					completed: null,
-					date: null,
+					date: null
+				},
+			},
+
+			// Residence permits only
+			showResidencePermitField: true,
+			healthInsurance: null,
+			healthInsuranceName: null,
+			validityUnit: 'months',
+			validity: null,
+			residencePermitTypes,
+			residencePermitSteps: {
+				application: {
+					name: "I have applied in Berlin",
+					dateFieldTitle: "Application date",
+					completed: null,
+					date: null
+				},
+				response: {
+					name: "The immigration office has replied",
+					dateFieldTitle: "First response date",
+					completed: null,
+					date: null
+				},
+				appointment: {
+					name: "I have an appointment",
+					dateFieldTitle: "Appointment date",
+					completed: null,
+					date: null
 				},
 				pickup: {
+					name: "I have a pick-up date for the residence card",
 					dateFieldTitle: "Pick-up date",
 					completed: null,
-					date: null,
+					date: null
 				},
+			},
+
+			isLoading: false,
+			stages: [
+				'start',
+				'email',
+				'finish',
+				'error',
+			],
+			inputsToFocus: {
+				email: () => this.$refs.emailInput.$el,
 			},
 		};
 	},
 	async mounted(){
-		// The residence permit type can be pre-selected with the data-type attribute
+		// The residence permit type can be pre-selected with the "data-type" attribute
 		if(this.type){
 			this.showResidencePermitField = false;
-			this.residencePermitType = this.type;
+			this.documentType = this.type;
 		}
 
-		// Load the key from the URL hash
+		// Note: the modificationKey might be loaded from localStorage by userDefaultsMixin
+
+		// Load the modification key from the URL hash, if it's there
 		const keyFromHash = (new URLSearchParams(window.location.hash.substring(1))).get('feedbackKey');
 		if(keyFromHash){
 			this.modificationKey = keyFromHash;
-			history.replaceState(null, null, ' '); // Remove the hash
+			history.replaceState(null, null, ' '); // Remove the hash from the URL
 		}
 
-		// Set the residencePermitType from the modificationKey, but don't override a hard-coded type
-		if(this.modificationKey && !this.residencePermitType){
-			this.residencePermitType = this.modificationKey.split('~')[1];
+		// Set the residence permit type from the modificationKey
+		if(this.modificationKey && !this.documentType){
+			this.documentType = this.modificationKey.split('~')[1];
 		}
 
-		if(this.modificationKey && this.modificationKeyMatchesResidencePermitType){
+		if(this.isUpdatingExistingFeedback){
 			const response = await fetch(this.apiEndpoint);
 			if(!response.ok){
 				this.modificationKey = null;
@@ -114,89 +150,176 @@ export default {
 			this.steps.appointment.date = responseJson.appointment_date;
 			this.steps.appointment.completed = !!responseJson.appointment_date;
 
-			this.steps.pickup.date = responseJson.pick_up_date;
-			this.steps.pickup.completed = !!responseJson.pick_up_date;
+			if(!this.isCitizenship){
+				this.steps.pickup.date = responseJson.pick_up_date;
+				this.steps.pickup.completed = !!responseJson.pick_up_date;
 
-			this.healthInsurance = responseJson.health_insurance_type;
-			this.healthInsuranceName = responseJson.health_insurance_name;
+				this.healthInsurance = responseJson.health_insurance_type;
+				this.healthInsuranceName = responseJson.health_insurance_name;
+				this.validity = responseJson.validity;
+				this.validityUnit = (this.validity % 12 || !this.validity) ? 'months' : 'years';
+			}
 
 			this.emailAddress = responseJson.email || this.emailAddress;
 			this.department = responseJson.department;
 			this.notes = responseJson.notes;
-			this.validity = responseJson.validity;
-			this.validityUnit = (this.validity % 12 || !this.validity) ? 'months' : 'years';
 		}
 	},
 	computed: {
-		modificationKeyMatchesResidencePermitType(){
-			return (
-				this.residencePermitType
-				&& this.modificationKey
-				&& this.modificationKey.endsWith(this.residencePermitType)
-			);
-		},
-		apiEndpoint(){
-			if(this.modificationKeyMatchesResidencePermitType){
-				return `/api/forms/residence-permit-feedback/${this.modificationKey.split('~')[0]}`
-			}
-			return '/api/forms/residence-permit-feedback';
+		metadata(){
+			return this.isCitizenship ? citizenshipMetadata : residencePermitMetadata;
 		},
 		trackAs(){
-			return `Feedback (${this.residencePermitType})`;
+			return `Feedback (${this.documentType})`;
 		},
-		residencePermitName(){
-			return this.residencePermitTypes[this.residencePermitType]?.normal || "residence permit";
+
+		steps(){
+			return this.isCitizenship ? this.citizenshipSteps : this.residencePermitSteps;
 		},
 		departments(){
-			return residencePermitDepartments(this.residencePermitType);
+			return this.isCitizenship ? citizenshipDepartments : residencePermitDepartments(this.documentType);
 		},
-		askAboutHealthInsurance(){
-			return this.residencePermitType && this.residencePermitTypes[this.residencePermitType].askAboutHealthInsurance;
+
+		documentName(){
+			if(this.isCitizenship) return 'citizenship';
+			return this.residencePermitTypes[this.documentType]?.normal || "residence permit";
 		},
-		showHealthInsuranceNameField(){
-			return ["PRIVATE", "EXPAT", "OTHER"].includes(this.healthInsurance);
+		isCitizenship(){
+			return this.documentType === 'CITIZENSHIP';
+		},
+		isUpdatingExistingFeedback(){
+			// The user might have a modification key for a different kind of residence permit.
+			// For example, a form that's pre-set to Blue Card feedback should be in "new feedback" mode, even if
+			// the user has a modification key for a freelance visa.
+			return (
+				this.modificationKey
+				&& this.documentType
+				&& this.modificationKey.endsWith(this.documentType)
+			);
+		},
+
+		showFeedbackLink(){
+			return !window.location.pathname.startsWith('/guides/immigration-office/wait-times');
+		},
+		submittedOnDate(){
+			return this.steps.application.date
+				? new Date(this.steps.application.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric' })
+				: null;
+		},
+		showRestOfForm(){
+			return this.steps.application.completed;
+		},
+		askAboutValidity(){
+			return this.allStepsAreCompleted && this.documentType && !['PERMANENT_RESIDENCE', 'CITIZENSHIP'].includes(this.documentType);
 		},
 		validityInMonths(){
-			if(!this.validity){
-				return null;
+			if(this.validity){
+				return this.validity * (this.validityUnit === 'years' ? 12 : 1);
 			}
-			return this.validity * (this.validityUnit === 'years' ? 12 : 1);
+			return null;
+		},
+		askAboutHealthInsurance(){
+			return this.documentType && [
+				'FAMILY_REUNION_VISA',
+				'FREELANCE_VISA',
+				'JOB_SEEKER_VISA',
+				'PERMANENT_RESIDENCE',
+				'STUDENT_VISA'
+			].includes(this.documentType);
+		},
+		askAboutHealthInsuranceName(){
+			return ["PRIVATE", "EXPAT", "OTHER"].includes(this.healthInsurance);
+		},
+		allStepsAreCompleted(){
+			return Object.values(this.steps).every(s => s.completed);
+		},
+
+		apiEndpoint(){
+			const type = this.isCitizenship ? 'citizenship' : 'residence-permit';
+			const url = `/api/forms/${type}-feedback`;
+			if(this.isUpdatingExistingFeedback){
+				return url + '/' + this.modificationKey.split('~')[0];
+			}
+			return url;
 		},
 	},
 	methods: {
+		async nextStage(){
+			if(validateForm(this.$el)){
+				if(this.stage === 'start'){
+					this.goToStage((this.emailAddress || this.allStepsAreCompleted) ? 'finish' : 'email');
+				}
+				else{
+					this.goToStage('finish');
+				}
+			}
+		},
+		onStepCompletionChange(key){
+			// Check steps before this one. Uncheck steps after this one.
+			const changedStepIndex = Object.keys(this.steps).indexOf(key);
+			Object.values(this.steps).forEach((step, index) => {
+				if(index < changedStepIndex && this.steps[key].completed){
+					step.completed = true;
+				}
+				if(index > changedStepIndex && !this.steps[key].completed){
+					step.completed = false;
+				}
+			});
+		},
+		minimumStepDate(step){
+			// Date should be greater than or equal to the previous step's date
+			const stepList = Object.values(this.steps);
+			const previousStep = stepList[stepList.indexOf(step) - 1];
+			return previousStep?.date ?? null;
+		},
 		async submitFeedback(){
 			if(validateForm(this.$el)){
 				this.isLoading = true;
 
+				const body = {
+					application_date: this.steps.application.date,
+					first_response_date: (this.steps.response.completed ? this.steps.response.date : null),
+					appointment_date: (this.steps.appointment.completed ? this.steps.appointment.date : null),
+					email: this.emailAddress,
+					notes: this.notes,
+					department: this.department,
+					subscribe_to_newsletter: false,
+				};
+
+				if(!this.isCitizenship){
+					body.residence_permit_type = this.documentType;
+					body.pick_up_date = this.steps.pickup.completed ? this.steps.pickup.date : null;
+					if(this.askAboutHealthInsurance){
+						body.health_insurance_type = this.healthInsurance || '';
+					}
+					if(this.askAboutHealthInsuranceName){
+						body.health_insurance_name = this.healthInsuranceName || '';
+					}
+					if(this.askAboutValidity){
+						body.validity_in_months = this.validityInMonths;
+					}
+				}
+
 				const response = await fetch(
 					this.apiEndpoint,
 					{
-						method: this.modificationKeyMatchesResidencePermitType ? 'PUT' : 'POST',
+						method: this.isUpdatingExistingFeedback ? 'PUT' : 'POST',
 						keepalive: true,
 						headers: {'Content-Type': 'application/json; charset=utf-8',},
-						body: JSON.stringify({
-							health_insurance_type: this.healthInsurance || '',
-							health_insurance_name: this.healthInsuranceName || '',
-							application_date: this.steps.application.date,
-							appointment_date: (this.steps.appointment.completed ? this.steps.appointment.date : null),
-							email: this.emailAddress,
-							first_response_date: (this.steps.response.completed ? this.steps.response.date : null),
-							department: this.department,
-							notes: this.notes,
-							pick_up_date: (this.steps.pickup.completed ? this.steps.pickup.date : null),
-							residence_permit_type: this.residencePermitType,
-							validity_in_months: this.validityInMonths,
-							subscribe_to_newsletter: this.subscribeToNewsletter,
-						}),
+						body: JSON.stringify(body),
 					}
 				);
 				this.isLoading = false;
 				if(response.ok){
 					this.nextStage();
-					const responseJson = await response.json();
-
-					// No need to modify complete feedback, so the key gets cleared
-					this.modificationKey = this.feedbackComplete ? null : `${responseJson.modification_key}~${this.residencePermitType}`;
+					if(this.allStepsAreCompleted){
+						// No need to modify feedback that is complete
+						this.modificationKey = null;
+					}
+					else{
+						const responseJson = await response.json();
+						this.modificationKey = `${responseJson.modification_key}~${this.documentType}`;
+					}
 				}
 				else{
 					this.goToStage('error');
@@ -216,17 +339,9 @@ export default {
 			this.validity = null;
 			this.validityUnit = 'months';
 		},
-		stepName(key){
-			return {
-				application: "I have applied in Berlin",
-				response: "The immigration office has replied",
-				appointment: "I have an appointment",
-				pickup: "I have a pick-up date for the residence card",
-			}[key];
-		},
 	},
 	watch: {
-		residencePermitType: {
+		documentType: {
 			handler(newType){
 				// Auto select department if it's the only available option
 				if(Object.keys(this.departments).length === 1){
@@ -247,18 +362,18 @@ export default {
 			class="feedback-form"
 			:static="static">
 			<template v-slot:header>
-				How is your <span class="no-mobile">{{ residencePermitName }}</span> application going?
+				How is your <span class="no-mobile">{{ documentName }}</span> application going?
 			</template>
 			<template v-if="stage === 'start'">
-				<h3 v-if="static">How is your {{ residencePermitName }} application going?</h3>
-				<template v-if="modificationKeyMatchesResidencePermitType && submittedOnDate">
-					<p>You are updating the feedback you submitted on {{ submittedOnDate }}. To give new feedback about a different application, <button class="button link" @click="clearForm">clear the form</button>.</p>
+				<h3 v-if="static">How is your {{ documentName }} application going?</h3>
+				<template v-if="isUpdatingExistingFeedback && submittedOnDate">
+					<p>You are updating the feedback you submitted on {{ submittedOnDate }}. To give feedback about a different application, <button class="button link" @click="clearForm">clear the form</button>.</p>
 					<hr>
 				</template>
 				<div class="steps">
 					<div class="step" v-for="(step, key, index) in steps" :key="key">
 						<input :id="uid('checkbox' + key)" type="checkbox" v-model="step.completed" @change="onStepCompletionChange(key)">
-						<label :for="uid('checkbox' + key)" class="description" v-text="stepName(key)"></label>
+						<label :for="uid('checkbox' + key)" class="description" v-text="step.name"></label>
 						<div class="duration form-group" v-if="step.completed">
 							<label :for="uid(key) + '-date'" v-text="step.dateFieldTitle"></label>
 							<date-picker :min="minimumStepDate(step)" v-model="step.date" :id="uid(key) + '-date'" required></date-picker>
@@ -271,7 +386,7 @@ export default {
 						<icon-support/>
 						<div>
 							<p>
-								Your feedback helps others plan their {{ residencePermitName }} application.
+								Your feedback helps others plan their {{ documentName }} application.
 							</p>
 							<p>
 								<strong><a class="internal-link" target="_blank" href="/guides/immigration-office/wait-times">Read other people's feedback</a></strong>
@@ -281,9 +396,9 @@ export default {
 				</template>
 				<template v-if="showRestOfForm">
 					<hr>
-					<div class="form-group" v-if="showResidencePermitField">
-						<label :for="uid('residencePermitType')">Residence permit</label>
-						<select :id="uid('residencePermitType')" v-model="residencePermitType" :class="{placeholder: !residencePermitType}" required>
+					<div class="form-group" v-if="!isCitizenship && showResidencePermitField">
+						<label :for="uid('documentType')">Residence permit</label>
+						<select :id="uid('documentType')" v-model="documentType" :class="{placeholder: !documentType}" required>
 							<option disabled hidden default :value="null">Choose a residence permit</option>
 							<option v-for="(name, key) in residencePermitTypes" :key="key" :value="key" v-text="name.capitalized"></option>
 						</select>
@@ -298,7 +413,7 @@ export default {
 							<option v-for="(name, key) in departments" :value="key" :key="key" v-text="name"></option>
 						</select>
 						<span class="input-instructions">
-							<a target="_blank" href="/guides/immigration-office#departments">Find your Ausländerbehörde department.</a> Don't choose a random department.
+							<a target="_blank" href="/guides/immigration-office#departments">Find the correct department.</a> Don't choose a random department.
 						</span>
 					</div>
 					<hr>
@@ -315,13 +430,12 @@ export default {
 								<option value="OTHER">Other</option>
 								<option value="">I don't know</option>
 							</select>
-							<input v-if="showHealthInsuranceNameField" placeholder="Name of health insurance" type="text" v-model="healthInsuranceName"/>
-							<span class="input-instructions">Which health insurance did you use when you applied?</span>
+							<input v-if="askAboutHealthInsuranceName" placeholder="Name of health insurance" type="text" v-model="healthInsuranceName"/>
+							<span class="input-instructions">Which health insurance did you use for your application?</span>
 						</div>
 						<hr>
 					</template>
-
-					<template v-if="steps.appointment.completed && residencePermitType !== 'PERMANENT_RESIDENCE'">
+					<template v-if="askAboutValidity">
 						<div class="form-group">
 							<label :for="uid('validity')">Permit validity</label>
 							<div class="input-group">
@@ -331,7 +445,7 @@ export default {
 									<option value="years">year{{ validity === 1 ? '' : 's' }}</option>
 								</select>
 							</div>
-							<span class="input-instructions">The expiration date is <a href="/images/residence-permit-expiration-date.jpg" target="_blank">on the back of your {{ residencePermitName }}</a>.</span>
+							<span class="input-instructions">The expiration date is <a href="/images/residence-permit-expiration-date.jpg" target="_blank">on the back of your {{ documentName }}</a>.</span>
 						</div>
 						<hr>
 					</template>
@@ -343,23 +457,15 @@ export default {
 				</template>
 			</template>
 			<template v-if="stage === 'email'">
-				<h2 v-if="isEmailRequired">One last thing&hellip;</h2>
+				<h3>One last thing&hellip;</h3>
 				<p>
-					<template v-if="isEmailRequired">
-						Your email is required because your feedback is incomplete. I will send you a link. You can use that link to complete your feedback later.
-					</template>
-					<template v-else>
-						<strong>Thank you for your feedback!</strong> If you enter your email, I will send you a link. You can use this link to complete your feedback later.
-					</template>
+					Your feedback is incomplete. If you enter your email, I will send you a link. You can use this link to complete your feedback later.
 				</p>
 				<div class="form-group">
 					<label :for="uid('email')">Email address</label>
 					<email-input ref="emailInput" v-model="emailAddress" :id="uid('email')" required></email-input>
-					<checkbox class="newsletter-checkbox" v-model="subscribeToNewsletter"><span>Subscribe to the <a href="/newsletter" target="_blank">monthly newsletter</a></span></checkbox>
 					<span class="input-instructions">
-						You will get 2 reminders,
-						<template v-if="subscribeToNewsletter">and the monthly newsletter.</template>
-						<template v-else>no spam.</template>
+						You will get 2 reminder emails, no spam.
 					</span>
 				</div>
 			</template>
@@ -389,8 +495,8 @@ export default {
 						v-if="stage === 'start'"
 						:disabled="isLoading"
 						:class="{loading: isLoading}"
-						@click="submitFeedback">{{ modificationKeyMatchesResidencePermitType ? 'Update' : 'Send' }} feedback</button>
-					<button class="button primary" v-if="stage === 'email'" @click="submitFeedback">{{ isEmailRequired ? 'Finish' : 'Remind me' }}</button>
+						@click="submitFeedback">{{ isUpdatingExistingFeedback ? 'Update' : 'Send' }} feedback</button>
+					<button class="button primary" v-if="stage === 'email'" @click="submitFeedback">Finish</button>
 				</div>
 			</template>
 		</collapsible>

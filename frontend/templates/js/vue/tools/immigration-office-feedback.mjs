@@ -1,4 +1,3 @@
-import CitizenshipFeedbackForm from '/js/vue/tools/citizenship-feedback-form.mjs';
 import Glossary from '/js/vue/components/glossary.mjs';
 import ResidencePermitFeedbackForm from '/js/vue/tools/residence-permit-feedback-form.mjs';
 import Pagination from '/js/vue/components/pagination.mjs';
@@ -14,7 +13,6 @@ import metadata from '/js/vue/tools/immigration-office-feedback.metadata.json' w
 
 export default {
 	components: {
-		CitizenshipFeedbackForm,
 		Glossary,
 		ResidencePermitFeedbackForm,
 		Pagination,
@@ -327,8 +325,8 @@ export default {
 				<wait-times-graph :data="stats"></wait-times-graph>
 			</template>
 
-			<citizenship-feedback-form v-if="isCitizenship" id="give-feedback" static></citizenship-feedback-form>
-			<residence-permit-feedback-form v-else id="give-feedback" static></residence-permit-feedback-form>
+			<residence-permit-feedback-form key="citizenship" v-if="isCitizenship" id="give-feedback" static type="CITIZENSHIP"></residence-permit-feedback-form>
+			<residence-permit-feedback-form key="residence-permit" v-else id="give-feedback" static></residence-permit-feedback-form>
 
 			<h2 id="feedback-from-other-people">Feedback from others</h2>
 
