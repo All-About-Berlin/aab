@@ -38,6 +38,7 @@ export default {
 		return {
 			// Common fields
 			modificationKey: userDefaults.empty,  // Format: [unique hash]~[permit type]
+			modificationDate: null,
 			documentType: null,
 			department: null,
 			notes: '',
@@ -141,6 +142,7 @@ export default {
 
 			const responseJson = await response.json();
 
+			this.modificationDate = responseJson.modification_date;
 			this.steps.application.date = responseJson.application_date;
 			this.steps.application.completed = !!responseJson.application_date;
 
@@ -202,8 +204,8 @@ export default {
 			return !window.location.pathname.startsWith('/guides/immigration-office/wait-times');
 		},
 		submittedOnDate(){
-			return this.steps.application.date
-				? new Date(this.steps.application.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric' })
+			return this.modificationDate
+				? new Date(this.modificationDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric' })
 				: null;
 		},
 		showRestOfForm(){
