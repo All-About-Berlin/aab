@@ -7,6 +7,7 @@ from django.core.cache import cache
 from django.utils import timezone
 from forms.models import (
     CitizenshipFeedback,
+    CitizenshipFeedbackNotification,
     ImmigrationOfficeLawsuit,
     ImmigrationOfficeLawsuitCustomerNotification,
     ImmigrationOfficeLawsuitFeedbackNotification,
@@ -16,6 +17,7 @@ from forms.models import (
     PensionRefundRequest,
     PlaceSuggestion,
     ResidencePermitFeedback,
+    ResidencePermitFeedbackNotification,
     TaxIdRequestFeedbackReminder,
 )
 from forms.utils import readable_date_range
@@ -467,6 +469,17 @@ class ResidencePermitFeedbackTestCase(FeedbackEndpointMixin, APITestCase):
         new_object = self.model.objects.get(modification_key=response.json()["modification_key"])
         self.assertEqual(new_object.feedback_reminders.count(), 0)
 
+    def test_notification_scheduled(self):
+        response = self.client.post(self.endpoint, self.example_request, format="json")
+        new_object = self.model.objects.get(modification_key=response.json()["modification_key"])
+        notification = new_object.feedback_notification
+        self.assertIsInstance(notification, ResidencePermitFeedbackNotification)
+        self.assertEqual(notification.recipients, [self.example_request["email"]])
+        self.assertEqual(
+            notification.delivery_date.replace(microsecond=0),
+            notification.creation_date.replace(microsecond=0),
+        )
+
     def test_stats_fewer_rows(self):
         date_start = date.today()
 
@@ -719,6 +732,17 @@ class CitizenshipFeedbackTestCase(FeedbackEndpointMixin, APITestCase):
         response = self.client.post(self.endpoint, request, format="json")
         new_object = self.model.objects.get(modification_key=response.json()["modification_key"])
         self.assertEqual(new_object.feedback_reminders.count(), 0)
+
+    def test_notification_scheduled(self):
+        response = self.client.post(self.endpoint, self.example_request, format="json")
+        new_object = self.model.objects.get(modification_key=response.json()["modification_key"])
+        notification = new_object.feedback_notification
+        self.assertIsInstance(notification, CitizenshipFeedbackNotification)
+        self.assertEqual(notification.recipients, [self.example_request["email"]])
+        self.assertEqual(
+            notification.delivery_date.replace(microsecond=0),
+            notification.creation_date.replace(microsecond=0),
+        )
 
     def test_stats_fewer_rows(self):
         date_start = date.today()

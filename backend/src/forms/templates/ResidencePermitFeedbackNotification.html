@@ -1,0 +1,21 @@
+<p>Hi there,</p>
+
+<p>Thanks for giving us feedback about your residence permit application.</p>
+
+<p>This is the information you shared:</p>
+
+<ul>
+	<li>Application date: {{ message.feedback.application_date|date:"F j, Y" }}</li>
+	<li>First Ausländerbehörde response: {% if message.feedback.first_response_date %}{{ message.feedback.first_response_date|date:"F j, Y" }}{% else %}Missing{% endif %}</li>
+	<li>Appointment date: {% if message.feedback.appointment_date %}{{ message.feedback.appointment_date|date:"F j, Y" }}{% else %}Missing{% endif %}</li>
+	<li>Residence permit pick-up date: {% if message.feedback.pick_up_date %}{{ message.feedback.pick_up_date|date:"F j, Y" }}{% else %}Missing{% endif %}</li>
+</ul>
+
+<p><strong>Your feedback is incomplete.</strong> Complete it later by clicking this link:</p>
+
+<p><strong><a href="https://allaboutberlin.com/guides/immigration-office/wait-times?utm_source=email_reminder#feedbackKey={{ message.feedback.modification_key }}~{{ message.feedback.residence_permit_type }}">Add missing information</a></strong></p>
+
+<p>Kind regards,<br>Nicolas Bouliane, All About Berlin</p>
+
+<hr>
+<p><small>You received this email because you gave feedback about your residence permit application. <a href="https://allaboutberlin.com/newsletter?utm_source=email_reminder">Subscribe to the monthly newsletter</a> to get Berlin tips and updates.</small></p>

@@ -1,8 +1,8 @@
 <p>Hi there,</p>
 
-<p>A few weeks ago, you applied for German citizenship in Berlin. You gave us feedback about your experience, but some information is still missing.</p>
+<p>Thanks for giving us feedback about your citizenship application.</p>
 
-<p>This is the information you gave us:</p>
+<p>This is the information you shared:</p>
 
 <ul>
 	<li>Application date: {{ message.feedback.application_date|date:"F j, Y" }}</li>
@@ -10,7 +10,9 @@
 	<li>Appointment date: {% if message.feedback.appointment_date %}{{ message.feedback.appointment_date|date:"F j, Y" }}{% else %}Missing{% endif %}</li>
 </ul>
 
-<p>Can you <a href="https://allaboutberlin.com/guides/immigration-office/wait-times?utm_source=email_reminder#feedbackKey={{ message.feedback.modification_key }}~CITIZENSHIP">complete your feedback</a>? It takes a minute, and it will help thousands of people.</p>
+<p><strong>Your feedback is incomplete.</strong> Complete it later by clicking this link:</p>
+
+<p><strong><a href="https://allaboutberlin.com/guides/immigration-office/wait-times?utm_source=email_reminder#feedbackKey={{ message.feedback.modification_key }}~CITIZENSHIP">Add missing information</a></strong></p>
 
 <p>Kind regards,<br>Nicolas Bouliane, All About Berlin</p>
 

@@ -434,6 +434,7 @@ class ResidencePermitFeedback(MultiStageFeedback):
         if self.email and not self.pick_up_date:
             self.feedback_reminders.create(delivery_date=timezone.now() + relativedelta(months=2))  # type: ignore
             if not self.appointment_date:
+                ResidencePermitFeedbackNotification.objects.get_or_create(feedback=self)
                 self.feedback_reminders.create(delivery_date=timezone.now() + relativedelta(months=6))  # type: ignore
 
     def __str__(self):
@@ -441,6 +442,21 @@ class ResidencePermitFeedback(MultiStageFeedback):
 
     class Meta(MultiStageFeedback.Meta):
         verbose_name_plural = "Residence permit feedback"
+
+
+class ResidencePermitFeedbackNotification(ScheduledMessage):
+    feedback = models.OneToOneField(
+        ResidencePermitFeedback, related_name="feedback_notification", on_delete=models.CASCADE
+    )
+
+    subject = "Feedback about your residence permit application"
+
+    @property
+    def recipients(self) -> list[str]:
+        return [self.feedback.email]  # type: ignore
+
+    class Meta(ScheduledMessage.Meta):
+        pass
 
 
 class ResidencePermitFeedbackReminder(ScheduledMessage):
@@ -503,6 +519,7 @@ class CitizenshipFeedback(MultiStageFeedback):
 
         # No feedback email needed if the feedback is complete
         if self.email and not self.appointment_date:
+            CitizenshipFeedbackNotification.objects.get_or_create(feedback=self)
             self.feedback_reminders.create(delivery_date=timezone.now() + relativedelta(months=3))  # type: ignore
 
     def __str__(self):
@@ -510,6 +527,19 @@ class CitizenshipFeedback(MultiStageFeedback):
 
     class Meta(MultiStageFeedback.Meta):
         verbose_name_plural = "Citizenship feedback"
+
+
+class CitizenshipFeedbackNotification(ScheduledMessage):
+    feedback = models.OneToOneField(CitizenshipFeedback, related_name="feedback_notification", on_delete=models.CASCADE)
+
+    subject = "Feedback about your German citizenship application"
+
+    @property
+    def recipients(self) -> list[str]:
+        return [self.feedback.email]  # type: ignore
+
+    class Meta(ScheduledMessage.Meta):
+        pass
 
 
 class CitizenshipFeedbackReminder(ScheduledMessage):
