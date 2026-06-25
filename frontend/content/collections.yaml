@@ -92,6 +92,8 @@
   short_title: Visas and immigration
   description: Guides about German visas, residence permits, permanent residence and citizenship.
   entries:
+    - title: Moving to Berlin
+      uri: guides/moving-to-berlin.md
     - title: Getting a residence permit
       uri: guides/residence-permit.md
       entries:
@@ -249,6 +251,9 @@
   entries:
     - title: Making friends
       uri: guides/making-friends.md
+      entries:
+        - title: Playing board games
+        - uri: guides/board-games-in-berlin.md
     - title: Getting married
       uri: guides/getting-married-in-germany.md
     - title: Finding a Kita
