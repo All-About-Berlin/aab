@@ -57,8 +57,10 @@ class ScheduledMessage(models.Model):
         raise NotImplementedError
 
     subject: str = ""
-    template: str | None = None
     reply_to: str | None = None
+
+    def get_template(self) -> str:
+        return f"{self.__class__.__name__}.html"
 
     def save(self, *args, **kwargs):
         if not self.pk:
@@ -78,7 +80,7 @@ class ScheduledMessage(models.Model):
         self.status = MessageStatus.REDACTED
 
     def get_body(self) -> str:
-        return render_to_string(self.template, {"message": self})
+        return render_to_string(self.get_template(), {"message": self})
 
     class Meta:
         abstract = True
@@ -102,7 +104,6 @@ class PensionRefundQuestion(NameMixin, EmailMixin, ScheduledMessage):
     question = models.TextField()
 
     recipients = ["support@pension-refund.com"]
-    template = "pension-refund-question.html"
     daily_digest_fields = ["question", "nationality", "country_of_residence"]
 
     @property
@@ -132,7 +133,6 @@ class PensionRefundQuestionFeedbackReminder(ScheduledMessage):
     )
 
     subject = "Did Pension Refund Germany answer your question?"
-    template = "pension-refund-question-feedback.html"
 
     @property
     def recipients(self) -> list[str]:
@@ -159,7 +159,6 @@ class PensionRefundRequest(NameMixin, EmailMixin, ScheduledMessage):
     nationality = CountryField()
     partner = models.CharField(max_length=30, choices=pension_refund_partners)
 
-    template = "pension-refund-request.html"
     daily_digest_fields = ["partner", "nationality", "country_of_residence"]
 
     def remove_personal_data(self):
@@ -197,7 +196,6 @@ class PensionRefundRequestFeedbackReminder(ScheduledMessage):
     )
 
     subject = "Did you get your pension refund?"
-    template = "pension-refund-request-feedback.html"
 
     @property
     def recipients(self) -> list[str]:
@@ -213,7 +211,6 @@ class PensionRefundReminder(EmailMixin, ScheduledMessage):
     refund_amount = models.PositiveIntegerField()
 
     subject = "Reminder: you can now get your German pension payments back"
-    template = "pension-refund-reminder.html"
     daily_digest_fields = ["delivery_date"]
 
     @property
@@ -450,7 +447,6 @@ class ResidencePermitFeedbackReminder(ScheduledMessage):
     feedback = models.ForeignKey(ResidencePermitFeedback, related_name="feedback_reminders", on_delete=models.CASCADE)
 
     subject = "Did you get your residence permit?"
-    template = "residence-permit-feedback-reminder.html"
 
     @property
     def recipients(self) -> list[str]:
@@ -520,7 +516,6 @@ class CitizenshipFeedbackReminder(ScheduledMessage):
     feedback = models.ForeignKey(CitizenshipFeedback, related_name="feedback_reminders", on_delete=models.CASCADE)
 
     subject = "Did you get your German citizenship?"
-    template = "citizenship-feedback-reminder.html"
 
     @property
     def recipients(self) -> list[str]:
@@ -566,8 +561,6 @@ class ImmigrationOfficeLawsuitNotificationMixin(ScheduledMessage):
 
 
 class ImmigrationOfficeLawsuitCustomerNotification(ImmigrationOfficeLawsuitNotificationMixin):
-    template = "immigration-office-lawsuit-customer-notification.html"
-
     @property
     def recipients(self) -> list[str]:
         return [self.case.email]
@@ -581,8 +574,6 @@ class ImmigrationOfficeLawsuitCustomerNotification(ImmigrationOfficeLawsuitNotif
 
 
 class ImmigrationOfficeLawsuitLawyerNotification(ImmigrationOfficeLawsuitNotificationMixin):
-    template = "immigration-office-lawsuit-lawyer-notification.html"
-
     recipients = ["contact@legalweg.com"]
 
     @property
@@ -598,7 +589,6 @@ class ImmigrationOfficeLawsuitLawyerNotification(ImmigrationOfficeLawsuitNotific
 
 
 class ImmigrationOfficeLawsuitFeedbackNotification(ImmigrationOfficeLawsuitNotificationMixin):
-    template = "immigration-office-lawsuit-feedback-notification.html"
     delivery_date = models.DateTimeField(default=relative_default_date(weeks=1))
 
     @property
@@ -657,7 +647,6 @@ class TaxIdRequestFeedbackReminder(NameMixin, EmailMixin, ScheduledMessage):
     delivery_date = models.DateTimeField(default=relative_default_date(weeks=8))
 
     subject = "Did you receive your tax ID?"
-    template = "tax-id-request-feedback-reminder.html"
 
     @property
     def recipients(self) -> list[str]:

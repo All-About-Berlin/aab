@@ -123,8 +123,6 @@ class CaseNotificationMixin(ScheduledMessage):
 
 
 class CustomerNotification(CaseNotificationMixin, ScheduledMessage):
-    template = "customer-notification.html"
-
     @property
     def recipients(self) -> list[str]:
         return [
@@ -140,8 +138,6 @@ class CustomerNotification(CaseNotificationMixin, ScheduledMessage):
 
 
 class BrokerNotification(CaseNotificationMixin, ScheduledMessage):
-    template = "broker-notification.html"
-
     @property
     def recipients(self) -> list[str]:
         return [
@@ -161,7 +157,6 @@ class BrokerNotification(CaseNotificationMixin, ScheduledMessage):
 
 
 class FeedbackNotification(CaseNotificationMixin):
-    template = "feedback-notification.html"
     delivery_date = models.DateTimeField(default=relative_default_date(weeks=1))
 
     @property
