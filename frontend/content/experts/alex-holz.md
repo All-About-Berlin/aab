@@ -2,7 +2,7 @@
 name: Alex Holz
 job_title: KSK expert
 email: alex@kulturspace.com
-website: https://www.kulturspace.com/co-op/alex-holz
+website: https://www.kulturspace.com/ksk
 picture: experts/photos/alex-holz.jpg
 ---
 
