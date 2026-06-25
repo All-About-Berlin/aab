@@ -157,7 +157,7 @@ class BrokerNotification(CaseNotificationMixin, ScheduledMessage):
 
 
 class FeedbackNotification(CaseNotificationMixin):
-    delivery_date = models.DateTimeField(default=relative_default_date(weeks=1))
+    delivery_date = models.DateTimeField(default=relative_default_date(days=5))
 
     @property
     def subject(self) -> str:

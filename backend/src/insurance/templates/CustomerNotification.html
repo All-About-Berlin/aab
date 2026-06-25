@@ -1,8 +1,15 @@
 <p>Hi {{ message.case.name|default:"there" }},</p>
 
-<p>You asked a health insurance question on All About Berlin. {{ message.case.broker_info.first_name }} will reply today or tomorrow. I work with {{ message.case.broker_info.first_name }} because I trust {{ message.case.broker_info.is_male|yesno:"him,her"}}. If you don't get a response, check your spam folder or <a href="https://wa.me/+491626969454">write to {{ message.case.broker_info.first_name }} on WhatsApp</a>.</p>
+<p>You asked a health insurance question on All About Berlin. {{ message.case.broker_info.first_name }} will reply today or tomorrow. If you don't get a response, check your spam folder.</p>
 
-<p>While you wait, you can also...</p>
+<p>You can also contact or {{ message.case.broker_info.first_name }} directly:</p>
+
+<ul>
+	<li>Email: <a href="mailto:{{ message.case.broker_info.email }}">{{ message.case.broker_info.email }}</a></li>
+	<li>WhatsApp: <a href="https://wa.me/+491626969454">+49 162 6969454</a></li>
+</ul>
+
+<p>While you wait, you can...</p>
 
 <ul>
 	<li>Learn <a href="https://allaboutberlin.com/guides/german-health-insurance?utm_source=email_reminder">how German health insurance works</a></li>

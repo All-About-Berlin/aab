@@ -56,7 +56,7 @@ class CaseTestCase(ScheduledMessageEndpointMixin, APITestCase):
         )
         self.assertEqual(
             feedback_email.delivery_date.replace(microsecond=0),
-            (feedback_email.creation_date + timedelta(weeks=1)).replace(microsecond=0),
+            (feedback_email.creation_date + timedelta(days=1)).replace(microsecond=0),
         )
 
         self.assertEqual(
