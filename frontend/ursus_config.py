@@ -297,6 +297,7 @@ config.renderers.extend(
 )
 
 config.linters = [
+    "extensions.linters.collections.GuideInCollectionsLinter",
     "extensions.linters.fail_on.FailOnLinter",
     "extensions.linters.constants.ConstantsLinter",
     "extensions.linters.places.PlacesLinter",
