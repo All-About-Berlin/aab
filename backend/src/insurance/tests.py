@@ -24,7 +24,6 @@ class CaseTestCase(ScheduledMessageEndpointMixin, APITestCase):
             "email": "contact@nicolasbouliane.com",
             "question": "Did you ever think that maybe there’s more to life than being really, really... really ridiculously well insured?\n\nI don't think so.",
             "referrer": "partner123",
-            "broker": "christina-weber",
         }
 
     def test_retrieve_exists_404(self):
@@ -46,31 +45,26 @@ class CaseTestCase(ScheduledMessageEndpointMixin, APITestCase):
                 "contact@nicolasbouliane.com",
             ],
         )
-        self.assertEqual("Christina" in feedback_email.subject, True)
-        self.assertEqual("Seamus" in feedback_email.subject, False)
-        self.assertEqual("Christina" in feedback_email.get_body(), True)
-        self.assertEqual("Seamus" in feedback_email.get_body(), False)
         self.assertEqual(
             timezone.now().replace(second=0, microsecond=0),
             feedback_email.creation_date.replace(second=0, microsecond=0),
         )
         self.assertEqual(
             feedback_email.delivery_date.replace(microsecond=0),
-            (feedback_email.creation_date + timedelta(days=1)).replace(microsecond=0),
+            (feedback_email.creation_date + timedelta(days=5)).replace(microsecond=0),
         )
 
         self.assertEqual(
             broker_email.recipients,
             [
-                case.broker_info["email"],
+                "Seamus.Wolf@horizon65.com",
             ],
         )
         self.assertEqual(
             timezone.now().replace(second=0, microsecond=0), broker_email.delivery_date.replace(second=0, microsecond=0)
         )
 
-        self.assertEqual("Christina" in customer_email.get_body(), True)
-        self.assertEqual("Seamus" in customer_email.get_body(), False)
+        self.assertEqual("Seamus" in customer_email.get_body(), True)
         self.assertEqual(
             customer_email.recipients,
             [
@@ -92,5 +86,4 @@ class MinimalCaseTestCase(CaseTestCase):
         self.example_request = {
             "name": "John Smith",
             "email": "contact@nicolasbouliane.com",
-            "broker": "christina-weber",
         }

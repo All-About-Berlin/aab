@@ -29,11 +29,6 @@ class Intent(models.TextChoices):
     OTHER = "other", "Other/unknown"
 
 
-class Brokers(models.TextChoices):
-    CHRISTINA_WEBER = "christina-weber", "Christina Weber"
-    SEAMUS_WOLF = "seamus-wolf", "Seamus Wolf"
-
-
 class Case(models.Model):
     """
     A need that usually results in an insurance policy being signed.
@@ -59,7 +54,6 @@ class Case(models.Model):
     creation_date = models.DateTimeField(auto_now_add=True)
     question = models.TextField("Question", blank=True)
 
-    broker = models.CharField(max_length=30, choices=Brokers, default=Brokers.SEAMUS_WOLF)
     referrer = models.CharField(blank=True, help_text="Part of the commissions will be paid out to that referrer")
     site = models.CharField(max_length=100, blank=True, default="allaboutberlin.com")
 
@@ -90,23 +84,6 @@ class Case(models.Model):
         if self.contact_method != ContactMethod.WHATSAPP:
             BrokerNotification.objects.get_or_create(case=self)
 
-    @property
-    def broker_info(self):
-        return {
-            "christina-weber": {
-                "is_male": False,
-                "first_name": "Christina",
-                "full_name": "Christina Weber",
-                "email": "hello@feather-insurance.com",
-            },
-            "seamus-wolf": {
-                "is_male": True,
-                "first_name": "Seamus",
-                "full_name": "Seamus Wolf",
-                "email": "Seamus.Wolf@horizon65.com",
-            },
-        }[self.broker]
-
     class Meta:
         verbose_name = "Insurance case"
         ordering = ["-creation_date"]
@@ -131,7 +108,7 @@ class CustomerNotification(CaseNotificationMixin, ScheduledMessage):
 
     @property
     def subject(self) -> str:
-        return f"{self.case.broker_info['first_name']} will contact you soon"
+        return "Seamus will contact you soon"
 
     class Meta(ScheduledMessage.Meta):
         pass
@@ -141,7 +118,7 @@ class BrokerNotification(CaseNotificationMixin, ScheduledMessage):
     @property
     def recipients(self) -> list[str]:
         return [
-            self.case.broker_info["email"],
+            "Seamus.Wolf@horizon65.com",
         ]
 
     @property
@@ -161,7 +138,7 @@ class FeedbackNotification(CaseNotificationMixin):
 
     @property
     def subject(self) -> str:
-        return f"Did {self.case.broker_info['first_name']} help you get insured?"
+        return "Did Seamus help you get insured?"
 
     @property
     def recipients(self) -> list[str]:

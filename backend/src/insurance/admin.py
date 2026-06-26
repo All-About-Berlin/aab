@@ -28,7 +28,6 @@ class CaseAdmin(admin.ModelAdmin):
             "Contact information",
             {
                 "fields": (
-                    "broker",
                     "contact_method",
                     "name",
                     "email",
@@ -41,7 +40,6 @@ class CaseAdmin(admin.ModelAdmin):
         "creation_date",
         "intent",
         "name",
-        "broker",
         "contact_method",
         "occupation",
         "income",
