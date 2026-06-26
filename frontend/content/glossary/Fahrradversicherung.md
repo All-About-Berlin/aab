@@ -10,4 +10,4 @@ related_guides:
     - guides/moving-to-berlin.md
 ---
 
-Bicycle insurance (*Fahrradversicherung*) covers bike theft. If your bike is stolen, the insurance company will pay to replace it.
+Bicycle insurance (*Fahrradversicherung*) covers bicycle theft. If your bike is stolen, the insurance company will pay to replace it.
