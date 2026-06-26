@@ -38,7 +38,7 @@ There are {{ EU_COUNTRIES_COUNT }} countries are in the European Union:[^1]
 - Spain
 - Sweden
 
-Iceland, Liechtenstein and Norway are not in the EU, but they are in the [European Economic Area](/glossary/EEA).
+Iceland, Liechtenstein and Norway are not in the EU, but they are in the [European Economic Area](/glossary/EEA). Not all EU countries are in the [[Schengen area]].
 
 **[List of European Union countries ➞](https://european-union.europa.eu/principles-countries-history/country-profiles_en)**
 

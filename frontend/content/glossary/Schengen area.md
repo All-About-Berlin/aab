@@ -21,7 +21,7 @@ The Schengen area is a group of 29 countries:[^1]
 - Estonia
 - Finland
 - France
-- Germany
+- **Germany**
 - Greece
 - Hungary
 - Iceland
@@ -42,7 +42,7 @@ The Schengen area is a group of 29 countries:[^1]
 - Sweden
 - Switzerland
 
-These countries have a shared border. You can freely travel between them, without going through border controls.
+These countries have a shared border. You can travel between them, without going through border controls.
 
 You can travel to Schengen area countries if you have...[^2]
 
@@ -51,6 +51,8 @@ You can travel to Schengen area countries if you have...[^2]
 - or a German [residence permit](/glossary/Aufenthaltstitel)
 - or German [permanent residence](/glossary/Niederlassungserlaubnis)
 - or German citizenship
+
+The Schengen area is different from the [[European Union]] and the [[EEA]].
 
 [^1]: [Wikipedia](https://en.wikipedia.org/wiki/Schengen_Area)
 [^2]: [Wikipedia](https://en.wikipedia.org/wiki/Visa_policy_of_the_Schengen_Area)
