@@ -84,6 +84,7 @@ def subscribe_to_newsletter(email: str, ip: str | None = None, source: str | Non
         json={
             "email_address": email,
             "ip_address": ip,
+            **({"tags": [source]} if source else {}),
         },
         timeout=10,
     )
