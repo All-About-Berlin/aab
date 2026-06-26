@@ -64,6 +64,7 @@ Start looking 3 to 5 months before your move. If you start too early or too late
 - [coming home](https://www.coming-home.com/)
 - [FarAwayHome](https://www.farawayhome.com/)
 - [Nestpick](https://www.nestpick.com/berlin/) - Listings from other websites
+- [FlatHunt](https://flat-hunt.com/) - Listings from other websites
 - [White Apartments](https://white-apartments.com/)
 
 **Furnished rooms** are also listed on [Kleinanzeigen](https://www.kleinanzeigen.de/) and [Facebook](#facebook-groups). They are cheaper there.[^55]
