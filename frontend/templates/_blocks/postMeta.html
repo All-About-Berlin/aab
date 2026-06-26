@@ -14,6 +14,11 @@
 		{% set root_url = SITE_URL ~ '/glossary' %}
 	{% endif %}
 	{% if root_label|default %}
+		{% if uri_root == 'glossary' %}
+			{% set entry_label = entry.german_term|default(entry.short_title|default(entry.title)) %}
+		{% else %}
+			{% set entry_label = entry.short_title|default(entry.title) %}
+		{% endif %}
 		<nav class="breadcrumbs" aria-label="Breadcrumbs">
 			<i class="icon folder" aria-hidden="true"></i>
 			<ol>
@@ -21,7 +26,7 @@
 				{% if entry.collections|default %}
 					<li><a href="{{ root_url }}#{{ entry.collections[0].id }}">{{ entry.collections[0].short_title|default(entry.collections[0].title) }}</a></li>
 				{% endif %}
-				<li><a href="{{ entry.url }}" aria-current="page">{{ entry.short_title|default(entry.title) }}</a></li>
+				<li><a href="{{ entry.url }}" aria-current="page">{{ entry_label }}</a></li>
 			</ol>
 		</nav>
 	{% endif %}
