@@ -282,7 +282,10 @@ class ConstantsLinter(Linter):
                     yield None, f"[{constant_name}] Content expired on {expiration_date}", logging.ERROR
 
             if not monitor:
-                yield None, f"[{constant_name}] Constant is not monitored", logging.WARNING
+                if constant.get("fail_on"):
+                    yield None, f"[{constant_name}] Constant is not monitored", logging.WARNING
+                else:
+                    yield None, f"[{constant_name}] Constant has no monitor and no fail_on date", logging.ERROR
                 continue
 
             if monitor and not constant.get("unit"):

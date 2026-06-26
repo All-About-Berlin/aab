@@ -75,4 +75,4 @@ When you [start a business in Germany](/guides/start-a-business-in-germany), you
 [^6]: [wwkn.de](https://wwkn.de/en/local-business-tax-gewerbesteuer/), [IHK Berlin](https://www.ihk.de/berlin/service-und-beratung/recht-und-steuern/steuern-und-finanzen/ertragssteuern-lohnsteuer/gewerbe-und-grundsteuer-index-2253124)
 [^10]: [ttc.tax](https://ttc.tax/ihk-berlin-bietet-mitgliedern-keine-teilnahme-am-lastschriftverfahren-an/)
 [^11]: [§ 11 Abs. 3 GewStG](https://www.buzer.de/11_GewStG.htm)
-[^12]: [Haufe.de](https://www.haufe.de/finance/haufe-finance-office-premium/gewerbesteueranrechnung-steuerermaessigung-bei-gewerblich-31-grundfall_idesk_PI20354_HI2179474.html)
+[^12]: [Haufe.de](https://www.haufe.de/finance/haufe-finance-office-premium/gewerbesteueranrechnung-steuerermaessigung-bei-gewerblich-31-grundfall_idesk_PI20354_HI2179474.html), [§ 35 Abs. 1 EStG](https://www.gesetze-im-internet.de/estg/__35.html)

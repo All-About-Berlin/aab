@@ -114,10 +114,14 @@ constants:
     value: 9
     unit: percent
     description: Church tax rate (%)
+    source: https://www.kirchenfinanzen.de/kirchensteuer/kirchensteuerhebesatz.html
+    fail_on: 2027-03-31
   CHURCH_TAX_RATE_BW_BY:
     value: 8
     unit: percent
     description: Church tax rate for Baden-Württemberg and Bavaria (%)
+    source: https://www.kirchenfinanzen.de/kirchensteuer/kirchensteuerhebesatz.html
+    fail_on: 2027-03-31
   SOLIDARITY_TAX_MILDERUNGSZONE_MIN_INCOME_TAX:
     value: 20350
     unit: euros
@@ -174,6 +178,7 @@ constants:
   VORSORGEPAUSCHAL_MIN_TAX_CLASS_3:
     value: 3000
     unit: euros
+    fail_on: 2027-03-31
   ARBEITNEHMERPAUSCHALE:
     value: 1230
     unit: euros
@@ -287,10 +292,17 @@ constants:
       desired_value: the Gewerbesteuer Steuermesszahl as a percentage
       last_verified: 2026-06-01
   GEWERBESTEUER_TAX_CREDIT:
-    value: 3.8
+    value: 4
     unit: percent
     description: Part of Gewerbesteuer credited from income tax (%)
-    fail_on: 2026-12-31
+    monitor:
+      template: buzer
+      law: EStG
+      section: '35'
+      subsection: Absatz 1.1
+      desired_value: the Steuerermäßigung multiplier (the number before 'fache des Gewerbesteuermessbetrags') as a decimal
+        number
+      last_verified: 2026-06-26
   GEWERBESTEUER_HEBESATZ_BERLIN:
     value: 410
     unit: percent
@@ -362,7 +374,8 @@ constants:
   EU_VAT_SCHWELLENWERT:
     value: 10000
     unit: euros
-    description: Below this amount (€/y) in VAT, simplified rules for intra-EU VAT
+    description: Below this amount (€/y) in VAT, simplified rules for intra-EU VAT. 2006/112/EC Article 59c. "Mehrwertsteuer-Schwellenwert"
+    fail_on: 2027-03-31
   VAT_MIN_QUARTERLY_AMOUNT:
     value: 2000
     unit: euros
@@ -628,10 +641,27 @@ constants:
       last_verified: 2026-06-01
   PFLEGEVERSICHERUNG_DISCOUNT_MIN_CHILDREN:
     value: 2
+    unit: integer
     description: Minimum children for Pflegeversicherung discount
+    monitor:
+      template: buzer
+      law: SGB_11
+      section: '55'
+      subsection: Absatz 3
+      desired_value: the minimum number of children required to receive the Pflegeversicherung discount (Abschlag)
+      last_verified: 2026-06-26
   PFLEGEVERSICHERUNG_DISCOUNT_MAX_CHILDREN:
     value: 5
+    unit: integer
     description: Maximum children for Pflegeversicherung discount
+    monitor:
+      template: buzer
+      law: SGB_11
+      section: '55'
+      subsection: Absatz 3
+      desired_value: the ordinal of the last child in the range for which the Abschlag applies (e.g. 'zweite bis vierte Kind'
+        → 4). Return the number as written; do not add 1.
+      last_verified: 2026-06-26
   RV_BASE_RATE:
     value: 18.6
     unit: percent
@@ -646,42 +676,52 @@ constants:
     value: 9.405
     unit: percent
     description: Fundsback fee (%)
+    fail_on: 2027-03-31
   FUNDSBACK_MIN_FEE:
     value: 854.05
     unit: euros
     description: Fundsback minimum fee (€)
+    fail_on: 2027-03-31
   FUNDSBACK_MAX_FEE:
     value: 2754.05
     unit: euros
     description: Fundsback maximum fee (€)
+    fail_on: 2027-03-31
   GERMANYPENSIONREFUND_FEE:
     value: 9.75
     unit: percent
     description: GermanyPensionRefund fee (%)
+    fail_on: 2027-03-31
   PENSIONREFUNDGERMANY_FEE:
     value: 10
     unit: percent
     description: PensionRefundGermany fee (%)
+    fail_on: 2027-03-31
   PENSIONREFUNDGERMANY_MAX_FEE:
     value: 2800
     unit: euros
     description: PensionRefundGermany maximum fee (€)
+    fail_on: 2027-03-31
   GERMANYPENSIONREFUND_MAX_FEE:
     value: 2500
     unit: euros
     description: GermanyPensionRefund maximum fee (€)
+    fail_on: 2027-03-31
   PENSION_CONTRACTING_COUNTRIES:
     value: AL,AU,BR,CA,CL,IN,IL,JP,KR,MA,ME,PH,TN,TR,UY,US
     unit: countries
     description: Countries with a bilateral pension agreement with Germany (Sozialversicherungsabkommen)
+    fail_on: 2027-03-31
   PENSION_BALKAN_BLOCK_COUNTRIES:
     value: BA,MK,RS,XK,ME
     unit: countries
     description: Balkan countries with a pension agreement with Germany that has special refund rules
+    fail_on: 2027-03-31
   PENSION_DISQUALIFYING_COUNTRIES:
     value: BA,MK,RS,XK,ME,TR
     unit: countries
     description: Countries where residing disqualifies you from a German pension refund (Balkan block + Turkey)
+    fail_on: 2027-03-31
   WORKING_HOLIDAY_VISA_COUNTRIES:
     value: AR,AU,BR,CL,HK,IL,JP,KR,NZ,TW,UY
     unit: countries
@@ -764,6 +804,7 @@ constants:
     value: 37
     unit: euros
     description: Minimum permanent residence fee (€)
+    fail_on: 2027-03-31
   MAX_PERMANENT_RESIDENCE_FEE:
     value: 147
     unit: euros
@@ -898,6 +939,7 @@ constants:
     value: 51.21
     unit: euros
     description: Driving licence fee (€)
+    fail_on: 2027-03-31
   FIRST_AID_COURSE_FEE:
     value: 80
     unit: euros
