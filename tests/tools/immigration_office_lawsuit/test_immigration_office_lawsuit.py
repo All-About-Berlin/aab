@@ -1,5 +1,3 @@
-from datetime import date, timedelta
-from dateutil.relativedelta import relativedelta
 from playwright.sync_api import expect
 import pytest
 import re
@@ -7,6 +5,7 @@ import re
 
 @pytest.fixture
 def lawsuit_form(page):
+    page.clock.set_fixed_time("2026-02-22T10:00:00")
     page.goto("/tests/tools/immigration-office-lawsuit")
     return page.get_by_role("group", name="Sue the Ausländerbehörde")
 
@@ -17,7 +16,7 @@ def assert_stage(lawsuit_form, expected_stage: str):
 
 
 def fill_questions(lawsuit_form):
-    lawsuit_form.get_by_label("Application date").fill("2026-01-01")
+    lawsuit_form.get_by_label("Application date").fill("2025-11-01")
     lawsuit_form.get_by_label("Application type").select_option("BLUE_CARD")
     lawsuit_form.get_by_label("Application city").fill("Berlin")
 
@@ -61,7 +60,7 @@ def test_submit(lawsuit_form, test_screenshot):
     assert response_data["email"] == "contact@nicolasbouliane.com"
     assert response_data["application_type"] == "BLUE_CARD"
     assert response_data["city"] == "Berlin"
-    assert response_data["application_date"] == "2026-01-01"
+    assert response_data["application_date"] == "2025-11-01"
     assert response_data["message"] == "Some extra details"
 
     test_screenshot(page, lawsuit_form)
@@ -75,12 +74,10 @@ def test_application_date_too_recent(lawsuit_form, test_screenshot):
     lawsuit_form.get_by_role("button", name="Continue").click()
     assert_stage(lawsuit_form, "questions")
 
-    less_than_three_months_ago = (date.today() - relativedelta(months=3) + timedelta(days=1)).isoformat()
-    lawsuit_form.get_by_label("Application date").fill(less_than_three_months_ago)
+    lawsuit_form.get_by_label("Application date").fill("2025-11-23")  # 3 months - 1 day ago
     test_screenshot(lawsuit_form.page, lawsuit_form)
     lawsuit_form.get_by_role("button", name="Continue").click()  # questions → contact
-    three_months_ago = (date.today() - relativedelta(months=3) + timedelta(days=1)).isoformat()
-    lawsuit_form.get_by_label("Application date").fill(three_months_ago)
+    lawsuit_form.get_by_label("Application date").fill("2025-11-23")  # 3 months - 1 day ago
     lawsuit_form.get_by_role("button", name="Continue").click()  # questions → contact
 
     lawsuit_form.get_by_label("Application type").select_option("BLUE_CARD")

@@ -31,7 +31,6 @@ def test_by_whatsapp(page, test_screenshot):
         "question": "",
         "referrer": "test-referrer",
         "contact_method": "WHATSAPP",
-        "broker": "seamus-wolf",
     }
     expected_response.pop("can_have_private")
     assert api_response.value.ok
@@ -72,7 +71,6 @@ def test_by_email(page, test_screenshot):
         "question": "This is a question\nPlease answer soon",
         "referrer": "test-referrer",
         "contact_method": "EMAIL",
-        "broker": "seamus-wolf",
     }
     expected_response.pop("can_have_private")
 

@@ -86,7 +86,13 @@ def test_screenshot(request, page, assert_snapshot):
         # Move mouse away to avoid hover flakiness
         if move_mouse:
             page.mouse.move(0, 0)
-        assert_snapshot(element_to_screenshot.screenshot())
+        assert_snapshot(
+            element_to_screenshot.screenshot(
+                mask=[
+                    page.locator("p:has-text('You are updating the feedback')")
+                ]  # This is the current date, so it breaks snapshot testing
+            )
+        )
 
     return test
 
