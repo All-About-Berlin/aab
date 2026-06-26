@@ -54,9 +54,9 @@ Start looking 3 to 5 months before your move. If you start too early or too late
 ### Short-term and furnished apartments
 
 - **[HousingAnywhere](/out/housinganywhere)**{{ RECOMMENDED }}  
-    This is the most reliable option. The landlords are verified. To avoid scams, the landlord only gets paid after you move in.[^39] They tell you when the *[[Anmeldung]]* is possible. No *[[Schufa]]* needed.[^49] Some apartments have no [deposit](/glossary/Kaution).
+    This is the most reliable option. All landlords are verified. To avoid scams, the landlord only gets paid after you move in.[^39] You see when the *[[Anmeldung]]* is possible. No *[[Schufa]]* needed.[^49] Some apartments have no [deposit](/glossary/Kaution).
+- [Spotahome](/out/spotahome) - Some landlords are verified.[^45] To avoid scams, the landlord only gets paid after you move in.[^46] You see when the *[[Anmeldung]]* is possible. Some apartments have no [deposit](/glossary/Kaution).
 - [Spacest](https://spacest.com/?utm_source=allaboutberlin&utm_medium=sito&utm_campaign=allaboutberlin) - Some landlords are verified. To avoid scams, the landlord only gets paid after you move in. The *[[Anmeldung]]* is always possible.
-- [Spotahome](/out/spotahome) - Some landlords are verified.[^45] To avoid scams, the landlord only gets paid after you move in.[^46] They tell you when the *[[Anmeldung]]* is possible (under *House Rules*). Some apartments have no [deposit](/glossary/Kaution). You must pay *before* you can read the lease, and it's hard to get your money back.
 - [Wunderflats](/out/wunderflats) - There are a lot of scams on this platform.[^18] They tell you when the *[[Anmeldung]]* is possible. No *[[Schufa]]* needed.
 - [Smartments](/out/smartments) - *[[Anmeldung]]* possible
 - [Crocodilian](https://crocodilian.de/) - *[[Anmeldung]]* possible[^8]
