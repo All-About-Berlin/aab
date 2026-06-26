@@ -1,5 +1,6 @@
 ---
-title: Revenue forecast (German freelance visa)
+title: Revenue forecast template (German freelance visa)
+short_title: Revenue forecast template
 german_term: Ertragsvorschau
 english_term: Revenue forecast
 german_document: documents/german-visa-Ertragsvorschau-2023.pdf

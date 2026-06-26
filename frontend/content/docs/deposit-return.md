@@ -1,5 +1,6 @@
 ---
-title: Return of the apartment deposit
+title: Request your apartment deposit back
+short_title: Deposit return request
 german_term: Rückforderung der Mietkaution
 english_term: Return of the deposit
 description: A letter generator to request your apartment deposit back.
@@ -10,7 +11,7 @@ related_guides:
     - guides/leaving-germany.md
 ---
 
-After you [move out](/guides/moving-out) of an apartment, you can get your *[[Kaution]]* back. Some landlords take a really long time to return your *Kaution*. Use this letter generator to ask for your *Kaution* back.
+After you [move out](/guides/moving-out) of an apartment, you can get your *[[Kaution]]* back. Some landlords take months to return your *Kaution*. Use this letter generator to request your *Kaution* back.
 
 **[How to get your apartment deposit back ➞](/guides/mietkaution#how-to-get-your-kaution-back)**
 

@@ -1,20 +1,9 @@
 {% macro preview(entry) %}
-	{% if entry.url.startswith(SITE_URL + '/docs/') %}
-		{% set id = random_id() %}
-		<li class="document" aria-labelledby="h-doc-{{ id }}">
-			<h3 id="h-doc-{{ id }}">
-				<a rel="bookmark" href="{{ entry.url }}">{{ entry.english_term }}</a>
-				<span lang="de">{{ entry.german_term }}</span>
-			</h3>
-			<p>{{ entry.description }}</p>
-		</li>
-	{% elif entry.url.startswith(SITE_URL + '/tools/') %}
-		{% set id = random_id() %}
-		<li aria-labelledby="h-tool-{{ id }}">
-			<h3 id="h-tool-{{ id }}">
-				<a title="{{ entry.title }}" rel="bookmark" href="{{ entry.url }}">{{ entry.short_title|default(entry.title) }}</a>
-			</h3>
-			<p>{{ entry.description }}</p>
-		</li>
-	{% endif %}
+	{% set id = random_id() %}
+	<li aria-labelledby="h-tool-{{ id }}">
+		<h3 id="h-tool-{{ id }}">
+			<a title="{{ entry.title }}" rel="bookmark" href="{{ entry.url }}">{{ entry.short_title|default(entry.title) }}</a>
+		</h3>
+		<p>{{ entry.description }}</p>
+	</li>
 {% endmacro %}

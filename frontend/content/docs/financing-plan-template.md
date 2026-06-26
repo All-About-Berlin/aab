@@ -1,5 +1,6 @@
 ---
 title: Financing plan template (German freelance visa)
+short_title: Financing plan template
 german_term: Finanzierungsplan
 english_term: Financing plan template
 german_document: documents/finanzierungsplan-berlin-freelance-visa.pdf

@@ -1,5 +1,6 @@
 ---
 title: Fragebogen zur steuerlichen Erfassung in English
+short_title: Business registration form
 german_term: Fragebogen zur steuerlichen Erfassung
 english_term: Questionnaire for tax collection
 german_document: documents/fragebogen-zur-steuerlichen-erfassung-original.pdf
@@ -11,7 +12,7 @@ related_guides:
     - guides/start-a-business-in-germany.md
 ---
 
-The *[[Fragebogen zur steuerlichen Erfassung]]* is the form you fill to register a business in Germany. **Since 2021, you must fill the form online**. You don't need the form below anymore.
+The *[[Fragebogen zur steuerlichen Erfassung]]* is the form you fill to [register your business](/guides/fragebogen-zur-steuerlichen-erfassung) with the *[[Finanzamt]]*. **You don't need this form anymore.** Since 2021, you must fill this form online in [[ELSTER]]. You don't need the form below anymore.
 
 **[How to fill this form online ➞](/guides/fragebogen-zur-steuerlichen-erfassung)**
 

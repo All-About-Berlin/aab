@@ -1,5 +1,6 @@
 ---
-title: German resignation letter generator
+title: German job resignation letter generator
+short_title: Resignation letter generator
 german_term: Kündigungsschreiben
 english_term: Job resignation letter
 description: Learn how to write and hand a resignation notice (Kündigungsschreiben) when you quit your job in Germany. This resignation letter template will help.

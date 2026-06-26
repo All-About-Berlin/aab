@@ -1,5 +1,6 @@
 ---
 title: Letter of intent template (German freelance visa)
+short_title: Letter of intent template
 german_term: Absichtserklärung Vorlage
 english_term: Letter of intent template
 german_document: documents/Absichtserklaerung-Muster.pdf

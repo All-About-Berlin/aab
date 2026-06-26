@@ -1,5 +1,6 @@
 ---
-title: German visa application form
+title: German residence permit application form
+short_title: Residence permit application form
 german_term: Antrag auf Erteilung eines Aufenthaltstitels
 english_term: Application for a residence permit
 german_document: documents/residence-permit-application-form-2021.pdf

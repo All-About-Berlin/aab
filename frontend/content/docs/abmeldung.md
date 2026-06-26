@@ -1,5 +1,6 @@
 ---
-title: Abmeldung form in English
+title: Fill the Abmeldung form online
+short_title: Abmeldung form filler
 german_term: Abmeldung einer Wohnung
 english_term: Deregistration of a residence
 german_document: documents/abmeldung-original.pdf

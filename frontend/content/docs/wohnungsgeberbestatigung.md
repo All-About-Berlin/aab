@@ -1,5 +1,6 @@
 ---
 title: Wohnungsgeberbestätigung template in English
+short_title: Wohnungsgeberbestätigung template
 german_term: Wohnungsgeberbestätigung
 english_term: Confirmation from the landlord
 german_document: documents/wohnungsgeberbestaetigung.pdf

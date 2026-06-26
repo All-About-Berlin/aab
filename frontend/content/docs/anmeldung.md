@@ -1,5 +1,6 @@
 ---
-title: Anmeldung form in English, with instructions
+title: Fill the Anmeldung form online
+short_title: Anmeldung form filler
 german_term: Anmeldung einer Wohnung
 english_term: Registration of a residence
 german_document: documents/anmeldung-original.pdf

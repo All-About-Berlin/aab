@@ -1,5 +1,6 @@
 ---
 title: Request ALG I without an Arbeitsbescheinigung
+short_title: Get ALG I with no Arbeitsbescheinigung
 german_term: 'ALG I: Antrag auf vorläufige Entscheidung'
 english_term: 'ALG I: Request for preliminary decision'
 description: Letter to request ALG I without an Arbeitsbescheinigung from your employer.

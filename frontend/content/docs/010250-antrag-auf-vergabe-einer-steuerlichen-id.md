@@ -1,5 +1,6 @@
 ---
 title: German tax ID application form
+short_title: Tax ID application form
 german_term: Antrag auf Vergabe einer steuerlichen Identifikationsnummer für nicht meldepflichtige Personen
 english_term: Tax ID application form
 german_document: documents/010250-Antrag-auf-Vergabe-einer-steuerlichen-Identifikationsnummer-für-nicht-meldepflichtige-Personen-durch-das-Finanzamt-Deutsch.pdf

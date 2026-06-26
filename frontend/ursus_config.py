@@ -426,6 +426,7 @@ config.lunr_indexes = {
             "uri_pattern": "docs/*.md",
             "returned_fields": (
                 "title",
+                "short_title",
                 "english_term",
                 "german_term",
                 "url",
@@ -436,6 +437,7 @@ config.lunr_indexes = {
             "uri_pattern": "tools/*.md",
             "returned_fields": (
                 "title",
+                "short_title",
                 "url",
             ),
             "boost": 1,

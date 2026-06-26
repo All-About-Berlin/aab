@@ -1,5 +1,6 @@
 ---
 title: Cover letter template (German freelance visa)
+short_title: Cover letter template
 german_term: Anschreiben
 english_term: Cover letter
 german_document: documents/Freelance-visa-cover-letter-German.pdf
