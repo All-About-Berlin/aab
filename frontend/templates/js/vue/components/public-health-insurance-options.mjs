@@ -94,7 +94,7 @@ export default {
 
 			<ul class="buttons list">
 				<li>
-					<a class="recommended" title="Sign up with Techniker Krankenkasse" href="/out/feather-tk-signup" target="_blank">
+					<a class="recommended" title="Sign up with Techniker Krankenkasse" href="https://allaboutberlin.com/out/feather-tk-signup" target="_blank">
 						<logo-tk/>
 						<div>
 							<h3 v-text="option('tk').name"></h3>
@@ -104,7 +104,7 @@ export default {
 					</a>
 				</li>
 				<li>
-					<a title="Sign up with BARMER" href="/out/feather-barmer-signup" target="_blank">
+					<a title="Sign up with BARMER" href="https://allaboutberlin.com/out/feather-barmer-signup" target="_blank">
 						<logo-barmer/>
 						<div>
 							<h3 v-text="option('barmer').name"></h3>

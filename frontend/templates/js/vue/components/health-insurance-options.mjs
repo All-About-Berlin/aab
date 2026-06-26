@@ -244,7 +244,7 @@ export default {
 				<h3 v-text="results.other.name"></h3>
 				<ul class="buttons list">
 					<li v-for="subOption in results.other.options" :key="subOption.id">
-						<a v-if="subOption.id === 'familienversicherung'" @click="selectOption(subOption.id)" title="Learn more about family health insurance" href="/guides/german-health-insurance#free-health-insurance" target="_blank">
+						<a v-if="subOption.id === 'familienversicherung'" @click="selectOption(subOption.id)" title="Learn more about family health insurance" href="https://allaboutberlin.com/guides/german-health-insurance#free-health-insurance" target="_blank">
 							<icon-family/>
 							<div>
 								<h3>Family health insurance</h3>
@@ -252,7 +252,7 @@ export default {
 							</div>
 							<price :amount="0" per-month></price>
 						</a>
-						<a v-if="subOption.id === 'social-benefits'" @click="selectOption(subOption.id)" title="Learn more about state-sponsored health insurance" href="/guides/german-health-insurance#free-health-insurance" target="_blank">
+						<a v-if="subOption.id === 'social-benefits'" @click="selectOption(subOption.id)" title="Learn more about state-sponsored health insurance" href="https://allaboutberlin.com/guides/german-health-insurance#free-health-insurance" target="_blank">
 							<icon-bank/>
 							<div>
 								<h3>Social benefits</h3>
@@ -260,7 +260,7 @@ export default {
 							</div>
 							<price :amount="0" per-month></price>
 						</a>
-						<a v-if="subOption.id === 'ehic'" @click="selectOption(subOption.id)" title="Learn more about the EHIC" href="/guides/german-health-insurance#insurance-from-other-eu-countries" target="_blank">
+						<a v-if="subOption.id === 'ehic'" @click="selectOption(subOption.id)" title="Learn more about the EHIC" href="https://allaboutberlin.com/guides/german-health-insurance#insurance-from-other-eu-countries" target="_blank">
 							<icon-passport/>
 							<div>
 								<h3>European Health Insurance Card</h3>
@@ -268,7 +268,7 @@ export default {
 							</div>
 							<price :amount="0" per-month></price>
 						</a>
-						<a v-if="subOption.id === 'ksk'" @click="selectOption(subOption.id)" title="Learn more about the KSK" href="/guides/ksk-kuenstlersozialkasse" target="_blank">
+						<a v-if="subOption.id === 'ksk'" @click="selectOption(subOption.id)" title="Learn more about the KSK" href="https://allaboutberlin.com/guides/ksk-kuenstlersozialkasse" target="_blank">
 							<icon-insurance/>
 							<div>
 								<h3>Join the <glossary>Künstlersozialkasse</glossary></h3>

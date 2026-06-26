@@ -25,11 +25,11 @@ export default {
 			<h2 v-if="!isExpatOnlyOption">Expat health insurance options</h2>
 			<p v-if="!isExpatOnlyOption">
 				These options are valid for a first visa application.
-				<template v-if="occupation === 'selfEmployed'">You might need a better health insurance to <a target="_blank" href="/guides/renew-german-freelance-visa">renew your freelance visa</a>.</template>
+				<template v-if="occupation === 'selfEmployed'">You might need a better health insurance to <a target="_blank" href="https://allaboutberlin.com/guides/renew-german-freelance-visa">renew your freelance visa</a>.</template>
 			</p>
 			<ul class="buttons list">
 				<li>
-					<a href="/out/feather-expats" target="_blank" class="recommended">
+					<a href="https://allaboutberlin.com/out/feather-expats" target="_blank" class="recommended">
 						<logo-feather/>
 						<div>
 							<h3>Feather</h3>
@@ -39,7 +39,7 @@ export default {
 					</a>
 				</li>
 				<li>
-					<a href="/out/hansemerkur-expats" target="_blank">
+					<a href="https://allaboutberlin.com/out/hansemerkur-expats" target="_blank">
 						<logo-hansemerkur></logo-hansemerkur>
 						<div>
 							<h3>HanseMerkur</h3>
