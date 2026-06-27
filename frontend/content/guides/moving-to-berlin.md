@@ -5,7 +5,7 @@ description: This guide shows you how to relocate to Berlin. It covers finding a
 date_created: 2018-06-05
 ---
 
-This guide shows you how to relocate to Berlin from another country, step by step.
+This guide explains the steps for moving to Berlin from another country.
 
 {% tableOfContents %}
 
@@ -15,64 +15,60 @@ This guide shows you how to relocate to Berlin from another country, step by ste
 
 ### Save money
 
-Moving to Germany is expensive. You need enough money to cover relocation expenses, and to survive until your first paycheck.
+Before you move to Berlin, you must have enough money for...
 
-You need enough money for...
-
-- **The apartment deposit** (*[[Kaution]]*)  
-    It's 3 times your [cold rent](/glossary/Kaltmiete). You must pay 1/3 of the deposit before you move in, 1/3 after one month, and 1/3 after two months. - [How apartment deposits work](/guides/mietkaution)
-- **The first month of rent**  
-    You must pay it by [bank transfer](/glossary/SEPA-Überweisung) before you [move in](/guides/moving-in). Use my [rent map](/tools/rent-map) to set your budget.
-- **Your [living expenses](/guides/cost-of-living)**  
-    You must buy food and things for your apartment. You might also need to buy furniture and appliances. If you find a furnished apartment or a [[WG]]; it comes with everything you need.
-- **Your [health insurance](/glossary/Krankenversicherung)**  
-    All German residents must have health insurance. Use my [health insurance calculator](/tools/health-insurance-calculator) to estimate the cost.
-- **Your relocation expenses**  
+- **Rent**  
+    You must pay the first month's rent before you move in. Rent is around 30% of your [net income](/glossary/Netto%20income), or €16 to €25 per m^2^. [Shared apartments](/glossary/WG) are cheaper. Use my [rent map](/tools/rent-map) to set your budget.
+- **The [apartment deposit](/glossary/Kaution)**  
+    The deposit is 3 times your [cold rent](/glossary/Kaltmiete). You must pay 1/3 of the deposit before you move in, 1/3 after one month, and 1/3 after two months.
+- **[Living expenses](/guides/cost-of-living)**  
+    You must buy food and things for your apartment. You might need to buy furniture and appliances.
+- **Relocation expenses**  
     If you come from another country, you might need to buy plane tickets, or stay in a hotel for a few days. Relocation and moving expenses are [tax-deductible](/glossary/steuerlich%20absetzbar).[^4] Save the receipts for your [tax declaration](/glossary/Steuererklärung).
+- **[Health insurance](/glossary/Krankenversicherung)**  
+    All German residents need health insurance. Use my [health insurance calculator](/tools/health-insurance-calculator) to estimate the cost.
 - **Winter clothes**  
-    German winters are cold and humid. It's 0ºC on average, and as low as -10ºC.[^5] You need winter clothes: a warm jacket, boots, gloves, and a hat.
+    German winters are cold and humid. It's 0ºC on average, and as low as -10ºC.[^5] You need a winter jacket and warm clothes.
 
-Your employer might offer a relocation bonus to cover your relocation expenses. You usually get it *after* you start working, so you still need savings.
+Your employer might cover your relocation costs. They usually reimburse the cost *after* you start working, so you still need enough savings.
 
 **[Cost of living in Berlin ➞](/guides/cost-of-living)**
 
 ### Find a job
 
-There are English-speaking jobs in Berlin, but most jobs require German.
+You can find a job before or after you move to Berlin. Most jobs require German, but there are many English-speaking jobs.
+
+It's easier to find an apartment if you have a job. Some [visas](/glossary/National%20Visa) and [residence permits](/glossary/Aufenthaltstitel) require a job offer.
 
 **[How to find a job ➞](/guides/find-a-job-in-berlin)**
 
-If you need a [residence permit](/glossary/Aufenthaltstitel) to live and work in Germany, you must get a job offer, then get a residence permit, then start working. It takes [{{ WAIT_TIME_RESIDENCE_PERMIT }}](/guides/immigration-office/wait-times) to get a residence permit.
-
-**[How to get a residence permit ➞](/guides/residence-permit)**
-
 ### Find a place to live
 
-It's *really* hard to find an apartment in Berlin. It can take months. Rent a temporary furnished apartment, then move to Berlin, then find something better. Temporary housing is expensive, but it might be your only option.
+It's *really* hard to find an apartment. If you are not in Berlin, it's almost impossible.
+
+Find a [short-term apartment](/guides/find-a-flat-in-berlin#short-term-and-furnished-apartments), move to Berlin, then look for something permanent. Short-term apartments are really expensive, but they are often your only option. You might live in multiple short-term apartments before you find a good long-term apartment.
+
+Choose a place where you can [register your address](/glossary/Anmeldung). Some temporary apartments don't allow it. Having a registered address is important.
+
+[Housing scams](/guides/housing-scams) are common. For short-term housing, use [HousingAnywhere](/out/housinganywhere) or [Spotahome](/out/spotahome). They have verified landlords and better scam protections.
 
 **[How to find an apartment ➞](/guides/find-a-flat-in-berlin)**
 
-Before you [move in](/guides/moving-in), you must pay the first month's rent, and 1/3 of the deposit (*[[Kaution]]*). You pay the rent by [bank transfer](/glossary/SEPA-%C3%9Cberweisung). [Open a bank account](/guides/best-bank-germany) or use [Wise](/out/wise) to send money from another country.
-
-Be careful while looking for apartments. There are a lot of [housing scams](/guides/housing-scams). If you are not in Germany, use a platform with verified landlords like [HousingAnywhere](/out/housinganywhere) or [Spotahome](/out/spotahome). They only pay the landlord after you [move in](/guides/moving-in). If the apartment is not as described, you get your money back.
-
 ### Get health insurance
 
-If you live in Germany, you need [health insurance](/glossary/Krankenversicherung). You need it to apply for a [[National Visa]] or a [residence permit](/glossary/Aufenthaltstitel). You need it before you [start working](/guides/find-a-job-in-berlin#start-working) or studying.
+[Health insurance](/glossary/Krankenversicherung) is mandatory. You need it to apply for a [[National Visa]], apply for a [residence permit](/glossary/Aufenthaltstitel), [start working](/guides/find-a-job-in-berlin#start-working) or start studying.
 
-Use my [health insurance calculator](/guides/german-health-insurance) to know your options. [Ask my insurance expert](/guides/german-health-insurance#need-help) to help you choose. It's the best way to get insured.
+Do not choose health insurance yourself. Use my health insurance calculator to find the best option.
 
-{% tool "health-insurance-calculator" %}
+{% tool "health-insurance-calculator", static=True %}
+
+If you are insured in another [EU](/glossary/European%20Union) country, your [European Health Insurance Card](/glossary/EHIC) covers you until you [start working](/guides/find-a-job-in-berlin#start-working). If you are a student, it covers you until you graduate.
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 
-If you are an EU citizen, your [European Health Insurance Card](/glossary/EHIC) covers you until you [start working](/guides/find-a-job-in-berlin#start-working). If you are a student, it covers you until you graduate.
-
-**[How EHIC works ➞](/guides/german-health-insurance#insurance-from-other-eu-countries)**
-
 ### Apply for a residence permit
 
-If you are not a citizen of the [EU](/glossary/European%20Union), [[EEA]] or Switzerland, you need a [residence permit](/glossary/Aufenthaltstitel) to live, work or study in Germany. It takes [{{ WAIT_TIME_RESIDENCE_PERMIT }}](/guides/immigration-office/wait-times) to get a new residence permit. You might need it before you start working or studying. Apply for it as soon as you can.
+If you are not a citizen of the [EU](/glossary/European%20Union), [[EEA]] or Switzerland, you need a [residence permit](/glossary/Aufenthaltstitel) to live, work or study in Germany. It takes [{{ WAIT_TIME_RESIDENCE_PERMIT }}](/guides/immigration-office/wait-times) to get a new residence permit. Apply for it as soon as you can.
 
 **[How to get a residence permit ➞](/guides/residence-permit#how-to-get-a-residence-permit)**
 
