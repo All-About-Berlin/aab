@@ -30,7 +30,7 @@ This checklist helps you move from Germany to another country.
         - [ ] [Employment certificate](/guides/losing-your-job#get-an-arbeitsbescheinigung) (*[[Arbeitsbescheinigung]]*)
         - [ ] [Vacation certificate](/guides/losing-your-job#get-an-urlaubsbescheinigung) (*[[Urlaubsbescheinigung]]*)
         - [ ] [Last pay slip](/guides/losing-your-job#get-all-other-documents) (*[[Gehaltsabrechnung]]* or *Lohnabrechnung*)
-        - [ ] [Salary tax statement](/guides/losing-your-job#get-all-other-documents) (*[[Lohnsteuerbescheinigung]]*)
+        - [ ] [Wage tax statement](/guides/losing-your-job#get-all-other-documents) (*[[Lohnsteuerbescheinigung]]*)
 - [ ] **[Sell or donate your things](/guides/how-do-i-buy-and-sell-used-things-in-berlin)**
 - [ ] **[Move out of your apartment](/guides/moving-out)**
     - [ ] **[End your lease](/guides/moving-out#end-your-lease)**  
@@ -125,7 +125,7 @@ If you are part of a *Handwerkskammer*, *Berufskammer* or *Berufsgenossenschaft*
 - [ ] **[Get your apartment deposit back](/guides/mietkaution#how-to-get-your-kaution-back)**  
     Your landlord can take up to 12 months to return your deposit. After you get your last *[[Nebenkostenabrechnung]]*, you should get the rest of your deposit back.
 - [ ] **[Make a tax declaration](/guides/moving-in#deduct-your-moving-costs)**  
-    If you move for work, your relocation costs are [tax-deductible](/glossary/steuerlich%20absetzbar). Since you stopped working in the middle of the year, you probably paid too much [salary tax](/glossary/Einkommensteuer). Most people get money back.
+    If you move for work, your relocation costs are [tax-deductible](/glossary/steuerlich%20absetzbar). Since you stopped working in the middle of the year, you probably paid too much [wage tax](/glossary/Einkommensteuer). Most people get money back.
 - [ ] **[Get your pension payments back](/guides/pension-payments-refund)**  
     [Public pension insurance](/glossary/gesetzliche%20Rentenversicherung) costs {{RV_EMPLOYEE_CONTRIBUTION}}% of your income. If you leave the [EU](/glossary/European%20Union), you can usually get that money back.
 

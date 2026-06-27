@@ -218,7 +218,7 @@ In Germany, when you have a health problem, you go to your *[[Hausarzt]]*. Find 
 
 ### Make a tax declaration
 
-Your relocation expenses are [tax-deductible](/glossary/steuerlich%20absetzbar). If you move in the middle of the year, you probably paid too much [salary tax](/glossary/Lohnsteuer). Make a [tax declaration](/glossary/Steuererklärung) to get some money back. A [tax advisor](/guides/english-speaking-steuerberater-berlin) can help you.
+Your relocation expenses are [tax-deductible](/glossary/steuerlich%20absetzbar). If you move in the middle of the year, you probably paid too much [wage tax](/glossary/Lohnsteuer). Make a [tax declaration](/glossary/Steuererklärung) to get some money back. A [tax advisor](/guides/english-speaking-steuerberater-berlin) can help you.
 
 ## After you settle
 

@@ -19,7 +19,7 @@ This tax calculator shows your salary after taxes. It works for employees, stude
 
 All German residents must pay taxes. These are the taxes to pay:
 
-- [Income and salary tax](#income-and-salary-tax) (*Einkommensteuer*, *Lohnsteuer*)
+- [Income and wage tax](#income-and-wage-tax) (*Einkommensteuer*, *Lohnsteuer*)
 - [Health insurance](#health-insurance) (*Krankenversicherung*)
 - [Long-term care insurance](#long-term-care-insurance) (*Pflegeversicherung*)
 - [Public pension insurance](#public-pension-insurance) (*gesetzliche Rentenversicherung*)
@@ -35,13 +35,13 @@ Income from investments is taxed differently.[^3] You pay:
 - [Church tax](#church-tax) (*Kirchensteuer*)
 - [Solidarity surcharge](#solidarity-surcharge) (*Solidaritätszuschlag*)
 
-### Income and salary tax
+### Income and wage tax
 
 All German residents pay income tax (*[[Einkommensteuer]]*). This tax is a percentage of your income. It's a progressive tax, so if you earn more, you pay a bigger percentage of your income.[^2]
 
 If you earn less than €{{GRUNDFREIBETRAG|cur}} per year, you pay no income tax. If you earn the [median income](/guides/salaries-in-germany#median-income), your income tax is around 18% of your income. The maximum income tax is {{INCOME_TAX_MAX_RATE}}% of your income.[^0]
 
-**If you are an employee**, you pay a salary tax (*[[Lohnsteuer]]*) on every paycheck. This is a prepayment of your *estimated* income tax. If you pay too much salary tax, you can make a [tax declaration](/glossary/Steuererklärung) and get money back.
+**If you are an employee**, you pay a wage tax (*[[Lohnsteuer]]*) on every paycheck. This is a prepayment of your *estimated* income tax. If you pay too much wage tax, you can make a [tax declaration](/glossary/Steuererklärung) and get money back.
 
 Usually, tips are not taxed.[^5]
 
@@ -111,7 +111,7 @@ All German households must pay the [TV tax](/glossary/Rundfunkbeitrag). If you r
 
 If you are self-employed, you must pay...
 
-- [Income tax](#income-and-salary-tax)
+- [Income tax](#income-and-wage-tax)
 - [Health insurance](#health-insurance)
 - [Long-term care insurance](#long-term-care-insurance)
 - [Church tax](#church-tax)
@@ -134,9 +134,9 @@ Since you are self-employed, your employer does not pay half of your health insu
 
 ## German tax classes
 
-Your tax class affects how your [salary tax](/glossary/Lohnsteuer) is calculated. It does not affect how much [income tax](/glossary/Einkommensteuer) you pay. It only changes how much income tax you pay *in advance*, as salary tax.
+Your tax class affects how your [wage tax](/glossary/Lohnsteuer) is calculated. It does not affect how much [income tax](/glossary/Einkommensteuer) you pay. It only changes how much income tax you pay *in advance*, as wage tax.
 
-You can change your tax class online with [[ELSTER]]. If you are self-employed, you might not have a tax class, because you don't need to calculate your salary tax.[^1]
+You can change your tax class online with [[ELSTER]]. If you are self-employed, you might not have a tax class, because you don't need to calculate your wage tax.[^1]
 
 There are 6 tax classes:
 
@@ -151,7 +151,7 @@ There are 6 tax classes:
 - **Tax class 5**  
     If you are married, and you earn less than your spouse. If you are in tax class 5, your spouse is in tax class 3.
 - **Tax class 6**  
-    This is the tax class for a second job. If you don't have a tax ID, your employer might put you in tax class 6. You have no tax benefits, and you pay more salary tax.
+    This is the tax class for a second job. If you don't have a tax ID, your employer might put you in tax class 6. You have no tax benefits, and you pay more wage tax.
 
 ## How to pay less taxes
 

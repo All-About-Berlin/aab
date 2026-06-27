@@ -15,7 +15,7 @@ related_guides:
 
 Income tax (*Einkommensteuer*) is the percentage of your income that goes to the German tax office (*[[Finanzamt]]*). The amount of income tax you pay depends on your total income. The maximum income tax rate in Germany is {{INCOME_TAX_MAX_RATE}}%.[^0]
 
-The income tax is not the same as the salary tax (*[[Lohnsteuer]]*).
+The income tax is not the same as the wage tax (*[[Lohnsteuer]]*).
 
 **[German income tax calculator ➞](/tools/tax-calculator)**
 

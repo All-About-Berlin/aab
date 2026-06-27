@@ -8,7 +8,7 @@ related_guides:
     - guides/find-a-flat-in-berlin.md
 ---
 
-A *WG* or *Wohngemeinschaft* is an apartment where multiple people live together and share the rent. It's called a shared apartment or flatshare in English. Living in a WG is cheaper than living alone, so it's a good way to pay less rent. Most WGs are listed on [WG-Gesucht](https://www.wg-gesucht.de/) and [Kleinanzeigen](https://www.kleinanzeigen.de/stadt/berlin/).
+A *WG* or *Wohngemeinschaft* is an apartment where multiple people live together and share the rent. It's called a shared apartment or flat share in English. Living in a WG is cheaper than living alone, so it's a good way to pay less rent. Most WGs are listed on [WG-Gesucht](https://www.wg-gesucht.de/) and [Kleinanzeigen](https://www.kleinanzeigen.de/stadt/berlin/).
 
 **[How to find a WG ➞](/guides/find-a-flat-in-berlin)**
 

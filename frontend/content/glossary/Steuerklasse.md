@@ -2,7 +2,7 @@
 title: What are tax classes (Steuerklassen) in Germany?
 german_term: Steuerklasse
 english_term: Tax class
-description: Tax categories that define how much salary tax you pay.
+description: Tax categories that define how much wage tax you pay.
 date_created: 2018-08-15
 related_guides:
     - guides/taxes.md
@@ -11,7 +11,7 @@ related_guides:
     - guides/english-speaking-steuerberater-berlin.md
 ---
 
-Your tax class (*Steuerklasse*) decides how much [salary tax](/glossary/Lohnsteuer) you pay. It does not affect how much [income tax](/glossary/Einkommensteuer) you pay. It only affects how much income tax you pay *in advance*, as salary tax.
+Your tax class (*Steuerklasse*) decides how much [wage tax](/glossary/Lohnsteuer) you pay. It does not affect how much [income tax](/glossary/Einkommensteuer) you pay. It only affects how much income tax you pay *in advance*, as wage tax.
 
 There are 6 tax classes (*Steuerklassen*).
 
@@ -26,8 +26,8 @@ There are 6 tax classes (*Steuerklassen*).
 - **Tax class 5**  
     If you are married, and you earn less than your spouse. If you are in tax class 5, your spouse is in tax class 3.
 - **Tax class 6**  
-    This is the tax class for a second job. If you don't have a [tax ID](/glossary/Steueridentifikationsnummer), your employer might put you in tax class 6. You have no tax benefits, and you pay more [salary tax](/glossary/Einkommensteuer).
+    This is the tax class for a second job. If you don't have a [tax ID](/glossary/Steueridentifikationsnummer), your employer might put you in tax class 6. You have no tax benefits, and you pay more [wage tax](/glossary/Einkommensteuer).
 
-Your tax class depends on your situation. If you are self-employed, you usually don't have a tax class, because you don't pay salary tax.
+Your tax class depends on your situation. If you are self-employed, you usually don't have a tax class, because you don't pay wage tax.
 
 **[How taxes work in Germany ➞](/guides/taxes)**

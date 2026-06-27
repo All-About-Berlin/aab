@@ -72,7 +72,7 @@ You get **60% of your [gross income](/glossary/Brutto%20income)** (67% if you ha
 
 **[Unemployment benefits calculator](https://www.pub.arbeitsagentur.de/start.html)** (in German) - Agentur für Arbeit
 
-You pay taxes on the money you get: [salary tax](/glossary/Lohnsteuer), [solidarity tax](/glossary/Solidaritätszuschlag) and [pension insurance](/glossary/gesetzliche%20Rentenversicherung).[^6] After taxes, *ALG I* is still around 60% of your [net income](/glossary/Netto%20income).
+You pay taxes on the money you get: [wage tax](/glossary/Lohnsteuer), [solidarity tax](/glossary/Solidaritätszuschlag) and [pension insurance](/glossary/gesetzliche%20Rentenversicherung).[^6] After taxes, *ALG I* is still around 60% of your [net income](/glossary/Netto%20income).
 
 ## How long do unemployment benefits last?
 

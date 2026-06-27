@@ -161,7 +161,7 @@ Your employer must give you an *Urlaubsbescheinigung* if you ask for it.[^33] As
 
 Your employer will give you these documents after your last paycheck:[^27]
 
-- [Salary tax](/glossary/Lohnsteuer) statement (*[[Lohnsteuerbescheinigung]]*)
+- [Wage tax](/glossary/Lohnsteuer) statement (*[[Lohnsteuerbescheinigung]]*)
 - Last pay slip (*[[Gehaltsabrechnung]]* or *Lohnabrechnung*).
 
 You need these documents to apply for [unemployment benefits](/glossary/ALG%20I), and to make a [tax declaration](/glossary/Steuererklärung).
@@ -294,7 +294,7 @@ During your [notice period](/glossary/Kündigungsfrist), you can still take sick
     - [ ] [Employment certificate](/guides/losing-your-job#get-an-arbeitsbescheinigung) (*[[Arbeitsbescheinigung]]*)
     - [ ] [Vacation certificate](/guides/losing-your-job#get-an-urlaubsbescheinigung) (*[[Urlaubsbescheinigung]]*)
     - [ ] [Last pay slip](/guides/losing-your-job#get-all-other-documents) (*[[Gehaltsabrechnung]]* or *Lohnabrechnung*)
-    - [ ] [Salary tax statement](/guides/losing-your-job#get-all-other-documents) (*[[Lohnsteuerbescheinigung]]*)
+    - [ ] [Wage tax statement](/guides/losing-your-job#get-all-other-documents) (*[[Lohnsteuerbescheinigung]]*)
 - [ ] [Make a tax declaration](#make-a-tax-declaration)
 
 If you are moving to another country, see the [checklist for leaving Germany](/guides/leaving-germany).
