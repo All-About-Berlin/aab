@@ -78,7 +78,7 @@ If you are not a citizen of the [EU](/glossary/European%20Union), [[EEA]] or Swi
 
 Open a bank account as soon as you can. You need it to pay rent and receive paychecks. You can use a bank from any European country.
 
-Some banks don't let immigrants open an account. They might refuse your passport, or ask for documents that you don't have. Choose an expat-friendly bank.
+Choose an [expat-friendly bank](/guides/best-bank-germany). Some banks don't let immigrants open an account; they reject foreign passports or require documents that you don't have.
 
 **[Best German banks for expats ➞](/guides/best-bank-germany)**
 
@@ -201,24 +201,26 @@ After you settle in Berlin, get familiar with German culture:
 
 If you don't speak German, you can still get help in English:
 
-- [English-speaking **doctors** and GPs in Berlin](/guides/english-speaking-doctors-berlin)
-- [English-speaking **psychotherapists** in Berlin](/guides/english-speaking-psychotherapists-berlin)
-- [English-speaking **psychiatrists** in Berlin](/guides/english-speaking-psychiatrists-berlin)
-- [English-speaking **tax advisors** in Berlin](/guides/english-speaking-steuerberater-berlin)
-- [English-speaking **lawyers** in Berlin](/guides/english-speaking-lawyers-berlin)
-- [English-speaking **dentists** in Berlin](/guides/list-of-english-speaking-dentists-in-berlin)
-- [English-speaking **barbers** and hair salons in Berlin](/guides/hairdressers-hairstylists-barbers-berlin)
-- [English-speaking **gynaecologists** in Berlin](/guides/english-speaking-gynecologists-berlin)
+- [English-speaking **doctors** and GPs](/guides/english-speaking-doctors-berlin)
+- [English-speaking **psychotherapists**](/guides/english-speaking-psychotherapists-berlin)
+- [English-speaking **psychiatrists**](/guides/english-speaking-psychiatrists-berlin)
+- [English-speaking **tax advisors**](/guides/english-speaking-steuerberater-berlin)
+- [English-speaking **lawyers**](/guides/english-speaking-lawyers-berlin)
+- [English-speaking **dentists**](/guides/list-of-english-speaking-dentists-in-berlin)
+- [English-speaking **hair salons** and barbers](/guides/hairdressers-hairstylists-barbers-berlin)
+- [English-speaking **gynaecologists**](/guides/english-speaking-gynecologists-berlin)
 
 ### Find a doctor
 
-In Germany, when you have a health problem, you go to your *[[Hausarzt]]*. Find your *Hausarzt* before you need one. It will be easier to see a doctor when you are sick. This is useful if you need a [sick note](/glossary/Krankschreibung) to take [sick leave](/guides/sick-leave).
+In Germany, when you have a health problem, you go to your *[[Hausarzt]]*. Find a *Hausarzt* before you need one. It will be easier to see a doctor when you are sick.
+
+You don't need a doctor to get a [sick note](/glossary/Krankschreibung) to take [sick leave](/guides/sick-leave). Use telemedicine apps like [TeleClinic](https://www.teleclinic.com/sick-note/) or [Doktor.de](https://doktor.de).
 
 **[Find an English-speaking doctor ➞](/guides/english-speaking-doctors-berlin)**
 
 ### Make a tax declaration
 
-Your relocation expenses are [tax-deductible](/glossary/steuerlich%20absetzbar). If you move in the middle of the year, you probably paid too much [wage tax](/glossary/Lohnsteuer). Make a [tax declaration](/glossary/Steuererklärung) to get some money back. A [tax advisor](/guides/english-speaking-steuerberater-berlin) can help you.
+Relocation expenses are [tax-deductible](/glossary/steuerlich%20absetzbar). If you move in the middle of the year, you probably paid too much [wage tax](/glossary/Lohnsteuer). Make a [tax declaration](/glossary/Steuererklärung) to get some money back. A [tax advisor](/guides/english-speaking-steuerberater-berlin) can help you.
 
 ## After you settle
 
