@@ -18,4 +18,8 @@ The warm rent (*Warmmiete*) is your total monthly rent. It includes your cold re
 
 > Cold rent (*Kaltmiete*) + utilities (*Nebenkosten*) = warm rent (*Warmmiete*)
 
-Your warm rent is adjusted every year, because your utility costs (*Nebenkosten*) can change based on your usage.
+Your warm rent is adjusted every year, because [utility costs](/glossary/Nebenkosten) change based on your usage.
+
+Your warm rent should be around 30% of your [net income](/glossary/Netto%20income). In Berlin, the warm rent for an unfurnished apartment is €16 to €25 per m^2^. Furnished apartments are more expensive.
+
+**[Map of Berlin rent prices ➞](/tools/rent-map)**
