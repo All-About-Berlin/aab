@@ -14,12 +14,18 @@ related_guides:
     - guides/best-bank-germany.md
 ---
 
-A registration certificate (*Anmeldebestätigung* or *Meldebestätigung*) proves that you live at a certain address. You get an *Anmeldebestätigung* when you register your address (the *[[Anmeldung]]*). You get it during the appointment.
+When you [register your address](/glossary/Anmeldung), you get an address registration certificate (*Anmeldebestätigung* or *Meldebestätigung*).
+
+You can use your registration certificate to...
+
+- Prove your address
+- Apply for government services
+- [Apply for a residence permit](/guides/residence-permit)
+- [Open a bank account](/guides/best-bank-germany)
+- Get a cellphone contract
 
 ![Meldebestätigung issued in Berlin](/images/Meldebescheinigung_Berlin.jpg "A Meldebestätigung issued in Berlin")
 
-You might need an *Anmeldebestätigung* to [open a bank account](/guides/best-bank-germany), get a cellphone contract, and [many other things](/guides/anmeldung-in-english-berlin#why-you-must-register-your-address).
-
 **[How to register your address ➞](/guides/anmeldung-in-english-berlin)**
 
-**[How to replace a registration certificate ➞](/guides/replacement-meldebescheinigung)**
+**[How to replace your registration certificate ➞](/guides/replacement-meldebescheinigung)**
