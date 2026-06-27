@@ -1,3 +1,5 @@
+from datetime import date
+
 from playwright.sync_api import expect
 import pytest
 
@@ -148,7 +150,8 @@ def test_clear_form(page, citizenship_feedback_form):
 
     page.evaluate("localStorage.clear()")
     page.goto(f"/tests/tools/citizenship-feedback-form#feedbackKey={modification_key}~CITIZENSHIP")
-    expect(tool).to_contain_text("You are updating the feedback you submitted on June 26.")
+    today = date.today().strftime("%B %-d")
+    expect(tool).to_contain_text(f"You are updating the feedback you submitted on {today}.")
 
     tool.get_by_role("button", name="clear the form").click()
 
