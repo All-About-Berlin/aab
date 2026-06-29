@@ -254,9 +254,9 @@ Germans take recycling very seriously. Learn to sort your trash and recycle prop
 
 ### Ventilation
 
-Germans ventilate their apartments every day, even in winter. They open all the windows for a few minutes to let fresh air in. It's called *Stoßlüften*.
+Germans ventilate their apartments every day, even in winter. They open all the windows for a few minutes to let fresh air in. It's called *[[Stoßlüften]]*. It helps prevents mould.
 
-Ventilation is sometimes required in your lease, because it helps prevents mold.
+Your lease might require you to ventilate every day.
 
 **[More information ➞](https://berlincheap.com/heating/)**
 
@@ -273,6 +273,10 @@ Some newer apartments have heated floors instead of radiators. You control them 
 Sometimes, your landlord will remove air in your radiators with an *[Entlüftungsschlüssel](/images/entlueftungschluessel.jpg)*. You can do it yourself; it's very easy. It takes a few seconds, and it makes your radiators work better. You should do it every year.
 
 ![Entlüftungsschlüssel](/images/entlueftungschluessel.jpg "Use an Entlüftungsschlüssel to remove air in your radiator")
+
+### Prepare for heat waves
+
+German apartments rarely have air conditioning. They can get really hot in the summer, during heat waves. Buy a fan before you need it. They are often sold out in the summer.
 
 ## Need help?
 
