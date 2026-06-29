@@ -307,7 +307,7 @@ If you are lucky, you will get invited to an apartment viewing. Arrive early. Br
 
 It can be a private viewing (just you) or an open viewing (many other people). Don't go to a viewing with more than 40 people; they are usually a waste of time.[^20]
 
-When you visit apartments, your travel costs are [tax-deductible](/glossary/steuerlich%20absetzbar). You can deduct €0.30 per kilometre.
+When you visit apartments, your travel costs are [tax-deductible](/glossary/steuerlich%20absetzbar). You can deduct €0.30 per kilometre.[^51]
 
 ### Apartment viewing checklist
 
@@ -583,6 +583,7 @@ A [real estate agent](#real-estate-agents) can help you find an apartment. A *[[
 [^48]: [erste-hausverwaltung.de](https://erste-hausverwaltung.de/mietschuldenfreiheitsbescheinigung/#:~:text=dabei%3A%20Die%20Mitschuldenfreiheitsbescheinigung.-,vermieter%3Ainnen%20sind%20gesetzlich%20nicht%20dazu%20verpflichtet,-%2C%20eine%20Mietschuldenfreiheitsbescheinigung%20auszustellen) (May 2025)
 [^49]: [Trustpilot](https://ie.trustpilot.com/review/housinganywhere.com?search=schufa&sort=recency) (2021), [HousingAnywhere](https://housinganywhere.com/Berlin--Germany/rent-in-berlin#:~:text=you%20can%20rent%20via%20platforms%20like%20housinganywhere)
 [^50]: [Reddit](https://old.reddit.com/r/berlin/comments/1bs7hxc/this_is_the_berlin_housing_market_in_2024/kxdydoa/) (April 2024)
+[^51]: [lohnsteuer-kompakt.de](https://www.lohnsteuer-kompakt.de/de/fag/2025/504/welche_umzugskosten_kann_ich_absetzen#:~:text=fahrtkosten%20zur%20wohnungsbesichtigung) (2025), [finanztip.de](https://www.finanztip.de/community/forum/thema/12084-wohnungsbesichtigungen-abzugsf%C3%A4hig/) (2021), [jobruf.de](https://www.jobruf.de/umziehen/umzugskosten/absetzen/werbungskosten.html#:~:text=1%3A%20Fahrtkosten%20f%C3%BCr-,wohnungsbesichtigungen,-Wenn%20Sie%20zur) (2025)
 [^52]: Christine Gerkrath (March 2024)
 [^53]: Kevin at [GetTheFlat](https://gettheflat.com/) (March 2024), Christine Gerkrath (March 2024), [Emily Archer](https://www.archer-relocation.com/) (March 2024)
 [^54]: Christine Gerkrath (March 2024)

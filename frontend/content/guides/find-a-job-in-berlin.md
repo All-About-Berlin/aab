@@ -216,7 +216,7 @@ All employees in Germany get paid [vacation days](/guides/vacation-days), and pa
 
 ## 7. Make a tax declaration
 
-Many of your job search costs are [tax-deductible](/glossary/steuerlich%20absetzbar):[^2]
+Most of your job search costs are [tax-deductible](/glossary/steuerlich%20absetzbar):[^2]
 
 - **Relocation costs**  
     If you move closer to your new job, you can [deduct your moving costs](/guides/moving-in#deduct-your-moving-costs).
@@ -224,6 +224,8 @@ Many of your job search costs are [tax-deductible](/glossary/steuerlich%20absetz
     Coaching, resume writing, professional photos, translations, printing costs, job search services...
 - **Travel costs**  
     Fuel, train tickets, hotels, meals and parking fees to go to job interviews.
+- **Immigration costs**  
+    Work-related immigration costs are tax-deductible. For example, [[Blue Card]] or [work visa](/glossary/Work%20Visa) application fees.[^6]
 
 If you started working in the middle of the year, you probably paid too much [wage tax](/glossary/Lohnsteuer). Make a [tax declaration](/glossary/Steuererklärung) to lower your [income tax](/glossary/Einkommensteuer), and get some money back.
 
@@ -245,3 +247,4 @@ These people can help you get hired. For example, they can review your resume an
 [^3]: [§ 614 BGB](https://www.buzer.de/614_BGB.htm)
 [^4]: [eu-gleichbehandlungsstelle.de](https://www.eu-gleichbehandlungsstelle.de/eugs-de/praxisleitfaden/arbeiten-ohne-meldeadresse#:%7E:text=Eine%20Meldeadresse%20ist%20keine%20Voraussetzung%20f%C3%BCr%20die%20Arbeitsaufnahme)
 [^5]: [Reddit](https://old.reddit.com/r/germany/comments/13brmu8/teaching_english_in_germany/) (2023), [Reddit](https://old.reddit.com/r/germany/comments/1oe8fo8/what_online_english_tutoring_services_would_you/) (2025)
+[^6]: [haufe.de](https://www.haufe.de/id/beitrag/abc-der-werbungskosten-einbuergerungaufenthaltstitel-HI7472120.html) (2026)

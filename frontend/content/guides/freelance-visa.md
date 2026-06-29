@@ -104,7 +104,7 @@ If you can't apply in Germany, you must [apply in your home country](#how-to-app
 
 Your current residence permit [might allow self-employment](/guides/residence-permit#for-self-employment). If not, you must [wait {{WAIT_TIME_FREELANCE_VISA}}](/guides/immigration-office/wait-times) for your freelance visa before you start working.[^35] It might be cheaper and safer if you [apply in your home country](#how-to-apply-in-your-country), then come to Germany when you have permission to start your business.
 
-**If you need help**, an [immigration lawyer](/guides/english-speaking-lawyers-berlin) or a [relocation consultant](/guides/relocation-agency-in-berlin) can take care of everything. It costs €500 to €2,000.[^45] It's a [tax-deductible](/glossary/steuerlich%20absetzbar) expense.
+**If you need help**, an [immigration lawyer](/guides/english-speaking-lawyers-berlin) or a [relocation consultant](/guides/relocation-agency-in-berlin) can take care of everything. It costs €500 to €2,000.[^45] It's a [tax-deductible](/glossary/steuerlich%20absetzbar) expense.[^7]
 
 ### 1. Come to Germany
 
@@ -150,7 +150,7 @@ You must apply for the freelance visa online.[^4] You do not need an *[[Ausländ
 
 **[Apply for the Freelance visa ➞](/out/auslanderbehorde-freelance-visa)**
 
-It costs €{{NATIONAL_VISA_FEE|cur}}. It's cheaper for Turkish citizens. You can pay with Visa, Mastercard or PayPal. You can't pay with cash or [[Girocard]].[^39] The fee is [tax-deductible](/glossary/steuerlich%20absetzbar), so keep the receipt.
+It costs €{{NATIONAL_VISA_FEE|cur}}. It's cheaper for Turkish citizens. You can pay with Visa, Mastercard or PayPal. You can't pay with cash or [[Girocard]].[^39] The fee is [tax-deductible](/glossary/steuerlich%20absetzbar), so keep the receipt.[^7]
 
 If you have too many documents, [merge them](https://www.adobe.com/acrobat/online/merge-pdf.html) or [make them smaller](https://www.adobe.com/acrobat/online/compress-pdf.html).
 
@@ -370,6 +370,7 @@ If you plan to become a permanent resident, start making voluntary [public pensi
 [^4]: [Red Tape Translation](/out/red-tape-translation) (December 2024)
 [^5]: [Red Tape Translation](/out/red-tape-translation) (December 2023), [Berlin.de](https://service.berlin.de/dienstleistung/324659/en/#:~:text=Proof%20of%20your,for%20example%20by)
 [^6]: [Berlin.de](https://service.berlin.de/dienstleistung/324659/en/#:~:text=for%20private%20health%20insurance)
+[^7]: [haufe.de](https://www.haufe.de/id/beitrag/abc-der-werbungskosten-einbuergerungaufenthaltstitel-HI7472120.html) (2026)
 [^8]: [Touring Artists](https://www.touring-artists.info/en/visa-residence/to-germany-as-non-eu-citizen/translate-to-englisch-aufenthalt-nach-21-absatz-5-aufenthg) (August 2025), [c/o Germany](https://co-germany.de/the-artist-visa/), [bbk Berlin](https://www.bbk-kulturwerk.de/buero-fuer-kuenstler_innen-beratung/ratgeber/visa)
 [^9]: [§ 41 AufenthV](https://www.buzer.de/41_AufenthV.htm), [Berlin.de](https://www.berlin.de/einwanderung/en/entry/visa-extension/artikel.1049092.en.php#:~:text=Ireland%20and%20Romania-,exceptions%20for%20certain%20countries,-Special%20privileges%20apply)
 [^10]: [§ 21 Abs. 4 AufenthG](https://www.buzer.de/21_AufenthG.htm)

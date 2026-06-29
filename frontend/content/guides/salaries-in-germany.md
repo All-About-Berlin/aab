@@ -79,7 +79,7 @@ Some companies offer a relocation bonus. This helps you pay for your relocation 
 
 When you [get a job offer](/guides/find-a-job-in-berlin#the-job-offer), you can negotiate a bigger relocation bonus.
 
-If you don't get a relocation bonus, your relocation costs are still [tax-deductible](/glossary/steuerlich%20absetzbar). - [More information](/guides/moving-in#deduct-your-moving-costs)
+If you don't get a relocation bonus, if you move for work, your relocation costs are still [tax-deductible](/glossary/steuerlich%20absetzbar). - [More information](/guides/moving-in#deduct-your-moving-costs)
 
 ## When do I get paid?
 

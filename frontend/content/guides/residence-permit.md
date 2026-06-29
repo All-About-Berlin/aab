@@ -218,7 +218,7 @@ When you go to your appointment, bring...
 - [ ] **[QR code for biometric pictures](/guides/biometric-pictures-in-berlin)** (35 × 45 mm)  
     Printed passport photos are not allowed. Only QR codes are accepted. See [how to get biometric pictures](/guides/biometric-pictures-in-berlin).
 - [ ] **Cash, Visa, Mastercard or [[Girocard]]**  
-    You must pay the application fee. You must sometimes pay later, when you pick up your residence permit. This fee is [tax-deductible](/glossary/steuerlich%20absetzbar), so keep the receipt.
+    You must pay the application fee. You must sometimes pay later, when you pick up your residence permit. The fee for a [[Blue Card]], [work visa](/glossary/Work%20Visa) or [freelance visa](/glossary/Freelance%20visa) is [tax-deductible](/glossary/steuerlich%20absetzbar), so keep the receipt. Citizenship application fees are not tax-deductible.[^69]
 - [ ] **Other required documents**  
     Read the email carefully. The *Ausländerbehörde* might ask you to bring more documents.
 - [ ] **Your family**  
@@ -400,7 +400,9 @@ You can use your residence permit to log into online government services. For ex
 
 ### Make a tax declaration
 
-Your immigration expenses are [tax-deductible](/glossary/steuerlich%20absetzbar), so keep all your receipts and proofs of payment. Include them in your [tax declaration](/glossary/Steuererklärung). You will pay a little less [income tax](/glossary/Einkommensteuer). If you hire a lawyer or a relocation consultant, their fee is also tax-deductible.
+The fee for a [[Blue Card]], [work visa](/glossary/Work%20Visa) or [freelance visa](/glossary/Freelance%20visa) is [tax-deductible](/glossary/steuerlich%20absetzbar), so keep the receipt.[^69] Lawyer fees for those residence permits are also tax-deductible. Include those fees in your [tax declaration](/glossary/Steuererklärung). You will pay a little less [income tax](/glossary/Einkommensteuer).
+
+Citizenship and [permanent residence](/glossary/Niederlassungserlaubnis) application fees are not tax-deductible.[^69]
 
 ## How to renew a residence permit
 
@@ -567,3 +569,4 @@ An [immigration lawyer](/guides/english-speaking-lawyers-berlin) or a [relocatio
 [^66]: [Auswärtiges Amt](https://www.auswaertiges-amt.de/en/einreiseundaufenthalt/visabestimmungen-node/staatenlistevisumpflicht-node), [§ 3 AufenthG](https://www.buzer.de/3_AufenthG.htm), [reddit.com/r/germany](https://old.reddit.com/r/germany/comments/4e5dsp/getting_a_work_visa_in_germany_for_noneu_nonbuddy/), [Facebook](https://www.facebook.com/groups/germanfreelancevisa/permalink/488544264947615/?comment_id=488643064937735&comment_tracking=%7B%22tn%22%3A%22R%22%7D), [einwanderer.net](https://www.einwanderer.net/fileadmin/downloads/tabellen_und_uebersichten/Tabelle_Spurwechsel_2020.pdf). Exceptions in [§ 5 Abs. 2 S. 1 AufenthG](https://www.buzer.de/5_AufenthG.htm)
 [^67]: [Mirko Vorreuter](https://visaguard.berlin) (September 2025), [§ 20 AufenthG](https://www.buzer.de/20_AufenthG.htm), [Berlin.de](https://service.berlin.de/dienstleistung/324661/#:~:text=und%20berechtigt%20zur%20aufnahme%20jeder%20erwerbstatigkeit.) (September 2025)
 [^68]: [Agentur für Arbeit](https://www.arbeitsagentur.de/datei/au-pair-merkblatt_ba031460.pdf) (June 2026)
+[^69]: [haufe.de](https://www.haufe.de/id/beitrag/abc-der-werbungskosten-einbuergerungaufenthaltstitel-HI7472120.html) (2026), [vlh.de](https://www.vlh.de/wissen-service/steuer-abc/einbuergerung-kann-ich-die-kosten-von-der-steuer-absetzen.html) (2025)

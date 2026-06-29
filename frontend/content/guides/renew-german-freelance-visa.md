@@ -216,7 +216,7 @@ Some of the [required documents](/guides/renew-german-freelance-visa#required-do
 - *[[Netto-Gewinnermittlung]]*: €100 to €150
 - [Certified translations](/glossary/beglaubigte%20Übersetzung): €15 to €70 per document
 
-Keep the receipts. Those expenses are [tax-deductible](/glossary/steuerlich%20absetzbar).
+Keep the receipts. Those expenses are [tax-deductible](/glossary/steuerlich%20absetzbar).[^20]
 
 ## What to do next
 
@@ -260,3 +260,4 @@ If you plan to become a permanent resident, you should make voluntary [public pe
 [^17]: Health insurance broker Daniel Derosa
 [^18]: [§ 21 Abs. 4 and 5 AufenthG](https://www.buzer.de/21_AufenthG.htm), [Berlin.de](https://service.berlin.de/dienstleistung/326564/#:~:text=keine%20freiberufliche), [sachsen.de](https://www.zuwanderung.sachsen.de/SMI_Zuwanderung_Infoblatt_Selbststaendige.pdf) (page 9)
 [^19]: Relocation consultants (February 2026)
+[^20]: [haufe.de](https://www.haufe.de/id/beitrag/abc-der-werbungskosten-einbuergerungaufenthaltstitel-HI7472120.html) (2026)

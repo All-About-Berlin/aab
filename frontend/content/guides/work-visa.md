@@ -148,7 +148,7 @@ You must apply for the work visa online. You do not need an *[[Ausländerbehörd
 
 **[Apply for the work visa ➞](/out/auslanderbehorde-work-visa)**
 
-It costs €{{NATIONAL_VISA_FEE|cur}}. It's cheaper for Turkish citizens. You can pay with Visa, Mastercard or PayPal. You can't pay with cash or [[Girocard]].[^8] The fee is [tax-deductible](/glossary/steuerlich%20absetzbar), so keep the receipt.
+It costs €{{NATIONAL_VISA_FEE|cur}}. It's cheaper for Turkish citizens. You can pay with Visa, Mastercard or PayPal. You can't pay with cash or [[Girocard]].[^8] The fee is [tax-deductible](/glossary/steuerlich%20absetzbar), so keep the receipt.[^24]
 
 If you have too many documents, [merge them](https://www.adobe.com/acrobat/online/merge-pdf.html) or [make them smaller](https://www.adobe.com/acrobat/online/compress-pdf.html).
 
@@ -319,6 +319,7 @@ An [immigration lawyer](/guides/english-speaking-lawyers-berlin) or a [relocatio
 [^21]: [DARE Consulting](https://dareconsulting.de/wp-content/uploads/2020/12/11_Broschuere_FEG-1.pdf#page=11) (page 9), [BAMF](https://www.bamf.de/EN/Themen/Integration/ZugewanderteTeilnehmende/AnerkennungBerufsabschluesse/anerkennungberufsabschluesse-node.html)
 [^22]: [Mirko Vorreuter](https://visaguard.berlin) (October 2025)
 [^23]: [§ 51 Abs. 1 AufenthG](https://www.buzer.de/51_AufenthG.htm)
+[^24]: [haufe.de](https://www.haufe.de/id/beitrag/abc-der-werbungskosten-einbuergerungaufenthaltstitel-HI7472120.html) (2026)
 [^25]: [Auswärtiges Amt](https://www.auswaertiges-amt.de/en/einreiseundaufenthalt/visabestimmungen-node/staatenlistevisumpflicht-node), [§ 3 AufenthG](https://www.buzer.de/3_AufenthG.htm), [einwanderer.net](https://www.einwanderer.net/fileadmin/downloads/tabellen_und_uebersichten/Tabelle_Spurwechsel_2020.pdf). Exceptions in [§ 5 Abs. 2 S. 1 AufenthG](https://www.buzer.de/5_AufenthG.htm)
 [^27]: [make-it-in-germany.com](https://www.make-it-in-germany.com/fileadmin/1_Rebrush_2022/a_Fachkraefte/PDF-Dateien/3_Visum_u_Aufenthalt/Visagrafik_EN/2023_Jan_Erforderliche_Deutschkenntnisse_EN.pdf), [DARE Consulting](https://dareconsulting.de/wp-content/uploads/2020/12/11_Broschuere_FEG-1.pdf#page=15)
 [^28]: [Mirko Vorreuter](https://visaguard.berlin) (September 2025)

@@ -242,7 +242,7 @@ In Berlin, you must apply online. **It takes [{{ WAIT_TIME_PERMANENT_RESIDENCE }
 
 If you don't live in Berlin, you must [find your local *Ausländerbehörde*](https://bamf-navi.bamf.de/de/Themen/Behoerden/) and follow their instructions. The application process can be different.
 
-**If you need help**, an [immigration lawyer](/guides/english-speaking-lawyers-berlin) or a [relocation consultant](/guides/relocation-agency-in-berlin) can take care of everything. It costs €500 to €2,000.[^45] It's a [tax-deductible](/glossary/steuerlich%20absetzbar) expense.
+**If you need help**, an [immigration lawyer](/guides/english-speaking-lawyers-berlin) or a [relocation consultant](/guides/relocation-agency-in-berlin) can take care of everything. It costs €500 to €2,000.[^45]
 
 ### 1. Take an integration test
 
@@ -271,7 +271,7 @@ You must apply for the permanent residence online. You do not need an *[[Auslän
 
 **[Apply for permanent residence ➞](/out/auslanderbehorde-permanent-residence)**
 
-It costs €{{NATIONAL_VISA_FEE|cur}}. It's cheaper for Turkish citizens. You can pay with Visa, Mastercard or PayPal. You can't pay with cash or [[Girocard]]. The fee is [tax-deductible](/glossary/steuerlich%20absetzbar), so keep the receipt.
+It costs €{{NATIONAL_VISA_FEE|cur}}. It's cheaper for Turkish citizens. You can pay with Visa, Mastercard or PayPal. You can't pay with cash or [[Girocard]]. The application fee is not [tax-deductible](/glossary/steuerlich%20absetzbar).[^76]
 
 If you have too many documents, [merge them](https://www.adobe.com/acrobat/online/merge-pdf.html) or [make them smaller](https://www.adobe.com/acrobat/online/compress-pdf.html).
 
@@ -429,10 +429,6 @@ If you have German [permanent residence](/glossary/Niederlassungserlaubnis), you
 
 **[Travel with a residence permit ➞](/guides/residence-permit#if-you-travel)**
 
-### Make a tax declaration
-
-Your immigration expenses are [tax-deductible](/glossary/steuerlich%20absetzbar), so keep all your receipts and proofs of payment. Include them in your [tax declaration](/glossary/Steuererklärung). You will pay a little less [income tax](/glossary/Einkommensteuer). If you hire a lawyer or a relocation consultant, their fee is also tax-deductible.
-
 ### Renew your permanent residence
 
 **When you get a new passport**, your permanent residence *card* becomes invalid. You are still a permanent resident, but you must get a new card.
@@ -517,6 +513,7 @@ An [immigration lawyer](/guides/english-speaking-lawyers-berlin) or a [relocatio
 [^70]: Personal experience (September 2024)
 [^71]: [Berlin.de](https://www.berlin.de/einwanderung/en/residence/permanent/#DA-EU) (July 2024)
 [^72]: [§ 9 Abs. 3a AufenthG](https://www.buzer.de/9_AufenthG.htm)
-[^73]: [Fiona Macdonald, immigration lawyer](https://en.fmr-legal.de/general-8-1) (August 2024)
+[^73]: [Fiona Macdonald, immigration lawyer](https://www.fmr-legal.de/) (August 2024)
 [^74]: [VAB 9a.2.1.2](/out/vab) (October 2024)
 [^75]: [VAB 9.2.1.3.1](/out/vab) (October 2024)
+[^76]: [haufe.de](https://www.haufe.de/id/beitrag/abc-der-werbungskosten-einbuergerungaufenthaltstitel-HI7472120.html) (2026)
