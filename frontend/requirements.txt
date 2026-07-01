@@ -3,6 +3,6 @@ pyphen==0.17.2
 pycountry==26.2.16
 pyyaml~=6.0
 holidays
-beautifulsoup4~=4.14
+beautifulsoup4~=4.15
 lxml~=6.1
 jmespath==1.1.0
