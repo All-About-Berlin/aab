@@ -66,13 +66,20 @@ If you fill this form because you can't [register your current address](/glossar
 - **Ort, Datum**  
     The city, and the date. Use the DD.MM.YYYY date format.
 - **Unterschrift der antragstellenden Person**  
-    Your signature. It should be the same as on your passport or national ID.
+    Your signature. It should be the same as on your passport or national ID. Sign with a pen; do not use a digital signature.[^3]
 
 ## How to send this form
 
-If you are an employee, mail the form to the *[[Finanzamt]]* of where your employer is registered.[^5] You can find this on their *[[Impressum]]*.
+If you are an employee, mail the form to the *[[Finanzamt]]* where your employer is registered.[^5] You can find this on their *[[Impressum]]*.
 
-If you are not an employee, mail it to your *[[Finanzamt]]*.[^0] Include a copy of your passport or *[[Personalausweis]]*.
+If you are not an employee, mail it to your local *[[Finanzamt]]*.[^0]
+
+Send these documents:
+
+- The form, filled and signed
+- A copy of your passport or *[[Personalausweis]]*
+- Your *[[Wohnungsgeberbestätigung]]*, if you have one
+- Your apartment lease, if you have one
 
 **[Find your Finanzamt ➞](/out/finanzamt-finder)**
 
@@ -89,4 +96,5 @@ They might create your tax ID, even if they don't send it to you. If you did not
 [^0]: [Screenshot](/images/tax-id-form-instructions.png), [Screenshot](/images/anmeldung-taxid-info-2022-12-22.png)
 [^1]: Multiple readers (March to October 2023), reader feedback (September 2024)
 [^2]: Finanzamt (July 2024)
+[^3]: Reader feedback, unverified (2026)
 [^5]: [Reddit](https://old.reddit.com/r/germany/comments/1fclmpc/has_anyone_used_form_010250_to_request_a_tax_id/n9rpmd6/?context=3) (August 2025)
