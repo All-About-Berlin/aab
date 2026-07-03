@@ -11,7 +11,7 @@ This guide shows you how to get biometric pictures or passport photos in Berlin.
 
 ## Biometric picture requirements
 
-Biometric photos must meet the [official requirements](https://www.personalausweisportal.de/SharedDocs/downloads/Webs/PA/EN/informationsmaterial/flyer-broschueren/Fotomustertafel.pdf?__blob=publicationFile&v=4).{{fail_on('2026-07-01')}}
+Biometric photos must meet the [official requirements](https://www.personalausweisportal.de/SharedDocs/downloads/Webs/PA/EN/informationsmaterial/flyer-broschueren/Fotomustertafel.pdf?__blob=publicationFile&v=4).{{fail_on('2027-07-01')}}
 
 The *[[Bürgeramt]]* and the *[[Ausländerbehörde]]* only accept...[^2]
 
@@ -44,7 +44,7 @@ You can get biometric pictures...
 
 This is the **best way to get biometric pictures** because you can do it in advance.[^6] If there is a problem, you have time to find another solution.
 
-Check if your photos meet the [official requirements](https://www.personalausweisportal.de/SharedDocs/downloads/Webs/PA/EN/informationsmaterial/flyer-broschueren/Fotomustertafel.pdf?__blob=publicationFile&v=4).{{fail_on('2026-07-01')}} The *[[Bürgeramt]]* and *[[Ausländerbehörde]]* sometimes rejects photos from dm because of small mistakes.[^8]
+Check if your photos meet the [official requirements](https://www.personalausweisportal.de/SharedDocs/downloads/Webs/PA/EN/informationsmaterial/flyer-broschueren/Fotomustertafel.pdf?__blob=publicationFile&v=4).{{fail_on('2027-07-01')}} The *[[Bürgeramt]]* and *[[Ausländerbehörde]]* sometimes rejects photos from dm because of small mistakes.[^8]
 
 **[Find a dm store ➞](https://www.google.com/maps?q=dm)**
 
