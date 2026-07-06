@@ -24,7 +24,7 @@ related_guides:
 
 Germany has 3 types of health insurance: [expat](/glossary/Expat%20health%20insurance), public, and [private](/glossary/private%20Krankenversicherung).
 
-Most people have public health insurance. It's also called statutory health insurance, *gesetzliche Krankenversicherung* or *GKV*.
+89% of Germans have public health insurance.[^1] It's also called statutory health insurance, *gesetzliche Krankenversicherung* or *GKV*.
 
 Public health insurance is managed by non-profit *[Krankenkassen](/glossary/Krankenkasse)*. There are dozens of options, but the cost and the coverage are almost the same. The cost of public health insurance is based on your income.
 
@@ -33,3 +33,5 @@ Public health insurance is managed by non-profit *[Krankenkassen](/glossary/Kran
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 
 **[Best public health insurance ➞](/guides/german-health-insurance#best-public-health-insurance)**
+
+[^1]: [destatis](https://www.destatis.de/DE/Themen/Arbeit/Arbeitsmarkt/Qualitaet-Arbeit/Dimension-2/krankenversicherungsschutz.html) (2023)

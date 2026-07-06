@@ -48,7 +48,7 @@ Many dealers sell weed and other drugs on Whatsapp, Telegram, Signal and Session
 
 ![Drug dealer sticker with QR code](/images/berlin-drug-dealer-qr-stickers.jpg "A drug dealer sticker with QR code")
 
-Telegram dealers are better than park dealers, but they are still risky. There are a lot of bad dealers that sell bad products.[^5] [Check your weed](#check-your-weed) before you smoke it.
+Telegram dealers are better than park dealers, but they are still risky. There are a lot of bad dealers that sell bad products. [Check your weed](#check-your-weed) before you smoke it.
 
 Usually, you set a meeting location. The dealer will start a secret chat to ask for more details. Some groups ask for a selfie to prove your identity, and for the driver to find you. When you end the secret chat, your photo is deleted.
 
@@ -76,7 +76,6 @@ Synthetic cannabinoids are also common.[^7] They are harder to detect.[^10] The 
 
 ## Useful links
 
-- [Contaminated weed reports](https://dirty-weed.com/index.php?lang=en) - dirty-weed.com
 - [Reddit discussion about contaminated cannabis](https://www.reddit.com/r/berlin/comments/kve48s/spice_laced_weed_is_in_berlin_watch_out/)
 - [Other reddit discussion](https://www.reddit.com/r/berlin/comments/kx3x04/marijuana_from_reputable_berlin_delivery_service/)
 - [Discussion about synthetic cannabinoid test kits](https://www.reddit.com/r/berlin/comments/kzwggs/spiced_weed_in_berlin_the_kits_we_have_used_are/)
@@ -86,7 +85,6 @@ Synthetic cannabinoids are also common.[^7] They are harder to detect.[^10] The 
 [^2]: [cannaconnection.com](https://www.cannaconnection.com/blog/12393-how-to-see-weed-is-contaminated#how-to-spot-contaminated-weed) (2026)
 [^3]: [Reddit](https://old.reddit.com/r/germantrees/comments/1kj5eg2/wo_kauft_ihr_eure_samen/) (2025), [Reddit](https://old.reddit.com/r/germantrees/comments/1jgb9ns/wo_kauft_ihr_samen/) (2025)
 [^4]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/4egzcz/psa_for_people_looking_to_buy_weed_spoiler_its/), [reddit.com](https://old.reddit.com/r/berlin/comments/4jbryw/deleted_by_user/)
-[^5]: [dirty-weed.com](https://dirty-weed.com/)
 [^6]: [Reddit](https://old.reddit.com/r/askberliners/comments/1kwzeyg/telegram_clean_up/) (2025)
 [^7]: [legal-high-inhaltsstoffe.de](https://legal-high-inhaltsstoffe.de/de/news/2020/02/warnung-cannabis-mit-synthetischen-cannabinoiden.html), [mindzone.info](https://mindzone.info/aktuelles/warnung-gras-mit-synthetischen-cannabinoiden-gestreckt/), [hanfverband.de](https://hanfverband.de/nachrichten/news/hanfblueten-mit-synthetischem-cannabinoid-in-deutschland), [morgenpost.de](https://www.morgenpost.de/berlin/polizeibericht/article231283010/Gefaehrliches-Haschisch-in-Berlin-im-Umlauf.html)
 [^8]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/kve48s/spice_laced_weed_is_in_berlin_watch_out/gixt3yr/?context=3), [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/kve48s/spice_laced_weed_is_in_berlin_watch_out/gixuanh/?context=3), [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/kve48s/spice_laced_weed_is_in_berlin_watch_out/gizrtd5/?context=3), [legal-high-inhaltsstoffe.de](https://legal-high-inhaltsstoffe.de/de/news/2020/02/warnung-cannabis-mit-synthetischen-cannabinoiden.html)

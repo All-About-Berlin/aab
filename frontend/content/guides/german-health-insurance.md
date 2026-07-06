@@ -24,7 +24,7 @@ There is [public](/glossary/gesetzliche%20Krankenversicherung), [private](/gloss
 
 ## Public health insurance
 
-87% of Germans have [public health insurance](/glossary/gesetzliche%20Krankenversicherung).[^2] It might be your only option.
+89% of Germans have [public health insurance](/glossary/gesetzliche%20Krankenversicherung).[^2] It might be your only option.
 
 Public health insurance is run by [non-profit insurance funds](/glossary/Krankenkasse). There are dozens of insurers, but their cost and coverage are almost exactly the same.[^85]
 
@@ -119,7 +119,7 @@ You can choose private health insurance if...
 - or you are a student
 - or you are a civil servant (*Beamter*)[^31]
 
-Use my [recommendation tool](#your-options) to see if you qualify. Everyone else must choose [public health insurance](#public-health-insurance). Only 13% of Germans have private health insurance.[^2]{{ fail_on('2026-12-31') }}
+Use my [recommendation tool](#your-options) to see if you qualify. Everyone else must choose [public health insurance](#public-health-insurance). 11% of Germans have private health insurance.[^2]{{ fail_on('2026-12-31') }}
 
 ### Cost of private health insurance
 
@@ -449,7 +449,7 @@ Choose a broker who works with immigrants. Your needs are different, and your br
 Talk to a broker (*Makler*), not an agent (*Vertreter*). Brokers are independent. They recommend health insurance from different companies. Agents only sell insurance from specific companies.
 
 [^1]: [verbraucherzentrale.de](https://www.verbraucherzentrale.de/wissen/gesundheit-pflege/krankenversicherung/alle-kassenleistungen-der-zahnmedizin-im-ueberblick-12921#:~:text=die%20gesetzlichen%20krankenkassen%20erstatten%20im%20frontzahnbereich) (March 2025)
-[^2]: [gesundheitsinformation.de](https://www.gesundheitsinformation.de/krankenversicherung-in-deutschland.html), [gkv-spitzenverband.de](https://www.gkv-spitzenverband.de/english/statutory_health_insurance/statutory_health_insurance.jsp), [verwaltung.bund.de](https://verwaltung.bund.de/leistungsverzeichnis/en/rechte-und-pflichten/102837937) (April 2025)
+[^2]: [destatis](https://www.destatis.de/DE/Themen/Arbeit/Arbeitsmarkt/Qualitaet-Arbeit/Dimension-2/krankenversicherungsschutz.html) (2023), [gesundheitsinformation.de](https://www.gesundheitsinformation.de/krankenversicherung-in-deutschland.html), [gkv-spitzenverband.de](https://www.gkv-spitzenverband.de/english/statutory_health_insurance/statutory_health_insurance.jsp), [verwaltung.bund.de](https://verwaltung.bund.de/leistungsverzeichnis/en/rechte-und-pflichten/102837937) (April 2025)
 [^3]: [versicherungspflichtgrenzen.de](https://www.versicherungspflichtgrenzen.de/html/pflichtversicherungsgrenzen.html)
 [^4]: [krankenkassen.de](https://www.krankenkassen.de/gesetzliche-krankenkassen/leistungen-gesetzliche-krankenkassen/gesetzlich-vorgeschriebene-leistungen/gesetzliche-leistungen/#:~:text=der%20patient%20muss%20nichts%20vorfinanzieren) (July 2025)
 [^5]: [Emily Archer](https://www.archer-relocation.com/) (April 2025), [Feather](https://feather-insurance.com/blog/germany-health-insurance-expats-guide/?utm_source=allaboutberlin#:~:text=this%20type%20of%20insurance%20is%20for%20visa%20applications%2C) (April 2025)

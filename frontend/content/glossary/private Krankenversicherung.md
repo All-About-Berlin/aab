@@ -25,10 +25,12 @@ Germany has 3 types of health insurance: [expat](/glossary/Expat%20health%20insu
 
 Private health insurance (*private Krankenversicherung* or *PKV*) is managed by for-profit insurance companies. The cost depends on your health and your age when you sign up.
 
-13% of Germans have private health insurance.
+11% of Germans have private health insurance.[^1]
 
 **[Health insurance calculator ➞](/tools/health-insurance-calculator)**
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 
 **[Best private health insurance ➞](/guides/german-health-insurance#best-private-health-insurance)**
+
+[^1]: [destatis](https://www.destatis.de/DE/Themen/Arbeit/Arbeitsmarkt/Qualitaet-Arbeit/Dimension-2/krankenversicherungsschutz.html) (2023)

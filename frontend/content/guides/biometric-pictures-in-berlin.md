@@ -89,9 +89,9 @@ Other countries use different passport picture sizes. For example, India uses sq
 Photography studios can take pictures and cut them to the correct size.
 
 [^1]: [diefotografen.de](https://www.diefotografen.de/business/pass-visum/) (April 2025)
-[^2]: [Berlin Ausländerbehörde](https://www.berlin.de/einwanderung/ueber-uns/aktuelles/artikel.1541531.php) (April 2025), [diefotografen.de](https://www.diefotografen.de/epassfoto/#:~:text=fur%20eine%20dauer%20von%20maximal%206%20monaten) (April 2025)
+[^2]: [Berlin Ausländerbehörde](https://www.berlin.de/einwanderung/ueber-uns/aktuelles/artikel.1541531.php) (April 2025), [diefotografen.de](https://web.archive.org/web/20251116104956/https://www.diefotografen.de/epassfoto/#:~:text=fur%20eine%20dauer%20von%20maximal%206%20monaten) (April 2025)
 [^3]: [alfo-passbild.com](https://alfo-passbild.com/digitales-passfoto/#:~:text=innerhalb%20von%20sechs%20monaten%20beliebig%20oft%20verwenden) (April 2025)
-[^4]: [diefotografen.de](https://www.diefotografen.de/epassfoto/) (April 2025)
+[^4]: [diefotografen.de](https://web.archive.org/web/20251116104956/https://www.diefotografen.de/epassfoto/#:~:text=fur%20eine%20dauer%20von%20maximal%206%20monaten) (April 2025)
 [^5]: [Berlin Ausländerbehörde](https://www.berlin.de/einwanderung/ueber-uns/aktuelles/artikel.1541531.php) (April 2025)
 [^6]: [Elliot Herman](https://www.sorted.berlin/) (April 2025)
 [^7]: [dm.de](https://newsroom.dm.de/pressreleases/ab-1-mai-bietet-dm-guenstige-digitale-passbilder-und-sicheren-transfer-fuer-buergerbueros-vorteile-595-euro-fuer-digitale-fotos-plus-papierbilder-mehrfachverwendung-ueber-6-monate-3374913) (March 2025)
