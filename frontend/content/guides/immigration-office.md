@@ -148,8 +148,6 @@ In other cities, threatening to sue the *Ausländerbehörde* can make things wor
 
 **[Find an immigration lawyer ➞](/guides/english-speaking-lawyers-berlin)**
 
-[Fiona Macdonald](https://en.fmr-legal.de/) is the immigration lawyer I work with. She has experience with suing the *Ausländerbehörde*, and she speaks English.
-
 ## Need help?
 
 The immigration office does not give immigration advice. An [immigration lawyer](/guides/english-speaking-lawyers-berlin) or a [relocation consultant](/guides/relocation-agency-in-berlin) can answer your questions. You can also get free advice from some organisations.

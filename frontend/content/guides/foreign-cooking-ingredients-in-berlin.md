@@ -113,7 +113,11 @@ Powdered sugar (also called confectioner's sugar or icing sugar) is called *Pude
 
 ### Pumpkin puree
 
-KaDeWe and Galeria Kaufhof sell [Libby's](https://www.verybestbaking.com/libbys) pumpkin puree. [American Lifestyle](https://www.us-shop-berlin.de/epages/63282115.sf/de_DE/?ObjectPath=/Shops/63282115/Products/58690) also has pumpkin puree. You can also [make your own](https://www.allrecipes.com/recipe/22935/pumpkin-puree/).
+- [American Lifestyle](https://www.us-shop-berlin.de/epages/63282115.sf/de_DE/?ObjectPath=/Shops/63282115/Products/58690)
+- KaDeWe
+- Galeria Kaufhof
+
+You can also [make your own](https://www.allrecipes.com/recipe/22935/pumpkin-puree/). Supermarkets sell pumpkins when they are in season.
 
 ### Sal de Guzano, sal de Chapulín
 

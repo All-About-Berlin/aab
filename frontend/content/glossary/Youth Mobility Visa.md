@@ -19,4 +19,4 @@ You must apply for the Youth Mobility Visa [at the *Ausländerbehörde*](/guides
 
 **[How to apply for a Youth Mobility Visa ➞](/guides/residence-permit#how-to-get-a-residence-permit)**
 
-[^0]: [canada.diplo.de](https://canada.diplo.de/ca-en/consular-services/visa/-/1674826)
+[^0]: [canada.diplo.de](https://canada.diplo.de/ca-en/consular-services/visa/working-holiday-2653142) (2026)

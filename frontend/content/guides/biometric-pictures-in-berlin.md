@@ -64,7 +64,7 @@ The Berlin *[[Ausländerbehörde]]* uses the same photo kiosks as the *Bürgeram
 
 ## From a photographer
 
-Approved photographers can take biometric photos. They usually cost around €15.[^1]{{ fail_on('2026-10-01') }}
+Approved photographers can take biometric photos. They usually cost around €15.[^1]{{ fail_on('2027-03-01') }}
 
 The photographer takes your photo, uploads it, and gives you a QR code.[^4] Bring the QR code to your *[[Bürgeramt]]* or *[[Ausländerbehörde]]* appointment.
 
@@ -88,7 +88,7 @@ Other countries use different passport picture sizes. For example, India uses sq
 
 Photography studios can take pictures and cut them to the correct size.
 
-[^1]: [diefotografen.de](https://www.diefotografen.de/business/pass-visum/) (April 2025)
+[^1]: [fotostudio-image.de](https://www.fotostudio-image.de/) (2026)
 [^2]: [Berlin Ausländerbehörde](https://www.berlin.de/einwanderung/ueber-uns/aktuelles/artikel.1541531.php) (April 2025), [diefotografen.de](https://web.archive.org/web/20251116104956/https://www.diefotografen.de/epassfoto/#:~:text=fur%20eine%20dauer%20von%20maximal%206%20monaten) (April 2025)
 [^3]: [alfo-passbild.com](https://alfo-passbild.com/digitales-passfoto/#:~:text=innerhalb%20von%20sechs%20monaten%20beliebig%20oft%20verwenden) (April 2025)
 [^4]: [diefotografen.de](https://web.archive.org/web/20251116104956/https://www.diefotografen.de/epassfoto/#:~:text=fur%20eine%20dauer%20von%20maximal%206%20monaten) (April 2025)
