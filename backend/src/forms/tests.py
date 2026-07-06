@@ -927,7 +927,7 @@ class ImmigrationOfficeLawsuitTestCase(ScheduledMessageEndpointMixin, APITestCas
         "immigration_office_has_replied": False,
         "meets_requirements": True,
         "has_submitted_documents": True,
-        "message": "",
+        "message": "This is a test request",
     }
 
     def test_notifications_scheduled(self):
@@ -955,6 +955,35 @@ class ImmigrationOfficeLawsuitTestCase(ScheduledMessageEndpointMixin, APITestCas
             feedback.delivery_date.replace(second=0, microsecond=0),
             (timezone.now() + timedelta(weeks=1)).replace(second=0, microsecond=0),
         )
+
+    def test_webhook_called_on_create(self):
+        with patch("forms.models.requests.post") as mock_post:
+            mock_post.return_value.raise_for_status = lambda: None
+            self.client.post(self.endpoint, self.example_request, format="json")
+            case = ImmigrationOfficeLawsuit.objects.get(email=self.example_request["email"])
+            mock_post.assert_called_once()
+            call = mock_post.call_args
+            self.assertEqual(call.args[0], "https://hook.eu2.make.com/w8tl4psr2d613x5evf3mdb8hjbfeqo1b")
+            self.assertEqual(call.kwargs["timeout"], 10)
+            payload = dict(call.kwargs["json"])
+            self.assertIn("creation_date", payload)
+            payload.pop("creation_date")
+            self.assertEqual(
+                payload,
+                {
+                    "id": case.pk,
+                    **self.example_request,
+                },
+            )
+
+    def test_webhook_not_called_on_update(self):
+        with patch("forms.models.requests.post") as mock_post:
+            mock_post.return_value.raise_for_status = lambda: None
+            self.client.post(self.endpoint, self.example_request, format="json")
+            mock_post.reset_mock()
+            case = ImmigrationOfficeLawsuit.objects.get(email=self.example_request["email"])
+            case.save()
+            mock_post.assert_not_called()
 
     def test_create_invalid_application_type_400(self):
         bad_request = {**self.example_request, "application_type": "INVALID"}

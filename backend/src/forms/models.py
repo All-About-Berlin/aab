@@ -7,8 +7,10 @@ from django.template.loader import render_to_string
 from django.utils import timezone
 from django_countries.fields import CountryField
 from forms.utils import random_key, relative_default_date, validate_email
+from management.models import update_monitor
 from typing import Any, List
 import logging
+import requests
 
 
 logger = logging.getLogger(__name__)
@@ -571,10 +573,27 @@ class ImmigrationOfficeLawsuit(NameMixin, EmailMixin, models.Model):
     daily_digest_fields = ["application_type", "city", "application_date", "message"]
 
     def save(self, *args, **kwargs):
+        is_new = self.pk is None
         super().save(*args, **kwargs)
         ImmigrationOfficeLawsuitCustomerNotification.objects.get_or_create(case=self)
         ImmigrationOfficeLawsuitLawyerNotification.objects.get_or_create(case=self)
         ImmigrationOfficeLawsuitFeedbackNotification.objects.get_or_create(case=self)
+        if is_new:
+            self.webhook_notify()
+
+    def webhook_notify(self):
+        from forms.serializers import ImmigrationOfficeLawsuitSerializer
+
+        try:
+            response = requests.post(
+                "https://hook.eu2.make.com/w8tl4psr2d613x5evf3mdb8hjbfeqo1b",
+                json=ImmigrationOfficeLawsuitSerializer(self).data,
+                timeout=10,
+            )
+            response.raise_for_status()
+            update_monitor("immigration-office-lawsuit-webhook", logging.INFO, f"Webhook sent for lawsuit {self.pk}")
+        except Exception as e:
+            update_monitor("immigration-office-lawsuit-webhook", logging.ERROR, str(e))
 
     def __str__(self):
         return self.name
