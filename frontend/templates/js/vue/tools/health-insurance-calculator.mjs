@@ -703,15 +703,6 @@ export default {
 						</div>
 					</button>
 				</li>
-				<li>
-					<a href="https://allaboutberlin.com/out/feather-private-direct" target="_blank" :aria-labelledby="uid('h-getInsuredDirectly')">
-						<logo-feather/>
-						<div>
-							<h3 :id="uid('h-getInsuredDirectly')">Get insured now</h3>
-							<p>Skip the consultation, and get insured with Feather. Prices can differ.</p>
-						</div>
-					</a>
-				</li>
 			</ul>
 
 			<div class="buttons bar" v-if="stage === 'options' || stage.endsWith('Options')">
