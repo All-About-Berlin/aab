@@ -62,7 +62,7 @@ Do not choose health insurance yourself. Use my health insurance calculator to f
 
 {% tool "health-insurance-calculator", static=True %}
 
-If you are insured in another [EU](/glossary/European%20Union) country, your [European Health Insurance Card](/glossary/EHIC) covers you until you [start working](/guides/find-a-job-in-berlin#start-working). If you are a student, it covers you until you graduate.
+Your [European Health Insurance Card](/glossary/EHIC) covers you until you [start working](/guides/find-a-job-in-berlin#start-working). If you are a student, it covers you until you graduate.
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 

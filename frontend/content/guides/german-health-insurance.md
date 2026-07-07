@@ -288,12 +288,12 @@ Travel health insurance covers medical emergencies in other countries. It does n
 
 ### Insurance from other EU countries
 
-If you come from another EU country, your foreign health insurance might cover you in Germany. You can use your [European Health Insurance Card](/glossary/EHIC) to get healthcare.
+If you come from the [[EEA]], Switzerland or the United Kingdom, you can use your [European Health Insurance Card](/glossary/EHIC) (EHIC) to get healthcare in Germany.
 
 - **If you [visit Germany](/guides/visit-berlin)**  
-    Your EU health insurance covers medical emergencies.[^23] It only covers treatments that can't wait until you go home. For example, if you break your ankle on a hike, it covers the hospital visit. If you stay longer than 3 months, you must get German health insurance.[^38]
+    Your [[EHIC]] covers medical emergencies.[^23] It only covers treatments that can't wait until you go home. For example, if you break your leg on a hike, it covers the hospital visit. If you stay longer than 3 months, you must get German health insurance.[^38]
 - **If you study in Germany**  
-    Your EU health insurance covers you until you graduate, and during your job search after graduation.[^39] It covers all treatments that can't wait until after your studies.
+    Your [[EHIC]] covers you until you graduate, and during your job search after graduation.[^39] It covers all treatments that can't wait until after your studies.
 
 If health insurance is cheaper in your home country, [[EHIC]] is a good way to save money, because you don't need German health insurance. Apply for EHIC with your health insurance in your home country.[^16]
 
@@ -470,7 +470,7 @@ Talk to a broker (*Makler*), not an agent (*Vertreter*). Brokers are independent
 [^20]: [Seamus Wolf](https://horizon65.com/) (June 2025)
 [^21]: Personal experience (2020)
 [^22]: [care-concept.de](https://www.care-concept.de/expatriates_eng.php?navilang=eng#:~:text=up%20to%20a%20maximum%20of%205%20years) (April 2025), [mawista.com](https://www.mawista.com/en/tariffs/health-insurance-expatcare/) (April 2025), [Feather Insurance](https://feather-insurance.com/health-insurance/expat?utm_source=allaboutberlin#:~:text=maximum%20length%20of%20policy) (April 2025)
-[^23]: [health-insurance.de](https://www.health-insurance.de/living/eu-citizen/#:~:text=ehic%20is%20limited%20to%20emergencies) (April 2025), [ec.europa.eu](https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/frequently-asked-questions/faq-social-security-european-health-insurance-card_en#:~:text=taking%20account%20of%20the%20duration%20of%20their%20stay) (April 2025)
+[^23]: [health-insurance.de](https://www.health-insurance.de/visit/ehic/#:~:text=immediate%20and%20necessary%20medical%20care) (July 2026), [ec.europa.eu](https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/frequently-asked-questions/faq-social-security-european-health-insurance-card_en#:~:text=taking%20account%20of%20the%20duration%20of%20their%20stay) (April 2025)
 [^24]: [dvka.de](https://www.dvka.de/media/dokumente/merkblaetter/urlaub-in-deutschland/ehic_dt_englisch.pdf), [Seamus Wolf](https://horizon65.com/) (April 2025)
 [^25]: [Twitter](https://x.com/kaanuzdogan/status/1939635417025843655) (June 2025), [Reddit](https://old.reddit.com/r/germany/comments/1lo8l43/how_was_your_personal_experience_with_private_vs/) (July 2025)
 [^26]: [Mona Anbari](https://versicherungsbuero-weiss.com/) (April 2025)

@@ -31,7 +31,7 @@ Use my [health insurance recommendation tool](/tools/health-insurance-calculator
 {% tool "health-insurance-calculator" %}
 
 - **[Use your EHIC](/guides/german-health-insurance#insurance-from-other-eu-countries)**  
-    If you come from another EU country, you can use your European Health Insurance Card ([[EHIC]]) in Germany. EU students can use their EHIC until they graduate. When you start working, you must get German health insurance.
+    If you come from another [[EEA]] country, use your European Health Insurance Card ([[EHIC]]) in Germany. EU students can use their EHIC until they graduate. When you start working, you must get German health insurance.
 - **Switch to [private health insurance](/glossary/private%20Krankenversicherung)**  
     It can be better and cheaper than [public health insurance](/glossary/gesetzliche%20Krankenversicherung). I save around €450 per month. [Ask my insurance expert](/guides/german-health-insurance#need-help) if private health insurance makes sense for you.
 - **Choose a different [public health insurance](/glossary/gesetzliche%20Krankenversicherung)**  
