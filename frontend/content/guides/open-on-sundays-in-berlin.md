@@ -93,8 +93,8 @@ These shops usually open on Sunday shopping days:
 - Some supermarkets
 
 [^0]: [berlin.de](https://www.berlin.de/special/shopping/sonntag/supermaerkte/)
-[^1]: [getir.com](https://getir.com/de/faq.html), [startbase.com](https://www.startbase.com/news/gorillas-kein-liefern-mehr-am-sonntag/)
+[^1]: [startbase.com](https://www.startbase.com/news/gorillas-kein-liefern-mehr-am-sonntag/)
 [^2]: [in-berlin-brandenburg.com](https://www.in-berlin-brandenburg.com/Einkaufen_Berlin/Verkaufsoffener-Sonntag/Sonntags-in-Berlin-geoeffnet.html)
 [^3]: [BerlLadÖffG](https://gesetze.berlin.de/bsbe/document/jlr-L%C3%96GBErahmen), [berlin.de](https://www.berlin.de/sen/wirtschaft/branchen/handel/ladenoeffnungszeiten/ladenoeffnungszeiten-in-berlin-152543.php)
-[^4]: [rbb24](https://www.rbb24.de/wirtschaft/beitrag/2022/08/berliner-spaetis-spaetverkaufsstellen-oeffnungszeiten-sonntag-ruhetag-gesetz-verkauf.html)
+[^4]: [rbb24.de](https://web.archive.org/web/20221227060712/https://www.rbb24.de/wirtschaft/beitrag/2022/08/berliner-spaetis-spaetverkaufsstellen-oeffnungszeiten-sonntag-ruhetag-gesetz-verkauf.html) (2022), [rbb24.de](https://www.rbb24.de/panorama/beitrag/2026/05/berlin-spaeti-spaetverkauf-volksbegehren.html) (2026)
 [^5]: [S-Bahn Berlin](https://sbahn.berlin/fileadmin/user_upload/Linien/Regelfahrplaene/Fahrplantabellen_aller_S-Bahn-Linien.pdf) (March 2026)

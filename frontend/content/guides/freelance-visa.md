@@ -430,6 +430,6 @@ If you plan to become a permanent resident, start making voluntary [public pensi
 [^75]: [Facebook](https://www.facebook.com/groups/germanfreelancevisa/permalink/1443377006130998/) (2022)
 [^76]: Kathleen Parker, [relocation consultant](/out/red-tape-translation) (March 2024)
 [^77]: Immigration lawyer on [Facebook](https://www.facebook.com/groups/germanfreelancevisa/posts/1736457546822941/) (December 2023)
-[^78]: Aydan Baghirova, [career coach](https://aydanbaghirova.de/) (April 2024)
+[^78]: Aydan Baghirova (April 2024)
 [^79]: [VAB 2.3.1.1](/out/vab) (July 2024)
 [^80]: [VAB A2.4](/out/vab) (July 2024)

@@ -502,7 +502,7 @@ These experts can help you apply for the KSK. They can review your documents, an
     Relocation consultant with a lot of KSK experience,[^47] native English speaker. Their consultation fees are low. Kathleen reviewed this guide.
 - **[Andri Jürgensen](https://www.kunstrecht.de/)** (Kiel)  
     Lawyer for artists and KSK expert. He speaks English.[^48]
-- **[BKMB Medien und Künstlerberatung](https://bmkb.de/en/)**  
+- **[BKMB Medien und Künstlerberatung](https://www.bmkb.de/kskberatung/)**  
     KSK and pension experts. They speak English.
 - **[BIGmedia](https://bigmedia-deutschland.de/)** (Munich)  
     General consulting for freelance artists.
@@ -512,8 +512,6 @@ These experts can help you apply for the KSK. They can review your documents, an
     KSK experts. They speak English.
 - **[Inbound media service](https://www.inboundmedia.de/english/)**  
     KSK expert. They speak English.
-- **[MKK Consult](https://mkk-consult.de/)**  
-    Consultant for freelancers in arts, media and culture. KSK expert. He speaks English.
 
 ### Communities that can help
 

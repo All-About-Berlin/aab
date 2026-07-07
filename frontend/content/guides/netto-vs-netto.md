@@ -29,6 +29,6 @@ Netto (without the dog) is cheaper.[^3] It's a competitor to Aldi, Lidl and Penn
 
 [^0]: [wunderweib.de](https://www.wunderweib.de/netto-mit-und-ohne-hund-im-logo-wo-ist-der-unterschied-99916.html), [supermarktblog.com](https://www.supermarktblog.com/2013/04/19/schnell-erklaert-das-doppelte-nettochen/)
 [^1]: [supermarktblog.com](https://www.supermarktblog.com/2013/04/19/schnell-erklaert-das-doppelte-nettochen/)
-[^2]: [blogs.faz.net](https://blogs.faz.net/supermarkt/2011/07/14/netto-vs-netto-wer-ist-der-ramschigste-im-ganzen-land-60/)
-[^3]: [supermarktblog.com](https://www.supermarktblog.com/2013/04/19/schnell-erklaert-das-doppelte-nettochen/), [blogs.faz.net](https://blogs.faz.net/supermarkt/2011/07/14/netto-vs-netto-wer-ist-der-ramschigste-im-ganzen-land-60/)
+[^2]: [blogs.faz.net](https://web.archive.org/web/20251024034952/https://blogs.faz.net/supermarkt/2011/07/14/netto-vs-netto-wer-ist-der-ramschigste-im-ganzen-land-60/)
+[^3]: [supermarktblog.com](https://www.supermarktblog.com/2013/04/19/schnell-erklaert-das-doppelte-nettochen/), [blogs.faz.net](https://web.archive.org/web/20251024034952/https://blogs.faz.net/supermarkt/2011/07/14/netto-vs-netto-wer-ist-der-ramschigste-im-ganzen-land-60/)
 [^4]: [Netto.de](https://service.netto.de/hc/de/articles/360016594598-Was-ist-der-Unterschied-zwischen-Netto-und-Netto-Marken-Discount-), [Wikipedia](https://de.wikipedia.org/wiki/Netto_\(Handelskette\))

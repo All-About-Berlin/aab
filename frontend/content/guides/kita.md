@@ -103,6 +103,6 @@ When you choose a Kita start date and a date to begin work, factor in several we
 [^3]: [rbb24](https://www.rbb24.de/panorama/beitrag/2025/07/berlin-landeseigene-kita-nachfrage-plaetze.html) (July 2025), [rbb24](https://www.rbb24.de/politik/beitrag/2025/10/berlin-landeseigene-kitas-schliessung-wenig-kinder-nachfrage-guenther-wuensch.html) (October 2025), [berliner-zeitung.de](https://www.berliner-zeitung.de/news/tausende-freie-kita-plaetze-in-berlin-zahl-der-betreuten-kinder-sinkt-weiter-li.10003493) (October 2025)
 [^4]: [Reddit](https://old.reddit.com/r/berlinsocialclub/comments/1nk64ej/what_to_do_with_a_baby_until_kita_starts/) (2025). [Reddit](https://old.reddit.com/r/askberliners/comments/1i8g6ow/kita_at_6_months_so_i_can_learn_german/#:~:text=you%20won't%20get%20a%20place%20for%20a%20child%20that%20young) (2025)
 [^5]: [Reddit](https://old.reddit.com/r/berlin/comments/7d21nh/kita_pl%C3%A4tze_in_berlim/dpuip98/)
-[^7]: [juliacares.de](http://www.juliacares.de/en/family-companion-relocation/kita-search-faq#:~:text=before%20we%20move%20to%20berlin)
+[^7]: [juliacares.de](https://web.archive.org/web/20231202121225/http://www.juliacares.de/en/family-companion-relocation/kita-search-faq#:~:text=before%20we%20move%20to%20berlin)
 [^10]: [Reddit](https://old.reddit.com/r/berlin/comments/7ve1h1/kitaplatz_hunting_service_in_berlin/dtrlnob/)
 [^11]: [reddit.com/r/germany](https://old.reddit.com/r/germany/comments/2s5v6i/how_to_find_a_nanny_in_germany/cnmtne4/)

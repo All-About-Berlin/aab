@@ -23,7 +23,7 @@ Routine tests are harder. It's hard to get an appointment quickly. You might hav
         English-speaking staff, online appointments, and online results in 1 day.
     - **[Praxis Goldstein](https://www.doctor-goldstein.com/)**  
         English-speaking staff, online appointments, and online results in 1 day.
-    - **[Dr. Cordes](https://www.drcordes.de/en__es__fr/)**  
+    - **[Dr. Cordes](https://www.drcordes.de/)**  
         They speak English, Spanish and German. Long wait times, even with an appointment.
     - **[Viropraxis](https://www.viropraxis.de/)**  
         They speak English, Spanish and German.
@@ -33,8 +33,8 @@ Routine tests are harder. It's hard to get an appointment quickly. You might hav
         Find more doctors that offer STI tests.
 - **At home**  
     [s.a.m. health](https://www.samhealth.de/en/) sells home tests for HIV, Syphilis, Gonorrhoea and Chlamydia. It costs €75 the first time, then €69.[^0]{{ fail_on('2026-12-31') }}
-- **[Zentrum für sexuelle Gesundheit](https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/gesundheitsamt/zentren/artikel.248356.en.php)** of the Gesundheitsamt (English, German, other languages)  
-    HIV tests for €10. If you have a low income, it's free.[^1] They don't have general STI tests. There are [4 locations in Berlin](https://www.google.com/maps/search/Zentrum+für+sexuelle+Gesundheit/@52.5947073,13.3052094,11z/). They speak English.[^2]
+- **[Zentrum für sexuelle Gesundheit](https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/gesundheitsamt/zentren/artikel.106172.php)**  
+    HIV tests for €10. If you have a low income, it's free.[^1] They don't have general STI tests. There are [4 locations in Berlin](https://www.google.com/maps/search/Zentrum+für+sexuelle+Gesundheit/@52.5947073,13.3052094,11z/). They speak English.
 - **[Berlin Aids-Hilfe](https://www.berlin-aidshilfe.de/angebote/test-angebote/)** (German, other languages)  
     General STI test for €25. HIV test for €10.
 - **[Praxis Prenzlauer Berg](https://praxis-prenzlauer-berg.de/DE/)** (German)  
@@ -68,7 +68,6 @@ If the test is not covered by your health insurance, it costs **between €10 an
 
 [^0]: [samhealth.de](https://www.samhealth.de/en/interesting-facts/prices-and-costs/)
 [^1]: [spiegel.de](https://www.spiegel.de/gesundheit/sex/geschlechtskrankheiten-tests-muessen-endlich-von-der-krankenkasse-uebernommen-werden-a-a2a415dc-b5d5-42bf-a0b1-12f944ee1758), [berlin.de](https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/gesundheitsamt/zentrum-fuer-sexuelle-gesundheit-und-familienplanung/artikel.833280.php)
-[^2]: [berlin.de](https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/gesundheitsamt/zentren/artikel.248356.en.php)
 [^3]: [spiegel.de](https://www.spiegel.de/gesundheit/sex/geschlechtskrankheiten-tests-muessen-endlich-von-der-krankenkasse-uebernommen-werden-a-a2a415dc-b5d5-42bf-a0b1-12f944ee1758), [praxis-prenzlauer-berg.de](https://praxis-prenzlauer-berg.de/DE/arzt-geschlechtskrankheiten-berlin.htm), [International Women in Berlin](https://www.internationalwomeninberlin.com/how-to-get-sti-tests-in-berlin) (2025)
 [^4]: [limbachgruppe.com](https://www.limbachgruppe.com/fileadmin/downloads/Patientenflyer/EinfachGesund/Geschlechtskrankheiten.pdf)
 [^5]: Doctor at a sexual health clinic (2021)

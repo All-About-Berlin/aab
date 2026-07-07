@@ -177,9 +177,9 @@ These are some of the most important road rules for cyclists. Those rules apply 
 - **You must give bus and tram passengers the priority.**[^24]  
     If you ride past a stopped bus or tram, you must slow down. You do not have priority. The passengers who enter and exit the bus have priority. In [this photo](/images/bus-pedestrian-bicycle-priority.jpg), the bicycle must wait for people to enter/leave the bus.
 - **You can't ride in the bus lane**[^25]  
-    You can't use the bus lanes, unless there is a ["Fahrrad frei" sign](https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Zusatzzeichen_1022-10_-_Radfahrer_frei%2C_StVO_1992.svg/200px-Zusatzzeichen_1022-10_-_Radfahrer_frei%2C_StVO_1992.svg.png). If you ride on a bus lane, you can get a €15 fine.[^26]
+    You can't use the bus lanes, unless there is a ["Fahrrad frei" sign](https://de.wikipedia.org/wiki/Datei:Zusatzzeichen_1022-10_-_Radfahrer_frei,_StVO_1992.svg). If you ride on a bus lane, you can get a €15 fine.[^26]
 - **You must stop at red lights.**  
-    Cyclists can't cross the street on a red light, just like in a car. If you cross on a red light, you can get a €90 fine, and lose one Flensburg point.[^27] You can't turn right when the light is red, unless you see [this sign](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Zeichen_721_-_Gr%C3%BCnpfeilschild_mit_Beschr%C3%A4nkung_auf_den_Radverkehr%2C_StVO_2020.svg/450px-Zeichen_721_-_Gr%C3%BCnpfeilschild_mit_Beschr%C3%A4nkung_auf_den_Radverkehr%2C_StVO_2020.svg.png).[^28]
+    Cyclists can't cross the street on a red light, just like in a car. If you cross on a red light, you can get a €90 fine, and lose one Flensburg point.[^27] You can't turn right when the light is red, unless you see [this sign](https://de.wikipedia.org/wiki/Datei:Zeichen_721_-_Gr%C3%BCnpfeilschild_mit_Beschr%C3%A4nkung_auf_den_Radverkehr,_StVO_2020.svg).[^28]
 - **You can't use your phone while riding.**  
     If you use your phone while riding, you can get a €55 fine.[^19]
 - **You can use headphones while riding.**  

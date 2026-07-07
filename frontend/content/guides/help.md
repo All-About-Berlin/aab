@@ -148,10 +148,7 @@ Don't be afraid to use a lawyer. Your employer can't fire you or blacklist you b
 
 ### Helpful websites
 
-- [Existenzgruender.de](https://www.existenzgruender.de/EN/Home/inhalt.html) - official resource with a lot of detailed information
-- [Make it in Germany](https://www.make-it-in-germany.com/en/working-in-germany/setting-up-business/reasons) - official advice and information for foreigners
-- [Starting your own business](http://www.existenzgruender.de/EN/Home/inhalt.html) - An official resource from the Ministry of Economic Affairs
-- [List of official resources](https://www.existenzgruender.de/SharedDocs/Downloads/EN/Checklisten-Uebersichten/7_overview-Other-links-in-foreign-languages.pdf?__blob=publicationFile) (in German)
+- [Starting your own business](https://www.existenzgruendungsportal.de/Navigation/EN/Home/home) - official resource
 
 ## Parenting questions
 
@@ -167,7 +164,6 @@ Don't be afraid to use a lawyer. Your employer can't fire you or blacklist you b
 ### Paid services
 
 - [Baby in Berlin](https://babyinberlin.com/)
-- [Julia Zehavi](http://www.familyrelocation.de)
 - [Kietzee](https://www.kietzee.com/en)
 - [Relocation consultants](/guides/relocation-agency-in-berlin) can help with the bureaucracy of parenting
 
