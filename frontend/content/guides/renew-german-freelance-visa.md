@@ -258,6 +258,6 @@ If you plan to become a permanent resident, you should make voluntary [public pe
 [^15]: [§ 21 Abs. 4 AufenthG](https://www.buzer.de/21_AufenthG.htm)
 [^16]: [§ 21 AufenthG](https://www.buzer.de/21_AufenthG.htm), [§ 18 EStG](https://www.buzer.de/18_EStG.htm), [2 K 7356/18](https://www.landesrecht-bw.de/jportal/?quelle=jlink&docid=MWRE190002951&psml=bsbawueprod.psml&max=true&doc.part=L&doc.norm=all#:~:text=der%20begriff%20%E2%80%9Efreiberufliche%20tatigkeit%E2%80%9C%20bestimmt%20sich%20nach%20den%20katalogberufen%20des)
 [^17]: Health insurance broker Daniel Derosa
-[^18]: [§ 21 Abs. 4 and 5 AufenthG](https://www.buzer.de/21_AufenthG.htm), [Berlin.de](https://service.berlin.de/dienstleistung/326564/#:~:text=keine%20freiberufliche), [sachsen.de](https://www.zuwanderung.sachsen.de/SMI_Zuwanderung_Infoblatt_Selbststaendige.pdf) (page 9)
+[^18]: [§ 21 Abs. 4 and 5 AufenthG](https://www.buzer.de/21_AufenthG.htm), [Berlin.de](https://service.berlin.de/dienstleistung/326564/#:~:text=keine%20freiberufliche)
 [^19]: Relocation consultants (February 2026)
 [^20]: [haufe.de](https://www.haufe.de/id/beitrag/abc-der-werbungskosten-einbuergerungaufenthaltstitel-HI7472120.html) (2026)

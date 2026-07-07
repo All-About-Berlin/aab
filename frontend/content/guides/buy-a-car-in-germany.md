@@ -206,7 +206,7 @@ Use [Verivox](/out/verivox-kfz) or [Tarifcheck](/out/tarifcheck-kfz) to compare 
 **[How to get cheaper car insurance ➞](/guides/car-insurance-germany#how-to-get-cheaper-car-insurance)**
 
 [^0]: [ec.europa.eu](https://taxation-customs.ec.europa.eu/buying-and-selling-cars_en)
-[^1]: [spiegel.de](https://www.spiegel.de/auto/aktuell/das-folgt-aus-bgh-urteil-zu-maengelhaftung-bei-gebrauchtwagen-a-1031320.html), [telecom-handel.de](https://www.telecom-handel.de/point-of-sale/fachhandel/gewaehrleistung-pflichten-haendler-1108535.html)
+[^1]: [spiegel.de](https://www.spiegel.de/auto/aktuell/das-folgt-aus-bgh-urteil-zu-maengelhaftung-bei-gebrauchtwagen-a-1031320.html)
 [^2]: [gesetze-im-internet.de](https://www.gesetze-im-internet.de/englisch_bgb/englisch_bgb.html#p1584)
 [^3]: [spiegel.de](https://www.spiegel.de/auto/aktuell/das-folgt-aus-bgh-urteil-zu-maengelhaftung-bei-gebrauchtwagen-a-1031320.html)
 [^4]: [autokaufrecht-frankfurt.de](https://autokaufrecht-frankfurt.de/agenturgeschaeft-eigengeschaeft-und-umgehungsgeschaeft-im-kfz-handel/) (2026), [spiegel.de](https://www.spiegel.de/auto/aktuell/das-folgt-aus-bgh-urteil-zu-maengelhaftung-bei-gebrauchtwagen-a-1031320.html)

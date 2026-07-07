@@ -19,7 +19,7 @@ These tools help you find how much you should earn.
 - [techpays.eu](https://techpays.eu/europe/germany) - IT salaries
 - [Startup salary survey](https://berlinstartupjobs.com/startup-salary-survey/) - Yearly survey by BerlinStartupJobs
 - [Startup and tech salary trends](https://handpickedberlin.com/startup-tech-salary-trends-berlin/) - Yearly survey by Handpicked Berlin
-- [Developer salaries in Germany (2021)](https://cult.honeypot.io/developer-salary-report-2021/developer-salaries-germany-2021/) - Honeypot.io
+- [Developer salaries in Germany (2021)](https://dev.to/cultbyhoneypot/developer-salaries-germany-2021-report-tl-dr-3pej) - Honeypot.io
 - [Salaries in Berlin](https://www.settle-in-berlin.com/salary-in-berlin/) - longer article by Settle in Berlin
 
 ### Rates for freelancers

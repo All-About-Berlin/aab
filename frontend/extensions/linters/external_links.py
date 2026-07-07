@@ -140,7 +140,9 @@ class ExternalLinksLinter(MarkdownExternalLinksLinter):
                 yaml.dump(
                     [
                         {"url": url, "status": info["status"], "date": info["date"]}
-                        for url, info in sorted(self.failing_urls.items())
+                        for url, info in sorted(
+                            self.failing_urls.items(), key=lambda item: (item[1]["status"], item[0])
+                        )
                     ],
                     allow_unicode=True,
                     sort_keys=False,

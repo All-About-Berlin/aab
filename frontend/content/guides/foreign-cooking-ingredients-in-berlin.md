@@ -143,7 +143,7 @@ Yeast is called *Backhefe* in Germany. You can find it in [small paper packets](
 
 ### International
 
-- [Galeria Kaufhof](https://www.galeria-kaufhof.de/) - Large selection of international products
+- [Galeria Kaufhof](https://www.galeria.de/) - Large selection of international products
 - [KaDeWe](https://www.kadewe.de/) - Large selection of international products
 - [Mehlstübchen](https://www.mehlstuebchen.de/) - Flours from all over the world
 

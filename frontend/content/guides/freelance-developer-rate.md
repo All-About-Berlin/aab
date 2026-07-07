@@ -86,7 +86,7 @@ If you say that you charge €500 per day, your client will expect to pay €500
 
 "Currently the yearly wage of a software engineer here in Berlin is around 50k EUR gross, seniors earning around 10k more. This is what the employee will receive gross, minus tax and insurances. The employer has his own share that he needs to pay in addition. That would be around 21% on top." - [Andreas Böhrnsen](https://web.archive.org/web/20250619122524/http://andreas.boehrnsen.de/blog/2016/01/freelance-rate-berlin/), January 2016
 
-"What you charge is a mixture of (1) what customers will pay - the cheaper you are the easier it is to find customers - and (2) what you need to live. My guess to calculate maintaining your current lifestyle is your current gross pay, plus 20% for additional social contributions (that your employer pays today) plus another 20% as you'll have to pay your own holidays, and maybe another {{ VAT_RATE }}% VAT... (just made up numbers)" - [8420PR](https://www.toytowngermany.com/forum/topic/325097-freelance-rates-for-designer-developer-in-berlin/), May 2014
+"What you charge is a mixture of (1) what customers will pay - the cheaper you are the easier it is to find customers - and (2) what you need to live. My guess to calculate maintaining your current lifestyle is your current gross pay, plus 20% for additional social contributions (that your employer pays today) plus another 20% as you'll have to pay your own holidays, and maybe another {{ VAT_RATE }}% VAT... (just made up numbers)" - [8420PR](https://web.archive.org/web/20221002085805/https://www.toytowngermany.com/forum/topic/325097-freelance-rates-for-designer-developer-in-berlin/#comment-3229392), May 2014
 
 ## Need help?
 

@@ -157,7 +157,7 @@ To get an apartment, you must be fast. Use tools to find apartments and message 
     - [Immobilien Bot](https://immobilien-bot.de/) - Paid app
     - [Stekkies](https://www.stekkies.com/en-de/) - Paid app
 - **Alerts and push notifications**  
-    Install the [Kleinanzeigen](https://themen.ebay-kleinanzeigen.de/mobile-apps/) and [ImmoScout24](https://www.immobilienscout24.de/mobile-services/) apps, and create alerts for new apartment listings.[^44] Turn on push notifications for the [Facebook groups](#facebook-groups) that you follow.
+    Install the [Kleinanzeigen](https://themen.kleinanzeigen.de/mobile-apps/) and [ImmoScout24](https://www.immobilienscout24.de/mobile-services/) apps, and create alerts for new apartment listings.[^44] Turn on push notifications for the [Facebook groups](#facebook-groups) that you follow.
 
 ### Newspapers
 

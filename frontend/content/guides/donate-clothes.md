@@ -39,11 +39,8 @@ Many clothes donation bins are operated by charities. Look for donation bins wit
 - **[Berliner Stadtmission](https://www.berliner-stadtmission.de/komm-sieh/clothingdonations)**  
     *[Map of collection points](https://www.berliner-stadtmission.de/komm-sieh/clothingdonations)*  
     The clothes will be used to help the homeless in Berlin.
-- **[Diakonie](https://www.diakonie-stadtmitte.de/)**  
-    *[Information page](https://www.diakonie-stadtmitte.de/spenden/sachspenden)*  
-    The clothes will be used to help Berliners in need.
-- **[German Red Cross](https://www.drk-berlin.de/index.html)*  
-    **[Map of donation bins](https://www.drk-berlin.de/angebote/kleidercontainer-suchergebnis.html)*  
+- **[German Red Cross](https://www.drk-berlin.de/index.html)**  
+    *[Search by post code](https://www.drk.de/hilfe-in-deutschland/existenzsichernde-hilfe/kleidercontainer/)*  
     They have donation bins in every neighbourhood.
 - **[Oxfam foundation](https://www.oxfam.de/)**  
     *[Map of Oxfam shops](https://shops.oxfam.de/shops)*  

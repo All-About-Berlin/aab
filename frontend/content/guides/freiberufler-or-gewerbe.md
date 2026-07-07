@@ -148,7 +148,7 @@ Websites that are not a *Gewerbe*:
 **[Where to ask business questions ➞](/guides/help#business-questions)**
 
 [^1]: [§ 21 Abs. 1, 2a or 5 AufenthG](https://www.buzer.de/21_AufenthG.htm)
-[^2]: [§ 21 Abs. 4 and 5 AufenthG](https://www.buzer.de/21_AufenthG.htm), [Berlin.de](https://service.berlin.de/dienstleistung/326564/#:~:text=keine%20freiberufliche), [sachsen.de](https://www.zuwanderung.sachsen.de/SMI_Zuwanderung_Infoblatt_Selbststaendige.pdf) (page 9)
+[^2]: [§ 21 Abs. 4 and 5 AufenthG](https://www.buzer.de/21_AufenthG.htm), [Berlin.de](https://service.berlin.de/dienstleistung/326564/#:~:text=keine%20freiberufliche)
 [^3]: [ihk.de](https://www.ihk.de/schwerin/existenzgruendung/existenzgruendung/tipps-rund-um-die-gruendung/selbststaendigkeit-als-gewerbetreibender-oder-freiberufler-3032726#:~:text=zu%20den%20%22dienstleistungen%20hoherer%20art%22)
 [^4]: This happened to me
 [^5]: Sebastian Hoffmann from [Touring Artists](https://www.touring-artists.info/en/home) (November 2024)
