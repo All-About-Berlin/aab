@@ -134,19 +134,9 @@ After you have paid, you can go home. You don't need to go back to your case wor
 
 ## Sue the Ausländerbehörde
 
-The *Ausländerbehörde* has 3 months to process your [residence permit](/glossary/Aufenthaltstitel) application. If it takes longer, you can sue them.[^11] It costs €700 to €3000.[^16] Suing does not always work. The *Ausländerbehörde* sometimes ignores court orders.[^15]
+The *Ausländerbehörde* has 3 months to process your [residence permit](/glossary/Aufenthaltstitel) application. If it takes longer, you can sue them. It sometimes make them process your application faster.
 
-{% tool "immigration-office-lawsuit" %}
-
-First, your lawyer sends a scary letter to the *Ausländerbehörde*. The *Ausländerbehörde* wants to avoid a lawsuit, so they process your application faster.
-
-If the scary letter does not work, you can sue the *Ausländerbehörde*. The legal system is slow, so a lawsuit can take months or years. If you win, the *Ausländerbehörde* must pay for your legal fees. Usually, the *Ausländerbehörde* reacts before your case goes to court, so you must pay your own legal fees.[^12]
-
-In other words, you pay a few hundred euros, and things *sometimes* go faster. A lawyer can pressure the *Ausländerbehörde*, but they can't help you skip the queue.[^13]
-
-In other cities, threatening to sue the *Ausländerbehörde* can make things worse. The *Ausländerbehörde* can become very strict, ask for more documents, and make your application even slower.[^14]
-
-**[Find an immigration lawyer ➞](/guides/english-speaking-lawyers-berlin)**
+**[How to sue the immigration office ➞](/guides/immigration-office/lawsuit)**
 
 ## Need help?
 
@@ -164,12 +154,6 @@ The immigration office does not give immigration advice. An [immigration lawyer]
 [^8]: [Twitter](https://twitter.com/mgill25/status/1732466237140062646) (December 2023)
 [^9]: Fiona Macdonald, [immigration lawyer](https://www.fmr-legal.de/) (August 2023)
 [^10]: [Berlin.de](https://www.berlin.de/einwanderung/ueber-uns/aktuelles/artikel.1366344.php#:~:text=our%20clients%20can%20now%20only%20use) (September 2023), [Facebook](https://www.facebook.com/groups/226825394858771/posts/1394576074750358/) (2023), [Facebook](https://www.facebook.com/groups/226825394858771/posts/1406105666930732/) (2023), [Facebook](https://www.facebook.com/groups/226825394858771/posts/1398591451015487/) (2023)
-[^11]: This is called an *Untätigkeitsklage nach [§ 75 VwGO](https://www.buzer.de/75_VwGO.htm)*. [anwalt.de](https://www.anwalt.de/rechtstipps/auslaenderbehoerde-botschaft-reagiert-nicht-untaetigkeitsklage-75-vwgo_086072.html), [se-legal.de](https://se-legal.de/wie-sie-das-visum-aufenthaltsverfahren-in-deutschland-beschleunigen-konnen/), [anwalt-diedrich.de](https://www.anwalt-diedrich.de/home/anwalt-auslaenderrecht/untaetigkeitsklage/), [Red Tape Translation](https://redtapetranslation.com/faxhack/)
-[^12]: [Fiona Macdonald, immigration lawyer](https://www.fmr-legal.de/) (December 2023)
-[^13]: [Fiona Macdonald, immigration lawyer](https://www.fmr-legal.de/) (December 2024)
-[^14]: [Fiona Macdonald, immigration lawyer](https://www.fmr-legal.de/) (December 2023)
-[^15]: [Reddit](https://old.reddit.com/r/GermanCitizenship/comments/1sfh5jy/lea_is_ignoring_the_court/) (April 2026)
-[^16]: [Fiona Macdonald](https://www.fmr-legal.de/) (December 2023), [Mirko Vorreuter](https://visaguard.berlin) (September 2025)
 [^17]: [§ 81 Abs. 5 AufenthG](https://www.buzer.de/81_AufenthG.htm)
 [^18]: [Mirko Vorreuter](https://visaguard.berlin) (September 2025)
 [^19]: [haufe.de](https://www.haufe.de/id/beitrag/abc-der-werbungskosten-einbuergerungaufenthaltstitel-HI7472120.html) (2026), [vlh.de](https://www.vlh.de/wissen-service/steuer-abc/einbuergerung-kann-ich-die-kosten-von-der-steuer-absetzen.html) (2025)

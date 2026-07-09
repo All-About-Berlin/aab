@@ -121,6 +121,8 @@
       entries:
         - title: Immigration office wait times
           uri: guides/immigration-office/wait-times.md
+        - title: Suing the immigration office
+          uri: guides/immigration-office/lawsuit.md
 - id: living-in-germany
   type: guides
   title: Living in Germany
