@@ -15,7 +15,7 @@ German houses have **Type F** power outlets.[^0] They are also called Schuko or 
 
 ![Steckdose Schuko](/images/Steckdose-Schuko.jpg "A standard German Schuko power outlet")
 
-[CEE 7/4 and 7/17 "Shuko" plug](https://en.wikipedia.org/wiki/Schuko) work in German power outlets:
+[CEE 7/4 and 7/17 "Schuko" plug](https://en.wikipedia.org/wiki/Schuko) work in German power outlets:
 
 ![CEE 7 17 plug](/images/CEE-7-17-plug.jpg)
 
