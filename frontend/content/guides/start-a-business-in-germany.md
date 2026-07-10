@@ -36,8 +36,8 @@ Plan the cost of running your business. It helps you decide how much savings you
         In Berlin, it costs an extra {{GEWERBESTEUER_EXTRA_COST_BERLIN}}% of all [profit](/glossary/Gewinn) above €{{GEWERBESTEUER_FREIBETRAG|cur}} per year. If you are a *[[Freiberufler]]*, you don't pay the trade tax. - [How the trade tax works](/guides/gewerbesteuer)
     - **[Value-added tax (VAT)](/glossary/Umsatzsteuer)**  
         You must charge a {{ VAT_RATE }}% tax on your invoices, and give that money to the *[[Finanzamt]]*. You don't pay VAT, your clients do, but it still raises your prices. [Some businesses](/glossary/Kleinunternehmer) don't need to charge VAT. - [How VAT works](/guides/value-added-tax)
-    - **[[IHK]] membership**  
-        In Berlin, if you have a *[[Gewerbe]]*, you must join the [[IHK]]. The membership fee is a few hundred euros per year. - [Membership fee calculator](https://www.ihk.de/berlin/ueber-uns/mitgliedschaft-und-beitrag/das-verfahren-der-beitragserhebung/beitragsberechnung-2280534)
+    - **[[IHK]] membership fee**  
+        In Berlin, if you have a *[[Gewerbe]]*, you must join the [[IHK]]. There is a mandatory membership fee. - [Membership fee calculator](https://www.ihk.de/berlin/ueber-uns/mitgliedschaft-und-beitrag/das-verfahren-der-beitragserhebung/beitragsberechnung-2280534)
 - **Business expenses**
     - **Accounting**  
         A tax advisor costs €700 to €2,000 per year if you charge [VAT](/glossary/Umsatzsteuer), or €300 to €800 per year if you don't.[^15] [Accounting software](/guides/german-tax-software) is cheaper and [[ELSTER]] is free, but you must do all the work yourself.
