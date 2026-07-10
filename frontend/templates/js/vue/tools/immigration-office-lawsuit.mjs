@@ -8,7 +8,8 @@ import Checkbox from '/js/vue/components/checkbox.mjs';
 import multiStageMixin from '/js/vue/mixins/multiStage.mjs';
 import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
-import { dateFromString, isoDay, formatTimeDelta } from '/js/utils/date.mjs';
+import { dateFromString, isoDay, formatTimeDelta, monthsSince } from '/js/utils/date.mjs';
+import { canSueForInaction, shouldSueForInaction, monthsToWaitBeforeLawsuit } from '/js/utils/immigrationOffice.mjs';
 import { validateForm } from '/js/utils/form.mjs';
 import { getReferrer } from '/js/utils/tracking.mjs';
 
@@ -48,39 +49,24 @@ export default {
 	},
 	computed: {
 		monthsAgo(){
-			if(!this.applicationDate) return;
-
-			const applicationDate = dateFromString(this.applicationDate);
-			const today = new Date();
-
-			let months = (
-				(today.getFullYear() - applicationDate.getFullYear()) * 12
-				+ (today.getMonth() - applicationDate.getMonth())
-			);
-
-			if (today.getDate() < applicationDate.getDate()){
-				months--;
-			}
-
-			return months;
+			if(!this.applicationDate) return undefined;
+			const applicationDateObj = dateFromString(this.applicationDate);
+			return applicationDateObj ? monthsSince(applicationDateObj) : undefined;
 		},
-		minWaitMonths() {
-			if (this.applicationType === 'CITIZENSHIP') return 12;
-			if (this.applicationType === 'PERMANENT_RESIDENCE') return 9;
-			return 6;
+		monthsToWaitBeforeLawsuit() {
+			return monthsToWaitBeforeLawsuit(this.applicationType);
 		},
 		isTooEarlyToSue() {
 			if (!this.applicationDate || !this.applicationType) return false;
-			return this.monthsAgo < this.minWaitMonths;
+			return !shouldSueForInaction(dateFromString(this.applicationDate), this.applicationType);
 		},
 	},
 	watch: {
-		applicationDate(newVal) {
-			if(!this.applicationDate){
-				this.applicationDateError = "";
+		applicationDate() {
+			this.applicationDateError = "";
+			if (this.applicationDate && !canSueForInaction(dateFromString(this.applicationDate))){
+				this.applicationDateError = "Wait at least 3 months before suing the immigration office.";
 			}
-
-			this.applicationDateError = this.monthsAgo < 3 ? "Wait at least 3 months before suing the immigration office." : "";
 			this.$refs.applicationDateInput.$el.setCustomValidity(this.applicationDateError);
 		},
 	},
@@ -206,7 +192,8 @@ export default {
 				</div>
 				<template v-if="isTooEarlyToSue">
 					<hr>
-					<p>You should wait at least {{ minWaitMonths }} months to sue the immigration office. Suing too early will not help.</p>
+					<p>You can sue the immigration office after 3 months, but you should wait at least {{ monthsToWaitBeforeLawsuit }} months. Suing too early will not help.</p>
+					<p><strong><a class="internal-link" href="/guides/immigration-office/lawsuit#wait">More information</a></strong></p>
 				</template>
 				<hr>
 				<div class="buttons bar">

@@ -65,3 +65,15 @@ export function isoDay(date){
 export function isoMonth(date){
 	return isoDay(date).slice(0, 7);
 }
+
+export function monthsSince(date) {
+	const today = new Date();
+	let months = (
+		(today.getFullYear() - date.getFullYear()) * 12
+		+ (today.getMonth() - date.getMonth())
+	);
+	if (today.getDate() < date.getDate()) {
+		months--;
+	}
+	return months;
+}

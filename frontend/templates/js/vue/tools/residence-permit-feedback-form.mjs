@@ -11,7 +11,8 @@ import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import { userDefaults, userDefaultsMixin } from '/js/vue/mixins/userDefaults.mjs';
 import { validateForm } from '/js/utils/form.mjs';
-import { citizenshipDepartments, residencePermitTypes, residencePermitDepartments, oldResidencePermitDepartments } from '/js/utils/immigrationOffice.mjs';
+import { dateFromString } from '/js/utils/date.mjs';
+import { citizenshipDepartments, residencePermitTypes, residencePermitDepartments, oldResidencePermitDepartments, shouldSueForInaction } from '/js/utils/immigrationOffice.mjs';
 
 import citizenshipMetadata from '/js/vue/tools/citizenship-feedback-form.metadata.json' with { type: 'json' };
 import residencePermitMetadata from '/js/vue/tools/residence-permit-feedback-form.metadata.json' with { type: 'json' };
@@ -235,6 +236,10 @@ export default {
 		allStepsAreCompleted(){
 			return Object.values(this.steps).every(s => s.completed);
 		},
+		recommendLawsuit(){
+			if(!this.steps.application.date || this.steps.response.completed) return false;
+			return shouldSueForInaction(dateFromString(this.steps.application.date), this.documentType);
+		},
 
 		apiEndpoint(){
 			const type = this.isCitizenship ? 'citizenship' : 'residence-permit';
@@ -379,6 +384,9 @@ export default {
 						<div class="duration form-group" v-if="step.completed">
 							<label :for="uid(key) + '-date'" v-text="step.dateFieldTitle"></label>
 							<date-picker :min="minimumStepDate(step)" v-model="step.date" :id="uid(key) + '-date'" required></date-picker>
+							<span v-if="key === 'application' && recommendLawsuit" class="input-instructions">
+								It might be time to <a target="_blank" href="/guides/immigration-office/lawsuit">sue the immigration office</a>.
+							</span>
 						</div>
 					</div>
 				</div>
