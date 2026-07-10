@@ -84,3 +84,26 @@ def test_application_date_too_recent(lawsuit_form, test_screenshot):
     lawsuit_form.get_by_label("Application city").fill("Berlin")
     lawsuit_form.get_by_role("button", name="Continue").click()
     assert_stage(lawsuit_form, "questions")
+
+
+@pytest.mark.parametrize(
+    "application_date,application_type,expected_months",
+    [
+        ("2025-10-22", "BLUE_CARD", 6),  # 4 months ago, default 6-month threshold
+        ("2025-07-22", "PERMANENT_RESIDENCE", 9),  # 7 months ago, 9-month threshold
+        ("2025-04-22", "CITIZENSHIP", 12),  # 10 months ago, 12-month threshold
+    ],
+)
+def test_early_warning(lawsuit_form, test_screenshot, application_date, application_type, expected_months):
+    lawsuit_form.get_by_role("button", name="Continue").click()
+    lawsuit_form.get_by_label("Application date").fill(application_date)
+    lawsuit_form.get_by_label("Application type").select_option(application_type)
+    expect(
+        lawsuit_form.get_by_text(f"You should wait at least {expected_months} months to sue the immigration office.")
+    ).to_be_visible()
+
+
+def test_no_early_warning(lawsuit_form):
+    lawsuit_form.get_by_role("button", name="Continue").click()
+    lawsuit_form.get_by_label("Application date").fill("2025-07-22")  # 7 months ago, past 6-month threshold
+    lawsuit_form.get_by_label("Application type").select_option("BLUE_CARD")

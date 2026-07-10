@@ -63,7 +63,16 @@ export default {
 			}
 
 			return months;
-		}
+		},
+		minWaitMonths() {
+			if (this.applicationType === 'CITIZENSHIP') return 12;
+			if (this.applicationType === 'PERMANENT_RESIDENCE') return 9;
+			return 6;
+		},
+		isTooEarlyToSue() {
+			if (!this.applicationDate || !this.applicationType) return false;
+			return this.monthsAgo < this.minWaitMonths;
+		},
 	},
 	watch: {
 		applicationDate(newVal) {
@@ -195,6 +204,10 @@ export default {
 					<label :for="uid('message')">Comments</label>
 					<textarea :id="uid('message')" v-model="message" placeholder="What else should Artjom know?"></textarea>
 				</div>
+				<template v-if="isTooEarlyToSue">
+					<hr>
+					<p>You should wait at least {{ minWaitMonths }} months to sue the immigration office. Suing too early will not help.</p>
+				</template>
 				<hr>
 				<div class="buttons bar">
 					<button class="button previous" @click="previousStage">
