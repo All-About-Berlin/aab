@@ -41,7 +41,6 @@ export default {
 				printWindow.document.close();
 				printWindow.focus();
 				printWindow.print();
-				printWindow.close();
 				if(this.trackAs){
 					plausible(this.trackAs, { props: { stage: 'print', pageSection: getNearestHeadingId(this.$el) }});
 				}
