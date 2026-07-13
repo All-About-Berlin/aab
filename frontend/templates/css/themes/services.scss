@@ -146,6 +146,42 @@ main > .collapsible{
     }
 }
 
+.review{
+    font-size: var(--f-s);
+
+    p{
+        position: relative;
+        padding-left: var(--m);
+
+        &:before{
+            content: '“';
+            font-size: var(--xxl);
+            position:absolute;
+            top: 0;
+            left: 0;
+            color: var(--c-text-light);
+            line-height: calc(1rem * var(--line-height-text));
+        }
+        &:after{
+            display: inline-block;
+            content: '”';
+            width: var(--m);
+            text-align: right;
+            font-size: var(--xxl);
+            color: var(--c-text-light);
+            vertical-align: middle;
+            line-height: calc(var(--f-s) * var(--line-height-text));
+        }
+    }
+
+    figcaption{
+        text-align:right;
+        &:before{
+            content: '— ';
+        }
+    }
+}
+
 .feature-table{
     width: 100%;
     min-width: 800px;
