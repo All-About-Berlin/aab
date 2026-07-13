@@ -1,4 +1,5 @@
 import { getNearestHeadingId } from '/js/utils/tracking.mjs';
+import { site } from '/js/utils/constants.mjs';
 
 let dialog = null; // The tooltip <dialog> element
 let pronounciationAudio = null;
@@ -50,7 +51,7 @@ export function showTooltip(clickEvent) {
 		dialog.showModal();
 	}
 	fetch(anchor.getAttribute('href') + '.json').then(r => r.json()).then(data => {
-		dialog.querySelector('h2 a').setAttribute('href', anchor.getAttribute('href'));
+		dialog.querySelector('h2 a').setAttribute('href', site.url + anchor.getAttribute('href'));
 		dialog.querySelector('h2 a dfn').innerHTML = data.englishTerm || data.germanTerm;
 		dialog.querySelector('h2 a small').innerHTML = data.germanTerm || '';
 		dialog.querySelector('h2 a small').classList.toggle('hidden', (!data.englishTerm || data.englishTerm == data.germanTerm));
