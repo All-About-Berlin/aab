@@ -10,7 +10,11 @@ Date_created: 2026-07-31
 
 ## What's new in Germany
 
-### The reform continues
+### Health insurance reform is now law
+
+https://www.bundesgesundheitsministerium.de/ministerium/meldungen/bundestag-beschliesst-gkv-beitragssatzstabilisierunggesetz-pm-10-07-2026
+
+### Pension reform continues
 
 https://www.sueddeutsche.de/politik/familienpolitik-elterngeld-soll-auf-zwoelf-monate-begrenzt-werden-li.3509859
 
