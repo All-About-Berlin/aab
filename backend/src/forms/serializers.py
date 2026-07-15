@@ -1,7 +1,6 @@
 from django_countries.serializers import CountryFieldMixin
 from forms.models import (
     CitizenshipFeedback,
-    ImmigrationOfficeLawsuit,
     PensionRefundQuestion,
     PensionRefundReminder,
     PensionRefundRequest,
@@ -87,10 +86,4 @@ class TaxIdRequestFeedbackReminderSerializer(ModelSerializer):
 
     class Meta:
         model = TaxIdRequestFeedbackReminder
-        fields = "__all__"
-
-
-class ImmigrationOfficeLawsuitSerializer(ModelSerializer):
-    class Meta:
-        model = ImmigrationOfficeLawsuit
         fields = "__all__"

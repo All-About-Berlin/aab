@@ -8,10 +8,6 @@ from django.utils import timezone
 from forms.models import (
     CitizenshipFeedback,
     CitizenshipFeedbackNotification,
-    ImmigrationOfficeLawsuit,
-    ImmigrationOfficeLawsuitCustomerNotification,
-    ImmigrationOfficeLawsuitFeedbackNotification,
-    ImmigrationOfficeLawsuitLawyerNotification,
     PensionRefundQuestion,
     PensionRefundReminder,
     PensionRefundRequest,
@@ -1036,89 +1032,6 @@ class PlaceSuggestionTestCase(APITestCase):
         )
         self.assertEqual(response.status_code, 204)
         self.assertEqual(PlaceSuggestion.objects.count(), 0)
-
-
-class ImmigrationOfficeLawsuitTestCase(ScheduledMessageEndpointMixin, APITestCase):
-    model = ImmigrationOfficeLawsuit
-    endpoint = "/api/forms/immigration-office-lawsuit"
-
-    example_request = {
-        "name": "John Test",
-        "email": "contact@nicolasbouliane.com",
-        "application_type": "BLUE_CARD",
-        "city": "Berlin",
-        "application_date": "2023-01-01",
-        "immigration_office_has_replied": False,
-        "meets_requirements": True,
-        "has_submitted_documents": True,
-        "message": "This is a test request",
-    }
-
-    def setUp(self):
-        super().setUp()
-        patcher = patch("forms.models.requests.post")
-
-        # Mock the webhook to avoid calling the real webhook a bunch of times
-        self.mock_webhook = patcher.start()
-        self.mock_webhook.return_value.raise_for_status = lambda: None
-        self.addCleanup(patcher.stop)
-
-    def test_notifications_scheduled(self):
-        self.client.post(self.endpoint, self.example_request, format="json")
-        case = ImmigrationOfficeLawsuit.objects.get(email=self.example_request["email"])
-
-        customer = ImmigrationOfficeLawsuitCustomerNotification.objects.get(case=case)
-        self.assertEqual(customer.recipients, [self.example_request["email"]])
-        self.assertEqual(
-            customer.delivery_date.replace(second=0, microsecond=0),
-            timezone.now().replace(second=0, microsecond=0),
-        )
-
-        lawyer = ImmigrationOfficeLawsuitLawyerNotification.objects.get(case=case)
-        self.assertEqual(lawyer.recipients, ["contact@legalweg.com"])
-        self.assertEqual(lawyer.reply_to, self.example_request["email"])
-        self.assertEqual(
-            lawyer.delivery_date.replace(second=0, microsecond=0),
-            timezone.now().replace(second=0, microsecond=0),
-        )
-
-        feedback = ImmigrationOfficeLawsuitFeedbackNotification.objects.get(case=case)
-        self.assertEqual(feedback.recipients, [self.example_request["email"]])
-        self.assertEqual(
-            feedback.delivery_date.replace(second=0, microsecond=0),
-            (timezone.now() + timedelta(weeks=1)).replace(second=0, microsecond=0),
-        )
-
-    def test_webhook_called_on_create(self):
-        self.client.post(self.endpoint, self.example_request, format="json")
-        case = ImmigrationOfficeLawsuit.objects.get(email=self.example_request["email"])
-        self.mock_webhook.assert_called_once()
-        self.assertEqual(
-            self.mock_webhook.call_args.args[0], "https://hook.eu2.make.com/w8tl4psr2d613x5evf3mdb8hjbfeqo1b"
-        )
-        self.assertEqual(self.mock_webhook.call_args.kwargs["timeout"], 10)
-        payload = dict(self.mock_webhook.call_args.kwargs["json"])
-        self.assertIn("creation_date", payload)
-        payload.pop("creation_date")
-        self.assertEqual(
-            payload,
-            {
-                "id": case.pk,
-                **self.example_request,
-            },
-        )
-
-    def test_webhook_not_called_on_update(self):
-        self.client.post(self.endpoint, self.example_request, format="json")
-        self.mock_webhook.reset_mock()
-        case = ImmigrationOfficeLawsuit.objects.get(email=self.example_request["email"])
-        case.save()
-        self.mock_webhook.assert_not_called()
-
-    def test_create_invalid_application_type_400(self):
-        bad_request = {**self.example_request, "application_type": "INVALID"}
-        response = self.client.post(self.endpoint, bad_request, format="json")
-        self.assertEqual(response.status_code, 400, response.json())
 
 
 class ReadableDateRangeTestCase(unittest.TestCase):

@@ -1,7 +1,6 @@
 from django.core.exceptions import ValidationError as DjangoValidationError
 from forms.models import (
     CitizenshipFeedback,
-    ImmigrationOfficeLawsuit,
     PensionRefundQuestion,
     PensionRefundReminder,
     PensionRefundRequest,
@@ -11,7 +10,6 @@ from forms.models import (
 )
 from forms.serializers import (
     CitizenshipFeedbackSerializer,
-    ImmigrationOfficeLawsuitSerializer,
     PensionRefundQuestionSerializer,
     PensionRefundReminderSerializer,
     PensionRefundRequestSerializer,
@@ -278,11 +276,6 @@ class PlaceSuggestionViewSet(viewsets.ModelViewSet):
 class TaxIdRequestFeedbackReminderViewSet(MessageViewSet):
     queryset = TaxIdRequestFeedbackReminder.objects.all()
     serializer_class = TaxIdRequestFeedbackReminderSerializer
-
-
-class ImmigrationOfficeLawsuitViewSet(MessageViewSet):
-    queryset = ImmigrationOfficeLawsuit.objects.all()
-    serializer_class = ImmigrationOfficeLawsuitSerializer
 
 
 def exception_handler(exc, context):

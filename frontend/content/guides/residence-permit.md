@@ -406,23 +406,27 @@ Citizenship and [permanent residence](/glossary/Niederlassungserlaubnis) applica
 
 ## How to renew a residence permit
 
-Your residence permit is valid for 6 months to 4 years. The expiration date is written on the card.
+Your residence permit expires after 6 to 48 months. The expiration date is written [on the back of your residence card](/images/residence-permit-expiration-date.jpg).
 
-When it's about to expire, you must renew it at the *[[Ausländerbehörde]]*. In Berlin, you must renew your residence permit 6 weeks before it expires, not sooner.[^11] It takes [{{ WAIT_TIME_RESIDENCE_PERMIT }}](/guides/immigration-office/wait-times) to renew a residence permit.{{ fail_on('2026-12-31') }}
+You must renew your residence permit at the *[[Ausländerbehörde]]* before it expires. In Berlin, renew it 6 weeks before the expiration date, not sooner.[^11]
 
-The *[[Ausländerbehörde]]* will check if you still meet all the requirements of your residence permit. You need a few documents to prove this. Start preparing them in advance.
+The renewal process is similar to a first application. The required documents are usually the same. Usually, you must prove that you have a place to live, a sufficient income, and valid [health insurance](/glossary/Krankenversicherung). Start preparing your documents a few weeks in advance.
 
 **[How to renew a Blue Card ➞](/guides/blue-card#renew-your-blue-card)**
 
+To renew a [freelance visa](/glossary/Freelance%20visa), you must also prove that you [registered your business](/guides/fragebogen-zur-steuerlichen-erfassung). You might need different health insurance. [[Expat health insurance]] is rarely accepted.
+
 **[How to renew a freelance visa ➞](/guides/renew-german-freelance-visa)**
 
-You might also qualify for [permanent residence](/glossary/Niederlassungserlaubnis) or citizenship. It's better than a residence permit.
+You might qualify for [permanent residence](/glossary/Niederlassungserlaubnis) or citizenship. It's better than renewing your residence permit. The [wait times](/guides/immigration-office/wait-times) are similar.
 
 **[Permanent residence requirements ➞](/guides/permanent-residence#permanent-residence-requirements)**
 
 **[Citizenship requirements ➞](/guides/permanent-residence#citizenship)**
 
-While you wait, your old residence permit might expire. It is automatically extended until the *[[Ausländerbehörde]]* makes a decision. You can still work, study or freelance while you wait.
+After you send your documents, it takes [{{ WAIT_TIME_RESIDENCE_PERMIT }}](/guides/immigration-office/wait-times) to get your new residence permit.
+
+Your current residence permit stays valid while you wait, even if it expires. You can keep working, freelancing or studying with your expired residence permit. You can *sometimes* travel with an expired residence permit.
 
 **[If your current residence permit expires ➞](/guides/residence-permit#if-your-visa-or-residence-permit-expires)**
 
@@ -460,9 +464,9 @@ To travel longer, you need permission from the *[[Ausländerbehörde]]*.
 
 ## If your visa or residence permit expires
 
-Your [[National Visa]] or residence permit expires after 6 to 48 months. You must renew it at the *[[Ausländerbehörde]]*. The process is almost the same as when you apply for a new residence permit.
+Your [[National Visa]] or residence permit expires after 6 to 48 months. Before it expires, you must [renew it](#how-to-renew-a-residence-permit) at the *[[Ausländerbehörde]]*. It takes [{{ WAIT_TIME_RESIDENCE_PERMIT }}](/guides/immigration-office/wait-times).
 
-It can take [{{ WAIT_TIME_RESIDENCE_PERMIT }}](/guides/immigration-office/wait-times). While you wait, **you can usually stay in Germany**, even if your visa or residence permit expires.[^43]
+While you wait, **you can usually stay in Germany**, even if your visa or residence permit expires.[^43]
 
 ### If you have a [[National Visa]] or a [residence permit](/glossary/Aufenthaltstitel)
 

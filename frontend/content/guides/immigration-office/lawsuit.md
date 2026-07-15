@@ -62,9 +62,7 @@ In other cities, threatening to sue the *Ausländerbehörde* can make things wor
 
 ## Need help?
 
-{% tool "immigration-office-lawsuit" %}
-
-An [immigration lawyer](/guides/english-speaking-lawyers-berlin) or a [relocation consultant](/guides/relocation-agency-in-berlin) can answer your questions. You can also get free advice from some organisations.
+An [immigration lawyer](/guides/english-speaking-lawyers-berlin) or a [relocation consultant](/guides/relocation-agency-in-berlin) can answer your questions. You can also get free advice from some organisations. [LegalWeg](/out/legalweg) specialises in immigration office lawsuits. Immigration lawyers like [Fiona Macdonald](https://www.fmr-legal.de/) also have experience with suing the immigration office.
 
 **[Where to ask immigration questions ➞](/guides/help#immigration-questions)**
 
