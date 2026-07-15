@@ -335,8 +335,8 @@ class ResidencePermitFeedbackTestCase(FeedbackEndpointMixin, APITestCase):
     endpoint = "/api/forms/residence-permit-feedback"
     example_request = {
         "email": "contact@nicolasbouliane.com",
-        "application_date": "2023-01-01",
-        "first_response_date": "2023-02-02",
+        "application_date": date(2023, 1, 1),
+        "first_response_date": date(2024, 2, 2),
         "appointment_date": None,
         "pick_up_date": None,
         "department": "E2",
@@ -348,8 +348,8 @@ class ResidencePermitFeedbackTestCase(FeedbackEndpointMixin, APITestCase):
         # Filter the list with querystring params
         e2_pr = {
             "email": "contact@nicolasbouliane.com",
-            "application_date": "2023-01-01",
-            "first_response_date": "2023-02-02",
+            "application_date": date(2023, 1, 1),
+            "first_response_date": date(2024, 2, 2),
             "appointment_date": None,
             "pick_up_date": None,
             "department": "E2",
@@ -358,8 +358,8 @@ class ResidencePermitFeedbackTestCase(FeedbackEndpointMixin, APITestCase):
         }
         b1_b2_b3_b4_bc = {
             "email": "contact@nicolasbouliane.com",
-            "application_date": "2023-01-01",
-            "first_response_date": "2023-02-02",
+            "application_date": date(2023, 1, 1),
+            "first_response_date": date(2024, 2, 2),
             "appointment_date": None,
             "pick_up_date": None,
             "department": "B1_B2_B3_B4",
@@ -368,8 +368,8 @@ class ResidencePermitFeedbackTestCase(FeedbackEndpointMixin, APITestCase):
         }
         b1_b2_b3_b4_pr = {
             "email": "contact@nicolasbouliane.com",
-            "application_date": "2023-01-01",
-            "first_response_date": "2023-02-02",
+            "application_date": date(2023, 1, 1),
+            "first_response_date": date(2024, 2, 2),
             "appointment_date": None,
             "pick_up_date": None,
             "department": "B1_B2_B3_B4",
@@ -443,7 +443,7 @@ class ResidencePermitFeedbackTestCase(FeedbackEndpointMixin, APITestCase):
 
     def test_schedule_feedback_email_only_pickup_left(self):
         request = copy(self.example_request)
-        request["appointment_date"] = "2023-03-03"
+        request["appointment_date"] = "2024-03-03"
         response = self.client.post(self.endpoint, request, format="json")
         new_object = self.model.objects.get(modification_key=response.json()["modification_key"])
         reminders = list(new_object.feedback_reminders.all())
@@ -456,8 +456,8 @@ class ResidencePermitFeedbackTestCase(FeedbackEndpointMixin, APITestCase):
 
     def test_no_feedback_email_if_feedback_complete(self):
         request = copy(self.example_request)
-        request["appointment_date"] = "2023-03-03"
-        request["pick_up_date"] = "2023-04-04"
+        request["appointment_date"] = "2024-03-03"
+        request["pick_up_date"] = "2024-04-04"
         response = self.client.post(self.endpoint, request, format="json")
         new_object = self.model.objects.get(modification_key=response.json()["modification_key"])
         self.assertEqual(new_object.feedback_reminders.count(), 0)
@@ -479,6 +479,76 @@ class ResidencePermitFeedbackTestCase(FeedbackEndpointMixin, APITestCase):
             notification.delivery_date.replace(microsecond=0),
             notification.creation_date.replace(microsecond=0),
         )
+
+    def test_lawsuit_notification_scheduled(self):
+        application_date = date.today()
+        request = {
+            **self.example_request,
+            "application_date": application_date,
+            "first_response_date": application_date,
+        }
+        response = self.client.post(self.endpoint, request, format="json")
+        new_object = self.model.objects.get(modification_key=response.json()["modification_key"])
+        recommendations = list(new_object.lawsuit_notifications.all())
+        self.assertEqual(len(recommendations), 1)
+        self.assertEqual(recommendations[0].recipients, [request["email"]])
+        self.assertEqual(
+            timezone.localdate(recommendations[0].delivery_date), application_date + relativedelta(months=6)
+        )
+
+    def test_lawsuit_notification_scheduled_for_permanent_residence(self):
+        application_date = date.today()
+        request = {
+            **self.example_request,
+            "application_date": application_date,
+            "first_response_date": application_date,
+            "residence_permit_type": "PERMANENT_RESIDENCE",
+        }
+        response = self.client.post(self.endpoint, request, format="json")
+        new_object = self.model.objects.get(modification_key=response.json()["modification_key"])
+        recommendations = list(new_object.lawsuit_notifications.all())
+        self.assertEqual(len(recommendations), 1)
+        self.assertEqual(
+            timezone.localdate(recommendations[0].delivery_date), application_date + relativedelta(months=9)
+        )
+
+    def test_no_lawsuit_notification_if_appointment_date(self):
+        application_date = date.today()
+        request = {
+            **self.example_request,
+            "application_date": application_date,
+            "first_response_date": application_date,
+            "appointment_date": application_date,
+        }
+        response = self.client.post(self.endpoint, request, format="json")
+        new_object = self.model.objects.get(modification_key=response.json()["modification_key"])
+        self.assertEqual(new_object.lawsuit_notifications.count(), 0)
+
+    def test_no_lawsuit_notification_if_delivery_in_past(self):
+        application_date = date.today() - relativedelta(months=6, days=1)
+        request = {
+            **self.example_request,
+            "application_date": application_date,
+            "first_response_date": application_date,
+        }
+        response = self.client.post(self.endpoint, request, format="json")
+        new_object = self.model.objects.get(modification_key=response.json()["modification_key"])
+        self.assertEqual(new_object.lawsuit_notifications.count(), 0)
+
+    def test_lawsuit_notification_deleted_when_appointment_date_set(self):
+        application_date = date.today()
+        request = {
+            **self.example_request,
+            "application_date": application_date,
+            "first_response_date": application_date,
+        }
+        response = self.client.post(self.endpoint, request, format="json")
+        new_object = self.model.objects.get(modification_key=response.json()["modification_key"])
+        self.assertEqual(new_object.lawsuit_notifications.count(), 1)
+
+        updated_request = {**request, "appointment_date": application_date}
+        self.client.put(f"{self.endpoint}/{new_object.modification_key}", updated_request, format="json")
+        self.assertEqual(new_object.lawsuit_notifications.count(), 0)
 
     def test_stats_fewer_rows(self):
         date_start = date.today()
@@ -645,8 +715,8 @@ class CitizenshipFeedbackTestCase(FeedbackEndpointMixin, APITestCase):
     endpoint = "/api/forms/citizenship-feedback"
     example_request = {
         "email": "contact@nicolasbouliane.com",
-        "application_date": "2023-01-01",
-        "first_response_date": "2023-02-02",
+        "application_date": date(2023, 1, 1),
+        "first_response_date": date(2024, 2, 2),
         "appointment_date": None,
         "department": "S2",
         "notes": "Just some notes",
@@ -656,24 +726,24 @@ class CitizenshipFeedbackTestCase(FeedbackEndpointMixin, APITestCase):
         # Filter the list with querystring params
         s1_citizenship = {
             "email": "contact@nicolasbouliane.com",
-            "application_date": "2023-01-01",
-            "first_response_date": "2023-02-02",
+            "application_date": date(2023, 1, 1),
+            "first_response_date": date(2024, 2, 2),
             "appointment_date": None,
             "department": "S1",
             "notes": "Just some notes",
         }
         s1_citizenship_2 = {
             "email": "contact@nicolasbouliane.com",
-            "application_date": "2023-01-01",
-            "first_response_date": "2023-02-02",
+            "application_date": date(2023, 1, 1),
+            "first_response_date": date(2024, 2, 2),
             "appointment_date": None,
             "department": "S1",
             "notes": "Just some notes",
         }
         s3_citizenship = {
             "email": "contact@nicolasbouliane.com",
-            "application_date": "2023-01-01",
-            "first_response_date": "2023-02-02",
+            "application_date": date(2023, 1, 1),
+            "first_response_date": date(2024, 2, 2),
             "appointment_date": None,
             "department": "S3",
             "notes": "Just some notes",
@@ -721,7 +791,7 @@ class CitizenshipFeedbackTestCase(FeedbackEndpointMixin, APITestCase):
 
     def test_no_feedback_email_if_feedback_complete(self):
         request = copy(self.example_request)
-        request["appointment_date"] = "2023-03-03"
+        request["appointment_date"] = "2024-03-03"
         response = self.client.post(self.endpoint, request, format="json")
         new_object = self.model.objects.get(modification_key=response.json()["modification_key"])
         self.assertEqual(new_object.feedback_reminders.count(), 0)
@@ -743,6 +813,60 @@ class CitizenshipFeedbackTestCase(FeedbackEndpointMixin, APITestCase):
             notification.delivery_date.replace(microsecond=0),
             notification.creation_date.replace(microsecond=0),
         )
+
+    def test_lawsuit_notification_scheduled(self):
+        application_date = date.today()
+        request = {
+            **self.example_request,
+            "application_date": application_date,
+            "first_response_date": application_date,
+        }
+        response = self.client.post(self.endpoint, request, format="json")
+        new_object = self.model.objects.get(modification_key=response.json()["modification_key"])
+        recommendations = list(new_object.lawsuit_notifications.all())
+        self.assertEqual(len(recommendations), 1)
+        self.assertEqual(recommendations[0].recipients, [request["email"]])
+        self.assertEqual(
+            timezone.localdate(recommendations[0].delivery_date), application_date + relativedelta(months=12)
+        )
+
+    def test_no_lawsuit_notification_if_appointment_date(self):
+        application_date = date.today()
+        request = {
+            **self.example_request,
+            "application_date": application_date,
+            "first_response_date": application_date,
+            "appointment_date": application_date,
+        }
+        response = self.client.post(self.endpoint, request, format="json")
+        new_object = self.model.objects.get(modification_key=response.json()["modification_key"])
+        self.assertEqual(new_object.lawsuit_notifications.count(), 0)
+
+    def test_no_lawsuit_notification_if_delivery_in_past(self):
+        application_date = date.today() - relativedelta(months=12, days=1)
+        request = {
+            **self.example_request,
+            "application_date": application_date,
+            "first_response_date": application_date,
+        }
+        response = self.client.post(self.endpoint, request, format="json")
+        new_object = self.model.objects.get(modification_key=response.json()["modification_key"])
+        self.assertEqual(new_object.lawsuit_notifications.count(), 0)
+
+    def test_lawsuit_notification_deleted_if_appointment_date(self):
+        application_date = date.today()
+        request = {
+            **self.example_request,
+            "application_date": application_date,
+            "first_response_date": application_date,
+        }
+        response = self.client.post(self.endpoint, request, format="json")
+        new_object = self.model.objects.get(modification_key=response.json()["modification_key"])
+        self.assertEqual(new_object.lawsuit_notifications.count(), 1)
+
+        updated_request = {**request, "appointment_date": application_date}
+        self.client.put(f"{self.endpoint}/{new_object.modification_key}", updated_request, format="json")
+        self.assertEqual(new_object.lawsuit_notifications.count(), 0)
 
     def test_stats_fewer_rows(self):
         date_start = date.today()

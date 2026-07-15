@@ -429,6 +429,7 @@ class ResidencePermitFeedback(MultiStageFeedback):
         Schedule feedback reminders in the future
         """
         self.feedback_reminders.all().delete()  # type: ignore
+        self.lawsuit_notifications.all().delete()  # type: ignore
 
         if self.email and self.pick_up_date:
             self.email = filler_email
@@ -441,6 +442,18 @@ class ResidencePermitFeedback(MultiStageFeedback):
             if not self.appointment_date:
                 ResidencePermitFeedbackNotification.objects.get_or_create(feedback=self)
                 self.feedback_reminders.create(delivery_date=timezone.now() + relativedelta(months=6))  # type: ignore
+
+                lawsuit_delivery_date = self.application_date + relativedelta(
+                    months=9 if self.residence_permit_type == ResidencePermitTypes.PERMANENT_RESIDENCE else 6
+                )
+                if lawsuit_delivery_date > date.today():
+                    self.lawsuit_notifications.create(  # type: ignore
+                        delivery_date=datetime.combine(
+                            lawsuit_delivery_date,
+                            datetime.min.time(),
+                            tzinfo=timezone.get_current_timezone(),
+                        )
+                    )
 
     def __str__(self):
         return f"{self.get_residence_permit_type_display()} ({self.get_department_display()})"  # type: ignore
@@ -468,6 +481,23 @@ class ResidencePermitFeedbackReminder(ScheduledMessage):
     feedback = models.ForeignKey(ResidencePermitFeedback, related_name="feedback_reminders", on_delete=models.CASCADE)
 
     subject = "Did you get your residence permit?"
+
+    @property
+    def recipients(self) -> list[str]:
+        return [
+            self.feedback.email,  # type: ignore
+        ]
+
+    class Meta(ScheduledMessage.Meta):
+        pass
+
+
+class ResidencePermitLawsuitNotification(ScheduledMessage):
+    feedback = models.ForeignKey(
+        ResidencePermitFeedback, related_name="lawsuit_notifications", on_delete=models.CASCADE
+    )
+
+    subject = "Are you still waiting for the immigration office?"
 
     @property
     def recipients(self) -> list[str]:
@@ -516,6 +546,7 @@ class CitizenshipFeedback(MultiStageFeedback):
         Schedule feedback reminders in the future
         """
         self.feedback_reminders.all().delete()  # type: ignore
+        self.lawsuit_notifications.all().delete()  # type: ignore
 
         if self.email and self.appointment_date:
             self.email = filler_email
@@ -526,6 +557,16 @@ class CitizenshipFeedback(MultiStageFeedback):
         if self.email and not self.appointment_date:
             CitizenshipFeedbackNotification.objects.get_or_create(feedback=self)
             self.feedback_reminders.create(delivery_date=timezone.now() + relativedelta(months=3))  # type: ignore
+
+            lawsuit_delivery_date = self.application_date + relativedelta(months=12)
+            if lawsuit_delivery_date > date.today():
+                self.lawsuit_notifications.create(  # type: ignore
+                    delivery_date=datetime.combine(
+                        lawsuit_delivery_date,
+                        datetime.min.time(),
+                        tzinfo=timezone.get_current_timezone(),
+                    )
+                )
 
     def __str__(self):
         return f"Citizenship ({self.get_department_display()})"  # type: ignore
@@ -551,6 +592,21 @@ class CitizenshipFeedbackReminder(ScheduledMessage):
     feedback = models.ForeignKey(CitizenshipFeedback, related_name="feedback_reminders", on_delete=models.CASCADE)
 
     subject = "Did you get your German citizenship?"
+
+    @property
+    def recipients(self) -> list[str]:
+        return [
+            self.feedback.email,  # type: ignore
+        ]
+
+    class Meta(ScheduledMessage.Meta):
+        pass
+
+
+class CitizenshipLawsuitNotification(ScheduledMessage):
+    feedback = models.ForeignKey(CitizenshipFeedback, related_name="lawsuit_notifications", on_delete=models.CASCADE)
+
+    subject = "Are you still waiting for the immigration office?"
 
     @property
     def recipients(self) -> list[str]:

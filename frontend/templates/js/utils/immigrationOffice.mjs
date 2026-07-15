@@ -2,11 +2,13 @@ import { monthsSince } from '/js/utils/date.mjs';
 
 
 export function monthsToWaitBeforeLawsuit(applicationType) {
+	// If you change this, update the content and the backend too
 	return { CITIZENSHIP: 12, PERMANENT_RESIDENCE: 9 }[applicationType] ?? 6;
 }
 
 export function canSueForInaction(applicationDate) {
 	// Whether it's legally allowed to sue (Untätigkeitsklage, §75 VwGO)
+	// If you change this, update the content and the backend too
 	return monthsSince(applicationDate) >= 3;
 }
 
