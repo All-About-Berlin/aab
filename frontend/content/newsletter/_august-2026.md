@@ -24,6 +24,10 @@ https://www.t-online.de/finanzen/ratgeber/beruf-karriere/id_101324840/minijobs-s
 
 ## What's new on All About Berlin
 
+### Podcast
+
+https://www.npr.org/2026/07/14/nx-s1-5891958/can-the-internet-survive-ai-summaries
+
 ### Other changes to All About Berlin
 
 ## What I learned this month
