@@ -479,7 +479,7 @@ export default {
 
 			<template v-if="stage === 'occupation' && !initialOccupation">
 				<template v-if="landingPage">
-					<h2>Find the right health insurance</h2>
+					<h2>Find the right German health insurance</h2>
 					<p v-if="mode === 'calculator'">Prices and options depend on what you do. What is your occupation?</p>
 					<template v-if="mode === 'question'">
 						<h3>What is your occupation?</h3>
