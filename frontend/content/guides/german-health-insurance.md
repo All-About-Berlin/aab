@@ -228,7 +228,7 @@ These options are valid for a [[National Visa]] application. You can use them to
     The *Basic* and *Profi* plans are valid for a [[National Visa]] application. The *Profi* plan is a better choice, because it covers some preventative care.[^46]
 - [April International](/out/april)
 - [Care Concept](/out/care-concept)
-- [Dr Walter](/out/dr-walter)
+- [Dr Walter EDUCARE24](/out/dr-walter-educare) and [PROVISIT](/out/dr-walter-provisit)
 - [Ottonova](/out/ottonova-expats)
 - [Mawista](/out/mawista-expats) - Not recommended. They often reject reimbursement claims.
 
