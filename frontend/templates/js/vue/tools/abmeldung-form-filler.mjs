@@ -461,13 +461,13 @@ export default {
 			</template>
 			<hr>
 			<div class="buttons bar">
-				<button v-if="stageIndex === 0" class="button primary" @click="stageIndex += 1">Start <i class="icon right" aria-hidden="true"></i></button>
-				<button v-if="stageIndex > 0" class="button" @click="previousStage"><i class="icon left" aria-hidden="true"></i> Go back</button>
+				<button v-if="stageIndex === 0" class="button primary next" @click="stageIndex += 1">Start</button>
+				<button v-if="stageIndex > 0" class="button previous" @click="previousStage">Go back</button>
 				<button v-if="stage === 'addPeople'" class="button" @click="addPerson"><i class="icon person" aria-hidden="true"></i> Add another person</button>
 				<button
 					v-if="stageIndex > 0 && stageIndex < stages.length - 2"
-					class="button primary"
-					@click="nextStage">Continue <i class="icon right" aria-hidden="true"></i></button>
+					class="button primary next"
+					@click="nextStage">Continue</button>
 				<button v-if="stageIndex === stages.length - 2" class="button primary" @click="nextStage">Finish</button>
 			</div>
 		</collapsible>

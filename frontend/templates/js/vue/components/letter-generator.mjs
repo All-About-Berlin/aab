@@ -54,8 +54,8 @@ export default {
 				<slot name="header"></slot>
 			</summary>
 			<div class="buttons bar no-print" v-if="stage === 'printPreview'">
-				<button class="button" @click="stage = 'edit'">
-					<i class="icon left" aria-hidden="true"></i> Customize
+				<button class="button previous" @click="stage = 'edit'">
+					Customize
 				</button>
 
 				<tabs
@@ -93,8 +93,8 @@ export default {
 			<template v-if="stage === 'start'">
 				<hr>
 				<div class="buttons bar no-print">
-					<button class="button primary" @click="stage = 'edit'" >
-						{{ printable ? "Customize and print" : "Customize" }} <i class="icon right" aria-hidden="true"></i>
+					<button class="button primary next" @click="stage = 'edit'" >
+						{{ printable ? "Customize and print" : "Customize" }}
 					</button>
 				</div>
 			</template>
@@ -105,14 +105,14 @@ export default {
 				<slot name="form" :language="language" :stage="stage"></slot>
 				<hr>
 				<div class="buttons bar no-print">
-					<button v-if="printable" class="button" @click="stage = 'start'">
-						<i class="icon left" aria-hidden="true"></i> Back
+					<button v-if="printable" class="button previous" @click="stage = 'start'">
+						Back
 					</button>
-					<button v-if="printable" class="button primary" @click="language = 'de'; stage = 'printPreview'">
-						Preview and print <i class="icon right" aria-hidden="true"></i>
+					<button v-if="printable" class="button primary next" @click="language = 'de'; stage = 'printPreview'">
+						Preview and print
 					</button>
-					<button v-if="!printable" class="button primary" @click="language = 'de'; stage = 'start'">
-						<i class="icon left" aria-hidden="true"></i> Preview
+					<button v-if="!printable" class="button primary previous" @click="language = 'de'; stage = 'start'">
+						Preview
 					</button>
 				</div>
 			</template>

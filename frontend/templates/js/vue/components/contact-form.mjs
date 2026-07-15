@@ -180,8 +180,8 @@ export default {
 				</div>
 				<hr>
 				<div class="buttons bar">
-					<button aria-label="Go back" class="button" @click="goToStart()">
-						<i class="icon left" aria-hidden="true"></i> <span class="no-mobile">Go back</span>
+					<button aria-label="Go back" class="button previous" @click="goToStart()">
+						<span class="no-mobile">Go back</span>
 					</button>
 					<a :href="whatsappUrl" class="button whatsapp" target="_blank">
 						<icon-whatsapp/>
@@ -194,8 +194,8 @@ export default {
 				<p><strong>Thank you!</strong> {{ recipientName }} got your message. You will get an email from <a :href="'mailto:' + recipientEmail">{{ recipientEmail }}</a> in the next 24 hours. If you don't get a response, check your spam folder.</p>
 				<hr>
 				<div class="buttons bar">
-					<button aria-label="Go back" class="button" @click="goToStart()">
-						<i class="icon left" aria-hidden="true"></i> Go back
+					<button aria-label="Go back" class="button previous" @click="goToStart()">
+						Go back
 					</button>
 				</div>
 			</template>
@@ -204,8 +204,8 @@ export default {
 				<p><strong>An error occurred</strong> while sending your message. If this keeps happening, <a target="_blank" href="/contact">contact me</a>.</p>
 				<hr>
 				<div class="buttons bar">
-					<button aria-label="Go back" class="button" @click="goToStart()">
-						<i class="icon left" aria-hidden="true"></i> Go back
+					<button aria-label="Go back" class="button previous" @click="goToStart()">
+						Go back
 					</button>
 				</div>
 			</template>

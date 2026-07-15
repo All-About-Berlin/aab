@@ -4,28 +4,19 @@
     @include box-clickable;
 
     color: var(--c-text)!important;
-    display: inline-block;
-    text-align: center;
-    white-space: nowrap;
 
-    .icon.left, .icon.right{
-        position: relative;
-        left: 0;
-        transition: left 0.2s;
-    }
+    // Aligns the .next/.internal-link arrow, centers the button text
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+
+    white-space: nowrap;
 
     svg{
         vertical-align: text-top;
         width: var(--l);
         height: var(--l);
-        margin-right: var(--xs);
-    }
-
-    &:not([disabled]):hover .icon.left{
-        left: calc(var(--xs) * -1);
-    }
-    &:not([disabled]):hover .icon.right{
-        left: var(--xs);
+        margin-right: var(--s);
     }
 
     &.primary:not([disabled]){

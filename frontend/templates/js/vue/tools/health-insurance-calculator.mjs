@@ -473,7 +473,7 @@ export default {
 				</ul>
 				<hr>
 				<div class="buttons bar">
-					<button :data-occupation="initialOccupation" class="button primary" @click="selectOccupation(initialOccupation)">Find health insurance <i class="icon right"></i></button>
+					<button :data-occupation="initialOccupation" class="button primary next" @click="selectOccupation(initialOccupation)">Find health insurance</button>
 				</div>
 			</template>
 
@@ -528,11 +528,11 @@ export default {
 				<template v-if="mode === 'question'">
 					<hr>
 					<div class="buttons bar">
-						<button aria-label="Go back" class="button" @click="previousStage()">
-							<i class="icon left" aria-hidden="true"></i> <span class="no-mobile">Go back</span>
+						<button aria-label="Go back" class="button previous" @click="previousStage()">
+							<span class="no-mobile">Go back</span>
 						</button>
-						<button class="button" @click="occupation = null; createCase()">
-							Skip the questions <i class="icon right" aria-hidden="true"></i>
+						<button class="button next" @click="occupation = null; createCase()">
+							Skip the questions
 						</button>
 					</div>
 				</template>
@@ -639,17 +639,17 @@ export default {
 				<hr>
 				<div class="buttons bar">
 					<template v-if="mode === 'calculator'">
-						<button aria-label="Go back" class="button" @click="goToStart()">
-							<i class="icon left" aria-hidden="true"></i> <span class="no-mobile">Go back</span>
+						<button aria-label="Go back" class="button previous" @click="goToStart()">
+							<span class="no-mobile">Go back</span>
 						</button>
-						<button class="button primary" @click="nextStage()">
-							See options <i class="icon right" aria-hidden="true"></i>
+						<button class="button primary next" @click="nextStage()">
+							See options
 						</button>
 					</template>
 
 					<template v-if="mode === 'question'">
-						<button aria-label="Go back" class="button" @click="goToStart()">
-							<i class="icon left" aria-hidden="true"></i> <span :class="{'no-mobile': !!contactMethod}">Go back</span>
+						<button aria-label="Go back" class="button previous" @click="goToStart()">
+							<span :class="{'no-mobile': !!contactMethod}">Go back</span>
 						</button>
 						<button v-if="contactMethod === 'EMAIL'" class="button primary" @click="createCase" :disabled="isLoading" :class="{loading: isLoading}">
 							Ask Seamus
@@ -706,8 +706,8 @@ export default {
 			</ul>
 
 			<div class="buttons bar" v-if="stage === 'options' || stage.endsWith('Options')">
-				<button aria-label="Go back" class="button" @click="stage === 'options' ? previousStage() : goToStage('options')">
-					<i class="icon left" aria-hidden="true"></i> <span :class="{'no-mobile': stage === 'privateOptions'}">Go back</span>
+				<button aria-label="Go back" class="button previous" @click="stage === 'options' ? previousStage() : goToStage('options')">
+					<span :class="{'no-mobile': stage === 'privateOptions'}">Go back</span>
 				</button>
 			</div>
 
@@ -766,11 +766,11 @@ export default {
 				<template v-if="contactMethod || mode === 'calculator'">
 					<hr>
 					<div class="buttons bar">
-						<button v-if="stageIndex > 0" aria-label="Go back" class="button" @click="goBackFromAskABroker()">
-							<i class="icon left" aria-hidden="true"></i> <span class="no-mobile">Go back</span>
+						<button v-if="stageIndex > 0" aria-label="Go back" class="button previous" @click="goBackFromAskABroker()">
+							<span class="no-mobile">Go back</span>
 						</button>
-						<button v-if="mode === 'question'" class="button primary" @click="nextStage()">
-							Continue <i class="icon right" aria-hidden="true"></i>
+						<button v-if="mode === 'question'" class="button primary next" @click="nextStage()">
+							Continue
 						</button>
 						<button v-if="mode === 'calculator' && contactMethod === 'EMAIL'" class="button primary" @click="createCase" :disabled="isLoading" :class="{loading: isLoading}">
 							Ask Seamus
@@ -798,8 +798,8 @@ export default {
 				</div>
 				<hr>
 				<div class="buttons bar">
-					<button aria-label="Go back" class="button" @click="goToStart()">
-						<i class="icon left" aria-hidden="true"></i> <span class="no-mobile">Go back</span>
+					<button aria-label="Go back" class="button previous" @click="goToStart()">
+						<span class="no-mobile">Go back</span>
 					</button>
 					<a :href="whatsappUrl" class="button whatsapp" target="_blank">
 						<icon-whatsapp/>
@@ -812,8 +812,8 @@ export default {
 				<p><strong>Thank you!</strong> Seamus got your message. You will get an email from <a :href="'mailto:' + recipientEmail">{{ recipientEmail }}</a> in the next 24 hours. If you don't get a response, check your spam folder.</p>
 				<hr>
 				<div class="buttons bar">
-					<button aria-label="Go back" class="button" @click="goToStart()">
-						<i class="icon left" aria-hidden="true"></i> Go back
+					<button aria-label="Go back" class="button previous" @click="goToStart()">
+						Go back
 					</button>
 				</div>
 			</template>
@@ -822,8 +822,8 @@ export default {
 				<p><strong>An error occurred</strong> while sending your question. If this keeps happening, <a target="_blank" href="/contact">contact me</a>.</p>
 				<hr>
 				<div class="buttons bar">
-					<button aria-label="Go back" class="button" @click="goToStart()">
-						<i class="icon left" aria-hidden="true"></i> Go back
+					<button aria-label="Go back" class="button previous" @click="goToStart()">
+						Go back
 					</button>
 				</div>
 			</template>

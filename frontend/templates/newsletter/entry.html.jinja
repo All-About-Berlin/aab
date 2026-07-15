@@ -43,10 +43,10 @@
 			{% for e in get_entries('newsletter', sort_by='date_created', reverse=True) %}
 				{% if e.entry_uri == entry.entry_uri %}
 					{% if not loop.first %}
-						<a rel="prev" href="{{ loop.previtem.url }}"><i class="icon left"></i> {{ loop.previtem.title }}</a>
+						<a class="previous" rel="prev" href="{{ loop.previtem.url }}">{{ loop.previtem.title }}</a>
 					{% endif %}
 					{% if not loop.last %}
-						<a rel="next" href="{{ loop.nextitem.url }}">{{ loop.nextitem.title }} <i class="icon right"></i></a>
+						<a class="next" rel="next" href="{{ loop.nextitem.url }}">{{ loop.nextitem.title }}</a>
 					{% endif %}
 				{% endif %}
 			{% endfor %}

@@ -222,7 +222,7 @@ export default {
 					</div>
 					<hr>
 					<div class="buttons bar">
-						<button v-if="embedded" class="button" @click="$emit('cancel')"><i class="icon left" aria-hidden="true"></i> Go back</button>
+						<button v-if="embedded" class="button previous" @click="$emit('cancel')">Go back</button>
 						<button class="button primary" @click="submit" :disabled="isLoading" :class="{loading: isLoading}">Submit</button>
 					</div>
 				</template>
@@ -245,8 +245,8 @@ export default {
 				<p><strong>An error occurred.</strong> If this keeps happening, <a target="_blank" href="/contact">contact me</a>.</p>
 			</template>
 			<div class="buttons bar" v-if="stage === 'thank-you' || stage === 'error'">
-				<button class="button" v-if="embedded" @click="$emit('cancel')"><i class="icon left" aria-hidden="true"></i> Go back</button>
-				<button class="button" v-if="!embedded" @click="stage = 'form'"><i class="icon left" aria-hidden="true"></i> Go back</button>
+				<button class="button previous" v-if="embedded" @click="$emit('cancel')">Go back</button>
+				<button class="button previous" v-if="!embedded" @click="stage = 'form'">Go back</button>
 			</div>
 		</component>
 	`,

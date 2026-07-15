@@ -491,7 +491,7 @@ export default {
 			<template v-if="showRestOfForm && stage !== 'finish'">
 				<hr>
 				<div class="buttons bar" v-if="showRestOfForm && stage !== 'finish'">
-					<button v-if="stage === 'email' || stage === 'error'" class="button" @click="goToStage('start')"><i class="icon left" aria-hidden="true"></i> Go back</button>
+					<button v-if="stage === 'email' || stage === 'error'" class="button previous" @click="goToStage('start')">Go back</button>
 					<button
 						class="button primary"
 						v-if="stage === 'start'"

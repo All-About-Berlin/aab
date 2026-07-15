@@ -141,7 +141,7 @@ export default {
 			<input type="text" name="username" value="" autocomplete="off" hidden role="presentation" required/>
 			<hr>
 			<div class="buttons bar">
-				<button class="button primary no-print" @click="submitForm" :disabled="isLoading" :class="{loading: isLoading}">Send question <i class="icon right" aria-hidden="true"></i></button>
+				<button class="button primary no-print next" @click="submitForm" :disabled="isLoading" :class="{loading: isLoading}">Send question</button>
 			</div>
 		</template>
 		<template v-if="stage === 'thank-you'">

@@ -136,8 +136,8 @@ export default {
 				</div>
 				<hr>
 				<div class="buttons bar">
-					<button class="button primary" @click="nextStage">
-						Continue <i class="icon right" aria-hidden="true"></i>
+					<button class="button primary next" @click="nextStage">
+						Continue
 					</button>
 				</div>
 			</template>
@@ -197,11 +197,11 @@ export default {
 				</div>
 				<hr>
 				<div class="buttons bar">
-					<button class="button" @click="previousStage">
-						<i class="icon left" aria-hidden="true"></i> Back
+					<button class="button previous" @click="previousStage">
+						Back
 					</button>
-					<button class="button primary" @click="nextStage">
-						Continue <i class="icon right" aria-hidden="true"></i>
+					<button class="button primary next" @click="nextStage">
+						Continue
 					</button>
 				</div>
 			</template>
@@ -225,11 +225,11 @@ export default {
 				</div>
 				<hr>
 				<div class="buttons bar">
-					<button class="button" @click="previousStage">
-						<i class="icon left" aria-hidden="true"></i> Back
+					<button class="button previous" @click="previousStage">
+						Back
 					</button>
-					<button class="button primary" @click="submitForm" :disabled="isLoading" :class="{loading: isLoading}">
-						Send <i class="icon right" aria-hidden="true"></i>
+					<button class="button primary next" @click="submitForm" :disabled="isLoading" :class="{loading: isLoading}">
+						Send
 					</button>
 				</div>
 			</template>
@@ -238,8 +238,8 @@ export default {
 				<p><strong>Message sent!</strong> Artjom will review your case and contact you soon. You will get an email from <a :href="'mailto:' + recipientEmail">{{ recipientEmail }}</a> within 1 business day. If you don't get a response, check your spam folder.</p>
 				<hr>
 				<div class="buttons bar">
-					<button aria-label="Go back" class="button" @click="goToStart()">
-						<i class="icon left" aria-hidden="true"></i> Go back
+					<button aria-label="Go back" class="button previous" @click="goToStart()">
+						Go back
 					</button>
 				</div>
 			</template>
@@ -248,8 +248,8 @@ export default {
 				<p><strong>An error occurred</strong> while sending your request. If this keeps happening, <a target="_blank" href="/contact">contact me</a>.</p>
 				<hr>
 				<div class="buttons bar">
-					<button aria-label="Go back" class="button" @click="goToStart()">
-						<i class="icon left" aria-hidden="true"></i> Go back
+					<button aria-label="Go back" class="button previous" @click="goToStart()">
+						Go back
 					</button>
 				</div>
 			</template>

@@ -392,8 +392,8 @@ export default {
 							<hr>
 							<template v-if="hasFlag('eligible')">
 								<div class="buttons bar">
-									<button class="button primary" target="_blank" @click="stage = 'partnerSelection'">
-										Apply for a refund <i class="icon right" aria-hidden="true"></i>
+									<button class="button primary next" target="_blank" @click="stage = 'partnerSelection'">
+										Apply for a refund
 									</button>
 								</div>
 							</template>
@@ -443,7 +443,7 @@ export default {
 					</li>
 				</ul>
 				<div class="buttons bar">
-					<button class="button" @click="email = '';stage = 'start'"><i class="icon left" aria-hidden="true"></i> Back to calculator</button>
+					<button class="button previous" @click="email = '';stage = 'start'">Back to calculator</button>
 				</div>
 			</template>
 			<template v-if="stage === 'partnerSelection'">
@@ -479,7 +479,7 @@ export default {
 					</div>
 					<hr>
 					<div class="buttons bar">
-						<button class="button" @click="stage = 'start'"><i class="icon left" aria-hidden="true"></i> Back</button>
+						<button class="button previous" @click="stage = 'start'">Back</button>
 						<button class="button primary" @click="stage = 'contactInfo'">Request a refund</button>
 					</div>
 				</template>
@@ -503,7 +503,7 @@ export default {
 				</div>
 				<hr>
 				<div class="buttons bar">
-					<button class="button" @click="stage = 'partnerSelection'"><i class="icon left" aria-hidden="true"></i> Back</button>
+					<button class="button previous" @click="stage = 'partnerSelection'">Back</button>
 					<button class="button primary" target="_blank" @click="sendRefundRequest" :disabled="isLoading" :class="{loading: isLoading}">Send request</button>
 				</div>
 			</template>
@@ -511,14 +511,14 @@ export default {
 				<p><strong>Request sent!</strong> Your pension refund request was sent to {{ selectedPartner.name }}. They will contact you soon.</p>
 				<hr>
 				<div class="buttons bar">
-					<button class="button" @click="stage = 'start'"><i class="icon left" aria-hidden="true"></i> Back</button>
+					<button class="button previous" @click="stage = 'start'">Back</button>
 				</div>
 			</template>
 			<template v-if="stage === 'error'">
 				<p><strong>An error occurred.</strong> If this keeps happening, <a target="_blank" href="/contact">contact me</a>.</p>
 				<hr>
 				<div class="buttons bar">
-					<button class="button" @click="email = '';stage = 'start'"><i class="icon left" aria-hidden="true"></i> Back to calculator</button>
+					<button class="button previous" @click="email = '';stage = 'start'">Back to calculator</button>
 				</div>
 			</template>
 		</collapsible>
