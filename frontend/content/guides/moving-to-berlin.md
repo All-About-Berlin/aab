@@ -7,6 +7,8 @@ date_created: 2018-06-05
 
 This guide explains the steps for moving to Berlin from another country.
 
+To visit Berlin as a tourist, read my [Berlin travel guide](/guides/visit-berlin).
+
 {% tableOfContents %}
 
 ![Move to berlin boxes luggage](/illustrations/move-to-berlin-boxes-luggage.png)
