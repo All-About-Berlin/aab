@@ -62,7 +62,7 @@ Other types of *Fiktionsbescheinigung* do not let you travel outside of Germany.
 
 **[Fiktionsbescheinigung types ➞](#fiktionsbescheinigung-types)**
 
-You might still have problems when you return to Germany. Airline employees and foreign border agents might not recognise your *Fiktionsbescheinigung*.[^16] If you can, take a direct flight to Germany, and only deal with the German border police. They are better informed.
+You might still have problems when you return to Germany. Airline employees and foreign border agents might not recognise your *Fiktionsbescheinigung*.[^16] It's rare, but it happens. If you can, fly directly to Germany. The German border police is better informed.
 
 You must return to Germany before your *Fiktionsbescheinigung* expires. If it expires in less than 1 week, some airlines will not let you fly to Germany.[^10]
 
@@ -114,7 +114,7 @@ Your *Fiktionsbescheinigung* is valid until your residence permit application is
 [^12]: Immigration lawyer (December 2023), Bundespolizei (December 2023), Bundespolizei (November 2023), [Bundespolizei](https://www.info4alien.de/cgi-bin/forum/YaBB.cgi?num=1663089267/30#:~:text=dass%20ebenfalls%20bei%20jeder%20einreise%20bis%20zu%2090%20tage%20visumfreier%20aufenthalt) (October 2022), [§ 41 Abs. 1 and 3 AufenthV](https://www.buzer.de/41_AufenthV.htm), [Facebook](https://www.facebook.com/groups/226825394858771/posts/1197219931152641/) (October 2022), an American reader (January 2024), my own experience (April 2024), Bundespolizei (November 2025)
 [^14]: [18 B 8/09](https://openjur.de/u/135297.html) (2011)
 [^15]: Fiona Macdonald, [immigration lawyer](https://www.fmr-legal.de/) (December 2023), [Facebook](https://www.facebook.com/groups/226825394858771/posts/1194366428104658/) (October 2022), [§ 81 Abs. 5 AufenthG](https://www.buzer.de/81_AufenthG.htm), confirmed by a relocation consultant (October 2023), [M 25 E 16.2114](https://openjur.de/u/2287211.html#:~:text=eine%20bescheinigung%20uber%20die%20wirkungen%20seiner%20antragstellung) (Munich, 2020), [18 B 850/19](https://openjur.de/u/2192644.html#:~:text=anspruch%20auf%20ausstellung%20einer%20fiktionsbescheinigung) (NRW, 2019), [Facebook](https://www.facebook.com/groups/226825394858771/posts/1414261236115175/?comment_id=1414434422764523) (November 2023), [Facebook](https://www.facebook.com/groups/226825394858771/posts/1398493864358579/?comment_id=1400502304157735) (October 2023)
-[^16]: [Facebook](https://www.facebook.com/groups/226825394858771/posts/1194366428104658/) (October 2022), [Twitter](https://twitter.com/oishik_dasgupta/status/1733836288111923315) (December 2023)
+[^16]: [Facebook](https://www.facebook.com/groups/226825394858771/posts/1194366428104658/) (October 2022), [Twitter](https://twitter.com/oishik_dasgupta/status/1733836288111923315) (December 2023), embassy employee (July 2026), [Mirko Vorreuter](https://visaguard.berlin) (July 2026)
 [^17]: [Twitter](https://twitter.com/mgill25/status/1715331128377086036) (December 2023), [Twitter](https://twitter.com/flyaway_aoi/status/1712789114427240570) (October 2023), [Facebook](https://www.facebook.com/groups/germanfreelancevisa/posts/1671544263314270/) (August 2023)
 [^18]: Email from the Bundespolizei (December 2023)
 [^19]: You pay the €500 to €1500 for the lawyer, and €500 for the court fee. If you win, you get around €1000 back. Source: [Mirko Vorreuter](https://visaguard.berlin) (October 2025)
