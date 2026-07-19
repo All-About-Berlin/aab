@@ -5,7 +5,7 @@ description: If you are visiting Berlin, these are the things you should see and
 date_created: 2017-09-15
 ---
 
-This guide is for tourists who want to visit Berlin. If you want to move to Berlin, read my [moving to Berlin guide](/guides/moving-to-berlin).
+This guide helps you prepare your Berlin visit. To move to Berlin, read my [moving to Berlin guide](/guides/moving-to-berlin).
 
 {% tableOfContents %}
 
@@ -30,8 +30,8 @@ Fly to the [Berlin Brandenburg airport](https://goo.gl/maps/iERwxpTUr7EnYFnKA). 
 
 To get from the airport to the city, you can...
 
-- **Use [public transit](/guides/public-transit)**{{ RECOMMENDED }}  
-    Trains go from BER airport to Berlin in 30 to 45 minutes. Use [Google Maps](https://www.google.com/maps/place/BER+Airport+-+Terminal+1-2/@52.3647378,13.5089418,16.66z) or [BVG Fahrinfo](https://www.bvg.de/en/subscriptions-and-tickets/all-apps/fahrinfo-app) to get directions. The airport is in zone C, so you must buy an ABC ticket. The ticket costs €{{BVG_ABC_TICKET|cur}}. You can buy tickets at the airport, near the train platform. You can pay with cash or a credit card.[^2] [Validate](/guides/public-transit#validate-your-ticket) your ticket before you get on the train. - [How to use public transit](/guides/public-transit)
+- **[Use public transit](/guides/public-transit)**{{ RECOMMENDED }}  
+    Take a train from the airport to the city. It takes 30 to 45 minutes. Use [Google Maps](https://www.google.com/maps/place/BER+Airport+-+Terminal+1-2/@52.3647378,13.5089418,16.66z) or [BVG Fahrinfo](https://www.bvg.de/en/subscriptions-and-tickets/all-apps/fahrinfo-app) for directions. The airport is in [zone C](/guides/public-transit#tariff-zones), so you must buy an ABC ticket. It costs €{{BVG_ABC_TICKET|cur}}. [Buy a train ticket](/guides/public-transit#buy-a-ticket) on the train platform, or with the BVG app.[^2] [Validate](/guides/public-transit#validate-your-ticket) your ticket before you get on the train.
 - **Take a taxi**  
     There are taxis outside the BER airport. A ride from the airport to the city centre costs at least €50.[^3] You can also book a taxi with [Uber](https://www.uber.com/global/en/airports/ber/) or [FreeNow](https://www.free-now.com/airports/). You can pay with cash or a credit card.[^4]
 - **Rent a car**  
