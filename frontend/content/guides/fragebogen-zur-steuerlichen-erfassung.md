@@ -13,7 +13,7 @@ When you fill this form, you get:
 - a VAT number (*[[Umsatzsteuernummer]]*), if you charge VAT
 - an entry in the trade register (*[[Handelsregister]]*), [if you need one](/guides/handelsregisternummer-germany#who-needs-a-handelsregister-entry)
 
-Since 2021, there is no paper form. You must fill this form online.[^0]
+Since 2021, there is no paper form. You must fill this form online in [[ELSTER]].[^0] There [tools that make it easier](#different-ways-to-register-your-business)
 
 {% tableOfContents %}
 
@@ -24,7 +24,7 @@ There are 3 ways to register your business with the *[[Finanzamt]]*:
 - **Online with [[ELSTER]]** (in German)  
     This is the official way. [Create an ELSTER account](/guides/elster-account) and fill the *[[Fragebogen zur steuerlichen Erfassung]]*. This is what I describe in this guide. It's a bit complicated, and it's all in German, but you can do it yourself. It's free.
 - **Online with [Sorted](/out/sorted-fragebogen)** (in English){{ RECOMMENDED }}  
-    Sorted built a [tool to register your business](/out/sorted-fragebogen). It's faster and easier than the official form, and it's in English. I tried it myself, and I think it's great. It's free.
+    Sorted built a free [tool to register your business](/out/sorted-fragebogen). It's faster, it's easier, and it's in English. I tried it myself.
 - **With a [tax advisor](/guides/english-speaking-steuerberater-berlin)**  
     Your tax advisor (*[[Steuerberater]]*) can register your business for you. My tax advisor did it in 5 minutes. This is the safest and easiest way, but it's hard to find a tax advisor. Use my [list of English-speaking tax advisors](/guides/english-speaking-steuerberater-berlin).
 
@@ -357,7 +357,11 @@ Information about the previous business form. You can leave this section empty b
 **Steuernummer Vortätigkeit** - Tax number of previous activity  
 If you chose "Ja", enter the tax number of that previous operation.
 
-### Section 13: Angaben zur Festsetzung der Vorauszahlungen
+### Section 13: Konzernzugehörigkeit
+
+If your new business belongs to another corporation or enterprise, enter their information here. For most businesses, you should skip this step.
+
+### Section 14: Angaben zur Festsetzung der Vorauszahlungen
 
 In this section, you enter your expected profit for your first 2 years in business. You must enter the expected *profit* (not *revenue*[^6]) from all your jobs, businesses and investments. This helps the *Finanzamt* calculate your tax prepayments.
 

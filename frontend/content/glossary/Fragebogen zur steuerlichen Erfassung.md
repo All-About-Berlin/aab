@@ -22,7 +22,7 @@ When you fill this form, you get...
 - a VAT number (*[[Umsatzsteuernummer]]*), if you want one
 - an entry in the trade register (*[[Handelsregister]]*), [if you need one](/guides/handelsregisternummer-germany#who-needs-a-handelsregister-entry)
 
-Since 2021, there is no paper form. You must fill this form online.[^0] A [tax advisor](/glossary/Steuerberater) can do it you. Sorted's [business registration tool](/out/sorted-fragebogen) also makes it easier.
+Since 2021, there is no paper form. You must fill this form online in [[ELSTER]].[^0] A [tax advisor](/glossary/Steuerberater) can do it you. Sorted's [business registration tool](/out/sorted-fragebogen) also makes it easier.
 
 **[How to fill this form ➞](/guides/fragebogen-zur-steuerlichen-erfassung)**
 
