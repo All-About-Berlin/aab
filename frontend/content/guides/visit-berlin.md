@@ -111,7 +111,7 @@ You don't need to rent a car in Berlin. It's easier to use public transit. If yo
 
 ## What to see and do in Berlin
 
-Start with [visitBerlin.de](https://www.visitberlin.de/en), [WikiVoyage](https://en.wikivoyage.org/wiki/Berlin) and [Lonely Planet](https://www.amazon.com/Lonely-Planet-Berlin-Travel-Guide/dp/1786572257/ref=as_li_ss_tl?ie=UTF8&qid=1533201606&sr=8-1&keywords=lonely+planet+berlin&linkCode=sl1&tag=kickawishl-20&linkId=0d121d328aea2481af56b20ad0bd7294&language=en_US). To see what's happening in Berlin, check [tipBerlin](https://www.tip-berlin.de/) and [Mit Vergnügen](https://mitvergnuegen.com/) (in German).
+Start with [visitBerlin.de](https://www.visitberlin.de/en), [WikiVoyage](https://en.wikivoyage.org/wiki/Berlin) and [Lonely Planet](https://www.amazon.com/Lonely-Planet-Berlin-Travel-Guide/dp/1786572257/ref=as_li_ss_tl?ie=UTF8&qid=1533201606&sr=8-1&keywords=lonely+planet+berlin&linkCode=sl1&tag=kickawishl-20&linkId=0d121d328aea2481af56b20ad0bd7294&language=en_US). To know what's happening in Berlin, check [tipBerlin](https://www.tip-berlin.de/) and [Mit Vergnügen](https://mitvergnuegen.com/) (in German). I also list events in my [monthly newsletter](/newsletter).
 
 ### Main attractions
 
@@ -204,7 +204,7 @@ Find club events on [Resident Advisor](https://ra.co/guide/de/berlin), or follow
 ### Typical Berlin street food
 
 - **[Currywurst](https://en.wikipedia.org/wiki/Currywurst)**  
-    A pork sausage with a curry and ketchup sauce. It's usually served with fries (*mit Pommes*) in a cardboard plate. [Curry 36](https://www.google.com/maps/search/Curry+36/@52.540513,13.3772295,13z/) and [Konnopke's Imbiss](https://maps.app.goo.gl/my1KakAy5AnCKgJo9) are two famous options.
+    A pork sausage with a curry and ketchup sauce. It's usually served with fries (*mit Pommes*) on a cardboard plate. [Curry 36](https://www.google.com/maps/search/Curry+36/@52.540513,13.3772295,13z/) and [Konnopke's Imbiss](https://maps.app.goo.gl/my1KakAy5AnCKgJo9) are two famous options.
 - **Döner kebab**  
     The standard street food in Berlin. The best kebab places are a secret, but the [worst kebabs](https://www.reddit.com/r/berlin/comments/77vdgd/where_is_the_worst_kebab_in_berlin/) are usually in train stations and tourist areas.
 - **Gemüse Döner** (or chicken Döner)  
@@ -230,16 +230,18 @@ There is no "down town Berlin". There are many popular neighbourhoods, and each 
 
 - **Hotels:** [Booking.com](https://booking.com/)
 - **Hostels:** [Hostelworld](https://www.hostelworld.com/)
-- **Vacation apartments:** [Airbnb](https://www.airbnb.com/) or [Wimdu](https://www.wimdu.de/)
-- **Long term apartments:** see [How to find an apartment in Berlin](/guides/find-a-flat-in-berlin)
+- **Vacation apartments:** [Airbnb](https://www.airbnb.com/)
+- **Longer stays:** [How to find an apartment in Berlin](/guides/find-a-flat-in-berlin)
 
-If you are more patient, you can also use [CouchSurfing](https://www.couchsurfing.com) and [BeWelcome](https://www.bewelcome.org/). People host visitors for free, and spend time with them during their visit.
+If you have time to plan, try [CouchSurfing](https://www.couchsurfing.com) and [BeWelcome](https://www.bewelcome.org/). Members host visitors for free, and spend time with them during their visit. It's a good way to [make friends](/guides/making-friends).
 
 ## Shopping in Berlin
 
 ### You need cash
 
-Germans pay with cash, Girocard, Visa and Mastercard. **Always have cash with you**. Many restaurants only accept cash. Most street food kiosks and *[Spätis](/glossary/Sp%C3%A4ti)* only accept cash.
+**Always have cash with you.** Many restaurants and *[Spätis](/glossary/Sp%C3%A4ti)* only accept cash.
+
+Some businesses only accept card payments. You can pay with Visa, Mastercard, [[Girocard]], Apple Pay, Google Wallet or Samsung Wallet.
 
 **[Payment methods in Germany ➞](/guides/banking#common-payment-methods)**
 
@@ -247,9 +249,9 @@ Germans pay with cash, Girocard, Visa and Mastercard. **Always have cash with yo
 
 ### Shops close on Sundays
 
-In Germany, shops and supermarkets close on Sundays. Most restaurants, tourist attractions, *[Spätis](/glossary/Sp%C3%A4ti)* and gas stations stay open on Sundays.
+Most shops and supermarkets close on Sundays. Restaurants, tourist attractions, *[Spätis](/glossary/Sp%C3%A4ti)* and gas stations usually stay open.
 
-**[What stays open on Sundays ➞](/guides/open-on-sundays-in-berlin)**
+**[What is open on Sundays ➞](/guides/open-on-sundays-in-berlin)**
 
 ### VAT refund
 
@@ -279,15 +281,15 @@ If you don't have mobile data, you can find free Wi-Fi everywhere:
 
 ### Prepaid SIM cards for tourists
 
-If you want mobile data while you visit Berlin, you should get a temporary SIM card.
+If you want mobile data while you visit Berlin, get a temporary SIM card.
 
 There are 3 ways to buy a SIM card:
 
-- **Buy a digital SIM card** (eSIM){{ RECOMMENDED }}  
-    This is the cheapest and easiest way. I use it all the time. You buy an eSIM from [Airalo](/out/airalo), and activate it when you arrive in Berlin. Your phone must support eSIMs.
-- **Get a SIM card at a mobile phone shop**  
+- **Online** (eSIM){{ RECOMMENDED }}  
+    This is the cheapest and easiest way. I use it all the time when I travel. You buy an eSIM from [Airalo](/out/airalo), and activate it when you arrive in Berlin. Your phone must support eSIMs.
+- **At a mobile phone shop**  
     Buy a SIM card from a Vodafone, Telekom or O2 shop. Electronics stores like Saturn or MediaMarkt also sell and activate SIM cards. You must show your passport and a [registration certificate](/glossary/Anmeldebest%C3%A4tigung) to activate the SIM card, but store employees will just use your passport and the address of your hotel.[^11]
-- **Get a SIM card at the airport**  
+- **At the airport**  
     [The Wall Store](https://ber.berlin-airport.de/de/cafes-shops-service/sgs-poi/055-the-wall-store-berlin-t1.html) and [Travelex](https://ber.berlin-airport.de/de/cafes-shops-service/sgs-poi/069-travelex-t1.html) sell SIM cards at the Berlin. The Wall's SIM cards are much cheaper than Travelex. There is often a long queue to buy them, so [Airalo](/out/airalo) is much easier.
 
 ![The Wall Store at Berlin airport](/images/the-wall-store-berlin-airport.jpg "The Wall Store at Berlin airport sells SIM cards, but they are too expensive.")
@@ -318,12 +320,14 @@ In Germany, tipping is optional. In general, people tip up to 10% for good servi
 
 ### Things you should not do
 
-- ✗ **Do not walk on the bike paths**  
-    The bicycle path is usually a 1 meter wide red brick path on the sidewalk. If you walk on the bike path, cyclists will ring their bell, shout at you or even bump into you.
+- ✗ **Do not block bike paths**  
+    Some sidewalks have bicycle paths. Look before crossing bicycle paths. If you block bike paths, cyclists will ring their bell or yell at you.  
+    ![A Berlin sidewalk with a bicycle path](/images/berlin-bicycle-path.jpg)
 - ✗ **Do not put your glass bottles in the trash**  
-    People collect empty bottles and [return them for money](/guides/pfand-bottles). Don't make people search for bottles in the trash. Put your empty bottles next to the bin. In some parks, bottle collectors (*Flaschensammler*) will walk around and ask for your empty bottles.
+    People collect empty bottles and [return them for money](/glossary/Pfand). Don't make people search for bottles in the trash. Put your empty bottles next to the bin. In some parks, bottle collectors (*Flaschensammler*) might ask for your empty bottles.  
+    ![Pfand bottles under a trash can in Berlin](/images/pfandflasche-unter-mull-berlin.jpg)
 - ✗ **Do not joke about Nazis and the war**  
-    You probably shouldn't joke about this. It's not funny, and it's not original.
+    These jokes are rarely original, and rarely get a laugh. It's still a sensitive topic in Germany.
 
 ## Stay safe
 
