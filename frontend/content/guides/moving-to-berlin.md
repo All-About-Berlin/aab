@@ -22,17 +22,19 @@ Before you move to Berlin, you must have enough money for...
 - **Rent**  
     You must pay the first month's rent before you move in. Rent is around 30% of your [net income](/glossary/Netto%20income), or €16 to €25 per m^2^. [Shared apartments](/glossary/WG) are cheaper. Use my [rent map](/tools/rent-map) to set your budget.
 - **The [apartment deposit](/glossary/Kaution)**  
-    The deposit is 3 times your [cold rent](/glossary/Kaltmiete). You must pay 1/3 of the deposit before you move in, 1/3 after one month, and 1/3 after two months.
+    The deposit is 3 times your [cold rent](/glossary/Kaltmiete). You must pay 1/3 of the deposit before you move in, 1/3 after one month, and 1/3 after two months. You get it back when you move out.
 - **[Living expenses](/guides/cost-of-living)**  
-    You must buy food and things for your apartment. You might need to buy furniture and appliances.
+    You need money for food, [public transit](/guides/public-transit) and other day-to-day expenses.
 - **Relocation expenses**  
-    If you come from another country, you might need to buy plane tickets, or stay in a hotel for a few days. Relocation and moving expenses are [tax-deductible](/glossary/steuerlich%20absetzbar).[^4] Save the receipts for your [tax declaration](/glossary/Steuererklärung).
+    If you come from another country, you might need to buy plane tickets, or stay in a hotel for a few days. You might need to buy furniture for your new apartment.
 - **[Health insurance](/glossary/Krankenversicherung)**  
     All German residents need health insurance. Use my [health insurance calculator](/tools/health-insurance-calculator) to estimate the cost.
 - **Winter clothes**  
-    German winters are cold and humid. It's 0ºC on average, and as low as -10ºC.[^5] You need a winter jacket and warm clothes.
+    German winters are cold and humid. The average temperature is 0ºC, but it can go to -10ºC.[^5] You need a winter jacket and warm clothes.
 
 Your employer might cover your relocation costs. They usually reimburse the cost *after* you start working, so you still need enough savings.
+
+If you move for work, relocation expenses are [tax-deductible](/glossary/steuerlich%20absetzbar).[^4] Save the receipts for your [tax declaration](/glossary/Steuererklärung).
 
 **[Cost of living in Berlin ➞](/guides/cost-of-living)**
 
@@ -228,15 +230,11 @@ Relocation expenses are [tax-deductible](/glossary/steuerlich%20absetzbar). If y
 
 ### Permanent residence and citizenship
 
-After a few years in Germany, you can apply for [permanent residence](/glossary/Niederlassungserlaubnis) or German citizenship.
+After a few years in Germany, you can apply for [permanent residence](/glossary/Niederlassungserlaubnis) or German citizenship. This gives you more freedom and more security. You don't need to renew it like a residence permit. You can stay in Germany even if you [lose your job](/guides/losing-your-job). Citizenship also gives you the right to vote.
 
-Permanent residence gives you more freedom and more security. You don't need to renew it like a residence permit. You can stay in Germany even if you lose your job.
-
-Depending on your [residence permit](/glossary/Aufenthaltstitel), you can become a permanent resident after living in Germany for 21 to 60 months.
+Depending on your [residence permit](/glossary/Aufenthaltstitel), you can become a permanent resident after living in Germany for 21 to 60 months. You can apply for citizenship after 5 years.
 
 **[How to apply for permanent residence ➞](/guides/permanent-residence)**
-
-Citizenship is better than permanent residence. You get a German passport, and you can vote in elections.
 
 [^0]: [teltarif.de](https://www.teltarif.de/roaming/fair-use-policy.html)
 [^1]: [naylorengineering.com](http://web.archive.org/web/20220128231355/http://www.naylorengineering.com/handyvertrag-ohne-wohnsitz-in-deutschland/), [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/al0xcd/postident_in_berlin/efav1r4/?context=3)

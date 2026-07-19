@@ -98,7 +98,7 @@ It can be hard to return certain types of bottles. If one place does not accept 
 
 In Berlin, some people collect empty bottles to earn money. Leave your bottle next to trash can to make their job easier. They won't need to search inside the bin to find your bottle.
 
-[![Pfandflasche unter mull berlin](/images/pfandflasche-unter-mull-berlin.jpg "You can leave empty Pfand bottles under a trash can")](/images/pfandflasche-unter-mull-berlin.jpg)
+[![Pfand bottles under a trash can in Berlin](/images/pfandflasche-unter-mull-berlin.jpg "Leave empty Pfand bottles under a trash can")](/images/pfandflasche-unter-mull-berlin.jpg)
 
 [^0]: [mehrweg.org](https://www.mehrweg.org/einkaufen/pfand/)
 [^1]: [dpg-pfandsystem.de](https://dpg-pfandsystem.de/index.php/de/das-einwegpfandsystem/wissenswertes/105-mitteilungen/265-der-pfand-machts.html)
