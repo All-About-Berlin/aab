@@ -6,7 +6,7 @@
     --c-highlight-green: #2fc67f;
     --c-text-error: #{darken(#da513d, 20%)};
 
-    --c-bg-intro: hsl(151.8, 95%, 84%);
+    --c-bg-hero: hsl(151.8, 95%, 84%);
 
     --i-logo: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='5 10 90 80'><path fill='white' d='M45.09 34.51a39 39 0 0 0-14.78-9.99A39 39 0 0 0 16.9 21.9c-3.65-.03-7.3 0-10.96 0L5 21.88c0 1.4.36 2.98.4 3.37.1 1.16.14 2.33.3 3.47a35 35 0 0 0 3.9 11.43c5.53 10.2 13.94 16.81 25.15 19.83a38 38 0 0 0 9.25 1.2c.32 0 .47.04.47.43l-.02 22.92c0 .77-.03 1.54.08 2.3.08.52.3 1.06.61 1.48.58.8 1.46 1.1 2.41 1.1q2.43.02 4.85 0c1.94 0 3.17-1.23 3.17-3.19l.02-24.52a39 39 0 0 0-10.51-27.2zm49.9-23.94h-10.3q-4.7 0-9.27 1.01a39 39 0 0 0-18.18 9.45 40 40 0 0 0-7.4 9.14c-.3.5-.3.77.09 1.22a45 45 0 0 1 9.9 18.36C84.23 46.6 95.4 25.8 94.98 10.57z'/></svg>");
 }
@@ -15,102 +15,34 @@
     :root{
         --c-error: #9f3a2b;
         --c-text-error: #{lighten(#9f3a2b, 20%)};
-        --c-bg-intro: var(--c-bg-page);
+        --c-bg-hero: var(--c-bg-page);
     }
 }
 
-main .intro{
-    text-align: left;
-    padding-top: var(--m);
-    padding-bottom: var(--m);
-    box-shadow: none;
-
-    * {
-        color: var(--c-text-heading)!important;
+main {
+    > .collapsible{
+        border: none;
+        background-color: var(--c-bg-page);
+        margin: 0;
     }
 
-    &:has(h1:last-child){
-        box-shadow: none;
-    }
-
-    &:has(svg){
-        display: grid;
+    .section.hero{
         grid-template-columns: 1fr 2fr;
-        gap: var(--l);
-
-        grid-template-areas: "image intro" "image buttons";
-
-        .intro-text{
-            grid-area: intro;
-            align-self: flex-end;
-        }
-
-        .buttons{
-            grid-area: buttons;
-            margin: 0;
-            align-self: flex-start;
-        }
+        grid-template-areas: "image intro";
 
         svg{
-            grid-area: image;
-            height: auto;
-            max-width: 50vw;
-            margin: 0 auto;
-            align-self: center;
-            margin-bottom: calc(var(--xxxl) * -1 + var(--m))!important;
-        }
-
-
-        @include only-phone{
-            grid-template-columns: 1fr;
-            grid-template-areas: "intro" "buttons" "image";
+            max-width: 40vw;
+            margin-bottom: var(--xl);
         }
 
         @include not-phone{
             svg{
-                margin: calc((var(--xxxl)) * -1) 0 calc(var(--xxxl) * -1) calc(var(--w-page-border) * -1)!important;
+                margin: calc((var(--xxxl)) * -1) 0 calc(var(--xxxl) * -1) calc(var(--w-page-border) * -1);
                 transform: rotate(-5deg) translateY(calc(var(--s) * -1));
-                margin: 0 auto;
-            }   
-        }
-    }
-
-    &:has(h1:not(:last-child)){
-        text-align: left;
-        background: var(--c-bg-intro);
-        padding-top: var(--xxxl);
-        padding-bottom: var(--xxxl);
-
-
-        .button:not(.link){
-            --shadow-s: 0 0 0 0 transparent;
-            background: transparent;
-
-            &:hover{
-                --c-text-heading: #000;
-                color: #fff!important;
-                background: var(--c-highlight);
             }
         }
-
-        @include full-width-site{
-            // Remove gap before header
-            margin-top: calc(var(--m) * -1);
-        }
     }
 }
-
-main > .collapsible{
-    border: none;
-    background-color: var(--c-bg-page);
-    margin: 0;
-}
-
-.section.transparent{
-    background: transparent;
-    box-shadow: none;
-}
-
 
 .two-columns{
     svg{
@@ -142,7 +74,7 @@ main > .collapsible{
     img{
         border-radius: var(--b-radius);
         transform: rotate(3deg);
-        background-color: var(--c-bg-intro);
+        background-color: var(--c-bg-hero);
     }
 }
 
@@ -179,97 +111,5 @@ main > .collapsible{
         &:before{
             content: '— ';
         }
-    }
-}
-
-.feature-table{
-    width: 100%;
-    min-width: 800px;
-    font-size: var(--f-s);
-
-    table-layout: fixed;
-    position: relative;
-
-    .plan-names{
-        @include heading;
-        background: var(--c-bg-page);
-        position: sticky;
-        top: 0;
-        z-index: 999;
-        border-top:var(--b-box);
-        border-bottom:var(--b-box);
-
-        th[scope="col"]{
-            width: calc(73% / 3);
-        }
-    }
-
-    .section-heading th{
-        @include heading;
-        font-size: var(--l);
-        background: transparent;
-        padding-top: var(--xl);
-        padding-bottom: var(--m);
-        border-bottom: var(--b-box);
-        border-top: var(--b-box);
-    }
-
-    th[scope=row]{
-        font-weight: normal;
-        border-right: var(--b-box);
-    }
-    th{
-        &[aria-expanded]{
-            cursor: pointer;
-            @include expansible;
-        }
-        &[aria-expanded=true]{
-            @include collapsible;
-        }
-    }
-    :is(th, td){
-        line-height: var(--line-height-label);
-        text-align: left;
-        padding: var(--s) var(--m);
-        vertical-align: top;
-
-        ul{
-            margin:0;
-        }
-        li{
-            @include list-item;
-        }
-    }
-
-    .subfeature > :first-child{
-        padding-left: calc(var(--s) + var(--l));
-    }
-
-    tr.feature:hover{
-        background: var(--c-bg-image);
-        + tr.instructions{
-            background: var(--c-bg-image);
-        }
-    }
-
-    tr > :first-child{
-        padding-left: 0;
-    }
-
-    .yes, .no{
-        font-size: var(--l);
-        &:before{
-            content: '✓';
-            line-height: 1em;
-            vertical-align: top;
-            color: var(--c-text-heading);
-            display: block;
-            text-align: center;
-        }
-    }
-    .no:before{
-        font-size: 1.4em;
-        content: '×';
-        opacity: 0.2;
     }
 }

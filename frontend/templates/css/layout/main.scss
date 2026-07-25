@@ -18,15 +18,89 @@ main{
 
         > :first-child{margin-top: 0;}
         > :last-child{margin-bottom: 0;}
+
+        &.transparent{
+            background: transparent;
+            box-shadow: none;
+        }
+
+        &.hero{
+            background: var(--c-bg-hero);
+            padding: var(--xxxl) 0 var(--xxxl) var(--w-page-border);
+            box-shadow: none;
+
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: var(--l);
+
+            grid-template-areas: "intro image";
+
+            @include only-phone{
+                grid-template-columns: 1fr!important;
+                grid-template-areas: "intro" "image"!important;
+                padding: var(--xxl) var(--w-page-border) 0;
+            }
+
+            * {
+                color: var(--c-text-heading)!important;
+            }
+
+            p{
+                margin: 0;
+            }
+
+            .intro-text{
+                grid-area: intro;
+                align-self: center;
+            }
+
+            .buttons{
+                grid-area: buttons;
+                margin-bottom: 0;
+                align-self: flex-start;
+            }
+
+            svg{
+                grid-area: image;
+                height: auto;
+                max-width: 50vw;
+                max-height: 500px;
+                align-self: center;
+                margin: 0 auto;
+            }
+
+            .button:not(.link){
+                --shadow-s: 0 0 0 0 transparent;
+                background: transparent;
+
+                &:hover{
+                    --c-text-heading: #000;
+                    color: #fff!important;
+                    background: var(--c-highlight);
+                }
+            }
+
+            @include full-width-site{
+                // Remove gap before header
+                margin-top: calc(var(--m) * -1);
+            }
+        }
+
+        &#support{
+            text-align: center;
+            padding: calc(var(--xl) - var(--m)) var(--w-page-border);
+            h2{
+                margin-bottom: var(--l);
+            }
+        }
     }
 
     .intersection{
-        text-align: center;
         padding-top: calc(var(--xl) - var(--m)); // Default padding - grid gap
         padding-bottom: calc(var(--xl) - var(--m));
 
         h2{
-            margin:var(--xxxl) 0 var(--l)
+            margin:var(--xxxl) var(--w-page-border) var(--l);
         }
 
         p{
@@ -44,26 +118,26 @@ main{
         > :first-child{margin-top:0}
         > :last-child{margin-bottom:0}
     }
-    .intro + .intersection {padding-top: 0}
 
-    .intro{
+    .intro {
         margin: 0;
         text-align: center;
-        background:transparent;
+        background: transparent;
         @include page-borders;
 
-        h1{
-            margin:0
+        h1 {
+            margin: 0
         }
 
-        p{
+        p {
             margin: var(--s-relative) 0 0;
         }
 
-        .search-form{
+        .search-form {
             margin: var(--l-relative) auto 0;
         }
     }
+
 
     .post-meta {
         margin: 0 0 var(--xl);

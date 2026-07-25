@@ -4,14 +4,14 @@
 
 {% block main %}
 	<main aria-label="Main page">
-		<header class="section intro article-body">
+		<header class="section hero">
 			<div class="intro-text">
 				<h1>Choose German health insurance with confidence</h1>
 				<p>We help you find the right coverage at the lowest price, without the guesswork.</p>
-			</div>
-			<div class="buttons bar left">
-				<a class="button" href="#calculator">See your options</a>
-				<a class="button" href="#contact">Ask our expert</a>
+				<div class="buttons bar left">
+					<a class="button" href="#calculator">See your options</a>
+					<a class="button" href="#contact">Ask our expert</a>
+				</div>
 			</div>
 			{% include "staticimages/services/health-insurance.svg" %}
 		</header>
@@ -19,7 +19,7 @@
 		{% tool "health-insurance-calculator", mode="question", static=True, landing_page=True, id="contact" %}
 		<section class="section transparent">
 			<h2 align="center">Why get insured with us?</h2>
-			<div class="two-columns glossary-links">
+			<div class="two-columns">
 				<div>
 					<h3>Perfect for any visa</h3>
 					<p>Our health insurance is accepted by German embassies, consulates and immigration offices.</p>
