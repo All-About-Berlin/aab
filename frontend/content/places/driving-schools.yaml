@@ -156,3 +156,14 @@
   borough: Tempelhof-Schöneberg
   suburb: Tempelhof
   quarter: null
+- name: DRiVE Päd
+  description: Fabian speaks fluent English.
+  website: https://fahren-lernen.berlin/
+  address: Märkische Allee 82A
+  latitude: 52.524415
+  longitude: 13.539834
+  google_place_id: ChIJuapxmgBOqEcRcQgfvWGbmWo
+  last_verified: 2026-07-25
+  borough: Marzahn-Hellersdorf
+  suburb: Marzahn
+  quarter: Springpfuhl

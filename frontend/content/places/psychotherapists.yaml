@@ -1111,3 +1111,28 @@
   borough: Mitte
   suburb: Mitte
   quarter: Spandauer Vorstadt
+- name: Dr. phil. David Keller
+  description: CBT therapy and
+    and transcultural psychological counseling in English and German.
+  website: https://www.psychotherapie-in-wilmersdorf.de/david-keller
+  email: david.keller@mailbox.org
+  address: Nassauische Str. 16A, 10717 Berlin-Bezirk Charlottenburg-Wilmersdorf
+  latitude: 52.49093
+  longitude: 13.326197
+  google_place_id: ChIJAwHaP0JRqEcRVghC-3MHvbI
+  last_verified: 2026-07-25
+  borough: Charlottenburg-Wilmersdorf
+  suburb: Wilmersdorf
+  quarter: Güntzelkiez
+- name: M&H Praxis
+  description: Therapist, clinical psychologist and sexologist. Offers Cognitive Behavioural Therapy (CBT), Acceptance and Commitment Therapy (ACT) and Dialectical Behaviour Therapy (DBT). They speak English and Polish.
+  website: https://mh-praxis.de/
+  email: office@mh-praxis.de
+  address: Annenstraße 8A
+  latitude: 52.508905
+  longitude: 13.412871
+  google_place_id: ChIJ2xyBdfBRqEcRl6kWlDnDUxE
+  last_verified: 2026-07-25
+  borough: Mitte
+  suburb: Mitte
+  quarter: Luisenstadt

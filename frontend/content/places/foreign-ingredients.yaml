@@ -102,3 +102,14 @@
   borough: Mitte
   suburb: Moabit
   quarter: Arminiuskiez
+- name: Dalriata Inselfeinkost
+  description: Products from the UK and Ireland
+  website: https://dalriata.de/
+  address: Winsstraße 32
+  latitude: 52.536546
+  longitude: 13.427997
+  google_place_id: ChIJdRjfF2BRqEcR6zCcNQVKT1E
+  last_verified: 2026-07-25
+  borough: Pankow
+  suburb: Prenzlauer Berg
+  quarter: Winsviertel

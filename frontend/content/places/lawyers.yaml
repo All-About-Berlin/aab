@@ -110,8 +110,8 @@
   borough: Neukölln
   suburb: Neukölln
   quarter: Reuterkiez
-- name: Anwaltssozietät Jurati
-  description: Sven Hasse is an English-speaking immigration lawyer.
+- name: Jurati
+  description: Immigration and employment law.
   website: https://www.jurati.de/
   address: Schönhauser Allee 83
   latitude: 52.550966
@@ -670,3 +670,25 @@
   borough: Steglitz-Zehlendorf
   suburb: Lichterfelde
   quarter: Lichterfelde West
+- name: Bernd Sünnenwold
+  description: Immigration, criminal and school law.
+  website: http://www.suennenwold.de/
+  address: Potsdamer Str. 97
+  latitude: 52.501037
+  longitude: 13.36421
+  google_place_id: ChIJYzDD_qBRqEcRuK0MAux8qeo
+  last_verified: 2026-07-25
+  borough: Mitte
+  suburb: Tiergarten
+  quarter: null
+- name: Robin Klatt
+  description: Tenant law and property law.
+  website: https://klatt.io/
+  address: Stubbenkammerstraße 3, 10437 Berlin-Bezirk Pankow
+  latitude: 52.542028
+  longitude: 13.424755
+  google_place_id: ChIJvynxuz9SqEcRkZt85bE8w-k
+  last_verified: 2026-07-25
+  borough: Pankow
+  suburb: Prenzlauer Berg
+  quarter: Helmholtzkiez

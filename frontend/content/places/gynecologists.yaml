@@ -169,3 +169,14 @@
   borough: Steglitz-Zehlendorf
   suburb: Steglitz
   quarter: null
+- name: Dr. med. Anja Bellingkrodt
+  description: The staff might not speak English, but the doctor does.
+  website: https://www.bellingkrodt.com/
+  address: Turmstr. 33
+  latitude: 52.526582
+  longitude: 13.340267
+  google_place_id: ChIJfabfbwtRqEcRuHQN8P07VDU
+  last_verified: 2026-07-25
+  borough: Mitte
+  suburb: Moabit
+  quarter: Westfälisches Viertel

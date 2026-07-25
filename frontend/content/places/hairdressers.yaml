@@ -459,3 +459,26 @@
   borough: Charlottenburg-Wilmersdorf
   suburb: Charlottenburg
   quarter: Witzleben
+- name: AVEDA
+  description: Jay speaks English.
+  website: https://www.mycora.de/
+  address: Clayallee 321, 14169 Berlin-Bezirk Steglitz-Zehlendorf
+  latitude: 52.438693
+  longitude: 13.262007
+  google_place_id: ChIJF-EPWjFaqEcR7nQ12KQoL64
+  last_verified: 2026-07-25
+  borough: Steglitz-Zehlendorf
+  suburb: Zehlendorf
+  quarter: null
+- name: The Session - Hair Studio for Colorists & Stylists
+  description: www.thesession.studio. They speak English, German and Russian.
+  website: http://thesession.studio/
+  email: session@thesession.studio
+  address: Remise in the 2nd Yard, Brunnenstraße 27
+  latitude: 52.534222
+  longitude: 13.398663
+  google_place_id: ChIJ-08BmPpRqEcRsMRzdGgC4gk
+  last_verified: 2026-07-25
+  borough: Mitte
+  suburb: Mitte
+  quarter: Arkonakiez

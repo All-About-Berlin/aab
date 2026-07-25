@@ -162,3 +162,14 @@
   borough: Friedrichshain-Kreuzberg
   suburb: Kreuzberg
   quarter: Luisenstadt
+- name: wilde relocation
+  website: http://www.wilde-relocation.com/
+  email: severin.stephan@wilde-relocation.com
+  address: Jägerstraße 54–55
+  latitude: 52.514319
+  longitude: 13.394006
+  google_place_id: ChIJmUiD2fVaqEcRkOQCFZrO-Ps
+  last_verified: 2026-07-25
+  borough: Mitte
+  suburb: Mitte
+  quarter: Friedrichstadt
