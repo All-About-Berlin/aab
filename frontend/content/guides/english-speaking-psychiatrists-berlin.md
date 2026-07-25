@@ -43,6 +43,7 @@ These Berlin psychiatrists speak English, can diagnose people with ADHD and can 
 - [Dr. Nikolaos Riga](https://www.dr-rigas.de/)[^3]
 - [Dr. Lazaros Giousmpasis](https://psychiater-praxis-berlin.de/)[^4] - no public health insurance
 - [Dr. Susanne Finke](https://privatpraxis-psychiatrie-berlin.de/) - no public health insurance
+- [Dr. Ernst Seiffert](http://www.ppcc-berlin.de/)
 
 **[Request a list of psychiatrists](https://www.adxs.org/en/page/304/request-addresses-of-doctors-therapists)** - ADxS.org {{ RECOMMENDED }}
 
