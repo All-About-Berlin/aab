@@ -5,7 +5,9 @@ description: If you are visiting Berlin, these are the things you should see and
 date_created: 2017-09-15
 ---
 
-This guide helps you prepare your Berlin visit. To move to Berlin, read my [moving to Berlin guide](/guides/moving-to-berlin).
+This guide helps you prepare your Berlin visit.
+
+To move to Berlin, read my [moving to Berlin guide](/guides/moving-to-berlin).
 
 {% tableOfContents %}
 
