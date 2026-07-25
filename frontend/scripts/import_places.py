@@ -129,8 +129,12 @@ def import_place_suggestions(suggestion: dict):
         logging.info(f"Added {new_place['name']} to {yaml_path.name}")
 
     if choice == "e":
-        # Open with Sublime Text
-        subprocess.run(["subl", str(yaml_path)])
+        line_number = next(
+            (i for i, line in enumerate(yaml_path.read_text().splitlines(), 1) if new_place_id in line),
+            None,
+        )
+        target = f"{yaml_path}:{line_number}" if line_number else str(yaml_path)
+        subprocess.run(["subl", target])
 
     delete_suggestion(suggestion["id"])
     logging.info(f"Deleted {new_place['name']} from suggestions")
@@ -143,7 +147,7 @@ if __name__ == "__main__":
     for suggestion in get_place_suggestions():
         try:
             import_place_suggestions(suggestion)
-        except Exception:
-            logging.exception(f"Error processing suggestion #{suggestion.get('id')}")
+        except Exception as e:
+            logging.error(f"\033[31mError processing suggestion #{suggestion.get('id')}: {e}\033[0m")
     else:
         logging.info("There are no more place suggestions")
