@@ -1,12 +1,8 @@
-.feedback-table, .feedback-summary {
+.feedback-summary {
     margin-bottom: var(--xxxl)!important;
 
     li{margin: 0};
     li + li{margin-top: var(--s-text-block)}
-
-    .vote-count{
-        float: right;
-    }
 }
 .feedback-summary .description{
     @include text-bold;

@@ -89,12 +89,6 @@
             width: 75 / $pageScaleWidth;
             min-height: 40 / $pageScaleHeight;
         }
-        .letter-footer {
-            position: absolute;
-            bottom: 6.5 / $pageScaleHeight;
-            left: 25 / $pageScaleWidth;
-            width: 165 / $pageScaleWidth;
-        }
         .letter-body {
             padding-left: 25 / $pageScaleWidth;
             padding-top: 8.46 / $pageScaleHeight;
