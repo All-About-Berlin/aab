@@ -29,22 +29,26 @@ You need a tax ID to...
 - **Get paid correctly**  
     If you don't have a tax ID, you can still work and get paid, but you pay more [wage tax](/glossary/Lohnsteuer).[^0] You can get that money back later by filing a [tax declaration](/glossary/Steuererkl%C3%A4rung).[^1] Some employers think that you can't work without a tax ID, but they are wrong.
 - **[Open a bank account](/guides/best-bank-germany)**  
-    Some banks ask for a tax ID when you open an account.
-- **Apply for [[Kindergeld]] and [[Elterngeld]]**
-- **[Get a Kitagutschein](/guides/kitagutschein)**  
-    Your children need a tax ID to get a *[[Kitagutschein]]* and send them to daycare.
+    Some banks ask for a tax ID when you open an account. They sometimes give you a few weeks to get a tax ID.
 - **[Start a business](/guides/start-a-business-in-germany)**  
     You need a tax ID to [register your business with the *Finanzamt*](/guides/fragebogen-zur-steuerlichen-erfassung).
+- **Get services for parents**
+    - **Apply for [[Kindergeld]] and [[Elterngeld]]**
+    - **[Get a daycare voucher](/guides/kitagutschein)**  
+        Your children need a tax ID to get a *[[Kitagutschein]]* and send them to [daycare](/glossary/Kita).
 
 ### How to get your tax ID
 
-You get a tax ID when you [register your address](/glossary/Anmeldung) for the first time.[^8] 4 to 6 weeks later, you get [a letter from the *Bundeszentralamt für Steuern*](/images/tax-id-document-bzst.jpg) with your tax ID.
+There are many ways to get a tax ID:
 
-**If you can't register your address**, fill [this form](/docs/010250-antrag-auf-vergabe-einer-steuerlichen-id). You will get your tax ID by post 4 to 6 weeks later. This does not always work.
+- **[Register your address](/guides/anmeldung-in-english-berlin)**{{RECOMMENDED}}  
+    You get a tax ID when you [register your address](/glossary/Anmeldung) for the first time.[^8] 4 to 6 weeks later, you get [a letter from the *Bundeszentralamt für Steuern*](/images/tax-id-document-bzst.jpg) with your tax ID. If you registered your address before, you already have a tax ID. You just need to [find it](/guides/german-tax-id-steuernummer#where-to-find-your-tax-id).
+- or **ask your employer**  
+    They can sometimes request a tax ID for you when you [start a new job](/guides/find-a-job-in-berlin#start-working).
+- or **fill the [tax ID request form](/docs/010250-antrag-auf-vergabe-einer-steuerlichen-id)**  
+    If you can't register your address, fill this form. You will get your tax ID by post 4 to 6 weeks later. It does not always work.
 
-**If you registered your address before**, you already have a tax ID. You just need to [find it](/guides/german-tax-id-steuernummer#where-to-find-your-tax-id).
-
-**If you did not get your tax ID** after 6 weeks, [request it again](https://www.bzst.de/SiteGlobals/Kontaktformulare/DE/IdNr/Mitteilung_IdNr/mitteilung_IdNr_node.html). You can also go to [your local *Finanzamt*](/out/finanzamt-finder) with your passport, and ask for your tax ID.[^2] You don't need an appointment. A lot of people never get their tax ID letter.
+Sometimes they create your tax ID, but you don't receive the tax ID letter. If you wait more than 6 weeks, [request it again](https://www.bzst.de/SiteGlobals/Kontaktformulare/DE/IdNr/Mitteilung_IdNr/mitteilung_IdNr_node.html). You can also go to [your local *Finanzamt*](/out/finanzamt-finder) with your passport, and ask for your tax ID.[^2] You don't need an appointment.
 
 ### Where to find your tax ID
 
