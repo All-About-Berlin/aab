@@ -19,7 +19,7 @@ class Command(BaseCommand):
         if settings.DEBUG_EMAILS:
             logger.info("Pretending to send scheduled messages...")
         else:
-            logger.info("Sending scheduled messages...")
+            logger.debug("Sending scheduled messages...")
 
             if not settings.DEBUG and not settings.MAILGUN_API_KEY:
                 raise Exception("MAILGUN_API_KEY is not set")
