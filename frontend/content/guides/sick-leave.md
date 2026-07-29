@@ -177,7 +177,7 @@ If you [quit or lose your job](/guides/losing-your-job), and you are in your [no
 
 **[How the notice period works ➞](/guides/job-notice-period)**
 
-[^0]: [dw.com](https://www.dw.com/en/sick-leave-germany-rising-but-not-the-worst-in-europe/a-77815488) (July 2026), [destatis.de](https://www.destatis.de/DE/Themen/Arbeit/Arbeitsmarkt/Qualitaet-Arbeit/Dimension-2/krankenstand.html)
+[^0]: [DAK](https://www.dak.de/presse/bundesthemen/gesundheitsreport/dak-gesundheit-fordert-krankenstands-gipfel-beim-kanzler_155518) (July 2026), [dw.com](https://www.dw.com/en/sick-leave-germany-rising-but-not-the-worst-in-europe/a-77815488) (July 2026), [destatis.de](https://www.destatis.de/DE/Themen/Arbeit/Arbeitsmarkt/Qualitaet-Arbeit/Dimension-2/krankenstand.html)
 [^1]: [wirtschaftsforum.de](https://www.wirtschaftsforum.de/tipps/welche-anzahl-an-krankentagen-ist-fuer-den-arbeitgeber-zumutbar)
 [^2]: [§ 167 SGB IX](https://www.buzer.de/167_SGB_IX.htm) (May 2026)
 [^3]: [vice.com](https://www.vice.com/de/article/538n9q/darfst-du-wirklich-nicht-feiern-gehen-wenn-du-krankgeschrieben-bist)
