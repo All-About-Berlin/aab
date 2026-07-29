@@ -84,6 +84,9 @@ ctx["EXPAT_INSURANCE_COST"] = {
 
 # Maximum daily Krankengeld
 ctx["GKV_KRANKENGELD_DAILY_LIMIT"] = (ctx["GKV_MAX_INCOME"] * Decimal("0.7") / 360).normalize()  # § 47 SGB V
+ctx["GKV_KINDERKRANKENGELD_DAILY_LIMIT"] = (
+    ctx["GKV_MAX_INCOME_MONTHLY"] * Decimal("0.7") / 30
+).normalize()  # § 45 SGB V
 
 # BAFöG Bedarfssatz (€/y)
 ctx["BAFOG_BEDARFSSATZ"] = ctx["BAFOG_BEDARFSSATZ_13_ABS_1_2"] + ctx["BAFOG_BEDARFSSATZ_13_ABS_2_2"]

@@ -11,7 +11,7 @@ In Germany, if you are too sick or injured to work, you take a sick day. This gu
 
 ## It's okay to take sick days
 
-On average, German employees take 20 sick days per year.[^0] You can take as many sick days as you need.
+On average, German employees take 20 sick days per year.[^0] You can take as many sick days as you need. You can also take sick days [when your children are sick](#sick-leave-for-parents).
 
 **During your [probation period](/glossary/Probezeit)**, your employer can fire you without a reason. You can take sick days, but if you take too many, you could get fired.
 
@@ -43,13 +43,13 @@ Since 2023, you don't need to give a sick note to your employer. Your employer c
 
 ### 4. Get better
 
-If you have a sick note, you have the right to go on sick leave.[^9] Your employer can't refuse.
+If you have a sick note, you can go on sick leave.[^9] Your employer can't force you to work.
 
-When you are on sick leave, you do not have to do any work. You don't have to join meetings, answer emails, or be online. Your employer must leave you alone, except if they have urgent questions.[^10]
-
-The goal of sick leave is to get better, and go back to work when you are healthy.
+When you are on sick leave, you do not have to do any work. You don't have to join meetings, answer emails, or be online. Your employer must leave you alone, except if they have urgent questions.[^10] Your job is to recover.
 
 ![Sick leave slack status offline](/illustrations/sick-leave-slack-status-offline.png)
+
+**You don't have to stay at home.** You can do things that don't prevent your recovery.[^16] For example, if you broke your arm, you can't work but you can still go to the cinema. If you have depression or burnout, you can travel or work on personal projects.
 
 ## You still get paid when you are sick
 
@@ -75,8 +75,8 @@ You do not get *Krankengeld* if...
 - ✗ You have [expat health insurance](/glossary/Expat%20health%20insurance)
 - ✗ You have a [minijob](/glossary/Minijob)
 - ✗ You have [free health insurance](/guides/german-health-insurance#free-health-insurance) (*[[Familienversicherung]]*)
-- ✗ You have student health insurance[^26]
-- ✗ You are self-employed (you must pay a little more for it)[^27]
+- ✗ You have [student health insurance](/guides/german-health-insurance/for-students)[^26]
+- ✗ You are self-employed (you must pay a bit more to get *Krankengeld*)[^27]
 
 ### After that
 
@@ -93,13 +93,40 @@ If you have a mortgage, or if your family depends on you, get [disability insura
 
 **[What is disability insurance? ➞](/guides/insurance#disability-insurance)**
 
-## Things you can do on sick leave
+## Sick leave for parents
 
-When you are on sick leave, you don't have to stay at home. You can still do things that don't hurt your recovery.[^16]
+You can leave work to care for a sick child under 12 years old. Your employer can't refuse to let you take time off.[^36] Usually, you don't get paid during that time; it depends on your work contract.[^38]
 
-If you can't work because of an injury, you can still meet friends, go shopping and travel. For example, if you can't work because of a broken arm, you can still have coffee with a friend. It does not hurt your recovery.
+### With public health insurance
 
-If you can't work because you are sick, you can still travel if it helps your recovery. For example, you can go to the Baltic Sea to get rest and fresh air. If you can't work because of depression or burnout, you can do things that make you feel better.
+If you have [public health insurance](/glossary/gesetzliche%20Krankenversicherung), you get *[[Kinderkrankengeld]]*while you are not working. It pays 90% your salary, up to €{{ GKV_KINDERKRANKENGELD_DAILY_LIMIT|cur }} per day.[^37]
+
+You only get *Kinderkrankengeld* if...
+
+- Your child is under 12 years old[^34]
+- and you get *unpaid* leave from your employer
+- and you apply for it
+
+Each parent can get 15 days of *Kinderkrankengeld* per child per year. They can get up to 35 days in total. Single parents get twice as many days of *Kinderkrankengeld*.[^33]{{ fail_on('2027-01-01')}}
+
+| Number of children | Paid leave | Paid leave for single parents |
+|---|---|---|
+| 1 child | 15 days per parent | 30 days |
+| 2 children | 30 days per parent | 60 days |
+| 3 or more children | 35 days per parent | 70 days |
+
+To get *Kinderkrankengeld*, you must...
+
+1. **Get a Kinderkrankenschein**  
+    It's a type of [sick note](/glossary/Krankschreibung). Get it from your *[[Hausarzt]]*. You can get it in person or by phone.[^35]
+2. **Fill the form**  
+    The *Kinderkrankenschein* has a form on it. Use [these instructions](https://www.kbv.de/documents/infothek/publikationen/praxisinfo/praxisinfo-kind-krank-bescheinigung.pdf) to fill it.
+3. **Send it to your [health insurer](/glossary/Krankenkasse)**  
+    You can usually do it online or in their app.[^39]
+
+### With private health insurance
+
+Each policy is different. Some [private health insurances](/glossary/private%20Krankenversicherung) give you an income while you care for your sick child. Others pay nothing. You can decide when you choose your health insurance.
 
 ## Sick leave for freelancers
 
@@ -183,3 +210,10 @@ If you [quit or lose your job](/guides/losing-your-job), and you are in your [no
 [^30]: Personal experience (September 2025)
 [^31]: [Arbeitsagentur](https://www.arbeitsagentur.de/arbeitslos-arbeit-finden/arbeitslosengeld/das-muessen-sie-beachten/krankheit-pflege-betreuung) (December 2025)
 [^32]: [hammer-rechtsanwaelte.de](https://hammer-rechtsanwaelte.de/neuigkeiten-detail/krankmeldung-nach-kuendigung/#:~:text=grundsatzlich%20gilt%20das%20auch%20bei%20erfolgter%20kundigung) (June 2024)
+[^33]: [TK](https://www.tk.de/firmenkunden/versicherung/versicherung-faq/kinderkrankengeld/wie-viele-tage-kinderkrankengeld-fuer-eltern-2037466) (July 2026), [§ 45 Abs. 2a SGB V](https://www.buzer.de/45_SGB_V.htm)
+[^34]: [§ 45 Abs. 1a SGB V](https://www.buzer.de/45_SGB_V.htm)
+[^35]: [kvberlin.de](https://www.kvberlin.de/fuer-praxen/aktuelles/praxis-news/pn231220) (2023), [Techniker Krankenkasse](https://www.tk.de/firmenkunden/service/fachthemen/versicherung-fachthema/kinderkrankengeld-2025-und-2026-2160374#:~:text=kann%20die%20%22kindkrankschreibung%22%20auch%20per%20telefon%20erfolgen%3F) (July 2026)
+[^36]: [Techniker Krankenkasse](https://www.tk.de/firmenkunden/service/fachthemen/versicherung-fachthema/kinderkrankengeld-2025-und-2026-2160374#:~:text=zur%20freistellung%20der%20mitarbeitenden%20verpflichtet) (July 2026)
+[^37]: [bundesgesundheitsministerium.de](https://www.bundesgesundheitsministerium.de/themen/praevention/kindergesundheit/faq-kinderkrankengeld#:~:text=in%20der%20regel%2090%20prozent%20des%20ausgefallenen%20nettoarbeitsentgelts) (July 2026), [AOK](https://www.aok.de/pk/leistungen/kinder-familien/kinderkrankengeld/#:~:text=bis%20zu%2090%20prozent%20ihres%20ausgefallenen%20nettolohns) (July 2026), [§ 45 Abs. 2 SGB V](https://www.buzer.de/45_SGB_V.htm)
+[^38]: [kindergesundheit-info.de](https://www.kindergesundheit-info.de/themen/krankes-kind/recht/berufstaetigkeit/#:~:text=ist%20jedoch%20haufig%20durch%20eine%20tarifvertragliche%20oder%20arbeitsvertragliche%20regelung%20ausgeschlossen) (July 2026)
+[^39]: [Techniker Krankenkasse](https://www.tk.de/techniker/versicherung/tk-leistungen/weitere-leistungen/krankengeld/kinderkrankengeld/adresse-kinderkrankengeld-2006518) (July 2026)

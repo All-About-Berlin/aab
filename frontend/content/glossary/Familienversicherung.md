@@ -17,7 +17,7 @@ Your insurance covers...
 
 - Your children under 23 years old
 - Your children under 25 years old if they are studying
-- Your spouse
+- Your spouse (until January 2028){{fail_on('2028-01-01')}}
 
 Your insurance only covers them if...[^1]
 

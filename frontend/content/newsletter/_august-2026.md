@@ -14,6 +14,20 @@ Date_created: 2026-07-31
 
 ## What's new in Germany
 
+### Health insurance changes
+
+The [public health insurance](/glossary/gesetzliche%20Krankenversicherung) reform has passed. This is what will change:
+
+- **Price increase**  
+    Public health insurance costs [a percentage of your income](/tools/health-insurance-calculator), but the cost is capped to around €640 per month. In 2027, this cap will be raised to €704 per month. This means that high-earning employees will pay an extra €756 per year. Freelancers will pay up to €1512 per year more.
+- **Higher bar for private health insurance**  
+    Employees must earn at least €77,400 per year to choose [private health insurance](/glossary/private%20Krankenversicherung). Starting in 2027, they must earn at least €84,483 per year.
+- **No free health insurance for spouses**  
+    Public health insurance covers your unemployed spouse [for free](/glossary/Familienversicherung). Starting in 2028, covering your spouse will cost an extra 2.5% of your income. Your children will still get free coverage.
+- **Higher co-payments**  
+    Some treatments and prescriptions have a co-payment of €5 to €10. It will go up by 5%, so you will pay €7.50 to €15.
+- **Coverage changes**  
+    Homeopathy and cannabis flowers are no longer covered.[^5]
 ### AI disclosure law
 
 Businesses must disclose AI-generated texts and deepfakes. This applies to news articles, websites, social media posts.
@@ -24,21 +38,16 @@ Businesses must also inform users when they interact with AI. This applies for e
 
 This is defined in [Article 50 of the EU AI Act](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689#art_50). I found [this clarification](https://www.meinrecht.de/magazin/ki-texte-kennzeichnen) helpful.
 
-### Health insurance reform
+### On my radar
 
-The [public health insurance](/glossary/gesetzliche%20Krankenversicherung) reform is [official](https://www.bundesgesundheitsministerium.de/ministerium/meldungen/bundestag-beschliesst-gkv-beitragssatzstabilisierunggesetz-pm-10-07-2026). Here are the biggest changes:
-
-- Starting in 2028, your unemployed spouse will no longer get [free health insurance](/glossary/Familienversicherung). It will cost an extra 2.5% of *your* income.
-- Homeopathic medicine is no longer covered
-- Higher co-payments for medicine and treatments
-
-### Pension reform continues
-
-https://www.sueddeutsche.de/politik/familienpolitik-elterngeld-soll-auf-zwoelf-monate-begrenzt-werden-li.3509859
-
-https://www.tagesschau.de/inland/innenpolitik/krankschreibung-krankheitstage-reform-100.html
+- **Pension reform**  
+    The government is still refining its controversial pension reform. I have [covered the proposed changes last month](/newsletter/july-2026#retirement-will-suck).
+- **Parental leave changes**  
+    The government plans to slightly increase *[[Elterngeld]]* payments, but only pay 12 months instead of 14.[^4]
 
 https://www.t-online.de/finanzen/ratgeber/beruf-karriere/id_101324840/minijobs-soeder-gibt-nicht-auf-merz-macht-ankuendigung.html
+
+https://www.tagesschau.de/inland/innenpolitik/krankschreibung-krankheitstage-reform-100.html
 
 ## What's new on All About Berlin
 
@@ -50,16 +59,25 @@ In July, I was interviewed by Adrian Ma for the NPR Planet Money podcast. The ep
 
 ### New home page
 
-I have redesigned the home page. It better explains what the website does.
+I have redesigned the home page. It better explains what the website does, and highlights that the content is AI-free.
 
 ![All About Berlin home page redesign](/images/new-all-about-berlin-homepage.png)
 
-### Other changes to All About Berlin
-
-
-
 ## What I learned this month
+
+### Sick leave for parents
+
+If your child is sick, you can take unpaid leave to care for them. Your [public health insurance](/glossary/gesetzliche%20Krankenversicherung) usually covers 90% of your salary during that time, up to €{{ GKV_KINDERKRANKENGELD_DAILY_LIMIT|cur }} per day.
+
+**[How sick leave works ➞](/guides/sick-leave)**
 
 ## Interesting links
 
+You can [vote on the look of the next Euro bills](https://surveys.ecb.europa.eu/10b/neweuro/).
+
 [^1]: [verbraucherzentrale.de](https://www.verbraucherzentrale.de/wissen/digitale-welt/onlinedienste/ai-act-was-regelt-die-neue-europaeische-kiverordnung-95824#toc-was-bedeuten-die-transparenzpflichten) (August 2026)
+[^2]: [Berlin.de](https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/jugendamt/angebote-fuer-kinder-jugendliche-und-familien/kinderbetreuung/artikel.530778.php#:~:text=alle%20berliner%20schulen%20sind%20ganztagsgrundschulen)
+[^3]: [swr.de](https://www.swr.de/swraktuell/baden-wuerttemberg/ganztagsbetreuung-in-der-grundschule-100.html#wen), [baden-wuerttemberg.de](https://km.baden-wuerttemberg.de/de/schule/ganztagsschule-und-ganztagsbetreuung-in-baden-wuerttemberg/rechtsanspruch-auf-ganztagsbetreuung)
+[^4]: [familie.de](https://www.familie.de/baby/neues-elterngeld-so-teuer-wird-die-neue-reform-2027-fuer-familien--01KX0P4RHTNC2FY73FGSQMYVZ8)
+[^5]: [rentenbescheid24.de](https://rentenbescheid24.de/kranken-reform-beschlossen-diese-aenderungen-gelten-in-zukunft-fuer-gesetzlich-versicherte/), [deutsche-apotheker-zeitung.de](https://www.deutsche-apotheker-zeitung.de/news/artikel/2026/07/23/anderung-der-hilfstaxe-statt-erstattungs-aus-fur-cannabisbluten)
+[^6]: [IHK Kölln](https://www.ihk.de/koeln/hauptnavigation/recht-steuern/freistellung-und-verguetungspflicht-merkblatt--5304376#:~:text=%201.%20sonderfall%3A%20erkrankung%20des%20kindes%20)

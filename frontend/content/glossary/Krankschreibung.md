@@ -18,6 +18,8 @@ Since 2023, sick notes are digital. You get a paper copy. Your employer and your
 
 ![Krankschreibung example](/images/Krankschreibung-AU-schein-sick-note-germany.jpg)
 
+If your child is sick, you can get a *Kinderkrankenschein*. You need it to get *[[Kinderkrankengeld]]*.
+
 **[How sick leave works in Germany ➞](/guides/sick-leave)**
 
 [^0]: [welt.de](https://www.welt.de/wirtschaft/article206446385/Coronavirus-Aerzte-duerfen-Krankschreibungen-ab-sofort-per-Telefon-erteilen.html)
