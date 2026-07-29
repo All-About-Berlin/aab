@@ -83,6 +83,8 @@ This is defined in [Article 50 of the EU AI Act](https://eur-lex.europa.eu/legal
     The government plans to slightly increase *[[Elterngeld]]* payments, but only pay 12 months instead of 14.[^4]
 - **Local elections** (September 20)  
     On September 20, Berliners vote. They elect city and district (*Bezirk*) representatives for the next 5 years. These representatives pass laws that affect all of us. German citizens can vote in state and district elections. EU citizens can only vote in district elections. Non-EU citizens can't vote. For the first time, the voting age is 16 years old instead of 18.
+- **No dismissal protection for high earners**  
+    The proposal would allow employers to fire high-earning employees more easily. Employees earning over €177,450 per year would effectively lose dismissal protections.[^7]
 
 ## What's new on All About Berlin
 
@@ -116,3 +118,4 @@ You can [vote on the look of the next Euro bills](https://surveys.ecb.europa.eu/
 [^4]: [familie.de](https://www.familie.de/baby/neues-elterngeld-so-teuer-wird-die-neue-reform-2027-fuer-familien--01KX0P4RHTNC2FY73FGSQMYVZ8)
 [^5]: [rentenbescheid24.de](https://rentenbescheid24.de/kranken-reform-beschlossen-diese-aenderungen-gelten-in-zukunft-fuer-gesetzlich-versicherte/), [deutsche-apotheker-zeitung.de](https://www.deutsche-apotheker-zeitung.de/news/artikel/2026/07/23/anderung-der-hilfstaxe-statt-erstattungs-aus-fur-cannabisbluten)
 [^6]: [tagesschau](https://www.tagesschau.de/inland/innenpolitik/krankschreibung-krankheitstage-reform-100.html) (July 2026)
+[^7]: [kapellmann.de](https://kapellmann.de/de/bundesregierung-einigt-sich-auf-weitreichende-arbeitsrechtsreformen-was-arbeitgeber-jetzt-wissen-muessen)

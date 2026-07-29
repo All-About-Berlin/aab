@@ -1,0 +1,1 @@
+Wegfall des Schriftformerfordernisses (digital work contracts)
