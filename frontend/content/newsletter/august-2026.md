@@ -18,29 +18,18 @@ Date_created: 2026-08-01
 
 ### Youth slang of the year
 
-Every year, Germans vote on the *Jugendwort des Jahres*. If you have not heard Susanne Daubner [read each finalist](https://www.tagesschau.de/video/video-1621974.html) with a straight face, you are missing out.
+Every year, Germans vote on the *Jugendwort des Jahres*. If you have not heard Susanne Daubner [read each *Jugendwort* candidate](https://www.tagesschau.de/video/video-1621974.html) with a straight face, you are missing out.
 
-This year, the finalists are...
+This year, the finalists are "Gute Käse", "Süper", "Macker", "Schere", "67", "Crashout", "Peak", "Digga", "Ragebait" and "Du bist gut genug".
 
-- Du bist gut genug
-- Gute Käse
-- Süper
-- Macker
-- Schere
-- 67
-- Crashout
-- Peak
-- Digga
-- Ragebait
-
-You have until August 20 to [vote in the final round](https://www.langenscheidt.com/jugendwort-des-jahres).
+You have until August 20 to [cast your vote](https://www.langenscheidt.com/jugendwort-des-jahres).
 
 ### Health insurance changes
 
 The [public health insurance](/glossary/gesetzliche%20Krankenversicherung) reform has passed. This is what will change:
 
 - **Price increase**  
-    Public health insurance costs [a percentage of your income](/tools/health-insurance-calculator), but the cost is capped to around €640 per month. In 2027, this cap will be raised to €704 per month. This means that high-earning employees will pay an extra €756 per year. Freelancers will pay up to €1512 per year more.
+    Public health insurance costs [a percentage of your income](/tools/health-insurance-calculator), but the cost is capped to around €640 per month. In 2027, this cap will be raised to €704 per month. This means that high-earning employees will pay an extra €756 per year for health insurance. Freelancers will pay up to €1512 per year more.
 - **Higher bar for private health insurance**  
     Employees must earn at least €77,400 per year to choose [private health insurance](/glossary/private%20Krankenversicherung). Starting in 2027, they must earn at least €84,483 per year.
 - **No free health insurance for spouses**  
@@ -49,6 +38,10 @@ The [public health insurance](/glossary/gesetzliche%20Krankenversicherung) refor
     Some treatments and prescriptions have a co-payment of €5 to €10. It will go up by 5%, so you will pay €7.50 to €15.
 - **Coverage changes**  
     Homeopathy and cannabis flowers are no longer covered.[^5]
+
+If you want to switch to [private health insurance](/glossary/private%20Krankenversicherung), do it before September 30. Don't just look at the price difference; switching is not always a smart move. [Ask my insurance guy](https://agoodstart.de) if it makes sense first.
+
+**[How to choose health insurance ➞](/guides/german-health-insurance)**
 
 ### Sick leave changes
 
