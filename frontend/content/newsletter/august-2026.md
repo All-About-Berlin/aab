@@ -107,7 +107,7 @@ Look at this gorgeous new home page! The brings the design in line with the home
 
 ### Sick leave for parents
 
-If your child is sick, you can take unpaid leave to care for them. Your [public health insurance](/glossary/gesetzliche%20Krankenversicherung) usually covers 90% of your salary during that time, up to €{{ GKV_KINDERKRANKENGELD_DAILY_LIMIT|cur }} per day. Some private health insurance policies also include parental sick leave.
+If your child is sick, you can take unpaid leave to care for them. Your [public health insurance](/glossary/gesetzliche%20Krankenversicherung) usually covers 90% of your salary during that time, up to €135.62 per day. Some private health insurance policies also include parental sick leave.
 
 **[How sick leave works ➞](/guides/sick-leave)**
 
