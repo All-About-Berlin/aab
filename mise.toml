@@ -147,6 +147,15 @@ run = """
 frontend/scripts/add_review.py
 """
 
+[tasks.publish-newsletter]
+description = "Prepare a newsletter for publication (prints markdown to stdout)"
+usage = '''
+arg "<slug>" help="Newsletter slug, e.g. august-2026"
+'''
+run = """
+frontend/scripts/publish_newsletter.py "${usage_slug}"
+"""
+
 # = TEST =======================================================================
 
 [tasks.test-api]
