@@ -1,6 +1,6 @@
 constants:
   MINIMUM_WAGE:
-    value: 13.90
+    value: 13.9
     unit: euros
     monitor:
       template: default
@@ -1190,7 +1190,7 @@ constants:
       crawler: json
       url: https://api.worldbank.org/v2/region/EUU/country?format=json&per_page=100
       json_path: '[0].total'
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
 templates:
   residence_permit_wait_time:
     template: default
