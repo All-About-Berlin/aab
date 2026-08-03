@@ -1,6 +1,6 @@
 constants:
   MINIMUM_WAGE:
-    value: 13.9
+    value: 13.90
     unit: euros
     monitor:
       template: default
@@ -8,7 +8,7 @@ constants:
       crawler: playwright
       prompt: Read this text. Return the current minimum wage.
       css_selector: .typ-quote-3 p.text
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   MEDIAN_INCOME_BERLIN:
     value: 50280
     unit: euros
@@ -40,7 +40,7 @@ constants:
       section: 32a
       subsection: Absatz 1.1
       desired_value: the Grundfreibetrag (basic tax-free allowance) in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   INCOME_TAX_BRACKET_2_MAX_INCOME:
     value: 17799
     unit: euros
@@ -50,7 +50,7 @@ constants:
       section: 32a
       subsection: Absatz 1.2
       desired_value: the upper bound of the second income tax bracket in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   INCOME_TAX_BRACKET_3_MAX_INCOME:
     value: 69878
     unit: euros
@@ -60,7 +60,7 @@ constants:
       section: 32a
       subsection: Absatz 1.3
       desired_value: the upper bound of the third income tax bracket in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   INCOME_TAX_BRACKET_4_MAX_INCOME:
     value: 277825
     unit: euros
@@ -70,7 +70,7 @@ constants:
       section: 32a
       subsection: Absatz 1.4
       desired_value: the upper bound of the fourth income tax bracket in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   INCOME_TAX_CLASS_56_LIMIT_1:
     value: 14071
     unit: euros
@@ -80,7 +80,7 @@ constants:
       section: 39b
       subsection: Absatz 2 Satz 7
       desired_value: the first and lowest of the 3 income tax thresholds (for Steuerklassen V and VI), in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   INCOME_TAX_CLASS_56_LIMIT_2:
     value: 34939
     unit: euros
@@ -90,7 +90,7 @@ constants:
       section: 39b
       subsection: Absatz 2 Satz 7
       desired_value: the amount associated with the '42 Prozent' tax bracket, in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   INCOME_TAX_CLASS_56_LIMIT_3:
     value: 222260
     unit: euros
@@ -100,7 +100,7 @@ constants:
       section: 39b
       subsection: Absatz 2 Satz 7
       desired_value: the third and highest of the 3 income tax thresholds (for Steuerklassen V and VI), in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   INCOME_TAX_MAX_RATE:
     value: 45
     unit: percent
@@ -109,7 +109,7 @@ constants:
       url: https://www.finanztip.de/spitzensteuersatz/
       prompt: Read this text. Return the maximum income tax rate (Höchststeuersatz) as a percentage.
       css_selector: .intro-box .container
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   CHURCH_TAX_RATE:
     value: 9
     unit: percent
@@ -132,7 +132,7 @@ constants:
       section: '3'
       subsection: Absatz 3.2
       desired_value: the minimum income tax to collect solidarity tax (in anderen Fällen), in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   SOLIDARITY_TAX_MILDERUNGSZONE_RATE:
     value: '0.119'
     unit: percent
@@ -143,7 +143,7 @@ constants:
       section: '4'
       subsection: Satz 2
       desired_value: the Solidaritätszuschlag, as a decimal (for example '12.4 Prozent' -> '0.124')
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   SOLIDARITY_TAX_MAX_RATE:
     value: '0.055'
     unit: percent
@@ -154,7 +154,7 @@ constants:
       section: '4'
       subsection: Satz 1
       desired_value: the Solidaritätszuschlag, as a decimal (for example '2.4 Prozent' -> '0.024')
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   WERBUNGSKOSTEN_PAUSCHALE:
     value: 1230
     unit: euros
@@ -164,7 +164,7 @@ constants:
       section: 9a
       subsection: Absatz 1
       desired_value: Arbeitnehmer-Pauschbetrag
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   VORSORGEPAUSCHAL_MIN:
     value: 1900
     unit: euros
@@ -174,7 +174,7 @@ constants:
       section: 39b
       subsection: Absatz 2.3.e
       desired_value: the amount the Teilbetrag must not exceed, in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   VORSORGEPAUSCHAL_MIN_TAX_CLASS_3:
     value: 3000
     unit: euros
@@ -187,7 +187,7 @@ constants:
       law: EStG
       section: 9a
       desired_value: the Arbeitnehmer-Pauschbetrag amount in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   SONDERAUSGABEN_PAUSCHBETRAG:
     value: 36
     unit: euros
@@ -196,7 +196,7 @@ constants:
       law: EStG
       section: 10c
       desired_value: the Sonderausgaben-Pauschbetrag amount in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   ARBEITSLOSENVERSICHERUNG_RATE:
     value: 2.6
     unit: percent
@@ -205,7 +205,7 @@ constants:
       law: SGB_3
       section: '341'
       desired_value: the unemployment insurance contribution rate (Beitragssatz) as a percentage
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   KINDERGELD:
     value: 259
     unit: euros
@@ -215,7 +215,7 @@ constants:
       law: EStG
       section: '66'
       desired_value: the monthly Kindergeld amount per child in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   KINDERFREIBETRAG_PER_PARENT:
     value: 3414
     unit: euros
@@ -225,7 +225,7 @@ constants:
       section: '32'
       subsection: Absatz 6 Satz 1
       desired_value: the Freibetrag for the 'sächliche Existenzminimum des Kindes' in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   KINDERFREIBETRAG_ERZIEHUNGSBEDARF_PER_PARENT:
     value: 1464
     unit: euros
@@ -235,7 +235,7 @@ constants:
       section: '32'
       subsection: Absatz 6 Satz 1
       desired_value: the Freibetrag for 'Betreuungs- und Erziehungs- oder Ausbildungsbedarf des Kindes' in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   ENTLASTUNGSBETRAG_ALLEINERZIEHENDE:
     value: 4260
     unit: euros
@@ -244,7 +244,7 @@ constants:
       law: EStG
       section: 24b
       desired_value: the Entlastungsbetrag for single parents (Alleinerziehende) in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   ENTLASTUNGSBETRAG_ALLEINERZIEHENDE_EXTRA_CHILD:
     value: 240
     unit: euros
@@ -253,7 +253,7 @@ constants:
       law: EStG
       section: 24b
       desired_value: the additional Entlastungsbetrag per extra child (Erhöhungsbetrag) in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   CAPITAL_GAINS_TAX_RATE:
     value: 25
     unit: percent
@@ -262,7 +262,7 @@ constants:
       law: EStG
       section: 32d
       desired_value: the flat tax rate for capital gains as a percentage
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   CAPITAL_GAINS_FREIBETRAG:
     value: 1000
     unit: euros
@@ -272,7 +272,7 @@ constants:
       section: '20'
       subsection: Absatz 9
       desired_value: the Sparer-Pauschbetrag (capital gains tax-free allowance) in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   GEWERBESTEUER_FREIBETRAG:
     value: 24500
     unit: euros
@@ -281,7 +281,7 @@ constants:
       law: GewStG
       section: '11'
       desired_value: the Gewerbesteuer Freibetrag amount in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   GEWERBESTEUER_RATE:
     value: 3.5
     unit: percent
@@ -290,7 +290,7 @@ constants:
       law: GewStG
       section: '11'
       desired_value: the Gewerbesteuer Steuermesszahl as a percentage
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   GEWERBESTEUER_TAX_CREDIT:
     value: 4
     unit: percent
@@ -302,7 +302,7 @@ constants:
       subsection: Absatz 1.1
       desired_value: the Steuerermäßigung multiplier (the number before 'fache des Gewerbesteuermessbetrags') as a decimal
         number
-      last_verified: 2026-07-03
+      last_verified: 2026-08-03
   GEWERBESTEUER_HEBESATZ_BERLIN:
     value: 410
     unit: percent
@@ -311,7 +311,7 @@ constants:
       url: https://www.gewerbesteuer.de/gewerbesteuerhebesatz/berlin-kreis
       prompt: Return this number as-is.
       css_selector: .gewerbesteuer-data-table td:last-child
-      last_verified: 2026-07-03
+      last_verified: 2026-08-03
   KLEINUNTERNEHMER_MAX_INCOME_FIRST_YEAR:
     value: 25000
     unit: euros
@@ -322,7 +322,7 @@ constants:
       subsection: Absatz 1 Satz 1
       desired_value: the maximum annual revenue threshold for Kleinunternehmerregelung in the preceding calendar year, in
         euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   KLEINUNTERNEHMER_MAX_INCOME:
     value: 100000
     unit: euros
@@ -332,7 +332,7 @@ constants:
       section: '19'
       subsection: Absatz 1 Satz 1
       desired_value: the maximum annual revenue threshold for Kleinunternehmerregelung in the current calendar year, in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   DOUBLE_ENTRY_MIN_REVENUE:
     value: 800000
     unit: euros
@@ -341,7 +341,7 @@ constants:
       law: HGB
       section: 241a
       desired_value: the revenue threshold (Umsatzerlöse) above which double-entry bookkeeping is required, in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   DOUBLE_ENTRY_MIN_INCOME:
     value: 80000
     unit: euros
@@ -350,7 +350,7 @@ constants:
       law: HGB
       section: 241a
       desired_value: the profit threshold (Jahresüberschuss) above which double-entry bookkeeping is required, in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   VAT_RATE:
     value: 19
     unit: percent
@@ -360,7 +360,7 @@ constants:
       section: '12'
       subsection: Absatz 1
       desired_value: the standard VAT rate (Umsatzsteuer) as a percentage
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   VAT_RATE_REDUCED:
     value: 7
     unit: percent
@@ -370,7 +370,7 @@ constants:
       section: '12'
       subsection: Absatz 2
       desired_value: the reduced VAT rate (ermäßigter Steuersatz) as a percentage
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   EU_VAT_SCHWELLENWERT:
     value: 10000
     unit: euros
@@ -385,7 +385,7 @@ constants:
       section: '18'
       subsection: Absatz 2 Satz 3
       desired_value: the maximum monthly income according, in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   VAT_MIN_MONTHLY_AMOUNT:
     value: 9000
     unit: euros
@@ -395,7 +395,7 @@ constants:
       section: '18'
       subsection: Absatz 2 Satz 2
       desired_value: the minimum amount that requires monthly VAT filing, in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   MIDIJOB_MAX_INCOME:
     value: 2000
     unit: euros
@@ -405,7 +405,7 @@ constants:
       section: '20'
       subsection: Absatz 2
       desired_value: the upper earnings limit for the Übergangsbereich according to Absatz 2, in euros per month
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   GKV_FACTOR_F:
     value: 0.6619
     unit: decimal
@@ -414,7 +414,7 @@ constants:
       url: https://www.tk.de/firmenkunden/versicherung/beitraege-faq/zahlen-und-grenzwerte/faktor-f-2033036
       prompt: Read this page. Return the latest Faktor F value.
       css_selector: .e-table.e-table__table
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   BEZUGSGROESSE:
     value: 3955
     unit: euros
@@ -428,7 +428,7 @@ constants:
       law: SGB_V
       section: '241'
       desired_value: the general GKV contribution rate (allgemeiner Beitragssatz) as a percentage
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   GKV_BASE_RATE_SELF_PAY:
     value: 14
     unit: percent
@@ -437,7 +437,7 @@ constants:
       law: SGB_V
       section: '243'
       desired_value: the reduced GKV contribution rate (ermäßigter Beitragssatz) as a percentage
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   GKV_MAX_INCOME_MONTHLY:
     value: 5812.5
     unit: euros
@@ -453,7 +453,7 @@ constants:
       subsection: Absatz 3
       desired_value: the monthly income threshold for Auszubildende (trainees) above which the employer pays social insurance
         contributions, in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   GKV_FREIWILLIG_VERSICHERT_MIN_INCOME_MONTHLY:
     value: 6450
     unit: euros
@@ -471,7 +471,7 @@ constants:
       template: zusatzbeitrag
       prompt: Read this HTML text. Return the numeric value as a percentage.
       css_selector: .a11y-table:first-of-type tr:first-of-type td:nth-child(2)
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   GKV_MAX_ZUSATZBEITRAG:
     value: 4.39
     unit: percent
@@ -479,7 +479,7 @@ constants:
       template: zusatzbeitrag
       prompt: Read this HTML text. Return the numeric value as a percentage.
       css_selector: .a11y-table:first-of-type tr:last-of-type td:nth-child(2)
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   GKV_AVG_ZUSATZBEITRAG:
     value: 2.9
     unit: percent
@@ -489,42 +489,42 @@ constants:
       prompt: Read this page. Return the average (durchschnittliche) Zusatzbeitrag as a percentage. Only return the number,
         without the percent sign.
       css_selector: '[component-export=InsuranceSummary]'
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   GKV_ZUSATZBEITRAG_AOK:
     value: 3.5
     unit: percent
     monitor:
       template: zusatzbeitrag
       insurer: AOK Nordost
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   GKV_ZUSATZBEITRAG_BARMER:
     value: 3.29
     unit: percent
     monitor:
       template: zusatzbeitrag
       insurer: Barmer
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   GKV_ZUSATZBEITRAG_DAK:
     value: 3.2
     unit: percent
     monitor:
       template: zusatzbeitrag
       insurer: DAK-Gesundheit
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   GKV_ZUSATZBEITRAG_HKK:
     value: 2.59
     unit: percent
     monitor:
       template: zusatzbeitrag
       insurer: hkk
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   GKV_ZUSATZBEITRAG_TK:
     value: 2.69
     unit: percent
     monitor:
       template: zusatzbeitrag
       insurer: Techniker Krankenkasse
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   TRAVEL_INSURANCE_COST:
     value: 40
     unit: euros
@@ -569,7 +569,7 @@ constants:
       section: '13'
       subsection: Absatz 1.2
       desired_value: the monthly Grundbedarf for Höheren Fachschulen, Akademien und Hochschulen in euros per month
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   BAFOG_BEDARFSSATZ_13_ABS_2_2:
     value: 380
     unit: euros
@@ -579,7 +579,7 @@ constants:
       section: '13'
       subsection: Absatz 2.2
       desired_value: the Wohnpauschale for students living away from parents in euros per month
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   SPERRKONTO_SURCHARGE_INSURANCE:
     value: 102
     unit: euros
@@ -589,7 +589,7 @@ constants:
       section: 13a
       subsection: Absatz 1 Satz 1
       desired_value: the monthly Bedarf für Krankenkenversicherungsbeitrag, in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   SPERRKONTO_SURCHARGE_OTHER:
     value: 35
     unit: euros
@@ -599,7 +599,7 @@ constants:
       section: 13a
       subsection: Absatz 3 Satz 3
       desired_value: the monthly surcharge for other expenses (sonstige Aufwendungen) in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   PFLEGEVERSICHERUNG_BASE_RATE:
     value: 3.6
     unit: percent
@@ -609,7 +609,7 @@ constants:
       url: https://www.barmer.de/firmenkunden/sozialversicherung/beitraege/pflegeversicherung-beitraege-arbeitgeber
       prompt: Read this table. Return the Beitragssatz für 1 Kind, as a percentage.
       css_selector: table
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   PFLEGEVERSICHERUNG_BASE_RATE_MAX_AGE:
     value: 22
     unit: integer
@@ -619,7 +619,7 @@ constants:
       section: '55'
       subsection: Absatz 3 Satz 1
       desired_value: the age at which the Beitragssatz increases (one year before the number in Satz 1)
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   PFLEGEVERSICHERUNGS_SURCHARGE:
     value: 0.6
     unit: percent
@@ -628,7 +628,7 @@ constants:
       law: SGB_11
       section: '55'
       desired_value: the Beitragszuschlag für Kinderlose as a percentage
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   PFLEGEVERSICHERUNG_DISCOUNT_PER_CHILD:
     value: 0.25
     unit: percent
@@ -638,7 +638,7 @@ constants:
       section: '55'
       subsection: Absatz 3 Satz 4
       desired_value: the Pflegeversicherung discount per child (Abschlag je Kind) as a percentage
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   PFLEGEVERSICHERUNG_DISCOUNT_MIN_CHILDREN:
     value: 2
     unit: integer
@@ -649,7 +649,7 @@ constants:
       section: '55'
       subsection: Absatz 3
       desired_value: the minimum number of children required to receive the Pflegeversicherung discount (Abschlag)
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   PFLEGEVERSICHERUNG_DISCOUNT_MAX_CHILDREN:
     value: 5
     unit: integer
@@ -661,7 +661,7 @@ constants:
       subsection: Absatz 3
       desired_value: the ordinal of the last child in the range for which the Abschlag applies (e.g. 'zweite bis vierte Kind'
         → 4). Return the number as written; do not add 1.
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   RV_BASE_RATE:
     value: 18.6
     unit: percent
@@ -770,7 +770,7 @@ constants:
       section: '46'
       subsection: Absatz 2 Satz 1
       desired_value: the category D visa fee in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   NATIONAL_VISA_FEE:
     value: 100
     unit: euros
@@ -780,7 +780,7 @@ constants:
       section: '45'
       subsection: Absatz 1.a
       desired_value: the fee for issuing an Aufenthaltserlaubnis in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   NATIONAL_VISA_RENEWAL_FEE:
     value: 93
     unit: euros
@@ -790,7 +790,7 @@ constants:
       section: '45'
       subsection: Absatz 2.b
       desired_value: the fee for renewing or extending an Aufenthaltserlaubnis in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   RESIDENCE_PERMIT_REPLACEMENT_FEE:
     value: 67
     unit: euros
@@ -799,7 +799,7 @@ constants:
       law: AufenthV
       section: 45c
       desired_value: the fee for replacing a residence permit (e.g. after a passport change) in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   MIN_PERMANENT_RESIDENCE_FEE:
     value: 37
     unit: euros
@@ -813,7 +813,7 @@ constants:
       law: AufenthV
       section: '44'
       desired_value: the maximum fee for a permanent residence permit (Niederlassungserlaubnis) in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   FAST_TRACK_FEE:
     value: 411
     unit: euros
@@ -822,7 +822,7 @@ constants:
       law: AufenthV
       section: '47'
       desired_value: the fee for the fast-track visa procedure (beschleunigtes Fachkräfteverfahren) in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   FREELANCE_VISA_MIN_MONTHLY_PENSION:
     value: 1612.53
     unit: euros
@@ -879,7 +879,7 @@ constants:
       section: '3'
       subsection: Absatz 1
       desired_value: the minimum annual income threshold for KSK membership (Geringfügigkeitsgrenze) in euros
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   KSK_MIN_HEALTH_INSURANCE_INCOME:
     value: 7910
     unit: euros
@@ -889,7 +889,7 @@ constants:
       url: https://www.kuenstlersozialkasse.de/service-und-medien/ksk-in-zahlen
       prompt: Read this page. Return the Mindestbeitragsberechnungsgrundlage (minimum income for health insurance calculation)
         in euros per year.
-      last_verified: 2026-07-03
+      last_verified: 2026-08-03
   ORDNUNGSAMT_DANGEROUS_DOG_FEE:
     value: 30
     unit: euros
@@ -973,7 +973,7 @@ constants:
       template: default
       url: https://www.vonengelhardt.com/en/helpnowen
       prompt: Read this page. Return the cost per minute for the legal hotline, in euros.
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   LEGAL_INSURANCE_MIN_COST:
     value: 15
     unit: euros
@@ -996,9 +996,9 @@ constants:
     monitor:
       template: residence_permit_wait_time
       residence_permit_type: BLUE_CARD
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   WAIT_TIME_CITIZENSHIP:
-    value: 4 to 12 months
+    value: 5 to 12 months
     unit: text
     description: Citizenship application wait time (last 12 months)
     monitor:
@@ -1006,7 +1006,7 @@ constants:
       crawler: json
       url: https://allaboutberlin.com/api/forms/citizenship-feedback.json?page=1&count=1
       json_path: stats.start_to_finish.last_12_months.readable_range
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   WAIT_TIME_FAMILY_REUNION_VISA:
     value: 3 to 5 months
     unit: text
@@ -1014,23 +1014,23 @@ constants:
     monitor:
       template: residence_permit_wait_time
       residence_permit_type: FAMILY_REUNION_VISA
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   WAIT_TIME_FREELANCE_VISA:
-    value: 7 weeks to 5 months
+    value: 7 weeks to 6 months
     unit: text
     description: Freelance visa wait time (last 12 months)
     monitor:
       template: residence_permit_wait_time
       residence_permit_type: FREELANCE_VISA
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   WAIT_TIME_JOB_SEEKER_VISA:
-    value: 2 to 5 months
+    value: 3 to 5 months
     unit: text
     description: Job seeker visa wait time (last 12 months)
     monitor:
       template: residence_permit_wait_time
       residence_permit_type: JOB_SEEKER_VISA
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   WAIT_TIME_PERMANENT_RESIDENCE:
     value: 3 to 7 months
     unit: text
@@ -1038,7 +1038,7 @@ constants:
     monitor:
       template: residence_permit_wait_time
       residence_permit_type: PERMANENT_RESIDENCE
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   WAIT_TIME_STUDENT_VISA:
     value: 3 to 5 months
     unit: text
@@ -1046,7 +1046,7 @@ constants:
     monitor:
       template: residence_permit_wait_time
       residence_permit_type: STUDENT_VISA
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   WAIT_TIME_WORK_VISA:
     value: 2 to 5 months
     unit: text
@@ -1054,7 +1054,7 @@ constants:
     monitor:
       template: residence_permit_wait_time
       residence_permit_type: WORK_VISA
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   WAIT_TIME_RESIDENCE_PERMIT:
     value: 3 to 6 months
     unit: text
@@ -1062,7 +1062,7 @@ constants:
     monitor:
       template: residence_permit_wait_time
       residence_permit_type: ''
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   HEALTH_INSURANCE_MIN_COST:
     value: 90
     unit: euros
@@ -1122,7 +1122,7 @@ constants:
       section: 19
       subsection: Absatz 1 Satz 1
       desired_value: the deposit amount (Pfand) for batteries in euros
-      last_verified: 2026-07-03
+      last_verified: 2026-08-03
   BESCHV_26_1_COUNTRIES:
     value: AD,AU,IL,JP,CA,KR,MC,NZ,SM,GB,US
     unit: countries
@@ -1135,7 +1135,7 @@ constants:
       desired_value: a comma-separated list of two-letter ISO 3166-1 alpha-2 country codes
       formatting_instructions: Return only the country codes as a comma-separated list without spaces. If the codes are not
         in the supplied text, only return ERROR.
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   BESCHV_26_2_COUNTRIES:
     value: AL,BA,XK,ME,MK,RS
     unit: countries
@@ -1148,7 +1148,7 @@ constants:
       desired_value: a comma-separated list of two-letter ISO 3166-1 alpha-2 country codes
       formatting_instructions: Return only the country codes as a comma-separated list without spaces. If the codes are not
         in the supplied text, only return ERROR.
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   AUFENTHG_21_2_COUNTRIES:
     value: DO,ID,JP,LK,PH
     unit: countries
@@ -1167,7 +1167,7 @@ constants:
       desired_value: a sorted, comma-separated list of two-letter ISO 3166-1 alpha-2 country codes
       formatting_instructions: Return only the country codes as a comma-separated list without spaces. If the codes are not
         in the supplied text, only return ERROR.
-      last_verified: 2026-07-03
+      last_verified: 2026-08-03
   AUFENTHV_41_2_COUNTRIES:
     value: AD,BR,SV,HN,MC,SM
     unit: countries
@@ -1180,7 +1180,7 @@ constants:
       desired_value: a sorted, comma-separated list of two-letter ISO 3166-1 alpha-2 country codes
       formatting_instructions: Return only the country codes as a comma-separated list without spaces. If the codes are not
         in the supplied text, only return ERROR.
-      last_verified: 2026-07-01
+      last_verified: 2026-08-03
   EU_COUNTRIES_COUNT:
     value: 27
     unit: integer
