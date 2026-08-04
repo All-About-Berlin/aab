@@ -15,7 +15,7 @@ If you must get rid of old clothes and shoes, you can [resell them](/guides/how-
 
 There are over 6000 donation bins for clothes in Berlin.[^0] They are often near supermarkets and gas stations.
 
-**[Map of clothes donation bins ➞](https://entsorgungsmoeglichkeiten.de/map?search=Berlin&zm=11&f=container_cloths)**
+**[Map of clothes donation bins ➞](https://entsorgungsmoeglichkeiten.de/map?search=Berlin&zm=11&f=container_cloths)** - Inaccurate; many bins are gone[^4]
 
 ### Where will my clothes go?
 
@@ -63,3 +63,4 @@ Berliner Stadtreinigung also has a [list of collection points for clothes](https
 [^1]: [tagesspiegel.de](https://www.tagesspiegel.de/berlin/wo-unsere-altkleider-landen-3943288.html), [wiki.openstreetmap.org](https://wiki.openstreetmap.org/wiki/Deutsche_Altkleider-Container_Betreiber)
 [^2]: [berlin.de \(archived\)](https://web.archive.org/web/20210418195752/https://www.berlin.de/special/immobilien-und-wohnen/energie-und-tarife/2824386-932375-stoffreste-ohne-tuete-in-altkleiderconta.html)
 [^3]: [shops.oxfam.de](https://shops.oxfam.de/sachen-spenden/spenden)
+[^4]: Reader feedback (2026)
