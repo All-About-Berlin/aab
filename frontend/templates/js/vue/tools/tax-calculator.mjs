@@ -287,6 +287,12 @@ export default {
 				});
 			}
 		},
+		decrementIncome(){
+			this.inputIncome = Math.max(this.inputIncome - this.incomeInputRange.step, this.incomeInputRange.min);
+		},
+		incrementIncome(){
+			this.inputIncome = Math.min(this.inputIncome + this.incomeInputRange.step, this.incomeInputRange.max);
+		},
 		toggleUseMonthlyIncome(){
 			this.useMonthlyIncome = !this.useMonthlyIncome;
 			if(this.useMonthlyIncome){
@@ -314,7 +320,7 @@ export default {
 				<label :for="uid('range-income')">
 					<strong><eur :amount="inputIncome"></eur></strong>/{{ monthOrYear }} {{ salaryOrIncome }}
 				</label>
-				<span class="range-prefix no-mobile no-print">€</span>
+				<span class="range-prefix no-mobile no-print" @click="decrementIncome">€</span>
 				<input
 					:aria-labelledby="uid('range-income')"
 					:id="uid('range-income')"
@@ -325,7 +331,7 @@ export default {
 					:min="incomeInputRange.min"
 					:max="incomeInputRange.max"
 					tabindex="0">
-				<span class="range-suffix no-mobile no-print">€</span>
+				<span class="range-suffix no-mobile no-print" @click="incrementIncome">€</span>
 				<button class="button link no-print" :class="showExtraQuestions ? 'hide-options' : 'show-options'" @click.prevent="toggleExtraQuestions">
 					{{ showExtraQuestions ? 'Hide options' : 'Show options' }}
 				</button>
