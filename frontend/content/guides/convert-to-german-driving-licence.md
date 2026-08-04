@@ -41,7 +41,7 @@ Foreign driving licences are sometimes valid in Germany:
     - **Converted driving licences**  
         If you got a driving licence outside of [[EEA]] and [Annex 11 countries](https://www.gesetze-im-internet.de/fev_2010/anlage_11.html), then converted it to a EU driving licence without taking a driving exam, your EU driving licence is only valid for 6 months after you move to Germany.[^23] You might need to take driving classes to get a German driving licence.
 - **Ukrainian driving licences**  
-    If you are a Ukrainian asylum seeker, your driving licence is valid in Germany.[^22] If it expires after the Russian invasion of Ukraine, it's still valid in Germany.{{ fail_on('2027-04-01') }}
+    If you are a Ukrainian asylum seeker, your driving licence is valid in Germany.[^22] If it expires after the Russian invasion of Ukraine, it's still valid in Germany.{{ fail_on('2028-04-01') }}
 - **Other driving licences**  
     After you [move to Germany](/guides/moving-to-berlin) and [register your address](/glossary/Anmeldung), your driving licence is valid for 6 months.[^18] After 6 months, you must convert it to a German driving licence.
 
