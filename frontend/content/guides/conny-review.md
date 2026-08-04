@@ -86,7 +86,7 @@ Use these services to lower your rent:
     Hire a lawyer to lower your rent. It costs a few thousand euros.[^22] Your [legal insurance](/guides/legal-insurance) might pay for it.
 - **Conny alternatives**
     - **[Mietorcas](https://www.mietorcas.de/en/)**  
-        Newer alternative with lower, clearer fees.{{fail_on('2027-01-01')}}[^16]
+        Newer alternative with lower, clearer fees.{{fail_on('2027')}}[^16]
     - **[Allright](https://www.allright.de/soforthilfe/mietpreisbremse)**  
         Their fees are similar to Conny's. They offer other legal services.
 
