@@ -37,7 +37,7 @@ The [public health insurance](/glossary/gesetzliche%20Krankenversicherung) refor
 - **Higher bar for private health insurance**  
     Employees must earn at least €77,400 per year to choose [private health insurance](/glossary/private%20Krankenversicherung). Starting in 2027, they must earn at least €84,483 per year.
 - **Higher co-payments**  
-    Some treatments and prescriptions have a co-payment of €5 to €10. It will go up by 5%, so you will pay €7.50 to €15.
+    Some treatments and prescriptions have a co-payment of €5 to €10. It will go up by 50%, so you will pay €7.50 to €15.
 - **Coverage changes**  
     Homeopathy and cannabis flowers are no longer covered.[^5]
 
