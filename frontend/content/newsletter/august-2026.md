@@ -9,7 +9,7 @@ Date_created: 2026-08-01
 ### Berlin events in August
 
 - [Rave the Planet](https://www.ravetheplanet.com/) (August 15)
-- [Zug der Liebe](https://zugderliebe.org/) (August 29)
+- <s>[Zug der Liebe](https://zugderliebe.org/)</s> (August 29) - [cancelled](https://www.the-berliner.com/berlin/zug-der-liebe-cancelled-raw-gelande-collaboration-planned-instead/?utm_source=substack&utm_medium=email)
 - [Long Night of the Museums](https://www.berlin.de/en/events/2091757-2842498-long-night-of-museums.en.html) (August 29)
 
 ![“Berliner Strandleben” by Heinrich Zille](/images/heinrich-zille-berliner-strandleben.jpg "“Berliner Strandleben” by Heinrich Zille")
