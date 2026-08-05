@@ -35,6 +35,10 @@ The same form is [on Berlin.de](https://www.berlin.de/formularverzeichnis/?formu
 
 Use my [Abmeldung form filler](#fill-the-abmeldung-form-online), it's easier.
 
+To deregister members of the same family, use the same form. To deregister friends, room mates or unmarried couples, use separate forms.[^2] To deregister more than 3 members of the same family, use multiple forms.[^1]
+
+This is how you must fill each field:
+
 - **Bisherige Wohnung / Gemeindekennzahl (left column)**: information about your last address in Germany. Use the information on your *[[Anmeldebestätigung]]*.
     - **Tag des Auszugs**: Your move-out date. You can deregister 7 days before you [move out](/guides/moving-out). You must do it maximum 14 days after you move out.[^0]
     - **Diese Wohnung hat bereits bestanden**: Choose this if you already registered your future address. If you are leaving Germany, choose *nein.*
@@ -46,8 +50,6 @@ Use my [Abmeldung form filler](#fill-the-abmeldung-form-online), it's easier.
 - **People to deregister**  
     Do not use Cyrillic or non-Latin characters. Write your name the same way as in your passport.
 - **Ort, Datum, Unterschrift**: The date, the city, and your signature. Use the DD.MM.YYYY date format. Your signature should be the same as on your passport or national ID.
-
-If you deregister more than 3 people, use multiple forms.[^1]
 
 ## How to send this form
 
@@ -70,3 +72,4 @@ After you deregister your address, you will get an *[[Abmeldebescheinigung]]*.
 
 [^0]: [buergeramt-termine.de](https://buergeramt-termine.de/guide/abmeldung-deregister-germany/)
 [^1]: [berlin.de](https://service.berlin.de/dienstleistung/120335/#:~:text=benutzen%20sie%20bitte%20weitere%20meldescheine) (September 2024)
+[^2]: [Robert Hantzsch](/out/easyassist-abmeldung) (August 2026), [Elliot Herman](https://www.sorted.berlin/) (August 2026)
