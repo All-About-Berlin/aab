@@ -37,6 +37,8 @@ TEMPLATE="frontend/content/_templates/${SECTION}.md"
 if [ "$SECTION" = "newsletter" ]; then
   SLUG="${TITLE:-$(date -v+1m +%B-%Y | tr '[:upper:]' '[:lower:]')}"
   OUTPUT="${DIR}/_${SLUG}.md"
+  MONTH=$(echo "${SLUG%-*}" | awk '{print toupper(substr($0,1,1)) substr($0,2)}')
+  YEAR="${SLUG##*-}"
 else
   SLUG="${TITLE:-$DATE}"
   OUTPUT="${DIR}/${SLUG}.md"
@@ -53,6 +55,6 @@ if [ -f "$OUTPUT" ]; then
 fi
 
 mkdir -p "$(dirname "$OUTPUT")"
-sed "s/{{date}}/$DATE/g" "$TEMPLATE" > "$OUTPUT"
+sed -e "s/{{date}}/$DATE/g" -e "s/{{month}}/$MONTH/g" -e "s/{{year}}/$YEAR/g" "$TEMPLATE" > "$OUTPUT"
 echo "Created: $OUTPUT"
 subl --project "$SUBLIME_PROJECT" --add "$OUTPUT"
