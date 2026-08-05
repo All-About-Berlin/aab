@@ -147,6 +147,16 @@ run = """
 frontend/scripts/add_review.py
 """
 
+[tasks.new]
+description = "Create a new content entry from a template"
+usage = '''
+arg "<section>" help="guide|tool|doc|document|glossary|term|newsletter"
+arg "[title]" help="Optional slug/title (defaults to today's date, or next month for newsletters)"
+'''
+run = """
+frontend/scripts/create_entry.py "${usage_section}" "${usage_title:-}"
+"""
+
 [tasks.publish-newsletter]
 description = "Prepare a newsletter for publication (prints markdown to stdout)"
 usage = '''
