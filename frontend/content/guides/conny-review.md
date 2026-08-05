@@ -65,30 +65,11 @@ Per my [content policy](/terms#content-policy), you get the same advice as my be
 
 Their service works, but their fee is too high, and their business practices are not great. Many reviews complain about the confusing fee structure and the shady business practices.[^13]
 
-[Visit their website](/out/conny-mietpreisbremse), [get a quote](/out/conny-mietpreisbremse-calculator), look at the [other options](#other-ways-to-lower-your-rent), and decide if it's worth it for you.
+[Visit their website](/out/conny-mietpreisbremse), [get a quote](/out/conny-mietpreisbremse-calculator), look at [other ways to lower your rent](#other-ways-to-lower-your-rent), and decide if it's worth it for you.
 
 ## Other ways to lower your rent
 
-Use these services to check if your rent is too high:
-
-- **[Mietencheck.de](https://mietencheck.de)**{{RECOMMENDED}}  
-    A free online calculator. It shows you if your rent is above the *[[Mietpreisbremse]]* limit. It's in English. It's made by a non-profit association. They don't sell anything.
-- **[Rent review office](https://www.berlin.de/sen/wohnen/siwo/rent-review-office-berlin-1671823.en.php)** (*Mietpreisprüfstelle*){{RECOMMENDED}}  
-    Official service by the city of Berlin. You must book an in-person appointment.
-- **Tenants' association** (*[[Mieterverein]]*)  
-    If you are a member, they can check your lease and tell you if your rent is too high.
-
-Use these services to lower your rent:
-
-- **Tenants' association** (*[[Mieterverein]]*){{ RECOMMENDED }}  
-    Pay a monthly or yearly fee, and get help when you need it. They can check your lease, check your *[[Nebenkostenabrechnung]]* and help you reduce your rent. They are cheaper than a lawyer, and offer more services than Conny. After you join a *Mieterverein*, you must wait a few months before you use their legal services.[^12]
-- **[Tenancy lawyer](/guides/english-speaking-lawyers-berlin)** (*Anwalt für Mietrecht*)  
-    Hire a lawyer to lower your rent. It costs a few thousand euros.[^22] Your [legal insurance](/guides/legal-insurance) might pay for it.
-- **Conny alternatives**
-    - **[Mietorcas](https://www.mietorcas.de/en/)**  
-        Newer alternative with lower, clearer fees.{{fail_on('2027')}}[^16]
-    - **[Allright](https://www.allright.de/soforthilfe/mietpreisbremse)**  
-        Their fees are similar to Conny's. They offer other legal services.
+**[How to reduce your rent ➞](/guides/rent-reduction)**
 
 **[Where to ask apartment questions ➞](/guides/help#apartment-questions)**
 
@@ -104,14 +85,11 @@ Use these services to lower your rent:
 [^9]: [mueller-radack.com](https://www.mueller-radack.com/mietpreispruefung-durch-dritte-gericht-zieht-klare-rechtliche-linie/) (2026)
 [^10]: [beck-aktuell.de](https://www.beck-aktuell.de/heute-im-recht/rechtsprechung/eugh-c400-22-mieter-conny-lg-berlin-verbraucherschutz-richtlinie-2024-05-29) (2024), [eulawanalysis.blogspot.com](https://eulawanalysis.blogspot.com/2024/07/a-conditional-payment-is-still-payment.html#:~:text=of%0Athe%20Conny-,case,-In%20Conny%2C%0Athe) (2024)
 [^11]: Many of the reviews I cited before got removed. [Google Maps](/images/conny-removed-reviews.png) (August 2026), [Reddit](https://www.reddit.com/r/germany/comments/1kcz6vf/google_is_removing_all_bad_reviews/) (2025)
-[^12]: [berliner-mieterverein.de](https://www.berliner-mieterverein.de/mitgliedsbeitraege-und-leistungen.htm#:~:text=mit%20einer%20dreimonatigen%20wartefrist%20), [mieterbund-siegerland.de](https://www.mieterbund-siegerland.de/infos/faqs/nichtmitglieder/kuemmert-sich-der-mieterbund-auch-noch-um-probleme-die-ich-bereits-habe-wenn-ich-beitreten-moechte#:~:text=eine%203-monatige%20wartezeit%20ab%20beginn%20der%20versicherungszeit%20besteht)
 [^13]: [Trustpilot](https://ie.trustpilot.com/review/conny.de) (August 2026)
 [^14]: [Reddit](https://www.reddit.com/r/germany/comments/1ij6oa9/connyde_lowered_my_rent_but_the_commission_was/) (2025), [Reddit](https://old.reddit.com/r/wohnen/comments/1u3xs7v/my_experience_with_conny/) (2026)
 [^15]: [Reddit](https://old.reddit.com/r/wohnen/comments/1u3xs7v/my_experience_with_conny/or9xw6f/) (2026)
-[^16]: [test.de](https://www.test.de/Mietorcas-Bequem-und-risikolos-die-Miete-bremsen-6322628-0/) (July 2026)
 [^17]: [Reddit](https://www.reddit.com/r/berlinsocialclub/comments/1ifjlbp/im_thinking_of_withdrawing_my_conny_application/) (2025), [Reddit](https://old.reddit.com/r/berlinsocialclub/comments/1qlmnd8/conny_examples_of_damages/) (2026), [Reddit](https://old.reddit.com/r/berlinsocialclub/comments/1pizyf9/conny_horror/) (2025), [Reddit](https://old.reddit.com/r/germany/comments/1phez4w/conny_filed_a_lawsuit_without_my_consenteven/) (2025), [Reddit](https://old.reddit.com/r/LegaladviceGerman/comments/1sciacz/conny_demands_repayment_for_services_and_we_never/) (2026), [Reddit](https://old.reddit.com/r/berlinsocialclub/comments/1qonev3/conny_gmbh_demanding_2950_schadensersatz_wegen/) (2026), [Reddit](https://www.reddit.com/r/LegaladviceGerman/comments/1nd9t2b/conny_wants_me_to_pay_schadensersatz_wegen/) (2025), [Reddit](https://www.reddit.com/r/LegaladviceGerman/comments/1l7zpc8/conny_gmbh_invoice_received_without_signed/) (2025)
 [^18]: [Twitter](https://x.com/_mart_h_a/status/2084279430399115299) (2026) 
 [^19]: [test.de](https://www.test.de/Conny-Mietpreisbremse-per-Inkasso-durchsetzen-5145113-0/#:~:text=conny%20kassiert%20in%20der%20regel%20alle%20erstattungen.) (2025)
 [^20]: [Reddit](https://www.reddit.com/r/berlinsocialclub/comments/1pqm49y/comment/nv0ef58/) (2026)
 [^21]: [Berliner Mieterverein](https://www.berliner-mieterverein.de/musterschreiben/mietpreisbremse-ruege-des-mieters-wegen-verstosses#:~:text=die%20miete%20reduziert%20sich%20also%20insoweit%20auch%20ruckwirkend.%20die%20uberzahlten%20betrage%20konnen%20daher%20auch%20zuruckgefordert%20werden.), [bmgev.de](https://bmgev.de/mietrecht/tipps/mietpreisbremse#:~:text=%20mietpreisbremse%20auch%20ruckwirkend%20zuruckfordern)
-[^22]: [Reddit](https://www.reddit.com/r/wohnen/comments/1pjxjj4/erfahrungsbericht_6000_per_mietpreisbremse/) (2025)

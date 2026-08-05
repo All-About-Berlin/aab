@@ -5,6 +5,7 @@ english_term: Rent cap
 description: A rent control law in Germany.
 date_created: 2020-07-29
 related_guides:
+    - guides/rent-reduction.md
     - guides/find-a-flat-in-berlin.md
     - tools/rent-map.md
     - guides/housing-scams.md
@@ -17,3 +18,5 @@ The rent price brake (*Mietpreisbremse*) is a rent control law in Germany. It li
 The *Mietpreisbremse* is not the same as the *[[Mietendeckel]]*. The *Mietendeckel* was repealed in April 2021.
 
 **[Mietpreisbremse calculator ➞](https://mietencheck.de)**
+
+**[How to lower your rent ➞](/guides/rent-reduction)**

@@ -5,6 +5,7 @@ english_term: Shadow rent
 description: A different rent that applies if the Mietendeckel is repealed.
 date_created: 2021-04-15
 related_guides:
+    - guides/rent-reduction.md
     - guides/housing-scams.md
     - guides/find-a-flat-in-berlin.md
 ---

@@ -29,6 +29,9 @@
           entries:
             - title: Making a noise complaint
               uri: guides/noise-complaint.md
+    - title: Lowering your rent
+      uri: guides/rent-reduction.md
+      entries:
         - title: Review of Conny rent reduction
           uri: guides/conny-review.md
     - title: Changing your address

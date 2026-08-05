@@ -109,9 +109,9 @@ The landlord only accepts self-employed tenants. Part of the apartment is a comm
 
 Berlin has [rent control laws](/glossary/Mietpreisbremse). Landlords can't charge what they want. If you sue your landlord to lower your rent, they can't kick you out. You pay less rent, but keep the apartment.
 
-Use [Mietencheck.de](https://mietencheck.de) to see if your rent is too high. Services like [Conny](/guides/conny-review) can help you lower your rent, but they are very expensive. The best option is to join a *[[Mieterverein]]*.
-
 Rent control laws also apply to [[WG]]s and furnished apartments.
+
+**[How to lower your rent ➞](/guides/rent-reduction)**
 
 ### Eigenbedarf
 

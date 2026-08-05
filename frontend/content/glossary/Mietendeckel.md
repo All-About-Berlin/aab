@@ -5,6 +5,7 @@ english_term: Rent cap
 description: A rent cap that was repealed after 1 year.
 date_created: 2021-04-15
 related_guides:
+    - guides/rent-reduction.md
     - guides/find-a-flat-in-berlin.md
 ---
 
