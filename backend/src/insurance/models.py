@@ -94,19 +94,12 @@ class Case(models.Model):
         return self.name
 
 
-class CaseNotificationMixin(ScheduledMessage):
+class CustomerNotification(ScheduledMessage):
     case = models.ForeignKey(Case, on_delete=models.CASCADE)
 
-    class Meta:
-        abstract = True
-
-
-class CustomerNotification(CaseNotificationMixin, ScheduledMessage):
     @property
     def recipients(self) -> list[str]:
-        return [
-            self.case.email,
-        ]
+        return [self.case.email]
 
     @property
     def subject(self) -> str:
@@ -130,12 +123,12 @@ class CustomerNotification(CaseNotificationMixin, ScheduledMessage):
         pass
 
 
-class BrokerNotification(CaseNotificationMixin, ScheduledMessage):
+class BrokerNotification(ScheduledMessage):
+    case = models.ForeignKey(Case, on_delete=models.CASCADE)
+
     @property
     def recipients(self) -> list[str]:
-        return [
-            "Seamus.Wolf@horizon65.com",
-        ]
+        return ["Seamus.Wolf@horizon65.com"]
 
     @property
     def subject(self) -> str:
@@ -149,7 +142,8 @@ class BrokerNotification(CaseNotificationMixin, ScheduledMessage):
         pass
 
 
-class FeedbackNotification(CaseNotificationMixin):
+class FeedbackNotification(ScheduledMessage):
+    case = models.ForeignKey(Case, on_delete=models.CASCADE)
     delivery_date = models.DateTimeField(default=relative_default_date(days=5))
 
     @property
@@ -158,9 +152,10 @@ class FeedbackNotification(CaseNotificationMixin):
 
     @property
     def recipients(self) -> list[str]:
-        return [
-            self.case.email,
-        ]
+        return [self.case.email]
+
+    class Meta(ScheduledMessage.Meta):
+        pass
 
     class Meta(ScheduledMessage.Meta):
         pass
