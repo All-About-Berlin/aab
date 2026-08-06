@@ -12,8 +12,14 @@ SECRET_KEY = "django-insecure-rm#p9c7f!%q1&=-l+m6lx^9=cl2f301=+d3eu0n3x^yfy1yg51
 
 BUTTONDOWN_API_KEY = os.environ.get("BUTTONDOWN_API_KEY")
 MAILGUN_API_KEY = os.environ.get("MAILGUN_API_KEY")
+
+TK_API_USER_ID = os.environ.get("TK_API_USER_ID")
+TK_API_PASSWORD = os.environ.get("TK_API_PASSWORD")
+TK_API_VERMITTLER_ID = os.environ.get("TK_API_VERMITTLER_ID")
+
 DEBUG = bool(int(os.environ.get("DEBUG", "0")))
 DEBUG_EMAILS = DEBUG  # Print emails instead of sending them
+DEBUG_TK_API_REQUESTS = DEBUG  # Route TK API calls to the staging endpoint
 
 # When set to a (start_date, end_date) tuple, CustomerNotification emails sent
 # on or between those dates use the "Vacation" variant of the template.

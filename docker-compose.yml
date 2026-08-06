@@ -26,6 +26,9 @@ services:
       - "BUTTONDOWN_API_KEY"
       - "DOMAIN=localhost"
       - "SERVICES_DOMAIN=services.localhost"
+      - "TK_API_USER_ID"
+      - "TK_API_PASSWORD"
+      - "TK_API_VERMITTLER_ID"
     volumes:
       - "api_db:/var/db"
       - "api_staticfiles:/var/www/api/staticfiles"
