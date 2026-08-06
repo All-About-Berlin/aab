@@ -3,7 +3,7 @@ from django.core.exceptions import ValidationError
 from django.db import models
 from django.utils import timezone
 from forms.models import ScheduledMessage
-from forms.utils import relative_default_date
+from forms.utils import relative_default_date, validate_email
 
 
 class ContactMethod(models.TextChoices):
@@ -37,7 +37,7 @@ class Case(models.Model):
     """
 
     name = models.CharField(max_length=100)
-    email = models.EmailField(blank=True)
+    email = models.EmailField(validators=[validate_email], blank=True)
     contact_method = models.CharField(
         "Contact method", max_length=15, choices=ContactMethod, default=ContactMethod.EMAIL
     )
