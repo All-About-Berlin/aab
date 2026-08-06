@@ -2,6 +2,7 @@ from django.conf import settings
 from django.core.exceptions import ValidationError
 from django.db import models
 from django.utils import timezone
+from django_countries.fields import CountryField
 from forms.models import ScheduledMessage
 from forms.utils import relative_default_date, validate_email
 
@@ -56,7 +57,7 @@ class Case(models.Model):
     creation_date = models.DateTimeField(auto_now_add=True)
     question = models.TextField("Question", blank=True)
 
-    referrer = models.CharField(blank=True, help_text="Part of the commissions will be paid out to that referrer")
+    referrer = models.CharField(blank=True)
     site = models.CharField(max_length=100, blank=True, default="allaboutberlin.com")
 
     daily_digest_fields = [
@@ -157,5 +158,125 @@ class FeedbackNotification(ScheduledMessage):
     class Meta(ScheduledMessage.Meta):
         pass
 
-    class Meta(ScheduledMessage.Meta):
-        pass
+
+class Genders(models.TextChoices):
+    MALE = "male", "Male"
+    FEMALE = "female", "Female"
+    NON_BINARY = "non_binary", "Non-binary"
+    UNSPECIFIED = "unspecified", "Unspecified"
+
+
+class HealthInsuranceTypes(models.TextChoices):
+    PUBLIC = "public", "Public/statutory"
+    PRIVATE = "private", "Private"
+
+
+class HealthInsurerChoices(models.TextChoices):
+    TK = "tk", "Techniker Krankenkasse"
+
+
+class SignupStatus(models.TextChoices):
+    NEW = "new", "New"
+    SUBMITTED = "submitted", "Submitted to insurer"
+    ACCEPTED = "accepted", "Accepted by insurer"
+    REJECTED = "rejected", "Rejected by insurer"
+    ERROR = "error", "Submission error"
+
+
+class IdDocumentTypes(models.TextChoices):
+    PASSBILD = "PASSBILD", "Passport photo"
+    DOKUMENT = "DOKUMENT", "Document"
+    OTHER = "OTHER", "Other"
+
+
+class Languages(models.TextChoices):
+    EN = "EN", "English"
+    DE = "DE", "German"
+
+
+class HealthInsuranceSignup(models.Model):
+    """
+    A signup submission for a public/statutory (gesetzliche) health insurer.
+    """
+
+    creation_date = models.DateTimeField(auto_now_add=True)
+    insurance_start_date = models.DateField()
+
+    referrer = models.CharField(blank=True)
+
+    # Case information
+
+    insurer = models.CharField(max_length=10, choices=HealthInsurerChoices, default=HealthInsurerChoices.TK)
+    submission_date = models.DateTimeField(blank=True, null=True)
+    external_reference_id = models.CharField(max_length=64, blank=True, help_text="ID in the health insurer's system")
+    status = models.CharField(max_length=10, choices=SignupStatus, default=SignupStatus.NEW)
+
+    # Person information
+
+    occupation = models.CharField(max_length=50, choices=Occupation, default=Occupation.OTHER)
+
+    gender = models.CharField(max_length=15, choices=Genders)
+    title = models.CharField(max_length=15, blank=True)
+    first_name = models.CharField(max_length=150)
+    last_name = models.CharField(max_length=150)
+    birth_name = models.CharField(max_length=150, blank=True)
+
+    birth_date = models.DateField()
+    birth_place = models.CharField(max_length=50)
+    birth_country = CountryField()
+    nationality = CountryField()
+
+    # Contact information
+
+    email = models.EmailField(validators=[validate_email])
+    phone = models.CharField(max_length=20, blank=True)
+    language = models.CharField(max_length=2, choices=Languages, default=Languages.EN)
+
+    # Address information
+
+    street = models.CharField(max_length=150)
+    house_number = models.CharField(max_length=30, blank=True)
+    address_extra = models.CharField(max_length=150, blank=True)
+    postal_code = models.CharField(max_length=15)
+    city = models.CharField(max_length=150)
+    country = CountryField()
+
+    # Insurance information
+
+    has_familienversicherung = models.BooleanField()
+    has_children = models.BooleanField()
+
+    is_other_pension_recipient = models.BooleanField(blank=True, null=True, default=False)
+    is_public_pension_recipient = models.BooleanField(blank=True, null=True, default=False)
+    exempt_from_health_pension_contributions = models.BooleanField(blank=True, null=True, default=False)
+
+    # Current insurance
+
+    has_lived_abroad = models.BooleanField()
+    country_of_last_insurance = CountryField(blank=True, null=True)
+    current_insurer_name = models.CharField(max_length=25, blank=True)
+    current_insurance_type = models.CharField(max_length=15, choices=HealthInsuranceTypes, blank=True)
+    is_currently_pflichtversichert = models.BooleanField(blank=True, null=True)
+    is_currently_policy_holder = models.BooleanField(blank=True, null=True)
+
+    # Employees
+
+    is_salary_above_threshold = models.BooleanField(blank=True, null=True)
+    is_first_job_in_germany = models.BooleanField(blank=True, null=True)
+    employed_since = models.DateField(blank=True, null=True)
+    is_managing_director = models.BooleanField(blank=True, null=True)
+    is_self_employed_on_side = models.BooleanField(blank=True, null=True)
+    is_startup_founder = models.BooleanField(blank=True, null=True)
+    employs_multiple_minijobbers = models.BooleanField(blank=True, null=True)
+    employs_workers = models.BooleanField(blank=True, null=True)
+    self_employment_hours_per_week = models.PositiveIntegerField(default=0)
+    self_employment_income_per_month = models.PositiveIntegerField(default=0)
+    employment_hours_per_week = models.PositiveIntegerField(blank=True, null=True)
+    employment_income_per_month = models.DecimalField(max_digits=10, decimal_places=2, blank=True, null=True)
+
+    class Meta:
+        verbose_name = "Health insurance signup"
+        ordering = ["-creation_date"]
+
+    def __str__(self):
+        return f"{self.first_name} {self.last_name} ({self.insurer})"
