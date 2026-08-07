@@ -88,8 +88,7 @@ Bring these documents to your appointment:
     - The [main tenant](/glossary/Hauptmieter) of your sublet or [[WG]]. They need permission from the landlord.[^5]
     - Your spouse if you move in with them.
     - Your boyfriend or girlfriend if you move in with them. They need permission from the landlord, but the landlord can't really refuse.[^6]
-- [ ] **Anmeldung form**  
-    [Fill the form online](/docs/anmeldung#fill-the-anmeldung-form-online), print it and sign it. To register more than 2 people, use multiple forms.
+- [ ] **[Anmeldung form](/docs/anmeldung#fill-the-anmeldung-form-online)**, printed and signed
 - [ ] **Passport**  
     If you have a German passport, they will put a sticker with your new address on it.
 - [ ] **[National ID](/glossary/Personalausweis)**  

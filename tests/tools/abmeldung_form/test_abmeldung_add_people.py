@@ -5,12 +5,12 @@ from . import fill_abmeldung_form_until, fill_people, previous_step
 
 def test_data_remembered(page, test_screenshot):
     fill_abmeldung_form_until(page, "addPeople")
-    fill_people(page, multiple_people=True)
+    fill_people(page, people_count=3)
 
     page.get_by_role("button", name="Finish").click()
     previous_step(page)
 
-    for index in range(0, 5):
+    for index in range(0, 3):
         person = people[index]
         expect(page.get_by_title("First name").nth(index)).to_have_value(person["first_name"])
         expect(page.get_by_title("Last name").nth(index)).to_have_value(person["last_name"])

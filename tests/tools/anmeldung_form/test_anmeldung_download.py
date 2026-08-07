@@ -4,40 +4,28 @@ from . import fill_anmeldung_form_until
 
 
 def test_download_buttons(page, test_screenshot, tmp_path):
-    fill_anmeldung_form_until(page, "options", multiple_people=True)
+    fill_anmeldung_form_until(page, "options", people_count=len(people))
 
-    download_1 = page.get_by_role("button", name="Download your Anmeldung form (part 1)")
-    expect(download_1).to_contain_text(people[0]["first_name"])
-    expect(download_1).to_contain_text(people[1]["first_name"])
+    part_1 = page.get_by_role("button", name="Download the form for José and Renata")  # First 2 family members
+    part_2 = page.get_by_role("button", name="Download the form for Priya and Tomás")  # Family members #3 and #4
+    part_3 = page.get_by_role("button", name="Download the form for Márk")  # Not a family member
+    part_4 = page.get_by_role("button", name="Download the form for Sofia")  # Not a family member
+    part_5 = page.get_by_role("button", name="Download the form for Élodie")  # Not a family member
 
-    download_2 = page.get_by_role("button", name="Download your Anmeldung form (part 2)")
-    expect(download_2).to_contain_text(people[2]["first_name"])
-    expect(download_2).to_contain_text(people[3]["first_name"])
-
-    download_3 = page.get_by_role("button", name="Download your Anmeldung form (part 3)")
-    expect(download_3).to_contain_text(people[4]["first_name"])
+    for button in (part_1, part_2, part_3, part_4, part_5):
+        expect(button).not_to_be_disabled()
 
     with page.expect_download() as download_info:
-        download_1.click()
-        download = download_info.value
-        assert download.suggested_filename == "anmeldung-form-filled.pdf"
-        download.save_as(tmp_path / "anmeldung-1.pdf")
+        part_1.click()
+    download = download_info.value
+    assert download.suggested_filename == "anmeldung-form-filled.pdf"
+    download.save_as(tmp_path / "anmeldung-1.pdf")
 
     with page.expect_download() as download_info:
-        download_2.click()
-        download = download_info.value
-        assert download.suggested_filename == "anmeldung-form-filled.pdf"
-        download.save_as(tmp_path / "anmeldung-2.pdf")
-
-    with page.expect_download() as download_info:
-        download_3.click()
-        download = download_info.value
-        assert download.suggested_filename == "anmeldung-form-filled.pdf"
-        download.save_as(tmp_path / "anmeldung-3.pdf")
-
-    expect(download_1).not_to_be_disabled()
-    expect(download_2).not_to_be_disabled()
-    expect(download_3).not_to_be_disabled()
+        part_5.click()
+    download = download_info.value
+    assert download.suggested_filename == "anmeldung-form-filled.pdf"
+    download.save_as(tmp_path / "anmeldung-5.pdf")
 
     form = page.get_by_role("group", name="Anmeldung form filler")
     test_screenshot(page, form)

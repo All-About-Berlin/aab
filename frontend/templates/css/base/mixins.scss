@@ -205,20 +205,6 @@
     }
 }
 
-@mixin colored-label{
-    // Pill, tag or label element
-    background: var(--c-bg-widget);
-    box-decoration-break: clone;
-    font-weight: 400;
-    color: var(--c-text-light)!important;
-    white-space: nowrap;
-
-    @include not-print{
-        border-radius: var(--b-radius);
-        padding: 2px var(--xs);
-    }
-}
-
 @mixin form-title{
     // h2 or h3 for collapsible forms
     border-bottom: var(--b-box);

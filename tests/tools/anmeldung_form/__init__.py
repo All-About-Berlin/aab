@@ -59,17 +59,21 @@ def fill_person(page, index=0):
 
     page.get_by_label("Date of birth").nth(index).fill(person["birth_date"])
 
+    if person["is_family_member"]:
+        primary_name = people[0]["first_name"]
+        family_label = f"{person['first_name']} is {primary_name}'s parent, child or spouse"
+        page.get_by_label(family_label).check()
 
-def fill_people(page, multiple_people=False):
+
+def fill_people(page, people_count=len(people)):
     fill_person(page)
-    if multiple_people:
-        for index in range(1, 5):
-            add_person(page)
-            fill_person(page, index)
+    for index in range(1, people_count):
+        add_person(page)
+        fill_person(page, index)
 
 
-def fill_bei_address(page, multiple_people=False):
-    if multiple_people:
+def fill_bei_address(page, people_count=1):
+    if people_count > 1:
         control = page.get_by_label("Our names are on our mailbox")
     else:
         control = page.get_by_label("My name is on my mailbox")
@@ -79,8 +83,8 @@ def fill_bei_address(page, multiple_people=False):
     page.get_by_label("Name on mailbox").fill("Müller")
 
 
-def fill_documents(page, multiple_people=False):
-    for index in range(0, 5 if multiple_people else 1):
+def fill_documents(page, people_count=len(people)):
+    for index in range(0, people_count):
         doc = people[index]["id_document"]
         page.get_by_label(doc["type"][0], exact=True).nth(index).evaluate("el => el.checked = true")
 
@@ -91,7 +95,7 @@ def fill_documents(page, multiple_people=False):
         page.get_by_label("Expiration date").nth(index).fill(doc["expiration_date"])
 
 
-def fill_anmeldung_form_until(page, step=None, multiple_people=False):
+def fill_anmeldung_form_until(page, step=None, people_count=3):
     load_anmeldung_form(page)
     start_anmeldung(page)
 
@@ -110,17 +114,17 @@ def fill_anmeldung_form_until(page, step=None, multiple_people=False):
     if step == "addPeople":
         return
 
-    fill_people(page, multiple_people)
+    fill_people(page, people_count)
     next_step(page)
 
     if step == "beiAddress":
         return
 
-    fill_bei_address(page, multiple_people)
+    fill_bei_address(page, people_count)
     next_step(page)
 
     if step == "idDocuments":
         return
 
-    fill_documents(page, multiple_people)
+    fill_documents(page, people_count)
     page.get_by_role("button", name="Finish").click()

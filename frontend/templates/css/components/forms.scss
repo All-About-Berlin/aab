@@ -51,22 +51,76 @@ input:not([type=range],[type=file]), textarea, select, .toggle{
     box-sizing: border-box;
 }
 
-input[type=number] {
-    -moz-appearance: textfield;
-    &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
-        -webkit-appearance:none;margin:0;
+input {
+    &[type=date] {
+        width: fit-content;
+        min-width: 9.5em;
+
+        // Fix zero-height date inputs in Safari on iOS - 2026-06-22
+        &::-webkit-date-and-time-value{
+            min-height: calc(var(--line-height-text) * var(--m));
+        }
+    }
+
+    &[type=number]{
+        -moz-appearance: textfield;
+        &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+            -webkit-appearance:none;margin:0;
+        }
+    }
+
+    &[type=tel]{
+        width: 16ch!important  // +49...
+    }
+
+    &[type=checkbox]{
+        border-radius: var(--xs)!important; // Otherwise it looks like a radio button
+    }
+    &[type=checkbox], &[type=radio]{
+        flex-shrink: 0;
+        flex:0 0 auto!important;
+
+        width: var(--w-checkbox);
+        height: var(--w-checkbox);
+        padding: 0;
+
+        position: relative;
+        overflow: hidden; // The radio tick might be too high by a fraction of a pixel
+        display: inline-grid;
+        place-items: center;
+
+        &:not([disabled]){
+            cursor: pointer;
+        }
+
+        &:after{
+            font-family: 'Tahoma';
+            content: '✓';
+            color: transparent;
+            line-height: calc(var(--w-checkbox) - 2px); // Minus border height
+            aspect-ratio: 1 / 1;
+            transform: scale(1.3);
+        }
+
+        &:checked:after{
+            color:var(--c-text-heading);
+            transform: scale(1);
+            transition: color 0.15s, transform 0.15s;
+        }
+    }
+    &[type=radio]{
+        border-radius:50%;
+
+        &:after{
+            font-family: 'Courier New'; // This font has a centred dot
+        }
+
+        &:checked:after{
+            content: '●';
+        }
     }
 }
 
-input[type=date] {
-    width: fit-content;
-    min-width: 9.5em;
-
-    // Fix zero-height date inputs in Safari on iOS - 2026-06-22
-    &::-webkit-date-and-time-value{
-        min-height: calc(var(--line-height-text) * var(--m));
-    }
-}
 
 textarea{
     transition: width 0.2s, height 0.2s;
@@ -91,54 +145,6 @@ select{
     text-overflow:ellipsis;
     &.placeholder{
         color: var(--c-text-placeholder);
-    }
-}
-
-input[type=checkbox]{
-    border-radius: var(--xs)!important; // Otherwise it looks like a radio button
-}
-input[type=checkbox], input[type=radio]{
-    flex-shrink: 0;
-    flex:0 0 auto!important;
-
-    width: var(--w-checkbox);
-    height: var(--w-checkbox);
-    padding: 0;
-
-    position: relative;
-    overflow: hidden; // The radio tick might be too high by a fraction of a pixel
-    display: inline-grid;
-    place-items: center;
-
-    &:not([disabled]){
-        cursor: pointer;
-    }
-
-    &:after{
-        font-family: 'Tahoma';
-        content: '✓';
-        color: transparent;
-        line-height: calc(var(--w-checkbox) - 2px); // Minus border height
-        aspect-ratio: 1 / 1;
-        transform: scale(1.3);
-    }
-
-    &:checked:after{
-        color:var(--c-text-heading);
-        transform: scale(1);
-        transition: color 0.15s, transform 0.15s;
-    }
-}
-
-input[type=radio]{
-    border-radius:50%;
-
-    &:after{
-        font-family: 'Courier New'; // This font has a centred dot
-    }
-
-    &:checked:after{
-        content: '●';
     }
 }
 
@@ -189,9 +195,6 @@ input[type=tel]
 }
 .postalcode-input{
     width: 5ch!important;
-}
-input[type=tel]{
-    width: 16ch!important  // +49...
 }
 .documentnumber-input{
     width: calc(2em + 10ch)!important;
@@ -333,8 +336,6 @@ input[type=range] {
         @include collapsible;
     }
 
-// v-cloak is an attribute that gets removed after a Vue JS element is mounted. It lets us style elements that have not
-// loaded yet.
 .loading, [v-cloak]{
     min-height: var(--w-icon-s);
     --c-text: var(--c-text-light);
@@ -356,31 +357,6 @@ input[type=range] {
         mask-repeat: no-repeat;
         mask-size: var(--w-icon-s);
         background-color: currentColor;
-    }
-}
-
-[v-cloak]{  // Vue element before it loads
-    @include box-l;
-
-    // Size like a .collapsible summary, leave space for spinner
-    padding: var(--m) var(--w-page-border);
-    padding-right: calc(var(--w-page-border) + var(--s) + var(--w-icon-s));
-
-    display: grid;
-    gap: var(--s);
-
-    color: var(--c-text-light);
-    line-height: var(--line-height-heading);
-
-    &:before{ // Spinner
-        width: var(--w-icon-s);
-        left: auto;
-        right: var(--w-page-border);
-    }
-
-    p {
-        font-size: var(--f-s);
-        margin: 0;
     }
 }
 
@@ -415,7 +391,7 @@ input[type=range] {
         }
     }
 
-    > :is(label, .label):first-child + .checkbox, .input-group .checkbox:first-child{
+    > :is(label, .label):not(.checkbox):first-child + .checkbox, .input-group .checkbox:first-child{
         padding-top: calc(var(--xs) + ((1.6 - 1.3) / 2 * var(--m))); // Align first checkbox with form fields
     }
 
@@ -427,7 +403,7 @@ input[type=range] {
         flex: 1 1 auto;
     }
 
-    &:not(.no-label) > :is(label, .label):first-child{
+    &:not(.no-label) > :is(label, .label):not(.checkbox):first-child{
         @include text-bold;
         grid-column-start: 1;
         padding-top: calc(var(--xs) + ((1.6 - 1.3) / 2 * var(--m))); // Align with form fields
@@ -465,27 +441,24 @@ input[type=range] {
     }
 }
 
-.input-instructions{
+:is(.input-instructions, .newsletter-checkbox){
     font-size: var(--f-s);
     flex: 1 0 100%!important;
     line-height: var(--line-height-label);
+
+    &:not(a){
+        color: var(--c-text-light);
+    }
 
     &.error{
         color: var(--c-text-error);
     }
 
-    summary:after{
+    summary:after{ // The collapsible arrow is next to the text, not floated right
         float: none;
     }
 }
-.input-instructions:not(a){
-    color: var(--c-text-light);
-}
 
-.newsletter-checkbox{
-    font-size: var(--f-s);
-    color: var(--c-text-light);
-}
 
 .show-errors :invalid,
 .show-errors:invalid,
@@ -584,11 +557,20 @@ input[type=range] {
     &:focus-within label ~ .search-results:not(:empty){
         display:block!important
     }
-
 }
 
 output.placeholder, .recommended:before, .pill{
-    @include colored-label;
+    // Pill, tag or label element
+    background: var(--c-bg-widget);
+    box-decoration-break: clone;
+    font-weight: 400;
+    color: var(--c-text-light)!important;
+    white-space: nowrap;
+
+    @include not-print{
+        border-radius: var(--b-radius);
+        padding: 2px var(--xs);
+    }
 }
 
 .pill.yes{

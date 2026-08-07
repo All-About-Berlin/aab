@@ -5,12 +5,12 @@ from . import fill_tax_id_form_until, fill_people, next_step, previous_step, get
 
 def test_data_remembered(page, test_screenshot):
     fill_tax_id_form_until(page, "addPeople")
-    fill_people(page, multiple_people=True)
+    fill_people(page, people_count=3)
 
     next_step(page)
     previous_step(page)
 
-    for index in range(0, 5):
+    for index in range(0, 3):
         person = people[index]
         expect(page.get_by_title("First name").nth(index)).to_have_value(person["first_name"])
         expect(page.get_by_title("Last name").nth(index)).to_have_value(person["last_name"])

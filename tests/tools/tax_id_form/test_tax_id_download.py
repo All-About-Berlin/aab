@@ -3,11 +3,9 @@ from . import fill_tax_id_form_until, get_form
 
 
 def test_download_buttons_no_anmeldung(page, test_screenshot, tmp_path):
-    fill_tax_id_form_until(
-        page, "options", multiple_people=True, purpose="I can't register my address, but I need a tax ID"
-    )
+    fill_tax_id_form_until(page, "options", people_count=3, purpose="I can't register my address, but I need a tax ID")
 
-    for index in range(0, 5):
+    for index in range(0, 3):
         download_button = page.get_by_role(
             "button", name=f"Download the application form for {people[index]['first_name']}"
         )
@@ -21,11 +19,9 @@ def test_download_buttons_no_anmeldung(page, test_screenshot, tmp_path):
 
 
 def test_download_buttons_living_abroad(page, tmp_path):
-    fill_tax_id_form_until(
-        page, "options", multiple_people=True, purpose="I don't live in Germany, but I need a tax ID"
-    )
+    fill_tax_id_form_until(page, "options", people_count=3, purpose="I don't live in Germany, but I need a tax ID")
 
-    for index in range(0, 5):
+    for index in range(0, 3):
         download_button = page.get_by_role(
             "button", name=f"Download the application form for {people[index]['first_name']}"
         )

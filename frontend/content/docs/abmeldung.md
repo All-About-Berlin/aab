@@ -25,7 +25,7 @@ Fill this form to deregister your address in Berlin (*[[Abmeldung]]*). You can s
 
 ## Download the Abmeldung form
 
-You can also download the original form and fill it yourself. If you deregister more than 3 people, fill the form multiple times.
+You can also download the original form and fill it yourself. To deregister more than 3 people, fill the form multiple times.
 
 {% include "_blocks/documentDownloads.html" %}
 

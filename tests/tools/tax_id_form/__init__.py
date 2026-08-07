@@ -57,16 +57,15 @@ def fill_person(page, index=0):
     page.get_by_label("Place of birth").nth(index).fill(person["birth_place"])
 
 
-def fill_people(page, multiple_people=False):
+def fill_people(page, people_count=len(people)):
     fill_person(page)
-    if multiple_people:
-        for index in range(1, 5):
-            add_person(page)
-            fill_person(page, index)
+    for index in range(1, people_count):
+        add_person(page)
+        fill_person(page, index)
 
 
-def fill_bei_address(page, multiple_people=False):
-    if multiple_people:
+def fill_bei_address(page, people_count=len(people)):
+    if people_count > 1:
         control = page.get_by_label("Our names are on our mailbox")
     else:
         control = page.get_by_label("My name is on my mailbox")
@@ -76,8 +75,8 @@ def fill_bei_address(page, multiple_people=False):
     page.get_by_label("Name on mailbox").fill("Müller")
 
 
-def fill_documents(page, multiple_people=False):
-    for index in range(0, 5 if multiple_people else 1):
+def fill_documents(page, people_count=len(people)):
+    for index in range(0, people_count):
         doc = people[index]["id_document"]
         page.get_by_label(doc["type"][0], exact=True).nth(index).set_checked(True)
 
@@ -105,7 +104,7 @@ def fill_feedback(page):
 def fill_tax_id_form_until(
     page,
     step=None,
-    multiple_people=False,
+    people_count=3,
     purpose="I can't register my address, but I need a tax ID",
     send_to_employer=False,
 ):
@@ -131,7 +130,7 @@ def fill_tax_id_form_until(
     if step == "addPeople":
         return
 
-    fill_people(page, multiple_people)
+    fill_people(page, people_count)
     next_step(page)
 
     if step == "beiAddress":
@@ -139,7 +138,7 @@ def fill_tax_id_form_until(
 
     # This step is skipped if someone lives outside of Germany
     if purpose == "I can't register my address, but I need a tax ID":
-        fill_bei_address(page, multiple_people)
+        fill_bei_address(page, people_count)
         next_step(page)
 
     if step == "employer":

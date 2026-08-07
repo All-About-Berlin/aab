@@ -90,11 +90,26 @@ export default {
 		};
 	},
 	computed: {
-		peoplePairs(){
-			// Split this.people in arrays of two people
-			return this.people
-				.slice(this.people.length/2)
-				.map((_,i) => this.people.slice(i*=2,i+2));
+		peopleGroups(){
+			// Group family members onto the same form (2 per form max)
+			// Do not group other people (1 per form)
+			const familyMembers = this.people.filter((person, index) => index === 0 || person.isFamilyMember);
+
+			// Two-person arrays
+			const familyPairs = [];
+			for(let i = 0; i < familyMembers.length; i += 2){
+				familyPairs.push(familyMembers.slice(i, i + 2));
+			}
+
+			// One-person arrays
+			const everyoneElse = this.people
+				.filter((person, index) => index > 0 && !person.isFamilyMember)
+				.map(person => [person]);
+
+			return [
+				...familyPairs,
+				...everyoneElse,
+			];
 		},
 	},
 	methods: {
@@ -110,6 +125,7 @@ export default {
 				dateOfBirth: userDefaults.empty,
 				gender: '',
 				birthPlace: '',
+				isFamilyMember: false,
 				showExtraFields: false,
 				documentType: 'RP',
 				documentNumber: '',
@@ -117,6 +133,10 @@ export default {
 				documentIssuingAuthority: '',
 				documentExpirationDate: '',
 			})
+		},
+		formatPeopleList(people){
+			const names = people.filter(person => person && person.firstName).map(person => person.firstName);
+			return new Intl.ListFormat('en-US', {style: 'long', type: 'conjunction'}).format(names);
 		},
 		personName(person, index){
 			if(person.firstName || person.lastName){
@@ -244,7 +264,7 @@ export default {
 					<source srcset="/documents/previews/anmeldung-original.png 300w, /documents/previews2x/anmeldung-original.png 600w" type="image/png">
 					<img alt="Berlin Anmeldung form" loading="lazy" src="/documents/previews/anmeldung-original.png">
 				</picture>
-				<p>This tool helps you <strong>fill the <glossary>Anmeldung</glossary> form</strong> in 3 minutes. You can save the completed form, print it, and bring it to your <glossary>Bürgeramt</glossary> appointment.</p>
+				<p>This tool helps you <strong>fill the <glossary>Anmeldung</glossary> form</strong> in 2 minutes. Print the completed form and bring it to your <glossary>Bürgeramt</glossary> appointment.</p>
 				<p>Your personal information stays on your computer. No one else can see it.</p>
 			</template>
 			<template v-if="stage === 'newAddress'">
@@ -432,6 +452,14 @@ export default {
 							required>
 						<span class="input-instructions" :id="uid('birthPlace-instructions-' + person.id)">The city, region and country where you were born.</span>
 					</div>
+					<div class="form-group" v-if="index > 0">
+						<span class="label">Relationship</span>
+						<checkbox
+							v-model="person.isFamilyMember"
+							:id="uid('isFamilyMember-' + person.id)">
+							{{ person.firstName || 'This person' }} is {{ people[0].firstName || 'person #1'}}'s parent, child or spouse
+						</checkbox>
+					</div>
 				</template>
 			</template>
 			<template v-if="stage === 'beiAddress'">
@@ -499,23 +527,20 @@ export default {
 			</template>
 			<template v-if="stage === 'options'">
 				<h2>You are almost done!</h2>
-				<template v-if="peoplePairs.length > 1">
+				<template v-if="peopleGroups.length > 1">
 					<p>Print these forms, sign them, and bring them to your <em>Anmeldung</em> appointment.</p>
 					<ul class="buttons list">
-						<li v-for="([person1, person2], index) in peoplePairs">
-							<button :aria-labelledby="uid('h-btnDownload') + index" @click="generatePDF(person1, person2)" :disabled="downloadInProgress">
+						<li v-for="([person1, person2], index) in peopleGroups">
+							<button @click="generatePDF(person1, person2)" :disabled="downloadInProgress">
 								<icon-pdf/>
-								<div>
-									<h3 :id="uid('h-btnDownload') + index">Download your Anmeldung form (part {{ index + 1 }})</h3>
-									<p v-if="person1.firstName">For {{ person1.firstName }}<template v-if="person2"> and {{ person2.firstName }}</template>.</p>
-								</div>
+								<h3>Download the form for {{ formatPeopleList([person1, person2]) }}</h3>
 							</button>
 						</li>
 					</ul>
 				</template>
-				<ul class="buttons list">
-					<li v-if="peoplePairs.length === 1">
-						<button @click="generatePDF(people[0], people[1])" :disabled="downloadInProgress" :aria-labelledby="uid('h-btnDownload')">
+				<ul class="buttons list" v-if="peopleGroups.length === 1">
+					<li>
+						<button @click="generatePDF(peopleGroups[0][0], peopleGroups[0][1])" :disabled="downloadInProgress" :aria-labelledby="uid('h-btnDownload')">
 							<icon-pdf/>
 							<div>
 								<h3 :id="uid('h-btnDownload')">Download your Anmeldung form</h3>

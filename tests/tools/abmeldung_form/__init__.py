@@ -51,16 +51,20 @@ def fill_person(page, index=0):
     page.get_by_label("Religion").nth(index).select_option(person["religion"][0])
     page.get_by_label("Date of birth").nth(index).fill(person["birth_date"])
 
+    if person["is_family_member"]:
+        primary_name = people[0]["first_name"]
+        family_label = f"{person['first_name']} is {primary_name}'s parent, child or spouse"
+        page.get_by_label(family_label).check()
 
-def fill_people(page, multiple_people=False):
+
+def fill_people(page, people_count=len(people)):
     fill_person(page)
-    if multiple_people:
-        for index in range(1, 5):
-            add_person(page)
-            fill_person(page, index)
+    for index in range(1, people_count):
+        add_person(page)
+        fill_person(page, index)
 
 
-def fill_abmeldung_form_until(page, step=None, multiple_people=False):
+def fill_abmeldung_form_until(page, step=None, people_count=3):
     load_abmeldung_form(page)
     start_abmeldung(page)
 
@@ -79,6 +83,6 @@ def fill_abmeldung_form_until(page, step=None, multiple_people=False):
     if step == "addPeople":
         return
 
-    fill_people(page, multiple_people)
+    fill_people(page, people_count)
 
     page.get_by_role("button", name="Finish").click()

@@ -9,8 +9,8 @@ from . import (
 
 
 def test_data_remembered(page, test_screenshot):
-    fill_anmeldung_form_until(page, "beiAddress")
-    fill_bei_address(page)
+    fill_anmeldung_form_until(page, "beiAddress", people_count=1)
+    fill_bei_address(page, people_count=1)
 
     expect(page.get_by_label("My name is on my mailbox")).not_to_be_checked()
     expect(page.get_by_label("Name on mailbox")).to_have_value("Müller")
@@ -27,6 +27,6 @@ def test_data_remembered(page, test_screenshot):
 
 def test_pluralisation(page):
     fill_anmeldung_form_until(page, "addPeople")
-    fill_people(page, multiple_people=True)
+    fill_people(page, people_count=2)
     next_step(page)
     expect(page.get_by_label("Our names are on our mailbox")).to_be_checked()

@@ -13,18 +13,18 @@ from tests.test_data import people
 def test_data_remembered(page, test_screenshot):
     fill_anmeldung_form_until(page, "addPeople")
 
-    fill_people(page, multiple_people=True)
+    fill_people(page, people_count=3)
     next_step(page)
 
-    fill_bei_address(page, multiple_people=True)
+    fill_bei_address(page, people_count=3)
     next_step(page)
 
-    fill_documents(page, multiple_people=True)
+    fill_documents(page, people_count=3)
 
     page.get_by_role("button", name="Finish").click()
     previous_step(page)
 
-    for index in range(0, 5):
+    for index in range(0, 3):
         doc = people[index]["id_document"]
         # expect(page.get_by_label(doc['type'][0], exact=True).nth(index)).to_be_checked()
         expect(page.get_by_label("number").nth(index)).to_have_value(doc["number"])

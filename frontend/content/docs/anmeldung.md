@@ -23,7 +23,7 @@ This is the English translation of the official *[[Anmeldung]]* form. Fill this 
 
 ## Download the Anmeldung form
 
-You can also download the original form and fill it yourself. If you register more than 2 people, fill the form multiple times.
+You can also download the original form and fill it yourself. To register more than 2 people, fill the form multiple times.
 
 {% include "_blocks/documentDownloads.html" %}
 
@@ -33,7 +33,9 @@ The same form is [on Berlin.de](https://www.berlin.de/formularverzeichnis/?formu
 
 Use my [Anmeldung form filler](#fill-the-anmeldung-form-online), it's easier.
 
-If you fill the form yourself, use these instructions:
+To register members of the same family, use the same form. To register friends, room mates or unmarried couples, use separate forms. To register more than 2 members of the same family, use multiple forms.[^3]
+
+This is how you must fill each field:
 
 - **Tagesstempel**: leave this field empty
 - **Amtl. Vermerke**: leave this field empty
@@ -99,3 +101,4 @@ You must get a *[[Bürgeramt]]* appointment and bring the form in person.
 [^0]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/dm65o5/adding_co_to_the_anmeldung/), [gutefrage.net](https://www.gutefrage.net/frage/was-ist-ein-adresszusatz-)
 [^1]: [Red Tape Translation](/out/red-tape-translation) (September 2023)
 [^2]: [Elliot Herman](https://www.sorted.berlin/) (July 2025)
+[^3]: [Robert Hantzsch](/out/easyassist-abmeldung) (August 2026), [Elliot Herman](https://www.sorted.berlin/) (August 2026)
