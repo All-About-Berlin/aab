@@ -81,8 +81,11 @@ class ScheduledMessage(models.Model):
     def remove_personal_data(self):
         self.status = MessageStatus.REDACTED
 
+    def get_context(self) -> dict:
+        return {"message": self}
+
     def get_body(self) -> str:
-        return render_to_string(self.get_template(), {"message": self})
+        return render_to_string(self.get_template(), self.get_context())
 
     class Meta:
         abstract = True

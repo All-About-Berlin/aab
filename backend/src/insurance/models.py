@@ -1,5 +1,7 @@
+from django.conf import settings
 from django.core.exceptions import ValidationError
 from django.db import models
+from django.utils import timezone
 from forms.models import ScheduledMessage
 from forms.utils import relative_default_date
 
@@ -109,6 +111,20 @@ class CustomerNotification(CaseNotificationMixin, ScheduledMessage):
     @property
     def subject(self) -> str:
         return "Seamus will contact you soon"
+
+    def get_template(self) -> str:
+        try:
+            if settings.SEAMUS_VACATION[0] <= timezone.now().date() <= settings.SEAMUS_VACATION[1]:
+                return f"{self.__class__.__name__}Vacation.html"
+        except:
+            pass
+        return super().get_template()
+
+    def get_context(self) -> dict:
+        context = super().get_context()
+        if settings.SEAMUS_VACATION:
+            context["vacation_start"], context["vacation_end"] = settings.SEAMUS_VACATION
+        return context
 
     class Meta(ScheduledMessage.Meta):
         pass

@@ -1,0 +1,20 @@
+<p>Hi {{ message.case.name|default:"there" }},</p>
+
+<p>You asked a health insurance question on All About Berlin. Seamus is on vacation from {{ vacation_start|date:"F j" }} to {{ vacation_end|date:"F j" }}. His colleagues Max and Marvin will answer your question. If you don't get a response, check your spam folder.</p>
+
+<p>While you wait, you can...</p>
+
+<ul>
+	<li>Learn <a href="https://allaboutberlin.com/guides/german-health-insurance?utm_source=email_reminder">how German health insurance works</a></li>
+	{% if message.case.occupation == 'selfEmployed' %}
+		<li>Learn <a href="https://allaboutberlin.com/guides/freelance-visa?utm_source=email_reminder">how to apply for a freelance visa</a> or <a href="https://allaboutberlin.com/guides/renew-german-freelance-visa?utm_source=email_reminder">renew your freelance visa</a>.</li>
+	{% elif message.case.occupation == 'employee' %}
+		<li>Learn how to apply for a <a href="https://allaboutberlin.com/guides/work-visa?utm_source=email_reminder">work visa</a> or a <a href="https://allaboutberlin.com/guides/blue-card?utm_source=email_reminder">Blue Card</a>.</li>
+	{% endif %}
+	<li>Get <a href="https://allaboutberlin.com/guides/haftpflichtversicherung?utm_source=email_reminder">liability insurance</a>, because everyone should have it.</li>
+</ul>
+
+<p>Kind regards,<br>Nicolas Bouliane, All About Berlin</p>
+
+<hr>
+<p><small>You received this email because you used the contact form on All About Berlin. <a href="https://allaboutberlin.com/newsletter?utm_source=email_reminder">Subscribe to the monthly newsletter</a> to get Berlin tips and updates.</small></p>

@@ -1,3 +1,4 @@
+from datetime import date
 from pathlib import Path
 import os
 import sys
@@ -13,6 +14,10 @@ BUTTONDOWN_API_KEY = os.environ.get("BUTTONDOWN_API_KEY")
 MAILGUN_API_KEY = os.environ.get("MAILGUN_API_KEY")
 DEBUG = bool(int(os.environ.get("DEBUG", "0")))
 DEBUG_EMAILS = DEBUG  # Print emails instead of sending them
+
+# When set to a (start_date, end_date) tuple, CustomerNotification emails sent
+# on or between those dates use the "Vacation" variant of the template.
+SEAMUS_VACATION: tuple | None = (date(2026, 8, 8), date(2026, 8, 18))
 
 ssl_domain = os.environ.get("DOMAIN", "localhost")
 services_domain = os.environ.get("SERVICES_DOMAIN", "services.localhost")

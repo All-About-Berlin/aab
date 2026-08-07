@@ -1,4 +1,6 @@
-from datetime import timedelta
+from datetime import date, datetime, timedelta, timezone as dt_timezone
+from unittest.mock import patch
+from django.test import TestCase, override_settings
 from django.utils import timezone
 from forms.tests import ScheduledMessageEndpointMixin
 from insurance.models import Case, CustomerNotification, BrokerNotification, FeedbackNotification
@@ -87,3 +89,44 @@ class MinimalCaseTestCase(CaseTestCase):
             "name": "John Smith",
             "email": "contact@nicolasbouliane.com",
         }
+
+
+class CaseSeamusVacationTestCase(TestCase):
+    """
+    Test that settings.SEAMUS_VACATION works properly
+    """
+
+    def setUp(self):
+        case = Case.objects.create(name="John Smith", email="contact@nicolasbouliane.com")
+        self.notification = CustomerNotification.objects.get(case=case)
+
+        frozen_now = datetime(2026, 8, 7, 12, 0, tzinfo=dt_timezone.utc)
+        patcher = patch("insurance.models.timezone.now", return_value=frozen_now)
+        patcher.start()
+        self.addCleanup(patcher.stop)
+
+    @override_settings(SEAMUS_VACATION=None)
+    def test_unset_uses_default_template(self):
+        self.assertEqual(self.notification.get_template(), "CustomerNotification.html")
+        self.assertNotIn("on vacation", self.notification.get_body())
+
+    @override_settings(SEAMUS_VACATION=(date(2026, 8, 5), date(2026, 8, 12)))
+    def test_during_vacation_uses_vacation_template(self):
+        self.assertEqual(self.notification.get_template(), "CustomerNotificationVacation.html")
+        self.assertIn("from August 5 to August 12", self.notification.get_body())
+
+    @override_settings(SEAMUS_VACATION=(date(2026, 8, 7), date(2026, 8, 12)))
+    def test_start_boundary_is_inclusive(self):
+        self.assertEqual(self.notification.get_template(), "CustomerNotificationVacation.html")
+
+    @override_settings(SEAMUS_VACATION=(date(2026, 8, 1), date(2026, 8, 7)))
+    def test_end_boundary_is_inclusive(self):
+        self.assertEqual(self.notification.get_template(), "CustomerNotificationVacation.html")
+
+    @override_settings(SEAMUS_VACATION=(date(2026, 8, 8), date(2026, 8, 14)))
+    def test_before_vacation_uses_default_template(self):
+        self.assertEqual(self.notification.get_template(), "CustomerNotification.html")
+
+    @override_settings(SEAMUS_VACATION=(date(2026, 8, 1), date(2026, 8, 6)))
+    def test_after_vacation_uses_default_template(self):
+        self.assertEqual(self.notification.get_template(), "CustomerNotification.html")
