@@ -156,10 +156,11 @@ Don't be afraid to use a lawyer. Your employer can't fire you or blacklist you b
 
 - [International Families Berlin](https://www.facebook.com/groups/InternationalFamiliesBerlin/) - Facebook
 - [ExpatBabies Berlin](https://www.facebook.com/groups/107498526067436/) - Facebook
-- [Expatkids Berlin](https://www.facebook.com/groups/844609522248598/?ref=br_rs) - Facebook
+- [Berlin Kids](https://www.facebook.com/groups/844609522248598/) - Facebook
 - [Kita in Berlin](https://www.facebook.com/groups/251699101959498/) - Facebook
 - [Expat parent-toddler playgroup Berlin](https://www.facebook.com/groups/expatbabiesmothertoddler/) - Facebook
 - [Papi Berlin](https://papiberlin.de/en/) - Slack
+- [Special Families in Berlin](https://www.facebook.com/groups/158859484772756) - For children with special needs, Facebook
 
 ### Paid services
 
