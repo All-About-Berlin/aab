@@ -1,5 +1,5 @@
-<div class="search-form no-print">
-	<label title="Search this website">
+<search title="Search All About Berlin" class="search-form no-print">
+	<label title="Search keyword">
 		<input type="search"
 			placeholder="Search this website"
 			tabindex="0"
@@ -9,7 +9,7 @@
 		{% include "_icons/search.svg" %}
 	</label>
 	<div id="search-results-{{ random_id() }}" role="listbox" class="search-results"></div>
-</div>
+</search>
 
 {% queueJs %}
 	import initializeSearchForm from '/js/components/search-form.mjs'
