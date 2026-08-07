@@ -614,7 +614,7 @@ export default {
 								You earn more than <eur :amount="monthlyYearlyCost(beitragsbemessungsgrenze / 12)"></eur> per {{ monthOrYear }}, so you pay the maximum contribution.
 							</template>
 							<template v-else>
-								It costs <template v-html="formatPercent(pensions.contributionRates.currentYear)"></template> of your income.
+								It costs <span v-html="formatPercent(pensions.contributionRates.currentYear)"></span> of your income.
 							</template>
 						</p>
 						<p class="price-line">
