@@ -37,6 +37,62 @@ All tasks are run via `mise` (task runner defined in `mise.toml`). Always use th
 
 Ursus processes `content/` + `templates/` → `output/` (static HTML served by Caddy).
 
+#### Forms and widgets
+
+Interactive forms, calculators, and letter generators are built with Vue. See `frontend/templates/js/README.md` for the layout of `js/vue/tools`, `js/vue/components`, `js/vue/mixins`, and non-Vue `js/components`.
+
+**Tool metadata.** Every tool in `js/vue/tools/` must have a sibling `<tool-name>.metadata.json` with `label` and `description`. These populate `aria-label`, `aria-description`, the SEO-visible placeholder, and the `<noscript>` fallback rendered by the `{% tool %}` Jinja tag.
+
+```json
+{
+    "label": "German health insurance calculator",
+    "description": "Calculate the cost of German health insurance..."
+}
+```
+
+**Unique IDs.** A tool can be embedded more than once on a page, so hard-coded `id`/`for` attributes collide. Mix in `uniqueIdsMixin` and wrap every id with `uid(...)`:
+
+```javascript
+import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
+// ...
+mixins: [uniqueIdsMixin],
+```
+
+```html
+<label :for="uid('age')">Age</label>
+<age-input :id="uid('age')" v-model="age"></age-input>
+```
+
+**Custom inputs.** Prefer the components in `js/vue/components/` (`<checkbox>`, `<radio>`, `<tabs>`, `<date-picker>`, `<country-input>`, `<age-input>`, `<income-input>`, `<email-input>`, `<full-name-input>`, etc.) over raw `<input>` elements. They already handle styling, validation, and `v-model`.
+
+**Form layout.** Wrap each field in `.form-group` (label + control grid). Use `.input-group` inside a `.form-group` when several elements sit inline with the input (units, toggle buttons, secondary hints). For grouped labels without a `<label>` element, use `<span class="label">`.
+
+```html
+<div class="form-group">
+    <label :for="uid('income')">Income</label>
+    <div class="input-group">
+        <income-input :id="uid('income')" v-model="inputIncome" required></income-input>&nbsp;€
+        <button class="toggle" @click="useMonthlyIncome = !useMonthlyIncome">per {{ useMonthlyIncome ? 'month' : 'year' }}</button>
+    </div>
+</div>
+```
+
+**Input instructions.** Use `.input-instructions` on a `<span>` or `<p>` for helper text under an input, and add `.error` for validation messages. When the helper text links out to a guide or other page on the site for clarifying information, use an `<a>` with both `.input-instructions` and `.internal-link`:
+
+```html
+<span class="input-instructions">Use the same date as on your <em><glossary>Wohnungsgeberbestätigung</glossary></em>.</span>
+<a class="input-instructions internal-link" href="/guides/german-tax-id-steuernummer#where-to-find-your-tax-id" target="_blank">Find your tax ID</a>
+```
+
+**Collapsibles.** Use `<collapsible>` for progressive disclosure (optional sections, advanced options, long explanations). Pass through the tool's `static` prop so the section renders open in the printed/static version:
+
+```html
+<collapsible :static="static">
+    <template #header>More options</template>
+    <!-- content -->
+</collapsible>
+```
+
 ### Backend (`backend/src/`)
 
 Django app with REST Framework. Key Django apps:
