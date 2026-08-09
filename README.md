@@ -24,6 +24,10 @@ The backend a REST API built with Django and Django REST Framework. The API hand
 
 Most tools on the website entirely run in the browser, so they don't call the API.
 
+### Forum
+
+See the [forum README](forum/README.md).
+
 ### Proxy
 
 The website is served by Caddy. All requests first go through Caddy, and are routed to the frontend and backend services. The Caddy configuration is under `./proxy`.

@@ -86,6 +86,18 @@ until curl --fail -s -k https://localhost/api/forms/ >/dev/null; do
   ((attempt++))
   sleep 1
 done
+
+max_attempts=60
+attempt=1
+echo "[$(date +'%H:%M:%S')] Waiting for forum availability"
+until curl --fail -s -k https://localhost/forum/ >/dev/null; do
+  if [ "$attempt" -ge "$max_attempts" ]; then
+    echo "[$(date +'%H:%M:%S')] Can't reach forum after $max_attempts seconds."
+    exit 1
+  fi
+  ((attempt++))
+  sleep 1
+done
 """
 
 [tasks.wait-for-frontend]
@@ -196,6 +208,31 @@ depends = ["test-api", "test-ui"]
 run = """
 echo "[$(date +'%H:%M:%S')] Finished running tests"
 """
+
+# = FORUM ======================================================================
+
+[tasks."forum:createsuperuser"]
+description = "Create a forum admin user (interactive unless all flags are provided)"
+usage = '''
+flag "--username <username>"
+flag "--email <email>"
+flag "--password <password>"
+'''
+run = """
+if [ -n "${usage_username:-}" ] && [ -n "${usage_email:-}" ] && [ -n "${usage_password:-}" ]; then
+  docker compose exec -T forum python manage.py createsuperuser \
+    --username "${usage_username}" \
+    --email "${usage_email}" \
+    --password "${usage_password}" \
+    --noinput
+else
+  docker compose exec forum python manage.py createsuperuser
+fi
+"""
+
+[tasks."forum:populate-test-data"]
+description = "Populate the forum with credible test users, threads and replies"
+run = "docker compose exec -T forum python manage.py shell < forum/populate_test_data.py"
 
 # = CLEANUP ====================================================================
 

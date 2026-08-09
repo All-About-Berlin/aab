@@ -13,6 +13,25 @@
     }
 }
 
+(forum_proxy) {
+    handle_path /forum/static/* {
+        root * /var/www/forum/static
+        file_server
+    }
+    handle_path /forum/media/* {
+        root * /var/www/forum/media
+        file_server
+    }
+    redir /forum /forum/ 308
+    handle_path /forum/* {
+        @hasCfIp header CF-Connecting-IP *
+        request_header @hasCfIp X-Real-IP {header.CF-Connecting-IP}
+        @noCfIp not header CF-Connecting-IP *
+        request_header @noCfIp X-Real-IP {remote_host}
+        reverse_proxy forum:80
+    }
+}
+
 (openexchangerates_proxy) {
     handle /api/exchangerates.json {
         cache {
@@ -188,6 +207,7 @@
     import openexchangerates_proxy
     import plausible_proxy
     import backend_proxy
+    import forum_proxy
 
     # Redirect /services and /services/* to the services site
     @servicesRedirect path /services /services/*

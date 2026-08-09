@@ -7,6 +7,9 @@
 # - Enables SSL certificate generation
 # - Enables local and remote database backups
 
+include:
+  - forum/docker-compose.prod.yml
+
 services:
   frontend:
     build:
@@ -34,6 +37,7 @@ services:
     environment:
       - "MAILGUN_API_KEY"
       - "REMOTE_DB_BACKUPS_PATH"
+      - "SECRET_KEY"
       - "DOMAIN=allaboutberlin.com"
       - "SERVICES_DOMAIN=agoodstart.de"
     volumes: !override

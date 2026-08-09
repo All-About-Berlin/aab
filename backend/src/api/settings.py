@@ -8,7 +8,7 @@ IS_RUNNING_TESTS = len(sys.argv) > 1 and sys.argv[1] == "test"
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = "django-insecure-rm#p9c7f!%q1&=-l+m6lx^9=cl2f301=+d3eu0n3x^yfy1yg51"
+SECRET_KEY = os.environ["SECRET_KEY"]
 
 BUTTONDOWN_API_KEY = os.environ.get("BUTTONDOWN_API_KEY")
 MAILGUN_API_KEY = os.environ.get("MAILGUN_API_KEY")

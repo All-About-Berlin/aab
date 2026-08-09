@@ -1,0 +1,70 @@
+services:
+  forum:
+    build: https://github.com/rafalp/misago_docker.git#275343f30fe42be81085176ab93b53a8b918f261:misago
+    command: >
+      sh -c "python manage.py migrate --noinput
+      && python manage.py collectstatic --noinput
+      && exec uwsgi --ini uwsgi.ini --http-socket 0.0.0.0:80"
+    environment:
+      - "MISAGO_DEBUG=1"
+      - "SECRET_KEY=dev"
+      - "DOMAIN=localhost"
+    volumes:
+      - "./settings_override.py:/misago/misagodocker/settings_override.py:ro"
+      - "forum_staticfiles:/misago/static"
+      - "forum_media:/misago/media"
+    tmpfs:
+      - "/misago/logs"
+    depends_on:
+      forum-postgres:
+        condition: service_healthy
+      forum-redis:
+        condition: service_healthy
+
+  forum-celery:
+    build: https://github.com/rafalp/misago_docker.git#275343f30fe42be81085176ab93b53a8b918f261:misago
+    command: celery -A misagodocker worker --loglevel=info
+    environment:
+      - "MISAGO_DEBUG=1"
+      - "SECRET_KEY=dev"
+      - "DOMAIN=localhost"
+    volumes:
+      - "./settings_override.py:/misago/misagodocker/settings_override.py:ro"
+      - "forum_media:/misago/media"
+    tmpfs:
+      - "/misago/logs"
+    depends_on:
+      forum-postgres:
+        condition: service_healthy
+      forum-redis:
+        condition: service_healthy
+
+  forum-postgres:
+    image: postgres:15.5-alpine
+    environment:
+      - "POSTGRES_DB=misago"
+      - "POSTGRES_USER=misago"
+      - "POSTGRES_HOST_AUTH_METHOD=trust"
+    volumes:
+      - "forum_postgres_data:/var/lib/postgresql/data"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U misago -d misago"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  forum-redis:
+    image: redis:7.2-alpine
+    volumes:
+      - "forum_redis_data:/data"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  forum_postgres_data:
+  forum_redis_data:
+  forum_staticfiles:
+  forum_media:

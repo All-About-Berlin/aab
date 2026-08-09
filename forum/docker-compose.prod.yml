@@ -1,0 +1,32 @@
+services:
+  forum:
+    environment:
+      - "MISAGO_DEBUG=0"
+      - "SECRET_KEY"
+      - "DOMAIN=allaboutberlin.com"
+    volumes: !override
+      - "./settings_override.py:/misago/misagodocker/settings_override.py:ro"
+      - "forum_staticfiles:/misago/static"
+      - "forum_media:/misago/media"
+    restart: unless-stopped
+    logging: &prod-logging
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  forum-celery:
+    environment:
+      - "MISAGO_DEBUG=0"
+      - "SECRET_KEY"
+      - "DOMAIN=allaboutberlin.com"
+    restart: unless-stopped
+    logging: *prod-logging
+
+  forum-postgres:
+    restart: unless-stopped
+    logging: *prod-logging
+
+  forum-redis:
+    restart: unless-stopped
+    logging: *prod-logging

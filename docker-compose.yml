@@ -3,6 +3,9 @@
 # - No SSL certificate generation
 # - Rebuilds the static site every time the files change
 
+include:
+  - forum/docker-compose.yml
+
 services:
   frontend:
     build:
@@ -24,6 +27,7 @@ services:
       target: dev
     environment:
       - "BUTTONDOWN_API_KEY"
+      - "SECRET_KEY=dev"
       - "DOMAIN=localhost"
       - "SERVICES_DOMAIN=services.localhost"
     volumes:
@@ -44,6 +48,8 @@ services:
       - "caddy_data:/data"
       - "caddy_config:/config"
       - "api_staticfiles:/var/www/api/staticfiles:ro"
+      - "forum_staticfiles:/var/www/forum/static:ro"
+      - "forum_media:/var/www/forum/media:ro"
       - "./frontend/output:/var/www/html"
       - "./frontend/content/redirects:/etc/caddy/redirects"
 volumes:

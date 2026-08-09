@@ -107,9 +107,15 @@ Uses SQLite in development. Runs under Gunicorn in Docker.
 
 Playwright tests using `pytest-playwright`. Tests run on three device profiles (mobile/tablet/desktop) defined in `conftest.py`. Visual regression snapshots are in `tests/snapshots/`. Default timeout is 2 seconds.
 
+### Forum (`forum/`)
+
+Self-contained [Misago](https://misago-project.org/) forum served at `/forum`. Built from a pinned commit of [rafalp/misago_docker](https://github.com/rafalp/misago_docker) via Docker Compose's git-URL build context — nothing is vendored. Services (`forum`, `forum-celery`, `forum-postgres`, `forum-redis`) live in `forum/docker-compose.yml`, included from the top-level compose files. Django settings overrides live in `forum/settings_override.py` and are bind-mounted into the container.
+
+After first boot, create an admin with `mise forum:createsuperuser`. See `forum/README.md` for the full list of helper tasks.
+
 ### Infrastructure
 
-Docker Compose runs four services: `frontend`, `backend`, `proxy`. Caddy routes `/api/*` to Django and everything else to the static frontend.
+Docker Compose runs the site services (`frontend`, `backend`, `proxy`) plus the forum stack. Caddy routes `/api/*` to Django, `/forum/*` to Misago (with static and media served directly from shared volumes), and everything else to the static frontend.
 
 ## Commit Messages
 
