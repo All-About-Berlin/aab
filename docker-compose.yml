@@ -30,6 +30,7 @@ services:
       - "api_db:/var/db"
       - "api_staticfiles:/var/www/api/staticfiles"
       - "./backend/src:/srv/app"
+      - "./frontend/output:/var/frontend-output:ro"
   proxy:
     build: ./proxy
     environment:

@@ -1,39 +1,70 @@
-from django.db.models import F, Max
+from pathlib import Path
+
+from django.core.paginator import EmptyPage, Paginator
+from django.db.models import Count, F, Max
 from django.db.models.functions import Coalesce
+from django.http import Http404, HttpResponse
 from django.shortcuts import get_object_or_404
-from forum.models import Reply, Thread
-from forum.serializers import ReplySerializer, ThreadSerializer
-from rest_framework import mixins, permissions, viewsets
+from django.template.loader import render_to_string
+
+from forum.models import Thread
 
 
-class ThreadViewSet(mixins.ListModelMixin, mixins.CreateModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
-    serializer_class = ThreadSerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
-
-    def get_queryset(self):
-        queryset = Thread.objects.annotate(
-            last_activity_at=Coalesce(Max("replies__creation_date"), F("creation_date"))
-        ).order_by("-last_activity_at")
-
-        tag = self.request.query_params.get("tag")
-        if tag:
-            queryset = queryset.filter(tags=tag)
-
-        return queryset
-
-    def perform_create(self, serializer):
-        serializer.save(author=self.request.user)
+SHELL_PATH = Path("/var/frontend-output/forum/shell.html")
+SHELL_MARKER = "<!--FORUM_CONTENT-->"
+THREADS_PER_PAGE = 20
+REPLIES_PER_PAGE = 20
 
 
-class ReplyViewSet(mixins.ListModelMixin, mixins.CreateModelMixin, viewsets.GenericViewSet):
-    serializer_class = ReplySerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+def _render(content_html: str) -> HttpResponse:
+    shell = SHELL_PATH.read_text()
+    return HttpResponse(shell.replace(SHELL_MARKER, content_html))
 
-    def get_thread(self):
-        return get_object_or_404(Thread, pk=self.kwargs["thread_id"])
 
-    def get_queryset(self):
-        return Reply.objects.filter(thread=self.get_thread())
+def _get_page(paginator: Paginator, page_number: int):
+    try:
+        return paginator.page(page_number)
+    except EmptyPage:
+        raise Http404
 
-    def perform_create(self, serializer):
-        serializer.save(author=self.request.user, thread=self.get_thread())
+
+def forum_index(request, page: int = 1):
+    threads = (
+        Thread.objects.annotate(
+            last_activity_at=Coalesce(Max("replies__creation_date"), F("creation_date")),
+            reply_count=Count("replies"),
+        )
+        .select_related("author")
+        .prefetch_related("tags")
+        .order_by("-last_activity_at")
+    )
+    paginator = Paginator(threads, THREADS_PER_PAGE)
+    page_obj = _get_page(paginator, page)
+
+    content = render_to_string(
+        "forum/index.html",
+        {"page_obj": page_obj, "paginator": paginator, "base_url": "/forum"},
+        request=request,
+    )
+    return _render(content)
+
+
+def forum_thread(request, thread_id: int, page: int = 1):
+    thread = get_object_or_404(
+        Thread.objects.select_related("author").prefetch_related("tags"), pk=thread_id
+    )
+    replies = thread.replies.select_related("author").order_by("creation_date")
+    paginator = Paginator(replies, REPLIES_PER_PAGE)
+    page_obj = _get_page(paginator, page)
+
+    content = render_to_string(
+        "forum/thread.html",
+        {
+            "thread": thread,
+            "page_obj": page_obj,
+            "paginator": paginator,
+            "base_url": f"/forum/{thread.pk}",
+        },
+        request=request,
+    )
+    return _render(content)

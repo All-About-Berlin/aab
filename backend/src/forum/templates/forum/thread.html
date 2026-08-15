@@ -1,0 +1,49 @@
+{% load forum_extras %}
+<article class="section h-entry">
+	<h1 class="p-name">{{ thread.title }}</h1>
+	<div class="post-meta no-print" aria-label="Author, publication date, categories and reviewers">
+		<div class="tags" aria-label="Tags">
+			{% if thread.tags.all %}
+				<ul>
+					{% for tag in thread.tags.all %}
+						<li><a class="p-category pill" href="/forum?tag={{ tag.pk }}">{{ tag.name }}</a></li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+		</div>
+		<div>
+			<i class="icon calendar" aria-hidden="true"></i>
+			<time class="dt-published" datetime="{{ thread.creation_date.isoformat }}">{{ thread.creation_date|short_datetime }}</time>
+		</div>
+		<div class="p-author h-card">
+			<i class="icon person" aria-hidden="true"></i>
+			By <span class="p-name">{{ thread.author.username }}</span>
+		</div>
+	</div>
+	<div class="article-body e-content">{{ thread.body|linebreaks }}</div>
+</article>
+
+<section aria-label="Replies" class="section replies">
+	<h2>Replies</h2>
+	{% if page_obj.object_list %}
+		<ol class="h-feed" start="{{ page_obj.start_index }}">
+			{% for reply in page_obj %}
+				<li class="h-entry reply" id="reply-{{ reply.pk }}">
+					<div class="entry-meta">
+						<a rel="author" class="p-author h-card" href="/forum?author={{ reply.author.username }}">
+							<span class="p-name">{{ reply.author.username }}</span>
+						</a>
+						<time class="dt-published" datetime="{{ reply.creation_date.isoformat }}">
+							{{ reply.creation_date|short_datetime }}
+						</time>
+					</div>
+					<div class="e-content">{{ reply.body|linebreaks }}</div>
+				</li>
+			{% endfor %}
+		</ol>
+	{% else %}
+		<p>No replies yet.</p>
+	{% endif %}
+</section>
+
+{% include "forum/_pagination.html" %}

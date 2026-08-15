@@ -1,0 +1,69 @@
+.replies{
+
+    > h2{
+        margin: 0;
+    }
+
+    > ol{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: var(--l);
+    }
+
+    .reply{
+        display: grid;
+        width: 100%;
+        gap: 0 var(--m);
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: "meta meta" "message message";
+        grid-auto-flow: column;
+
+        &:not(:last-child){
+            border-bottom: var(--b-box);
+            padding-bottom: var(--l);
+        }
+
+        .entry-meta{
+            grid-area: meta;
+
+            .p-author{
+                @include text-bold;
+            }
+
+            time{
+                color: var(--c-text-light);
+                float: right;
+                font-size: var(--f-s);
+            }
+        }
+
+        .e-content{
+            grid-area: message;
+
+            p{
+                margin: var(--s) 0 0;
+            }
+        }
+
+        :is(.h-feed, .reply-form){
+            grid-column: 2/-1;
+            margin-top: var(--l);
+        }
+    }
+}
+
+.reply-form{
+    @include widget;
+}
+
+.threads{
+    margin: 0;
+
+    .thread{
+        border-bottom: var(--b-box);
+        h3{
+            font-size: var(--m);
+        }
+    }
+}
