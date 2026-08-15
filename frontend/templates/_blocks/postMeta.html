@@ -27,7 +27,13 @@
 			<ol>
 				<li><a href="{{ root_url }}">{{ root_label }}</a></li>
 				{% if entry.collections|default %}
-					<li><a href="{{ root_url }}#{{ entry.collections[0].id }}">{{ entry.collections[0].short_title|default(entry.collections[0].title) }}</a></li>
+					{% set collection = entry.collections[0] %}
+					{% if uri_root == 'guides' %}
+						{% set collection_url = SITE_URL ~ '/collections/' ~ collection.id %}
+					{% else %}
+						{% set collection_url = root_url ~ '#' ~ collection.id %}
+					{% endif %}
+					<li><a href="{{ collection_url }}">{{ collection.short_title|default(collection.title) }}</a></li>
 				{% endif %}
 				<li><a href="{{ entry.url }}" aria-current="page">{{ entry_label }}</a></li>
 			</ol>

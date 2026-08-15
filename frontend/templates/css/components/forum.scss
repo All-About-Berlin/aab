@@ -1,4 +1,4 @@
-.replies{
+:is(.threads, .replies){
 
     > h2{
         margin: 0;
@@ -11,12 +11,46 @@
         gap: var(--l);
     }
 
+    .thread{
+        grid-template-areas: "title meta";
+        grid-template-columns: 1fr 220px;
+
+        h3{
+            grid-area: title;
+            font-size: var(--m);
+        }
+
+        p{
+            margin: var(--s) 0 0;
+            grid-area: description;
+            font-size: var(--f-s);
+            color: var(--c-text-light);
+        }
+
+        .post-meta{
+            align-content: flex-start;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            color: var(--c-text-light);
+            a{
+                color: var(--c-text-light)!important;
+            }
+            > *{
+                flex: 1 0 100%;
+            }
+        }
+    }
+
     .reply{
+        grid-template-areas: "meta meta" "message message";
+        grid-template-columns: auto 1fr auto;
+    }
+
+    :is(.thread, .reply){
         display: grid;
         width: 100%;
         gap: 0 var(--m);
-        grid-template-columns: auto 1fr auto;
-        grid-template-areas: "meta meta" "message message";
         grid-auto-flow: column;
 
         &:not(:last-child){
@@ -24,13 +58,8 @@
             padding-bottom: var(--l);
         }
 
-        .entry-meta{
+        .post-meta{
             grid-area: meta;
-
-            .p-author{
-                @include text-bold;
-            }
-
             time{
                 color: var(--c-text-light);
                 float: right;
@@ -55,15 +84,4 @@
 
 .reply-form{
     @include widget;
-}
-
-.threads{
-    margin: 0;
-
-    .thread{
-        border-bottom: var(--b-box);
-        h3{
-            font-size: var(--m);
-        }
-    }
 }

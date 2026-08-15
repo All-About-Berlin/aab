@@ -1,16 +1,14 @@
 {% load forum_extras %}
 <article class="section h-entry">
 	<h1 class="p-name">{{ thread.title }}</h1>
-	<div class="post-meta no-print" aria-label="Author, publication date, categories and reviewers">
-		<div class="tags" aria-label="Tags">
-			{% if thread.tags.all %}
-				<ul>
-					{% for tag in thread.tags.all %}
-						<li><a class="p-category pill" href="/forum?tag={{ tag.pk }}">{{ tag.name }}</a></li>
-					{% endfor %}
-				</ul>
-			{% endif %}
-		</div>
+	<div class="post-meta" aria-label="Author, publication date, categories and reviewers">
+		<nav class="breadcrumbs" aria-label="Breadcrumbs">
+			<i class="icon folder" aria-hidden="true"></i>
+			<ol>
+				<li><a href="/forum">Forum</a></li>
+				<li><a class="p-category" href="/forum?category={{ thread.category }}">{{ thread.get_category_display }}</a></li>
+			</ol>
+		</nav>
 		<div>
 			<i class="icon calendar" aria-hidden="true"></i>
 			<time class="dt-published" datetime="{{ thread.creation_date.isoformat }}">{{ thread.creation_date|short_datetime }}</time>
@@ -29,7 +27,7 @@
 		<ol class="h-feed" start="{{ page_obj.start_index }}">
 			{% for reply in page_obj %}
 				<li class="h-entry reply" id="reply-{{ reply.pk }}">
-					<div class="entry-meta">
+					<div class="meta">
 						<a rel="author" class="p-author h-card" href="/forum?author={{ reply.author.username }}">
 							<span class="p-name">{{ reply.author.username }}</span>
 						</a>
@@ -44,6 +42,5 @@
 	{% else %}
 		<p>No replies yet.</p>
 	{% endif %}
+	{% include "forum/_pagination.html" %}
 </section>
-
-{% include "forum/_pagination.html" %}
