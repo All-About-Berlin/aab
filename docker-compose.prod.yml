@@ -41,6 +41,7 @@ services:
       - "api_staticfiles:/var/www/api/staticfiles"
       - "${DB_BACKUPS_PATH:-./db-backups}:/var/db-backups"
       - "~/.ssh:/root/.ssh:ro"
+      - "static_site:/var/frontend-output:ro"
     restart: unless-stopped
     logging: *prod-logging
   proxy:

@@ -186,6 +186,17 @@ main{
             }
         }
 
+        .tags {
+            order: 999;
+            flex: 1 0 auto;
+            justify-content: flex-end;
+            ul{
+                display: flex;
+                gap: var(--xs);
+                margin: 0;
+            }
+        }
+
         @include only-phone{
             > :not(#reviewers){
                 flex: 1 0 100%;
