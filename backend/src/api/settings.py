@@ -65,12 +65,19 @@ DATABASES = {
     }
 }
 
+_template_loaders = [
+    "django.template.loaders.filesystem.Loader",
+    "django.template.loaders.app_directories.Loader",
+]
+if not DEBUG:
+    _template_loaders = [("django.template.loaders.cached.Loader", _template_loaders)]
+
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [],
-        "APP_DIRS": True,
         "OPTIONS": {
+            "loaders": _template_loaders,
             "context_processors": [
                 "django.template.context_processors.debug",
                 "django.template.context_processors.request",

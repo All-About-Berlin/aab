@@ -3,7 +3,7 @@
         root * /var/www/api/staticfiles
         file_server
     }
-    @backend path /api/* /admin/*
+    @backend path /api/* /admin/* /forum /forum/*
     handle @backend {
         @hasCfIp header CF-Connecting-IP *
         request_header @hasCfIp X-Real-IP {header.CF-Connecting-IP}
