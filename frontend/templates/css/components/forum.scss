@@ -27,24 +27,22 @@
             color: var(--c-text-light);
         }
 
-        .post-meta{
-            align-content: flex-start;
-            margin: 0;
-            padding: 0;
-            border: 0;
-            color: var(--c-text-light);
-            a{
-                color: var(--c-text-light)!important;
-            }
-            > *{
-                flex: 1 0 100%;
-            }
+        .post-meta > *{
+            flex: 1 0 100%;
         }
     }
 
     .reply{
         grid-template-areas: "meta meta" "message message";
         grid-template-columns: auto 1fr auto;
+
+        .post-meta{
+            justify-content: space-between;
+
+            .p-author{
+                @include text-bold;
+            }
+        }
     }
 
     :is(.thread, .reply){
@@ -60,6 +58,17 @@
 
         .post-meta{
             grid-area: meta;
+
+            align-content: flex-start;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            color: var(--c-text-light);
+
+            a{
+                color: var(--c-text-light)!important;
+            }
+
             time{
                 color: var(--c-text-light);
                 float: right;
