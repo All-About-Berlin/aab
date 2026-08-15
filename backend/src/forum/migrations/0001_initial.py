@@ -14,21 +14,29 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name="Tag",
-            fields=[
-                ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
-                ("name", models.CharField(max_length=50, unique=True)),
-            ],
-            options={
-                "ordering": ["name"],
-            },
-        ),
-        migrations.CreateModel(
             name="Thread",
             fields=[
                 ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
                 ("title", models.CharField(max_length=200)),
                 ("body", models.TextField()),
+                (
+                    "category",
+                    models.CharField(
+                        blank=True,
+                        choices=[
+                            ("housing", "Housing"),
+                            ("work", "Work"),
+                            ("immigration", "Immigration"),
+                            ("living-in-germany", "Life in Germany"),
+                            ("personal-finance", "Personal finance"),
+                            ("family-friends-pets", "Family, friends, pets"),
+                            ("health", "Health"),
+                            ("where-to-find", "Where to find..."),
+                            ("self-employment", "Self-employment"),
+                        ],
+                        max_length=32,
+                    ),
+                ),
                 ("creation_date", models.DateTimeField(auto_now_add=True)),
                 (
                     "author",
@@ -38,7 +46,6 @@ class Migration(migrations.Migration):
                         to=settings.AUTH_USER_MODEL,
                     ),
                 ),
-                ("tags", models.ManyToManyField(blank=True, related_name="threads", to="forum.tag")),
             ],
         ),
         migrations.CreateModel(

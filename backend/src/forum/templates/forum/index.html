@@ -1,9 +1,9 @@
 {% load forum_extras %}
-{% if not user.is_authenticated %}
+{% if not user.is_authenticated and page_obj.number == 1 %}
 		<header class="section hero">
 			<div class="intro-text">
-				<h1>Find your community</h1>
-				<p>In this forum, we help each other make Germany our home.</p>
+				<h1>You are in good company</h1>
+				<p>This is a forum where immigrants help each other navigate life in Germany.</p>
 				<div class="buttons bar left">
 					<a class="button next" href="/guides">Create an account</a>
 				</div>
@@ -57,37 +57,34 @@
 			</svg>
 		</header>
 {% endif %}
-<section class="section">
-	{% if not user.is_authenticated %}
+<section class="section threads">
+	{% if page_obj.number > 1 %}
+		<h2>Page {{ page_obj.number }}</h2>
+	{% elif not user.is_authenticated %}
 		<h2>Recent discussions</h2>
 	{% endif %}
-	<ul class="threads h-feed" aria-label="Threads">
+	<ol class="h-feed" aria-label="Threads">
 		{% for thread in page_obj %}
 			<li class="thread h-entry">
 				<h3><a class="u-url p-name" href="/forum/{{ thread.pk }}">{{ thread.title }}</a></h3>
-				<div class="entry-meta">
-					<span class="p-author h-card">
+				<div class="post-meta" aria-label="Author, publication date, categories and reviewers">
+					{% if thread.category %}
+						<nav aria-label="Breadcrumbs">
+							<i class="icon folder" aria-hidden="true"></i>
+							<a class="p-category" href="/forum?category={{ thread.category }}">{{ thread.get_category_display }}</a>
+						</nav>
+					{% endif %}
+					<div class="p-author h-card">
+						<i class="icon person" aria-hidden="true"></i>
 						<span class="p-name">{{ thread.author.username }}</span>
-					</span>
-					<time class="dt-published" datetime="{{ thread.creation_date.isoformat }}">
-						{{ thread.creation_date|short_date }}
-					</time>
-					· {{ thread.reply_count }} {{ thread.reply_count|pluralize:"reply,replies" }}
-					· last activity
-					<time datetime="{{ thread.last_activity_at.isoformat }}">
-						{{ thread.last_activity_at|short_date }}
-					</time>
+					</div>
+					<div>
+						<i class="icon calendar" aria-hidden="true"></i>
+						<time class="dt-published" datetime="{{ thread.creation_date.isoformat }}">{{ thread.creation_date|short_datetime }}</time>
+					</div>
 				</div>
-				{% if thread.tags.all %}
-					<ul aria-label="Tags">
-						{% for tag in thread.tags.all %}
-							<li><a class="p-category pill" href="/forum?tag={{ tag.pk }}">{{ tag.name }}</a></li>
-						{% endfor %}
-					</ul>
-				{% endif %}
 			</li>
 		{% endfor %}
-	</ul>
+	</ol>
+	{% include "forum/_pagination.html" %}
 </section>
-
-{% include "forum/_pagination.html" %}

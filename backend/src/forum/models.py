@@ -2,21 +2,23 @@ from django.contrib.auth.models import User
 from django.db import models
 
 
-class Tag(models.Model):
-    name = models.CharField(max_length=50, unique=True)
-
-    class Meta:
-        ordering = ["name"]
-
-    def __str__(self):
-        return self.name
+class Category(models.TextChoices):
+    HOUSING = "housing", "Housing"
+    WORK = "work", "Work"
+    IMMIGRATION = "immigration", "Immigration"
+    LIVING_IN_GERMANY = "living-in-germany", "Life in Germany"
+    PERSONAL_FINANCE = "personal-finance", "Personal finance"
+    FAMILY_FRIENDS_PETS = "family-friends-pets", "Family, friends, pets"
+    HEALTH = "health", "Health"
+    WHERE_TO_FIND = "where-to-find", "Where to find..."
+    SELF_EMPLOYMENT = "self-employment", "Self-employment"
 
 
 class Thread(models.Model):
     author = models.ForeignKey(User, on_delete=models.PROTECT, related_name="forum_threads")
     title = models.CharField(max_length=200)
     body = models.TextField()
-    tags = models.ManyToManyField(Tag, blank=True, related_name="threads")
+    category = models.CharField(max_length=32, choices=Category, blank=True)
     creation_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
