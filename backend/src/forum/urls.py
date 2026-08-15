@@ -1,15 +1,11 @@
-from django.urls import include, path
-from forum.views import ReplyViewSet, ThreadViewSet
-from rest_framework import routers
+from django.urls import path
 
+from forum import views
 
-router = routers.DefaultRouter(trailing_slash=False)
-router.register("threads", ThreadViewSet, basename="thread")
 
 urlpatterns = [
-    path("", include(router.urls)),
-    path(
-        "threads/<int:thread_id>/replies",
-        ReplyViewSet.as_view({"get": "list", "post": "create"}),
-    ),
+    path("forum", views.forum_index, name="forum-index"),
+    path("forum/page-<int:page>", views.forum_index, name="forum-index-page"),
+    path("forum/<int:thread_id>", views.forum_thread, name="forum-thread"),
+    path("forum/<int:thread_id>/page-<int:page>", views.forum_thread, name="forum-thread-page"),
 ]

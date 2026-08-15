@@ -1,0 +1,18 @@
+{% extends "_layout.html" %}
+{% set metatitle = "Forum" %}
+{% set metadescription = "Discuss life in Berlin with other people who live there." %}
+
+{% block postHead %}
+	{{ super() }}
+	<meta name="robots" content="noindex">
+{% endblock %}
+
+{% block extraScss %}
+	{% include "css/components/forum.scss" %}
+{% endblock %}
+
+{% block main %}
+	<main aria-label="Main page">
+		<!--FORUM_CONTENT-->
+	</main>
+{% endblock %}
