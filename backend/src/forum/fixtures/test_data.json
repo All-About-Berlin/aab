@@ -201,31 +201,12 @@
       "email": "laila_b@example.com"
     }
   ],
-  "tags": [
-    "anmeldung",
-    "health-insurance",
-    "tax",
-    "visa",
-    "housing",
-    "work",
-    "language",
-    "banking",
-    "family",
-    "bureaucracy",
-    "daily-life",
-    "transport",
-    "schufa",
-    "elster"
-  ],
   "threads": [
     {
       "author": "julien_p",
       "title": "Bürgeramt keeps cancelling my Anmeldung appointment - what now?",
+      "category": "living-in-germany",
       "body": "I have booked three appointments over the past two months. Each time I get an email the day before saying it's cancelled, no reason given. My landlord is starting to get annoyed because the Wohnungsgeberbestätigung is still sitting on my kitchen table.\n\nI tried refreshing the online portal for early morning slots but nothing comes up in Neukölln or Mitte. Is there any human I can call? Or is my only option to keep hammering F5 at 7 in the morning?",
-      "tags": [
-        "anmeldung",
-        "bureaucracy"
-      ],
       "replies": [
         {
           "author": "pablo_m",
@@ -264,11 +245,8 @@
     {
       "author": "hugo_lisboa",
       "title": "TK vs AOK for freelancers - which is less painful?",
+      "category": "personal-finance",
       "body": "Starting freelance work next month. I've been employed and covered by TK for four years and honestly it's been fine, English service, app works. But I heard AOK is cheaper for freelancers because of some family scheme.\n\nAnyone actually switched between the two as a freelancer? Is the paperwork nightmare worth a few euros saved per month?",
-      "tags": [
-        "health-insurance",
-        "work"
-      ],
       "replies": [
         {
           "author": "emilia_j",
@@ -427,11 +405,8 @@
     {
       "author": "fatima_h",
       "title": "Landlord withholding deposit 8 months later, what are my options?",
+      "category": "housing",
       "body": "Moved out in December. Sent the standard letter asking for the deposit back within a reasonable time. Landlord replied saying they are 'waiting for the Nebenkostenabrechnung' before returning any of it.\n\nIt's now August. The Nebenkosten from that year should have been settled by June at the latest. They can only hold back an amount that is realistically expected to cover the outstanding utilities, not the entire deposit. Should I get a lawyer or is there a cheaper first step?",
-      "tags": [
-        "housing",
-        "bureaucracy"
-      ],
       "replies": [
         {
           "author": "faisal-b",
@@ -530,11 +505,8 @@
     {
       "author": "wei_zhang",
       "title": "Kindergeld application in limbo since March",
+      "category": "family-friends-pets",
       "body": "Submitted our Kindergeld application in March through the online Familienkasse portal. My kid is 6 months old. Got a confirmation email and then... nothing. No case number in the portal, no letter, no rejection.\n\nCalled the hotline five times. Held for an hour twice, gave up. Last time got through and the person said they couldn't see anything under our tax ID. Do we resubmit? Wait more?",
-      "tags": [
-        "family",
-        "bureaucracy"
-      ],
       "replies": [
         {
           "author": "mehmet-y",
@@ -565,11 +537,8 @@
     {
       "author": "koray_e",
       "title": "Confused about Steuerklasse after marriage",
+      "category": "personal-finance",
       "body": "We got married in June. I earn about 75k, my spouse earns about 30k. Right now we're both in Steuerklasse I from before. Should we switch to III/V or IV/IV with Faktor?\n\nI keep reading different things. Some sites say III/V is better if there's a big salary gap, others say Faktor is fairer for the lower earner and gives the same result at year end anyway.",
-      "tags": [
-        "tax",
-        "family"
-      ],
       "replies": [
         {
           "author": "wei_zhang",
@@ -584,12 +553,8 @@
     {
       "author": "aylin_t",
       "title": "Best neighbourhood for a family of 4 on 5k net per month?",
+      "category": "housing",
       "body": "Moving from Munich in October. Two kids, ages 4 and 7. We want a 3-4 bedroom flat, ideally near a Grundschule and a park, decent S-Bahn or U-Bahn connection to Mitte where I'll work.\n\n5000 net per month for the household. What areas should we actually be looking at? I keep hearing Prenzlauer Berg for families but it seems insane price-wise now.",
-      "tags": [
-        "housing",
-        "family",
-        "daily-life"
-      ],
       "replies": [
         {
           "author": "yulia_k",
@@ -716,12 +681,8 @@
     {
       "author": "emilia_j",
       "title": "Elster password reset horror stories - anyone else?",
+      "category": "personal-finance",
       "body": "I lost my Elster certificate file when my laptop died. Tried to reset. They mailed me an activation code that took 12 days. Then when I entered it, the portal said the code was expired.\n\nI have a tax return deadline in three weeks. Do I just... file on paper? Or is there some faster reset path I don't know about?",
-      "tags": [
-        "elster",
-        "tax",
-        "bureaucracy"
-      ],
       "replies": [
         {
           "author": "mai_pham",
@@ -836,12 +797,8 @@
     {
       "author": "julien_p",
       "title": "Anerkennung of foreign engineering degree - how long did yours take?",
+      "category": "work",
       "body": "Mechanical engineer, degree from Turkey. Started the Anerkennung process in February through ZAB. They said 3 months. It's now 6 months and I've heard nothing.\n\nDoes anyone have experience with the ZAB timelines actually? My employer here wants the certificate for the internal salary grade but is willing to wait, I just want to know if I should keep calling or just be patient.",
-      "tags": [
-        "work",
-        "bureaucracy",
-        "visa"
-      ],
       "replies": [
         {
           "author": "fatima_h",
@@ -976,10 +933,8 @@
     {
       "author": "ade_okon",
       "title": "WG-Gesucht scams - my experience being targeted",
+      "category": "housing",
       "body": "PSA for anyone new to Berlin. Got contacted by a 'landlord' on WG-Gesucht who said the flat was perfect for me, willing to hold it, just needed a deposit through 'Airbnb protection' to a link they sent. The photos were beautiful and the rent was suspiciously reasonable for the area.\n\nI ran a reverse image search on the photos. Found the same flat on Rightmove in London, listed by an actual estate agent, from 2019. Do not send anyone money before viewing a flat in person. Do not click on any 'protection' links. If it seems too good to be true, it is.",
-      "tags": [
-        "housing"
-      ],
       "replies": [
         {
           "author": "emilia_j",
@@ -1082,11 +1037,8 @@
     {
       "author": "nadia_r",
       "title": "Blue Card renewal - do I really need to redo the whole thing?",
+      "category": "immigration",
       "body": "My Blue Card expires in November. I've been at the same company for four years. Contract, salary, everything unchanged.\n\nThe LEA portal is asking me to submit basically the same set of documents as the initial application. Employment contract, degree, salary slips, Anmeldung, Krankenversicherung. Is this actually normal or am I looking at the wrong form? I thought renewal was supposed to be simpler after a couple of years.",
-      "tags": [
-        "visa",
-        "bureaucracy"
-      ],
       "replies": [
         {
           "author": "ola_k92",
@@ -1097,12 +1049,8 @@
     {
       "author": "noor_farsi",
       "title": "Where do you find English-speaking Hausarzt?",
+      "category": "health",
       "body": "Been in Berlin two years. Kept using my old GP back home over video calls but the last renewal for a chronic prescription got refused because it needs an in-person check.\n\nI need a Hausarzt who speaks English (or at least is patient with basic German). Every one I've called in Friedrichshain says 'keine neuen Patienten.' Any actual working strategy?",
-      "tags": [
-        "health-insurance",
-        "language",
-        "daily-life"
-      ],
       "replies": [
         {
           "author": "astrid_no",
@@ -1137,12 +1085,8 @@
     {
       "author": "noor_farsi",
       "title": "Freelance Steuernummer - Finanzamt has been silent for 10 weeks",
+      "category": "self-employment",
       "body": "Filed the Fragebogen zur steuerlichen Erfassung via Elster on June 3rd. My clients are asking for a Steuernummer to put on their invoices. My bank asks for it before they'll open a business account.\n\nIs 10 weeks normal at this point? Should I call the Finanzamt or is that pointless?",
-      "tags": [
-        "tax",
-        "work",
-        "bureaucracy"
-      ],
       "replies": [
         {
           "author": "ola_k92",
@@ -1157,11 +1101,8 @@
     {
       "author": "hassan-m",
       "title": "Deutschlandticket - is it worth it if I mostly WFH?",
+      "category": "living-in-germany",
       "body": "I work from home 4 days a week. Go into the office once a week in Mitte. I live in Kreuzberg.\n\nThe Deutschlandticket is 58 euros. A regular AB monthly is 100+. But do I actually use enough public transport to make even 58 worth it? I bike everywhere in summer.",
-      "tags": [
-        "transport",
-        "daily-life"
-      ],
       "replies": [
         {
           "author": "gabriela_p",
@@ -1184,12 +1125,8 @@
     {
       "author": "rahul_k",
       "title": "Schufa without any German credit history - what worked",
+      "category": "housing",
       "body": "Landlords keep asking for a Schufa Bonitätsauskunft. I've been here 4 months, no debt, but also no history. Every Schufa report comes back essentially empty which some landlords treat as a red flag.\n\nWhat helped me: I opened a DKB account, got their credit card, used it lightly for 3 months, paid off in full each month. Also signed up for a phone contract (not prepaid). Within 6 months my Schufa had actual entries and a score. Landlords stopped raising eyebrows.\n\nPosting because I wish someone had told me this on day one.",
-      "tags": [
-        "schufa",
-        "banking",
-        "housing"
-      ],
       "replies": [
         {
           "author": "thiago_br",
@@ -1304,11 +1241,8 @@
     {
       "author": "ola_k92",
       "title": "Nebenkostenabrechnung shock - 1800 euro back payment",
+      "category": "housing",
       "body": "Got the Nebenkostenabrechnung yesterday. I owe 1800 euros. My monthly Vorauszahlung is 220 euros so this feels absolutely crazy.\n\nThe biggest line item is 'Heizung' at like 2400 for the year. We have Fernwärme. I keep the flat around 20 degrees, I'm not blasting the heat. What are my options for challenging this?",
-      "tags": [
-        "housing",
-        "bureaucracy"
-      ],
       "replies": [
         {
           "author": "iris_wong",
@@ -1391,11 +1325,8 @@
     {
       "author": "jakub_z",
       "title": "Kita platz search - how early is too early to start?",
+      "category": "family-friends-pets",
       "body": "We're expecting our first in November. Everyone tells us we should already be on Kita waiting lists. But baby doesn't exist yet, I don't have a birth certificate to attach to applications.\n\nWhat's the actual procedure? Do we sign up now with 'due date' and update later? Or wait until birth and then panic?",
-      "tags": [
-        "family",
-        "bureaucracy"
-      ],
       "replies": [
         {
           "author": "marco_delrio",
@@ -1566,11 +1497,8 @@
     {
       "author": "gabriela_p",
       "title": "GEZ letter says I owe 400 euros, I never registered",
+      "category": "living-in-germany",
       "body": "Got a scary looking letter from Beitragsservice today. They say I've been due 18.36 per month since I registered my address a year ago and now they want backpayment.\n\nI never signed up for anything, they never sent me the initial letter as far as I recall. Is this legit? Is there any way out?",
-      "tags": [
-        "bureaucracy",
-        "daily-life"
-      ],
       "replies": [
         {
           "author": "hugo_lisboa",
@@ -1601,10 +1529,8 @@
     {
       "author": "mehmet-y",
       "title": "A2 test panic - I take it Friday and I feel unprepared",
+      "category": "living-in-germany",
       "body": "Have to pass A2 for a residence permit thing. Been studying for 3 months but I still feel really shaky on the speaking part. My tutor says I'm ready but I don't feel it.\n\nAnyone who has taken the Goethe A2 recently - what was the speaking section actually like? How strict are they?",
-      "tags": [
-        "language"
-      ],
       "replies": [
         {
           "author": "iris_wong",
@@ -1739,11 +1665,8 @@
     {
       "author": "thiago_br",
       "title": "Opening a business account as a non-EU freelancer",
+      "category": "self-employment",
       "body": "N26 rejected my business account application. Fidor closed down. Sparkasse wants me in person with a Steuerbescheinigung I don't have yet.\n\nWhich bank actually opens business accounts for non-EU nationals on a freelance visa? Willing to pay monthly fees if the service just works.",
-      "tags": [
-        "banking",
-        "work"
-      ],
       "replies": [
         {
           "author": "zara_ali",
@@ -1782,10 +1705,8 @@
     {
       "author": "wei_zhang",
       "title": "Sonntagsruhe - my neighbour complained I was vacuuming",
+      "category": "living-in-germany",
       "body": "Sunday morning, 10am, vacuumed my flat for about 15 minutes. Doorbell rings. Neighbour is furious, tells me it's illegal to make noise on Sunday.\n\nIs this actually a rule or is this old lady bullying me? I'm not blasting music, just vacuuming.",
-      "tags": [
-        "daily-life"
-      ],
       "replies": [
         {
           "author": "lena_kim",
@@ -1796,11 +1717,8 @@
     {
       "author": "rahul_k",
       "title": "Anmeldung date differs from actual move-in - is this a problem?",
+      "category": "living-in-germany",
       "body": "I moved into my flat on July 1st. Couldn't get a Bürgeramt appointment until August 20th. On the Wohnungsgeberbestätigung my landlord wrote July 1st as the Einzugsdatum. Do I list July 1st as move-in date on my Anmeldung even though I'm registering in August?",
-      "tags": [
-        "anmeldung",
-        "bureaucracy"
-      ],
       "replies": [
         {
           "author": "fatima_h",
@@ -1859,12 +1777,8 @@
     {
       "author": "tomas_bcn",
       "title": "Elterngeld basics for a couple where only one of us worked in Germany?",
+      "category": "family-friends-pets",
       "body": "Baby coming in October. I work full time in Berlin (permanent contract), my partner has been here 8 months on my visa, does not work.\n\nHow does Elterngeld work in this case? Can we both take leave? Does she get Elterngeld even though she never worked here? What's Basiselterngeld vs ElterngeldPlus?",
-      "tags": [
-        "family",
-        "work",
-        "tax"
-      ],
       "replies": [
         {
           "author": "pablo_m",
@@ -1899,10 +1813,8 @@
     {
       "author": "arjun-p",
       "title": "Best Christmas markets in Berlin - locals' picks?",
+      "category": "where-to-find",
       "body": "First winter in Berlin. Everyone tells me to check out the Christmas markets but I want to skip the tourist traps like Gendarmenmarkt.\n\nWhere do actual Berliners go? Doesn't have to be huge, I'd rather have quality Glühwein and no queue for the toilet.",
-      "tags": [
-        "daily-life"
-      ],
       "replies": [
         {
           "author": "kamila_a",
@@ -1961,11 +1873,8 @@
     {
       "author": "bogdan_m",
       "title": "Dentist quotes vary wildly for the same treatment",
+      "category": "health",
       "body": "Need a crown. Got a Heil- und Kostenplan from my Kasse-dentist: 400 euros co-pay. Went for a second opinion at a private practice: 1600 euros for what they called a 'better' ceramic version.\n\nHow do I actually know if the basic Kassenleistung is fine or if I need to pay extra? Both dentists were confident that theirs was correct.",
-      "tags": [
-        "health-insurance",
-        "daily-life"
-      ],
       "replies": [
         {
           "author": "kostas-a",
@@ -1980,12 +1889,8 @@
     {
       "author": "hassan-m",
       "title": "Fiktionsbescheinigung - how do I actually use it?",
+      "category": "immigration",
       "body": "My residence permit expired. Applied for renewal in time so LEA gave me a Fiktionsbescheinigung, valid 3 months. My employer's HR is confused because they've never seen one and are asking if I'm legally allowed to work.\n\nAlso, can I travel with it? I need to visit family abroad next month.",
-      "tags": [
-        "visa",
-        "work",
-        "bureaucracy"
-      ],
       "replies": [
         {
           "author": "mai_pham",
@@ -2032,10 +1937,8 @@
     {
       "author": "laila_b",
       "title": "S-Bahn strikes - what are my rights as a monthly ticket holder?",
+      "category": "living-in-germany",
       "body": "This is the third strike this year. I have a monthly Deutschlandticket. Do I get any compensation? I paid full price and had to Uber to work twice this week.",
-      "tags": [
-        "transport"
-      ],
       "replies": [
         {
           "author": "marco_delrio",
@@ -2046,11 +1949,8 @@
     {
       "author": "zara_ali",
       "title": "Standesamt appointment for baby's birth certificate - 8 week wait?",
+      "category": "family-friends-pets",
       "body": "Baby born two weeks ago. Hospital submitted the birth registration paperwork but we still need to actually go to the Standesamt to get the Geburtsurkunde. Booking site shows next available in October.\n\nHow do people file for Kindergeld and Elterngeld without the birth certificate? Do you wait?",
-      "tags": [
-        "family",
-        "bureaucracy"
-      ],
       "replies": [
         {
           "author": "chinedu_ok",
@@ -2061,11 +1961,8 @@
     {
       "author": "thiago_br",
       "title": "Rentenversicherung refund after leaving Germany - process?",
+      "category": "personal-finance",
       "body": "US citizen. Have been in Germany 5 years, contributing to Rentenversicherung the whole time. Moving back to the US next month permanently.\n\nI keep hearing conflicting stories about whether I can get a refund of my contributions. Some say yes after 24 months of no contributions, some say no because of the US-Germany social security agreement. Which is it?",
-      "tags": [
-        "tax",
-        "work"
-      ],
       "replies": [
         {
           "author": "valentin-d",
@@ -2160,10 +2057,8 @@
     {
       "author": "brendan_us",
       "title": "Kaltmiete vs Warmmiete - I thought I understood, then got a bill",
+      "category": "housing",
       "body": "Signed a lease that said Kaltmiete 900, Nebenkosten 250, so Warmmiete 1150. I thought this was 'all in.' Now the landlord is asking for a Stromabschlag on top.\n\nIs electricity not part of Warmmiete? What actually is?",
-      "tags": [
-        "housing"
-      ],
       "replies": [
         {
           "author": "linh_nguyen",
@@ -2226,11 +2121,8 @@
     {
       "author": "valentin-d",
       "title": "Führungszeugnis for new job - how long does it actually take?",
+      "category": "work",
       "body": "New employer wants a Führungszeugnis (background check) before I can start. I have a start date in 3 weeks. Applied yesterday online.\n\nAny idea how fast this actually arrives? The website says 'a few weeks' which is not reassuring.",
-      "tags": [
-        "bureaucracy",
-        "work"
-      ],
       "replies": [
         {
           "author": "sofia_ramos",
@@ -2289,11 +2181,8 @@
     {
       "author": "arjun-p",
       "title": "Bank rejected my Anmeldung as proof of address",
+      "category": "personal-finance",
       "body": "Went to open an account at Sparkasse. They rejected my Meldebescheinigung because it doesn't have a QR code or 'authenticity feature.' Said they need a utility bill.\n\nBut I don't have utility bills yet because I'm trying to open a bank account to set up direct debits for utilities. Chicken and egg. Any workaround?",
-      "tags": [
-        "banking",
-        "anmeldung"
-      ],
       "replies": [
         {
           "author": "chinedu_ok",
@@ -2328,10 +2217,8 @@
     {
       "author": "gabriela_p",
       "title": "Best barber for a fade in Kreuzberg/Neukölln?",
+      "category": "where-to-find",
       "body": "Been to three different barbers on Sonnenallee and I keep getting the same generic haircut regardless of what I show them. I want a proper mid-fade with a bit of texture on top.\n\nAny recommendations for someone who actually listens and doesn't just do a Turkish scissor cut?",
-      "tags": [
-        "daily-life"
-      ],
       "replies": [
         {
           "author": "rahul_k",
@@ -2398,11 +2285,8 @@
     {
       "author": "hassan-m",
       "title": "Kleinunternehmer question - should I stay under 22k or grow?",
+      "category": "self-employment",
       "body": "First year as a freelance designer. Approaching 20k in revenue. Kleinunternehmer threshold is 22k. Do I deliberately stay under, or bite the bullet and register for VAT?\n\nMy clients are mostly German small businesses who can deduct VAT anyway.",
-      "tags": [
-        "tax",
-        "work"
-      ],
       "replies": [
         {
           "author": "kamila_a",
@@ -2429,11 +2313,8 @@
     {
       "author": "kenji-t",
       "title": "Integrationskurs waitlist is ridiculous",
+      "category": "living-in-germany",
       "body": "Signed up for a subsidized Integrationskurs in April. All the schools I contacted say waitlist until January 2026 or later. Some don't even take new applications.\n\nAm I better off just paying for a private German course? I need B1 for permanent residency.",
-      "tags": [
-        "language",
-        "bureaucracy"
-      ],
       "replies": [
         {
           "author": "chinedu_ok",
@@ -2472,11 +2353,8 @@
     {
       "author": "mai_pham",
       "title": "Krankmeldung procedure - do I really need to see the doctor?",
+      "category": "work",
       "body": "I have a bad cold. Feel like I need a couple of days to just sleep and drink tea. But my company requires a Krankmeldung from day 3.\n\nMy Hausarzt is 40 minutes across town and I don't want to spread germs in a waiting room for a cold. Are there online Krankschreibung services or is that a myth?",
-      "tags": [
-        "health-insurance",
-        "work"
-      ],
       "replies": [
         {
           "author": "giulia-r",
@@ -2587,11 +2465,8 @@
     {
       "author": "jakub_z",
       "title": "Bürgergeld denial - can I appeal?",
+      "category": "work",
       "body": "Applied for Bürgergeld after losing my job. Denied because my ex-employer's severance is counted as income for 6 months and pushes me over the threshold. But that severance is already spent on debts.\n\nCan I actually appeal this or is that the rule?",
-      "tags": [
-        "bureaucracy",
-        "work"
-      ],
       "replies": [
         {
           "author": "chinedu_ok",
@@ -2650,12 +2525,8 @@
     {
       "author": "kenji-t",
       "title": "How do I get a Wohnungsgeberbestätigung from an evasive landlord?",
+      "category": "housing",
       "body": "Moved in three weeks ago. My landlord signed the lease but is now not responding to any of my requests for the Wohnungsgeberbestätigung. He is legally required to provide it within 2 weeks. Without it I cannot do Anmeldung.\n\nIs there a way to force this or do I just wait forever?",
-      "tags": [
-        "housing",
-        "anmeldung",
-        "bureaucracy"
-      ],
       "replies": [
         {
           "author": "iris_wong",
@@ -2714,11 +2585,8 @@
     {
       "author": "giulia-r",
       "title": "Late tax return - what's the penalty situation?",
+      "category": "personal-finance",
       "body": "I'm 4 months late filing my 2023 tax return. Freelancer. Have Elster set up. Haven't gotten a reminder from the Finanzamt yet.\n\nShould I just file now and hope for the best? What penalties am I looking at?",
-      "tags": [
-        "tax",
-        "elster"
-      ],
       "replies": [
         {
           "author": "mai_pham",
@@ -2805,11 +2673,8 @@
     {
       "author": "kamila_a",
       "title": "PSA: cheap radiator hack for cold Altbau flats",
+      "category": "housing",
       "body": "First winter in an Altbau. My old windows leak heat like crazy and the radiator can't keep up. I ordered a set of reflective foils that go behind the radiator (Heizkörper-Reflektor). About 20 euros for the whole flat.\n\nFlat is measurably warmer, my Vorauszahlung might actually not shock me next year. Also cracked window frames sealed with V-strips from Hornbach. Total spend under 50 euros for a huge comfort upgrade.",
-      "tags": [
-        "housing",
-        "daily-life"
-      ],
       "replies": [
         {
           "author": "faisal-b",
@@ -2852,10 +2717,8 @@
     {
       "author": "pablo_m",
       "title": "Salary negotiation as a mid-career hire from abroad",
+      "category": "work",
       "body": "Got an offer for a senior product manager role in Berlin. 90k gross. Company is a well-funded startup. Coming from London where I was making the equivalent of about 120k.\n\nBerlin is cheaper but not that much cheaper. Should I push back? What's normal for negotiation in German offer culture?",
-      "tags": [
-        "work"
-      ],
       "replies": [
         {
           "author": "priya_sh",
@@ -2878,10 +2741,8 @@
     {
       "author": "kamila_a",
       "title": "Radiologist appointment - 4 month wait for an MRI",
+      "category": "health",
       "body": "My Hausarzt gave me an Überweisung for a knee MRI. Called around, all Kassenpraxen say 3-4 months. Private clinics offer next week if I pay ~600 euros out of pocket.\n\nIs 4 months just normal? My knee really hurts.",
-      "tags": [
-        "health-insurance"
-      ],
       "replies": [
         {
           "author": "tomas_bcn",
@@ -3052,11 +2913,8 @@
     {
       "author": "laila_b",
       "title": "Mold in the bathroom - who's responsible?",
+      "category": "housing",
       "body": "Small mold patches appearing near the ceiling in my bathroom. Landlord says it's my fault for not ventilating enough. I ventilate 3x a day. Building is Altbau with poor insulation.\n\nWhere's the line between tenant responsibility and building fault?",
-      "tags": [
-        "housing",
-        "bureaucracy"
-      ],
       "replies": [
         {
           "author": "aylin_t",
@@ -3115,11 +2973,8 @@
     {
       "author": "isabela_c",
       "title": "Changing my surname after marriage - the German paperwork side",
+      "category": "family-friends-pets",
       "body": "Got married abroad, took my spouse's name legally in that country. Now I need to update everything in Germany. Passport is easy (embassy), but for the German side - Anmeldung, tax ID, Kasse, bank - what's the order of operations?",
-      "tags": [
-        "family",
-        "bureaucracy"
-      ],
       "replies": [
         {
           "author": "valentin-d",
@@ -3142,10 +2997,8 @@
     {
       "author": "valentin-d",
       "title": "Betriebsrat - is joining one going to hurt my career?",
+      "category": "work",
       "body": "Been at my company (tech, 400 people) for 3 years. Colleagues are starting a Betriebsrat. They want me to join.\n\nIn my home country, joining a works council is basically committing career suicide. In Germany I've heard it's more normalized but still risky. Real experiences?",
-      "tags": [
-        "work"
-      ],
       "replies": [
         {
           "author": "laila_b",
@@ -3172,10 +3025,8 @@
     {
       "author": "chinedu_ok",
       "title": "Apartment plants for someone who's away a lot?",
+      "category": "living-in-germany",
       "body": "I travel for work 2-3 weeks a month. My flat is south-facing, so lots of light. Every plant I've bought dies within 2 months from underwatering.\n\nWhat plants actually survive being abandoned for weeks?",
-      "tags": [
-        "daily-life"
-      ],
       "replies": [
         {
           "author": "rahul_k",
@@ -3278,11 +3129,8 @@
     {
       "author": "carmen_gs",
       "title": "Handyvertrag - are the online-only providers actually reliable?",
+      "category": "living-in-germany",
       "body": "Contract with O2 is ending. Been looking at cheaper providers like Congstar, Winsim, Lebara. Prices are way better but I'm worried about coverage and support.\n\nAnyone using these? Any horror stories?",
-      "tags": [
-        "daily-life",
-        "banking"
-      ],
       "replies": [
         {
           "author": "iris_wong",
@@ -3293,10 +3141,8 @@
     {
       "author": "carmen_gs",
       "title": "Employer wants me to sign a garden leave clause",
+      "category": "work",
       "body": "New employment contract has a clause where they can put me on 'Freistellung' during any notice period and forbid me from working for 6 months after leaving. Is this normal? Enforceable?",
-      "tags": [
-        "work"
-      ],
       "replies": [
         {
           "author": "gabriela_p",
@@ -3351,10 +3197,8 @@
     {
       "author": "aylin_t",
       "title": "Where do you buy actually decent bread on a Sunday?",
+      "category": "where-to-find",
       "body": "Weekly ritual: run out of bread on Sunday morning, realize all bakeries are closed, resort to sad supermarket toast at the train station Kaisers.\n\nAre there any real Bäckereien open on Sundays in Berlin?",
-      "tags": [
-        "daily-life"
-      ],
       "replies": [
         {
           "author": "koray_e",
@@ -3433,12 +3277,8 @@
     {
       "author": "emilia_j",
       "title": "Finanzamt letter I don't understand - who to ask?",
+      "category": "personal-finance",
       "body": "Got a letter from Finanzamt. My German is around B1 but this letter has legal terminology I'm struggling with. There's a mention of 'Bescheid,' something about my Steuerklasse and a deadline of 30 days.\n\nI don't want to ignore it. Where do I get help understanding it that doesn't cost a fortune?",
-      "tags": [
-        "tax",
-        "language",
-        "bureaucracy"
-      ],
       "replies": [
         {
           "author": "faisal-b",
@@ -3469,12 +3309,8 @@
     {
       "author": "cheng_lin",
       "title": "Success story: got my Niederlassungserlaubnis after 4 years",
+      "category": "immigration",
       "body": "Just wanted to share a positive one because forums always get negative. Arrived in 2021 on a Blue Card. Learned German to B1, been at the same job the whole time, contributed to Rentenversicherung.\n\nApplied for Niederlassungserlaubnis in March, got the appointment in July, got the card in August. Not fast but not horrible either. The clerk was actually friendly. Bring EVERY document. It matters.\n\nHappy to answer specific questions if anyone is preparing their application.",
-      "tags": [
-        "visa",
-        "bureaucracy",
-        "family"
-      ],
       "replies": [
         {
           "author": "ade_okon",

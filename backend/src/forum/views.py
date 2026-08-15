@@ -35,7 +35,6 @@ def forum_index(request, page: int = 1):
             reply_count=Count("replies"),
         )
         .select_related("author")
-        .prefetch_related("tags")
         .order_by("-last_activity_at")
     )
     paginator = Paginator(threads, THREADS_PER_PAGE)
@@ -50,9 +49,7 @@ def forum_index(request, page: int = 1):
 
 
 def forum_thread(request, thread_id: int, page: int = 1):
-    thread = get_object_or_404(
-        Thread.objects.select_related("author").prefetch_related("tags"), pk=thread_id
-    )
+    thread = get_object_or_404(Thread.objects.select_related("author"), pk=thread_id)
     replies = thread.replies.select_related("author").order_by("creation_date")
     paginator = Paginator(replies, REPLIES_PER_PAGE)
     page_obj = _get_page(paginator, page)
