@@ -27,7 +27,7 @@
 		<ol class="h-feed" start="{{ page_obj.start_index }}">
 			{% for reply in page_obj %}
 				<li class="h-entry reply" id="reply-{{ reply.pk }}">
-					<div class="meta">
+					<div class="post-meta">
 						<a rel="author" class="p-author h-card" href="/forum?author={{ reply.author.username }}">
 							<span class="p-name">{{ reply.author.username }}</span>
 						</a>
