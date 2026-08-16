@@ -64,11 +64,5 @@
 <section class="section threads">
 	{% include "forum/threadList.html" with threads=page_obj %}
 	{% include "forum/pagination.html" %}
-	{% if category %}
-		<hr>
-		<div class="buttons bar previous-next">
-			<a class="previous" href="/forum">Show all discussions</a>
-		</div>
-	{% endif %}
 </section>
 {% endblock %}
