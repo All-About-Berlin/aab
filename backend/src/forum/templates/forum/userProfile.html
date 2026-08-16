@@ -1,4 +1,10 @@
+{% extends "forum/layout.html" %}
 {% load forum_extras %}
+
+{% block page_title %}User {{ profile_user.username }} - All About Berlin forum{% endblock %}
+{% block page_description %}Threads and replies by {{ profile_user.username }} on the All About Berlin forum.{% endblock %}
+
+{% block content %}
 <article class="section h-card">
 	<h1 class="p-name">{{ profile_user.username }}</h1>
 	<div class="post-meta">
@@ -42,3 +48,4 @@
 		<p>This user has not replied to any discussions.</p>
 	{% endif %}
 </section>
+{% endblock %}

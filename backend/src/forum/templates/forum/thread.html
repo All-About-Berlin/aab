@@ -1,4 +1,9 @@
+{% extends "forum/layout.html" %}
 {% load forum_extras %}
+
+{% block page_title %}{% if page_obj.number > 1 %}Page {{ page_obj.number }} - {% endif %}{{ thread.title }} - All About Berlin forum{% endblock %}
+
+{% block content %}
 <article class="section h-entry">
 	<h1 class="p-name">{{ thread.title }}</h1>
 	<div class="post-meta" aria-label="Author, publication date, categories and reviewers">
@@ -44,3 +49,4 @@
 	{% endif %}
 	{% include "forum/pagination.html" %}
 </section>
+{% endblock %}
