@@ -8,9 +8,9 @@
 <article class="section h-card">
 	<h1 class="p-name">{{ profile_user.username }}</h1>
 	<div class="post-meta">
-		<div>
+		<div class="date">
 			<i class="icon calendar" aria-hidden="true"></i>
-			<time class="dt-published" datetime="{{ profile_user.date_joined.isoformat }}">Joined on {{ profile_user.date_joined|short_datetime }}</time>
+			<time datetime="{{ profile_user.date_joined.isoformat }}">Joined on {{ profile_user.date_joined|short_datetime }}</time>
 		</div>
 		<div>
 			<i class="icon person" aria-hidden="true"></i>
@@ -34,13 +34,14 @@
 		<ol class="h-feed">
 			{% for reply in replies %}
 				<li class="h-entry reply">
+					<a class="p-author h-card" hidden href="/forum/users/{{ profile_user.username }}">{{ profile_user.username }}</a>
 					<div class="post-meta">
-						<a class="u-url p-name" href="/forum/{{ reply.thread.pk }}#reply-{{ reply.pk }}">{{ reply.thread.title }}</a>
+						<a class="u-url" href="/forum/{{ reply.thread.pk }}#reply-{{ reply.pk }}">{{ reply.thread.title }}</a>
 						<time class="dt-published" datetime="{{ reply.creation_date.isoformat }}">
 							{{ reply.creation_date|short_datetime }}
 						</time>
 					</div>
-					<div class="e-content">{{ reply.body|linebreaks }}</div>
+					<div class="article-body e-content">{{ reply.body|linebreaks }}</div>
 				</li>
 			{% endfor %}
 		</ol>

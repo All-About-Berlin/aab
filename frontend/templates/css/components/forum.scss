@@ -2,6 +2,11 @@ main .section.hero:has(.intro-text){
     padding: 0 var(--w-page-border);
 }
 
+.breadcrumbs{
+    flex: 1;
+    order: 0!important;
+}
+
 :is(.threads, .replies){
 
     > h2{
@@ -16,75 +21,54 @@ main .section.hero:has(.intro-text){
     }
 
     .thread{
-        grid-template-areas: "title meta";
-        grid-template-columns: 1fr 220px;
+        grid-template-areas: "title" "meta";
+        grid-template-columns: 1fr;
 
         h3{
             grid-area: title;
             font-size: var(--m);
+            @include text-bold;
         }
 
-        p{
-            margin: var(--s) 0 0;
-            grid-area: description;
-            font-size: var(--f-s);
-            color: var(--c-text-light);
-        }
+        .post-meta{
+            .breadcrumbs{
+                flex: 1;
+            }
 
-        .post-meta > *{
-            flex: 1 0 100%;
+            a{
+                color: inherit;
+            }
         }
     }
 
     .reply{
-        grid-template-areas: "meta meta" "message message";
-        grid-template-columns: auto 1fr auto;
-
-        .post-meta{
-            justify-content: space-between;
-
-            .p-author{
-                @include text-bold;
-            }
+        grid-template-areas: "meta" "message";
+        grid-template-columns: 1fr;
+        .post-meta .user{
+            flex: 1;
         }
     }
 
     :is(.thread, .reply){
         display: grid;
-        width: 100%;
-        gap: 0 var(--m);
+        gap: var(--m);
         grid-auto-flow: column;
-
-        &:not(:last-child){
-            border-bottom: var(--b-box);
-            padding-bottom: var(--l);
-        }
 
         .post-meta{
             grid-area: meta;
-
-            align-content: flex-start;
             margin: 0;
-            padding: 0;
-            border: 0;
-            color: var(--c-text-light);
+            padding: 0 0 var(--m);
 
             a{
-                color: var(--c-text-light)!important;
-            }
-
-            time{
-                color: var(--c-text-light);
-                float: right;
-                font-size: var(--f-s);
+                color: inherit;
             }
         }
 
         .e-content{
             grid-area: message;
 
-            p{
-                margin: var(--s) 0 0;
+            > :first-child{
+                margin-top: 0;
             }
         }
 

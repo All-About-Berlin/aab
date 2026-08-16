@@ -14,33 +14,34 @@
 				<li><a class="p-category" href="/forum?category={{ thread.category }}">{{ thread.get_category_display }}</a></li>
 			</ol>
 		</nav>
-		<div>
+		<div class="user p-author h-card">
+			<i class="icon person" aria-hidden="true"></i>
+			By <a class="p-name u-url" href="/forum/users/{{ thread.author.username }}">{{ thread.author.username }}</a>
+		</div>
+		<div class="date">
 			<i class="icon calendar" aria-hidden="true"></i>
 			<time class="dt-published" datetime="{{ thread.creation_date.isoformat }}">{{ thread.creation_date|short_datetime }}</time>
-		</div>
-		<div class="p-author h-card">
-			<i class="icon person" aria-hidden="true"></i>
-			By <a class="p-name" href="/forum/users/{{ thread.author.username }}">{{ thread.author.username }}</a>
 		</div>
 	</div>
 	<div class="article-body e-content">{{ thread.body|linebreaks }}</div>
 </article>
 
-<section aria-label="Replies" class="section replies">
-	<h2>Replies</h2>
+<section aria-label="Replies" class="replies">
 	{% if page_obj.object_list %}
 		<ol class="h-feed" start="{{ page_obj.start_index }}">
 			{% for reply in page_obj %}
-				<li class="h-entry reply" id="reply-{{ reply.pk }}">
+				<li class="h-entry section reply" id="reply-{{ reply.pk }}">
 					<div class="post-meta">
-						<a rel="author" class="p-author h-card" href="/forum/users/{{ reply.author.username }}">
-							<span class="p-name">{{ reply.author.username }}</span>
-						</a>
-						<time class="dt-published" datetime="{{ reply.creation_date.isoformat }}">
-							{{ reply.creation_date|short_datetime }}
-						</time>
+						<div class="user p-author h-card">
+							<i class="icon person" aria-hidden="true"></i>
+							<a rel="author" class="p-name u-url" href="/forum/users/{{ reply.author.username }}">{{ reply.author.username }}</a>
+						</div>
+						<div class="date">
+							<i class="icon calendar" aria-hidden="true"></i>
+							<a class="u-url" href="#reply-{{ reply.pk }}"><time class="dt-published" datetime="{{ reply.creation_date.isoformat }}">{{ reply.creation_date|short_datetime }}</time></a>
+						</div>
 					</div>
-					<div class="e-content">{{ reply.body|linebreaks }}</div>
+					<div class="article-body e-content">{{ reply.body|linebreaks }}</div>
 				</li>
 			{% endfor %}
 		</ol>
