@@ -5,7 +5,7 @@ from django.db.models.functions import Coalesce
 from django.http import Http404
 from django.shortcuts import get_object_or_404, render
 
-from forum.models import Thread
+from forum.models import Category, Thread
 
 
 THREADS_PER_PAGE = 20
@@ -28,13 +28,23 @@ def forum_index(request, page: int = 1):
         .select_related("author")
         .order_by("-last_activity_at")
     )
+    category = request.GET.get("category")
+    if category:
+        if category not in Category.values:
+            raise Http404
+        threads = threads.filter(category=category)
     paginator = Paginator(threads, THREADS_PER_PAGE)
     page_obj = _get_page(paginator, page)
 
     return render(
         request,
         "forum/index.html",
-        {"page_obj": page_obj, "paginator": paginator, "base_url": "/forum"},
+        {
+            "page_obj": page_obj,
+            "paginator": paginator,
+            "base_url": "/forum",
+            "category": Category(category) if category else None,
+        },
     )
 
 

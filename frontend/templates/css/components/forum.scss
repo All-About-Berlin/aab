@@ -1,3 +1,7 @@
+main .section.hero:has(.intro-text){
+    padding: 0 var(--w-page-border);
+}
+
 :is(.threads, .replies){
 
     > h2{
