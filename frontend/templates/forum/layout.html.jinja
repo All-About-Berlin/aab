@@ -1,3 +1,4 @@
+{# Creates a Django base template for the forum pages, which are generated server-side #}
 {% extends "_layout.html" %}
 {% set metatitle = '{% block page_title %}All About Berlin forum{% endblock %}'|safe %}
 {% set metadescription = '{% block page_description %}Discuss life in Berlin with other people who live there.{% endblock %}'|safe %}
@@ -16,3 +17,12 @@
 	</main>
 	{% raw %}{% block sidebar %}{% endblock %}{% endraw %}
 {% endblock %}
+
+{# Inject a Django `jsonld` block into the site-wide JSON-LD array, before its closing `]`. #}
+{# Child Django templates should prefix their contribution with a leading comma. #}
+{% block jsonld -%}
+{%- set parent = super()|trim -%}
+{{ parent[:-1] }}
+{% raw %}{% with SITE_URL="{% endraw %}{{ SITE_URL }}{% raw %}" %}{% block jsonld %}{% endblock %}{% endwith %}{% endraw %}
+]
+{%- endblock %}
