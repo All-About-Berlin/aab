@@ -1,23 +1,25 @@
 {% if paginator.num_pages > 1 %}
+	{% with qs=request.GET.urlencode %}
 	<nav class="buttons bar" aria-label="Pagination">
 		{% if page_obj.has_previous %}
 			{% if page_obj.previous_page_number == 1 %}
-				<a rel="prev" aria-label="Previous page" class="button previous" href="{{ base_url }}"></a>
+				<a rel="prev" aria-label="Previous page" class="button previous" href="{{ base_url }}{% if qs %}?{{ qs }}{% endif %}"></a>
 			{% else %}
-				<a rel="prev" aria-label="Previous page" class="button previous" href="{{ base_url }}/page-{{ page_obj.previous_page_number }}"></a>
+				<a rel="prev" aria-label="Previous page" class="button previous" href="{{ base_url }}/page-{{ page_obj.previous_page_number }}{% if qs %}?{{ qs }}{% endif %}"></a>
 			{% endif %}
 		{% else %}
 			<button aria-label="Previous page" class="button previous" disabled></button>
 		{% endif %}
 		<select aria-label="Page" onchange="location.href = this.value">
 			{% for n in paginator.page_range %}
-				<option value="{% if n == 1 %}{{ base_url }}{% else %}{{ base_url }}/page-{{ n }}{% endif %}"{% if n == page_obj.number %} selected{% endif %}>{{ n }}</option>
+				<option value="{% if n == 1 %}{{ base_url }}{% else %}{{ base_url }}/page-{{ n }}{% endif %}{% if qs %}?{{ qs }}{% endif %}"{% if n == page_obj.number %} selected{% endif %}>{{ n }}</option>
 			{% endfor %}
 		</select>
 		{% if page_obj.has_next %}
-			<a rel="next" aria-label="Next page" class="button next" href="{{ base_url }}/page-{{ page_obj.next_page_number }}"></a>
+			<a rel="next" aria-label="Next page" class="button next" href="{{ base_url }}/page-{{ page_obj.next_page_number }}{% if qs %}?{{ qs }}{% endif %}"></a>
 		{% else %}
 			<button aria-label="Next page" class="button next" disabled></button>
 		{% endif %}
 	</nav>
+	{% endwith %}
 {% endif %}
