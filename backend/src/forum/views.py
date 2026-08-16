@@ -1,24 +1,25 @@
 from pathlib import Path
 
+from django.contrib.auth.models import User
 from django.core.paginator import EmptyPage, Paginator
 from django.db.models import Count, F, Max
 from django.db.models.functions import Coalesce
 from django.http import Http404, HttpResponse
 from django.shortcuts import get_object_or_404
+from django.template import Context, Template
 from django.template.loader import render_to_string
 
 from forum.models import Thread
 
 
 SHELL_PATH = Path("/var/frontend-output/forum/shell.html")
-SHELL_MARKER = "<!--FORUM_CONTENT-->"
 THREADS_PER_PAGE = 20
 REPLIES_PER_PAGE = 20
 
 
-def _render(content_html: str) -> HttpResponse:
-    shell = SHELL_PATH.read_text()
-    return HttpResponse(shell.replace(SHELL_MARKER, content_html))
+def _render(content_html: str, page_title: str | None = None) -> HttpResponse:
+    shell = Template(SHELL_PATH.read_text())
+    return HttpResponse(shell.render(Context({"content": content_html, "page_title": page_title})))
 
 
 def _get_page(paginator: Paginator, page_number: int):
@@ -46,6 +47,27 @@ def forum_index(request, page: int = 1):
         request=request,
     )
     return _render(content)
+
+
+def forum_user_profile(request, username: str):
+    user = get_object_or_404(User, username=username)
+    threads = Thread.objects.filter(author=user).select_related("author").order_by("-creation_date")
+    replies = user.forum_replies.select_related("thread").order_by("-creation_date")
+    thread_count = threads.count()
+    post_count = replies.count()
+
+    content = render_to_string(
+        "forum/userProfile.html",
+        {
+            "profile_user": user,
+            "threads": threads,
+            "replies": replies,
+            "thread_count": thread_count,
+            "post_count": post_count,
+        },
+        request=request,
+    )
+    return _render(content, page_title=f"{user.username} - Forum")
 
 
 def forum_thread(request, thread_id: int, page: int = 1):

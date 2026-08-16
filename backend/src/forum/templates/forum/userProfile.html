@@ -1,0 +1,44 @@
+{% load forum_extras %}
+<article class="section h-card">
+	<h1 class="p-name">{{ profile_user.username }}</h1>
+	<div class="post-meta">
+		<div>
+			<i class="icon calendar" aria-hidden="true"></i>
+			<time class="dt-published" datetime="{{ profile_user.date_joined.isoformat }}">Joined on {{ profile_user.date_joined|short_datetime }}</time>
+		</div>
+		<div>
+			<i class="icon person" aria-hidden="true"></i>
+			{{ thread_count }} thread{{ thread_count|pluralize }}, {{ post_count }} post{{ post_count|pluralize }}
+		</div>
+	</div>
+</article>
+
+<section class="section threads" aria-label="Threads">
+	<h2>Recent discussions by {{ profile_user.username }}</h2>
+	{% if threads %}
+		{% include "forum/threadList.html" with threads=threads %}
+	{% else %}
+		<p>This user has not started any discussions.</p>
+	{% endif %}
+</section>
+
+<section class="section replies" aria-label="Replies">
+	<h2>Recent comments by {{ profile_user.username }}</h2>
+	{% if replies %}
+		<ol class="h-feed">
+			{% for reply in replies %}
+				<li class="h-entry reply">
+					<div class="post-meta">
+						<a class="u-url p-name" href="/forum/{{ reply.thread.pk }}#reply-{{ reply.pk }}">{{ reply.thread.title }}</a>
+						<time class="dt-published" datetime="{{ reply.creation_date.isoformat }}">
+							{{ reply.creation_date|short_datetime }}
+						</time>
+					</div>
+					<div class="e-content">{{ reply.body|linebreaks }}</div>
+				</li>
+			{% endfor %}
+		</ol>
+	{% else %}
+		<p>This user has not replied to any discussions.</p>
+	{% endif %}
+</section>
