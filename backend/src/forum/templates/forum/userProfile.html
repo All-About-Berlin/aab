@@ -50,3 +50,33 @@
 	{% endif %}
 </section>
 {% endblock %}
+
+{% block jsonld %}
+, {
+	"@context": "https://schema.org",
+	"@type": "ProfilePage",
+	"dateCreated": "{{ profile_user.date_joined.isoformat }}",
+	"mainEntity": {
+		"@type": "Person",
+		"name": "{{ profile_user.username|escapejs }}",
+		"identifier": "{{ profile_user.username|escapejs }}",
+		"url": "{{ SITE_URL }}/forum/users/{{ profile_user.username }}",
+		"interactionStatistic": [
+			{
+				"@type": "InteractionCounter",
+				"interactionType": "https://schema.org/WriteAction",
+				"userInteractionCount": {{ thread_count|add:post_count }}
+			}
+		]
+	}
+}
+, {
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ SITE_URL }}/"},
+		{"@type": "ListItem", "position": 2, "name": "Forum", "item": "{{ SITE_URL }}/forum"},
+		{"@type": "ListItem", "position": 3, "name": "{{ profile_user.username|escapejs }}", "item": "{{ SITE_URL }}/forum/users/{{ profile_user.username }}"}
+	]
+}
+{% endblock %}
