@@ -1,11 +1,17 @@
+{% extends "forum/layout.html" %}
 {% load forum_extras %}
+
+{% block page_title %}{% if page_obj.number > 1 %}Page {{ page_obj.number }} - {% endif %}All About Berlin forum{% endblock %}
+
+{% block content %}
 {% if not user.is_authenticated and page_obj.number == 1 %}
 		<header class="section hero">
 			<div class="intro-text">
 				<h1>You are in good company</h1>
 				<p>This is a forum where immigrants help each other navigate life in Germany.</p>
 				<div class="buttons bar left">
-					<a class="button next" href="/guides">Create an account</a>
+					<a class="button" href="/forum/signup">Create an account</a>
+					<a class="button" href="/forum/login">Log in</a>
 				</div>
 			</div>
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 175 1000 800">
@@ -66,3 +72,4 @@
 	{% include "forum/threadList.html" with threads=page_obj %}
 	{% include "forum/pagination.html" %}
 </section>
+{% endblock %}
