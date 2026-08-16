@@ -1,5 +1,5 @@
 {% extends "_layout.html" %}
-{% set metatitle = "Forum" %}
+{% set metatitle = '{{ page_title|default:"Forum" }}'|safe %}
 {% set metadescription = "Discuss life in Berlin with other people who live there." %}
 
 {% block postHead %}
@@ -13,6 +13,6 @@
 
 {% block main %}
 	<main aria-label="Main page">
-		<!--FORUM_CONTENT-->
+		{% raw %}{{ content|safe }}{% endraw %}
 	</main>
 {% endblock %}
