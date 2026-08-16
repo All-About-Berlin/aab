@@ -66,3 +66,17 @@
 	{% include "forum/pagination.html" %}
 </section>
 {% endblock %}
+
+{% block jsonld %}
+, {
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ SITE_URL }}/"},
+		{"@type": "ListItem", "position": 2, "name": "Forum", "item": "{{ SITE_URL }}/forum"}
+		{% if category %},
+		{"@type": "ListItem", "position": 3, "name": "{{ category.label|escapejs }}", "item": "{{ SITE_URL }}/forum?category={{ category.value }}"}
+		{% endif %}
+	]
+}
+{% endblock %}
