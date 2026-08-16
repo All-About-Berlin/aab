@@ -1,0 +1,17 @@
+{% extends "_layout.html" %}
+{% set metatitle = '{% block page_title %}All About Berlin forum{% endblock %}'|safe %}
+{% set metadescription = '{% block page_description %}Discuss life in Berlin with other people who live there.{% endblock %}'|safe %}
+
+{% block postHead %}
+	<meta name="robots" content="noindex">
+{% endblock %}
+
+{% block extraScss %}
+	{% include "css/components/forum.scss" %}
+{% endblock %}
+
+{% block main %}
+	<main aria-label="Main page">
+		{% raw %}{% block content %}{% endblock %}{% endraw %}
+	</main>
+{% endblock %}
