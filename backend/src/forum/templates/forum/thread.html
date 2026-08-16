@@ -15,7 +15,7 @@
 		</div>
 		<div class="p-author h-card">
 			<i class="icon person" aria-hidden="true"></i>
-			By <span class="p-name">{{ thread.author.username }}</span>
+			By <a class="p-name" href="/forum/users/{{ thread.author.username }}">{{ thread.author.username }}</a>
 		</div>
 	</div>
 	<div class="article-body e-content">{{ thread.body|linebreaks }}</div>
@@ -28,7 +28,7 @@
 			{% for reply in page_obj %}
 				<li class="h-entry reply" id="reply-{{ reply.pk }}">
 					<div class="post-meta">
-						<a rel="author" class="p-author h-card" href="/forum?author={{ reply.author.username }}">
+						<a rel="author" class="p-author h-card" href="/forum/users/{{ reply.author.username }}">
 							<span class="p-name">{{ reply.author.username }}</span>
 						</a>
 						<time class="dt-published" datetime="{{ reply.creation_date.isoformat }}">
@@ -42,5 +42,5 @@
 	{% else %}
 		<p>No replies yet.</p>
 	{% endif %}
-	{% include "forum/_pagination.html" %}
+	{% include "forum/pagination.html" %}
 </section>

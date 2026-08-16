@@ -1,0 +1,24 @@
+{% load forum_extras %}
+<ol class="h-feed" aria-label="Threads">
+	{% for thread in threads %}
+		<li class="thread h-entry">
+			<h3><a class="u-url p-name" href="/forum/{{ thread.pk }}">{{ thread.title }}</a></h3>
+			<div class="post-meta" aria-label="Author, publication date, categories and reviewers">
+				{% if thread.category %}
+					<nav aria-label="Breadcrumbs">
+						<i class="icon folder" aria-hidden="true"></i>
+						<a class="p-category" href="/forum?category={{ thread.category }}">{{ thread.get_category_display }}</a>
+					</nav>
+				{% endif %}
+				<div class="p-author h-card">
+					<i class="icon person" aria-hidden="true"></i>
+					<a class="p-name" href="/forum/users/{{ thread.author.username }}">{{ thread.author.username }}</a>
+				</div>
+				<div>
+					<i class="icon calendar" aria-hidden="true"></i>
+					<time class="dt-published" datetime="{{ thread.creation_date.isoformat }}">{{ thread.creation_date|short_datetime }}</time>
+				</div>
+			</div>
+		</li>
+	{% endfor %}
+</ol>
