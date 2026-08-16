@@ -75,7 +75,7 @@ if not DEBUG:
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [Path("/var/frontend-output")],
         "OPTIONS": {
             "loaders": _template_loaders,
             "context_processors": [
