@@ -34,7 +34,7 @@ class Intent(models.TextChoices):
 
 class Case(models.Model):
     """
-    A need that usually results in an insurance policy being signed.
+    A question/request that usually results in a health insurance policy being signed.
     """
 
     name = models.CharField(max_length=100)
@@ -196,20 +196,19 @@ class Languages(models.TextChoices):
 
 class HealthInsuranceSignup(models.Model):
     """
-    A signup submission for a public/statutory (gesetzliche) health insurer.
+    A request to sign someone up for health insurance
     """
-
-    creation_date = models.DateTimeField(auto_now_add=True)
-    insurance_start_date = models.DateField()
-
-    referrer = models.CharField(blank=True)
 
     # Case information
 
-    insurer = models.CharField(max_length=10, choices=HealthInsurerChoices, default=HealthInsurerChoices.TK)
+    referrer = models.CharField(blank=True)
+
+    creation_date = models.DateTimeField(auto_now_add=True)
     submission_date = models.DateTimeField(blank=True, null=True)
-    external_reference_id = models.CharField(max_length=64, blank=True, help_text="ID in the health insurer's system")
     status = models.CharField(max_length=10, choices=SignupStatus, default=SignupStatus.NEW)
+
+    insurer = models.CharField(max_length=10, choices=HealthInsurerChoices, default=HealthInsurerChoices.TK)
+    insurance_start_date = models.DateField()
 
     # Person information
 
@@ -229,7 +228,7 @@ class HealthInsuranceSignup(models.Model):
     # Contact information
 
     email = models.EmailField(validators=[validate_email])
-    phone = models.CharField(max_length=20, blank=True)
+    phone = models.CharField(max_length=30, blank=True)
     language = models.CharField(max_length=2, choices=Languages, default=Languages.EN)
 
     # Address information
@@ -243,12 +242,12 @@ class HealthInsuranceSignup(models.Model):
 
     # Insurance information
 
-    has_familienversicherung = models.BooleanField()
     has_children = models.BooleanField()
 
-    is_other_pension_recipient = models.BooleanField(blank=True, null=True, default=False)
-    is_public_pension_recipient = models.BooleanField(blank=True, null=True, default=False)
-    exempt_from_health_pension_contributions = models.BooleanField(blank=True, null=True, default=False)
+    insure_family_members = models.BooleanField(default=False)
+    receives_other_pension = models.BooleanField(default=False)
+    receives_public_pension = models.BooleanField(default=False)
+    is_exempt_from_social_contributions = models.BooleanField(default=False)
 
     # Current insurance
 
@@ -261,18 +260,21 @@ class HealthInsuranceSignup(models.Model):
 
     # Employees
 
-    is_salary_above_threshold = models.BooleanField(blank=True, null=True)
-    is_first_job_in_germany = models.BooleanField(blank=True, null=True)
-    employed_since = models.DateField(blank=True, null=True)
-    is_managing_director = models.BooleanField(blank=True, null=True)
-    is_self_employed_on_side = models.BooleanField(blank=True, null=True)
-    is_startup_founder = models.BooleanField(blank=True, null=True)
-    employs_multiple_minijobbers = models.BooleanField(blank=True, null=True)
-    employs_workers = models.BooleanField(blank=True, null=True)
+    is_salary_above_threshold = models.BooleanField()  # TODO: Can be calculated from vars in ursus_config
+    is_first_job_in_germany = models.BooleanField()
+
+    employment_start_date = models.DateField()
+    employment_hours_per_week = models.PositiveIntegerField(blank=True, null=True)
+    employment_income_per_month = models.PositiveIntegerField(blank=True, null=True)
+
+    is_self_employed = models.BooleanField(default=False)
     self_employment_hours_per_week = models.PositiveIntegerField(default=0)
     self_employment_income_per_month = models.PositiveIntegerField(default=0)
-    employment_hours_per_week = models.PositiveIntegerField(blank=True, null=True)
-    employment_income_per_month = models.DecimalField(max_digits=10, decimal_places=2, blank=True, null=True)
+
+    is_managing_director = models.BooleanField(blank=True, null=True)
+    is_startup_founder = models.BooleanField(default=False)
+    has_employees = models.BooleanField(default=False, help_text="Hires employees, excluding minijobbers")
+    has_multiple_minijob_employees = models.BooleanField(default=False, help_text="Hires MORE THAN ONE minijobber")
 
     class Meta:
         verbose_name = "Health insurance signup"
