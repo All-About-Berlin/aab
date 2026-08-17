@@ -34,9 +34,9 @@
 		<ol class="h-feed">
 			{% for reply in replies %}
 				<li class="h-entry reply">
-					<a class="p-author h-card" hidden href="/forum/users/{{ profile_user.username }}">{{ profile_user.username }}</a>
+					<a class="p-author h-card" hidden href="{{ SITE_URL }}/forum/users/{{ profile_user.username }}">{{ profile_user.username }}</a>
 					<div class="post-meta">
-						<a class="u-url" href="/forum/{{ reply.thread.pk }}#reply-{{ reply.pk }}">{{ reply.thread.title }}</a>
+						<a class="u-url" href="{{ SITE_URL }}/forum/{{ reply.thread.pk }}#reply-{{ reply.pk }}">{{ reply.thread.title }}</a>
 						<time class="dt-published" datetime="{{ reply.creation_date.isoformat }}">
 							{{ reply.creation_date|short_datetime }}
 						</time>
