@@ -3,6 +3,7 @@ djangorestframework~=3.17
 django~=6.0
 email-validator~=2.3
 gunicorn~=26.0
+phonenumbers~=9.0
 python-dateutil~=2.9
 requests~=2.34
 websockets~=16.0

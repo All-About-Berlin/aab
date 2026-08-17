@@ -1,9 +1,10 @@
 from datetime import date, datetime, timedelta, timezone as dt_timezone
 from unittest.mock import patch
-from django.test import TestCase, override_settings
+from django.test import SimpleTestCase, TestCase, override_settings
 from django.utils import timezone
 from forms.tests import ScheduledMessageEndpointMixin
 from insurance.models import Case, CustomerNotification, BrokerNotification, FeedbackNotification
+from insurance.tk import format_phone
 from rest_framework.test import APITestCase
 
 
@@ -130,3 +131,47 @@ class CaseSeamusVacationTestCase(TestCase):
     @override_settings(SEAMUS_VACATION=(date(2026, 8, 1), date(2026, 8, 6)))
     def test_after_vacation_uses_default_template(self):
         self.assertEqual(self.notification.get_template(), "CustomerNotification.html")
+
+
+class FormatPhoneTestCase(SimpleTestCase):
+    def test_blank_input_returns_none(self):
+        self.assertIsNone(format_phone(None))
+        self.assertIsNone(format_phone(""))
+
+    def test_german_landline_variants_normalize(self):
+        for phone in [
+            "030 12345678",
+            "+49 30 12345678",
+            "+493012345678",
+            "+49-30-12345678",
+            "0049 30 12345678",
+            "30 12345678",
+        ]:
+            with self.subTest(phone=phone):
+                self.assertEqual(format_phone(phone), "+49-3012345678")
+
+    def test_german_mobile_with_country_code(self):
+        self.assertEqual(format_phone("+49 176 12345678"), "+49-17612345678")
+
+    def test_german_mobile_with_trunk_prefix(self):
+        self.assertEqual(format_phone("01761234567"), "+49-1761234567")
+
+    def test_us_number_variants_normalize(self):
+        for phone in ["+1 212 555 0100", "00 1 212 555 0100", "+12125550100"]:
+            with self.subTest(phone=phone):
+                self.assertEqual(format_phone(phone), "+1-2125550100")
+
+    def test_number_without_country_code_defaults_to_germany(self):
+        self.assertEqual(format_phone("(212) 555-0100"), "+49-2125550100")
+
+    def test_unparseable_string_raises(self):
+        with self.assertRaisesMessage(ValueError, "Could not parse phone number"):
+            format_phone("not-a-phone")
+
+    def test_too_short_raises(self):
+        with self.assertRaisesMessage(ValueError, "Invalid phone number"):
+            format_phone("12")
+
+    def test_reserved_us_555_number_is_invalid(self):
+        with self.assertRaisesMessage(ValueError, "Invalid phone number"):
+            format_phone("+1-555-123-4567")
