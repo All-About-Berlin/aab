@@ -1,3 +1,4 @@
+from dateutil.relativedelta import relativedelta
 from django.conf import settings
 from django.core.exceptions import ValidationError
 from django.db import models
@@ -271,7 +272,7 @@ class HealthInsuranceSignup(models.Model):
     self_employment_hours_per_week = models.PositiveIntegerField(default=0)
     self_employment_income_per_month = models.PositiveIntegerField(default=0)
 
-    is_managing_director = models.BooleanField(blank=True, null=True)
+    is_managing_director = models.BooleanField(default=False)
     is_startup_founder = models.BooleanField(default=False)
     has_employees = models.BooleanField(default=False, help_text="Hires employees, excluding minijobbers")
     has_multiple_minijob_employees = models.BooleanField(default=False, help_text="Hires MORE THAN ONE minijobber")
@@ -279,6 +280,41 @@ class HealthInsuranceSignup(models.Model):
     class Meta:
         verbose_name = "Health insurance signup"
         ordering = ["-creation_date"]
+
+    def clean(self):
+        super().clean()
+        errors: dict[str, str] = {}
+        today = timezone.now().date()
+
+        if self.has_lived_abroad and not self.country_of_last_insurance:
+            errors["country_of_last_insurance"] = "Required when has_lived_abroad is True."
+
+        insurance_is_german = not self.has_lived_abroad or (
+            self.country_of_last_insurance and self.country_of_last_insurance.code == "DE"
+        )
+        if insurance_is_german and not self.current_insurer_name:
+            errors["current_insurer_name"] = "Required when the current or last insurance is German."
+
+        if self.insurance_start_date:
+            earliest = today - relativedelta(months=18)
+            latest = today + relativedelta(months=12)
+            if not earliest <= self.insurance_start_date <= latest:
+                errors["insurance_start_date"] = "Must be within 18 months in the past and 12 months in the future."
+
+        if self.birth_date:
+            if self.birth_date >= today:
+                errors["birth_date"] = "Must be in the past."
+            elif self.birth_date < today - relativedelta(years=120):
+                errors["birth_date"] = "Must be less than 120 years ago."
+
+        if self.is_self_employed:
+            if self.employment_hours_per_week is None:
+                errors["employment_hours_per_week"] = "Required when is_self_employed is True."
+            if self.employment_income_per_month is None:
+                errors["employment_income_per_month"] = "Required when is_self_employed is True."
+
+        if errors:
+            raise ValidationError(errors)
 
     def __str__(self):
         return f"{self.first_name} {self.last_name} ({self.insurer})"
