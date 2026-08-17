@@ -4,7 +4,7 @@
 {% set metadescription = '{% block page_description %}Discuss life in Berlin with other people who live there.{% endblock %}'|safe %}
 
 {% block postHead %}
-	<meta name="robots" content="noindex">
+	{% raw %}{% with SITE_URL="{% endraw %}{{ SITE_URL }}{% raw %}" %}{% block postHead %}{% endblock %}{% endwith %}{% endraw %}
 {% endblock %}
 
 {% block extraScss %}
@@ -13,7 +13,7 @@
 
 {% block main %}
 	<main aria-label="Main page">
-		{% raw %}{% block content %}{% endblock %}{% endraw %}
+		{% raw %}{% with SITE_URL="{% endraw %}{{ SITE_URL }}{% raw %}" %}{% block content %}{% endblock %}{% endwith %}{% endraw %}
 	</main>
 	{% raw %}{% block sidebar %}{% endblock %}{% endraw %}
 {% endblock %}
