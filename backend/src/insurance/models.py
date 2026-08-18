@@ -203,6 +203,7 @@ class HealthInsuranceSignup(models.Model):
     # Case information
 
     referrer = models.CharField(blank=True)
+    site = models.CharField(max_length=100, blank=True, default="allaboutberlin.com")
 
     creation_date = models.DateTimeField(auto_now_add=True)
     submission_date = models.DateTimeField(blank=True, null=True)
