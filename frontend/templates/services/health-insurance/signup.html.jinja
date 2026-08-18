@@ -1,0 +1,46 @@
+{% extends "services/_layout.html" %}
+{% set metatitle = "Sign up for German health insurance" %}
+{% set metadescription = "Sign up for German health insurance." %}
+
+{% block extraScss %}
+	{{ super() }}
+	.signup-page {
+		display: contents;
+	}
+{% endblock %}
+
+{% block main %}
+	<div id="signup-app" class="signup-page">
+		<main aria-label="Main page">
+			<article class="section">
+				<noscript><p>This page requires JavaScript to work.</p></noscript>
+				<template v-if="stage === 'start'">
+					<h1>Sign up for German health insurance</h1>
+					<p>Hello sir</p>
+				</template>
+				<template v-if="stage === 'thank-you'">
+				</template>
+				<template v-if="stage === 'error'">
+					<p><strong>An error occurred</strong> while sending your request. If this keeps happening, <a target="_blank" href="/contact">contact me</a>.</p>
+				</template>
+			</article>
+		</main>
+		<div class="sidebar no-print" aria-label="Sidebar navigation" data-nosnippet>
+			<h2>Steps</h2>
+			<ol>
+				<li>Do the thing</li>
+				<li>Do the other thing</li>
+			</ol>
+		</div>
+	</div>
+{% endblock %}
+
+{% queueJs %}
+	import Vue from '/js/vue/vue.mjs';
+	import HealthInsuranceSignup from '/js/vue/pages/health-insurance-signup.mjs';
+
+	new Vue({
+		el: '#signup-app',
+		...HealthInsuranceSignup,
+	});
+{% endqueueJs %}
