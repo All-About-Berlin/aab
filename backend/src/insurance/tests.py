@@ -1,9 +1,16 @@
 from datetime import date, datetime, timedelta, timezone as dt_timezone
+from dateutil.relativedelta import relativedelta
 from unittest.mock import patch
 from django.test import SimpleTestCase, TestCase, override_settings
 from django.utils import timezone
 from forms.tests import ScheduledMessageEndpointMixin
-from insurance.models import Case, CustomerNotification, BrokerNotification, FeedbackNotification
+from insurance.models import (
+    BrokerNotification,
+    Case,
+    CustomerNotification,
+    FeedbackNotification,
+    HealthInsuranceSignup,
+)
 from insurance.tk import format_phone
 from rest_framework.test import APITestCase
 
@@ -175,3 +182,139 @@ class FormatPhoneTestCase(SimpleTestCase):
     def test_reserved_us_555_number_is_invalid(self):
         with self.assertRaisesMessage(ValueError, "Invalid phone number"):
             format_phone("+1-555-123-4567")
+
+
+class HealthInsuranceSignupTestCase(ScheduledMessageEndpointMixin, APITestCase):
+    model = HealthInsuranceSignup
+    endpoint = "/api/insurance/signup"
+
+    def setUp(self):
+        today = date.today()
+        self.example_request = {
+            "insurance_start_date": (today + timedelta(days=14)).isoformat(),
+            "gender": "male",
+            "first_name": "John",
+            "last_name": "Smith",
+            "birth_date": "1990-01-01",
+            "birth_place": "Berlin",
+            "birth_country": "DE",
+            "nationality": "DE",
+            "email": "contact@nicolasbouliane.com",
+            "street": "Alexanderplatz",
+            "postal_code": "10178",
+            "city": "Berlin",
+            "country": "DE",
+            "has_children": False,
+            "has_lived_abroad": False,
+            "current_insurer_name": "Techniker Krankenkasse",
+            "is_salary_above_threshold": False,
+            "is_first_job_in_germany": True,
+            "employment_start_date": today.isoformat(),
+        }
+
+    def _post_with(self, **overrides):
+        request = {**self.example_request, **overrides}
+        return self.client.post(self.endpoint, request, format="json")
+
+    def test_create_rejects_lived_abroad_without_last_country(self):
+        response = self._post_with(has_lived_abroad=True, current_insurer_name="")
+        self.assertEqual(response.status_code, 400, response.json())
+        self.assertIn("country_of_last_insurance", response.json())
+
+    def test_create_rejects_german_insurance_without_insurer_name(self):
+        response = self._post_with(current_insurer_name="")
+        self.assertEqual(response.status_code, 400, response.json())
+        self.assertIn("current_insurer_name", response.json())
+
+    def test_create_rejects_start_date_too_far_past(self):
+        too_early = (date.today() - relativedelta(months=19)).isoformat()
+        response = self._post_with(insurance_start_date=too_early)
+        self.assertEqual(response.status_code, 400, response.json())
+        self.assertIn("insurance_start_date", response.json())
+
+    def test_create_rejects_start_date_too_far_future(self):
+        too_late = (date.today() + relativedelta(months=13)).isoformat()
+        response = self._post_with(insurance_start_date=too_late)
+        self.assertEqual(response.status_code, 400, response.json())
+        self.assertIn("insurance_start_date", response.json())
+
+    def test_create_rejects_future_birth_date(self):
+        tomorrow = (date.today() + timedelta(days=1)).isoformat()
+        response = self._post_with(birth_date=tomorrow)
+        self.assertEqual(response.status_code, 400, response.json())
+        self.assertIn("birth_date", response.json())
+
+    def test_create_rejects_birth_date_over_120_years_ago(self):
+        ancient = (date.today() - relativedelta(years=121)).isoformat()
+        response = self._post_with(birth_date=ancient)
+        self.assertEqual(response.status_code, 400, response.json())
+        self.assertIn("birth_date", response.json())
+
+    def test_create_rejects_self_employed_without_hours(self):
+        response = self._post_with(is_self_employed=True, employment_income_per_month=2000)
+        self.assertEqual(response.status_code, 400, response.json())
+        self.assertIn("employment_hours_per_week", response.json())
+
+    def test_create_rejects_self_employed_without_income(self):
+        response = self._post_with(is_self_employed=True, employment_hours_per_week=20)
+        self.assertEqual(response.status_code, 400, response.json())
+        self.assertIn("employment_income_per_month", response.json())
+
+
+class FullHealthInsuranceSignupTestCase(ScheduledMessageEndpointMixin, APITestCase):
+    """
+    Test with every writable field on HealthInsuranceSignup populated.
+    """
+
+    model = HealthInsuranceSignup
+    endpoint = "/api/insurance/signup"
+
+    def setUp(self):
+        today = date.today()
+        self.example_request = {
+            "referrer": "partner123",
+            "insurer": "tk",
+            "insurance_start_date": (today + timedelta(days=14)).isoformat(),
+            "occupation": "selfEmployed",
+            "gender": "female",
+            "title": "Dr.",
+            "first_name": "Jane",
+            "last_name": "Doe",
+            "birth_name": "Smith",
+            "birth_date": "1990-01-01",
+            "birth_place": "Berlin",
+            "birth_country": "DE",
+            "nationality": "DE",
+            "email": "contact@nicolasbouliane.com",
+            "phone": "+49 30 12345678",
+            "language": "DE",
+            "street": "Alexanderplatz",
+            "house_number": "1a",
+            "address_extra": "c/o Müller",
+            "postal_code": "10178",
+            "city": "Berlin",
+            "country": "DE",
+            "has_children": True,
+            "insure_family_members": True,
+            "receives_other_pension": True,
+            "receives_public_pension": True,
+            "is_exempt_from_social_contributions": True,
+            "has_lived_abroad": True,
+            "country_of_last_insurance": "US",
+            "current_insurer_name": "Aetna",
+            "current_insurance_type": "private",
+            "is_currently_pflichtversichert": False,
+            "is_currently_policy_holder": True,
+            "is_salary_above_threshold": True,
+            "is_first_job_in_germany": False,
+            "employment_start_date": today.isoformat(),
+            "employment_hours_per_week": 40,
+            "employment_income_per_month": 5000,
+            "is_self_employed": True,
+            "self_employment_hours_per_week": 10,
+            "self_employment_income_per_month": 1500,
+            "is_managing_director": True,
+            "is_startup_founder": True,
+            "has_employees": True,
+            "has_multiple_minijob_employees": True,
+        }
