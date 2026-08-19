@@ -163,6 +163,12 @@ label.checkbox{
     }
 }
 
+.yes-no-input{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
 .month-input, select.year-input{
     max-width: fit-content;
 }
