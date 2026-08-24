@@ -245,8 +245,7 @@ export default {
 			</template>
 			<template v-if="isConnected && hasError">
 				<h3>Can't connect to Berlin.de</h3>
-				<p>Berlin.de is having issues or blocking this tool. The error is on their side, so I can't fix it.</p>
-				<p>Try again later, <a target="_blank" href="/out/appointment-anmeldung">check Berlin.de</a>, <a href="tel:+49115">call 115</a> or <a href="/guides/berlin-burgeramt-appointment#email-the-burgeramt">email your <em>Bürgeramt</em></a>.</p>
+				<p>Berlin.de is having issues or blocking this tool. The error is on their side, so I can't fix it. Try again later, <a target="_blank" href="/out/appointment-anmeldung">check Berlin.de</a>, <a href="tel:+49115">call 115</a> or <a href="/guides/berlin-burgeramt-appointment#email-the-burgeramt">email your <em>Bürgeramt</em></a>.</p>
 				<p><strong><a class="external-link" target="_blank" href="/out/appointment-anmeldung">Look for appointments on Berlin.de</a></p>
 				<p v-if="lastFoundMessage">Last appointments found {{ lastFoundMessage }} ago.</p>
 			</template>
