@@ -164,6 +164,7 @@ label.checkbox{
 }
 
 .yes-no-input{
+    gap: var(--m);
     display: flex;
     align-items: baseline;
     justify-content: space-between;
