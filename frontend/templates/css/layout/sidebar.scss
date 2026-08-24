@@ -27,7 +27,7 @@
         :is(a, a:hover){
             color: var(--c-text);
         }
-        &.current > a{
+        &:is(.current, .current > a){
             @include text-bold;
         }
     }
