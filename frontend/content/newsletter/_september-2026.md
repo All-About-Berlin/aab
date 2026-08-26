@@ -6,6 +6,8 @@ date_created: 2026-08-05
 
 Wow, is it September already? The summer days go so fast!
 
+![“Kleiner Hafen, Hiddensee” by Clara Arnheim](/images/clara-arnheim-kleiner-hafen.jpg "“Kleiner Hafen, Hiddensee” by Clara Arnheim")
+
 ## What's new in Berlin
 
 ### Local elections
@@ -24,8 +26,6 @@ On September 20, Berliners must vote in city and district (*Bezirk*) elections. 
 - [Giant kite festival](https://www.visitberlin.de/en/event/13th-stadt-und-land-giant-kite-festival-2026) (September 12)
 - Berlin Marathon (September 19-20)
 - Berlin elections (September 20)
-
-![“” by ](/images/.jpg "“” by ")
 
 ## What's new in Germany
 
