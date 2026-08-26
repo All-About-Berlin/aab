@@ -391,6 +391,8 @@
               uri: guides/gewerbeschein.md
             - title: Getting a Handelsregisternummer
               uri: guides/handelsregisternummer-germany.md
+        - title: How to form a corporation
+          uri: guides/incorporation.md
         - title: Trade tax
           uri: guides/gewerbesteuer.md
         - title: VAT
