@@ -151,13 +151,13 @@ Tell everyone your new address. The address change is not automatic. When you re
 
 ### Get liability insurance
 
-Liability insurance (*[[Haftpflichtversicherung]]*) is optional, but **everyone should have it**. 85% of German homes have it.[^3] It costs around €5 per month. I have liability insurance from [Feather](/out/feather-haftpflicht).
+Liability insurance (*[[Haftpflichtversicherung]]*) is optional, but **everyone should have it**. 85% of German homes have it.[^3] It costs around €5 per month. I have liability insurance from [Feather](/out/feather-bundle-apartment).
 
 **[How to choose liability insurance ➞](/guides/haftpflichtversicherung)**
 
-If you rent a furnished apartment, choose a liability insurance that covers rented things (*geliehene Sachen*). It covers the furniture you rent.
+For furnished apartments, choose liability insurance that covers rented things (*geliehene Sachen*). It covers the furniture you rent.
 
-Your own things are not covered by liability insurance. To insure your own furniture, electronics or bicycle, get household insurance (*[[Hausratversicherung]]*).[^5] This is less important. You can sometimes get liability and household insurance together for a lower price.
+Liability insurance does not cover your own furniture, electronics or bicycle. To insure your own things, get household insurance (*[[Hausratversicherung]]*).[^5] This is less important. You can sometimes get liability and household insurance together for a lower price.
 
 **[Types of insurance in Germany ➞](/guides/insurance)**
 
