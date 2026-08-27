@@ -5,7 +5,7 @@ description: How to register a GmbH in Germany
 date_created: 2026-08-26
 ---
 
-This guide explains why and how to register a limited liability company (GmbH) in Germany.
+This guide explains why and how to register a limited liability company (*GmbH*) in Germany. This guide is based on my own experience.
 
 {% tableOfContents %}
 
@@ -15,7 +15,18 @@ This guide explains why and how to register a limited liability company (GmbH) i
 
 You pay yourself a salary. You pay income tax on that salary, but deduct it as a corporate expense. Make sure salary comes close to average 30% tax rate - 12k per month. Leave the rest inside the company.
 
-30% corporate tax/commercial trade tax on the business revenues
+Max compensation: https://ofd-bw.fv-bwl.de/site/pbs-bw-fa2/get/documents_E-1587952785/mfw/OFD/Dokumente/FAQ%20-%20Steuern/Angemessenheitstabelle_Gf-Geh%c3%a4lter_ab_2024.pdf
+
+30% corporate tax/commercial trade tax on the business profit.
+
+Two ways to pay yourself:
+
+- Dividends, taxed at a flat 25-26% (Kapitalertragsteuer)
+- or salary, taxed like normal income (Einkommensteuer, church tax){{RECOMMENDED}}
+
+The salary that you pay yourself is a tax-deductible expense for your company.
+
+It's a regular income for you.
 
 Salary to self: tax-deductible for the company, taxed like normal income
 Fazit: min *and* max 30% effective tax rate
@@ -24,7 +35,11 @@ Minimum yearly income to make it worth it: ~105k (~4% tax difference), but pract
 
 ### Limited liability
 
-If you work in a high-risk industry where messing up could bankrupt you, this makes sense.
+If you work in a high-risk industry where messing up could get you sued for all that you own, this makes sense.
+
+### Sale taxation?
+
+"Another huge benefit of the holding company is selling your actual company: In simplified terms, if you sell it, your holding company pays close to zero taxes on the revenue you get from selling it (crazy)"[^23]
 
 ## Disadvantages of incorporating
 
@@ -34,6 +49,24 @@ Expensive, more paperwork, much harder than Einzelunternehmen
 
 Need to change bookkeeping practices. "Same effort roughly"?
 
+Requires formal accounting (Bilanzierung)[^13]
+
+- 2-4k€ yearly bookkeeping fee[^10]
+
+### Closing a company is hard
+
+Takes 1-3 years[^14]
+
+Pain in the ass[^26]
+
+### Exit tax
+
+https://eidel.io/notes-and-hacks-on-germanys-exit-tax/
+
+### Privacy
+
+People will see numbers, balance sheet. Lots of spam from being in the Handelsregister. It will show up in the Bundesanzeiger?
+
 ## Holding company
 
 Your profits are taxed once at 30%, then held and reinvested by the holding company. 
@@ -42,23 +75,59 @@ Good explanation here: https://eidel.io/posts/how-to-found-a-company-in-germany-
 
 ## Other options
 
-An Einzelunternehmen is a lot less paperwork, a lot cheaper to create.
-
-UG is much cheaper (no €25k share capital)[^4]
-
 If your income is below €150-300k, a GmbH is probably not worth it.
 
-## Time
+### Sole proprietorship
 
-6 weeks in total, possibly more
+An Einzelunternehmen is a lot less paperwork, a lot cheaper to create. Makes sense if...[^27]
 
-## Costs
+- No employees
+- Low chance of huge liability lawsuit
+- Not super high revenue
 
-- Notary fee, €1k[^7]
+### UG
+
+UG is much cheaper (no €25k share capital), but can be [a bad idea later](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=don't%20found%20a%20ug.%20found%20a%20gmbh%20instead.). Why?[^4]
+
+
+
+Shell companies. HN user recommended [Foris](https://www.foris.com/en/shelf-companies/).[^16]
+
+### Incorporate in another country
+
+Founding in Estonia or another country is not a good idea.[^28]
+
+Firma.de?
+
+## Requirements
+
+The whole process is done in German.[^11] Can a non-German speaker handle it?
+
+### Time
+
+2-3 months in total, possibly more[^15]
+
+### Costs
+
+- Notary fee, €1k[^7], paid out of the Stammkapital.[^12]
 - Handelsregister fee, €150[^9]
-- Stammkapital, €25k - Save by creating a UG instead
+- Stammkapital, €25k - Save by creating a UG instead; it requires only €1 share capital
+
+If you have a holding, double the cost because you do the same thing twice.[^24]
+
+The recurring costs for holding + GmbH are [around 3k per year](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=Running%20a%20German,100-400%E2%82%AC%20%2F%20month.)...
+
+- Tax advisor fees, €1 per year, mostly for Jahresabschluss[^21]
+- [[IHK]] fee
+- *[[Gewerbesteuer]]*
+
+If you want lower costs, an Einzelunternehmer might make more sense.
 
 ## Steps
+
+Musterprotokoll? Saves lawyer money. Good for simple cases, up to 3 owners.[^29]
+
+Create the holding company first[^25]
 
 Why did I need a Führungszeugnis and Auskunft aus der Gewerbezentralregister? "To save money"
 
@@ -66,7 +135,21 @@ Do you need a tax advisor?
 
 Why the e.K -> GmbH route?
 
+### 0. Choose your Firmensitz
+
+[Don't use your home address](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=your%20company%20address%20shouldn't%20be%20your%20home%20address), get an office space.
+
+Which German state?
+
+Can https://www.firma.de/ help?
+
+### 0. Find a tax advisor
+
+You need a tax advisor. Unavoidable. Not for the founding (though it might help) but for the accounting demands of a GmbH, especially the Jahresabschluss.[^22]
+
 ### 0. Gesellschaftsvertrag
+
+Articles of Association
 
 Defines how your company works:
 
@@ -78,9 +161,13 @@ Defines how your company works:
 
 [See if it's in the Handelregister.](https://www.handelsregister.de/rp_web/normalesuche/welcome.xhtml)
 
-Do **not** ask the IHK for a preliminary check. Costs €45 in Berlin, free in some places. Takes up to 7 days. Took me 1 day. It just increases the risk that your name will be rejected.[^1]
+Do **not** ask the IHK for a preliminary check (*Vorabstellungnahme*). Costs €45 in Berlin, free in some places. Takes up to 7 days. Took me 1 day. It just increases the risk that your name will be rejected.[^1]
 
 If your name is rejected, it delays your application by a few weeks.
+
+### 1b. Unternehmensgegenstand
+
+https://www.ihk.de/berlin/service-und-beratung/recht-und-steuern/firma-und-rechtsformen/handelsregister/unternehmensgegenstand-2253578
 
 ### 2. Find a notary
 
@@ -96,15 +183,19 @@ Einzelunternehmer -> e.K. -> GmbH
 
 Bring passport or *[[Personalausweis]]* to appointment[^5]
 
+If you're abroad, https://online.notar.de/ can be useful. Otherwise it's the same as an in-person appointment.
+
 ### 4. Open a bank account
 
 Your GmbH need its own bank account. You can't use your personal bank account.
 
 At first your company is in the process of formation (i.G. or in Gründung). Needs a bank account to complete the process. International banks might not allow i.G. companies to open an account. You can always switch later.
 
-Old-school German banks are super slow. Qonto mentioned by Oliver. Ask for recommendations from others.
+Old-school German banks are super slow; multiple weeks.[^31] Qonto mentioned by Oliver. Ask for recommendations from others.[^17] Are fees higher for corporate accounts? Oliver recommends switching to traditional banks for faster service when something goes wrong, and to get a line of credit.
 
 ### 5. Deposit share capital
+
+Put the €25k in the account.[^18] You can put €12.5k and retain profits until it reaches €25k[^20]
 
 Give the transaction a good reference text like "Stammeinlage Gesellschafter [your full name]"[^6]
 
@@ -112,7 +203,9 @@ Send confirmation of that to your notary.
 
 ### 6. Wait
 
-Notary completes the incorporation, adds you to Handelsregister
+Notary completes the incorporation, adds you to Handelsregister, sends you confirmation document.
+
+Upload Handelsregisteranmeldung from notary to bank.[^19]
 
 Takes another 1-2 weeks.[^8] If your name is rejected, it can take multiple weeks longer. It's important to get it right.
 
@@ -143,7 +236,7 @@ Get both a bit later, as described in Fragebogen guide.
 
 ### Spam
 
-...
+Companies scrape the Handelsregister and send you fake invoices.[^30] They often look like official business register invoices.
 
 ### Rundfunkbeitrag
 
@@ -187,9 +280,9 @@ VAT works the same?
 
 Corporate tax 30% of profits.
 
-### Privacy
+### Künstlersozialkasse
 
-People will see numbers, balance sheet. Lots of spam from being in the Handelsregister.
+...
 
 ## What to do next
 
@@ -197,7 +290,9 @@ People will see numbers, balance sheet. Lots of spam from being in the Handelsre
 
 Probably cheaper than the banks that allow i.G. to open an account.
 
+## Bits and bobs
 
+Register with the Gewerbeamt?
 
 [^1]: [Oliver Eidel](https://eidel.io/posts/how-to-found-a-company-in-germany-14-easy-steps-and-lots-of-pain#:~:text=You%E2%80%99re%20Allowed%20To-,consult,-You%20might%20think) (2024), [Oliver Eidel](https://x.com/olieidel/status/2092787427861811540) (August 2026), [Emil Lienemann](https://x.com/emilthemaker/status/2092882262844916216) (August 2026), [LinkedIn](https://www.linkedin.com/posts/nicolasbouliane_i-am-incorporating-all-about-berlin-first-activity-7498366043615227905-pi0D/) (August 2026)
 [^2]: [Oliver Eidel](https://eidel.io/posts/how-to-found-a-company-in-germany-14-easy-steps-and-lots-of-pain#:~:text=are%20not%20booked-,out.,-High%2C%20expectations%2C%20I) (2024)
@@ -208,3 +303,25 @@ Probably cheaper than the banks that allow i.G. to open an account.
 [^7]: [Oliver Eidel](https://eidel.io/posts/how-to-found-a-company-in-germany-14-easy-steps-and-lots-of-pain#:~:text=costs%20of%20approximately%201k%E2%82%AC) (2024)
 [^8]: [Oliver Eidel](https://eidel.io/posts/how-to-found-a-company-in-germany-14-easy-steps-and-lots-of-pain#:~:text=takes%20another%201-2%20weeks) (2024)
 [^9]: Citation needed
+[^10]: [Oliver Eidel](https://eidel.io/posts/how-to-found-a-company-in-germany-14-easy-steps-and-lots-of-pain#:~:text=%202-4k%E2%82%AC%20yearly%20bookkeeping%20fee%20as%20for%20a%20ug%20%2F%20gmbh%2C) (2024)
+[^11]: [Steven Renwick](https://major-grooves.medium.com/just-how-complicated-could-it-be-to-register-a-german-company-e5eb6e50db79#:~:text=the%20whole%20process%20is%20done%20in%20german) (2022)
+[^12]: [Steven Renwick](https://major-grooves.medium.com/just-how-complicated-could-it-be-to-register-a-german-company-e5eb6e50db79#:~:text=well%20if%20you%20did%20that%2C%20then%20your%20company%20would%20be%20instantly%20insolvent%20as%20you%20need%20to%20pay%20the%20notary%20fees%20from%20the%20company%E2%80%99s%20share%20capital.%20) (2022)
+[^13]: [Hacker News](https://news.ycombinator.com/item?id=39969786) (2024)
+[^14]: [Hacker News](https://news.ycombinator.com/item?id=39959368#:~:text=closing%20a%20company%20takes%202-3%20years%20too) (2024), [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=which%20takes%201-3%20years) (2025)
+[^15]: [Hacker News](https://news.ycombinator.com/item?id=39959368#:~:text=each%20founding%20took%20about%206-8%20weeks) (2024), [Oliver Eidel](https://eidel.io/posts/founding-a-company-in-germany-in-2026-apparently-takes-three-months) (2026)
+[^16]: [Hacker News](https://news.ycombinator.com/item?id=39969379) (2024), [Hacker News](https://news.ycombinator.com/item?id=39966656) (2024)
+[^17]: [Hacker News](https://news.ycombinator.com/item?id=39959368#:~:text=with%20qonto%20or%20something%20equivalent) (2024)
+[^18]: [Hacker News](https://news.ycombinator.com/item?id=39967669) (2024)
+[^19]: [Hacker News](https://news.ycombinator.com/item?id=39967669#:~:text=5.%20notary%20hands%20in%20handelsregisteranmeldung%2C%20sends%20you%20a%20copy%20and%20upload%20it%20to%20your%20bank.) (2024)  
+[^20]: [Steven Renwick](https://major-grooves.medium.com/just-how-complicated-could-it-be-to-register-a-german-company-e5eb6e50db79#:~:text=*actually%20you%20can%20start%20with%20just%20%E2%82%AC12%2C500%20share%20capital%20and%20then%20retain%20profits%20until%20you%20reach%20the%20%E2%82%AC25%2C000%20share%20capital.) (2022), [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=in%20which%20you%20only%20pay%20in%2050%25%20of%20the%20initial%20share%20capital%20(12.5k%E2%82%AC)) (2025)
+[^21]: [Charles Ahmadzadeh](https://major-grooves.medium.com/just-how-complicated-could-it-be-to-register-a-german-company-e5eb6e50db79#:~:text=the%20%E2%80%9Ccost%E2%80%9D%20of%20having%20a%20holding%20(ug)%20is%20about%201k-2k%20per%20year%20(taxes%20%2B%20bank%20account)%2C%20and%20count%201-2%20weeks%20work%20for%20administrative%20paperwork%20per%20year.%20) (2022), [Steven Renwick](https://major-grooves.medium.com/just-how-complicated-could-it-be-to-register-a-german-company-e5eb6e50db79#:~:text=pay%20your%20steuerberater%20%E2%82%AC1000%20a%20year) (2022)
+[^22]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=no%20way%20around-,that.,-Don't%20found%20a) (2024)
+[^23]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=another%20huge%20benefit%20of%20the%20holding%20company) (2025)
+[^24]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=it%20to%20you.-,If%20you%20found%20a,on%20top%20of%20that.,-If%20you%20want) (2025)
+[^25]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=top%20of%20that.-,If%20you%20want%20to,your%20holding%20company%20first.,-Winding%20down%20a) (2025)
+[^26]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=Winding%20down%20a,second-hand%20information.) (2025)
+[^27]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=tldr%3A%20a%20sole%20proprietorship%20makes%20sense%20if) (2025)
+[^28]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=want%20to%20incorporate%20in%20another%20country) (2025)
+[^29]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=Use%20the%20%22Musterprotokoll,it%20thing%20though.) (2025), [Oliwia Golec](https://www.linkedin.com/in/oliwia-golec-3678a7114) (2026)
+[^30]: [Fuer Gruender](https://www.fuer-gruender.de/wissen/unternehmen-gruenden/unternehmen-anmelden/handelsregister/achtung-abzocke/), [IHK](https://www.ihk.de/osnabrueck/recht-und-fair-play/aktuelles/fake-rechnungen-5565360) (2022), [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=Beware%20of%20%22Handelsregister,need%20to%20pay.) (2025)
+[^31]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=old-school%20dinosaur%20banks%20easily%20take%20multiple%20weeks) (2025)
