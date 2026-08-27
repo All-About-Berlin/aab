@@ -506,8 +506,8 @@ You can choose to calculate VAT payments based on the revenue you *should* have 
 - **Ich berechne die Umsatzsteuer nach** - I measure the VAT according to...
     - **Sollversteuerung**  
         You make VAT payments based on the amounts you have invoiced, even if you haven't received the money yet.
-    - **Istversteuerung**  
-        Check this box if you want to charge VAT based on the amount you *actually* have collected. You only make VAT payments once you receive money from your customers. If you are a freelancer or a small business, this is the best option for you.[^12]
+    - **Istversteuerung**{{ RECOMMENDED }}  
+        You make VAT payments based on the amount you have *actually* collected. You only make VAT payments once you receive money from your customers. If you are a freelancer or a small business, this is the best option for you.[^12]
 - **Ich beantrage die Istversteuerung, weil der ... Gesamtumsatz für das Gründungsjahr den in [§ 20 Satz 1 Nummer 1 UStG](https://www.buzer.de/20_UStG.htm) genannten Betrag voraussichtlich nicht übersteigen wird.**  
     Check this box if you chose *Istversteuerung*, and you expect to make less than €{{DOUBLE_ENTRY_MIN_REVENUE|cur}} in revenue during your first year.[^14]
 - **Ich beantrage die Istversteuerung, weil ich von der Verpflichtung, Bücher zu führen und auf Grund jährlicher Bestandsaufnahmen regelmäßig Abschlüsse zu machen, nach [§ 148 AO](https://www.buzer.de/148_AO.htm) befreit bin**  
