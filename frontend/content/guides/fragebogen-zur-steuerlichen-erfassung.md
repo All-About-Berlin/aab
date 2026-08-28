@@ -594,7 +594,11 @@ If you have questions about this form, [ask a tax advisor](/guides/english-speak
 
 ### Wait for your tax number and VAT number
 
-**In 4 to 6 weeks**, you will get your [tax number](/glossary/Steuernummer) and [VAT number](/glossary/Umsatzsteuernummer) by post.[^6] Add them to your invoices, and to the [[Impressum]] on your website. It's required.
+Your [tax number](/glossary/Steuernummer) will arrive by post in 4 to 6 weeks.[^6]
+
+Your [VAT number](/glossary/Umsatzsteuernummer) will arrive by post in 2 to 12 weeks.[^7]
+
+Add your tax number and VAT number to your invoices and to your [[Impressum]]. It's required.
 
 ### Tell your health insurance
 
@@ -635,6 +639,7 @@ If you [leave Germany](/guides/leaving-germany), you must deregister your busine
 [^4]: [haufe.de](https://www.haufe.de/finance/finance-office-professional/kleinunternehmer-4-optionsmoeglichkeit_idesk_PI11525_HI1342182.html)
 [^5]: [praxistipps.chip.de](https://praxistipps.chip.de/adresszusatz-was-ist-das_46872)
 [^6]: [tiahardyrobinson.medium.com](https://tiahardyrobinson.medium.com/how-to-do-the-fragebogen-zur-steuerlichen-erfassung-in-english-2021-online-edition-for-4963c51292ad), [tagesspiegel.de](https://www.tagesspiegel.de/wirtschaft/funf-wochen-warten-auf-die-steuernummer-4419565.html)
+[^7]: [Oliver Eidel](https://x.com/olieidel/status/2040040639371563371) (2026), [Vaytax](https://vaytax.com/blog/how-long-vat-registration-germany) (2026)
 [^10]: [berlin.de (archived)](https://web.archive.org/web/20160502035209/https://berlin.de/sen/finanzen/dokumentendownload/steuern/daten-und-fakten/betriebseroeffnung-betriebseinstellung/ausf__llhilfe_selbst__ndige_t__tigkeit_beteiligung_persges.pdf)
 [^11]: [mutebuttonblog.wordpress.com](https://mutebuttonblog.wordpress.com/2012/02/21/kleinunternehmerregelung-in-germany-to-apply-or-not-to-apply-that-is-the-question/)
 [^12]: [economywatch.com](https://www.economywatch.com/)
