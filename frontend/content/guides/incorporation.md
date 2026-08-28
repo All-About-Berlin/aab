@@ -109,9 +109,9 @@ The whole process is done in German.[^11] Can a non-German speaker handle it?
 
 ### Costs
 
-- Notary fee, €1k[^7], paid out of the Stammkapital.[^12]
-- Handelsregister fee, €150[^9]
-- Stammkapital, €25k - Save by creating a UG instead; it requires only €1 share capital
+- Notary fee, €1k or more[^7], paid out of the Stammkapital.[^12]
+- Handelsregister fee, €{{HANDELSREGISTER_FEE|cur}}[^9]
+- Stammkapital, €25k - Save by creating a UG instead; it requires only €1 share capital. This is not a fee, just money that you deposit in the company.
 
 If you have a holding, double the cost because you do the same thing twice.[^24]
 
@@ -324,4 +324,5 @@ Register with the Gewerbeamt?
 [^28]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=want%20to%20incorporate%20in%20another%20country) (2025)
 [^29]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=Use%20the%20%22Musterprotokoll,it%20thing%20though.) (2025), [Oliwia Golec](https://www.linkedin.com/in/oliwia-golec-3678a7114) (2026)
 [^30]: [Fuer Gruender](https://www.fuer-gruender.de/wissen/unternehmen-gruenden/unternehmen-anmelden/handelsregister/achtung-abzocke/), [IHK](https://www.ihk.de/osnabrueck/recht-und-fair-play/aktuelles/fake-rechnungen-5565360) (2022), [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=Beware%20of%20%22Handelsregister,need%20to%20pay.) (2025)
-[^31]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=old-school%20dinosaur%20banks%20easily%20take%20multiple%20weeks) (2025)
+[^31]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=old-school%20dinosaur%20banks%20easily%20take%20multiple%20weeks) (2025)[^33]: [Anlage TrGebV](https://www.buzer.de/Anlage_TrGebV.htm)
+[^33]: [Anlage TrGebV](https://www.buzer.de/Anlage_TrGebV.htm)
