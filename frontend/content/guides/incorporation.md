@@ -99,6 +99,8 @@ UG is cheaper to start, but can be [a bad idea later](https://eidel.io/posts/all
 
 You still need enough starting capital to cover the notary fee and other costs; around €4000.
 
+GmbH more trusted than UG, can make a difference to landlords and investors.[^47]
+
 ### Shell companies
 
 Vorratsgesellschaft? Repurposed companies.[^36] HN user recommended [Foris](https://www.foris.com/en/shelf-companies/).[^16]
@@ -142,13 +144,15 @@ If you want lower costs, an Einzelunternehmer might make more sense.
 
 ## Steps
 
+Don't do it in the second half of the year.[^48]
+
 Musterprotokoll? Saves having to hire a lawyer. Should make notary cheaper.[^37] Good for simple cases, up to 3 owners.[^29]
 
 Create the holding company first[^25]
 
 Why did I need a Führungszeugnis and Auskunft aus der Gewerbezentralregister? "To save money"
 
-Do you need a tax advisor?
+Do you need a tax advisor? Yes, for the Jahresabschluss and the more complicated accounting.
 
 Why the e.K -> GmbH route? "you can use Ausgliederung nach dem Umwandlungsgesetz (UmwG)" (Seamus). Converting your Einzelunternehmen that way means you can move your contracts and partnership agreements over, instead of redoing them.
 
@@ -190,13 +194,17 @@ The validation process is completely random.[^38]
 
 ### 5. Unternehmensgegenstand
 
-
+It's relevant for is for which Berufsgenossenschaft you will be classified as[^46]
 
 https://www.ihk.de/berlin/service-und-beratung/recht-und-steuern/firma-und-rechtsformen/handelsregister/unternehmensgegenstand-2253578
 
 ### 6. Find a notary
 
-Notar. Really hard to find.[^2]
+Notar. Really hard to find.[^2] Use [the notary search](https://www.notar.de/notare).
+
+Long time to find an appointment, many weeks.[^45]
+
+- [Gleiss Lutz](https://www.gleisslutz.com/en)
 
 ### 7. Incorporate at the notary
 
@@ -225,6 +233,10 @@ Put the €25k in the account.[^18] You can put €12.5k and retain profits unti
 Give the transaction a good reference text like "Stammeinlage Gesellschafter [your full name]"[^6]
 
 Send confirmation of that to your notary.
+
+### Put your name on your mailbox
+
+You will quickly start receiving mail addressed to your company, including bills from the IHK and others.[^44]
 
 ### 10. Wait
 
@@ -339,6 +351,13 @@ Berufsgenossenschaft?
 
 Betriebshaftpflicht?
 
+[Statusfeststellung](https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Arbeitnehmer-und-Selbststaendige/03_Selbststaendige/statusfeststellungsverfahren.html) with DRV? ([Mark Metz](https://x.com/marcmetz89/status/2040042021730087349))
+
+If you plan to hire:
+
+- https://www.dguv.de/de/index.jsp
+- Betriebsnummer (after getting DGUV)
+
 [^1]: [Oliver Eidel](https://eidel.io/posts/how-to-found-a-company-in-germany-14-easy-steps-and-lots-of-pain#:~:text=You%E2%80%99re%20Allowed%20To-,consult,-You%20might%20think) (2024), [Oliver Eidel](https://x.com/olieidel/status/2092787427861811540) (August 2026), [Emil Lienemann](https://x.com/emilthemaker/status/2092882262844916216) (August 2026), [LinkedIn](https://www.linkedin.com/posts/nicolasbouliane_i-am-incorporating-all-about-berlin-first-activity-7498366043615227905-pi0D/) (August 2026)
 [^2]: [Oliver Eidel](https://eidel.io/posts/how-to-found-a-company-in-germany-14-easy-steps-and-lots-of-pain#:~:text=are%20not%20booked-,out.,-High%2C%20expectations%2C%20I) (2024)
 [^3]: Recommended by Suat Göydeniz (August 2026)
@@ -357,7 +376,7 @@ Betriebshaftpflicht?
 [^16]: [Hacker News](https://news.ycombinator.com/item?id=39969379) (2024), [Hacker News](https://news.ycombinator.com/item?id=39966656) (2024)
 [^17]: [Hacker News](https://news.ycombinator.com/item?id=39959368#:~:text=with%20qonto%20or%20something%20equivalent) (2024)
 [^18]: [Hacker News](https://news.ycombinator.com/item?id=39967669) (2024)
-[^19]: [Hacker News](https://news.ycombinator.com/item?id=39967669#:~:text=5.%20notary%20hands%20in%20handelsregisteranmeldung%2C%20sends%20you%20a%20copy%20and%20upload%20it%20to%20your%20bank.) (2024)  
+[^19]: [Hacker News](https://news.ycombinator.com/item?id=39967669#:~:text=5.%20notary%20hands%20in%20handelsregisteranmeldung%2C%20sends%20you%20a%20copy%20and%20upload%20it%20to%20your%20bank.) (2024)
 [^20]: [Steven Renwick](https://major-grooves.medium.com/just-how-complicated-could-it-be-to-register-a-german-company-e5eb6e50db79#:~:text=*actually%20you%20can%20start%20with%20just%20%E2%82%AC12%2C500%20share%20capital%20and%20then%20retain%20profits%20until%20you%20reach%20the%20%E2%82%AC25%2C000%20share%20capital.) (2022), [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=in%20which%20you%20only%20pay%20in%2050%25%20of%20the%20initial%20share%20capital%20(12.5k%E2%82%AC)) (2025)
 [^21]: [Charles Ahmadzadeh](https://major-grooves.medium.com/just-how-complicated-could-it-be-to-register-a-german-company-e5eb6e50db79#:~:text=the%20%E2%80%9Ccost%E2%80%9D%20of%20having%20a%20holding%20(ug)%20is%20about%201k-2k%20per%20year%20(taxes%20%2B%20bank%20account)%2C%20and%20count%201-2%20weeks%20work%20for%20administrative%20paperwork%20per%20year.%20) (2022), [Steven Renwick](https://major-grooves.medium.com/just-how-complicated-could-it-be-to-register-a-german-company-e5eb6e50db79#:~:text=pay%20your%20steuerberater%20%E2%82%AC1000%20a%20year) (2022), citation needed
 [^22]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=no%20way%20around-,that.,-Don't%20found%20a) (2024)
@@ -375,10 +394,15 @@ Betriebshaftpflicht?
 [^34]: [Suat Göydeniz](https://stb-goeydeniz.de/) (2026)
 [^35]: [Oliver Eidel](https://eidel.io/posts/founding-a-company-in-germany-in-2026-apparently-takes-three-months#:~:text=berlin%20registry%20seems%20to%20be%20notoriously%20slow) (2026)
 [^36]: [Hacker News](https://news.ycombinator.com/item?id=31621254) (2022)
-[^37]: [Hacker News](https://news.ycombinator.com/item?id=31622378) (2022), citation needed
+[^37]: [Hacker News](https://news.ycombinator.com/item?id=31622378) (2022), [Twitter](https://x.com/0xbaer/status/2087497561892343810) (2026), 
 [^38]: [Carmine Paolino](https://paolino.me/founding-a-company-in-germany/#bonus-round-my-company-name-was-too-generic) (2026)
 [^39]: [Carmine Paolino](https://paolino.me/founding-a-company-in-germany/#:~:text=the%2025%2C000%20does%20not%20go%20away.%20germany%20just%20takes%20it%20in%20instalments.) (2026), citation needed
 [^40]: [fuer-gruender.de](https://www.fuer-gruender.de/wissen/unternehmen-gruenden/unternehmen-anmelden/handelsregister/#:~:text=folgende%20rechtsformen%20die%20pflicht%20zum%20eintrag%20ins%20handelsregister) (2026)
 [^41]: [fuer-gruender.de](https://www.fuer-gruender.de/wissen/unternehmen-gruenden/unternehmen-anmelden/transparenzregister/#:~:text=der%20Mitteilungspflicht%20betroffene-,rechtsformen,-Zum%20Eintrag%20ins) (2026)
 [^42]: [fuer-gruender.de](https://www.fuer-gruender.de/wissen/unternehmen-gruenden/unternehmen-anmelden/transparenzregister/#:~:text=innerhalb%20von%202%20wochen) (2026)
 [^43]: [fuer-gruender.de](https://www.fuer-gruender.de/wissen/unternehmen-gruenden/unternehmen-anmelden/transparenzregister/#:~:text=wer%20hilft%20beim%20eintrag%3F) (2026)
+[^44]: [Mark Metz](https://x.com/marcmetz89/status/2040042021730087349) (2026)
+[^45]: [Prabin Joel Jones](https://x.com/prabinjoel/status/2078388545366974515) (2026)
+[^46]: Seamus Wolf (2026)
+[^47]: [Twitter](https://x.com/theflowgrammer/status/2093355340955828693) (2026)
+[^48]: [Rouzbeh](https://x.com/JustRouzbeh/status/2093361083180286444) (2026)
