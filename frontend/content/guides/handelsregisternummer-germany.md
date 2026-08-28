@@ -6,11 +6,11 @@ date_created: 2018-03-14
 
 When you [start a business](/guides/start-a-business-in-germany) and list it in the German Trade Register (*[[Handelsregister]]*), you get a *Handelsregisternummer*.
 
-Some businesses have no *Handelsregisternummer*, because they are not in the *Handelsregister*.
+Some businesses have no *Handelsregisternummer* because they are not listed in the *Handelsregister*.
 
 {% tableOfContents %}
 
-## What does the Registernummer look like?
+## Handelsregisternummer format
 
 The *Handelsregisternummer* has the format **HRA 12345** or **HRB 12345**:
 
@@ -36,13 +36,15 @@ You must have a *Handelsregister* entry if...[^3]
 - and **you are not a Kleingewerbe**  
     A *Kleingewerbe* is a small-scale sole proprietorship. For example, a business with a single address, few employees, few clients, and simple bookkeeping.[^4] There is no precise definition.[^5] If your sole proprietorship is a large commercial business, you need a *Handelsregister* entry.
 
-You must have a *Handelsregister* entry to form a *GmbH*, *UG*, *AG*, *e. K.*, *oHG*, *KG*, or *GmbH & Co. KG*.[^7]
+You must have a *Handelsregister* entry to [form a *GmbH*](/guides/incorporation), *UG*, *AG*, *e. K.*, *oHG*, *KG*, or *GmbH & Co. KG*.[^7]
 
-A *Handelsregister* entry has some benefits, but it mostly means more effort and more paperwork. Avoid it if you can.[^6]
+A *Handelsregister* entry has few benefits. It mostly means more effort, more paperwork and [more spam](/guides/incorporation#spam). Avoid it if you can.[^6]
 
-## How do I get a Handelsregisternummer?
+## How to get a Handelsregisternummer
 
-You must list your business in the *Handelsregister*. You can ask for this when you fill the *[[Fragebogen zur steuerlichen Erfassung]]* in [[ELSTER]].
+You get a *Handelsregisternummer* when you list your business in the *Handelsregister*. You can ask to be listed in the *Handelsregister* when you fill the *[[Fragebogen zur steuerlichen Erfassung]]* in [[ELSTER]].
+
+Getting listed in the *Handelsregister* costs €{{HANDELSREGISTER_FEE|cur}}. It's a one-time fee.[^2]
 
 **[How to fill the Fragebogen zur steuerlichen Erfassung ➞](/guides/fragebogen-zur-steuerlichen-erfassung)**
 
@@ -56,6 +58,7 @@ You must list your business in the *Handelsregister*. You can ask for this when 
 **[Where to ask business questions ➞](/guides/help#business-questions)**
 
 [^1]: [berlin.de](https://service.berlin.de/dienstleistung/327148/), [unternehmen24.info](https://www.unternehmen24.info/hr_DEU/HRA-HRB-handelsregister_DE.cfm)
+[^2]: [Anlage HRegGebV](https://www.buzer.de/gesetz/2923/a41642.htm)
 [^3]: [lexware.de](https://www.lexware.de/wissen/unternehmerlexikon/kleingewerbe/#:~:text=ein%20kleingewerbe%20kann%20ein), [fuer-gruender.de](https://www.fuer-gruender.de/wissen/unternehmen-gruenden/unternehmen-anmelden/handelsregister/#:~:text=wer%20ist%20gema%C3%9F%20rechtsform%20zum%20eintrag%20verpflichtet)
 [^4]: [nwb.de](https://datenbank.nwb.de/Dokument/418126/), [lexware.de](https://www.lexware.de/wissen/unternehmerlexikon/kleingewerbe/#:~:text=das%20aufgrund%20seines-,geringen%20geschaftlichen%20umfangs,-nicht%20ins%20Handelsregister)
 [^5]: [firma.de](https://www.firma.de/firmengruendung/was-ist-ein-kleingewerbe/#:~:text=doch%20leider%20gibt%20es%20hier%20keine%20antwort)

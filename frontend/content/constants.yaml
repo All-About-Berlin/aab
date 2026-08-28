@@ -854,6 +854,27 @@ constants:
     unit: euros
     description: Gewerbeanmeldung fee (€)
     fail_on: 2026-12-31
+  HANDELSREGISTER_FEE:
+    value: 150
+    unit: euros
+    description: Handelsregister registration fee for a company with up to 3 shareholders (€)
+    monitor:
+      template: default
+      url: https://www.buzer.de/gesetz/2923/a41642.htm
+      css_selector: .arttext table:first-of-type tr:nth-of-type(6) td:nth-of-type(3)
+      prompt: Return this euro amount as a number.
+      last_verified: 2026-08-28
+  TRANSPARENZREGISTER_FEE:
+    value: 19.8
+    unit: euros
+    description: Annual fee for the Transparenzregister (€/y)
+    monitor:
+      template: default
+      url: https://www.buzer.de/Anlage_TrGebV.htm
+      css_selector: .arttext table tr:nth-of-type(2) td:nth-of-type(3)
+      prompt: Read this text. It lists Transparenzregister fees for different years. Return only the current (most recent)
+        annual fee in euros.
+      last_verified: 2026-08-27
   HUNDEREGISTER_FEE:
     value: 17.5
     unit: euros
@@ -1114,7 +1135,7 @@ constants:
     description: Maximum dental insurance cost (€/mth)
     fail_on: 2026-12-31
   PFAND_CAR_BATTERIES:
-    value: 7.50
+    value: 7.5
     unit: euros
     monitor:
       template: buzer

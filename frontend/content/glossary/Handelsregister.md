@@ -15,6 +15,6 @@ related_guides:
 
 The German Trade Register (*Handelsregister*) is a database of German businesses. Businesses that are in the *Handelsregister* get a *[[Handelsregisternummer]]*.
 
-Most businesses must be listed in the *Handelsregister*, but there are exceptions for freelancers and small businesses.
+Most businesses must be listed in the *Handelsregister*, but there are [exceptions](/guides/handelsregisternummer-germany#who-needs-a-handelsregister-entry) for freelancers and small businesses.
 
 **[Who needs a Handelsregister entry? ➞](/guides/handelsregisternummer-germany#who-needs-a-handelsregister-entry)**

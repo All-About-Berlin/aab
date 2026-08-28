@@ -15,6 +15,6 @@ related_guides:
     - guides/freelance-developer-rate.md
 ---
 
-The trade tax (*Gewerbesteuer*) is a tax that some German businesses must pay. It's collected by the *[[Finanzamt]]*.
+The trade tax (*Gewerbesteuer* or *GewSt*) is a tax that some German businesses must pay. It's collected by the *[[Finanzamt]]*.
 
 **[How the Gewerbesteuer works ➞](/guides/gewerbesteuer)**
