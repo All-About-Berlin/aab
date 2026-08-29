@@ -7,6 +7,8 @@ date_created: 2026-08-26
 
 This guide explains why and how to register a limited liability company (*GmbH*) in Germany. This guide is based on my own experience.
 
+You should also read [how to start a business in Germany](/guides/start-a-business-in-germany).
+
 {% tableOfContents %}
 
 ## Advantages of incorporating
@@ -81,6 +83,8 @@ Expanded here: https://eidel.io/posts/holding-gmbh-vs-normal-gmbh-in-germany-wor
 
 ## Other options
 
+It only makes sense above €100k[^49]
+
 If your income is below €150-300k, a GmbH is probably not worth it.
 
 ### Sole proprietorship
@@ -148,7 +152,9 @@ Don't do it in the second half of the year.[^48]
 
 Musterprotokoll? Saves having to hire a lawyer. Should make notary cheaper.[^37] Good for simple cases, up to 3 owners.[^29]
 
-Create the holding company first[^25]
+"Musterprotokoll is never a good idea when you want to optimize tax efficiency and minimize share holder conflicts- there are a lot of things you can implement here and should" - Seamus
+
+Create the holding company first[^25]. "You can also easily create the holding and the operational company in one step" - Seamus
 
 Why did I need a Führungszeugnis and Auskunft aus der Gewerbezentralregister? "To save money"
 
@@ -158,7 +164,7 @@ Why the e.K -> GmbH route? "you can use Ausgliederung nach dem Umwandlungsgesetz
 
 ### 1. Choose your Firmensitz
 
-[Don't use your home address](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=your%20company%20address%20shouldn't%20be%20your%20home%20address), get an office space.[^32] Address change a huge, expensive pain?
+[Don't use your home address](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=your%20company%20address%20shouldn't%20be%20your%20home%20address), get an office space.[^32] Address change a huge, expensive pain? Main reason is Betriebsaufspaltung.
 
 Which German state?
 
@@ -205,6 +211,7 @@ Notar. Really hard to find.[^2] Use [the notary search](https://www.notar.de/not
 Long time to find an appointment, many weeks.[^45]
 
 - [Gleiss Lutz](https://www.gleisslutz.com/en)
+- [LSP](https://www.lspartner.de/en/expertise/notarial-services)
 
 ### 7. Incorporate at the notary
 
@@ -353,6 +360,8 @@ Betriebshaftpflicht?
 
 [Statusfeststellung](https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Arbeitnehmer-und-Selbststaendige/03_Selbststaendige/statusfeststellungsverfahren.html) with DRV? ([Mark Metz](https://x.com/marcmetz89/status/2040042021730087349))
 
+"I think later on there were also concerns about marriage, that its better as owner to keep company out of marriage, since it can otherwise be troublesome for the company if one co-owner suddenly has to pay half of their earned stake to the divorced person. That is also something investors might look at." - Martin Dennemark
+
 If you plan to hire:
 
 - https://www.dguv.de/de/index.jsp
@@ -406,3 +415,4 @@ If you plan to hire:
 [^46]: Seamus Wolf (2026)
 [^47]: [Twitter](https://x.com/theflowgrammer/status/2093355340955828693) (2026)
 [^48]: [Rouzbeh](https://x.com/JustRouzbeh/status/2093361083180286444) (2026)
+[^49]: [Qonto](https://qonto.com/de/blog/gruender/gruendungsprozess/eine-gmbh-grunden#:~:text=%20besonders%20wenn%20ihr%20gewinn%20uber%20100.000%20%E2%82%AC%20liegt)
