@@ -1,7 +1,7 @@
 ---
 title: What's new in September 2026
 description: Elections, warning day, forum, landlord messages and incorporation.
-date_created: 2026-08-05
+date_created: 2026-09-01
 ---
 
 Wow, is it September already? Summer goes so fast!
