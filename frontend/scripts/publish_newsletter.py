@@ -130,9 +130,9 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     metadata, body = prepare_newsletter(args.slug)
-    date_created = metadata.get("Date_created")
+    date_created = metadata.get("date_created")
     if not date_created:
-        sys.exit("Newsletter is missing Date_created in its frontmatter")
+        sys.exit("Newsletter is missing date_created in its frontmatter")
 
     publish_date = datetime.combine(date_created, PUBLISH_TIME)
     email = publish_to_buttondown(
