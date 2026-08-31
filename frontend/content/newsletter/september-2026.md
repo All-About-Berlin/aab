@@ -1,20 +1,14 @@
 ---
 title: What's new in September 2026
-description: 
+description: Elections, warning day, forum, landlord messages and incorporation.
 date_created: 2026-08-05
 ---
 
-Wow, is it September already? The summer days go so fast!
+Wow, is it September already? Summer goes so fast!
 
 ![“Kleiner Hafen, Hiddensee” by Clara Arnheim](/images/clara-arnheim-kleiner-hafen.jpg "“Kleiner Hafen, Hiddensee” by Clara Arnheim")
 
 ## What's new in Berlin
-
-### Local elections
-
-On September 20, Berliners must vote in city and district (*Bezirk*) elections. You will choose your representatives for the next 5 years. These representatives pass laws that affect all of us. German citizens can vote in city and district elections. EU citizens can only vote in district elections. Non-EU citizens can't vote.
-
-**[Wahl-O-Mat](https://www.wahl-o-mat.de/berlin2026/app/main_app.html)** helps you decide who to vote for.
 
 ### Berlin events in September
 
@@ -26,6 +20,12 @@ On September 20, Berliners must vote in city and district (*Bezirk*) elections. 
 - [Giant kite festival](https://www.visitberlin.de/en/event/13th-stadt-und-land-giant-kite-festival-2026) (September 12)
 - Berlin Marathon (September 19-20)
 - Berlin elections (September 20)
+
+### Local elections
+
+On September 20, Berliners must vote in city and district (*Bezirk*) elections. You will choose your representatives for the next 5 years. These representatives pass laws that affect all of us. German citizens can vote in city and district elections. EU citizens can only vote in district elections. Non-EU citizens can't vote.
+
+**[Wahl-O-Mat](https://www.wahl-o-mat.de/berlin2026/app/main_app.html)** helps you decide who to vote for.
 
 ## What's new in Germany
 
@@ -47,6 +47,8 @@ Ukrainians can already drive in Germany. Their licence is recognised as long as 
 
 - **Digitalisation**  
     The government is [planning](https://migrando.de/en/news/politik/bundestag-beschliesst-neue-regeln-fuer-aufenthaltstitel-visa-und-einbuergerung/) to digitalise and centralise information about visas, integration tests and other immigration processes. This has worked really well for Berlin, so it's good to see some progress at the federal level.
+- **Rent control laws**  
+    The planned changes should deal with [common tricks](/guides/housing-scams) landlords use to jack your rent. It is not yet signed into law.
 
 ## What's new on All About Berlin
 
@@ -58,15 +60,19 @@ Nonetheless, I am working on a few interesting things.
 
 I want to build a proper community around All About Berlin. I believe in [support networks](https://nicolasbouliane.com/blog/support-networks), social infrastructure and [knowledge sharing](https://nicolasbouliane.com/blog/duty-to-document). A forum where immigrants help immigrants serves all of those goals.
 
-This project has been on my mind for years, and it's really important to me.
+This project has been on my mind for years, and it's really important to me. I wrote a blog post about my reasoning and objectives. I would love to hear your thoughts.
+
+**[A community for All About Berlin](https://nicolasbouliane.com/blog/forum)** - blog post
 
 ![All About Berlin forum](/images/allaboutberlin-forum-preview.jpg "Work in progress, with fake discussions")
 
-### Conny review
+### How to message a landlord
 
-A few years ago, I wrote a review of Conny, the rent reduction service. The company has changed a lot since then, and I updated my review to be more and more critical. I am working on a complete rewrite with more nuance and more Conny alternatives.
+I am subletting my apartment while I travel. I have made a [list of mistakes people make](https://nicolasbouliane.com/blog/flat-search-message) when applying for an apartment. Around 1 in 3 messages were good, so refining your pitch can really improve your odds. I will update my [flat search guide](/guides/find-a-flat-in-berlin).
 
-These updates are building up to a big rent reduction guide. I just don't have the bandwidth for it right now.
+### Incorporation guide
+
+I am incorporating All About Berlin and writing a guide about creating a GmbH in Germany. It will be far more thorough than what's currently out there. I am writing with the generous help from many Berlin entrepreneurs. You can follow my progress [here](https://github.com/All-About-Berlin/aab/blob/incorporation/frontend/content/guides/incorporation.md).
 
 ## What I learned this month
 
@@ -76,6 +82,6 @@ Have you noticed these "20 + C + M + B + 26" markings over door frames? This is 
 
 ### Anmeldung gotcha
 
-You can only use the same Anmeldung/Abmeldung form for members of the same family. To register friends, room mates or an unmarried couple, you must use separate forms. I have fixed my Anmeldung/Abmeldung guides and form fillers.
+You can only use the same Anmeldung/Abmeldung form for members of the same family. To register friends, room mates or an unmarried couple, you must use separate forms. I have updated my Anmeldung/Abmeldung guides and form fillers.
 
 Thank you for the tip Katie, and best of luck in Australia!
