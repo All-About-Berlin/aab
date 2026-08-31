@@ -137,8 +137,8 @@ if __name__ == "__main__":
     publish_date = datetime.combine(date_created, PUBLISH_TIME)
     email = publish_to_buttondown(
         slug=args.slug,
-        subject=metadata.get("Title", args.slug),
-        description=metadata.get("Description", ""),
+        subject=metadata.get("title", args.slug),
+        description=metadata.get("description", ""),
         body=body,
         publish_date=publish_date,
         canonical_url=f"{SITE_URL}/newsletter/{args.slug}",
