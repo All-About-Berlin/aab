@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.core.paginator import EmptyPage, Paginator
 from django.db.models import Count, F, Max
@@ -20,8 +21,9 @@ def _get_page(paginator: Paginator, page_number: int):
         raise Http404
 
 
-def forum_rules(request):
-    return render(request, "forum/rules.html")
+@login_required
+def forum_signup_welcome(request):
+    return render(request, "forum/signup/welcome.html")
 
 
 def forum_index(request, page: int = 1):
