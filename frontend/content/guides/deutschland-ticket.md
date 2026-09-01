@@ -28,8 +28,8 @@ The Deutschland Ticket always **starts on the first day of the month**.[^3] This
 | **Pay with foreign credit card** | ✓ | ✓ | ✗ | ✗ |
 | **Pay with German credit card** | ✓ | ✗ | ✗ | ✗ |
 | **Pay with PayPal** | ✓ | ✓ | ✗ | ✗ |
-| **Book ticket in English** | ✗ | ✓ | ✗ | ✗ |
-| **App is in English** | ✗ | ✓ | ✓ | ✓ |
+| **Book ticket in English** | ✓ | ✓ | ✗ | ✗ |
+| **App is in English** | ✓ | ✓ | ✓ | ✓ |
 | **Ticket in Apple Wallet** | ✓ | ✓ | ✓ | ✗ |
 | **Ticket in Google Wallet** | ✓ | ✓ | ✗ | ✗ |
 
