@@ -34,11 +34,11 @@ def forum_rules(request):
 def forum_index(request, page: int = 1):
     threads = (
         Thread.objects.annotate(
-            last_activity_at=Coalesce(Max("replies__creation_date"), F("creation_date")),
+            last_activity_date=Coalesce(Max("replies__creation_date"), F("creation_date")),
             reply_count=Count("replies"),
         )
         .select_related("author")
-        .order_by("-last_activity_at")
+        .order_by("-last_activity_date")
     )
     category = request.GET.get("category")
     if category:
@@ -62,7 +62,15 @@ def forum_index(request, page: int = 1):
 
 def forum_user_profile(request, username: str):
     user = get_object_or_404(User, username=username)
-    threads = Thread.objects.filter(author=user).select_related("author").order_by("-creation_date")
+    threads = (
+        Thread.objects.filter(author=user)
+        .annotate(
+            last_activity_date=Coalesce(Max("replies__creation_date"), F("creation_date")),
+            reply_count=Count("replies"),
+        )
+        .select_related("author")
+        .order_by("-creation_date")
+    )
     replies = user.forum_replies.select_related("thread").order_by("-creation_date")
     thread_count = threads.count()
     post_count = replies.count()
