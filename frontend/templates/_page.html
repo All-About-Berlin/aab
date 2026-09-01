@@ -4,11 +4,11 @@
 
 {% block main %}
 	<main aria-label="Main page">
-		<header class="intro">
+		<article class="section" aria-label="Main content">
 			<h1>{{ entry.title }}</h1>
-		</header>
-		<article class="section article-body glossary-links" aria-label="Main content">
-			{{ entry.body|render|safe }}
+			<div class="article-body glossary-links">
+				{{ entry.body|render|safe }}
+			</div>
 		</article>
 	</main>
 {% endblock %}
