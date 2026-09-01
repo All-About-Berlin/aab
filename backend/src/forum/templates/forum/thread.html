@@ -27,6 +27,14 @@
 		</div>
 	</div>
 	<div class="article-body e-content" itemprop="articleBody">{{ thread.body|linebreaks }}</div>
+
+	<hr>
+	<div class="buttons bar">
+		<a href="#reply" class="button primary">
+			<i class="icon reply" aria-hidden="true"></i>
+			Reply
+		</a>
+	</div>
 </article>
 
 {% if not user.is_authenticated %}
@@ -62,8 +70,8 @@
 </section>
 
 {% if user.is_authenticated %}
-	<form class="section" method="post" action="{% url 'forum_thread' thread.pk %}">
-		<h2>Add a comment</h2>
+	<form id="reply" class="section" method="post" action="{% url 'forum_thread' thread.pk %}">
+		<h2>Reply to this topic</h2>
 		<hr>
 		{% csrf_token %}
 		<div class="form-group">
@@ -77,7 +85,9 @@
 		</div>
 		<hr>
 		<div class="buttons bar">
-			<button type="submit" class="button primary">Submit comment</button>
+			<button type="submit" class="button primary">
+				<i class="icon reply" aria-hidden="true"></i> Add reply
+			</button>
 		</div>
 	</form>
 {% endif %}
