@@ -1,5 +1,5 @@
 django_countries~=9.0
-djangorestframework~=3.17
+djangorestframework~=3.18
 django~=6.0
 email-validator~=2.3
 gunicorn~=26.0
