@@ -2,14 +2,12 @@
     margin: var(--s-text-block) auto;
     display: grid;
     gap: var(--m);
-    text-align: center;
 
     .email-form{
         width: 100%;
         max-width: 400px;
         display: grid;
         grid-template-columns: 1fr auto;
-        margin:0 auto;
 
         [type="email"]{
             border-top-right-radius: 0;
