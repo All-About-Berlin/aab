@@ -9,6 +9,7 @@ urlpatterns = [
     path("forum/page-<int:page>", views.forum_index, name="forum-index-page"),
     path("forum/rules", views.forum_rules, name="forum-rules"),
     path("forum/login", allauth_views.login, name="account_login"),
+    path("forum/logout", allauth_views.logout, name="account_logout"),
     path("forum/signup", allauth_views.signup, name="account_signup"),
     path("forum/confirm-email", allauth_views.email_verification_sent, name="account_email_verification_sent"),
     path("forum/confirm-email/<key>", allauth_views.confirm_email, name="account_confirm_email"),
