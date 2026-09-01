@@ -4,6 +4,7 @@
 {% set metadescription = '{% block page_description %}Discuss life in Berlin with other people who live there.{% endblock %}'|safe %}
 
 {% block postHead %}
+	{% raw %}{% block robots %}{% endblock %}{% endraw %}
 	{% raw %}{% with SITE_URL="{% endraw %}{{ SITE_URL }}{% raw %}" %}{% block postHead %}{% endblock %}{% endwith %}{% endraw %}
 {% endblock %}
 
