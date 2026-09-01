@@ -1,0 +1,19 @@
+{% extends "forum/layout.html" %}
+
+{% block page_title %}Sign up - All About Berlin forum{% endblock %}
+
+{% block content %}
+<article class="section">
+	<h1>Create an account</h1>
+	<form method="post" action="{% url 'account_signup' %}">
+		{% csrf_token %}
+		{% include "account/formBody.html" %}
+		{% if redirect_field_value %}
+			<input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
+		{% endif %}
+		<div class="buttons bar">
+			<button type="submit" class="button primary">Sign up</button>
+		</div>
+	</form>
+</article>
+{% endblock %}
