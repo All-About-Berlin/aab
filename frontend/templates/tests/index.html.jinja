@@ -1,7 +1,10 @@
 {% extends "_layout.html" %}
 {% set metatitle = "Tests" %}
 {% set metadescription = "" %}
-{% set index_in_search_engines = false %}
+
+{% block postHead %}
+	<meta name="robots" content="noindex">
+{% endblock %}
 
 {% block content %}
 	<h1>{{ metatitle }}</h1>
