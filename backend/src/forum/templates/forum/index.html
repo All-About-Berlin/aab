@@ -59,8 +59,10 @@
 	{% else %}
 		<header class="section transparent forum-header">
 			<h1>Forum{% if category %}: {{ category.label }}{% endif %}{% if page_obj.number > 1 %} - page {{ page_obj.number }}{% endif %}</h1>
-			Hello <a href="{% url 'forum_user' user.username %}">{{ user.username }}</a>.
-			<a href="{% url 'account_logout' %}">Log out</a>
+			{% if user.is_authenticated %}
+				Hello <a href="{% url 'forum_user' user.username %}">{{ user.username }}</a>.
+				<a href="{% url 'account_logout' %}">Log out</a>
+			{% endif %}
 		</header>
 	{% endif %}
 <section class="section threads">
