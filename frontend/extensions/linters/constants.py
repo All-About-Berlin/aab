@@ -88,18 +88,21 @@ def format_yaml_value(value: str, unit: str | None) -> Any:
     normalized_number = re.sub(r"[^\d.,]", "", value)
     try:
         if unit == "euros":
-            # Only show cents if it's not a round amount
             euro_amount = Decimal(normalized_number).quantize(Decimal("0.01"))
-            if str(euro_amount).rstrip("0").endswith("."):
+            if euro_amount == euro_amount.to_integral_value():
                 return int(euro_amount)
-            else:
-                return Decimal(euro_amount)
+            return euro_amount.normalize()
         elif unit == "percent" or unit == "decimal":
-            return Decimal(normalized_number.rstrip("0").rstrip(".")).normalize()
+            parsed = Decimal(normalized_number)
+            if parsed == parsed.to_integral_value():
+                return int(parsed)
+            return parsed.normalize()
         elif unit == "integer":
             return int(normalized_number)
-        elif unit == "text" or unit == "countries":
+        elif unit == "text":
             return str(value)
+        elif unit == "countries":
+            return ",".join(sorted(code.strip() for code in str(value).split(",") if code.strip()))
         raise ValueError(f"Invalid unit: {unit}")
     except (ValueError, InvalidOperation):
         raise ValueError(f"Cannot parse {unit} value: {value!r}")
