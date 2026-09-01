@@ -608,7 +608,7 @@ output.placeholder{
 }
 
 // Honeypot
-input[name="username"]
+input[name="username"][hidden]
 {
     display:none!important
 }

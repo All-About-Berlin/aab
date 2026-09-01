@@ -94,6 +94,23 @@ def subscribe_to_newsletter(email: str, ip: str | None = None, source: str | Non
 
 
 def send_email(recipients: List[str], subject: str, body: str, reply_to: str | None = None):
+    if settings.DEBUG:
+        if settings.DEBUG_EMAILS:
+            reply_to_line = f"\tReply-To: {reply_to}\n" if reply_to else ""
+            logger.info(
+                f"Sending email message:\n"
+                f"\tTo: {', '.join(recipients)}\n"
+                f"{reply_to_line}"
+                f"\tSubject: {subject}\n"
+                f"\tBody: {body}"
+            )
+        else:
+            logger.info("Pretending to send 1 message")
+        return
+
+    if not settings.MAILGUN_API_KEY:
+        raise Exception("MAILGUN_API_KEY is not set")
+
     message_data = {
         "from": "All About Berlin <contact@allaboutberlin.com>",
         "to": recipients,
