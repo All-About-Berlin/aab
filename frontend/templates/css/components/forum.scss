@@ -79,6 +79,12 @@ main .section.hero:has(.intro-text){
     }
 }
 
+.login-paragraph{
+    color: var(--c-text-light);
+    text-align: center;
+    padding: var(--s) var(--w-page-border)!important;
+}
+
 .reply-form{
     @include widget;
 }
