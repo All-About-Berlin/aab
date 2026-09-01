@@ -4,7 +4,18 @@
 
 {% block content %}
 <article class="section">
-	<h1>Create an account</h1>
+	<h1>Join the conversation</h1>
+	<div class="post-meta">
+		<nav class="breadcrumbs" aria-label="Breadcrumbs">
+			<i class="icon folder" aria-hidden="true"></i>
+			<ol>
+				<li><a href="{{ SITE_URL }}{% url 'forum_index' %}">Forum</a></li>
+				<li>Create an account</li>
+			</ol>
+		</nav>
+	</div>
+	<p>Create an account to participate in our community. If you already have an account, <a href="{% url 'account_login' %}">log in</a>.</p>
+	<hr>
 	<form method="post" action="{% url 'account_signup' %}">
 		{% csrf_token %}
 		{% include "account/formBody.html" %}
@@ -12,7 +23,7 @@
 			<input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
 		{% endif %}
 		<div class="buttons bar">
-			<button type="submit" class="button primary">Sign up</button>
+			<button type="submit" class="button primary">Create account</button>
 		</div>
 	</form>
 </article>
