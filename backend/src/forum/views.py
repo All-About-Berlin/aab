@@ -27,6 +27,10 @@ def forum_signup_welcome(request):
     return render(request, "forum/signup/welcome.html")
 
 
+def forum_rules(request):
+    return render(request, "forum/rules.html")
+
+
 def forum_index(request, page: int = 1):
     threads = (
         Thread.objects.annotate(

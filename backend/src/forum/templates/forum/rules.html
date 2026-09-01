@@ -1,0 +1,19 @@
+{% extends "forum/layout.html" %}
+
+{% block page_title %}Community guidelines - All About Berlin forum{% endblock %}
+
+{% block content %}
+<article class="section article-body">
+	<h1>Community guidelines</h1>
+	<div class="post-meta">
+		<nav class="breadcrumbs" aria-label="Breadcrumbs">
+			<i class="icon folder" aria-hidden="true"></i>
+			<ol>
+				<li><a href="{{ SITE_URL }}{% url 'forum_index' %}">Forum</a></li>
+				<li>Rules</li>
+			</ol>
+		</nav>
+	</div>
+	{% include "forum/rulesList.html" %}
+</article>
+{% endblock %}
