@@ -1,9 +1,9 @@
 {% extends "services/_layout.html" %}
 {% set metatitle = "Page not found" %}
 {% set metadescription = "The page you are looking for does not exist." %}
-{% set index_in_search_engines = false %}
 
 {% block postHead %}
+	<meta name="robots" content="noindex">
 	{% queueJs %}
 		window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) };
 		plausible("404", { props: { path: document.location.pathname } });
