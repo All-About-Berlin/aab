@@ -34,9 +34,9 @@
 		<ol class="h-feed">
 			{% for reply in replies %}
 				<li class="h-entry reply">
-					<a class="p-author h-card" hidden href="{{ SITE_URL }}/forum/users/{{ profile_user.username }}">{{ profile_user.username }}</a>
+					<a class="p-author h-card" hidden href="{{ SITE_URL }}{% url 'forum-user-profile' profile_user.username %}">{{ profile_user.username }}</a>
 					<div class="post-meta">
-						<a class="u-url" href="{{ SITE_URL }}/forum/{{ reply.thread.pk }}#reply-{{ reply.pk }}">{{ reply.thread.title }}</a>
+						<a class="u-url" href="{{ SITE_URL }}{% url 'forum-thread' reply.thread.pk %}#reply-{{ reply.pk }}">{{ reply.thread.title }}</a>
 						<time class="dt-published" datetime="{{ reply.creation_date.isoformat }}">
 							{{ reply.creation_date|short_datetime }}
 						</time>
@@ -60,7 +60,7 @@
 		"@type": "Person",
 		"name": "{{ profile_user.username|escapejs }}",
 		"identifier": "{{ profile_user.username|escapejs }}",
-		"url": "{{ SITE_URL }}/forum/users/{{ profile_user.username }}",
+		"url": "{{ SITE_URL }}{% url 'forum-user-profile' profile_user.username %}",
 		"interactionStatistic": [
 			{
 				"@type": "InteractionCounter",
@@ -75,8 +75,8 @@
 	"@type": "BreadcrumbList",
 	"itemListElement": [
 		{"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ SITE_URL }}/"},
-		{"@type": "ListItem", "position": 2, "name": "Forum", "item": "{{ SITE_URL }}/forum"},
-		{"@type": "ListItem", "position": 3, "name": "{{ profile_user.username|escapejs }}", "item": "{{ SITE_URL }}/forum/users/{{ profile_user.username }}"}
+		{"@type": "ListItem", "position": 2, "name": "Forum", "item": "{{ SITE_URL }}{% url 'forum-index' %}"},
+		{"@type": "ListItem", "position": 3, "name": "{{ profile_user.username|escapejs }}", "item": "{{ SITE_URL }}{% url 'forum-user-profile' profile_user.username %}"}
 	]
 }
 {% endblock %}

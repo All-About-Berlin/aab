@@ -4,6 +4,7 @@ from django.db.models import Count, F, Max
 from django.db.models.functions import Coalesce
 from django.http import Http404
 from django.shortcuts import get_object_or_404, render
+from django.urls import reverse
 
 from forum.models import Category, Thread
 
@@ -46,7 +47,7 @@ def forum_index(request, page: int = 1):
         {
             "page_obj": page_obj,
             "paginator": paginator,
-            "base_url": "/forum",
+            "base_url": reverse("forum-index"),
             "category": Category(category) if category else None,
         },
     )
@@ -85,6 +86,6 @@ def forum_thread(request, thread_id: int, page: int = 1):
             "thread": thread,
             "page_obj": page_obj,
             "paginator": paginator,
-            "base_url": f"/forum/{thread.pk}",
+            "base_url": reverse("forum-thread", args=[thread.pk]),
         },
     )

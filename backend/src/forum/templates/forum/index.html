@@ -10,8 +10,8 @@
 			<h1>Wiser together</h1>
 			<p>A forum where immigrants help immigrants. Ask anything, answer what you can.</p>
 			<div class="buttons bar left">
-				<a class="button" href="/forum/signup">Ask a question</a>
-				<a class="button" href="/forum/login">Log in</a>
+				<a class="button" href="{% url 'account_signup' %}">Ask a question</a>
+				<a class="button" href="{% url 'account_login' %}">Log in</a>
 			</div>
 		</div>
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
@@ -61,6 +61,7 @@
 		</h1>
 	{% endif %}
 </header>
+{% include "forum/_userSection.html" %}
 <section class="section threads">
 	{% include "forum/threadList.html" with threads=page_obj %}
 	{% include "forum/pagination.html" %}
@@ -73,9 +74,9 @@
 	"@type": "BreadcrumbList",
 	"itemListElement": [
 		{"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ SITE_URL }}/"},
-		{"@type": "ListItem", "position": 2, "name": "Forum", "item": "{{ SITE_URL }}/forum"}
+		{"@type": "ListItem", "position": 2, "name": "Forum", "item": "{{ SITE_URL }}{% url 'forum-index' %}"}
 		{% if category %},
-		{"@type": "ListItem", "position": 3, "name": "{{ category.label|escapejs }}", "item": "{{ SITE_URL }}/forum?category={{ category.value }}"}
+		{"@type": "ListItem", "position": 3, "name": "{{ category.label|escapejs }}", "item": "{{ SITE_URL }}{% url 'forum-index' %}?category={{ category.value }}"}
 		{% endif %}
 	]
 }
