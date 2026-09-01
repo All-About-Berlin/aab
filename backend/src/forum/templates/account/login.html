@@ -5,6 +5,15 @@
 {% block content %}
 <article class="section">
 	<h1>Log in</h1>
+	<div class="post-meta">
+		<nav class="breadcrumbs" aria-label="Breadcrumbs">
+			<i class="icon folder" aria-hidden="true"></i>
+			<ol>
+				<li><a href="{{ SITE_URL }}{% url 'forum_index' %}">Forum</a></li>
+				<li>Log in</li>
+			</ol>
+		</nav>
+	</div>
 	<form method="post" action="{% url 'account_login' %}">
 		{% csrf_token %}
 		{% include "account/formBody.html" %}
@@ -15,6 +24,5 @@
 			<button type="submit" class="button primary">Log in</button>
 		</div>
 	</form>
-	<p>No account? <a href="{% url 'account_signup' %}">Sign up</a>.</p>
 </article>
 {% endblock %}
