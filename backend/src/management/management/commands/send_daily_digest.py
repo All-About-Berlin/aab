@@ -36,22 +36,8 @@ class Command(BaseCommand):
         else:
             logger.info("Sending daily digest...")
 
-        if not settings.DEBUG and not settings.MAILGUN_API_KEY:
-            raise Exception("MAILGUN_API_KEY is not set")
-
         try:
-            if settings.DEBUG:
-                if settings.DEBUG_EMAILS:
-                    logger.info(f"Sending email message:\n\tTo: {', '.join(recipients)}\n\tSubject: {subject}\n")
-                    logger.debug(f"\tEmail body: \n{body}")
-                else:
-                    logger.info("Pretending to send 1 message (daily digest)")
-            else:
-                send_email(
-                    recipients,
-                    subject,
-                    body,
-                )
+            send_email(recipients, subject, body)
         except HTTPError as exc:
             logger.exception(f"Could not send daily digest  (HTTP {exc.response.status_code})")
             update_monitor(
