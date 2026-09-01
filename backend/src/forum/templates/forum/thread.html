@@ -3,23 +3,23 @@
 
 {% block page_title %}{% if page_obj.number > 1 %}Page {{ page_obj.number }} - {% endif %}{{ thread.title }} - All About Berlin forum{% endblock %}
 
-{% block postHead %}<link rel="canonical" href="{{ SITE_URL }}/forum/{{ thread.pk }}">{% endblock %}
+{% block postHead %}<link rel="canonical" href="{{ SITE_URL }}{% url 'forum-thread' thread.pk %}">{% endblock %}
 
 {% block content %}
 <article class="section h-entry" itemscope itemtype="https://schema.org/DiscussionForumPosting"{% if page_obj.object_list %} itemref="{% for reply in page_obj %}reply-{{ reply.pk }}{% if not forloop.last %} {% endif %}{% endfor %}"{% endif %}>
-	<link itemprop="url" href="{{ SITE_URL }}/forum/{{ thread.pk }}">
+	<link itemprop="url" href="{{ SITE_URL }}{% url 'forum-thread' thread.pk %}">
 	<h1 class="p-name" itemprop="headline">{{ thread.title }}</h1>
 	<div class="post-meta" aria-label="Author, publication date, categories and reviewers">
 		<nav class="breadcrumbs" aria-label="Breadcrumbs">
 			<i class="icon folder" aria-hidden="true"></i>
 			<ol>
-				<li><a href="{{ SITE_URL }}/forum">Forum</a></li>
-				<li><a class="p-category" href="{{ SITE_URL }}/forum?category={{ thread.category }}">{{ thread.get_category_display }}</a></li>
+				<li><a href="{{ SITE_URL }}{% url 'forum-index' %}">Forum</a></li>
+				<li><a class="p-category" href="{{ SITE_URL }}{% url 'forum-index' %}?category={{ thread.category }}">{{ thread.get_category_display }}</a></li>
 			</ol>
 		</nav>
 		<div class="user p-author h-card" itemprop="author" itemscope itemtype="https://schema.org/Person">
 			<i class="icon person" aria-hidden="true"></i>
-			By <a class="p-name u-url" itemprop="url" href="{{ SITE_URL }}/forum/users/{{ thread.author.username }}"><span itemprop="name">{{ thread.author.username }}</span></a>
+			By <a class="p-name u-url" itemprop="url" href="{{ SITE_URL }}{% url 'forum-user-profile' thread.author.username %}"><span itemprop="name">{{ thread.author.username }}</span></a>
 		</div>
 		<div class="date">
 			<i class="icon calendar" aria-hidden="true"></i>
@@ -34,15 +34,15 @@
 		<ol class="h-feed" start="{{ page_obj.start_index }}">
 			{% for reply in page_obj %}
 				<li class="h-entry section reply" id="reply-{{ reply.pk }}" itemprop="comment" itemscope itemtype="https://schema.org/Comment">
-					<link itemprop="url" href="{{ SITE_URL }}/forum/{{ thread.pk }}#reply-{{ reply.pk }}">
+					<link itemprop="url" href="{{ SITE_URL }}{% url 'forum-thread' thread.pk %}#reply-{{ reply.pk }}">
 					<div class="post-meta">
 						<div class="user p-author h-card" itemprop="author" itemscope itemtype="https://schema.org/Person">
 							<i class="icon person" aria-hidden="true"></i>
-							<a rel="author" class="p-name u-url" itemprop="url" href="{{ SITE_URL }}/forum/users/{{ reply.author.username }}"><span itemprop="name">{{ reply.author.username }}</span></a>
+							<a rel="author" class="p-name u-url" itemprop="url" href="{{ SITE_URL }}{% url 'forum-user-profile' reply.author.username %}"><span itemprop="name">{{ reply.author.username }}</span></a>
 						</div>
 						<div class="date">
 							<i class="icon calendar" aria-hidden="true"></i>
-							<a class="u-url" href="{{ SITE_URL }}/forum/{{ thread.pk }}#reply-{{ reply.pk }}"><time class="dt-published" itemprop="datePublished" datetime="{{ reply.creation_date.isoformat }}">{{ reply.creation_date|short_datetime }}</time></a>
+							<a class="u-url" href="{{ SITE_URL }}{% url 'forum-thread' thread.pk %}#reply-{{ reply.pk }}"><time class="dt-published" itemprop="datePublished" datetime="{{ reply.creation_date.isoformat }}">{{ reply.creation_date|short_datetime }}</time></a>
 						</div>
 					</div>
 					<div class="article-body e-content" itemprop="text">{{ reply.body|linebreaks }}</div>
@@ -60,24 +60,24 @@
 , {
 	"@context": "https://schema.org",
 	"@type": "WebPage",
-	"@id": "{{ SITE_URL }}/forum/{{ thread.pk }}",
+	"@id": "{{ SITE_URL }}{% url 'forum-thread' thread.pk %}",
 	"name": "{{ thread.title|escapejs }}",
 	"breadcrumb": {
 		"@type": "BreadcrumbList",
 		"itemListElement": [
 			{"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ SITE_URL }}/"},
-			{"@type": "ListItem", "position": 2, "name": "Forum", "item": "{{ SITE_URL }}/forum"}
+			{"@type": "ListItem", "position": 2, "name": "Forum", "item": "{{ SITE_URL }}{% url 'forum-index' %}"}
 			{% if thread.category %},
-			{"@type": "ListItem", "position": 3, "name": "{{ thread.get_category_display|escapejs }}", "item": "{{ SITE_URL }}/forum?category={{ thread.category }}"},
-			{"@type": "ListItem", "position": 4, "name": "{{ thread.title|escapejs }}", "item": "{{ SITE_URL }}/forum/{{ thread.pk }}"}
+			{"@type": "ListItem", "position": 3, "name": "{{ thread.get_category_display|escapejs }}", "item": "{{ SITE_URL }}{% url 'forum-index' %}?category={{ thread.category }}"},
+			{"@type": "ListItem", "position": 4, "name": "{{ thread.title|escapejs }}", "item": "{{ SITE_URL }}{% url 'forum-thread' thread.pk %}"}
 			{% else %},
-			{"@type": "ListItem", "position": 3, "name": "{{ thread.title|escapejs }}", "item": "{{ SITE_URL }}/forum/{{ thread.pk }}"}
+			{"@type": "ListItem", "position": 3, "name": "{{ thread.title|escapejs }}", "item": "{{ SITE_URL }}{% url 'forum-thread' thread.pk %}"}
 			{% endif %}
 		]
 	},
 	"mainEntity": {
 		"@type": "DiscussionForumPosting",
-		"url": "{{ SITE_URL }}/forum/{{ thread.pk }}"
+		"url": "{{ SITE_URL }}{% url 'forum-thread' thread.pk %}"
 	},
 	"publisher": {"@id": "{{ SITE_URL }}/#organization"}
 }
