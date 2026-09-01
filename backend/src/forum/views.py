@@ -19,6 +19,10 @@ def _get_page(paginator: Paginator, page_number: int):
         raise Http404
 
 
+def forum_rules(request):
+    return render(request, "forum/rules.html")
+
+
 def forum_index(request, page: int = 1):
     threads = (
         Thread.objects.annotate(
