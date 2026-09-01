@@ -1,5 +1,5 @@
 ursus-ssg==1.6.0
-pyphen==0.17.2
+pyphen==0.18.1
 pycountry==26.2.16
 pyyaml~=6.0
 holidays
