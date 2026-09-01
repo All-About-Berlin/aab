@@ -1,6 +1,0 @@
-{% if user.is_authenticated %}
-<section class="section" aria-label="Account">
-	Hello <a href="{% url 'forum_user' user.username %}">{{ user.username }}</a>.
-	<a href="{% url 'account_logout' %}">Log out</a>
-</section>
-{% endif %}
