@@ -70,9 +70,11 @@ ACCOUNT_FORMS = {
     "reset_password": "forum.forms.ResetPasswordForm",
     "reset_password_from_key": "forum.forms.ResetPasswordKeyForm",
 }
+LOGIN_URL = "/forum/login"
 LOGIN_REDIRECT_URL = "/forum"
 LOGOUT_REDIRECT_URL = "/forum"
-ACCOUNT_SIGNUP_REDIRECT_URL = "/forum/rules"
+ACCOUNT_SIGNUP_REDIRECT_URL = "/forum/signup/welcome"
+ACCOUNT_EMAIL_CONFIRMATION_AUTHENTICATED_REDIRECT_URL = "/forum/signup/welcome"
 
 ROOT_URLCONF = "api.urls"
 APPEND_SLASH = True
