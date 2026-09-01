@@ -76,7 +76,7 @@ main .section.hero:has(.intro-text){
             }
         }
 
-        :is(.h-feed, .reply-form){
+        :is(.h-feed){
             grid-column: 2/-1;
             margin-top: var(--l);
         }
@@ -87,8 +87,4 @@ main .section.hero:has(.intro-text){
     color: var(--c-text-light);
     text-align: center;
     padding: var(--s) var(--w-page-border)!important;
-}
-
-.reply-form{
-    @include widget;
 }

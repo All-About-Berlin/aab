@@ -60,6 +60,27 @@
 	{% endif %}
 	{% include "forum/pagination.html" %}
 </section>
+
+{% if user.is_authenticated %}
+	<form class="section" method="post" action="{% url 'forum_thread' thread.pk %}">
+		<h2>Add a comment</h2>
+		<hr>
+		{% csrf_token %}
+		<div class="form-group">
+			<label for="{{ reply_form.body.id_for_label }}">{{ reply_form.body.label }}</label>
+			{{ reply_form.body }}
+			{% if reply_form.body.errors %}
+				<span class="input-instructions error">{{ reply_form.body.errors|first }}</span>
+			{% else %}
+				<span class="input-instructions">Remember to be kind, and follow the other rules.</span>
+			{% endif %}
+		</div>
+		<hr>
+		<div class="buttons bar">
+			<button type="submit" class="button primary">Submit comment</button>
+		</div>
+	</form>
+{% endif %}
 {% endblock %}
 
 {% block jsonld %}
