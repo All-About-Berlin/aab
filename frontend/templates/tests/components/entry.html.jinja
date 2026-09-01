@@ -1,5 +1,8 @@
 {% extends "_layout.html" %}
-{% set index_in_search_engines = false %}
+
+{% block postHead %}
+	<meta name="robots" content="noindex">
+{% endblock %}
 
 {% block content %}
 	<h1>Component test</h1>

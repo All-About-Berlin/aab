@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	{% if not index_in_search_engines|default(true) %}<meta name="robots" content="noindex">{% endif %}
 	{% block head %}
 		<title>{% if metatitle|default %}{{ metatitle }}{% if metatitle|length < 50 %} - {% endif %}{% if metatitle|length < 50 %}All About Berlin{% endif %}{% else %}All About Berlin - Free guides and tools to live in Germany{% endif %}</title>
 		{% if metadescription|default %}<meta name="description" content="{{ metadescription }}">{% endif %}
