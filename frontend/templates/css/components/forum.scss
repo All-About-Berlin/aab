@@ -47,6 +47,10 @@ main .section.hero:has(.intro-text){
         .post-meta .user{
             flex: 1;
         }
+
+        &:target{
+            border: 2px solid var(--c-border-clickable-hover);
+        }
     }
 
     :is(.thread, .reply){
