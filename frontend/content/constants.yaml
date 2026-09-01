@@ -863,7 +863,7 @@ constants:
       url: https://www.buzer.de/gesetz/2923/a41642.htm
       css_selector: .arttext table:first-of-type tr:nth-of-type(6) td:nth-of-type(3)
       prompt: Return this euro amount as a number.
-      last_verified: 2026-08-28
+      last_verified: 2026-09-01
   TRANSPARENZREGISTER_FEE:
     value: 19.8
     unit: euros
@@ -874,7 +874,7 @@ constants:
       css_selector: .arttext table tr:nth-of-type(2) td:nth-of-type(3)
       prompt: Read this text. It lists Transparenzregister fees for different years. Return only the current (most recent)
         annual fee in euros.
-      last_verified: 2026-08-27
+      last_verified: 2026-09-01
   HUNDEREGISTER_FEE:
     value: 17.5
     unit: euros
