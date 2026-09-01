@@ -19,6 +19,10 @@
         margin-right: var(--s);
     }
 
+    .icon{
+        margin-right: var(--xs);
+    }
+
     &.primary:not([disabled]){
         background-color: var(--c-highlight);
         border-color: var(--c-highlight);
