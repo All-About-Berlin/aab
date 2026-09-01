@@ -8,6 +8,7 @@ urlpatterns = [
     path("forum", views.forum_index, name="forum_index"),
     path("forum/page-<int:page>", views.forum_index, name="forum_index_page"),
     path("forum/signup/welcome", views.forum_signup_welcome, name="forum_signup_welcome"),
+    path("forum/rules", views.forum_rules, name="forum_rules"),
     path("forum/login", allauth_views.login, name="account_login"),
     path("forum/logout", allauth_views.logout, name="account_logout"),
     path("forum/signup", allauth_views.signup, name="account_signup"),
