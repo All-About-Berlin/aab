@@ -47,7 +47,7 @@ def forum_index(request, page: int = 1):
         {
             "page_obj": page_obj,
             "paginator": paginator,
-            "base_url": reverse("forum-index"),
+            "base_url": reverse("forum_index"),
             "category": Category(category) if category else None,
         },
     )
@@ -86,6 +86,6 @@ def forum_thread(request, thread_id: int, page: int = 1):
             "thread": thread,
             "page_obj": page_obj,
             "paginator": paginator,
-            "base_url": reverse("forum-thread", args=[thread.pk]),
+            "base_url": reverse("forum_thread", args=[thread.pk]),
         },
     )

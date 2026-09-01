@@ -71,6 +71,7 @@ ACCOUNT_FORMS = {
     "reset_password_from_key": "forum.forms.ResetPasswordKeyForm",
 }
 LOGIN_REDIRECT_URL = "/forum"
+LOGOUT_REDIRECT_URL = "/forum"
 ACCOUNT_SIGNUP_REDIRECT_URL = "/forum/rules"
 
 ROOT_URLCONF = "api.urls"
