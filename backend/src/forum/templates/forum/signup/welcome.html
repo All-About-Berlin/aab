@@ -1,0 +1,36 @@
+{% extends "forum/layout.html" %}
+
+{% block page_title %}Welcome! - All About Berlin forum{% endblock %}
+
+{% block content %}
+<article class="section article-body">
+	<h1>Welcome aboard!</h1>
+
+	<p>Before you continue, please mind our rules:</p>
+
+	<ol>
+		<li>
+			<p>
+				<strong>Be kind</strong>
+				<br>Avoid snark, excessive negativity and personal attacks.
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Be helpful</strong>
+				<br>Ask clear, detailed questions. Do some research before asking. Contribute when you can. Avoid unhelpful answers.
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Be genuine</strong>
+				<br>Do not advertise here. Disclose your affiliations and avoid excessive self-promotion.
+			</p>
+		</li>
+	</ol>
+	<hr>
+	<nav class="buttons bar previous-next">
+		<a class="next" href="{% url 'forum_index' %}">Go to the forum</a>
+	</nav>
+</article>
+{% endblock %}
