@@ -1,0 +1,15 @@
+{% if form.non_field_errors %}
+	<p class="input-instructions error">{{ form.non_field_errors|first }}</p>
+{% endif %}
+{% for field in form %}
+	<div class="form-group">
+		<label for="{{ field.id_for_label }}">{{ field.label }}</label>
+		{{ field }}
+		{% if field.errors %}
+			<span class="input-instructions error">{{ field.errors|first }}</span>
+		{% endif %}
+		{% if field.help_text %}
+			<span class="input-instructions">{{ field.help_text }}</span>
+		{% endif %}
+	</div>
+{% endfor %}

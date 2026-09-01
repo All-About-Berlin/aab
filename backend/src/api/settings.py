@@ -33,10 +33,12 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.sessions",
     "django.contrib.staticfiles",
+    "forum.apps.ForumConfig",  # Listed before allauth so forum's templates override allauth's defaults
+    "allauth",
+    "allauth.account",
     "forms.apps.FormsConfig",
     "insurance.apps.InsuranceConfig",
     "management.apps.ManagementConfig",
-    "forum.apps.ForumConfig",
 ]
 
 MIDDLEWARE = [
@@ -47,7 +49,28 @@ MIDDLEWARE = [
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.middleware.security.SecurityMiddleware",
+    "allauth.account.middleware.AccountMiddleware",
 ]
+
+AUTHENTICATION_BACKENDS = [
+    "django.contrib.auth.backends.ModelBackend",
+    "allauth.account.auth_backends.AuthenticationBackend",
+]
+
+ACCOUNT_SIGNUP_FIELDS = ["email*", "username*", "password1*", "password2*"]
+ACCOUNT_EMAIL_VERIFICATION = "mandatory"
+ACCOUNT_CONFIRM_EMAIL_ON_GET = True
+ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
+ACCOUNT_USERNAME_VALIDATORS = "forum.validators.username_validators"
+ACCOUNT_ADAPTER = "forum.adapters.ForumAccountAdapter"
+ACCOUNT_FORMS = {
+    "login": "forum.forms.LoginForm",
+    "signup": "forum.forms.SignupForm",
+    "reset_password": "forum.forms.ResetPasswordForm",
+    "reset_password_from_key": "forum.forms.ResetPasswordKeyForm",
+}
+LOGIN_REDIRECT_URL = "/forum"
+ACCOUNT_SIGNUP_REDIRECT_URL = "/forum/rules"
 
 ROOT_URLCONF = "api.urls"
 APPEND_SLASH = True

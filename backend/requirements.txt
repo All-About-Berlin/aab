@@ -1,3 +1,4 @@
+django-allauth~=65.13
 django_countries~=9.0
 djangorestframework~=3.18
 django~=6.1
