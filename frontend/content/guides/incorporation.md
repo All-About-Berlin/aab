@@ -5,11 +5,15 @@ description: How to register a GmbH in Germany
 date_created: 2026-08-26
 ---
 
-This guide explains why and how to register a limited liability company (*GmbH*) in Germany. This guide is based on my own experience.
+This guide explains how to found a limited liability company (*GmbH*) in Germany. This guide is based on my own experience.
 
-You should also read [how to start a business in Germany](/guides/start-a-business-in-germany).
+This is part of a bigger guide: [how to start a business in Germany](/guides/start-a-business-in-germany).
 
 {% tableOfContents %}
+
+## What it means to incorporate
+
+...
 
 ## Advantages of incorporating
 
@@ -105,9 +109,11 @@ You still need enough starting capital to cover the notary fee and other costs; 
 
 GmbH more trusted than UG, can make a difference to landlords and investors.[^47]
 
-### Shell companies
+### Shelf companies
 
-Vorratsgesellschaft? Repurposed companies.[^36] HN user recommended [Foris](https://www.foris.com/en/shelf-companies/).[^16]
+Vorratsgesellschaft? Repurposed companies, readymade companies.[^36] HN user recommended [Foris](https://www.foris.com/en/shelf-companies/).[^16] More expensive than starting your own GmbH, but faster, might come with bank account.
+
+Some are "virgin" and have no history. Others already have a history, and that can be risky.[^56]
 
 ### Incorporate in another country
 
@@ -142,9 +148,15 @@ The recurring costs for holding + GmbH are [around 3k per year](https://eidel.io
 - Corporate tax (*Körperschaftssteuer*)
 - Bundesanzeiger fee?
 - *[[Gewerbesteuer]]*
-- Business bank account
+- [Business bank account](#open-a-bank-account)
 
 If you want lower costs, an Einzelunternehmer might make more sense.
+
+### Residence permit
+
+21 Abs 1 freelance visa[^57]
+
+**[How to apply for a freelance visa ➞](/guides/freelance-visa)**
 
 ## Steps
 
@@ -164,7 +176,7 @@ Why the e.K -> GmbH route? "you can use Ausgliederung nach dem Umwandlungsgesetz
 
 ### 1. Choose your Firmensitz
 
-[Don't use your home address](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=your%20company%20address%20shouldn't%20be%20your%20home%20address), get an office space.[^32] Address change a huge, expensive pain? Main reason is Betriebsaufspaltung.
+[Don't use your home address](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=your%20company%20address%20shouldn't%20be%20your%20home%20address), get an office space.[^32] Address change a huge, expensive pain? Main reason is Betriebsaufspaltung. Other reason is keeping your home address private.
 
 Which German state?
 
@@ -206,6 +218,8 @@ https://www.ihk.de/berlin/service-und-beratung/recht-und-steuern/firma-und-recht
 
 ### 6. Find a notary
 
+You must have a notary. They will register the company for you. There is no other option. The notary is not a consultant. They will not explain how the process works.[^53]
+
 Notar. Really hard to find.[^2] Use [the notary search](https://www.notar.de/notare).
 
 Long time to find an appointment, many weeks.[^45]
@@ -227,7 +241,11 @@ If you're abroad, https://online.notar.de/ can be useful. Otherwise it's the sam
 
 ### 8. Open a bank account
 
-Your GmbH need its own bank account. You can't use your personal bank account.
+Your GmbH need its own bank account. You can't use your personal bank account. The initial capital is deposited into that account. Certain fees are paid out of that account (which???)
+
+You don't need a German bank account; the bank can be in another country.[^50]
+
+It's harder for Americans because of FATCA.[^52] It's harder for Indians and other nationalities because their passport is not accepted.[^51] [Some nationalities](https://www.vonengelhardt.com/en/aliens-in-a-company#gsc.tab=0) (find a better source) are sanctioned, and it's much harder (almost impossible?) to open a bank account.
 
 At first your company is in the process of formation (Vor-GmbH, or GmbH i.G. or GmbH in Gründung). Needs a bank account to complete the process. International banks might not allow i.G. companies to open an account. You can always switch later.
 
@@ -235,7 +253,9 @@ Old-school German banks are super slow; multiple weeks.[^31] [Qonto](/out/qonto)
 
 ### 9. Deposit share capital
 
-Put the €25k in the account.[^18] You can put €12.5k and retain profits until it reaches €25k[^20]
+Move the initial capital from your personal bank account to your corporation's bank account.[^58]
+
+Put the €25k in the account.[^18] You can put €12.5k and retain profits until it reaches €25k.[^20]
 
 Give the transaction a good reference text like "Stammeinlage Gesellschafter [your full name]"[^6]
 
@@ -287,6 +307,12 @@ Get both a bit later, as described in Fragebogen guide.
 - [ ] Update tax ID guide
 
 **[How to fill this form ➞](/guides/fragebogen-zur-steuerlichen-erfassung)**
+
+### 14. Gewerbeanmeldung
+
+Register with the Gewerbeamt. Required for all GmbHs.[^54]
+
+**[How to do the Gewerbeanmeldung ➞](/guides/gewerbeschein)**
 
 ## What happens next
 
@@ -352,7 +378,7 @@ Probably cheaper than the banks that allow i.G. to open an account.
 
 ## Bits and bobs
 
-Register with the Gewerbeamt?
+B1 German recommended.[^55] There is a surcharge for English-speaking notaries, document translations.
 
 Berufsgenossenschaft?
 
@@ -370,7 +396,7 @@ If you plan to hire:
 [^1]: [Oliver Eidel](https://eidel.io/posts/how-to-found-a-company-in-germany-14-easy-steps-and-lots-of-pain#:~:text=You%E2%80%99re%20Allowed%20To-,consult,-You%20might%20think) (2024), [Oliver Eidel](https://x.com/olieidel/status/2092787427861811540) (August 2026), [Emil Lienemann](https://x.com/emilthemaker/status/2092882262844916216) (August 2026), [LinkedIn](https://www.linkedin.com/posts/nicolasbouliane_i-am-incorporating-all-about-berlin-first-activity-7498366043615227905-pi0D/) (August 2026)
 [^2]: [Oliver Eidel](https://eidel.io/posts/how-to-found-a-company-in-germany-14-easy-steps-and-lots-of-pain#:~:text=are%20not%20booked-,out.,-High%2C%20expectations%2C%20I) (2024)
 [^3]: Recommended by Suat Göydeniz (August 2026)
-[^4]: [Oliver Eidel](https://eidel.io/posts/how-to-found-a-company-in-germany-14-easy-steps-and-lots-of-pain#:~:text=or%2C%20you%20could%20not%20found%20a%20gmbh%20but%20a%20ug) (2024)
+[^4]: [Oliver Eidel](https://eidel.io/posts/how-to-found-a-company-in-germany-14-easy-steps-and-lots-of-pain#:~:text=or%2C%20you%20could%20not%20found%20a%20gmbh%20but%20a%20ug) (2024), [Alexander von Engelhardt](https://www.vonengelhardt.com/en/miscellanious#:~:text=towards%20the%20end%20of%20the%20year%20being%20a%20bad%20idea.%20why%20is%20that%20a%20bad%20idea%3F)
 [^5]: [Oliver Eidel](https://eidel.io/posts/how-to-found-a-company-in-germany-14-easy-steps-and-lots-of-pain#:~:text=don%E2%80%99t%20forget%20your%20id%20or%20passport) (2024)
 [^6]: [Oliver Eidel](https://eidel.io/posts/how-to-found-a-company-in-germany-14-easy-steps-and-lots-of-pain#:~:text=don%E2%80%99t%20forget%20your%20id%20or%20passport) (2024)
 [^7]: [Oliver Eidel](https://eidel.io/posts/how-to-found-a-company-in-germany-14-easy-steps-and-lots-of-pain#:~:text=costs%20of%20approximately%201k%E2%82%AC) (2024), [Hacker News](https://news.ycombinator.com/item?id=39969456) (2024), [on-promise.cloud](https://www.on-promise.cloud/en/compendium/01-how-much-does-a-gmbh-cost.html#overview-for-the-first-business-year), [Carmine Paolino](https://paolino.me/founding-a-company-in-germany/) (2026)
@@ -380,7 +406,7 @@ If you plan to hire:
 [^11]: [Steven Renwick](https://major-grooves.medium.com/just-how-complicated-could-it-be-to-register-a-german-company-e5eb6e50db79#:~:text=the%20whole%20process%20is%20done%20in%20german) (2022)
 [^12]: [Steven Renwick](https://major-grooves.medium.com/just-how-complicated-could-it-be-to-register-a-german-company-e5eb6e50db79#:~:text=well%20if%20you%20did%20that%2C%20then%20your%20company%20would%20be%20instantly%20insolvent%20as%20you%20need%20to%20pay%20the%20notary%20fees%20from%20the%20company%E2%80%99s%20share%20capital.%20) (2022)
 [^13]: [Hacker News](https://news.ycombinator.com/item?id=39969786) (2024)
-[^14]: [Hacker News](https://news.ycombinator.com/item?id=39959368#:~:text=closing%20a%20company%20takes%202-3%20years%20too) (2024), [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=which%20takes%201-3%20years) (2025), [Hacker News](https://news.ycombinator.com/item?id=39961768) (2024)
+[^14]: [Hacker News](https://news.ycombinator.com/item?id=39959368#:~:text=closing%20a%20company%20takes%202-3%20years%20too) (2024), [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=which%20takes%201-3%20years) (2025), [Hacker News](https://news.ycombinator.com/item?id=39961768) (2024), [Alexander von Engelhardt](https://www.vonengelhardt.com/en/services/corporate-services/liquidation-of-company) (2026)
 [^15]: [Hacker News](https://news.ycombinator.com/item?id=39959368#:~:text=each%20founding%20took%20about%206-8%20weeks) (2024), [Oliver Eidel](https://eidel.io/posts/founding-a-company-in-germany-in-2026-apparently-takes-three-months) (2026)
 [^16]: [Hacker News](https://news.ycombinator.com/item?id=39969379) (2024), [Hacker News](https://news.ycombinator.com/item?id=39966656) (2024)
 [^17]: [Hacker News](https://news.ycombinator.com/item?id=39959368#:~:text=with%20qonto%20or%20something%20equivalent) (2024)
@@ -391,7 +417,7 @@ If you plan to hire:
 [^22]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=no%20way%20around-,that.,-Don't%20found%20a) (2024)
 [^23]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=another%20huge%20benefit%20of%20the%20holding%20company) (2025)
 [^24]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=it%20to%20you.-,If%20you%20found%20a,on%20top%20of%20that.,-If%20you%20want) (2025)
-[^25]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=top%20of%20that.-,If%20you%20want%20to,your%20holding%20company%20first.,-Winding%20down%20a) (2025)
+[^25]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=top%20of%20that.-,If%20you%20want%20to,your%20holding%20company%20first.,-Winding%20down%20a) (2025), [Alexander von Engelhardt](https://www.vonengelhardt.com/en/miscellanious#:~:text=the%20holding%20company%20must%20be%20established%20first%20and%20then%20the%20subsidiary!)
 [^26]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=Winding%20down%20a,second-hand%20information.) (2025)
 [^27]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=tldr%3A%20a%20sole%20proprietorship%20makes%20sense%20if) (2025)
 [^28]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=want%20to%20incorporate%20in%20another%20country) (2025)
@@ -402,7 +428,7 @@ If you plan to hire:
 [^33]: [Anlage TrGebV](https://www.buzer.de/Anlage_TrGebV.htm), [fuer-gruender.de](https://www.fuer-gruender.de/wissen/unternehmen-gruenden/unternehmen-anmelden/transparenzregister/#:~:text=Geb%C3%BChren%20und-,kosten,-Der%20Prozess%20des) (2026)
 [^34]: [Suat Göydeniz](https://stb-goeydeniz.de/) (2026)
 [^35]: [Oliver Eidel](https://eidel.io/posts/founding-a-company-in-germany-in-2026-apparently-takes-three-months#:~:text=berlin%20registry%20seems%20to%20be%20notoriously%20slow) (2026)
-[^36]: [Hacker News](https://news.ycombinator.com/item?id=31621254) (2022)
+[^36]: [Hacker News](https://news.ycombinator.com/item?id=31621254) (2022), [Alexander von Engelhardt](https://www.vonengelhardt.com/en/shelf-company-or-scratch-founding#gsc.tab=0)
 [^37]: [Hacker News](https://news.ycombinator.com/item?id=31622378) (2022), [Twitter](https://x.com/0xbaer/status/2087497561892343810) (2026), 
 [^38]: [Carmine Paolino](https://paolino.me/founding-a-company-in-germany/#bonus-round-my-company-name-was-too-generic) (2026)
 [^39]: [Carmine Paolino](https://paolino.me/founding-a-company-in-germany/#:~:text=the%2025%2C000%20does%20not%20go%20away.%20germany%20just%20takes%20it%20in%20instalments.) (2026), citation needed
@@ -416,3 +442,12 @@ If you plan to hire:
 [^47]: [Twitter](https://x.com/theflowgrammer/status/2093355340955828693) (2026)
 [^48]: [Rouzbeh](https://x.com/JustRouzbeh/status/2093361083180286444) (2026)
 [^49]: [Qonto](https://qonto.com/de/blog/gruender/gruendungsprozess/eine-gmbh-grunden#:~:text=%20besonders%20wenn%20ihr%20gewinn%20uber%20100.000%20%E2%82%AC%20liegt)
+[^50]: [Alexander von Engelhardt](https://www.vonengelhardt.com/en/money-company) (2026)
+[^51]: Citation needed
+[^52]: [Alexander von Engelhardt](https://www.vonengelhardt.com/en/money-company) (2026)
+[^53]: [Alexander von Engelhardt](https://www.vonengelhardt.com/en/who-s-who#:~:text=cannot%20the%20notary%20consult%20on%20my%20needs%3F) (2026)
+[^54]: https://www.vonengelhardt.com/en/who-s-who#:~:text=well%2C%20my%20german%20is%20far%20from%20perfect%20(https://www.vonengelhardt.com/en/who-s-who#:~:text=limited%20liability%20companies%20of%20any%20kind%20are%20by%20their%20form%20already%20considered%20as%20trades) (2026)
+[^55]: [Alexander von Engelhardt](https://www.vonengelhardt.com/en/who-s-who#:~:text=well%2C%20my%20german%20is%20far%20from%20perfect%20)
+[^56]: [Alexander von Engelhardt](https://www.vonengelhardt.com/en/shelf-company-or-scratch-founding#gsc.tab=0)
+[^57]: [Alexander von Engelhardt](https://www.vonengelhardt.com/en/aliens-in-a-company#gsc.tab=0)
+[^58]: [Alexander von Engelhardt](https://www.vonengelhardt.com/en/money-company#:~:text=how%20do%20i%20pay%20the%20initial%20capital)
