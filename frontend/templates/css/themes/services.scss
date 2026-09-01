@@ -19,6 +19,10 @@
     }
 }
 
+main .intro{
+    box-shadow: none;
+}
+
 main {
     > .collapsible{
         border: none;
