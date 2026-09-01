@@ -4,9 +4,10 @@ from django.core.paginator import EmptyPage, Paginator
 from django.db.models import Count, F, Max
 from django.db.models.functions import Coalesce
 from django.http import Http404
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 
+from forum.forms import ReplyForm
 from forum.models import Category, Thread
 
 
@@ -77,6 +78,26 @@ def forum_user_profile(request, username: str):
 
 def forum_thread(request, thread_id: int, page: int = 1):
     thread = get_object_or_404(Thread.objects.select_related("author"), pk=thread_id)
+
+    if request.method == "POST":
+        if not request.user.is_authenticated:
+            return redirect("account_login")
+        reply_form = ReplyForm(request.POST)
+        if reply_form.is_valid():
+            reply = reply_form.save(commit=False)
+            reply.author = request.user
+            reply.thread = thread
+            reply.save()
+            last_page = max(1, -(-thread.replies.count() // REPLIES_PER_PAGE))
+            url = (
+                reverse("forum_thread_page", args=[thread.pk, last_page])
+                if last_page > 1
+                else reverse("forum_thread", args=[thread.pk])
+            )
+            return redirect(f"{url}#reply-{reply.pk}")
+    else:
+        reply_form = ReplyForm()
+
     replies = thread.replies.select_related("author").order_by("creation_date")
     paginator = Paginator(replies, REPLIES_PER_PAGE)
     page_obj = _get_page(paginator, page)
@@ -89,5 +110,6 @@ def forum_thread(request, thread_id: int, page: int = 1):
             "page_obj": page_obj,
             "paginator": paginator,
             "base_url": reverse("forum_thread", args=[thread.pk]),
+            "reply_form": reply_form,
         },
     )

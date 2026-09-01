@@ -4,6 +4,9 @@ from allauth.account.forms import (
     ResetPasswordKeyForm as BaseResetPasswordKeyForm,
     SignupForm as BaseSignupForm,
 )
+from django import forms
+
+from forum.models import Reply
 
 
 class StripPlaceholdersMixin:
@@ -27,3 +30,11 @@ class ResetPasswordForm(StripPlaceholdersMixin, BaseResetPasswordForm):
 
 class ResetPasswordKeyForm(StripPlaceholdersMixin, BaseResetPasswordKeyForm):
     pass
+
+
+class ReplyForm(forms.ModelForm):
+    class Meta:
+        model = Reply
+        fields = ["body"]
+        labels = {"body": "Message"}
+        widgets = {"body": forms.Textarea(attrs={"rows": 6})}
