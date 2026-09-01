@@ -14,9 +14,12 @@
 					<i class="icon person" aria-hidden="true"></i>
 					<a class="p-name u-url" href="{{ SITE_URL }}{% url 'forum_user' thread.author.username %}">{{ thread.author.username }}</a>
 				</div>
+				<div>
+					<i class="icon reply" aria-hidden="true"></i> {{ thread.reply_count }}
+				</div>
 				<div class="date">
 					<i class="icon calendar" aria-hidden="true"></i>
-					<time class="dt-published" datetime="{{ thread.creation_date.isoformat }}">{{ thread.creation_date|short_datetime }}</time>
+					<time class="dt-updated" datetime="{{ thread.last_activity_date.isoformat }}">{{ thread.last_activity_date|short_datetime }}</time>
 				</div>
 			</div>
 		</li>

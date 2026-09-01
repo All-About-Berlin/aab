@@ -114,7 +114,12 @@
 	},
 	"mainEntity": {
 		"@type": "DiscussionForumPosting",
-		"url": "{{ SITE_URL }}{% url 'forum_thread' thread.pk %}"
+		"url": "{{ SITE_URL }}{% url 'forum_thread' thread.pk %}",
+		"interactionStatistic": {
+			"@type": "InteractionCounter",
+			"interactionType": "https://schema.org/ReplyAction",
+			"userInteractionCount": {{ paginator.count }}
+		}
 	},
 	"publisher": {"@id": "{{ SITE_URL }}/#organization"}
 }
