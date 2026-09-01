@@ -72,7 +72,7 @@
 			{% if reply_form.body.errors %}
 				<span class="input-instructions error">{{ reply_form.body.errors|first }}</span>
 			{% else %}
-				<span class="input-instructions">Remember to be kind, and follow the other rules.</span>
+				<span class="input-instructions">Be kind, be helpful, and follow <a target="_blank" href="{% url 'forum_rules' %}">the rules</a>.</span>
 			{% endif %}
 		</div>
 		<hr>
