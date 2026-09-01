@@ -122,6 +122,9 @@ sup:target a{
     mask-image: var(--i-external);
 }
 
+h1 + .article-body{
+    border-top: var(--b-box);
+}
 .article-body{
     > :last-child{margin-bottom: 0}
 
