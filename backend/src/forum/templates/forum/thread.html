@@ -29,6 +29,12 @@
 	<div class="article-body e-content" itemprop="articleBody">{{ thread.body|linebreaks }}</div>
 </article>
 
+{% if not user.is_authenticated %}
+	<div class="section transparent login-paragraph" data-nosnippet>
+		To reply, <a href="{% url 'account_login' %}">log in</a> or <a href="{% url 'account_signup' %}">create an account</a>.
+	</div>
+{% endif %}
+
 <section aria-label="Replies" class="replies">
 	{% if page_obj.object_list %}
 		<ol class="h-feed" start="{{ page_obj.start_index }}">
