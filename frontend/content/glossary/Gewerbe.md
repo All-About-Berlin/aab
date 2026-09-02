@@ -19,6 +19,6 @@ In Germany, there are two types of self-employed people:
 - Freelancers (*[[Freiberufler]]*) who practice a *freier Beruf*
 - Tradespeople (*[Gewerbetreibende](/glossary/Gewerbetreibender)*) who run a *[[Gewerbe]]*
 
-If you run a *Gewerbe*, you might have more obligations. You might also need to pay the business tax (*[[Gewerbesteuer]]*).
+If you run a *Gewerbe*, you have more obligations, you pay more taxes, and you get a different type of [freelance visa](/glossary/Freelance%20visa).
 
-**[Freiberufler or Gewerbe: what is the difference? ➞](/guides/freiberufler-or-gewerbe)**
+**[Difference between Freiberufler and Gewerbe ➞](/guides/freiberufler-or-gewerbe)**

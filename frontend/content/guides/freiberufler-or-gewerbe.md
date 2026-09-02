@@ -40,15 +40,15 @@ A *Gewerbetreibender* has more obligations than a *Freiberufler*.
 
 If you register a *Gewerbe*, you must...
 
-- **Get a trade licence** (*[[Gewerbeschein]]*)
-- **Pay the trade tax** (*[[Gewerbesteuer]]*)  
-    In Berlin, sole proprietors give an extra {{GEWERBESTEUER_EXTRA_COST_BERLIN}}% of their profit for trade tax. - [How the trade tax works](/guides/gewerbesteuer)
+- **[Get a trade licence](/guides/gewerbeschein)** (*[[Gewerbeschein]]*)
+- **[Pay the trade tax](/guides/gewerbesteuer)** (*[[Gewerbesteuer]]*)  
+    In Berlin, sole proprietors give an extra {{GEWERBESTEUER_EXTRA_COST_BERLIN}}% of their profit for trade tax.
 - **Join the [[IHK]] and pay the membership fee**  
-    In Berlin, if you are a *Gewerbetreibender*, you automatically join the [[IHK]]. You must pay the membership fee. The fee is a few hundred euros per year. - [Fee calculator for Berlin](https://www.ihk.de/berlin/ueber-uns/mitgliedschaft-und-beitrag/das-verfahren-der-beitragserhebung/beitragsberechnung-2280534)
-- **Get listed in the trade register** (*[[Handelsregister]]*)  
-    If you are a sole proprietor (*Einzelunternehmer*), this is rarely required.
+    In Berlin, if you are a *Gewerbetreibender*, you are forced to join the [[IHK]] and pay a membership fee. It costs [a few hundred euros per year](https://www.ihk.de/berlin/ueber-uns/mitgliedschaft-und-beitrag/das-verfahren-der-beitragserhebung/beitragsberechnung-2280534).
+- **[Get listed in the trade register](/guides/handelsregisternummer-germany)** (*[[Handelsregister]]*)  
+    Some *Gewerbe* must be listed in the trade register. There are many exceptions.
 - **Use double entry bookkeeping**  
-    If you are a sole proprietor (*Einzelunternehmer*), this is rarely required.
+    Some *Gewerbe* must use double entry bookkeeping. For small businesses, this is rarely required.
 
 If you are a *Freiberufler*, you don't need to do any of this. It saves you time and money.
 
