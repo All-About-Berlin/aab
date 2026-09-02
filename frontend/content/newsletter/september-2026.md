@@ -15,7 +15,7 @@ Wow, is it September already? Summer goes so fast!
 - [Musikfest](https://www.berlin.de/en/events/2097261-2842498-musikfest-berlin-music-festival-berlin.en.html) (August 28 to September 23)
 - [Women's Basketball World Cup](https://www.visitberlin.de/en/event/fiba-womens-basketball-world-cup-2026) (September 4-13)
 - [Berlin Art Week](https://berlinartweek.de/) (September 9-13)
-- [Nationwide Warning Day](https://www.bbk.bund.de/SharedDocs/Termine/DE/2026/09/10-bundesweiter-warntag_termin.html) (September 11)
+- [Nationwide Warning Day](https://www.bbk.bund.de/SharedDocs/Termine/DE/2026/09/10-bundesweiter-warntag_termin.html) (September 10)
 - [Open Monument Day](https://www.berlin.de/en/events/2860241-2842498-heritage-day.en.html) (September 12-13)
 - [Giant kite festival](https://www.visitberlin.de/en/event/13th-stadt-und-land-giant-kite-festival-2026) (September 12)
 - Berlin Marathon (September 19-20)
