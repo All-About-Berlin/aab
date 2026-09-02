@@ -22,7 +22,7 @@
 <section class="section threads" aria-label="Threads">
 	<h2>Recent discussions by {{ profile_user.username }}</h2>
 	{% if threads %}
-		{% include "forum/threadList.html" with threads=threads %}
+		{% include "forum/_threadList.html" with threads=threads %}
 	{% else %}
 		<p>This user has not started any discussions.</p>
 	{% endif %}

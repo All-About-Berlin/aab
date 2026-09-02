@@ -17,10 +17,7 @@
 				<li><a class="p-category" href="{{ SITE_URL }}{% url 'forum_index' %}?category={{ thread.category }}">{{ thread.get_category_display }}</a></li>
 			</ol>
 		</nav>
-		<div class="user p-author h-card" itemprop="author" itemscope itemtype="https://schema.org/Person">
-			<i class="icon person" aria-hidden="true"></i>
-			By <a class="p-name u-url" itemprop="url" href="{{ SITE_URL }}{% url 'forum_user' thread.author.username %}"><span itemprop="name">{{ thread.author.username }}</span></a>
-		</div>
+		{% include "forum/_username.html" with user=thread.author %}
 		<div class="date">
 			<i class="icon calendar" aria-hidden="true"></i>
 			<time class="dt-published" itemprop="datePublished" datetime="{{ thread.creation_date.isoformat }}">{{ thread.creation_date|short_datetime }}</time>
@@ -51,10 +48,7 @@
 				<li class="h-entry section reply" id="reply-{{ reply.pk }}" itemprop="comment" itemscope itemtype="https://schema.org/Comment">
 					<link itemprop="url" href="{{ SITE_URL }}{% url 'forum_thread' thread.pk %}#reply-{{ reply.pk }}">
 					<div class="post-meta">
-						<div class="user p-author h-card" itemprop="author" itemscope itemtype="https://schema.org/Person">
-							<i class="icon person" aria-hidden="true"></i>
-							<a rel="author" class="p-name u-url" itemprop="url" href="{{ SITE_URL }}{% url 'forum_user' reply.author.username %}"><span itemprop="name">{{ reply.author.username }}</span></a>
-						</div>
+						{% include "forum/_username.html" with user=reply.author %}
 						<div class="date">
 							<i class="icon calendar" aria-hidden="true"></i>
 							<a class="u-url" href="{{ SITE_URL }}{% url 'forum_thread' thread.pk %}#reply-{{ reply.pk }}"><time class="dt-published" itemprop="datePublished" datetime="{{ reply.creation_date.isoformat }}">{{ reply.creation_date|short_datetime }}</time></a>
@@ -67,7 +61,7 @@
 	{% else %}
 		<p>No replies yet.</p>
 	{% endif %}
-	{% include "forum/pagination.html" %}
+	{% include "forum/_pagination.html" %}
 	{% if not user.is_authenticated %}
 		<p class="login-paragraph" data-nosnippet>
 			To reply, <a href="{% url 'account_login' %}">log in</a> or <a href="{% url 'account_signup' %}">create an account</a>.
