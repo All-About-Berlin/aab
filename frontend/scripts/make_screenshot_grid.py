@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-"""
-Screenshot every page type at 1300x800 and lay them out on a grid, so the
-layouts can be compared side-by-side. Requires `mise dev` to be running.
-"""
 
 import argparse
 import math
@@ -95,7 +91,9 @@ def compose_grid(cells: list[tuple[str, str, Image.Image]]) -> Image.Image:
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("output", nargs="?", default="page-grid.png", help="Output PNG path")
+    parser.add_argument(
+        "output", nargs="?", default=str(Path.home() / "Downloads" / "page-grid.png"), help="Output PNG path"
+    )
     args = parser.parse_args()
 
     cells: list[tuple[str, str, Image.Image]] = []
