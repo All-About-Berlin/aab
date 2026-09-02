@@ -10,10 +10,7 @@
 						<a class="p-category" href="{{ SITE_URL }}{% url 'forum_index' %}?category={{ thread.category }}">{{ thread.get_category_display }}</a>
 					</nav>
 				{% endif %}
-				<div class="user p-author h-card">
-					<i class="icon person" aria-hidden="true"></i>
-					<a class="p-name u-url" href="{{ SITE_URL }}{% url 'forum_user' thread.author.username %}">{{ thread.author.username }}</a>
-				</div>
+				{% include "forum/_username.html" with user=thread.author %}
 				<div>
 					<i class="icon reply" aria-hidden="true"></i> {{ thread.reply_count }}
 				</div>

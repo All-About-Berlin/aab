@@ -66,8 +66,8 @@
 		</header>
 	{% endif %}
 <section class="section threads">
-	{% include "forum/threadList.html" with threads=page_obj %}
-	{% include "forum/pagination.html" %}
+	{% include "forum/_threadList.html" with threads=page_obj %}
+	{% include "forum/_pagination.html" %}
 </section>
 {% endblock %}
 
