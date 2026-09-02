@@ -167,13 +167,13 @@ frontend/scripts/publish_newsletter.py "${usage_slug}"
 """
 
 [tasks.make-screenshot-grid]
-description = "Screenshot every page type at 1300x800 and lay them out on a grid"
+description = "Create a grid with screenshots of every page format, to compare for consistency"
 depends = ["wait-for-frontend"]
 usage = '''
-arg "[output]" help="Output PNG path (default: page-grid.png)"
+arg "[output]" help="Output PNG path (default: ~/Downloads/page-grid.png)"
 '''
 run = """
-frontend/scripts/make_screenshot_grid.py "${usage_output:-page-grid.png}"
+frontend/scripts/make_screenshot_grid.py "${usage_output:-$HOME/Downloads/page-grid.png}"
 """
 
 # = TEST =======================================================================
