@@ -9,7 +9,7 @@ related_reviews:
 
 This guide explains how to start a business or become a freelancer in Germany.
 
-It explains how to form a single proprietorship (*Einzelunternehmen*), not a corporation or a limited liability company (*UG* or *GmbH*).
+It explains how to form a single proprietorship (*[[Einzelunternehmen]]*). It does not explain [how to form a limited liability company](/guides/incorporation) (*UG* or *GmbH*).
 
 {% tableOfContents %}
 

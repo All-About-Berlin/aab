@@ -44,7 +44,7 @@ Open the **[online registration form](/out/business-anmeldung)**. Click the *Anm
 
 [![Step 1 of the Gewerbeanmeldung form](/images/gewerbeanmeldung-berlin-step1.png)](/images/gewerbeanmeldung-berlin-step1.png)
 
-**Rechtsform:** Choose the type of business you want to start. Most people choose a sole proprietorship (*Einzelunternehmen*). To register a limited liability company (*UG*), [talk with a tax advisor](/guides/english-speaking-steuerberater-berlin) first.
+**Rechtsform:** Choose the type of business you want to start. Most people choose a sole proprietorship (*[[Einzelunternehmen]]*). To register a corporation (*GmbH* or *UG*), [talk with a tax advisor](/guides/english-speaking-steuerberater-berlin) first.
 
 **Anmeldung erfolgt wegen:** Choose *Neuerrichtung des Betriebes* to register a new business.
 

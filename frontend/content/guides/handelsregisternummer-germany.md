@@ -14,15 +14,11 @@ Some businesses have no *Handelsregisternummer* because they are not listed in t
 
 The *Handelsregisternummer* has the format **HRA 12345** or **HRB 12345**:
 
-- **HRA** is for a sole proprietorship (*Einzelunternehmen*), and **HRB** is for an incorporated company (*Kapitalgesellschaft*).[^1]
+- **HRA** for a [sole proprietorship](/glossary/Einzelunternehmen) or **HRB** for a corporation.[^1]
 - **12345** is the unique number of this business.
-- There is sometimes an extra letter. For example, **HRB 247469 B**.
+- There is sometimes an extra letter. For example, HRB 247469 **B**.
 
-*Handelsregisternummer* examples:
-
-- N26 bank: HRB 247469 B
-- Coup: HRB 178881 B
-- SAP: HRA 350654
+Some *Handelsregisternummer* examples: HRB 247469 B, HRB 178881 B, HRA 350654
 
 ## Who needs a Handelsregister entry?
 
@@ -30,15 +26,11 @@ Most companies must be listed in the *[[Handelsregister]]* and get a *Handelsreg
 
 You must have a *Handelsregister* entry if...[^3]
 
-- **You are not a freelancer** (*Freiberufler*)
-- and **you are not a sole proprietor** (*Einzelunternehmer*)  
-- and **you are not a company constituted under civil law** (*GbR*)
-- and **you are not a Kleingewerbe**  
-    A *Kleingewerbe* is a small-scale sole proprietorship. For example, a business with a single address, few employees, few clients, and simple bookkeeping.[^4] There is no precise definition.[^5] If your sole proprietorship is a large commercial business, you need a *Handelsregister* entry.
+- **You are a corporation**  
+    An entry is required for a *GmbH*, *UG*, *AG*, *e. K.*, *oHG*, *KG*, or *GmbH & Co. KG*.[^7]
+- or **you are a [sole proprietor](/glossary/Einzelunternehmen)** and you are **not a [[Freiberufler]] or a [[Kleingewerbe]]**
 
-You must have a *Handelsregister* entry to [form a *GmbH*](/guides/incorporation), *UG*, *AG*, *e. K.*, *oHG*, *KG*, or *GmbH & Co. KG*.[^7]
-
-A *Handelsregister* entry has few benefits. It mostly means more effort, more paperwork and [more spam](/guides/incorporation#spam). Avoid it if you can.[^6]
+A *Handelsregister* entry has almost no benefits. It mostly means more effort, more paperwork and [more spam](/guides/incorporation#spam). Avoid it if you can.[^6]
 
 ## How to get a Handelsregisternummer
 
@@ -60,7 +52,5 @@ Getting listed in the *Handelsregister* costs €{{HANDELSREGISTER_FEE|cur}}. It
 [^1]: [berlin.de](https://service.berlin.de/dienstleistung/327148/), [unternehmen24.info](https://www.unternehmen24.info/hr_DEU/HRA-HRB-handelsregister_DE.cfm)
 [^2]: [Anlage HRegGebV](https://www.buzer.de/gesetz/2923/a41642.htm)
 [^3]: [lexware.de](https://www.lexware.de/wissen/unternehmerlexikon/kleingewerbe/#:~:text=ein%20kleingewerbe%20kann%20ein), [fuer-gruender.de](https://www.fuer-gruender.de/wissen/unternehmen-gruenden/unternehmen-anmelden/handelsregister/#:~:text=wer%20ist%20gema%C3%9F%20rechtsform%20zum%20eintrag%20verpflichtet)
-[^4]: [nwb.de](https://datenbank.nwb.de/Dokument/418126/), [lexware.de](https://www.lexware.de/wissen/unternehmerlexikon/kleingewerbe/#:~:text=das%20aufgrund%20seines-,geringen%20geschaftlichen%20umfangs,-nicht%20ins%20Handelsregister)
-[^5]: [firma.de](https://www.firma.de/firmengruendung/was-ist-ein-kleingewerbe/#:~:text=doch%20leider%20gibt%20es%20hier%20keine%20antwort)
 [^6]: [selbststaendig-machen.net](https://www.selbststaendig-machen.net/handelsregister-lohnt-der-freiwillige-eintrag/), [Suat Göydeniz](https://stb-goeydeniz.de/) (December 2023)
 [^7]: [fuer-gruender.de](https://www.fuer-gruender.de/wissen/unternehmen-gruenden/unternehmen-anmelden/handelsregister/#c12025)
