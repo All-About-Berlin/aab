@@ -29,19 +29,20 @@
 	<div class="article-body e-content" itemprop="articleBody">{{ thread.body|linebreaks }}</div>
 
 	<hr>
-	<div class="buttons bar">
-		<a href="#reply" class="button primary">
-			<i class="icon reply" aria-hidden="true"></i>
-			Reply
-		</a>
-	</div>
-</article>
+	{% if user.is_authenticated %}
+		<div class="buttons bar">
+			<a href="#reply" class="button primary">
+				<i class="icon reply" aria-hidden="true"></i>
+				Reply
+			</a>
+		</div>
+	{% else %}
+		<div class="login-paragraph" data-nosnippet>
+			To reply, <a href="{% url 'account_login' %}">log in</a> or <a href="{% url 'account_signup' %}">create an account</a>.
+		</div>
+	{% endif %}
 
-{% if not user.is_authenticated %}
-	<div class="section transparent login-paragraph" data-nosnippet>
-		To reply, <a href="{% url 'account_login' %}">log in</a> or <a href="{% url 'account_signup' %}">create an account</a>.
-	</div>
-{% endif %}
+</article>
 
 <section aria-label="Replies" class="replies">
 	{% if page_obj.object_list %}
@@ -67,6 +68,11 @@
 		<p>No replies yet.</p>
 	{% endif %}
 	{% include "forum/pagination.html" %}
+	{% if not user.is_authenticated %}
+		<p class="login-paragraph" data-nosnippet>
+			To reply, <a href="{% url 'account_login' %}">log in</a> or <a href="{% url 'account_signup' %}">create an account</a>.
+		</p>
+	{% endif %}
 </section>
 
 {% if user.is_authenticated %}
@@ -86,7 +92,7 @@
 		<hr>
 		<div class="buttons bar">
 			<button type="submit" class="button primary">
-				<i class="icon reply" aria-hidden="true"></i> Add reply
+				<i class="icon reply" aria-hidden="true"></i> Submit reply
 			</button>
 		</div>
 	</form>
