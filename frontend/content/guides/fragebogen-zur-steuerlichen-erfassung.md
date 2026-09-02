@@ -76,8 +76,6 @@ If you register a *[[Gewerbe]]*, you must get a trade licence (*[[Gewerbeschein]
 
 If you register as a *[[Freiberufler]]*, you do not need a *Gewerbeschein*.[^17]
 
-**[Difference between Freiberufler and Gewerbe ➞](/guides/freiberufler-or-gewerbe)**
-
 **[How to get a Gewerbeschein ➞](/guides/gewerbeschein)**
 
 ### Understand the Value Added Tax ([[Umsatzsteuer]])

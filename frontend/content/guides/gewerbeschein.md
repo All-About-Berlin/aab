@@ -5,25 +5,34 @@ description: The Gewerbeanmeldung is how you get a trade licence (Gewerbeschein)
 date_created: 2021-05-14
 ---
 
-When you [start a business](/guides/start-a-business-in-germany), you must register your trade. This is called the *Gewerbeanmeldung*.
+When you [start a business](/guides/start-a-business-in-germany), you usually need to do the *Gewerbeanmeldung*.
 
 You must do your *Gewerbeanmeldung* to...
 
 - Get trade licence (*[[Gewerbeschein]]*)
 - Register for the trade tax (*[[Gewerbesteuer]]*)
 
-Freelancers (*[[Freiberufler]]*) do not pay the trade tax. They don't need to do the *Gewerbeanmeldung*.[^0]
-
-You can do this online. It takes 30 minutes to fill the form, and around 4 weeks to get the *[[Gewerbeschein]]*. It costs €{{GEWERBEANMELDUNG_FEE|cur}}.
+In Berlin, you can do it online. It takes around 30 minutes. It costs €{{GEWERBEANMELDUNG_FEE|cur}}. Around 4 weeks later, you get a *[[Gewerbeschein]]*.
 
 {% tableOfContents %}
+
+## Who must do this
+
+You must do your *Gewerbeanmeldung* if...
+
+- You are forming a corporation (*GmbH* or *UG*)
+- or you start a *[[Gewerbe]]* and you are a sole proprietor (*Einzelunternehmer*)
+
+If you are a *[[Freiberufler]]* and a sole proprietor, you don't need to do the *Gewerbeanmeldung*, and you don't need to pay [trade tax](/glossary/Gewerbesteuer).[^0]
 
 ## Before you start
 
 To do your *Gewerbeanmeldung*, you need...
 
-- [ ] A credit card (Visa or Mastercard) to pay the €{{GEWERBEANMELDUNG_FEE|cur}} fee.
-- [ ] Permission to be self-employed in Germany. If you need a [residence permit](/glossary/Aufenthaltstitel) to live in Germany, [check if it allows self-employment](/guides/residence-permit#for-self-employment). You must get your residence permit before you do the *Gewerbeanmeldung*.
+- [ ] **A credit card**  
+    You need it to pay the €{{GEWERBEANMELDUNG_FEE|cur}} fee. Visa and Mastercard are accepted.
+- [ ] **Permission to be self-employed in Germany**  
+    If you need a [residence permit](/glossary/Aufenthaltstitel) to live in Germany, [check if it allows self-employment](/guides/residence-permit#for-self-employment). You must get your residence permit before you do the *Gewerbeanmeldung*.
 
 ## How to fill the registration form
 
@@ -158,17 +167,19 @@ You can also ask a [tax advisor](/guides/english-speaking-steuerberater-berlin) 
 
 **[English-speaking tax advisors in Berlin ➞](/guides/english-speaking-steuerberater-berlin)**
 
-## Need help?
-
-**[Where to ask business questions ➞](/guides/help#business-questions)**
-
 ## What to do next
 
-The *Gewerbeanmeldung* is not the only step to start a business. You must also [register your business with the *Finanzamt*](/guides/fragebogen-zur-steuerlichen-erfassung).
+The *Gewerbeanmeldung* is one step of start a business. You must also [register your business with the *Finanzamt*](/guides/fragebogen-zur-steuerlichen-erfassung).
 
 **[How to start a business in Germany ➞](/guides/start-a-business-in-germany)**
 
-If you close your business or [leave Germany](/guides/leaving-germany), you must deregister your business. This is called the *Gewerbeabmeldung*. In Berlin, you can [do it online](https://service.berlin.de/dienstleistung/122107/).
+### Closing your business
+
+If you close your business or [leave Germany](/guides/leaving-germany), you must deregister your business. This is called the *Gewerbeabmeldung*. In Berlin, you can [deregister your business online](https://service.berlin.de/dienstleistung/122107/).
+
+## Need help?
+
+**[Where to ask business questions ➞](/guides/help#business-questions)**
 
 [^0]: [Berlin.de](https://service.berlin.de/dienstleistung/121921/)
 [^1]: [gewerbe-anmelden.info](https://www.gewerbe-anmelden.info/gewerbeschein/gewerbeschein-formular-ausfuellen)
