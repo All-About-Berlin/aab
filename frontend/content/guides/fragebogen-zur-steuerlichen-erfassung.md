@@ -72,16 +72,13 @@ If you don't want to create an ELSTER account, you can use Sorted's [business re
 
 ### Get a [[Gewerbeschein]]
 
-If you register a *[[Gewerbe]]*, you must get a trade licence (*[[Gewerbeschein]]*). This is how you register for the business tax (*[[Gewerbesteuer]]*). In Berlin, you can [apply for a *Gewerbeschein* online](/guides/gewerbeschein) or at the *[[Ordnungsamt]]*. You must do this before you register your business with the *Finanzamt*.
+If you register a *[[Gewerbe]]*, you must get a trade licence (*[[Gewerbeschein]]*). This is how you register for the trade tax (*[[Gewerbesteuer]]*). In Berlin, you can [apply for a *Gewerbeschein* online](/guides/gewerbeschein) or at the *[[Ordnungsamt]]*. You must do this before you register your business with the *Finanzamt*.
 
-If you register as a *[[Freiberufler]]*, you don't need a *Gewerbeschein*.[^17]
+If you register as a *[[Freiberufler]]*, you do not need a *Gewerbeschein*.[^17]
 
-**Related guides:**
+**[Difference between Freiberufler and Gewerbe ➞](/guides/freiberufler-or-gewerbe)**
 
-- [How to get a *Gewerbeschein* in Berlin](/guides/gewerbeschein)
-- [How to find your tax ID](/guides/german-tax-id-steuernummer#where-to-find-your-tax-id)
-- [What is the trade tax (*Gewerbesteuer*)?](/guides/gewerbesteuer)
-- [*Freiberufler* or *Gewerbe*: what's the difference?](/guides/freiberufler-or-gewerbe)
+**[How to get a Gewerbeschein ➞](/guides/gewerbeschein)**
 
 ### Understand the Value Added Tax ([[Umsatzsteuer]])
 
