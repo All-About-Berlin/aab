@@ -3,6 +3,7 @@ import random
 from datetime import timedelta
 from pathlib import Path
 
+from allauth.account.models import EmailAddress
 from django.contrib.auth.models import User
 from django.core.management.base import BaseCommand
 from django.utils import timezone
@@ -29,6 +30,11 @@ class Command(BaseCommand):
             )
             user.set_password(u["username"])
             user.save()
+            EmailAddress.objects.update_or_create(
+                user=user,
+                email=u["email"],
+                defaults={"verified": True, "primary": True},
+            )
             users[u["username"]] = user
 
         created_threads = 0
