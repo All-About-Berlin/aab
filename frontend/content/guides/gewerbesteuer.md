@@ -11,9 +11,9 @@ Most German businesses must pay a trade tax (*[[Gewerbesteuer]]*) on their [prof
 
 ## Who must pay trade tax
 
-**Sole proprietorships, partnerships and corporations** must pay the trade tax. This includes *[[Kleinunternehmer]]*.
+**[Sole proprietorships](/glossary/Einzelunternehmen), partnerships and [corporations](/glossary/Kapitalgesellschaft)** must pay the trade tax. This includes *[[Kleinunternehmer]]*.
 
-Freelancers (*[[Freiberufler]]*) do not pay the trade tax. [Not all self-employed people](/guides/freiberufler-or-gewerbe) are freelancers. If you work alone, you might still need to pay the trade tax.
+Freelancers (*[[Freiberufler]]*) do not pay the trade tax. [Not all self-employed people](/guides/freiberufler-or-gewerbe) are freelancers.
 
 ## How much is the trade tax?
 
@@ -42,7 +42,7 @@ If you are a sole proprietor (*Einzelunternehmer*), you get an income tax credit
 
 ### Tax-free amount
 
-If you are a sole proprietor (*Einzelunternehmer*), the first €{{GEWERBESTEUER_FREIBETRAG|cur}} per year in profit are not taxed. If you have a society (*Verein*), the first €5,000 per year in profit are not taxed.[^4] If you have a corporation (*Kapitalgesellschaft*, *AG*, *GmbH*), the entire profit is taxed.[^5]
+If you are a sole proprietor (*Einzelunternehmer*), the first €{{GEWERBESTEUER_FREIBETRAG|cur}} per year in profit are not taxed. If you have a society (*Verein*), the first €5,000 per year in profit are not taxed.[^4] If you have a [corporation](/glossary/Kapitalgesellschaft), the entire profit is taxed.[^5]
 
 ## IHK membership
 

@@ -20,7 +20,7 @@ You are a *Kleinunternehmer* if...[^1]
 
 If you are a *Kleinunternehmer*, you can choose not to charge [VAT](/glossary/Umsatzsteuer).
 
-Freelancers (*[[Freiberufler]]*), tradespeople (*[[Gewerbe]]*) and limited liability companies (*UG*) can be a *Kleinunternehmer*.[^2]
+Both [sole proprietors](/glossary/Kleinunternehmer) and corporations can be a *Kleinunternehmer*. Freelancers (*[[Freiberufler]]*) and tradespeople (*[[Gewerbe]]*) can be a *Kleinunternehmer*.[^2]
 
 ## Should you be a Kleinunternehmer?
 
@@ -97,7 +97,7 @@ If you don't charge VAT, you must add this line to your invoices:[^6]
 > **German:** “Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.”
 
 [^1]: [Debitoor](https://debitoor.de/gruenderlounge/unternehmensgruendung/was-ist-die-kleinunternehmerregelung), [Existenzgründer](https://www.existenzgruender.de/DE/Gruendung-vorbereiten/Gruendungswissen/Steuern/Kleinunternehmerregelung/inhalt.html)
-[^2]: [Existenzgründer](https://www.existenzgruender.de/DE/Gruendung-vorbereiten/Gruendungswissen/Steuern/Kleinunternehmerregelung/inhalt.html#:~:text=zu%20den%20kleinunternehmern%20gehoren)
+[^2]: [lexware.de](https://www.lexware.de/wissen/buchhaltung-finanzen/kleinunternehmerregelung-so-kann-die-gmbh-profitieren/#:~:text=auch%20eine%20gmbh%20kann%20sich%20umsatzsteuerlich) (2026), [Existenzgründer](https://www.existenzgruender.de/DE/Gruendung-vorbereiten/Gruendungswissen/Steuern/Kleinunternehmerregelung/inhalt.html#:~:text=zu%20den%20kleinunternehmern%20gehoren)
 [^3]: [Existenzgründer](https://www.existenzgruender.de/DE/Gruendung-vorbereiten/Gruendungswissen/Steuern/Kleinunternehmerregelung/inhalt.html#:~:text=in%20Anspruch%20nehmen.-,im%20dritten%20jahr%20,-(2021)%20ihrer%20Selbst%C3%A4ndigkeit), [kleinunternehmer.de](https://www.kleinunternehmer.de/kleinunternehmerregelung.htm#:~:text=sonderfall%20i%3A%20umsatzgrenzen%20im%20grundungsjahr)
 [^4]: [kleinunternehmer.de](https://www.kleinunternehmer.de/kleinunternehmerregelung.htm#:~:text=sonderfall%20ii%3A%20mehrere%20umsatzsteuerpflichtige%20unternehmen%20und%20tatigkeiten)
 [^5]: [kleinunternehmer.de](https://www.kleinunternehmer.de/kleinunternehmerregelung.htm#:~:text=oder%20darauf%20verzichten%3A-,wie%20geht%20das%3F,-Ihre%20Entscheidung%20f%C3%BCr)

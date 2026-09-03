@@ -22,4 +22,8 @@ A small business (*Kleinunternehmer*) is a business that follows 2 conditions:
 
 If you are a *Kleinunternehmer*, you can *choose* not to charge [VAT](/glossary/Umsatzsteuer). This makes accounting easier, but it's not always a good idea.
 
+Both [sole proprietors](/glossary/Kleinunternehmer) and [corporations](/glossary/Kapitalgesellschaft) can be a *Kleinunternehmer*.[^1]
+
 **[More information ➞](/guides/kleinunternehmer)**
+
+[^1]: [lexware.de](https://www.lexware.de/wissen/buchhaltung-finanzen/kleinunternehmerregelung-so-kann-die-gmbh-profitieren/#:~:text=auch%20eine%20gmbh%20kann%20sich%20umsatzsteuerlich) (2026), [Existenzgründer](https://www.existenzgruender.de/DE/Gruendung-vorbereiten/Gruendungswissen/Steuern/Kleinunternehmerregelung/inhalt.html#:~:text=zu%20den%20kleinunternehmern%20gehoren)

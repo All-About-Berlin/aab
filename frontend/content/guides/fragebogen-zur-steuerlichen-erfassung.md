@@ -336,7 +336,7 @@ Information about the previous business form. You can leave this section empty b
     - You have been a freelancer (*[[Freiberufler]]*) in Germany in the last 5 years
     - ...or you have owned a business (*[[Gewerbe]]*) in Germany in the last 5 years
     - ...or you have owned an agricultural or silvicultural operation in Germany in the last 5 years
-    - ...or you have owned more than 1% of a corporation (*Kapitalgesellschaft*)
+    - ...or you have owned more than 1% of a [corporation](/glossary/Kapitalgesellschaft)
 - **Art der Tätigkeit/Beteiligung** - Type of operation/involvement  
     If you chose "Ja" in the last field, enter a description of your previous activities. For example, you can write that you were the "owner of Jim's   
     Widget Company", or that you were a "freelance photographer". Remember: you must fill this form in German. If you chose "Nein", leave this field empty.
@@ -354,7 +354,7 @@ If you chose "Ja", enter the tax number of that previous operation.
 
 ### Section 13: Konzernzugehörigkeit
 
-If your new business belongs to another corporation or enterprise, enter their information here. For most businesses, you should skip this step.
+If your new business belongs to another [corporation](/glossary/Kapitalgesellschaft), enter their information here. For a [sole proprietorship](/glossary/Einzelunternehmen), skip this step.
 
 ### Section 14: Angaben zur Festsetzung der Vorauszahlungen
 

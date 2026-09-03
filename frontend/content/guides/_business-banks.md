@@ -32,9 +32,11 @@ If you connect your bank account to your bookkeeping software, you only see busi
 
 ### It's sometimes required
 
-If you have a corporation or limited liability company (*GmbH*, *UG*, *AG* or *KGaA*), you *must* have a separate bank account for your business.[^4]
+**If you are a [sole proprietor](/glossary/Einzelunternehmen)**, you can use your personal bank account.[^5] I still recommend opening a business bank account, but it's optional.
 
-Freelancers and sole proprietors do not need a business bank account[^5], but it's still a good idea.
+**If you have a [corporation](/glossary/Kapitalgesellschaft)** (*GmbH*, *UG*, *AG* or *KGaA*), it must have its own bank account.[^4] You can't [form a corporation](/guides/incorporation) without a business bank account.
+
+**[How to open a bank account for a corporation ➞](/guides/incorporation#open-a-bank-account)**
 
 ## List of German business banks
 
