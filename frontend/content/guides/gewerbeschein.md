@@ -20,10 +20,10 @@ In Berlin, you can do it online. It takes around 30 minutes. It costs €{{GEWER
 
 You must do your *Gewerbeanmeldung* if...
 
-- You are forming a corporation (*GmbH* or *UG*)
-- or you start a *[[Gewerbe]]* and you are a sole proprietor (*Einzelunternehmer*)
+- You are forming a [corporation](/glossary/Kapitalgesellschaft) (*GmbH*, *UG*, *AG* or *KGaA*)
+- or you a [sole proprietor](/glossary/Einzelunternehmen), and you are registering a *[[Gewerbe]]*
 
-If you are a *[[Freiberufler]]* and a sole proprietor, you don't need to do the *Gewerbeanmeldung*, and you don't need to pay [trade tax](/glossary/Gewerbesteuer).[^0]
+If you are a sole proprietor and a *[[Freiberufler]]*, you don't need to do the *Gewerbeanmeldung*. You don't pay [trade tax](/glossary/Gewerbesteuer).[^0]
 
 ## Before you start
 
@@ -44,7 +44,7 @@ Open the **[online registration form](/out/business-anmeldung)**. Click the *Anm
 
 [![Step 1 of the Gewerbeanmeldung form](/images/gewerbeanmeldung-berlin-step1.png)](/images/gewerbeanmeldung-berlin-step1.png)
 
-**Rechtsform:** Choose the type of business you want to start. Most people choose a sole proprietorship (*[[Einzelunternehmen]]*). To register a corporation (*GmbH* or *UG*), [talk with a tax advisor](/guides/english-speaking-steuerberater-berlin) first.
+**Rechtsform:** Choose the type of business you want to start. Most people choose a sole proprietorship (*[[Einzelunternehmen]]*). To register a [corporation](/glossary/Kapitalgesellschaft), [talk with a tax advisor](/guides/english-speaking-steuerberater-berlin) first.
 
 **Anmeldung erfolgt wegen:** Choose *Neuerrichtung des Betriebes* to register a new business.
 

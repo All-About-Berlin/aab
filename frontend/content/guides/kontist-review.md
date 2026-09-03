@@ -207,7 +207,7 @@ Your bank, your accounting software and your tax advisor should be 3 different s
 - **[Holvi](/out/holvi)**  
     Very similar to Kontist. They have better invoicing and better reports. Your tax advisor can access your account and export transactions.
 - **[Qonto](/out/qonto)**  
-    Similar to Kontist. Corporations and partnerships can also open an account.
+    Similar to Kontist. [Corporations](/glossary/Kapitalgesellschaft) and partnerships can also open an account. You can use Qonto to [form a corporation](/guides/incorporation).
 - **[bunq Business](/out/bunq-business)**  
     Exactly like bunq personal accounts, but for businesses. They speak English.
 - **[Revolut Business](/out/revolut-business)**  

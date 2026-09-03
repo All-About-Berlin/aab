@@ -11,4 +11,6 @@ related_guides:
 
 A *Geschäftskonto* is a bank account for your business.
 
-If you [start a business in Germany](/guides/start-a-business-in-germany), it's better to use a separate bank account for your business transactions. If you open a limited liability company (*GmbH*, *UG*, *AG* or *KGaA*) in Germany, you must have a business bank account.
+[Corporation](/glossary/Kapitalgesellschaft) must have their own business bank account. You must open a bank account when you [form a corporation](/guides/incorporation).
+
+If you are a [sole proprietor](/glossary/Einzelunternehmen), a business bank account is optional, but recommended.
