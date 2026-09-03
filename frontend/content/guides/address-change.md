@@ -64,7 +64,7 @@ To change your business address, you must update your address in these places:
 - [ ] **[Finanzamt](https://www.elster.de/eportal/formulare-leistungen/alleformulare/aenderungadresse)**  
     Do it online in [[ELSTER]], ask your [tax advisor](/glossary/Steuerberater) to do it, or email your *[[Finanzamt]]*.[^1] If your new address is served by a different *Finanzamt*, you will get a new *[[Steuernummer]]*.[^0]
 - [ ] **[Ordnungsamt or Gewerbeamt](/out/business-ummeldung)** (if you have a *[[Gewerbe]]*)
-- [ ] **[[Handelsregister]]**, if your business is listed. This requires a notary.[^3]
+- [ ] **[[Handelsregister]]**, if your business is listed. Changing this address requires a notary.[^3] It costs a few hundred euros.[^4]
 - [ ] **[Künstlersozialkasse](https://verwaltung.bund.de/leistungsverzeichnis/de/leistung/99107071011009)** (if you are a member)
 - [ ] **Your website's [[Impressum]]**
 - [ ] **Your invoices**
@@ -89,6 +89,7 @@ Mail forwarding is **not reliable**. Official mail from the *[[Bürgeramt]]*, *[
 [^1]: [umziehen.de](https://umziehen.de/an-ab-ummelden/finanzamt-ummelden-166)
 [^2]: [berlin.de](https://service.berlin.de/dienstleistung/120918/)
 [^3]: [IHK](https://www.ihk.de/bodensee-oberschwaben/recht/auftreten-im-geschaeftsverkehr/unternehmensfuehrung/umzugscheckliste-fuer-unternehmer-4005392#:~:text=%C3%84nderung%20der%20Gesch%C3%A4ftsanschrift-,ist%20in%20notariell%20beglaubigter%20form,-beim%20bisher%20zust%C3%A4ndigen) (2026), [Suat Göydeniz](https://stb-goeydeniz.de/) (2026)
+[^4]: [akamba.eu](https://akamba.eu/2024/06/was-ist-der-unterschied-zwischen-geschaeftsadresse-firmensitz-und-betriebsstaette/#:~:text=es%20fallen%20kosten,-i.H.v.45-500) (2026)
 [^5]: [reddit.com](https://old.reddit.com/r/Munich/comments/1168mai/residence_permit_card_delay_aufenthaltstitel/), [reddit.com](https://old.reddit.com/r/germany/comments/13c04eb/nachsendeauftrag_for_ausl%C3%A4nderbeh%C3%B6rde/), [Oliver Frankfurth](/out/deregistrationde-abmeldung) (October 2023), [verbraucherzentrale.de](https://www.verbraucherzentrale.de/wissen/vertraege-reklamation/kundenrechte/nachsendeauftrag-wann-er-sinnvoll-ist-und-was-sie-beachten-muessen-29305), [paketda.de](https://www.paketda.de/nachsendung/nachsendeauftrag-faq.html#nichtnachsenden), [reddit.com](https://old.reddit.com/r/askberliners/comments/160tdtv/forwarded_mail_not_getting_received/) (August 2023), [reddit.com](https://old.reddit.com/r/germany/comments/1j114cl/forwarding_mail_in_berlin_germany/) (March 2025), [Arbeitsagentur](https://www.arbeitsagentur.de/arbeitslos-arbeit-finden/arbeitslosengeld/das-muessen-sie-beachten/urlaub-und-umzug#:~:text=nachsendeantrag%20reicht%20nicht%20aus) (January 2025)
 [^6]: Kathleen Parker at [Red Tape Translation](https://redtapetranslation.com/) (October 2023)
 [^8]: [Berlin.de](https://www.berlin.de/einwanderung/aufenthalt/elektronischer-aufenthaltstitel/#Adresse) (January 2025), [Reddit](https://old.reddit.com/r/germany/comments/yqviwt/aufenthaltstitel_and_new_address/) (2022), personal experience (2019)
