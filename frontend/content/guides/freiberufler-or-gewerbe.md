@@ -42,13 +42,13 @@ If you register a *Gewerbe*, you must...
 
 - **[Get a trade licence](/guides/gewerbeschein)** (*[[Gewerbeschein]]*)
 - **[Pay the trade tax](/guides/gewerbesteuer)** (*[[Gewerbesteuer]]*)  
-    In Berlin, sole proprietors give an extra {{GEWERBESTEUER_EXTRA_COST_BERLIN}}% of their profit for trade tax.
+    In Berlin, trade tax costs an extra {{GEWERBESTEUER_EXTRA_COST_BERLIN}}% of your [profit](/glossary/Gewinn).
 - **Join the [[IHK]] and pay the membership fee**  
-    In Berlin, if you are a *Gewerbetreibender*, you are forced to join the [[IHK]] and pay a membership fee. It costs [a few hundred euros per year](https://www.ihk.de/berlin/ueber-uns/mitgliedschaft-und-beitrag/das-verfahren-der-beitragserhebung/beitragsberechnung-2280534).
+    In Berlin, you automatically join the [[IHK]]. The membership fee is [a few hundred euros per year](https://www.ihk.de/berlin/ueber-uns/mitgliedschaft-und-beitrag/das-verfahren-der-beitragserhebung/beitragsberechnung-2280534).
 - **[Get listed in the trade register](/guides/handelsregisternummer-germany)** (*[[Handelsregister]]*)  
     Some *Gewerbe* must be listed in the trade register. There are many exceptions.
 - **Use double entry bookkeeping**  
-    Some *Gewerbe* must use double entry bookkeeping. For small businesses, this is rarely required.
+    If you are not a *[[Kleingewerbe]]*, you must use double entry bookkeeping.
 
 If you are a *Freiberufler*, you don't need to do any of this. It saves you time and money.
 
