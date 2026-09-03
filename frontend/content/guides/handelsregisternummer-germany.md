@@ -26,8 +26,8 @@ Most companies must be listed in the *[[Handelsregister]]* and get a *Handelsreg
 
 You must have a *Handelsregister* entry if...[^3]
 
-- **You are a corporation**  
-    An entry is required for a *GmbH*, *UG*, *AG*, *e. K.*, *oHG*, *KG*, or *GmbH & Co. KG*.[^7]
+- **You are a [corporation](/glossary/Kapitalgesellschaft)**  
+    An entry is required for a *GmbH*, *UG*, *AG*, *e.K.*, *oHG*, *KG*, or *GmbH & Co. KG*.[^7]
 - or **you are a [sole proprietor](/glossary/Einzelunternehmen)** and you are **not a [[Freiberufler]] or a [[Kleingewerbe]]**
 
 A *Handelsregister* entry has almost no benefits. It mostly means more effort, more paperwork and [more spam](/guides/incorporation#spam). Avoid it if you can.[^6]
