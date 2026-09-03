@@ -5,7 +5,7 @@ description: How to register a GmbH in Germany
 date_created: 2026-08-26
 ---
 
-This guide explains how to found a limited liability company (*GmbH*) in Germany. This guide is based on my own experience.
+This guide explains how to incorporate in Germany, based on my own experience.
 
 This is part of a bigger guide: [how to start a business in Germany](/guides/start-a-business-in-germany).
 
@@ -117,9 +117,9 @@ Some are "virgin" and have no history. Others already have a history, and that c
 
 ### Incorporate in another country
 
-Founding in Estonia or another country is not a good idea.[^28]
+If you live in Germany, and you operate your business from Germany, you will be taxed in Germany.[^62] Founding your company in another country means more paperwork, but not less taxes.
 
-Firma.de?
+For example, Estonian e-Residency [does not make sense](https://eidel.io/posts/estonias-e-residency-is-awesome-and-sucks-too) if you run your company from Germany.
 
 ## Requirements
 
@@ -149,6 +149,7 @@ The recurring costs for holding + GmbH are [around 3k per year](https://eidel.io
 - Bundesanzeiger fee?
 - *[[Gewerbesteuer]]*
 - [Business bank account](#open-a-bank-account)
+- Virtual office, €50-150 per month
 
 If you want lower costs, an Einzelunternehmer might make more sense.
 
@@ -166,7 +167,7 @@ Musterprotokoll? Saves having to hire a lawyer. Should make notary cheaper.[^37]
 
 "Musterprotokoll is never a good idea when you want to optimize tax efficiency and minimize share holder conflicts- there are a lot of things you can implement here and should" - Seamus
 
-Create the holding company first[^25]. "You can also easily create the holding and the operational company in one step" - Seamus
+Create the holding company first.[^25] "You can also easily create the holding and the operational company in one step" - Seamus
 
 Why did I need a Führungszeugnis and Auskunft aus der Gewerbezentralregister? "To save money"
 
@@ -174,13 +175,22 @@ Do you need a tax advisor? Yes, for the Jahresabschluss and the more complicated
 
 Why the e.K -> GmbH route? "you can use Ausgliederung nach dem Umwandlungsgesetz (UmwG)" (Seamus). Converting your Einzelunternehmen that way means you can move your contracts and partnership agreements over, instead of redoing them.
 
-### 1. Choose your Firmensitz
+### 1. Choose your official address
 
-[Don't use your home address](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=your%20company%20address%20shouldn't%20be%20your%20home%20address), get an office space.[^32] Address change a huge, expensive pain? Main reason is Betriebsaufspaltung. Other reason is keeping your home address private.
+Your company needs an **company headquarters** (*Firmensitz*). This your company's official, public address. It appears on your invoices, in your *[[Impressum]]*, and in the *[[Handelsregister]]*. To change this address, you need a notary.[^61]
 
-Which German state?
+You have different options for your *Firmensitz*:
 
-Can https://www.firma.de/ help?
+- **Real office**  
+    ...
+- **Virtual office**  
+    Pay a monthly fee to use another company's office as your official address. Many co-working spaces offer this.
+- **Home address**  
+    You can use your home address as the *Firmensitz*, but it's a bad idea.[^32] Landlords don't like it. They might refuse to put your company name on your mailbox. You can use your apartment as an office, but if you start having meetings and receiving clients at home, your landlord can try to kick you out.[^59]
+
+You can have a different **management address** (*Ort der Geschäftsleitung*). This where you operate the company from, and where you are taxed. For example, if you live and work in Berlin, you will be taxed in Berlin, even if your company is registered in another city or another country.[^60]
+
+Can https://www.firma.de/ help? How to choose a virtual office? Costs?
 
 ### 2. Find a tax advisor
 
@@ -199,8 +209,6 @@ Defines how your company works:
 ### 4. Choose a name and description
 
 You must choose a name for your GmbH. For example, "All About Berlin GmbH".
-
-
 
 [See if it's in the Handelregister.](https://www.handelsregister.de/rp_web/normalesuche/welcome.xhtml)
 
@@ -420,11 +428,10 @@ If you plan to hire:
 [^25]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=top%20of%20that.-,If%20you%20want%20to,your%20holding%20company%20first.,-Winding%20down%20a) (2025), [Alexander von Engelhardt](https://www.vonengelhardt.com/en/miscellanious#:~:text=the%20holding%20company%20must%20be%20established%20first%20and%20then%20the%20subsidiary!)
 [^26]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=Winding%20down%20a,second-hand%20information.) (2025)
 [^27]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=tldr%3A%20a%20sole%20proprietorship%20makes%20sense%20if) (2025)
-[^28]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=want%20to%20incorporate%20in%20another%20country) (2025)
 [^29]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=Use%20the%20%22Musterprotokoll,it%20thing%20though.) (2025), [Oliwia Golec](https://www.linkedin.com/in/oliwia-golec-3678a7114) (2026)
 [^30]: [Fuer Gruender](https://www.fuer-gruender.de/wissen/unternehmen-gruenden/unternehmen-anmelden/handelsregister/achtung-abzocke/), [IHK](https://www.ihk.de/osnabrueck/recht-und-fair-play/aktuelles/fake-rechnungen-5565360) (2022), [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=Beware%20of%20%22Handelsregister,need%20to%20pay.) (2025)
 [^31]: [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=old-school%20dinosaur%20banks%20easily%20take%20multiple%20weeks) (2025)
-[^32]: [Hacker News](https://news.ycombinator.com/item?id=39967164) (2024)
+[^32]: [Hacker News](https://news.ycombinator.com/item?id=39967164) (2024), [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=your%20company%20address%20shouldn't%20be%20your%20home%20address)
 [^33]: [Anlage TrGebV](https://www.buzer.de/Anlage_TrGebV.htm), [fuer-gruender.de](https://www.fuer-gruender.de/wissen/unternehmen-gruenden/unternehmen-anmelden/transparenzregister/#:~:text=Geb%C3%BChren%20und-,kosten,-Der%20Prozess%20des) (2026)
 [^34]: [Suat Göydeniz](https://stb-goeydeniz.de/) (2026)
 [^35]: [Oliver Eidel](https://eidel.io/posts/founding-a-company-in-germany-in-2026-apparently-takes-three-months#:~:text=berlin%20registry%20seems%20to%20be%20notoriously%20slow) (2026)
@@ -446,8 +453,12 @@ If you plan to hire:
 [^51]: Citation needed
 [^52]: [Alexander von Engelhardt](https://www.vonengelhardt.com/en/money-company) (2026)
 [^53]: [Alexander von Engelhardt](https://www.vonengelhardt.com/en/who-s-who#:~:text=cannot%20the%20notary%20consult%20on%20my%20needs%3F) (2026)
-[^54]: https://www.vonengelhardt.com/en/who-s-who#:~:text=well%2C%20my%20german%20is%20far%20from%20perfect%20(https://www.vonengelhardt.com/en/who-s-who#:~:text=limited%20liability%20companies%20of%20any%20kind%20are%20by%20their%20form%20already%20considered%20as%20trades) (2026)
-[^55]: [Alexander von Engelhardt](https://www.vonengelhardt.com/en/who-s-who#:~:text=well%2C%20my%20german%20is%20far%20from%20perfect%20)
+[^54]: [Alexander von Engelhardt](https://www.vonengelhardt.com/en/who-s-who#:~:text=limited%20liability%20companies%20of%20any%20kind%20are%20by%20their%20form%20already%20considered%20as%20trades) (2026)
+[^55]: [Alexander von Engelhardt](https://www.vonengelhardt.com/en/who-s-who#:~:text=well%2C%20my%20german%20is%20far%20from%20perfect%20) (2026)
 [^56]: [Alexander von Engelhardt](https://www.vonengelhardt.com/en/shelf-company-or-scratch-founding#gsc.tab=0)
 [^57]: [Alexander von Engelhardt](https://www.vonengelhardt.com/en/aliens-in-a-company#gsc.tab=0)
 [^58]: [Alexander von Engelhardt](https://www.vonengelhardt.com/en/money-company#:~:text=how%20do%20i%20pay%20the%20initial%20capital)
+[^59]: [Mietrecht.org](https://www.mietrecht.org/mietvertrag/mieter-nutzt-wohnung-gewerblich/#:~:text=duldungspflichtige%20gewerbliche%20nutzungen%20der%20mietwohnungen) (2017), [juraforum.de](https://www.juraforum.de/news/wohnung-als-firmensitz-wann-darf-der-vermieter-kuendigen_273094)
+[^60]: Seamus Wolf (2026), [ebnerstolz.de](https://www.ebnerstolz.de/de/unser-angebot/leistungen/steuerberatung/allgemeine-steuerberatung/ort-geschaeftsleitung-einmanngesellschaften-95135.html) (2026)
+[^61]: [akamba.eu](https://akamba.eu/2024/06/was-ist-der-unterschied-zwischen-geschaeftsadresse-firmensitz-und-betriebsstaette/) (2024)
+[^62]: [§ 20 AO](https://www.buzer.de/20_AO.htm), Seamus Wolf (2026), [Haufe](https://www.haufe.de/id/kommentar/ort-der-geschaeftsleitung-HI506173.html) (2026), [bwsgk.de](https://bwsgk.de/2025/07/29/ort-der-geschaeftsleitung-einfach-erklaert/) (2025), [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=want%20to%20incorporate%20in%20another%20country) (2025)
