@@ -11,6 +11,14 @@ related_guides:
     - guides/fragebogen-zur-steuerlichen-erfassung.md
 ---
 
-The *Handelsregisternummer* is a number every business gets when it's listed in the German Trade Register (*Handelsregister*). You get a *Handelsregisternummer* by [filling the *Fragebogen zur steuerlichen Erfassung*](/guides/fragebogen-zur-steuerlichen-erfassung).
+The *Handelsregisternummer* is a number every business gets when it's listed in the German Trade Register (*Handelsregister*).
 
-**[More about the Handelsregisternummer ➞](/guides/handelsregisternummer-germany)**
+The *Handelsregisternummer* has the format **HRA 12345** or **HRB 12345**:
+
+- **HRA** for a [sole proprietorship](/glossary/Einzelunternehmen) or **HRB** for a [corporation](/glossary/Kapitalgesellschaft).
+- **12345** is the unique number of this business.
+- There is sometimes an extra letter. For example, HRB 247469 **B**.
+
+Some *Handelsregisternummer* examples: HRB 247469 B, HRB 178881 B, HRA 350654
+
+**[How to get a Handelsregisternummer ➞](/guides/handelsregisternummer-germany)**
