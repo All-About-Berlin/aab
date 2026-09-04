@@ -4,6 +4,8 @@ german_term: Europäischer Wirtschaftsraum
 english_term: European Economic Area
 description: The EEA is the European Union, Iceland, Liechtenstein and Norway.
 date_created: 2023-05-03
+related_guides:
+    - guides/residence-permit.md
 ---
 
 The European Economic Area (EEA, EWR in German) includes all **[[European Union]] countries**, plus **Iceland**, **Liechtenstein** and **Norway**.[^1] Citizens of the EEA can live and work in other EEA countries. They do not need a [residence permit](/glossary/Aufenthaltstitel).

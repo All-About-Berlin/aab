@@ -4,6 +4,9 @@ german_term: Umwelt-Plakette
 english_term: Environmental sticker
 description: A sticker that shows a vehicle's emission class. Required to drive in environmental zones.
 date_created: 2026-06-03
+related_guides:
+    - guides/visit-berlin.md
+    - guides/driving-licence.md
 ---
 
 The *Umwelt-Plakette* or *Feinstaubplakette* is a sticker you put on your car's windscreen. It proves that your car meets low-emission standards. It allows you to drive in [low-emission zones](/glossary/Umweltzone).

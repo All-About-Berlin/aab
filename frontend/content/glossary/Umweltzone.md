@@ -4,6 +4,9 @@ german_term: Umweltzone
 english_term: Low-emission zone
 description: A low-emission zone in a city where only vehicles with an Umwelt-Plakette are allowed to drive.
 date_created: 2026-06-03
+related_guides:
+    - guides/visit-berlin.md
+    - guides/driving-licence.md
 ---
 
 A low-emission zone (*Umweltzone*) is an area where high-emission vehicles are banned. Your vehicle must have an *[[Umwelt-Plakette]]* to drive there.

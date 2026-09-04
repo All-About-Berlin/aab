@@ -4,6 +4,9 @@ german_term: Au pair
 english_term: Au pair
 description: A person who lives and work for a host family, usually in another country.
 date_created: 2022-01-11
+related_guides:
+    - guides/find-a-job-in-berlin.md
+    - guides/residence-permit.md
 ---
 
 An au pair is a person who lives and work for a host family, usually in another country. Au pairs usually do housework and take care of children. In return, they get a place to live, and a small allowance. In Germany, the minimum allowance is €{{AU_PAIR_MIN_ALLOWANCE|cur}} per month.[^0]
