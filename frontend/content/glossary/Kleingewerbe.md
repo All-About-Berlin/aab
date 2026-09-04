@@ -4,6 +4,9 @@ german_term: Kleingewerbe
 english_term: Small trade
 description: A Gewerbe that has fewer bureaucratic and accounting obligations.
 date_created: 2026-09-02
+related_guides:
+    - guides/start-a-business-in-germany.md
+    - guides/handelsregisternummer-germany.md
 ---
 
 A *Kleingewerbe* is a small-scale [sole proprietorship](/glossary/Einzelunternehmen).[^3] For example, a business with a single address, few employees, few clients, and simple bookkeeping.[^1] There is no precise definition.[^2]
