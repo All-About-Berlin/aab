@@ -1,20 +1,23 @@
 from datetime import timedelta
 
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.models import User
 from django.core.paginator import EmptyPage, Paginator
 from django.db.models import Count, F, Max
 from django.db.models.functions import Coalesce
 from django.http import Http404
-from django.shortcuts import get_object_or_404, redirect, render
+from django.shortcuts import redirect
 from django.urls import reverse
 from django.utils import timezone
+from django.utils.decorators import method_decorator
+from django.views.generic import CreateView, DetailView, ListView, TemplateView
+from django.views.generic.edit import FormMixin
 
 from forum.forms import ReplyForm, ThreadForm
 from forum.models import Category, Reply, Thread
 
 
-THREADS_PER_PAGE = 20
 REPLIES_PER_PAGE = 20
 REPLY_RATE_LIMIT = timedelta(minutes=1)
 THREAD_RATE_LIMIT = timedelta(minutes=1)
@@ -27,129 +30,122 @@ def _get_page(paginator: Paginator, page_number: int):
         raise Http404
 
 
-@login_required
-def forum_signup_welcome(request):
-    return render(request, "forum/signup/welcome.html")
+class ForumSignupWelcomeView(LoginRequiredMixin, TemplateView):
+    template_name = "forum/signup/welcome.html"
 
 
-def forum_rules(request):
-    return render(request, "forum/rules.html")
+class ForumRulesView(TemplateView):
+    template_name = "forum/rules.html"
 
 
-@login_required
-def forum_new_thread(request):
-    if request.method == "POST":
-        form = ThreadForm(request.POST)
+class ForumNewThreadView(LoginRequiredMixin, CreateView):
+    form_class = ThreadForm
+    template_name = "forum/newThread.html"
+
+    def form_valid(self, form):
+        recent_cutoff = timezone.now() - THREAD_RATE_LIMIT
+        if Thread.objects.filter(author=self.request.user, creation_date__gte=recent_cutoff).exists():
+            form.add_error(None, "You're posting too fast! Please wait a minute before posting again.")
+            return self.form_invalid(form)
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        return reverse("forum_thread", args=[self.object.pk])
+
+
+class ForumIndexView(ListView):
+    template_name = "forum/index.html"
+    paginate_by = 20
+
+    def get_queryset(self):
+        queryset = (
+            Thread.objects.annotate(
+                last_activity_date=Coalesce(Max("replies__creation_date"), F("creation_date")),
+                reply_count=Count("replies"),
+            )
+            .select_related("author")
+            .order_by("-last_activity_date")
+        )
+        category = self.request.GET.get("category")
+        if category:
+            if category not in Category.values:
+                raise Http404
+            queryset = queryset.filter(category=category)
+        return queryset
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        category = self.request.GET.get("category")
+        context["category"] = Category(category) if category else None
+        return context
+
+
+class ForumUserProfileView(DetailView):
+    model = User
+    template_name = "forum/userProfile.html"
+    slug_field = "username"
+    slug_url_kwarg = "username"
+    context_object_name = "profile_user"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        user = self.object
+        threads = (
+            Thread.objects.filter(author=user)
+            .annotate(
+                last_activity_date=Coalesce(Max("replies__creation_date"), F("creation_date")),
+                reply_count=Count("replies"),
+            )
+            .select_related("author")
+            .order_by("-creation_date")
+        )
+        replies = user.forum_replies.select_related("thread").order_by("-creation_date")
+        context["threads"] = threads
+        context["replies"] = replies
+        context["thread_count"] = threads.count()
+        context["post_count"] = replies.count()
+        return context
+
+
+class ForumThreadView(FormMixin, DetailView):
+    model = Thread
+    template_name = "forum/thread.html"
+    form_class = ReplyForm
+    pk_url_kwarg = "thread_id"
+    context_object_name = "thread"
+
+    def get_queryset(self):
+        return Thread.objects.select_related("author")
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        replies = self.object.replies.select_related("author").order_by("creation_date")
+        paginator = Paginator(replies, REPLIES_PER_PAGE)
+        context["page_obj"] = _get_page(paginator, self.kwargs.get("page", 1))
+        return context
+
+    @method_decorator(login_required)
+    def post(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        form = self.get_form()
         if form.is_valid():
-            recent_cutoff = timezone.now() - THREAD_RATE_LIMIT
-            if Thread.objects.filter(author=request.user, creation_date__gte=recent_cutoff).exists():
-                form.add_error(None, "You're posting too fast! Please wait a minute before posting again.")
-            else:
-                thread = form.save(commit=False)
-                thread.author = request.user
-                thread.save()
-                return redirect("forum_thread", thread_id=thread.pk)
-    else:
-        form = ThreadForm()
+            return self.form_valid(form)
+        return self.form_invalid(form)
 
-    return render(request, "forum/newThread.html", {"form": form})
-
-
-def forum_index(request, page: int = 1):
-    threads = (
-        Thread.objects.annotate(
-            last_activity_date=Coalesce(Max("replies__creation_date"), F("creation_date")),
-            reply_count=Count("replies"),
+    def form_valid(self, form):
+        recent_cutoff = timezone.now() - REPLY_RATE_LIMIT
+        if Reply.objects.filter(author=self.request.user, creation_date__gte=recent_cutoff).exists():
+            form.add_error(None, "You're posting too fast! Please wait a minute before replying again.")
+            return self.form_invalid(form)
+        reply = form.save(commit=False)
+        reply.author = self.request.user
+        reply.thread = self.object
+        reply.save()
+        last_page = max(1, -(-self.object.replies.count() // REPLIES_PER_PAGE))
+        url = (
+            reverse("forum_thread_page", args=[self.object.pk, last_page])
+            if last_page > 1
+            else reverse("forum_thread", args=[self.object.pk])
         )
-        .select_related("author")
-        .order_by("-last_activity_date")
-    )
-    category = request.GET.get("category")
-    if category:
-        if category not in Category.values:
-            raise Http404
-        threads = threads.filter(category=category)
-    paginator = Paginator(threads, THREADS_PER_PAGE)
-    page_obj = _get_page(paginator, page)
-
-    return render(
-        request,
-        "forum/index.html",
-        {
-            "page_obj": page_obj,
-            "paginator": paginator,
-            "base_url": reverse("forum_index"),
-            "category": Category(category) if category else None,
-        },
-    )
-
-
-def forum_user_profile(request, username: str):
-    user = get_object_or_404(User, username=username)
-    threads = (
-        Thread.objects.filter(author=user)
-        .annotate(
-            last_activity_date=Coalesce(Max("replies__creation_date"), F("creation_date")),
-            reply_count=Count("replies"),
-        )
-        .select_related("author")
-        .order_by("-creation_date")
-    )
-    replies = user.forum_replies.select_related("thread").order_by("-creation_date")
-    thread_count = threads.count()
-    post_count = replies.count()
-
-    return render(
-        request,
-        "forum/userProfile.html",
-        {
-            "profile_user": user,
-            "threads": threads,
-            "replies": replies,
-            "thread_count": thread_count,
-            "post_count": post_count,
-        },
-    )
-
-
-def forum_thread(request, thread_id: int, page: int = 1):
-    thread = get_object_or_404(Thread.objects.select_related("author"), pk=thread_id)
-
-    if request.method == "POST":
-        if not request.user.is_authenticated:
-            return redirect("account_login")
-        reply_form = ReplyForm(request.POST)
-        if reply_form.is_valid():
-            recent_cutoff = timezone.now() - REPLY_RATE_LIMIT
-            if Reply.objects.filter(author=request.user, creation_date__gte=recent_cutoff).exists():
-                reply_form.add_error(None, "You're posting too fast! Please wait a minute before replying again.")
-            else:
-                reply = reply_form.save(commit=False)
-                reply.author = request.user
-                reply.thread = thread
-                reply.save()
-                last_page = max(1, -(-thread.replies.count() // REPLIES_PER_PAGE))
-                url = (
-                    reverse("forum_thread_page", args=[thread.pk, last_page])
-                    if last_page > 1
-                    else reverse("forum_thread", args=[thread.pk])
-                )
-                return redirect(f"{url}#reply-{reply.pk}")
-    else:
-        reply_form = ReplyForm()
-
-    replies = thread.replies.select_related("author").order_by("creation_date")
-    paginator = Paginator(replies, REPLIES_PER_PAGE)
-    page_obj = _get_page(paginator, page)
-
-    return render(
-        request,
-        "forum/thread.html",
-        {
-            "thread": thread,
-            "page_obj": page_obj,
-            "paginator": paginator,
-            "base_url": reverse("forum_thread", args=[thread.pk]),
-            "reply_form": reply_form,
-        },
-    )
+        return redirect(f"{url}#reply-{reply.pk}")
