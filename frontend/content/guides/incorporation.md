@@ -1,43 +1,31 @@
 ---
 title: How to incorporate in Germany
 short_title: How to incorporate in Germany
-description: How to register a GmbH in Germany
+description: How to register a UG or GmbH in Germany
 date_created: 2026-08-26
 ---
 
-This guide explains how to incorporate in Germany, based on my own experience.
-
-This is part of a bigger guide: [how to start a business in Germany](/guides/start-a-business-in-germany).
+This guide explains how to form a UG or GmbH in Germany. It's part of my guide on [starting a business in Germany](/guides/start-a-business-in-germany).
 
 {% tableOfContents %}
 
-## What it means to incorporate
-
-...
-
 ## Advantages of incorporating
 
-### Pay less taxes
+### Pay less income tax
 
-You pay yourself a salary. You pay income tax on that salary, but deduct it as a corporate expense. Make sure salary comes close to average 30% tax rate - 12k per month. Leave the rest inside the company.
+If you earn over €100,000 per year, incorporating helps you pay less taxes than [sole proprietors](/glossary/Einzelunternehmen).[^67]
 
-Max compensation: https://ofd-bw.fv-bwl.de/site/pbs-bw-fa2/get/documents_E-1587952785/mfw/OFD/Dokumente/FAQ%20-%20Steuern/Angemessenheitstabelle_Gf-Geh%c3%a4lter_ab_2024.pdf
+In Germany, corporate profits are taxed at around 30%. The remaining money stays in the corporation. To withdraw the money, you can pay yourself a salary or pay yourself dividends.
 
-30% corporate tax/commercial trade tax on the business profit.
+**If you pay yourself a salary**, it's a [tax-deductible](/glossary/steuerlich%20absetzbar) expense for your corporation.[^68] The corporation pays 0% tax on your salary, and you pay up to {{INCOME_TAX_MAX_RATE}}% [income tax](/glossary/Einkommensteuer).
 
-Two ways to pay yourself:
+**If you pay yourself dividends**, it's not [tax-deductible](/glossary/steuerlich%20absetzbar) for your corporation. The corporation pays ~30% corporate taxes, then you pay ~25% [capital gains tax](/glossary/Kapitalertragsteuer).[^65]
 
-- Dividends, taxed at a flat 25-26% (Kapitalertragsteuer)
-- or salary, taxed like normal income (Einkommensteuer, church tax){{RECOMMENDED}}
+You can also do a mix of both.[^64]
 
-The salary that you pay yourself is a tax-deductible expense for your company.
+Instead of paying yourself, you can also **reinvest the profits** (*Thesaurierung*). The money stays in the corporation, and is reinvested in stocks or ETFs. Since corporate taxes are lower than income taxes, you have more money to reinvest.[^69]
 
-It's a regular income for you.
-
-Salary to self: tax-deductible for the company, taxed like normal income
-Fazit: min *and* max 30% effective tax rate
-
-Minimum yearly income to make it worth it: ~105k (~4% tax difference), but practically more 150-180k (8% tax difference).
+Teileinkünfteverfahren?
 
 ### Limited liability
 
@@ -51,7 +39,7 @@ If you work in a high-risk industry where messing up could get you sued for all 
 
 ## Disadvantages of incorporating
 
-Slow, expensive, more paperwork, much harder than Einzelunternehmen
+Slow, expensive, more paperwork, much harder than Einzelunternehmen. Most people I asked recommended to avoid it if at all possible.
 
 ### Extra costs and paperwork?
 
@@ -478,3 +466,8 @@ If you plan to hire:
 [^61]: [akamba.eu](https://akamba.eu/2024/06/was-ist-der-unterschied-zwischen-geschaeftsadresse-firmensitz-und-betriebsstaette/) (2024)
 [^62]: [§ 20 AO](https://www.buzer.de/20_AO.htm), Seamus Wolf (2026), [Haufe](https://www.haufe.de/id/kommentar/ort-der-geschaeftsleitung-HI506173.html) (2026), [bwsgk.de](https://bwsgk.de/2025/07/29/ort-der-geschaeftsleitung-einfach-erklaert/) (2025), [Oliver Eidel](https://eidel.io/posts/all-my-hacks-for-founding-a-company-in-germany-and-running-it#:~:text=want%20to%20incorporate%20in%20another%20country) (2025)
 [^63]: [Oliver Eidel](https://eidel.io/posts/an-efficient-german-company-setup-gmbh#:~:text=the%20prices%20i've%20seen%20range%20from%2050-200%E2%82%AC%20%2F%20month) (2025)
+[^64]: [reiss-steuerkanzlei.de](https://www.reiss-steuerkanzlei.de/post/gmbh-dividende-vs-gehalt#:~:text=die%20steuerlich%20sinnvollste%20losung%20ist%20fast%20immer) (2026)
+[^65]: [reiss-steuerkanzlei.de](https://www.reiss-steuerkanzlei.de/post/gmbh-dividende-vs-gehalt#:~:text=Grundsystematik%3A%20Gehalt%20vs.-,gewinnausschuttung,-Gesch%C3%A4ftsf%C3%BChrergehalt) (2026), [norman.finance](https://norman.finance/de/blog/gewinnausschuettung-oder-gehalt-gmbh#:~:text=Aussch%C3%BCttung%3A%20doppelt-,besteuert,-Die%20Aussch%C3%BCttung%20durchl%C3%A4uft) (2026)
+[^67]: [hsa-steuerberater.de](https://www.hsa-steuerberater.de/post/wann-lohnt-sich-eine-gmbh#:~:text=ab%20einem%20gewinn%20von%20100.000%20%E2%82%AC%20jahrlich) (2026)
+[^68]: [hsa-steuerberater.de](https://www.hsa-steuerberater.de/post/wann-lohnt-sich-eine-gmbh#:~:text=das%20gehalt%20ist%20betriebsausgabe%20der%20gmbh) (2026)
+[^69]: [hsa-steuerberater.de](https://www.hsa-steuerberater.de/post/wann-lohnt-sich-eine-gmbh#:~:text=dadurch%20steht%20mehr%20kapital%20fur%20investitionen%20zur%20verfugung) (2026)
