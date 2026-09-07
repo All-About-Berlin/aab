@@ -3,17 +3,25 @@
 
 {% block page_title %}User {{ profile_user.username }} - All About Berlin forum{% endblock %}
 {% block page_description %}Topics and replies by {{ profile_user.username }} on the All About Berlin forum.{% endblock %}
+{% block postHead %}<link rel="canonical" href="{{ SITE_URL }}{% url 'forum_user' profile_user.username %}">{% endblock %}
 
 {% block content %}
 <article class="section h-card">
 	<h1 class="p-name">{{ profile_user.username }}</h1>
 	<div class="post-meta">
+		<nav class="breadcrumbs" aria-label="Breadcrumbs">
+			<i class="icon folder" aria-hidden="true"></i>
+			<ol>
+				<li><a href="{{ SITE_URL }}{% url 'forum_index' %}">Forum</a></li>
+				<li>User profile</li>
+			</ol>
+		</nav>
 		<div class="date">
 			<i class="icon calendar" aria-hidden="true"></i>
 			<time datetime="{{ profile_user.date_joined.isoformat }}">Joined on {{ profile_user.date_joined|short_datetime }}</time>
 		</div>
 		<div>
-			<i class="icon person" aria-hidden="true"></i>
+			<i class="icon bubble" aria-hidden="true"></i>
 			{{ thread_count }} topic{{ thread_count|pluralize }}, {{ post_count }} repl{{ post_count|pluralize:"y,ies" }}
 		</div>
 	</div>
@@ -37,9 +45,10 @@
 					<a class="p-author h-card" hidden href="{{ SITE_URL }}{% url 'forum_user' profile_user.username %}">{{ profile_user.username }}</a>
 					<div class="post-meta">
 						<a class="u-url" href="{{ SITE_URL }}{% url 'forum_thread' reply.thread.pk %}#reply-{{ reply.pk }}">{{ reply.thread.title }}</a>
-						<time class="dt-published" datetime="{{ reply.creation_date.isoformat }}">
-							{{ reply.creation_date|short_datetime }}
-						</time>
+						<div class="date" title="Posted on {{ reply.creation_date|date:'F j, H:i' }}" aria-label="Comment date">
+							<i class="icon calendar" aria-hidden="true"></i>
+							<time class="dt-published" datetime="{{ reply.creation_date.isoformat }}">{{ reply.creation_date|short_datetime }}</time>
+						</div>
 					</div>
 					<div class="article-body e-content">{{ reply.body|linebreaks }}</div>
 				</li>

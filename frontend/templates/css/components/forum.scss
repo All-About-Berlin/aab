@@ -2,9 +2,19 @@ main .section.hero:has(.intro-text){
     padding: 0 var(--w-page-border);
 }
 
-.breadcrumbs{
-    flex: 1;
-    order: 0!important;
+.post-meta{
+    border: none;
+    padding: 0;
+
+    .breadcrumbs{
+        flex: 1;
+        order: 0!important;
+    }
+
+    &:last-child{
+        padding-bottom: 0;
+        border-bottom: none;
+    }
 }
 
 :is(.threads, .replies){
@@ -21,8 +31,8 @@ main .section.hero:has(.intro-text){
     }
 
     .thread{
-        grid-template-areas: "title" "meta";
-        grid-template-columns: 1fr;
+        grid-template-areas: "title meta";
+        grid-template-columns: 1fr auto;
 
         h3{
             grid-area: title;
@@ -31,10 +41,6 @@ main .section.hero:has(.intro-text){
         }
 
         .post-meta{
-            .breadcrumbs{
-                flex: 1;
-            }
-
             a{
                 color: inherit;
             }
@@ -44,7 +50,7 @@ main .section.hero:has(.intro-text){
     .reply{
         grid-template-areas: "meta" "message";
         grid-template-columns: 1fr;
-        .post-meta .user{
+        .post-meta .username{
             flex: 1;
         }
 
@@ -60,19 +66,32 @@ main .section.hero:has(.intro-text){
             padding: var(--m) var(--w-page-border);
             border-radius: var(--b-radius);
         }
+
+        .username{
+            .icon{
+                display: none;
+            }
+            a{
+                @include text-bold;
+            }
+        }
     }
 
     :is(.thread, .reply){
         display: grid;
-        gap: var(--m);
+        gap: var(--s) var(--m);
         grid-auto-flow: column;
+        border-top: var(--b-box);
+        padding-top: var(--m);
 
         .post-meta{
+            color: var(--c-text-light);
             grid-area: meta;
             margin: 0;
-            padding: 0 0 var(--m);
+            border: none;
+            padding: 0;
 
-            a{
+            .date a{
                 color: inherit;
             }
         }
@@ -89,6 +108,13 @@ main .section.hero:has(.intro-text){
             grid-column: 2/-1;
             margin-top: var(--l);
         }
+    }
+}
+
+.username{
+    &.admin{
+        font-weight: bold;
+        color: var(--c-highlight);
     }
 }
 
