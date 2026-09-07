@@ -254,3 +254,7 @@ mise test
 [tasks."forum:create-test-data"]
 description = "Load forum test data (users, threads, replies) from the committed fixture"
 run = "docker compose exec backend python3 manage.py create_test_data"
+
+[tasks."forum:clear-cache"]
+description = "Clear the forum's cached responses"
+run = "docker compose exec backend python3 manage.py shell -c 'from django.core.cache import cache; cache.clear()'"

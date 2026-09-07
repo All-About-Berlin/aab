@@ -51,6 +51,15 @@ main .section.hero:has(.intro-text){
         &:target{
             border: 2px solid var(--c-border-clickable-hover);
         }
+
+        &.removed{
+            color: var(--c-text-light);
+            border: var(--b-box);
+            background: transparent;
+            grid-template-areas: none;
+            padding: var(--m) var(--w-page-border);
+            border-radius: var(--b-radius);
+        }
     }
 
     :is(.thread, .reply){

@@ -41,21 +41,39 @@ class Command(BaseCommand):
         for t in data["threads"]:
             thread, created = Thread.objects.get_or_create(
                 title=t["title"],
-                defaults={"author": users[t["author"]], "body": t["body"], "category": t.get("category", "")},
+                defaults={
+                    "author": users[t["author"]],
+                    "body": t["body"],
+                    "category": t.get("category", ""),
+                    "removal_reason": t.get("removal_reason", ""),
+                },
             )
             if not created:
                 continue
 
             thread_date = now - timedelta(seconds=rng.randint(0, 365 * 24 * 60 * 60))
-            Thread.objects.filter(pk=thread.pk).update(creation_date=thread_date)
+            thread_removal_date = thread_date + timedelta(hours=1) if t.get("removed") else None
+            Thread.objects.filter(pk=thread.pk).update(
+                creation_date=thread_date,
+                removal_date=thread_removal_date,
+            )
 
             replies = [
-                Reply.objects.create(thread=thread, author=users[r["author"]], body=r["body"])
+                Reply.objects.create(
+                    thread=thread,
+                    author=users[r["author"]],
+                    body=r["body"],
+                    removal_reason=r.get("removal_reason", ""),
+                )
                 for r in t.get("replies", [])
             ]
-            for reply in replies:
+            for reply, r in zip(replies, t.get("replies", [])):
                 reply_date = thread_date + timedelta(seconds=rng.randint(60, 5 * 24 * 60 * 60))
-                Reply.objects.filter(pk=reply.pk).update(creation_date=reply_date)
+                reply_removal_date = reply_date + timedelta(hours=1) if r.get("removed") else None
+                Reply.objects.filter(pk=reply.pk).update(
+                    creation_date=reply_date,
+                    removal_date=reply_removal_date,
+                )
             created_threads += 1
 
         self.stdout.write(
