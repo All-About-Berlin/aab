@@ -74,6 +74,9 @@
 		<h2>Reply to this topic</h2>
 		<hr>
 		{% csrf_token %}
+		{% if reply_form.non_field_errors %}
+			<p class="error">{{ reply_form.non_field_errors|first }}</p>
+		{% endif %}
 		<div class="form-group">
 			<label for="{{ reply_form.body.id_for_label }}">{{ reply_form.body.label }}</label>
 			{{ reply_form.body }}
