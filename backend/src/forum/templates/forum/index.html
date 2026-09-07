@@ -65,6 +65,11 @@
 			{% endif %}
 		</header>
 	{% endif %}
+	{% if user.is_authenticated %}
+		<div class="buttons bar">
+			<a class="button primary" href="{% url 'forum_new_thread' %}">New discussion</a>
+		</div>
+	{% endif %}
 <section class="section threads">
 	{% include "forum/_threadList.html" with threads=page_obj %}
 	{% include "forum/_pagination.html" %}

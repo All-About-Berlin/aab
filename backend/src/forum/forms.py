@@ -6,7 +6,7 @@ from allauth.account.forms import (
 )
 from django import forms
 
-from forum.models import Reply
+from forum.models import Reply, Thread
 
 
 class StripPlaceholdersMixin:
@@ -38,3 +38,10 @@ class ReplyForm(forms.ModelForm):
         fields = ["body"]
         labels = {"body": "Message"}
         widgets = {"body": forms.Textarea(attrs={"rows": 6})}
+
+
+class ThreadForm(forms.ModelForm):
+    class Meta:
+        model = Thread
+        fields = ["title", "category", "body"]
+        labels = {"body": "Message"}

@@ -2,7 +2,7 @@
 {% load forum_extras %}
 
 {% block page_title %}User {{ profile_user.username }} - All About Berlin forum{% endblock %}
-{% block page_description %}Threads and replies by {{ profile_user.username }} on the All About Berlin forum.{% endblock %}
+{% block page_description %}Topics and replies by {{ profile_user.username }} on the All About Berlin forum.{% endblock %}
 
 {% block content %}
 <article class="section h-card">
@@ -20,16 +20,16 @@
 </article>
 
 <section class="section threads" aria-label="Threads">
-	<h2>Recent discussions by {{ profile_user.username }}</h2>
+	<h2>Recent topics by {{ profile_user.username }}</h2>
 	{% if threads %}
 		{% include "forum/_threadList.html" with threads=threads %}
 	{% else %}
-		<p>This user has not started any discussions.</p>
+		<p>This user has not started any topics.</p>
 	{% endif %}
 </section>
 
 <section class="section replies" aria-label="Replies">
-	<h2>Recent comments by {{ profile_user.username }}</h2>
+	<h2>Recent replies by {{ profile_user.username }}</h2>
 	{% if replies %}
 		<ol class="h-feed">
 			{% for reply in replies %}
@@ -46,7 +46,7 @@
 			{% endfor %}
 		</ol>
 	{% else %}
-		<p>This user has not replied to any discussions.</p>
+		<p>This user has not replied to any topics.</p>
 	{% endif %}
 </section>
 {% endblock %}
