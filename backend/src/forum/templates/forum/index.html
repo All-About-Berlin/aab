@@ -72,6 +72,7 @@
 	{% endif %}
 <section class="section threads">
 	{% include "forum/_threadList.html" with threads=page_obj %}
+	{% url 'forum_index' as base_url %}
 	{% include "forum/_pagination.html" %}
 </section>
 {% endblock %}
