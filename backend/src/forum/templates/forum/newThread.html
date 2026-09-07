@@ -1,0 +1,52 @@
+{% extends "forum/layout.html" %}
+
+{% block page_title %}New topic - All About Berlin forum{% endblock %}
+
+{% block content %}
+<article class="section">
+	<h1>Start a new topic</h1>
+	<div class="post-meta">
+		<nav class="breadcrumbs" aria-label="Breadcrumbs">
+			<i class="icon folder" aria-hidden="true"></i>
+			<ol>
+				<li><a href="{% url 'forum_index' %}">Forum</a></li>
+				<li>New topic</li>
+			</ol>
+		</nav>
+	</div>
+
+	<form method="post" action="{% url 'forum_new_thread' %}">
+		{% csrf_token %}
+		{% if form.non_field_errors %}
+			<p class="error">{{ form.non_field_errors|first }}</p>
+		{% endif %}
+		<div class="form-group">
+			<label for="{{ form.title.id_for_label }}">{{ form.title.label }}</label>
+			{{ form.title }}
+			{% if form.title.errors %}
+				<span class="input-instructions error">{{ form.title.errors|first }}</span>
+			{% endif %}
+		</div>
+		<div class="form-group">
+			<label for="{{ form.body.id_for_label }}">{{ form.body.label }}</label>
+			{{ form.body }}
+			{% if form.body.errors %}
+				<span class="input-instructions error">{{ form.body.errors|first }}</span>
+			{% else %}
+				<span class="input-instructions">Remember to follow <a target="_blank" href="{% url 'forum_rules' %}">the rules</a>.</span>
+			{% endif %}
+		</div>
+		<div class="form-group">
+			<label for="{{ form.category.id_for_label }}">{{ form.category.label }}</label>
+			{{ form.category }}
+			{% if form.category.errors %}
+				<span class="input-instructions error">{{ form.category.errors|first }}</span>
+			{% endif %}
+		</div>
+		<hr>
+		<div class="buttons bar">
+			<button type="submit" class="button primary">Create topic</button>
+		</div>
+	</form>
+</article>
+{% endblock %}

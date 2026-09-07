@@ -10,13 +10,14 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from django.utils import timezone
 
-from forum.forms import ReplyForm
+from forum.forms import ReplyForm, ThreadForm
 from forum.models import Category, Reply, Thread
 
 
 THREADS_PER_PAGE = 20
 REPLIES_PER_PAGE = 20
 REPLY_RATE_LIMIT = timedelta(minutes=1)
+THREAD_RATE_LIMIT = timedelta(minutes=1)
 
 
 def _get_page(paginator: Paginator, page_number: int):
@@ -33,6 +34,25 @@ def forum_signup_welcome(request):
 
 def forum_rules(request):
     return render(request, "forum/rules.html")
+
+
+@login_required
+def forum_new_thread(request):
+    if request.method == "POST":
+        form = ThreadForm(request.POST)
+        if form.is_valid():
+            recent_cutoff = timezone.now() - THREAD_RATE_LIMIT
+            if Thread.objects.filter(author=request.user, creation_date__gte=recent_cutoff).exists():
+                form.add_error(None, "You're posting too fast! Please wait a minute before posting again.")
+            else:
+                thread = form.save(commit=False)
+                thread.author = request.user
+                thread.save()
+                return redirect("forum_thread", thread_id=thread.pk)
+    else:
+        form = ThreadForm()
+
+    return render(request, "forum/newThread.html", {"form": form})
 
 
 def forum_index(request, page: int = 1):

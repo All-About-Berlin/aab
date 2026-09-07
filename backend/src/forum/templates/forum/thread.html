@@ -58,8 +58,6 @@
 				</li>
 			{% endfor %}
 		</ol>
-	{% else %}
-		<p>No replies yet.</p>
 	{% endif %}
 	{% include "forum/_pagination.html" %}
 	{% if not user.is_authenticated %}
@@ -89,7 +87,7 @@
 		<hr>
 		<div class="buttons bar">
 			<button type="submit" class="button primary">
-				<i class="icon reply" aria-hidden="true"></i> Submit reply
+				Add reply
 			</button>
 		</div>
 	</form>
