@@ -14,12 +14,12 @@
 		</div>
 		<div>
 			<i class="icon person" aria-hidden="true"></i>
-			{{ thread_count }} thread{{ thread_count|pluralize }}, {{ post_count }} post{{ post_count|pluralize }}
+			{{ thread_count }} topic{{ thread_count|pluralize }}, {{ post_count }} repl{{ post_count|pluralize:"y,ies" }}
 		</div>
 	</div>
 </article>
 
-<section class="section threads" aria-label="Threads">
+<section class="section threads" aria-label="Topics">
 	<h2>Recent topics by {{ profile_user.username }}</h2>
 	{% if threads %}
 		{% include "forum/_threadList.html" with threads=threads %}
