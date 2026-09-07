@@ -29,6 +29,7 @@ services:
     volumes:
       - "api_db:/var/db"
       - "api_staticfiles:/var/www/api/staticfiles"
+      - "api_cache:/var/cache/forum"
       - "./backend/src:/srv/app"
       - "./frontend/output:/var/frontend-output:ro"
   proxy:
@@ -52,3 +53,4 @@ volumes:
   caddy_config:
   api_db:
   api_staticfiles:
+  api_cache:
