@@ -31,7 +31,7 @@
 	{% if user.is_authenticated %}
 		<div class="buttons bar">
 			<a href="#reply" class="button primary">
-				<i class="icon reply" aria-hidden="true"></i>
+				<i class="icon bubble" aria-hidden="true"></i>
 				Reply
 			</a>
 		</div>
@@ -43,37 +43,10 @@
 
 </article>
 
-<section aria-label="Replies" class="replies">
+<section aria-label="Replies" class="section replies">
+	<h2>Replies</h2>
 	{% if page_obj.object_list %}
-		<ol class="h-feed" start="{{ page_obj.start_index }}">
-			{% for reply in page_obj %}
-				{% if reply.removed %}
-					<li class="reply removed">
-						{% if reply.removal_reason == 'user_banned' %}
-							This reply was removed because its author was banned.
-						{% elif reply.removal_reason == 'deleted_by_moderator' %}
-							This reply was removed by a moderator.
-						{% elif reply.removal_reason == 'deleted_by_user' %}
-							This reply was deleted by its author.
-						{% else %}
-							This reply was removed.
-						{% endif %}
-					</li>
-				{% else %}
-					<li class="h-entry section reply" id="reply-{{ reply.pk }}"{% if not reply.removed %} itemprop="comment" itemscope itemtype="https://schema.org/Comment"{% endif %}>
-						<link itemprop="url" href="{{ SITE_URL }}{% url 'forum_thread' thread.pk %}#reply-{{ reply.pk }}">
-						<div class="post-meta">
-							{% include "forum/_username.html" with user=reply.author %}
-							<div class="date">
-								<i class="icon calendar" aria-hidden="true"></i>
-								<a class="u-url" href="{{ SITE_URL }}{% url 'forum_thread' thread.pk %}#reply-{{ reply.pk }}"><time class="dt-published" itemprop="datePublished" datetime="{{ reply.creation_date.isoformat }}">{{ reply.creation_date|short_datetime }}</time></a>
-							</div>
-						</div>
-						<div class="article-body e-content" itemprop="text">{{ reply.body|linebreaks }}</div>
-					</li>
-				{% endif %}
-			{% endfor %}
-		</ol>
+		{% include "forum/_replyList.html" with replies=page_obj.object_list %}
 	{% endif %}
 	{% url 'forum_thread' thread.pk as base_url %}
 	{% include "forum/_pagination.html" %}
