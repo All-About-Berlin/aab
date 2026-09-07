@@ -61,6 +61,7 @@
 			{% endfor %}
 		</ol>
 	{% endif %}
+	{% url 'forum_thread' thread.pk as base_url %}
 	{% include "forum/_pagination.html" %}
 	{% if not user.is_authenticated %}
 		<p class="login-paragraph" data-nosnippet>
@@ -74,14 +75,14 @@
 		<h2>Reply to this topic</h2>
 		<hr>
 		{% csrf_token %}
-		{% if reply_form.non_field_errors %}
-			<p class="error">{{ reply_form.non_field_errors|first }}</p>
+		{% if form.non_field_errors %}
+			<p class="error">{{ form.non_field_errors|first }}</p>
 		{% endif %}
 		<div class="form-group">
-			<label for="{{ reply_form.body.id_for_label }}">{{ reply_form.body.label }}</label>
-			{{ reply_form.body }}
-			{% if reply_form.body.errors %}
-				<span class="input-instructions error">{{ reply_form.body.errors|first }}</span>
+			<label for="{{ form.body.id_for_label }}">{{ form.body.label }}</label>
+			{{ form.body }}
+			{% if form.body.errors %}
+				<span class="input-instructions error">{{ form.body.errors|first }}</span>
 			{% else %}
 				<span class="input-instructions">Be kind, be helpful, and follow <a target="_blank" href="{% url 'forum_rules' %}">the rules</a>.</span>
 			{% endif %}
@@ -121,7 +122,7 @@
 		"interactionStatistic": {
 			"@type": "InteractionCounter",
 			"interactionType": "https://schema.org/ReplyAction",
-			"userInteractionCount": {{ paginator.count }}
+			"userInteractionCount": {{ page_obj.paginator.count }}
 		}
 	},
 	"publisher": {"@id": "{{ SITE_URL }}/#organization"}
