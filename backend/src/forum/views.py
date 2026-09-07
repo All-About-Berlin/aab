@@ -1,3 +1,5 @@
+from datetime import timedelta
+
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.core.paginator import EmptyPage, Paginator
@@ -6,13 +8,15 @@ from django.db.models.functions import Coalesce
 from django.http import Http404
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
+from django.utils import timezone
 
 from forum.forms import ReplyForm
-from forum.models import Category, Thread
+from forum.models import Category, Reply, Thread
 
 
 THREADS_PER_PAGE = 20
 REPLIES_PER_PAGE = 20
+REPLY_RATE_LIMIT = timedelta(minutes=1)
 
 
 def _get_page(paginator: Paginator, page_number: int):
@@ -96,17 +100,21 @@ def forum_thread(request, thread_id: int, page: int = 1):
             return redirect("account_login")
         reply_form = ReplyForm(request.POST)
         if reply_form.is_valid():
-            reply = reply_form.save(commit=False)
-            reply.author = request.user
-            reply.thread = thread
-            reply.save()
-            last_page = max(1, -(-thread.replies.count() // REPLIES_PER_PAGE))
-            url = (
-                reverse("forum_thread_page", args=[thread.pk, last_page])
-                if last_page > 1
-                else reverse("forum_thread", args=[thread.pk])
-            )
-            return redirect(f"{url}#reply-{reply.pk}")
+            recent_cutoff = timezone.now() - REPLY_RATE_LIMIT
+            if Reply.objects.filter(author=request.user, creation_date__gte=recent_cutoff).exists():
+                reply_form.add_error(None, "You're posting too fast! Please wait a minute before replying again.")
+            else:
+                reply = reply_form.save(commit=False)
+                reply.author = request.user
+                reply.thread = thread
+                reply.save()
+                last_page = max(1, -(-thread.replies.count() // REPLIES_PER_PAGE))
+                url = (
+                    reverse("forum_thread_page", args=[thread.pk, last_page])
+                    if last_page > 1
+                    else reverse("forum_thread", args=[thread.pk])
+                )
+                return redirect(f"{url}#reply-{reply.pk}")
     else:
         reply_form = ReplyForm()
 
