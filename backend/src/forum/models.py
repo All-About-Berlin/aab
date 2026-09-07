@@ -12,13 +12,14 @@ class Category(models.TextChoices):
     HEALTH = "health", "Health"
     WHERE_TO_FIND = "where-to-find", "Where to find..."
     SELF_EMPLOYMENT = "self-employment", "Self-employment"
+    OTHER = "other", "Other"
 
 
 class Thread(models.Model):
     author = models.ForeignKey(User, on_delete=models.PROTECT, related_name="forum_threads")
     title = models.CharField(max_length=200)
     body = models.TextField()
-    category = models.CharField(max_length=32, choices=Category, blank=True)
+    category = models.CharField(max_length=32, choices=Category, default=Category.OTHER)
     creation_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
