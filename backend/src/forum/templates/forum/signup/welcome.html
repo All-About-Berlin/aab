@@ -5,10 +5,10 @@
 {% block content %}
 <article class="section article-body">
 	<h1>Welcome aboard!</h1>
-
-	<p>Before you continue, please mind our rules:</p>
-
-	{% include "forum/_rulesList.html" %}
+	<div class="article-body">
+		<p>Before you continue, please mind our rules:</p>
+		{% include "forum/_rulesList.html" %}
+	</div>
 	<hr>
 	<nav class="buttons bar previous-next">
 		<a class="next" href="{% url 'forum_index' %}">Go to the forum</a>
