@@ -58,12 +58,25 @@
 		</header>
 	{% endif %}
 <section class="section threads">
-	{% if user.is_authenticated %}
-		<h1>Forum{% if category %}: {{ category.label }}{% endif %}{% if page_obj.number > 1 %} - page {{ page_obj.number }}{% endif %}</h1>
-		<div class="post-meta">
-			{% include "forum/_username.html" with user=request.user %}
-			<a class="button primary" href="{% url 'forum_new_thread' %}">New discussion</a>
-		</div>
+	{% if user.is_authenticated or page_obj.number != 1 or category %}
+		<h1>{% if category %}{{ category.label }}{% else %}Forum{% endif %}{% if page_obj.number > 1 %} - page {{ page_obj.number }}{% endif %}</h1>
+		{% if user.is_authenticated or category %}
+			<div class="post-meta">
+				<nav class="breadcrumbs" aria-label="Breadcrumbs">
+					<i class="icon folder" aria-hidden="true"></i>
+					<ol>
+						<li><a href="{{ SITE_URL }}{% url 'forum_index' %}">Forum</a></li>
+						{% if category %}
+							<li><a href="{{ SITE_URL }}{% url 'forum_index' %}?category={{ category.value }}">{{ category.label }}</a></li>
+						{% endif %}
+						{% if page_obj.number > 1 %}
+							<li><a href="{{ SITE_URL }}{% url 'forum_index_page' page=page_obj.number %}{% if category %}?category={{ category.value }}{% endif %}">Page {{ page_obj.number }}</a></li>
+						{% endif %}
+					</ol>
+				</nav>
+				<a class="button primary" href="{% url 'forum_new_thread' %}">New discussion</a>
+			</div>
+		{% endif %}
 	{% else %}
 		<h2>Recent topics</h2>
 	{% endif %}
