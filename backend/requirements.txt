@@ -4,6 +4,8 @@ djangorestframework~=3.18
 django~=6.1
 email-validator~=2.3
 gunicorn~=26.2
+Markdown==3.5.2
+nh3
 python-dateutil~=2.9
 requests~=2.34
 websockets~=17.1
