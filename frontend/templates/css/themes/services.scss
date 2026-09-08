@@ -33,6 +33,7 @@ main {
     .section.hero{
         grid-template-columns: 1fr 2fr;
         grid-template-areas: "image intro";
+        padding: var(--xxxl) 0 var(--xxxl) var(--w-page-border);
 
         svg{
             max-width: 40vw;
