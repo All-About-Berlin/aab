@@ -17,10 +17,6 @@
             border-bottom: var(--b-box);
             @include collapsible;
 
-            &[hidden]{
-                display: none;
-            }
-
             + progress{
                 margin: calc(var(--xl) * -1) 0 var(--xl) calc(var(--w-page-border) * -1);
                 width: calc(100% + 2 * var(--w-page-border));

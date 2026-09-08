@@ -16,13 +16,13 @@
     @include page-borders;
     margin: var(--l) 0;
 }
-@mixin box-m{
+@mixin box-button-l{
     // Large buttons
     @include box;
     padding: var(--m) var(--m);
     background: transparent;
 }
-@mixin box-s{
+@mixin box-button-m{
     // Buttons
     @include box;
     padding: var(--xs) var(--m);
