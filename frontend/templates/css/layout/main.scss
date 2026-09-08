@@ -41,10 +41,6 @@ main{
                 padding: var(--xxl) var(--w-page-border) 0;
             }
 
-            * {
-                color: var(--c-text-heading)!important;
-            }
-
             p{
                 margin: 0;
             }
@@ -69,14 +65,11 @@ main{
                 margin: 0 auto;
             }
 
-            .button:not(.link){
+            .button{
                 --shadow-s: 0 0 0 0 transparent;
-                background: transparent;
 
-                &:hover{
-                    --c-text-heading: #000;
-                    color: #fff!important;
-                    background: var(--c-highlight);
+                &:not(.primary){
+                    background: transparent;
                 }
             }
 
