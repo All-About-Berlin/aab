@@ -32,7 +32,7 @@
 	{% if threads %}
 		{% include "forum/_threadList.html" with threads=threads %}
 	{% else %}
-		<p>This user has not started any topics.</p>
+		<p class="empty">This user has not started any topics.</p>
 	{% endif %}
 </section>
 
@@ -55,7 +55,7 @@
 			{% endfor %}
 		</ol>
 	{% else %}
-		<p>This user has not replied to any topics.</p>
+		<p class="empty">This user has not replied to any topics.</p>
 	{% endif %}
 </section>
 {% endblock %}
