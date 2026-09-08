@@ -5,8 +5,8 @@
 {% include "css/base/variables.scss" %}
 {% include "css/base/mixins.scss" %}
 {% include "css/base/print.scss" %}
-
 {% include "css/base/animations.scss" %}
+
 {% include "css/base/elements.scss" %}
 
 {% include "css/layout/grid.scss" %}
@@ -17,6 +17,7 @@
 
 {% include "css/components/icons.scss" %}
 {% include "css/components/forms.scss" %}
+{% include "css/components/search-form.scss" %}
 {% include "css/components/tabs.scss" %}
 {% include "css/components/buttons.scss" %}
 {% include "css/components/details.scss" %}

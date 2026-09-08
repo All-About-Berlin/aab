@@ -84,43 +84,7 @@ sup:target a{
     color:var(--c-text-heading)!important;
 }
 
-// Links/buttons with an arrow or external link icon
-:is(.next, .internal-link, .external-link, .section-link):after, .previous:before{
-    content: '';
-    width: 1em;
-    height: calc(1em * var(--line-height-text));
-    display: inline-block;
-    mask-position: center;
-    mask-repeat: no-repeat;
-    mask-size: cover;
-    background-color:currentColor;
-    vertical-align: middle;
-
-    margin: 0 0 0 var(--s);
-    transition: transform 0.2s;
-
-    mask-image: var(--i-right);
-
-    position: relative; // For hover effects
-}
-:is(.next, .internal-link):not([disabled]):hover:after{
-    transform: translateX(var(--xs));
-}
-
-.previous{
-    &:before{
-        margin: 0 var(--s) 0 0;
-        transform: scaleX(-1); // Flip arrow to point left
-    }
-
-    &:not([disabled]):hover:before{
-        transform: scaleX(-1) translateX(var(--xs));
-    }
-}
-
-.external-link:after{
-    mask-image: var(--i-external);
-}
+[hidden]{display: none!important}
 
 h1 + .article-body{
     border-top: var(--b-box);
@@ -143,7 +107,7 @@ h1 + .article-body{
         position: relative;
     }
     .currency[data-currencies]:hover:after{
-        @include box-s;
+        @include box-button-m;
         z-index: 1000;
         position: absolute;
         background: var(--c-bg-widget-opaque);
@@ -350,10 +314,6 @@ h1 + .article-body{
     margin: var(--l-relative) calc(var(--w-page-border) * -1);
     padding: 0 var(--w-page-border);
     overflow-x: auto;
-}
-
-.hidden{
-    display: none!important;
 }
 
 .selectable{

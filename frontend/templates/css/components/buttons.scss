@@ -1,6 +1,44 @@
+// Links/buttons with an arrow or external link icon
+:is(.next, .internal-link, .external-link, .section-link):after, .previous:before{
+    content: '';
+    width: 1em;
+    height: calc(1em * var(--line-height-text));
+    display: inline-block;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    background-color:currentColor;
+    vertical-align: middle;
+
+    margin: 0 0 0 var(--s);
+    transition: transform 0.2s;
+
+    mask-image: var(--i-right);
+
+    position: relative; // For hover effects
+}
+:is(.next, .internal-link):not([disabled]):hover:after{
+    transform: translateX(var(--xs));
+}
+
+.previous{
+    &:before{
+        margin: 0 var(--s) 0 0;
+        transform: scaleX(-1); // Flip arrow to point left
+    }
+
+    &:not([disabled]):hover:before{
+        transform: scaleX(-1) translateX(var(--xs));
+    }
+}
+
+.external-link:after{
+    mask-image: var(--i-external);
+}
+
 .button:not(.link){
     @include text;
-    @include box-s;
+    @include box-button-m;
     @include box-clickable;
 
     color: var(--c-text)!important;
@@ -93,7 +131,7 @@
         margin:0;
 
         > :is(a, button){
-            @include box-m;
+            @include box-button-l;
             @include box-clickable;
 
             text-align: left;
@@ -184,7 +222,7 @@
     &.grid{
         @include only-phone{
             > li > :is(a, button){
-                @include box-s;
+                @include box-button-m;
             }
         }
 
