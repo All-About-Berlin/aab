@@ -3,6 +3,9 @@
         root * /var/www/api/staticfiles
         file_server
     }
+    @forumTrailingSlash path_regexp forumSlash ^(/forum.*)/$
+    redir @forumTrailingSlash {re.forumSlash.1} 301
+
     @backend path /api/* /admin/* /forum /forum/*
     handle @backend {
         @hasCfIp header CF-Connecting-IP *
