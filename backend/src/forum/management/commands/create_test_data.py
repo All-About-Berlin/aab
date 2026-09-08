@@ -15,9 +15,18 @@ FIXTURE_PATH = Path(__file__).resolve().parent.parent.parent / "fixtures" / "tes
 
 
 class Command(BaseCommand):
-    help = "Loads forum test data from the committed fixture. Idempotent."
+    help = "Deletes all threads, replies, and non-staff users, then loads forum test data from the committed fixture."
 
     def handle(self, *args, **options):
+        confirm = input("This will delete all threads, all replies, and all non-staff users. Type 'yes' to continue: ")
+        if confirm != "yes":
+            self.stdout.write("Aborted.")
+            return
+
+        Reply.objects.all().delete()
+        Thread.objects.all().delete()
+        User.objects.filter(is_staff=False).delete()
+
         data = json.loads(FIXTURE_PATH.read_text())
         rng = random.Random(0)
         now = timezone.now()
