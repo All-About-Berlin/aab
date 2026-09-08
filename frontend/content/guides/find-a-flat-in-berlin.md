@@ -256,7 +256,7 @@ To improve your chances...
 - **Be prepared**  
     Prepare all the [required documents](#required-documents) in advance. Be ready to send them quickly.
 - **Write and call**  
-    Most landlords prefer emails, but some prefer calls.[^35] Try both.
+    Most landlords prefer emails, but some prefer calls.[^35] Follow their instructions.
 - **Have a detailed profile**  
     Create a detailed profile on housing websites, and upload your documents. It helps you make a good impression when you message a landlord.
 - **Be brief**  
@@ -303,9 +303,9 @@ Landlords often avoid...
 
 ## 4. Visit the apartment
 
-If you are lucky, you will get invited to an apartment viewing. Arrive early. Bring all the [required documents](#required-documents). You can usually apply for the apartment at the end of the visit.
+If you are lucky, the landlord will invite you to view the apartment. Arrive early. Bring all the [required documents](#required-documents). You can usually apply for the apartment at the end of the visit.
 
-It can be a private viewing (just you) or an open viewing (many other people). Don't go to a viewing with more than 40 people; they are usually a waste of time.[^20]
+There are private viewings (just you) and open viewings (many other people). Open viewings with over 40 people are usually a waste of time.[^20]
 
 When you visit apartments, your travel costs are [tax-deductible](/glossary/steuerlich%20absetzbar). You can deduct €0.30 per kilometre.[^51]
 
@@ -317,10 +317,10 @@ When you visit apartments, your travel costs are [tax-deductible](/glossary/steu
     Check who your neighbours are. Children and dogs can make a lot of noise. If you visit the apartment during the day, it can be quieter than in the evening, when all your neighbours are at home.
 - [ ] **Mold**  
     Look for [mold stains](https://commons.wikimedia.org/wiki/File:Moldy_livingroom_Panewniki_01.jpg) around windows and in the corners of the rooms. Mold problems can be hard to fix.
-- [ ] **Hausordnung**  
+- [ ] **[[Hausordnung]]**  
     Each building has different house rules (*[[Hausordnung]]*). It has rules about [quiet hours](/guides/quiet-hours), grilling, ventilation, musical instruments, vehicles and pets.[^40]
 - [ ] **Appliances**  
-    Check what appliances fit in the apartment. Do you need a smaller washing machine? Is there room for a dishwasher? Does your bed fit in the bedroom?
+    Check what appliances fit in the apartment. Do you need a smaller washing machine? Is there room for a dishwasher? Does your bed fit in the bedroom? Which appliances are included?
 
 ### Visiting a flat share
 
@@ -330,10 +330,10 @@ The interview for a *[[Zweck-WG]]* is usually shorter. Your roommate wants to sa
 
 ### How to behave during the visit
 
-- **Dress well**  
-    Make a good impression. You don't need a suit, just clean clothes, clean shoes, and socks without holes.[^11]
 - **Be on time**  
     Arrive a little early. You will have more time to find the place and meet the landlord. If you are late, tell the landlord as soon as you can.[^28]
+- **Dress well**  
+    Make a good impression. You don't need a suit, just clean clothes, clean shoes, and socks without holes.[^11]
 - **Be pleasant**  
     Be polite and friendly. Greet the landlord or the agent. Speak German if you can. It's important to make a good impression.
 - **Don't complain**  
