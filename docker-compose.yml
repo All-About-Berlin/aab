@@ -26,12 +26,19 @@ services:
       - "BUTTONDOWN_API_KEY"
       - "DOMAIN=localhost"
       - "SERVICES_DOMAIN=services.localhost"
+      - "SECRET_KEY=insecure-dev-secret-key"
     volumes:
       - "api_db:/var/db"
       - "api_staticfiles:/var/www/api/staticfiles"
       - "api_cache:/var/cache/forum"
       - "./backend/src:/srv/app"
       - "./frontend/output:/var/frontend-output:ro"
+  search:
+    image: getmeili/meilisearch:v1.11
+    environment:
+      - "MEILI_MASTER_KEY=insecure-dev-secret-key"
+    volumes:
+      - "search_data:/meili_data"
   proxy:
     build: ./proxy
     environment:
@@ -54,3 +61,4 @@ volumes:
   api_db:
   api_staticfiles:
   api_cache:
+  search_data:
