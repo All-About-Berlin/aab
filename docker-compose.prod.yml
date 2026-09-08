@@ -36,6 +36,7 @@ services:
       - "REMOTE_DB_BACKUPS_PATH"
       - "DOMAIN=allaboutberlin.com"
       - "SERVICES_DOMAIN=agoodstart.de"
+      - "SECRET_KEY=${SECRET_KEY}"
     volumes: !override
       - "api_db:/var/db"
       - "api_staticfiles:/var/www/api/staticfiles"
@@ -52,6 +53,12 @@ services:
       - "SERVICES_SSL_DOMAIN=agoodstart.de"
     volumes:
       - "static_site:/var/www/html"
+    restart: unless-stopped
+    logging: *prod-logging
+  search:
+    environment:
+      - "MEILI_ENV=production"
+      - "MEILI_MASTER_KEY=${SECRET_KEY}"
     restart: unless-stopped
     logging: *prod-logging
 volumes:
