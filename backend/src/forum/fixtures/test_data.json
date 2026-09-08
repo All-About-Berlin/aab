@@ -1083,22 +1083,6 @@
       ]
     },
     {
-      "author": "noor_farsi",
-      "title": "Freelance Steuernummer - Finanzamt has been silent for 10 weeks",
-      "category": "self-employment",
-      "body": "Filed the Fragebogen zur steuerlichen Erfassung via Elster on June 3rd. My clients are asking for a Steuernummer to put on their invoices. My bank asks for it before they'll open a business account.\n\nIs 10 weeks normal at this point? Should I call the Finanzamt or is that pointless?",
-      "replies": [
-        {
-          "author": "ola_k92",
-          "body": "Depends heavily on which Finanzamt. Charlottenburg is currently around 12 weeks. Neukölln 4-6 weeks. Just the reality."
-        },
-        {
-          "author": "cheng_lin",
-          "body": "Call and ask. In my experience they will tell you which desk it's on and give you an estimate. Not always faster but at least you know."
-        }
-      ]
-    },
-    {
       "author": "hassan-m",
       "title": "Deutschlandticket - is it worth it if I mostly WFH?",
       "category": "living-in-germany",
@@ -1659,46 +1643,6 @@
         {
           "author": "julien_p",
           "body": "Kudos for being organized. Half the battle is having the right paperwork ready."
-        }
-      ]
-    },
-    {
-      "author": "thiago_br",
-      "title": "Opening a business account as a non-EU freelancer",
-      "category": "self-employment",
-      "body": "N26 rejected my business account application. Fidor closed down. Sparkasse wants me in person with a Steuerbescheinigung I don't have yet.\n\nWhich bank actually opens business accounts for non-EU nationals on a freelance visa? Willing to pay monthly fees if the service just works.",
-      "replies": [
-        {
-          "author": "zara_ali",
-          "body": "Qonto works well. Fully online, English support, accepts non-EU. About 10 euro a month for the basic plan."
-        },
-        {
-          "author": "aylin_t",
-          "body": "Holvi is another option, same idea, works well for freelancers."
-        },
-        {
-          "author": "isabela_c",
-          "body": "Postbank surprisingly took me. In person appointment, they didn't need much other than the visa and Anmeldung."
-        },
-        {
-          "author": "ines_alv",
-          "body": "DKB was straightforward for me but the business account required a slightly involved video ident."
-        },
-        {
-          "author": "laila_b",
-          "body": "Kontist is popular for freelancers, has some accounting features built in. English UI."
-        },
-        {
-          "author": "kamila_a",
-          "body": "If you're a Freiberufler (not Gewerbe) you can technically use any personal account. Not all clients love that but it's legal."
-        },
-        {
-          "author": "valentin-d",
-          "body": "So many people don't know about the Ombudsperson. Great tip."
-        },
-        {
-          "author": "carmen_gs",
-          "body": "Same experience here, took me weeks to sort out."
         }
       ]
     },
@@ -2279,34 +2223,6 @@
         {
           "author": "hassan-m",
           "body": "Family who went through the same thing had a totally different experience in another Bundesland."
-        }
-      ]
-    },
-    {
-      "author": "hassan-m",
-      "title": "Kleinunternehmer question - should I stay under 22k or grow?",
-      "category": "self-employment",
-      "body": "First year as a freelance designer. Approaching 20k in revenue. Kleinunternehmer threshold is 22k. Do I deliberately stay under, or bite the bullet and register for VAT?\n\nMy clients are mostly German small businesses who can deduct VAT anyway.",
-      "replies": [
-        {
-          "author": "kamila_a",
-          "body": "If your clients are B2B and can deduct VAT, you should have registered from day 1. VAT is invisible to them and you get to deduct your own business expenses' VAT."
-        },
-        {
-          "author": "ade_okon",
-          "body": "The threshold recently went up. Check the current numbers, they changed in 2025."
-        },
-        {
-          "author": "kenji-t",
-          "body": "Kleinunternehmer only makes sense if your clients are private individuals (B2C) who cannot deduct VAT. Otherwise, register."
-        },
-        {
-          "author": "kamila_a",
-          "body": "Bookkeeping is only a tiny bit more complex with VAT. USt-Voranmeldung once a quarter (or monthly the first year). Not a big deal."
-        },
-        {
-          "author": "astrid_no",
-          "body": "Once you register for VAT you're bound to it for at least 5 years. So it's a one-way door."
         }
       ]
     },
@@ -3465,6 +3381,12 @@
           "removal_reason": "user_banned"
         }
       ]
+    },
+    {
+      "author": "valentin-d",
+      "title": "Anyone else subletting on Airbnb without telling their landlord?",
+      "category": "housing",
+      "body": "Doing it since March. Making decent money. Just wondering how many of you are also flouting the Zweckentfremdungsverbot and how you handle it if the neighbours start asking questions."
     },
     {
       "author": "valentin-d",
