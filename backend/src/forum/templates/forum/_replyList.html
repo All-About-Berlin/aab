@@ -1,4 +1,5 @@
 {% load forum_extras %}
+{% load safe_markdown %}
 {% if replies %}
 	<ol class="h-feed">
 		{% for reply in replies %}
@@ -24,7 +25,7 @@
 							<a class="u-url" href="{{ SITE_URL }}{% url 'forum_thread' thread.pk %}#reply-{{ reply.pk }}"><time class="dt-published" itemprop="datePublished" datetime="{{ reply.creation_date.isoformat }}">{{ reply.creation_date|short_datetime }}</time></a>
 						</div>
 					</div>
-					<div class="article-body e-content" itemprop="text">{{ reply.body|linebreaks }}</div>
+					<div class="article-body e-content" itemprop="text">{{ reply.body|safe_markdown }}</div>
 				</li>
 			{% endif %}
 		{% endfor %}
