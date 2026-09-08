@@ -78,7 +78,7 @@
         }
 
         &.open {
-            @include box-m;
+            @include box-button-l;
             width: calc(100% - var(--w-page-border) * 2);
             max-height: calc(100vh - var(--w-page-border) * 2);
             overflow-y: auto;

@@ -53,7 +53,9 @@ export function showTooltip(clickEvent) {
 		dialog.querySelector('h2 a').setAttribute('href', anchor.href);
 		dialog.querySelector('h2 a dfn').innerHTML = data.englishTerm || data.germanTerm;
 		dialog.querySelector('h2 a small').innerHTML = data.germanTerm || '';
-		dialog.querySelector('h2 a small').classList.toggle('hidden', (!data.englishTerm || data.englishTerm == data.germanTerm));
+
+		// Hide subtitle if there is no English term
+		dialog.querySelector('h2 a small').hidden = (!data.englishTerm || data.englishTerm == data.germanTerm);
 
 		const dialogBody = dialog.querySelector('.article-body');
 		dialogBody.innerHTML = data.definition;
