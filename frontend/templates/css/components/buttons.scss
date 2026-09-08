@@ -36,6 +36,10 @@
     mask-image: var(--i-external);
 }
 
+.button{
+    width: fit-content;
+}
+
 .button:not(.link){
     @include text;
     @include box-button-m;
@@ -220,6 +224,8 @@
     }
 
     &.grid{
+        margin: 0;
+
         @include only-phone{
             > li > :is(a, button){
                 @include box-button-m;
