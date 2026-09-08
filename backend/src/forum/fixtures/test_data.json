@@ -206,7 +206,7 @@
       "author": "julien_p",
       "title": "Bürgeramt keeps cancelling my Anmeldung appointment - what now?",
       "category": "living-in-germany",
-      "body": "I have booked three appointments over the past two months. Each time I get an email the day before saying it's cancelled, no reason given. My landlord is starting to get annoyed because the Wohnungsgeberbestätigung is still sitting on my kitchen table.\n\nI tried refreshing the online portal for early morning slots but nothing comes up in Neukölln or Mitte. Is there any human I can call? Or is my only option to keep hammering F5 at 7 in the morning?",
+      "body": "I have booked **three appointments** over the past two months. Each time I get an email the day before saying it's cancelled, no reason given. My landlord is starting to get annoyed because the Wohnungsgeberbestätigung is still sitting on my kitchen table.\n\nSo far I've tried:\n\n- Refreshing the Neukölln portal at 07:00\n- Trying Mitte and Friedrichshain-Kreuzberg\n- Emailing the Bürgeramt directly (no reply)\n\nIs there any human I can call? Or is my only option to keep hammering F5 at 7 in the morning?",
       "replies": [
         {
           "author": "pablo_m",
@@ -214,7 +214,7 @@
         },
         {
           "author": "mehmet-y",
-          "body": "Use the AllAboutBerlin appointment finder. It refreshes every couple of minutes and pings you when a slot opens. Saved my sanity."
+          "body": "Use the AllAboutBerlin appointment finder. It refreshes every couple of minutes and pings you when a slot opens. Saved my sanity. See [the Anmeldung guide](/guides/anmeldung-berlin) for the full walk-through."
         },
         {
           "author": "wei_zhang",
@@ -406,7 +406,7 @@
       "author": "fatima_h",
       "title": "Landlord withholding deposit 8 months later, what are my options?",
       "category": "housing",
-      "body": "Moved out in December. Sent the standard letter asking for the deposit back within a reasonable time. Landlord replied saying they are 'waiting for the Nebenkostenabrechnung' before returning any of it.\n\nIt's now August. The Nebenkosten from that year should have been settled by June at the latest. They can only hold back an amount that is realistically expected to cover the outstanding utilities, not the entire deposit. Should I get a lawyer or is there a cheaper first step?",
+      "body": "Moved out in December. Here's what I've done so far:\n\n1. Sent the standard letter asking for the deposit back within a reasonable time\n2. Got a reply saying they are 'waiting for the Nebenkostenabrechnung' before returning any of it\n3. Waited\n4. Sent a follow-up quoting `§ 551 BGB` and a specific deadline\n\nIt's now August. The Nebenkosten from that year should have been settled by June at the latest. They can only hold back an amount that is realistically expected to cover the outstanding utilities, not the entire deposit. Should I get a lawyer or is there a cheaper first step?",
       "replies": [
         {
           "author": "faisal-b",
@@ -438,7 +438,7 @@
         },
         {
           "author": "isabela_c",
-          "body": "Send the Mahnung, wait 14 days, then file the Mahnbescheid online at mahngerichte.de. Very cheap and they usually pay once they see the official form."
+          "body": "Send the Mahnung, wait 14 days, then file the Mahnbescheid online at mahngerichte.de. Very cheap and they usually pay once they see the official form.\n\nHere's the skeleton I used for the Mahnung itself:\n\n```\nSehr geehrte Frau X,\n\nich fordere Sie hiermit auf, die noch offene Kaution\nin Höhe von 1.500,00 EUR bis spätestens zum 30.09.2025\nauf mein Konto zurückzuerstatten.\n\nMit freundlichen Grüßen\n```"
         },
         {
           "author": "wei_zhang",
@@ -538,7 +538,7 @@
       "author": "koray_e",
       "title": "Confused about Steuerklasse after marriage",
       "category": "personal-finance",
-      "body": "We got married in June. I earn about 75k, my spouse earns about 30k. Right now we're both in Steuerklasse I from before. Should we switch to III/V or IV/IV with Faktor?\n\nI keep reading different things. Some sites say III/V is better if there's a big salary gap, others say Faktor is fairer for the lower earner and gives the same result at year end anyway.",
+      "body": "We got married in June. I earn about **75k**, my spouse earns about **30k**. Right now we're both in Steuerklasse I from before. Should we switch to III/V or IV/IV *mit Faktor*?\n\nI keep reading different things. Some sites say III/V is better if there's a big salary gap, others say Faktor is fairer for the lower earner and gives the same result at year end anyway.",
       "replies": [
         {
           "author": "wei_zhang",
@@ -698,7 +698,7 @@
         },
         {
           "author": "iris_wong",
-          "body": "Store your Elster .pfx file in three places from now on. Cloud, USB, and a printed backup of the recovery info."
+          "body": "Store your Elster `.pfx` file in *three* places from now on:\n\n1. Encrypted cloud drive\n2. A USB stick in a drawer\n3. A printed backup of the recovery info\n\nSounds paranoid until you need it."
         },
         {
           "author": "kamila_a",
@@ -1498,7 +1498,7 @@
         },
         {
           "author": "ines_alv",
-          "body": "If you share a flat with someone who pays, only ONE payment per household. If your flatmates already pay, you can submit their contribution number and be removed from the bill."
+          "body": "If you share a flat with someone who pays, only **ONE** payment per household. If your flatmates already pay, you can submit their contribution number and be removed from the bill.\n\nThe contribution number is the long code at the top of the letter, looks like this:\n\n![Beitragsnummer on a Beitragsservice letter](/images/anmeldung-taxid-info-2022-12-22.png)"
         },
         {
           "author": "brendan_us",
@@ -1518,7 +1518,7 @@
       "replies": [
         {
           "author": "iris_wong",
-          "body": "The speaking part is basically: introduce yourself, describe a picture, plan something with your partner. Very structured."
+          "body": "The speaking part is basically three tasks:\n\n1. Introduce yourself (name, home country, job, hobbies)\n2. Describe a picture the examiner hands you\n3. Plan something with your partner (a birthday, a trip, a party)\n\nVery structured. Rehearse each one and you'll be fine."
         },
         {
           "author": "zara_ali",
@@ -1662,7 +1662,7 @@
       "author": "rahul_k",
       "title": "Anmeldung date differs from actual move-in - is this a problem?",
       "category": "living-in-germany",
-      "body": "I moved into my flat on July 1st. Couldn't get a Bürgeramt appointment until August 20th. On the Wohnungsgeberbestätigung my landlord wrote July 1st as the Einzugsdatum. Do I list July 1st as move-in date on my Anmeldung even though I'm registering in August?",
+      "body": "I moved into my flat on July 1st. Couldn't get a Bürgeramt appointment until August 20th. On the Wohnungsgeberbestätigung my landlord wrote *July 1st* as the Einzugsdatum. Do I list July 1st as move-in date on my Anmeldung even though I'm registering in August?\n\nOfficial page I've been reading: [Anmeldung einer Wohnung on service.berlin.de](https://service.berlin.de/dienstleistung/120686/). It's not super clear on this specific case.",
       "replies": [
         {
           "author": "fatima_h",
@@ -2242,7 +2242,7 @@
         },
         {
           "author": "oleksandr_v",
-          "body": "Speakeasy, Sprachenatelier, DeutschAkademie - all decent private options in Berlin."
+          "body": "Decent private options in Berlin:\n\n- Speakeasy\n- Sprachenatelier\n- DeutschAkademie\n- Kapitel Zwei\n\nAll of them will happily take your money, but the teaching quality varies by teacher more than by school."
         },
         {
           "author": "wei_zhang",
@@ -2610,7 +2610,7 @@
         },
         {
           "author": "yulia_k",
-          "body": "Winter tip: don't heat the flat unevenly. Cold rooms suck warm humidity from warm rooms and cause mold. Keep everything at least 16-17 degrees."
+          "body": "Winter tip: don't heat the flat unevenly. Cold rooms suck warm humidity from warm rooms and cause mold.\n\n> Keep every room at least 16-17 degrees, even the ones you never use.\n\nA cheap hygrometer per room helps you catch problems before the mold does."
         },
         {
           "author": "ade_okon",
@@ -2666,7 +2666,7 @@
         },
         {
           "author": "wei_zhang",
-          "body": "The Terminservicestelle (116 117) can find you an appointment within 4 weeks if the referral is coded correctly. Underused resource."
+          "body": "The Terminservicestelle (`116 117`) can find you an appointment within 4 weeks if the referral is coded correctly. Booking form is on [116117.de/terminservice](https://www.116117.de/terminservice). Underused resource."
         },
         {
           "author": "kenji-t",
@@ -3254,7 +3254,7 @@
         },
         {
           "author": "astrid_no",
-          "body": "Bring: passport, all previous residence permits, all Anmeldungen since arrival, employment contract, last 3 payslips, Rentenversicherung Übersicht, B1 certificate, Krankenversicherung proof, current Meldebescheinigung, tax assessments if freelance. Basically your entire administrative life in Germany."
+          "body": "Here's the pile I brought:\n\n- Passport and all previous residence permits\n- All Anmeldungen since arrival\n- Employment contract and last 3 payslips\n- Rentenversicherung Übersicht\n- B1 certificate\n- Krankenversicherung proof\n- Current Meldebescheinigung\n- Tax assessments if freelance\n\nBasically your entire administrative life in Germany. See [the Niederlassungserlaubnis guide](/guides/niederlassungserlaubnis) for the up-to-date checklist."
         },
         {
           "author": "kenji-t",
