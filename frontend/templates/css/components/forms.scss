@@ -308,14 +308,14 @@ input[type=range] {
     .range-prefix{
         padding:0 var(--m) 0 0;
         flex:0 0 auto;
-        color:var(--c-text-light);
+        color: var(--c-text-light);
         font-size: var(--f-s);
         cursor: w-resize;
     }
     .range-suffix{
         padding:0 0 0 var(--m);
         flex:0 0 auto;
-        color:var(--c-text-light);
+        color: var(--c-text-light);
         font-size: var(--f-s);
         cursor: e-resize;
     }
