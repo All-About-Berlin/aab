@@ -118,7 +118,6 @@ German CVs are longer than American resumes. They include your date of birth, yo
 **Useful links:**
 
 - [How to write a German resume](https://hallogermany.com/blog/cv-lebenslauf) - HalloGermany
-- [German resume examples](https://www.joinimagine.com/content) - Imagine foundation
 - [Resume checklist](https://medium.com/imagine-foundation/crafting-a-winning-cv-666a240314b2) - Imagine foundation
 - [Lingoking](/out/lingoking-resume) - Translate your resume to German
 
