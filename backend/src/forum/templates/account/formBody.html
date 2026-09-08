@@ -3,8 +3,15 @@
 {% endif %}
 {% for field in form %}
 	<div class="form-group">
-		<label for="{{ field.id_for_label }}">{{ field.label }}</label>
-		{{ field }}
+		{% if field.field.widget.input_type == "checkbox" %}
+			<label class="checkbox">
+				{{ field }}
+				{{ field.label }}
+			</label>
+		{% else %}
+			<label for="{{ field.id_for_label }}">{{ field.label }}</label>
+			{{ field }}
+		{% endif %}
 		{% if field.errors %}
 			<span class="input-instructions error">{{ field.errors|first }}</span>
 		{% endif %}
