@@ -5,6 +5,7 @@ django~=6.1
 email-validator~=2.3
 gunicorn~=26.2
 Markdown==3.5.2
+meilisearch~=0.36
 nh3
 python-dateutil~=2.9
 requests~=2.34
