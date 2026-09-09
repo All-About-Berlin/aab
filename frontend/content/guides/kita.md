@@ -49,7 +49,7 @@ Your *Kitagutschein* is valid anywhere in Berlin. You can choose any *Kita*. Cho
 
 ### 3. Contact Kitas
 
-Contact *Kitas*, and ask for a spot for your child. If they have no spots, they might put you on a waiting list. Look for application instructions their website.
+Contact *Kitas*, and ask for a spot for your child. If they have no spots, they might put you on a waiting list. Look for application instructions on their website.
 
 You can contact *Kitas* before you get your *[[Kitagutschein]]*.
 

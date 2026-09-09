@@ -51,7 +51,7 @@ To contact the *Ausländerbehörde*, or to apply for a residence permit that is 
 4. **Send your message**  
     If you get an error (*Anti-Spam-Schutz*), it's because you took too long to send your message. Click the back button, and send it again. After you send the message, click *Zusammenfassung ausdrucken* to print the confirmation message. This is a proof of your residence permit application. You might not get a confirmation email.[^8]
 5. **Wait for a response**  
-    They reply [very slowly](/guides/immigration-office/wait-times). If you wait more than 3 months, you can [sue the *Ausländerbehörde*](#sue-the-auslanderbehorde).[^17] [If your visa or resident permit expires](/guides/residence-permit#if-your-visa-or-residence-permit-expires), it's usually extended until the *Ausländerbehörde* processes your application. Sometimes, you can't reply to their emails directly, so you must use the contact form again.
+    They reply [very slowly](/guides/immigration-office/wait-times). If you wait more than 3 months, you can [sue the *Ausländerbehörde*](#sue-the-auslanderbehorde).[^17] [If your visa or residence permit expires](/guides/residence-permit#if-your-visa-or-residence-permit-expires), it's usually extended until the *Ausländerbehörde* processes your application. Sometimes, you can't reply to their emails directly, so you must use the contact form again.
 
 **[What happens next? ➞](/guides/residence-permit#wait)**
 

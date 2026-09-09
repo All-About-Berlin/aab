@@ -33,7 +33,7 @@ The same form is [on Berlin.de](https://www.berlin.de/formularverzeichnis/?formu
 
 Use my [Anmeldung form filler](#fill-the-anmeldung-form-online), it's easier.
 
-To register members of the same family, use the same form. To register friends, room mates or unmarried couples, use separate forms. To register more than 2 members of the same family, use multiple forms.[^3]
+To register members of the same family, use the same form. To register friends, roommates or unmarried couples, use separate forms. To register more than 2 members of the same family, use multiple forms.[^3]
 
 This is how you must fill each field:
 
@@ -47,7 +47,7 @@ This is how you must fill each field:
     - **Tag des Einzugs**: Enter your move-in date. If you already moved in, you can write a past date. Use the DD.MM.YYYY date format.
     - **Postleitzahl, Gemeinde, Ortsteil**: The [postal code](/glossary/Postleitzahl), municipality and region of your new residence. For example, "10115 Berlin Mitte".
     - **Straße, Hausnummer, Zusätze**: The street, house number and door number of your new residence. For example, "Chausseestraße 123, #23". If the landlord does not want to put your name on the mailbox, [add "c/o" or "bei" to your address](/guides/anmeldung-in-english-berlin#if-your-name-is-not-on-your-mailbox).[^0] If you can, write the [building, entrance and floor number](/guides/addressing-a-letter-in-germany#extra-information). - [How to write your address](/guides/addressing-a-letter-in-germany)
-- **Gemeindekennzahl (right column)**: This column contains information about your previous residence. If your previous address is in another country, just write your country name in "Bei Zuzug aus dem Ausland Staat" field.[^1]
+- **Gemeindekennzahl (right column)**: This column contains information about your previous residence. If your previous address is in another country, just write your country name in the "Bei Zuzug aus dem Ausland Staat" field.[^1]
     - **Die (letzte) bisherige Wohnung (im Inland) war**:
         - Choose **alleinige Wohnung** if your last residence in Germany was your only residence
         - Choose **Hauptwohnung** if you will have multiple residences, and your last residence in Germany was your main residence
@@ -64,8 +64,8 @@ This is how you must fill each field:
     - Choose **Hauptwohnung** if your previous residence will be your main residence
     - Choose **Nebenwohnung** if your previous residence will be your secondary residence
 - **Haben die unten aufgeführten Personen noch weitere Wohnungen in Deutschland?**
-    - Choose **Nein** if you do not have any other residences than the ones listed above.
-    - Choose **Ja** if you have other residences than the ones listed above. If you check this box, you must also fill [this extra form](https://www.berlin.de/formularverzeichnis/?formular=/labo/zentrale-einwohnerangelegenheiten/_assets/mdb-f402610-beiblatt_zur_anmeldung_blanko.pdf).
+    - Choose **Nein** if you do not have any residences other than the ones listed above.
+    - Choose **Ja** if you have residences other than the ones listed above. If you check this box, you must also fill [this extra form](https://www.berlin.de/formularverzeichnis/?formular=/labo/zentrale-einwohnerangelegenheiten/_assets/mdb-f402610-beiblatt_zur_anmeldung_blanko.pdf).
 - **Section 1 and section 2**: These sections contain information about the people who are registering their address. If you register more than two people, you must fill [this extra form](https://www.berlin.de/formularverzeichnis/?formular=/labo/zentrale-einwohnerangelegenheiten/_assets/mdb-f402610-beiblatt_zur_anmeldung_blanko.pdf).
     - **Familienmitglied ist**: leave this space empty
     - **Familienname, ggf. Doktorgrad, Passname**: Your last name, doctoral degrees (e.g. "PhD"). Use the same spelling as in your passport. Do not use Cyrillic or non-Latin characters.[^2]

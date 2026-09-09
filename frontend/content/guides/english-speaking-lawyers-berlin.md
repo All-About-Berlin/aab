@@ -28,7 +28,7 @@ This is a list of lawyers who speak English in Berlin.
 - **Business and immigration hotline**  
     Call [09008 529 366 11](tel:0900852936611) to talk to Alexander von Engelhardt, a business and immigration lawyer. It costs €{{LEGAL_HOTLINE_COST_PER_MINUTE|cur}} per minute.
 - **Your university**  
-    Universities often cheap legal advice for students.[^1]
+    Universities often offer cheap legal advice for students.[^1]
 
 **[Where to get legal help ➞](/guides/help#legal-questions)**
 
@@ -36,7 +36,7 @@ This is a list of lawyers who speak English in Berlin.
 
 There are many ways to get free legal help for housing. You should join a *[[Mieterverein]]* before you need it.
 
-**[Where to ask housing questions ➞](/guides/help#legal-questions)**
+**[Where to ask housing questions ➞](/guides/help#apartment-questions)**
 
 ## Other lists of lawyers
 

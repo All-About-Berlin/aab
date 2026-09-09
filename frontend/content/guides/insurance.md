@@ -23,9 +23,9 @@ For example:
 - Your computer chair destroys the floor in the apartment you rent.
 - You trip someone while playing football, and they break their leg.
 
-It's the most important insurance after health insurance. 83% of Germans homes have it. It costs around €5 per month.
+It's the most important insurance after health insurance. 83% of German homes have it. It costs around €5 per month.
 
-I recommend [Feather's liability insurance](/out/feather-haftpflicht). It's what I have since 2022.
+I recommend [Feather's liability insurance](/out/feather-haftpflicht). It's what I have had since 2022.
 
 **[What is liability insurance? ➞](/guides/haftpflichtversicherung)**
 
@@ -51,7 +51,7 @@ Home contents insurance or household insurance (*[[Hausratversicherung]]*) insur
 
 For example:[^3]
 
-- There is a fire on your building, and you lose everything you have.
+- There is a fire in your building, and you lose everything you have.
 - A water leak destroys your furniture and electronics.
 - A thief breaks into your house and steals your things.
 
@@ -79,7 +79,7 @@ There is private legal insurance (for you), and professional legal insurance (fo
 
 Around 46% of Germans have legal insurance.[^4] It's not as important as liability insurance, but it's good to have. I recommend it for recent immigrants.
 
-If you don't speak German, [Feather](/out/feather-rechtsschutz) sell legal insurance, and they speak English. Use [Tarifcheck](/out/tarifcheck-rechtsschutz) to compare options.
+If you don't speak German, [Feather](/out/feather-rechtsschutz) sells legal insurance, and they speak English. Use [Tarifcheck](/out/tarifcheck-rechtsschutz) to compare options.
 
 **[How to choose legal insurance ➞](/guides/legal-insurance)**
 
@@ -90,7 +90,7 @@ Job disability insurance (*[[Berufsunfähigkeitsversicherung]]*) gives you an in
 Disability insurance replaces your income if...
 
 - You have cancer
-- You suffer from burn out
+- You suffer from burnout
 - You can't work after an accident
 - You can't do your normal job because of a disability
 
@@ -102,7 +102,7 @@ If you don't speak German, [Feather](/out/feather-disability) and [Getsafe](/out
 
 Pet health insurance (*[[Tierkrankenversicherung]]* or *Hundekrankenversicherung*) covers the veterinary bills if your dog gets sick. Usually, it does not cover routine operations like vaccines or castration.[^5] However, it covers expensive operations. This can be important when your dog gets old.
 
-The price of pet insurance depends on the age, race and sex of your dog. It costs around €20 per month if your dog is still young.
+The price of pet insurance depends on the age, breed and sex of your dog. It costs around €20 per month if your dog is still young.
 
 If you don't speak German, [Feather](/out/feather-pethealth) and [Getsafe](/out/getsafe-pethealth) sell pet health insurance, and they speak English. Use [Tarifcheck](/out/tarifcheck-pethealth) to compare options.
 
@@ -113,7 +113,7 @@ If you don't speak German, [Feather](/out/feather-pethealth) and [Getsafe](/out/
 If you drive a vehicle in Germany, it must be insured. There are two types of car insurance (*[[Kfz-Versicherung]]*): *[[Vollkasko]]* and *[[Teilkasko]]*.
 
 - **[[Vollkasko]]** insurance covers the damage to your car and to other cars, even if the accident is your fault. If you destroy your car in an accident, the insurance company will replace it. *Vollkasko* insurance is usually several times more expensive than *Teilkasko*.
-- **[[Teilkasko]]** insurance only covers the damage to other people and vehicles. If you cause an accident, your *Teilkasko* will pay to fix other people's cars, but it will not pay you to on your own car. If the accident is someone else's fault, *their* insurance will pay for the repairs on your car.
+- **[[Teilkasko]]** insurance only covers the damage to other people and vehicles. If you cause an accident, your *Teilkasko* will pay to fix other people's cars, but it will not pay for the repairs on your own car. If the accident is someone else's fault, *their* insurance will pay for the repairs on your car.
 
 Some *Teilkasko* insurances also cover theft and vandalism. Read your policy carefully, and make sure it covers the right things for you.
 

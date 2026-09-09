@@ -87,7 +87,7 @@ There are 4 types of *Fiktionsbescheinigung*:[^2]
 - **FreizügG/EU oder Abkommen EU-Schweiz**  
     It allows you to travel outside of Germany.[^6]
 
-The type is written on your *Fiktionsbescheinigung* is written on it. It's the box that has an 'X' on it, not the lines that are covered with 'XXXXXXXXX'.
+The type is written on your *Fiktionsbescheinigung*. It's the box that has an 'X' on it, not the lines that are covered with 'XXXXXXXXX'.
 
 [![German Fiktionsbescheinigung type field](/images/german-fiktionsbescheinigung-types.jpg "The type is written on your Fiktionsbescheinigung (§ 81 Abs. 4)")](/images/german-fiktionsbescheinigung-types.jpg)
 
@@ -117,4 +117,4 @@ Your *Fiktionsbescheinigung* is valid until your residence permit application is
 [^16]: [Facebook](https://www.facebook.com/groups/226825394858771/posts/1194366428104658/) (October 2022), [Twitter](https://twitter.com/oishik_dasgupta/status/1733836288111923315) (December 2023), embassy employee (July 2026), [Mirko Vorreuter](https://visaguard.berlin) (July 2026)
 [^17]: [Twitter](https://twitter.com/mgill25/status/1715331128377086036) (December 2023), [Twitter](https://twitter.com/flyaway_aoi/status/1712789114427240570) (October 2023), [Facebook](https://www.facebook.com/groups/germanfreelancevisa/posts/1671544263314270/) (August 2023)
 [^18]: Email from the Bundespolizei (December 2023)
-[^19]: You pay the €500 to €1500 for the lawyer, and €500 for the court fee. If you win, you get around €1000 back. Source: [Mirko Vorreuter](https://visaguard.berlin) (October 2025)
+[^19]: You pay €500 to €1500 for the lawyer, and €500 for the court fee. If you win, you get around €1000 back. Source: [Mirko Vorreuter](https://visaguard.berlin) (October 2025)

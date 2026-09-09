@@ -2,7 +2,7 @@
 title: What is the German Handelsregister?
 german_term: Handelsregister
 english_term: Trade register
-description: The Handelsregister is register of German businesses.
+description: The Handelsregister is a register of German businesses.
 date_created: 2018-07-31
 related_guides:
     - guides/handelsregisternummer-germany.md

@@ -57,7 +57,7 @@ While you wait, you don't get many updates. Many reviews mention the long wait t
 
 ## But it works
 
-Still, Conny's rent reduction service works. They will successfully lower your rent, and you might save hundreds of euros per month. Some of my friends used their service and save a lot of money every month.
+Still, Conny's rent reduction service works. They will successfully lower your rent, and you might save hundreds of euros per month. Some of my friends used their service and now save a lot of money every month.
 
 ## Conclusion
 

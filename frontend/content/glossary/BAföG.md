@@ -1,5 +1,5 @@
 ---
-title: What is BAföG
+title: What is BAföG?
 german_term: BAföG
 english_term: Financial support for students
 description: A type of financial aid for German students.

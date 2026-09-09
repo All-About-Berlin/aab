@@ -5,7 +5,7 @@ description: Piracy is not so easy in Germany, but there are ways to torrent wit
 date_created: 2017-10-13
 ---
 
-*This guide is written information purposes only. I do not condone piracy. I encourage you to pay for the media you consume.*
+*This guide is written for information purposes only. I do not condone piracy. I encourage you to pay for the media you consume.*
 
 Downloading movies in Germany [is risky](https://www.dw.com/en/internet-pirates-walk-a-fine-line-in-germany/a-36364095). Pirates in Germany can get big fines: €900 to €1,500 on average. But if you do it correctly, you can pirate movies without getting in trouble.
 
@@ -23,7 +23,7 @@ Usually, those **law firms go for the easy targets**. They will not try really h
 
 Before October 2017, if anyone pirated movies on your internet connection, you were responsible. This is why there were so few public Wi-Fi hotspots in Germany.
 
-The so called *Mitstörerhaftung* (co-perpetrator liability) was repealed. The updated law is simple: **you are not responsible for copyright violations on your network** if you don't cause or facilitate them.
+The so-called *Mitstörerhaftung* (co-perpetrator liability) was repealed. The updated law is simple: **you are not responsible for copyright violations on your network** if you don't cause or facilitate them.
 
 ## Is streaming movies safe in Germany?
 
@@ -57,9 +57,9 @@ VPNs come with extra benefits:
 - They let you see websites that are blocked in your country
 - They increase your online privacy by adding a layer of anonymity
 
-However, VPNs are not risk-free. If your VPN connection drops, your torrent client might continue downloading copyrighted materials without it, exposing your IP address to the world. This is why you should set up a [VPN killswitch](https://www.vpnmentor.com/blog/kill-switch-features/) that cuts the internet connection if you are not connected to your VPN. I use [this docker-based killswitch](https://github.com/haugene/docker-transmission-openvpn/) since a few years.
+However, VPNs are not risk-free. If your VPN connection drops, your torrent client might continue downloading copyrighted materials without it, exposing your IP address to the world. This is why you should set up a [VPN killswitch](https://www.vpnmentor.com/blog/kill-switch-features/) that cuts the internet connection if you are not connected to your VPN. I have been using [this docker-based killswitch](https://github.com/haugene/docker-transmission-openvpn/) for a few years.
 
-When choosing a VPN, you must look for a fast provider that allows torrenting and does not log IP addresses. Avoid free VPN services, as they usually sacrifice safety, privacy or performance. I use [Private Internet Access](/out/private-internet-access) since 2016. I never had any problems.
+When choosing a VPN, you must look for a fast provider that allows torrenting and does not log IP addresses. Avoid free VPN services, as they usually sacrifice safety, privacy or performance. I have been using [Private Internet Access](/out/private-internet-access) since 2016. I never had any problems.
 
 ### Torrenting movies with a seedbox
 
@@ -71,7 +71,7 @@ There are a few benefits to seedboxes over VPNs:
 - You don't need to install or configure anything on your computer. You can access your finished torrents from all your devices.
 - Many seedbox services include a free VPN.
 
-However, seedboxes often require you to use private torrent trackers, which have stricter membership requirements. Private trackers are usually invite-only, and require its users to maintain a high [seeding ratio](https://en.wikipedia.org/wiki/Glossary_of_BitTorrent_terms#Share_ratio).
+However, seedboxes often require you to use private torrent trackers, which have stricter membership requirements. Private trackers are usually invite-only, and require their users to maintain a high [seeding ratio](https://en.wikipedia.org/wiki/Glossary_of_BitTorrent_terms#Share_ratio).
 
 ## Can I watch pornography in Germany?
 

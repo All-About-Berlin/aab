@@ -22,7 +22,7 @@ You can deposit your coins at a deposit machine (*Einzahlautomat*). They are nex
 - **N26**  
     You can use [CASH26](https://n26.com/en-de/cash26) to deposit coins. You must roll your coins first. It's not a good way to deposit a lot of coins. [How CASH26 works.](https://n26.com/en-de/cash26) The fee is 1.5% of your deposit. It's better to return coins [at the *Bundesbank*](/guides/exchange-coins-berlin#at-the-bundesbank).
 - **Sparkasse**   
-    You can use the Sparkasse coin machines for free.[^3] [Search for Sparkasse branches](https://www.sparkasse.de/service/filialsuche.html) with an *Ein- und Auszahlungsautomat*. You also deposit coins at the counter for a €7.50 fee.[^9] If you have a lot of coins, you might need many bags.[^4]
+    You can use the Sparkasse coin machines for free.[^3] [Search for Sparkasse branches](https://www.sparkasse.de/service/filialsuche.html) with an *Ein- und Auszahlungsautomat*. You can also deposit coins at the counter for a €7.50 fee.[^9] If you have a lot of coins, you might need many bags.[^4]
 
 If your bank has no branch in Berlin, deposit coins at the Bundesbank.
 

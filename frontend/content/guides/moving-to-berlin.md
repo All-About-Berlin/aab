@@ -30,7 +30,7 @@ Before you move to Berlin, you must have enough money for...
 - **[Health insurance](/glossary/Krankenversicherung)**  
     All German residents need health insurance. Use my [health insurance calculator](/tools/health-insurance-calculator) to estimate the cost.
 - **Winter clothes**  
-    German winters are cold and humid. The average temperature is 0ºC, but it can go to -10ºC.[^5] You need a winter jacket and warm clothes.
+    German winters are cold and humid. The average temperature is 0°C, but it can go to -10°C.[^5] You need a winter jacket and warm clothes.
 
 Your employer might cover your relocation costs. They usually reimburse the cost *after* you start working, so you still need enough savings.
 
@@ -100,7 +100,7 @@ You can also use a SIM card from another [EU](/glossary/European%20Union) countr
 - Saturn, MediaMarkt and [other electronics stores](/guides/where-to-buy-what#electronics)
 - Aldi and Lidl supermarkets, at the counter
 
-Use [Verivox](/out/verivox-cellphone) to compare cellphone plans. Prepaid plans are often much cheaper. I use [Vodafone CallYa](/out/vodafone-callya) since 2015. [Aldi Talk](/out/aldi-talk) is another good, cheap option.
+Use [Verivox](/out/verivox-cellphone) to compare cellphone plans. Prepaid plans are often much cheaper. I have been using [Vodafone CallYa](/out/vodafone-callya) since 2015. [Aldi Talk](/out/aldi-talk) is another good, cheap option.
 
 To activate your SIM card, you might need your passport and your [registration certificate](/glossary/Anmeldebest%C3%A4tigung).[^1] If you don't have a registration certificate, they might just use your temporary address.[^2]
 
@@ -154,9 +154,9 @@ You don't need to [buy a car](/guides/buy-a-car-in-germany) in Berlin. They are 
 
 Your foreign driving licence [might be valid in Germany](/guides/convert-to-german-driving-licence#can-you-already-drive-in-germany). You can sometimes convert it to a German driving licence. You can also take driving lessons in Berlin.
 
-**[How to convert your driving licence ➞](/guides/driving-licence)**
+**[How to convert your driving licence ➞](/guides/convert-to-german-driving-licence)**
 
-**[How to get a driving licence ➞](/guides/convert-to-german-driving-licence)**
+**[How to get a driving licence ➞](/guides/driving-licence)**
 
 ## Your first year in Berlin
 

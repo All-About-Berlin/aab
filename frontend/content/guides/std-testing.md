@@ -28,7 +28,7 @@ Routine tests are harder. It's hard to get an appointment quickly. You might hav
     - **[Viropraxis](https://www.viropraxis.de/)**  
         They speak English, Spanish and German.
     - **[Praxis Schöneberg](http://praxisschöneberg.de/services.html)**  
-        They speak English and German
+        They speak English and German.
     - **[Doctolib](https://www.doctolib.de/search?location=berlin&speciality=sti-test)** or **[dagnä](https://www.dagnae.de/schwerpunktarztsuche)**  
         Find more doctors that offer STI tests.
 - **At home**  
@@ -57,7 +57,7 @@ If the test is not covered by your health insurance, it costs **between €10 an
 - **If you have [public health insurance](/glossary/gesetzliche%20Krankenversicherung)**  
     Public health insurance only pays for the test if you have symptoms, or a good reason to think you are infected.[^3] It does not pay for routine tests. Women under 26 years old can get one free Chlamydia test per year.[^4] Some people lie to get the test covered by their health insurance.[^5]
 - **If you have [private health insurance](/glossary/private%20Krankenversicherung)**  
-    Some private health insurances pay for STI tests. You pay for the test yourself, and your insurance sometimes reimburse you. It depends on the insurance policy. Ask your private health insurer.
+    Some private health insurances pay for STI tests. You pay for the test yourself, and your insurance sometimes reimburses you. It depends on the insurance policy. Ask your private health insurer.
 - **If you have travel or [expat insurance](/glossary/Expat%20health%20insurance)**  
     STI tests are almost never covered. Some insurances include a €300 per year budget for tests and check-ups.
 

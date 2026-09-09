@@ -5,7 +5,7 @@ description: What to do if you forgot something on the train, or simply lost it 
 date_created: 2019-11-28
 ---
 
-Lost something in Berlin? You are not alone. Hundreds of thousands of lost items are found in Berlin each year. Here's what you have to get your things back.
+Lost something in Berlin? You are not alone. Hundreds of thousands of lost items are found in Berlin each year. Here's what you have to do to get your things back.
 
 {% tableOfContents %}
 
@@ -21,7 +21,7 @@ If you lost something in the S-Bahn, U-Bahn, tram or bus, you must go to the [BV
 - **When to go:** Wait at least 5 days, but no more than 6 weeks. Found objects arrive at the Fundbüro in around 5 days.[^0] Keys and personal documents are destroyed after 6 weeks.
 - **Special instructions:** When you go to the Fundbüro, bring an ID document with you. If you [lost your keys](/guides/lost-keys), bring a copy of the lost keys. This is how you prove that the keys are yours. If you find your things, you get them back immediately. You don't need to pay anything.[^0]
 
-If you lost something on a Flixbus bus, you must their [lost item search](https://help.flixbus.com/s/lost-and-found?language=de)
+If you lost something on a Flixbus bus, you must use their [lost item search](https://help.flixbus.com/s/lost-and-found?language=de).
 
 - **Where to go:** The [lost item search](https://help.flixbus.com/s/lost-and-found?language=de) on the Flixbus website
 - **When to go:** As soon as you lost something on the bus
@@ -57,7 +57,7 @@ Lost pets are kept at [Tierheim Berlin](https://maps.app.goo.gl/meNZDT2FhqojNkTN
 
 - **Where to go:** [Tierheim Berlin](https://maps.app.goo.gl/meNZDT2FhqojNkTNA), Hausvaterweg 39, Falkenberg
 - **When to go:** As soon as you lost your pet
-- **Special instructions:** You can call the Tiersammelstelle at [+03076888200](tel:+03076888200), or email them at <tiersammelstelle@tierschutz-berlin.de>.
+- **Special instructions:** You can call the Tiersammelstelle at [+49 30 76888200](tel:+493076888200), or email them at <tiersammelstelle@tierschutz-berlin.de>.
 
 ## Lost packages
 
@@ -65,7 +65,7 @@ When you order a package, it's often delivered to a neighbour or nearby shop. Th
 
 ## Lost keys
 
-**[What to do if you lose your keys ➞](/guides/lost-keys)
+**[What to do if you lose your keys ➞](/guides/lost-keys)**
 
 ## Other lost and found objects
 

@@ -12,11 +12,11 @@ related_guides:
     - guides/german-health-insurance/for-a-visa-application.md
 ---
 
-The Schengen visa (also called tourist visa, short stay visa or Category C visa)[^0] lets you visit Germany and the [[Schengen area]]. They are valid for up to 90 days.
+The Schengen visa (also called tourist visa, short stay visa or Category C visa)[^0] lets you visit Germany and the [[Schengen area]]. It is valid for up to 90 days.
 
 With a Schengen visa, you can:
 
-- ✓ Visit Germany for up to 90 days in a 180 days period
+- ✓ Visit Germany for up to 90 days in a 180-day period
 - ✓ Visit other countries in the [[Schengen area]]
 
 With a Schengen visa, you can't:

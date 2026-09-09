@@ -65,7 +65,7 @@ Tipping is optional. Around half of customers tip. If you are happy with your ha
 
 ## Tipping in hotels
 
-People rarely leave a tip in hotel rooms. It's not expected. You can leave a few Euros in your room for the cleaning staff, if you choose to.[^13]
+People rarely leave a tip in hotel rooms. It's not expected. You can leave a few euros in your room for the cleaning staff, if you choose to.[^13]
 
 When you order room service, you can tip €1 or €2.[^21]
 
@@ -79,7 +79,7 @@ At the cloak room (coat check), tipping is optional. You can give **€0.50 to �
 
 If you want to leave a tip, you say the total amount (bill + tip) when you give the money.
 
-> **Example:** The bill is €16.30. You say "18" and give a €20 bill. The employee gives you €2 back. They €1.70 in tip.[^14]
+> **Example:** The bill is €16.30. You say "18" and give a €20 bill. The employee gives you €2 back. They keep €1.70 in tip.[^14]
 
 If you want the waiter to keep the change, give the money and say "stimmt so".[^15]
 
@@ -87,7 +87,7 @@ If you want the waiter to keep the change, give the money and say "stimmt so".[^
 
 ### When you pay by card
 
-German credit card machines don't have a button for tip. When it's time to pay, you say how much you want to give (bill + tip) in advance.
+German credit card machines usually don't have a button for tips. When it's time to pay, you say how much you want to give (bill + tip) in advance.
 
 > **Example:** The bill is €16.30. You say "18" and give your card. The credit card machine charges you €18. The waiter gets a €1.70 tip.
 

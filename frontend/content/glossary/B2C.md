@@ -14,7 +14,7 @@ Business-to-consumer (B2C) is when a business sells goods or services directly t
 Example B2C transactions:
 
 - A store sells a computer to a consumer
-- An artist sells a painting to tourist
+- An artist sells a painting to a tourist
 - A mechanic repairs a person's car
 
 When we talk about [VAT](/glossary/Umsatzsteuer), a B2C transaction is a sale to a consumer that does not charge VAT. The VAT rules for B2C transactions are different from B2B transactions.

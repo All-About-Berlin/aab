@@ -1,7 +1,7 @@
 ---
 title: Berlin rent prices map
 short_title: Rent prices map
-description: See the rent per m² in each Berlin neighbourood
+description: See the rent per m² in each Berlin neighbourhood
 date_created: 2025-12-13
 related_guides:
     - guides/find-a-flat-in-berlin.md

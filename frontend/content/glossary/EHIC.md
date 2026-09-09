@@ -1,7 +1,7 @@
 ---
 title: What is EHIC?
 german_term: Europäische Krankenversicherungskarte
-english_term: European Health Insurance Car
+english_term: European Health Insurance Card
 description: It lets you get healthcare in another EU country.
 date_created: 2025-06-10
 related_guides:
@@ -16,7 +16,7 @@ You can use your EHIC to...
 
 - ✓ Get emergency healthcare in another [[EEA]] country
 - ✓ Get healthcare while you study in Germany
-- ✓ Get healthcare in before you start working in Germany
+- ✓ Get healthcare before you start working in Germany
 
 In Germany, your EHIC is usually on the back of your [health insurance card](/glossary/Gesundheitskarte).
 

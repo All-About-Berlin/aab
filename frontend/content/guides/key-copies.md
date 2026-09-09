@@ -23,7 +23,7 @@ Regular keys open the door to your apartment. To copy them...
 
 1. **Go to a locksmith**  
     Go to a locksmith (*Schlüsseldienst*) or to Bauhaus with the key you want to copy.[^12]
-2. **Ask for a copies**  
+2. **Ask for copies**  
     Making a key double takes a few minutes. It usually costs around €5 per key.
 3. **Inform your landlord**  
     You do not need their permission to make new keys, but you must inform them.[^15]

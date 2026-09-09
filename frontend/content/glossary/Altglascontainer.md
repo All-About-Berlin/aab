@@ -13,7 +13,7 @@ Glass recycling bins (*Altglascontainer, Glastonne* or *Glasiglu*) are recycling
 There are usually 3 bins:
 
 - **Brown bin** (*Braunglas*) for the brown glass
-- **Green bin** (*Grunglas*) for the green glass
+- **Green bin** (*Grünglas*) for the green glass
 - **White bin** (*Weißglas*) for transparent glass
 
 ![Glass recycling bins](/images/altglascontainer.jpg)

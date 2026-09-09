@@ -26,11 +26,11 @@ Think about these costs:
 - **[Income tax](/glossary/Einkommensteuer)** - [Tax calculator](/tools/tax-calculator)  
     You will pay 8% to 42% of your salary as income tax (*Einkommensteuer*). Income tax is the same for employees and freelancers.
 - **[Health insurance](/glossary/Krankenversicherung)** - [Health insurance calculator](/tools/health-insurance-calculator)  
-    If you were an employee, your employer would pay half of your contribution. As a freelancer, you pay it alone. This means your health insurance will cost you twice as much. Since public health insurance costs a percentage of your salary, it can get very expensive. Private health insurance charges according on your health condition, so it can be much cheaper if you are young. - [More information](/guides/german-health-insurance).
+    If you were an employee, your employer would pay half of your contribution. As a freelancer, you pay it alone. This means your health insurance will cost you twice as much. Since public health insurance costs a percentage of your salary, it can get very expensive. Private health insurance charges according to your health condition, so it can be much cheaper if you are young. - [More information](/guides/german-health-insurance).
 - **[Liability insurance](/glossary/Haftpflichtversicherung)** (optional)  
-    If you make an expensive mistake, liability insurance covers for reparations and other legal costs. Personal liability insurance does not cover your business activities. You need a professional liability insurance. - [More information](/guides/haftpflichtversicherung)
+    If you make an expensive mistake, liability insurance covers damages and other legal costs. Personal liability insurance does not cover your business activities. You need professional liability insurance. - [More information](/guides/haftpflichtversicherung)
 - **[Trade tax](/glossary/Gewerbesteuer)**  
-    [If you are a *Gewerbe*](/guides/freiberufler-or-gewerbe), you must pay trade tax (*[[Gewerbesteuer]]*). In Berlin, the costs an extra {{GEWERBESTEUER_RATE_BERLIN}}% of all [profit](/glossary/Gewinn) above €{{GEWERBESTEUER_FREIBETRAG|cur}}. - [More information](/guides/gewerbesteuer)
+    [If you are a *Gewerbe*](/guides/freiberufler-or-gewerbe), you must pay trade tax (*[[Gewerbesteuer]]*). In Berlin, it costs an extra {{GEWERBESTEUER_RATE_BERLIN}}% of all [profit](/glossary/Gewinn) above €{{GEWERBESTEUER_FREIBETRAG|cur}}. - [More information](/guides/gewerbesteuer)
 - **[VAT](/glossary/Umsatzsteuer)**  
     You must charge VAT on your products and services, and give that money to the *[[Finanzamt]]*. If you are a *Kleinunternehmer*, you can decide to charge VAT, but you don't have to. - [More information](/guides/value-added-tax)
 - **Pension and savings**  
@@ -46,7 +46,7 @@ Think about these costs:
 
 ### No paid vacations
 
-As a freelancer, you don't have [paid vacations](/guides/vacation-days), [paid holidays](/guides/public-holidays) or [sick days](/guides/sick-leave). When you don't work, you don't get paid. If you remove the weekends, the national holidays and 30 vacation days, will only work around 210 days per year.[^1] Think about this when you set your rates.
+As a freelancer, you don't have [paid vacations](/guides/vacation-days), [paid holidays](/guides/public-holidays) or [sick days](/guides/sick-leave). When you don't work, you don't get paid. If you remove the weekends, the national holidays and 30 vacation days, you will only work around 210 days per year.[^1] Think about this when you set your rates.
 
 You don't always get paid to work. The time you spend finding clients, doing your taxes or updating your website is not billable.
 

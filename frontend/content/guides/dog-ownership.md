@@ -31,7 +31,7 @@ After you register your dog, you will pay the dog tax (*[[Hundesteuer]]*) by aut
 
 Your dog must have an identification chip.[^0] A veterinarian can chip your dog. It costs around €50.[^1]
 
-**[English speaking vets in Berlin ➞](/guides/english-speaking-vets)**
+**[English-speaking vets in Berlin ➞](/guides/english-speaking-vets)**
 
 ### Dog tag
 
@@ -88,7 +88,7 @@ It does not cover you if your dog...
 - ✗ Bites a member of your family
 - ✗ Damages your own property
 
-Compare prices with [Tarifcheck](/out/tarifcheck-dogs). If you don't speak German, [Feather](/out/feather-dogs) and [Getsafe](/out/getsafe-dogs) the only English-speaking options.
+Compare prices with [Tarifcheck](/out/tarifcheck-dogs). If you don't speak German, [Feather](/out/feather-dogs) and [Getsafe](/out/getsafe-dogs) are the only English-speaking options.
 
 Your coverage must be at least 1 million euros.[^18] If you travel with your dog, make sure your insurance also covers you in other countries. If your dog is a [dangerous breed](/guides/dog-ownership#dangerous-breeds), make sure your insurance covers dangerous breeds.
 
@@ -98,7 +98,7 @@ Dog health insurance (*[[Tierkrankenversicherung]]*) is optional.
 
 It covers the veterinarian bills when your dog gets sick. It rarely covers routine operations like vaccines or castration, but it covers expensive operations.[^8] This can be important when your dog gets old.
 
-The cost depends on your dog's age, race and sex. Basic coverage costs around €20 per month. Full coverage costs around €60 per month.
+The cost depends on your dog's age, breed and sex. Basic coverage costs around €20 per month. Full coverage costs around €60 per month.
 
 Compare prices with [Tarifcheck](/out/tarifcheck-pethealth). If you don't speak German, [Feather](/out/feather-pethealth) and [Getsafe](/out/getsafe-pethealth) sell pet health insurance, and they speak English.
 
@@ -160,7 +160,7 @@ It's harder to [find an apartment](/guides/find-a-flat-in-berlin) that allows do
 [^7]: [Berlin.de](https://hunderegister.berlin.de/faq/#question-64)
 [^8]: [verbraucherzentrale.de](https://www.verbraucherzentrale.de/wissen/geld-versicherungen/weitere-versicherungen/krankenversicherungen-fuer-haustiere-sinnvoll-oder-ueberfluessig-10781#2)
 [^9]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/hdw3r4/berlin_und_hund/fvq6crb/?context=3)
-[^10]: [§ 15 HungeG](https://gesetze.berlin.de/bsbe/document/jlr-HuHGBE2016pP15)
+[^10]: [§ 15 HundeG](https://gesetze.berlin.de/bsbe/document/jlr-NNLBE00004860NN00000000026)
 [^11]: [zooplus.de](https://www.zooplus.de/magazin/hund/hundesport-spiel/hundestraende), [ostsee24.de](https://www.ostsee24.de/ostsee-urlaub/urlaub-mit-hund/hundestrand-ostsee)
 [^12]: [mydog365.de](https://mydog365.de/magazin/recht/wohnung-finden-hund/), [wohnglueck.de](https://wohnglueck.de/artikel/wohnungssuche-mit-hund-8250#:~:text=gehort%20zu%20den%20schwierigsten%20disziplinen), [Reddit](https://old.reddit.com/r/berlin/comments/m6wybt/apartment_hunting_when_having_dog/) (March 2021), [Mietrecht.com](https://www.mietrecht.com/hundehaltung-mietwohnung/#:~:text=mit%20hund%20durchaus%20sehr%20schwierig)
 [^13]: [dogorama.app](https://dogorama.app/de-de/forum/Regionales/Wohnungssuche_mit_Hund-QZ8K9qEeuSSrVVpkYQPp/) (2023), [perpetual.care](https://perpetual.care/rental-laws-in-germany/#:~:text=prior%20written%20permission), [test.de](https://www.test.de/Haustiere-Mietwohnung-5767892-0/#:~:text=manch%20haltungs%C2%ADverbot%20ist%20unwirk%C2%ADsam) (July 2021), [mietrecht.de](https://www.mietrecht.com/hundehaltung-mietwohnung/#:~:text=immer%20das%20einverstandnis%20des%20vermieters)

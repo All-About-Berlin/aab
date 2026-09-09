@@ -192,7 +192,7 @@ A privacy policy is required by Articles 13 and 14 of the [[DSGVO]].[^13]
 
 Your website should have a terms and conditions ([[AGB]] or *Allgemeine Geschäftsbedingungen*) page. Usually, it's the page where you say "we are not responsible for the accuracy of our content".
 
-The terms in conditions must be available in the same languages as your website.[^14]
+The terms and conditions must be available in the same languages as your website.[^14]
 
 ### Who needs an AGB page?
 
@@ -205,7 +205,7 @@ The AGB is required by [§ 312d BGB](https://www.buzer.de/312d_BGB.htm) if you h
 ### AGB checklist
 
 - [ ] Add a terms and conditions page to your website. There are many AGB generators and templates online. Most of them are in German.
-- [ ] Add a link to your terms an conditions to your website's footer.
+- [ ] Add a link to your terms and conditions to your website's footer.
 
 ## Creative Commons images
 
@@ -236,16 +236,16 @@ The correct attribution format for Creative Commons images is described [in this
 
 ## Sponsored content and affiliate links
 
-The *Telemediengestz* says that ads on a website must be clearly labelled. You can't disguise an ad as genuine content. Otherwise, it's surreptitious advertising (*Schleichwerbung*), and you can get an *[[Abmahnung]]* for "unfair competition".[^16]
+The *Telemediengesetz* says that ads on a website must be clearly labelled. You can't disguise an ad as genuine content. Otherwise, it's surreptitious advertising (*Schleichwerbung*), and you can get an *[[Abmahnung]]* for "unfair competition".[^16]
 
 Here are the basic guidelines for ads and sponsored content on your website:
 
 - **Affiliate links need to be labelled**  
-    Affiliate links are "commercial communications" according to [§ 6 DDG](https://www.buzer.de/6_DDG.htm). Multiple lawyers suggest to mark affiliate links as ads,[^17] even if you are not *directly* getting financial compensation for affiliate content. A footnote regarding affiliate links might be insufficient.[^21]
+    Affiliate links are "commercial communications" according to [§ 6 DDG](https://www.buzer.de/6_DDG.htm). Multiple lawyers suggest marking affiliate links as ads,[^17] even if you are not *directly* getting financial compensation for affiliate content. A footnote regarding affiliate links might be insufficient.[^21]
 - **Sponsored content needs to be labelled**  
     If you get paid to put a sponsored post on your blog, you need to clearly tell your users that this post is an ad, and tell them who is sponsoring the ad. In other words, you can't disguise an advertisement as an editorial text.
 
-[According to Kanzlei Plutte](https://www.ra-plutte.de/schleichwerbung-sponsored-hinweis-reicht-nicht-aus/), "sponsored content" is not a sufficient label, and you should use a clear word like "advertisement" to label advertising on your website. He backs his opinion with court cases, but admits that Twitter, Facebook and Instagram use the term "sponsored".
+[According to Kanzlei Plutte](https://www.ra-plutte.de/schleichwerbung-sponsored-hinweis-reicht-nicht-aus/), "sponsored content" is not a sufficient label, and you should use a clear word like "advertisement" to label advertising on your website. They back their opinion with court cases, but admit that Twitter, Facebook and Instagram use the term "sponsored".
 
 ### Who needs to mark affiliate links?
 
@@ -282,7 +282,7 @@ If your website generates income, it's a business. If it's not part of a registe
 
 ### Who needs to register a business?
 
-Any German resident or who runs a website as a stand-alone business.
+Any German resident or company who runs a website as a stand-alone business.
 
 ### Examples
 
@@ -293,7 +293,7 @@ Our tax number (*[[Steuernummer]]*) can be found in our [Impressum](/terms).
 - [ ] Before running a commercial website in Germany, make sure you are allowed to be self-employed in Germany.
 - [ ] If your website is a stand-alone business, [apply for a ](/guides/gewerbeschein)*[Gewerbeschein](/guides/gewerbeschein)*.
 - [ ] If your website is a stand-alone business, [register it at the ](/guides/fragebogen-zur-steuerlichen-erfassung)*[Finanzamt](/guides/fragebogen-zur-steuerlichen-erfassung)*.
-- [ ] When your get your tax number (*[[Steuernummer]]*) from the *[[Finanzamt]]*, add it to your *[[Impressum]]*.
+- [ ] When you get your tax number (*[[Steuernummer]]*) from the *[[Finanzamt]]*, add it to your *[[Impressum]]*.
 
 ## Need help?
 

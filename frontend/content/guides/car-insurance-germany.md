@@ -17,7 +17,7 @@ This guide helps you find the best, cheapest car insurance.
 
 When you [buy a car](/guides/buy-a-car-in-germany), you must choose a car insurance. Use **[Verivox](/out/verivox-kfz)** or **[Tarifcheck](/out/tarifcheck-kfz)** to compare car insurance prices.
 
-If you don't speak German, [Feather](/out/feather-car) is the only English-speaking car insurance. They also recognise your driving experience in other countries, so you can get a much lower price.
+If you don't speak German, [Feather](/out/feather-car) is the only English-speaking car insurer. They also recognise your driving experience in other countries, so you can get a much lower price.
 
 ### 2. Get an eVB number
 
@@ -77,7 +77,7 @@ Comprehensive (*Vollkasko*) car insurance covers...
 - ✓ **Damage to your own car**  
     It pays to repair your car, even when the accident is your fault.
 - ✓ **Vandalism**  
-    If an angry person scratches your car or break your windows, your insurance pays for the repairs. Some *Teilkasko* insurances also cover vandalism.[^0]
+    If an angry person scratches your car or breaks your windows, your insurance pays for the repairs. Some *Teilkasko* insurances also cover vandalism.[^0]
 - ✓ **Hit-and-runs**  
     If another driver hits your vehicle, then disappears, your insurance pays for the repairs.
 
@@ -125,7 +125,7 @@ Car insurance can be *really* expensive if you are a new driver.[^7] There are a
     - **Get a family discount**  
         Some insurance companies have discounts (*Familientarife*) for the family of existing customers.[^3]
 - **Include it in your [tax declaration](/glossary/Steuererklärung)**  
-    Vehicle insurance is sometimes [tax deductible](/glossary/steuerlich%20absetzbar).[^11] If you are a permanent employee, you can deduct part of the cost. If you are self-employed and only use the vehicle for work, you can deduct the full cost.[^20]
+    Vehicle insurance is sometimes [tax-deductible](/glossary/steuerlich%20absetzbar).[^11] If you are a permanent employee, you can deduct part of the cost. If you are self-employed and only use the vehicle for work, you can deduct the full cost.[^20]
 - **Be a good driver**  
     If you make no claims, your *[[Schadenfreiheitsklasse]]* goes up every year, and your car insurance becomes cheaper. After a few years of safe driving, you get a big discount.
 

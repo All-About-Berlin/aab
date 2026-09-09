@@ -92,7 +92,7 @@ The membership costs €30 to €300 per year, depending on your income.[^4] Onl
 
 ### Hybrid services
 
-Some tax software give you access to a tax advisor. You enter your income, expenses and invoices yourself, and a tax advisor reviews them. [Taxfix](/out/taxfix), [Zasta](https://zasta.de/) and a few other services offer this.
+Some tax software gives you access to a tax advisor. You enter your income, expenses and invoices yourself, and a tax advisor reviews them. [Taxfix](/out/taxfix), [Zasta](https://zasta.de/) and a few other services offer this.
 
 This is cheaper than letting a tax advisor do everything. It works well for simple tax situations, but more complex cases are not supported.[^6]
 

@@ -42,7 +42,7 @@ Some German universities have programmes in English, but most are only in German
 
 To [apply for a permanent residence](/guides/permanent-residence), you need a B1 language test certificate.[^1] If you have a [[Blue Card]], you only need an A1 certificate.
 
-### To get the German citizenship
+### To get German citizenship
 
 To apply for German citizenship, you need a B1 language test certificate. If you speak German at a C1 level, you can get German citizenship 2 years earlier.[^2]
 
@@ -117,7 +117,7 @@ Most private schools also offer online classes.
 - **[Sprachsalon Berlin](https://www.sprachsalon-berlin.de/en/)**  
     Regular and intensive courses in Kreuzberg. Groups of 6 to 12 people. Private lessons are available. They also host [events](https://www.sprachsalon-berlin.de/en/about-us/).
 - **[Sprachinstitut Berlin](https://sprachinstitut-berlin.de/en/learn-german-berlin/)**  
-    Regular and intensive German classes in Mitte. Groups 4 to 8 people. Private lessons are available. They offer pronunciation training and other special classes.
+    Regular and intensive German classes in Mitte. Groups of 4 to 8 people. Private lessons are available. They offer pronunciation training and other special classes.
 - **[Zeitgeist Zentrum](https://www.zeitgeist-zentrum.de/)**  
     Regular and intensive German classes in Wedding. Private lessons, and groups of 6 to 12 people. They also have cultural events and a co-working space.
 
@@ -139,7 +139,7 @@ Most of the language schools in Berlin offer online classes.
 There are also many language learning apps for German:
 
 - **[Babbel](/out/babbel)**  
-    Regular language lesson without a teacher. You learn German vocabulary and grammar, one module at the time. I used Babbel a lot when I moved to Germany. I like that it teaches you the grammar, and lets you choose what to study. I found it too boring.
+    Regular language lessons without a teacher. You learn German vocabulary and grammar, one module at a time. I used Babbel a lot when I moved to Germany. I like that it teaches you the grammar, and lets you choose what to study. I found it too boring.
 - **[Duolingo](https://www.duolingo.com/)** - free  
     This is a famous language learning app. It's more interesting than Babbel, but the mobile app does not explain the grammar really well. I find Duolingo too limited. I prefer [Babbel](/out/babbel).
 - **[Deutschable](https://deutschable.com/enjoy-10e-off-a-premium-membership-all-about-berlin/)**  
@@ -149,7 +149,7 @@ There are also many language learning apps for German:
 - **[Lingoda](/out/lingoda)** - from €11 per lesson  
     Lingoda lets you have video classes with a teacher. You can have 1-to-1 classes, or join a group of 3-5 people. You get a certificate when you complete a level.
 - **[Memrise](https://www.memrise.com/)** - €5 per month  
-    Regular language lesson without a teacher.
+    Regular language lessons without a teacher.
 
 ## Language tandems
 
@@ -209,7 +209,7 @@ Since I [moved to Berlin](/guides/moving-to-berlin) in 2015, I have tried differ
 
 ### German classes
 
-I used [Babbel](/out/babbel) to learn the basic. It's useful, but really boring. [Duolingo](https://www.duolingo.com/) was more interesting, but it did not teach me any grammar (maybe it changed).
+I used [Babbel](/out/babbel) to learn the basics. It's useful, but really boring. [Duolingo](https://www.duolingo.com/) was more interesting, but it did not teach me any grammar (maybe it changed).
 
 I also took German classes at work. It's nice because your employer pays for it. Sometimes, you even get lessons during work hours. If you are paid to learn German, do it!
 
@@ -217,7 +217,7 @@ Later, I wanted to take classes at the *[[Volkshochschule]]*, but I could not un
 
 When you take German classes, the teacher makes a big difference. If you get a good teacher, you learn a lot faster. Group size is also important. In a small group, you can ask a lot of questions. Private lessons are even better, because you control the lesson.
 
-I used Chatterbug and I loved it. It does not exist anymore, but [Italki](https://www.italki.com/) and [Lingoda](/out/lingoda) are similar. I liked to book 45 minute blocks when I had time, with any teacher I wanted. It was very flexible. I could not stay focused in class, so I took short lessons in the morning. Sometimes, I did the exercises, and sometimes I just talked with my teacher. It was a great way to practice German conversation. There are also self-study exercises, but I don't use them.
+I used Chatterbug and I loved it. It does not exist anymore, but [Italki](https://www.italki.com/) and [Lingoda](/out/lingoda) are similar. I liked to book 45-minute blocks when I had time, with any teacher I wanted. It was very flexible. I could not stay focused in class, so I took short lessons in the morning. Sometimes, I did the exercises, and sometimes I just talked with my teacher. It was a great way to practice German conversation. There are also self-study exercises, but I don't use them.
 
 ### Useful websites and apps
 

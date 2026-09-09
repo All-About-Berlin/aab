@@ -9,7 +9,7 @@ related_guides:
     - guides/find-a-flat-in-berlin.md
 ---
 
-The shadow rent (*Schattenmiete*) is a clause is some leases in Berlin.
+The shadow rent (*Schattenmiete*) is a clause in some leases in Berlin.
 
 Many tenants had a lower rent because of the *[[Mietendeckel]]*. The *Schattenmiete* is the rent tenants would pay if the *Mietendeckel* was repealed.[^0]
 

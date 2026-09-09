@@ -13,7 +13,7 @@ This includes loud neighbours that ignore [quiet hours](/guides/quiet-hours), co
 
 ## Talk to each other
 
-Talk the the person who makes the noise, and ask them to stop. It's sometimes enough.
+Talk to the person who makes the noise, and ask them to stop. It's sometimes enough.
 
 ## Contact the Ordnungsamt
 
@@ -21,7 +21,7 @@ The *[[Ordnungsamt]]* will send a police officer to make the noise stop. Usually
 
 ### By telephone
 
-Call the *[[Ordnungsamt]]*'s [central point of contact](https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/ordnungsamt/zentrale-anlauf-und-beratungsstelle-zab/) (*[[ZAB]]*), or [find your local ](https://service.berlin.de/dienstleistung/121925/)*[Ordnungsamt](https://service.berlin.de/dienstleistung/121925/)*, and call them directly.
+Call the *[[Ordnungsamt]]*'s [central point of contact](https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/ordnungsamt/zentrale-anlauf-und-beratungsstelle-zab/) (*[[ZAB]]*), or [find your local *Ordnungsamt*](https://service.berlin.de/dienstleistung/121925/), and call them directly.
 
 **[How to dial phone numbers ➞](/guides/dial-phone-numbers-germany)**
 

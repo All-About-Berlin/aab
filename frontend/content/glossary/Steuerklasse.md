@@ -26,7 +26,7 @@ There are 6 tax classes (*Steuerklassen*).
 - **Tax class 5**  
     If you are married, and you earn less than your spouse. If you are in tax class 5, your spouse is in tax class 3.
 - **Tax class 6**  
-    This is the tax class for a second job. If you don't have a [tax ID](/glossary/Steueridentifikationsnummer), your employer might put you in tax class 6. You have no tax benefits, and you pay more [wage tax](/glossary/Einkommensteuer).
+    This is the tax class for a second job. If you don't have a [tax ID](/glossary/Steueridentifikationsnummer), your employer might put you in tax class 6. You have no tax benefits, and you pay more [wage tax](/glossary/Lohnsteuer).
 
 Your tax class depends on your situation. If you are self-employed, you usually don't have a tax class, because you don't pay wage tax.
 

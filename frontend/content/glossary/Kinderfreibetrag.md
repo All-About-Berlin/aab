@@ -11,4 +11,4 @@ related_guides:
 
 The *Kinderfreibetrag* is a tax deduction for parents in Germany. You can choose between the *Kinderfreibetrag* or *[[Kindergeld]]*.
 
-Sometimes, *Kindergeld* makes more sense. Sometimes the *[Kinderfreibetrag](/glossary/Kindergeld)* makes more sense. It depends on your tax situation.
+Sometimes, *Kindergeld* makes more sense. Sometimes the *[Kinderfreibetrag](/glossary/Kinderfreibetrag)* makes more sense. It depends on your tax situation.

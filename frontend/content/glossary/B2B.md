@@ -17,6 +17,6 @@ Example B2B transactions:
 - An agency hires a freelance writer
 - A mechanic repairs a company car
 
-When we talk about [VAT](/glossary/Umsatzsteuer), a B2C transaction is a sale to another business that charges VAT. The VAT rules for B2B transactions are different from B2C transactions.
+When we talk about [VAT](/glossary/Umsatzsteuer), a B2B transaction is a sale to another business that charges VAT. The VAT rules for B2B transactions are different from B2C transactions.
 
 **[How VAT works in Germany ➞](/guides/value-added-tax)**

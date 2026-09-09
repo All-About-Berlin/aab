@@ -69,7 +69,7 @@ Most things are in zone A or B, so you usually need an AB ticket. If you go to t
 
 [![Bvg tarifbereiche](/images/bvg-tarifbereiche.svg "Berlin public transit tariff zones")](/images/bvg-tarifbereiche.svg)
 
-If you already have an AB ticket, and you want to go to zone C, get an [extention ticket (*Anschlussfahrausweis*)](https://sbahn.berlin/en/tickets/all-tickets/single-tickets/extension-ticket/). It's cheaper than an ABC ticket.
+If you already have an AB ticket, and you want to go to zone C, get an [extension ticket (*Anschlussfahrausweis*)](https://sbahn.berlin/en/tickets/all-tickets/single-tickets/extension-ticket/). It's cheaper than an ABC ticket.
 
 If you have a [[Deutschland Ticket]], you can travel in all zones.
 
@@ -77,7 +77,7 @@ If you have a [[Deutschland Ticket]], you can travel in all zones.
 
 **Single tickets** are valid for 2 hours in one direction. You can take as many trains, buses and ferries as you want with the same ticket. You can stop, do some shopping, and take the train again. Your ticket only works in one direction. To go back, you must buy a new ticket.
 
-**Short trip tickets** let you travel 3 train tops, or 6 bus or tram stops. If you buy them in the app, they are valid for 20 minutes.[^2]
+**Short trip tickets** let you travel 3 train stops, or 6 bus or tram stops. If you buy them in the app, they are valid for 20 minutes.[^2]
 
 **Daily, monthly and weekly passes** are cheaper. They usually let you [bring other people for free](#bring-other-people-for-free).
 
@@ -236,7 +236,7 @@ If you have a [[Deutschland Ticket]], you can bring a dog with you for free, but
 
 **Most weekly, monthly and yearly tickets** let you bring children under 15 years old for free.
 
-**Most weekly, monthly and yearly tickets**, let you bring other people for free during certain times:[^13]
+**Most weekly, monthly and yearly tickets** let you bring other people for free during certain times:[^13]
 
 - Monday to Friday from 8PM to 3AM the next day.
 - Saturday and Sunday

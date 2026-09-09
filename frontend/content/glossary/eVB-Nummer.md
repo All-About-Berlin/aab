@@ -9,7 +9,7 @@ related_guides:
     - guides/car-insurance-germany.md
 ---
 
-When you want to [register a vehicle](/guides/buy-a-car-in-germany#register-your-vehicle), you must get an eVB number from your insurance company. It proves that you have pre-apprived [car insurance](/glossary/Kfz-Versicherung) for this vehicle.
+When you want to [register a vehicle](/guides/buy-a-car-in-germany#register-your-vehicle), you must get an eVB number from your insurance company. It proves that you have pre-approved [car insurance](/glossary/Kfz-Versicherung) for this vehicle.
 
 eVB stands for *elektronische Versicherungsbestätigung* (electronic insurance confirmation). The eVB number is a 7-character alphanumeric code. It has the format **A1BC25Z**.[^1]
 

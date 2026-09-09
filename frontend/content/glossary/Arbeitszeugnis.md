@@ -1,5 +1,5 @@
 ---
-title: What is an Arbeitszeugnis
+title: What is an Arbeitszeugnis?
 german_term: Arbeitszeugnis
 english_term: Job reference letter
 description: A letter you get from your employer that confirms that you worked there.

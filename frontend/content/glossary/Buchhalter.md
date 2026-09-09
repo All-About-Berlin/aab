@@ -9,4 +9,4 @@ related_guides:
     - guides/steuerberater-vs-buchhalter.md
 ---
 
-A bookkeeper (*Buchhalter*) is a person who can help you with your bookkeeping. Unlike tax advisors (*[[Steuerberater]]*), being a *Buchhalter* does not require specific qualifications, and is not liable for his mistakes. For more details, see [this guide](/guides/steuerberater-vs-buchhalter).
+A bookkeeper (*Buchhalter*) is a person who can help you with your bookkeeping. Unlike a tax advisor (*[[Steuerberater]]*), a *Buchhalter* does not need specific qualifications, and is not liable for their mistakes. For more details, see [this guide](/guides/steuerberater-vs-buchhalter).

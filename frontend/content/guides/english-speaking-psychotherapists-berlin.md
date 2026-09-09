@@ -40,7 +40,7 @@ These directories help you find English-speaking therapists:
 
 Psychiatrists solve mental health problems with medical treatments. They are **doctors who studied medicine**.[^1]
 
-They can diagnose mental health problems, prescribe medication and give therapy. They can also give therapy if they took therapy training. Many accept [public health insurance](/glossary/gesetzliche%20Krankenversicherung).
+They can diagnose mental health problems and prescribe medication. They can also give therapy if they took therapy training. Many accept [public health insurance](/glossary/gesetzliche%20Krankenversicherung).
 
 **[English-speaking psychiatrists in Berlin ➞](/guides/english-speaking-psychiatrists-berlin)**
 
@@ -52,7 +52,7 @@ They can diagnose mental health problems, give therapy and coach people. Some ac
 
 ### Alternative practitioners
 
-Alternative practitioners for psychotherapy (*Heilpraktiker für Psychotherapie*) have **varied qualifications and training**. Some were licenced psychotherapists in another country. Others have no therapy training, and only passed a 60 minute exam.[^7]
+Alternative practitioners for psychotherapy (*Heilpraktiker für Psychotherapie*) have **varied qualifications and training**. Some were licenced psychotherapists in another country. Others have no therapy training, and only passed a 60-minute exam.[^7]
 
 They can diagnose mental health problems, give therapy and coach people. They can't give you a [sick note](/glossary/Krankschreibung). They can't prescribe medication or call themselves psychotherapists. They are usually "therapists". Look for words like "Heilpraktikergesetz", "HeilprG" or "HPG" in their title.[^8]
 

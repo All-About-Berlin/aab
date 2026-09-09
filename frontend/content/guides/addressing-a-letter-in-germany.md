@@ -23,7 +23,7 @@ German addresses are written in this order:
         Add *Persönlich* (personal) or *Vertraulich* (confidential) if no one else should read this letter.[^5] It means that other people at this address should not open your letter.
 - **Street name and house number**  
     Put the street name before the door number. For example, "Musterstraße 17". A building can have multiple entrances like "17A" and "17B".
-- **Extra information** (*Addresszusatz*)  
+- **Extra information** (*Adresszusatz*)  
     See [below ➞](#extra-information)
 - **Postal code** (*[[Postleitzahl]]*)  
     Germany uses 5-digit postal codes. Always include it in the address, because big cities can have two streets with the same name. The [postal code finder](https://www.postdirekt.de/plzserver/) can help.
@@ -34,7 +34,7 @@ German addresses are written in this order:
 
 ### Extra information
 
-Sometimes, an address is not enough. You must add extra information in the *Addresszusatz* field. It helps delivery people find your apartment. The *[[Bürgeramt]]* might ask for this when you [register your address](/glossary/Anmeldung).
+Sometimes, an address is not enough. You must add extra information in the *Adresszusatz* field. It helps delivery people find your apartment. The *[[Bürgeramt]]* might ask for this when you [register your address](/glossary/Anmeldung).
 
 - **Entrance**  
     Some buildings have multiple entrances. It can be hard to find your apartment.

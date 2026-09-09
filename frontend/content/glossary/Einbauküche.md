@@ -2,7 +2,7 @@
 title: What does EBK or Einbauküche mean?
 german_term: Einbauküche
 english_term: Built-in kitchen
-description: Cabinets, a sink and a stove that comes with the apartment.
+description: Cabinets, a sink and a stove that come with the apartment.
 date_created: 2019-09-30
 related_guides:
     - guides/find-a-flat-in-berlin.md

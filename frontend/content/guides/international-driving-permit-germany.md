@@ -1,7 +1,7 @@
 ---
 title: How to get an International Driving Permit in Berlin
 short_title: How to get an International Driving Permit
-description: How to get your IDP in Berlin and the rest of Germany, both with German and foreign driver licences.
+description: How to get your IDP in Berlin and the rest of Germany, both with German and foreign driver's licences.
 date_created: 2017-11-20
 ---
 
@@ -31,7 +31,7 @@ Go to your appointment and bring...
 - [ ] **A valid German driver's licence**  
     Temporary licences issued to new drivers (*vorläufiger Nachweis der Fahrerlaubnis*) are not accepted. You must bring a valid plastic driving licence (*Kartenführerschein*).
 
-You will get a International Driving Permit during your appointment. It's valid for 3 years.
+You will get an International Driving Permit during your appointment. It's valid for 3 years.
 
 ## With a non-German driver's licence
 

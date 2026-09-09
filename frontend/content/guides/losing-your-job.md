@@ -97,7 +97,7 @@ If you sign a termination agreement...[^19]
 - **You can lose 3 months of [unemployment benefits](/glossary/ALG%20I)**  
     If you *choose* to leave, you usually lose 3 months of unemployment benefits.[^24] It depends on what's in your *Aufhebungsvertrag*. - [How unemployment benefits work](/guides/unemployment-benefits)
 
-When you sign an *Aufhebungsvertrag*, you make a deal with your employer. You get more money, they get less problems. You can accept, refuse or negotiate this deal. Your employer can't force you to sign an *Aufhebungsvertrag*.[^20] If you are not sure, [get legal help](#need-help).
+When you sign an *Aufhebungsvertrag*, you make a deal with your employer. You get more money, they get fewer problems. You can accept, refuse or negotiate this deal. Your employer can't force you to sign an *Aufhebungsvertrag*.[^20] If you are not sure, [get legal help](#need-help).
 
 ## Before you stop working
 
@@ -249,7 +249,7 @@ Always [tell the *Ausländerbehörde*](#tell-the-auslanderbehorde) about your ne
 
 ### Citizenship or permanent residence
 
-If you are a **EU citizen** or a **German [permanent resident](/glossary/Niederlassungserlaubnis)**, nothing happens. You don't need to a job to live in Germany. You don't need permission to change jobs.
+If you are an **EU citizen** or a **German [permanent resident](/glossary/Niederlassungserlaubnis)**, nothing happens. You don't need a job to live in Germany. You don't need permission to change jobs.
 
 Your [permanent residence](/glossary/Niederlassungserlaubnis) or citizenship application might be delayed until you [find another job](/guides/find-a-job-in-berlin) and finish your [probation period](/glossary/Probezeit).[^28]
 
@@ -271,7 +271,7 @@ If your employer gives performance bonuses, you should get that bonus, even if y
 
 ## What happens to your unused vacation days
 
-Usually, your employer forces you use all your vacation days before the end of your [notice period](/glossary/Kündigungsfrist). You still get paid while on vacation.
+Usually, your employer forces you to use all your vacation days before the end of your [notice period](/glossary/Kündigungsfrist). You still get paid while on vacation.
 
 After you use all your vacation days, your employer might send you on [garden leave](https://en.wikipedia.org/wiki/Garden_leave).
 

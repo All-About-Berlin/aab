@@ -16,9 +16,9 @@ To move to Berlin, read my [moving to Berlin guide](/guides/moving-to-berlin).
 You might need a visa to visit Germany. It depends on your citizenship:
 
 - **Citizens of the [EU](/glossary/European%20Union), [[EEA]] and Switzerland**  
-    You can visit, live and work Germany without a visa. You can stay as long as you want.
+    You can visit, live and work in Germany without a visa. You can stay as long as you want.
 - **Other [[Schengen area]] residents**  
-    You can visit Germany without a visa. You stay in Germany for 90 days in a 180 day period.[^0] If you want to [stay longer](/guides/moving-to-berlin), or [work in Germany](/guides/find-a-job-in-berlin), you need a [residence permit](/glossary/Aufenthaltstitel).
+    You can visit Germany without a visa. You can stay in Germany for 90 days in a 180-day period.[^0] If you want to [stay longer](/guides/moving-to-berlin), or [work in Germany](/guides/find-a-job-in-berlin), you need a [residence permit](/glossary/Aufenthaltstitel).
 - **Citizens of [other countries](https://www.auswaertiges-amt.de/en/einreiseundaufenthalt/-/231148)**  
     People from [certain countries](https://www.auswaertiges-amt.de/en/visa-service/-/231148) can visit Germany for 90 days without a visa. Other people need a [Schengen Visa](/glossary/Schengen%20visa) to visit Germany. A Schengen Visa costs €{{SCHENGEN_VISA_FEE|cur}}.[^1] You can apply for a Schengen visa at the [German embassy or consulate in your country](/out/consulate-finder).
 
@@ -118,7 +118,7 @@ Start with [visitBerlin.de](https://www.visitberlin.de/en), [WikiVoyage](https:/
 ### Main attractions
 
 - **[Berlin Wall](https://goo.gl/maps/SWxzMFcix9QTLQXN6)** (*Berliner Mauer*)  
-    Some parts of the Berlin wall were preserved. There is preserved part of the wall and a free museum [on Bernauer Straße](https://goo.gl/maps/SWxzMFcix9QTLQXN6). The [East Side Gallery](https://goo.gl/maps/hekJmdFPktP9huxs6) is another part of the wall that was turned into a gallery.
+    Some parts of the Berlin wall were preserved. There is a preserved part of the wall and a free museum [on Bernauer Straße](https://goo.gl/maps/SWxzMFcix9QTLQXN6). The [East Side Gallery](https://goo.gl/maps/hekJmdFPktP9huxs6) is another part of the wall that was turned into a gallery.
 - **[Berlin Cathedral](https://goo.gl/maps/GniFGJixL5aFxKbB6)** (*Berliner Dom*)  
     The most famous church in Berlin. You can visit it, or relax on the grass in front of it. It's on the [museum island](https://goo.gl/maps/sPpsKZkauPaP4F2e6), close to many old museums.
 - **[Berliner Unterwelten](https://www.berliner-unterwelten.de/en/index.html)**  
@@ -126,7 +126,7 @@ Start with [visitBerlin.de](https://www.visitberlin.de/en), [WikiVoyage](https:/
 - **[Brandenburg Gate](https://goo.gl/maps/pJvVaLRLvsHyYg5S6)** (*Brandenburger Tor*)  
     The iconic gate on Berlin's East-West axis.
 - **[Christmas markets](https://www.visitberlin.de/en/christmas-markets-berlin)**  
-    From mid-November to the end December, you should visit the Christmas markets. They sell hot drinks, food, sweets and home-made goods. Use [this map](https://weihnachtsmaerkte.odis-berlin.de/?id=&lang=en) to discover them.
+    From mid-November to the end of December, you should visit the Christmas markets. They sell hot drinks, food, sweets and home-made goods. Use [this map](https://weihnachtsmaerkte.odis-berlin.de/?id=&lang=en) to discover them.
 - **[East Side Gallery](https://goo.gl/maps/R18gdTWvTqdSxHqn7)**  
     A long mural painted directly on the Berlin wall.
 - **[Flea markets](https://www.visitberlin.de/en/flea-markets)**  
@@ -138,7 +138,7 @@ Start with [visitBerlin.de](https://www.visitberlin.de/en), [WikiVoyage](https:/
 - **[Museum island](https://goo.gl/maps/sPpsKZkauPaP4F2e6)** (*Museuminsel*)  
     Museum island is home to the Berliner Dom, and many of the biggest, oldest museums. If you like beautiful old buildings, it's worth a visit.
 - **[Oberbaum Bridge](https://goo.gl/maps/EhWuSsraoqi8Mx3M7)** (*Oberbaumbrücke*)  
-    A beautiful bridge that goes across the river Spree. It's right next to the East Side Gallery. You can also kayak on the Spree to get a really good view on the bridge.
+    A beautiful bridge that goes across the river Spree. It's right next to the East Side Gallery. You can also kayak on the Spree to get a really good view of the bridge.
 - **[Palace of tears](https://goo.gl/maps/yxaLcUpHbLcyocbf6)** (*Tränenpalast*)  
     A small, free museum about the border control between East and West Germany. It's in the old border crossing point, right next to the Friedrichstraße train station.
 - **[Reichstag building](https://goo.gl/maps/bX2fckWqrLCYsPfH8)** (*Reichstagsgebäude*)  
@@ -226,7 +226,7 @@ Most people tip in German restaurants, but it's okay if you don't. The waiter wo
 
 ## Where to stay in Berlin
 
-There is no "down town Berlin". There are many popular neighbourhoods, and each one has a different personality. If you stay anywhere in the *[[Ringbahn]]*, you should be okay.
+There is no "downtown Berlin". There are many popular neighbourhoods, and each one has a different personality. If you stay anywhere in the *[[Ringbahn]]*, you should be okay.
 
 [![2000Px S Bahn Ring Berlin Svg](/images/2000px-S-Bahn-Ring_Berlin.svg.png "The central parts of Berlin are inside the Ringbahn.")](/images/2000px-S-Bahn-Ring_Berlin.svg.png)
 
@@ -257,7 +257,7 @@ Most shops and supermarkets close on Sundays. Restaurants, tourist attractions, 
 
 ### VAT refund
 
-If you live outside the [[European Union]], you can get a refund for the [VAT](/glossary/Umsatzsteuer) you paid in Germany. For example, if you buy a laptop in Germany and bring it home in the United States, you can get the {{VAT_RATE}}% VAT back. It's not easy to do.
+If you live outside the [[European Union]], you can get a refund for the [VAT](/glossary/Umsatzsteuer) you paid in Germany. For example, if you buy a laptop in Germany and bring it home to the United States, you can get the {{VAT_RATE}}% VAT back. It's not easy to do.
 
 **[VAT refund process](https://www.germany.info/us-en/service/09-Taxes/vat-refund/906296)** - Federal Foreign Office
 
@@ -292,7 +292,7 @@ There are 3 ways to buy a SIM card:
 - **At a mobile phone shop**  
     Buy a SIM card from a Vodafone, Telekom or O2 shop. Electronics stores like Saturn or MediaMarkt also sell and activate SIM cards. You must show your passport and a [registration certificate](/glossary/Anmeldebest%C3%A4tigung) to activate the SIM card, but store employees will just use your passport and the address of your hotel.[^11]
 - **At the airport**  
-    [The Wall Store](https://ber.berlin-airport.de/de/cafes-shops-service/sgs-poi/055-the-wall-store-berlin-t1.html) and [Travelex](https://ber.berlin-airport.de/de/cafes-shops-service/sgs-poi/069-travelex-t1.html) sell SIM cards at the Berlin. The Wall's SIM cards are much cheaper than Travelex. There is often a long queue to buy them, so [Airalo](/out/airalo) is much easier.
+    [The Wall Store](https://ber.berlin-airport.de/de/cafes-shops-service/sgs-poi/055-the-wall-store-berlin-t1.html) and [Travelex](https://ber.berlin-airport.de/de/cafes-shops-service/sgs-poi/069-travelex-t1.html) sell SIM cards at the Berlin airport. The Wall's SIM cards are much cheaper than Travelex's. There is often a long queue to buy them, so [Airalo](/out/airalo) is much easier.
 
 ![The Wall Store at Berlin airport](/images/the-wall-store-berlin-airport.jpg "The Wall Store at Berlin airport sells SIM cards, but they are too expensive.")
 
@@ -304,7 +304,7 @@ There are 3 ways to buy a SIM card:
 
 For more accurate public transport directions, get the [BVG app](https://www.bvg.de/en/subscriptions-and-tickets/all-apps/ticket-app).
 
-To buy public transport tickets, get the [BVG app](https://www.bvg.de/en/subscriptions-and-tickets/all-apps/ticket-app) or the [Jelbi app](https://www.jelbi.de/en/home/) to buy train tickets. They have more accurate train schedules. It's easier than the ticket machines, and it's in English. The Jelbi app also lets you book cars, scooters, bicycles and taxis.
+To buy public transport tickets, get the [BVG app](https://www.bvg.de/en/subscriptions-and-tickets/all-apps/ticket-app) or the [Jelbi app](https://www.jelbi.de/en/home/). They have more accurate train schedules. It's easier than the ticket machines, and it's in English. The Jelbi app also lets you book cars, scooters, bicycles and taxis.
 
 ## Be a good tourist
 

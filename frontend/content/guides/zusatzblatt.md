@@ -17,7 +17,7 @@ The *Zusatzblatt* can also be a sticker in your passport. Some people do not get
 
 ## What each sentence means
 
-This is what each lines on your *Zusatzblatt* means:
+This is what each line on your *Zusatzblatt* means:
 
 - **"Ausbildung zum … erlaubt"**  
     You can do an apprenticeship (*Ausbildung*) for a specific employer or profession.
@@ -44,7 +44,7 @@ This is what each lines on your *Zusatzblatt* means:
 - **"Nach 1 jähr. versicherungspfl. Beschäftig. ist Beschäftig. jeder Art erlaubt"**  
     After 1 year of employment, you can get any job.
 - **"Selbständige Tätigkeit erlaubt"**  
-    You can be self-employed.[^4] If it's a [work visa](/glossary/Work%20Visa) or a [[Blue Card]], part-time self-employment is allowed, but must keep your job, and your job must be your main source of income.[^3]
+    You can be self-employed.[^4] If it's a [work visa](/glossary/Work%20Visa) or a [[Blue Card]], part-time self-employment is allowed, but you must keep your job, and your job must be your main source of income.[^3]
 - **"Selbstständige Tätigkeit als … erlaubt"**  
     You can be self-employed, but only in a specific profession.
 

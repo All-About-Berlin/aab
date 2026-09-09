@@ -34,7 +34,7 @@ This checklist helps you move from Germany to another country.
 - [ ] **[Sell or donate your things](/guides/how-do-i-buy-and-sell-used-things-in-berlin)**
 - [ ] **[Move out of your apartment](/guides/moving-out)**
     - [ ] **[End your lease](/guides/moving-out#end-your-lease)**  
-        Most leases have a 3 month [notice period](/glossary/Kündigungsfrist). Your landlord might let you leave sooner if you find a new tenant for your apartment.
+        Most leases have a 3-month [notice period](/glossary/Kündigungsfrist). Your landlord might let you leave sooner if you find a new tenant for your apartment.
     - [ ] **[Clean or repaint the apartment](/guides/moving-out#repaint-the-apartment)**
     - [ ] **[Complete the handover](/guides/moving-out#complete-the-handover)**
         - [ ] [Give your apartment keys back](/guides/moving-out#return-the-keys)
@@ -106,7 +106,7 @@ Keep your phone number. You might need it for online banking and two-factor auth
 - [ ] **Save important documents**
     - [ ] [Tax assessments](/glossary/Steuerbescheid) for your business
     - [ ] Invoices and receipts
-    - [ ] Proofs of income (*Einnahmenüberschussrechnung*, betriebswirtschaftliche Auswertung*)
+    - [ ] Proofs of income (*Einnahmenüberschussrechnung*, *betriebswirtschaftliche Auswertung*)
 - [ ] **Save important information**
     - [ ] [Tax number](/glossary/Steuernummer)
     - [ ] [VAT number](/glossary/Umsatzsteuernummer)
@@ -125,7 +125,7 @@ If you are part of a *Handwerkskammer*, *Berufskammer* or *Berufsgenossenschaft*
 - [ ] **[Get your apartment deposit back](/guides/mietkaution#how-to-get-your-kaution-back)**  
     Your landlord can take up to 12 months to return your deposit. After you get your last *[[Nebenkostenabrechnung]]*, you should get the rest of your deposit back.
 - [ ] **[Make a tax declaration](/guides/moving-in#deduct-your-moving-costs)**  
-    If you move for work, your relocation costs are [tax-deductible](/glossary/steuerlich%20absetzbar). Since you stopped working in the middle of the year, you probably paid too much [wage tax](/glossary/Einkommensteuer). Most people get money back.
+    If you move for work, your relocation costs are [tax-deductible](/glossary/steuerlich%20absetzbar). Since you stopped working in the middle of the year, you probably paid too much [wage tax](/glossary/Lohnsteuer). Most people get money back.
 - [ ] **[Get your pension payments back](/guides/pension-payments-refund)**  
     [Public pension insurance](/glossary/gesetzliche%20Rentenversicherung) costs {{RV_EMPLOYEE_CONTRIBUTION}}% of your income. If you leave the [EU](/glossary/European%20Union), you can usually get that money back.
 
@@ -163,7 +163,7 @@ These things keep working even if you don't live in Germany:
 
 **Do not close your bank account.** You can keep your bank account after you deregister your address and leave Germany.[^8]
 
-You need it to get your [apartment deposit](/glossary/Kaution), last paycheck, yearly bonus, tax return and [blocked account](/glossary/Pfändungsschutzkonto) payments.[^25]
+You need it to get your [apartment deposit](/glossary/Kaution), last paycheck, yearly bonus, tax return and [blocked account](/glossary/Sperrkonto) payments.[^25]
 
 Use [Wise](/out/wise) to transfer your money to another country.
 
@@ -221,7 +221,7 @@ You must pay an exit tax if...[^20]
 
 ### Cryptocurrency
 
-There is **no exit tax on** cryptocurrency.[^31] Leaving Germany has no effect on your personal cryptocurrency investments.
+There is **no exit tax** on cryptocurrency.[^31] Leaving Germany has no effect on your personal cryptocurrency investments.
 
 ### Business
 
@@ -242,7 +242,7 @@ You must pay an exit tax if...[^20]
 Your [residence permit](/glossary/Aufenthaltstitel) or [permanent residence](/glossary/Niederlassungserlaubnis) only expires if...[^35]
 
 - **You leave Germany for more than 6 months**[^39]  
-    If you have a [[Blue Card]] or a [EU permanent residence](/guides/permanent-residence#eu-permanent-residence), you can leave up to 12 months. You can [get permission from the *Ausländerbehörde*](https://www.berlin.de/einwanderung/aufenthalt/erloeschen-von-aufenthaltstiteln/) to leave for a longer period.
+    If you have a [[Blue Card]] or a [EU permanent residence](/guides/permanent-residence#eu-permanent-residence), you can leave for up to 12 months. You can [get permission from the *Ausländerbehörde*](https://www.berlin.de/einwanderung/aufenthalt/erloeschen-von-aufenthaltstiteln/) to leave for a longer period.
 - or **you leave Germany for non-temporary reasons**  
     For example, if you permanently move to Canada. "Non-temporary reasons" usually means that you quit your job, move out of your apartment, deregister your address, and leave Germany.[^36] A semester or internship abroad is a temporary reason, so it does not make your residence permit expire.
 

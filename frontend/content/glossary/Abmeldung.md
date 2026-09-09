@@ -2,7 +2,7 @@
 title: What is the Abmeldung?
 german_term: Abmeldung
 english_term: Address deregistration
-description: The Anmeldung is when you deregister your German address.
+description: The Abmeldung is when you deregister your German address.
 date_created: 2018-01-31
 related_guides:
     - guides/berlin-burgeramt-appointment.md

@@ -37,7 +37,7 @@ The entire movie is set in East Berlin during and shortly after the fall of the 
 
 ![The Lives of Others](/images/08.jpg)
 
-The Lives of Others puts follows the moral struggles of an introverted [Stasi](https://en.wikipedia.org/wiki/Stasi) agent tasked with the surveillance of a playwright. It's featured in IMDb's [Top 250](https://www.imdb.com/chart/top).
+The Lives of Others follows the moral struggles of an introverted [Stasi](https://en.wikipedia.org/wiki/Stasi) agent tasked with the surveillance of a playwright. It's featured in IMDb's [Top 250](https://www.imdb.com/chart/top).
 
 [IMDb](https://www.imdb.com/title/tt0405094/) - [Final scene on Karl-Marx-Allee](https://www.youtube.com/watch?v=NOU9MT2axKc)
 
@@ -53,7 +53,7 @@ This dark comedy about the unexplained return of Hitler in modern days shows var
 
 ![Der Untergang](/images/tumblr_max7xxCRnS1r6rjufo1_1280.png)
 
-*Der Untergang* is a grim depiction of the last days of the second world war in Hitler's bunker*.* It features former Berlin buildings such as the [New Reich Chancellery](https://en.wikipedia.org/wiki/Reich_Chancellery#New_Reich_Chancellery), the Führerbunker and the air raid shelters. It's featured in IMDb's [Top 250](https://www.imdb.com/chart/top).
+*Der Untergang* is a grim depiction of the last days of the Second World War in Hitler's bunker. It features former Berlin buildings such as the [New Reich Chancellery](https://en.wikipedia.org/wiki/Reich_Chancellery#New_Reich_Chancellery), the Führerbunker and the air raid shelters. It's featured in IMDb's [Top 250](https://www.imdb.com/chart/top).
 
 [IMDb](https://www.imdb.com/title/tt0363163/?ref_=nv_sr_1) - [Bunker scene](https://www.youtube.com/watch?v=xoEHFisDV78) - [New Reich's Chancellery scene](https://www.youtube.com/watch?v=rdMTAH40cVg)
 
@@ -61,7 +61,7 @@ This dark comedy about the unexplained return of Hitler in modern days shows var
 
 ![Valkyrie](/images/valkyrie_9.jpg)
 
-This second world war political thriller tells the story of the [July 20 plot](https://en.wikipedia.org/wiki/20_July_plot) against Hitler. It prominently features former Nazi government buildings, including the [Bendlerblock](https://en.wikipedia.org/wiki/Bendlerblock), the former [Reichsluftfahrtministerium](https://de.wikipedia.org/wiki/Reichsluftfahrtministerium) building and the [Berlin Messe](https://www.huebner-oehmig.de/messe_berlin.html).
+This Second World War political thriller tells the story of the [July 20 plot](https://en.wikipedia.org/wiki/20_July_plot) against Hitler. It prominently features former Nazi government buildings, including the [Bendlerblock](https://en.wikipedia.org/wiki/Bendlerblock), the former [Reichsluftfahrtministerium](https://de.wikipedia.org/wiki/Reichsluftfahrtministerium) building and the [Berlin Messe](https://www.huebner-oehmig.de/messe_berlin.html).
 
 [IMDb](https://www.imdb.com/title/tt0985699/?ref_=fn_al_tt_1) - [Luftfahrtministerium and Messe Berlin scene](https://www.youtube.com/watch?v=3iojQ6Ao5WA)
 
@@ -86,7 +86,7 @@ Cold War Berlin is the backdrop of this tightly choreographed, action-packed, ne
 - [Herr Lehmann (2003)](https://www.imdb.com/title/tt0322545/) **DE**
 - [Sonnenallee (1999)](https://www.imdb.com/title/tt0177242/?ref_=fn_al_tt_1) **DE**
 - [Lola Rennt (1998)](https://www.imdb.com/title/tt0130827/) **DE**
-- [Wir Kinder vom Bahnhof Zoo (1981)](https://www.imdb.com/title/tt0082176/) - Portrays the drug scene of Berlin in the 1970's
+- [Wir Kinder vom Bahnhof Zoo (1981)](https://www.imdb.com/title/tt0082176/) - Portrays the drug scene of Berlin in the 1970s
 - [Just a Gigolo (1978)](https://www.imdb.com/title/tt0079867/) - Starring David Bowie
 - [One, Two, Three (1961)](https://www.imdb.com/title/tt0055256/) **DE**
 - [Eine auswärtige Affäre (1948)](https://www.imdb.com/title/tt0040367/?ref_=fn_al_tt_1) **DE**

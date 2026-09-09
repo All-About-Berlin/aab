@@ -18,9 +18,9 @@ Employees must get [public](/glossary/gesetzliche%20Krankenversicherung) or [pri
 
 Your options depend on your income:
 
-- **If your earn less than €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year**  
+- **If you earn less than €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year**  
     You can only choose [public health insurance](/glossary/gesetzliche%20Krankenversicherung). I recommend [Barmer](/out/barmer) or [TK](/out/feather-tk). It costs {{GKV_MIN_RATE_EMPLOYEE}}% to {{GKV_MAX_RATE_EMPLOYEE}}% of your income. The [maximum cost](/glossary/Höchstbeitrag) is around €{{GKV_MAX_COST_EMPLOYEE|cur}} per month.
-- **If your earn more than €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year**  
+- **If you earn more than €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year**  
     You can choose [public](/glossary/gesetzliche%20Krankenversicherung) or [private health insurance](/glossary/private%20Krankenversicherung). Private can be better and cheaper.[^5] Don't choose private health insurance yourself. [Ask my insurance expert](/guides/german-health-insurance#need-help) to help you.
 
 **[What is the best option? ➞](/guides/german-health-insurance#what-is-the-best-option)**
@@ -88,7 +88,7 @@ If it's a **mandatory internship before or after your studies**:[^1]
 
 - **If it's unpaid**  
     You have [the same options as other students](/guides/german-health-insurance/for-students).[^2]
-- **It it pays up to €{{GKV_AZUBI_FREIBETRAG|cur}} per month**  
+- **If it pays up to €{{GKV_AZUBI_FREIBETRAG|cur}} per month**  
     Your health insurance is free. Your employer pays for it.[^11] You must still choose an insurer. I recommend [Barmer](/out/barmer) or [TK](/out/feather-tk).
 - **If it pays more than €{{GKV_AZUBI_FREIBETRAG|cur}} per month**  
     You have [the same options as other employees](/guides/german-health-insurance/for-employees).
@@ -112,7 +112,7 @@ If you [lose your job](/guides/losing-your-job), you keep your health insurance.
 - **For [private health insurance](/glossary/private%20Krankenversicherung)**  
     Always [ask an expert](/guides/german-health-insurance#need-help). Never choose private health insurance yourself. You can make expensive mistakes, and it's really hard to fix them.
 - **For [expat health insurance](/glossary/Expat%20health%20insurance)**  
-    I recommend [Feather](/out/feather-health), but there are [many other options](/guides/german-health-insurance#best-expat-health-insurance). Feather is a reliable, English-speaking insurer in Berlin. We work together since 2018. Their expat health insurance works for a [[National Visa]] application.
+    I recommend [Feather](/out/feather-health), but there are [many other options](/guides/german-health-insurance#best-expat-health-insurance). Feather is a reliable, English-speaking insurer in Berlin. We have been working together since 2018. Their expat health insurance works for a [[National Visa]] application.
 - **If you are not sure**  
     [Read my health insurance guide](/guides/german-health-insurance), and [ask my insurance expert](/guides/german-health-insurance#need-help) to help you choose. Their help is free.
 

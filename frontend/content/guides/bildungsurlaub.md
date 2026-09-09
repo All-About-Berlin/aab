@@ -23,7 +23,7 @@ You can combine this year and next year's allowance, and get 10 days of educatio
 
 Educational leave does not accumulate. If you don't use it, you lose it.[^5]
 
-You get educational leave in addition to [vacations days](/guides/vacation-days) and [public holidays](/guides/public-holidays). If you are sick during your *Bildungsurlaub*, it counts as normal [sick days](/guides/sick-leave), and you get your *Bildungsurlaub* days back.[^3]
+You get educational leave in addition to [vacation days](/guides/vacation-days) and [public holidays](/guides/public-holidays). If you are sick during your *Bildungsurlaub*, it counts as normal [sick days](/guides/sick-leave), and you get your *Bildungsurlaub* days back.[^3]
 
 ## Bildungsurlaub requirements
 
@@ -40,7 +40,7 @@ To get educational leave, you must...
 
 If your course is not officially recognised for a *Bildungsurlaub*, the course provider must [get recognised](https://bildungszeit.berlin.de/veranstalter/) first.
 
-**Educational leave is a right.** Your employer must allow it, but there are times exceptions. Your employer can refuse your educational leave if...
+**Educational leave is a right.** Your employer must allow it, but there are a few exceptions. Your employer can refuse your educational leave if...
 
 - The company has under 20 employees
 - or your vacation conflicts with the business operations

@@ -1,7 +1,7 @@
 ---
-title: How to trade your foreign driver licence for a German one
+title: How to trade your foreign driving licence for a German one
 short_title: How to convert a foreign driving licence
-description: This is you can exchange a driving licence from another country for a German one.
+description: This is how you can exchange a driving licence from another country for a German one.
 date_created: 2018-02-28
 ---
 
@@ -39,7 +39,7 @@ Foreign driving licences are sometimes valid in Germany:
 - **[EU](/glossary/European%20Union) or [[EEA]] driving licences**  
     Your driving licence is valid in Germany until it expires.[^17] After it expires, you can [exchange it for a German driving licence](https://service.berlin.de/dienstleistung/121598/) at the *[[Bürgeramt]]*. You don't need to take driving classes.
     - **Converted driving licences**  
-        If you got a driving licence outside of [[EEA]] and [Annex 11 countries](https://www.gesetze-im-internet.de/fev_2010/anlage_11.html), then converted it to a EU driving licence without taking a driving exam, your EU driving licence is only valid for 6 months after you move to Germany.[^23] You might need to take driving classes to get a German driving licence.
+        If you got a driving licence outside of [[EEA]] and [Annex 11 countries](https://www.gesetze-im-internet.de/fev_2010/anlage_11.html), then converted it to an EU driving licence without taking a driving exam, your EU driving licence is only valid for 6 months after you move to Germany.[^23] You might need to take driving classes to get a German driving licence.
 - **Ukrainian driving licences**  
     If you are a Ukrainian asylum seeker, your driving licence is valid in Germany.[^22] If it expires after the Russian invasion of Ukraine, it's still valid in Germany.{{ fail_on('2028-04-01') }}
 - **Other driving licences**  
@@ -140,9 +140,9 @@ Go to your *Bürgeramt* appointment, and bring all the [required documents](http
 If your licence is not from an EU or EEA country, you must also bring...
 
 - [ ] **Certified translation of your driving licence**  
-    If your driving licence is not in German, you need a [certified translation](/glossary/beglaubigte%20Übersetzung) or an [International Driving Permit](/glossary/Internationaler%20Führerschein). In Berlin, they also accept driving licences in English.[^19] Get a certified from [Red Tape Translation](/out/red-tape-translation-certified), [Lingoking](/out/lingoking-drivers-licence) or [ADAC](https://www.adac.de/). It costs around €60. In some cities, they only accept certified translations, not [International Driving Permits](/glossary/Internationaler%20Führerschein).[^14]
+    If your driving licence is not in German, you need a [certified translation](/glossary/beglaubigte%20Übersetzung) or an [International Driving Permit](/glossary/Internationaler%20Führerschein). In Berlin, they also accept driving licences in English.[^19] Get a certified translation from [Red Tape Translation](/out/red-tape-translation-certified), [Lingoking](/out/lingoking-drivers-licence) or [ADAC](https://www.adac.de/). It costs around €60. In some cities, they only accept certified translations, not [International Driving Permits](/glossary/Internationaler%20Führerschein).[^14]
 
-If your licence is not from a [EU](/glossary/European%20Union), [[EEA]] or [Annex 11](https://www.gesetze-im-internet.de/fev_2010/anlage_11.html) country, you must also bring...
+If your licence is not from an [EU](/glossary/European%20Union), [[EEA]] or [Annex 11](https://www.gesetze-im-internet.de/fev_2010/anlage_11.html) country, you must also bring...
 
 - [ ] **Eye test certificate**
 - [ ] **First aid course certificate**
@@ -159,7 +159,7 @@ In Berlin, you must wait **2 to 4 months**.[^10] In other cities, it takes 2 to 
 
 ### 9. Pick up your German driving licence
 
-After a few weeks, you get a letter. It tells you to pick up your new driver licence at the *Fahrerlaubnisbehörde*. Get an appointment, go to your appointment, wait your turn, show them your passport, and get your new driving licence.
+After a few weeks, you get a letter. It tells you to pick up your new driving licence at the *Fahrerlaubnisbehörde*. Get an appointment, go to your appointment, wait your turn, show them your passport, and get your new driving licence.
 
 ## What to do next
 

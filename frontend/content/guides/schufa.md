@@ -15,7 +15,7 @@ The Schufa score is **like a credit score**. A good score shows that you pay you
 
 [![Example Schufa certificate](/images/schufa-example.png "Example Schufa certificate")](/images/schufa-example.png)
 
-Your score is based on your financial situations. Your income does not affect your score.
+Your score is based on your financial situation. Your income does not affect your score.
 
 A score above 95% is good enough.[^4]
 
@@ -60,7 +60,7 @@ You get a Schufa record when you...[^2]
 - Pay for something in instalments
 - Don't pay your debts
 
-When you open a bank account, you let your bank to check your score. If you don't have a score, a new Schufa record is created. It takes around 7 days.[^13]
+When you open a bank account, you let your bank check your score. If you don't have a score, a new Schufa record is created. It takes around 7 days.[^13]
 
 Not all companies check your score. Foreign companies rarely care about Schufa. A foreign bank probably won't create a Schufa record when you open an account.
 

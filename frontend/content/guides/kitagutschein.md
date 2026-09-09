@@ -27,11 +27,11 @@ Children get free *Kita* for up to 9 hours per day. It depends on their age, and
 - **Over 1 year old**  
     Your child can go to *Kita* for 5 to 9 free hours per day.[^0] It depends on your situation:
     - **Full-time** (*ganztags*)  
-        If *both* parents are work or study, your child can go to *Kita* 7 to 9 hours per day. You must prove that this is necessary.[^11]
+        If *both* parents work or study, your child can go to *Kita* 7 to 9 hours per day. You must prove that this is necessary.[^11]
     - **Part-time** (*teilzeit*)  
         By default, your child can go to *Kita* for 5 to 7 hours per day.
 
-You can get more *Kita* time, but you must prove that it's necessary.[^1] If you work situation changes, you can apply for more *Kita* hours later.
+You can get more *Kita* time, but you must prove that it's necessary.[^1] If your work situation changes, you can apply for more *Kita* hours later.
 
 ## Cost of a Kitagutschein
 
@@ -45,7 +45,7 @@ You must apply **2 to 9 months before your start date**. Your child must be at l
 
 It takes 6 to 8 weeks to get a *Kitagutschein*.[^3]
 
-### How to apply
+## How to apply
 
 ### 1. Fill the application form
 
@@ -55,7 +55,7 @@ It takes 6 to 8 weeks to get a *Kitagutschein*.[^3]
 
 Mail your application documents to [your local *Jugendamt*](https://service.berlin.de/dienstleistung/324873/#service_locationlist_checkboxgroup). Choose the *Jugendamt* where you live, not where your child goes to *Kita*.[^7]
 
-Send these documents with your application :[^4]
+Send these documents with your application:[^4]
 
 - [ ] **[Application form](#fill-the-application-form)**  
     It must be signed by both parents[^9]

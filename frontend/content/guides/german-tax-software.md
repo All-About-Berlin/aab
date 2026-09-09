@@ -13,7 +13,7 @@ Tax and bookkeeping software costs are [tax-deductible](/glossary/steuerlich%20a
 
 ## Tax software for employees
 
-Tax software for employees help you prepare and send a [tax declaration](/glossary/Steuererklärung). This is how you pay less [income tax](/glossary/Einkommensteuer).
+Tax software for employees helps you prepare and send a [tax declaration](/glossary/Steuererklärung). This is how you pay less [income tax](/glossary/Einkommensteuer).
 
 English-speaking options:
 
@@ -51,7 +51,7 @@ English-speaking options:
 German-speaking options:
 
 - **[Lexware Office](/out/lexoffice)** {{ RECOMMENDED }}  
-    This is what I use since many years.
+    This is what I have been using for many years.
 - [FastBill](/out/fastbill)
 
 Some business banks help you with invoicing, bookkeeping and [VAT reporting](/glossary/Umsatzsteuervoranmeldung). I don't recommend them. You can have a good bank or good tax software, but you can't have both in one product. Keep those services separate.

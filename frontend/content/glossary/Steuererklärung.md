@@ -1,5 +1,5 @@
 ---
-title: What is a Steuererklärung
+title: What is a Steuererklärung?
 german_term: Steuererklärung
 english_term: Tax declaration
 description: It tells the tax office how much taxes you owe, or are owed.

@@ -11,6 +11,6 @@ related_guides:
     - guides/mail-a-letter.md
 ---
 
-A registered letter (*Einschreibebrief*) comes with a tracking number and a proof of delivery. Use them when you want to be sure that a letter is delivered. It costs more than a normal letter.
+A registered letter (*Einschreibebrief*) comes with a tracking number and a proof of delivery. Use one when you want to be sure that a letter is delivered. It costs more than a normal letter.
 
 **[More about registered letters ➞](/guides/mail-a-letter#by-registered-mail)**

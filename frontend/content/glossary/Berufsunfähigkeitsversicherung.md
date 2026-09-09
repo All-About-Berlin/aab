@@ -15,7 +15,7 @@ Job disability insurance (*Berufsunfähigkeitsversicherung*) gives you an income
 Disability insurance replaces your income if...
 
 - You have cancer
-- You suffer from burn out
+- You suffer from burnout
 - You can't work after an accident
 - You can't do your normal job because of a disability
 

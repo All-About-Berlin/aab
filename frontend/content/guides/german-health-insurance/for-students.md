@@ -25,7 +25,7 @@ To apply for a [student visa](/glossary/Student%20visa), you need two health ins
 
 **[Get health insurance for your visa ➞](#how-to-get-insured)**
 
-After you [get insured](#how-to-get-insured), you get two documents: a proof of incoming health insurance and a [proof of long-term health insurance](/glossary/Mitgliedsbescheinigung). [Merge them together](https://www.adobe.com/acrobat/online/merge-pdf.html), and upload them on the [Consulate Service Portal](/glossary/Consular%20Services%20Portal).[^12]
+After you [get insured](#how-to-get-insured), you get two documents: a proof of incoming health insurance and a [proof of long-term health insurance](/glossary/Mitgliedsbescheinigung). [Merge them together](https://www.adobe.com/acrobat/online/merge-pdf.html), and upload them on the [Consular Services Portal](/glossary/Consular%20Services%20Portal).[^12]
 
 ![Proof of health insurance in the Consular Services Portal](/images/csp-proof-of-health-insurance.png "Upload your health insurance certificates here")
 
@@ -83,7 +83,7 @@ If you are over 30 years old, don't choose health insurance yourself. [Ask an ex
 
 **If you work less than 20 hours per week**, nothing changes.[^46] You pay the same price for public health insurance. You can still get [free health insurance](/glossary/Familienversicherung). You can also keep your [expat health insurance](/glossary/Expat%20health%20insurance). Your employer does not pay half of your health insurance.[^7]
 
-**If you work more than 20 hours per week**, you must switch to [public health insurance](/glossary/gesetzliche%20Krankenversicherung) and pay the [the same price as other employees](/guides/german-health-insurance/for-employees). You can't get the student tariff, and you can't get [free health insurance](/guides/german-health-insurance#free-health-insurance).
+**If you work more than 20 hours per week**, you must switch to [public health insurance](/glossary/gesetzliche%20Krankenversicherung) and pay [the same price as other employees](/guides/german-health-insurance/for-employees). You can't get the student tariff, and you can't get [free health insurance](/guides/german-health-insurance#free-health-insurance).
 
 Your student visa might not allow working more than 20 hours per week.[^14]
 
@@ -99,7 +99,7 @@ If you are self-employed during your studies, you can keep your student health i
 
 **If you work more than 20 hours per week**, you are treated [like other self-employed people](/guides/german-health-insurance/for-freelancers), and your public health insurance costs a percentage of your income. If you are young and healthy, [private](/glossary/private%20Krankenversicherung) or [expat health insurance](/glossary/Expat%20health%20insurance) usually make more sense.[^5]
 
-**If your earn more than €{{GKV_FAMILIENVERSICHERUNG_MAX_INCOME|cur}} per month**, you can't get [free health insurance](/guides/german-health-insurance#free-health-insurance).
+**If you earn more than €{{GKV_FAMILIENVERSICHERUNG_MAX_INCOME|cur}} per month**, you can't get [free health insurance](/guides/german-health-insurance#free-health-insurance).
 
 ## For a language course visa
 
@@ -134,7 +134,7 @@ If you are unemployed or self-employed, you might be stuck with your current pri
 There are many ways to get insured:
 
 - **[Feather](/out/feather-students)**{{ RECOMMENDED }}  
-    They sell incoming and long-term health insurance. I work with them since 2018. They have great customer service, and their insurance is valid for a visa application.
+    They sell incoming and long-term health insurance. I have been working with them since 2018. They have great customer service, and their insurance is valid for a visa application.
 - **[Ask our expert](/guides/german-health-insurance#need-help)**  
     This is the best option if you are over 30 years old, if you have a special situation, or if you have questions.
 - [Expatrio](/out/expatrio), [Fintiba](/out/fintiba) and [Coracle](/out/coracle) sell packages that include a [blocked account](/glossary/Sperrkonto), incoming health insurance and long-term health insurance.

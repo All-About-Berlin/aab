@@ -29,7 +29,7 @@ Reduced VAT ({{VAT_RATE_REDUCED}}%):
 
 - Food in restaurants and cafés[^4]
 - Some foods and drinks[^3]
-- Tickets for museum, theatre, concerts and sport events
+- Tickets for museums, theatres, concerts and sport events
 - Artistic, journalistic and copyrighted work
 - Hotel stays
 
@@ -65,7 +65,7 @@ If you are a small business (*[[Kleinunternehmer]]*), you can *choose* not to ch
 1. Charge VAT on the goods and services you sell.
 2. Pay VAT on your business expenses.
 3. Calculate the difference between the VAT you charge and the VAT you pay.
-4. Tell the difference to *[[Finanzamt]]* with a [VAT return](/glossary/Umsatzsteuervoranmeldung).
+4. Tell the difference to the *[[Finanzamt]]* with a [VAT return](/glossary/Umsatzsteuervoranmeldung).
 5. Pay the difference to the *Finanzamt* with a [bank transfer](/glossary/SEPA-%C3%9Cberweisung). If the difference is negative, the *Finanzamt* pays you.[^11]
 
 > **Example:**  
@@ -107,7 +107,7 @@ There are 4 ways to make VAT returns:
 - Use a business bank like [Qonto](/out/qonto), [Holvi](/out/holvi) or [Kontist](/out/kontist)
 - Do it yourself with [[ELSTER]][^14]
 
-**Frequency:** How often you submit VAT returns depend on how much VAT you paid last year.[^31]
+**Frequency:** How often you submit VAT returns depends on how much VAT you paid last year.[^31]
 
 | VAT paid last year | When to submit VAT returns |
 |---|---|
@@ -131,7 +131,7 @@ If the VAT you paid is more than the VAT you charged, you get a refund from the 
 
 > **Late submission example 2:** You pay your March VAT on April 20. You pay a fine, because you paid your VAT late.
 
-If you submit your VAT return on time, but you payment is late, you get a fine (*Säumniszuschlag*). The fine is 1% of the VAT you owe for every month you wait.[^21]
+If you submit your VAT return on time, but your payment is late, you get a fine (*Säumniszuschlag*). The fine is 1% of the VAT you owe for every month you wait.[^21]
 
 > **Late payment example:** You owe the *Finanzamt* €5,300. You pay your VAT 2 weeks late. The fine is €53 (1% of €5,300).[^22]
 
@@ -153,9 +153,9 @@ Use the **[VAT helper](https://europa.eu/youreurope/business/taxation/vat/cross-
 
 ### VAT for customers in Germany
 
-**Charge VAT.** If you sell goods of services to customers in Germany, you must charge {{VAT_RATE}}% VAT.
+**Charge VAT.** If you sell goods or services to customers in Germany, you must charge {{VAT_RATE}}% VAT.
 
-[Some products and services](/guides/value-added-tax#reduced-vat) have a reduced VAT, or not VAT.
+[Some products and services](/guides/value-added-tax#reduced-vat) have a reduced VAT, or no VAT.
 
 ### VAT for customers in the EU
 

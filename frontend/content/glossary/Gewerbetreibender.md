@@ -14,7 +14,7 @@ related_guides:
     - guides/german-health-insurance/for-freelancers.md
 ---
 
-A tradesperson (*Gewerbetreibender*) is person who is self-employed, but not a freelancer (*Freiberufler*). The business they run is called a trade (*[[Gewerbe]]*). They are sometimes called *[[Selbständig]]*.
+A tradesperson (*Gewerbetreibender*) is a person who is self-employed, but not a freelancer (*Freiberufler*). The business they run is called a trade (*[[Gewerbe]]*). They are sometimes called *[[Selbständig]]*.
 
 *Freiberufler* and *Gewerbetreibende* must follow different rules and pay different taxes. They get a different kind of [residence permit](/glossary/Aufenthaltstitel).
 

@@ -17,7 +17,7 @@ The landlord is not in Germany. To see the apartment, you must pay a [deposit](/
 
 ### Fake apartment viewing
 
-Scammers rent someone's apartment, and pretend to live there. They make you visit the apartment, sign a lease, pay a [deposit](/glossary/Kaution) and pay the rent. When you try to [move in](/guides/moving-in), they keys don't work. The scammers stole your money and disappeared.[^15]
+Scammers rent someone's apartment, and pretend to live there. They make you visit the apartment, sign a lease, pay a [deposit](/glossary/Kaution) and pay the rent. When you try to [move in](/guides/moving-in), the keys don't work. The scammers stole your money and disappeared.[^15]
 
 This scam is very hard to avoid, because everything looks normal until you move in. You visit a real apartment, sign real documents and even get apartment keys.
 
@@ -33,7 +33,7 @@ Always censor and watermark your documents. Send your documents after you visit 
 
 ### Furnished apartments
 
-Landlords make more money with furnished apartments, so they are more and more of them.[^36] They are convenient, overpriced.
+Landlords make more money with furnished apartments, so there are more and more of them.[^36] They are convenient, but overpriced.
 
 [Rent control](/glossary/Mietpreisbremse) applies to furnished apartments too. Landlords can't overcharge for furniture either. The cost of furniture (*Möblierungszuschlag*) must match the actual value of the furniture.[^48]
 
@@ -54,7 +54,7 @@ Some apartments have short-term leases. When the lease ends, you must [move out]
 - **Planned renovation**  
     The landlord wants to completely renovate the apartment. If the renovations don't happen, you might be able to stay longer.
 - **Hotels and holiday homes**  
-    They can have a short-term lease.[^25] In Berlin, converting an apartment into short-term housing is illegal. If the holiday home is not registered, the short-time lease might be illegal.[^40]
+    They can have a short-term lease.[^25] In Berlin, converting an apartment into short-term housing is illegal. If the holiday home is not registered, the short-term lease might be illegal.[^40]
 
 The lease must say exactly why it's temporary.[^35] If there is no valid reason, the expiration date is not valid. The lease becomes unlimited.[^31]
 
@@ -97,7 +97,7 @@ You must never pay a fee to...
 
 Don't pay anything before you sign a lease. You must pay the rent and 1/3 of the [deposit](/glossary/Kaution) before the day your lease starts, never earlier.
 
-Some housing websites websites charge a platform fee or a booking fee. These might be illegal.[^44]
+Some housing websites charge a platform fee or a booking fee. These might be illegal.[^44]
 
 ### Freelancers only
 
@@ -115,7 +115,7 @@ Rent control laws also apply to [[WG]]s and furnished apartments.
 
 ### Eigenbedarf
 
-Landlords need a valid reason to end your lease and kick you out. Personal use (*Eigenbedarf*) is a valid reason If landlord needs the apartment for their family or themselves, they can kick you out.[^45]
+Landlords need a valid reason to end your lease and kick you out. Personal use (*Eigenbedarf*) is a valid reason. If the landlord needs the apartment for their family or themselves, they can kick you out.[^45]
 
 Landlords often use fake *Eigenbedarf* to kick tenants out. Instead of moving in, they sell the empty apartment for a higher price, or raise the rent and find another tenant.[^46] This is illegal.
 
@@ -125,7 +125,7 @@ If this happens to you, [get legal help](/guides/help#apartment-questions).[^47]
 
 Most apartments come with storage in the basement (*Kellerraum*).
 
-In this scam, the landlord makes two rent contracts: one for the apartment, and one for the basement storage. You apartment rent is below the [legal limit](/glossary/Mietpreisbremse), but your total rent is higher. This is usually illegal.[^11]
+In this scam, the landlord makes two rent contracts: one for the apartment, and one for the basement storage. Your apartment rent is below the [legal limit](/glossary/Mietpreisbremse), but your total rent is higher. This is usually illegal.[^11]
 
 ### Landlord does not return the deposit
 
@@ -203,12 +203,12 @@ If your rent is too high, a *[[Mieterverein]]*, [Conny](/out/conny-mietpreisbrem
 
 Signs of a scam:
 
-- 🛑 The landlord asks you to pay with Paypal, Western Union, MoneyGram, cryptocurrencies or cash
+- 🛑 The landlord asks you to pay with PayPal, Western Union, MoneyGram, cryptocurrencies or cash
 - 🛑 The landlord asks you to pay as soon as you sign the lease[^26]
 - 🛑 The landlord asks you to finish the booking on a different website
 - ⚠️ The landlord's bank is in another country
 
-**Always pay rent by [bank transfer](/glossary/SEPA-%C3%9Cberweisung).** Bank transfers to other countries are suspicious; the landlord's [[IBAN]] should start with "DE".[^16] Use [Wise](/out/wise) to make bank transfers from another country. If you pay in cash, ask for a receipt. Never pay with Paypal, Western Union or other payment services.[^8]
+**Always pay rent by [bank transfer](/glossary/SEPA-%C3%9Cberweisung).** Bank transfers to other countries are suspicious; the landlord's [[IBAN]] should start with "DE".[^16] Use [Wise](/out/wise) to make bank transfers from another country. If you pay in cash, ask for a receipt. Never pay with PayPal, Western Union or other payment services.[^8]
 
 **Never pay in advance.** Don't pay before you visit the apartment, sign the lease and get the keys.[^7] You have [until the day you move in](/guides/mietkaution#when-to-pay-the-kaution) to pay the rent and 1/3 of the [deposit](/glossary/Kaution). Your landlord can't kick you out because you pay at the last minute.
 
@@ -230,7 +230,7 @@ Landlords might try to steal your deposit. Always sign an *[[Übergabeprotokoll]
 
 **[How to get your deposit back ➞](/guides/mietkaution#how-to-get-your-kaution-back)**
 
-**[How to move out of an apartment ➞](/guides/moving-in)**
+**[How to move out of an apartment ➞](/guides/moving-out)**
 
 ## How to report scams
 

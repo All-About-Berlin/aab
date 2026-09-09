@@ -1,5 +1,5 @@
 ---
-title: What is a Paketshop
+title: What is a Paketshop?
 german_term: Paketshop
 english_term: Parcel shop
 description: A shop where you can send and receive packages.

@@ -1,5 +1,5 @@
 ---
-title: What is a tax advisor (Steuerberater)?
+title: What is a Lohnsteuerhilfeverein?
 german_term: Lohnsteuerhilfeverein
 english_term: Tax help union
 description: A non-profit organisation that helps people file their taxes.

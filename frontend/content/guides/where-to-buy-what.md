@@ -25,7 +25,7 @@ If you are new in Germany, it's hard to know what the supermarkets, furniture st
 
 If you need **fresh fruits, vegetables and meat**, try Turkish supermarkets like Bolu or Eurogida. Most of them have a meat counter. Use [this map](https://turkischersupermarkt.de/explore/) to find them.
 
-If you need **special ingredients** like brown sugar, Graham crumbs, dopio zero flour, Marmite or maple syrup, see [this guide](/guides/foreign-cooking-ingredients-in-berlin).
+If you need **special ingredients** like brown sugar, Graham crumbs, doppio zero flour, Marmite or maple syrup, see [this guide](/guides/foreign-cooking-ingredients-in-berlin).
 
 If you just need to buy **drinks and snacks**, go to a [*Späti*](/glossary/Sp%C3%A4ti).
 

@@ -18,9 +18,9 @@ Most employees pay 35% to 50% of their income in taxes, health insurance and pen
 ### How to pay less [income tax](/glossary/Einkommensteuer)
 
 - **Make a [tax declaration](/glossary/Steuererklärung)**  
-    A tax declaration lets you deduct expenses from your income. This makes your taxable income smaller, so you pay less [income tax](/glossary/Einkommensteuer). Relocation costs, work-related expanses, pension payments, insurance and healthcare are [tax-deductible](/glossary/steuerlich%20absetzbar). Financial support for relatives is sometimes tax-deductible. [Tax software](/guides/german-tax-software) is the cheapest way to make a tax declaration.
+    A tax declaration lets you deduct expenses from your income. This makes your taxable income smaller, so you pay less [income tax](/glossary/Einkommensteuer). Relocation costs, work-related expenses, pension payments, insurance and healthcare are [tax-deductible](/glossary/steuerlich%20absetzbar). Financial support for relatives is sometimes tax-deductible. [Tax software](/guides/german-tax-software) is the cheapest way to make a tax declaration.
 - **Deduct work-related expenses**  
-    Work expenses are [tax-deductible](/glossary/steuerlich%20absetzbar). For example, commutingcosts, home office days, education costs and work equipment (laptop, monitor, headset, home office furniture). If your work expenses are over €{{WERBUNGSKOSTEN_PAUSCHALE|cur}} per year, declare them to reduce your income tax.[^1]
+    Work expenses are [tax-deductible](/glossary/steuerlich%20absetzbar). For example, commuting costs, home office days, education costs and work equipment (laptop, monitor, headset, home office furniture). If your work expenses are over €{{WERBUNGSKOSTEN_PAUSCHALE|cur}} per year, declare them to reduce your income tax.[^1]
 - **Save for retirement**  
     Most pension contributions are [tax-deductible](/glossary/steuerlich%20absetzbar). Contributing to your pension is a type of [tax deferral](https://en.wikipedia.org/wiki/Tax_deferral). It helps you pay less income tax over your lifetime.
 
@@ -90,7 +90,7 @@ Use my [health insurance recommendation tool](/tools/health-insurance-calculator
 - **Choose a bank with low fees**  
     Find a bank that has no monthly fee and no ATM fees. [N26](/out/n26), [ING](/out/ing) and [DKB](/out/dkb) are the most popular ones, but there are [many other options](/guides/best-bank-germany#free-bank-accounts).
 - **Combine your insurance policies**  
-    If you get all your insurances from the same company, you sometimes pay less. Combined [liability](/glossary/Haftpflichtversicherung) and [household insurance](/glossary/Hausratversicherung) can be cheaper.[^2] Don't [legal insurance](/glossary/Rechtsschutzversicherung) from the same company, in case you need to sue the insurance company.[^3]
+    If you get all your insurances from the same company, you sometimes pay less. Combined [liability](/glossary/Haftpflichtversicherung) and [household insurance](/glossary/Hausratversicherung) can be cheaper.[^2] Don't get [legal insurance](/glossary/Rechtsschutzversicherung) from the same company, in case you need to sue the insurance company.[^3]
 - **Talk to a financial advisor**  
     If you have enough money to invest and save for retirement, talk to a financial advisor. Be careful; many of them are really bad. Choose one that works with immigrants, because your needs are different. My financial advisor is Seamus at [Horizon65](/out/horizon65).
 

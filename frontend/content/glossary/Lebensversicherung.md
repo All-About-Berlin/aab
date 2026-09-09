@@ -1,5 +1,5 @@
 ---
-title: What is Lebensversicherung
+title: What is Lebensversicherung?
 german_term: Lebensversicherung
 english_term: Life insurance
 description: It pays money to your family when you die.

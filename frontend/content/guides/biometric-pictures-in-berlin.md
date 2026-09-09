@@ -44,7 +44,7 @@ You can get biometric pictures...
 
 This is the **best way to get biometric pictures** because you can do it in advance.[^6] If there is a problem, you have time to find another solution.
 
-Check if your photos meet the [official requirements](https://www.personalausweisportal.de/SharedDocs/downloads/Webs/PA/EN/informationsmaterial/flyer-broschueren/Fotomustertafel.pdf?__blob=publicationFile&v=4).{{fail_on('2027-07-01')}} The *[[Bürgeramt]]* and *[[Ausländerbehörde]]* sometimes rejects photos from dm because of small mistakes.[^8]
+Check if your photos meet the [official requirements](https://www.personalausweisportal.de/SharedDocs/downloads/Webs/PA/EN/informationsmaterial/flyer-broschueren/Fotomustertafel.pdf?__blob=publicationFile&v=4).{{fail_on('2027-07-01')}} The *[[Bürgeramt]]* and *[[Ausländerbehörde]]* sometimes reject photos from dm because of small mistakes.[^8]
 
 **[Find a dm store ➞](https://www.google.com/maps?q=dm)**
 
@@ -54,15 +54,15 @@ In Berlin, each *[[Bürgeramt]]* has self-service photo kiosks. Photos cost €6
 
 If you need photos, arrive early to your appointment. The photo kiosks are new. They can be busy or unreliable. The photos are valid for 6 months, so you can use the kiosks a few days in advance.
 
-**You must also bring printed photos**, because the new photo kiosks are unreliable.[^5] You can get printed photos [from dm](#) or [from a photo booth](#from-a-photo-booth).
+**You must also bring printed photos**, because the new photo kiosks are unreliable.[^5] You can get printed photos [from dm](#at-a-dm-store) or [from a photo booth](#from-a-photo-booth).
 
-## At the Ausländerbehörde
+### At the Ausländerbehörde
 
 The Berlin *[[Ausländerbehörde]]* uses the same photo kiosks as the *Bürgeramt*. Photos cost €6.
 
-**You must also bring printed photos**, because the new photo kiosks are unreliable.[^5] You can get printed photos [from dm](#) or [from a photo booth](#from-a-photo-booth).
+**You must also bring printed photos**, because the new photo kiosks are unreliable.[^5] You can get printed photos [from dm](#at-a-dm-store) or [from a photo booth](#from-a-photo-booth).
 
-## From a photographer
+### From a photographer
 
 Approved photographers can take biometric photos. They usually cost around €15.[^1]{{ fail_on('2027-03-01') }}
 
@@ -70,9 +70,9 @@ The photographer takes your photo, uploads it, and gives you a QR code.[^4] Brin
 
 **[Find an approved photographer ➞](https://alfo-passbild.com/digitales-passfoto/#Fotografen)**
 
-## From a photo booth
+### From a photo booth
 
-Photos from a photo booths are **not accepted** by the *[[Bürgeramt]]* or the *[[Ausländerbehörde]]*.[^2]
+Photos from photo booths are **not accepted** by the *[[Bürgeramt]]* or the *[[Ausländerbehörde]]*.[^2]
 
 There are Fotofix photo booths everywhere in Berlin. Photos cost around €10.{{ fail_on('2026-12-31') }} You get five 35 × 45 mm passport pictures printed on the same sheet.
 

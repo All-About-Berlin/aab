@@ -9,7 +9,7 @@ In 2016, I switched to [N26](/out/n26). I left [Commerzbank](/out/commerzbank) b
 
 **N26 is free**. No withdrawal fees, no monthly fees, no credit card fees. *Free!* I get money from the sketchiest ATMs in Berlin, and I don't pay any fees. There are very few [banks with no ATM fees](/guides/best-bank-germany#banks-with-no-atm-fees).
 
-I am an N26 customer since 2016. It's my main bank account. This is my experience as an N26 customer in {{ now.strftime('%Y') }}.
+I have been an N26 customer since 2016. It's my main bank account. This is my experience as an N26 customer in {{ now.strftime('%Y') }}.
 
 ![N26 credit cards](/images/n26-credit-card-allaboutberlin.jpg)
 
@@ -45,7 +45,7 @@ You can do everything in the N26 app. You never need to go to a bank. They never
 
 For example, if you lose your bank card, you can block it and order a new one in a few minutes. If you receive a message, you can open it in the app.
 
-With Commerzbank, I sometimes had to take a 45 minute train ride to sign some papers. It was a big waste of time.
+With Commerzbank, I sometimes had to take a 45-minute train ride to sign some papers. It was a big waste of time.
 
 ![N26 bank desktop website](/images/n26-bank-desktop-website.png "Online banking with N26")
 
@@ -59,7 +59,7 @@ If you travel a lot, the [N26 You](/out/n26-you) and [N26 Metal](/out/n26-metal)
 
 When money goes in or out of my account, I get a notification on my phone. I really love that feature. It helped me catch a few unexpected transactions. It's also nice to get a notification as soon as you get paid.
 
-The push notifications work instantly. My phone vibrate as soon as I buy something online or pay at the supermarket.
+The push notifications work instantly. My phone vibrates as soon as I buy something online or pay at the supermarket.
 
 This was a unique feature in 2016, but now most banks have it. [Kontist](/out/kontist) - my business bank - also notifies me instantly.
 
@@ -113,7 +113,7 @@ If you can't open an N26 account with your passport, [these banks](/guides/best-
 
 In Germany, you always need cash. Fast food kiosks, *[Spätis](/glossary/Sp%C3%A4ti)* and even some restaurants only accept cash. No credit cards or debit cards.
 
-The free N26 account lets you withdraw money 3 times per month for free. After that, you pay €2 each time you withdraw money. My account is older, and it still has 5 free withdrawals per month. It's enough for me, but it's not a lot. [The N26 You](/out/n26-you) and [N26 Metal](/out/n26-metal) accounts have no withdrawal fees, but they have a monthly fee.
+The free N26 account lets you withdraw money 2 times per month for free. After that, you pay €2 each time you withdraw money. My account is older, and it still has 5 free withdrawals per month. It's enough for me, but it's not a lot. [The N26 You](/out/n26-you) and [N26 Metal](/out/n26-metal) accounts have no withdrawal fees, but they have a monthly fee.
 
 Only [DKB](/out/dkb) and [ING](/out/ing) have no withdrawal fees. [Other banks](/guides/best-bank-germany#banks-with-no-atm-fees) charge even higher fees to withdraw money.
 
@@ -191,7 +191,7 @@ Here are a few things I love about the N26 app:
 Here are things I don't like about it:
 
 - **No phone, no access**  
-    When you try to log in on the N26 website, it sends a notification to your phone. You must click the notification before you can login. If your phone runs out of battery, you can't access your bank account. If you lose your phone, you can't transfer money. Other online banks have the same problem.
+    When you try to log in on the N26 website, it sends a notification to your phone. You must click the notification before you can log in. If your phone runs out of battery, you can't access your bank account. If you lose your phone, you can't transfer money. Other online banks have the same problem.
 - **Incomplete translations**  
     Parts of the app are not completely translated to English. Some labels will still show in German. This is very rare, but it happens.
 - **Bugs**  
@@ -203,7 +203,7 @@ Here are things I don't like about it:
 
 ## Conclusion
 
-**Would I recommend N26? Yes.** I use N26 as my only bank account since 2016. I travelled all over the world with my N26 Mastercard. I am happy with them, and that's why I didn't switch to another bank. Many of my friends also use N26, and they are also happy with it.
+**Would I recommend N26? Yes.** I have been using N26 as my only bank account since 2016. I travelled all over the world with my N26 Mastercard. I am happy with them, and that's why I didn't switch to another bank. Many of my friends also use N26, and they are also happy with it.
 
 N26 has different account types. I use the free account. Since I opened my account a long time ago, I have better conditions. The current free account is more limited, but still very good.
 

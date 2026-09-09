@@ -1,8 +1,8 @@
 ---
 title: What is profit (Gewinn)?
 german_term: Gewinn
-english_term: Profit is how much income you have left after expenses.
-description: Profit
+english_term: Profit
+description: Profit is how much income you have left after expenses.
 date_created: 2021-01-19
 related_guides:
     - guides/freiberufler-or-gewerbe.md

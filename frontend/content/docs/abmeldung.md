@@ -35,7 +35,7 @@ The same form is [on Berlin.de](https://www.berlin.de/formularverzeichnis/?formu
 
 Use my [Abmeldung form filler](#fill-the-abmeldung-form-online), it's easier.
 
-To deregister members of the same family, use the same form. To deregister friends, room mates or unmarried couples, use separate forms.[^2] To deregister more than 3 members of the same family, use multiple forms.[^1]
+To deregister members of the same family, use the same form. To deregister friends, roommates or unmarried couples, use separate forms.[^2] To deregister more than 3 members of the same family, use multiple forms.[^1]
 
 This is how you must fill each field:
 

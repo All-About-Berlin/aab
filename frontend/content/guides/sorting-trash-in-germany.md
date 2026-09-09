@@ -55,7 +55,7 @@ On special days, you can bring furniture, mattresses and other big trash to spec
 ### Paper and cardboard
 
 - **🔵 Paper and cardboard ➞ blue bin**  
-    This includes egg cartons, paper bread bags, envelopes (even with plastic windows[^6]). newspapers and magazines. Flatten boxes before you put them in the bin.[^7]
+    This includes egg cartons, paper bread bags, envelopes (even with plastic windows[^6]), newspapers and magazines. Flatten boxes before you put them in the bin.[^7]
 - **🟡 [Grüner Punkt logo](/glossary/Gr%C3%BCner%20Punkt) or [Tetra Pak logo](/glossary/Tetra%20Pak) ➞ yellow bin**
 - **🟡 Paper + plastic packaging ➞ yellow bin**  
     This includes plastic bread bags, but not paper bread bags with transparent windows, and not paper envelopes with transparent windows.[^9]
@@ -164,9 +164,9 @@ Cartridges and toners do not go in the yellow bin. Recycle them [where you recyc
 - 🎁 **Sell or donate**  
     If it's still good, [sell or donate it](/guides/how-do-i-buy-and-sell-used-things-in-berlin).
 - **Appliances ➞ [appliance collector](https://waschmaschinen-entsorgung-berlin.de/), [hardware store](/guides/where-to-buy-what#hardware-and-home-improvement), or [recycling centre](https://www.bsr.de/recyclinghoefe-20503.php)**  
-    Stores that sell appliances must also recycle them for free. When you buy an appliance, they often take back your old appliance. You can also contact [Wachmachinen Entsorgung Berlin](https://waschmaschinen-entsorgung-berlin.de/). You can bring broken appliances to BSR recycling centres.
+    Stores that sell appliances must also recycle them for free. When you buy an appliance, they often take back your old appliance. You can also contact [Waschmaschinen Entsorgung Berlin](https://waschmaschinen-entsorgung-berlin.de/). You can bring broken appliances to BSR recycling centres.
 - **Big items ➞ [recycling centre](https://www.bsr.de/recyclinghoefe-20503.php) or [collection days](https://www.bsr.de/mein-sperrmuell-kieztag-30414.php)**  
-    This includes furniture, appliance and mattresses. In Berlin, [BSR can pick up big items](https://www.bsr.de/sperrmuell-21705.php) (for a fee). You can also wait for [bulk trash collection days](#bulk-trash-collection-days) in most areas.
+    This includes furniture, appliances and mattresses. In Berlin, [BSR can pick up big items](https://www.bsr.de/sperrmuell-21705.php) (for a fee). You can also wait for [bulk trash collection days](#bulk-trash-collection-days) in most areas.
 
 ## Trees, soil and grass
 
@@ -177,9 +177,9 @@ Cartridges and toners do not go in the yellow bin. Recycle them [where you recyc
 ## Oil and paint
 
 - **Paints, oils and lacquers ➞ [hardware stores](/guides/where-to-buy-what#hardware-and-home-improvement), some [recycling centres](https://www.bsr.de/recyclinghoefe-20503.php)**  
-    [Bauhaus](https://www.bauhaus.info/entsorgungshinweise), [Hellweg](https://www.hellweg.de/service/entsorgungsservice/), [Hornbach](https://www.hornbach.de/services/entsorgungsservices/) and [OBI](https://www.obi.de/baumarkt/services/markt-services/wertstoff-ruecknahme/) will take it. Check if your recycling store accepts dangerous materials (*Schadstoffe*). They charge a small fee per kilo.
+    [Bauhaus](https://www.bauhaus.info/entsorgungshinweise), [Hellweg](https://www.hellweg.de/service/entsorgungsservice/), [Hornbach](https://www.hornbach.de/services/entsorgungsservices/) and [OBI](https://www.obi.de/baumarkt/services/markt-services/wertstoff-ruecknahme/) will take it. Check if your recycling centre accepts dangerous materials (*Schadstoffe*). They charge a small fee per kilo.
 - **Car oil ➞ garages, [car parts stores](/guides/where-to-buy-what#car-and-motorcycle-parts), [hardware stores](/guides/where-to-buy-what#hardware-and-home-improvement), some [recycling centres](https://www.bsr.de/recyclinghoefe-20503.php)**  
-    If a business sells car oil, they must accept your old oil.[^18] Usually, they only take oil if you bought it from them. If you ask nicely, they will take oil from other places. Check if your recycling store accepts dangerous materials (*Schadstoffe*). They charge a small fee per kilo.
+    If a business sells car oil, they must accept your old oil.[^18] Usually, they only take oil if you bought it from them. If you ask nicely, they will take oil from other places. Check if your recycling centre accepts dangerous materials (*Schadstoffe*). They charge a small fee per kilo.
 - **Car tires ➞ garages, [recycling centres](https://www.bsr.de/recyclinghoefe-20503.php)**  
     At the recycling centre, you must pay around €3 per tire.
 - **⚫ Cooking oil ➞ grey bin**

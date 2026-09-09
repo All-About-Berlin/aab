@@ -34,7 +34,7 @@ Used bicycles are cheaper. There are many places where you can buy them:
 - **[Flea markets](https://www.berlin.de/special/shopping/flohmaerkte/)**  
     There are flea markets every Sunday in Berlin. Many of them sell bicycles. Do not buy a bicycle there. The bicycles are too old, too expensive, and often stolen.
 - **[Sell Your Bike Berlin](https://www.facebook.com/groups/sellyourbikeberlin/)**  
-    Facebook group with over 30 000 members. If you speak French, there is also [Les vélos de Berlin](https://www.facebook.com/groups/lesvelosdeberlin/). Watch for [stolen bicycles](#buying-a-stolen-bicycle).
+    Facebook group with over 30,000 members. If you speak French, there is also [Les vélos de Berlin](https://www.facebook.com/groups/lesvelosdeberlin/). Watch for [stolen bicycles](#buying-a-stolen-bicycle).
 - **[Toll office auctions](https://www.zoll-auktion.de/auktion/kategorie/Fahrr%C3%A4der_Zubeh%C3%B6r/1103)**  
     There are regular auctions for [lost and found](/guides/lost-and-found-berlin) bicycles. You can bid online.
 - **Bikes for refugees**  
@@ -96,10 +96,10 @@ There are self-service repair stations (*Selbsthilfewerkstatt*) where you can re
 - [ADFC bicycle workshop](https://berlin.adfc.de/artikel/die-fahrrad-selbsthilfe-werkstatt-shw-des-adfc-berlin) (Kreuzberg)
 - [Berliner Fahrradmarkt](http://berlinerfahrradmarkt.de/) (Moabit, Kreuzberg, Prenzlauer Berg) - bicycle market with repair station
 - [FUrad](https://www.facebook.com/FUradFU/) - bike workshop by FU Berlin
-- [Hubschrauber](https://www.refrat.de/hubschrauber/) (Mitte) - bike workshop by Humbolt University
+- [Hubschrauber](https://www.refrat.de/hubschrauber/) (Mitte) - bike workshop by Humboldt University
 - [Regenbogenfabrik](https://regenbogenfabrik.de/fahrrad/) (Kreuzberg)
 - [unirad](http://unirad.de/) (Charlottenburg) - bike workshop by TU Berlin
-- [Velo-fit](https://www.facebook.com/velofitberlin/) (Kreuzberg)- bike workshop by Berliner Stadtmission
+- [Velo-fit](https://www.facebook.com/velofitberlin/) (Kreuzberg) - bike workshop by Berliner Stadtmission
 - [Workshop in Amtshaus Buchholz](https://www.buergerhaus-gmbh.de/fahrradselbsthilfewerkstatt.html) (Buchholz)
 
 If you just need air in your tires, use the [map of public bicycle pumps](https://www.pumpsofberlin.com/#13/52.5221/13.4131), or [buy a bicycle pump](https://www.decathlon.de/browse/c0-alle-sportarten-a-z/c1-fahrrad-welt/c4-fahrrad-luftpumpen-zubehor/_/N-rrj9o) for less than €10. Petrol stations also have free air pumps, but they don't work with some bicycle tire valves.
@@ -110,13 +110,13 @@ Bike theft is very common in Berlin. Over 30,000 bicycles are stolen every year.
 
 ### Bicycle registration
 
-The Berlin police can [label your bike](https://www.berlin.de/polizei/aufgaben/praevention/diebstahl-und-einbruch/artikel.358680.php), and register it in their database. If your bike is stolen, it will be harder to resell. If the police finds your bike, they can return it to you. This is is a free service. You can find bicycle registration events [here](https://www.berlin.de/land/kalender/?c=63).
+The Berlin police can [label your bike](https://www.berlin.de/polizei/aufgaben/praevention/diebstahl-und-einbruch/artikel.358680.php), and register it in their database. If your bike is stolen, it will be harder to resell. If the police find your bike, they can return it to you. This is a free service. You can find bicycle registration events [here](https://www.berlin.de/land/kalender/?c=63).
 
 You should also write down your bicycle's frame number (*Rahmennummer*). If your bicycle is stolen, you can use this number to report the theft. [This page](https://www.krist.com/glossar/rahmennummer---wo-ist-die-nur__61.php) shows you how to find your *Rahmennummer*.
 
 ### Bike theft insurance
 
-If you have an expensive bike, you can get household insurance *[[Hausratversicherung]]* that covers bike theft, or just bicycle insurance (*[[Fahrradversicherung]]*. If your bike is stolen, your insurance will pay to replace it. Bicycle insurance only covers recent bicycles. Older bicycles are not covered.
+If you have an expensive bike, you can get household insurance (*[[Hausratversicherung]]*) that covers bike theft, or just bicycle insurance (*[[Fahrradversicherung]]*). If your bike is stolen, your insurance will pay to replace it. Bicycle insurance only covers recent bicycles. Older bicycles are not covered.
 
 ### If your bike gets stolen
 
@@ -147,7 +147,7 @@ Your bicycle must have lights, reflectors, a bell and working brakes. The Berlin
 - [ ] **[Bell](https://www.amazon.de/s/ref=as_li_ss_tl?k=fahrradglocke&__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=23OWAP1LZ3EMH&sprefix=fahrradgl,aps,272&ref=nb_sb_ss_i_1_9&linkCode=sl2&tag=nicolasboulia-21&linkId=7b61d0c44912f5dac5ec4a61e0098a2b)** (*Fahrradglocke*)  
     Your bicycle must have a bell.[^9] It must be attached to the handlebars and easy to reach.[^10] You can [buy a bicycle bell](https://www.amazon.de/s/ref=as_li_ss_tl?k=fahrradglocke&__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=23OWAP1LZ3EMH&sprefix=fahrradgl,aps,272&ref=nb_sb_ss_i_1_9&linkCode=sl2&tag=nicolasboulia-21&linkId=7b61d0c44912f5dac5ec4a61e0098a2b) for less than €5. If you don't have a bell, you can get a €15 fine.
 - [ ] **Brakes** (*Bremse*)  
-    Your bicycle must have working brakes.[^11] The front and rear breaks must both work.[^12] If your brakes don't work, you can get a €10 fine.[^13]
+    Your bicycle must have working brakes.[^11] The front and rear brakes must both work.[^12] If your brakes don't work, you can get a €10 fine.[^13]
 
 Some equipment is not required, and some equipment is forbidden:
 
@@ -158,13 +158,13 @@ Some equipment is not required, and some equipment is forbidden:
 - [ ] **Panniers and bags**  
     Panniers and bags are allowed. They are very useful in Berlin.
 - [ ] **Turn signals**  
-    Turn signals are only allowed for multiple track (3 or 4-wheeled) bicycles.[^14]
+    Turn signals are only allowed for multiple-track (3 or 4-wheeled) bicycles.[^14]
 - [ ] **Action cameras and dashcams**  
     You can use an action camera on your bicycle.[^14] You must still follow [German photography laws](/guides/photography-laws-germany).
 
 ## Road rules for cyclists in Germany
 
-These are some of the most important road rules for cyclists. Those rules apply for all of Germany, not just Berlin. If you break the law on a bicycle, you can lose points on your driving licence.[^15]
+These are some of the most important road rules for cyclists. Those rules apply in all of Germany, not just Berlin. If you break the law on a bicycle, you can lose points on your driving licence.[^15]
 
 - **You can't ride on the sidewalk.**[^16]  
     You must ride your bicycle on the street, not on the sidewalk. If you ride on the sidewalk, you can get a €55 fine.[^17] Children up to 8 years old *must* ride on the sidewalk. Children up to 10 years old *can* ride on the sidewalk. Parents who accompany their children can also ride on the sidewalk. Pedestrians still have priority on the sidewalk.

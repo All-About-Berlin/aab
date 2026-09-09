@@ -37,7 +37,7 @@ There are 3 long-term health insurance options:
 
 ### The Künstlersozialkasse
 
-If you are an artist, journalist, publicist or art teacher, join the *[[Künstlersozialkasse]]* (KSK). They pay half of your health insurance, and half of your [public pension insurance](/glossary/gesetzliche%20Krankenversicherung). It's always worth it.
+If you are an artist, journalist, publicist or art teacher, join the *[[Künstlersozialkasse]]* (KSK). They pay half of your health insurance, and half of your [public pension insurance](/glossary/gesetzliche%20Rentenversicherung). It's always worth it.
 
 Joining the KSK takes a few months. While you wait, you need public, private or expat health insurance.
 
@@ -88,7 +88,7 @@ After you get insured, you can [apply for a freelance visa](/guides/freelance-vi
 
 ### Pay for your health insurance
 
-You must pay for health insurance by [bank transfer](/glossary/SEPA-Überweisung) every month. You can sign a [direct debit authorization](/glossary/SEPA-Lastschriftmandat) to allow automatic payments.
+You must pay for health insurance by [bank transfer](/glossary/SEPA-Überweisung) every month. You can sign a [direct debit authorisation](/glossary/SEPA-Lastschriftmandat) to allow automatic payments.
 
 If you chose [public health insurance](/glossary/gesetzliche%20Krankenversicherung), the price is based on your *estimated* income. Every year, your health insurer will look at your real income, and adjust the price. If you paid too much, you will get a refund later. If you did not pay enough, you must make another payment.
 
@@ -106,4 +106,4 @@ Freelancers do not get paid [sick leave](/glossary/Krankengeld). If you are too 
 [^6]: [Seamus Wolf](https://horizon65.com/) (June 2025)
 [^7]: [VAB A2.3.1.12](/out/vab) (September 2025), [Feather Insurance](https://feather-insurance.com/blog/how-can-i-use-expat-health-insurance-for-my-visa/#:~:text=expat%20insurance%20is%20almost%20always%20denied) (2025)
 [^8]: [Seamus Wolf](https://horizon65.com/) (June 2025)
-[^9]: [§ 9 Abs. 1 S. 1 SGB V](https://www.buzer.de/9_SGB_V.htm) (Oktober 2025)
+[^9]: [§ 9 Abs. 1 S. 1 SGB V](https://www.buzer.de/9_SGB_V.htm) (October 2025)
