@@ -13,7 +13,7 @@ ruff = "latest"
 python = "3.13"
 shellcheck = "latest"
 pre-commit = "latest"
-editorconfig-checker = "latest"
+editorconfig-checker = "3.11.3"
 
 [tasks.setup]
 description = "Install local dependencies to run the project"
