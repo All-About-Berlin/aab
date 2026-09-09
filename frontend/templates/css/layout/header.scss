@@ -66,51 +66,15 @@ body > header {
             }
         }
 
-        // Space after logo
-        // The search form is technically the next item, but is pushed to the end unless open.
-        :is(a[rel=home], .search-form) + :is(a, button, .search-form:focus-within){
+        // Push everything after the logo to the right
+        a[rel=home] + :is(a, button){
             margin-left: auto;
         }
 
-        .search-form{
-            order: 999;
-            box-shadow: none!important;
-            border: none!important;
-
-            &:not(:focus-within){
-                background-color: transparent;
-                box-shadow: none;
-                border-radius: 0;
-                border: none;
-                padding: 0;
-                overflow: hidden;
-
-                label{
-                    @include main-nav-item;
-                }
-
-                input{  // It can't be hidden, because hidden elements don't get focus
-                    width: 0;
-                    flex: 0!important;
-                }
-            }
-
-            &:focus-within {
-                flex: 1 1 auto;
-                align-self: center;
-
-                ~ *{
-                    display: none!important;
-                }
-
-                border-color: var(--c-highlight);
-                box-shadow: var(--shadow-l), 0 0 0 1px var(--c-highlight);
-
-                .search-results{
-                    border-color: var(--c-highlight);
-                    outline-color: var(--c-highlight);
-                }
-            }
+        .search-link svg{
+            width: 1rem;
+            height: 1rem;
+            vertical-align: middle;
         }
     }
 

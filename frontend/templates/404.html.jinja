@@ -15,9 +15,14 @@
 		<div class="intro">
 			<h1>Page not found</h1>
 			<p>Not what you expected? To report a problem, <a href="{{ SITE_URL }}/contact">contact me</a>.</p>
-			{% with autofocus=true %}
-				{% include "_blocks/searchForm.html" %}
-			{% endwith %}
+			<search class="search-form">
+				<form action="{{ SITE_URL }}/search" method="get">
+					<label>
+						<input type="search" name="q" placeholder="Search this website" aria-label="Search this website" autofocus>
+						{% include "_icons/search.svg" %}
+					</label>
+				</form>
+			</search>
 		</div>
 	</main>
 {% endblock %}

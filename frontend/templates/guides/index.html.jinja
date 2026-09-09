@@ -13,9 +13,14 @@
 	<main aria-label="Main page">
 		<header class="intro" aria-label="Title and search box">
 			<h1>Guides for living in Germany</h1>
-			{% with autofocus=true %}
-				{% include "_blocks/searchForm.html" %}
-			{% endwith %}
+			<search class="search-form">
+				<form action="{{ SITE_URL }}/search" method="get">
+					<label>
+						<input type="search" name="q" placeholder="Search this website" aria-label="Search this website" autofocus>
+						{% include "_icons/search.svg" %}
+					</label>
+				</form>
+			</search>
 		</header>
 		<section aria-label="Guide collections">
 			{% with currentEntry=null, collections=guideCollections %}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+	<ShortName>All About Berlin</ShortName>
+	<Description>Search guides, tools and forum posts on All About Berlin</Description>
+	<InputEncoding>UTF-8</InputEncoding>
+	<Image width="32" height="32" type="image/png">{{ SITE_URL }}/staticimages/favicon.png</Image>
+	<Url type="text/html" method="get" template="{{ SITE_URL }}/search?q={searchTerms}"/>
+	<Url type="application/opensearchdescription+xml" rel="self" template="{{ SITE_URL }}/opensearch.xml"/>
+</OpenSearchDescription>

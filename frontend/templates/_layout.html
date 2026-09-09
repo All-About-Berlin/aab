@@ -19,6 +19,7 @@
 
 		<link rel="alternate" type="application/rss+xml" title="All About Berlin newsletter" href="{{ SITE_URL }}/newsletter/feed.rss">
 		<link rel="alternate" type="application/rss+xml" title="All About Berlin's latest guides" href="{{ SITE_URL }}/guides/feed.rss">
+		<link rel="search" type="application/opensearchdescription+xml" title="All About Berlin" href="{{ SITE_URL }}/opensearch.xml">
 		<link rel="author" href="{{ SITE_URL }}/about">
 		<link rel="privacy-policy" href="{{ SITE_URL }}/terms#privacy-policy">
 		<link rel="terms-of-service" href="{{ SITE_URL }}/terms">
@@ -68,9 +69,6 @@
 				All About Berlin
 			</a>
 
-			{# Search form must be before items it hides when opened #}
-			{% include "_blocks/searchForm.html" %}
-
 			<button
 				aria-label="Show guides menu"
 				aria-controls="menu-guides"
@@ -84,6 +82,9 @@
 			</a>
 			<a class="no-mobile" href="{{ SITE_URL }}/newsletter">
 				Newsletter
+			</a>
+			<a class="search-link" href="{{ SITE_URL }}/search" aria-label="Search this website">
+				{% include "_icons/search.svg" %}
 			</a>
 		</nav>
 		<nav aria-label="Guides menu" class="submenu" id="menu-guides" hidden>
@@ -290,6 +291,14 @@
 				"publisher": {
 					"@type": "Organization",
 					"@id": "{{ SITE_URL }}/#organization"
+				},
+				"potentialAction": {
+					"@type": "SearchAction",
+					"target": {
+						"@type": "EntryPoint",
+						"urlTemplate": "{{ SITE_URL }}/search?q={search_term_string}"
+					},
+					"query-input": "required name=search_term_string"
 				},
 				"sameAs": [
 					"https://github.com/all-about-berlin",
