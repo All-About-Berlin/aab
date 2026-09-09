@@ -17,7 +17,7 @@ If you are a freelance artist, publicist or art teacher, you should apply for th
 
 The Künstlersozialkasse (KSK) is a social fund for freelance artists, publicists and art teachers. It's funded by the government, and by businesses who hire freelance artists.[^0]
 
-When you are a KSK member, **they pay half of your [health insurance](/glossary/gesetzliche%20Krankenversicherung), [long-term care insurance](/glossary/Pflegeversicherung) and [public pension insurance](/glossary/gesetzliche%20Krankenversicherung)**. There is no membership fee.
+When you are a KSK member, **they pay half of your [health insurance](/glossary/gesetzliche%20Krankenversicherung), [long-term care insurance](/glossary/Pflegeversicherung) and [public pension insurance](/glossary/gesetzliche%20Rentenversicherung)**. There is no membership fee.
 
 ## Why join the KSK?
 
@@ -32,7 +32,7 @@ When you are a KSK member, **they pay half of your [health insurance](/glossary/
 - ✓ **It lets you get [public health insurance](/glossary/gesetzliche%20Krankenversicherung)**  
     Some freelancers are stuck with [private health insurance](/glossary/private%20Krankenversicherung), or bad [expat health insurance](/glossary/Expat%20health%20insurance). When you join the KSK, you can switch to [public health insurance](/glossary/gesetzliche%20Krankenversicherung). It's often the best option for you.
 - ✓ **It helps you get [permanent residence](/glossary/Niederlassungserlaubnis)**  
-    Before you apply for [permanent residence](/glossary/Niederlassungserlaubnis), you must pay [public pension insurance](/glossary/gesetzliche%20Krankenversicherung) for 60 months. The KSK makes public pension insurance more affordable for freelancers.
+    Before you apply for [permanent residence](/glossary/Niederlassungserlaubnis), you must pay [public pension insurance](/glossary/gesetzliche%20Rentenversicherung) for 60 months. The KSK makes public pension insurance more affordable for freelancers.
 - ✓ **You get more things for the same price**  
     If you earn less than €{{GKV_MAX_INCOME|cur}} per year, your [net income](/glossary/Netto%20income) stays the same. If you earn more, [you pay a little more](#how-much-does-it-cost), but it's still a really good deal.
 
@@ -55,7 +55,7 @@ Usually, you pay less than before, *and* you get more benefits. Calculate the di
 
 {% tool "ksk-cost-difference-calculator", static=True %}
 
-When you are in the KSK, they pay half of your health insurance, but you are forced to pay [public pension insurance](/glossary/gesetzliche%20Krankenversicherung). In other words, **you save money on health insurance, and reinvest it in your pension**. This is a *really* good deal.
+When you are in the KSK, they pay half of your health insurance, but you are forced to pay [public pension insurance](/glossary/gesetzliche%20Rentenversicherung). In other words, **you save money on health insurance, and reinvest it in your pension**. This is a *really* good deal.
 
 If you earn over €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year, you pay a bit more, but you contribute *a lot* more to your pension. This is the best pension plan you can find.
 
@@ -113,7 +113,7 @@ When you apply for the KSK, you must prove that you meet those requirements.[^16
 This means that...
 
 - [ ] **You work in an artistic or journalistic context**  
-    Creativity and originality is a big part of your work. If your work is original enough to have copyright, it should be okay. If you don't get credited for your work, it's probably not creative enough. For example, wedding singers don't work in an artistic context, so they sometimes get rejected. Some dance teachers teach fitness, not art.
+    Creativity and originality are a big part of your work. If your work is original enough to have copyright, it should be okay. If you don't get credited for your work, it's probably not creative enough. For example, wedding singers don't work in an artistic context, so they sometimes get rejected. Some dance teachers teach fitness, not art.
 - [ ] **It's your main job**  
     Creative work must be the biggest part of your work, and the biggest part of your income. You can have other sources of income, but [it gets complicated](#can-i-have-another-source-of-income-while-in-the-ksk). Students can also join the KSK.[^55]
 - [ ] **It's not temporary**  
@@ -163,7 +163,7 @@ Your current [residence permit](/glossary/Aufenthaltstitel) can affect your appl
 This means that...
 
 - [ ] **You have maximum one employee**  
-    You can only hire one other employee.[^23] You can hire as many contractors, freelancers, [apprentices](/glossary/Azubi), [minijob](/glossary/Minijob) employees as you want.[^23]
+    You can only hire one other employee.[^23] You can hire as many contractors, freelancers, [apprentices](/glossary/Azubi) and [minijob](/glossary/Minijob) employees as you want.[^23]
 
 ## How to apply for the KSK
 
@@ -465,7 +465,7 @@ You must pay the private health insurer yourself. Instead of giving you money fo
         The KSK pays for half of your public pension insurance, and half of your health insurance.
     - **If your other freelance income is more than €{{MINIJOB_MAX_INCOME|cur}} per month**  
         The KSK pays for half of your public pension insurance. It does not pay for half of your health insurance. This could change soon.[^45]
-- **Freelance artist + full time student**  
+- **Freelance artist + full-time student**  
     The KSK pays for half of your public pension insurance. It does not pay for your health insurance.
 
 ### Does my health insurance cover my family?
@@ -502,12 +502,12 @@ These experts can help you apply for the KSK. They can review your documents, an
     Relocation consultant with a lot of KSK experience,[^47] native English speaker. Their consultation fees are low. Kathleen reviewed this guide.
 - **[Andri Jürgensen](https://www.kunstrecht.de/)** (Kiel)  
     Lawyer for artists and KSK expert. He speaks English.[^48]
-- **[BKMB Medien und Künstlerberatung](https://www.bmkb.de/kskberatung/)**  
+- **[BMKB Medien und Künstlerberatung](https://www.bmkb.de/kskberatung/)**  
     KSK and pension experts. They speak English.
 - **[BIGmedia](https://bigmedia-deutschland.de/)** (Munich)  
     General consulting for freelance artists.
-- **[DKMB](https://dmkb.de/ueber-uns/alexander-schwarz/)**  
-    Insurance broker and KSK expert. Alexander Schwartz speaks English.
+- **[DMKB](https://dmkb.de/ueber-uns/alexander-schwarz/)**  
+    Insurance broker and KSK expert. Alexander Schwarz speaks English.
 - **[Freie Wildbahn](https://freie-wildbahn.de/)** (Arnsberg)  
     KSK experts. They speak English.
 - **[Inbound media service](https://www.inboundmedia.de/english/)**  

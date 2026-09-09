@@ -80,7 +80,7 @@ Use my lists of English-speaking professionals:
 
 - [Doctors](/guides/english-speaking-doctors-berlin)
 - [Dentists](/guides/list-of-english-speaking-dentists-in-berlin)
-- [Gynecologists and obstetricians](/guides/english-speaking-gynecologists-berlin)
+- [Gynaecologists and obstetricians](/guides/english-speaking-gynecologists-berlin)
 - [Psychiatrists](/guides/english-speaking-psychiatrists-berlin)
 - [Psychotherapists](/guides/english-speaking-psychotherapists-berlin)
 - [Other medical professionals](/guides/how-to-find-english-speaking-medical-professionals-in-berlin)
@@ -97,7 +97,7 @@ Use my lists of English-speaking professionals:
     Legal advice for members. Membership costs €49 per year.{{ fail_on('2027-07-01') }} You can use their help immediately after you become a member.
 - **Your works council** (*Betriebsrat*)  
     If your company has a *Betriebsrat*, they can advise you for free. They work for you, not your employer.
-- **Workers union** (*Gewerkschaft*)  
+- **Workers' union** (*Gewerkschaft*)  
     If you are in a union, you can usually get free legal help, but only for work-related problems.[^4]
 - **Lawyer** (*Fachanwalt für Arbeitsrecht*)  
     Hire a lawyer who specialises in employment law (*Arbeitsrecht*). They cost around €{{LAWYER_HOURLY_RATE|cur}} per hour. Use my [list of English-speaking lawyers in Berlin](/guides/english-speaking-lawyers-berlin). If you have [legal insurance](/glossary/Rechtsschutzversicherung), it usually pays for your lawyer.
@@ -107,7 +107,7 @@ Don't be afraid to use a lawyer. Your employer can't fire you or blacklist you b
 ## Legal questions
 
 - **[Lawyers](/guides/english-speaking-lawyers-berlin)**  
-    Use my [list of English-speaking lawyers in Berlin](/guides/english-speaking-lawyers-berlin). If you have [legal insurance](/glossary/Rechtsschutzversicherung) can help you find a lawyer, and it might pay for it. Some legal insurances have a legal hotline.
+    Use my [list of English-speaking lawyers in Berlin](/guides/english-speaking-lawyers-berlin). Your [legal insurance](/glossary/Rechtsschutzversicherung) can help you find a lawyer, and it might pay for it. Some legal insurances have a legal hotline.
     - **Business and immigration lawyer hotline**  
         Call [09008 529 366 11](tel:0900852936611) to ask quick legal questions. You will talk to Alexander von Engelhardt, a business and immigration lawyer in Berlin. It costs €{{LEGAL_HOTLINE_COST_PER_MINUTE|cur}} per minute.
 - **Legaltech** (*Rechtsdienstleister*)  

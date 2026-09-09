@@ -1,7 +1,7 @@
 ---
 title: How to take vacations in Germany
 short_title: How to take vacations
-description: This guides show you how to take vacation days work in Germany. It explains your rights as an employee.
+description: This guide shows you how vacation days work in Germany. It explains your rights as an employee.
 date_created: 2022-07-20
 ---
 
@@ -26,7 +26,7 @@ If you work 5 days per week, you get *at least* 20 vacation days per year, plus 
 
 When you [get a job offer](/guides/find-a-job-in-berlin#the-job-offer), you can negotiate more vacation days. Most full-time employees get 25 to 30 vacation days.[^2]
 
-When you start a new job, your vacation days days are prorated: you unlock 1/12 of your vacation days every month.[^3] This is true even if you don't have a [probation period](/glossary/Probezeit). After 6 months, you can use all of your vacation days.[^4] [More information here.](/guides/probezeit#vacations)
+When you start a new job, your vacation days are prorated: you unlock 1/12 of your vacation days every month.[^3] This is true even if you don't have a [probation period](/glossary/Probezeit). After 6 months, you can use all of your vacation days.[^4] [More information here.](/guides/probezeit#vacations)
 
 ### You must use your vacation days
 
@@ -36,7 +36,7 @@ Sometimes, there is an emergency at work, and that's not possible. In that case,
 
 Some employers let you save *some* of your vacation days for another year.
 
-Your employer must let you take at least one 2 week long vacation per year.[^5] They can't force you to only take short vacations.
+Your employer must let you take at least one 2-week-long vacation per year.[^5] They can't force you to only take short vacations.
 
 ### You must ask your employer
 
@@ -79,13 +79,13 @@ If you are sick, you get paid sick leave. You don't need to use your vacation da
 
 ## Educational leave
 
-You can take time off to improve your education. During that time, you still get paid. This is called educational leave (*[[Bildungsurlaub]]*)
+You can take time off to improve your education. During that time, you still get paid. This is called educational leave (*[[Bildungsurlaub]]*).
 
 **[Educational leave in Germany ➞](/guides/bildungsurlaub)**
 
 ## Brückentage
 
-You can combine [public holidays](/guides/public-holidays) and vacation days to get more time off. For example, if Thursday is a public holiday, you can take Friday off and get a 4-day weekend. Friday is a bridge day (*Brückentag*) This is very common in Germany.
+You can combine [public holidays](/guides/public-holidays) and vacation days to get more time off. For example, if Thursday is a public holiday, you can take Friday off and get a 4-day weekend. Friday is a bridge day (*Brückentag*). This is very common in Germany.
 
 There are many public holidays in May and December. This is a good time to use Brückentage and get a longer vacation.[^13]
 

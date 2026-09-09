@@ -96,7 +96,7 @@ Tradespeople must...
 - Get listed in the *Handelsregister* ([in some cases](/guides/handelsregisternummer-germany#who-needs-a-handelsregister-entry))
 - Use double entry bookkeeping ([in some cases](/guides/freiberufler-or-gewerbe#double-entry-bookkeeping))
 
-When you [apply for a freelance visa](/guides/freelance-visa) or [permanent residence](/glossary/Niederlassungserlaubnis), the required documents are different for *Freiberufler* and *Gewerbetreibende*
+When you [apply for a freelance visa](/guides/freelance-visa) or [permanent residence](/glossary/Niederlassungserlaubnis), the required documents are different for *Freiberufler* and *Gewerbetreibende*.
 
 Not all freelancers are *Freiberufler*, only people in [specific professions](https://www.ihk.de/hamburg/produktmarken/beratung-service/recht-und-steuern/steuerrecht/real-kommunale-steuern/abgrenzung-gewerbebetrieb-freie-berufe-1157144#titleInText8). For example, designers, engineers, doctors, architects, teachers, artists and journalists.
 
@@ -130,7 +130,7 @@ You need a bank account to pay taxes, pay for health insurance, and to get paid 
 
 **Use a separate bank account** for your business. Bookkeeping is easier when your personal and business transactions are separate. Some banks don't let you use your personal account for business.[^2]
 
-Business banks like [Holvi](/out/holvi), [Qonto](/out/qonto), [Kontist](/out/kontist) and [Finom](/out/finom) help with your accounting. I use [Kontist](/out/kontist) since January 2022, but [I don't recommend it](/guides/kontist-review).
+Business banks like [Holvi](/out/holvi), [Qonto](/out/qonto), [Kontist](/out/kontist) and [Finom](/out/finom) help with your accounting. I have used [Kontist](/out/kontist) since January 2022, but [I don't recommend it](/guides/kontist-review).
 
 **[Best German banks for expats ➞](/guides/best-bank-germany)**
 
@@ -299,7 +299,7 @@ If you publish texts or run a website, you should also join [VG Wort](https://ww
 
 ### Save for retirement
 
-Employees automatically save for a retirement, but freelancers don't. You must plan for retirement and set money aside. Many freelancers neglect that.
+Employees automatically save for retirement, but freelancers don't. You must plan for retirement and set money aside. Many freelancers neglect that.
 
 There is no easy way to do this, especially for immigrants. You might need a flexible pension, in case you want to cash out sooner, become an employee, or [leave Germany](/guides/leaving-germany).
 

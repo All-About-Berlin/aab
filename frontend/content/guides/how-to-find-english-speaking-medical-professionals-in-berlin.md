@@ -28,7 +28,7 @@ This guide helps you find a doctor that speaks English.
 
 ## Medical professional databases with language filters
 
-These websites let you to find doctors by language.
+These websites let you find doctors by language.
 
 - **[Doctolib](https://www.doctolib.de/)** - Filter by profession, area and language. You can book appointments online.
 - [Jameda](https://www.jameda.de/suchen?loc=Berlin) - Filter by profession, area and language. You can book appointments online.

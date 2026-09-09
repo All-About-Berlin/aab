@@ -15,4 +15,4 @@ related_guides:
 
 The house administration (*Hausverwaltung*) is the people in charge of an apartment building. You call the *Hausverwaltung* when you have problems in your apartment: loud neighbours, [lost keys](/guides/lost-keys), problems with utilities etc. In some smaller buildings, this can be the landlord themself. In larger buildings, it's usually a housing company.
 
-If you don't know who you *Hausverwaltung* is, look on your lease. It's often on a billboard in your apartment lobby.
+If you don't know who your *Hausverwaltung* is, look on your lease. It's often on a billboard in your apartment lobby.

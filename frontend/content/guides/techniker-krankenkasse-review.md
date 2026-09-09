@@ -32,7 +32,7 @@ TK does have English phone and chat support, so you can always get help in Engli
 
 ## My personal experience with TK
 
-I was a TK customer since I [moved to Berlin](/guides/moving-to-berlin) in 2015. I was with TK until 2021. I had a very positive experience with them.
+I became a TK customer when I [moved to Berlin](/guides/moving-to-berlin) in 2015. I was with TK until 2021. I had a very positive experience with them.
 
 ### Excellent coverage
 
@@ -62,7 +62,7 @@ When I received a letter that I did not understand, I used their support chat. T
 
 [![Tk Customer Service Online Chat](/images/tk-customer-service-online-chat.png)](/images/tk-customer-service-online-chat.png)
 
-The customer support also available in English.
+The customer support is also available in English.
 
 ### Meine TK
 
@@ -88,7 +88,7 @@ Meine TK allows you to submit or download documents online. You rarely need to s
 
 Techniker Krankenkasse is very good. It's the best-rated public health insurer in every comparison:
 
-- ✓ It was nominated ["Germany's best Krankenkasse"](https://www.tk.de/techniker/unternehmensseiten/unternehmen/ueber-die-tk/tk-deutschlands-beste-krankenkasse-2012454) for the last 13 years.
+- ✓ It has been nominated ["Germany's best Krankenkasse"](https://www.tk.de/techniker/unternehmensseiten/unternehmen/ueber-die-tk/tk-deutschlands-beste-krankenkasse-2012454) for the last 13 years.
 - ✓ It ranked #1 in the [Deutsche Finanz-Service Institut test](https://www.finanzen.de/news/beste-krankenkasse-fuer-2019-neuer-test-prueft-qualitaet-von-40-kassen).
 - ✓ It also ranked #1 on [Testsieger-Berichte's test](https://www.testsieger-berichte.de/gesetzliche-krankenversicherung-test/).
 - ✓ It ranked #1 next to HEK on [Finanztip's report](https://www.finanztip.de/gkv/).
@@ -133,7 +133,7 @@ In 2021, I switched to private health insurance. I was still very happy with TK,
 
 ## How to sign up with TK
 
-If you want be insured with the Techniker Krankenkasse, fill [this simplified form](/out/feather-tk). It takes 10 minutes, and [Feather](/out/feather) takes care of the rest. Feather is an English-speaking health insurance broker in Berlin. I work with them since a long time and I trust them.
+If you want to be insured with the Techniker Krankenkasse, fill [this simplified form](/out/feather-tk). It takes 10 minutes, and [Feather](/out/feather) takes care of the rest. Feather is an English-speaking health insurance broker in Berlin. I have worked with them for a long time and I trust them.
 
 **[Sign up with Techniker Krankenkasse](/out/feather-tk)**
 

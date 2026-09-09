@@ -32,11 +32,11 @@ You can find English-speaking jobs in...
 - [Tech companies](#tech-jobs)
 - Delivery services like [Lieferando](https://www.lieferando.de/en/courier), [Wolt](https://wolt.com/en/jobs/search) and [Flink](https://careers.smartrecruiters.com/Flink3/joinus)
 - Customer service and call centres
-- Restaurants, cafes and bars
+- Restaurants, cafés and bars
 - Companies with English-speaking offices
 - [[Au pair]] families
 
-You can teach English in Germany, but you need qualification, it's hard to find work, and the pay is bad.[^5]
+You can teach English in Germany, but you need qualifications, it's hard to find work, and the pay is bad.[^5]
 
 ## 1. Look for jobs
 
@@ -71,7 +71,7 @@ These websites only have English-speaking jobs, or let you filter by language:
 
 - **[GermanTechJobs](https://germantechjobs.de/jobs/all/Berlin)** - You can filter by language and technology.
 - [Berlin Startup Jobs](https://berlinstartupjobs.com/) - English-speaking jobs in startups and tech companies
-- [Administrator](https://www.administrator-jobs.de/in/berlin) / [Web Entickler](https://www.webentwickler-jobs.de/in/berlin) / [Entwickler](https://www.softwareentwickler-jobs.de/in/berlin) Jobs - German-speaking tech jobs
+- [Administrator](https://www.administrator-jobs.de/in/berlin) / [Web Entwickler](https://www.webentwickler-jobs.de/in/berlin) / [Entwickler](https://www.softwareentwickler-jobs.de/in/berlin) Jobs - German-speaking tech jobs
 - [Imagine Foundation](https://www.joinimagine.com/) - They help software developers from developing countries find a job and get hired
 
 ### Creative jobs: media, communications, design

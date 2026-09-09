@@ -17,7 +17,7 @@ On average, German employees take 20 sick days per year.[^0] You can take as man
 
 **After your probation period**, your employer can't punish you because you take sick days. If you take more than 30 sick days per year, you *could* get fired.[^1] To fire you, your employer must prove that you will not get better, that it's bad for the company, and that there are no other options (like a transfer or reduced hours).[^2]
 
-If you take sick days when you are not sick, you can get fired.[^3] For example, if you say that are too sick to work, but you go clubbing, you can get fired.[^4]
+If you take sick days when you are not sick, you can get fired.[^3] For example, if you say that you are too sick to work, but you go clubbing, you can get fired.[^4]
 
 ## What to do when you are sick
 
@@ -71,7 +71,7 @@ After 6 weeks, your employer stops paying you. Instead, you get *[[Krankengeld]]
 
 You do not get *Krankengeld* if...
 
-- ✗ You have [private health insurance](/glossary/private%20Krankenversicherung) (you need *[[Krankentagegeld]]*insurance)
+- ✗ You have [private health insurance](/glossary/private%20Krankenversicherung) (you need *[[Krankentagegeld]]* insurance)
 - ✗ You have [expat health insurance](/glossary/Expat%20health%20insurance)
 - ✗ You have a [minijob](/glossary/Minijob)
 - ✗ You have [free health insurance](/guides/german-health-insurance#free-health-insurance) (*[[Familienversicherung]]*)
@@ -99,7 +99,7 @@ You can leave work to care for a sick child under 12 years old. Your employer ca
 
 ### With public health insurance
 
-If you have [public health insurance](/glossary/gesetzliche%20Krankenversicherung), you get *[[Kinderkrankengeld]]*while you are not working. It pays 90% your salary, up to €{{ GKV_KINDERKRANKENGELD_DAILY_LIMIT|cur }} per day.[^37]
+If you have [public health insurance](/glossary/gesetzliche%20Krankenversicherung), you get *[[Kinderkrankengeld]]* while you are not working. It pays 90% of your salary, up to €{{ GKV_KINDERKRANKENGELD_DAILY_LIMIT|cur }} per day.[^37]
 
 You only get *Kinderkrankengeld* if...
 

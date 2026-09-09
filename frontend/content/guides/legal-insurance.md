@@ -39,7 +39,7 @@ Legal insurance helps with...
 - **Government problems**  
     For example, if you have problems with the *[[Finanzamt]]* or the *[[Bürgeramt]]*. It rarely covers [immigration office](/glossary/Ausländerbehörde) problems.[^39]
 - **Insurance problems**  
-    If a car hits, and the person's insurance won't pay, or if your [disability insurance](/glossary/Berufsunfähigkeitsversicherung) won't pay.[^4] This is very common: 25% of disability insurance claims are refused.[^5]
+    If a car hits you, and the person's insurance won't pay, or if your [disability insurance](/glossary/Berufsunfähigkeitsversicherung) won't pay.[^4] This is very common: 25% of disability insurance claims are refused.[^5]
 - **Suing someone for damages**  
     If someone punched you and broke your nose, or scratched your car with their bike, and you want to sue them.[^6]
 
@@ -96,7 +96,7 @@ Legal insurance costs **€{{LEGAL_INSURANCE_MIN_COST|cur}} to €{{LEGAL_INSURA
 
 ## Do you really need it?
 
-Legal insurance is **not essential, but good to have**.[^21] It gives you peace of mind, and solves problems before they happen. If you use it or twice per year, it's already worth it.
+Legal insurance is **not essential, but good to have**.[^21] It gives you peace of mind, and solves problems before they happen. If you use it once or twice per year, it's already worth it.
 
 It's **useful for immigrants**, because employers and landlords often take advantage of them. It's hard to defend yourself when you don't speak German and you don't understand the system.[^40]
 
@@ -151,7 +151,7 @@ Use [Tarifcheck](/out/tarifcheck-rechtsschutz) to compare legal insurances.
 - **Tenant association** (*[[Mieterverein]]*){{RECOMMENDED}}  
     Cheaper than legal insurance.[^12] They also answer small questions, draft letters to your landlord, and check your [utility bills](/glossary/Nebenkostenabrechnung).
 - **Legal aid** (*Beratungshilfe*)  
-    If you have a low income, you can apply for legal help  at your [local *Amtsgericht*](https://www.gerichtsverzeichnis.de/verzeichnis.php).[^37] You get a certificate (*Beratungshilfeschein*) that pays for your legal costs. If you get *[[Grundsicherung]]* or *Sozialhilfe*, or if you are an asylum seeker, you are eligible.[^38] You usually need to speak German.
+    If you have a low income, you can apply for legal help at your [local *Amtsgericht*](https://www.gerichtsverzeichnis.de/verzeichnis.php).[^37] You get a certificate (*Beratungshilfeschein*) that pays for your legal costs. If you get *[[Grundsicherung]]* or *Sozialhilfe*, or if you are an asylum seeker, you are eligible.[^38] You usually need to speak German.
 - **Legal hotline**  
     For quick business or immigration questions, use Alexander von Engelhardt's legal hotline: [09008 529 366 11](tel:0900852936611). It costs €{{LEGAL_HOTLINE_COST_PER_MINUTE|cur}} per minute.
 - **Legal services**  

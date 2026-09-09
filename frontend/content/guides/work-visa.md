@@ -51,7 +51,7 @@ If you are **not** a citizen of {{ BESCHV_26_COUNTRIES }}, you must have...[^38]
 If you are **not** a citizen of {{ BESCHV_26_1_COUNTRIES }}, you must have...[^49]
 
 - [ ] **An employer in Germany**  
-    Your employer must have an office in Germany, even it it's a remote job.[^30]
+    Your employer must have an office in Germany, even if it's a remote job.[^30]
 
 If you are over 45 years old, and this is your first residence permit, you must have...[^43]
 
@@ -180,7 +180,7 @@ If your work visa is approved, you will get a second appointment to pick up your
 
 ### 7. Get your work visa
 
-Go to your second *[[Ausländerbehörde]]* appointment and pick up your work visa. Your new work visa is valid for up to 4 years.[^17] If you have a limited work contract, your work visa is valid for a shorter time. For example, if you have a 2 year work contract, your work visa is valid for 2 years + 3 months.[^3]
+Go to your second *[[Ausländerbehörde]]* appointment and pick up your work visa. Your new work visa is valid for up to 4 years.[^17] If you have a limited work contract, your work visa is valid for a shorter time. For example, if you have a 2-year work contract, your work visa is valid for 2 years + 3 months.[^3]
 
 **[How to pick up your work visa ➞](/guides/residence-permit#pick-up-your-residence-card)**
 
@@ -218,12 +218,12 @@ These are the required documents **in Berlin**.[^2] If you apply elsewhere, they
     You need valid [health insurance](/glossary/Krankenversicherung). Travel insurance is not accepted. [Ask my insurance expert](/guides/german-health-insurance#need-help) to help you [choose health insurance for your work visa](/guides/german-health-insurance/for-employees#for-a-blue-card-or-a-work-visa).
     - [ ] **[Health insurance card](/glossary/Gesundheitskarte)**  
         Show both sides of the card.
-    - [ ] **proof of [public health insurance](/glossary/gesetzliche%20Krankenversicherung)**  
+    - [ ] **Proof of [public health insurance](/glossary/gesetzliche%20Krankenversicherung)**  
         Get a *[Mitgliedsbescheinigung nach § 175 SGB V](/glossary/Mitgliedsbescheinigung)* from your health insurer or your [health insurance broker](/guides/german-health-insurance#need-help).
-    - [ ] **proof of [private health insurance](/glossary/private%20Krankenversicherung)**  
+    - [ ] **Proof of [private health insurance](/glossary/private%20Krankenversicherung)**  
         Bring your insurance contract, a *[Mitgliedsbescheinigung nach § 257 SGB V](/glossary/Mitgliedsbescheinigung)*, and bank statements that show health insurance payments. Get these documents from your health insurer or your health insurance broker.[^6]
 - [ ] **Proof of housing**  
-    You need a [place to live](/guides/find-a-flat-in-berlin) where you can [register your address](/glossary/Anmeldung).  If you apply in Berlin, your home address must be in Berlin.
+    You need a [place to live](/guides/find-a-flat-in-berlin) where you can [register your address](/glossary/Anmeldung). If you apply in Berlin, your home address must be in Berlin.
     - [ ] **Lease**  
         Bring the original, not a copy. It must show the size of your apartment. Your apartment must be big enough (9 m^2^ per adult, 6 m^2^ per child).[^54] You must make enough money to pay your rent. It can be a temporary lease, a [[WG]] or a sublet.
     - [ ] and **tenancy confirmation** (*[[Wohnungsgeberbestätigung]]*)  
@@ -242,9 +242,9 @@ If you are **not** a citizen of {{ BESCHV_26_COUNTRIES }}, you also need...
 - [ ] **Certificate of equivalence**  
     Proof that your professional training is recognised in Germany. If you got professional training in Germany, you don't need this.[^50]
 
-When you [send your application](#apply-for-the-work-visa-online), **use PDF files or photos.** Don't use word documents or other file formats.[^37] Put dates on all your documents. If you have too many documents, [merge them](https://www.adobe.com/acrobat/online/merge-pdf.html) or [make them smaller](https://www.adobe.com/acrobat/online/compress-pdf.html). You can also [mail your documents](/guides/mail-a-letter), but it's not better or faster. Applications by email are usually ignored.[^20]
+When you [send your application](#apply-for-the-work-visa-online), **use PDF files or photos.** Don't use Word documents or other file formats.[^37] Put dates on all your documents. If you have too many documents, [merge them](https://www.adobe.com/acrobat/online/merge-pdf.html) or [make them smaller](https://www.adobe.com/acrobat/online/compress-pdf.html). You can also [mail your documents](/guides/mail-a-letter), but it's not better or faster. Applications by email are usually ignored.[^20]
 
-When you [go to to your appointment](#go-to-your-appointment), print everything. Use A4 paper. Do not staple the pages together. Some case workers also ask for documents that you already sent. It's safer if you bring everything you have, including documents that you already sent.
+When you [go to your appointment](#go-to-your-appointment), print everything. Use A4 paper. Do not staple the pages together. Some case workers also ask for documents that you already sent. It's safer if you bring everything you have, including documents that you already sent.
 
 ## After you get your work visa
 

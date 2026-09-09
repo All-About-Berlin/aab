@@ -1,7 +1,7 @@
 ---
 title: Abmeldung — How to deregister your address in Berlin
 short_title: How to deregister your address
-description: If you leave Germany, you must do your deregister your address. This is called the Abmeldung. This guide shows you how to do it in Berlin.
+description: If you leave Germany, you must deregister your address. This is called the Abmeldung. This guide shows you how to do it in Berlin.
 date_created: 2018-01-04
 related_reviews:
     - reviews/abmeldung-deregister-in-berlin/robert-hantzsch.md
@@ -141,7 +141,7 @@ The *Abmeldung* tells the *[[Finanzamt]]* that you have left the country, and th
 
 ### Residence permit
 
-Your [residence permit](/glossary/Aufenthaltstitel) or [permanent residence](/glossary/Niederlassungserlaubnis) **does not expire** when you deregister your address. It only expires if you leave Germany "non-temporary reasons". Your German citizenship never expires.
+Your [residence permit](/glossary/Aufenthaltstitel) or [permanent residence](/glossary/Niederlassungserlaubnis) **does not expire** when you deregister your address. It only expires if you leave Germany for "non-temporary reasons". Your German citizenship never expires.
 
 **[When does a residence permit expire? ➞](/guides/leaving-germany#residence-permit)**
 
@@ -149,11 +149,11 @@ Your [residence permit](/glossary/Aufenthaltstitel) or [permanent residence](/gl
 
 German health insurance is only for German residents. When you deregister, you can lose your German health insurance coverage.[^14] If you want to keep your health insurance, you probably should not deregister.
 
-**[Health insurance and leaving Germany ➞](/guides/leaving-germany#health-insurance)
+**[Health insurance and leaving Germany ➞](/guides/leaving-germany#health-insurance)**
 
 ### Social security
 
-When you deregister, you might stop receiving *[[Grundsicherung]]*, *[[Elterngeld]]* *[[Kindergeld]]* and other social services.[^16] Those services are only for German residents. You can get *[[ALG I]]* in another EU country for up to 6 months.
+When you deregister, you might stop receiving *[[Grundsicherung]]*, *[[Elterngeld]]*, *[[Kindergeld]]* and other social services.[^16] Those services are only for German residents. You can get *[[ALG I]]* in another EU country for up to 6 months.
 
 ### Bank account
 

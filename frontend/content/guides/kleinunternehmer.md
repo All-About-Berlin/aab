@@ -87,7 +87,7 @@ You decide when you [register your business](/guides/fragebogen-zur-steuerlichen
 
 **[How to fill the Fragebogen zur steuerlichen Erfassung ➞](/guides/fragebogen-zur-steuerlichen-erfassung)**
 
-If you don't charge VAT, you don't need a VAT number (*[[Umsatzsteuernummer]]*). You should still ask for one when you fill the Fragebogen. [^12] If you stop being a *Kleinunternehmer*, you will already have a VAT number. It makes things easier.
+If you don't charge VAT, you don't need a VAT number (*[[Umsatzsteuernummer]]*). You should still ask for one when you fill the Fragebogen.[^12] If you stop being a *Kleinunternehmer*, you will already have a VAT number. It makes things easier.
 
 ### Update your invoices
 

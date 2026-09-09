@@ -19,7 +19,7 @@ There are over 6000 donation bins for clothes in Berlin.[^0] They are often near
 
 ### Where will my clothes go?
 
-Some belong to for-profit businesses.[^1] Some donation bins belong to charities. Donation bins with the [FairWertung logo](/glossary/FairWertung) are run by charities. The [Red Cross donation bins](/images/red-cross-donation-bin-berlin.jpg) are also easy to recognise.
+Some donation bins belong to for-profit businesses.[^1] Some belong to charities. Donation bins with the [FairWertung logo](/glossary/FairWertung) are run by charities. The [Red Cross donation bins](/images/red-cross-donation-bin-berlin.jpg) are also easy to recognise.
 
 ### How to use the donation bins?
 

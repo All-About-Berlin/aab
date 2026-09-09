@@ -60,7 +60,7 @@ If you fill this form because you can't [register your current address](/glossar
 - **Grund für die Vergabe der IdNr.**  
     In the *Sonstiger Grund* field, write "Wohnsitzanmeldung derzeit nicht möglich". If you are an employee, also tick *Arbeitnehmer*.
 - **Zweck**  
-    If you are an employee, tick *Lohnsteuerabzug*. If you want to [start a business](/guides/start-a-business-in-germany), write "bevorstehende Gewerbeanmeldung" in *the Sonstiger Zweck* field.
+    If you are an employee, tick *Lohnsteuerabzug*. If you want to [start a business](/guides/start-a-business-in-germany), write "bevorstehende Gewerbeanmeldung" in the *Sonstiger Zweck* field.
 - **Anschrift in Deutschland**  
     If you don't have an address in Germany, write "nicht vorhanden" (not available) or "noch nicht bekannt" (not known yet).[^2]
 - **Ort, Datum**  

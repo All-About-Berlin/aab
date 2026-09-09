@@ -75,7 +75,7 @@ The *Steuernummer* is **for freelancers and businesses**. It's a 10 or 11 digit 
 
 You get a *Steuernummer* when you [register your business with the *Finanzamt*](/guides/fragebogen-zur-steuerlichen-erfassung). You get it by post, 2 to 6 weeks later.[^7] If it takes longer, ask [your local *Finanzamt*](/out/finanzamt-finder) on the phone or in person.
 
-The *Steuernummer* is unique, but not permanent. If you move your business to another *Finanzamt*'s area, you will get a new *Steuernummer*.[^5] You can have multiple *Steuernummer* for different businesses.
+The *Steuernummer* is unique, but not permanent. If you move your business to another *Finanzamt*'s area, you will get a new *Steuernummer*.[^5] You can have multiple *Steuernummern* for different businesses.
 
 When you get your *Steuernummer*, you must put it in your [[Impressum]], and on your invoices to German customers.
 

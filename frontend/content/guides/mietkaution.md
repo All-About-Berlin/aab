@@ -39,7 +39,7 @@ Don't pay the *Kaution* before you see the apartment in person. There are many f
 
 ## How to pay the Kaution
 
-Pay the *Kaution* **by [bank transfer](/glossary/SEPA-%C3%9Cberweisung)**. You can pay in cash, but it's not common. If you pay in cash, always ask for a payment receipt. If your landlord for another payment method, it might be a [scam](/guides/housing-scams).
+Pay the *Kaution* **by [bank transfer](/glossary/SEPA-%C3%9Cberweisung)**. You can pay in cash, but it's not common. If you pay in cash, always ask for a payment receipt. If your landlord asks for another payment method, it might be a [scam](/guides/housing-scams).
 
 If you don't have a bank account in the [EU](/glossary/European%20Union), use [Wise](/out/wise) to transfer money from another country. I have used it many times.
 

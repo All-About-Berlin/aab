@@ -17,7 +17,7 @@ The landlord might want to change all the locks in the building, to prevent thef
 
 ## If you locked yourself out
 
-If you are locked out of your apartment, you must **call a locksmith** (*Schlüsseldienst*). It should cost €50 to €150 to open a door, depending on the the time. Locksmiths charge more at night and during the weekend.
+If you are locked out of your apartment, you must **call a locksmith** (*Schlüsseldienst*). It should cost €50 to €150 to open a door, depending on the time. Locksmiths charge more at night and during the weekend.
 
 When you call a locksmith, **ask for a fixed price**. Call multiple locksmiths if needed. Many dishonest locksmiths give one price, but add lots of special fees. After they opened the door, they ask for a much higher price.[^0]
 
@@ -61,7 +61,7 @@ When you [move out](/guides/moving-out), you must give all your keys back, inclu
 - [ ] **Get [liability insurance](/glossary/Haftpflichtversicherung)**  
     It covers the cost of replacing all the locks, and it costs less than €5 per month. Liability insurance is the most important insurance to have - 85% of Germans have it.[^3] [This guide](/guides/haftpflichtversicherung) explains why it's so important. [Feather](/out/feather-haftpflicht) and [Getsafe](/out/getsafe-haftpflicht) sell liability insurance for under €5 per month. They cover lost keys for rented apartments, and they speak English.
 - [ ] **Get [household insurance](/glossary/Hausratversicherung)**  
-    Some policies cover the cost of a locksmith. Use [Tarifcheck](/out/tarifcheck-hausrat) to find other household insurance that cover locksmiths.
+    Some policies cover the cost of a locksmith. Use [Tarifcheck](/out/tarifcheck-hausrat) to find other household insurance that covers locksmiths.
 
 [^0]: [stern.de](https://www.stern.de/wirtschaft/news/schluesseldienst-betrug--rechnung-ueber-1240-euro-fuer-einmal-tuer-aufmachen-8485766.html), [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/hlohza/looks_like_i_got_scammed_of_400_euros_by/)
 [^1]: [de.luko.eu](https://de.luko.eu/service/tipps/12-tipps-fuer-die-hausratversicherung/#3.-haus--und-wohnungsschutzbrief-mit-schlusseldienst-inklusive?)

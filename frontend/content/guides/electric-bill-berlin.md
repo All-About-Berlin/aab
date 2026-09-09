@@ -13,7 +13,7 @@ This guide explains how you pay for heating, hot water and electricity in German
 
 ## One home, two bills
 
-In Germany, you get 2 power bills
+In Germany, you get 2 power bills:
 
 - The utilities (*Nebenkosten*) that are included in your [warm rent](/glossary/Warmmiete)
 - The electric bill from your electricity company
@@ -46,8 +46,8 @@ The cost depends on how much electricity you use. Estimate 1,500 to 2,000 kWh pe
 
 Electricity companies charge a base price, plus a fee per kWh. For example, you might pay €10 per month, plus €0.35 per kWh:
 
-> Base price: €10 per month
-> Electricity usage: €0.35 × 125 kWh = €43.75
+> Base price: €10 per month  
+> Electricity usage: €0.35 × 125 kWh = €43.75  
 > Total: €53.75 per month
 
 ## How to save money

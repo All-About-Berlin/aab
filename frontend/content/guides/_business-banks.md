@@ -9,9 +9,9 @@ In this guide, I explain what a business bank account (*Geschäftskonto*) is, wh
 
 ## What is a Geschäftskonto?
 
-A *Geschäftskonto* is a bank account for your business. It's works exactly like a personal bank account.
+A *Geschäftskonto* is a bank account for your business. It works exactly like a personal bank account.
 
-Some business bank accounts extra features:
+Some business bank accounts have extra features:
 
 - Tools that sort transactions and make bookkeeping easier
 - [VAT](/glossary/Umsatzsteuer) reporting tools
@@ -22,7 +22,7 @@ Some business bank accounts extra features:
 
 ### Personal accounts are not for business
 
-N26[^0], bunq[^1], and many other banks don't let you to use your personal bank account for your business.[^2] If you do this, the bank can close your account, because you don't follow their [terms of service](/glossary/AGB).[^3]
+N26[^0], bunq[^1], and many other banks don't let you use your personal bank account for your business.[^2] If you do this, the bank can close your account, because you don't follow their [terms of service](/glossary/AGB).[^3]
 
 ### It makes bookkeeping easier
 
@@ -70,7 +70,7 @@ These banks speak English. If you don't speak German, this can be very useful.
 
 ### Built-in accounting tools
 
-These banks have tools that make your accounting and bookkeeping easier. These tools can be useful, but they're not essential, because you can use separate accounting tools. It might better to keep those services separate.
+These banks have tools that make your accounting and bookkeeping easier. These tools can be useful, but they're not essential, because you can use separate accounting tools. It might be better to keep those services separate.
 
 - Fyrst
 - Holvi

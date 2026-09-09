@@ -24,7 +24,7 @@ Even if you don't meet those conditions, you can try to get a reduced fine.[^2] 
 
 ## Can I ignore a BVG fine?
 
-**No!** If you ignore the fine, they will give it to a collection agency. The fine get more expensive.[^3] If you still don't to pay, you can go to jail.[^4]
+**No!** If you ignore the fine, they will give it to a collection agency. The fine gets more expensive.[^3] If you still don't pay, you can go to jail.[^4]
 
 Even if you live in another country, they sometimes try to collect the fine.[^5]
 
@@ -50,11 +50,11 @@ If you have a European bank account, you can [pay the BVG fine online](https://w
 
 ### Pay at a BVG Kundenzentrum
 
-Bring your fine at one of the BVG and [[Deutsche Bahn]] customer service centres, wait in line and pay the fine. Make sure you keep the receipt.
+Bring your fine to one of the BVG and [[Deutsche Bahn]] customer service centres, wait in line and pay the fine. Make sure you keep the receipt.
 
 ### Pay by bank transfer
 
-You can pay the fine with a [SEPA transfer](/glossary/SEPA-%C3%9Cberweisung). Just follow the [the instructions on this page](https://www.bvg-ebe.de/en/information-about-payments). You will not get a receipt from the BVG if you pay by bank transfer, so keep the transfer confirmation from your bank.
+You can pay the fine with a [SEPA transfer](/glossary/SEPA-%C3%9Cberweisung). Just follow the [instructions on this page](https://www.bvg-ebe.de/en/information-about-payments). You will not get a receipt from the BVG if you pay by bank transfer, so keep the transfer confirmation from your bank.
 
 ## What if I live in another country?
 

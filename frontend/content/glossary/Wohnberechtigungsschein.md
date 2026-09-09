@@ -10,7 +10,7 @@ related_guides:
 
 The *Wohnberechtigungsschein* or *WBS* allows you to get social housing in Germany. Some apartments are only for people with a *WBS*.
 
-Low income families, students and seniors can apply for a WBS, among others.[^0]
+Low-income families, students and seniors can apply for a WBS, among others.[^0]
 
 **[More information](https://service.berlin.de/dienstleistung/120671/)** (in German) - Berlin.de
 

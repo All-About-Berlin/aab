@@ -85,7 +85,7 @@ In Berlin, some government offices don't accept Visa or Mastercard.
 
 ### Other payment methods
 
-Germans do not use checks or QR code payments. There is no system like Alipay, Cash App, Line Pay, UPI or WeChat Pay. American Express is very rare.[^2] Paypal is common for online purchases.[^3]
+Germans do not use checks or QR code payments. There is no system like Alipay, Cash App, Line Pay, UPI or WeChat Pay. American Express is very rare.[^2] PayPal is common for online purchases.[^3]
 
 ## Credit cards in Germany
 

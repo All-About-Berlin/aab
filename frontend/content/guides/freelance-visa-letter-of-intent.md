@@ -15,7 +15,7 @@ To apply for a [freelance visa](/glossary/Freelance%20visa), you need [letters o
 
 **[How to apply for the German freelance visa ➞](/guides/freelance-visa)**
 
-A letter of intent says "I want to hire this person to do this job, for this price". It's not a contract. The person does not have to hire you. It just shows interest for your services.
+A letter of intent says "I want to hire this person to do this job, for this price". It's not a contract. The person does not have to hire you. It just shows interest in your services.
 
 {% tableOfContents %}
 
@@ -30,7 +30,7 @@ Letters of intent are required to [apply for a freelance visa](/guides/freelance
 
 If you just [moved to Berlin](/guides/moving-to-berlin) to [start your business](/guides/start-a-business-in-germany), you probably don't have clients yet. Letters of intent prove that you will find clients after you get your freelance visa.
 
-If you have more letters of intent, your freelance visa application is more convincing. If your application is convincing, you might get a 3 year freelance visa. If it's not convincing, you might get a 6 to 12 month freelance visa.
+If you have more letters of intent, your freelance visa application is more convincing. If your application is convincing, you might get a 3-year freelance visa. If it's not convincing, you might get a 6- to 12-month freelance visa.
 
 ## How to get letters of intent?
 
@@ -43,7 +43,7 @@ To get letters of intent...
 - **Ask your network**  
     Visit co-working spaces, go to industry meetups, join local communities and online groups, and ask people for letters of intent. People are often happy to help you, even if they don't hire you. Freelancers often sign letters of intent for other freelancers.[^2] You can offer free work in exchange for a letter of intent.[^4]
 - **Ask your friends, family and colleagues**  
-    They might know people who can help you. Letter of intents from friends and family are not super useful, but they can still help.
+    They might know people who can help you. Letters of intent from friends and family are not super useful, but they can still help.
 - **Ask your old clients**  
     If you were a freelancer before, or if you currently are, you can ask your old clients to sign a letter of intent. You need two letters of intent from German companies, but those from other countries also help.[^7]
 

@@ -53,7 +53,7 @@ Your employer must pay for your glasses if...[^6]
 
 ## Eyeglass insurance
 
-Some insurers also offer glasses insurance (*Brillenversicherung*). It costs around €7 per month. Usually, it pays for new glasses every 2 years. Usually, **it's not worth it**.[^7] The insurance is more expensive than the glasses it pays for. It rarely cover lost glasses.[^8]
+Some insurers also offer glasses insurance (*Brillenversicherung*). It costs around €7 per month. Usually, it pays for new glasses every 2 years. Usually, **it's not worth it**.[^7] The insurance is more expensive than the glasses it pays for. It rarely covers lost glasses.[^8]
 
 ## How to pay less for eyeglasses
 

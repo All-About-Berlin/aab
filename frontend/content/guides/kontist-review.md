@@ -1,7 +1,7 @@
 ---
 title: 'My review of Kontist: it''s not worth it'
 short_title: Review of Kontist
-description: I use Kontist as my business bank since January 2022. All of my business goes through it. This is my honest review of their service.
+description: I used Kontist as my business bank from January 2022 to May 2025. All of my business went through it. This is my honest review of their service.
 date_created: 2023-03-10
 ---
 
@@ -56,7 +56,7 @@ You decide how much [VAT](/glossary/Umsatzsteuer) to set aside for each transact
 
 Kontist uses AI to guess the correct VAT rate for each transaction. It's often wrong. Instead of leaving transactions uncategorised, it puts them in the wrong category, with the wrong VAT rate. When you correct the AI, it makes the same mistakes the next month. It does not learn.
 
-The AI's errors just creates more work for me, because I have to check every transaction. There is no way to turn this feature off.
+The AI's errors just create more work for me, because I have to check every transaction. There is no way to turn this feature off.
 
 I do my bookkeeping in [Lexware Office](/out/lexoffice). All of my transactions are categorised in Lexware Office already. They already have the right VAT. Kontist sees this information, and still sets the VAT wrong.
 
@@ -106,7 +106,7 @@ Kontist only syncs with [Lexware Office](/out/lexoffice) and [FastBill](https://
 
 You can match Kontist bank transactions to receipts and invoices in Lexware Office. Most other banks also sync with Lexware Office, so this is nothing special.
 
-**One time, some transactions did not sync.** One time, a client paid me. I could see the transaction in Kontist, but not in Lexware Office. All other transactions were there. I manually marked the invoice as paid.
+**One time, some transactions did not sync.** A client paid me. I could see the transaction in Kontist, but not in Lexware Office. All other transactions were there. I manually marked the invoice as paid.
 
 A few months later, the missing transaction appeared in Lexware Office. There were a dozen more transactions, all of them very late. If this happened a little later, my [tax declaration](/glossary/Steuererkl%C3%A4rung) would have been wrong, and I could have been fined by the *Finanzamt*. This is really bad!
 
@@ -203,7 +203,7 @@ Your bank, your accounting software and your tax advisor should be 3 different s
 ### Other business banks
 
 - **[N26 Business](/out/n26-business)**{{ RECOMMENDED }}  
-    This is what I use. It's exactly like the N26 personal account, but for your business. I am with N26 since 2016, and [I like it](/guides/an-honest-review-of-n26). It's also my business account since 2025.
+    This is what I use. It's exactly like the N26 personal account, but for your business. I have been with N26 since 2016, and [I like it](/guides/an-honest-review-of-n26). It has also been my business account since 2025.
 - **[Holvi](/out/holvi)**  
     Very similar to Kontist. They have better invoicing and better reports. Your tax advisor can access your account and export transactions.
 - **[Qonto](/out/qonto)**  

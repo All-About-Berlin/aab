@@ -49,7 +49,7 @@ There are exceptions. You don't need their permission if...
 
 ![Person in a crowd](/images/person-in-a-crowd.jpg "You need permission to share portraits of people, even in public gatherings.")
 
-You can't share a photo of without their consent if it's against the person's legitimate interests:[^17]
+You can't share a photo of someone without their consent if it's against the person's legitimate interests:[^17]
 
 - You can use a photo of a famous person for an article or book *about them*. You can't use a photo of them to promote an unrelated product.[^7] For example, you can't use a photo of Barack Obama to sell vacuum cleaners.[^18]
 - You can't share photos of people if it severely damages their reputation.[^8] Don't share embarrassing photos of people.
@@ -119,7 +119,7 @@ You can film the police, but you should not share the photos or videos without p
     - § 22 - [Consent requirement](https://www.gesetze-im-internet.de/kunsturhg/__22.html)
     - § 23 - [Exceptions to consent requirement](https://www.gesetze-im-internet.de/kunsturhg/__23.html)
     - § 33 - [Punishment](https://www.gesetze-im-internet.de/kunsturhg/__33.html)
-- Copyright law (UhrG)
+- Copyright law (UrhG)
     - § 59 - [Works in public places](http://www.gesetze-im-internet.de/urhg/__59.html) ("panorama rights")
 - Criminal Code (StGB)
     - § 201a - [Violation of intimate privacy by taking photographs or other images](https://www.gesetze-im-internet.de/englisch_stgb/englisch_stgb.html#p1841) ("the paparazzi law")

@@ -1,5 +1,5 @@
 ---
-title: Gewerbesteuer definition
+title: What is the Gewerbesteuer?
 german_term: Gewerbesteuer
 english_term: Trade tax
 description: A tax that some German businesses must pay.

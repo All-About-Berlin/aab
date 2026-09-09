@@ -9,7 +9,7 @@ When you [start a business](/guides/start-a-business-in-germany), you must regis
 
 You must do your *Gewerbeanmeldung* to...
 
-- Get trade licence (*[[Gewerbeschein]]*)
+- Get a trade licence (*[[Gewerbeschein]]*)
 - Register for the trade tax (*[[Gewerbesteuer]]*)
 
 Freelancers (*[[Freiberufler]]*) do not pay the trade tax. They don't need to do the *Gewerbeanmeldung*.[^0]
@@ -55,7 +55,7 @@ Open the **[online registration form](/out/business-anmeldung)**. Click the *Anm
 
 - Industry (*Industrie*): If you make physical products in a factory.
 - Commerce (*Handel*): If you sell products that other people make
-- Trade (*Handwerk*): If you are in a [regulated craft](https://www.gesetze-im-internet.de/hwo/anlage_a.html), or to [one of these non-regulated crafts](https://www.selbstaendig-im-handwerk.de/Wissenswertes/Handwerksrecht/zulassungsfreie_handwerke.php). If you make physical products by hand, you are probably in this category.
+- Trade (*Handwerk*): If you are in a [regulated craft](https://www.gesetze-im-internet.de/hwo/anlage_a.html), or in [one of these non-regulated crafts](https://www.selbstaendig-im-handwerk.de/Wissenswertes/Handwerksrecht/zulassungsfreie_handwerke.php). If you make physical products by hand, you are probably in this category.
 - Other (*Sonstiges*): If you are not in the other categories, or if you are not sure.
 
 **Anzahl Vollzeitbeschäftigte:** The number of full-time employees (do not include yourself)
@@ -80,7 +80,7 @@ Enter the address of your business. If you do not have a business address, use y
 
 [![Step 4 of the Gewerbeanmeldung form](/images/gewerbeanmeldung-berlin-step4.png)](/images/gewerbeanmeldung-berlin-step4.png)
 
-**Telefon-Vorwahl:** The first 3 to 5 digits of your phone number. For landline telephones in Berlin, it's 030. For mobile phone, it's 4 or 5 digits starting with 01. For example, 01522. - [How to write phone numbers](/guides/dial-phone-numbers-germany#german-phone-number-format)
+**Telefon-Vorwahl:** The first 3 to 5 digits of your phone number. For landline telephones in Berlin, it's 030. For mobile phones, it's 4 or 5 digits starting with 01. For example, 01522. - [How to write phone numbers](/guides/dial-phone-numbers-germany#german-phone-number-format)
 
 ### Angaben zur Tätigkeit des Betriebes
 
@@ -88,7 +88,7 @@ Enter the address of your business. If you do not have a business address, use y
 
 **Nebenerwerb:** Choose "Ja" if this is a side business at the beginning. Usually, this means that you will work less than 15 hours per week on this business.[^2]
 
-**Tätigkeitsschwerpunkt:** Describe what your business does in one or sentences. Write in German. If you don't speak German, use [Deepl](https://www.deepl.com/translator).
+**Tätigkeitsschwerpunkt:** Describe what your business does in one or two sentences. Write in German. If you don't speak German, use [Deepl](https://www.deepl.com/translator).
 
 **Weitere Tätigkeiten:** Additional occupations. If your business does other things, list them here.
 
@@ -154,7 +154,7 @@ If you don't want to register your business online, you can fill the [GewA1 form
 
 ### With a tax advisor
 
-You can also ask a [tax advisor](/guides/english-speaking-steuerberater-berlin) to register the business for you. This is the easiest way, but it's more expensive. A tax advisor can also [register your business with the ](/guides/fragebogen-zur-steuerlichen-erfassung)*[Finanzamt](/guides/fragebogen-zur-steuerlichen-erfassung)*, and take care of your taxes. It saves a lot of time.
+You can also ask a [tax advisor](/guides/english-speaking-steuerberater-berlin) to register the business for you. This is the easiest way, but it's more expensive. A tax advisor can also [register your business with the *Finanzamt*](/guides/fragebogen-zur-steuerlichen-erfassung), and take care of your taxes. It saves a lot of time.
 
 **[English-speaking tax advisors in Berlin ➞](/guides/english-speaking-steuerberater-berlin)**
 

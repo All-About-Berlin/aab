@@ -15,7 +15,7 @@ This guide helps you budget your [move to Germany](/guides/moving-to-berlin) and
 
 **Cost:** Around 35% of your income. Use my [tax calculator](/tools/tax-calculator).
 
-Your employer deducts [taxes and social contributions](/guides/taxes) from your paycheck every month. This includes [income tax](/glossary/Einkommensteuer), [health insurance](/glossary/Krankenversicherung), [public pension insurance](/glossary/gesetzliche%20Krankenversicherung) and [unemployment insurance](/glossary/Arbeitslosenversicherung).
+Your employer deducts [taxes and social contributions](/guides/taxes) from your paycheck every month. This includes [income tax](/glossary/Einkommensteuer), [health insurance](/glossary/Krankenversicherung), [public pension insurance](/glossary/gesetzliche%20Rentenversicherung) and [unemployment insurance](/glossary/Arbeitslosenversicherung).
 
 {% tool "tax-calculator", static=True %}
 
@@ -124,13 +124,13 @@ Some banks charge a monthly fee. It's usually around €10 per month. Some banks
 
 **Cost:** at least €50 per month
 
-If you have a dog, you must pay for dog food, [liability insurance](/glossary/Hundehaftpflichtversicherung), [health insurance](/glossary/Tierkrankenversicherung), dog food and [dog tax](/glossary/Hundesteuer).
+If you have a dog, you must pay for dog food, [liability insurance](/glossary/Hundehaftpflichtversicherung), [health insurance](/glossary/Tierkrankenversicherung) and [dog tax](/glossary/Hundesteuer).
 
 The dog tax is €120 to €180 per year. Dog liability insurance is required, and it costs around €5 per month. Pet health insurance is optional, and it costs around €20 per month. You can see the price of dog food [here](https://www.fressnapf.de/c/hund/hundefutter/trockenfutter/).
 
 **[Having a dog in Berlin ➞](/guides/dog-ownership)**
 
-## One time expenses
+## One-time expenses
 
 ### Apartment deposit (Kaution)
 

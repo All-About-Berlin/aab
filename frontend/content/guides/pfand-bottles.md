@@ -17,7 +17,7 @@ The *Pfand* system is a big part of [sorting your trash in Germany](/guides/sort
 
 The deposit is **8 to 25 cents**. It depends on the type of container.[^0]
 
-Bottle crates (*Bierkasten*) also have a deposit between €0.75 and €1.50. [^6]
+Bottle crates (*Bierkasten*) also have a deposit between €0.75 and €1.50.[^6]
 
 ## Which bottles have a Pfand?
 
@@ -96,7 +96,7 @@ It can be hard to return certain types of bottles. If one place does not accept 
 
 ### Leaving bottles under trash cans
 
-In Berlin, some people collect empty bottles to earn money. Leave your bottle next to trash can to make their job easier. They won't need to search inside the bin to find your bottle.
+In Berlin, some people collect empty bottles to earn money. Leave your bottle next to a trash can to make their job easier. They won't need to search inside the bin to find your bottle.
 
 [![Pfand bottles under a trash can in Berlin](/images/pfandflasche-unter-mull-berlin.jpg "Leave empty Pfand bottles under a trash can")](/images/pfandflasche-unter-mull-berlin.jpg)
 

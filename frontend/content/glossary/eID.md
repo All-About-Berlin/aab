@@ -9,7 +9,7 @@ related_guides:
     - guides/eid-online-ausweisfunktion.md
 ---
 
-German ID cards have a chip in them. You can use your ID card and the [AusweisApp](https://www.ausweisapp.bund.de/en/home) to log into online government services. This is feature is called *Online-Ausweisfunktion*, *eID*, *elektronischer Aufenthaltstitel* or *eAT*.
+German ID cards have a chip in them. You can use your ID card and the [AusweisApp](https://www.ausweisapp.bund.de/en/home) to log into online government services. This feature is called *Online-Ausweisfunktion*, *eID*, *elektronischer Aufenthaltstitel* or *eAT*.
 
 Your German passport, [[Personalausweis]] and [residence permit](/glossary/Aufenthaltstitel) have this feature. This feature is not always activated. You might need to activate it at the *[[Bürgeramt]]* or at the *[[Ausländerbehörde]]*.
 

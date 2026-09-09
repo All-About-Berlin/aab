@@ -1,5 +1,5 @@
 ---
-title: How to choose Germany liability insurance
+title: How to choose German liability insurance
 short_title: How to choose liability insurance
 description: What liability insurance covers, why you must have it, and how to pick the best German liability insurance.
 date_created: 2018-09-28
@@ -16,10 +16,10 @@ This guide explains what liability insurance covers, why it's important, and how
 It covers **accidents that are your fault**. It pays to fix the damage that you caused. This includes...[^1]
 
 - ✓ **Damage to other people's property**  
-    For example, if your scratch someone's car with your bicycle, or if you send someone a virus that breaks their computer.[^2] Your insurance will pay for the repairs and the legal fees.
+    For example, if you scratch someone's car with your bicycle, or if you send someone a virus that breaks their computer.[^2] Your insurance will pay for the repairs and the legal fees.
 - ✓ **Injuries to other people**  
     For example, if you trip someone and they break their leg. Your insurance covers the legal fees, medical costs and lost wages. If you play sports, this is really important.
-- ✓ **Damage to the apartment your rent**  
+- ✓ **Damage to the apartment you rent**  
     It covers damage to the doors, floors, kitchen and walls, but not to your own things. For example, if your washing machine breaks, floods the apartment, and destroys the wooden floors, your insurance will pay for the repairs. It covers many apartment repairs when you [move out](/guides/moving-out), and helps you [get your deposit back](/guides/mietkaution).
 - ✓ **Damage caused by your spouse and children**  
     Liability insurance covers your family. It covers your children until they finish their studies.[^4] It rarely covers children under 7 years old.[^3]
@@ -40,13 +40,13 @@ Liability insurance *sometimes* covers...
 Liability insurance rarely covers...
 
 - ✗ **Damage to your own things**  
-    The things you have in your apartment are not covered by the liability insurance. To insure them, get [home contents insurance](/glossary/Hausratversicherung).[^11] Liability insurance covers damage to an apartment you that you rent, but not to an apartment that you own. It covers damage to your neighbours' apartments.
+    The things you have in your apartment are not covered by the liability insurance. To insure them, get [home contents insurance](/glossary/Hausratversicherung).[^11] Liability insurance covers damage to an apartment that you rent, but not to an apartment that you own. It covers damage to your neighbours' apartments.
 - ✗ **Damage caused by children under 7 years old**  
     Your young children are not covered by most liability insurances.[^3] You must pay more for this. Your children over 6 years old are covered by your liability insurance until they finish their studies.[^4]
 - ✗ **Damage or injuries caused by your pets**  
     It covers cats and small pets, but not dogs. If you have a dog, you need [dog liability insurance](/glossary/Hundehaftpflichtversicherung). It's mandatory in Berlin, Brandenburg, Hamburg, Lower Saxony and Thuringia.
 - ✗ **Car accidents**  
-    Your liability insurance covers damage someone's car when you are *not* driving. When you are driving, your [car insurance](/guides/car-insurance-germany) covers damage to other people and other cars.
+    Your liability insurance covers damage to someone's car when you are *not* driving. When you are driving, your [car insurance](/guides/car-insurance-germany) covers damage to other people and other cars.
 - ✗ **Work accidents**  
     If you are an employee, your employer is liable for your work accidents. Their liability insurance covers you.
 - ✗ **Business activities**  
@@ -78,12 +78,12 @@ It usually costs **around €5 per month**, or around €60 per year. You can pa
 
 ## Best liability insurance
 
-I have [Feather's liability insurance](/out/feather-haftpflicht) since 2022. I recommend it because...
+I have had [Feather's liability insurance](/out/feather-haftpflicht) since 2022. I recommend it because...
 
 - They speak English. Their contract and documents are in English.
 - It exceeds the [coverage requirements](#the-minimum-coverage-you-need)
 - My independent insurance expert says it's a good option[^13]
-- I work with Feather since 2017. They are a great company and I trust them.
+- I have been working with Feather since 2017. They are a great company and I trust them.
 - They are a Berlin-based company
 
 Do not choose [Getsafe](/out/getsafe-haftpflicht). My readers had problems making claims with them.
@@ -120,7 +120,7 @@ Don't get the cheapest insurance. Pick good coverage with a good insurance compa
 
 These insurers speak English and sell liability insurance:
 
-- **[Feather](/out/feather-haftpflicht)**{{ RECOMMENDED }} - This is the one I have since 2022.
+- **[Feather](/out/feather-haftpflicht)**{{ RECOMMENDED }} - This is the one I have had since 2022.
 - [Getsafe](/out/getsafe-haftpflicht)
 
 Both companies have English-speaking support, and send documents in English. Feather's insurance contract is also in English.
@@ -129,7 +129,7 @@ Both companies have English-speaking support, and send documents in English. Fea
 
 ### Professional liability insurance
 
-Professional liability insurance (*Betriebs-* and *Berufshaftpflichtversicherung*) protects freelancers, tradesmen and businesses against liability claims. Your insurance will protect you from liability claims related to your job.
+Professional liability insurance (*Betriebs-* and *Berufshaftpflichtversicherung*) protects freelancers, tradespeople and businesses against liability claims. Your insurance will protect you from liability claims related to your job.
 
 If you are an employee, you do not need professional liability insurance. You are already covered by your employer's insurance.[^25]
 

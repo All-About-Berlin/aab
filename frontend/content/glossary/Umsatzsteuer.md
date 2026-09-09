@@ -1,5 +1,5 @@
 ---
-title: What is the Umsatzsteuer or Mehrwertsteuer
+title: What is the Umsatzsteuer or Mehrwertsteuer?
 german_term: Umsatzsteuer
 english_term: VAT
 description: A {{ VAT_RATE }}% tax on products and services.

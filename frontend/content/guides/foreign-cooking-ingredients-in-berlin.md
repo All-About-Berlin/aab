@@ -15,7 +15,7 @@ If you can't find something, ask [Found in... Berlin](https://www.facebook.com/g
 
 ### Almond flour
 
-You can find almond flour at DM and Rossman.[^0]
+You can find almond flour at dm and Rossmann.[^0]
 
 ### American cheese
 
@@ -27,7 +27,7 @@ Sodium bicarbonate is called *Natron* in Germany. It's sold in small paper packe
 
 ### Baking powder
 
-Baking powder is called *Backpulver* in Germany. It's easy to find. Look for [small paper packets](https://www.amazon.de/Alnatura-Bio-Reinweinstein-Backpulver-Packung/dp/B06WW6TRNQ/ref=as_li_ss_tl?m=A3JWKAKR8XB7XF&ie=UTF8&qid=1506522836&sr=1-8&keywords=backpulver&refinements=p_6:A3JWKAKR8XB7XF&linkCode=sl1&tag=nicolasboulia-21&linkId=929edab7fe91f94f7d74ea6ef8d109d8) in the baking section of any grocery store. German baking powder is usually single-acting, while American and English baking powder is double-acting, and [the difference is important](https://www.thoughtco.com/double-and-single-acting-baking-powder-3975954). [Broken English](https://brokenenglish.de/) and many Asian markets have double-acting baking powder. If you are in a pinch, substitute double-acting baking powder with 1.25x the amount single-acting baking powder.
+Baking powder is called *Backpulver* in Germany. It's easy to find. Look for [small paper packets](https://www.amazon.de/Alnatura-Bio-Reinweinstein-Backpulver-Packung/dp/B06WW6TRNQ/ref=as_li_ss_tl?m=A3JWKAKR8XB7XF&ie=UTF8&qid=1506522836&sr=1-8&keywords=backpulver&refinements=p_6:A3JWKAKR8XB7XF&linkCode=sl1&tag=nicolasboulia-21&linkId=929edab7fe91f94f7d74ea6ef8d109d8) in the baking section of any grocery store. German baking powder is usually single-acting, while American and English baking powder is double-acting, and [the difference is important](https://www.thoughtco.com/double-and-single-acting-baking-powder-3975954). [Broken English](https://brokenenglish.de/) and many Asian markets have double-acting baking powder. If you are in a pinch, substitute double-acting baking powder with 1.25x the amount of single-acting baking powder.
 
 ### Boneless chicken thighs
 
@@ -35,7 +35,7 @@ Kaufland and Metro have them, and sometimes Penny. This is not a common product 
 
 ### Brown sugar
 
-German *Rohrzucker* or *brauner Zucker* is not the same as brown sugar. It does not contain molasses, and it will ruin any recipe that calls for brown sugar. Tate+Lyle sells light and dark brown sugar on Amazon. You can also find it in most asian supermarkets. Go Asia, [Asia Markt Lee](https://goo.gl/maps/uzoxjmVLAccNgFJv9), [Metro](https://www.metro.de/), Galeria Kaufhof and some Edeka stores have brown sugar. You can also make it yourself with sugar and molasses.
+German *Rohrzucker* or *brauner Zucker* is not the same as brown sugar. It does not contain molasses, and it will ruin any recipe that calls for brown sugar. Tate+Lyle sells light and dark brown sugar on Amazon. You can also find it in most Asian supermarkets. Go Asia, [Asia Markt Lee](https://goo.gl/maps/uzoxjmVLAccNgFJv9), [Metro](https://www.metro.de/), Galeria Kaufhof and some Edeka stores have brown sugar. You can also make it yourself with sugar and molasses.
 
 ### Caramelized condensed milk
 
@@ -53,7 +53,7 @@ German *Rohrzucker* or *brauner Zucker* is not the same as brown sugar. It does 
 
 Condensed milk is called *Kondensmilch*. You can find it in the coffee section,[^2] next to coffee cream and H-Milch. It's sold in small cans, or in small juice boxes.
 
-Condensed milk can be a false friend for people from the UK at least. If a recipe calls for condensed milk, you might want *gezuckert Kondensmilch*, also known as *Mädchenmilch*.
+Condensed milk can be a false friend, at least for people from the UK. If a recipe calls for condensed milk, you might want *gezuckerte Kondensmilch*, also known as *Mädchenmilch*.
 
 ### Corn tortillas
 
@@ -81,7 +81,7 @@ Kaufland, Edeka, Lidl, Penny and [REWE](https://www.rewe.de/suche/?search=kerryg
 
 ### Maple syrup
 
-Most grocery stores have pure Canadian or American maple syrup. REWE keeps it close the the Nutella and peanut butter.
+Most grocery stores have pure Canadian or American maple syrup. REWE keeps it close to the Nutella and peanut butter.
 
 ### Marmite
 
@@ -121,7 +121,7 @@ You can also [make your own](https://www.allrecipes.com/recipe/22935/pumpkin-pur
 
 ### Sal de Guzano, sal de Chapulín
 
-[Chili & Paprika](http://www.chiliundpaprika.de/) has agave worm salt and grasshoper salt.
+[Chili & Paprika](http://www.chiliundpaprika.de/) has agave worm salt and grasshopper salt.
 
 ### Self-raising flour
 
@@ -129,7 +129,7 @@ You can get it from most Asian supermarkets, and at Galeria Kaufhof. You can mak
 
 ### Vanilla extract
 
-Vanilla extract hard to find in Germany. I buy it [on Amazon](https://www.amazon.de/T-C-Vanilleschoten-Extrakt-100ml/dp/B007TA9ONI/ref=as_li_ss_tl?ie=UTF8&qid=1506524223&sr=8-1&keywords=vanilleextrakt+fl%C3%BCssig&linkCode=sl1&tag=nicolasboulia-21&linkId=55335f4a2c96e6f11ebf21c2c439a9b4). Galeria Kaufhof, [Chili & Paprika](http://www.chiliundpaprika.de/), Edeka and [Metro](https://www.metro.de/) also sell it.
+Vanilla extract is hard to find in Germany. I buy it [on Amazon](https://www.amazon.de/T-C-Vanilleschoten-Extrakt-100ml/dp/B007TA9ONI/ref=as_li_ss_tl?ie=UTF8&qid=1506524223&sr=8-1&keywords=vanilleextrakt+fl%C3%BCssig&linkCode=sl1&tag=nicolasboulia-21&linkId=55335f4a2c96e6f11ebf21c2c439a9b4). Galeria Kaufhof, [Chili & Paprika](http://www.chiliundpaprika.de/), Edeka and [Metro](https://www.metro.de/) also sell it.
 
 ### Vegemite
 
@@ -167,7 +167,7 @@ Yeast is called *Backhefe* in Germany. You can find it in [small paper packets](
 ### Latin America
 
 - [Aqui España](http://aqui-espana.de/) - They have some Latin American products
-- [Chili & Paprika](http://www.chiliundpaprika.de/) - Food from Mexico, Brasil, Colombia, Argentina, Peru
+- [Chili & Paprika](http://www.chiliundpaprika.de/) - Food from Mexico, Brazil, Colombia, Argentina, Peru
 - [La Bodega](https://maps.app.goo.gl/31iZcP95yK1prZBR9)
 
 ### Poland

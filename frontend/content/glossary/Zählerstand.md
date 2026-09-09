@@ -10,7 +10,7 @@ related_guides:
     - guides/moving-in.md
 ---
 
-The meter reading (*Zählerstand*) is the number of kilowatts/hour (kWh) on your electricity meter.
+The meter reading (*Zählerstand*) is the number of kilowatt-hours (kWh) on your electricity meter.
 
 When you [move in](/guides/moving-in) or [out](/guides/moving-out), you must share the meter reading with your electricity company. You must give the meter number (*[[Zählernummer]]*) and the meter reading (*Zählerstand*).
 

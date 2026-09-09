@@ -42,7 +42,7 @@ To get a Blue Card, you need...[^18]
         You must work for a German employer, or an employer with an office in Germany.[^30] It can be a remote job. You must be an employee, not a freelancer.
     - [ ] **A high salary**  
         Your salary must be over €{{BLUE_CARD_MIN_INCOME|cur}} per year (before taxes, without bonuses).[^3] If your job is in [the list of shortage occupations](https://www.make-it-in-germany.com/pdf-engpassberufe-en), your salary must be over €{{BLUE_CARD_SHORTAGE_MIN_INCOME|cur}} per year.[^21] If you graduated less than 3 years ago, your salary must be over €{{BLUE_CARD_SHORTAGE_MIN_INCOME|cur}} per year.[^32] Your salary must cover the cost of living for you and your family.
-    - [ ] **A long term contract**  
+    - [ ] **A long-term contract**  
         Your job contract must be for at least 6 months.[^24]
 - [ ] **Qualifications for this job**  
     You must know how to do your job. For example, to get a programming job, you must know how to program.
@@ -101,7 +101,7 @@ It's cheaper and safer if you [apply in your home country](#how-to-apply-in-your
 - **If you are a citizen of {{AUFENTHV_41_COUNTRIES}}**  
     You can come to Germany without a visa. You can stay 90 days in Germany without a residence permit. You can look for a job, and apply for the Blue Card in Germany.[^9] You can't work before you get your Blue Card.
 - **If you have a Blue Card from another EU country**  
-    You can come to Germany without a visa.[^38] If you have your Blue Card since at least 12 months, you can already start working in Germany.[^33] When you arrive in Germany, you have 1 month to convert your Blue Card to a German one at the *[[Ausländerbehörde]]*.[^41]
+    You can come to Germany without a visa.[^38] If you have had your Blue Card for at least 12 months, you can already start working in Germany.[^33] When you arrive in Germany, you have 1 month to convert your Blue Card to a German one at the *[[Ausländerbehörde]]*.[^41]
 - **If you have an [opportunity card](/glossary/Chancenkarte)**  
     You can come to Germany and look for a job. You can work 20 hours per week. To work full time, you must switch to a Blue Card or a [work visa](/glossary/Work%20Visa).
 - **If you have a [job seeker visa](/glossary/Job%20seeker%20visa)**  
@@ -177,7 +177,7 @@ If your Blue Card is approved, you will get a second appointment to pick up your
 
 ### 7. Get your Blue Card
 
-Go to your second *[[Ausländerbehörde]]* appointment and pick up your Blue Card. Your new Blue Card is valid for up to 4 years.[^17] If you have a limited work contract, your Blue Card is valid for a shorter time. For example, if you have a 2 year work contract, your Blue Card is valid for 2 years + 3 months.[^3]
+Go to your second *[[Ausländerbehörde]]* appointment and pick up your Blue Card. Your new Blue Card is valid for up to 4 years.[^17] If you have a limited work contract, your Blue Card is valid for a shorter time. For example, if you have a 2-year work contract, your Blue Card is valid for 2 years + 3 months.[^3]
 
 **[How to pick up your Blue Card ➞](/guides/residence-permit#pick-up-your-residence-card)**
 
@@ -215,9 +215,9 @@ These are the required documents **in Berlin**.[^2] If you apply elsewhere, they
     You need valid [health insurance](/glossary/Krankenversicherung). Travel health insurance is not accepted. [Ask my insurance expert](/guides/german-health-insurance#need-help) to help you [choose health insurance for your Blue Card](/guides/german-health-insurance/for-employees#for-a-blue-card-or-a-work-visa).
     - [ ] **[Health insurance card](/glossary/Gesundheitskarte)**  
         Show both sides of the card.
-    - [ ] **proof of [public health insurance](/glossary/gesetzliche%20Krankenversicherung)**  
+    - [ ] **Proof of [public health insurance](/glossary/gesetzliche%20Krankenversicherung)**  
         Get a *[Mitgliedsbescheinigung nach § 175 SGB V](/glossary/Mitgliedsbescheinigung)* from your health insurer or your [health insurance broker](/guides/german-health-insurance#need-help).
-    - [ ] **proof of [private health insurance](/glossary/private%20Krankenversicherung)**  
+    - [ ] **Proof of [private health insurance](/glossary/private%20Krankenversicherung)**  
         Bring your insurance contract, a *[Mitgliedsbescheinigung nach § 257 SGB V](/glossary/Mitgliedsbescheinigung)*, and bank statements that show health insurance payments. Get these documents from your health insurer or your health insurance broker.[^6]
 - [ ] **Proof of housing**  
     You need a [place to live](/guides/find-a-flat-in-berlin) where you can [register your address](/glossary/Anmeldung).  If you apply in Berlin, your home address must be in Berlin.

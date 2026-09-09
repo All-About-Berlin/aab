@@ -98,7 +98,7 @@ To reduce your hours, you must...
 1. **Send a request**  
     Ask by letter or email at least 3 months before you start reducing your work hours.[^5] Your request must include the start and duration of your reduced work hours. It can explain your desired schedule.[^7] You don't need to give a reason.
 2. **Wait for your employer's response**  
-    Your employer must reply in writing. Your employer can refuse to reduce your hours if it "significantly impairs" the business. If they refuse, they must give a clear explanation.[^12] If they don't responded 1 month before your desired start date, your work hours are reduced anyway.[^8]
+    Your employer must reply in writing. Your employer can refuse to reduce your hours if it "significantly impairs" the business. If they refuse, they must give a clear explanation.[^12] If they don't respond 1 month before your desired start date, your work hours are reduced anyway.[^8]
 3. **Sign an agreement with your employer**
 
 ## Option 4: Quit your job

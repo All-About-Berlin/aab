@@ -13,7 +13,7 @@ When you fill this form, you get:
 - a VAT number (*[[Umsatzsteuernummer]]*), if you charge VAT
 - an entry in the trade register (*[[Handelsregister]]*), [if you need one](/guides/handelsregisternummer-germany#who-needs-a-handelsregister-entry)
 
-Since 2021, there is no paper form. You must fill this form online in [[ELSTER]].[^0] There [tools that make it easier](#different-ways-to-register-your-business)
+Since 2021, there is no paper form. You must fill this form online in [[ELSTER]].[^0] There are [tools that make it easier](#different-ways-to-register-your-business).
 
 {% tableOfContents %}
 
@@ -58,7 +58,7 @@ If you have a tax ID, but you don't have a registered address, you can still reg
 
 ### Open a bank account
 
-You need a bank account that supports [SEPA transfers](/glossary/SEPA-%C3%9Cberweisung). This is how you pay your taxes. You a bank account before you fill this form.
+You need a bank account that supports [SEPA transfers](/glossary/SEPA-%C3%9Cberweisung). This is how you pay your taxes. You need a bank account before you fill this form.
 
 **[How to open a business bank account ➞](/guides/start-a-business-in-germany#open-a-bank-account)**
 
@@ -163,7 +163,7 @@ In this section, you share information about you.
         For example, "10115" and "Berlin".
 
 **Telefon** - Personal telephone  
-You can click "Weitere Daten hinzufugen" to add more phone numbers.
+You can click "Weitere Daten hinzufügen" to add more phone numbers.
 
 - **Vorwahl international** - International call prefix  
     If you live in Germany, it's "+49" or "0049". For other countries, use [this list](https://en.wikipedia.org/wiki/List_of_international_call_prefixes).
@@ -236,13 +236,13 @@ The email address of your tax advisor.
 The *[[Finanzamt]]* can talk to your tax advisor directly, instead of talking to you. This allows your tax advisor to take care of everything for you. It's much easier that way.
 
 - **Steuerliche Beratung mit Empfangsvollmacht**  
-    Tick this box if you want the *Finanzamt* to talk to tax advisor (from section 4) instead of you.
+    Tick this box if you want the *Finanzamt* to talk to your tax advisor (from section 4) instead of you.
 - **Die Anzeige der Empfangsvollmacht erfolgt über die Vollmachtdatenbank**  
     Ask your tax advisor about this option.
 
 **Natürliche Person / Adresse / Telefon / E-Mail** If you want another *person* to talk to the Finanzamt for you, but not the tax advisor from section 4, write their information here.
 
-**Nicht natürliche person / Adresse / Telefon / E-Mail**  
+**Nicht natürliche Person / Adresse / Telefon / E-Mail**  
 If you want another *business* to talk to the Finanzamt for you, but not the tax advisor from section 4, write their information here.
 
 ### Section 6: Bisherige persönliche Verhältnisse
@@ -262,7 +262,7 @@ If you paid [income tax](/glossary/Einkommensteuer) in Germany in the last three
 - **Steuernummer** - tax number  
     If you had a *[[Steuernummer]]*, enter it here. If this is your first business, you don't have a *Steuernummer* yet.
 
-**Gegebenfalls hiervon abweichende Angaben Ihres Ehegatten ...** If your spouse paid [income tax](/glossary/Einkommensteuer) in Germany in the last three years, and your spouse had a different *Finanzamt* or *Steuernummer*, you must fill this section.
+**Gegebenenfalls hiervon abweichende Angaben Ihres Ehegatten ...** If your spouse paid [income tax](/glossary/Einkommensteuer) in Germany in the last three years, and your spouse had a different *Finanzamt* or *Steuernummer*, you must fill this section.
 
 ### Section 7: Angaben zum Unternehmen
 
@@ -292,7 +292,7 @@ The email address of your business.
 
 If your executive board is at a different address, you must put the information in this section.
 
-### Section 9: Betriebstätten
+### Section 9: Betriebsstätten
 
 If you have multiple business locations, add them here.
 
@@ -343,8 +343,7 @@ Information about the previous business form. You can leave this section empty b
     - ...or you have owned an agricultural or silvicultural operation in Germany in the last 5 years
     - ...or you have owned more than 1% of a corporation (*Kapitalgesellschaft*)
 - **Art der Tätigkeit/Beteiligung** - Type of operation/involvement  
-    If you chose "Ja" in the last field, enter a description of your previous activities. For example, you can write that you were the "owner of Jim's   
-    Widget Company", or that you were a "freelance photographer". Remember: you must fill this form in German. If you chose "Nein", leave this field empty.
+    If you chose "Ja" in the last field, enter a description of your previous activities. For example, you can write that you were the "owner of Jim's Widget Company", or that you were a "freelance photographer". Remember: you must fill this form in German. If you chose "Nein", leave this field empty.
 - **Ort** - Location  
     If you chose "Ja", enter the name of the city where it happened. If you chose "Nein", leave this field empty.
 - **Dauer: von** - Duration from  
@@ -352,7 +351,7 @@ Information about the previous business form. You can leave this section empty b
 - **Dauer: bis** - Duration until  
     If you chose "Ja", enter the date when it ended. If you chose "Nein", leave this field empty.
 - [**Umsatzsteuer-Identifikationsnummer**](/glossary/Umsatzsteuernummer) - VAT number  
-    If you chose "Ja", enter the date [VAT number](/glossary/Umsatzsteuernummer) of that business. If you did not have one, leave this field empty. If you chose "Nein", leave this field empty.
+    If you chose "Ja", enter the [VAT number](/glossary/Umsatzsteuernummer) of that business. If you did not have one, leave this field empty. If you chose "Nein", leave this field empty.
 
 **Steuernummer Vortätigkeit** - Tax number of previous activity  
 If you chose "Ja", enter the tax number of that previous operation.
@@ -380,7 +379,7 @@ There are 4 columns to fill:
 - **Selbständiger Arbeit** - Freelance work  
     The profit from working as a *[[Freiberufler]]*.
 - **Nichtselbständiger Arbeit** - Employment  
-    For example, your salary from a regular full time job or from a[ mini-job](/glossary/Minijob).
+    For example, your salary from a regular full-time job or from a [minijob](/glossary/Minijob).
 - **Kapitalvermögen** - Investments  
     For example, investments in the stock market.
 - **Vermietung und Verpachtung** - Rental and leasing  
@@ -443,9 +442,9 @@ In this section, you list your employees. This affects how much payroll tax you 
 The date when you will start paying your employees.
 
 **Voraussichtliche Lohnsteuer im Kalenderjahr** - Expected payroll tax this calendar year  
-[Use this website](https://www.bmf-steuerrechner.de/) to calculate payroll tax you must pay. If you do not have employees, you do not need to pay payroll tax, so you can leave this line empty.
+[Use this website](https://www.bmf-steuerrechner.de/) to calculate the payroll tax you must pay. If you do not have employees, you do not need to pay payroll tax, so you can leave this line empty.
 
-**Lohnsteuerliche Betriebstätte** - Payroll tax business location  
+**Lohnsteuerliche Betriebsstätte** - Payroll tax business location  
 This is the business location that pays the payroll tax. If you only have one business address, use that address.
 
 ### Section 17: Angaben zur Anmeldung und Abführung der Umsatzsteuer
@@ -456,7 +455,7 @@ In this section, you register for VAT, and choose how to make VAT (*[[Umsatzsteu
 If you are not buying or selling another company, choose "Nein". If you are not sure, [ask a tax advisor](/guides/english-speaking-steuerberater-berlin) about it.
 
 **Summe der Umsätze (geschätzt)** - Total revenue (estimated)  
-Your estimated revenue is used decide how you will pay your taxes. It also decides if you can be a small business (*[[Kleinunternehmer]]*).
+Your estimated revenue is used to decide how you will pay your taxes. It also decides if you can be a small business (*[[Kleinunternehmer]]*).
 
 - **im Jahr der Betriebseröffnung** - in the first year of business  
     How much revenue you expect in your first year of business (your first *calendar* year, not your first 365 days).
@@ -519,7 +518,7 @@ You can choose to calculate VAT payments based on the revenue you *should* have 
 Check this box if you want to get a [VAT number](/glossary/Umsatzsteuernummer). You should always ask for a VAT number, even if you don't need it now.[^19] If you need it later, you will already have it.
 
 **Steuerschuldnerschaft des Leistungsempfängers bei Bau- und/oder Gebäudereinigungsleistungen**  
-This subsections only applies if you are offering building cleaning services. If this subsection does not apply to you, leave it empty. If this subsection applies to you, [ask a tax advisor](/guides/english-speaking-steuerberater-berlin) about it.
+This subsection only applies if you are offering building cleaning services. If this subsection does not apply to you, leave it empty. If this subsection applies to you, [ask a tax advisor](/guides/english-speaking-steuerberater-berlin) about it.
 
 ### Section 18: Umsatzsteuerliche Organschaft (§ 2 Absatz 2 Nummer 2 UStG)
 
@@ -531,7 +530,7 @@ In this section, you can choose to establish a One Stop Shop (OSS). A One Stop S
 
 **[What is a One Stop Shop?](https://hellotax.com/blog/one-stop-shop/)** - HelloTax
 
-If you sell software on the Google Play Store or the Apple App Store, you don't need to check this box. You are doing business with the app store, not with the customer. You don't need to check this box.
+If you sell software on the Google Play Store or the Apple App Store, you don't need to check this box. You are doing business with the app store, not with the customer.
 
 If you don't have customers in other EU countries, you can skip this section. If you are a *[[Kleinunternehmer]]* and you don't charge VAT, you can skip this section.
 
@@ -586,7 +585,7 @@ If you register a simple business, it's still easy to do it yourself.
 
 If you have questions about this form, [ask a tax advisor](/guides/english-speaking-steuerberater-berlin) for help. They can fill this form for you. You can find one in our [list of English-speaking tax advisors in Berlin](/guides/english-speaking-steuerberater-berlin). If you can't afford a tax advisor, [Sorted](/out/sorted-fragebogen) can help you fill this form in English for free.
 
-**[Where ask business questions ➞](/guides/help#business-questions)**
+**[Where to ask business questions ➞](/guides/help#business-questions)**
 
 ## What to do next
 

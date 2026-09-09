@@ -108,7 +108,7 @@ Be careful. There are a lot of [scams](/guides/housing-scams) on Facebook.
 - [Flats in Berlin](https://www.facebook.com/groups/393237407451209/) - 120,000+ members
 - [Berlin WG, Zimmer, Wohnung](https://www.facebook.com/groups/flatmate.berlin/) - 65,000+ members
 - [Freie Wohnung / WG in Berlin](https://www.facebook.com/groups/567947953673046/) - 80,000+ members
-- [Berlin apartments & rooms for rent ](https://www.facebook.com/groups/307681233184179/)- 75,000+ members
+- [Berlin apartments & rooms for rent](https://www.facebook.com/groups/307681233184179/) - 75,000+ members
 - [Wohnungssuche&Angebote Berlin](https://www.facebook.com/groups/420217034693983/) - 70,000+ members
 - [Wohnung in Berlin WG Zimmer](https://www.facebook.com/groups/berlin.flat/) - 35,000+ members
 - [Berlin LONG TERM flats](https://www.facebook.com/groups/692914578117333/) - 30,000+ members
@@ -171,7 +171,7 @@ In Berlin, **you can't be picky**, but you can still avoid [scams](/guides/housi
 
 - [ ] **[Is it a scam?](/guides/housing-scams)**
 - [ ] **Is the price fair?**  
-    Rent for unfurnished apartment costs [€16 to €25 per m^2^](/tools/rent-map).{{ fail_on('2026-12-31')}} Temporary furnished apartments are more expensive. Long-term residents can find cheaper apartments. Recent immigrants usually pay more. Check the [ImmoScout24 rent atlas](https://atlas.immobilienscout24.de/). If you can't afford the rent, the [immigration office](/glossary/Ausländerbehörde) can reject your [residence permit](/glossary/Aufenthaltstitel) application.[^2]
+    Rent for an unfurnished apartment costs [€16 to €25 per m^2^](/tools/rent-map).{{ fail_on('2026-12-31')}} Temporary furnished apartments are more expensive. Long-term residents can find cheaper apartments. Recent immigrants usually pay more. Check the [ImmoScout24 rent atlas](https://atlas.immobilienscout24.de/). If you can't afford the rent, the [immigration office](/glossary/Ausländerbehörde) can reject your [residence permit](/glossary/Aufenthaltstitel) application.[^2]
 - [ ] **Can you [register your address](/glossary/Anmeldung) there?**  
     Choose an apartment where you can do your *[[Anmeldung]]*. [It's very important](/guides/anmeldung-in-english-berlin#why-you-must-register-your-address) for recent immigrants.
 - [ ] **Is the lease unlimited?**  
@@ -189,7 +189,7 @@ In Berlin, **you can't be picky**, but you can still avoid [scams](/guides/housi
 - [ ] **Which floor?**
     - **Top floor apartments** are quieter; you hear traffic less, and there are no neighbours above you. They get more sunlight, but they are hotter in the summer, especially old apartments with bad insulation.[^12] Attic apartments (*[[Dachgeschosswohnung]]*) feel smaller because of [angled walls and wooden beams](/images/dachgeschosswohnung-berlin.jpg).
     - **Upper floor apartments** get more sunlight. There is less traffic noise. Check if there is an elevator.
-    - **Lower floors and ground floor appartments** are darker and louder. Break-ins can happen. Neighbours can see inside your apartment.[^13] Some ground floor apartments have a garden.
+    - **Lower floors and ground floor apartments** are darker and louder. Break-ins can happen. Neighbours can see inside your apartment.[^13] Some ground floor apartments have a garden.
 - [ ] **Elevator?**  
     If you live on a higher floor, check if your building has an elevator.
 - [ ] **Street or courtyard?**  
@@ -208,13 +208,13 @@ In Berlin, **you can't be picky**, but you can still avoid [scams](/guides/housi
 ### Location checklist
 
 - [ ] **Neighbourhood**  
-    Kreuzberg, Prenzlauer Berg, Friedrichshain, Neukölln are popular neighbourhoods, but there are other options. A less popular neighbourhood can be cheaper, safer and quieter. Berlin has good public transit; you don't need to live in the central areas. Look for places outside the *[[Ringbahn]]*
+    Kreuzberg, Prenzlauer Berg, Friedrichshain, Neukölln are popular neighbourhoods, but there are other options. A less popular neighbourhood can be cheaper, safer and quieter. Berlin has good public transit; you don't need to live in the central areas. Look for places outside the *[[Ringbahn]]*.
 - [ ] **Public transit access**  
     How is the train or tram connection? Berlin has good public transit. You don't need to live in the centre. Use [Mapnificent](https://www.mapnificent.net/berlin/) and Google Maps to measure your commute.
 - [ ] **Crime**  
     Use the [crime atlas](https://www.kriminalitaetsatlas.berlin.de/K-Atlas/atlas.html) to find a safe area. Areas next to some big train stations (Alexanderplatz, Görlitzer Bahnhof, Kottbusser Tor, Hermannplatz, Leopoldplatz) are more dangerous.[^14] There are more drunk people, drug addicts, street fights, vandalism and theft in those areas. You don't need to avoid the entire area, just the busy streets.
 - [ ] **Parking**  
-    [You don't need a car in Berlin](/guides/buy-a-car-in-germany#do-you-need-a-car). Is enough street parking? Do you need a [parking permit](/guides/car-cost-of-ownership-germany#parking)? Does your building have basement parking? How much does it cost? You can [park motorcycles on the sidewalk](/guides/motorcycle-parking).
+    [You don't need a car in Berlin](/guides/buy-a-car-in-germany#do-you-need-a-car). Is there enough street parking? Do you need a [parking permit](/guides/car-cost-of-ownership-germany#parking)? Does your building have basement parking? How much does it cost? You can [park motorcycles on the sidewalk](/guides/motorcycle-parking).
 - [ ] **Nearby services**  
     Check if there are supermarkets, [Spätis](/glossary/Späti), cafés and other businesses nearby.
 - [ ] **Noise**  
@@ -252,7 +252,7 @@ To improve your chances...
 - **Don't be picky**  
     You probably won't get a cheap apartment in a cool neighbourhood. Be ready to take what you find. If you are a recent immigrant, [your options](#your-housing-options) are limited.
 - **Send a lot of messages**  
-    You might need to send hundreds of messages to get a few visits. Searching for an apartment is a full time job. It can take months.
+    You might need to send hundreds of messages to get a few visits. Searching for an apartment is a full-time job. It can take months.
 - **Be prepared**  
     Prepare all the [required documents](#required-documents) in advance. Be ready to send them quickly.
 - **Write and call**  
@@ -260,7 +260,7 @@ To improve your chances...
 - **Have a detailed profile**  
     Create a detailed profile on housing websites, and upload your documents. It helps you make a good impression when you message a landlord.
 - **Be brief**  
-    Don't make landlords read. Write message short and simple messages. Only send the important parts of your documents. Include all the important information in your first message.
+    Don't make landlords read. Write short and simple messages. Only send the important parts of your documents. Include all the important information in your first message.
 
 ### What landlords want
 
@@ -392,7 +392,7 @@ You will sign a lease, pay the [deposit](/glossary/Kaution), get the keys and mo
 
 ## Your housing options
 
-Your options depends on your situation.
+Your options depend on your situation.
 
 **If you are not in Berlin yet**, it's impossible to find a long-term apartment. Landlords always pick someone else. It's very hard to find a room in a [[WG]] without meeting the other tenants in person. You must get [short-term housing](#short-term-housing), move to Berlin, then look for something better.
 
@@ -434,7 +434,7 @@ With a regular apartment...
 - **You save money in the long term**  
     You must buy everything for the apartment, but the rent is much lower. Over time, you save a lot of money.
 
-Start looking for a regular apartments 1 to 3 months before you [move in](/guides/moving-in). The rent should be 20% to 35% of your monthly [net income](/glossary/Netto%20income).[^34]
+Start looking for a regular apartment 1 to 3 months before you [move in](/guides/moving-in). The rent should be 20% to 35% of your monthly [net income](/glossary/Netto%20income).[^34]
 
 **[Look for a regular apartment ➞](#look-for-apartments)**
 
@@ -481,7 +481,7 @@ The *[[Anmeldung]]* is really important. Always choose a place where the *Anmeld
 
 Almost all apartments require a deposit (*[[Kaution]]*). It's usually 3 times the [cold rent](/glossary/Kaltmiete). You get it back after you [move out](/guides/moving-out). You can [pay it in 3 instalments](/guides/mietkaution#when-to-pay-the-kaution). You must pay the first instalment before you [move in](/guides/moving-in). If you don't have enough money, there are [other options](/guides/mietkaution#if-you-dont-have-enough-money).
 
-Some short-term apartments on [HousingAnywhere](/out/housinganywhere) and [Spotahome](/out/spotahome) apartments don't ask for a deposit.
+Some short-term apartments on [HousingAnywhere](/out/housinganywhere) and [Spotahome](/out/spotahome) don't ask for a deposit.
 
 **[How the deposit works ➞](/guides/mietkaution)**
 

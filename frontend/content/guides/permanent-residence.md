@@ -78,7 +78,7 @@ If you have a work visa, but you qualify for a Blue Card, you can become a perma
 To become a permanent resident, you must also...
 
 - [ ] **Have a § 21 Abs. 1 or 2a freelance visa for 3 years**[^6]  
-    The type of freelance visa is [written on your residence permit](/illustrations/freelance-visa-type.png). If you have a *§ 21 Abs. 5* freelance visa, follow the [requirements for ev](#everyone-else).
+    The type of freelance visa is [written on your residence permit](/illustrations/freelance-visa-type.png). If you have a *§ 21 Abs. 5* freelance visa, follow the [requirements for everybody else](#everyone-else).
 - [ ] **Have a profitable business**  
     You can only get the [PR](/glossary/Niederlassungserlaubnis) after 3 years if the *[[Ausländerbehörde]]* thinks that your business is successful, profitable and sustainable. Your *[[Ausländerbehörde]]* case worker will decide this.
 - [ ] **Support yourself**  
@@ -172,7 +172,7 @@ To get a PR, you need savings for retirement.[^17] There are 4 ways to do this:
 - or **use your spouse's pension**  
     If you are married, and your spouse has a valid pension, you can use their pension. For example, if your spouse has made 60 months of public pension payments, it's enough.[^18]
 - or **get a private pension**  
-    It must *guarantee* an income of at least €{{ FREELANCE_VISA_MIN_MONTHLY_PENSION|cur }} per month for at least 12 years after you retire. It must include a pension in case of disability.[^42] A Rürüp pension like [the one Feather sells](/out/feather-basis-pension) should work fine.
+    It must *guarantee* an income of at least €{{ FREELANCE_VISA_MIN_MONTHLY_PENSION|cur }} per month for at least 12 years after you retire. It must include a pension in case of disability.[^42] A Rürup pension like [the one Feather sells](/out/feather-basis-pension) should work fine.
 - or **use your foreign pension**  
     A guaranteed pension from another country also counts.[^74]
 - or **have real estate or other investments**  
@@ -309,7 +309,7 @@ Go to your second *[[Ausländerbehörde]]* appointment and pick up your permanen
 
 These are the required documents **in Berlin**. In other cities, you need different documents. Check the website of the *[[Ausländerbehörde]]* where you apply.
 
-**[When you apply online](#apply-for-permanent-residence-online)**, use PDF files or photos. Don't use word documents or other formats. If you have too many documents, [merge them](https://www.adobe.com/acrobat/online/merge-pdf.html) or [make them smaller](https://www.adobe.com/acrobat/online/compress-pdf.html). You can also [mail your documents](/guides/mail-a-letter), but it's not better or faster. Applications by email are usually ignored.[^44]
+**[When you apply online](#apply-for-permanent-residence-online)**, use PDF files or photos. Don't use Word documents or other formats. If you have too many documents, [merge them](https://www.adobe.com/acrobat/online/merge-pdf.html) or [make them smaller](https://www.adobe.com/acrobat/online/compress-pdf.html). You can also [mail your documents](/guides/mail-a-letter), but it's not better or faster. Applications by email are usually ignored.[^44]
 
 **[When you go to your appointment](#go-to-your-appointment)**, bring the documents that they ask for in your appointment confirmation.[^24] Put dates on all your documents. Print everything on A4 paper. Do not staple the pages together. Some case workers also ask for documents that you already sent. It's safer if you bring everything you have, including documents that you already sent.[^53]
 
@@ -328,9 +328,9 @@ These are the required documents **in Berlin**. In other cities, you need differ
     You need valid [health insurance](/glossary/Krankenversicherung). Travel insurance is not accepted.
     - [ ] **[Health insurance card](/glossary/Gesundheitskarte)**  
         Show both sides of the card.
-    - [ ] **proof of [public health insurance](/glossary/gesetzliche%20Krankenversicherung)**  
+    - [ ] **Proof of [public health insurance](/glossary/gesetzliche%20Krankenversicherung)**  
         Get a *[Mitgliedsbescheinigung nach § 175 SGB V](/glossary/Mitgliedsbescheinigung)* from your health insurer or your [health insurance broker](/guides/german-health-insurance#need-help).
-    - [ ] **proof of [private health insurance](/glossary/private%20Krankenversicherung)**  
+    - [ ] **Proof of [private health insurance](/glossary/private%20Krankenversicherung)**  
         Bring your insurance contract, a *[Mitgliedsbescheinigung nach § 257 SGB V](/glossary/Mitgliedsbescheinigung)*, and bank statements that show health insurance payments. Get these documents from your health insurer or your health insurance broker.[^6]
 - [ ] **Proof of health insurance payments**  
     Bring bank account statements that show recent health insurance payments.[^58]

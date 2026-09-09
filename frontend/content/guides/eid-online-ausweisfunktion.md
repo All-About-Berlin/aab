@@ -11,7 +11,7 @@ You can use your [residence permit](/glossary/Aufenthaltstitel) as an [[eID]]. T
 
 ## How the eID works
 
-German ID cards have a chip in them. You can use your ID card and the [AusweisApp](https://www.ausweisapp.bund.de/en/home) to log into online government services. This is feature is called *Online-Ausweisfunktion*, *eID*, *elektronischer Aufenthaltstitel* or *eAT*.
+German ID cards have a chip in them. You can use your ID card and the [AusweisApp](https://www.ausweisapp.bund.de/en/home) to log into online government services. This feature is called *Online-Ausweisfunktion*, *eID*, *elektronischer Aufenthaltstitel* or *eAT*.
 
 ## Why you should activate your eID
 
@@ -25,7 +25,7 @@ German ID cards have a chip in them. You can use your ID card and the [AusweisAp
 
 In Berlin, most services are not digital, or they don't require an eID. Most new digital services require an eID.
 
-If you don't have eID, you must do everything in person. It's slower.
+If you don't have an eID, you must do everything in person. It's slower.
 
 ## How to activate your eID
 

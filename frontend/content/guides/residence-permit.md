@@ -96,7 +96,7 @@ Other residence permits sometimes allow self-employment:
 ### For studying
 
 - **[[Student visa]]**  
-    For people who want to study in Germany. You must be enrolled in a German university. You can work during your studies. You can work while you study.
+    For people who want to study in Germany. You must be enrolled in a German university. You can work during your studies.
 - **[[Internship visa]]**  
     For university students.[^6] This residence permit allows you to do an internship in Germany. It's valid for 6 to 12 months.[^7]
 - **[[Family reunion visa]]**  
@@ -170,7 +170,7 @@ While you wait for an *[[Ausländerbehörde]]* appointment, you should also...
 
 ### 2. Send your application
 
-Submit your application to the *[[Ausländerbehörde]]*. They will check your documents and invite your for an appointment. This is the only way. You can't go to the *Ausländerbehörde* without an appointment.
+Submit your application to the *[[Ausländerbehörde]]*. They will check your documents and invite you for an appointment. This is the only way. You can't go to the *Ausländerbehörde* without an appointment.
 
 There are 3 ways to apply:
 
@@ -181,7 +181,7 @@ There are 3 ways to apply:
 - or **[use the contact form](/guides/immigration-office#use-the-contact-form)**  
     If there is no application form for your residence permit, use the general contact form.
 
-If are a citizen of {{AUFENTHV_41_COUNTRIES}}, you have 90 days to apply after you arrive in Germany.[^2]
+If you are a citizen of {{AUFENTHV_41_COUNTRIES}}, you have 90 days to apply after you arrive in Germany.[^2]
 
 If you already live in Germany, apply before your current visa or residence permit expires.[^44] Apply 6 weeks before it expires, not sooner.[^26]
 
@@ -222,7 +222,7 @@ When you go to your appointment, bring...
 - [ ] **Other required documents**  
     Read the email carefully. The *Ausländerbehörde* might ask you to bring more documents.
 - [ ] **Your family**  
-    If you apply for family reunion visas, or for residence permanent residence for a spouse, your family must come with you.[^38]
+    If you apply for family reunion visas, or for permanent residence for a spouse, your family must come with you.[^38]
 - [ ] **A translator** (optional)  
     Many *Ausländerbehörde* employees only speak German. If you don't speak German, bring an interpreter or a German-speaking friend. It's not required, but it helps. I recommend [Red Tape Translation](/out/red-tape-translation-interpreter).
 
@@ -368,7 +368,7 @@ To convert your National Visa into a residence permit:
 1. **[Contact the Ausländerbehörde](/guides/immigration-office#how-to-contact-the-auslanderbehorde)**  
     Write to the *Ausländerbehörde* around 6 weeks before your National Visa expires. They take a really long time to reply. When they reply, they will give you an appointment. [If your National Visa expires](#if-your-visa-or-residence-permit-expires), you can stay in Germany and keep working or studying.
 2. **Go to your appointment**  
-    During the appointment, they take your fingerprints for your freelance visa. It takes around 15 minutes. You get a second appointment [a few weeks later](/guides/immigration-office/wait-times) to pick up your residence permit.
+    During the appointment, they take your fingerprints for your residence permit. It takes around 15 minutes. You get a second appointment [a few weeks later](/guides/immigration-office/wait-times) to pick up your residence permit.
 3. **Pick up your residence permit**  
     Go to your second *Ausländerbehörde* appointment to collect your residence permit. Bring your passport and your old residence permit.
 

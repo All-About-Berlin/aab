@@ -11,9 +11,9 @@ When you start a new job in Germany, you are in your probation period (*[[Probez
 
 ## What is the probation period?
 
-When you start working for a company, you have a 6 month probation period.[^0] Some employers have shorter probation periods, or no probation period at all.
+When you start working for a company, you have a 6-month probation period.[^0] Some employers have shorter probation periods, or no probation period at all.
 
-During your probation, it's easier to lose your job. Your employer can fire you without any reason, with a 2 week [notice period](/glossary/K%C3%BCndigungsfrist).[^1] Many people find the probation period stressful, because they are afraid of [losing their job](/guides/losing-your-job).
+During your probation, it's easier to lose your job. Your employer can fire you without any reason, with a 2-week [notice period](/glossary/K%C3%BCndigungsfrist).[^1] Many people find the probation period stressful, because they are afraid of [losing their job](/guides/losing-your-job).
 
 Apprentices ([*Azubis*](/glossary/Azubi)) have a shorter probation: 1 to 4 months.[^2] During their probation, there is no notice period; they can be laid off immediately.
 
@@ -61,9 +61,9 @@ To apply for [permanent residence](/glossary/Niederlassungserlaubnis), you need 
 
 After your probation period, **it's harder to get fired**. It's also harder to quit your job. For most people, the end of the probation period is a big relief.
 
-If your employer fires you, they must give you a 4 week [notice](/glossary/K%C3%BCndigungsfrist). If you want to quit your job, you must also give a 4 week notice. The longer you work at a company, the longer the notice period.[^9] After 5 years with a company, the notice period is 2 months. After 8 years, it's 3 months.
+If your employer fires you, they must give you a 4-week [notice](/glossary/K%C3%BCndigungsfrist). If you want to quit your job, you must also give a 4-week notice. The longer you work at a company, the longer the notice period.[^9] After 5 years with a company, the notice period is 2 months. After 8 years, it's 3 months.
 
-Some companies have longer notice periods in their contracts.[^10] 3 month notice periods are common, and some have a 6 month notice period.[^11] Your notice period (when you quit) can't be longer than the notice period of your employer (when they fire you).[^10]
+Some companies have longer notice periods in their contracts.[^10] 3-month notice periods are common, and some have a 6-month notice period.[^11] Your notice period (when you quit) can't be longer than the notice period of your employer (when they fire you).[^10]
 
 ### Taking vacations
 

@@ -5,7 +5,7 @@ description: 'All the little things you should do when moving to a new address i
 date_created: 2019-10-25
 ---
 
-After you [move to Berlin](/guides/find-a-flat-in-berlin) and [find an apartment](/guides/find-a-flat-in-berlin), you must move in. This guide shows you how it works.
+After you [move to Berlin](/guides/moving-to-berlin) and [find an apartment](/guides/find-a-flat-in-berlin), you must move in. This guide shows you how it works.
 
 {% tableOfContents %}
 
@@ -71,9 +71,9 @@ Pay the rent and the deposit by [bank transfer](/glossary/SEPA-%C3%9Cberweisung)
 
 ### Pay the rent
 
-You must pay the rent by **before your lease starts**. You don't have to pay immediately after you sign the lease. Paying later helps you avoid [scams](/guides/housing-scams).
+You must pay the rent **before your lease starts**. You don't have to pay immediately after you sign the lease. Paying later helps you avoid [scams](/guides/housing-scams).
 
-You only need to pay rent if you can actually live there. For example, if your leases starts on January 1, but you only get the keys on January 15, you don't pay rent from January 1 to January 15.[^9]
+You only need to pay rent if you can actually live there. For example, if your lease starts on January 1, but you only get the keys on January 15, you don't pay rent from January 1 to January 15.[^9]
 
 ### Get an electricity contract
 
@@ -117,7 +117,7 @@ If you can't put your name on your mailbox, you must [add "c/o" or "bei" to your
 
 ### Register your address
 
-You must must [register your new address](/glossary/Anmeldung) at the *[[Bürgeramt]]* (the *[[Anmeldung]]*). [It's important.](/guides/anmeldung-in-english-berlin#why-you-must-register-your-address)
+You must [register your new address](/glossary/Anmeldung) at the *[[Bürgeramt]]* (the *[[Anmeldung]]*). [It's important.](/guides/anmeldung-in-english-berlin#why-you-must-register-your-address)
 
 **[How to register your address ➞](/guides/anmeldung-in-english-berlin)**
 
@@ -129,7 +129,7 @@ If you move from another place in Germany, you don't need to [deregister your ol
 
 ### Buy furniture and appliances
 
-Used appliances are much cheaper. Buy them on [Kleinanzeigen](https://www.kleinanzeigen.de/). Professional sellers offer a 12 month warranty and free delivery. Choose a seller with old accounts. New accounts are more likely to be scammers that sell broken appliances. I bought my appliances from [Wasch Max](https://www.kleinanzeigen.de/s-bestandsliste.html?userId=30162989).
+Used appliances are much cheaper. Buy them on [Kleinanzeigen](https://www.kleinanzeigen.de/). Professional sellers offer a 12-month warranty and free delivery. Choose a seller with old accounts. New accounts are more likely to be scammers that sell broken appliances. I bought my appliances from [Wasch Max](https://www.kleinanzeigen.de/s-bestandsliste.html?userId=30162989).
 
 **[Where to buy furniture and house supplies ➞](/guides/where-to-buy-what#furniture-and-house-supplies)**
 
@@ -168,7 +168,7 @@ Landlords often [try to scam](/guides/housing-scams#scams-by-landlords-and-tenan
 - **Join a tenants' association** (*[[Mieterverein]]*){{ RECOMMENDED }}  
     If you are a member, you get free help from their lawyers. They can check your lease, help you with a bad landlord, lower your rent, and help you sublet your apartment. It costs around €5 per month. The [Berliner Mieterverein](https://www.berliner-mieterverein.de/sprachen/englisch.htm) and [Mieterschutzbund Berlin](https://www.mieterschutzbund-berlin.de/) are the biggest ones in Berlin. The Berliner Mieterverein speaks English.[^10]
 - or **get legal insurance** (*[[Rechtsschutzversicherung]]*)  
-    It pays for your legal costs. You get free access to a lawyer. It's more expensive than a *[[Mieterverein]]*, but you get better service, and you can choose any [English-speaking lawyer](/guides/english-speaking-lawyers-berlin). [Feather](/out/feather-rechtsschutz) sells legal insurance, and they speak in English.
+    It pays for your legal costs. You get free access to a lawyer. It's more expensive than a *[[Mieterverein]]*, but you get better service, and you can choose any [English-speaking lawyer](/guides/english-speaking-lawyers-berlin). [Feather](/out/feather-rechtsschutz) sells legal insurance, and they speak English.
 - or **get help from the [Mieterberatung](https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeraemter/artikel.244745.php)**  
     This is a free service from the city of Berlin. They might not speak English.
 
@@ -176,7 +176,7 @@ Landlords often [try to scam](/guides/housing-scams#scams-by-landlords-and-tenan
 
 ### Lower your rent
 
-German rent prices are limited by law. If your rent too high, you can get it reduced. Use [the rent limit calculator](https://mietencheck.de) to check if you pay too much rent.
+German rent prices are limited by law. If your rent is too high, you can get it reduced. Use [the rent limit calculator](https://mietencheck.de) to check if you pay too much rent.
 
 These people can help you reduce your rent:
 
@@ -254,7 +254,7 @@ Germans take recycling very seriously. Learn to sort your trash and recycle prop
 
 ### Ventilation
 
-Germans ventilate their apartments every day, even in winter. They open all the windows for a few minutes to let fresh air in. It's called *[[Stoßlüften]]*. It helps prevents mould.
+Germans ventilate their apartments every day, even in winter. They open all the windows for a few minutes to let fresh air in. It's called *[[Stoßlüften]]*. It helps prevent mould.
 
 Your lease might require you to ventilate every day.
 
@@ -264,7 +264,7 @@ Your lease might require you to ventilate every day.
 
 Most German apartment buildings have central heating. It's turned off during the warm months.
 
-You control the heating in your apartment with the dial on your radiators. The ❄ setting prevents the pipes from freezing. The settings from 0 to 5 set the desired temperature, with 3 being around 20ºC.[^8]
+You control the heating in your apartment with the dial on your radiators. The ❄ setting prevents the pipes from freezing. The settings from 0 to 5 set the desired temperature, with 3 being around 20°C.[^8]
 
 Some newer apartments have heated floors instead of radiators. You control them with a thermostat on the wall.
 

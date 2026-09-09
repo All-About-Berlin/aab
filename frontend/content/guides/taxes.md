@@ -97,7 +97,7 @@ If you pay more than €{{SOLIDARITY_TAX_MILDERUNGSZONE_MIN_INCOME_TAX|cur}} per
 
 ### Capital gains tax
 
-The capital gains tax (*[[Kapitalertragsteuer]]*) is a {{CAPITAL_GAINS_TAX_RATE}}% tax on profits from investments. It applies to profit, interests and dividends from stocks, ETFs and other investments. It does not apply to cryptocurrencies.[^4] The first €{{CAPITAL_GAINS_FREIBETRAG|cur}} per year are tax-free.[^8]
+The capital gains tax (*[[Kapitalertragsteuer]]*) is a {{CAPITAL_GAINS_TAX_RATE}}% tax on profits from investments. It applies to profit, interest and dividends from stocks, ETFs and other investments. It does not apply to cryptocurrencies.[^4] The first €{{CAPITAL_GAINS_FREIBETRAG|cur}} per year are tax-free.[^8]
 
 Most German brokers deduct this tax automatically when you sell stocks or receive dividends.
 
@@ -119,8 +119,8 @@ If you are self-employed, you must pay...
 
 You can choose to pay...
 
-- [Unemployment insurance](/glossary/Arbeitslosenversicherung). If you don't pay for it, and you don't get [unemployment benefits](/glossary/ALG%20I).
-- [Public pension insurance](/glossary/gesetzliche%20Rentenversicherung). If you don't pay for it, and you don't get a public pension. You must make your own retirement plans.
+- [Unemployment insurance](/glossary/Arbeitslosenversicherung). If you don't pay for it, you don't get [unemployment benefits](/glossary/ALG%20I).
+- [Public pension insurance](/glossary/gesetzliche%20Rentenversicherung). If you don't pay for it, you don't get a public pension. You must make your own retirement plans.
 
 Your business must also pay...
 

@@ -5,7 +5,7 @@ description: How to find, buy, insure and register a car or a motorcycle in Germ
 date_created: 2019-01-06
 ---
 
-This guide explains how to find, buy, insure and register a vehicle in Germany. It also explains everything what you must do after you get a car or motorcycle.
+This guide explains how to find, buy, insure and register a vehicle in Germany. It also explains everything you must do after you get a car or motorcycle.
 
 {% tableOfContents %}
 
@@ -44,7 +44,7 @@ There are special types of licence plates:
 - **Temporary licence plates** (*[[Kurzzeitkennzeichen]]*)  
     They let you test drive a vehicle that is deregistered (*Abgemeldet*). They are only valid for a few days.[^12]
 - **Seasonal plates** (*[[Saisonkennzeichen]]*)  
-    They only let you drive during certain months. For example, for might only let you ride your motorcycle during the summer. They make your [car insurance](/glossary/Kfz-Versicherung) cheaper; you only pay for the months that you can drive. Outside of those months, you can't drive your vehicle, and you can't park it on the street.
+    They only let you drive during certain months. For example, they might only let you ride your motorcycle during the summer. They make your [car insurance](/glossary/Kfz-Versicherung) cheaper; you only pay for the months that you can drive. Outside of those months, you can't drive your vehicle, and you can't park it on the street.
 - **Insurance plates** (*[[Versicherungskennzeichen]]*)  
     You don't need to register scooters (🛴 and 🛵) under 50cc. Instead of licence plates, you get insurance plates from your insurer.[^5]
 
@@ -60,7 +60,7 @@ Car listings on [Mobile.de](https://www.mobile.de/) and [Kleinanzeigen](https://
 
 ### Low-emission zones
 
-In Berlin, the area inside *[[Ringbahn]]* is a [low-emission zone](/glossary/Umweltzone). To drive in an *[[Umweltzone]]*, your car needs a [green sticker](/glossary/Umwelt-Plakette). You get it when you register your vehicle. You can also buy it in garages and gas stations. Motorcycles don't need this sticker.
+In Berlin, the area inside the *[[Ringbahn]]* is a [low-emission zone](/glossary/Umweltzone). To drive in an *[[Umweltzone]]*, your car needs a [green sticker](/glossary/Umwelt-Plakette). You get it when you register your vehicle. You can also buy it in garages and gas stations. Motorcycles don't need this sticker.
 
 Diesel vehicles are banned from low-emission zones in some cities (but not Berlin).[^13] Motorcycles are always allowed.
 

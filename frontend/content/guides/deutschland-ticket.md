@@ -6,6 +6,7 @@ date_created: 2023-04-13
 ---
 
 This guide explains how the [[Deutschland Ticket]] works in Berlin.
+
 Summary:
 
 - It costs €{{DEUTSCHLAND_TICKET_PRICE|cur}} per month.
@@ -41,7 +42,7 @@ You can't use [hvv Switch](https://www.hvv-switch.de/en/) with foreign credit ca
 
 The Deutschland Ticket is a subscription. You can't buy it from a ticket machine.
 
-Tourists should **get a Deutschland Ticket from [deutschland-ticket.store](https://deutschland-ticket.store/autobus-oberbayern?lang=en)**. You can pay with foreign credit cards.[^4] You must still manually cancel your subscription before the end of the month.[^5] Your ticket is a QR code. You can see your ticket it in the [Bconn app](https://play.google.com/store/apps/details?id=de.bconn.wallet&hl=en_US). It might take time to process, so buy it in advance.[^1]
+Tourists should **get a Deutschland Ticket from [deutschland-ticket.store](https://deutschland-ticket.store/autobus-oberbayern?lang=en)**. You can pay with foreign credit cards.[^4] You must still manually cancel your subscription before the end of the month.[^5] Your ticket is a QR code. You can see your ticket in the [Bconn app](https://play.google.com/store/apps/details?id=de.bconn.wallet&hl=en_US). It might take time to process, so buy it in advance.[^1]
 
 **The other option is [mo.pla](https://en.mopla.solutions/en/tickets/deutschlandticket)**, because it accepts credit cards and it's easy to cancel.
 
@@ -75,7 +76,7 @@ In Berlin, you can also get a daily, weekly or [monthly pass](/glossary/Monatska
 
 **[Which ticket to buy? ➞](/guides/public-transit#what-ticket-to-buy)**
 
-**[Buy a BVG monthly ticket ➞](https://www.bvg.de/en/subscriptions-and-tickets/all-tickets/time-tickets/monthly-ticket)
+**[Buy a BVG monthly ticket ➞](https://www.bvg.de/en/subscriptions-and-tickets/all-tickets/time-tickets/monthly-ticket)**
 
 ## How to cancel a Deutschland Ticket
 

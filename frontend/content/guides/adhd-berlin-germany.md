@@ -5,7 +5,7 @@ description: Explains how to find a psychiatrist, get diagnosed and get medicate
 date_created: 2017-12-13
 ---
 
-This guide shows explains how to get treated for ADHD in Germany, step by step.
+This guide explains how to get treated for ADHD in Germany, step by step.
 
 {% tableOfContents %}
 
@@ -29,7 +29,7 @@ With private health insurance, it's easier to find a psychiatrist. You can usual
 
 ## 2. Get diagnosed
 
-The first psychiatrist appointment is like an interview. They ask questions about to see if you have ADHD symptoms. They try to understand how these symptoms affects your life. They will see if you have ADHD, and decide how to treat it.[^2]
+The first psychiatrist appointment is like an interview. They ask questions to see if you have ADHD symptoms. They try to understand how these symptoms affect your life. They will see if you have ADHD, and decide how to treat it.[^2]
 
 German doctors only prescribe medication when it's necessary. Your psychiatrist might try therapy and other approaches first. It's frustrating, but it's part of the process.
 
@@ -66,11 +66,11 @@ All those medications are covered by your public or private health insurance. If
 
 ### Medication costs
 
-If you have [public health insurance](/glossary/gesetzliche%20Krankenversicherung), the medication costs you €5.[^0] Your insurance pays the rest. If you have [private health insurance](/glossary/gesetzliche%20Krankenversicherung), it usually covers the full cost.
+If you have [public health insurance](/glossary/gesetzliche%20Krankenversicherung), the medication costs you €5.[^0] Your insurance pays the rest. If you have [private health insurance](/glossary/private%20Krankenversicherung), it usually covers the full cost.
 
 ### First medication
 
-You will probably start with a low dose of Medikinet (Ritalin); usually 5 to 10 mg. If you try Vivanse, you will get a 20 to 30 mg dose. Your psychiatrist will teach you how to take the medicine and explain its side effects to you.
+You will probably start with a low dose of Medikinet (Ritalin); usually 5 to 10 mg. If you try Vyvanse, you will get a 20 to 30 mg dose. Your psychiatrist will teach you how to take the medicine and explain its side effects to you.
 
 During the first week, you might feel **nausea, an upset stomach and a loss of appetite**. This is normal. Your body is adjusting to the medication. For me, it felt like a mild hangover until lunch. I also felt a bit of anxiety and euphoria, like when I have a really strong coffee.
 

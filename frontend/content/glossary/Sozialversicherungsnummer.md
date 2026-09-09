@@ -10,7 +10,7 @@ related_guides:
     - guides/german-health-insurance.md
 ---
 
-The *Sozialversicherungsnummer, Versicherungsnummer, Rentenversicherungsnummer* or *RNVR* is the German pension insurance number. The German public pension scheme (the *Deutsche Rentenversicherung*) uses this number to identify you. You can get this number from your health insurer. The German social insurance number has this format: **12 123456 A 123**.[^0]
+The *Sozialversicherungsnummer, Versicherungsnummer, Rentenversicherungsnummer* or *RVNR* is the German pension insurance number. The German public pension scheme (the *Deutsche Rentenversicherung*) uses this number to identify you. You can get this number from your health insurer. The German social insurance number has this format: **12 123456 A 123**.[^0]
 
 **[How to get a social insurance number ➞](/guides/german-versicherungsnummer)**
 

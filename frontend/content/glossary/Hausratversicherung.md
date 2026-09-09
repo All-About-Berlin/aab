@@ -16,7 +16,7 @@ Home contents insurance or household insurance (*Hausratversicherung*) insures y
 
 For example:[^0]
 
-- There is a fire on your building, and you lose everything you have.
+- There is a fire in your building, and you lose everything you have.
 - A water leak destroys your furniture and electronics.
 - A thief breaks into your house and steals your things.
 

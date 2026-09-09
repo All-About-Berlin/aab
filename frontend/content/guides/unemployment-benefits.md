@@ -31,7 +31,7 @@ You can get unemployment benefits if:[^0]
 
 ### It's okay to get unemployment benefits
 
-It's normal and socially acceptable to receive unemployment benefits, even if you don't need it. If you can receive ALG I, do it. This is your money. You paid for those benefits.
+It's normal and socially acceptable to receive unemployment benefits, even if you don't need them. If you can receive ALG I, do it. This is your money. You paid for those benefits.
 
 ### Unemployment benefits for immigrants
 
@@ -58,13 +58,13 @@ Sometimes, there is a disqualification period (*Sperrzeit*) of 1 to 12 weeks. Du
 There is a *Sperrzeit* when...
 
 - **You choose to leave your job**  
-    This means that you quit your job *without a reason*, or you sign an *Aufhebungsvertrag* with your employer. Usually, there is a 3 month *Sperrzeit* if you choose to leave. There is no *Sperrzeit* if you quit because of mental health, bad salary, moving for your spouse, and other good reasons.[^14]
+    This means that you quit your job *without a reason*, or you sign an *Aufhebungsvertrag* with your employer. Usually, there is a 3-month *Sperrzeit* if you choose to leave. There is no *Sperrzeit* if you quit because of mental health, bad salary, moving for your spouse, and other good reasons.[^14]
 - **or you register too late**  
     If you wait too long to [register as a job seeker](#register-as-a-job-seeker) or [as unemployed](#register-as-unemployed), the *[[Agentur für Arbeit]]* adds a *Sperrzeit* to punish you.
 - **or you refuse help from the Agentur für Arbeit**[^13]  
     For example, you refuse a job offer, refuse to take recommended training, or refuse to look for work.
 
-A *Sperrzeit* means that you get less *ALG I* in total. For example, if you have 12 months of unemployment benefits and a 3 month *Sperrzeit*, you only get *ALG I* for 9 months.
+A *Sperrzeit* means that you get less *ALG I* in total. For example, if you have 12 months of unemployment benefits and a 3-month *Sperrzeit*, you only get *ALG I* for 9 months.
 
 ## How much money do I get?
 
@@ -78,7 +78,7 @@ You pay taxes on the money you get: [wage tax](/glossary/Lohnsteuer), [solidarit
 
 **6 to 12 months**. It depends on how many months of unemployment insurance you paid in the last 5 years. If you are over 50 years old, it can last up to 24 months.[^19]
 
-You can get less unemployment benefits because of a *[Sperrzeit](#the-sperrzeit)*
+You can get less unemployment benefits because of a *[Sperrzeit](#the-sperrzeit)*.
 
 ## How to apply for unemployment benefits
 
@@ -116,7 +116,7 @@ Before you get ALG I, your employer must send your *[[Arbeitsbescheinigung]]* to
 
 If your employer takes too long, tell your case worker at the *Agentur für Arbeit*. They will pressure your employer, and can fine them up to €2,000. This can still take a few weeks.[^22]
 
-If you can't wait for your *Arbeitsbescheinigung*, ask the *Agentur für Arbeit* for a preliminary approval of your employment benefits (*vorläufige Bewilligung*).[^23] You will get unemployment benefits faster. [Use this template](/docs/alg-i-vorlaeufige-entscheidung) to make the request.
+If you can't wait for your *Arbeitsbescheinigung*, ask the *Agentur für Arbeit* for a preliminary approval of your unemployment benefits (*vorläufige Bewilligung*).[^23] You will get unemployment benefits faster. [Use this template](/docs/alg-i-vorlaeufige-entscheidung) to make the request.
 
 Your employer can also put false information in your *Arbeitsbescheinigung*. This can affect how much *[[ALG I]]* you get.[^28]
 
@@ -130,7 +130,7 @@ ALG I is paid by [bank transfer](/glossary/SEPA-Überweisung), so you need a [ba
 
 ### Conditions to get ALG I
 
-When you receive *ALG I*, the *Agentur für Arbeit* is your boss, and **finding work is your full time job**.
+When you receive *ALG I*, the *Agentur für Arbeit* is your boss, and **finding work is your full-time job**.
 
 The *Agentur für Arbeit* really wants you to work. At first, they are nice and patient. After some time, they are more forceful.
 
@@ -155,7 +155,7 @@ You can also pause your *ALG I* and take a longer unpaid vacation.[^29]
 
 You can travel to find work in another EU or [[EEA]] country. You must ask the *Agentur für Arbeit* first.[^7] You receive *ALG I* while you travel to find work.
 
-People often travel without telling the *Agentur für Arbeit*.  If they call you for an appointment, and they learn that you are on a beach in Spain, they can cut your unemployment benefits. This rarely happens; the *Agentur für Arbeit* books appointments weeks in advance.[^30]
+People often travel without telling the *Agentur für Arbeit*. If they call you for an appointment, and they learn that you are on a beach in Spain, they can cut your unemployment benefits. This rarely happens; the *Agentur für Arbeit* books appointments weeks in advance.[^30]
 
 ### Sickness and pregnancy
 

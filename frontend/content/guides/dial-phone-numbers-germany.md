@@ -34,7 +34,7 @@ There are 3 ways to call a German phone number:
 - **Dial the international number**  
     For example, **+49 30 901820** or **0049 30 901820**. This is the easiest way, because it always works. If you call from another country, you must dial the international number.
 - **Dial the national number**  
-    For example, **030 901820**. You must put a 0 in front of area code. If you call from Germany, you can dial the national number.
+    For example, **030 901820**. You must put a 0 in front of the area code. If you call from Germany, you can dial the national number.
 - **Dial the local number**  
     For example, **901820**. If you call from the same area, you can dial the local number.
 
@@ -44,9 +44,9 @@ There are 3 ways to call a German phone number:
 
 ## How to format German phone numbers
 
-In German, follow the DIN 5008 format: +49 1522 343333. Each part is separated by a space. Without the area code, it's 01522 343333.[^1]
+In German, follow the DIN 5008 format: +49 1522 3433333. Each part is separated by a space. Without the area code, it's 01522 3433333.[^1]
 
-In English, follow the E.123 format: +49 1522 343333. Without the area code, it's (01522) 343333.[^5]
+In English, follow the E.123 format: +49 1522 3433333. Without the area code, it's (01522) 3433333.[^5]
 
 ## Special phone numbers
 

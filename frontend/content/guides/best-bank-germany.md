@@ -15,7 +15,7 @@ Before you start, learn [how banking works in Germany](/guides/banking). It help
 
 ## German banks for expats
 
-When you open your first bank account, choose an expat-friendly bank like [N26](/out/n26), [bunq](/out/bunq), [Wise](/out/wise), [Monese](/out/monese), [Tomorrow](/out/tomorrow) and [Vivid](/out/vivid)
+When you open your first bank account, choose an expat-friendly bank like [N26](/out/n26), [bunq](/out/bunq), [Wise](/out/wise), [Monese](/out/monese), [Tomorrow](/out/tomorrow) and [Vivid](/out/vivid).
 
 An expat-friendly bank...
 
@@ -26,7 +26,7 @@ An expat-friendly bank...
 
 ### [N26](/out/n26)
 
-In my opinion, N26 is the most expat-friendly German bank. I use them since 2016. They let you open an account quickly, without an *[[Anmeldung]]*. They speak English, French, German, Italian and Spanish.
+In my opinion, N26 is the most expat-friendly German bank. I have been using them since 2016. They let you open an account quickly, without an *[[Anmeldung]]*. They speak English, French, German, Italian and Spanish.
 
 Their basic account **covers all your basic needs**: no monthly fees, free ATM withdrawals, multiple languages, a German [[IBAN]] and a solid mobile banking experience. Creating an N26 account creates a [Schufa](/glossary/Schufa) record. A Schufa record can help you [find an apartment](/guides/find-a-flat-in-berlin).
 
@@ -55,7 +55,7 @@ Wise speaks English, Chinese, French, German, Hungarian, Indonesian, Italian, Ja
 These banks are **not expat-friendly**:
 
 - ✗ **[C24](/out/c24)**  
-    It's an excellent bank, but they [accept fewer passports](https://hilfe.c24.de/hc/de/articles/360011531579-Wer-kann-ein-Konto-beantragen), they required a [registered address](/glossary/Anmeldung), and they might require a residence permit.[^1] They only speak German. They don't accept US citizens.[^5]
+    It's an excellent bank, but they [accept fewer passports](https://hilfe.c24.de/hc/de/articles/360011531579-Wer-kann-ein-Konto-beantragen), they require a [registered address](/glossary/Anmeldung), and they might require a residence permit.[^1] They only speak German. They don't accept US citizens.[^5]
 - ✗ **[Revolut](/out/revolut)**  
     You need a [tax ID](/glossary/Steueridentifikationsnummer) to open an account.[^11] You only get it after you [register your address](/glossary/Anmeldung) for the first time.
 - ✗ **[Sparkasse](/out/sparkasse)**  
@@ -89,7 +89,7 @@ These banks let you do **some things in English**. They have physical branches, 
 
 ## Free bank accounts
 
-I strongly recommend to get a free bank account. Don't pay your bank to hold your money. In theory, every bank must offer a free account (the *Basiskonto*), but this account is often too limited.
+I strongly recommend getting a free bank account. Don't pay your bank to hold your money. In theory, every bank must offer a free account (the *Basiskonto*), but this account is often too limited.
 
 These banks offer a **free bank account** with no monthly fees:
 
@@ -190,7 +190,7 @@ There are a few differences:
 - ✗ **Foreign [[IBAN]]**  
     IBAN discrimination is illegal, but it still happens.[^45] Some businesses refuse foreign bank account numbers ([[IBAN]]). If your IBAN does not start with "DE", you might get an error. If you can, choose a bank that gives you a German IBAN.
 - ✗ **No [[Girocard]]**  
-    Girocards are a common payment method in Germany. Only German banks give you a Girocard. Many small businesses only accept cash and Girocards, no Visa or Mastercard. It's rarely a problem; you can just pay with cash. I have no Girocard since 2016, and I never had a problem.
+    Girocards are a common payment method in Germany. Only German banks give you a Girocard. Many small businesses only accept cash and Girocards, no Visa or Mastercard. It's rarely a problem; you can just pay with cash. I have not had a Girocard since 2016, and I have never had a problem.
 - ✗ **No [[Schufa]] record**  
     Usually, opening a bank account is a good way to get your first Schufa record. Non-German banks don't create a Schufa record.
 
@@ -214,7 +214,7 @@ Some [blocked accounts](/glossary/Sperrkonto) include [health insurance for your
 
 ## Which bank should I choose?
 
-**The best banks for foreigners** are [N26](/out/n26) and [bunq](/out/bunq). I use N26 since 2016, and [I recommend them](/guides/an-honest-review-of-n26). [Wise](/out/wise-account) is also a good option, but they have a low free withdrawal limit, and no German [[IBAN]].
+**The best banks for foreigners** are [N26](/out/n26) and [bunq](/out/bunq). I have been using N26 since 2016, and [I recommend them](/guides/an-honest-review-of-n26). [Wise](/out/wise-account) is also a good option, but they have a low free withdrawal limit, and no German [[IBAN]].
 
 None of these banks give you a [[Girocard]]. If you need one, [C24](/out/c24) is a really good option, but they only speak German.
 

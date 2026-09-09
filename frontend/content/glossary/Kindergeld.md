@@ -10,8 +10,8 @@ related_guides:
     - guides/german-tax-id-steuernummer.md
 ---
 
-When you have children, you can get €{{KINDERGELD|cur}} per month from the state.[^1] This is called *Kindergeld*. You don't get it automatically; you must apply for it. If you don't apply for *Kindergeld*, you get the *[Kinderfreibetrag](/glossary/Kindergeld)* instead.
+When you have children, you can get €{{KINDERGELD|cur}} per month from the state.[^1] This is called *Kindergeld*. You don't get it automatically; you must apply for it. If you don't apply for *Kindergeld*, you get the *[Kinderfreibetrag](/glossary/Kinderfreibetrag)* instead.
 
-Sometimes, *Kindergeld* makes more sense. Sometimes the *[Kinderfreibetrag](/glossary/Kindergeld)* makes more sense. It depends on your tax situation.
+Sometimes, *Kindergeld* makes more sense. Sometimes the *[Kinderfreibetrag](/glossary/Kinderfreibetrag)* makes more sense. It depends on your tax situation.
 
 [^1]: [§ 66 Abs. 1 EStG](https://www.buzer.de/66_EStG.htm)

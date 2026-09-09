@@ -57,7 +57,7 @@ On public holidays, you can still use trains, trams and buses. Trains are less f
 
 ### Each state is different
 
-Different German states have [different public holidays](https://en.wikipedia.org/wiki/Public_holidays_in_Germany#List_by_state). Some states have more public holidays than other.
+Different German states have [different public holidays](https://en.wikipedia.org/wiki/Public_holidays_in_Germany#List_by_state). Some states have more public holidays than others.
 
 [^0]: [Wikipedia](https://de.wikipedia.org/wiki/Gesetzliche_Feiertage_in_Deutschland#:~:text=bei%20beschaftigten%2C%20die%20in%20einem%20anderen%20bundesland%20arbeiten)
 [^1]: [S-Bahn Berlin](https://sbahn.berlin/fileadmin/user_upload/Linien/Regelfahrplaene/Fahrplantabellen_aller_S-Bahn-Linien.pdf) (March 2026)

@@ -15,11 +15,11 @@ This guide explains how that notice period works, and how to get a shorter notic
 
 The default notice period is 4 weeks, rounded up to the 15th or last day of the month.[^2] Your notice period starts one day after your employer receives your [resignation letter](/glossary/Kündigungsschreiben).[^5]
 
-> **Example 1:** You give your [resignation letter](/glossary/Kündigungsschreiben) on May 18. Your notice period starts on May 19. You must work until June 30. That's 4 weeks later (June 16), rounded to up the last day of the month (June 30).
+> **Example 1:** You give your [resignation letter](/glossary/Kündigungsschreiben) on May 18. Your notice period starts on May 19. You must work until June 30. That's 4 weeks later (June 16), rounded up to the last day of the month (June 30).
 
-> **Example 2:** Your notice period starts on May 12. You must work until June 15. That's 4 weeks later (June 9), rounded to up the 15th day of the month (June 15).
+> **Example 2:** Your notice period starts on May 12. You must work until June 15. That's 4 weeks later (June 9), rounded up to the 15th day of the month (June 15).
 
-**Check your work contract**. Many jobs have a longer notice period. A 3 month notice period is common.[^13] Some jobs have 6 month or 1 year notice periods.
+**Check your work contract**. Many jobs have a longer notice period. A 3-month notice period is common.[^13] Some jobs have 6-month or 1-year notice periods.
 
 > **Example 3:** Your work contract has a 3 month notice period. You give your resignation letter on July 10. Your notice period starts on July 11. You must work until October 11. That's 3 months later.
 
@@ -51,7 +51,7 @@ If you get laid off, the default notice period depends on how long you have work
 
 > **Example 2:** You started a job 2 months ago, and you are still in your probation period. You get laid off on July 11. You must work until July 25. That's 2 weeks later.
 
-**Check your work contract**. Many jobs have a longer notice period. A 3 month notice period is common.[^13] Some jobs have 6 month or 1 year notice periods. The notice period for your employer (if laid off) can't be shorter than your notice period (if you quit).[^12]
+**Check your work contract**. Many jobs have a longer notice period. A 3-month notice period is common.[^13] Some jobs have 6-month or 1-year notice periods. The notice period for your employer (if laid off) can't be shorter than your notice period (if you quit).[^12]
 
 If your company has a collective agreement (*Tarifvertrag*), you might have a different notice period. It might replace the notice period in your work contract.[^14]
 
@@ -61,7 +61,7 @@ Your notice period starts one day after you receive your termination letter.
 
 ### If you get fired
 
-If you get fired for a serious reason, there is no notice period. For example, if you steal money, refuse to work, or threaten other workers, or make racist comments in public, there is no notice period.[^9] In most cases, you get a written warning first.
+If you get fired for a serious reason, there is no notice period. For example, if you steal money, refuse to work, threaten other workers, or make racist comments in public, there is no notice period.[^9] In most cases, you get a written warning first.
 
 ### Before your first day of work
 
@@ -79,7 +79,7 @@ Your employer can also put you on *Kurzarbeit*. They reduce your work hours, and
 
 During your notice period, your employer still pays your salary, health insurance, pension insurance and other benefits.[^8] You can still take [sick days](/guides/sick-leave) and [use your vacation days](/guides/vacation-days). You still get paid time off for [public holidays](/guides/public-holidays).
 
-During your notice period, your employer can make you work, or send you on [garden leave](https://en.wikipedia.org/wiki/Garden_leave) (*bezahlte Freistellung*). Your employer can force you to use your vacation days.[^17] Garden leave means that you don't go to work work, but you still get paid.[^6] When you are on garden leave, your employer can still call you back to work.[^7]
+During your notice period, your employer can make you work, or send you on [garden leave](https://en.wikipedia.org/wiki/Garden_leave) (*bezahlte Freistellung*). Your employer can force you to use your vacation days.[^17] Garden leave means that you don't go to work, but you still get paid.[^6] When you are on garden leave, your employer can still call you back to work.[^7]
 
 **If you want to leave sooner**, you can negotiate a shorter notice period with your employer. Your employer can refuse to shorten your notice period.[^15] To shorten your notice period, you must sign an *Aufhebungsvertrag*. If you choose a shorter notice period, you usually lose 3 months of [unemployment benefits](/glossary/ALG%20I).[^16] Signing an *Aufhebungsvertrag* [can be a bad idea](/guides/losing-your-job#do-not-sign-an-aufhebungsvertrag).
 
@@ -101,7 +101,7 @@ During your [notice period](/glossary/Kündigungsfrist), you still get paid [sic
 [^6]: [Finanztip](https://www.finanztip.de/freistellung-arbeitnehmer/#:~:text=wird%20der%20arbeitnehmer%20oftmals%20freigestellt)
 [^7]: [Finanztip](https://www.finanztip.de/freistellung-arbeitnehmer/)
 [^8]: [Finanztip](https://www.finanztip.de/freistellung-arbeitnehmer/#:~:text=das%20hat%20aber%20keine%20sozialversicherungsrechtlichen%20konsequenzen)
-[^9]: [kanzlei-hasselbach.de](https://www.kanzlei-hasselbach.de/blog/fristlose-kuendigung/#beispiel))
+[^9]: [kanzlei-hasselbach.de](https://www.kanzlei-hasselbach.de/blog/fristlose-kuendigung/#beispiel)
 [^10]: [Rotwang Law](https://rotwang-law.de/en/) (July 2023)
 [^11]: [ergo.de](https://www.ergo.de/de/rechtsportal/arbeitsrecht/arbeitssuche/kuendigung-vor-arbeitsantritt), [jobteaser.com](https://www.jobteaser.com/de/advices/vor-arbeitsbeginn-kuendigen-das-musst-du-beachten) [Rotwang Law](https://rotwang-law.de/en/) (July 2023)
 [^12]: [arbeitsrechte.de](https://www.arbeitsrechte.de/maximale-kuendigungsfrist/#:~:text=darf%20jedoch%20nie%20langer%20sein%20als%20die%20des%20arbeitgebers)

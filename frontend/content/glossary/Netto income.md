@@ -13,7 +13,7 @@ related_guides:
 
 Your net income (*Nettoeinkommen*) is your income after taxes, [health insurance](/guides/german-health-insurance) and social security contributions. It's the part of your paycheck that you keep.
 
-On average, your net income is around 65% of your gross income (*Bruttoeinkommen*) income.[^0] Use my [tax calculator](/tools/tax-calculator) to know the exact number.
+On average, your net income is around 65% of your gross income (*Bruttoeinkommen*).[^0] Use my [tax calculator](/tools/tax-calculator) to know the exact number.
 
 **[Calculate your Netto income ➞](/tools/tax-calculator)**
 

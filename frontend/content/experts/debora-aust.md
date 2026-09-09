@@ -6,4 +6,4 @@ website: https://dareconsulting.de/en/home/
 picture: experts/photos/debora-aust.jpg
 ---
 
-Debora is a relocation expert at [DARE Consulting](https://dareconsulting.de/en/home/). She helps skilled immigrants move to Germany since 2015.
+Debora is a relocation expert at [DARE Consulting](https://dareconsulting.de/en/home/). She has been helping skilled immigrants move to Germany since 2015.

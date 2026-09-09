@@ -6,4 +6,4 @@ website: https://horizon65.com/
 picture: experts/photos/seamus-wolf.jpg
 ---
 
-Seamus is a pension and insurance expert at [A Good Start](https://agoodstart.de/). We work together since 2025.
+Seamus is a pension and insurance expert at [A Good Start](https://agoodstart.de/). We have been working together since 2025.

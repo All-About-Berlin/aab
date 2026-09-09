@@ -16,7 +16,7 @@ This guide explains how to get a copy of an existing registration certificate. I
 
 {% tableOfContents %}
 
-## How to get an Anmeldebestätigung
+## How to get a Meldebescheinigung
 
 Request it **[online](https://eww.berlin.de/buergerdienste/app/meldebescheinigung) or in person** from the *[[Bürgeramt]]*. It's free online, or €{{ERWEITERTE_MELDEBESCHEINIGUNG_FEE|cur}} in person.
 
@@ -34,7 +34,7 @@ You can download your *Meldebescheinigung* as a PDF. To use this service, you ne
 1. [Get a *Bürgeramt* appointment](https://service.berlin.de/terminvereinbarung/termin/all/120702/). You can go to any *Bürgeramt* in Berlin.
 2. When you go to your appointment, bring...
     - [ ] Your passport or *[[Personalausweis]]*
-    - [ ] €10 for the fee. You can usually pay by [[Girocard]], Visa or Mastercard. It depends on the *Bürgeramt*.
+    - [ ] €{{ERWEITERTE_MELDEBESCHEINIGUNG_FEE|cur}} for the fee. You can usually pay by [[Girocard]], Visa or Mastercard. It depends on the *Bürgeramt*.
 
 **[How to get a Bürgeramt appointment ➞](/guides/berlin-burgeramt-appointment)**
 

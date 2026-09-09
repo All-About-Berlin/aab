@@ -1,5 +1,5 @@
 ---
-title: Is marijuana legal in Gemany?
+title: Is marijuana legal in Germany?
 short_title: Is cannabis legal?
 description: A short guide about the legality of weed, CBD, cannabis seeds and other marijuana products in Germany.
 date_created: 2022-05-30
@@ -73,7 +73,7 @@ You can buy CBD products online. You can find CBD flowers in some *[Spätis](/gl
 
 ### Are HHC and THCP legal?
 
-**No.** The sale of Hexahydrocannabinol (HHC) and Tetrahydrocannabiphorol (THCP) is banned since 2024.[^16] Possession is still legal.
+**No.** The sale of Hexahydrocannabinol (HHC) and Tetrahydrocannabiphorol (THCP) has been banned since 2024.[^16] Possession is still legal.
 
 ## Can I bring weed from another country?
 

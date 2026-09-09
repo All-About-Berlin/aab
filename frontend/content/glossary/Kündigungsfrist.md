@@ -14,7 +14,7 @@ related_guides:
 
 The notice period (*Kündigungsfrist*) is how long you need to cancel a contract, fire an employee, or [quit your job](/guides/losing-your-job).
 
-All jobs have a notice period, both for the employee (when they quit) and the employer (when they fire someone).[^0] It depends on your work contract, and how long you work at that company.
+All jobs have a notice period, both for the employee (when they quit) and the employer (when they fire someone).[^0] It depends on your work contract, and how long you have worked at that company.
 
 **[How job notice periods work ➞](/guides/job-notice-period)**
 

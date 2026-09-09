@@ -5,4 +5,4 @@ email: roy@gerlex.eu
 website: /out/fundsback
 ---
 
-Dr. Roy is a lawyer associated with [FundsBack](/out/fundsback). FundsBack help people claim their German pension refund. René helps people get pension refunds since 1997.
+Dr. Roy is a lawyer associated with [FundsBack](/out/fundsback). FundsBack helps people claim their German pension refund. René has been helping people get pension refunds since 1997.

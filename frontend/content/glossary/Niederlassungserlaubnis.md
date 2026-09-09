@@ -2,7 +2,7 @@
 title: What is permanent residence (Niederlassungserlaubnis)?
 german_term: Niederlassungserlaubnis
 english_term: Permanent residence
-description: Permanent residence (PR) is than a residence permit, but not as good as German citizenship. It allows you to live, work, study or start a business in Germany.
+description: Permanent residence (PR) is better than a residence permit, but not as good as German citizenship. It allows you to live, work, study or start a business in Germany.
 date_created: 2020-02-07
 related_guides:
     - guides/permanent-residence.md

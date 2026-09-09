@@ -11,7 +11,7 @@ If you have found a dead animal or need to dispose of the body of a deceased pet
 
 ## Wild animals
 
-Dead animals - especially wild ones - can carry diseases, so you can't dunk them in the Restmüll and call it a day. Dead wild animals can be reported to the [Friedrichshain-Kreuzeberg Ordnungsamt](https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/ordnungsamt/dienstleistungen/service.124457.php/dienstleistung/326766/standort/122148/), who will take care of their safe collection and disposal. Contact them by telephone or by email, give them the location of the animal and a way to reach you, and they will handle the rest.
+Dead animals - especially wild ones - can carry diseases, so you can't dunk them in the Restmüll and call it a day. Dead wild animals can be reported to the [Friedrichshain-Kreuzberg Ordnungsamt](https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/ordnungsamt/dienstleistungen/service.124457.php/dienstleistung/326766/standort/122148/), who will take care of their safe collection and disposal. Contact them by telephone or by email, give them the location of the animal and a way to reach you, and they will handle the rest.
 
 ## House pets
 
@@ -23,13 +23,13 @@ A pet cemetery (*Tierfriedhof*) is also an option. [Tierschutzverein Berlin](htt
 
 ### Cremation
 
-There are a few *Haustierkrematoriums* in Berlin. The prices go from €50 to €350, depending on the weight of the animal.
+There are a few *Haustierkrematorien* in Berlin. The prices go from €50 to €350, depending on the weight of the animal.
 
 ### Disposal
 
 Many veterinarians will dispose of animal bodies, albeit for a fee. Alternatively, [SecAnim](https://www.saria.de/sr/unternehmen/unternehmensstruktur/secanim/) is contracted by the city to dispose of roadkill and other wild animals. You can call them and they will collect your deceased pets for a fee of €10 to €30.
 
-**[English speaking veterinarians in Berlin ➞](/guides/english-speaking-vets)**
+**[English-speaking veterinarians in Berlin ➞](/guides/english-speaking-vets)**
 
 ## Useful links
 

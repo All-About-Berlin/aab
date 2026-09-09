@@ -10,6 +10,6 @@ related_guides:
 
 The rent cap (*Mietendeckel*) was a rent control law in Berlin. It set rent limits in each area, and it stopped all rent increases for 5 years. If a landlord charged too much rent, they could get a big fine.
 
-It came in effect on January 30 2020, but it was repealed in court on April 15 2021.
+It came into effect on January 30 2020, but it was repealed in court on April 15 2021.
 
 The *Mietendeckel* is not the same as the *[[Mietpreisbremse]]*, another rent control law. The *Mietpreisbremse* is still in effect.

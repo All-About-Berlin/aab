@@ -1,7 +1,7 @@
 ---
 title: What is a Kita?
 german_term: Kita
-english_term: Children daycare
+english_term: Children's daycare
 description: Daycare for children under 6 years old.
 date_created: 2018-08-27
 related_guides:

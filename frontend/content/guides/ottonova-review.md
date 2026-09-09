@@ -22,7 +22,7 @@ If you need health insurance for a visa or residence permit application, there a
 
 Bloggers recommend Ottonova because it pays well. If they convince you to choose Ottonova, they get €500.[^0] These articles are not written by customers or by insurance experts. They are ads.
 
-If you want a honest health insurance recommendation, talk to an [independent health insurance broker](/guides/german-health-insurance#need-help). It's the best way to choose health insurance, and it's free.
+If you want an honest health insurance recommendation, talk to an [independent health insurance broker](/guides/german-health-insurance#need-help). It's the best way to choose health insurance, and it's free.
 
 I also get paid to help you choose health insurance. I get paid no matter what you choose, so I want you to get the best possible option.
 
@@ -46,7 +46,7 @@ Ottonova's health insurance works for this. You can use it to apply for a [freel
 
 Ottonova is more expensive than comparable private health insurances. You can get a better deal if you [ask an expert](/guides/german-health-insurance#need-help).[^1]
 
-[Talk to a insurance broker](/guides/german-health-insurance#need-help) to find a cheaper option. Be careful; choosing the cheapest option can be a serious mistake, and cost you a lot of money later.
+[Talk to an insurance broker](/guides/german-health-insurance#need-help) to find a cheaper option. Be careful; choosing the cheapest option can be a serious mistake, and cost you a lot of money later.
 
 ### They speak English
 
@@ -60,7 +60,7 @@ If you get health insurance from an English-speaking insurance broker, you can a
 
 [Ottonova](/out/ottonova) is a very small health insurer, and **it's not profitable**. They lost 2.3 million euros in 2024.[^7]
 
-They are in business since 2017.[^3] In 2023, they only had 5,470 clients with private health insurance.[^6] Other insurers have hundreds of thousands of customers.[^2] Their solvency rating is also below average.[^4]
+They have been in business since 2017.[^3] In 2023, they only had 5,470 clients with private health insurance.[^6] Other insurers have hundreds of thousands of customers.[^2] Their solvency rating is also below average.[^4]
 
 Small health insurers are riskier. In 2010, a private health insurer with 25,000 members almost went bankrupt because of two sick patients.[^11] [City BKK's bankruptcy](https://www.wsws.org/en/articles/2011/05/germ-m31.html) shows what happens to you if your health insurer goes bankrupt.
 

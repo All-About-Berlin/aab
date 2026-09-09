@@ -1,13 +1,13 @@
 ---
 title: 'Degiro review: there are better options'
 short_title: Review of Degiro
-description: This is my experience with Degiro, an online stock broker in Germany. I use Degiro since 2018.
+description: This is my experience with Degiro, an online stock broker in Germany. I have been using Degiro since 2018.
 date_created: 2018-01-23
 ---
 
 Degiro is an online broker with low fees. You can buy and sell stocks, and their fees are much lower than most German banks.
 
-I use Degiro since 2018. My [2019 review](/documents/degiro-review-2019.pdf) was negative, but Degiro has improved a lot since then. In 2025, I prefer buying stocks and ETFs through [my bank](/out/n26), because it's cheaper and easier. I still hold a big part of my investments in Degiro.
+I have been using Degiro since 2018. My [2019 review](/documents/degiro-review-2019.pdf) was negative, but Degiro has improved a lot since then. In 2025, I prefer buying stocks and ETFs through [my bank](/out/n26), because it's cheaper and easier. I still hold a big part of my investments in Degiro.
 
 {% tableOfContents %}
 
@@ -21,7 +21,7 @@ The user interface is a little crude. It was fine in 2018, but it's not good eno
 
 ### No way to track performance
 
-Degiro is missing one big feature: a graph of your profits over time. It's impossible to know how much you made this week, this month or this year. You just see your daily gains/losses, and your total gains. I have my account since 2018, so total gains are useless.
+Degiro is missing one big feature: a graph of your profits over time. It's impossible to know how much you made this week, this month or this year. You just see your daily gains/losses, and your total gains. I have had my account since 2018, so total gains are useless.
 
 ![Screenshot of the Degiro top bar](/images/degiro-top-bar-2025-01-30.png "Degiro only shows total profit and loss.")
 
@@ -101,7 +101,7 @@ These online banks let you trade stocks:
 
 Most traditional banks also let you trade stocks. Their transaction fees are often much higher, and their user interface is usually bad.
 
-However! I have an [N26](/out/n26) account since 2016, and since 2024, I buy all my stocks and ETFs through their app. I find it much easier to use. The fees are even lower, the interface is intuitive, and you don't need to transfer money between your bank and Degiro all the time. It removes a lot of friction, and it works better for me.
+However! I have had an [N26](/out/n26) account since 2016, and since 2024, I buy all my stocks and ETFs through their app. I find it much easier to use. The fees are even lower, the interface is intuitive, and you don't need to transfer money between your bank and Degiro all the time. It removes a lot of friction, and it works better for me.
 
 [^1]: [Reddit](https://old.reddit.com/r/DEGIRO/comments/qxftp8/best_alternative_to_degiro_now_that_their_margin/) (2021)
 [^2]: [Reddit](https://old.reddit.com/r/DEGIRO/comments/1b34r2n/portfolio_value_and_performance_graph_on_degiro/) (2024), [Reddit](https://old.reddit.com/r/DEGIRO/comments/1h0duv4/overall_portfolio_performance_analytics/) (2024), [Reddit](https://old.reddit.com/r/DEGIRO/comments/1fzp54s/does_the_giro_have_a_portfolio_tracker_graph/) (2024), [Reddit](https://old.reddit.com/r/DEGIRO/comments/11r2cnn/why_its_so_hard_to_create_a_few_charts_graphs/) (2023), [Reddit](https://old.reddit.com/r/DEGIRO/comments/10ivya3/degiro_needs_a_graph_of_the_portfolio/) (2023), [Reddit](https://old.reddit.com/r/DEGIRO/comments/ldtz8u/graph_of_portfolio_value/) (2021)

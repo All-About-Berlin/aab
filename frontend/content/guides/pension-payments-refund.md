@@ -1,7 +1,7 @@
 ---
 title: How to get a German pension refund
 short_title: How to get a pension refund
-description: If you left Germany, you get your German pension payments back. It can be worth thousands of euros.
+description: If you left Germany, you can get your German pension payments back. It can be worth thousands of euros.
 date_created: 2020-06-04
 related_reviews:
     - reviews/pension-payments-refund/johannes-kühn.md
@@ -166,7 +166,7 @@ If you live in Tunisia, you must use a Tunisian bank account for your refund.[^9
 
 You can get a pension refund if:[^10]
 
-- [ ] you made less than 60 monthly German pension payments[^11] **or** you live in Turkey since at least 24 months[^12]
+- [ ] you made less than 60 monthly German pension payments[^11] **or** you have lived in Turkey for at least 24 months[^12]
 - [ ] **and** you don't pay social security contributions in Turkey[^13]
 
 If you are a Turkish citizen, and you work in Turkey, you can't get a pension refund,[^13] because you pay social security contributions in Turkey. If you are not a Turkish citizen, but you live and work in Turkey, you can still get a pension refund.[^9]
@@ -221,7 +221,7 @@ If you want to do it yourself, here are the steps:[^19]
     You need those numbers to fill the forms. Use [this guide](/guides/german-tax-id-steuernummer#the-tax-id-steuer-id) to find your tax ID, and [this guide](/guides/german-versicherungsnummer) to find your social insurance number.
 3. **Download [the form package](https://www.deutsche-rentenversicherung.de/SharedDocs/Formulare/DE/Formularpakete/01_versicherte/01_vor_der_rente/_DRV_Paket_Versicherung_Erstattung_von_Beitr%C3%A4gen.html), and fill the correct form**  
     If you need help to fill the forms, you can call the *[[Deutsche Rentenversicherung]]* or [book an appointment](https://www.deutsche-rentenversicherung.de/DRV/DE/Beratung-und-Kontakt/Beratung-suchen-und-buchen/beratung-suchen-und-buchen_node.html).
-    1. If you are Turkish, you must fill form [form E5816](https://www.deutsche-rentenversicherung.de/SharedDocs/Formulare/DE/_pdf/E5816.html). This form is in Turkish and German. Follow the German instructions in [document E5817](https://www.deutsche-rentenversicherung.de/SharedDocs/Formulare/DE/_pdf/E5817.html).
+    1. If you are Turkish, you must fill [form E5816](https://www.deutsche-rentenversicherung.de/SharedDocs/Formulare/DE/_pdf/E5816.html). This form is in Turkish and German. Follow the German instructions in [document E5817](https://www.deutsche-rentenversicherung.de/SharedDocs/Formulare/DE/_pdf/E5817.html).
     2. If you are not Turkish, you must fill the standard form.[^21] Follow the German instructions in [document V0910](https://www.deutsche-rentenversicherung.de/SharedDocs/Formulare/DE/_pdf/V0910.html).
         - [Form V0900](https://www.deutsche-rentenversicherung.de/SharedDocs/Formulare/DE/_pdf/V0900.html) in German, 
         - **or** form V0901 in [English](https://www.deutsche-rentenversicherung.de/SharedDocs/Formulare/DE/_pdf/V0901_englisch.html), [French](https://www.deutsche-rentenversicherung.de/SharedDocs/Formulare/DE/_pdf/V0901_franzoesisch.html), [Italian](https://www.deutsche-rentenversicherung.de/SharedDocs/Formulare/DE/_pdf/V0901_italienisch.html) or [Spanish](https://www.deutsche-rentenversicherung.de/SharedDocs/Formulare/DE/_pdf/V0901_spanisch.html)
@@ -239,7 +239,7 @@ If you want to do it yourself, here are the steps:[^19]
     - [ ] **Deregistration certificate** (*[[Abmeldebescheinigung]]*)  
         This proves that you do not live in Germany anymore. They do not always ask for this document.
     - [ ] **Proof that you live in your current country**[^23]  
-        This can be a certificate from the tax office, a registration certificate, or anything that proves that you live in that country. In some cases, you must go to a German embassy to verify your identity. The Deutsche Versicherung will tell you what they need after you apply. It's different for everyone.
+        This can be a certificate from the tax office, a registration certificate, or anything that proves that you live in that country. In some cases, you must go to a German embassy to verify your identity. The Deutsche Rentenversicherung will tell you what they need after you apply. It's different for everyone.
     - [ ] **Power of attorney** (*[[Vollmacht]]*)  
         If you apply for someone else, or someone else applies for you, include a *Vollmacht*.
 6. **Send everything to the Deutsche Rentenversicherung**  
@@ -294,7 +294,7 @@ If you need help, ask...
 - **The [[Deutsche Rentenversicherung]]**  
     Call them, email <meinefrage@drv-bund.de>, or [book an appointment](https://www.deutsche-rentenversicherung.de/DRV/DE/Beratung-und-Kontakt/Beratung-suchen-und-buchen/beratung-suchen-und-buchen_node.html). I have called them many times and they always helped, but they only speak German.
 - **Pension refund services**  
-    [Pension Refund Germany](/out/pension-refund-germany) , [FundsBack](/out/fundsback) and [Germany Pension Refund](/out/germany-pension-refund) can request a refund for you. They speak English. They take care of everything, but they keep around 10% of your refund.
+    [Pension Refund Germany](/out/pension-refund-germany), [FundsBack](/out/fundsback) and [Germany Pension Refund](/out/germany-pension-refund) can request a refund for you. They speak English. They take care of everything, but they keep around 10% of your refund.
 
 {% tool "pension-refund-question-form", static=True %}
 

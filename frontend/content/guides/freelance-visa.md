@@ -208,7 +208,7 @@ These are the required documents **in Berlin**.[^18] If you apply elsewhere, the
 
 **Your documents must convince the Ausländerbehörde** that your business will work, and that you will make enough money to support yourself.
 
-**[When you send your application](#apply-for-the-freelance-visa)**, use PDF files or photos. Don't use word documents or other file formats. If you have too many documents, [merge them](https://www.adobe.com/acrobat/online/merge-pdf.html) or [make them smaller](https://www.adobe.com/acrobat/online/compress-pdf.html). You can also [mail your documents](/guides/mail-a-letter), but it's not better or faster.
+**[When you send your application](#apply-for-the-freelance-visa)**, use PDF files or photos. Don't use Word documents or other file formats. If you have too many documents, [merge them](https://www.adobe.com/acrobat/online/merge-pdf.html) or [make them smaller](https://www.adobe.com/acrobat/online/compress-pdf.html). You can also [mail your documents](/guides/mail-a-letter), but it's not better or faster.
 
 **[When you go to your appointment](#go-to-your-appointment)**, bring the documents that they ask for in your appointment confirmation.[^24] Put dates on all your documents. Print everything on A4 paper. Do not staple the pages together. Some case workers also ask for documents that you already sent. It's safer if you bring everything you have, including documents that you already sent.[^2]
 
@@ -219,7 +219,7 @@ These are the required documents **in Berlin**.[^18] If you apply elsewhere, the
 - [ ] **[Application form](/docs/residence-permit-application-form)** (*Antrag auf Erteilung eines Aufenthaltstitels*)  
     If this is your first residence permit application, fill this form. Download the form [here](/docs/residence-permit-application-form) or [on Berlin.de](https://www.berlin.de/formularverzeichnis/?formular=/labo/zuwanderung/_assets/lea-agen1-antrag_engl_frz_ital-112021.pdf).[^42]
 - [ ] **Proof of health insurance**  
-    You need [valid health insurance](/guides/german-health-insurance/for-freelancers#insurance-for-a-freelance-visa). [Ask my insurance expert](/guides/german-health-insurance#need-help) to help you [choose health insurance for your work visa](/guides/german-health-insurance/for-employees#for-a-blue-card-or-a-work-visa).
+    You need [valid health insurance](/guides/german-health-insurance/for-freelancers#insurance-for-a-freelance-visa). [Ask my insurance expert](/guides/german-health-insurance#need-help) to help you [choose health insurance for your freelance visa](/guides/german-health-insurance/for-freelancers#insurance-for-a-freelance-visa).
     - [ ] **[Health insurance card](/glossary/Gesundheitskarte)**  
         Show both sides of the card.
     - [ ] or **proof of [public health insurance](/glossary/gesetzliche%20Krankenversicherung)**  
@@ -274,7 +274,7 @@ If you need a permit to do your job (lawyers, doctors, engineers), you must also
 ### Required documents for a [Selbständiger](/glossary/Selbständig)
 
 - [ ] **Business plan**  
-    This document is a roadmap for your business. It explains your goals, your strategy, your products and your customers. It must show that there is a local interest for your products and services. Learn [how to prepare a business plan](https://www.wir-gruenden-in-deutschland.de/en/planning-your-business/the-business-plan). Your business plan should include:
+    This document is a roadmap for your business. It explains your goals, your strategy, your products and your customers. It must show that there is a local interest in your products and services. Learn [how to prepare a business plan](https://www.wir-gruenden-in-deutschland.de/en/planning-your-business/the-business-plan). Your business plan should include:
     - [ ] Company profile (*Firmenprofil*)
     - [ ] Business concept (*Geschäftskonzept*)
 - [ ] **[Financing plan](/docs/financing-plan-template)** (*Finanzierungsplan*)  
@@ -316,7 +316,7 @@ These documents are not required, but some *Ausländerbehörde* employees ask fo
     It explains what you do, and how your business works. It helps the *Ausländerbehörde* understand what you do. It helps you during your appointment, especially if you don't speak German.
 - [ ] **Portfolio** or **examples of your work**  
     It explains what you do, and that you will find clients. If you are an artist, this is very important.[^65] For example, you can bring photos of your work, posters of your events, screenshots of your website or apps or newspaper articles about you. You need printed examples; a website address does not work.[^50]
-- [ ] **Proof or education**  
+- [ ] **Proof of education**  
     If your education is relevant to your business, prove it. Bring the original diplomas if you can. Copies also work.[^38] If you have no relevant education, it's not a problem.[^78]
 
 ## After you get your freelance visa

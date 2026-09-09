@@ -46,7 +46,7 @@ You do not need to register if...
 - **You visit for less than 3 months**  
     If you visit from another country, and you stay in Germany for less than 3 months, you don't need to register your address.[^35]
 - or **you will move in the next 6 months**  
-    If you are already registered somewhere else, and you will stay at your new address for less than 6 month.[^35] For example, if you are registered at your parents' house, and you live with a friend for a few months.
+    If you are already registered somewhere else, and you will stay at your new address for less than 6 months.[^35] For example, if you are registered at your parents' house, and you live with a friend for a few months.
 
 ## How to register your address online
 
@@ -54,7 +54,7 @@ In some cases, you can **[do your Anmeldung online](/out/anmeldung-online)**. It
 
 To register online, you must...[^13]
 
-- Be a [EU](/glossary/European%20Union) citizen
+- Be an [EU](/glossary/European%20Union) citizen
 - Have an EU passport
 - Have an [[eID]]
 - Have a BundID account
@@ -155,10 +155,10 @@ If this is your first *Anmeldung*, you will get a [tax ID](/glossary/Steuerident
 
 ## Pay someone to do it
 
-You can pay someone to register you address for you. They book the *Bürgeramt* appointment, register your address, and send you the [registration certificate](/glossary/Anmeldebestätigung). It's expensive, but convenient.
+You can pay someone to register your address for you. They book the *Bürgeramt* appointment, register your address, and send you the [registration certificate](/glossary/Anmeldebestätigung). It's expensive, but convenient.
 
 - **[Red Tape Translation](/out/red-tape-translation-anmeldung)**{{ RECOMMENDED }}  
-    Many of my friends used them. I work with them since many years.
+    Many of my friends used them. I have been working with them for many years.
 - [EasyAssist](/out/easyassist-anmeldung)
 
 ## If you can't register your address
@@ -174,7 +174,7 @@ When you register your address for the first time, you get a tax ID. If you can'
 **No**. The landlord must let you register your address, but there are exceptions:
 
 - **You don't have permission to live there**  
-    For example, someone sublets their apartment to you, but they don't have permission from their landlord. If the landlord learns this, they can kick you out with a 3 month notice.[^44]
+    For example, someone sublets their apartment to you, but they don't have permission from their landlord. If the landlord learns this, they can kick you out with a 3-month notice.[^44]
 - **It's a commercial accommodation**  
     The rules are different for hotels and commercial apartments.[^34] Some hotels and Airbnb apartments don't let you register.
     - **If you are already registered in Germany**  
@@ -192,7 +192,7 @@ The landlord can refuse to let someone sublet their apartment. There are excepti
     You have the right to have guests.[^40] Your landlord can't forbid guests. Your guests can't register their address at your apartment, because they don't live there.
 - **Legitimate interest**  
     You can rent part of your apartment if there is a legitimate interest. The landlord needs a good reason to refuse. Examples of legitimate interest:[^22]
-    - To replace a room mate who moved out
+    - To replace a roommate who moved out
     - To rent your apartment while you work or study in another country
     - Because you really need the money[^43]
 
@@ -207,7 +207,7 @@ German apartment buildings rarely have individual door numbers. You have the sam
 > Musterstraße 123  
 > 10115 Berlin
 
-When do your *Anmeldung*, add "c/o" or "bei" to your registered address.[^24] My [Anmeldung form filler](/docs/anmeldung) helps you do it. The name on the mailbox must be a real person, not a business.[^25]
+When you do your *Anmeldung*, add "c/o" or "bei" to your registered address.[^24] My [Anmeldung form filler](/docs/anmeldung) helps you do it. The name on the mailbox must be a real person, not a business.[^25]
 
 If your name is not on the lease, your landlord can refuse to put your name on the mailbox.[^32] This often happens with temporary apartments.
 
@@ -245,7 +245,7 @@ If you were baptised in your home country, they might collect church tax [even i
 
 ### How many people can register at the same address?
 
-In Berlin, every person needs 9 m^2^. Children up to 6 years old need 6 m^2^. For example, 10 people can register in a 90 m^2^ apartment. Two adults and a 5 year old child need at least 24 m^2^.[^27]
+In Berlin, every person needs 9 m^2^. Children up to 6 years old need 6 m^2^. For example, 10 people can register in a 90 m^2^ apartment. Two adults and a 5-year-old child need at least 24 m^2^.[^27]
 
 ## What to do next
 

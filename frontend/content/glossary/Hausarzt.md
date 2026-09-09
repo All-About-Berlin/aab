@@ -1,5 +1,5 @@
 ---
-title: What is a Hausarzt
+title: What is a Hausarzt?
 german_term: Hausarzt
 english_term: General practitioner
 description: A family doctor or general practitioner practices general medicine.

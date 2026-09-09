@@ -51,7 +51,7 @@ If you don't meet those requirements, you can't renew your freelance visa.
 
 ### 2. Know if you are freelance or self-employed
 
-The required documents are different for freelancers (*[[Freiberufler]]*) and for tradespeople (*[Gewerbetreibende](/glossary/Gewerbetreibender)*). You much know which one you are. **Look on your [on your residence permit](/illustrations/freelance-visa-type.png).**
+The required documents are different for freelancers (*[[Freiberufler]]*) and for tradespeople (*[Gewerbetreibende](/glossary/Gewerbetreibender)*). You must know which one you are. **Look at [your residence permit](/illustrations/freelance-visa-type.png).**
 
 - If you see "§ 21 Abs. 5", you are a *[[Freiberufler]]*.
 - If you see "§ 21 Abs. 1" or "§ 21 Abs. 2a", you are a *[Selbständiger](/glossary/Selbständig)*/*[[Gewerbetreibender]]*.
@@ -160,7 +160,7 @@ Use PDF files or photos. Don't use Word documents or other file formats. Put dat
     - **If you are self-employed** (*[[Gewerbetreibender]]*), bring these documents:
         - [ ] **Audit report form** (*[[Prüfungsbericht]]*)  
             Your [tax advisor](/glossary/Steuerberater) must fill [this template](https://www.berlin.de/formularverzeichnis/?formular=/labo/zuwanderung/_assets/pruefungsbericht_bis.docx) and stamp it. It takes a few days to prepare. If your finances are not organised, it can take a few weeks. If you don't have a tax advisor, get a *Prüfungsbericht* from [Tax Germany](/out/taxgermany); it's cheaper and faster.
-        - [ ] **and a proof of business registration** (*aktuelle Handelsregisterauszug*)  
+        - [ ] **and a proof of business registration** (*aktueller Handelsregisterauszug*)  
             [If your business needs a Handelsregister entry](/guides/handelsregisternummer-germany#who-needs-a-handelsregister-entry), bring a *Handelsregisterauszug*. You probably don't need this. Get it [in person, in writing](https://service.berlin.de/dienstleistung/327144/standort/326311/), or [online](https://www.handelsregister.de/rp_web/welcome.xhtml). It costs €10.[^7] It can take a few days to receive this document.
         - [ ] **and a copy of your trade certificate** (*[[Gewerbeschein]]*)  
             You get this document during your business registration (*[[Gewerbeanmeldung]]*).
@@ -193,7 +193,7 @@ Use PDF files or photos. Don't use Word documents or other file formats. Put dat
 - [ ] **Proof of residence in Berlin**  
     You must prove that your main residence is in Berlin.
     - **Registration certificate** ([*Anmeldebestätigung*](/glossary/Anmeldebest%C3%A4tigung))  
-        This is the document you receive when you do you register your address (*[[Anmeldung]]*).
+        This is the document you receive when you register your address (*[[Anmeldung]]*).
     - **or a lease + a landlord confirmation letter** (*Mietvertrag* + *[[Wohnungsgeberbestätigung]]*)  
         If you don't have a registration certificate, bring your original lease - not a copy - and the landlord confirmation letter instead.
 - [ ] **Letters of recommendation**  
@@ -209,7 +209,7 @@ A freelance visa renewal costs **€{{NATIONAL_VISA_RENEWAL_FEE|cur}}**. It's ch
 
 Some of the [required documents](/guides/renew-german-freelance-visa#required-documents) also cost money:{{ fail_on('2026-12-31') }}
 
-- *Aktuelle Handelsregisterauszug*: €10 if you need it[^7]
+- *Aktueller Handelsregisterauszug*: €10 if you need it[^7]
 - *Bescheinigung in Steuersachen*: €{{ BESCHEINIGUNG_IN_STEUERSACHEN_FEE|cur }}[^8]
 - *[[Gewerbeschein]]*: €15 to €31, but you probably have it already[^14]
 - *[[Prüfungsbericht]]*: up to €800[^11] - [Tax Germany](/out/taxgermany) is cheaper

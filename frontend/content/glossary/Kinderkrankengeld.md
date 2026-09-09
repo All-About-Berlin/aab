@@ -8,9 +8,9 @@ related_guides:
     - guides/sick-leave.md
 ---
 
-If your child under 12 years old get sick, you can leave work to care for them. Usually, this is unpaid leave.
+If your child under 12 years old gets sick, you can leave work to care for them. Usually, this is unpaid leave.
 
-If you have [public health insurance](/glossary/gesetzliche%20Krankenversicherung), you get *Kinderkrankengeld* while you are not working. It pays 90% your salary, up to €{{ GKV_KINDERKRANKENGELD_DAILY_LIMIT|cur }} per day.
+If you have [public health insurance](/glossary/gesetzliche%20Krankenversicherung), you get *Kinderkrankengeld* while you are not working. It pays 90% of your salary, up to €{{ GKV_KINDERKRANKENGELD_DAILY_LIMIT|cur }} per day.
 
 You only get *Kinderkrankengeld* if...
 

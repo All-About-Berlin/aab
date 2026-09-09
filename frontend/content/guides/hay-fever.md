@@ -17,7 +17,7 @@ Hay fever (*Heufieber* or *Heuschnupfen*) is an allergy to pollen. These are the
 - Itchy nose, eyes and ears
 - Sneezing
 
-In Germany, hay fever season (*Heuschnupfenzeit*) starts around March, and ends around September.[^1] It can be worse on certain months. It depends on the type of pollen you are allergic to.
+In Germany, hay fever season (*Heuschnupfenzeit*) starts around March, and ends around September.[^1] It can be worse in certain months. It depends on the type of pollen you are allergic to.
 
 You can get hay fever in Germany, even if you did not have it before. When I [moved to Berlin](/guides/moving-to-berlin), my hay fever became really bad.
 

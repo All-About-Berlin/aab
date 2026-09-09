@@ -11,7 +11,7 @@ This guide explains what to do before you move out of an apartment.
 
 ## End your lease
 
-Most leases have a 3 month [notice period](/glossary/Kündigungsfrist). You must end your lease with a [termination letter](/glossary/Kündigungsschreiben). An email or a text message is not enough.[^3]
+Most leases have a 3-month [notice period](/glossary/Kündigungsfrist). You must end your lease with a [termination letter](/glossary/Kündigungsschreiben). An email or a text message is not enough.[^3]
 
 ### 1. Calculate your notice period
 
@@ -23,7 +23,7 @@ You can **negotiate a shorter notice period** with your landlord. They might let
 
 The notice period starts when your landlord receives your [termination letter](/glossary/Kündigungsschreiben). They must receive it before the 4th [working day](/glossary/Werktag) of the month. If your letter arrives too late, your notice period starts a month later.[^0]
 
-**Fixed-term leases** can't end early. If you signed a 1-year lease, you must stay 1 year.[^45] [Many fixed-term leases are invalid](/guides/housing-scams#short-term-leases), so you can sometimes end them with a 3 month notice. [Ask an expert](/guides/help#apartment-questions) to check your lease.
+**Fixed-term leases** can't end early. If you signed a 1-year lease, you must stay 1 year.[^45] [Many fixed-term leases are invalid](/guides/housing-scams#short-term-leases), so you can sometimes end them with a 3-month notice. [Ask an expert](/guides/help#apartment-questions) to check your lease.
 
 ### 2. Send a termination letter
 
@@ -44,7 +44,7 @@ There are 2 ways to deliver your termination letter:
 
 ## Allow apartment visits
 
-During the [notice period](/glossary/Kündigungsfrist), your landlord can show your apartment to other people.[^4] They must schedule visits least 2 days in advance, or 3 days if you have a job.[^7] You can refuse a scheduled visit, but you must suggest another date.[^8]
+During the [notice period](/glossary/Kündigungsfrist), your landlord can show your apartment to other people.[^4] They must schedule visits at least 2 days in advance, or 3 days if you have a job.[^7] You can refuse a scheduled visit, but you must suggest another date.[^8]
 
 You do not need to...
 
@@ -95,7 +95,7 @@ Do you need to repaint the walls? It depends on your lease. It should have a sec
 
 If there are no mentions of cosmetic repairs in your contract, you are lucky! Just clean the apartment and leave.[^33]
 
-Usually, you must return the apartment in the same state as when you moved in. You might have to repaint the walls and fixes the holes you have made.
+Usually, you must return the apartment in the same state as when you moved in. You might have to repaint the walls and fix the holes you have made.
 
 Cosmetic repairs include:[^19]
 
@@ -111,7 +111,7 @@ Cosmetic repairs do not include:[^33]
 - ✗ Replacing the carpets
 - ✗ Repairing any damage that you have not caused[^20] (cracks in the ceilings and walls, crumbling plaster, damage from the previous tenant, etc.)
 
-Your can't be forced to make unnecessary repairs.[^21] You can't be forced to "repaint after 3 years" or "repaint when you leave". These clauses are not valid, and you can ignore them.[^22]
+You can't be forced to make unnecessary repairs.[^21] You can't be forced to "repaint after 3 years" or "repaint when you leave". These clauses are not valid, and you can ignore them.[^22]
 
 Your lease can ask you to paint the walls in light or neutral colours. It can't force you to use a specific colour (white) or paint type.[^23] For example, you don't need to repaint your apartment from light grey to pure white.
 
@@ -148,7 +148,7 @@ Tell your electricity company about your moving date. Do this before you move. Y
 
 You will fill a handover document (*[[Übergabeprotokoll]]*) with your landlord. It describes the condition of the apartment, and what must be repaired.[^34]
 
-**[Übergabeprotokoll template](https://www.immobilienscout24.de/content/dam/is24/umzug/dokumente/IS24-wohnungsuebergabeprotokoll2.pdf)** - ImmobilenScout24
+**[Übergabeprotokoll template](https://www.immobilienscout24.de/content/dam/is24/umzug/dokumente/IS24-wohnungsuebergabeprotokoll2.pdf)** - ImmobilienScout24
 
 **Always make a handover document.**[^43] If your landlord repairs something that is not in this document, you don't have to pay for it. If it's not in the *Übergabeprotokoll*, it's not your problem.[^44] It helps you [get your deposit back](/guides/mietkaution#when-do-i-get-my-kaution-back) faster.
 
@@ -189,7 +189,7 @@ You can find cardboard boxes...
 
 ### Hire a moving company
 
-A moving company helps you pack boxes, disassemble furniture, save a parking space (*Halteverbot*), hire movers, and [change your address](/guides/address-change). It costs €600 to €2,000, but it's worth it.[^24] The price depend on how much furniture you have, and how hard it is to move the furniture.[^40]
+A moving company helps you pack boxes, disassemble furniture, save a parking space (*Halteverbot*), hire movers, and [change your address](/guides/address-change). It costs €600 to €2,000, but it's worth it.[^24] The price depends on how much furniture you have, and how hard it is to move the furniture.[^40]
 
 If you don't have many things to move, hire a "man with a van". They are usually cheaper than a moving company. You can find them on [Kleinanzeigen](https://www.kleinanzeigen.de/s-mitte/umzug/k0l3518). [Möbel Taxi](https://www.moebel-taxi.de/english/) is a popular option.
 
@@ -197,7 +197,7 @@ International moves are more expensive. Shipping and customs can be complicated.
 
 [Zapf](https://www.zapf.de/) is often recommended.[^25] [Smoovers](https://smoover-moving.de/) can also book movers for you and they speak English. [Check24](https://umzug.check24.de/umzug/umzugsunternehmen) helps you find a mover.
 
-Your contract should say who pays for the damages the movers cause.[^39] For example, what happens if they scratch the walls while they move your couch? Most moving companies have insurance for this. The movers on [Kleinanzeigen](https://www.kleinanzeigen.de/s-mitte/umzug/k0l3518) are might not have insurance.
+Your contract should say who pays for the damages the movers cause.[^39] For example, what happens if they scratch the walls while they move your couch? Most moving companies have insurance for this. The movers on [Kleinanzeigen](https://www.kleinanzeigen.de/s-mitte/umzug/k0l3518) might not have insurance.
 
 ### Rent a moving truck
 

@@ -12,7 +12,7 @@ related_guides:
 
 The cost of [public health insurance](/glossary/gesetzliche%20Krankenversicherung) is based on your income. If you have a high income, your health insurance is more expensive.
 
-The *Höchstbeitrag* is the maximum cost for public health insurance. If you earn more than than €{{GKV_MAX_INCOME|cur}} per month, the price does not go higher. The minimum cost is called the *[[Mindestbeitrag]]*.
+The *Höchstbeitrag* is the maximum cost for public health insurance. If you earn more than €{{GKV_MAX_INCOME|cur}} per month, the price does not go higher. The minimum cost is called the *[[Mindestbeitrag]]*.
 
 The *Höchstbeitrag* for employees is €{{GKV_MAX_COST_EMPLOYEE|cur}} per month. The *Höchstbeitrag* for self-employed people is €{{GKV_MAX_COST_SELF_PAY|cur}} per month.
 

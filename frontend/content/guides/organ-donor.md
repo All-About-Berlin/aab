@@ -1,7 +1,7 @@
 ---
 title: How to register as an organ donor in Germany
 short_title: How to become an organ donor
-description: This guide shows you how to organ donations work in Germany, and how to register as a donor.
+description: This guide shows you how organ donations work in Germany, and how to register as a donor.
 date_created: 2023-06-03
 author: Jack Stephan
 author_url: https://stephanjack.com/
@@ -15,7 +15,7 @@ This guide explains how to donate your organs after your death. It's very easy: 
 
 Germany has no organ donor registry.[^13] You must leave a clear proof that you want to donate your organs.
 
-To do become an organ donor, you must...
+To become an organ donor, you must...
 
 - [ ] **[Get an organ donor card](https://www.ueber-leben.de/organspendeausweis/#kostenlos-bestellen)** (*Organspendeausweis*)  
     Order a card online for free. They send you the card, and give you a PDF copy. Sign the card, and put it in your wallet. Give a copy to someone you trust. This card is the only proof that you want to donate your organs. Make it easy to find.
@@ -47,7 +47,7 @@ Organ donations only happen if...[^9]
     If you make no decision, your next of kin must guess what you would have wanted. They can't override your decision.[^14]
 - **and you do not have cancer or HIV**[^15]
 
-After your death, [Eurotransplant](https://eurotransplant.org) finds someone who needs your organs. They explain your next of kin exactly what will happen, and which organs they will take.[^10] After the organ transplant, they return your body to your family for burial or cremation.[^1]
+After your death, [Eurotransplant](https://eurotransplant.org) finds someone who needs your organs. They explain to your next of kin exactly what will happen, and which organs they will take.[^10] After the organ transplant, they return your body to your family for burial or cremation.[^1]
 
 ### Donate blood and bone marrow
 

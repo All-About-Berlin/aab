@@ -2,7 +2,7 @@
 title: What is liability insurance (Haftpflichtversicherung)?
 german_term: Haftpflichtversicherung
 english_term: Liability insurance
-description: An insurance that protects you against liability claims and lawsuits. It covers accidents that are your fault.
+description: Insurance that protects you against liability claims and lawsuits. It covers accidents that are your fault.
 date_created: 2018-08-21
 related_guides:
     - guides/haftpflichtversicherung.md
@@ -23,7 +23,7 @@ For example:
 - Your computer chair destroys the floor in the apartment you rent.
 - You trip someone while playing football, and they break their leg.
 
-It's the most important insurance after health insurance. 83% of Germans homes have it.[^0] It costs around €5 per month. I recommend [Feather's liability insurance](/out/feather-haftpflicht). It's what I have since 2022.
+It's the most important insurance after health insurance. 83% of German homes have it.[^0] It costs around €5 per month. I recommend [Feather's liability insurance](/out/feather-haftpflicht). It's what I have had since 2022.
 
 **[How to choose liability insurance ➞](/guides/haftpflichtversicherung)**
 

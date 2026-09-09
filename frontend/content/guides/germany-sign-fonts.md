@@ -11,7 +11,7 @@ This guide lists fonts that are used in Germany.
 
 ## Official font for Berlin
 
-**[Berlin Type](https://wir.berlin/en/be-a-part/the-new-berlin-font)** is the official font of Berlin since 2021. It's free to use.
+**[Berlin Type](https://wir.berlin/en/be-a-part/the-new-berlin-font)** has been the official font of Berlin since 2021. It's free to use.
 
 ## BVG font
 
@@ -19,19 +19,19 @@ The BVG uses the **[FF Transit](https://www.fontshop.com/families/ff-transit)** 
 
 ## Deutsche Bahn fonts
 
-The [[Deutsche Bahn]] uses **DB Type** for signage. Train markings use **DIN 1451-4** since the 1920s. It replaced **Musterzeichnung IV 44**[^1]).
+The [[Deutsche Bahn]] uses **DB Type** for signage. Train markings have been using **DIN 1451-4** since the 1920s. It replaced **Musterzeichnung IV 44**.[^1]
 
 In the former East Germany, you still see signs in **Erbar Grotesk**. **Helvetica** was also [briefly used](http://www.ralf-bueker.de/Bahnhofs_o._Stationsschilder_Epoche_V_weisse_Grundflaeche,_blau_umrandet,_Namen_in_schwarzer_Schrift.htm).
 
 ## German road sign font
 
-German road signs use **DIN 1451** since 1931. It's available in 3 variants: narrow (*Engschrift*), normal (*Mittelschrift*) and wide (*Breitschrift*).
+German road signs have been using **DIN 1451** since 1931. It's available in 3 variants: narrow (*Engschrift*), normal (*Mittelschrift*) and wide (*Breitschrift*).
 
 The Deutsche Post also uses DIN 1451.
 
 ## German licence plate font
 
-German licence plates use **FE-Schrift** (*Fälschungserschwerende Schrift*)since 1995.[^2] It makes licence plates harder to alter.
+German licence plates have been using **FE-Schrift** (*Fälschungserschwerende Schrift*) since 1995.[^2] It makes licence plates harder to alter.
 
 ## Berlin and East German fonts
 
@@ -43,11 +43,11 @@ There are several digital releases of Erbar: [URW Erbar](https://www.myfonts.com
 
 When people talk about "the German font", they often think about Fraktur fonts. Use such fonts cautiously; they are old-fashioned, and sometimes associated with National Socialism.
 
-**Tannenberg** was commonly used from 1935 to 1941, then the Nazis banned them in favour of modern typefaces.[^0]
+**Tannenberg** was commonly used from 1935 to 1941, then the Nazis banned it in favour of modern typefaces.[^0]
 
 ## Download links
 
-Pieter Wiegel recreated many historical typefaces and published them [on his website](http://www.peter-wiegel.de/Fonts/index.html). You can use them without restrictions.[^3]
+Peter Wiegel recreated many historical typefaces and published them [on his website](http://www.peter-wiegel.de/Fonts/index.html). You can use them without restrictions.[^3]
 
 - [Musterzeichnung IV 44](http://www.peter-wiegel.de/Preussische.html)
 - [Berliner Wand](http://www.peter-wiegel.de/BerlinerWand.html)

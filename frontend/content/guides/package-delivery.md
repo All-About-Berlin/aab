@@ -53,7 +53,7 @@ If you want to receive your packages reliably, **don't use your home address**.
 - **Use a [[Packstation]]**  
     Send your packages to a pickup location near you: Amazon Lockers, DHL *[Packstations](/glossary/Packstation)*, Hermes *[Paketshops](/glossary/Paketshop)* and DPD Pickup locations. - [More information](https://www.dhl.de/en/privatkunden/pakete-empfangen/an-einem-abholort-empfangen/packstation.html)
 - **Use your work address**  
-    If your workplace has a front desk, you can sometimes deliver your packages there. They can't say that no-one was there to receive the package.
+    If your workplace has a front desk, you can sometimes deliver your packages there. They can't say that no one was there to receive the package.
 - **Get it yourself**  
     Sometimes, it's faster to pick things up from the store yourself.
 - **Be really nice to your driver**  

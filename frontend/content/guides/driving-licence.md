@@ -50,15 +50,15 @@ To choose a driving school, look at...[^23]
 - **The language**  
     There are [English-speaking driving schools](/guides/english-speaking-driving-schools). Check if they offer theory *and* practical lessons in English.
 - **The reviews**  
-    Read the school's reviews on Google Maps. Don't trust the reviews too much; German businesses often delete negative reviews.[^21] Check if they make you more classes than you need.
+    Read the school's reviews on Google Maps. Don't trust the reviews too much; German businesses often delete negative reviews.[^21] Check if they make you take more classes than you need.
 - **Other services**  
     Some driving schools offer first aid courses and eye tests. You can do everything in one place. It's more convenient.
 
 ## 2. First aid course
 
-Take a first aid course before. It costs around €{{FIRST_AID_COURSE_FEE|cur}}.[^40] It takes 7.5 hours. There is no test at the end.[^4]
+Take a first aid course first. It costs around €{{FIRST_AID_COURSE_FEE|cur}}.[^40] It takes 7.5 hours. There is no test at the end.[^4]
 
-There are first aid classes in English. I took mine at [Ersthelfer.tv](https://www.ersthelfer.tv/standorte/berlin-erste-hilfe-kurse/). Online and foreign first aid certificates are not accepted. Doctor and nurses don't need a first aid certificate.[^39]
+There are first aid classes in English. I took mine at [Ersthelfer.tv](https://www.ersthelfer.tv/standorte/berlin-erste-hilfe-kurse/). Online and foreign first aid certificates are not accepted. Doctors and nurses don't need a first aid certificate.[^39]
 
 After the course, you get a certificate. You need it to [get permission from the *Bürgeramt*](#permission-from-the-burgeramt).
 
@@ -78,7 +78,7 @@ The eye test takes around 10 minutes. Bring an ID document to take the test.[^18
 
 You can wear glasses or contact lenses during the test. If you pass the test with glasses or contact lenses, you must always wear them when you drive.[^17]
 
-After the course, you get a certificate. You need it to [get permission from the *Bürgeramt*](#permission-from-the-burgeramt).
+After the test, you get a certificate. You need it to [get permission from the *Bürgeramt*](#permission-from-the-burgeramt).
 
 ## 4. Theory classes
 

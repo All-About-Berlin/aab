@@ -39,9 +39,9 @@ For each person, you need...
 - [ ] **Income certificate** (*Einkommensbescheinigung*)  
     If you have a work contract, your employer's HR department should provide you with a copy. If you’re a freelancer, download [this form](/images/2224_71_1.pdf) and [ask an accountant](/guides/english-speaking-steuerberater-berlin) to review/sign it for you.
 - [ ] **Certificate of no impediment to marriage** (*Ehefähigkeitszeugnis*)  
-    You can usually get it from your embassy. To get this document, you might need to send more documents. It can take a few weeks. Some countries don't to give a valid *Ehefähigkeitszeugnis*. Your certificate might need to be approved by a *Kammergericht* for around €75.
+    You can usually get it from your embassy. To get this document, you might need to send more documents. It can take a few weeks. Some countries don't give a valid *Ehefähigkeitszeugnis*. Your certificate might need to be approved by a *Kammergericht* for around €75.
 - [ ] **Divorce certificate**  
-    If you were married before, you need it to prove your divorce. If it's not an EU birth certificate, it needs an *Apostille* and [certified translation](/glossary/beglaubigte%20Übersetzung).
+    If you were married before, you need it to prove your divorce. If it's not an EU divorce certificate, it needs an *Apostille* and [certified translation](/glossary/beglaubigte%20Übersetzung).
 
 If your name, gender or nationality changed, you might need certificates to prove it:
 
@@ -91,7 +91,7 @@ People often **get married in Denmark**. It's cheaper, faster and *much* easier 
 
 **[Get married in Denmark](https://familieretshuset.dk/en/your-life-situation/your-life-situation/international-marriages/if-you-wish-to-get-married-in-denmark)** - Danish Agency of Family Law
 
-After your get married in another country, you must register your marriage in Germany (*Nachbeurkundung*). If you got married in the EU, it's easy.
+After you get married in another country, you must register your marriage in Germany (*Nachbeurkundung*). If you got married in the EU, it's easy.
 
 **[Register a foreign marriage in Berlin ➞](https://service.berlin.de/dienstleistung/318966/)**
 

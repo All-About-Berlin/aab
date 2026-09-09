@@ -1,5 +1,5 @@
 ---
-title: What does tax deductible mean?
+title: What does tax-deductible mean?
 german_term: steuerlich absetzbar
 english_term: Tax-deductible
 description: You can deduct expenses. This reduces your taxable income, and you pay less income tax.

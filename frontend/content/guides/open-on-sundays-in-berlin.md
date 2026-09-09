@@ -26,7 +26,7 @@ These businesses can open on Sundays:[^3]
 
 ### Supermarkets
 
-Those train station supermarkets open on Sundays:[^0]
+These train station supermarkets open on Sundays:[^0]
 
 - [Friedrichstraße](https://goo.gl/maps/P897ukgBngY9SSVv8) (Mitte): [Edeka](https://goo.gl/maps/ya9LorGVAwUbLiQn9), [go Asia](https://maps.app.goo.gl/DfbE9rkPrYnVyMfQ7) and [Vitalia](https://maps.app.goo.gl/QD4MpQVXKG5AduZJ8)
 - [Gesundbrunnen](https://goo.gl/maps/1ZHTFnXouwpTgpvT9) (Wedding): [Denns Biomarkt](https://g.page/denns-s-bahnhof?share)
@@ -46,7 +46,7 @@ Grocery delivery services are closed on Sundays.[^1]
 
 ### Pharmacies and drug stores
 
-Those train station pharmacies and drug stores are open on Sundays:[^2]
+These train station pharmacies and drug stores are open on Sundays:[^2]
 
 - [Alexanderplatz](https://goo.gl/maps/EdXbYYdh9bLRt8Uv7) (Mitte): [Rossmann](https://goo.gl/maps/tqFo8LvXyZeobC7g6)
 - [Friedrichstraße](https://goo.gl/maps/P897ukgBngY9SSVv8) (Mitte): [Rossmann](https://goo.gl/maps/xCnyvAP5pVpcDwrn8)

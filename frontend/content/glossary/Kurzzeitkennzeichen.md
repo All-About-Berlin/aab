@@ -9,6 +9,6 @@ related_guides:
     - guides/car-insurance-germany.md
 ---
 
-Temporary licence plates (*Kurzzeitkennzeichen*) let you to drive a vehicle for a short time. You need *Kurzzeitkennzeichen* to test drive a deregistered vehicle, or a vehicle with out-of-season *[[Saisonkennzeichen]]*.[^1]
+Temporary licence plates (*Kurzzeitkennzeichen*) let you drive a vehicle for a short time. You need *Kurzzeitkennzeichen* to test drive a deregistered vehicle, or a vehicle with out-of-season *[[Saisonkennzeichen]]*.[^1]
 
 [^1]: [Berlin.de](https://service.berlin.de/dienstleistung/121479/) (2026)

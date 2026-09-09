@@ -44,7 +44,7 @@ You can get a prescription from [TeleCan](https://www.telecan.eu/), [CannGo](htt
 
 ## Buying weed on Telegram
 
-Many dealers sell weed and other drugs on Whatsapp, Telegram, Signal and Session. They advertise with stickers with QR codes. Those stickers everywhere in Neukölln, Kreuzberg and Friedrichshain. These Telegram groups often get shut down by the police.
+Many dealers sell weed and other drugs on Whatsapp, Telegram, Signal and Session. They advertise with stickers with QR codes. Those stickers are everywhere in Neukölln, Kreuzberg and Friedrichshain. These Telegram groups often get shut down by the police.
 
 ![Drug dealer sticker with QR code](/images/berlin-drug-dealer-qr-stickers.jpg "A drug dealer sticker with QR code")
 
@@ -56,7 +56,7 @@ When the driver is near you, they will message you. You usually sit in their car
 
 ## Buying weed in parks
 
-Dealers sell weed at [Görlitzer park](https://maps.app.goo.gl/6FvcS73FRsL9su118) and [Volkspark Hasenheide](https://goo.gl/maps/Mq2BLcn7TEYogDAE7).[^0] **Do not buy weed from parks.** It is not safe. The weed is expensive, low quality and often laced with chemicals.[^4] The police often targets these parks.
+Dealers sell weed at [Görlitzer park](https://maps.app.goo.gl/6FvcS73FRsL9su118) and [Volkspark Hasenheide](https://goo.gl/maps/Mq2BLcn7TEYogDAE7).[^0] **Do not buy weed from parks.** It is not safe. The weed is expensive, low quality and often laced with chemicals.[^4] The police often target these parks.
 
 If you still want to do it, it works like this:
 

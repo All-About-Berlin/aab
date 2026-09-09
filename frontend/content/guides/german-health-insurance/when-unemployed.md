@@ -21,13 +21,13 @@ Your [public health insurance](/glossary/gesetzliche%20Krankenversicherung) beco
 - **If you get [unemployment benefits](/glossary/ALG%20I)**  
     You get free health insurance. The *[[Agentur für Arbeit]]* pays for it.[^3]
 - **If you don't get unemployment benefits**  
-    You pay around [around €{{GKV_MIN_COST_SELF_PAY|cur}} per month](/glossary/Mindestbeitrag).[^1] You can get [free health insurance](/guides/german-health-insurance#free-health-insurance) from your spouse or your parents.[^6]
+    You pay [around €{{GKV_MIN_COST_SELF_PAY|cur}} per month](/glossary/Mindestbeitrag).[^1] You can get [free health insurance](/guides/german-health-insurance#free-health-insurance) from your spouse or your parents.[^6]
 
 In some cases, your health insurance is free for 1 month after you [lose your job](/guides/losing-your-job) (*nachgehender Leistungsanspruch*).[^18] This happens automatically; you don't need to apply for it.
 
 ### With private health insurance
 
-Your [private health insurance](/glossary/private%20Krankenversicherung) becomes more expensive, because you employer stops paying half of it. The coverage stays the same.
+Your [private health insurance](/glossary/private%20Krankenversicherung) becomes more expensive, because your employer stops paying half of it. The coverage stays the same.
 
 - **If you get [unemployment benefits](/glossary/ALG%20I)**  
     You must switch to [public health insurance](/glossary/gesetzliche%20Krankenversicherung), then you get insured for free.[^2] The *[[Agentur für Arbeit]]* pays it.[^3] In some cases, you can keep your private health insurance.[^4] If you are over 55 years old, you must usually keep your private health insurance.[^5]

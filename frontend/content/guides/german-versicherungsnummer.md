@@ -1,7 +1,7 @@
 ---
 title: How to find your Sozialversicherungsnummer
 short_title: Your Sozialversicherungsnummer
-description: This is how you find you German social insurance number or social security number. It's also called Versicherungsnummer, Rentenversicherungsnummer or RNVR.
+description: This is how you find your German social insurance number or social security number. It's also called Versicherungsnummer, Rentenversicherungsnummer or RVNR.
 date_created: 2018-03-18
 related_reviews:
     - reviews/german-versicherungsnummer/johannes-kühn.md
@@ -12,7 +12,7 @@ The *[[Deutsche Rentenversicherung]]* uses your *Sozialversicherungsnummer* to i
 In German, it's called...
 
 - *Sozialversicherungsnummer*, *SV-Nummer* or *SVNR*
-- *Rentenversicherungsnummer* or *RNVR*
+- *Rentenversicherungsnummer* or *RVNR*
 - *Versicherungsnummer* (this can also mean your health insurance number)
 
 In English, it's called...
@@ -53,7 +53,7 @@ If you just moved to Germany, you don't have a *Sozialversicherungsnummer* yet. 
 
 You get your *Sozialversicherungsnummer* by post to your German address. It takes 1 to 6 weeks. Most of the time, it takes less than 2 weeks. If you need it now, go to [your local *Deutsche Rentenversicherung* branch](https://www.deutsche-rentenversicherung.de/DRV/DE/Beratung-und-Kontakt/Beratung-suchen-und-buchen/beratung-suchen-und-buchen_node.html).
 
-Your number is printed on a *Sozialversicherungsausweis* in a letter from the [*[[Deutsche Rentenversicherung]]*. It looks like this:[^5]
+Your number is printed on a *Sozialversicherungsausweis* in a letter from the *[[Deutsche Rentenversicherung]]*. It looks like this:[^5]
 
 [![Sozialversicherungsausweis2017](/images/sozialversicherungsausweis2017.jpg "Your Sozialversicherungsausweis contains your social security number")](/images/sozialversicherungsausweis2017.jpg)
 

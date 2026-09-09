@@ -1,7 +1,7 @@
 ---
 title: How to get a Bescheinigung in Steuersachen
 short_title: How to get a Bescheinigung in Steuersachen
-description: This is how you get an certificate of tax matters or Unbedenklichkeitsbescheinigung from the Finanzamt. You might need it for your residence permit or permanent residence.
+description: This is how you get a certificate of tax matters or Unbedenklichkeitsbescheinigung from the Finanzamt. You might need it for your residence permit or permanent residence.
 german_document: documents/antrag-auf-erteilung-einer-bescheinigung-in-steuersachen.pdf
 english_document: documents/antrag-auf-erteilung-einer-bescheinigung-in-steuersachen.pdf
 german_term: Antrag auf Erteilung einer Bescheinigung in Steuersachen

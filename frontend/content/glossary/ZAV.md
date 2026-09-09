@@ -8,6 +8,6 @@ related_guides:
     - guides/blue-card.md
 ---
 
-The *Zentrale Auslands- und Fachvermittlung* or *ZAV* is the office that gives foreigners permission to work in Germany. They verify that there is enough demand for their skills in Germany. You sometimes need permission from the ZAV to [work visa](/glossary/Work%20Visa) or a [[Blue Card]].
+The *Zentrale Auslands- und Fachvermittlung* or *ZAV* is the office that gives foreigners permission to work in Germany. They verify that there is enough demand for their skills in Germany. You sometimes need permission from the ZAV to get a [work visa](/glossary/Work%20Visa) or a [[Blue Card]].
 
 The ZAV is part of the *[[Agentur für Arbeit]]*.
