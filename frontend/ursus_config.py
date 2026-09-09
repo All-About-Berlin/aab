@@ -257,6 +257,7 @@ config.jinja_filters = {
 }
 
 config.renderers.remove("ursus.renderers.sass.SassRenderer")
+config.renderers.remove("ursus.renderers.lunr.LunrIndexRenderer")
 config.jinja_extensions.remove("ursus.renderers.jinja.JsLoaderExtension")
 config.jinja_extensions.extend(
     [
@@ -387,82 +388,6 @@ config.image_transforms = {
         "max_size": (600, 1200),
         "output_types": ("webp", "png"),
     },
-}
-
-config.lunr_indexes = {
-    "indexed_fields": (
-        "title",
-        "short_title",
-        "description",
-        "german_term",
-        "english_term",
-    ),
-    "indexes": [
-        {
-            "uri_pattern": "guides/*.md",
-            "returned_fields": (
-                "title",
-                "short_title",
-                "url",
-            ),
-            "boost": 2,
-        },
-        {
-            "uri_pattern": "guides/*/*.md",
-            "returned_fields": (
-                "title",
-                "short_title",
-                "url",
-            ),
-            "boost": 2,
-        },
-        {
-            "uri_pattern": "glossary/*.md",
-            "returned_fields": (
-                "title",
-                "english_term",
-                "german_term",
-                "url",
-            ),
-            "boost": 1,
-        },
-        {
-            "uri_pattern": "docs/*.md",
-            "returned_fields": (
-                "title",
-                "short_title",
-                "english_term",
-                "german_term",
-                "url",
-            ),
-            "boost": 1,
-        },
-        {
-            "uri_pattern": "tools/*.md",
-            "returned_fields": (
-                "title",
-                "short_title",
-                "url",
-            ),
-            "boost": 1,
-        },
-        {
-            "uri_pattern": "contact.md",
-            "returned_fields": (
-                "title",
-                "url",
-            ),
-            "boost": 2,
-        },
-        {
-            "uri_pattern": "terms.md",
-            "returned_fields": (
-                "title",
-                "url",
-            ),
-            "boost": 0.5,
-        },
-    ],
 }
 
 config.logging = {
