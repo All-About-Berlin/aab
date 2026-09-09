@@ -19,6 +19,8 @@ DEBUG_EMAILS = DEBUG  # Print emails instead of sending them
 # on or between those dates use the "Vacation" variant of the template.
 SEAMUS_VACATION: tuple | None = (date(2026, 8, 8), date(2026, 8, 18))
 
+RESULTS_PER_PAGE = 20
+
 ssl_domain = os.environ.get("DOMAIN", "localhost")
 services_domain = os.environ.get("SERVICES_DOMAIN", "services.localhost")
 
@@ -171,7 +173,7 @@ REST_FRAMEWORK = {
     ],
     "EXCEPTION_HANDLER": "forms.views.exception_handler",
     "DEFAULT_PAGINATION_CLASS": "api.pagination.PageNumberPagination",
-    "PAGE_SIZE": 10,
+    "PAGE_SIZE": RESULTS_PER_PAGE,
 }
 
 # Internationalization

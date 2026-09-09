@@ -1,5 +1,6 @@
 from datetime import timedelta
 
+from django.conf import settings
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.models import User
@@ -19,7 +20,6 @@ from forum.forms import ReplyForm, ThreadForm
 from forum.models import Category, Reply, Thread
 
 
-REPLIES_PER_PAGE = 20
 REPLY_RATE_LIMIT = timedelta(minutes=1)
 THREAD_RATE_LIMIT = timedelta(minutes=1)
 
@@ -85,7 +85,7 @@ class ForumNewThreadView(LoginRequiredMixin, CreateView):
 
 class ForumIndexView(VersionedCacheMixin, ListView):
     template_name = "forum/index.html"
-    paginate_by = 20
+    paginate_by = settings.RESULTS_PER_PAGE
 
     def get_cache_version(self, request):
         queryset = Thread.objects.filter(removal_date__isnull=True)
@@ -165,7 +165,7 @@ class ForumThreadView(VersionedCacheMixin, FormMixin, DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         replies = self.object.replies.select_related("author").order_by("creation_date")
-        paginator = Paginator(replies, REPLIES_PER_PAGE)
+        paginator = Paginator(replies, settings.RESULTS_PER_PAGE)
         context["page_obj"] = _get_page(paginator, self.kwargs.get("page", 1))
         return context
 
@@ -186,7 +186,7 @@ class ForumThreadView(VersionedCacheMixin, FormMixin, DetailView):
         reply.author = self.request.user
         reply.thread = self.object
         reply.save()
-        last_page = max(1, -(-self.object.replies.count() // REPLIES_PER_PAGE))
+        last_page = max(1, -(-self.object.replies.count() // settings.RESULTS_PER_PAGE))
         url = (
             reverse("forum_thread_page", args=[self.object.pk, last_page])
             if last_page > 1
