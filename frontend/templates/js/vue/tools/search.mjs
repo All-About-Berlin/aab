@@ -87,26 +87,36 @@ export default {
 		},
 	},
 	template: `
-		<search>
-			<form @submit.prevent>
-				<input
-					:id="uid('query')"
-					type="search"
-					v-model="query"
-					:aria-controls="uid('results')"
-					aria-label="Search this website"
-					autocomplete="off">
-			</form>
+		<div>
+			<search title="Search All About Berlin" class="search-form no-print">
+				<label title="Search keyword">
+					<input
+						:id="uid('query')"
+						type="search"
+						v-model="query"
+						placeholder="Search this website"
+						tabindex="0"
+						aria-autocomplete="list"
+						:aria-controls="uid('results')"
+						aria-label="Search this website"
+						autocomplete="off">
+					<svg width="12" height="13" viewBox="0 0 12 13" aria-hidden="true">
+						<title>Search</title>
+						<g stroke-width="1.5" stroke="currentColor" fill="none"><path d="M11.29 11.71l-4-4"/><circle cx="5" cy="5" r="4"/></g>
+					</svg>
+				</label>
+			</search>
 			<p role="status" v-if="query">
-				{{ totalHits }} result{{ totalHits === 1 ? '' : 's' }} found for “{{ query }}”.
+				{{ totalHits }} result{{ totalHits === 1 ? '' : 's' }} found for “{{ query }}”
 			</p>
-			<ol :id="uid('results')" class="threads" :aria-busy="isLoading ? 'true' : 'false'" aria-label="Search results">
-				<li v-for="result in results" :key="result.url" class="thread">
+			<p v-if="isLoading" class="loading">Loading results…</p>
+			<ol class="results" :id="uid('results')" :aria-busy="isLoading ? 'true' : 'false'" aria-label="Search results">
+				<li class="result" v-for="result in results" :key="result.url">
 					<h2><a :href="result.url" v-html="result.title"></a></h2>
 					<p v-if="result.snippet" v-html="result.snippet"></p>
 				</li>
 			</ol>
 			<pagination :value="page" @input="page = $event" :page-count="totalPages"></pagination>
-		</search>
+		</div>
 	`,
 };
