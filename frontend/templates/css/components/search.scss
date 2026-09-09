@@ -1,0 +1,28 @@
+.results{
+    display: grid;
+    gap: var(--m);
+
+    .result{
+        display: grid;
+        gap: var(--s);
+        grid-template-areas: "title meta" "description description";
+        grid-template-columns: 1fr auto;
+
+        h2{
+            grid-area: title;
+            font-size: var(--m);
+            @include text-bold;
+        }
+        p{
+            grid-area: description;
+            margin: 0;
+        }
+        .post-meta{
+            grid-area: meta;
+        }
+    }
+    .result + .result{
+        padding-top: var(--m);
+        border-top: var(--b-box);
+    }
+}

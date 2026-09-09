@@ -23,6 +23,7 @@ PAGES = [
     ("Glossary entry", f"{MAIN}/glossary/Anmeldung"),
     ("Tools index", f"{MAIN}/tools"),
     ("Tool entry", f"{MAIN}/tools/tax-calculator"),
+    ("Search results", f"{MAIN}/search?q=the"),
     ("Newsletter index", f"{MAIN}/newsletter"),
     ("Newsletter entry", f"{MAIN}/newsletter/august-2026"),
     ("Forum index", f"{MAIN}/forum"),
