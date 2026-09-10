@@ -25,6 +25,7 @@ body{
     grid-template-areas: ". header header ." ". sidebar main ." ". footer footer .";
     grid-template-columns: 1fr auto var(--w-main-column) 1fr;
     grid-template-rows: auto auto;
+    align-items: flex-start; // Give sidebar and main independent heights
 
     scroll-behavior:smooth;
 
