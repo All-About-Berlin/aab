@@ -3,8 +3,8 @@ import store from '/js/vue/pages/health-insurance-signup-store.mjs';
 const STEPS = [
 	{ key: 'start', label: 'Start' },
 	{ key: 'occupation', label: 'Occupation' },
-	{ key: 'situation', label: 'Job information' },
-	{ key: 'contactInfo', label: 'Contact information' },
+	{ key: 'family', label: 'Family' },
+	{ key: 'contactInfo', label: 'Contact' },
 ];
 
 export default {

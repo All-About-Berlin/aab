@@ -88,7 +88,7 @@
         padding:0;
         margin:0;
 
-        > :is(a, button){
+        > :is(a, button, label){
             @include box-m;
             @include box-clickable;
 
@@ -164,11 +164,25 @@
                 }
             }
         }
+
+        > label > input{
+            // Match input color with button border
+            --c-border-input-focused: var(--c-highlight);
+            --c-text-heading: var(--c-highlight);
+
+            position: absolute;
+            top: var(--m);
+            left: var(--m);
+        }
+
+        > label:has(:checked){
+            @include box-clickable-hover;
+        }
     }
 
     &.list{
         @include only-phone{
-            > li > :is(a, button){
+            > li > :is(a, button, label){
                 grid-template-columns: 1fr;
                 svg {
                     display: none;
@@ -179,7 +193,7 @@
 
     &.grid{
         @include only-phone{
-            > li > :is(a, button){
+            > li > :is(a, button, label){
                 @include box-s;
             }
         }
@@ -187,7 +201,7 @@
         @include not-phone{
             grid-template-columns: 1fr 1fr 1fr;
 
-            > li > :is(a, button){
+            > li > :is(a, button, label){
                 text-align: center;
                 grid-template-columns: 1fr;
                 gap: 0;

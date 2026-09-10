@@ -28,8 +28,8 @@ export default {
 		},
 	},
 	template: `
-		<div class="yes-no-input">
-			<span :id="labelId" class="yes-no-input-label" @click="toggle"><slot></slot></span>
+		<div class="question-input">
+			<span :id="labelId" @click="toggle"><slot></slot></span>
 			<tabs
 				:id="id"
 				:value="value"

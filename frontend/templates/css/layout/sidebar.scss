@@ -22,8 +22,6 @@
     }
 
     li{
-        @include list-marker-ul-compact;
-        @include list-marker-light;
         :is(a, a:hover){
             color: var(--c-text);
         }
@@ -32,10 +30,23 @@
         }
     }
 
+    ul > li{
+        @include list-marker-light;
+        @include list-marker-ul-compact;
+    }
+
+    ol > li{
+        @include list-marker-ol;
+    }
+
     small{
         display: block;
         color: var(--c-text-light);
         margin-top: var(--s);
+    }
+
+    progress{
+        border-radius: 999px;
     }
 
     .newsletter-form{

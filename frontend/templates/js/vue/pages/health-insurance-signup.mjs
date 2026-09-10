@@ -5,6 +5,7 @@ import CountryInput from '/js/vue/components/country-input.mjs';
 import DatePicker from '/js/vue/components/date-picker.mjs';
 import EmailInput from '/js/vue/components/email-input.mjs';
 import FirstNameInput from '/js/vue/components/first-name-input.mjs';
+import Glossary from '/js/vue/components/glossary.mjs';
 import IconEmployee from '/js/vue/components/icons/employee.mjs';
 import IconFreelancer from '/js/vue/components/icons/freelancer.mjs';
 import IconStudent from '/js/vue/components/icons/student.mjs';
@@ -21,7 +22,7 @@ import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 
 import store from '/js/vue/pages/health-insurance-signup-store.mjs';
 
-import { isEmployed, salaryOrIncome } from '/js/utils/occupations.mjs';
+import { salaryOrIncome } from '/js/utils/occupations.mjs';
 
 export default {
 	components: {
@@ -32,6 +33,7 @@ export default {
 		DatePicker,
 		EmailInput,
 		FirstNameInput,
+		Glossary,
 		IconEmployee,
 		IconFreelancer,
 		IconStudent,
@@ -49,12 +51,17 @@ export default {
 			stages: [
 				'start',
 				'occupation',
-				'situation',
 				'insuranceInfo',
+				'family',
 				'contactInfo',
 				'thank-you',
 				'error',
 			],
+
+			// Occupation
+			isEmployed: null,
+			isStudent: null,
+			isSelfEmployed: null,
 
 			insuranceStartDate: '',
 			hasCurrentGermanInsurance: null,
@@ -63,16 +70,14 @@ export default {
 			currentInsuranceType: '',
 			currentInsurerName: '',
 			isCurrentlyPolicyHolder: null,
-			occupation: '',
 			inputIncome: null,
-			useMonthlyIncome: true,
+			useMonthlyIncome: false,
 			isFirstJobInGermany: null,
 			hasStartedWorking: null,
 			employmentStartDate: '',
 			employmentHoursPerWeek: null,
 			hasLivedAbroad: null,
 			countryOfLastInsurance: '',
-			isSelfEmployed: null,
 			selfEmploymentHoursPerWeek: null,
 			selfEmploymentIncomePerMonth: null,
 			isManagingDirector: null,
@@ -104,11 +109,23 @@ export default {
 		};
 	},
 	computed: {
-		isEmployed(){
-			return isEmployed(this.occupation);
-		},
-		salaryOrIncome(){
-			return salaryOrIncome(this.occupation);
+		occupation(){
+			if(this.isStudent){
+				if(this.isSelfEmployed){
+					return 'studentSelfEmployed';
+				}
+				else if(this.isEmployed){
+					return 'studentEmployee';
+				}
+				return 'student';
+			}
+			else if(this.isEmployed){
+				return 'employee';
+			}
+			else if(this.isSelfEmployed){
+				return 'selfEmployed';
+			}
+			return null;
 		},
 		monthOrYear(){
 			return this.useMonthlyIncome ? 'month' : 'year';
@@ -116,8 +133,14 @@ export default {
 		monthlyIncome(){
 			return this.useMonthlyIncome ? this.inputIncome : this.inputIncome / 12;
 		},
+		hasChildren(){
+			return this.childrenCount > 0;
+		},
 		showContinueButton(){
-			return !['occupation', 'thank-you', 'error'].includes(this.stage);
+			if(this.stage === 'occupation'){
+				return this.occupation;
+			}
+			return !['thank-you', 'error'].includes(this.stage);
 		},
 		showBackButton(){
 			return !['start', 'error'].includes(this.stage);
@@ -126,7 +149,6 @@ export default {
 	methods: {
 		selectOccupation(occupation){
 			this.occupation = occupation;
-			this.nextStage();
 		},
 		toggleUseMonthlyIncome(){
 			this.useMonthlyIncome = !this.useMonthlyIncome;
@@ -161,62 +183,76 @@ export default {
 				<h2>What is your occupation?</h2>
 				<ul class="buttons grid" aria-label="Occupations">
 					<li>
-						<button data-occupation="employee" @click="selectOccupation('employee')">
+						<label>
+							<input type="checkbox" v-model="isEmployed" required>
 							<icon-employee/>
 							Employee
-						</button>
+						</label>
 					</li>
 					<li>
-						<button data-occupation="studentUnemployed" @click="selectOccupation('studentUnemployed')">
+						<label>
+							<input type="checkbox" v-model="isStudent" required>
 							<icon-student/>
 							Student
-						</button>
+						</label>
 					</li>
 					<li>
-						<button data-occupation="selfEmployed" @click="selectOccupation('selfEmployed')">
+						<label>
+							<input type="checkbox" v-model="isSelfEmployed" required>
 							<icon-freelancer/>
 							Self-employed
-						</button>
+						</label>
 					</li>
 				</ul>
-			</template>
+				<details class="input-instructions article-body">
+					<summary>Why we ask for this</summary>
+					<ul>
+						<li>
+							<strong>It affects your options</strong><br>
+							You might not qualify for public health insurance, or private health insurance might be a better option.
+						</li>
+						<li>
+							<strong>It affects the cost</strong><br>
+							Public health insurance costs a percentage of your income. Your employer might pay half of it.
+						</li>
+					</ul>
+				</details>
 
-			<template v-if="stage === 'situation'">
-				<h2>Job information</h2>
-				<hr>
-				<div class="form-group">
-					<label :for="uid('income')">
-						{{ salaryOrIncome === 'salary' ? 'Salary' : 'Income' }}
-					</label>
-					<div class="input-group">
-						<income-input :id="uid('income')" v-model="inputIncome" required></income-input>&nbsp;€
-						<button class="toggle" @click="toggleUseMonthlyIncome">per {{ monthOrYear }}</button>
+				<template v-if="isEmployed">
+					<hr>
+					<h3>Job information</h3>
+
+					<div class="form-group">
+						<label :for="uid('income')">
+							Salary
+						</label>
+						<div class="input-group">
+							<income-input :id="uid('income')" v-model="inputIncome" required></income-input>&nbsp;€
+							<button class="toggle" @click="toggleUseMonthlyIncome">per {{ monthOrYear }}</button>
+						</div>
 					</div>
-					<span class="input-instructions">Your income affects the cost of public health insurance</span>
-				</div>
 
-				<div class="form-group">
-					<span class="label">Job start date</span>
-					<yes-no-input :id="uid('hasStartedWorking')" v-model="hasStartedWorking" required>
-						Did you already start working?
-					</yes-no-input>
-					
-					<date-picker
-						:id="uid('dateOfBirth')"
-						v-model="employmentStartDate"
-						required></date-picker>
-				</div>
-				<div class="form-group">
-					<span class="label">Self-employment</span>
-					<yes-no-input :id="uid('isSelfEmployed')" v-model="isSelfEmployed" required>
-						Are you also self-employed?
-					</yes-no-input>
-				</div>
-				<div class="form-group">
-					<yes-no-input :id="uid('isFirstJobInGermany')" v-model="isFirstJobInGermany" required>
-						Is this your first job in Germany?
-					</yes-no-input>
-				</div>
+					<div class="form-group">
+						<span class="label">Work history</span>
+						<yes-no-input :id="uid('isFirstJobInGermany')" v-model="isFirstJobInGermany" required>
+							Is this your first job in Germany?
+						</yes-no-input>
+					</div>
+
+					<div class="form-group">
+						<span class="label">Start date</span>
+						<yes-no-input :id="uid('hasStartedWorking')" v-model="hasStartedWorking" required>
+							Did you already start working?
+						</yes-no-input>
+						<div class="question-input" v-if="hasStartedWorking === false">
+							When do you start working?
+							<date-picker
+								:id="uid('job')"
+								v-model="employmentStartDate"
+								required></date-picker>
+						</div>
+					</div>
+				</template>
 			</template>
 
 			<template v-if="stage === 'insuranceInfo'">
@@ -271,6 +307,20 @@ export default {
 						maxlength="25"
 						placeholder="e.g. TK, AOK, DAK"
 						required>
+				</div>
+			</template>
+
+			<template v-if="stage === 'family'">
+				<h2>Family information</h2>
+
+				<div class="form-group">
+					<label :for="uid('childrenCount')">
+						Children
+					</label>
+					<children-input
+						v-model="childrenCount"
+						:id="uid('childrenCount')"
+						required></children-input>
 				</div>
 			</template>
 
