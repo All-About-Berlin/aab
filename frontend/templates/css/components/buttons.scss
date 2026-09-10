@@ -173,10 +173,15 @@
             position: absolute;
             top: var(--m);
             left: var(--m);
-        }
 
-        > label:has(:checked){
-            @include box-clickable-hover;
+            &:has(:checked){
+                @include box-clickable-hover;
+            }
+
+            @include only-phone{
+                left: auto;
+                right: var(--m);
+            }
         }
     }
 

@@ -166,8 +166,12 @@ label.checkbox{
 .question-input{
     gap: var(--m);
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
+
+    > :last-child{
+        flex: 0 0 auto;
+    }
 }
 
 .month-input, select.year-input{

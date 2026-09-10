@@ -184,21 +184,21 @@ export default {
 				<ul class="buttons grid" aria-label="Occupations">
 					<li>
 						<label>
-							<input type="checkbox" v-model="isEmployed" required>
+							<input type="checkbox" v-model="isEmployed">
 							<icon-employee/>
 							Employee
 						</label>
 					</li>
 					<li>
 						<label>
-							<input type="checkbox" v-model="isStudent" required>
+							<input type="checkbox" v-model="isStudent">
 							<icon-student/>
 							Student
 						</label>
 					</li>
 					<li>
 						<label>
-							<input type="checkbox" v-model="isSelfEmployed" required>
+							<input type="checkbox" v-model="isSelfEmployed">
 							<icon-freelancer/>
 							Self-employed
 						</label>
@@ -237,13 +237,13 @@ export default {
 						<yes-no-input :id="uid('isFirstJobInGermany')" v-model="isFirstJobInGermany" required>
 							Is this your first job in Germany?
 						</yes-no-input>
+						<yes-no-input :id="uid('hasStartedWorking')" v-model="hasStartedWorking" required>
+							Did you already start working?
+						</yes-no-input>
 					</div>
 
 					<div class="form-group">
 						<span class="label">Start date</span>
-						<yes-no-input :id="uid('hasStartedWorking')" v-model="hasStartedWorking" required>
-							Did you already start working?
-						</yes-no-input>
 						<div class="question-input" v-if="hasStartedWorking === false">
 							When do you start working?
 							<date-picker
