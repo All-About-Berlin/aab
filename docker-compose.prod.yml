@@ -19,6 +19,7 @@ services:
       - "CLOUDFLARE_API_KEY"
       - "SERVICES_CLOUDFLARE_ZONE"
       - "SERVICES_CLOUDFLARE_API_KEY"
+      - "MEILI_MASTER_KEY=${SECRET_KEY}"
     volumes: !override
       - ".:/var/project:ro"
       - "temp_static_site:/var/output"

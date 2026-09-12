@@ -1,5 +1,6 @@
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
 import Pagination from '/js/vue/components/pagination.mjs';
+import { formatLongDate, isoDay } from '/js/utils/date.mjs';
 import metadata from '/js/vue/tools/search.metadata.json' with { type: 'json' };
 
 export default {
@@ -39,6 +40,8 @@ export default {
 		},
 	},
 	methods: {
+		formatDate: formatLongDate,
+		formatDateIso: isoDay,
 		updateUrl() {
 			const query = this.query.trim();
 			const url = new URL(window.location);
@@ -71,7 +74,10 @@ export default {
 					return response.json();
 				})
 				.then(data => {
-					this.results = data.results || [];
+					this.results = (data.results || []).map(result => ({
+						...result,
+						date: new Date(result.date * 1000),
+					}));
 					this.totalHits = data.total_hits || 0;
 					this.totalPages = data.total_pages || 0;
 				})
@@ -113,6 +119,16 @@ export default {
 			<ol class="results" :id="uid('results')" :aria-busy="isLoading ? 'true' : 'false'" aria-label="Search results">
 				<li class="result" v-for="result in results" :key="result.url">
 					<h2><a :href="result.url" v-html="result.title"></a></h2>
+					<div class="post-meta">
+						<div class="date">
+							<i class="icon calendar" aria-hidden="true"></i>
+							<time :datetime="formatDateIso(result.date)">{{ formatDate(result.date) }}</time>
+						</div>
+						<div v-if="result.type">
+							<i class="icon folder" aria-hidden="true"></i>
+							{{ result.type }}
+						</div>
+					</div>
 					<p v-if="result.snippet" v-html="result.snippet"></p>
 				</li>
 			</ol>
