@@ -13,9 +13,11 @@ def _safe_highlight(text: str) -> str:
 
 class SearchHitSerializer(serializers.Serializer):
     def to_representation(self, instance):
-        formatted = instance.get("_formatted", {})
+        formatted = instance["_formatted"]
         return {
-            "title": _safe_highlight(formatted.get("title", instance["title"])),
+            "title": _safe_highlight(formatted["title"]),
             "url": instance["url"],
-            "snippet": _safe_highlight(formatted.get("body", "")),
+            "snippet": _safe_highlight(formatted["body"]),
+            "type": instance["type"],
+            "date": instance["date"],
         }

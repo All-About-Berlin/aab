@@ -24,7 +24,8 @@ WORKDIR /var/project/frontend
 # = PROD =======================================================================
 
 FROM base AS prod
-CMD python3 /var/project/frontend/build-for-prod.py
+CMD python3 /var/project/frontend/build-for-prod.py \
+    && python3 /var/project/frontend/scripts/reindex_content.py
 
 # = DEV ========================================================================
 
@@ -32,9 +33,10 @@ FROM base AS dev
 
 HEALTHCHECK --interval=5s --timeout=3s --start-period=5s CMD [ -n "$BUILD_FINISHED" ] || exit 1
 
-# Build properly once, rebuild quickly on file changes
+# Build properly once, fill search index, rebuild quickly on file changes
 CMD rm -f /tmp/build_finished;\
     ursus;\
+    python3 /var/project/frontend/scripts/reindex_content.py;\
     touch /tmp/build_finished;\
     ursus --fast --watch
 

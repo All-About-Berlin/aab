@@ -259,3 +259,10 @@ run = "docker compose exec backend python3 manage.py create_test_data"
 [tasks."forum:clear-cache"]
 description = "Clear the forum's cached responses"
 run = "docker compose exec backend python3 manage.py shell -c 'from django.core.cache import cache; cache.clear()'"
+
+[tasks."search:reindex"]
+description = "Rebuild the Meilisearch indexes from the frontend build and the forum database"
+run = """
+docker compose exec frontend python3 /var/project/frontend/scripts/reindex_content.py
+docker compose exec backend python3 manage.py reindex_forum
+"""
