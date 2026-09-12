@@ -11,8 +11,8 @@ from django.utils.safestring import mark_safe
 register = template.Library()
 
 
-ALLOWED_TAGS = {"p", "br", "strong", "em", "a", "ul", "ol", "li", "blockquote", "code", "pre", "img"}
-ALLOWED_ATTRIBUTES = {"a": {"href", "rel"}, "img": {"src", "alt", "title"}}
+ALLOWED_TAGS = {"p", "br", "strong", "em", "a", "ul", "ol", "li", "blockquote", "code", "pre"}
+ALLOWED_ATTRIBUTES = {"a": {"href", "rel"}}
 EXTERNAL_REL = "nofollow ugc noopener"
 
 _ANCHOR_RE = re.compile(r"<a\b([^>]*)>", flags=re.IGNORECASE)
