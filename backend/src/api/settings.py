@@ -159,7 +159,7 @@ CACHES = {
     "default": {
         "BACKEND": "django.core.cache.backends.filebased.FileBasedCache",
         "LOCATION": "/var/cache/forum",
-        "TIMEOUT": None,
+        "TIMEOUT": 60 * 60 * 24 * 7,
     },
 }
 
