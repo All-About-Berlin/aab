@@ -20,7 +20,7 @@ apply_settings() {
         --data '{
             "searchableAttributes":["title","description","body"],
             "sortableAttributes":["date"],
-            "rankingRules":["words","typo","proximity","attribute","sort","exactness","type_rank:desc"]
+            "rankingRules":["words","typo","proximity","type_rank:desc","attribute","sort","exactness"]
         }' >/dev/null
 
     curl -fsS -X PATCH http://localhost:7700/indexes/forum/settings \
@@ -30,7 +30,7 @@ apply_settings() {
             "searchableAttributes":["title","description","body"],
             "filterableAttributes":["thread_id"],
             "sortableAttributes":["date"],
-            "rankingRules":["words","typo","proximity","attribute","sort","exactness","type_rank:desc"]
+            "rankingRules":["words","typo","proximity","type_rank:desc","attribute","sort","exactness"]
         }' >/dev/null
 }
 
