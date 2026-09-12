@@ -20,15 +20,12 @@ from forum.forms import ReplyForm, ThreadForm
 from forum.models import Category, Reply, Thread
 
 
-REPLY_RATE_LIMIT = timedelta(minutes=1)
-THREAD_RATE_LIMIT = timedelta(minutes=1)
+RATE_LIMIT_WINDOW = timedelta(minutes=1)
 
 
-def _get_page(paginator: Paginator, page_number: int):
-    try:
-        return paginator.page(page_number)
-    except EmptyPage:
-        raise Http404
+def is_user_posting_too_fast(model, user):
+    cutoff = timezone.now() - RATE_LIMIT_WINDOW
+    return model.objects.filter(author=user, creation_date__gte=cutoff).exists()
 
 
 class VersionedCacheMixin:
@@ -72,9 +69,8 @@ class ForumNewThreadView(LoginRequiredMixin, CreateView):
     template_name = "forum/newThread.html"
 
     def form_valid(self, form):
-        recent_cutoff = timezone.now() - THREAD_RATE_LIMIT
-        if Thread.objects.filter(author=self.request.user, creation_date__gte=recent_cutoff).exists():
-            form.add_error(None, "You're posting too fast! Please wait a minute before posting again.")
+        if is_user_posting_too_fast(Thread, self.request.user):
+            form.add_error(None, "You are posting too fast. Please wait a bit before creating another thread.")
             return self.form_invalid(form)
         form.instance.author = self.request.user
         return super().form_valid(form)
@@ -90,7 +86,7 @@ class ForumIndexView(VersionedCacheMixin, ListView):
     def get_cache_version(self, request):
         queryset = Thread.objects.filter(removal_date__isnull=True)
         category = request.GET.get("category")
-        if category and category in Category.values:
+        if category:
             queryset = queryset.filter(category=category)
         return queryset.aggregate(v=Max("modification_date"))["v"]
 
@@ -166,7 +162,10 @@ class ForumThreadView(VersionedCacheMixin, FormMixin, DetailView):
         context = super().get_context_data(**kwargs)
         replies = self.object.replies.select_related("author").order_by("creation_date")
         paginator = Paginator(replies, settings.RESULTS_PER_PAGE)
-        context["page_obj"] = _get_page(paginator, self.kwargs.get("page", 1))
+        try:
+            context["page_obj"] = paginator.page(self.kwargs.get("page", 1))
+        except EmptyPage:
+            raise Http404
         return context
 
     @method_decorator(login_required)
@@ -178,9 +177,8 @@ class ForumThreadView(VersionedCacheMixin, FormMixin, DetailView):
         return self.form_invalid(form)
 
     def form_valid(self, form):
-        recent_cutoff = timezone.now() - REPLY_RATE_LIMIT
-        if Reply.objects.filter(author=self.request.user, creation_date__gte=recent_cutoff).exists():
-            form.add_error(None, "You're posting too fast! Please wait a minute before replying again.")
+        if is_user_posting_too_fast(Reply, self.request.user):
+            form.add_error(None, "You are replying too fast. Please wait a bit before replying again.")
             return self.form_invalid(form)
         reply = form.save(commit=False)
         reply.author = self.request.user
