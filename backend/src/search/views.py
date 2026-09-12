@@ -9,7 +9,7 @@ from rest_framework.response import Response
 
 from search.pagination import MeilisearchPagination
 from search.serializers import HIGHLIGHT_POST_TAG, HIGHLIGHT_PRE_TAG, SearchHitSerializer
-from search.services import get_index
+from search.services import CONTENT_INDEX, FORUM_INDEX, get_meili_client
 
 
 logger = logging.getLogger(__name__)
@@ -45,17 +45,23 @@ class SearchView(GenericAPIView):
         if cached is not None:
             return Response(cached)
 
+        per_index_query = {
+            "q": query,
+            "attributesToHighlight": ["title", "body"],
+            "attributesToCrop": ["body"],
+            "cropLength": 30,
+            "highlightPreTag": HIGHLIGHT_PRE_TAG,
+            "highlightPostTag": HIGHLIGHT_POST_TAG,
+        }
         try:
-            meili_response = get_index().search(
-                query,
-                {
-                    "page": page,
-                    "hitsPerPage": settings.RESULTS_PER_PAGE,
-                    "attributesToHighlight": ["title", "body"],
-                    "attributesToCrop": ["body"],
-                    "cropLength": 30,
-                    "highlightPreTag": HIGHLIGHT_PRE_TAG,
-                    "highlightPostTag": HIGHLIGHT_POST_TAG,
+            meili_response = get_meili_client().multi_search(
+                queries=[
+                    {"indexUid": CONTENT_INDEX, **per_index_query},
+                    {"indexUid": FORUM_INDEX, **per_index_query},
+                ],
+                federation={
+                    "limit": settings.RESULTS_PER_PAGE,
+                    "offset": (page - 1) * settings.RESULTS_PER_PAGE,
                 },
             )
         except Exception:

@@ -277,6 +277,7 @@ config.context_processors.extend(
         "extensions.context_processors.tool_tests.ToolTestEntriesProcessor",
         "extensions.context_processors.collections.CollectionsProcessor",
         "extensions.context_processors.services_url.ServicesUrlProcessor",
+        "extensions.context_processors.markdown.MarkdownPlaintextProcessor",
     ]
 )
 
@@ -300,6 +301,7 @@ config.renderers.extend(
         "extensions.renderers.entry_images.EntryImageRenderer",
         "extensions.renderers.glossary_audio.GlossaryAudioRenderer",
         "extensions.renderers.places_json.PlacesRenderer",
+        "extensions.renderers.search_index.MeilisearchIndexRenderer",
     ]
 )
 

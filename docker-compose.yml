@@ -15,6 +15,7 @@ services:
       - "GOOGLE_MAPS_PLACES_API_KEY"
       - "GOOGLE_MAPS_JAVASCRIPT_API_KEY"
       - "GOOGLE_TTS_API_KEY"
+      - "MEILI_MASTER_KEY=insecure-dev-secret-key"
     volumes:
       - ".:/var/project:ro"
       - "./frontend/output:/var/output"
@@ -34,7 +35,7 @@ services:
       - "./backend/src:/srv/app"
       - "./frontend/output:/var/frontend-output:ro"
   search:
-    image: getmeili/meilisearch:v1.11
+    build: ./search
     environment:
       - "MEILI_MASTER_KEY=insecure-dev-secret-key"
     volumes:
