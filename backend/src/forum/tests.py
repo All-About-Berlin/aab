@@ -1,5 +1,9 @@
-from django.test import SimpleTestCase, override_settings
+from django.contrib.auth.models import User
+from django.core.cache import cache
+from django.test import SimpleTestCase, TestCase, override_settings
+from django.urls import reverse
 
+from forum.models import Reply, Thread
 from forum.templatetags.safe_markdown import safe_markdown
 
 
@@ -94,3 +98,59 @@ class SafeMarkdownTests(SimpleTestCase):
             safe_markdown("[click](javascript:alert(1))"),
             "<p><a>click</a></p>",
         )
+
+
+@override_settings(
+    CACHES={"default": {"BACKEND": "django.core.cache.backends.locmem.LocMemCache", "LOCATION": "forum-cache-tests"}}
+)
+class ForumCacheTests(TestCase):
+    def setUp(self):
+        cache.clear()
+        self.user = User.objects.create_user(username="alice")
+        self.thread = Thread.objects.create(author=self.user, title="Original title", body="Original body")
+        self.url = reverse("forum_thread", args=[self.thread.pk])
+
+    def test_anonymous_response_is_cached(self):
+        first = self.client.get(self.url)
+        self.assertEqual(first["X-Cache"], "MISS")
+        self.assertContains(first, "Original body")
+
+        Thread.objects.filter(pk=self.thread.pk).update(body="Silent edit")
+
+        second = self.client.get(self.url)
+        self.assertEqual(second["X-Cache"], "HIT")
+        self.assertContains(second, "Original body")
+        self.assertNotContains(second, "Silent edit")
+
+    def test_authenticated_response_is_not_cached(self):
+        self.client.get(self.url)
+        Thread.objects.filter(pk=self.thread.pk).update(body="Silent edit")
+
+        self.client.force_login(self.user)
+        response = self.client.get(self.url)
+        self.assertFalse(response.has_header("X-Cache"))
+        self.assertContains(response, "Silent edit")
+
+    def test_reply_invalidates_cache(self):
+        primed = self.client.get(self.url)
+        self.assertEqual(primed["X-Cache"], "MISS")
+        self.assertNotContains(primed, "First reply")
+
+        Reply.objects.create(author=self.user, thread=self.thread, body="First reply")
+
+        response = self.client.get(self.url)
+        self.assertEqual(response["X-Cache"], "MISS")
+        self.assertContains(response, "First reply")
+
+    def test_thread_edit_invalidates_cache(self):
+        primed = self.client.get(self.url)
+        self.assertEqual(primed["X-Cache"], "MISS")
+        self.assertContains(primed, "Original title")
+
+        self.thread.title = "Edited title"
+        self.thread.save()
+
+        response = self.client.get(self.url)
+        self.assertEqual(response["X-Cache"], "MISS")
+        self.assertContains(response, "Edited title")
+        self.assertNotContains(response, "Original title")
