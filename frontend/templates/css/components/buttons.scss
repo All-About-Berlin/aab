@@ -174,9 +174,6 @@
             top: var(--m);
             left: var(--m);
 
-            &:has(:checked){
-                @include box-clickable-hover;
-            }
 
             @include only-phone{
                 left: auto;

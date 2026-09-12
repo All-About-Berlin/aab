@@ -1,34 +1,36 @@
 import store from '/js/vue/pages/health-insurance-signup-store.mjs';
 
-const STEPS = [
-	{ key: 'start', label: 'Start' },
-	{ key: 'occupation', label: 'Occupation' },
-	{ key: 'family', label: 'Family' },
-	{ key: 'contactInfo', label: 'Contact' },
-];
-
 export default {
-	data(){
-		return { steps: STEPS };
-	},
 	computed: {
-		stageIndex(){ return store.stageIndex; },
-		maxProgress(){ return store.stages.length - 1; },
-		currentStage(){ return store.stages[store.stageIndex]; },
+		stages(){
+			return Object.fromEntries(
+				Object.entries(store.sidebarStages)
+					.filter(([k, s]) => s.enabled && s.label)
+			);
+		},
+		currentStage(){
+			return store.currentSidebarStage;
+		},
+		currentStageIndex(){
+			return Object.keys(this.stages).findIndex(k => k === this.currentStage);
+		},
+		stageCount(){
+			return Object.keys(this.stages).length;
+		}
 	},
 	template: `
 		<div class="sidebar no-print" aria-label="Signup progress">
 			<h2>Steps</h2>
 			<progress
 				aria-label="Form progress"
-				:max="maxProgress"
-				:value="stageIndex"></progress>
+				:max="stageCount - 1"
+				:value="currentStageIndex"></progress>
 			<ol>
 				<li
-					v-for="step in steps"
-					:key="step.key"
-					:class="{ current: step.key === currentStage }">
-					{{ step.label }}
+					v-for="(stage, stageKey) in stages"
+					:key="stageKey"
+					:class="{ current: stageKey === currentStage }">
+					{{ stage.label }}
 				</li>
 			</ol>
 		</div>

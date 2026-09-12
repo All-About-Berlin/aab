@@ -7,21 +7,19 @@ import EmailInput from '/js/vue/components/email-input.mjs';
 import FirstNameInput from '/js/vue/components/first-name-input.mjs';
 import Glossary from '/js/vue/components/glossary.mjs';
 import IconEmployee from '/js/vue/components/icons/employee.mjs';
+import IconFamily from '/js/vue/components/icons/family.mjs';
 import IconFreelancer from '/js/vue/components/icons/freelancer.mjs';
 import IconStudent from '/js/vue/components/icons/student.mjs';
 import IncomeInput from '/js/vue/components/income-input.mjs';
 import LastNameInput from '/js/vue/components/last-name-input.mjs';
+import multiStageMixin from '/js/vue/mixins/multiStage.mjs';
 import PostalcodeInput from '/js/vue/components/postalcode-input.mjs';
 import Radio from '/js/vue/components/radio.mjs';
+import store from '/js/vue/pages/health-insurance-signup-store.mjs';
 import Tabs from '/js/vue/components/tabs.mjs';
-import YesNoInput from '/js/vue/components/yes-no-input.mjs';
-
-import multiStageMixin from '/js/vue/mixins/multiStage.mjs';
 import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
-
-import store from '/js/vue/pages/health-insurance-signup-store.mjs';
-
+import YesNoInput from '/js/vue/components/yes-no-input.mjs';
 import { salaryOrIncome } from '/js/utils/occupations.mjs';
 
 export default {
@@ -35,6 +33,7 @@ export default {
 		FirstNameInput,
 		Glossary,
 		IconEmployee,
+		IconFamily,
 		IconFreelancer,
 		IconStudent,
 		IncomeInput,
@@ -48,15 +47,47 @@ export default {
 	data() {
 		return {
 			trackAs: 'Health insurance signup',
-			stages: [
-				'start',
-				'occupation',
-				'insuranceInfo',
-				'family',
-				'contactInfo',
-				'thank-you',
-				'error',
-			],
+
+			// Stages are turned on/off based on form content
+			allStages: {
+				start: {
+					label: 'Start',
+					enabled: true
+				},
+				family: {
+					label: 'People to insure',
+					enabled: true
+				},
+				you: {
+					label: 'You',
+					enabled: true
+				},
+				spouse: {
+					label: 'Your spouse',
+					enabled: false
+				},
+				children: {
+					label: 'Your children',
+					enabled: false
+				},
+				occupation: {
+					label: 'Occupation',
+					enabled: true
+				},
+				contactInfo: {
+					label: 'Contact',
+					enabled: true
+				},
+				'thank-you': {
+					enabled: true
+				},
+				error: {
+					enabled: true
+				},
+			},
+
+			insureSpouse: false,
+			insureChildren: false,
 
 			// Occupation
 			isEmployed: null,
@@ -133,11 +164,8 @@ export default {
 		monthlyIncome(){
 			return this.useMonthlyIncome ? this.inputIncome : this.inputIncome / 12;
 		},
-		hasChildren(){
-			return this.childrenCount > 0;
-		},
 		showContinueButton(){
-			if(this.stage === 'occupation'){
+			if(this.stage === 'you'){
 				return this.occupation;
 			}
 			return !['thank-you', 'error'].includes(this.stage);
@@ -162,14 +190,28 @@ export default {
 		finish(){
 			this.goToStage('thank-you');
 		},
+		updateStages(){
+			this.allStages.spouse.enabled = this.insureSpouse;
+			this.allStages.children.enabled = this.insureChildren && this.childrenCount > 0;
+			this.stages = Object.entries(this.allStages)
+				.filter(([stageKey, stage]) => stage.enabled)
+				.map(([stageKey]) => stageKey);
+		},
 	},
 	created(){
-		store.stages = this.stages;
-		store.stageIndex = this.stageIndex;
+		this.updateStages();
 	},
 	watch: {
-		stageIndex(newIndex){
-			store.stageIndex = newIndex;
+		insureSpouse(){ this.updateStages(); },
+		insureChildren(){ this.updateStages(); },
+		childrenCount(){ this.updateStages(); },
+		allStages: {
+			immediate: true,
+			handler(value){ store.sidebarStages = value; },
+		},
+		stage: {
+			immediate: true,
+			handler(value){ store.currentSidebarStage = value; },
 		},
 	},
 	template: `
@@ -179,8 +221,9 @@ export default {
 				<p>Sign up online for public health insurance with TK. It only takes a few minutes.</p>
 			</template>
 
-			<template v-if="stage === 'occupation'">
+			<template v-if="stage === 'you'">
 				<h2>What is your occupation?</h2>
+				<p>Your occupation affects your insurance options, and the cost of your insurance.</p>
 				<ul class="buttons grid" aria-label="Occupations">
 					<li>
 						<label>
@@ -204,23 +247,10 @@ export default {
 						</label>
 					</li>
 				</ul>
-				<details class="input-instructions article-body">
-					<summary>Why we ask for this</summary>
-					<ul>
-						<li>
-							<strong>It affects your options</strong><br>
-							You might not qualify for public health insurance, or private health insurance might be a better option.
-						</li>
-						<li>
-							<strong>It affects the cost</strong><br>
-							Public health insurance costs a percentage of your income. Your employer might pay half of it.
-						</li>
-					</ul>
-				</details>
 
 				<template v-if="isEmployed">
 					<hr>
-					<h3>Job information</h3>
+					<h3>Information about your job</h3>
 
 					<div class="form-group">
 						<label :for="uid('income')">
@@ -242,9 +272,9 @@ export default {
 						</yes-no-input>
 					</div>
 
-					<div class="form-group">
+					<div class="form-group" v-if="hasStartedWorking === false">
 						<span class="label">Start date</span>
-						<div class="question-input" v-if="hasStartedWorking === false">
+						<div class="question-input">
 							When do you start working?
 							<date-picker
 								:id="uid('job')"
@@ -253,12 +283,12 @@ export default {
 						</div>
 					</div>
 				</template>
-			</template>
 
-			<template v-if="stage === 'insuranceInfo'">
-				<h2>Current insurance</h2>
+				<hr>
 
-				<div class="form-group">
+				<h3>Current insurance</h3>
+
+				<div class="form-group no-label">
 					<yes-no-input
 						:id="uid('hasCurrentGermanInsurance')"
 						v-model="hasCurrentGermanInsurance"
@@ -293,7 +323,7 @@ export default {
 							<glossary term="private Krankenversicherung">Private health insurance</glossary>
 						</radio>
 						<radio v-model="currentInsuranceType" value="travelExpat" required>
-							Travel or <glossary term="Expat health insurance">expat health insurance</glossary>
+							<span>Travel or <glossary term="Expat health insurance">expat health insurance</glossary></span>
 						</radio>
 					</div>
 				</div>
@@ -311,16 +341,40 @@ export default {
 			</template>
 
 			<template v-if="stage === 'family'">
-				<h2>Family information</h2>
-
-				<div class="form-group">
-					<label :for="uid('childrenCount')">
-						Children
-					</label>
-					<children-input
-						v-model="childrenCount"
-						:id="uid('childrenCount')"
-						required></children-input>
+				<h2>Who are you insuring?</h2>
+				<p>It's cheaper to insure your family together. Public health insurance can cover your spouse and your children for free.</p>
+				<ul class="buttons grid" aria-label="Who are you insuring">
+					<li>
+						<label>
+							<input type="checkbox" checked disabled>
+							<icon-employee/>
+							Me
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" v-model="insureSpouse">
+							<icon-family/>
+							My spouse
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" v-model="insureChildren">
+							<icon-family/>
+							My children
+						</label>
+					</li>
+				</ul>
+				<hr v-if="insureChildren">
+				<div class="form-group no-label" v-if="insureChildren">
+					<div class="question-input">
+						<label :for="uid('childrenCount')">How many children do you have?</label>
+						<children-input
+							v-model="childrenCount"
+							:id="uid('childrenCount')"
+							required></children-input>
+					</div>
 				</div>
 			</template>
 
