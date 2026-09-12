@@ -28,6 +28,6 @@ urlpatterns = [
     ),
     path("forum/users/<str:username>", views.ForumUserProfileView.as_view(), name="forum_user"),
     path("forum/new", views.ForumNewThreadView.as_view(), name="forum_new_thread"),
-    path("forum/<int:thread_id>", views.ForumThreadView.as_view(), name="forum_thread"),
-    path("forum/<int:thread_id>/page-<int:page>", views.ForumThreadView.as_view(), name="forum_thread_page"),
+    path("forum/<int:pk>", views.ForumThreadView.as_view(), name="forum_thread"),
+    path("forum/<int:pk>/page-<int:page>", views.ForumThreadView.as_view(), name="forum_thread_page"),
 ]
