@@ -10,18 +10,22 @@ from forms.models import (
 )
 
 
+@admin.register(PensionRefundQuestion)
 class PensionRefundQuestionAdmin(admin.ModelAdmin):
     list_display = ["name", "nationality", "country_of_residence", "question", "creation_date"]
 
 
+@admin.register(PensionRefundRequest)
 class PensionRefundRequestAdmin(admin.ModelAdmin):
     list_display = ["name", "partner", "nationality", "country_of_residence", "creation_date"]
 
 
+@admin.register(PensionRefundReminder)
 class PensionRefundReminderAdmin(admin.ModelAdmin):
     list_display = ["email", "creation_date", "delivery_date"]
 
 
+@admin.register(ResidencePermitFeedback)
 class ResidencePermitFeedbackAdmin(admin.ModelAdmin):
     list_display = [
         "short_modification_date",
@@ -49,6 +53,7 @@ class ResidencePermitFeedbackAdmin(admin.ModelAdmin):
     has_notes.short_description = "Has notes"
 
 
+@admin.register(CitizenshipFeedback)
 class CitizenshipFeedbackAdmin(admin.ModelAdmin):
     list_display = [
         "short_modification_date",
@@ -72,10 +77,12 @@ class CitizenshipFeedbackAdmin(admin.ModelAdmin):
     has_notes.short_description = "Has notes"
 
 
+@admin.register(PlaceSuggestion)
 class PlaceSuggestionAdmin(admin.ModelAdmin):
     list_display = ["business_name", "category", "is_owner", "email", "creation_date"]
 
 
+@admin.register(ImmigrationOfficeLawsuit)
 class ImmigrationOfficeLawsuitAdmin(admin.ModelAdmin):
     list_display = [
         "name",
@@ -85,12 +92,3 @@ class ImmigrationOfficeLawsuitAdmin(admin.ModelAdmin):
         "application_date",
         "creation_date",
     ]
-
-
-admin.site.register(PlaceSuggestion, PlaceSuggestionAdmin)
-admin.site.register(PensionRefundRequest, PensionRefundRequestAdmin)
-admin.site.register(PensionRefundReminder, PensionRefundReminderAdmin)
-admin.site.register(PensionRefundQuestion, PensionRefundQuestionAdmin)
-admin.site.register(ResidencePermitFeedback, ResidencePermitFeedbackAdmin)
-admin.site.register(CitizenshipFeedback, CitizenshipFeedbackAdmin)
-admin.site.register(ImmigrationOfficeLawsuit, ImmigrationOfficeLawsuitAdmin)

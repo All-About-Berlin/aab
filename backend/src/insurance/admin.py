@@ -2,6 +2,7 @@ from django.contrib import admin
 from insurance.models import Case
 
 
+@admin.register(Case)
 class CaseAdmin(admin.ModelAdmin):
     fieldsets = (
         (
@@ -49,6 +50,3 @@ class CaseAdmin(admin.ModelAdmin):
         "site",
         "referrer",
     ]
-
-
-admin.site.register(Case, CaseAdmin)
