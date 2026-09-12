@@ -102,7 +102,6 @@ class ForumIndexView(VersionedCacheMixin, ListView):
                 last_activity_date=Coalesce(Max("replies__creation_date"), F("creation_date")),
                 reply_count=Count("replies"),
             )
-            .select_related("author")
             .order_by("-last_activity_date")
         )
 
@@ -123,18 +122,13 @@ class ForumUserProfileView(LoginRequiredMixin, DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         user = self.object
-        threads = (
-            Thread.objects.filter(author=user)
-            .annotate(
-                last_activity_date=Coalesce(Max("replies__creation_date"), F("creation_date")),
-                reply_count=Count("replies"),
-            )
-            .select_related("author")
-            .order_by("-creation_date")
-        )
+        threads = user.forum_threads.annotate(
+            last_activity_date=Coalesce(Max("replies__creation_date"), F("creation_date")),
+            reply_count=Count("replies"),
+        ).order_by("-creation_date")
         replies = user.forum_replies.select_related("thread").order_by("-creation_date")
-        context["threads"] = threads
-        context["replies"] = replies
+        context["threads"] = threads[: settings.RESULTS_PER_PAGE]
+        context["replies"] = replies[: settings.RESULTS_PER_PAGE]
         context["thread_count"] = threads.count()
         context["post_count"] = replies.count()
         return context
@@ -144,16 +138,13 @@ class ForumThreadView(VersionedCacheMixin, FormMixin, DetailView):
     model = Thread
     template_name = "forum/thread.html"
     form_class = ReplyForm
-    pk_url_kwarg = "thread_id"
     context_object_name = "thread"
 
     def get_queryset(self):
         return Thread.objects.filter(removal_date__isnull=True).select_related("author")
 
     def get_content_modification_date(self, request: HttpRequest) -> datetime | None:
-        return (
-            self.get_queryset().filter(pk=self.kwargs["thread_id"]).values_list("modification_date", flat=True).first()
-        )
+        return self.get_queryset().filter(pk=self.kwargs["pk"]).values_list("modification_date", flat=True).first()
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -181,7 +172,7 @@ class ForumThreadView(VersionedCacheMixin, FormMixin, DetailView):
         reply.author = self.request.user
         reply.thread = self.object
         reply.save()
-        last_page = max(1, -(-self.object.replies.count() // settings.RESULTS_PER_PAGE))
+        last_page = Paginator(self.object.replies.all(), settings.RESULTS_PER_PAGE).num_pages
         url = (
             reverse("forum_thread_page", args=[self.object.pk, last_page])
             if last_page > 1
