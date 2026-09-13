@@ -3,8 +3,6 @@ title: Fill the Anmeldung form online
 short_title: Anmeldung form filler
 german_term: Anmeldung einer Wohnung
 english_term: Registration of a residence
-german_document: documents/anmeldung-original.pdf
-english_document: documents/anmeldung-translated-2021-v2.pdf
 description: Fill the Anmeldung form online, in English. You need this form to register your address in Berlin.
 date_created: 2018-02-28
 related_guides:
@@ -25,7 +23,7 @@ This is the English translation of the official *[[Anmeldung]]* form. Fill this 
 
 You can also download the original form and fill it yourself. To register more than 2 people, fill the form multiple times.
 
-{% include "_blocks/documentDownloads.html" %}
+{% document name_en="Registration of a residence", name_de="Anmeldung einer Wohnung", file_en="anmeldung-form-en.pdf", file_de="anmeldung-form-de.pdf" %}
 
 The same form is [on Berlin.de](https://www.berlin.de/formularverzeichnis/?formular=/labo/zentrale-einwohnerangelegenheiten/_assets/anmeldung_bei_der_meldebehoerde.pdf).
 

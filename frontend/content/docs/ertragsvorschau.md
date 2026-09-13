@@ -3,8 +3,6 @@ title: Revenue forecast template (German freelance visa)
 short_title: Revenue forecast template
 german_term: Ertragsvorschau
 english_term: Revenue forecast
-german_document: documents/german-visa-Ertragsvorschau-2023.pdf
-english_document: documents/german-visa-Ertragsvorschau-2023.pdf
 description: The official Ertragsvorschau template for the Berlin immigration office. Use it to apply for a German freelance visa.
 date_created: 2018-06-13
 related_guides:
@@ -22,7 +20,7 @@ This is the official template. You can use your own template, but some *[[Auslä
 
 ## Download the Ertragsvorschau template
 
-{% include "_blocks/documentDownloads.html" %}
+{% document name_en="Revenue forecast", name_de="Ertragsvorschau", file="ertragsvorschau.pdf" %}
 
 The same template is on [Berlin.de](https://service.berlin.de/dienstleistung/305249/).
 

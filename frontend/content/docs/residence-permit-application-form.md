@@ -3,8 +3,6 @@ title: German residence permit application form
 short_title: Residence permit application form
 german_term: Antrag auf Erteilung eines Aufenthaltstitels
 english_term: Application for a residence permit
-german_document: documents/residence-permit-application-form-2021.pdf
-english_document: documents/residence-permit-application-form-2021.pdf
 description: Fill this form to apply for a German residence permit like the work visa or freelance visa. It's in English, German and 9 other languages.
 date_created: 2018-06-07
 related_guides:
@@ -25,7 +23,7 @@ This is the official form for Berlin. The original document is [on Berlin.de](ht
 
 ## Download the residence permit form
 
-{% include "_blocks/documentDownloads.html" %}
+{% document name_en="Application for a residence permit", name_de="Antrag auf Erteilung eines Aufenthaltstitels", file="residence-permit-application-form.pdf" %}
 
 You can download this form in 11 languages:
 

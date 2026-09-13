@@ -97,7 +97,7 @@ export default {
 			},
 			downloadInProgress: false,
 			feedbackReminderSent: false,
-			pdfUrl: '/documents/010250-Antrag-auf-Vergabe-einer-steuerlichen-Identifikationsnummer-für-nicht-meldepflichtige-Personen-durch-das-Finanzamt-Deutsch.pdf',
+			pdfUrl: '/documents/010250-tax-id-application-form-de.pdf',
 		};
 	},
 	methods: {
@@ -249,9 +249,9 @@ export default {
 			<progress v-if="stage !== 'start'" aria-label="Form progress" :max="stages.length - 1" :value="stageIndex"></progress>
 			<template v-if="stage === 'start'">
 				<picture>
-					<source srcset="/documents/010250-Antrag-auf-Vergabe-einer-steuerlichen-Identifikationsnummer-für-nicht-meldepflichtige-Personen-durch-das-Finanzamt-Deutsch.webp 1600w, /documents/previews/010250-Antrag-auf-Vergabe-einer-steuerlichen-Identifikationsnummer-für-nicht-meldepflichtige-Personen-durch-das-Finanzamt-Deutsch.webp 300w, /documents/previews2x/010250-Antrag-auf-Vergabe-einer-steuerlichen-Identifikationsnummer-für-nicht-meldepflichtige-Personen-durch-das-Finanzamt-Deutsch.webp 600w" type="image/webp">
-					<source srcset="/documents/previews/010250-Antrag-auf-Vergabe-einer-steuerlichen-Identifikationsnummer-für-nicht-meldepflichtige-Personen-durch-das-Finanzamt-Deutsch.png 300w, /documents/previews2x/010250-Antrag-auf-Vergabe-einer-steuerlichen-Identifikationsnummer-für-nicht-meldepflichtige-Personen-durch-das-Finanzamt-Deutsch.png 600w" type="image/png">
-					<img alt="German tax ID application form" loading="lazy" src="/documents/previews/010250-Antrag-auf-Vergabe-einer-steuerlichen-Identifikationsnummer-für-nicht-meldepflichtige-Personen-durch-das-Finanzamt-Deutsch.png">
+					<source srcset="/documents/010250-tax-id-application-form-de.webp 1600w, /documents/previews/010250-tax-id-application-form-de.webp 300w, /documents/previews2x/010250-tax-id-application-form-de.webp 600w" type="image/webp">
+					<source srcset="/documents/previews/010250-tax-id-application-form-de.png 300w, /documents/previews2x/010250-tax-id-application-form-de.png 600w" type="image/png">
+					<img alt="German tax ID application form" loading="lazy" src="/documents/previews/010250-tax-id-application-form-de.png">
 				</picture>
 				<p>This tool helps you request a new <glossary term="Steueridentifikationsnummer">tax ID</glossary>.</p>
 				<p>You normally get a tax ID when you <glossary term="Anmeldung">register your address</glossary> for the first time. <strong>Only use this form if you can't register your address.</strong></p>
@@ -279,7 +279,7 @@ export default {
 				<template v-if="purpose === 'noAnmeldung'">
 					<hr>
 					<p>
-						This tool helps you fill <a href="/documents/010250-Antrag-auf-Vergabe-einer-steuerlichen-Identifikationsnummer-für-nicht-meldepflichtige-Personen-durch-das-Finanzamt-Deutsch.pdf" target="_blank">form 010250</a>. That form is not designed for your situation, but it usually works anyway. It's the only way to get a tax ID without <glossary term="Anmeldung">registering your address</glossary>.
+						This tool helps you fill <a href="/documents/010250-tax-id-application-form-de.pdf" target="_blank">form 010250</a>. That form is not designed for your situation, but it usually works anyway. It's the only way to get a tax ID without <glossary term="Anmeldung">registering your address</glossary>.
 					</p>
 				</template>
 				<template v-if="purpose === 'business'">

@@ -1,0 +1,304 @@
+{% extends "_page.html" %}
+{% set entry = {'title': 'Record list gallery', 'description': 'Every kind of record list on the website, side by side.'} %}
+
+{% block postHead %}
+	<meta name="robots" content="noindex">
+{% endblock %}
+
+{% block extraScss %}
+	{% include "css/components/forum.scss" %}
+{% endblock %}
+
+{% block main %}
+	<main aria-label="Main page">
+		<article class="section">
+			<h1>Record list gallery</h1>
+			<p>Every kind of record list on the site, side by side, in preparation of unifying them.</p>
+		</article>
+
+		{#
+			entryPreviews.html — content previews
+			Branches on entryType (docs / with short_title / plain) and the show_date_posted / show_date_updated flags.
+		#}
+		{% set guideEntries = [
+			entries['guides/abmeldung.md'],
+			entries['guides/24-hour-gym-berlin.md'],
+			entries['guides/address-change.md'],
+		] %}
+		<section class="section" aria-label="entryPreviews — guides with date posted">
+			<h2>entryPreviews — guides, <code>show_date_posted</code></h2>
+			{% with entries=guideEntries, show_date_posted=true %}
+				{% include "_blocks/entryPreviews.html" %}
+			{% endwith %}
+		</section>
+
+		<section class="section" aria-label="entryPreviews — guides with date updated">
+			<h2>entryPreviews — guides, <code>show_date_updated</code></h2>
+			{% with entries=guideEntries, show_date_updated=true %}
+				{% include "_blocks/entryPreviews.html" %}
+			{% endwith %}
+		</section>
+
+		<section class="section" aria-label="entryPreviews — guides with breadcrumbs">
+			<h2>entryPreviews — guides, <code>breadcrumbs=True</code></h2>
+			{% with entries=guideEntries, breadcrumbs=true, show_date_posted=true %}
+				{% include "_blocks/entryPreviews.html" %}
+			{% endwith %}
+		</section>
+
+		{% set plainGuideEntries = [
+			entries['guides/leaving-germany.md'],
+			entries['guides/elster-account.md'],
+		] %}
+		<section class="section" aria-label="entryPreviews — guides without short title and no dates">
+			<h2>entryPreviews — guides, no <code>short_title</code>, no dates</h2>
+			{% with entries=plainGuideEntries %}
+				{% include "_blocks/entryPreviews.html" %}
+			{% endwith %}
+		</section>
+
+		{% set newsletterEntries = [
+			entries['newsletter/august-2026.md'],
+			entries['newsletter/april-2026.md'],
+			entries['newsletter/december-2025.md'],
+		] %}
+		<section class="section" aria-label="entryPreviews — newsletter">
+			<h2>entryPreviews — newsletter, <code>show_date_posted</code>, <code>show_description</code></h2>
+			{% with entries=newsletterEntries, show_date_posted=true, show_description=true %}
+				{% include "_blocks/entryPreviews.html" %}
+			{% endwith %}
+		</section>
+
+		<section class="section" aria-label="entryPreviews — guides with description">
+			<h2>entryPreviews — guides, <code>show_description</code></h2>
+			{% with entries=guideEntries, show_date_posted=true, show_description=true %}
+				{% include "_blocks/entryPreviews.html" %}
+			{% endwith %}
+		</section>
+
+		{% set docEntries = [
+			entries['docs/anmeldung.md'],
+			entries['docs/abmeldung.md'],
+			entries['docs/010250-antrag-auf-vergabe-einer-steuerlichen-id.md'],
+		] %}
+		<section class="section" aria-label="entryPreviews — docs">
+			<h2>entryPreviews — docs (English / German term)</h2>
+			{% with entries=docEntries %}
+				{% include "_blocks/entryPreviews.html" %}
+			{% endwith %}
+		</section>
+
+		{% set toolEntries = [
+			entries['tools/health-insurance-calculator.md'],
+			entries['tools/tax-calculator.md'],
+			entries['tools/pension-refund-calculator.md'],
+		] %}
+		<section class="section" aria-label="entryPreviews — tools">
+			<h2>entryPreviews — tools, <code>show_description</code></h2>
+			{% with entries=toolEntries, show_description=true %}
+				{% include "_blocks/entryPreviews.html" %}
+			{% endwith %}
+		</section>
+
+		{#
+			Forum thread list — mirrors backend/src/forum/templates/forum/_threadList.html.
+			Requires a `.threads` or `.replies` ancestor for the forum.scss grid layout.
+		#}
+		<section class="section threads" aria-label="Forum thread list">
+			<h2>Forum thread list</h2>
+			<ol class="h-feed" aria-label="Threads">
+				<li class="thread h-entry">
+					<h3><a class="title u-url p-name" href="#">How to find a flat in Berlin without paying a Vermittler?</a></h3>
+					<div class="post-meta" aria-label="Topic author, publication date and category">
+						<div aria-label="12 replies" title="12 replies">
+							<i class="icon bubble" aria-hidden="true"></i> 12
+						</div>
+						<div class="date" title="Last activity on September 12, 09:47" aria-label="Last activity">
+							<i class="icon calendar" aria-hidden="true"></i>
+							<time class="dt-updated" datetime="2026-09-12T09:47:00">Sep 12</time>
+						</div>
+					</div>
+				</li>
+				<li class="thread h-entry">
+					<h3><a class="title u-url p-name" href="#">Anmeldung appointment finally available — but only next month</a></h3>
+					<div class="post-meta" aria-label="Topic author, publication date and category">
+						<div aria-label="1 reply" title="1 reply">
+							<i class="icon bubble" aria-hidden="true"></i> 1
+						</div>
+						<div class="date" title="Last activity on September 10, 18:22" aria-label="Last activity">
+							<i class="icon calendar" aria-hidden="true"></i>
+							<time class="dt-updated" datetime="2026-09-10T18:22:00">Sep 10</time>
+						</div>
+					</div>
+				</li>
+				<li class="thread h-entry">
+					<h3><a class="title u-url p-name" href="#">Best English-speaking Steuerberater in Berlin?</a></h3>
+					<div class="post-meta" aria-label="Topic author, publication date and category">
+						<div aria-label="0 replies" title="0 replies">
+							<i class="icon bubble" aria-hidden="true"></i> 0
+						</div>
+						<div class="date" title="Last activity on September 7, 11:03" aria-label="Last activity">
+							<i class="icon calendar" aria-hidden="true"></i>
+							<time class="dt-updated" datetime="2026-09-07T11:03:00">Sep 7</time>
+						</div>
+					</div>
+				</li>
+			</ol>
+		</section>
+
+		<section class="section threads" aria-label="Forum thread list — empty">
+			<h2>Forum thread list — empty state</h2>
+			<p class="empty">There are no topics to show.</p>
+		</section>
+
+		{#
+			Forum reply list — mirrors backend/src/forum/templates/forum/_replyList.html
+			(plus forum/_username.html for the author line). Shows a normal reply,
+			an admin reply, and every removal reason branch.
+		#}
+		<section class="section replies" aria-label="Forum reply list">
+			<h2>Forum reply list</h2>
+			<ol class="h-feed">
+				<li class="h-entry reply" id="reply-1" itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+					<link itemprop="url" href="#reply-1">
+					<div class="post-meta">
+						<div class="username p-author h-card" itemprop="author" itemscope itemtype="https://schema.org/Person">
+							<i class="icon person" aria-hidden="true"></i>
+							<a rel="author" class="p-name u-url" itemprop="url" href="#"><span itemprop="name">berlin_newcomer</span></a>
+						</div>
+						<div class="date" title="Posted on September 8, 2026" aria-label="Comment date">
+							<i class="icon calendar" aria-hidden="true"></i>
+							<a class="u-url" href="#reply-1"><time class="dt-published" itemprop="datePublished" datetime="2026-09-08T14:12:00">September 8, 2026</time></a>
+						</div>
+					</div>
+					<div class="article-body e-content" itemprop="text">
+						<p>Thanks for the tips! I ended up using ImmoScout and filtering out anything with a Provision. Took about six weeks but I found a place in Neukölln.</p>
+					</div>
+				</li>
+				<li class="h-entry reply" id="reply-2" itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+					<link itemprop="url" href="#reply-2">
+					<div class="post-meta">
+						<div class="username p-author h-card" itemprop="author" itemscope itemtype="https://schema.org/Person">
+							<i class="icon person" aria-hidden="true"></i>
+							<a rel="author" class="p-name u-url" itemprop="url" href="#"><span itemprop="name">nicolas</span></a>
+							<span class="pill">Admin</span>
+						</div>
+						<div class="date" title="Posted on September 9, 2026" aria-label="Comment date">
+							<i class="icon calendar" aria-hidden="true"></i>
+							<a class="u-url" href="#reply-2"><time class="dt-published" itemprop="datePublished" datetime="2026-09-09T09:03:00">September 9, 2026</time></a>
+						</div>
+					</div>
+					<div class="article-body e-content" itemprop="text">
+						<p>Glad it worked out. I've added a section to the guide about avoiding Provision listings.</p>
+					</div>
+				</li>
+				<li class="reply removed">This reply was removed because its author was banned.</li>
+				<li class="reply removed">This reply was removed by a moderator.</li>
+				<li class="reply removed">This reply was deleted by its author.</li>
+				<li class="reply removed">This reply was removed.</li>
+			</ol>
+		</section>
+
+		<section class="section replies" aria-label="Forum reply list — empty">
+			<h2>Forum reply list — empty state</h2>
+			<p class="empty">There are no replies to show.</p>
+		</section>
+
+		{#
+			User profile "recent replies" — mirrors the inline list in
+			backend/src/forum/templates/forum/userProfile.html, which is different
+			from _replyList.html (shows the parent thread title as the link).
+		#}
+		<section class="section replies" aria-label="Recent replies by user">
+			<h2>User profile — recent replies</h2>
+			<ol class="h-feed">
+				<li class="h-entry reply" id="reply-1" itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+					<link itemprop="url" href="#reply-1">
+					<a class="p-author h-card" hidden href="#">berlin_newcomer</a>
+					<div class="post-meta">
+						<a class="title" href="#reply-1">How to find a flat in Berlin without paying a Vermittler?</a>
+						<div class="date" title="Posted on September 8, 2026" aria-label="Comment date">
+							<i class="icon calendar" aria-hidden="true"></i>
+							<a class="u-url" href="#reply-1"><time class="dt-published" itemprop="datePublished" datetime="2026-09-08T14:12:00">September 8, 2026</time></a>
+						</div>
+					</div>
+					<div class="article-body e-content" itemprop="text">
+						<p>Thanks for the tips! I ended up using ImmoScout and filtering out anything with a Provision.</p>
+					</div>
+				</li>
+				<li class="h-entry reply" id="reply-3" itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+					<link itemprop="url" href="#reply-3">
+					<a class="p-author h-card" hidden href="#">berlin_newcomer</a>
+					<div class="post-meta">
+						<a class="title" href="#reply-3">Anmeldung appointment finally available — but only next month</a>
+						<div class="date" title="Posted on September 10, 2026" aria-label="Comment date">
+							<i class="icon calendar" aria-hidden="true"></i>
+							<a class="u-url" href="#reply-3"><time class="dt-published" itemprop="datePublished" datetime="2026-09-10T18:22:00">September 10, 2026</time></a>
+						</div>
+					</div>
+					<div class="article-body e-content" itemprop="text">
+						<p>Just wanted to update: appointment is confirmed for October 15. Anyone else waiting this long?</p>
+					</div>
+				</li>
+			</ol>
+		</section>
+
+		{#
+			Search results — mirrors the markup rendered by the Vue template in
+			frontend/templates/js/vue/tools/search.mjs (fed from /api/search/).
+		#}
+		<section class="section" aria-label="Search results">
+			<h2>Search results</h2>
+			<p role="status">3 results found for “anmeldung”</p>
+			<ol class="entries" aria-label="Search results">
+				<li class="entry">
+					<h3><a class="title" href="#">Anmeldung in English — Berlin registration</a></h3>
+					<div class="post-meta">
+						<nav class="breadcrumbs" aria-label="Breadcrumbs">
+							<i class="icon folder" aria-hidden="true"></i>
+							<ol>
+								<li><a href="/guides">Guides</a></li>
+							</ol>
+						</nav>
+						<div class="date">
+							<i class="icon calendar" aria-hidden="true"></i>
+							<time datetime="2024-04-12">April 12, 2024</time>
+						</div>
+					</div>
+					<p>The <em>Anmeldung</em> is the mandatory registration of your address at the Bürgeramt. Everyone who lives in Germany for longer than three months must do this.</p>
+				</li>
+				<li class="entry">
+					<h3><a class="title" href="#">Anmeldung appointment finder</a></h3>
+					<div class="post-meta">
+						<nav class="breadcrumbs" aria-label="Breadcrumbs">
+							<i class="icon folder" aria-hidden="true"></i>
+							<ol>
+								<li><a href="/tools">Tools</a></li>
+							</ol>
+						</nav>
+						<div class="date">
+							<i class="icon calendar" aria-hidden="true"></i>
+							<time datetime="2022-06-15">June 15, 2022</time>
+						</div>
+					</div>
+					<p>This bot helps you find a Bürgeramt <em>appointment</em> to register your address.</p>
+				</li>
+				<li class="entry">
+					<h3><a class="title" href="#">Fill the Anmeldung form online</a></h3>
+					<div class="post-meta">
+						<nav class="breadcrumbs" aria-label="Breadcrumbs">
+							<i class="icon folder" aria-hidden="true"></i>
+							<ol>
+								<li>Documents</li>
+							</ol>
+						</nav>
+						<div class="date">
+							<i class="icon calendar" aria-hidden="true"></i>
+							<time datetime="2018-02-28">February 28, 2018</time>
+						</div>
+					</div>
+				</li>
+			</ol>
+		</section>
+	</main>
+{% endblock %}
