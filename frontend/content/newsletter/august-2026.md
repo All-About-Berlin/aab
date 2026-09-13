@@ -1,7 +1,7 @@
 ---
-Title: What's new in August 2026
-Description: Health insurance reform, AI disclosure, new home page and more upcoming reforms.
-Date_created: 2026-08-01
+title: What's new in August 2026
+description: Health insurance reform, AI disclosure, new home page and more upcoming reforms.
+date_created: 2026-08-01
 ---
 
 ## What's new in Berlin

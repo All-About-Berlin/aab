@@ -320,6 +320,7 @@ config.linters = [
     "extensions.linters.lists.MultilineListsLinter",
     "extensions.linters.metadata.DateUpdatedLinter",
     "extensions.linters.metadata.DescriptionLinter",
+    "extensions.linters.metadata.LowercaseKeysLinter",
     "extensions.linters.metadata.ShortTitleLinter",
     "extensions.linters.section.SectionSignLinter",
     "extensions.linters.table_of_contents.TableOfContentsLinter",
