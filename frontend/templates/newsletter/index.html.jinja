@@ -51,7 +51,7 @@
 		</header>
 		<section class="section" aria-label="Previous emails">
 			<h2>Previous newsletters</h2>
-			{% with entries=get_entries('newsletter', sort_by='date_created', reverse=True), showDatePosted=true %}
+			{% with entries=get_entries('newsletter', sort_by='date_created', reverse=True), show_date_posted=true, show_description=true %}
 				{% include "_blocks/entryPreviews.html" %}
 			{% endwith %}
 		</section>

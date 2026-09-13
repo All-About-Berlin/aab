@@ -1,5 +1,4 @@
 ::selection, mark{background:var(--c-text-selection)}
-mark{color:var(--c-text-heading)}
 
 :is(h1, h2, h3){
     @include heading;
@@ -257,7 +256,7 @@ h1 + .article-body{
         }
     }
 
-    > ol:not(.previews) > li, > :is(ol, ul) ol > li{
+    > ol:not(.entry-previews) > li, > :is(ol, ul) ol > li{
         @include list-marker-ol;
     }
     > ul:not(.feedback-list, .buttons) > li, > :is(ol, ul) ul > li{
@@ -319,4 +318,135 @@ h1 + .article-body{
 .selectable{
     // Simplifies selecting values like phone numbers
     user-select: all;
+}
+
+.entry-previews{
+    display: grid;
+    gap: var(--m);
+
+    .entry-preview{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: var(--s);
+        align-items: flex-start;
+
+        @include only-phone{
+            grid-template-columns: 1fr;
+        }
+
+        + .entry-preview{
+            padding-top: var(--m);
+            border-top: var(--b-box);
+        }
+
+        h3{
+            font-size: var(--m);
+            font-weight: 600;
+            display: grid;
+            gap: var(--xs);
+        }
+
+        .post-meta{
+            border: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            color: var(--c-text-light);
+            justify-content: space-between;
+
+            // Used in search results
+            .breadcrumbs{
+                order: 0;
+                ol{
+                    flex-wrap: wrap;
+                }
+
+                li:not(.title) a{
+                    color: inherit;
+                }
+                li.title a{
+                    font-weight: 600;
+                    font-size: var(--m);
+                }
+            }
+        }
+
+        p{
+            margin: 0;
+            grid-column: 1 / -1;
+            font-size: var(--f-s);
+        }
+
+        mark{
+            color: inherit;
+        }
+    }
+}
+
+li.yes, li.no{
+    padding-left: calc(var(--l-relative) + var(--s));
+
+    &:before{
+        display: block;
+        content: '×'!important;
+        background: var(--c-bg-error);
+        color: var(--c-text-error);
+        width: var(--m-relative);
+        height: var(--m-relative);
+        line-height: var(--m-relative);
+        border-radius: 50%;
+        text-align: center;
+        margin-top: calc((var(--m) * var(--line-height-label) - var(--m-relative)) / 2);
+    }
+}
+li.yes:before{
+    color: #fff;
+    background: var(--c-highlight-green);
+    content: '✓'!important;
+}
+
+.download-buttons{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--m);
+
+    > a{
+        @include box-l;
+        @include box-clickable;
+        max-height: 250px;
+        overflow: hidden;
+        text-align: center;
+        margin: 0;
+
+        span{
+            font-size: var(--f-s);
+            display: block; // Applies the line-height to this font size
+            margin: var(--xs) 0 0;
+            line-height: var(--line-height-label);
+        }
+        img{
+            border-radius: 0;
+            display: block;
+            max-width: 100%;
+            width: 300px;
+            height: 500px;
+            object-fit: contain;
+            object-position: center top;
+            background: var(--c-bg-page);
+            margin: var(--m) auto 0 auto;
+            border: var(--b-box);
+            box-shadow: var(--shadow-l)!important;
+            transition: transform 0.2s;
+        }
+
+        &:hover img{
+            border-color:var(--c-border-box)!important;
+            transform: scale(1.05);
+            transition: transform 0.2s;
+        }
+    }
+
+    @include only-phone{
+        grid-template-columns: 1fr;
+    }
 }

@@ -41,16 +41,17 @@
 	{% if replies %}
 		<ol class="h-feed">
 			{% for reply in replies %}
-				<li class="h-entry reply">
+				<li class="h-entry reply" id="reply-{{ reply.pk }}" itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+					<link itemprop="url" href="{{ SITE_URL }}{% url 'forum_thread' reply.thread.pk %}#reply-{{ reply.pk }}">
 					<a class="p-author h-card" hidden href="{{ SITE_URL }}{% url 'forum_user' profile_user.username %}">{{ profile_user.username }}</a>
 					<div class="post-meta">
-						<a class="u-url" href="{{ SITE_URL }}{% url 'forum_thread' reply.thread.pk %}#reply-{{ reply.pk }}">{{ reply.thread.title }}</a>
-						<div class="date" title="Posted on {{ reply.creation_date|date:'F j, H:i' }}" aria-label="Comment date">
+						<a href="{{ SITE_URL }}{% url 'forum_thread' reply.thread.pk %}#reply-{{ reply.pk }}">{{ reply.thread.title }}</a>
+						<div class="date" title="Posted on {{ reply.creation_date|date:'F j, Y' }}" aria-label="Comment date">
 							<i class="icon calendar" aria-hidden="true"></i>
-							<time class="dt-published" datetime="{{ reply.creation_date.isoformat }}">{{ reply.creation_date|short_datetime }}</time>
+							<a class="u-url" href="{{ SITE_URL }}{% url 'forum_thread' reply.thread.pk %}#reply-{{ reply.pk }}"><time class="dt-published" itemprop="datePublished" datetime="{{ reply.creation_date.isoformat }}">{{ reply.creation_date|date:'F j, Y' }}</time></a>
 						</div>
 					</div>
-					<div class="article-body e-content">{{ reply.body|linebreaks }}</div>
+					<div class="article-body e-content" itemprop="text">{{ reply.body|linebreaks }}</div>
 				</li>
 			{% endfor %}
 		</ol>

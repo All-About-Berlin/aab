@@ -1,9 +1,0 @@
-{% macro preview(entry) %}
-	{% set id = random_id() %}
-	<li aria-labelledby="h-tool-{{ id }}">
-		<h3 id="h-tool-{{ id }}">
-			<a title="{{ entry.title }}" rel="bookmark" href="{{ entry.url }}">{{ entry.short_title|default(entry.title) }}</a>
-		</h3>
-		<p>{{ entry.description }}</p>
-	</li>
-{% endmacro %}

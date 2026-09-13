@@ -75,6 +75,8 @@
 
     :is(.thread, .reply){
         display: grid;
+        align-items: flex-start;
+
         gap: var(--s) var(--m);
         grid-auto-flow: column;
         border-top: var(--b-box);

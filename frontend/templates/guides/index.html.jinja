@@ -30,14 +30,14 @@
 		<section id="newest" class="section" aria-label="Newest guides">
 			<h2>Newest guides</h2>
 			{% set newEntries = get_entries('guides', sort_by='date_created', reverse=True)[0:10] %}
-			{% with entries=newEntries, showDatePosted=true %}
+			{% with entries=newEntries, show_date_posted=true %}
 				{% include "_blocks/entryPreviews.html" %}
 			{% endwith %}
 		</section>
 		<section id="recent-updates" class="section" aria-label="Recently updated guides">
 			<h2>Recent updates</h2>
 			{% set updatedEntries = get_entries('guides', sort_by='date_updated', reverse=True)[0:10] %}
-			{% with entries=updatedEntries, showDateUpdated=true %}
+			{% with entries=updatedEntries, show_date_updated=true %}
 				{% include "_blocks/entryPreviews.html" %}
 			{% endwith %}
 		</section>

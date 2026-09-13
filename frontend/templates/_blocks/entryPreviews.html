@@ -1,32 +1,47 @@
-<ol class="previews">
+<ol class="entry-previews">
 {% for entry in entries %}
 	{% set entryType = entry.entry_uri.split('/')[0] %}
-	<li class="{{ entryType }}">
-		<h3>
-			{% if entryType == 'docs' %}
-				<a href="{{ entry.url }}" rel="bookmark">{{ entry.english_term }}</a>
-				<span lang="de">{{ entry.german_term }}</span>
-			{% elif entry.short_title|default %}
-				<a href="{{ entry.url }}" rel="bookmark">
-					<span class="no-mobile">{{ entry.title }}</span>
-					<span class="only-mobile no-print" aria-hidden="true">{{ entry.short_title }}</span>
-				</a>
-			{% else %}
-				<a href="{{ entry.url }}" rel="bookmark">{{ entry.title }}</a>
-			{% endif %}
-			{% if showDateUpdated|default or showDatePosted|default %}
-				{% if showDateUpdated|default %}
-					<time title="Last updated on {{ entry.date_updated.strftime('%B %-d, %Y') }}" datetime="{{ entry.date_updated.isoformat(timespec='seconds') }}">{{ entry.date_updated.strftime('%B %-d, %Y') }}</time>
+	{% set id = random_id() %}
+
+	<li class="entry-preview {{ entryType }}" aria-labelledby="h-entry-{{ id }}">
+		{% if not show_breadcrumbs|default %}
+			<h3 id="h-entry-{{ id }}">
+				{% if entry.short_title|default %}
+					<a href="{{ entry.url }}" rel="bookmark">
+						<span class="no-mobile">{{ entry.title }}</span>
+						<span class="only-mobile no-print" aria-hidden="true">{{ entry.short_title }}</span>
+					</a>
 				{% else %}
-					<time title="Published on {{ entry.date_created.strftime('%B %-d, %Y') }}" datetime="{{ entry.date_created.isoformat(timespec='seconds') }}">{{ entry.date_created.strftime('%B %-d, %Y') }}</time>
+					<a href="{{ entry.url }}" rel="bookmark">{{ entry.title }}</a>
 				{% endif %}
-			{% endif %}
-		</h3>
-		{% if entryType == 'guides' %}
-			<script type="application/ld+json">{% include "_blocks/guideJsonld.json" %}</script>
-		{% elif entryType == 'newsletter' %}
+			</h3>
+		{% endif %}
+
+		{% if show_date_updated|default or show_date_posted|default %}
+			<div class="post-meta">
+				{% if show_date_updated|default or show_date_posted|default %}
+					<div class="date">
+						{% if show_date_updated|default %}
+							<time title="Last updated on {{ entry.date_updated.strftime('%B %-d, %Y') }}" datetime="{{ entry.date_updated.isoformat(timespec='seconds') }}">
+								{{ entry.date_updated.strftime('%B %-d, %Y') }}
+							</time>
+						{% else %}
+							<time title="Published on {{ entry.date_created.strftime('%B %-d, %Y') }}" datetime="{{ entry.date_created.isoformat(timespec='seconds') }}">
+								{{ entry.date_created.strftime('%B %-d, %Y') }}
+							</time>
+						{% endif %}
+					</div>
+				{% endif %}
+			</div>
+		{% endif %}
+		{% if show_description|default %}
 			<p>{{ entry.description }}</p>
+		{% endif %}
+
+		{% if entryType == 'newsletter' %}
 			<script type="application/ld+json">{% include "_blocks/newsletterJsonld.json" %}</script>
+		{% elif entryType == 'guides' %}
+			<script type="application/ld+json">{% include "_blocks/guideJsonld.json" %}</script>
 		{% endif %}
 	</li>
 {% endfor %}

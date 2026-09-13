@@ -19,6 +19,7 @@ apply_settings() {
         -H "Content-Type: application/json" \
         --data '{
             "searchableAttributes":["title","description","body"],
+            "filterableAttributes":["type"],
             "sortableAttributes":["date"],
             "rankingRules":["words","typo","proximity","type_rank:desc","attribute","sort","exactness"]
         }' >/dev/null

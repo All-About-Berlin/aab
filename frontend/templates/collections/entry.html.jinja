@@ -1,5 +1,4 @@
 {% extends "_layout.html" %}
-{% from "_blocks/toolPreview.html" import preview with context %}
 {% if entry.type == 'guides' %}
 	{% set metatitle = "Guide collection: " ~ entry.title %}
 {% elif entry.type == 'tools' %}
@@ -50,13 +49,15 @@
 		<div class="section" aria-label="Guides and tools in this collection">
 			<div class="article-body">
 			{% if collection.type == 'tools' %}
-				<ol class="previews">
+				{% set collection_entries = [] %}
 				{% for item in collection.entries %}
 					{% if item.uri|default %}
-						{{ preview(entries[item.uri]) }}
+						{% set _ = collection_entries.append(entries[item.uri]) %}
 					{% endif %}
 				{% endfor %}
-				</ol>
+				{% with entries=collection_entries, show_description=true %}
+					{% include "_blocks/entryPreviews.html" %}
+				{% endwith %}
 			{% else %}
 				{% for item in collection.entries %}
 					<h2>
