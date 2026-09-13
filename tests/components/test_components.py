@@ -5,6 +5,7 @@ import pytest
     "component",
     [
         "collapsible",
+        "documentDownload",
         "eur",
         "glossary",
         "inputs",

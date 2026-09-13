@@ -125,13 +125,13 @@ You can also **[pay someone else to do it](/out/red-tape-translation-anmeldung)*
 When you [send someone else](#pay-someone-to-do-it) to do your *Anmeldung*, they must bring:
 
 - [ ] **A signed [[Vollmacht]]**  
-    Use [this template](/documents/Anmeldung-Vollmacht-template.pdf). The signatures on your passport, on the [*Anmeldung* form](/docs/anmeldung) and on the *[[Vollmacht]]* must look the same. If this is your first *Anmeldung*, a *Vollmacht* might not work.
+    Use [this template](/documents/anmeldung-vollmacht.pdf). The signatures on your passport, on the [*Anmeldung* form](/docs/anmeldung) and on the *[[Vollmacht]]* must look the same. If this is your first *Anmeldung*, a *Vollmacht* might not work.
 
 ### 3. Go to your Bürgeramt appointment
 
 Go to your *Bürgeramt* appointment. Bring all your documents. Arrive early.
 
-Everyone who registers must go to the appointment. If you register your spouse and your children, they must come with you.[^15] If they can't come, they must sign a *[[Vollmacht]]*, and you must bring it with you. Use my [*Vollmacht* template](/documents/Anmeldung-Vollmacht-template.pdf). If this is your first *Anmeldung*, a *Vollmacht* might not work.[^17]
+Everyone who registers must go to the appointment. If you register your spouse and your children, they must come with you.[^15] If they can't come, they must sign a *[[Vollmacht]]*, and you must bring it with you. Use my [*Vollmacht* template](/documents/anmeldung-vollmacht.pdf). If this is your first *Anmeldung*, a *Vollmacht* might not work.[^17]
 
 At the *Bürgeramt*, find the correct waiting room. When they call your number on the screen, go to the office number on the screen.
 

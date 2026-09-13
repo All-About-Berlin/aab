@@ -86,7 +86,7 @@ export default {
 				beiAddress: () => this.$refs.namesAreOnMailboxCheckbox.$el.querySelector('input'),
 			},
 			downloadInProgress: false,
-			pdfUrl: '/documents/anmeldung-original.pdf',
+			pdfUrl: '/documents/anmeldung-form-de.pdf',
 		};
 	},
 	computed: {
@@ -260,9 +260,9 @@ export default {
 			<progress v-if="stage !== 'start'" aria-label="Form progress" :max="stages.length - 1" :value="stageIndex"></progress>
 			<template v-if="stage === 'start'">
 				<picture>
-					<source srcset="/documents/anmeldung-original.webp 1600w, /documents/previews/anmeldung-original.webp 300w, /documents/previews2x/anmeldung-original.webp 600w" type="image/webp">
-					<source srcset="/documents/previews/anmeldung-original.png 300w, /documents/previews2x/anmeldung-original.png 600w" type="image/png">
-					<img alt="Berlin Anmeldung form" loading="lazy" src="/documents/previews/anmeldung-original.png">
+					<source srcset="/documents/anmeldung-form-de.webp 1600w, /documents/previews/anmeldung-form-de.webp 300w, /documents/previews2x/anmeldung-form-de.webp 600w" type="image/webp">
+					<source srcset="/documents/previews/anmeldung-form-de.png 300w, /documents/previews2x/anmeldung-form-de.png 600w" type="image/png">
+					<img alt="Berlin Anmeldung form" loading="lazy" src="/documents/previews/anmeldung-form-de.png">
 				</picture>
 				<p>This tool helps you <strong>fill the <glossary>Anmeldung</glossary> form</strong> in 2 minutes. Print the completed form and bring it to your <glossary>Bürgeramt</glossary> appointment.</p>
 				<p>Your personal information stays on your computer. No one else can see it.</p>

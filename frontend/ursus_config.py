@@ -264,6 +264,7 @@ config.jinja_extensions.extend(
         "extensions.renderers.jinja.ToolExtension",
         "extensions.renderers.jinja.EsbuildJsLoaderExtension",
         "extensions.renderers.jinja.TableOfContentsExtension",
+        "extensions.renderers.jinja.DocumentExtension",
     ]
 )
 

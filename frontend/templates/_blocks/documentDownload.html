@@ -1,0 +1,12 @@
+<div class="download-buttons">
+	<a target="_blank" class="german" title="Download the original document in German" href="{{ SITE_URL }}/documents/{{ file_de }}">
+		<h3>In German</h3>
+		<span lang="de">{{ name_de }}</span>
+		{% image "documents/" + file_de, alt="German document preview", sizes="300px" %}
+	</a>
+	<a target="_blank" class="english" title="Download the English-translated document" href="{{ SITE_URL }}/documents/{{ file_en }}">
+		<h3>In English</h3>
+		<span>{{ name_en }}</span>
+		{% image "documents/" + file_en, alt="English document preview", sizes="300px" %}
+	</a>
+</div>

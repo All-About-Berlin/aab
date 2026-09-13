@@ -3,8 +3,6 @@ title: Wohnungsgeberbestätigung template in English
 short_title: Wohnungsgeberbestätigung template
 german_term: Wohnungsgeberbestätigung
 english_term: Confirmation from the landlord
-german_document: documents/wohnungsgeberbestaetigung.pdf
-english_document: documents/wohnungsgeberbestaetigung-english-final.pdf
 description: English and German Wohnungsgeberbestätigung template. Fill it with your landlord. You need it for your Anmeldung.
 date_created: 2019-10-26
 related_guides:
@@ -27,7 +25,7 @@ The *Wohnungsgeberbestätigung* must contain:[^2]
 
 ## Download the template
 
-{% include "_blocks/documentDownloads.html" %}
+{% document name_en="Confirmation from the landlord", name_de="Wohnungsgeberbestätigung", file_en="wohnungsgeberbestatigung-en.pdf", file_de="wohnungsgeberbestatigung-de.pdf" %}
 
 This template is an official example from Berlin.de. You can also use your own template.[^1]
 

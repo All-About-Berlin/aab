@@ -7,8 +7,6 @@ related_reviews:
     - reviews/freelance-visa-letter-of-intent/johanna-sieben.md
 german_term: Absichtserklärung Muster
 english_term: Letter of intent example
-german_document: documents/Absichtserklaerung-Example-German.pdf
-english_document: documents/Absichtserklaerung-Example-English.pdf
 ---
 
 To apply for a [freelance visa](/glossary/Freelance%20visa), you need [letters of intent](/glossary/Absichtserklärung) from potential clients. These letters prove that you will find clients and make money in Germany.
@@ -86,7 +84,7 @@ Be careful when you translate your letter of intent to German. Translation error
 
 ## Letter of intent example
 
-{% include "_blocks/documentDownloads.html" %}
+{% document name_en="Letter of intent example", name_de="Absichtserklärung Muster", file_en="freelance-visa-absichtserklarung-example-en.pdf", file_de="freelance-visa-absichtserklarung-example-de.pdf" %}
 
 **[Letter of intent template ➞](/docs/german-freelance-visa-letter-of-intent)**
 
