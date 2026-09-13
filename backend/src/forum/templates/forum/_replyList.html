@@ -20,9 +20,9 @@
 					<link itemprop="url" href="{{ SITE_URL }}{% url 'forum_thread' thread.pk %}#reply-{{ reply.pk }}">
 					<div class="post-meta">
 						{% include "forum/_username.html" with user=reply.author %}
-						<div class="date" title="Posted on {{ reply.creation_date|date:'F j, H:i' }}" aria-label="Comment date">
+						<div class="date" title="Posted on {{ reply.creation_date|date:'F j, Y' }}" aria-label="Comment date">
 							<i class="icon calendar" aria-hidden="true"></i>
-							<a class="u-url" href="{{ SITE_URL }}{% url 'forum_thread' thread.pk %}#reply-{{ reply.pk }}"><time class="dt-published" itemprop="datePublished" datetime="{{ reply.creation_date.isoformat }}">{{ reply.creation_date|short_datetime }}</time></a>
+							<a class="u-url" href="{{ SITE_URL }}{% url 'forum_thread' thread.pk %}#reply-{{ reply.pk }}"><time class="dt-published" itemprop="datePublished" datetime="{{ reply.creation_date.isoformat }}">{{ reply.creation_date|date:'F j, Y' }}</time></a>
 						</div>
 					</div>
 					<div class="article-body e-content" itemprop="text">{{ reply.body|safe_markdown }}</div>

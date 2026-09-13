@@ -57,7 +57,7 @@ def get_title(entry: Entry, type_name: str) -> str:
         if german and english and german != english:
             return f"{german} ({english})"
         return german or entry["title"]
-    return entry["title"]
+    return entry.get("short_title") or entry["title"]
 
 
 def make_doc_id(type_name: str, entry_uri: str) -> str:

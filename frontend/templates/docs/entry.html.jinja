@@ -26,7 +26,7 @@
 		{% if related_entries|length %}
 			<aside class="section" aria-labelledby="h-related-guides">
 				<h2 id="h-related-guides">Related guides</h2>
-				{% with entries=related_entries, showDateUpdated=true %}
+				{% with entries=related_entries, show_date_updated=true %}
 					{% include "_blocks/entryPreviews.html" %}
 				{% endwith %}
 			</aside>

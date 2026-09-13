@@ -162,7 +162,7 @@ main{
             justify-content: flex-end;
             ul{
                 display: flex;
-                gap: var(--xs);
+                gap: 0 var(--xs);
                 margin: 0;
             }
         }

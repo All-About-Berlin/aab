@@ -8,8 +8,6 @@
 	<link rel="canonical" href="{{ SITE_URL }}/tools">
 {% endblock %}
 
-{% from "_blocks/toolPreview.html" import preview with context %}
-
 {% block main %}
 	<main aria-label="Main page">
 		<article class="section">
@@ -19,11 +17,13 @@
 				{% for collection in get_entries('collections') %}
 					{% if collection.type == 'tools' %}
 						<h2 id="{{ collection.id }}">{{ collection.short_title }}</h2>
-						<ol class="previews">
+						{% set collection_entries = [] %}
 						{% for item in collection.entries %}
-							{{ preview(entries[item.uri]) }}
+							{% set _ = collection_entries.append(entries[item.uri]) %}
 						{% endfor %}
-						</ol>
+						{% with entries=collection_entries, show_description=true %}
+							{% include "_blocks/entryPreviews.html" %}
+						{% endwith %}
 					{% endif %}
 				{% endfor %}
 			</div>
