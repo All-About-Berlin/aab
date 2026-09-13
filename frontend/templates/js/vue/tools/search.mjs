@@ -3,6 +3,17 @@ import Pagination from '/js/vue/components/pagination.mjs';
 import { formatLongDate, isoDay } from '/js/utils/date.mjs';
 import metadata from '/js/vue/tools/search.metadata.json' with { type: 'json' };
 
+const TYPE_LABELS = {
+	guides: { label: 'Guides', url: '/guides' },
+	tools: { label: 'Tools', url: '/tools' },
+	glossary: { label: 'Glossary', url: '/glossary' },
+	newsletter: { label: 'Newsletter', url: '/newsletter' },
+	docs: { label: 'Documents' },
+	pages: { label: 'Pages' },
+	forum_thread: { label: 'Forum', url: '/forum' },
+	forum_reply: { label: 'Forum', url: '/forum' },
+};
+
 export default {
 	mixins: [uniqueIdsMixin],
 	components: { Pagination },
@@ -19,7 +30,6 @@ export default {
 			isLoading: false,
 			debounceTimer: null,
 			minQueryLength: 3,
-			initialPageTitle: document.title,
 		};
 	},
 	mounted() {
@@ -42,6 +52,9 @@ export default {
 	methods: {
 		formatDate: formatLongDate,
 		formatDateIso: isoDay,
+		typeInfo(type) {
+			return TYPE_LABELS[type] || { label: type };
+		},
 		updateUrl() {
 			const query = this.query.trim();
 			const url = new URL(window.location);
@@ -116,17 +129,22 @@ export default {
 				{{ totalHits }} result{{ totalHits === 1 ? '' : 's' }} found for “{{ query }}”
 			</p>
 			<p v-if="isLoading" class="loading">Loading results…</p>
-			<ol class="results" :id="uid('results')" :aria-busy="isLoading ? 'true' : 'false'" aria-label="Search results">
-				<li class="result" v-for="result in results" :key="result.url">
-					<h2><a :href="result.url" v-html="result.title"></a></h2>
+			<ol class="entry-previews" :id="uid('results')" :aria-busy="isLoading ? 'true' : 'false'" aria-label="Search results">
+				<li class="entry-preview" :class="result.type" v-for="result in results" :key="result.url">
 					<div class="post-meta">
+						<nav class="breadcrumbs" aria-label="Breadcrumbs">
+							<ol>
+								<li>
+									<a v-if="typeInfo(result.type).url" :href="typeInfo(result.type).url">{{ typeInfo(result.type).label }}</a>
+									<template v-else>{{ typeInfo(result.type).label }}</template>
+								</li>
+								<li class="title">
+									{{ result.type === 'forum_reply' ? 'Reply to ' : '' }}<a :href="result.url" rel="bookmark" v-html="result.title"></a>
+								</li>
+							</ol>
+						</nav>
 						<div class="date">
-							<i class="icon calendar" aria-hidden="true"></i>
 							<time :datetime="formatDateIso(result.date)">{{ formatDate(result.date) }}</time>
-						</div>
-						<div v-if="result.type">
-							<i class="icon folder" aria-hidden="true"></i>
-							{{ result.type }}
 						</div>
 					</div>
 					<p v-if="result.snippet" v-html="result.snippet"></p>
