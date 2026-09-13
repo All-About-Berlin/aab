@@ -39,3 +39,27 @@ class DescriptionLinter(Linter):
         meta, _ = parse_markdown_head_matter([line + "\n" for line in lines])
         if not meta.get("description"):
             yield (0, 0, 3), "Missing description", logging.ERROR
+
+
+class LowercaseKeysLinter(Linter):
+    """
+    Ensures that all frontmatter keys are lowercase.
+    """
+
+    key_regex = re.compile(r"^([A-Za-z_][A-Za-z0-9_]*):")
+
+    def lint(self, file_path: Path) -> LinterResult:
+        if file_path.suffix.lower() != ".md":
+            return
+
+        lines = (config.content_path / file_path).read_text().splitlines()
+        if not lines or lines[0] != "---":
+            return
+
+        for line_no, line in enumerate(lines[1:], start=1):
+            if line == "---":
+                break
+            match = self.key_regex.match(line)
+            if match and match.group(1) != match.group(1).lower():
+                key = match.group(1)
+                yield (line_no, 0, len(key)), f"Frontmatter key must be lowercase: {key}", logging.ERROR
