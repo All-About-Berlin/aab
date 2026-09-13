@@ -3,8 +3,6 @@ title: German tax ID application form
 short_title: Tax ID application form
 german_term: Antrag auf Vergabe einer steuerlichen Identifikationsnummer für nicht meldepflichtige Personen
 english_term: Tax ID application form
-german_document: documents/010250-Antrag-auf-Vergabe-einer-steuerlichen-Identifikationsnummer-für-nicht-meldepflichtige-Personen-durch-das-Finanzamt-Deutsch.pdf
-english_document: documents/010250-Antrag-auf-Vergabe-einer-steuerlichen-Identifikationsnummer-für-nicht-meldepflichtige-Personen-durch-das-Finanzamt-English.pdf
 description: Use this form to get a tax ID without an Anmeldung. This form is for people who can't register their address, or who don't live in Germany.
 date_created: 2022-12-21
 related_guides:
@@ -47,7 +45,7 @@ Do not use this form if...
 
 You can also download the original form and fill it yourself. If you need a tax ID for multiple people, fill the form multiple times.
 
-{% include "_blocks/documentDownloads.html" %}
+{% document name_en="Tax ID application form", name_de="Antrag auf Vergabe einer steuerlichen Identifikationsnummer für nicht meldepflichtige Personen", file_en="010250-tax-id-application-form-en.pdf", file_de="010250-tax-id-application-form-de.pdf" %}
 
 ## How to fill this form
 

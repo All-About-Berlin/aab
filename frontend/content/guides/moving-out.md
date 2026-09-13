@@ -160,7 +160,7 @@ If you live in a [[WG]], you can also get a letter from your roommates to confir
 
 Your landlord can refuse to give you a *Mietschuldenfreiheitsbescheinigung*. Some landlords charge around €50 for it.[^2]
 
-**[Mietschuldenfreiheitsbescheinigung template ➞](/documents/Mietschuldenfreiheitsbescheinigung-muster.pdf)**
+**[Mietschuldenfreiheitsbescheinigung template ➞](/documents/mietschuldenfreiheitsbescheinigung-berlin.pdf)**
 
 ### Get your last utility bill
 

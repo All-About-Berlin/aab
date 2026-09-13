@@ -144,3 +144,30 @@ class TableOfContentsExtension(InclusionTag, StandaloneTag):
 
     def get_template_names(self) -> str:
         return "_blocks/tableOfContents.html"
+
+
+class DocumentExtension(InclusionTag):
+    """
+    Renders download buttons for bilingual documents
+
+    {% document name_en="Address registration form", name_de="Anmeldungformular", file="anmeldung.pdf" %}
+    {% document name_en=..., name_de=..., file_en=..., file_de=... %}
+    """
+
+    tags = {"document"}
+
+    def get_template_names(self, **kwargs) -> str:
+        return "_blocks/documentDownload.html"
+
+    def get_context(self, *, name_en, name_de, file=None, file_en=None, file_de=None):
+        if file is not None:
+            file_en = file_de = file
+        for f in (file_en, file_de):
+            path = config.content_path / "documents" / f
+            assert path.exists(), f"Document does not exist: {path}"
+        return {
+            "name_en": name_en,
+            "name_de": name_de,
+            "file_en": file_en,
+            "file_de": file_de,
+        }

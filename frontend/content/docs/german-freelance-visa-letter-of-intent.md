@@ -3,8 +3,6 @@ title: Letter of intent template (German freelance visa)
 short_title: Letter of intent template
 german_term: Absichtserklärung Vorlage
 english_term: Letter of intent template
-german_document: documents/Absichtserklaerung-Muster.pdf
-english_document: documents/Absichtserklaerung-Muster.pdf
 description: Instructions on how to write letters of intent for your German freelance visa application.
 date_created: 2018-07-11
 related_guides:
@@ -24,6 +22,6 @@ When you [apply for the German freelance visa](/guides/freelance-visa), you must
 
 ## Download the template
 
-{% include "_blocks/documentDownloads.html" %}
+{% document name_en="Letter of intent template", name_de="Absichtserklärung Vorlage", file="freelance-visa-absichtserklarung-example.pdf" %}
 
 See the [letter of intent example](/guides/freelance-visa-letter-of-intent#letter-of-intent-example) for the final result.

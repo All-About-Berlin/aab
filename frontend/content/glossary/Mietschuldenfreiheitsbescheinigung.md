@@ -13,7 +13,7 @@ The *Mietschuldenfreiheitsbescheinigung* is a letter from your landlord. You get
 
 Your landlord can refuse to give you a *Mietschuldenfreiheitsbescheinigung*. They can charge a fee for it.[^1]
 
-**[Mietschuldenfreiheitsbescheinigung template ➞](/documents/Mietschuldenfreiheitsbescheinigung-muster.pdf)**
+**[Mietschuldenfreiheitsbescheinigung template ➞](/documents/mietschuldenfreiheitsbescheinigung-berlin.pdf)**
 
 ![Mietschuldenfreiheitsbescheinigung example](/images/Mietschuldenfreiheitsbescheinigung-berlin.png "A Mietschuldenfreiheitsbescheinigung from a Berlin housing company")
 

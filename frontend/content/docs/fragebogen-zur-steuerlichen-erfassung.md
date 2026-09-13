@@ -3,8 +3,6 @@ title: Fragebogen zur steuerlichen Erfassung in English
 short_title: Business registration form
 german_term: Fragebogen zur steuerlichen Erfassung
 english_term: Questionnaire for tax collection
-german_document: documents/fragebogen-zur-steuerlichen-erfassung-original.pdf
-english_document: documents/fragebogen-zur-steuerlichen-erfassung-english-final.pdf
 description: Fill this form to register your business with the Finanzamt. It comes with an English translation, and instructions on how to fill the form.
 date_created: 2018-03-11
 related_guides:
@@ -20,4 +18,4 @@ The *[[Fragebogen zur steuerlichen Erfassung]]* is the form you fill to [registe
 
 This form is outdated. [Register your business online](/guides/fragebogen-zur-steuerlichen-erfassung) instead.
 
-{% include "_blocks/documentDownloads.html" %}
+{% document name_en="Questionnaire for tax collection", name_de="Fragebogen zur steuerlichen Erfassung", file_en="fragebogen-zur-steuerlichen-erfassung-en.pdf", file_de="fragebogen-zur-steuerlichen-erfassung-de.pdf" %}

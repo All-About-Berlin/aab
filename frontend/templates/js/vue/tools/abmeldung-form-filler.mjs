@@ -77,7 +77,7 @@ export default {
 				addPeople: () => this.$refs.firstNameInput[0].$el,
 			},
 			downloadInProgress: false,
-			pdfUrl: '/documents/abmeldung-original.pdf',
+			pdfUrl: '/documents/abmeldung-form-de.pdf',
 		};
 	},
 	computed: {
@@ -233,9 +233,9 @@ export default {
 			<progress v-if="stage !== 'start'" aria-label="Form progress" :max="stages.length - 1" :value="stageIndex"></progress>
 			<template v-if="stage === 'start'">
 				<picture>
-					<source srcset="/documents/abmeldung-original.webp 1600w, /documents/previews/abmeldung-original.webp 300w, /documents/previews2x/abmeldung-original.webp 600w" type="image/webp">
-					<source srcset="/documents/previews/abmeldung-original.png 300w, /documents/previews2x/abmeldung-original.png 600w" type="image/png">
-					<img alt="Berlin Abmeldung form" loading="lazy" src="/documents/previews/abmeldung-original.png">
+					<source srcset="/documents/abmeldung-form-de.webp 1600w, /documents/previews/abmeldung-form-de.webp 300w, /documents/previews2x/abmeldung-form-de.webp 600w" type="image/webp">
+					<source srcset="/documents/previews/abmeldung-form-de.png 300w, /documents/previews2x/abmeldung-form-de.png 600w" type="image/png">
+					<img alt="Berlin Abmeldung form" loading="lazy" src="/documents/previews/abmeldung-form-de.png">
 				</picture>
 				<p>This tool helps you <strong>fill the <glossary>Abmeldung</glossary> form</strong> in 2 minutes. Print the completed form and bring it to your <glossary>Bürgeramt</glossary> appointment.</p>
 				<p>Your personal information stays on your computer. No one else can see it.</p>

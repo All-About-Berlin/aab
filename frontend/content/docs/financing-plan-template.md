@@ -3,8 +3,6 @@ title: Financing plan template (German freelance visa)
 short_title: Financing plan template
 german_term: Finanzierungsplan
 english_term: Financing plan template
-german_document: documents/finanzierungsplan-berlin-freelance-visa.pdf
-english_document: documents/finanzierungsplan-berlin-freelance-visa.pdf
 description: Use this template to make a Finanzierungsplan for your German freelance visa application. This is the official template from the Berlin Ausländerbehörde.
 date_created: 2018-07-11
 related_guides:
@@ -19,7 +17,7 @@ You need this form to [apply for a freelance visa](/guides/freelance-visa) in Be
 
 ## Download the template
 
-{% include "_blocks/documentDownloads.html" %}
+{% document name_en="Financing plan template", name_de="Finanzierungsplan", file="finanzierungsplan.pdf" %}
 
 This is the official example from [Berlin.de](https://service.berlin.de/dienstleistung/305249/). The Berlin *[[Ausländerbehörde]]* prefers that you use this template, but you can also make your own *Finanzierungsplan*.
 
