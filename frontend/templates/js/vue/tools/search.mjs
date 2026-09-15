@@ -3,24 +3,23 @@ import Pagination from '/js/vue/components/pagination.mjs';
 import { formatLongDate, isoDay } from '/js/utils/date.mjs';
 import metadata from '/js/vue/tools/search.metadata.json' with { type: 'json' };
 
-const TYPE_LABELS = {
-	guides: { label: 'Guides', url: '/guides' },
-	tools: { label: 'Tools', url: '/tools' },
-	glossary: { label: 'Glossary', url: '/glossary' },
-	newsletter: { label: 'Newsletter', url: '/newsletter' },
-	docs: { label: 'Documents' },
-	pages: { label: 'Pages' },
-	forum_thread: { label: 'Forum', url: '/forum' },
-	forum_reply: { label: 'Forum', url: '/forum' },
-};
-
 export default {
 	mixins: [uniqueIdsMixin],
 	components: { Pagination },
 	data() {
 		const params = new URLSearchParams(window.location.search);
+		const typeParam = (params.get('type') || '').trim();
 		return {
 			metadata,
+			typeFilters: {
+				docs: 'Documents',
+				forum: 'Forum',
+				glossary: 'Glossary',
+				guides: 'Guides',
+				newsletter: 'Newsletter',
+				tools: 'Tools',
+			},
+			type: null,
 			query: (params.get('q') || '').trim(),
 			page: Math.max(1, parseInt(params.get('page'), 10) || 1),
 			results: [],
@@ -33,6 +32,7 @@ export default {
 		};
 	},
 	mounted() {
+		this.type = this.typeFilters.some(t => t.value === typeParam) ? typeParam : '',
 		this.updateResults();
 	},
 	watch: {
@@ -41,6 +41,11 @@ export default {
 			this.updateUrl();
 			clearTimeout(this.debounceTimer);
 			this.debounceTimer = setTimeout(() => this.updateResults(), 300);
+		},
+		type() {
+			this.page = 1;
+			this.updateUrl();
+			this.updateResults();
 		},
 		page() {
 			this.updateUrl();
@@ -52,8 +57,39 @@ export default {
 	methods: {
 		formatDate: formatLongDate,
 		formatDateIso: isoDay,
-		typeInfo(type) {
-			return TYPE_LABELS[type] || { label: type };
+		contentType(type) {
+			return {
+				guides: {
+					label: 'Guides',
+					url: '/guides'
+				},
+				tools: {
+					label: 'Tools',
+					url: '/tools'
+				},
+				glossary: {
+					label: 'Glossary',
+					url: '/glossary'
+				},
+				newsletter: {
+					label: 'Newsletter',
+					url: '/newsletter'
+				},
+				docs: {
+					label: 'Documents'
+				},
+				pages: {
+					label: 'Pages'
+				},
+				forum_thread: {
+					label: 'Forum',
+					url: '/forum'
+				},
+				forum_reply: {
+					label: 'Forum',
+					url: '/forum'
+				},
+			}[type] || { label: type };
 		},
 		updateUrl() {
 			const query = this.query.trim();
@@ -62,6 +98,11 @@ export default {
 				url.searchParams.set('q', query);
 			} else {
 				url.searchParams.delete('q');
+			}
+			if (this.type) {
+				url.searchParams.set('type', this.type);
+			} else {
+				url.searchParams.delete('type');
 			}
 			if (this.page > 1) {
 				url.searchParams.set('page', this.page);
@@ -81,7 +122,9 @@ export default {
 			}
 
 			this.isLoading = true;
-			return fetch(`/api/search/?q=${encodeURIComponent(query)}&page=${this.page}`)
+			const params = new URLSearchParams({ q: query, page: this.page });
+			if (this.type) params.set('type', this.type);
+			return fetch(`/api/search/?${params}`)
 				.then(response => {
 					if (!response.ok) throw new Error('Search failed');
 					return response.json();
@@ -107,8 +150,8 @@ export default {
 	},
 	template: `
 		<div>
-			<search title="Search All About Berlin" class="search-form no-print">
-				<label title="Search keyword">
+			<search title="Search All About Berlin" class="form-group no-label">
+				<div class="input-group">
 					<input
 						:id="uid('query')"
 						type="search"
@@ -117,13 +160,15 @@ export default {
 						tabindex="0"
 						aria-autocomplete="list"
 						:aria-controls="uid('results')"
-						aria-label="Search this website"
-						autocomplete="off">
-					<svg width="12" height="13" viewBox="0 0 12 13" aria-hidden="true">
-						<title>Search</title>
-						<g stroke-width="1.5" stroke="currentColor" fill="none"><path d="M11.29 11.71l-4-4"/><circle cx="5" cy="5" r="4"/></g>
-					</svg>
-				</label>
+						aria-label="Search query"
+						autocomplete="off"
+						autofocus>
+					<select v-model="type" aria-label="Filter result types">
+						<option value="">Search everything</option>
+						<option disabled>──────────</option>
+						<option v-for="filter in typeFilters" :key="filter.value" :value="filter.value">{{ filter.label }}</option>
+					</select>
+				</div>
 			</search>
 			<p role="status" v-if="query">
 				{{ totalHits }} result{{ totalHits === 1 ? '' : 's' }} found for “{{ query }}”
@@ -135,8 +180,8 @@ export default {
 						<nav class="breadcrumbs" aria-label="Breadcrumbs">
 							<ol>
 								<li>
-									<a v-if="typeInfo(result.type).url" :href="typeInfo(result.type).url">{{ typeInfo(result.type).label }}</a>
-									<template v-else>{{ typeInfo(result.type).label }}</template>
+									<a v-if="contentType(result.type).url" :href="contentType(result.type).url">{{ contentType(result.type).label }}</a>
+									<template v-else>{{ contentType(result.type).label }}</template>
 								</li>
 								<li class="title">
 									{{ result.type === 'forum_reply' ? 'Reply to ' : '' }}<a :href="result.url" rel="bookmark" v-html="result.title"></a>
