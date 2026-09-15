@@ -2,6 +2,11 @@
 {% set metatitle = "Search" %}
 {% set metadescription = "Search all guides, tools and forum posts on All About Berlin." %}
 
+{% block postHead %}
+	{{ super() }}
+	<link rel="canonical" href="{{ SITE_URL }}/search">
+{% endblock %}
+
 {% block content %}
 	<h1>Search</h1>
 	{% tool "search" %}
