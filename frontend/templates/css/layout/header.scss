@@ -71,10 +71,15 @@ body > header {
             margin-left: auto;
         }
 
-        .search-link svg{
-            width: 1rem;
-            height: 1rem;
-            vertical-align: middle;
+        .search-link:before{ // Search icon
+            content: '';
+            display: inline-block;
+            width: 1em;
+            height: 100%;
+            mask-image: var(--i-search);
+            mask-position: center right;
+            mask-repeat: no-repeat;
+            background-color: currentColor;
         }
     }
 

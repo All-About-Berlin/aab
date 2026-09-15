@@ -100,11 +100,17 @@ main{
         }
 
         p {
-            margin: var(--s-relative) 0 0;
+            margin: var(--s-relative) auto 0;
         }
 
-        .search-form {
+        search{
+            width: 100%;
+            max-width: 25rem;
             margin: var(--l-relative) auto 0;
+            form, input{
+                width: 100%;
+                max-width: none;
+            }
         }
     }
 
