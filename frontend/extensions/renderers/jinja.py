@@ -26,6 +26,10 @@ class ToolExtension(StandaloneTag):
         abs_js_path = config.templates_path / js_path
         assert abs_js_path.exists(), f"Component <{component_name}> does not exist at {abs_js_path}"
 
+        if self.context.get("as_plaintext"):
+            # When rendering tools as plain text for the index
+            return ""
+
         # HTML component names are kebab-case. VueJS component class names are CamelCase.
         js_class = "".join(word.title() for word in component_name.split("-"))
 
@@ -142,6 +146,11 @@ class TableOfContentsExtension(InclusionTag, StandaloneTag):
     tags = {"tableOfContents"}
     safe_output = True
 
+    def render(self, *args, **kwargs):
+        if self.context.get("as_plaintext"):
+            return ""
+        return super().render(*args, **kwargs)
+
     def get_template_names(self) -> str:
         return "_blocks/tableOfContents.html"
 
@@ -155,6 +164,11 @@ class DocumentExtension(InclusionTag):
     """
 
     tags = {"document"}
+
+    def render(self, *, name_en, name_de, file=None, file_en=None, file_de=None):
+        if self.context.get("as_plaintext"):
+            return f"Document download: {name_en} ({name_de})"
+        return super().render(name_en=name_en, name_de=name_de, file=file, file_en=file_en, file_de=file_de)
 
     def get_template_names(self, **kwargs) -> str:
         return "_blocks/documentDownload.html"

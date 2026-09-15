@@ -1,9 +1,12 @@
 from datetime import date
 from decimal import Decimal
+from jinja2 import pass_context
 from markdown.extensions.toc import slugify
 from pathlib import Path
 from typing import Iterable, Match
+from ursus.config import config
 from ursus.context_processors import Entry
+from ursus.renderers.jinja import render_filter
 import holidays
 from ordered_set import OrderedSet
 import pycountry
@@ -13,6 +16,15 @@ import secrets
 import string
 import urllib
 import yaml
+
+
+@pass_context
+def render_as_plaintext(context, value: str) -> str:
+    """
+    Same as the "render" filter from Ursus, but passes "as_plaintext" to the Jinja context.
+    This allows custom tags like {% tool %} to render differently for plaintext mode.
+    """
+    return render_filter(context.derived({"as_plaintext": True}), value)
 
 
 def to_currency(value: Decimal) -> str:
@@ -29,6 +41,13 @@ def to_percent(value: Decimal, max_decimals: int = 2) -> str:
 def random_id() -> str:
     alphabet = string.ascii_letters + string.digits
     return "".join(secrets.choice(alphabet) for i in range(5))
+
+
+def get_search_result_type(uri: str) -> dict | None:
+    for type_config in config.search_result_types:
+        if re.match(type_config["uri_matcher"], uri):
+            return type_config
+    return None
 
 
 def build_wikilinks_url(label: str, base: str, end: str) -> str:

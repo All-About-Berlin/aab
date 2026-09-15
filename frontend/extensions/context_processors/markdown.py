@@ -1,30 +1,66 @@
-import re
-
-from ursus.config import config
-from ursus.context_processors import Context, EntryContextProcessor, EntryURI
-
-
-FRONTMATTER_RE = re.compile(r"\A---\n.*?\n---\n", re.DOTALL)
-JINJA_TAG_RE = re.compile(r"\{%.*?%\}", re.DOTALL)
-IMAGE_RE = re.compile(r"!\[[^\]]*\]\([^)]*\)")
-FOOTNOTE_DEF_RE = re.compile(r"^\[\^[^\]]+\]:.*$", re.MULTILINE)
-FOOTNOTE_REF_RE = re.compile(r"\[\^[^\]]+\]")
-LINK_RE = re.compile(r"\[([^\]]+)\]\([^)]*\)")
+from bs4 import BeautifulSoup
+from markdown.extensions import Extension
+from markdown.treeprocessors import Treeprocessor
+from ursus.context_processors import Context, EntryURI
+from ursus.context_processors.markdown import MarkdownProcessor
+from xml.etree.ElementTree import Element
 
 
-def markdown_to_plaintext(text: str) -> str:
-    text = FRONTMATTER_RE.sub("", text, count=1)
-    text = JINJA_TAG_RE.sub("", text)
-    text = IMAGE_RE.sub("", text)
-    text = FOOTNOTE_DEF_RE.sub("", text)
-    text = FOOTNOTE_REF_RE.sub("", text)
-    text = LINK_RE.sub(r"\1", text)
-    return text
+class PlaintextTreeprocessor(Treeprocessor):
+    def run(self, root: Element) -> None:
+        """
+        Converts the ElementTree to plaintext.
+        """
+        parts: list[str] = []
+
+        def is_footnote(el: Element) -> bool:
+            # Footnotes at the bottom
+            if el.tag == "details" and el.get("id") == "footnotes":
+                return True
+
+            # Footnote markers in the text
+            if el.tag == "sup" and (el.get("id") or "").startswith("fnref:"):
+                return True
+            return False
+
+        def walk(el: Element) -> None:
+            if el.tag == "li":
+                parts.append("- ")
+            if el.text:
+                parts.append(el.text)
+            for child in el:
+                if is_footnote(child):
+                    if child.tail:
+                        parts.append(child.tail)
+                    continue
+                walk(child)
+                if self.md.is_block_level(child.tag) or child.tag == "br":
+                    parts.append("\n")
+                if child.tail:
+                    parts.append(child.tail)
+
+        walk(root)
+        resolved = "".join(parts)
+        for postprocessor in self.md.postprocessors:
+            resolved = postprocessor.run(resolved)
+        self.md.plaintext = BeautifulSoup(resolved, "html.parser").get_text()  # pyright: ignore[reportAttributeAccessIssue]
 
 
-class MarkdownPlaintextProcessor(EntryContextProcessor):
+class PlaintextExtension(Extension):
+    def extendMarkdown(self, md):
+        md.treeprocessors.register(PlaintextTreeprocessor(md), "plaintext", -100)
+
+
+class MarkdownHtmlAndPlaintextProcessor(MarkdownProcessor):
+    """
+    Also renders the markdown as plaintext for the search index.
+    """
+
+    def __init__(self):
+        super().__init__()
+        PlaintextExtension().extendMarkdown(self.markdown)
+
     def process_entry(self, context: Context, entry_uri: EntryURI) -> None:
-        if not entry_uri.lower().endswith(".md"):
-            return
-        raw = (config.content_path / entry_uri).read_text()
-        context["entries"][entry_uri]["plaintext"] = markdown_to_plaintext(raw)
+        super().process_entry(context, entry_uri)
+        if entry_uri.lower().endswith(".md"):
+            context["entries"][entry_uri]["body_plaintext"] = self.markdown.plaintext
