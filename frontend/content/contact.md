@@ -48,5 +48,3 @@ I do not answer visa and residence permit questions, but there are [other people
 ### Donate
 
 This website is my only source of income. If it helped you, consider [donating €10](/donate "Donate to All About Berlin") to support my work.
-
-{% include "_blocks/tipJar.html"%}

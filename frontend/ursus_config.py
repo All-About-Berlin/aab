@@ -4,14 +4,17 @@ from extensions.functions import (
     build_wikilinks_url,
     count_weekdays,
     get_public_holidays,
+    get_search_result_type,
     glossary_groups,
     load_constants_from_file,
     or_list,
     patched_slugify,
     random_id,
+    render_as_plaintext,
     to_currency,
     to_percent,
 )
+from markdown.extensions.toc import slugify
 from extensions.linters.fail_on import fail_on
 from markupsafe import Markup
 from pathlib import Path
@@ -217,9 +220,13 @@ ctx["SERVICES_SITE_URL"] = f"https://{services_domain}"  # No trailing slash!
 ctx["GOOGLE_MAPS_JAVASCRIPT_API_KEY"] = os.environ.get(
     "GOOGLE_MAPS_JAVASCRIPT_API_KEY", ""
 )  # Frontend use, for address autocomplete
+
+# Template utilities
 ctx["random_id"] = random_id
 ctx["fail_on"] = fail_on
 ctx["glossary_groups"] = glossary_groups
+ctx["get_search_result_type"] = get_search_result_type
+ctx["slugify"] = slugify
 
 ctx["RECOMMENDED"] = Markup(
     '&nbsp; <a target="_blank" class="recommended" aria-label="Recommended option" href="/glossary/Recommended"></a>'
@@ -245,6 +252,15 @@ config.openai_api_key = os.environ.get("OPENAI_API_KEY", "")  # Backend use, to 
 
 config.html_url_extension = ""
 
+config.search_result_types = [
+    {"uri_matcher": r"^guides/.+\.md$", "type": "guides", "rank": 100},
+    {"uri_matcher": r"^tools/.+\.md$", "type": "tools", "rank": 80},
+    {"uri_matcher": r"^docs/.+\.md$", "type": "docs", "rank": 80},
+    {"uri_matcher": r"^glossary/.+\.md$", "type": "glossary", "rank": 60},
+    {"uri_matcher": r"^newsletter/.+\.md$", "type": "newsletter", "rank": 50},
+    {"uri_matcher": r"^[^/]+\.md$", "type": "pages", "rank": 80},
+]
+
 # JS is minified in production and for running tests, but served as-is by default
 # When minify_js is True, changing .mjs files do not re-render the pages
 config.minify_js = bool(int(os.environ.get("BUNDLE_JS", 0)))
@@ -254,6 +270,7 @@ config.context_globals = ctx
 config.jinja_filters = {
     "cur": to_currency,
     "percent": to_percent,
+    "render_as_plaintext": render_as_plaintext,
 }
 
 config.renderers.remove("ursus.renderers.sass.SassRenderer")
@@ -268,15 +285,16 @@ config.jinja_extensions.extend(
     ]
 )
 
+config.context_processors.remove("ursus.context_processors.markdown.MarkdownProcessor")
 config.context_processors.extend(
     [
+        "extensions.context_processors.markdown.MarkdownHtmlAndPlaintextProcessor",
         "extensions.renderers.entry_images.EntryImageUrlProcessor",
         "ursus.context_processors.git_date.GitDateProcessor",
         "extensions.context_processors.hyphenated_titles.HyphenatedTitleProcessor",
         "extensions.context_processors.tool_tests.ToolTestEntriesProcessor",
         "extensions.context_processors.collections.CollectionsProcessor",
         "extensions.context_processors.services_url.ServicesUrlProcessor",
-        "extensions.context_processors.markdown.MarkdownPlaintextProcessor",
     ]
 )
 
@@ -300,7 +318,6 @@ config.renderers.extend(
         "extensions.renderers.entry_images.EntryImageRenderer",
         "extensions.renderers.glossary_audio.GlossaryAudioRenderer",
         "extensions.renderers.places_json.PlacesRenderer",
-        "extensions.renderers.search_index.MeilisearchIndexRenderer",
     ]
 )
 

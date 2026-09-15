@@ -1,0 +1,28 @@
+{# This index of the frontend content. It's fed to Meilisearch #}
+{%- set index_documents = [] -%}
+{%- for uri, entry in entries.items() -%}
+	{%- set match = get_search_result_type(uri) -%}
+	{%- if match -%}
+		{%- set collections = entry.get("collections") or [] -%}
+		{%- set date = entry.get("date_updated") or entry["date_created"] -%}
+		{%- if match["type"] == "glossary" and entry.get("english_term") and entry.get("english_term") != entry.get("german_term") -%}
+			{%- set title = entry["german_term"] ~ " (" ~ entry["english_term"] ~ ")" -%}
+		{%- elif match["type"] == "glossary" -%}
+			{%- set title = entry.get("german_term") or entry["title"] -%}
+		{%- else -%}
+			{%- set title = entry.get("short_title") or entry["title"] -%}
+		{%- endif -%}
+		{%- do index_documents.append({
+			"id": slugify(uri.replace("/", " "), "_"),
+			"type": match["type"],
+			"type_rank": match["rank"],
+			"title": title,
+			"description": entry.get("description", ""),
+			"body": entry["body_plaintext"] | render_as_plaintext,
+			"category": collections[0]["id"] if collections else None,
+			"date": date.timestamp() | int,
+			"url": entry["url"].removeprefix(SITE_URL),
+		}) -%}
+	{%- endif -%}
+{%- endfor -%}
+{{ index_documents | tojson }}
