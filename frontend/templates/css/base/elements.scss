@@ -357,6 +357,7 @@ h1 + .article-body{
             // Used in search results
             .breadcrumbs{
                 order: 0;
+                align-items: baseline; // Fixes multiline on results with long .titles
                 ol{
                     flex-wrap: wrap;
                 }
@@ -367,6 +368,16 @@ h1 + .article-body{
                 li.title a{
                     font-weight: 600;
                     font-size: var(--m);
+                }
+
+                @include only-phone{
+                    li.title{
+                        flex: 1 1 100%; // Result type and title on separate lines
+
+                        &:before{
+                            content: none;
+                        }
+                    }
                 }
             }
         }

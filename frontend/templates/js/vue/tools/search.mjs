@@ -20,7 +20,7 @@ export default {
 				tools: 'Tools',
 			},
 			type: null,
-			query: (params.get('q') || '').trim(),
+			searchQuery: (params.get('q') || '').trim(),
 			page: Math.max(1, parseInt(params.get('page'), 10) || 1),
 			results: [],
 			totalHits: 0,
@@ -28,28 +28,28 @@ export default {
 			status: '',
 			isLoading: false,
 			debounceTimer: null,
-			minQueryLength: 3,
+			minsearchQueryLength: 3,
 		};
 	},
 	mounted() {
-		this.type = this.typeFilters.some(t => t.value === typeParam) ? typeParam : '',
-		this.updateResults();
+		this.type = this.typeParam in this.typeFilters ? this.typeParam : '';
+		this.updateSearchResults();
 	},
 	watch: {
-		query() {
+		searchQuery() {
 			this.page = 1;
-			this.updateUrl();
+			this.updateUrlParams();
 			clearTimeout(this.debounceTimer);
-			this.debounceTimer = setTimeout(() => this.updateResults(), 300);
+			this.debounceTimer = setTimeout(() => this.updateSearchResults(), 300);
 		},
 		type() {
 			this.page = 1;
-			this.updateUrl();
-			this.updateResults();
+			this.updateUrlParams();
+			this.updateSearchResults();
 		},
 		page() {
-			this.updateUrl();
-			this.updateResults().then(() => {
+			this.updateUrlParams();
+			this.updateSearchResults().then(() => {
 				this.$el.scrollIntoView({ behavior: 'smooth', block: 'start' });
 			});
 		},
@@ -91,11 +91,11 @@ export default {
 				},
 			}[type] || { label: type };
 		},
-		updateUrl() {
-			const query = this.query.trim();
+		updateUrlParams() {
+			const searchQuery = this.searchQuery.trim();
 			const url = new URL(window.location);
-			if (query) {
-				url.searchParams.set('q', query);
+			if (searchQuery) {
+				url.searchParams.set('q', searchQuery);
 			} else {
 				url.searchParams.delete('q');
 			}
@@ -111,9 +111,9 @@ export default {
 			}
 			history.replaceState(null, '', url);
 		},
-		updateResults() {
-			const query = this.query.trim();
-			if (query.length < this.minQueryLength) {
+		updateSearchResults() {
+			const searchQuery = this.searchQuery.trim();
+			if (searchQuery.length < this.minsearchQueryLength) {
 				this.results = [];
 				this.totalHits = 0;
 				this.totalPages = 0;
@@ -122,7 +122,7 @@ export default {
 			}
 
 			this.isLoading = true;
-			const params = new URLSearchParams({ q: query, page: this.page });
+			const params = new URLSearchParams({ q: searchQuery, page: this.page });
 			if (this.type) params.set('type', this.type);
 			return fetch(`/api/search/?${params}`)
 				.then(response => {
@@ -153,25 +153,25 @@ export default {
 			<search title="Search All About Berlin" class="form-group no-label">
 				<div class="input-group">
 					<input
-						:id="uid('query')"
+						:id="uid('searchQuery')"
 						type="search"
-						v-model="query"
+						v-model="searchQuery"
 						placeholder="Search this website"
 						tabindex="0"
 						aria-autocomplete="list"
 						:aria-controls="uid('results')"
-						aria-label="Search query"
+						aria-label="Search searchQuery"
 						autocomplete="off"
 						autofocus>
 					<select v-model="type" aria-label="Filter result types">
 						<option value="">Search everything</option>
 						<option disabled>──────────</option>
-						<option v-for="filter in typeFilters" :key="filter.value" :value="filter.value">{{ filter.label }}</option>
+						<option v-for="(typeLabel, type) in typeFilters" :key="type" :value="type">{{ typeLabel }}</option>
 					</select>
 				</div>
 			</search>
-			<p role="status" v-if="query">
-				{{ totalHits }} result{{ totalHits === 1 ? '' : 's' }} found for “{{ query }}”
+			<p role="status" v-if="searchQuery">
+				{{ totalHits }} result{{ totalHits === 1 ? '' : 's' }} found for “{{ searchQuery }}”
 			</p>
 			<p v-if="isLoading" class="loading">Loading results…</p>
 			<ol class="entry-previews" :id="uid('results')" :aria-busy="isLoading ? 'true' : 'false'" aria-label="Search results">
