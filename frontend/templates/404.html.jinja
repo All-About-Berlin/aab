@@ -15,12 +15,9 @@
 		<div class="intro">
 			<h1>Page not found</h1>
 			<p>Not what you expected? To report a problem, <a href="{{ SITE_URL }}/contact">contact me</a>.</p>
-			<search class="search-form">
+			<search>
 				<form action="{{ SITE_URL }}/search" method="get">
-					<label>
-						<input type="search" name="q" placeholder="Search this website" aria-label="Search this website" autofocus>
-						{% include "_icons/search.svg" %}
-					</label>
+					<input type="search" name="q" placeholder="Search this website" aria-label="Search this website" autofocus>
 				</form>
 			</search>
 		</div>

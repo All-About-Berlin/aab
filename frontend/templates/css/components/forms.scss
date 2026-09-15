@@ -3,7 +3,7 @@
     box-shadow: 0 0 0 1px var(--c-border-input-focused); // Can't use outline because it has no rounded corners in Safari
 }
 
-input:not([type=range],[type=file]), textarea, select, .toggle, .search-form{
+input:not([type=range],[type=file]), textarea, select, .toggle{
     @include text;
     font-size: var(--m);
 
@@ -69,6 +69,22 @@ input {
 
     &[type=tel]{
         width: 16ch!important  // +49...
+    }
+
+    &[type=search]{
+        background-image: var(--i-search);
+        background-repeat: no-repeat;
+        background-position: center right var(--xs);
+        background-size: 1rem;
+        padding-right: calc(1rem + var(--xs) * 2);
+        text-overflow:ellipsis;
+
+        &::-webkit-search-decoration,
+        &::-webkit-search-cancel-button,
+        &::-webkit-search-results-button,
+        &::-webkit-search-results-decoration{
+            -webkit-appearance:none;
+        }
     }
 
     &[type=checkbox]{
