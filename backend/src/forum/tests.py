@@ -1,3 +1,5 @@
+from unittest.mock import patch
+
 from django.contrib.auth.models import User
 from django.core.cache import cache
 from django.test import SimpleTestCase, TestCase, override_settings
@@ -5,6 +7,7 @@ from django.urls import reverse
 
 from forum.models import Reply, Thread
 from forum.templatetags.safe_markdown import safe_markdown
+from forum.views import ForumIndexView
 
 
 @override_settings(ALLOWED_HOSTS=["allaboutberlin.com", "services.allaboutberlin.com"])
@@ -154,3 +157,34 @@ class ForumCacheTests(TestCase):
         self.assertEqual(response["X-Cache"], "MISS")
         self.assertContains(response, "Edited title")
         self.assertNotContains(response, "Original title")
+
+
+@override_settings(
+    CACHES={"default": {"BACKEND": "django.core.cache.backends.locmem.LocMemCache", "LOCATION": "forum-links-tests"}},
+    RESULTS_PER_PAGE=2,
+)
+@patch.object(ForumIndexView, "paginate_by", 2)
+class ForumPaginationMetadataTests(TestCase):
+    def setUp(self):
+        cache.clear()
+        self.user = User.objects.create_user(username="alice")
+
+    def test_forum_index_prev_next_head_links(self):
+        for i in range(5):
+            Thread.objects.create(author=self.user, title=f"Thread {i}", body="body")
+        response = self.client.get(reverse("forum_index_page", args=[2]))
+        self.assertContains(response, '<link rel="prev" href="https://localhost/forum">')
+        self.assertContains(response, '<link rel="next" href="https://localhost/forum/page-3">')
+
+    def test_forum_index_prev_link_preserves_query_string(self):
+        for i in range(3):
+            Thread.objects.create(author=self.user, title=f"Thread {i}", body="body", category="work")
+        response = self.client.get(reverse("forum_index_page", args=[2]) + "?category=work")
+        self.assertContains(response, '<link rel="prev" href="https://localhost/forum?category=work">')
+
+    def test_forum_thread_prev_next_head_links(self):
+        thread = Thread.objects.create(author=self.user, title="Thread", body="body")
+        for i in range(3):
+            Reply.objects.create(author=self.user, thread=thread, body=f"reply {i}")
+        response = self.client.get(reverse("forum_thread_page", args=[thread.pk, 2]))
+        self.assertContains(response, f'<link rel="prev" href="https://localhost/forum/{thread.pk}">')

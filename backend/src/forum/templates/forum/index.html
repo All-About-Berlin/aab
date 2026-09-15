@@ -3,6 +3,21 @@
 
 {% block page_title %}{% if page_obj.number > 1 %}Page {{ page_obj.number }} - {% endif %}All About Berlin forum{% endblock %}
 
+{% block postHead %}
+	{% with qs=request.GET.urlencode %}
+		{% if page_obj.has_previous %}
+			{% if page_obj.previous_page_number == 1 %}
+				<link rel="prev" href="{{ SITE_URL }}{% url 'forum_index' %}{% if qs %}?{{ qs }}{% endif %}">
+			{% else %}
+				<link rel="prev" href="{{ SITE_URL }}{% url 'forum_index' %}/page-{{ page_obj.previous_page_number }}{% if qs %}?{{ qs }}{% endif %}">
+			{% endif %}
+		{% endif %}
+		{% if page_obj.has_next %}
+			<link rel="next" href="{{ SITE_URL }}{% url 'forum_index' %}/page-{{ page_obj.next_page_number }}{% if qs %}?{{ qs }}{% endif %}">
+		{% endif %}
+	{% endwith %}
+{% endblock %}
+
 {% block content %}
 	{% if not user.is_authenticated and page_obj.number == 1 and not category %}
 		<header class="section hero">

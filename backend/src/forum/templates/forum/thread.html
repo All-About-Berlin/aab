@@ -4,7 +4,19 @@
 
 {% block page_title %}{% if page_obj.number > 1 %}Page {{ page_obj.number }} - {% endif %}{{ thread.title }} - All About Berlin forum{% endblock %}
 
-{% block postHead %}<link rel="canonical" href="{{ SITE_URL }}{% url 'forum_thread' thread.pk %}">{% endblock %}
+{% block postHead %}
+	<link rel="canonical" href="{{ SITE_URL }}{% url 'forum_thread' thread.pk %}">
+	{% if page_obj.has_previous %}
+		{% if page_obj.previous_page_number == 1 %}
+			<link rel="prev" href="{{ SITE_URL }}{% url 'forum_thread' thread.pk %}">
+		{% else %}
+			<link rel="prev" href="{{ SITE_URL }}{% url 'forum_thread_page' thread.pk page_obj.previous_page_number %}">
+		{% endif %}
+	{% endif %}
+	{% if page_obj.has_next %}
+		<link rel="next" href="{{ SITE_URL }}{% url 'forum_thread_page' thread.pk page_obj.next_page_number %}">
+	{% endif %}
+{% endblock %}
 
 {% block content %}
 <article class="section h-entry" itemscope itemtype="https://schema.org/DiscussionForumPosting"{% if page_obj.object_list %} itemref="{% for reply in page_obj %}reply-{{ reply.pk }}{% if not forloop.last %} {% endif %}{% endfor %}"{% endif %}>
