@@ -4,6 +4,7 @@ djangorestframework~=3.18
 django~=6.1
 email-validator~=2.3
 gunicorn~=26.2
+Jinja2~=3.1
 Markdown==3.5.2
 meilisearch~=0.36
 nh3

@@ -5,9 +5,9 @@
 <p>This is the information you shared:</p>
 
 <ul>
-	<li>Application date: {{ message.feedback.application_date|date:"F j, Y" }}</li>
-	<li>First Ausländerbehörde response: {% if message.feedback.first_response_date %}{{ message.feedback.first_response_date|date:"F j, Y" }}{% else %}Missing{% endif %}</li>
-	<li>Appointment date: {% if message.feedback.appointment_date %}{{ message.feedback.appointment_date|date:"F j, Y" }}{% else %}Missing{% endif %}</li>
+	<li>Application date: {{ message.feedback.application_date|date("F j, Y") }}</li>
+	<li>First Ausländerbehörde response: {% if message.feedback.first_response_date %}{{ message.feedback.first_response_date|date("F j, Y") }}{% else %}Missing{% endif %}</li>
+	<li>Appointment date: {% if message.feedback.appointment_date %}{{ message.feedback.appointment_date|date("F j, Y") }}{% else %}Missing{% endif %}</li>
 </ul>
 
 <p><strong>Your feedback is incomplete.</strong> Complete it later by clicking this link:</p>

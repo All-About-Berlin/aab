@@ -1,0 +1,1 @@
+You cannot remove your primary email address ({{ email }}).

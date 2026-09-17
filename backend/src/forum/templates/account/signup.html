@@ -9,15 +9,15 @@
 		<nav class="breadcrumbs" aria-label="Breadcrumbs">
 			<i class="icon folder" aria-hidden="true"></i>
 			<ol>
-				<li><a href="{{ SITE_URL }}{% url 'forum_index' %}">Forum</a></li>
+				<li><a href="{{ SITE_URL }}{{ url('forum_index') }}">Forum</a></li>
 				<li>Create an account</li>
 			</ol>
 		</nav>
 	</div>
-	<p>Create an account to participate in our community. If you already have an account, <a href="{% url 'account_login' %}">log in</a>.</p>
+	<p>Create an account to participate in our community. If you already have an account, <a href="{{ url('account_login') }}">log in</a>.</p>
 	<hr>
-	<form method="post" action="{% url 'account_signup' %}">
-		{% csrf_token %}
+	<form method="post" action="{{ url('account_signup') }}">
+		{{ csrf_input }}
 		{% include "account/formBody.html" %}
 		{% if redirect_field_value %}
 			<input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">

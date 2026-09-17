@@ -2,18 +2,18 @@
 
 <p>Someone asked you a question on All About Berlin.</p>
 
-<p><strong>Name:</strong> {{ message.case.name|default:"Not specified" }}</p>
-<p><strong>Email:</strong> {{ message.case.email|default:"Not specified" }}</p>
-<p><strong>Referrer:</strong> {{ message.case.referrer|default:"Not specified" }}</p>
+<p><strong>Name:</strong> {{ message.case.name|default("Not specified") }}</p>
+<p><strong>Email:</strong> {{ message.case.email|default("Not specified") }}</p>
+<p><strong>Referrer:</strong> {{ message.case.referrer|default("Not specified") }}</p>
 <hr>
-<p><strong>Occupation:</strong> {{ message.case.get_occupation_display }}</p>
-<p><strong>Income:</strong> {{ message.case.income|default_if_none:"Not specified" }}</p>
-<p><strong>Age:</strong> {{ message.case.age|default_if_none:"Not specified" }}</p>
-<p><strong>Married:</strong> {{ message.case.is_married|yesno:"Yes,No,Not specified" }}</p>
-<p><strong>Number of children:</strong> {{ message.case.children_count|default_if_none:"Not specified" }}</p>
-<p><strong>Has public health insurance in Germany:</strong> {{ message.case.has_german_public_insurance|yesno:"Yes,No,Not specified" }}</p>
-<p><strong>Has public health insurance in the EU:</strong> {{ message.case.has_eu_public_insurance|yesno:"Yes,No,Not specified" }}</p>
-<p><strong>Applying for a first visa/residence permit:</strong> {{ message.case.is_applying_for_first_visa|yesno:"Yes,No,Not specified" }}</p>
+<p><strong>Occupation:</strong> {{ message.case.get_occupation_display() }}</p>
+<p><strong>Income:</strong> {{ message.case.income|default_if_none("Not specified") }}</p>
+<p><strong>Age:</strong> {{ message.case.age|default_if_none("Not specified") }}</p>
+<p><strong>Married:</strong> {{ message.case.is_married|yesno("Yes,No,Not specified") }}</p>
+<p><strong>Number of children:</strong> {{ message.case.children_count|default_if_none("Not specified") }}</p>
+<p><strong>Has public health insurance in Germany:</strong> {{ message.case.has_german_public_insurance|yesno("Yes,No,Not specified") }}</p>
+<p><strong>Has public health insurance in the EU:</strong> {{ message.case.has_eu_public_insurance|yesno("Yes,No,Not specified") }}</p>
+<p><strong>Applying for a first visa/residence permit:</strong> {{ message.case.is_applying_for_first_visa|yesno("Yes,No,Not specified") }}</p>
 <hr>
-<p><strong>Intent: {{ message.case.get_intent_display }}</strong></p>
-<p><strong>Question:</strong><br>{{ message.case.question|default:"Not specified"|linebreaksbr }}</p>
+<p><strong>Intent: {{ message.case.get_intent_display() }}</strong></p>
+<p><strong>Question:</strong><br>{{ message.case.question|default("Not specified")|linebreaksbr }}</p>
