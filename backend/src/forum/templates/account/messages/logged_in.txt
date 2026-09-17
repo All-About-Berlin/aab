@@ -1,0 +1,1 @@
+Successfully signed in as {{ user.get_username() }}.

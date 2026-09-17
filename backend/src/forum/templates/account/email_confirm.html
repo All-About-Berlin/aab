@@ -1,6 +1,4 @@
 {% extends "forum/layout.html" %}
-{% load account %}
-{% load allauth %}
 
 {% block page_title %}Confirm your email address - All About Berlin forum{% endblock %}
 
@@ -11,16 +9,24 @@
 		<nav class="breadcrumbs" aria-label="Breadcrumbs">
 			<i class="icon folder" aria-hidden="true"></i>
 			<ol>
-				<li><a href="{{ SITE_URL }}{% url 'forum_index' %}">Forum</a></li>
+				<li><a href="{{ SITE_URL }}{{ url('forum_index') }}">Forum</a></li>
 				<li>Email confirmation</li>
 			</ol>
 		</nav>
 	</div>
-	<p>Please confirm that {{ email }} is an email address for user {{ user_display }}.</p>
-	<form class="buttons bar" method="POST" action="{% url 'account_confirm_email' confirmation.key %}">
-		{% csrf_token %}
-		{{ redirect_field }}
-		<button class="button primary" type="submit">Confirm</button>
-	</form>
+	{% if confirmation %}
+		{% if can_confirm %}
+			<p>Please confirm that {{ confirmation.email_address.email }} is an email address for user {{ confirmation.email_address.user.get_username() }}.</p>
+			<form class="buttons bar" method="POST" action="{{ url('account_confirm_email', confirmation.key) }}">
+				{{ csrf_input }}
+				{{ redirect_field }}
+				<button class="button primary" type="submit">Confirm</button>
+			</form>
+		{% else %}
+			<p>Unable to confirm {{ confirmation.email_address.email }} because it is already confirmed by a different account.</p>
+		{% endif %}
+	{% else %}
+		<p>This email confirmation link expired or is invalid. Please <a href="{{ url('account_email_verification_sent') }}">issue a new email confirmation request</a>.</p>
+	{% endif %}
 </article>
 {% endblock %}

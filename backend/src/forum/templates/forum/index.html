@@ -1,21 +1,19 @@
 {% extends "forum/layout.html" %}
-{% load forum_extras %}
 
 {% block page_title %}{% if page_obj.number > 1 %}Page {{ page_obj.number }} - {% endif %}All About Berlin forum{% endblock %}
 
 {% block postHead %}
-	{% with qs=request.GET.urlencode %}
-		{% if page_obj.has_previous %}
-			{% if page_obj.previous_page_number == 1 %}
-				<link rel="prev" href="{{ SITE_URL }}{% url 'forum_index' %}{% if qs %}?{{ qs }}{% endif %}">
-			{% else %}
-				<link rel="prev" href="{{ SITE_URL }}{% url 'forum_index' %}/page-{{ page_obj.previous_page_number }}{% if qs %}?{{ qs }}{% endif %}">
-			{% endif %}
+	{% set qs = request.GET.urlencode() %}
+	{% if page_obj.has_previous() %}
+		{% if page_obj.previous_page_number() == 1 %}
+			<link rel="prev" href="{{ SITE_URL }}{{ url('forum_index') }}{% if qs %}?{{ qs }}{% endif %}">
+		{% else %}
+			<link rel="prev" href="{{ SITE_URL }}{{ url('forum_index') }}/page-{{ page_obj.previous_page_number() }}{% if qs %}?{{ qs }}{% endif %}">
 		{% endif %}
-		{% if page_obj.has_next %}
-			<link rel="next" href="{{ SITE_URL }}{% url 'forum_index' %}/page-{{ page_obj.next_page_number }}{% if qs %}?{{ qs }}{% endif %}">
-		{% endif %}
-	{% endwith %}
+	{% endif %}
+	{% if page_obj.has_next() %}
+		<link rel="next" href="{{ SITE_URL }}{{ url('forum_index') }}/page-{{ page_obj.next_page_number() }}{% if qs %}?{{ qs }}{% endif %}">
+	{% endif %}
 {% endblock %}
 
 {% block content %}
@@ -25,8 +23,8 @@
 				<h1>Wiser together</h1>
 				<p>A forum where immigrants help immigrants. Ask anything, answer what you can.</p>
 				<div class="buttons bar left">
-					<a class="button" href="{% url 'account_signup' %}">Join the community</a>
-					<a class="button" href="{% url 'account_login' %}">Log in</a>
+					<a class="button" href="{{ url('account_signup') }}">Join the community</a>
+					<a class="button" href="{{ url('account_login') }}">Log in</a>
 				</div>
 			</div>
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="15 50 975 900">
@@ -80,23 +78,23 @@
 				<nav class="breadcrumbs" aria-label="Breadcrumbs">
 					<i class="icon folder" aria-hidden="true"></i>
 					<ol>
-						<li><a href="{{ SITE_URL }}{% url 'forum_index' %}">Forum</a></li>
+						<li><a href="{{ SITE_URL }}{{ url('forum_index') }}">Forum</a></li>
 						{% if category %}
-							<li><a href="{{ SITE_URL }}{% url 'forum_index' %}?category={{ category.value }}">{{ category.label }}</a></li>
+							<li><a href="{{ SITE_URL }}{{ url('forum_index') }}?category={{ category.value }}">{{ category.label }}</a></li>
 						{% endif %}
 						{% if page_obj.number > 1 %}
-							<li><a href="{{ SITE_URL }}{% url 'forum_index_page' page=page_obj.number %}{% if category %}?category={{ category.value }}{% endif %}">Page {{ page_obj.number }}</a></li>
+							<li><a href="{{ SITE_URL }}{{ url('forum_index_page', page=page_obj.number) }}{% if category %}?category={{ category.value }}{% endif %}">Page {{ page_obj.number }}</a></li>
 						{% endif %}
 					</ol>
 				</nav>
-				<a class="button primary" href="{% url 'forum_new_thread' %}">New discussion</a>
+				<a class="button primary" href="{{ url('forum_new_thread') }}">New discussion</a>
 			</div>
 		{% endif %}
 	{% else %}
 		<h2>Recent topics</h2>
 	{% endif %}
-	{% include "forum/_threadList.html" with threads=page_obj %}
-	{% url 'forum_index' as base_url %}
+	{% with threads = page_obj %}{% include "forum/_threadList.html" %}{% endwith %}
+	{% set base_url = url('forum_index') %}
 	{% include "forum/_pagination.html" %}
 </section>
 {% endblock %}
@@ -107,9 +105,9 @@
 	"@type": "BreadcrumbList",
 	"itemListElement": [
 		{"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ SITE_URL }}/"},
-		{"@type": "ListItem", "position": 2, "name": "Forum", "item": "{{ SITE_URL }}{% url 'forum_index' %}"}
+		{"@type": "ListItem", "position": 2, "name": "Forum", "item": "{{ SITE_URL }}{{ url('forum_index') }}"}
 		{% if category %},
-		{"@type": "ListItem", "position": 3, "name": "{{ category.label|escapejs }}", "item": "{{ SITE_URL }}{% url 'forum_index' %}?category={{ category.value }}"}
+		{"@type": "ListItem", "position": 3, "name": "{{ category.label|escapejs }}", "item": "{{ SITE_URL }}{{ url('forum_index') }}?category={{ category.value }}"}
 		{% endif %}
 	]
 }

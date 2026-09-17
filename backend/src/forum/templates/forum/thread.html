@@ -1,41 +1,39 @@
 {% extends "forum/layout.html" %}
-{% load forum_extras %}
-{% load safe_markdown %}
 
 {% block page_title %}{% if page_obj.number > 1 %}Page {{ page_obj.number }} - {% endif %}{{ thread.title }} - All About Berlin forum{% endblock %}
 
 {% block postHead %}
-	<link rel="canonical" href="{{ SITE_URL }}{% url 'forum_thread' thread.pk %}">
-	{% if page_obj.has_previous %}
-		{% if page_obj.previous_page_number == 1 %}
-			<link rel="prev" href="{{ SITE_URL }}{% url 'forum_thread' thread.pk %}">
+	<link rel="canonical" href="{{ SITE_URL }}{{ url('forum_thread', thread.pk) }}">
+	{% if page_obj.has_previous() %}
+		{% if page_obj.previous_page_number() == 1 %}
+			<link rel="prev" href="{{ SITE_URL }}{{ url('forum_thread', thread.pk) }}">
 		{% else %}
-			<link rel="prev" href="{{ SITE_URL }}{% url 'forum_thread_page' thread.pk page_obj.previous_page_number %}">
+			<link rel="prev" href="{{ SITE_URL }}{{ url('forum_thread_page', thread.pk, page_obj.previous_page_number()) }}">
 		{% endif %}
 	{% endif %}
-	{% if page_obj.has_next %}
-		<link rel="next" href="{{ SITE_URL }}{% url 'forum_thread_page' thread.pk page_obj.next_page_number %}">
+	{% if page_obj.has_next() %}
+		<link rel="next" href="{{ SITE_URL }}{{ url('forum_thread_page', thread.pk, page_obj.next_page_number()) }}">
 	{% endif %}
 {% endblock %}
 
 {% block content %}
-<article class="section h-entry" itemscope itemtype="https://schema.org/DiscussionForumPosting"{% if page_obj.object_list %} itemref="{% for reply in page_obj %}reply-{{ reply.pk }}{% if not forloop.last %} {% endif %}{% endfor %}"{% endif %}>
-	<link itemprop="url" href="{{ SITE_URL }}{% url 'forum_thread' thread.pk %}">
+<article class="section h-entry" itemscope itemtype="https://schema.org/DiscussionForumPosting"{% if page_obj.object_list %} itemref="{% for reply in page_obj %}reply-{{ reply.pk }}{% if not loop.last %} {% endif %}{% endfor %}"{% endif %}>
+	<link itemprop="url" href="{{ SITE_URL }}{{ url('forum_thread', thread.pk) }}">
 	<h1 class="p-name" itemprop="headline">{{ thread.title }}</h1>
 	<div class="post-meta" aria-label="Topic author, publication date and category">
 		<nav class="breadcrumbs" aria-label="Breadcrumbs">
 			<i class="icon folder" aria-hidden="true"></i>
 			<ol>
-				<li><a href="{{ SITE_URL }}{% url 'forum_index' %}">Forum</a></li>
+				<li><a href="{{ SITE_URL }}{{ url('forum_index') }}">Forum</a></li>
 				{% if thread.category %}
-					<li><a class="p-category" href="{{ SITE_URL }}{% url 'forum_index' %}?category={{ thread.category }}">{{ thread.get_category_display }}</a></li>
+					<li><a class="p-category" href="{{ SITE_URL }}{{ url('forum_index') }}?category={{ thread.category }}">{{ thread.get_category_display() }}</a></li>
 				{% endif %}
 			</ol>
 		</nav>
-		{% include "forum/_username.html" with user=thread.author %}
+		{% with user = thread.author %}{% include "forum/_username.html" %}{% endwith %}
 		<div class="date">
 			<i class="icon calendar" aria-hidden="true"></i>
-			<time class="dt-published" itemprop="datePublished" datetime="{{ thread.creation_date.isoformat }}">{{ thread.creation_date|short_datetime }}</time>
+			<time class="dt-published" itemprop="datePublished" datetime="{{ thread.creation_date.isoformat() }}">{{ thread.creation_date|short_datetime }}</time>
 		</div>
 	</div>
 	<div class="article-body e-content" itemprop="articleBody">{{ thread.body|safe_markdown }}</div>
@@ -52,7 +50,7 @@
 	{% else %}
 		<hr>
 		<div class="login-paragraph" data-nosnippet>
-			To reply, <a href="{% url 'account_login' %}">log in</a> or <a href="{% url 'account_signup' %}">create an account</a>.
+			To reply, <a href="{{ url('account_login') }}">log in</a> or <a href="{{ url('account_signup') }}">create an account</a>.
 		</div>
 	{% endif %}
 
@@ -62,26 +60,26 @@
 	<section aria-label="Replies" class="section replies">
 		<h2>Replies</h2>
 		{% if page_obj.object_list %}
-			{% include "forum/_replyList.html" with replies=page_obj.object_list %}
+			{% with replies = page_obj.object_list %}{% include "forum/_replyList.html" %}{% endwith %}
 		{% endif %}
-		{% url 'forum_thread' thread.pk as base_url %}
+		{% set base_url = url('forum_thread', thread.pk) %}
 		{% include "forum/_pagination.html" %}
 		{% if not user.is_authenticated %}
 			<hr>
 			<p class="login-paragraph" data-nosnippet>
-				To reply, <a href="{% url 'account_login' %}">log in</a> or <a href="{% url 'account_signup' %}">create an account</a>.
+				To reply, <a href="{{ url('account_login') }}">log in</a> or <a href="{{ url('account_signup') }}">create an account</a>.
 			</p>
 		{% endif %}
 	</section>
 {% endif %}
 
 {% if user.is_authenticated %}
-	<form id="reply" class="section" method="post" action="{% url 'forum_thread' thread.pk %}">
+	<form id="reply" class="section" method="post" action="{{ url('forum_thread', thread.pk) }}">
 		<h2>Reply to this topic</h2>
 		<hr>
-		{% csrf_token %}
-		{% if form.non_field_errors %}
-			<p class="error">{{ form.non_field_errors|first }}</p>
+		{{ csrf_input }}
+		{% if form.non_field_errors() %}
+			<p class="error">{{ form.non_field_errors()|first }}</p>
 		{% endif %}
 		<div class="form-group">
 			<label for="{{ form.body.id_for_label }}">{{ form.body.label }}</label>
@@ -89,7 +87,7 @@
 			{% if form.body.errors %}
 				<span class="input-instructions error">{{ form.body.errors|first }}</span>
 			{% else %}
-				<span class="input-instructions">Be kind, be helpful, and follow <a target="_blank" href="{% url 'forum_rules' %}">the rules</a>.</span>
+				<span class="input-instructions">Be kind, be helpful, and follow <a target="_blank" href="{{ url('forum_rules') }}">the rules</a>.</span>
 			{% endif %}
 		</div>
 		<hr>
@@ -106,24 +104,24 @@
 , {
 	"@context": "https://schema.org",
 	"@type": "WebPage",
-	"@id": "{{ SITE_URL }}{% url 'forum_thread' thread.pk %}",
+	"@id": "{{ SITE_URL }}{{ url('forum_thread', thread.pk) }}",
 	"name": "{{ thread.title|escapejs }}",
 	"breadcrumb": {
 		"@type": "BreadcrumbList",
 		"itemListElement": [
 			{"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ SITE_URL }}/"},
-			{"@type": "ListItem", "position": 2, "name": "Forum", "item": "{{ SITE_URL }}{% url 'forum_index' %}"}
+			{"@type": "ListItem", "position": 2, "name": "Forum", "item": "{{ SITE_URL }}{{ url('forum_index') }}"}
 			{% if thread.category %},
-			{"@type": "ListItem", "position": 3, "name": "{{ thread.get_category_display|escapejs }}", "item": "{{ SITE_URL }}{% url 'forum_index' %}?category={{ thread.category }}"},
-			{"@type": "ListItem", "position": 4, "name": "{{ thread.title|escapejs }}", "item": "{{ SITE_URL }}{% url 'forum_thread' thread.pk %}"}
+			{"@type": "ListItem", "position": 3, "name": "{{ thread.get_category_display()|escapejs }}", "item": "{{ SITE_URL }}{{ url('forum_index') }}?category={{ thread.category }}"},
+			{"@type": "ListItem", "position": 4, "name": "{{ thread.title|escapejs }}", "item": "{{ SITE_URL }}{{ url('forum_thread', thread.pk) }}"}
 			{% else %},
-			{"@type": "ListItem", "position": 3, "name": "{{ thread.title|escapejs }}", "item": "{{ SITE_URL }}{% url 'forum_thread' thread.pk %}"}
+			{"@type": "ListItem", "position": 3, "name": "{{ thread.title|escapejs }}", "item": "{{ SITE_URL }}{{ url('forum_thread', thread.pk) }}"}
 			{% endif %}
 		]
 	},
 	"mainEntity": {
 		"@type": "DiscussionForumPosting",
-		"url": "{{ SITE_URL }}{% url 'forum_thread' thread.pk %}",
+		"url": "{{ SITE_URL }}{{ url('forum_thread', thread.pk) }}",
 		"interactionStatistic": {
 			"@type": "InteractionCounter",
 			"interactionType": "https://schema.org/ReplyAction",

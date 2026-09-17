@@ -98,19 +98,16 @@ DATABASES = {
     }
 }
 
-_template_loaders = [
-    "django.template.loaders.filesystem.Loader",
-    "django.template.loaders.app_directories.Loader",
-]
+admin_template_loaders = ["api.template_loaders.AdminOnlyLoader"]
 if not DEBUG:
-    _template_loaders = [("django.template.loaders.cached.Loader", _template_loaders)]
+    admin_template_loaders = [("django.template.loaders.cached.Loader", admin_template_loaders)]
 
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [Path("/var/frontend-output")],
+        "DIRS": [],
         "OPTIONS": {
-            "loaders": _template_loaders,
+            "loaders": admin_template_loaders,
             "context_processors": [
                 "django.template.context_processors.debug",
                 "django.template.context_processors.request",
@@ -119,9 +116,22 @@ TEMPLATES = [
             ],
         },
     },
+    {
+        "BACKEND": "api.jinja2.Jinja2Templates",
+        "DIRS": [],
+        "APP_DIRS": True,
+        "OPTIONS": {
+            "environment": "api.jinja2.environment",
+            "context_processors": [
+                "django.template.context_processors.request",
+                "django.contrib.auth.context_processors.auth",
+                "django.contrib.messages.context_processors.messages",
+            ],
+        },
+    },
 ]
 
-BASE_URL = "https://allaboutberlin.com"
+BASE_URL = f"https://{os.environ.get('DOMAIN', 'localhost')}"
 STATIC_ROOT = Path("/var/www/api/staticfiles")
 STATIC_URL = "/admin/static/"
 

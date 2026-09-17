@@ -1,4 +1,3 @@
-{% load humanize %}
 <h3>Monitors</h3>
 <ul>
 	{% for monitor in monitors %}
@@ -20,9 +19,9 @@
 					{% else %}
 						<h4>{{ instance.name }}</h4>
 					{% endif %}
-					{% for field, value in instance.fields.items %}
+					{% for field, value in instance.fields.items() %}
 						{% if value %}
-							<strong>{{ field }}:</strong> {{ value|default:"-"|linebreaksbr }}<br>
+							<strong>{{ field }}:</strong> {{ value|default("-")|linebreaksbr }}<br>
 						{% endif %}
 					{% endfor %}
 				</li>

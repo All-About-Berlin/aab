@@ -1,16 +1,15 @@
-{% load forum_extras %}
 {% if threads %}
 	<ol class="h-feed" aria-label="Threads">
 		{% for thread in threads %}
 			<li class="thread h-entry">
-				<h3><a class="u-url p-name" href="{{ SITE_URL }}{% url 'forum_thread' thread.pk %}">{{ thread.title }}</a></h3>
+				<h3><a class="u-url p-name" href="{{ SITE_URL }}{{ url('forum_thread', thread.pk) }}">{{ thread.title }}</a></h3>
 				<div class="post-meta" aria-label="Topic author, publication date and category">
-					<div aria-label="{{ thread.reply_count }} repl{{ thread.reply_count|pluralize:'y,ies' }}" title="{{ thread.reply_count }} repl{{ thread.reply_count|pluralize:'y,ies' }}">
+					<div aria-label="{{ thread.reply_count }} repl{{ thread.reply_count|pluralize('y,ies') }}" title="{{ thread.reply_count }} repl{{ thread.reply_count|pluralize('y,ies') }}">
 						<i class="icon bubble" aria-hidden="true"></i> {{ thread.reply_count }}
 					</div>
-					<div class="date" title="Last activity on {{ thread.last_activity_date|date:'F j, H:i' }}" aria-label="Last activity">
+					<div class="date" title="Last activity on {{ thread.last_activity_date|date('F j, H:i') }}" aria-label="Last activity">
 						<i class="icon calendar" aria-hidden="true"></i>
-						<time class="dt-updated" datetime="{{ thread.last_activity_date.isoformat }}">{{ thread.last_activity_date|short_datetime }}</time>
+						<time class="dt-updated" datetime="{{ thread.last_activity_date.isoformat() }}">{{ thread.last_activity_date|short_datetime }}</time>
 					</div>
 				</div>
 			</li>
