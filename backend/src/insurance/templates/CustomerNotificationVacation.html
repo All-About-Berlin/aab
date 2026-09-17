@@ -1,6 +1,6 @@
-<p>Hi {{ message.case.name|default:"there" }},</p>
+<p>Hi {{ message.case.name|default("there") }},</p>
 
-<p>You asked a health insurance question on All About Berlin. Seamus is on vacation from {{ vacation_start|date:"F j" }} to {{ vacation_end|date:"F j" }}. His colleagues Max and Marvin will answer your question. If you don't get a response, check your spam folder.</p>
+<p>You asked a health insurance question on All About Berlin. Seamus is on vacation from {{ vacation_start|date("F j") }} to {{ vacation_end|date("F j") }}. His colleagues Max and Marvin will answer your question. If you don't get a response, check your spam folder.</p>
 
 <p>While you wait, you can...</p>
 

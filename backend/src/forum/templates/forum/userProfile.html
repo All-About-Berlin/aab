@@ -1,9 +1,8 @@
 {% extends "forum/layout.html" %}
-{% load forum_extras %}
 
 {% block page_title %}User {{ profile_user.username }} - All About Berlin forum{% endblock %}
 {% block page_description %}Topics and replies by {{ profile_user.username }} on the All About Berlin forum.{% endblock %}
-{% block postHead %}<link rel="canonical" href="{{ SITE_URL }}{% url 'forum_user' profile_user.username %}">{% endblock %}
+{% block postHead %}<link rel="canonical" href="{{ SITE_URL }}{{ url('forum_user', profile_user.username) }}">{% endblock %}
 
 {% block content %}
 <article class="section h-card">
@@ -12,17 +11,17 @@
 		<nav class="breadcrumbs" aria-label="Breadcrumbs">
 			<i class="icon folder" aria-hidden="true"></i>
 			<ol>
-				<li><a href="{{ SITE_URL }}{% url 'forum_index' %}">Forum</a></li>
+				<li><a href="{{ SITE_URL }}{{ url('forum_index') }}">Forum</a></li>
 				<li>User profile</li>
 			</ol>
 		</nav>
 		<div class="date">
 			<i class="icon calendar" aria-hidden="true"></i>
-			<time datetime="{{ profile_user.date_joined.isoformat }}">Joined on {{ profile_user.date_joined|short_datetime }}</time>
+			<time datetime="{{ profile_user.date_joined.isoformat() }}">Joined on {{ profile_user.date_joined|short_datetime }}</time>
 		</div>
 		<div>
 			<i class="icon bubble" aria-hidden="true"></i>
-			{{ thread_count }} topic{{ thread_count|pluralize }}, {{ post_count }} repl{{ post_count|pluralize:"y,ies" }}
+			{{ thread_count }} topic{{ thread_count|pluralize }}, {{ post_count }} repl{{ post_count|pluralize('y,ies') }}
 		</div>
 	</div>
 </article>
@@ -30,7 +29,7 @@
 <section class="section threads" aria-label="Topics">
 	<h2>Recent topics by {{ profile_user.username }}</h2>
 	{% if threads %}
-		{% include "forum/_threadList.html" with threads=threads %}
+		{% include "forum/_threadList.html" %}
 	{% else %}
 		<p class="empty">This user has not started any topics.</p>
 	{% endif %}
@@ -42,13 +41,13 @@
 		<ol class="h-feed">
 			{% for reply in replies %}
 				<li class="h-entry reply" id="reply-{{ reply.pk }}" itemprop="comment" itemscope itemtype="https://schema.org/Comment">
-					<link itemprop="url" href="{{ SITE_URL }}{% url 'forum_thread' reply.thread.pk %}#reply-{{ reply.pk }}">
-					<a class="p-author h-card" hidden href="{{ SITE_URL }}{% url 'forum_user' profile_user.username %}">{{ profile_user.username }}</a>
+					<link itemprop="url" href="{{ SITE_URL }}{{ url('forum_thread', reply.thread.pk) }}#reply-{{ reply.pk }}">
+					<a class="p-author h-card" hidden href="{{ SITE_URL }}{{ url('forum_user', profile_user.username) }}">{{ profile_user.username }}</a>
 					<div class="post-meta">
-						<a href="{{ SITE_URL }}{% url 'forum_thread' reply.thread.pk %}#reply-{{ reply.pk }}">{{ reply.thread.title }}</a>
-						<div class="date" title="Posted on {{ reply.creation_date|date:'F j, Y' }}" aria-label="Comment date">
+						<a href="{{ SITE_URL }}{{ url('forum_thread', reply.thread.pk) }}#reply-{{ reply.pk }}">{{ reply.thread.title }}</a>
+						<div class="date" title="Posted on {{ reply.creation_date|date('F j, Y') }}" aria-label="Comment date">
 							<i class="icon calendar" aria-hidden="true"></i>
-							<a class="u-url" href="{{ SITE_URL }}{% url 'forum_thread' reply.thread.pk %}#reply-{{ reply.pk }}"><time class="dt-published" itemprop="datePublished" datetime="{{ reply.creation_date.isoformat }}">{{ reply.creation_date|date:'F j, Y' }}</time></a>
+							<a class="u-url" href="{{ SITE_URL }}{{ url('forum_thread', reply.thread.pk) }}#reply-{{ reply.pk }}"><time class="dt-published" itemprop="datePublished" datetime="{{ reply.creation_date.isoformat() }}">{{ reply.creation_date|date('F j, Y') }}</time></a>
 						</div>
 					</div>
 					<div class="article-body e-content" itemprop="text">{{ reply.body|linebreaks }}</div>
@@ -65,17 +64,17 @@
 , {
 	"@context": "https://schema.org",
 	"@type": "ProfilePage",
-	"dateCreated": "{{ profile_user.date_joined.isoformat }}",
+	"dateCreated": "{{ profile_user.date_joined.isoformat() }}",
 	"mainEntity": {
 		"@type": "Person",
 		"name": "{{ profile_user.username|escapejs }}",
 		"identifier": "{{ profile_user.username|escapejs }}",
-		"url": "{{ SITE_URL }}{% url 'forum_user' profile_user.username %}",
+		"url": "{{ SITE_URL }}{{ url('forum_user', profile_user.username) }}",
 		"interactionStatistic": [
 			{
 				"@type": "InteractionCounter",
 				"interactionType": "https://schema.org/WriteAction",
-				"userInteractionCount": {{ thread_count|add:post_count }}
+				"userInteractionCount": {{ thread_count|add(post_count) }}
 			}
 		]
 	}
@@ -85,8 +84,8 @@
 	"@type": "BreadcrumbList",
 	"itemListElement": [
 		{"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ SITE_URL }}/"},
-		{"@type": "ListItem", "position": 2, "name": "Forum", "item": "{{ SITE_URL }}{% url 'forum_index' %}"},
-		{"@type": "ListItem", "position": 3, "name": "{{ profile_user.username|escapejs }}", "item": "{{ SITE_URL }}{% url 'forum_user' profile_user.username %}"}
+		{"@type": "ListItem", "position": 2, "name": "Forum", "item": "{{ SITE_URL }}{{ url('forum_index') }}"},
+		{"@type": "ListItem", "position": 3, "name": "{{ profile_user.username|escapejs }}", "item": "{{ SITE_URL }}{{ url('forum_user', profile_user.username) }}"}
 	]
 }
 {% endblock %}

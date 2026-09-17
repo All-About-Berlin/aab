@@ -1,0 +1,1 @@
+Unable to confirm {{ email }} because it is already confirmed by a different account.

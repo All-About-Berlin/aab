@@ -5,8 +5,8 @@ from django.core.cache import cache
 from django.test import SimpleTestCase, TestCase, override_settings
 from django.urls import reverse
 
+from api.jinja2 import safe_markdown
 from forum.models import Reply, Thread
-from forum.templatetags.safe_markdown import safe_markdown
 from forum.views import ForumIndexView
 
 

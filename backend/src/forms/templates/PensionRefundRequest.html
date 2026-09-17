@@ -6,6 +6,6 @@
 <p><strong>Email:</strong> {{ message.email }}</p>
 <p><strong>Nationality:</strong> {{ message.nationality.name }}</p>
 <p><strong>Country of residence:</strong> {{ message.country_of_residence.name }}</p>
-<p><strong>First day in Germany:</strong> {{ message.arrival_date|date:"F Y" }}</p>
-<p><strong>Last day in Germany:</strong> {{ message.departure_date|date:"F Y" }}</p>
-<p><strong>Date of birth:</strong> {{ message.birth_date|date:"Y-m-d" }}</p>
+<p><strong>First day in Germany:</strong> {{ message.arrival_date|date("F Y") }}</p>
+<p><strong>Last day in Germany:</strong> {{ message.departure_date|date("F Y") }}</p>
+<p><strong>Date of birth:</strong> {{ message.birth_date|date("Y-m-d") }}</p>
