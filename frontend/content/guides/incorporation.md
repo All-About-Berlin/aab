@@ -9,11 +9,15 @@ This guide explains how to form a UG or GmbH in Germany. It's part of my guide o
 
 {% tableOfContents %}
 
+## Should you incorporate?
+
+If you have no clear reason to incorporate, avoid it. It's a lot of paperwork, a lot of expenses, and a big commitment. There are [other options](#other-options).
+
 ## Advantages of incorporating
 
 ### Pay less income tax
 
-If you earn over €100,000 per year, incorporating helps you pay less taxes than [sole proprietors](/glossary/Einzelunternehmen).[^67]
+If you earn over €100,000 per year, incorporating can help you pay less taxes than [sole proprietors](/glossary/Einzelunternehmen).[^67]
 
 In Germany, corporate profits are taxed at around 30%. The remaining money stays in the corporation. To withdraw the money, you can pay yourself a salary or pay yourself dividends.
 
@@ -63,6 +67,12 @@ https://eidel.io/notes-and-hacks-on-germanys-exit-tax/
 
 People will see numbers, balance sheet. Lots of spam from being in the Handelsregister. It will show up in the Bundesanzeiger?
 
+### Access to money
+
+When you are a sole proprietor, you can pay yourself immediately. When a client pays you, you can immediately use the money.
+
+With a corporation, the money is stuck in the corporation. You can pay yourself a salary, or dividends, or even loan yourself money, but generally, it's harder to pay yourself. (Why? What paperwork does it require?)
+
 ## Holding company
 
 Your profits are taxed once at 30%, then at 1.5% when transferring to the holding. Then you pay yourself a salary. It's tax-deductible for the company, and taxed as normal income tax rate for you.
@@ -75,13 +85,13 @@ Expanded here: https://eidel.io/posts/holding-gmbh-vs-normal-gmbh-in-germany-wor
 
 ## Other options
 
-It only makes sense above €100k[^49]
+It only makes sense above €100k.[^49]
 
 If your income is below €150-300k, a GmbH is probably not worth it.
 
 ### Sole proprietorship
 
-An Einzelunternehmen is a lot less paperwork, a lot cheaper to create. Makes sense if...[^27]
+An *[[Einzelunternehmen]]* is a lot less paperwork, a lot cheaper to create. Makes sense if...[^27]
 
 - No employees
 - Low chance of huge liability lawsuit
