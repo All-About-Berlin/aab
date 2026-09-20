@@ -167,3 +167,14 @@
   borough: Marzahn-Hellersdorf
   suburb: Marzahn
   quarter: Springpfuhl
+- name: Fahrschule EXAKT Pankow
+  description: They speak English, german.
+  website: https://www.fahrschuleexakt.com/
+  address: Berliner Str. 13 a
+  latitude: 52.56791
+  longitude: 13.411879
+  google_place_id: ChIJ1z86YspTqEcRUWeuvKECV1s
+  last_verified: 2026-09-19
+  borough: Pankow
+  suburb: Pankow
+  quarter: Tiroler Viertel

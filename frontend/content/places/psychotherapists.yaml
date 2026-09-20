@@ -1112,8 +1112,7 @@
   suburb: Mitte
   quarter: Spandauer Vorstadt
 - name: Dr. phil. David Keller
-  description: CBT therapy and
-    and transcultural psychological counseling in English and German.
+  description: CBT therapy and and transcultural psychological counseling in English and German.
   website: https://www.psychotherapie-in-wilmersdorf.de/david-keller
   email: david.keller@mailbox.org
   address: Nassauische Str. 16A, 10717 Berlin-Bezirk Charlottenburg-Wilmersdorf
@@ -1136,3 +1135,37 @@
   borough: Mitte
   suburb: Mitte
   quarter: Luisenstadt
+- name: Praxis für Psychotherapie Polina Godau
+  description: Self paying clients and online therapy. They speak English, German, Russian.
+  website: https://www.praxis-godau.de/
+  email: praxis.godau@protonmail.com
+  address: Jüterboger Str. 6
+  latitude: 52.48647
+  longitude: 13.3978
+  google_place_id: ChIJD96pP6NRqEcR3nUkjrWlFh0
+  last_verified: 2026-09-19
+  borough: Friedrichshain-Kreuzberg
+  suburb: Kreuzberg
+  quarter: Bergmannkiez
+- name: Gabriela Santos
+  description: She speaks English, German and Portuguese.
+  website: https://www.gabrielasantos.eu/
+  address: Dammweg 106
+  latitude: 52.478794
+  longitude: 13.479695
+  google_place_id: ChIJsY1047tPqEcRyyI6LCsUb8Q
+  last_verified: 2026-09-19
+  borough: Treptow-Köpenick
+  suburb: Plänterwald
+  quarter: null
+- name: M.Sc.-Psych. Ines Hülsmann
+  website: http://www.huelsmann-psychotherapie.de/
+  address: Turmstr. 76a
+  latitude: 52.52653
+  longitude: 13.33507
+  google_place_id: ChIJPUPpLIVRqEcR1Pj4PwXVk8s
+  last_verified: 2026-09-19
+  borough: Mitte
+  suburb: Moabit
+  quarter: Arminiuskiez
+  accepts_public_health_insurance: false

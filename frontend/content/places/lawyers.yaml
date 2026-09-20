@@ -692,3 +692,15 @@
   borough: Pankow
   suburb: Prenzlauer Berg
   quarter: Helmholtzkiez
+- name: Joost Beerwerth-Schippmann
+  description: Labor law
+  website: https://berlinlaborlaw.de/
+  email: joost@beerwerth-schippmann.de
+  address: Leipziger Pl. 15
+  latitude: 52.510458
+  longitude: 13.378323
+  google_place_id: ChIJO3RRMClRqEcRDHUatGKVIbA
+  last_verified: 2026-09-19
+  borough: Mitte
+  suburb: Mitte
+  quarter: Friedrichstadt

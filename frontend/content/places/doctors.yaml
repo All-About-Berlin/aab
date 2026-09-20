@@ -337,3 +337,26 @@
   borough: Friedrichshain-Kreuzberg
   suburb: Kreuzberg
   quarter: Bergmannkiez
+- name: Praxis am Kreuzberg
+  website: https://www.praxis-am-kreuzberg.de/
+  email: praxis@praxis-am-kreuzberg.de
+  address: Katzbachstraße 2
+  latitude: 52.490966
+  longitude: 13.37648
+  google_place_id: ChIJB_M7xSRQqEcR5K5X75KygYw
+  last_verified: 2026-09-19
+  borough: Friedrichshain-Kreuzberg
+  suburb: Kreuzberg
+  quarter: Tempelhofer Vorstadt
+- name: rab-arztbesuche - Arzt Hausbesuche Berlin
+  description: Private doctors that do home visits.
+  website: https://rab-arztbesuche.de/
+  email: info@rab-arztbesuche.de
+  address: Roscherstraße 3
+  latitude: 52.501187
+  longitude: 13.301698
+  google_place_id: ChIJIe_gp_JRqEcRMJBHUf9GZmc
+  last_verified: 2026-09-19
+  borough: Charlottenburg-Wilmersdorf
+  suburb: Charlottenburg
+  quarter: Witzleben

@@ -42,3 +42,13 @@
   last_verified: 2026-04-22
   borough: Steglitz-Zehlendorf
   suburb: Steglitz
+- name: Slice Society
+  website: https://slicesociety.de/
+  address: Torstraße 173
+  latitude: 52.52895
+  longitude: 13.394908
+  google_place_id: ChIJH4kyULlRqEcRc6mqON_zA-o
+  last_verified: 2026-09-19
+  borough: Mitte
+  suburb: Mitte
+  quarter: Spandauer Vorstadt
