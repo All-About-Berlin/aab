@@ -6,6 +6,12 @@ date_created: 2026-09-01
 
 ## What's new in Berlin
 
+### Golden October
+
+![“Herbstgold am Teich” by Alfred Thielemann](/images/alfred-thielemann-herbstgold-am-teich.jpg "“Herbstgold am Teich” by Alfred Thielemann")
+
+October is *goldener Herbst*. The weather turns a bit colder and the days get noticeably shorter. The trees turn orange and it's a perfect time for forest walks, mushroom picking, pumpkin soup and tea.
+
 ### Berlin events in October
 
 - German Unity Day (October 3) - Usually a public holiday, but this year it falls on a Sunday.
@@ -14,7 +20,7 @@ date_created: 2026-09-01
 - Club Culture Day
 - Oktoberfest
 
-Leaves turn orange
+Leaves turn orange, great time to walk in the forest. Mushroom picking.
 
 ### Data breach
 
