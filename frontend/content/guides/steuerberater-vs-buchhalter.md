@@ -23,7 +23,7 @@ Tax advisors are **legally liable for their work**. If your tax advisor makes a 
 
 You must have a tax advisor to...
 
-- Prepare annual financial statements (*Jahresabschluss*) for a corporation
+- Prepare annual financial statements (*Jahresabschluss*) for a [corporation](/glossary/Kapitalgesellschaft)
 - [Renew your freelance visa](/guides/renew-german-freelance-visa). In Berlin, you need a *[[Prüfungsbericht]]* or *[[Netto-Gewinnermittlung]]*. It must be stamped by a tax advisor.
 
 A tax advisor can also...
