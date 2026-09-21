@@ -148,7 +148,7 @@ Tell your electricity company about your moving date. Do this before you move. Y
 
 You will fill a handover document (*[[Übergabeprotokoll]]*) with your landlord. It describes the condition of the apartment, and what must be repaired.[^34]
 
-**[Übergabeprotokoll template](https://www.immobilienscout24.de/content/dam/is24/umzug/dokumente/IS24-wohnungsuebergabeprotokoll2.pdf)** - ImmobilienScout24
+**[Übergabeprotokoll template ➞](https://www.immobilienscout24.de/content/dam/is24/umzug/dokumente/wohnungsuebergabeprotokoll_muster.pdf)**
 
 **Always make a handover document.**[^43] If your landlord repairs something that is not in this document, you don't have to pay for it. If it's not in the *Übergabeprotokoll*, it's not your problem.[^44] It helps you [get your deposit back](/guides/mietkaution#when-do-i-get-my-kaution-back) faster.
 
