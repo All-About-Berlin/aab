@@ -7,6 +7,11 @@ date_created: 2018-07-31
 related_guides:
     - guides/english-speaking-steuerberater-berlin.md
     - guides/steuerberater-vs-buchhalter.md
+    - guides/start-a-business-in-germany.md
 ---
 
-A bookkeeper (*Buchhalter*) is a person who can help you with your bookkeeping. Unlike a tax advisor (*[[Steuerberater]]*), a *Buchhalter* does not need specific qualifications, and is not liable for their mistakes. For more details, see [this guide](/guides/steuerberater-vs-buchhalter).
+A bookkeeper (*Buchhalter*) helps with accounting and bookkeeping.
+
+Unlike [tax advisors](/glossary/Steuerberater), bookkeepers do not need specific qualifications. They are not liable for the mistakes they make.
+
+**[Differences between bookkeepers and tax advisors ➞](/guides/steuerberater-vs-buchhalter)**
