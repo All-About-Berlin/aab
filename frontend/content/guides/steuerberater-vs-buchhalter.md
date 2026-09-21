@@ -1,49 +1,71 @@
 ---
-title: 'Steuerberater or Buchhalter: what''s the difference?'
+title: Differences between Steuerberater and Buchhalter
 short_title: Steuerberater or Buchhalter?
-description: In Germany, there is an important distinction between a Steuerberater (tax advisor) and a Buchhalter (bookkeeper). Picking the right one can save you a lot of money, or bring you a lot of trouble.
+description: In Germany, tax advisors (Steuerberater) and bookkeepers (Buchhalter) play different roles. This guide helps you choose the right one.
 date_created: 2018-02-19
+related_reviews:
+    - reviews/steuerberater-vs-buchhalter/johann-degraf.md
 ---
 
-This guide explains the difference between tax advisors (*[[Steuerberater]]*) and bookkeepers (*[[Buchhalter]]*). 
+This guide explains the difference between tax advisors (*[[Steuerberater]]*) and bookkeepers (*[[Buchhalter]]*) in Germany.
 
 {% tableOfContents %}
 
 ## Summary
 
-- ✓ Tax advisor (*[[Steuerberater]]*) is a protected title in Germany. Bookkeeper (*[[Buchhalter]]*) is not.
-- ✓ Tax advisors can submit tax declarations and financial statements in your name. Bookkeepers can fill the papers, but you must submit them yourself.
-- ✓ Tax advisors are liable for their mistakes, bookkeepers are not.
-- ✗ Tax advisors are more expensive than bookkeepers.
+Bookkeepers only do bookkeeping. Tax advisors can do more, and they are legally liable for their mistakes, but they are more expensive.
 
-## Steuerberater (tax advisor)
+## Tax advisor (Steuerberater)
 
-Tax advisor (*[[Steuerberater]]*) is a protected title in Germany. To become a tax advisor, you must have a university degree and 3 years of work experience,[^0] then you must pass the *Steuerberaterprüfung*, a 3-day-long test.[^1]
+Tax advisor is a protected title. Becoming a tax advisor requires a university degree, 3 years of work experience and passing a 3-day-long test.[^1]
 
-Because of their qualifications, tax advisors have special powers and special responsibilities. For example, only tax advisors can submit your [tax declaration](/glossary/Steuererklärung) and financial statements (*Jahresabschluss*) for you.[^2] They can even handle all communications with the *[[Finanzamt]]* for you. They can also certify documents like the *[[Prüfungsbericht]]* or the *[[Netto-Gewinnermittlung]]*.
+Tax advisors are **legally liable for their work**. If your tax advisor makes a mistake and you get fined by the *[[Finanzamt]]*, your tax advisor must pay the fine.
 
-Tax advisors are liable for their mistakes. If a tax advisor makes a mistake in your tax declaration and you get fined by the *[[Finanzamt]]*, your tax advisor must pay the fine.
+You must have a tax advisor to...
 
-Tax advisors have more powers and responsibilities than bookkeepers, but they are also more expensive than bookkeepers.[^2]
+- Prepare annual financial statements (*Jahresabschluss*) for a corporation
+- [Renew your freelance visa](/guides/renew-german-freelance-visa). In Berlin, you need a *[[Prüfungsbericht]]* or *[[Netto-Gewinnermittlung]]*. It must be stamped by a tax advisor.
 
-**[Cost of a Steuerberater ➞](/guides/english-speaking-steuerberater-berlin#cost-of-a-tax-advisor)**
+A tax advisor can also...
 
-## Buchhalter (bookkeeper)
+- ✓ Give tax advice
+- ✓ Help you [register your business](/guides/start-a-business-in-germany) at the *[[Finanzamt]]* and the *Gewerbeamt*.
+- ✓ Prepare and submit [income tax declarations](/glossary/Steuererklärung)
+- ✓ Prepare and submit [VAT declarations](/glossary/Umsatzsteuererklärung)
+- ✓ Do your personal or business bookkeeping
 
-Bookkeeper (*[[Buchhalter]]*) is *not* a protected title in Germany. Anyone can be a bookkeeper. They do not need a specific degree or certificate. Because of this, bookkeepers have limited powers. They are also cheaper than tax advisors.
+## Bookkeeper (Buchhalter)
 
-Bookkeepers can't submit your tax declarations or financial statements. They can help you fill financial documents, but you must submit them yourself. If your bookkeeper makes mistakes in your tax declaration, and you get fined by the *[[Finanzamt]]*, it will be your fault. You will have to pay the fine.
+Bookkeepers only do bookkeeping. They have limited power and responsibilities,  so they are **cheaper than tax advisors**. Freelance bookkeepers need special qualifications: professional training, an exam, and 3 years of experience.[^4]
 
-## How to find a tax advisor or bookkeeper?
+Bookkeepers are **not liable for their mistakes**. If your bookkeeper makes a mistake and you get fined by the *[[Finanzamt]]*, that's your problem.
 
-**[English-speaking accountants in Berlin ➞](/guides/english-speaking-steuerberater-berlin)**
+Freelance bookkeepers can...[^2]
 
-**[List of German tax software ➞](/guides/german-tax-software)**
+- ✓ File invoices and transactions in your accounting system
+- ✓ Prepare internal financial reports
+- ✓ Do ongoing payroll accounting
 
-## Need help?
+Freelance bookkeepers can't...[^3]
+
+- ✗ Give tax advice
+- ✗ Set up a new accounting system
+- ✗ Submit financial statements and tax declarations
+- ✗ Prepare financial statements and tax declarations, even if you submit them yourself.
+
+If you hire a bookkeeper as an employee, they can have more responsibilities, and they don't need professional qualifications.
+
+## Other options
+
+**[Tax advisor alternatives ➞](/guides/english-speaking-steuerberater-berlin)**
 
 **[Where to ask finance questions ➞](/guides/help#financial-questions)**
 
-[^0]: [Wikipedia](https://en.wikipedia.org/wiki/Steuerberater#Conditions_to_sit_in)
-[^1]: [Wikipedia](https://en.wikipedia.org/wiki/Steuerberater#Exam_process)
-[^2]: [sumup.com](https://debitoor.de/gruenderlounge/unternehmensgruendung/was-ist-der-unterschied-zwischen-einem-steuerberater-und-einem)
+## How to find a tax advisor or bookkeeper
+
+**[English-speaking tax advisors in Berlin ➞](/guides/english-speaking-steuerberater-berlin)**
+
+[^1]: [§ 36 StBerG](https://www.buzer.de/36_StBerG.htm)
+[^2]: [niedersachsen.de](https://lstn.niedersachsen.de/download/37408/Merkblatt_Taetigkeit_als_selbstaendige_r_Buchhalter_in_.pdf) (2025), [haufe-akademie.de](https://www.haufe-akademie.de/blog/berufe/buchhalter-buchhalterin/#section-2) (2023), [firma.de](https://www.firma.de/firmengruendung/selbstaendig-machen-als-buchhalter-was-zu-beachten-ist/#taetigkeitsfelder) (2026)
+[^3]: [Johann Degraf](https://numpro.de/en/bookkeeping-germany#:~:text=Reserved%20for%20your-,steuerberater,-%E2%80%A2Annual%20financial%20statements) (2026), [niedersachsen.de](https://lstn.niedersachsen.de/download/37408/Merkblatt_Taetigkeit_als_selbstaendige_r_Buchhalter_in_.pdf) (2025), [firma.de](https://www.firma.de/firmengruendung/selbstaendig-machen-als-buchhalter-was-zu-beachten-ist/#:~:text=jahresabschlusse%20sind%20steuerberatern%20vorbehalten) (2026)
+[^4]: [Johann Degraf](https://numpro.de/) (2026), [§ 8 Abs. 1 StBerG](https://www.buzer.de/8_StBerG.htm)
