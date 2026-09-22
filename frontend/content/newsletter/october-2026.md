@@ -1,7 +1,7 @@
 ---
 title: What's new in October 2026
 description: Far-right growth, cyberattacks, end of summer, subletting.
-date_created: 2026-09-01
+date_created: 2026-09-23
 ---
 
 October is *goldener Herbst*. Yes, the days get shorter, but we get crisp autumn days, orange leaves, mushroom picking, *Kartoffelsuppe* and tea. It's a fair trade.
@@ -49,7 +49,7 @@ In Mecklenburg-Western Pomerania, same result. The AfD gained 38.2% of the vote,
 
 In Berlin, Die Linke has won the election with 25.7% of the vote, with the CDU and AfD coming second and third. Here too, the AfD had significant gains, and the CDU significant losses.[^7] The voter turnout was 74.2%.
 
-![Chart of Berlin's 2026 election results](/images/berlin-election-results-2026-09-22 "Berlin election results, as of September 22")
+![Chart of Berlin's 2026 election results](/images/berlin-election-results-2026-09-22.png "Berlin election results, as of September 22")
 
 ### Return of the Tankrabatt
 
