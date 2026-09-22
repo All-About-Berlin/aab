@@ -281,6 +281,8 @@ Give the transaction a good reference text like "Stammeinlage Gesellschafter [yo
 
 Send confirmation of that to your notary.
 
+Pay initial capital as a loan to the GmbH, instead of a capital increase? (Oliwia)
+
 ### Put your name on your mailbox
 
 You will quickly start receiving mail addressed to your company, including bills from the IHK and others.[^44]
