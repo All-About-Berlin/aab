@@ -86,6 +86,12 @@ I can't prevent that, but I can prepare you for it.
 
 ## What I learned this month
 
+### New freelance visa requirements
+
+The Berlin immigration office now requires a 5-year revenue forecast when renewing a freelance visa. It's not mentioned on the information page, and there is no description of what this document should look like. I will update my [freelance visa renewal guide](/guides/renew-german-freelance-visa) when I have more information.
+
+If you have more information, [email me](/contact).
+
 ### Subletting gotchas
 
 I have found a tenant for my apartment while I travel. Two very important lessons:
