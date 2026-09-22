@@ -290,6 +290,7 @@ config.add_markdown_extension("extensions.markdown:HyphenatedTitleExtension")
 config.add_markdown_extension("extensions.markdown:TypographyExtension")
 config.add_markdown_extension("extensions.markdown:CheckCrossListExtension")
 config.add_markdown_extension("extensions.markdown:ServicesAwareBaseUrlExtension")
+config.add_markdown_extension("extensions.markdown:FootnotesNoSnippetExtension")
 
 config.renderers.extend(
     [

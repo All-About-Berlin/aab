@@ -246,3 +246,22 @@ class CheckCrossListExtension(Extension):
 
     def extendMarkdown(self, md):
         md.treeprocessors.register(CheckCrossListProcessor(self), "check-cross-list", 100)
+
+
+class FootnotesNoSnippetProcessor(Treeprocessor):
+    def run(self, root):
+        for details in root.iter("details"):
+            if details.get("id") != "footnotes":
+                continue
+            details.set("data-nosnippet", "")
+            for link in details.iter("a"):
+                link.set("rel", "nofollow")
+
+
+class FootnotesNoSnippetExtension(Extension):
+    """
+    Add data-nosnippet to the footnotes' <details> element. Marks the links as nofollow.
+    """
+
+    def extendMarkdown(self, md):
+        md.treeprocessors.register(FootnotesNoSnippetProcessor(md), "footnotes-nosnippet", 5)
