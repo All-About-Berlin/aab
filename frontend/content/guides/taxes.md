@@ -169,7 +169,7 @@ A tax advisor can answer your questions and help you file your German taxes corr
 [^1]: [selbststaendig.de](https://www.selbststaendig.de/wissen/steuerklasse-fuer-selbststaendige)
 [^2]: [§ 32a EStG](https://www.buzer.de/32a_EStG.htm)
 [^3]: [§ 32d EStG](https://www.buzer.de/32d_EStG.htm)
-[^4]: [pandotax.de](https://pandotax.de/rechtliches/kryptowaehrung-steuererklaerung/#wie-lautet-das-aktuelle-urteil-zur-steuerpflicht) (March 2026), [steuern.de](https://www.steuern.de/bitcoin-steuer) (February 2025)
+[^4]: [pandotax.de](https://pandotax.de/rechtliches/kryptowaehrung-steuererklaerung/#wie-lautet-das-aktuelle-urteil-zur-steuerpflicht) (March 2026), [steuern.de](https://www.steuern.de/bitcoin-steuer) (2025)
 [^5]: [orderbird.com](https://www.orderbird.com/blog/trinkgeld-versteuern/#anker2)
 [^6]: {{ARBEITSLOSENVERSICHERUNG_EMPLOYEE_RATE}}% of the *[[Beitragsbemessungsgrenze]]*
 [^7]: [lexware.de](https://www.lexware.de/wissen/unternehmerlexikon/kapitalertragsteuer/#:~:text=zuzuglich%20solidaritatszuschlag%20von%205%2C5%20prozent%20und%20gegebenenfalls%208%20oder%209%20prozent%20kirchensteuer%20liegt) (March 2026)

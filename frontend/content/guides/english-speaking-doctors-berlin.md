@@ -50,4 +50,4 @@ The [TeleClinic](https://www.teleclinic.com/sick-note/) and [Doktor.de](https://
 
 This service is free. Your [public health insurance](/glossary/gesetzliche%20Krankenversicherung) pays for it. Your [private health insurance](/glossary/private%20Krankenversicherung) reimburses it.
 
-[^1]: [Elliot Herman](https://www.sorted.berlin/) (April 2024)
+[^1]: [Elliot Herman](https://www.sorted.berlin/) (2024)

@@ -123,7 +123,7 @@ If you don't know those numbers, enter your *Versicherungsnummer* and leave thos
 [^1]: [handelsblatt.com](https://www.handelsblatt.com/politik/deutschland/sozialversicherungsnummer-beantragen-was-sie-zur-versicherungsnummer-wissen-muessen-/25232204.html#:~:text=das%20sind%20die%20bereichsnummern)
 [^2]: [Wikipedia](https://de.wikipedia.org/wiki/Sozialversicherungsnummer#Deutschland), [handelsblatt.com](https://www.handelsblatt.com/politik/deutschland/sozialversicherungsnummer-beantragen-was-sie-zur-versicherungsnummer-wissen-muessen-/25232204.html)
 [^3]: [faq.feather-insurance.com](https://faq.feather-insurance.com/en/articles/28682-can-i-get-a-social-security-number-with-private-health-insurance)
-[^4]: [Emily Archer](https://www.archer-relocation.com/) (July 2025), [forum.tour-magazin.de](https://www.tour-magazin.de#post1537332)
+[^4]: [Emily Archer](https://www.archer-relocation.com/) (2025), [forum.tour-magazin.de](https://www.tour-magazin.de#post1537332)
 [^5]: [deutsche-rentenversicherung.de](https://www.deutsche-rentenversicherung.de/DRV/DE/Experten/Arbeitgeber-und-Steuerberater/Meldeverfahren_nach_DEUEV/Meldung-nach-DEUV.html)
 [^6]: [helpster.de](https://www.helpster.de/sozialversicherungsausweis-fuer-auslaender-hinweise_204795), [handelsblatt.com](https://www.handelsblatt.com/politik/deutschland/rentenversicherungsnummer-wo-die-versicherungsnummer-steht-und-was-sie-dazu-wissen-muessen-/24479984.html)
 [^7]: [reddit.com/r/germany](https://old.reddit.com/r/germany/comments/ber350/tourists_visitors_international_students_people/eptkgav/)

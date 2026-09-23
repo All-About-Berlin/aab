@@ -105,9 +105,9 @@ To contact the Bürgeramt:
 2. Use the contact information on the page
 
 [^0]: [nicolasbouliane.com](https://nicolasbouliane.com/blog/berlin-buergeramt-experiment)
-[^1]: Confirmed by an employee who built the booking system (March 2023)
+[^1]: Confirmed by an employee who built the booking system (2023)
 [^2]: [berlin.de](https://service.berlin.de/buergertelefon/)
 [^3]: [twitter.com](https://twitter.com/MariaMl82747416/status/1631197057846333440), [twitter.com](https://twitter.com/Sansculotte/status/1607112833203855360), [twitter.com](https://twitter.com/Gregggyyy/status/1552203253659717633)
-[^4]: Confirmed by multiple Bürgerämter in Berlin (April 2023)
+[^4]: Confirmed by multiple Bürgerämter in Berlin (2023)
 [^5]: [berlin.de](https://service.berlin.de/terminvereinbarung/artikel.296864.php)
-[^6]: [Reddit](https://old.reddit.com/r/berlinsocialclub/comments/1979w5l/is_berlins_anmeldung_booking_system_broken/) (2024), [X](https://x.com/chacon/status/1852257340168319030) (2024), personal experience (January 2025)
+[^6]: [Reddit](https://old.reddit.com/r/berlinsocialclub/comments/1979w5l/is_berlins_anmeldung_booking_system_broken/) (2024), [X](https://x.com/chacon/status/1852257340168319030) (2024), personal experience (2025)

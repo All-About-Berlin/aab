@@ -148,7 +148,7 @@ If that does not work, get help from your [tenant association](/glossary/Mieterv
 [^18]: [kautionsfrei.de](https://kautionsfrei.de/mietkaution-einbehalten#fristen), [kautionsfrei.de](https://kautionsfrei.de/mietkaution-rueckzahlung#zeitraum-einbehaltung)
 [^19]: [mietrecht.org](https://www.mietrecht.org/mietkaution/kaution-vor-mietvertrag/#:~:text=nicht%20besonders%20empfehlenswert)
 [^20]: [kautionskasse.de](https://www.kautionskasse.de/privatkunden), [test.de](https://www.test.de/Mietkaution-Geld-gegen-Schluessel-4330614-5791014/#:~:text=zwischen%203%20und%205%20prozent)
-[^21]: [bmgev.de](https://www.bmgev.de/mietrecht/tipps-a-z/artikel/mietsicherheit/#:~:text=mein%20neuer%20vermieter%20verlangt%20die%20kaution%20in%20bar), [karaenke.com](https://www.karaenke.com/kein-geld-fuer-kaution/#:~:text=nicht%20viele%20vermieter%20darauf%20einlassen), [Graham Pugh, apartment search expert](https://www.berlinrelo.de/) (October 2024)
+[^21]: [bmgev.de](https://www.bmgev.de/mietrecht/tipps-a-z/artikel/mietsicherheit/#:~:text=mein%20neuer%20vermieter%20verlangt%20die%20kaution%20in%20bar), [karaenke.com](https://www.karaenke.com/kein-geld-fuer-kaution/#:~:text=nicht%20viele%20vermieter%20darauf%20einlassen), [Graham Pugh, apartment search expert](https://www.berlinrelo.de/) (2024)
 [^22]: [bmgev.de](https://www.bmgev.de/mietrecht/tipps-a-z/artikel/mietsicherheit/#:~:text=bereits%20bei%20abschluss%2C%20also%20bei%20unterzeichnung%20des%20mietvertrags)
 [^23]: [karaenke.com](https://www.karaenke.com/kein-geld-fuer-kaution/#:~:text=es%20gibt%20verschiedene%20moglichkeiten%20die%20kaution)
 [^24]: [test.de](https://www.test.de/Mietkaution-Geld-gegen-Schluessel-4330614-5791014/#:~:text=darf%20sie%20keine%20weiteren%20sicherheiten%20verlangen)

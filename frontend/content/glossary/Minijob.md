@@ -24,4 +24,4 @@ Minijob disadvantages:
 [^0]: [§ 8 SGB IV](https://www.buzer.de/8_SGB_IV.htm)
 [^1]: [Wikipedia](https://en.wikipedia.org/wiki/Marginal_employment#Germany)
 [^2]: [krankenkassen.net](https://krankenkassen.net/gesetzliche-krankenversicherung/450-euro-job-wer-zahlt-die-krankenkasse.html)
-[^4]: [Agentur für Arbeit](https://www.arbeitsagentur.de/lexikon/minijob#:~:text=erwerben%20keinen%20anspruch%20auf%20arbeitslosengeld) (February 2025)
+[^4]: [Agentur für Arbeit](https://www.arbeitsagentur.de/lexikon/minijob#:~:text=erwerben%20keinen%20anspruch%20auf%20arbeitslosengeld) (2025)

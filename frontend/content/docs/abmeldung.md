@@ -69,5 +69,5 @@ After you deregister your address, you will get an *[[Abmeldebescheinigung]]*.
 **[How to leave Germany ➞](/guides/leaving-germany)**
 
 [^0]: [buergeramt-termine.de](https://buergeramt-termine.de/guide/abmeldung-deregister-germany/)
-[^1]: [berlin.de](https://service.berlin.de/dienstleistung/120335/#:~:text=benutzen%20sie%20bitte%20weitere%20meldescheine) (September 2024)
+[^1]: [berlin.de](https://service.berlin.de/dienstleistung/120335/#:~:text=benutzen%20sie%20bitte%20weitere%20meldescheine) (2024)
 [^2]: [Robert Hantzsch](/out/easyassist-abmeldung) (August 2026), [Elliot Herman](https://www.sorted.berlin/) (August 2026)

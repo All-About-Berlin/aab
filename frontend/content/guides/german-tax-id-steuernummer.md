@@ -126,7 +126,7 @@ You can [check if a VAT number is valid](https://www.iban.com/vat-checker), but 
 [^0]: [experto.de](https://www.experto.de/businesstipps/steuer-identifikationsnummern-online-abfragen.html), [forum.elster.de](https://forum.elster.de/anwenderforum/forum/allgemein/allgemein-und-projekt/29805-falsche-steuer-id-steuerklasse-6-und-rueckzug-ins-ausland), [steuern.de](https://www.steuern.de/elstam), [Wikipedia](https://de.wikipedia.org/wiki/Lohnsteuerklasse#Lohnsteuerklasse_VI), [t-online.de](https://www.t-online.de/finanzen/geld-vorsorge/steuern/id_100035388/steuerklasse-6-rueckerstattung-bekommen-so-geht-s.html)
 [^1]: [finanzfrage.net](https://www.finanzfrage.net/g/frage/steuer-id-zu-spaet-abgegeben), [forum.elster.de](https://forum.elster.de/anwenderforum/forum/allgemein/allgemein-und-projekt/29805-falsche-steuer-id-steuerklasse-6-und-rueckzug-ins-ausland), [t-online.de](https://www.t-online.de/finanzen/geld-vorsorge/steuern/id_100035388/steuerklasse-6-rueckerstattung-bekommen-so-geht-s.html)
 [^2]: [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/7vuswy/retrieving_identifikationsnummer/), [berlin.de](https://service.berlin.de/dienstleistung/329123/)
-[^3]: Sebastian Hoffmann (August 2024)
+[^3]: Sebastian Hoffmann (2024)
 [^4]: [Wikipedia](https://de.wikipedia.org/wiki/Steuernummer), [steuererklaerung.de](https://steuererklaerung.de/ratgeber-steuern/steuer-id-steuernummer/)
 [^5]: [lexikon.fastbill.com](https://www.fastbill.com/steuernummer-pruefen)
 [^6]: [sumup.de](https://www.sumup.com/de-de/rechnungen/alles-ueber-rechnungen/steuernummer-oder-umsatzsteuer-id/)

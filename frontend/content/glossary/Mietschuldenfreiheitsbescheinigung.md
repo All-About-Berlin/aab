@@ -17,4 +17,4 @@ Your landlord can refuse to give you a *Mietschuldenfreiheitsbescheinigung*. The
 
 ![Mietschuldenfreiheitsbescheinigung example](/images/Mietschuldenfreiheitsbescheinigung-berlin.png "A Mietschuldenfreiheitsbescheinigung from a Berlin housing company")
 
-[^1]: [homeday.de](https://www.homeday.de/de/musterdokumente/mietschuldenfreiheitsbescheinigung/#:~:text=berechtigt%2C%20fur%20die%20mietschuldenfreiheitsbescheinigung%20kosten%20zu%20erheben) (May 2025)
+[^1]: [homeday.de](https://www.homeday.de/de/musterdokumente/mietschuldenfreiheitsbescheinigung/#:~:text=berechtigt%2C%20fur%20die%20mietschuldenfreiheitsbescheinigung%20kosten%20zu%20erheben) (2025)
