@@ -1,24 +1,13 @@
 from pathlib import Path
 import pytest
 import shutil
+import sys
 
 
-devices = {
-    "mobile": {  # iPhone 13 Mini
-        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1",
-        "viewport": {"width": 375, "height": 629},
-        "has_touch": True,
-    },
-    "tablet": {  # iPad Mini
-        "user_agent": "Mozilla/5.0 (iPad; iPad14,2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Firefox/120.0 Mobile/15E148 Safari/604.1",
-        "viewport": {"width": 744, "height": 1133},
-        "has_touch": True,
-    },
-    "desktop": {  # Desktop
-        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 15.6; rv:142.0) Gecko/20100101 Firefox/142.0",
-        "viewport": {"width": 1280, "height": 800},
-        "has_touch": False,
-    },
+viewports = {
+    "mobile": {"width": 375, "height": 629},  # iPhone 13 Mini
+    "tablet": {"width": 744, "height": 1133},  # iPad Mini
+    "desktop": {"width": 1280, "height": 800},
 }
 
 
@@ -47,19 +36,13 @@ def mock_exchange_rates(page):
 
 
 @pytest.fixture
-def browser_context_args(request, browser_context_args):
+def browser_context_args(browser_context_args):
     """
     Override Playwright's default browser_context_args
     """
-
-    # Allow pytest.mark.device("mobile")
-    device_id = "desktop"
-    if device_marker := request.node.get_closest_marker("device"):
-        device_id = device_marker.args[0]
-
     return {
         **browser_context_args,
-        **devices[device_id],
+        "viewport": viewports["desktop"],
         "reduced_motion": "reduce",  # Disable smooth scrolling
         "timezone_id": "Europe/Berlin",
         "locale": "fr-CA",
@@ -67,17 +50,12 @@ def browser_context_args(request, browser_context_args):
     }
 
 
-@pytest.fixture(
-    params=[
-        pytest.param("mobile", marks=pytest.mark.device("mobile")),
-        pytest.param("tablet", marks=pytest.mark.device("tablet")),
-        pytest.param("desktop", marks=pytest.mark.device("desktop")),
-    ],
-)
-def test_screenshot(request, page, assert_snapshot):
+@pytest.fixture
+def test_screenshot(request, page, assert_snapshot, browser_name):
     """
-    Adds a test_screenshot function that does snapshot testing on multiple devices
+    Take a snapshot of the element at every viewport size
     """
+    call_index = [0]
 
     def test(page, element_to_screenshot, remove_focus=True, move_mouse=True):
         # Blur any focused elements to fix flakiness
@@ -86,13 +64,24 @@ def test_screenshot(request, page, assert_snapshot):
         # Move mouse away to avoid hover flakiness
         if move_mouse:
             page.mouse.move(0, 0)
-        assert_snapshot(
-            element_to_screenshot.screenshot(
-                mask=[
-                    page.locator("p:has-text('You are updating the feedback')")
-                ]  # This is the current date, so it breaks snapshot testing
+
+        suffix = "" if call_index[0] == 0 else f"_{call_index[0]}"
+        call_index[0] += 1
+
+        # Build a per-device filename that matches the historic
+        # "[<device>-<browser>]" naming used by the old parametrized fixture.
+        node_id = request.node.name
+        for device_id, viewport in viewports.items():
+            page.set_viewport_size(viewport)
+            name_id = node_id.replace(f"[{browser_name}", f"[{device_id}-{browser_name}")
+            name = f"{name_id}[{sys.platform}]{suffix}.png"
+            img = element_to_screenshot.screenshot(
+                mask=[page.locator("p:has-text('You are updating the feedback')")]
             )
-        )
+            assert_snapshot(img, name=name)
+
+        # Leave the page at the default viewport for any code that runs after.
+        page.set_viewport_size(viewports["desktop"])
 
     return test
 
