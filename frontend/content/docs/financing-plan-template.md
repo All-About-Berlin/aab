@@ -29,4 +29,4 @@ This form describes your *estimated* income and expenses. Your estimated income 
 
 Some fields might not apply to your business. You can leave them empty.
 
-[^1]: Sebastian Hoffmann from [Touring Artists](https://www.touring-artists.info/en/home) (November 2022)
+[^1]: Sebastian Hoffmann from [Touring Artists](https://www.touring-artists.info/en/home) (2022)

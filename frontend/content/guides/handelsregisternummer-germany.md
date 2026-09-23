@@ -59,5 +59,5 @@ You must list your business in the *Handelsregister*. You can ask for this when 
 [^3]: [lexware.de](https://www.lexware.de/wissen/unternehmerlexikon/kleingewerbe/#:~:text=ein%20kleingewerbe%20kann%20ein), [fuer-gruender.de](https://www.fuer-gruender.de/wissen/unternehmen-gruenden/unternehmen-anmelden/handelsregister/#:~:text=wer%20ist%20gema%C3%9F%20rechtsform%20zum%20eintrag%20verpflichtet)
 [^4]: [nwb.de](https://datenbank.nwb.de/Dokument/418126/), [lexware.de](https://www.lexware.de/wissen/unternehmerlexikon/kleingewerbe/#:~:text=das%20aufgrund%20seines-,geringen%20geschaftlichen%20umfangs,-nicht%20ins%20Handelsregister)
 [^5]: [firma.de](https://www.firma.de/firmengruendung/was-ist-ein-kleingewerbe/#:~:text=doch%20leider%20gibt%20es%20hier%20keine%20antwort)
-[^6]: [selbststaendig-machen.net](https://www.selbststaendig-machen.net/handelsregister-lohnt-der-freiwillige-eintrag/), [Suat Göydeniz](https://stb-goeydeniz.de/) (December 2023)
+[^6]: [selbststaendig-machen.net](https://www.selbststaendig-machen.net/handelsregister-lohnt-der-freiwillige-eintrag/), [Suat Göydeniz](https://stb-goeydeniz.de/) (2023)
 [^7]: [fuer-gruender.de](https://www.fuer-gruender.de/wissen/unternehmen-gruenden/unternehmen-anmelden/handelsregister/#c12025)

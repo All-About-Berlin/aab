@@ -102,12 +102,12 @@ Ask a health insurance broker to help you. It's the best way to choose health in
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 
 [^0]: [ui.awin.com](https://ui.awin.com/merchant-profile/15971)
-[^1]: [Seamus Wolf](https://horizon65.com/) (March 2025), [Dr. Schlemann](https://schlemann.com/krankenversicherung/beratung-krankenversicherung/ottonova/#:~:text=andere%20anbieter%20sind%20deutlich%20leistungsstarker%20und%20kaum%20teurer.) (2023)
+[^1]: [Seamus Wolf](https://horizon65.com/) (2025), [Dr. Schlemann](https://schlemann.com/krankenversicherung/beratung-krankenversicherung/ottonova/#:~:text=andere%20anbieter%20sind%20deutlich%20leistungsstarker%20und%20kaum%20teurer.) (2023)
 [^2]: [health-insurance.de](https://www.health-insurance.de/private-health-insurance/statistics/largest/) (the numbers here are higher because they include all types of insured customers, not just those with private health insurance)
 [^3]: [businessinsider.de](https://www.businessinsider.de/gruenderszene/business/ottonova-krankenversicherung-zahlen-2018/), [ottonova.de](https://www.ottonova.de/unternehmen)
 [^4]: [Dr. Schlemann](https://schlemann.com/krankenversicherung/beratung-krankenversicherung/ottonova/#:~:text=wie%20kapitalstark%20ist%20ottonova%3F)
 [^5]: [Dr. Schlemann](https://schlemann.com/krankenversicherung/beratung-krankenversicherung/ottonova/#:~:text=mit%20ihrer%20gesundheit%20sollten%20sie%20nicht%20experimentieren)
 [^6]: [online-pkv.de](https://www.online-pkv.de/pkv-bu-blog/ottonova-zufriedenheitsgarantie-gestrichen/)
 [^7]: [handelsblatt.com](https://www.handelsblatt.com/finanzen/banken-versicherungen/versicherer/versicherer-wie-insurtechs-die-gewinnzone-erreichen-wollen/100118110.html) (2025), [ottonova.de](https://assets.ottonova.de/assets/img/documents/SFCR_2024.pdf) (2024)
-[^8]: [Dr. Schlemann](https://schlemann.com/krankenversicherung/beratung-krankenversicherung/ottonova/#:~:text=einer%20schonen%20homepage%20und%20investment%20in%20seo%20und%20google%20ads) (2023), [Seamus Wolf](https://horizon65.com/) (March 2025), [Mona Anbari](https://versicherungsbuero-weiss.com/) (April 2025)
+[^8]: [Dr. Schlemann](https://schlemann.com/krankenversicherung/beratung-krankenversicherung/ottonova/#:~:text=einer%20schonen%20homepage%20und%20investment%20in%20seo%20und%20google%20ads) (2023), [Seamus Wolf](https://horizon65.com/) (2025), [Mona Anbari](https://versicherungsbuero-weiss.com/) (2025)
 [^11]: [Wikipedia](https://de.wikipedia.org/wiki/Gemeinsame_Betriebskrankenkasse_K%C3%B6ln)

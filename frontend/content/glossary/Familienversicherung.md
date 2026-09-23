@@ -29,5 +29,5 @@ Your insurance only covers them if...[^1]
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
 
-[^1]: [Techniker Krankenkasse](https://www.tk.de/techniker/versicherung/tk-leistungen/schwangerschaft-und-familie/entlastung-fuer-familien/versichert-als-familie-in-der-familienversicherung/personenkreis-familienversicherung-antrag-2005610) (February 2025)
-[^2]: [gesetzliche-krankenkassen.de](https://www.gesetzliche-krankenkassen.de/auszubildende-azubis/#:~:text=familienversicherung%20ist%20wahrend%20der%20ausbildung%20nicht%20moglich) (March 2025)
+[^1]: [Techniker Krankenkasse](https://www.tk.de/techniker/versicherung/tk-leistungen/schwangerschaft-und-familie/entlastung-fuer-familien/versichert-als-familie-in-der-familienversicherung/personenkreis-familienversicherung-antrag-2005610) (2025)
+[^2]: [gesetzliche-krankenkassen.de](https://www.gesetzliche-krankenkassen.de/auszubildende-azubis/#:~:text=familienversicherung%20ist%20wahrend%20der%20ausbildung%20nicht%20moglich) (2025)

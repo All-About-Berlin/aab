@@ -25,4 +25,4 @@ Disability insurance makes sense if your family depends on your income, or if yo
 
 **[Sick leave options for freelancers ➞](/guides/sick-leave#sick-leave-for-freelancers)**
 
-[^1]: [Seamus Wolf](https://horizon65.com/) (July 2025), [Check24](https://www.check24.de/berufsunfaehigkeitsversicherung/kosten/#kosten) (July 2025)
+[^1]: [Seamus Wolf](https://horizon65.com/) (2025), [Check24](https://www.check24.de/berufsunfaehigkeitsversicherung/kosten/#kosten) (2025)

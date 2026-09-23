@@ -49,7 +49,7 @@ If you apply online, use this email template, and attach the application form.
 
 {% tool "bescheinigung-in-steuersachen-email", static=True %}
 
-[^1]: [Berlin.de](https://service.berlin.de/dienstleistung/324713/en/) (June 2024)
-[^2]: [Reddit](https://old.reddit.com/r/germany/comments/1bc8lkk/how_long_does_it_take_to_receive_a_bescheinigung/) (March 2024), Finanzamt call (June 2024), [Berlin.de](https://service.berlin.de/dienstleistung/324713/en/) (June 2024), [Reddit](https://old.reddit.com/r/germany/comments/1bc8lkk/how_long_does_it_take_to_receive_a_bescheinigung/) (March 2024), [Red Tape Translation](https://redtapetranslation.com/bescheinigung-in-steuersachen/#:~:text=how%20long%20does%20it%20take%3F) (2024)
-[^3]: [Berlin.de](https://service.berlin.de/dienstleistung/326135/) (June 2024)
-[^4]: [Reddit](https://old.reddit.com/r/germany/comments/1bc8lkk/how_long_does_it_take_to_receive_a_bescheinigung/) (March 2024)
+[^1]: [Berlin.de](https://service.berlin.de/dienstleistung/324713/en/) (2024)
+[^2]: [Reddit](https://old.reddit.com/r/germany/comments/1bc8lkk/how_long_does_it_take_to_receive_a_bescheinigung/) (2024), Finanzamt call (2024), [Berlin.de](https://service.berlin.de/dienstleistung/324713/en/) (2024), [Reddit](https://old.reddit.com/r/germany/comments/1bc8lkk/how_long_does_it_take_to_receive_a_bescheinigung/) (2024), [Red Tape Translation](https://redtapetranslation.com/bescheinigung-in-steuersachen/#:~:text=how%20long%20does%20it%20take%3F) (2024)
+[^3]: [Berlin.de](https://service.berlin.de/dienstleistung/326135/) (2024)
+[^4]: [Reddit](https://old.reddit.com/r/germany/comments/1bc8lkk/how_long_does_it_take_to_receive_a_bescheinigung/) (2024)

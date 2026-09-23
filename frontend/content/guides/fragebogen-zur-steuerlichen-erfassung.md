@@ -642,5 +642,5 @@ If you [leave Germany](/guides/leaving-germany), you must deregister your busine
 [^15]: [steuerlinks.de](http://web.archive.org/web/20210921150926/http://www.steuerlinks.de/richtlinie/ustae/abs3a.12..html)
 [^16]: [iamexpat.de](https://www.iamexpat.de/expat-info/taxation-germany/elster-german-online-tax-office)
 [^17]: [firma.de](https://www.firma.de/firmengruendung/wer-muss-kein-gewerbe-anmelden/#:~:text=In%20Deutschland%20gilt%20die%20Gewerbefreiheit,und%20in%20eigener%20Verantwortung%20arbeitet.)
-[^18]: Suat Göydeniz, tax advisor (December 2023)
+[^18]: Suat Göydeniz, tax advisor (2023)
 [^19]: Seamus Wolf on [LinkedIn](https://www.linkedin.com/posts/nicolasbouliane_how-being-a-kleinunternehmer-works-activity-7040950109177589761-kH44/)

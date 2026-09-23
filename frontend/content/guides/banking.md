@@ -97,7 +97,7 @@ Some bank accounts only include a **virtual card**. That means that you get a cr
 
 German credit cards rarely have **benefits** like cashback or points. Some cards have a yearly fee, and come with travel insurance. You can usually get separate travel insurance for cheaper.
 
-[^1]: [Twitter](https://twitter.com/aboutberlin/status/1776203137264840763) (April 2024)
+[^1]: [Twitter](https://twitter.com/aboutberlin/status/1776203137264840763) (2024)
 [^2]: [Statista](https://www.statista.com/statistics/972307/germany-payment-cards-share/) (2016 to 2022)
 [^3]: [Bundesbank study](https://www.bundesbank.de/resource/blob/894118/6c67bcce826d5ab16a837bbea31a1aa9/mL/zahlungsverhalten-in-deutschland-2021-data.pdf) (2021)
 [^4]: [verbraucherzentrale.de](https://www.verbraucherzentrale.de/wissen/geld-versicherungen/sparen-und-anlegen/risiko-und-einlagensicherung-fragen-und-antworten-zur-geldanlage-5417) (2023)

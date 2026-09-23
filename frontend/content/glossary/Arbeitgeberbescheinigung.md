@@ -17,4 +17,4 @@ You can request an *Arbeitgeberbescheinigung* from your employer. It has no spec
 The *Arbeitgeberbescheinigung* is not the same thing as the *[[Arbeitsbescheinigung]]*.[^2]
 
 [^1]: [vermieterwelt.de](https://www.vermieterwelt.de/lexikon/arbeitgeberbescheinigung/)
-[^2]: [Red Tape Translation](/out/red-tape-translation) (July 2024)
+[^2]: [Red Tape Translation](/out/red-tape-translation) (2024)

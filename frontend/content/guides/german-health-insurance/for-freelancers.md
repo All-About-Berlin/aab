@@ -100,10 +100,10 @@ Freelancers do not get paid [sick leave](/glossary/Krankengeld). If you are too 
 
 **[Sick leave options for freelancers ➞](/guides/sick-leave#sick-leave-for-freelancers)**
 
-[^2]: [Emily Archer](https://www.archer-relocation.com/) says that the amount is not fixed, but that insurers need to see that you can cover your insurance bills (April 2025), [Seamus Wolf](https://horizon65.com/) (April 2025)
-[^3]: Reader feedback (February 2025)
+[^2]: [Emily Archer](https://www.archer-relocation.com/) says that the amount is not fixed, but that insurers need to see that you can cover your insurance bills (2025), [Seamus Wolf](https://horizon65.com/) (2025)
+[^3]: Reader feedback (2025)
 [^4]: [Red Tape Translation](https://redtapetranslation.com/7-common-mistakes-at-the-auslanderbehorde/#:~:text=not%20having%20the%20right%20type%20of%20health%20insurance)
-[^6]: [Seamus Wolf](https://horizon65.com/) (June 2025)
+[^6]: [Seamus Wolf](https://horizon65.com/) (2025)
 [^7]: [VAB A2.3.1.12](/out/vab) (September 2025), [Feather Insurance](https://feather-insurance.com/blog/how-can-i-use-expat-health-insurance-for-my-visa/#:~:text=expat%20insurance%20is%20almost%20always%20denied) (2025)
-[^8]: [Seamus Wolf](https://horizon65.com/) (June 2025)
+[^8]: [Seamus Wolf](https://horizon65.com/) (2025)
 [^9]: [§ 9 Abs. 1 S. 1 SGB V](https://www.buzer.de/9_SGB_V.htm) (October 2025)

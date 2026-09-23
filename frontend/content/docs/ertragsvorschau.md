@@ -45,6 +45,6 @@ This is how you fill the form fields:
 
 If a field does not apply to your business, leave it empty.
 
-[^1]: Sebastian Hoffmann from [Touring Artists](https://www.touring-artists.info/en/home) (November 2022)
+[^1]: Sebastian Hoffmann from [Touring Artists](https://www.touring-artists.info/en/home) (2022)
 [^2]: [Facebook](https://www.facebook.com/groups/germanfreelancevisa/posts/1732436883891674/) (2023)
-[^3]: [VAB 2.3.1.1](/out/vab) (December 2023)
+[^3]: [VAB 2.3.1.1](/out/vab) (2023)
