@@ -111,8 +111,6 @@ There is a lot more I would like to share about subletting. I am gathering notes
 
 If you want to switch to [private health insurance](/glossary/private%20Krankenversicherung) before the [2027 public health insurance price increase](/newsletter/august-2026#health-insurance-changes), do it before September 30 to beat the notice period.
 
-Don't blindly switch to private. It can be a really bad idea, even when the numbers look good. [Ask my insurance guy](https://agoodstart.de) about it. He has convinced many of my readers to keep their public health insurance.
-
 [^1]: You are entitled to sublet your whole apartment if there is a "legitimate interest", but subletting while you are on vacation [does not count](https://www.berliner-mieterverein.de/aktuelle-mietrechts-tipps/der-aktuelle-mietrechtstipp-kein-berechtigtes-interesse-der-untervermietung-waehrend-des-urlaubs.htm) as legitimate interest.
 [^2]: [Berliner Mieterverein](https://www.berliner-mieterverein.de/aktuelle-mietrechts-tipps/mietrechtstipp-untervermietung-an-feriengaeste.htm) (2020)
 [^3]: [timeanddate.com](https://www.timeanddate.com/time/change/germany)
