@@ -68,6 +68,10 @@ There was some controversy over the exclusion of "Mehrzweckeier". The term is a 
 
 ## What's new on All About Berlin
 
+### 9 years!
+
+All About Berlin has turned 9 years old on September 20. I am so grateful for your continued support throughout the years, and I'm looking forward to another year of supporting immigrants in Berlin.
+
 ### Forum update
 
 The forum is really coming together! Signing up, posting and replying work. I am now working on email notifications. I'm hoping that it will go live in November or December.
