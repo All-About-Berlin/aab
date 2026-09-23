@@ -14,19 +14,19 @@ else:
 
 
 expert_template = """---
-Name: {name}
-Job_title: {title}
-Email: {email}
-Website: {website}
-Picture: experts/photos/{slug}.jpg
+name: {name}
+job_title: {title}
+email: {email}
+website: {website}
+picture: experts/photos/{slug}.jpg
 ---
 
 {description}
 """
 
 review_template = """---
-Related_expert: experts/{expert_slug}.md
-Date_reviewed: {date}
+related_expert: experts/{expert_slug}.md
+date_reviewed: {date}
 ---
 """
 
@@ -105,7 +105,7 @@ def add_review():
     else:
         guide_content = re.sub(
             reviewers_regex,
-            r"Related_reviews:\1\2" + relative_review_path + r"\n\2\3",
+            r"Related_reviews:\1\2- " + relative_review_path + r"\n\2\3",
             guide_content,
         )
 
