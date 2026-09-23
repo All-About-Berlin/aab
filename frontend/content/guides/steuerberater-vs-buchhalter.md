@@ -13,32 +13,28 @@ This guide explains the difference between tax advisors (*[[Steuerberater]]*) an
 
 ## Summary
 
-Bookkeepers only do bookkeeping. Tax advisors can do more, and they are legally liable for their mistakes, but they are more expensive.
+Bookkeepers only do bookkeeping. Tax advisors can do more, and they are legally liable for their mistakes, but they are more expensive. Use a bookkeeper for your bookkeeping, and a tax advisor when needed.
 
 ## Tax advisor (Steuerberater)
 
-Tax advisor is a protected title. Becoming a tax advisor requires a university degree, 3 years of work experience and passing a 3-day-long test.[^1]
+Tax advisor is a protected title. Becoming a tax advisor usually requires a university degree, 3 years of work experience and passing a 3-day-long test.[^1]
 
-Tax advisors are **legally liable for their work**. If your tax advisor makes a mistake and you get fined by the *[[Finanzamt]]*, your tax advisor must pay the fine.
-
-You must have a tax advisor to...
-
-- Prepare annual financial statements (*Jahresabschluss*) for a corporation
-- [Renew your freelance visa](/guides/renew-german-freelance-visa). In Berlin, you need a *[[Prüfungsbericht]]* or *[[Netto-Gewinnermittlung]]*. It must be stamped by a tax advisor.
-
-A tax advisor can also...
+A tax advisor can...
 
 - ✓ Give tax advice
 - ✓ Help you [register your business](/guides/start-a-business-in-germany) at the *[[Finanzamt]]* and the *Gewerbeamt*.
 - ✓ Prepare and submit [income tax declarations](/glossary/Steuererklärung)
 - ✓ Prepare and submit [VAT declarations](/glossary/Umsatzsteuererklärung)
+- ✓ Prepare the annual financial statement (*Jahresabschluss*) for your corporation[^6]
 - ✓ Do your personal or business bookkeeping
+
+In Berlin, you need a tax advisor when you [renew your freelance visa](/guides/renew-german-freelance-visa). The immigration office requires a *[[Prüfungsbericht]]* or *[[Netto-Gewinnermittlung]]*. It must be stamped by a tax advisor.
+
+Tax advisors are liable for their mistakes. If they make an expensive mistake, you can sue them for damages. They *must* have liability insurance.
 
 ## Bookkeeper (Buchhalter)
 
-Bookkeepers only do bookkeeping. They have limited power and responsibilities,  so they are **cheaper than tax advisors**. Freelance bookkeepers need special qualifications: professional training, an exam, and 3 years of experience.[^4]
-
-Bookkeepers are **not liable for their mistakes**. If your bookkeeper makes a mistake and you get fined by the *[[Finanzamt]]*, that's your problem.
+Bookkeepers only do bookkeeping. They can do less than tax advisors, but they are cheaper than tax advisors. Freelance bookkeepers must have special qualifications: professional training, an exam, and 3 years of experience.[^4]
 
 Freelance bookkeepers can...[^2]
 
@@ -55,6 +51,8 @@ Freelance bookkeepers can't...[^3]
 
 If you hire a bookkeeper as an employee, they can have more responsibilities, and they don't need professional qualifications.
 
+Bookkeepers are also liable for their mistakes, but they might not have insurance for this.[^5]
+
 ## Other options
 
 **[Tax advisor alternatives ➞](/guides/english-speaking-steuerberater-berlin)**
@@ -69,3 +67,5 @@ If you hire a bookkeeper as an employee, they can have more responsibilities, an
 [^2]: [niedersachsen.de](https://lstn.niedersachsen.de/download/37408/Merkblatt_Taetigkeit_als_selbstaendige_r_Buchhalter_in_.pdf) (2025), [haufe-akademie.de](https://www.haufe-akademie.de/blog/berufe/buchhalter-buchhalterin/#section-2) (2023), [firma.de](https://www.firma.de/firmengruendung/selbstaendig-machen-als-buchhalter-was-zu-beachten-ist/#taetigkeitsfelder) (2026)
 [^3]: [Johann Degraf](https://numpro.de/en/bookkeeping-germany#:~:text=Reserved%20for%20your-,steuerberater,-%E2%80%A2Annual%20financial%20statements) (2026), [niedersachsen.de](https://lstn.niedersachsen.de/download/37408/Merkblatt_Taetigkeit_als_selbstaendige_r_Buchhalter_in_.pdf) (2025), [firma.de](https://www.firma.de/firmengruendung/selbstaendig-machen-als-buchhalter-was-zu-beachten-ist/#:~:text=jahresabschlusse%20sind%20steuerberatern%20vorbehalten) (2026)
 [^4]: [Johann Degraf](https://numpro.de/) (2026), [§ 8 Abs. 1 StBerG](https://www.buzer.de/8_StBerG.htm)
+[^5]: [Johann Degraf](https://numpro.de/) (2026), [§ 280 BGB](https://www.buzer.de/280_BGB.htm)
+[^6]: [§ 33 StBerG](https://www.buzer.de/33_StBerG.htm)
