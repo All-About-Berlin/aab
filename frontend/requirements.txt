@@ -1,4 +1,4 @@
-ursus-ssg==1.6.0
+ursus-ssg==1.7.0
 pyphen==0.18.1
 pycountry==26.2.16
 pyyaml~=6.0
@@ -6,4 +6,4 @@ holidays
 beautifulsoup4~=4.15
 lxml~=6.1
 jmespath==1.1.0
-meilisearch~=0.36
+meilisearch~=0.43
