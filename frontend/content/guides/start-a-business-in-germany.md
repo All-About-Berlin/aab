@@ -331,7 +331,7 @@ There are tools that make it easier:
 **[Where to ask business questions ➞](/guides/help#business-questions)**
 
 [^0]: [Screenshot](/images/steuerberater-business-bank-account-question.png)
-[^1]: Sebastian Hoffmann from [Touring Artists](https://www.touring-artists.info/en/home) (January 2025), personal experience (2017)
+[^1]: Sebastian Hoffmann from [Touring Artists](https://www.touring-artists.info/en/home) (2025), personal experience (2017)
 [^2]: [allrecht.de](https://www.allrecht.de/alles-was-recht-ist/geschaeftskonto/)
 [^3]: [together.bunq.com](https://web.archive.org/web/20231129105449/https://together.bunq.com/d/5116-deutsche-pf-ndbarkeit-auf-niederl-ndisches-konto) (2018)
 [^4]: [juraforum.de](https://www.juraforum.de/lexikon/kontosperrung)
@@ -341,6 +341,6 @@ There are tools that make it easier:
 [^9]: [medium.com](https://tiahardyrobinson.medium.com/in-berlin-depending-on-which-finanzamt-is-responsible-for-you-it-can-take-4-6-weeks-to-get-the-3e8e30ce5ea2)
 [^10]: [existenzgruender.de](https://www.existenzgruender.de/DE/Gruendung-vorbereiten/Entscheidung/Ihre-Startposition/Gruendung-aus-Arbeitslosigkeit/Einstiegsgeld/inhalt.html), [deutschland-startet.de](https://www.deutschland-startet.de/einstiegsgeld-investitionszuschuss/)
 [^11]: [deutschland-startet.de](https://www.deutschland-startet.de/einstiegsgeld-investitionszuschuss/), [Agentur für Arbeit](https://www.arbeitsagentur.de/arbeitslos-arbeit-finden/buergergeld/arbeit-finden/einstiegsgeld-fuer-selbststaendigkeit) (June 2026), [§ 16b SGB II](https://www.buzer.de/16b_SGB_II.htm)
-[^12]: [hartz4widerspruch.de](https://hartz4widerspruch.de/ratgeber/basic/wann-erhalten-eu-buerger-und-andere-auslaender-hartz-4/#alg_i_und_alg_ii_-_wann_haben_eu-auslander_anspruch), Carina Senf at [Rotwang Law](https://rotwang-law.de/en/) (July 2023)
+[^12]: [hartz4widerspruch.de](https://hartz4widerspruch.de/ratgeber/basic/wann-erhalten-eu-buerger-und-andere-auslaender-hartz-4/#alg_i_und_alg_ii_-_wann_haben_eu-auslander_anspruch), Carina Senf at [Rotwang Law](https://rotwang-law.de/en/) (2023)
 [^14]: [anny.co](https://docs.anny.co/de/articles/1451-preise-in-netto-oder-in-brutto-anzeigen) (2024), [reddit.com/r/berlin](https://old.reddit.com/r/berlin/comments/9mdenm/how_much_should_a_freelance_developer_earn_in/) (2018)
 [^15]: Suat Göydeniz, tax advisor (2022)

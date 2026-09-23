@@ -115,4 +115,4 @@ Do not choose health insurance yourself. You can make expensive mistakes. Choosi
 
 [^0]: [Feather Insurance](https://feather-insurance.com/blog/how-can-i-use-expat-health-insurance-for-my-visa/#:~:text=expat%20insurance%20is%20almost%20always%20denied) (2025)
 [^1]: [schengenvisainfo.com](https://www.schengenvisainfo.com/schengen-visa-insurance/), [germany.info](https://www.germany.info/us-en/service/visa/medical-health-insurance/953982), [visaguide.world](https://visaguide.world/travel-insurance/europe/germany-travel-insurance/)
-[^2]: [German embassy in Portugal](https://lissabon.diplo.de/pt-de/service/2423766-2423766#:~:text=in%20the%20case%20of%20family%20reunification) (July 2025)
+[^2]: [German embassy in Portugal](https://lissabon.diplo.de/pt-de/service/2423766-2423766#:~:text=in%20the%20case%20of%20family%20reunification) (2025)

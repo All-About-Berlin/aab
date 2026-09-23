@@ -15,4 +15,4 @@ The *Prüfungsbericht* must be filled and stamped by a [tax advisor](/glossary/S
 
 **[Prüfungsbericht template](https://www.berlin.de/formularverzeichnis/?formular=/labo/zuwanderung/_assets/pruefungsbericht_bis.docx)** (Berlin [[Ausländerbehörde]])
 
-[^1]: [Berlin.de](https://service.berlin.de/dienstleistung/324288/#:~:text=muss%20durch%20einen%20steuerberater%2C%20wirtschaftsprufer%20oder%20einen%20rechtsanwalt) (March 2025)
+[^1]: [Berlin.de](https://service.berlin.de/dienstleistung/324288/#:~:text=muss%20durch%20einen%20steuerberater%2C%20wirtschaftsprufer%20oder%20einen%20rechtsanwalt) (2025)

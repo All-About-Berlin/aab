@@ -87,8 +87,8 @@ You can cancel your ticket where you bought it.
 **If you got your ticket from the Deutsche Bahn**, you can cancel it on the [S-Bahn Berlin website](https://www.abo-antrag.de/de/kuendigen/) or at a [Deutsche Bahn service centre](https://sbahn.berlin/en/tickets/sale-and-contact/points-of-sale/). Your ticket will stop working at the end of the month.
 
 [^0]: [bvg.de](https://www.bvg.de/en/deutschland-ticket), [sbahn.berlin](https://sbahn.berlin/aktuelles/artikel/deutschlandticket-lohnt-ein-wechsel/), [sbahn.berlin](https://sbahn.berlin/tickets/alle-tickets/wochen-monats-abo-jahrestickets/deutschland-ticket/?acc=a26619-t4), [rbb24.de](https://www.rbb24.de/politik/beitrag/2023/03/49-euro-ticket-deutschlandticket-nahverkehr.html)
-[^1]: [Twitter](https://x.com/MesoTraChannel/status/1767945848363622561) (March 2024)
-[^2]: Reader feedback (June 2024)
-[^3]: [seat61.com](https://www.seat61.com/train-travel-in-germany.htm#Deutschlandticket) (June 2024)
-[^4]: Reader feedback (July 2024)
-[^5]: Reader feedback (January 2025)
+[^1]: [Twitter](https://x.com/MesoTraChannel/status/1767945848363622561) (2024)
+[^2]: Reader feedback (2024)
+[^3]: [seat61.com](https://www.seat61.com/train-travel-in-germany.htm#Deutschlandticket) (2024)
+[^4]: Reader feedback (2024)
+[^5]: Reader feedback (2025)

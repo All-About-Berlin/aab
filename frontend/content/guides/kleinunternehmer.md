@@ -109,4 +109,4 @@ If you don't charge VAT, you must add this line to your invoices:[^6]
 [^11]: [starting-up.de](https://www.starting-up.de/geld/steuern/umsatzsteuer-abc/seite-2.html#:~:text=sollte%20ihr%20einkommen%20allerdings%20die%20grenze%20zur%20umsatzsteuerpflicht%20uberschreiten)
 [^12]: Seamus Wolf on [LinkedIn](https://www.linkedin.com/posts/nicolasbouliane_how-being-a-kleinunternehmer-works-activity-7040950109177589761-kH44/)
 [^13]: Seamus Wolf on [LinkedIn](https://www.linkedin.com/posts/nicolasbouliane_how-being-a-kleinunternehmer-works-activity-7040950109177589761-kH44/)
-[^14]: Sebastian Hoffmann (October 2022), [§ 19 Abs. 2 UStG](https://www.buzer.de/19_UStG.htm)
+[^14]: Sebastian Hoffmann (2022), [§ 19 Abs. 2 UStG](https://www.buzer.de/19_UStG.htm)

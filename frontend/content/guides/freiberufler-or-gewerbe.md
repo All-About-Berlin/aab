@@ -151,7 +151,7 @@ Websites that are not a *Gewerbe*:
 [^2]: [§ 21 Abs. 4 and 5 AufenthG](https://www.buzer.de/21_AufenthG.htm), [Berlin.de](https://service.berlin.de/dienstleistung/326564/#:~:text=keine%20freiberufliche)
 [^3]: [ihk.de](https://www.ihk.de/schwerin/existenzgruendung/existenzgruendung/tipps-rund-um-die-gruendung/selbststaendigkeit-als-gewerbetreibender-oder-freiberufler-3032726#:~:text=zu%20den%20%22dienstleistungen%20hoherer%20art%22)
 [^4]: This happened to me
-[^5]: Sebastian Hoffmann from [Touring Artists](https://www.touring-artists.info/en/home) (November 2024)
+[^5]: Sebastian Hoffmann from [Touring Artists](https://www.touring-artists.info/en/home) (2024)
 [^6]: [VAB A21.5](/out/vab) (October 2025)
 [^7]: [existenzgruender.de](http://www.existenzgruender.de/SharedDocs/BMWi-Expertenforum/Gruendungsplanung/Freie-Berufe/kuenstl-publ-Taetig/Website-und-Blog-betreiben-freiberufliche-Taetigkeit.html)
 [^12]: [fuer-gruender.de](https://www.fuer-gruender.de/wissen/unternehmen-gruenden/finanzen/buchfuehrung/bilanzierung/)

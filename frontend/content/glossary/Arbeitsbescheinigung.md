@@ -14,4 +14,4 @@ When you [lose your job](/guides/losing-your-job), your employer must send an *A
 
 The *Arbeitsbescheinigung* is not the same thing as the *[[Arbeitgeberbescheinigung]]*.[^1]
 
-[^1]: [Red Tape Translation](/out/red-tape-translation) (July 2024)
+[^1]: [Red Tape Translation](/out/red-tape-translation) (2024)

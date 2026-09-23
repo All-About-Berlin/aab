@@ -14,4 +14,4 @@ related_guides:
 
 Usually *Elterngeld* also pays for your [health insurance](/glossary/Krankenversicherung).[^1]
 
-[^1]: [Techniker Krankenkasse](https://www.tk.de/vertriebspartner/faq/beitragsuebersicht/elterngeld-und-elternzeit/elterngeld-und-elternzeit-2065854) (March 2025), [Techniker Krankenkasse](https://www.tk.de/techniker/leistungen-und-mitgliedschaft/informationen-versicherte/veraenderung-berufliche-situation/versichert-als-arbeitnehmer/berufliche-auszeiten/elternzeit/beitragszahlung-waehrend-elternzeit---elterngeld-2005602) (May 2025)
+[^1]: [Techniker Krankenkasse](https://www.tk.de/vertriebspartner/faq/beitragsuebersicht/elterngeld-und-elternzeit/elterngeld-und-elternzeit-2065854) (2025), [Techniker Krankenkasse](https://www.tk.de/techniker/leistungen-und-mitgliedschaft/informationen-versicherte/veraenderung-berufliche-situation/versichert-als-arbeitnehmer/berufliche-auszeiten/elternzeit/beitragszahlung-waehrend-elternzeit---elterngeld-2005602) (2025)

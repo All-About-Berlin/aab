@@ -89,7 +89,7 @@ This might have changed with legalisation, but it's not confirmed.
 [^5]: [§ 2 Abs. 3 KCanG](https://www.buzer.de/2_KCanG.htm), [§ 9 Abs. 1 KCanG](https://www.buzer.de/9_KCanG.htm)
 [^6]: [§ 2 Abs. 4 KCanG](https://www.buzer.de/2_KCanG.htm), [§ 3 Abs. 2 KCanG](https://www.buzer.de/3_KCanG.htm), [§ 9 KCanG](https://www.buzer.de/9_KCanG.htm)
 [^7]: [§ 5 Abs. 1 KCanG](https://www.buzer.de/5_KCanG.htm)
-[^8]: [Reddit](https://old.reddit.com/r/berlin/comments/1bt4g8s/megathread_cannabis_legalisation_in_germany/kxjp1rq/) (April 2024)
+[^8]: [Reddit](https://old.reddit.com/r/berlin/comments/1bt4g8s/megathread_cannabis_legalisation_in_germany/kxjp1rq/) (2024)
 [^9]: [§ 5 Abs. 2 KCanG](https://www.buzer.de/5_KCanG.htm)
 [^10]: [§ 9 Abs. 2 KCanG](https://www.buzer.de/9_KCanG.htm)
 [^11]: [§ 6 KCanG](https://www.buzer.de/6_KCanG.htm)
@@ -109,4 +109,4 @@ This might have changed with legalisation, but it's not confirmed.
 [^25]: [§ 16 Abs. 2 KCanG](https://www.buzer.de/16_KCanG.htm)
 [^26]: [§ 16 Abs. 4 KCanG](https://www.buzer.de/16_KCanG.htm)
 [^27]: [§ 1 Abs. 9 S. a.bb KCanG](https://www.buzer.de/1_KCanG.htm) (April 2026), [geminishopcbd.com](https://geminishopcbd.com/de/blogs/blog/cbd-legal-deutschland-2025-cang-thc-grenze-03-prozent) (April 2026)
-[^29]: [rbb24.de](https://www.rbb24.de/panorama/beitrag/2026/04/berlin-cannabis-bilanz-straftaten-polizei-justiz.html) (July 2026), [rbb24.de](https://www.rbb24.de/panorama/beitrag/2025/07/berlin-cannabis-vereine-sieben-anbau-erlaubnis.html) (July 2025), [rbb24.de 1](https://www.rbb24.de/wirtschaft/beitrag/2025/01/berlin-cannabis-hanf-lageso-anbau.html), [2](https://www.rbb-online.de/abendschau/videos/20250401_1930/Ein_Jahr_Cannabis_Legalisierung.html) (March 2025){{ fail_on('2027-03-01') }}
+[^29]: [rbb24.de](https://www.rbb24.de/panorama/beitrag/2026/04/berlin-cannabis-bilanz-straftaten-polizei-justiz.html) (July 2026), [rbb24.de](https://www.rbb24.de/panorama/beitrag/2025/07/berlin-cannabis-vereine-sieben-anbau-erlaubnis.html) (2025), [rbb24.de 1](https://www.rbb24.de/wirtschaft/beitrag/2025/01/berlin-cannabis-hanf-lageso-anbau.html), [2](https://www.rbb-online.de/abendschau/videos/20250401_1930/Ein_Jahr_Cannabis_Legalisierung.html) (2025){{ fail_on('2027-03-01') }}

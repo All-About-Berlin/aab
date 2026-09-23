@@ -19,4 +19,4 @@ When you [leave a company](/guides/losing-your-job), your employer is required t
 
 [^1]: [Verdi](https://www.verdi.de/themen/arbeit/++co++6c32cc08-6d54-11ec-b675-001a4a16012a)
 [^2]: [karrierebibel.de](https://karrierebibel.de/qualifiziertes-arbeitszeugnis/)
-[^3]: [haufe.de](https://www.haufe.de/id/beitrag/arbeitszeugnis-arten-22-vorlaeufiges-zeugnis-HI1326608.html) (August 2025), [jobteaser.com](https://www.jobteaser.com/de/advices/476-vorlaeufiges-arbeitszeugnis-anfordern-fristen-aufbau-vorlage) (August 2025)
+[^3]: [haufe.de](https://www.haufe.de/id/beitrag/arbeitszeugnis-arten-22-vorlaeufiges-zeugnis-HI1326608.html) (2025), [jobteaser.com](https://www.jobteaser.com/de/advices/476-vorlaeufiges-arbeitszeugnis-anfordern-fristen-aufbau-vorlage) (2025)

@@ -129,7 +129,7 @@ Life insurance (*Lebensversicherung*) pays money to your family when you die. It
 
 [^0]: [dieversicherer.de](https://www.dieversicherer.de/versicherer/beruf-freizeit/news/berufshaftpflichtversicherung-wer-braucht-sie-und-was-deckt-sie-ab--61280#:~:text=fur%20wen%20ist%20die%20berufshaftpflichtversicherung%20sinnvoll)
 [^1]: [dieversicherer.de](https://www.dieversicherer.de/versicherer/beruf-freizeit/news/berufshaftpflichtversicherung-wer-braucht-sie-und-was-deckt-sie-ab--61280#:~:text=wie%20sind%20angestellte%20haftpflichtversichert)
-[^2]: [Seamus Wolf](https://horizon65.com/) (July 2025), [Check24](https://www.check24.de/berufsunfaehigkeitsversicherung/kosten/#kosten) (July 2025)
+[^2]: [Seamus Wolf](https://horizon65.com/) (2025), [Check24](https://www.check24.de/berufsunfaehigkeitsversicherung/kosten/#kosten) (2025)
 [^3]: [ruv.de](https://www.ruv.de/ratgeber/versicherungsinfos/bauen-wohnen/hausratschaeden)
 [^4]: [gdv.de](https://www.gdv.de/de/themen/news/versicherungsschutz-versicherungsdichte-ueberversicherung-49418) (2019)
 [^5]: [verbraucherzentrale.de](https://www.verbraucherzentrale.de/wissen/geld-versicherungen/weitere-versicherungen/krankenversicherungen-fuer-haustiere-sinnvoll-oder-ueberfluessig-10781#2)

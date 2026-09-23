@@ -13,4 +13,4 @@ Before 2024, you got a special dog tag when you registered your dog with the *Fi
 
 ![Berlin Hundesteuermarke](/images/hundesteuermarke-berlin.jpg)
 
-[^1]: [Berlin.de](https://www.berlin.de/sen/finanzen/steuern/informationen-fuer-steuerzahler-/faq-steuern/artikel.8848.php) (January 2024)
+[^1]: [Berlin.de](https://www.berlin.de/sen/finanzen/steuern/informationen-fuer-steuerzahler-/faq-steuern/artikel.8848.php) (2024)

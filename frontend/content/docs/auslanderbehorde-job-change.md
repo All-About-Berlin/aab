@@ -37,5 +37,5 @@ The *Ausländerbehörde* will reply by email. They might reply in a few weeks, o
 
 **[How to find a job ➞](/guides/find-a-job-in-berlin)**
 
-[^1]: Carina Senf at [Rotwang Law](https://rotwang-law.de/en/) (July 2023), user report (July 2023), Victoria Messer (October 2024)
+[^1]: Carina Senf at [Rotwang Law](https://rotwang-law.de/en/) (2023), user report (2023), Victoria Messer (2024)
 [^2]: [§ 82 Abs. 6 AufenthG](https://www.buzer.de/82_AufenthG.htm)

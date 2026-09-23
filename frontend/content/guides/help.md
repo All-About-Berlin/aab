@@ -179,4 +179,4 @@ Write to <contact@allaboutberlin.com>. I can't answer every question, but I can 
 [^4]: [Finanztip](https://www.finanztip.de/rechtsschutzversicherung/)
 [^5]: [gesetze-im-internet.de](http://www.gesetze-im-internet.de/englisch_berathig/englisch_berathig.html#p0013)
 [^6]: [beratungshilfe-berlin.de](http://www.beratungshilfe-berlin.de/beratungshilfe)
-[^7]: [Rotwang Law](https://rotwang-law.de/en/) (June 2023)
+[^7]: [Rotwang Law](https://rotwang-law.de/en/) (2023)

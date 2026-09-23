@@ -92,7 +92,7 @@ The *[[Finanzamt]]* usually sends your tax ID to your employer, or to your forei
 They might create your tax ID, even if they don't send it to you. If you did not receive your tax ID after 6 weeks, [ask your *Finanzamt*](/guides/german-tax-id-steuernummer#where-to-find-your-tax-id).
 
 [^0]: [Screenshot](/images/tax-id-form-instructions.png), [Screenshot](/images/anmeldung-taxid-info-2022-12-22.png)
-[^1]: Multiple readers (March to October 2023), reader feedback (September 2024)
-[^2]: Finanzamt (July 2024)
+[^1]: Multiple readers (March to October 2023), reader feedback (2024)
+[^2]: Finanzamt (2024)
 [^3]: Reader feedback, unverified (2026)
-[^5]: [Reddit](https://old.reddit.com/r/germany/comments/1fclmpc/has_anyone_used_form_010250_to_request_a_tax_id/n9rpmd6/?context=3) (August 2025)
+[^5]: [Reddit](https://old.reddit.com/r/germany/comments/1fclmpc/has_anyone_used_form_010250_to_request_a_tax_id/n9rpmd6/?context=3) (2025)
