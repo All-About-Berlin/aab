@@ -274,7 +274,6 @@ config.jinja_filters = {
 }
 
 config.renderers.remove("ursus.renderers.sass.SassRenderer")
-config.renderers.remove("ursus.renderers.lunr.LunrIndexRenderer")
 config.jinja_extensions.remove("ursus.renderers.jinja.JsLoaderExtension")
 config.jinja_extensions.extend(
     [
@@ -297,6 +296,8 @@ config.context_processors.extend(
         "extensions.context_processors.services_url.ServicesUrlProcessor",
     ]
 )
+
+config.git_date_ignore_keyword = "#noupdate"
 
 del config.markdown_extensions["base_url"]
 
