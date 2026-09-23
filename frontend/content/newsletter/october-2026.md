@@ -4,7 +4,7 @@ description: Far-right growth, cyberattacks, end of summer, subletting.
 date_created: 2026-09-23
 ---
 
-October is *goldener Herbst*. Yes, the days get shorter, but we get crisp autumn days, orange leaves, mushroom picking, *Kartoffelsuppe* and tea. It's a fair trade.
+October is *goldener Herbst*. Yes, the days get shorter, but we get crisp autumn mornings, orange leaves, mushroom picking, *Kartoffelsuppe* and tea. It's a fair trade.
 
 ![“Herbstgold am Teich” by Alfred Thielemann](/images/alfred-thielemann-herbstgold-am-teich.jpg "“Herbstgold am Teich” by Alfred Thielemann")
 
