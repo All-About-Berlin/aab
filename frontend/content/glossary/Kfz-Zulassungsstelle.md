@@ -10,4 +10,4 @@ related_guides:
     - guides/car-insurance-germany.md
 ---
 
-The vehicle registration office (*Kfz-Zulassungsstelle*) is where you register a vehicle you just purchased. You must register your vehicle there before you can drive it on the road.
+After you [buy a vehicle](/guides/buy-a-car-in-germany), you must [register it](/guides/buy-a-car-in-germany#register-your-vehicle) at the vehicle registration office (*Kfz-Zulassungsstelle*).

@@ -152,7 +152,7 @@ When you go to your *[[Kfz-Zulassungsstelle]]* appointment, bring these document
 - [ ] **Old [registration papers](/glossary/Zulassungsbescheinigung)**  
     You should have both parts: *Teil I* and *Teil II*.
 - [ ] **Payment for the registration fee**  
-    The registration fee is €19.60 to €31.50.[^8] The *[[Kfz-Zulassungsstelle]]* only accepts EC-cards and cash. They don't accept credit cards.[^9]
+    The registration fee is €19.60 to €31.50.[^8] The *[[Kfz-Zulassungsstelle]]* accepts credit cards, [Girocards](/glossary/Girocard) and cash.[^9]
 - [ ] **Payment for a new plate**  
     Bring around €{{LICENSE_PLATE_COST|cur}} for new licence plates. There are licence plate stores in front of the *[[Kfz-Zulassungsstelle]]*. You can also [buy licence plates online](https://kennzeichen.express/).
 - [ ] **[Vehicle registration form](https://www.berlin.de/labo/mobilitaet/kfz-zulassung/artikel.276252.php#:~:text=antrag%20auf%20zulassung%20eines%20fahrzeugs)** (*Antrag auf Zulassung eines Fahrzeugs*)  
@@ -213,7 +213,7 @@ Use [Verivox](/out/verivox-kfz) or [Tarifcheck](/out/tarifcheck-kfz) to compare 
 [^5]: [financescout24.de](https://www.financescout24.de/wissen/ratgeber/versicherungskennzeichen-roller), [helvetia.com](https://www.helvetia.com/de/web/de/ratgeber/fahrzeuge/kleinkraftraeder/moped/moped-anmelden.html)
 [^6]: [ADAC](https://www.adac.de/rund-ums-fahrzeug/reparatur-pflege-wartung/hu-und-au/hu-ueberzogen-oder-durchgefallen/#hu-abgelaufen-droht-eine-strafe) (2026)
 [^8]: [berlin.de](https://service.berlin.de/dienstleistung/120906/) (2026){{ fail_on('2027-06-01')}}
-[^9]: [berlin.de](https://service.berlin.de/dienstleistung/120906/standort/121362/) (2026){{ fail_on('2027-06-01')}}
+[^9]: [berlin.de](https://service.berlin.de/dienstleistung/120906/standort/121362/) (2026){{ fail_on('2027-06-01')}}, reader feedback (September 2026)
 [^10]: [financescout24.de](https://www.financescout24.de/wissen/ratgeber/versicherungskennzeichen-roller)
 [^11]: Personal experience (2018)
 [^12]: [Berlin.de](https://service.berlin.de/dienstleistung/121479/) (2026)
