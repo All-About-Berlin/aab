@@ -1,4 +1,4 @@
-ursus-ssg==1.6.0
+ursus-ssg==1.7.0
 pyphen==0.18.1
 pycountry==26.2.16
 pyyaml~=6.0
