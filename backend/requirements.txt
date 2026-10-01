@@ -1,4 +1,4 @@
-django_countries~=9.0
+django_countries~=9.1
 djangorestframework~=3.18
 django~=6.1
 email-validator~=2.3
