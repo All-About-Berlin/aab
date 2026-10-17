@@ -15,7 +15,7 @@ def test_data_remembered(page, test_screenshot):
     expect(page.get_by_label("My name is on my mailbox")).not_to_be_checked()
     expect(page.get_by_label("Name on mailbox")).to_have_value("Müller")
 
-    test_screenshot(page, get_form(page))
+    test_screenshot(page, get_form(page), multiple_screen_sizes=True)
 
 
 def test_pluralisation(page, test_screenshot):
@@ -24,4 +24,4 @@ def test_pluralisation(page, test_screenshot):
     next_step(page)
     expect(page.get_by_label("Our names are on our mailbox")).to_be_checked()
 
-    test_screenshot(page, get_form(page))
+    test_screenshot(page, get_form(page), multiple_screen_sizes=True)

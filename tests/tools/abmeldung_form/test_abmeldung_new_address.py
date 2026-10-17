@@ -21,7 +21,7 @@ def test_data_remembered(page, test_screenshot):
     expect(page.get_by_label("Country")).to_have_value(address["country_code"])
 
     form = page.get_by_role("group", name="Abmeldung form filler")
-    test_screenshot(page, form)
+    test_screenshot(page, form, multiple_screen_sizes=True)
 
 
 def test_data_validity_check(page, test_screenshot):
@@ -40,7 +40,7 @@ def test_data_validity_check(page, test_screenshot):
     expect(page.get_by_label("Country")).to_have_js_property("validity.valid", False)
 
     form = page.get_by_role("group", name="Abmeldung form filler")
-    test_screenshot(page, form)
+    test_screenshot(page, form, multiple_screen_sizes=True)
 
 
 def test_data_germany(page, test_screenshot):
@@ -59,4 +59,4 @@ def test_data_germany(page, test_screenshot):
     expect(page.locator(".abmeldung-form")).to_have_class(re.compile(r".*show-errors.*"))
 
     form = page.get_by_role("group", name="Abmeldung form filler")
-    test_screenshot(page, form)
+    test_screenshot(page, form, multiple_screen_sizes=True)

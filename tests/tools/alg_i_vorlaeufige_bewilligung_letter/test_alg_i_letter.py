@@ -10,7 +10,7 @@ def alg_i_letter_generator(page):
 
 def test_snapshot(page, alg_i_letter_generator, test_screenshot):
     tool = alg_i_letter_generator
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)
     tool.get_by_role("button", name="Customize").click()
     tool.get_by_label("Your full name").fill("John Smith")
     tool.get_by_label("Your address").fill("Wohnungstr. 123\n13122 Berlin")
@@ -24,4 +24,4 @@ def test_snapshot(page, alg_i_letter_generator, test_screenshot):
     tool.get_by_label("Case number").fill("C4S3NUMB3R")
 
     tool.get_by_role("button", name="Preview").click()
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)

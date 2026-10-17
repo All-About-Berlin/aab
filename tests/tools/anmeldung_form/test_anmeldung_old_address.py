@@ -24,7 +24,7 @@ def test_data_remembered(page, test_screenshot):
     expect(page.get_by_label("State")).to_have_value(address["state"][1])
 
     form = page.get_by_role("group", name="Anmeldung form filler")
-    test_screenshot(page, form)
+    test_screenshot(page, form, multiple_screen_sizes=True)
 
 
 def test_data_validity_check(page, test_screenshot):
@@ -48,7 +48,7 @@ def test_data_validity_check(page, test_screenshot):
     expect(page.get_by_label("State")).to_have_js_property("validity.valid", False)
 
     form = page.get_by_role("group", name="Anmeldung form filler")
-    test_screenshot(page, form)
+    test_screenshot(page, form, multiple_screen_sizes=True)
 
 
 def test_data_not_germany(page, test_screenshot):
@@ -62,4 +62,4 @@ def test_data_not_germany(page, test_screenshot):
     expect(page.locator(".anmeldung-form")).not_to_have_class(re.compile(r".*show-errors.*"))
 
     form = page.get_by_role("group", name="Anmeldung form filler")
-    test_screenshot(page, form)
+    test_screenshot(page, form, multiple_screen_sizes=True)

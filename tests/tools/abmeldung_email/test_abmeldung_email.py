@@ -10,11 +10,11 @@ def abmeldung_email_generator(page):
 
 def test_snapshot(page, abmeldung_email_generator, test_screenshot):
     tool = abmeldung_email_generator
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)
     tool.get_by_role("button", name="Customize").click()
     tool.get_by_label("Your full name").fill("John Smith")
     tool.get_by_label("Your new address").fill("123 Maple Street\nMontreal, Quebec\nCanada")
     tool.get_by_label("Backup recipient").fill("Bella Johnson")
     tool.get_by_label("Backup address").fill("Wohnungstr. 123\n13122 Berlin")
     tool.get_by_role("button", name="Preview").click()
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)

@@ -11,4 +11,4 @@ def test_results(page, test_screenshot):
     calculator.get_by_label("Move-out date").fill("1992-05-01")
     expect(calculator.get_by_label("Notice date")).to_have_value("1992-03-04")
 
-    test_screenshot(page, calculator)
+    test_screenshot(page, calculator, multiple_screen_sizes=True)

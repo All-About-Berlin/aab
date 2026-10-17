@@ -8,4 +8,4 @@ def ksk_cost_difference_calculator(page):
 
 
 def test_snapshot(page, ksk_cost_difference_calculator, test_screenshot):
-    test_screenshot(page, ksk_cost_difference_calculator)
+    test_screenshot(page, ksk_cost_difference_calculator, multiple_screen_sizes=True)

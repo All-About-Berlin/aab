@@ -10,7 +10,7 @@ def job_resignation_letter_generator(page):
 
 def test_snapshot(page, job_resignation_letter_generator, test_screenshot):
     tool = job_resignation_letter_generator
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)
     tool.get_by_role("button", name="Customize").click()
 
     tool.get_by_label("Your full name").fill("John Smith")
@@ -31,4 +31,4 @@ def test_snapshot(page, job_resignation_letter_generator, test_screenshot):
     tool.get_by_label("Qualified letter of reference").check()
 
     tool.get_by_role("button", name="Preview and print").click()
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)

@@ -29,4 +29,4 @@ def test_download_buttons(page, test_screenshot, tmp_path):
     download.save_as(tmp_path / "abmeldung-5.pdf")
 
     form = page.get_by_role("group", name="Abmeldung form filler")
-    test_screenshot(page, form)
+    test_screenshot(page, form, multiple_screen_sizes=True)

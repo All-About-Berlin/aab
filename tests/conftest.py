@@ -52,12 +52,9 @@ def browser_context_args(browser_context_args):
 
 @pytest.fixture
 def test_screenshot(request, page, assert_snapshot, browser_name):
-    """
-    Take a snapshot of the element at every viewport size
-    """
-    call_index = [0]
+    call_counter = [0]
 
-    def test(page, element_to_screenshot, remove_focus=True, move_mouse=True):
+    def test(page, element_to_screenshot, remove_focus=True, move_mouse=True, multiple_screen_sizes=False):
         # Blur any focused elements to fix flakiness
         if remove_focus:
             page.evaluate("document.activeElement.blur()")
@@ -65,20 +62,21 @@ def test_screenshot(request, page, assert_snapshot, browser_name):
         if move_mouse:
             page.mouse.move(0, 0)
 
-        suffix = "" if call_index[0] == 0 else f"_{call_index[0]}"
-        call_index[0] += 1
+        # Adds number to file name when called multiple times in the same test
+        call_count_suffix = "" if call_counter[0] == 0 else f"_{call_counter[0]}"
+        call_counter[0] += 1
 
-        # Build a per-device filename that matches the historic
-        # "[<device>-<browser>]" naming used by the old parametrized fixture.
         node_id = request.node.name
-        for device_id, viewport in viewports.items():
-            page.set_viewport_size(viewport)
+        mask = [page.locator("p:has-text('You are updating the feedback')")]
+
+        device_ids = viewports if multiple_screen_sizes else ["desktop"]
+
+        for device_id in device_ids:
+            page.set_viewport_size(viewports[device_id])
             name_id = node_id.replace(f"[{browser_name}", f"[{device_id}-{browser_name}")
-            name = f"{name_id}[{sys.platform}]{suffix}.png"
-            img = element_to_screenshot.screenshot(
-                mask=[page.locator("p:has-text('You are updating the feedback')")]
-            )
-            assert_snapshot(img, name=name)
+            file_name = f"{name_id}[{sys.platform}]{call_count_suffix}.png"
+            img = element_to_screenshot.screenshot(mask=mask)
+            assert_snapshot(img, name=file_name)
 
         # Leave the page at the default viewport for any code that runs after.
         page.set_viewport_size(viewports["desktop"])

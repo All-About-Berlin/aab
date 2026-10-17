@@ -18,4 +18,4 @@ def test_data_remembered(page, test_screenshot):
         expect(page.get_by_label("Place of birth").nth(index)).to_have_value(person["birth_place"])
         expect(page.get_by_label("Date of birth").nth(index)).to_have_value(person["birth_date"])
 
-    test_screenshot(page, get_form(page))
+    test_screenshot(page, get_form(page), multiple_screen_sizes=True)

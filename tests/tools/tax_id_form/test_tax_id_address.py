@@ -16,7 +16,7 @@ def test_data_remembered_no_anmeldung(page, test_screenshot):
     expect(page.get_by_placeholder("Berlin", exact=True)).to_have_value(address["city"])
     expect(page.get_by_label("State")).to_have_value(address["state"][1])
 
-    test_screenshot(page, get_form(page))
+    test_screenshot(page, get_form(page), multiple_screen_sizes=True)
 
 
 def test_data_remembered_living_abroad(page, test_screenshot):
@@ -48,4 +48,4 @@ def test_data_validity_check(page, test_screenshot):
     expect(page.get_by_title("Postal code (Postleitzahl)")).to_have_js_property("validity.valid", False)
     expect(page.get_by_label("State")).to_have_js_property("validity.valid", False)
 
-    test_screenshot(page, get_form(page))
+    test_screenshot(page, get_form(page), multiple_screen_sizes=True)

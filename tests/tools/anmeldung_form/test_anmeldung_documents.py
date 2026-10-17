@@ -33,4 +33,4 @@ def test_data_remembered(page, test_screenshot):
         expect(page.get_by_label("Expiration date").nth(index)).to_have_value(doc["expiration_date"])
 
     form = page.get_by_role("group", name="Anmeldung form filler")
-    test_screenshot(page, form)
+    test_screenshot(page, form, multiple_screen_sizes=True)

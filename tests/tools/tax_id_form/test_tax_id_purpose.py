@@ -16,4 +16,4 @@ def test_invalid_options(page, test_screenshot):
     fill_purpose(page, "Something else")
     expect(continue_button).to_be_disabled()
 
-    test_screenshot(page, get_form(page))
+    test_screenshot(page, get_form(page), multiple_screen_sizes=True)

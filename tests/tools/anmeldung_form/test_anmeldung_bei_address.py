@@ -22,7 +22,7 @@ def test_data_remembered(page, test_screenshot):
     expect(page.get_by_label("Name on mailbox")).to_have_value("Müller")
 
     form = page.get_by_role("group", name="Anmeldung form filler")
-    test_screenshot(page, form)
+    test_screenshot(page, form, multiple_screen_sizes=True)
 
 
 def test_pluralisation(page):

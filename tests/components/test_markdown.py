@@ -5,6 +5,9 @@ def test_markdown_elements(page, test_screenshot):
 
 
 def test_services_links_rewritten(page):
+    """
+    Test that relative markdown links are converted to absolute URLs
+    """
     page.goto("/tests/markdown")
     article = page.locator("main article")
     assert (

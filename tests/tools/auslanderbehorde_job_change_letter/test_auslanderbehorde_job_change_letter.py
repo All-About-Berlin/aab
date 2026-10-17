@@ -11,7 +11,7 @@ def job_change_letter_generator(page):
 
 def test_snapshot(page, job_change_letter_generator, test_screenshot):
     tool = job_change_letter_generator
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)
     tool.get_by_role("button", name="Customize").click()
 
     tool.get_by_label("I was fired or laid off").check()
@@ -33,4 +33,4 @@ def test_snapshot(page, job_change_letter_generator, test_screenshot):
     tool.get_by_label("Nationality").select_option("Turkey")
 
     tool.get_by_role("button", name="Preview").click()
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)

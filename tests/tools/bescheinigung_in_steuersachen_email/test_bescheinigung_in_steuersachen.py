@@ -10,7 +10,7 @@ def bescheinigung_in_steuersachen_email_generator(page):
 
 def test_snapshot(page, bescheinigung_in_steuersachen_email_generator, test_screenshot):
     tool = bescheinigung_in_steuersachen_email_generator
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)
     tool.get_by_role("button", name="Customize").click()
 
     tool.get_by_label("Your full name").fill("John Smith")
@@ -19,4 +19,4 @@ def test_snapshot(page, bescheinigung_in_steuersachen_email_generator, test_scre
     tool.get_by_label("Tax ID").fill("23 456 789 012")
 
     tool.get_by_role("button", name="Preview").click()
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)

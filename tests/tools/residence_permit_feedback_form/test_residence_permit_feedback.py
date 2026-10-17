@@ -66,7 +66,7 @@ def test_form_validation(page, residence_permit_feedback_form, test_screenshot):
 
     tool.get_by_role("button", name="Send feedback").click()
 
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)
 
 
 def test_partial_submission(page, residence_permit_feedback_form, test_screenshot):
@@ -108,7 +108,7 @@ def test_partial_submission(page, residence_permit_feedback_form, test_screensho
     modification_key = first_response_data["modification_key"]
     assert page.evaluate("localStorage.getItem('modificationKey')") == f"{modification_key}~BLUE_CARD"
 
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)
     tool.get_by_label("Email address").fill("j.smith@gmail.com")
 
     # Feedback is updated with the email address
@@ -193,7 +193,7 @@ def test_clear_form(page, residence_permit_feedback_form):
 
 def test_full_submission(page, residence_permit_feedback_form, test_screenshot):
     tool = residence_permit_feedback_form
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)
 
     tool.get_by_role("heading", name="How is your residence permit application going?")
 
@@ -231,7 +231,7 @@ def test_full_submission(page, residence_permit_feedback_form, test_screenshot):
 
     tool.get_by_label("Notes and advice").fill("I followed the instructions and everything went smoothly")
 
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)
 
     with page.expect_response("**/api/forms/residence-permit-feedback") as api_response:
         tool.get_by_role("button", name="Send feedback").click()
@@ -256,7 +256,7 @@ def test_full_submission(page, residence_permit_feedback_form, test_screenshot):
     for key, value in expected_response.items():
         assert response_data[key] == value
 
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)
     expect(tool).to_contain_text("Thank you")
 
     # No modification key for complete feedback

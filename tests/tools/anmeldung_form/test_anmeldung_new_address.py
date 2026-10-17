@@ -22,7 +22,7 @@ def test_data_remembered(page, test_screenshot):
     expect(page.get_by_label("Move-in date")).to_have_value(people[0]["move_out_date"])
 
     form = page.get_by_role("group", name="Anmeldung form filler")
-    test_screenshot(page, form)
+    test_screenshot(page, form, multiple_screen_sizes=True)
 
 
 def test_data_validity_check(page, test_screenshot):
@@ -40,4 +40,4 @@ def test_data_validity_check(page, test_screenshot):
     expect(page.get_by_label("Post code")).to_have_js_property("validity.valid", False)
 
     form = page.get_by_role("group", name="Anmeldung form filler")
-    test_screenshot(page, form)
+    test_screenshot(page, form, multiple_screen_sizes=True)

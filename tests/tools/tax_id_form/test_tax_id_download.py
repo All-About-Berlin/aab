@@ -15,7 +15,7 @@ def test_download_buttons_no_anmeldung(page, test_screenshot, tmp_path):
             assert download.suggested_filename == "tax-id-form-filled.pdf"
             download.save_as(tmp_path / f"tax-id-{index}.pdf")
 
-    test_screenshot(page, get_form(page))
+    test_screenshot(page, get_form(page), multiple_screen_sizes=True)
 
 
 def test_download_buttons_living_abroad(page, tmp_path):

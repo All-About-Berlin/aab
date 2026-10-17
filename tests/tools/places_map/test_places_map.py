@@ -31,7 +31,7 @@ def places_map_no_insurance(page):
 
 
 def test_places_list_shows_all_places(page, places_map, test_screenshot):
-    test_screenshot(page, places_map)
+    test_screenshot(page, places_map, multiple_screen_sizes=True)
     items = places_map.locator("ol > li")
     expect(items).to_have_count(5)
     expect(items.nth(0)).to_contain_text("Test Place Alpha")

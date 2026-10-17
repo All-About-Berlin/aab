@@ -49,7 +49,7 @@ def test_form_validation(page, citizenship_feedback_form, test_screenshot):
 
     tool.get_by_role("button", name="Send feedback").click()
 
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)
 
 
 def test_partial_submission(page, citizenship_feedback_form, test_screenshot):
@@ -83,7 +83,7 @@ def test_partial_submission(page, citizenship_feedback_form, test_screenshot):
     modification_key = first_response_data["modification_key"]
     assert page.evaluate("localStorage.getItem('modificationKey')") == f"{modification_key}~CITIZENSHIP"
 
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)
     tool.get_by_label("Email address").fill("j.smith@gmail.com")
 
     # Feedback is updated with the email address
@@ -163,7 +163,7 @@ def test_clear_form(page, citizenship_feedback_form):
 
 def test_full_submission(page, citizenship_feedback_form, test_screenshot):
     tool = citizenship_feedback_form
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)
 
     tool.get_by_label(appointment_label).check()
     tool.get_by_label("Application date", exact=True).fill("2020-01-01")
@@ -172,7 +172,7 @@ def test_full_submission(page, citizenship_feedback_form, test_screenshot):
     tool.get_by_label("Department").select_option("S3")
     tool.get_by_label("Notes and advice").fill("I followed the instructions and everything went smoothly")
 
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)
 
     with page.expect_response("**/api/forms/citizenship-feedback") as api_response:
         tool.get_by_role("button", name="Send feedback").click()
@@ -192,7 +192,7 @@ def test_full_submission(page, citizenship_feedback_form, test_screenshot):
     for key, value in expected_response.items():
         assert response_data[key] == value
 
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)
     expect(tool).to_contain_text("Thank you")
 
     # No modification key for complete feedback

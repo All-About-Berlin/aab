@@ -6,7 +6,7 @@ import pytest
 @pytest.mark.parametrize("case", cases.values(), ids=cases.keys())
 def test_options(page, test_screenshot, case):
     fill_calculator_until(page, "options", **case)
-    test_screenshot(page, get_calculator(page))
+    test_screenshot(page, get_calculator(page), multiple_screen_sizes=True)
 
     page.get_by_label("Go back").click()
     assert_stage(page, "questions")
@@ -31,7 +31,7 @@ def test_option_private_quote(page, test_screenshot):
     if case["can_have_private"]:
         page.get_by_label("Private health insurance").click()
         assert_stage(page, "privateOptions")
-        test_screenshot(page, get_calculator(page))
+        test_screenshot(page, get_calculator(page), multiple_screen_sizes=True)
 
         page.get_by_role("button", name="Ask our expert").click()
         assert_stage(page, "askABroker")

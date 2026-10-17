@@ -22,21 +22,21 @@ def fill_questions(lawsuit_form):
 
 
 def test_snapshot_intro(lawsuit_form, test_screenshot):
-    test_screenshot(lawsuit_form.page, lawsuit_form)
+    test_screenshot(lawsuit_form.page, lawsuit_form, multiple_screen_sizes=True)
 
 
 def test_validation(lawsuit_form, test_screenshot):
     lawsuit_form.get_by_role("button", name="Continue").click()  # intro → questions
 
     lawsuit_form.get_by_role("button", name="Continue").click()  # questions → contact
-    test_screenshot(lawsuit_form.page, lawsuit_form)
+    test_screenshot(lawsuit_form.page, lawsuit_form, multiple_screen_sizes=True)
     fill_questions(lawsuit_form)
     lawsuit_form.get_by_role("button", name="Continue").click()  # questions → contact
 
     expect(lawsuit_form).not_to_have_class(re.compile(r".*show-errors.*"))
     lawsuit_form.get_by_role("button", name="Send").click()
     expect(lawsuit_form).to_have_class(re.compile(r".*show-errors.*"))
-    test_screenshot(lawsuit_form.page, lawsuit_form)
+    test_screenshot(lawsuit_form.page, lawsuit_form, multiple_screen_sizes=True)
 
 
 def test_submit(lawsuit_form, test_screenshot):
@@ -63,7 +63,7 @@ def test_submit(lawsuit_form, test_screenshot):
     assert response_data["application_date"] == "2025-11-01"
     assert response_data["message"] == "Some extra details"
 
-    test_screenshot(page, lawsuit_form)
+    test_screenshot(page, lawsuit_form, multiple_screen_sizes=True)
     assert_stage(lawsuit_form, "thank-you")
 
     lawsuit_form.get_by_label("Go back").click()
@@ -75,7 +75,7 @@ def test_application_date_too_recent(lawsuit_form, test_screenshot):
     assert_stage(lawsuit_form, "questions")
 
     lawsuit_form.get_by_label("Application date").fill("2025-11-23")  # 3 months - 1 day ago
-    test_screenshot(lawsuit_form.page, lawsuit_form)
+    test_screenshot(lawsuit_form.page, lawsuit_form, multiple_screen_sizes=True)
     lawsuit_form.get_by_role("button", name="Continue").click()  # questions → contact
     lawsuit_form.get_by_label("Application date").fill("2025-11-23")  # 3 months - 1 day ago
     lawsuit_form.get_by_role("button", name="Continue").click()  # questions → contact

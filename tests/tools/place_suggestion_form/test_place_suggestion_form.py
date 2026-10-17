@@ -22,10 +22,10 @@ def select_place(page, suggestion_form, query="Tierarztpraxis Anne Gamalski"):
 
 
 def test_place_selection(page, suggestion_form, test_screenshot):
-    test_screenshot(page, suggestion_form)
+    test_screenshot(page, suggestion_form, multiple_screen_sizes=True)
     select_place(page, suggestion_form)
     expect(suggestion_form.locator(".input-instructions").first).to_be_visible()
-    test_screenshot(page, suggestion_form)
+    test_screenshot(page, suggestion_form, multiple_screen_sizes=True)
 
 
 def test_category_display(page, suggestion_form):
@@ -75,7 +75,7 @@ def test_form_submission(page, suggestion_form, test_screenshot):
     assert response_data["category"] == "veterinarians"
 
     expect(suggestion_form).to_contain_text("Thank you")
-    test_screenshot(page, suggestion_form)
+    test_screenshot(page, suggestion_form, multiple_screen_sizes=True)
 
 
 def test_health_insurance_field_hidden_for_vets(page, suggestion_form):
@@ -137,7 +137,7 @@ def test_error_go_back(page, suggestion_form, test_screenshot):
 
     suggestion_form.get_by_role("button", name="Submit").click()
     expect(suggestion_form).to_contain_text("An error occurred")
-    test_screenshot(page, suggestion_form)
+    test_screenshot(page, suggestion_form, multiple_screen_sizes=True)
 
     suggestion_form.get_by_role("button", name="Go back").click()
     expect(suggestion_form).to_contain_text("Recommend a vet")

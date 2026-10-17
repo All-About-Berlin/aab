@@ -10,7 +10,7 @@ def lease_termination_letter_generator(page):
 
 def test_snapshot(page, lease_termination_letter_generator, test_screenshot):
     tool = lease_termination_letter_generator
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)
     tool.get_by_role("button", name="Customize").click()
 
     tool.get_by_label("Apartment address").fill("Pasewalker Str. 65\n13127 Berlin")
@@ -24,4 +24,4 @@ def test_snapshot(page, lease_termination_letter_generator, test_screenshot):
     tool.get_by_label("IBAN").fill("DE75512108001245126199")
 
     tool.get_by_role("button", name="Preview").click()
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)

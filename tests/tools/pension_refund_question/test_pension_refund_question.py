@@ -10,7 +10,7 @@ def pension_refund_question_form(page):
 
 def test_snapshot(page, pension_refund_question_form, test_screenshot):
     tool = pension_refund_question_form
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)
     tool.get_by_label("Your question").fill("Can I get a pension refund")
     tool.get_by_label("Name").fill("John Smith")
     tool.get_by_label("Email address").fill("j.smith@gmail.com")
@@ -36,4 +36,4 @@ def test_snapshot(page, pension_refund_question_form, test_screenshot):
 
     expect(tool).to_contain_text("Message sent")
 
-    test_screenshot(page, tool)
+    test_screenshot(page, tool, multiple_screen_sizes=True)

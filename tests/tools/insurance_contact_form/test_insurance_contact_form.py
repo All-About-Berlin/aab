@@ -16,17 +16,17 @@ def assert_stage(form, expected_stage: str):
 
 def test_snapshot(insurance_form, test_screenshot):
     assert_stage(insurance_form, "contact")
-    test_screenshot(insurance_form.page, insurance_form)
+    test_screenshot(insurance_form.page, insurance_form, multiple_screen_sizes=True)
 
 
 def test_snapshot_whatsapp(insurance_form, test_screenshot):
     insurance_form.page.click("text=WhatsApp")
-    test_screenshot(insurance_form.page, insurance_form)
+    test_screenshot(insurance_form.page, insurance_form, multiple_screen_sizes=True)
 
 
 def test_snapshot_email(insurance_form, test_screenshot):
     insurance_form.page.click("text=Email")
-    test_screenshot(insurance_form.page, insurance_form)
+    test_screenshot(insurance_form.page, insurance_form, multiple_screen_sizes=True)
 
 
 def test_by_whatsapp(insurance_form, test_screenshot):
@@ -36,7 +36,7 @@ def test_by_whatsapp(insurance_form, test_screenshot):
     expect(insurance_form).not_to_have_class(re.compile(r".*show-errors.*"))
     page.locator(".button.whatsapp").click()
     expect(insurance_form).to_have_class(re.compile(r".*show-errors.*"))
-    test_screenshot(page, insurance_form)
+    test_screenshot(page, insurance_form, multiple_screen_sizes=True)
     assert_stage(insurance_form, "contact")
 
     page.get_by_label("Your name").fill("John Doe")
@@ -51,7 +51,7 @@ def test_by_whatsapp(insurance_form, test_screenshot):
     assert response_data["contact_method"] == "WHATSAPP"
     assert response_data["referrer"] == "test-referrer"
 
-    test_screenshot(page, insurance_form)
+    test_screenshot(page, insurance_form, multiple_screen_sizes=True)
     assert_stage(insurance_form, "thank-you")
 
     page.get_by_label("Go back").click()
@@ -65,7 +65,7 @@ def test_by_email(insurance_form, test_screenshot):
     expect(insurance_form).not_to_have_class(re.compile(r".*show-errors.*"))
     page.get_by_role("button", name="Ask Seamus").click()
     expect(insurance_form).to_have_class(re.compile(r".*show-errors.*"))
-    test_screenshot(page, insurance_form)
+    test_screenshot(page, insurance_form, multiple_screen_sizes=True)
     assert_stage(insurance_form, "contact")
 
     page.get_by_label("Your name").fill("John Doe")
@@ -83,7 +83,7 @@ def test_by_email(insurance_form, test_screenshot):
     assert response_data["contact_method"] == "EMAIL"
     assert response_data["referrer"] == "test-referrer"
 
-    test_screenshot(page, insurance_form)
+    test_screenshot(page, insurance_form, multiple_screen_sizes=True)
     assert_stage(insurance_form, "thank-you")
 
     page.get_by_label("Go back").click()

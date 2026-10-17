@@ -15,16 +15,19 @@ import pytest
 def test_component_snapshot(page, test_screenshot, component):
     page.goto(f"/tests/components/{component}")
     content = page.locator("main > article")
-    test_screenshot(page, content)
+    test_screenshot(page, content, multiple_screen_sizes=True)
 
 
 def test_glossary_click(page, test_screenshot):
+    """
+    Click a glossary link, screenshot the glossary modal, close it
+    """
     page.goto("/tests/components/glossary")
     page.locator("main > article a").first.click()
 
     dialog = page.locator("dialog").first
     assert dialog.evaluate("dialog => dialog.open")
-    test_screenshot(page, dialog)
+    test_screenshot(page, dialog, multiple_screen_sizes=True)
 
     dialog.locator(".close-button").click()
     assert not dialog.evaluate("dialog => dialog.open")
