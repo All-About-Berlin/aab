@@ -1,7 +1,4 @@
 .post-meta{
-    border: none;
-    padding: 0;
-
     .breadcrumbs{
         flex: 1;
         order: 0!important;
@@ -36,10 +33,8 @@
             @include text-bold;
         }
 
-        .post-meta{
-            a{
-                color: inherit;
-            }
+        .post-meta a{
+            color: inherit;
         }
     }
 
@@ -79,8 +74,11 @@
 
         gap: var(--s) var(--m);
         grid-auto-flow: column;
-        border-top: var(--b-box);
-        padding-top: var(--m);
+
+        &:not(:first-child){
+            border-top: var(--b-box);
+            padding-top: var(--l);
+        }
 
         .post-meta{
             color: var(--c-text-light);

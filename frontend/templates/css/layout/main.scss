@@ -116,15 +116,10 @@ main{
 
 
     .post-meta {
-        margin: 0 0 var(--xl);
-        padding: 0 0 var(--xl);
-
         display: flex;
         flex-wrap: wrap;
         align-items: end;
         gap: var(--xs) var(--l);
-
-        border-bottom: var(--b-box);
 
         .icon{
             flex: 0 0 auto;

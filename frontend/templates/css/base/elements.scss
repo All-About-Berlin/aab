@@ -7,6 +7,12 @@
 h1{
     font-size: var(--xxl);
     margin: 0 0 var(--m);
+
+    + .post-meta{
+        margin: 0 0 var(--xl);
+        padding: 0 0 var(--xl);
+        border-bottom: var(--b-box);
+    }
 }
 
 h2{
@@ -347,9 +353,6 @@ h1 + .article-body{
         }
 
         .post-meta{
-            border: none;
-            margin: 0;
-            padding: 0;
             width: 100%;
             color: var(--c-text-light);
             justify-content: space-between;
