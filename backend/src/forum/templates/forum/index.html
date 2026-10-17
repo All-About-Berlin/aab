@@ -70,7 +70,7 @@
 			</svg>
 		</header>
 	{% endif %}
-<section class="section threads">
+<section class="section posts">
 	{% if user.is_authenticated or page_obj.number != 1 or category %}
 		<h1>{% if category %}{{ category.label }}{% else %}Forum{% endif %}{% if page_obj.number > 1 %} - page {{ page_obj.number }}{% endif %}</h1>
 		{% if user.is_authenticated or category %}
@@ -89,16 +89,16 @@
 				</nav>
 				{% if user.is_authenticated %}
 					<div class="buttons">
-						<a class="button primary" href="{{ url('forum_new_thread') }}">New discussion</a>
+						<a class="button primary" href="{{ url('forum_new_post') }}">New post</a>
 						<a class="button" href="{{ url('account_logout') }}">Log out</a>
 					</div>
 				{% endif %}
 			</div>
 		{% endif %}
 	{% else %}
-		<h2>Recent topics</h2>
+		<h2>Recent posts</h2>
 	{% endif %}
-	{% with threads = page_obj %}{% include "forum/_threadList.html" %}{% endwith %}
+	{% with posts = page_obj %}{% include "forum/_postList.html" %}{% endwith %}
 	{% set base_url = url('forum_index') %}
 	{% include "forum/_pagination.html" %}
 </section>

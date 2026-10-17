@@ -27,7 +27,7 @@ urlpatterns = [
         name="account_reset_password_from_key_done",
     ),
     path("forum/users/<str:username>", views.ForumUserProfileView.as_view(), name="forum_user"),
-    path("forum/new", views.ForumNewThreadView.as_view(), name="forum_new_thread"),
-    path("forum/<int:pk>", views.ForumThreadView.as_view(), name="forum_thread"),
-    path("forum/<int:pk>/page-<int:page>", views.ForumThreadView.as_view(), name="forum_thread_page"),
+    path("forum/new", views.ForumNewPostView.as_view(), name="forum_new_post"),
+    path("forum/<int:pk>", views.ForumPostView.as_view(), name="forum_post"),
+    path("forum/<int:pk>/page-<int:page>", views.ForumPostView.as_view(), name="forum_post_page"),
 ]

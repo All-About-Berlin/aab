@@ -1,9 +1,9 @@
 from django.contrib import admin
-from forum.models import Reply, Thread
+from forum.models import Post, Reply
 
 
-@admin.register(Thread)
-class ThreadAdmin(admin.ModelAdmin):
+@admin.register(Post)
+class PostAdmin(admin.ModelAdmin):
     list_display = ["title", "category", "author", "creation_date", "removal_date"]
     list_filter = ["category", "removal_reason"]
     search_fields = ["title", "body", "author__username"]
@@ -12,7 +12,7 @@ class ThreadAdmin(admin.ModelAdmin):
 
 @admin.register(Reply)
 class ReplyAdmin(admin.ModelAdmin):
-    list_display = ["thread", "author", "creation_date", "removal_date"]
+    list_display = ["post", "author", "creation_date", "removal_date"]
     list_filter = ["removal_reason"]
-    search_fields = ["body", "author__username", "thread__title"]
-    fields = ["thread", "author", "body", "removal_date", "removal_reason"]
+    search_fields = ["body", "author__username", "post__title"]
+    fields = ["post", "author", "body", "removal_date", "removal_reason"]

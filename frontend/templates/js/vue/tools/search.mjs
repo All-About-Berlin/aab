@@ -81,7 +81,7 @@ export default {
 				pages: {
 					label: 'Pages'
 				},
-				forum_thread: {
+				forum_post: {
 					label: 'Forum',
 					url: '/forum'
 				},

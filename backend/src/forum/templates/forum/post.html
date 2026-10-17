@@ -1,42 +1,42 @@
 {% extends "forum/layout.html" %}
 
-{% block page_title %}{% if page_obj.number > 1 %}Page {{ page_obj.number }} - {% endif %}{{ thread.title }} - All About Berlin forum{% endblock %}
+{% block page_title %}{% if page_obj.number > 1 %}Page {{ page_obj.number }} - {% endif %}{{ post.title }} - All About Berlin forum{% endblock %}
 
 {% block postHead %}
-	<link rel="canonical" href="{{ SITE_URL }}{{ url('forum_thread', thread.pk) }}">
+	<link rel="canonical" href="{{ SITE_URL }}{{ url('forum_post', post.pk) }}">
 	{% if page_obj.has_previous() %}
 		{% if page_obj.previous_page_number() == 1 %}
-			<link rel="prev" href="{{ SITE_URL }}{{ url('forum_thread', thread.pk) }}">
+			<link rel="prev" href="{{ SITE_URL }}{{ url('forum_post', post.pk) }}">
 		{% else %}
-			<link rel="prev" href="{{ SITE_URL }}{{ url('forum_thread_page', thread.pk, page_obj.previous_page_number()) }}">
+			<link rel="prev" href="{{ SITE_URL }}{{ url('forum_post_page', post.pk, page_obj.previous_page_number()) }}">
 		{% endif %}
 	{% endif %}
 	{% if page_obj.has_next() %}
-		<link rel="next" href="{{ SITE_URL }}{{ url('forum_thread_page', thread.pk, page_obj.next_page_number()) }}">
+		<link rel="next" href="{{ SITE_URL }}{{ url('forum_post_page', post.pk, page_obj.next_page_number()) }}">
 	{% endif %}
 {% endblock %}
 
 {% block content %}
 <article class="section h-entry" itemscope itemtype="https://schema.org/DiscussionForumPosting"{% if page_obj.object_list %} itemref="{% for reply in page_obj %}reply-{{ reply.pk }}{% if not loop.last %} {% endif %}{% endfor %}"{% endif %}>
-	<link itemprop="url" href="{{ SITE_URL }}{{ url('forum_thread', thread.pk) }}">
-	<h1 class="p-name" itemprop="headline">{{ thread.title }}</h1>
-	<div class="post-meta" aria-label="Topic author, publication date and category">
+	<link itemprop="url" href="{{ SITE_URL }}{{ url('forum_post', post.pk) }}">
+	<h1 class="p-name" itemprop="headline">{{ post.title }}</h1>
+	<div class="post-meta" aria-label="Post author, publication date and category">
 		<nav class="breadcrumbs" aria-label="Breadcrumbs">
 			<i class="icon folder" aria-hidden="true"></i>
 			<ol>
 				<li><a href="{{ SITE_URL }}{{ url('forum_index') }}">Forum</a></li>
-				{% if thread.category %}
-					<li><a class="p-category" href="{{ SITE_URL }}{{ url('forum_index') }}?category={{ thread.category }}">{{ thread.get_category_display() }}</a></li>
+				{% if post.category %}
+					<li><a class="p-category" href="{{ SITE_URL }}{{ url('forum_index') }}?category={{ post.category }}">{{ post.get_category_display() }}</a></li>
 				{% endif %}
 			</ol>
 		</nav>
-		{% with user = thread.author %}{% include "forum/_username.html" %}{% endwith %}
+		{% with user = post.author %}{% include "forum/_username.html" %}{% endwith %}
 		<div class="date">
 			<i class="icon calendar" aria-hidden="true"></i>
-			<time class="dt-published" itemprop="datePublished" datetime="{{ thread.creation_date.isoformat() }}">{{ thread.creation_date|short_datetime }}</time>
+			<time class="dt-published" itemprop="datePublished" datetime="{{ post.creation_date.isoformat() }}">{{ post.creation_date|short_datetime }}</time>
 		</div>
 	</div>
-	<div class="article-body e-content" itemprop="articleBody">{{ thread.body|safe_markdown }}</div>
+	<div class="article-body e-content" itemprop="articleBody">{{ post.body|safe_markdown }}</div>
 	{% if user.is_authenticated %}
 		{% if page_obj.object_list %}
 			<hr>
@@ -53,15 +53,13 @@
 			To reply, <a href="{{ url('account_login') }}?next={{ request.get_full_path()|urlencode }}">log in</a> or <a href="{{ url('account_signup') }}">create an account</a>.
 		</div>
 	{% endif %}
-</article>
-
-{% if page_obj.object_list %}
-	<section aria-label="Replies" class="section replies">
-		<h2>Replies</h2>
+	{% if page_obj.object_list %}
+	<hr>
+	<section aria-label="Replies" class="replies">
 		{% if page_obj.object_list %}
 			{% with replies = page_obj.object_list %}{% include "forum/_replyList.html" %}{% endwith %}
 		{% endif %}
-		{% set base_url = url('forum_thread', thread.pk) %}
+		{% set base_url = url('forum_post', post.pk) %}
 		{% include "forum/_pagination.html" %}
 		{% if not user.is_authenticated %}
 			<hr>
@@ -70,11 +68,12 @@
 			</p>
 		{% endif %}
 	</section>
-{% endif %}
+	{% endif %}
+</article>
 
 {% if user.is_authenticated %}
-	<form id="reply" class="section" method="post" action="{{ url('forum_thread', thread.pk) }}#reply">
-		<h2>Reply to this topic</h2>
+	<form id="reply" class="section" method="post" action="{{ url('forum_post', post.pk) }}#reply">
+		<h2>Reply to this post</h2>
 		<hr>
 		{{ csrf_input }}
 		{% if form.non_field_errors() %}
@@ -107,24 +106,24 @@
 , {
 	"@context": "https://schema.org",
 	"@type": "WebPage",
-	"@id": "{{ SITE_URL }}{{ url('forum_thread', thread.pk) }}",
-	"name": "{{ thread.title|escapejs }}",
+	"@id": "{{ SITE_URL }}{{ url('forum_post', post.pk) }}",
+	"name": "{{ post.title|escapejs }}",
 	"breadcrumb": {
 		"@type": "BreadcrumbList",
 		"itemListElement": [
 			{"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ SITE_URL }}/"},
 			{"@type": "ListItem", "position": 2, "name": "Forum", "item": "{{ SITE_URL }}{{ url('forum_index') }}"}
-			{% if thread.category %},
-			{"@type": "ListItem", "position": 3, "name": "{{ thread.get_category_display()|escapejs }}", "item": "{{ SITE_URL }}{{ url('forum_index') }}?category={{ thread.category }}"},
-			{"@type": "ListItem", "position": 4, "name": "{{ thread.title|escapejs }}", "item": "{{ SITE_URL }}{{ url('forum_thread', thread.pk) }}"}
+			{% if post.category %},
+			{"@type": "ListItem", "position": 3, "name": "{{ post.get_category_display()|escapejs }}", "item": "{{ SITE_URL }}{{ url('forum_index') }}?category={{ post.category }}"},
+			{"@type": "ListItem", "position": 4, "name": "{{ post.title|escapejs }}", "item": "{{ SITE_URL }}{{ url('forum_post', post.pk) }}"}
 			{% else %},
-			{"@type": "ListItem", "position": 3, "name": "{{ thread.title|escapejs }}", "item": "{{ SITE_URL }}{{ url('forum_thread', thread.pk) }}"}
+			{"@type": "ListItem", "position": 3, "name": "{{ post.title|escapejs }}", "item": "{{ SITE_URL }}{{ url('forum_post', post.pk) }}"}
 			{% endif %}
 		]
 	},
 	"mainEntity": {
 		"@type": "DiscussionForumPosting",
-		"url": "{{ SITE_URL }}{{ url('forum_thread', thread.pk) }}",
+		"url": "{{ SITE_URL }}{{ url('forum_post', post.pk) }}",
 		"interactionStatistic": {
 			"@type": "InteractionCounter",
 			"interactionType": "https://schema.org/ReplyAction",

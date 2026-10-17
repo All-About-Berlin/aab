@@ -5,5 +5,5 @@ from forum.models import Reply
 
 
 @receiver(post_save, sender=Reply)
-def bump_thread_modification_date(sender, instance, **kwargs):
-    instance.thread.save()  # Trigger a change on the parent thread
+def bump_post_modification_date(sender, instance, **kwargs):
+    instance.post.save()  # Trigger a change on the parent post
