@@ -151,7 +151,7 @@ The cost of private health insurance is [tax-deductible](/glossary/steuerlich%20
 - ✓ **You choose your coverage**  
     You can pay more to get the best coverage, or pay less to save money. If you are young and healthy, you can get really cheap health insurance.
 - ✓ **You pay less when you don't use it**  
-    Many private health insurers have a no-claims bonus. If you don't use your health insurance, you get money back every year. If you never get sick, you can save a lot of money. In 2025, I got €956 back.{{ fail_on('2026-09-30')}}
+    Many private health insurers have a no-claims bonus. If you don't use your health insurance, you get money back every year. If you never get sick, you can save a lot of money. In 2025, I got €956 back.{{ fail_on('2026-11')}}
 
 ### Disadvantages of private health insurance
 
