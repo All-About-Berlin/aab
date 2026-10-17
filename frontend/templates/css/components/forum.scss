@@ -10,7 +10,7 @@
     }
 }
 
-:is(.threads, .replies){
+:is(.posts, .replies){
 
     > h2{
         margin: 0;
@@ -23,7 +23,7 @@
         gap: var(--l);
     }
 
-    .thread{
+    .post{
         grid-template-areas: "title meta";
         grid-template-columns: 1fr auto;
 
@@ -68,7 +68,7 @@
         }
     }
 
-    :is(.thread, .reply){
+    :is(.post, .reply){
         display: grid;
         align-items: flex-start;
 

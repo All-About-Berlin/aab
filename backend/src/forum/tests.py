@@ -6,7 +6,7 @@ from django.test import SimpleTestCase, TestCase, override_settings
 from django.urls import reverse
 
 from api.jinja2 import safe_markdown
-from forum.models import Reply, Thread
+from forum.models import Post, Reply
 from forum.views import ForumIndexView
 
 
@@ -110,15 +110,15 @@ class ForumCacheTests(TestCase):
     def setUp(self):
         cache.clear()
         self.user = User.objects.create_user(username="alice")
-        self.thread = Thread.objects.create(author=self.user, title="Original title", body="Original body")
-        self.url = reverse("forum_thread", args=[self.thread.pk])
+        self.post = Post.objects.create(author=self.user, title="Original title", body="Original body")
+        self.url = reverse("forum_post", args=[self.post.pk])
 
     def test_anonymous_response_is_cached(self):
         first = self.client.get(self.url)
         self.assertEqual(first["X-Cache"], "MISS")
         self.assertContains(first, "Original body")
 
-        Thread.objects.filter(pk=self.thread.pk).update(body="Silent edit")
+        Post.objects.filter(pk=self.post.pk).update(body="Silent edit")
 
         second = self.client.get(self.url)
         self.assertEqual(second["X-Cache"], "HIT")
@@ -127,7 +127,7 @@ class ForumCacheTests(TestCase):
 
     def test_authenticated_response_is_not_cached(self):
         self.client.get(self.url)
-        Thread.objects.filter(pk=self.thread.pk).update(body="Silent edit")
+        Post.objects.filter(pk=self.post.pk).update(body="Silent edit")
 
         self.client.force_login(self.user)
         response = self.client.get(self.url)
@@ -139,19 +139,19 @@ class ForumCacheTests(TestCase):
         self.assertEqual(primed["X-Cache"], "MISS")
         self.assertNotContains(primed, "First reply")
 
-        Reply.objects.create(author=self.user, thread=self.thread, body="First reply")
+        Reply.objects.create(author=self.user, post=self.post, body="First reply")
 
         response = self.client.get(self.url)
         self.assertEqual(response["X-Cache"], "MISS")
         self.assertContains(response, "First reply")
 
-    def test_thread_edit_invalidates_cache(self):
+    def test_post_edit_invalidates_cache(self):
         primed = self.client.get(self.url)
         self.assertEqual(primed["X-Cache"], "MISS")
         self.assertContains(primed, "Original title")
 
-        self.thread.title = "Edited title"
-        self.thread.save()
+        self.post.title = "Edited title"
+        self.post.save()
 
         response = self.client.get(self.url)
         self.assertEqual(response["X-Cache"], "MISS")
@@ -171,20 +171,20 @@ class ForumPaginationMetadataTests(TestCase):
 
     def test_forum_index_prev_next_head_links(self):
         for i in range(5):
-            Thread.objects.create(author=self.user, title=f"Thread {i}", body="body")
+            Post.objects.create(author=self.user, title=f"Post {i}", body="body")
         response = self.client.get(reverse("forum_index_page", args=[2]))
         self.assertContains(response, '<link rel="prev" href="https://localhost/forum">')
         self.assertContains(response, '<link rel="next" href="https://localhost/forum/page-3">')
 
     def test_forum_index_prev_link_preserves_query_string(self):
         for i in range(3):
-            Thread.objects.create(author=self.user, title=f"Thread {i}", body="body", category="work")
+            Post.objects.create(author=self.user, title=f"Post {i}", body="body", category="work")
         response = self.client.get(reverse("forum_index_page", args=[2]) + "?category=work")
         self.assertContains(response, '<link rel="prev" href="https://localhost/forum?category=work">')
 
-    def test_forum_thread_prev_next_head_links(self):
-        thread = Thread.objects.create(author=self.user, title="Thread", body="body")
+    def test_forum_post_prev_next_head_links(self):
+        post = Post.objects.create(author=self.user, title="Post", body="body")
         for i in range(3):
-            Reply.objects.create(author=self.user, thread=thread, body=f"reply {i}")
-        response = self.client.get(reverse("forum_thread_page", args=[thread.pk, 2]))
-        self.assertContains(response, f'<link rel="prev" href="https://localhost/forum/{thread.pk}">')
+            Reply.objects.create(author=self.user, post=post, body=f"reply {i}")
+        response = self.client.get(reverse("forum_post_page", args=[post.pk, 2]))
+        self.assertContains(response, f'<link rel="prev" href="https://localhost/forum/{post.pk}">')

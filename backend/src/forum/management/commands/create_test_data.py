@@ -8,23 +8,23 @@ from django.contrib.auth.models import User
 from django.core.management.base import BaseCommand
 from django.utils import timezone
 
-from forum.models import Reply, Thread
+from forum.models import Post, Reply
 
 
 FIXTURE_PATH = Path(__file__).resolve().parent.parent.parent / "fixtures" / "test_data.json"
 
 
 class Command(BaseCommand):
-    help = "Deletes all threads, replies, and non-staff users, then loads forum test data from the committed fixture."
+    help = "Deletes all posts, replies, and non-staff users, then loads forum test data from the committed fixture."
 
     def handle(self, *args, **options):
-        confirm = input("This will delete all threads, all replies, and all non-staff users. Type 'yes' to continue: ")
+        confirm = input("This will delete all posts, all replies, and all non-staff users. Type 'yes' to continue: ")
         if confirm != "yes":
             self.stdout.write("Aborted.")
             return
 
         Reply.objects.all().delete()
-        Thread.objects.all().delete()
+        Post.objects.all().delete()
         User.objects.filter(is_staff=False).delete()
 
         data = json.loads(FIXTURE_PATH.read_text())
@@ -46,9 +46,9 @@ class Command(BaseCommand):
             )
             users[u["username"]] = user
 
-        created_threads = 0
-        for t in data["threads"]:
-            thread, created = Thread.objects.get_or_create(
+        created_posts = 0
+        for t in data["posts"]:
+            post, created = Post.objects.get_or_create(
                 title=t["title"],
                 defaults={
                     "author": users[t["author"]],
@@ -60,16 +60,16 @@ class Command(BaseCommand):
             if not created:
                 continue
 
-            thread_date = now - timedelta(seconds=rng.randint(0, 365 * 24 * 60 * 60))
-            thread_removal_date = thread_date + timedelta(hours=1) if t.get("removed") else None
-            Thread.objects.filter(pk=thread.pk).update(
-                creation_date=thread_date,
-                removal_date=thread_removal_date,
+            post_date = now - timedelta(seconds=rng.randint(0, 365 * 24 * 60 * 60))
+            post_removal_date = post_date + timedelta(hours=1) if t.get("removed") else None
+            Post.objects.filter(pk=post.pk).update(
+                creation_date=post_date,
+                removal_date=post_removal_date,
             )
 
             replies = [
                 Reply.objects.create(
-                    thread=thread,
+                    post=post,
                     author=users[r["author"]],
                     body=r["body"],
                     removal_reason=r.get("removal_reason", ""),
@@ -77,14 +77,12 @@ class Command(BaseCommand):
                 for r in t.get("replies", [])
             ]
             for reply, r in zip(replies, t.get("replies", [])):
-                reply_date = thread_date + timedelta(seconds=rng.randint(60, 5 * 24 * 60 * 60))
+                reply_date = post_date + timedelta(seconds=rng.randint(60, 5 * 24 * 60 * 60))
                 reply_removal_date = reply_date + timedelta(hours=1) if r.get("removed") else None
                 Reply.objects.filter(pk=reply.pk).update(
                     creation_date=reply_date,
                     removal_date=reply_removal_date,
                 )
-            created_threads += 1
+            created_posts += 1
 
-        self.stdout.write(
-            self.style.SUCCESS(f"Loaded {len(data['threads'])} threads ({created_threads} newly created).")
-        )
+        self.stdout.write(self.style.SUCCESS(f"Loaded {len(data['posts'])} posts ({created_posts} newly created)."))

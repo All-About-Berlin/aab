@@ -1,0 +1,20 @@
+{% if posts %}
+	<ol class="h-feed" aria-label="Posts">
+		{% for post in posts %}
+			<li class="post h-entry">
+				<h3><a class="u-url p-name" href="{{ SITE_URL }}{{ url('forum_post', post.pk) }}">{{ post.title }}</a></h3>
+				<div class="post-meta" aria-label="Post author, publication date and category">
+					<div aria-label="{{ post.reply_count }} repl{{ post.reply_count|pluralize('y,ies') }}" title="{{ post.reply_count }} repl{{ post.reply_count|pluralize('y,ies') }}">
+						<i class="icon bubble" aria-hidden="true"></i> {{ post.reply_count }}
+					</div>
+					<div class="date" title="Last activity on {{ post.last_activity_date|date('F j, H:i') }}" aria-label="Last activity">
+						<i class="icon calendar" aria-hidden="true"></i>
+						<time class="dt-updated" datetime="{{ post.last_activity_date.isoformat() }}">{{ post.last_activity_date|short_datetime }}</time>
+					</div>
+				</div>
+			</li>
+		{% endfor %}
+	</ol>
+{% else %}
+	<p class="empty">There are no posts to show.</p>
+{% endif %}

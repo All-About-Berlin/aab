@@ -17,7 +17,7 @@ from django.views.generic import CreateView, DetailView, ListView, TemplateView
 from django.views.generic.edit import FormMixin
 
 from forum.forms import ReplyForm, ThreadForm
-from forum.models import Category, Reply, Thread
+from forum.models import Category, Post, Reply
 
 
 def is_user_posting_too_fast(model, user):
@@ -62,19 +62,19 @@ class VersionedCacheMixin:
         return response
 
 
-class ForumNewThreadView(LoginRequiredMixin, CreateView):
+class ForumNewPostView(LoginRequiredMixin, CreateView):
     form_class = ThreadForm
-    template_name = "forum/newThread.html"
+    template_name = "forum/newPost.html"
 
     def form_valid(self, form):
-        if is_user_posting_too_fast(Thread, self.request.user):
-            form.add_error(None, "You are posting too fast. Please wait a bit before creating another thread.")
+        if is_user_posting_too_fast(Post, self.request.user):
+            form.add_error(None, "You are posting too fast. Please wait a bit before creating another post.")
             return self.form_invalid(form)
         form.instance.author = self.request.user
         return super().form_valid(form)
 
     def get_success_url(self):
-        return reverse("forum_thread", args=[self.object.pk])
+        return reverse("forum_post", args=[self.object.pk])
 
 
 class ForumIndexView(VersionedCacheMixin, ListView):
@@ -82,7 +82,7 @@ class ForumIndexView(VersionedCacheMixin, ListView):
     paginate_by = settings.RESULTS_PER_PAGE
 
     def get_base_queryset(self):
-        queryset = Thread.objects.filter(removal_date__isnull=True)
+        queryset = Post.objects.filter(removal_date__isnull=True)
         category = self.request.GET.get("category")
         if category:
             if category not in Category.values:
@@ -122,26 +122,26 @@ class ForumUserProfileView(LoginRequiredMixin, DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         user = self.object
-        threads = user.forum_threads.annotate(
+        posts = user.forum_posts.annotate(
             last_activity_date=Coalesce(Max("replies__creation_date"), F("creation_date")),
             reply_count=Count("replies"),
         ).order_by("-creation_date")
-        replies = user.forum_replies.select_related("thread").order_by("-creation_date")
-        context["threads"] = threads[: settings.RESULTS_PER_PAGE]
+        replies = user.forum_replies.select_related("post").order_by("-creation_date")
+        context["posts"] = posts[: settings.RESULTS_PER_PAGE]
         context["replies"] = replies[: settings.RESULTS_PER_PAGE]
-        context["thread_count"] = threads.count()
-        context["post_count"] = replies.count()
+        context["post_count"] = posts.count()
+        context["reply_count"] = replies.count()
         return context
 
 
-class ForumThreadView(VersionedCacheMixin, FormMixin, DetailView):
-    model = Thread
-    template_name = "forum/thread.html"
+class ForumPostView(VersionedCacheMixin, FormMixin, DetailView):
+    model = Post
+    template_name = "forum/post.html"
     form_class = ReplyForm
-    context_object_name = "thread"
+    context_object_name = "post"
 
     def get_queryset(self):
-        return Thread.objects.filter(removal_date__isnull=True).select_related("author")
+        return Post.objects.filter(removal_date__isnull=True).select_related("author")
 
     def get_content_modification_date(self, request: HttpRequest) -> datetime | None:
         return self.get_queryset().filter(pk=self.kwargs["pk"]).values_list("modification_date", flat=True).first()
@@ -170,13 +170,13 @@ class ForumThreadView(VersionedCacheMixin, FormMixin, DetailView):
             return self.form_invalid(form)
         reply = form.save(commit=False)
         reply.author = self.request.user
-        reply.thread = self.object
+        reply.post = self.object
         reply.save()
         last_page = Paginator(self.object.replies.all(), settings.RESULTS_PER_PAGE).num_pages
         url = (
-            reverse("forum_thread_page", args=[self.object.pk, last_page])
+            reverse("forum_post_page", args=[self.object.pk, last_page])
             if last_page > 1
-            else reverse("forum_thread", args=[self.object.pk])
+            else reverse("forum_post", args=[self.object.pk])
         )
         return redirect(f"{url}#reply-{reply.pk}")
 

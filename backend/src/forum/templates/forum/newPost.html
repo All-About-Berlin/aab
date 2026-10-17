@@ -1,21 +1,21 @@
 {% extends "forum/layout.html" %}
 
-{% block page_title %}New topic - All About Berlin forum{% endblock %}
+{% block page_title %}New post - All About Berlin forum{% endblock %}
 
 {% block content %}
 <article class="section">
-	<h1>Start a new topic</h1>
+	<h1>Create a post</h1>
 	<div class="post-meta">
 		<nav class="breadcrumbs" aria-label="Breadcrumbs">
 			<i class="icon folder" aria-hidden="true"></i>
 			<ol>
 				<li><a href="{{ url('forum_index') }}">Forum</a></li>
-				<li>New topic</li>
+				<li>New post</li>
 			</ol>
 		</nav>
 	</div>
 
-	<form method="post" action="{{ url('forum_new_thread') }}">
+	<form method="post" action="{{ url('forum_new_post') }}">
 		{{ csrf_input }}
 		{% if form.non_field_errors() %}
 			<ul class="form-errors">
@@ -49,7 +49,7 @@
 		</div>
 		<hr>
 		<div class="buttons bar">
-			<button type="submit" class="button primary">Create topic</button>
+			<button type="submit" class="button primary">Create post</button>
 		</div>
 	</form>
 </article>

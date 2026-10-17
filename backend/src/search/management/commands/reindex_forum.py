@@ -1,7 +1,7 @@
 from django.core.management.base import BaseCommand
 
-from forum.models import Reply, Thread
-from search.services import get_forum_search_index, to_reply_document, to_thread_document
+from forum.models import Post, Reply
+from search.services import get_forum_search_index, to_post_document, to_reply_document
 
 
 class Command(BaseCommand):
@@ -12,16 +12,16 @@ class Command(BaseCommand):
 
         index.delete_all_documents()
 
-        threads = [to_thread_document(t) for t in Thread.objects.filter(removal_date__isnull=True)]
+        posts = [to_post_document(p) for p in Post.objects.filter(removal_date__isnull=True)]
         replies = [
             to_reply_document(r)
-            for r in Reply.objects.filter(removal_date__isnull=True, thread__removal_date__isnull=True).select_related(
-                "thread"
+            for r in Reply.objects.filter(removal_date__isnull=True, post__removal_date__isnull=True).select_related(
+                "post"
             )
         ]
 
-        documents = threads + replies
+        documents = posts + replies
         if documents:
             index.add_documents(documents)
 
-        self.stdout.write(f"Reindexed {len(threads)} threads and {len(replies)} replies.")
+        self.stdout.write(f"Reindexed {len(posts)} posts and {len(replies)} replies.")

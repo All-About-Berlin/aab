@@ -1,7 +1,7 @@
 {% extends "forum/layout.html" %}
 
 {% block page_title %}User {{ profile_user.username }} - All About Berlin forum{% endblock %}
-{% block page_description %}Topics and replies by {{ profile_user.username }} on the All About Berlin forum.{% endblock %}
+{% block page_description %}Posts and replies by {{ profile_user.username }} on the All About Berlin forum.{% endblock %}
 {% block postHead %}<link rel="canonical" href="{{ SITE_URL }}{{ url('forum_user', profile_user.username) }}">{% endblock %}
 
 {% block content %}
@@ -21,17 +21,17 @@
 		</div>
 		<div>
 			<i class="icon bubble" aria-hidden="true"></i>
-			{{ thread_count }} topic{{ thread_count|pluralize }}, {{ post_count }} repl{{ post_count|pluralize('y,ies') }}
+			{{ post_count }} post{{ post_count|pluralize }}, {{ reply_count }} repl{{ reply_count|pluralize('y,ies') }}
 		</div>
 	</div>
 </article>
 
-<section class="section threads" aria-label="Topics">
-	<h2>Recent topics by {{ profile_user.username }}</h2>
-	{% if threads %}
-		{% include "forum/_threadList.html" %}
+<section class="section posts" aria-label="Posts">
+	<h2>Recent posts by {{ profile_user.username }}</h2>
+	{% if posts %}
+		{% include "forum/_postList.html" %}
 	{% else %}
-		<p class="empty">This user has not started any topics.</p>
+		<p class="empty">This user has not started any posts.</p>
 	{% endif %}
 </section>
 
@@ -41,13 +41,13 @@
 		<ol class="h-feed">
 			{% for reply in replies %}
 				<li class="h-entry reply" id="reply-{{ reply.pk }}" itemprop="comment" itemscope itemtype="https://schema.org/Comment">
-					<link itemprop="url" href="{{ SITE_URL }}{{ url('forum_thread', reply.thread.pk) }}#reply-{{ reply.pk }}">
+					<link itemprop="url" href="{{ SITE_URL }}{{ url('forum_post', reply.post.pk) }}#reply-{{ reply.pk }}">
 					<a class="p-author h-card" hidden href="{{ SITE_URL }}{{ url('forum_user', profile_user.username) }}">{{ profile_user.username }}</a>
 					<div class="post-meta">
-						<a href="{{ SITE_URL }}{{ url('forum_thread', reply.thread.pk) }}#reply-{{ reply.pk }}">{{ reply.thread.title }}</a>
-						<div class="date" title="Posted on {{ reply.creation_date|date('F j, Y') }}" aria-label="Comment date">
+						<a href="{{ SITE_URL }}{{ url('forum_post', reply.post.pk) }}#reply-{{ reply.pk }}">{{ reply.post.title }}</a>
+						<div class="date" title="Posted on {{ reply.creation_date|date('F j, Y') }}" aria-label="Reply date">
 							<i class="icon calendar" aria-hidden="true"></i>
-							<a class="u-url" href="{{ SITE_URL }}{{ url('forum_thread', reply.thread.pk) }}#reply-{{ reply.pk }}"><time class="dt-published" itemprop="datePublished" datetime="{{ reply.creation_date.isoformat() }}">{{ reply.creation_date|date('F j, Y') }}</time></a>
+							<a class="u-url" href="{{ SITE_URL }}{{ url('forum_post', reply.post.pk) }}#reply-{{ reply.pk }}"><time class="dt-published" itemprop="datePublished" datetime="{{ reply.creation_date.isoformat() }}">{{ reply.creation_date|date('F j, Y') }}</time></a>
 						</div>
 					</div>
 					<div class="article-body e-content" itemprop="text">{{ reply.body|linebreaks }}</div>
@@ -55,7 +55,7 @@
 			{% endfor %}
 		</ol>
 	{% else %}
-		<p class="empty">This user has not replied to any topics.</p>
+		<p class="empty">This user has not replied to any posts.</p>
 	{% endif %}
 </section>
 {% endblock %}
@@ -74,7 +74,7 @@
 			{
 				"@type": "InteractionCounter",
 				"interactionType": "https://schema.org/WriteAction",
-				"userInteractionCount": {{ thread_count|add(post_count) }}
+				"userInteractionCount": {{ post_count|add(reply_count) }}
 			}
 		]
 	}
