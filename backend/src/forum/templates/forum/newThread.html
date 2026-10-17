@@ -37,7 +37,7 @@
 			{% if form.body.errors %}
 				<span class="input-instructions error">{{ form.body.errors|first }}</span>
 			{% else %}
-				<span class="input-instructions">Remember to follow <a target="_blank" href="{{ url('forum_rules') }}">the rules</a>.</span>
+				<span class="input-instructions">Follow <a target="_blank" href="{{ url('forum_rules') }}">the rules</a>. Use <a target="_blank" href="https://www.markdownguide.org/cheat-sheet/" rel="external nofollow">markdown</a> to format text.</span>
 			{% endif %}
 		</div>
 		<div class="form-group">
