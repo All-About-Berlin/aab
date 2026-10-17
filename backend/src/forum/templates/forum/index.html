@@ -87,7 +87,12 @@
 						{% endif %}
 					</ol>
 				</nav>
-				<a class="button primary" href="{{ url('forum_new_thread') }}">New discussion</a>
+				{% if user.is_authenticated %}
+					<div class="buttons">
+						<a class="button primary" href="{{ url('forum_new_thread') }}">New discussion</a>
+						<a class="button" href="{{ url('account_logout') }}">Log out</a>
+					</div>
+				{% endif %}
 			</div>
 		{% endif %}
 	{% else %}
