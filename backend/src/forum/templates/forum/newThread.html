@@ -18,7 +18,11 @@
 	<form method="post" action="{{ url('forum_new_thread') }}">
 		{{ csrf_input }}
 		{% if form.non_field_errors() %}
-			<p class="error">{{ form.non_field_errors()|first }}</p>
+			<ul class="form-errors">
+				{% for error in form.non_field_errors() %}
+					<li>{{ error }}</li>
+				{% endfor %}
+			</ul>
 		{% endif %}
 		<div class="form-group">
 			<label for="{{ form.title.id_for_label }}">{{ form.title.label }}</label>

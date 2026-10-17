@@ -53,7 +53,6 @@
 			To reply, <a href="{{ url('account_login') }}?next={{ request.get_full_path()|urlencode }}">log in</a> or <a href="{{ url('account_signup') }}">create an account</a>.
 		</div>
 	{% endif %}
-
 </article>
 
 {% if page_obj.object_list %}
@@ -79,7 +78,11 @@
 		<hr>
 		{{ csrf_input }}
 		{% if form.non_field_errors() %}
-			<p class="error">{{ form.non_field_errors()|first }}</p>
+			<ul class="form-errors">
+				{% for error in form.non_field_errors() %}
+					<li>{{ error }}</li>
+				{% endfor %}
+			</ul>
 		{% endif %}
 		<div class="form-group">
 			<label for="{{ form.body.id_for_label }}">{{ form.body.label }}</label>
