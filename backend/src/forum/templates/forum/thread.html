@@ -74,7 +74,7 @@
 {% endif %}
 
 {% if user.is_authenticated %}
-	<form id="reply" class="section" method="post" action="{{ url('forum_thread', thread.pk) }}">
+	<form id="reply" class="section" method="post" action="{{ url('forum_thread', thread.pk) }}#reply">
 		<h2>Reply to this topic</h2>
 		<hr>
 		{{ csrf_input }}
