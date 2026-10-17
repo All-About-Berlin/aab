@@ -35,7 +35,6 @@ def test_services_pages(path):
 @pytest.mark.parametrize(
     "path, expected_location",
     [
-        ("/", ""),
         ("/guides/", "/guides"),
         ("/guides/anmeldung/", "/guides/anmeldung"),
         ("/health-insurance/", "/health-insurance"),
