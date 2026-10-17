@@ -473,6 +473,15 @@ input[type=range] {
     }
 }
 
+.form-errors{
+    border-radius: var(--b-radius);
+    color: var(--c-text-error);
+    background-color: var(--c-bg-error);
+    li{
+        padding: var(--xs) var(--s);
+    }
+}
+
 
 .show-errors :invalid,
 .show-errors:invalid,
