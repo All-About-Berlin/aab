@@ -1,0 +1,1 @@
+Winter tires required: "There is no legal requirement to use winter tyres in Germany, but drivers are expected to do so when the roads are slippery, icy, or snowy. Remember the “O bis O” rule and use your winter tyres from “Oktober bis Ostern” (October until Easter)."
