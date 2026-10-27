@@ -105,7 +105,8 @@ export default {
 			this.placesLoading = true;
 			const response = await fetch(`/places/${this.category}.json`);
 			const responseJson = await response.json();
-			this.places = responseJson.places.map((place, index) => {
+			const sortedPlaces = responseJson.places.slice().sort((a, b) => ((a.status === 'CLOSED_TEMPORARILY') - (b.status === 'CLOSED_TEMPORARILY')));
+			this.places = sortedPlaces.map((place, index) => {
 				const query = encodeURIComponent(`${place.name}, ${place.address}`);
 				const placeIdParam = place.google_place_id ? `&query_place_id=${place.google_place_id}` : '';
 				place.googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${query}${placeIdParam}`;
@@ -185,7 +186,7 @@ export default {
 					<summary>Filter places</summary>
 					<div class="input-group">
 					<select v-model="locationFilter">
-						<option :value="null">Anywhere</option>
+						<option :value="null">Anywhere in Berlin</option>
 						<option disabled>──────────</option>
 						<template v-for="(suburbs, borough) in boroughsAndSuburbs">
 							<option :value="'borough-' + borough" :key="borough">{{ borough }}</option>
@@ -201,18 +202,21 @@ export default {
 				<button class="button link add no-print" @click="showSuggestionForm = true">Add a place</button>
 			</div>
 			<ol :class="{loading: placesLoading}" v-if="!showSuggestionForm">
-				<li v-for="place in filteredPlaces" :key="place.id" :ref="'place-' + place.id">
+				<li v-for="place in filteredPlaces" :key="place.id" :ref="'place-' + place.id" :class="{closed: place.status === 'CLOSED_TEMPORARILY'}">
 					<button class="marker button" :class="{ primary: selectedPlaceId === place.id }" @click="selectPlaceInList(place)">{{ place.id }}</button>
 					<h4>
 						<a v-if="place.website" :title="'Website of ' + place.name" target="_blank" :href="place.website">{{ place.name }}</a>
 						<template v-else>{{ place.name }}</template>
 					</h4>
-					<address>
-						<a :href="place.googleMapsUrl" target="_blank" title="Open in Google Maps" v-text="place.suburb"></a>
-					</address>
-					<recommended v-if="place.recommended"></recommended>
-					<p v-if="place.description">{{ place.description }}</p>
-					<span class="pill yes" v-if="place.accepts_public_health_insurance && !healthInsuranceFilter" title="Accepts public health insurance">Public health insurance</span>
+					<p v-if="place.status === 'CLOSED_TEMPORARILY'">Closed temporarily</p>
+					<template v-else>
+						<address>
+							<a :href="place.googleMapsUrl" target="_blank" title="Open in Google Maps" v-text="place.suburb"></a>
+						</address>
+						<p v-if="place.description">{{ place.description }}</p>
+						<span class="pill yes" v-if="place.accepts_public_health_insurance && !healthInsuranceFilter" title="Accepts public health insurance">Public health insurance</span>
+						<recommended v-if="place.recommended"></recommended>
+					</template>
 				</li>
 				<li v-if="filteredPlaces.length === 0">No places match your criteria</li>
 			</ol>

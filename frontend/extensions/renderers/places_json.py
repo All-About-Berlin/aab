@@ -26,14 +26,18 @@ class PlacesRenderer(Renderer):
 
     def render(self, context: Context, changed_files: set[Path] | None = None) -> set[Path]:
         files_to_keep = set()
+        changed_places = {f for f in changed_files or set() if f.is_relative_to(config.content_path / "places")}
 
-        for file_path in get_files_in_path(config.content_path, changed_files, ".yaml"):
+        for file_path in get_files_in_path(config.content_path, suffix=".yaml"):
             if not file_path.is_relative_to(Path("places")):
                 continue
 
             source_path = config.content_path / file_path
             output_path = (config.output_path / file_path).with_suffix(".json")
             files_to_keep.add(output_path.relative_to(config.output_path))
+
+            if changed_files is not None and source_path not in changed_places:
+                continue
 
             places = yaml.safe_load(source_path.read_text())
             output_path.parent.mkdir(parents=True, exist_ok=True)
