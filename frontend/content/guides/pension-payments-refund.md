@@ -69,7 +69,7 @@ You can also get a pension refund if:[^1]
 
 - [ ] you made less than 60 monthly German pension payments
 - [ ] **and** you are at least 67 years old
-- [ ] **and** you live anywhere in the world
+- [ ] **and** you live anywhere in the world, including Bosnia and Herzegovina
 
 ### Israeli citizens
 
@@ -83,21 +83,13 @@ You can also get a pension refund if:[^1]
 
 - [ ] you made less than 60 monthly German pension payments
 - [ ] **and** you are at least 67 years old
-- [ ] **and** you live anywhere in the world
+- [ ] **and** you live anywhere in the world, including Israel
 
 ### Japanese citizens
 
-You can't get a refund while you live in Japan.[^6]
+You can get a pension refund if:[^6]
 
-You can't get a pension refund if:
-
-- [ ] you live in Japan
-- [ ] **and** your last pension payment was more than 24 months ago
-- [ ] **and** you made less than 60 monthly German pension payments
-
-You can get a pension refund if:[^7]
-
-- [ ] you do not live in Japan
+- [ ] you made less than 60 monthly German pension payments
 - [ ] **and** your last pension payment was more than 24 months ago
 - [ ] **and** you do not live in the [[European Union]], the United Kingdom, {{PENSION_DISQUALIFYING_COUNTRIES}}
 
@@ -105,7 +97,7 @@ You can also get a pension refund if:[^1]
 
 - [ ] you made less than 60 monthly German pension payments
 - [ ] **and** you are at least 67 years old
-- [ ] **and** you live anywhere in the world
+- [ ] **and** you live anywhere in the world, including Japan
 
 ### Korean citizens
 
@@ -123,7 +115,7 @@ You can also get a pension refund if:[^1]
 
 - [ ] you made less than 60 monthly German pension payments
 - [ ] **and** you are at least 67 years old
-- [ ] **and** you live anywhere in the world
+- [ ] **and** you live anywhere in the world, including Kosovo
 
 ### Montenegrin citizens
 
@@ -137,7 +129,7 @@ You can also get a pension refund if:[^1]
 
 - [ ] you made less than 60 monthly German pension payments
 - [ ] **and** you are at least 67 years old
-- [ ] **and** you live anywhere in the world
+- [ ] **and** you live anywhere in the world, including Montenegro
 
 ### Serbian citizens
 
@@ -151,7 +143,7 @@ You can also get a pension refund if:[^1]
 
 - [ ] you made less than 60 monthly German pension payments
 - [ ] **and** you are at least 67 years old
-- [ ] **and** you live anywhere in the world
+- [ ] **and** you live anywhere in the world, including Serbia
 
 ### Tunisian citizens
 
@@ -305,8 +297,7 @@ Tax advisors rarely have experience with German pension refunds. German embassie
 [^2]: [rentenfuchs.info](https://www.rentenfuchs.info/beitragserstattung-rentenversicherung/#:~:text=aufhalten.%20Hierzu%20geh%C3%B6ren%3A-,bosnien-herzegowina%2C%20kosovo%2C%20montenegro%20und%20serbien,-Staatsangeh%C3%B6rige%20der%20Staaten)
 [^3]: Georg from [Pension Refund Germany](/out/pension-refund-germany) (October 2024)
 [^5]: [rentenfuchs.info](https://www.rentenfuchs.info/beitragserstattung-rentenversicherung/#:~:text=bei%20staatsangehorigen%20des%20staates%20israel)
-[^6]: [Screenshot](/images/rene-pension-japan-2022-01-20.png)
-[^7]: [germanypensionrefund.com](https://www.germanypensionrefund.com/japan)
+[^6]: Georg from [Pension Refund Germany](/out/pension-refund-germany) (October 2026), [Screenshot](/images/rene-pension-japan-2022-01-20.png). Contradicts with [another source](https://www.germanypensionrefund.com/japan).
 [^8]: [rentenfuchs.info](https://www.rentenfuchs.info/beitragserstattung-rentenversicherung/#:~:text=wenn%20die%20person%20ihren%20wohnsitz%20%E2%80%93%20seit%20mindestens%20zwei%20jahren%20%E2%80%93%20im%20au%C3%9Fereuropaischen%20ausland%20hat)
 [^9]: [Screenshot](/images/german-pension-refund-tunisian-bank.png)
 [^10]: [rentenfuchs.info](https://www.rentenfuchs.info/beitragserstattung-rentenversicherung/#:~:text=beitragserstattung%20fur%20turkische%20staatsangehorige)
