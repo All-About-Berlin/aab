@@ -310,6 +310,7 @@ export default {
 					<p v-if="hasFlag('eea-national')">You can't get a German pension refund because you are a <glossary term="EEA">European Economic Area</glossary> citizen.</p>
 					<p v-if="hasFlag('eu-resident')">You can't get a German pension refund while you live in the European Union. If you leave the European Union, you can get a refund.</p>
 					<p v-if="hasFlag('disqualifying-country-resident')">You can't get a German pension refund while you live in Bosnia-Herzegovina, Kosovo, North Macedonia, Serbia or Turkey.</p>
+					<p v-if="hasFlag('india-nonnational-resident')">You can't get a German pension because you live in India, and you are not an Indian citizen. If you leave India, you can get a refund.</p>
 					<p v-if="hasFlag('israel-national') && hasFlag('israel-resident')">You can't get a pension refund because you live in Israel. If you leave Israel, you can get a pension refund.</p>
 					<p v-if="hasFlag('uk-national')">You can't get a pension refund because you are a citizen of the United Kingdom.</p>
 					<p v-else-if="hasFlag('uk-resident')">You can't get a pension refund while you live in the United Kingdom. If you leave the UK, you can get a pension refund.</p>

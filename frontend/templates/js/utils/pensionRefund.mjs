@@ -150,6 +150,12 @@ export function calculatePensionRefund(nationality, countryOfResidence, entryDat
 		flags.add('uk-resident');
 	}
 
+	// Non-Indians residing in India can't get a refund
+	if (countryOfResidence === 'IN' && nationality !== 'IN'){
+		flags.add('not-eligible');
+		flags.add('india-nonnational-resident');
+	}
+
 	if(!flags.has('not-eligible')) {
 		if(monthsSinceLastContribution >= 24) {
 			flags.add('eligible');

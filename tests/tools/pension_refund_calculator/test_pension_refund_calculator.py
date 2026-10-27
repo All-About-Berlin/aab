@@ -97,3 +97,10 @@ def test_not_eligible_nationality(page, pension_refund_calculator, test_screensh
     page.get_by_label("Nationality").select_option("France")
     page.get_by_label("Where do you live?").select_option("Canada")
     test_screenshot(page, pension_refund_calculator)
+
+
+def test_not_eligible_non_indian_resident_of_india(page, pension_refund_calculator, test_screenshot):
+    page.get_by_label("Nationality").select_option("Canada")
+    page.get_by_label("Where do you live?").select_option("India")
+    expect(pension_refund_calculator).to_contain_text("you live in India")
+    test_screenshot(page, pension_refund_calculator)

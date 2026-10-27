@@ -646,6 +646,16 @@ describe('calculatePensionRefund', () => {
 		});
 	});
 
+	describe('an Indian national who lives in India', () => {
+		const output = calculatePensionRefund('IN', 'IN', yearsAgo(12), yearsAgo(10), 30000, false);
+		it('is eligible for a refund', () => hasFlags(output, ['eligible', 'contracting-national']));
+	});
+
+	describe('a non-Indian national who lives in India', () => {
+		const output = calculatePensionRefund('CA', 'IN', yearsAgo(12), yearsAgo(10), 30000, false);
+		it('is not eligible for a refund', () => hasFlags(output, ['not-eligible', 'india-nonnational-resident']));
+	});
+
 	describe('a non-contracting country national', () => {
 		describe('who lives in the EU', () => {
 			const output = calculatePensionRefund('AO', 'FR', yearsAgo(12), yearsAgo(10), 30000, false);

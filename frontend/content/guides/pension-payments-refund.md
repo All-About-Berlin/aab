@@ -23,8 +23,9 @@ It depends on your nationality, and the country you live in. The rules are diffe
 You can get a refund if...
 
 - [ ] You are not forced to contribute to the German pension system
-- [ ] **and** you can't contribute voluntarily to the German pension system
-- [ ] **and** your last pension payment in the [[European Union]], {{PENSION_DISQUALIFYING_COUNTRIES}} was more than 24 months ago[^0]
+- [ ] **and** you can't make voluntary German public pension contributions
+- [ ] **and** your last pension payment in the [[European Union]], India, {{PENSION_DISQUALIFYING_COUNTRIES}} was more than 24 months ago[^0]
+- [ ] **and** you are an Indian citizen **or** you do not live in India[^4]
 
 To see the exact requirements, find your nationality below, or just use the [pension refund calculator](/tools/pension-refund-calculator).
 
@@ -49,7 +50,8 @@ You can get a pension refund if:
 
 - [ ] you made less than 60 monthly pension payments in Germany
 - [ ] **and** your last pension payment was more than 24 months ago
-- [ ] **and** you do not live in the [[European Union]], the United Kingdom {{PENSION_DISQUALIFYING_COUNTRIES}}
+- [ ] **and** you do not live in the [[European Union]], the United Kingdom, {{PENSION_DISQUALIFYING_COUNTRIES}}
+- [ ] **and** you are an Indian citizen **or** you do not live in India[^4]
 
 You can also get a pension refund if:[^1]
 
@@ -63,7 +65,7 @@ You can get a pension refund if:[^2]
 
 - [ ] you made less than 60 monthly German pension payments
 - [ ] **and** your last pension payment was more than 24 months ago
-- [ ] **and** you do not live in the [[European Union]], the United Kingdom, {{PENSION_DISQUALIFYING_COUNTRIES}}
+- [ ] **and** you do not live in the [[European Union]], the United Kingdom, India, {{PENSION_DISQUALIFYING_COUNTRIES}}
 
 You can also get a pension refund if:[^1]
 
@@ -77,7 +79,7 @@ You can get a pension refund if:[^5]
 
 - [ ] you do not live in Israel
 - [ ] **and** your last pension payment was more than 24 months ago
-- [ ] **and** you do not live in the [[European Union]], the United Kingdom, {{PENSION_DISQUALIFYING_COUNTRIES}}
+- [ ] **and** you do not live in the [[European Union]], the United Kingdom, India, {{PENSION_DISQUALIFYING_COUNTRIES}}
 
 You can also get a pension refund if:[^1]
 
@@ -91,7 +93,7 @@ You can get a pension refund if:[^6]
 
 - [ ] you made less than 60 monthly German pension payments
 - [ ] **and** your last pension payment was more than 24 months ago
-- [ ] **and** you do not live in the [[European Union]], the United Kingdom, {{PENSION_DISQUALIFYING_COUNTRIES}}
+- [ ] **and** you do not live in the [[European Union]], the United Kingdom, India, {{PENSION_DISQUALIFYING_COUNTRIES}}
 
 You can also get a pension refund if:[^1]
 
@@ -109,7 +111,7 @@ You can get a pension refund if:[^2]
 
 - [ ] you made less than 60 monthly German pension payments
 - [ ] **and** your last pension payment was more than 24 months ago
-- [ ] **and** you do not live in the [[European Union]], the United Kingdom, {{PENSION_DISQUALIFYING_COUNTRIES}}
+- [ ] **and** you do not live in the [[European Union]], the United Kingdom, India, {{PENSION_DISQUALIFYING_COUNTRIES}}
 
 You can also get a pension refund if:[^1]
 
@@ -123,7 +125,7 @@ You can get a pension refund if:[^2]
 
 - [ ] you made less than 60 monthly German pension payments
 - [ ] **and** your last pension payment was more than 24 months ago
-- [ ] **and** you do not live in the [[European Union]], the United Kingdom, {{PENSION_DISQUALIFYING_COUNTRIES}}
+- [ ] **and** you do not live in the [[European Union]], the United Kingdom, India, {{PENSION_DISQUALIFYING_COUNTRIES}}
 
 You can also get a pension refund if:[^1]
 
@@ -137,7 +139,7 @@ You can get a pension refund if:[^2]
 
 - [ ] you made less than 60 monthly German pension payments
 - [ ] **and** your last pension payment was more than 24 months ago
-- [ ] **and** you do not live in the [[European Union]], the United Kingdom, {{PENSION_DISQUALIFYING_COUNTRIES}}
+- [ ] **and** you do not live in the [[European Union]], the United Kingdom, India, {{PENSION_DISQUALIFYING_COUNTRIES}}
 
 You can also get a pension refund if:[^1]
 
@@ -149,7 +151,7 @@ You can also get a pension refund if:[^1]
 
 You can get a pension refund if:[^8]
 
-- [ ] Your last pension payment was more than 24 months ago **and** you do not live in the [[European Union]], the United Kingdom, {{PENSION_DISQUALIFYING_COUNTRIES}}
+- [ ] Your last pension payment was more than 24 months ago **and** you do not live in the [[European Union]], the United Kingdom, India, {{PENSION_DISQUALIFYING_COUNTRIES}}
 - [ ] **or** you are at least 67 years old and you made less than 60 monthly German pension payments[^1]
 
 If you live in Tunisia, you must use a Tunisian bank account for your refund.[^9]
@@ -296,6 +298,7 @@ Tax advisors rarely have experience with German pension refunds. German embassie
 [^1]: [rentenfuchs.info](https://www.rentenfuchs.info/beitragserstattung-rentenversicherung/#:~:text=gesetzlichen%20Rentenversicherung%20zahlt.-,beitragserstattung%20bei%20erreichen%20der%20regelaltersgrenze,-Als%20n%C3%A4chstes%20werde)
 [^2]: [rentenfuchs.info](https://www.rentenfuchs.info/beitragserstattung-rentenversicherung/#:~:text=aufhalten.%20Hierzu%20geh%C3%B6ren%3A-,bosnien-herzegowina%2C%20kosovo%2C%20montenegro%20und%20serbien,-Staatsangeh%C3%B6rige%20der%20Staaten)
 [^3]: Georg from [Pension Refund Germany](/out/pension-refund-germany) (October 2024)
+[^4]: [germanypensionrefund.com](https://www.germanypensionrefund.com/india#:~:text=living%20in%20india%20never%20blocks%20your%20claim%20%E2%80%94%20an%20exception%20no%20other%20nationality%20has) (October 2026), Georg from [Pension Refund Germany](/out/pension-refund-germany) (October 2026)
 [^5]: [rentenfuchs.info](https://www.rentenfuchs.info/beitragserstattung-rentenversicherung/#:~:text=bei%20staatsangehorigen%20des%20staates%20israel)
 [^6]: Georg from [Pension Refund Germany](/out/pension-refund-germany) (October 2026), [Screenshot](/images/rene-pension-japan-2022-01-20.png). Contradicts with [another source](https://www.germanypensionrefund.com/japan).
 [^8]: [rentenfuchs.info](https://www.rentenfuchs.info/beitragserstattung-rentenversicherung/#:~:text=wenn%20die%20person%20ihren%20wohnsitz%20%E2%80%93%20seit%20mindestens%20zwei%20jahren%20%E2%80%93%20im%20au%C3%9Fereuropaischen%20ausland%20hat)
