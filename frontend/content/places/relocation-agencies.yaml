@@ -6,7 +6,7 @@
   longitude: 13.413001
   google_place_id: ChIJSZ-A9whSqEcRt_U8PUJ2yes
   recommended: true
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Pankow
   suburb: Prenzlauer Berg
   quarter: Nordisches Viertel
@@ -18,7 +18,7 @@
   longitude: 13.466997
   google_place_id: ChIJcaz22xxPqEcRNx0IeCMtUW0
   recommended: true
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Friedrichshain
   quarter: Travekiez
@@ -29,7 +29,7 @@
   latitude: 52.486764
   longitude: 13.355594
   google_place_id: ChIJnSdXt05QqEcRxtPkLAvIFhU
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Tempelhof-Schöneberg
   suburb: Schöneberg
   quarter: Akazienkiez
@@ -40,7 +40,7 @@
   latitude: 52.526926
   longitude: 13.303929
   google_place_id: ChIJATwypJVRqEcRp66GNm6hn9E
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Charlottenburg
   quarter: Mierendorffkiez
@@ -52,7 +52,7 @@
   latitude: 52.499822
   longitude: 13.300086
   google_place_id: ChIJ_baj2MJQqEcR8rFiZB7WJ4E
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Halensee
 - name: relokate
@@ -63,7 +63,7 @@
   latitude: 52.488105
   longitude: 13.423089
   google_place_id: ChIJ-xjUx89RqEcRQ--n7IgH68c
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Kreuzberg
   quarter: Graefekiez
@@ -73,7 +73,7 @@
   latitude: 52.524451
   longitude: 13.404204
   google_place_id: ChIJK9dABp1PqEcRNVxtfLrRVL0
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Mitte
   quarter: Spandauer Vorstadt
@@ -85,7 +85,7 @@
   latitude: 52.489632
   longitude: 13.362342
   google_place_id: ChIJ_8W4hphRqEcR8PRJBoSmDqw
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Tempelhof-Schöneberg
   suburb: Schöneberg
   quarter: Crellekiez
@@ -96,7 +96,7 @@
   latitude: 52.510424
   longitude: 13.378358
   google_place_id: ChIJreiFX8lRqEcRGIFGOhyNGEU
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Mitte
 - name: Impats
@@ -106,7 +106,7 @@
   latitude: 52.527137
   longitude: 13.472285
   google_place_id: ChIJTcZOf4dOqEcRAP0GOt4y9mM
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Lichtenberg
   suburb: Fennpfuhl
 - name: von Wrede Relocation
@@ -114,10 +114,10 @@
   website: https://www.vonwrede-relocation.com
   email: contact@vonwrede-relocation.com
   address: Goethestraße 32
-  latitude: 52.442639
-  longitude: 13.234233
+  latitude: 52.442645
+  longitude: 13.234212
   google_place_id: ChIJNd14hYVZqEcR-uxJZNLDsW0
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Steglitz-Zehlendorf
   suburb: Zehlendorf
   quarter: Waldsiedlung Krumme Lanke
@@ -128,7 +128,7 @@
   latitude: 52.499505
   longitude: 13.385835
   google_place_id: ChIJFzbqHPFRqEcR1J98FBibcvM
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Kreuzberg
   quarter: Zeitungsviertel
@@ -158,7 +158,7 @@
   latitude: 52.49581
   longitude: 13.42502
   google_place_id: ChIJ-_ce_TCw_QgRIOJmgP2IpSA
-  last_verified: 2026-04-30
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Kreuzberg
   quarter: Luisenstadt

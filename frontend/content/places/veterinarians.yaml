@@ -4,7 +4,7 @@
   latitude: 52.549645
   longitude: 13.416853
   google_place_id: ChIJy8UN_wZSqEcR-k_-PkvsA7U
-  last_verified: 2026-04-25
+  last_verified: 2026-10-27
   borough: Pankow
   suburb: Prenzlauer Berg
 - name: Ellen Laskawy
@@ -13,7 +13,7 @@
   latitude: 52.51766
   longitude: 13.466337
   google_place_id: ChIJZ3MH0GFOqEcRAlDyXqdn1Vs
-  last_verified: 2026-04-25
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Friedrichshain
   quarter: Samariterviertel
@@ -23,7 +23,7 @@
   latitude: 52.486971
   longitude: 13.436771
   google_place_id: ChIJy2oP2a9PqEcRyWvPB8t_hLk
-  last_verified: 2026-04-25
+  last_verified: 2026-10-27
   borough: Neukölln
   suburb: Neukölln
   quarter: Donaukiez
@@ -33,7 +33,7 @@
   latitude: 52.509276
   longitude: 13.28588
   google_place_id: ChIJX1oRn9ZQqEcRIqQV9ihuq-E
-  last_verified: 2026-04-25
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Charlottenburg
   quarter: Witzleben
@@ -43,26 +43,16 @@
   latitude: 52.420183
   longitude: 13.578411
   google_place_id: ChIJIflYY-lHqEcRwy1wGgqiqQI
-  last_verified: 2026-04-25
+  last_verified: 2026-10-27
   borough: Treptow-Köpenick
   suburb: Grünau
-- name: Dr. Michael Förster
-  website: https://www.tierarzt-onlineverzeichnis.de/tierarztpraxis/10559-berlin/dr-michael-foerster/2252/
-  address: Birkenstraße 58
-  latitude: 52.531001
-  longitude: 13.345588
-  google_place_id: ChIJEymS_3RRqEcREoOKJtqpmGk
-  last_verified: 2026-04-25
-  borough: Mitte
-  suburb: Moabit
-  quarter: Stephankiez
 - name: Dr. Miriam Bertram
   website: https://www.facebook.com/praxistierzuliebe/
   address: Edisonstraße 12
   latitude: 52.463189
   longitude: 13.514088
   google_place_id: ChIJqye9GLdIqEcR-DuVymFQcv4
-  last_verified: 2026-04-25
+  last_verified: 2026-10-27
   borough: Treptow-Köpenick
   suburb: Oberschöneweide
 - name: Dr. Pastor
@@ -71,17 +61,17 @@
   latitude: 52.54868
   longitude: 13.35316
   google_place_id: ChIJQ2dWIX5RqEcRqpQ3prmBRRE
-  last_verified: 2026-04-25
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Wedding
   quarter: Brüsseler Kiez
 - name: Dr. Peter Vogel
   website: https://www.drpetervogel.de/en
   address: Finowstraße 14
-  latitude: 52.511403
-  longitude: 13.466605
+  latitude: 52.511384
+  longitude: 13.466613
   google_place_id: ChIJv21pAl5OqEcR_5WtvO1OgT0
-  last_verified: 2026-04-25
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Friedrichshain
   quarter: Travekiez
@@ -91,27 +81,27 @@
   latitude: 52.531018
   longitude: 13.427835
   google_place_id: ChIJc55ylY1PqEcRcc2G0Gx7sms
-  last_verified: 2026-04-25
+  last_verified: 2026-10-27
   borough: Pankow
   suburb: Prenzlauer Berg
   quarter: Winsviertel
 - name: Dr. Sven Stahlhut
   website: https://www.tierarztamwestend.de/
-  address: Sophie-Charlotten-Straße 22
-  latitude: 52.517998
-  longitude: 13.286294
+  address: Heerstraße 20
+  latitude: 52.509303
+  longitude: 13.265733
   google_place_id: ChIJcawfl8UjZUERgmsDmsvPeP0
-  last_verified: 2026-04-25
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
-  suburb: Charlottenburg
-  quarter: Danckelmannkiez
+  suburb: Westend
+  quarter: Villenkolonie Westend
 - name: Dr. Till Robl
   website: https://www.tierarztpraxis-robl.de/
   address: Stettiner Str. 5
   latitude: 52.552065
   longitude: 13.384819
   google_place_id: ChIJ1dWf7CNSqEcRvSFAk6HGgug
-  last_verified: 2026-04-25
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Gesundbrunnen
 - name: Dr. Uwe Lenk
@@ -120,7 +110,7 @@
   latitude: 52.550188
   longitude: 13.408333
   google_place_id: ChIJiTZh5ARSqEcRp6ScxP0qAIA
-  last_verified: 2026-04-25
+  last_verified: 2026-10-27
   borough: Pankow
   suburb: Prenzlauer Berg
   quarter: Nordisches Viertel
@@ -128,12 +118,13 @@
   description: Mobile vet, also speaks French
   website: https://tierarzt-mobil-berlin.de/
   address: Gutzkowstraße 4
-  latitude: 52.479769
-  longitude: 13.348978
+  latitude: 52.479746
+  longitude: 13.348994
   google_place_id: ChIJDX2T0wRRqEcRcYe5WryMN5A
-  last_verified: 2026-04-25
+  last_verified: 2026-10-27
   borough: Tempelhof-Schöneberg
   suburb: Schöneberg
+  quarter: Akazienkiez
 - name: Tierarzt Bärenwiese
   description: English website, online appointments
   website: https://tierarzt-baerenwiese.de/en/home/
@@ -141,7 +132,7 @@
   latitude: 52.497414
   longitude: 13.324851
   google_place_id: ChIJnWFGyfBQqEcRPdUp-g9guVM
-  last_verified: 2026-04-25
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Wilmersdorf
   quarter: Fasanenkiez
@@ -152,7 +143,7 @@
   latitude: 52.475141
   longitude: 13.340041
   google_place_id: ChIJ2TbwkSxRqEcRqZp2xmoPpW0
-  last_verified: 2026-04-25
+  last_verified: 2026-10-27
   borough: Tempelhof-Schöneberg
   suburb: Schöneberg
 - name: Tierarztpraxis Watson
@@ -161,7 +152,7 @@
   latitude: 52.468627
   longitude: 13.433142
   google_place_id: ChIJxa1I3ZtPqEcROSVpNEkug4w
-  last_verified: 2026-04-25
+  last_verified: 2026-10-27
   borough: Neukölln
   suburb: Neukölln
   quarter: Körnerkiez
@@ -171,7 +162,7 @@
   latitude: 52.491482
   longitude: 13.31823
   google_place_id: ChIJ5Rv0TvJQqEcRyPe6x2kHX_0
-  last_verified: 2026-04-30
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Wilmersdorf
   quarter: Güntzelkiez

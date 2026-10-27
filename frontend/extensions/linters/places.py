@@ -16,7 +16,7 @@ def get_google_place(place_id: str) -> dict:
     google_place = googlemaps.Client(key=config.google_maps_places_api_key).place(place_id, language="en")["result"]
     return {
         "name": google_place["name"],
-        "address": re.sub(r"(, (\d{5} )?Berlin)?, Germany$", "", google_place["formatted_address"]).strip(),
+        "address": re.sub(r"(, (\d{5} )?Berlin(-Bezirk [^,]+)?)?, Germany$", "", google_place["formatted_address"]).strip(),
         "latitude": str(round(google_place["geometry"]["location"]["lat"], 6)),
         "longitude": str(round(google_place["geometry"]["location"]["lng"], 6)),
         "website": google_place.get("website"),

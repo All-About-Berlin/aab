@@ -5,7 +5,7 @@
   latitude: 52.597486
   longitude: 13.332776
   google_place_id: ChIJdWE4U3hTqEcR_yPkvGZvFsU
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Reinickendorf
   suburb: Wittenau
 - name: Fahrschule Oscar
@@ -15,7 +15,7 @@
   latitude: 52.476396
   longitude: 13.341839
   google_place_id: ChIJuSTm5G9QqEcR_OQvwfdHMRQ
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Tempelhof-Schöneberg
   suburb: Schöneberg
 - name: Fahrschule Asphalt Profis
@@ -25,7 +25,7 @@
   latitude: 52.528759
   longitude: 13.428365
   google_place_id: ChIJp4LuPBBOqEcR7JyEDH88H6s
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Pankow
   suburb: Prenzlauer Berg
   quarter: Winsviertel
@@ -37,7 +37,7 @@
   latitude: 52.467024
   longitude: 13.384794
   google_place_id: ChIJiy992fxPqEcR51Ux3BYhdgE
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Tempelhof-Schöneberg
   suburb: Tempelhof
 - name: Fahrschule Aktiv
@@ -47,7 +47,7 @@
   latitude: 52.551589
   longitude: 13.367659
   google_place_id: ChIJNe4EXylSqEcRKV_1eAp4nlc
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Gesundbrunnen
   quarter: Antonkiez
@@ -58,7 +58,7 @@
   latitude: 52.505406
   longitude: 13.469757
   google_place_id: ChIJ5yv_re9PqEcRH1VmlRqySPc
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Friedrichshain
   quarter: Travekiez
@@ -69,7 +69,7 @@
   latitude: 52.554539
   longitude: 13.375945
   google_place_id: ChIJZ-2Egi9SqEcRD23O5VhKYV8
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Gesundbrunnen
 - name: Kiez-Fahrschule Frenzel
@@ -79,7 +79,7 @@
   latitude: 52.5317
   longitude: 13.43133
   google_place_id: ChIJcZQfqw9OqEcRIgNBwfBG6X4
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Pankow
   suburb: Prenzlauer Berg
   quarter: Bötzowkiez
@@ -89,7 +89,7 @@
   latitude: 52.489267
   longitude: 13.408768
   google_place_id: ChIJdQablM9PqEcR73gU3YlwGYo
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Kreuzberg
   quarter: Graefekiez
@@ -99,7 +99,7 @@
   latitude: 52.483818
   longitude: 13.430455
   google_place_id: ChIJ_-pg5blPqEcRKETOQf9dAKY
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Neukölln
   suburb: Neukölln
   quarter: Flughafenkiez
@@ -109,7 +109,7 @@
   latitude: 52.535647
   longitude: 13.357166
   google_place_id: ChIJK5dC8JxRqEcRLvhe50X_dpY
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Moabit
   quarter: Stephankiez
@@ -120,7 +120,7 @@
   latitude: 52.525348
   longitude: 13.304827
   google_place_id: ChIJZQ4LrjtRqEcRbYCtZGQ6p9A
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Charlottenburg
   quarter: Mierendorffkiez
@@ -131,7 +131,7 @@
   latitude: 52.470332
   longitude: 13.441748
   google_place_id: ChIJi-MbE6RPqEcRYrCbYn_6Kks
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Neukölln
   suburb: Neukölln
 - name: Fahrschule Prima
@@ -139,12 +139,13 @@
   website: http://www.fahrschule-prima.de/
   email: info@fahrschule-prima.de
   address: Dudenstraße 8
-  latitude: 52.485175
-  longitude: 13.384574
+  latitude: 52.485247
+  longitude: 13.384618
   google_place_id: ChIJq47PJSFQqEcRtqcVwtnRGw4
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Kreuzberg
+  quarter: Bergmannkiez
 - name: Fahrschule Spur 2
   description: They speak English and Kurdish.
   website: http://www.fahrschule-spur.de/
@@ -152,7 +153,7 @@
   latitude: 52.463892
   longitude: 13.370289
   google_place_id: ChIJyyAzE59RqEcR0dOiDRbnAck
-  last_verified: 2026-04-30
+  last_verified: 2026-10-27
   borough: Tempelhof-Schöneberg
   suburb: Tempelhof
   quarter: null

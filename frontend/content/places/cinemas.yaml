@@ -4,7 +4,7 @@
   latitude: 52.511858
   longitude: 13.461648
   google_place_id: ChIJbRmdW_lOqEcR5HPpJoIMPuA
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Friedrichshain
   quarter: Boxhagener Kiez
@@ -15,7 +15,7 @@
   latitude: 52.525938
   longitude: 13.411423
   google_place_id: ChIJq6ra2B1OqEcRtEYQoe9BmTE
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Mitte
   quarter: Rosenthaler Vorstadt
@@ -27,7 +27,7 @@
   latitude: 52.524048
   longitude: 13.402226
   google_place_id: ChIJFVgg3OBRqEcR1qB4VWlJp-E
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Mitte
   quarter: Spandauer Vorstadt
@@ -37,7 +37,7 @@
   latitude: 52.524572
   longitude: 13.401815
   google_place_id: ChIJ71105-BRqEcRpsjmghOEVcQ
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Mitte
   quarter: Spandauer Vorstadt
@@ -48,7 +48,7 @@
   latitude: 52.509006
   longitude: 13.367258
   google_place_id: ChIJ26fE-MlRqEcRSdaXVkAJ_8Q
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Tiergarten
 - name: Rollberg (Yorck)
@@ -57,7 +57,7 @@
   latitude: 52.478625
   longitude: 13.428024
   google_place_id: ChIJfdgzWbxPqEcR-uBRMYjSZwg
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Neukölln
   suburb: Neukölln
   quarter: Flughafenkiez
@@ -67,7 +67,7 @@
   latitude: 52.477595
   longitude: 13.439173
   google_place_id: ChIJncRx2aNPqEcRGNu6z9ymrRE
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Neukölln
   suburb: Neukölln
   quarter: Körnerkiez
@@ -77,7 +77,7 @@
   latitude: 52.482131
   longitude: 13.349547
   google_place_id: ChIJAza0KGpQqEcRhqmME_bfEmo
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Tempelhof-Schöneberg
   suburb: Schöneberg
   quarter: Akazienkiez
@@ -88,7 +88,7 @@
   latitude: 52.520478
   longitude: 13.422848
   google_place_id: ChIJH7q9khdOqEcR_AFoi_omA0w
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Mitte
 - name: Neues Off (Yorck)
@@ -97,7 +97,7 @@
   latitude: 52.483449
   longitude: 13.424482
   google_place_id: ChIJm_ftFI5ZqEcRflhrA9kr73E
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Neukölln
   suburb: Neukölln
   quarter: Flughafenkiez
@@ -107,7 +107,7 @@
   latitude: 52.529045
   longitude: 13.430353
   google_place_id: ChIJV1P1qINPqEcRuySJjy1CI3s
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Pankow
   suburb: Prenzlauer Berg
   quarter: Bötzowkiez
@@ -117,7 +117,7 @@
   latitude: 52.506783
   longitude: 13.308327
   google_place_id: ChIJkSloluBQqEcRM5AkRyh-WgE
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Charlottenburg
 - name: Delphi Filmpalast (Yorck)
@@ -126,7 +126,7 @@
   latitude: 52.506032
   longitude: 13.32851
   google_place_id: ChIJm6SNNPxQqEcRq8bcTLwe7y0
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Charlottenburg
 - name: Cinema Paris (Yorck)
@@ -136,7 +136,7 @@
   latitude: 52.502042
   longitude: 13.324787
   google_place_id: ChIJmxmTNPxQqEcREhXdT1rk9vQ
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Charlottenburg
 - name: Capitol Dahlem (Yorck)
@@ -145,7 +145,7 @@
   latitude: 52.453037
   longitude: 13.286726
   google_place_id: ChIJ74aV7WtaqEcRKrpk-0dm2Z0
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Steglitz-Zehlendorf
   suburb: Dahlem
 - name: Blauer Stern (Yorck)
@@ -154,7 +154,7 @@
   latitude: 52.580377
   longitude: 13.401193
   google_place_id: ChIJ0dvTsF1SqEcRS6HA5RRm838
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Pankow
   suburb: Niederschönhausen
 - name: Babylon Kreuzberg (Yorck)
@@ -163,7 +163,7 @@
   latitude: 52.500669
   longitude: 13.416903
   google_place_id: ChIJxea3BzNOqEcRUuCIlU0yxZ0
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Kreuzberg
   quarter: Luisenstadt

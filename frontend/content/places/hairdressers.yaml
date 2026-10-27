@@ -4,7 +4,7 @@
   latitude: 52.48686
   longitude: 13.43054
   google_place_id: ChIJgaMEvrBPqEcRbKHNprYEXsg
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Neukölln
   suburb: Neukölln
   quarter: Reuterkiez
@@ -14,7 +14,7 @@
   latitude: 52.48669
   longitude: 13.42928
   google_place_id: ChIJUavMsbBPqEcRGwYeKbghHog
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Neukölln
   suburb: Neukölln
   quarter: Reuterkiez
@@ -25,7 +25,7 @@
   latitude: 52.48912
   longitude: 13.40473
   google_place_id: ChIJrYP5VtZPqEcRJEwYIJqbODw
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Kreuzberg
   quarter: Bergmannkiez
@@ -35,7 +35,7 @@
   latitude: 52.518039
   longitude: 13.465271
   google_place_id: ChIJ15O-uGFOqEcRXCj3zMtR4iY
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Friedrichshain
   quarter: Samariterviertel
@@ -46,7 +46,7 @@
   latitude: 52.537167
   longitude: 13.418598
   google_place_id: ChIJ63S2ngFOqEcRHW14FpYouL8
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Pankow
   suburb: Prenzlauer Berg
   quarter: Kollwitzkiez
@@ -57,7 +57,7 @@
   latitude: 52.501529
   longitude: 13.328743
   google_place_id: ChIJ7-jmXflQqEcRAfMJdpdbjto
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Charlottenburg
 - name: MAOC (Modern Art of Cutting) Hair
@@ -66,7 +66,7 @@
   latitude: 52.529203
   longitude: 13.380092
   google_place_id: ChIJfQgSVOtRqEcR4XRVAAP3Xfo
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Mitte
   quarter: Charitéviertel
@@ -77,7 +77,7 @@
   latitude: 52.492614
   longitude: 13.421154
   google_place_id: ChIJ_-n5JcpPqEcRCqF4hbAxUJk
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Kreuzberg
   quarter: Graefekiez
@@ -87,7 +87,7 @@
   latitude: 52.500645
   longitude: 13.438633
   google_place_id: ChIJKeW1L0xOqEcRoZhjU6zLqZY
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Kreuzberg
   quarter: Luisenstadt
@@ -97,7 +97,7 @@
   latitude: 52.500727
   longitude: 13.429511
   google_place_id: ChIJqwbxakpOqEcRKSYTra4xGTo
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Kreuzberg
   quarter: Luisenstadt
@@ -107,7 +107,7 @@
   latitude: 52.497204
   longitude: 13.445046
   google_place_id: ChIJ6SRq9k1OqEcRZd-8XLrbsMY
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Kreuzberg
   quarter: Luisenstadt
@@ -117,7 +117,7 @@
   latitude: 52.539955
   longitude: 13.412548
   google_place_id: ChIJW5h0qf9RqEcRppPqWT_3e0o
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Pankow
   suburb: Prenzlauer Berg
   quarter: Helmholtzkiez
@@ -127,7 +127,7 @@
   latitude: 52.527552
   longitude: 13.400949
   google_place_id: ChIJubD8G-RRqEcRQ8tHxbIkROg
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Mitte
   quarter: Spandauer Vorstadt
@@ -138,7 +138,7 @@
   latitude: 52.488076
   longitude: 13.391718
   google_place_id: ChIJsZIgZNhPqEcR0CyirGxmrlk
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Kreuzberg
 - name: The Banana'd Bouffant
@@ -148,7 +148,7 @@
   latitude: 52.493677
   longitude: 13.379971
   google_place_id: ChIJT8Z9ty9QqEcRbQR43aIgpIk
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Kreuzberg
 - name: Friseur Viktor Leske Mitte
@@ -157,7 +157,7 @@
   latitude: 52.527552
   longitude: 13.400949
   google_place_id: ChIJubD8G-RRqEcRQ8tHxbIkROg
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Mitte
   quarter: Spandauer Vorstadt
@@ -167,7 +167,7 @@
   latitude: 52.492614
   longitude: 13.421154
   google_place_id: ChIJ_-n5JcpPqEcRCqF4hbAxUJk
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Kreuzberg
   quarter: Graefekiez
@@ -177,7 +177,7 @@
   latitude: 52.500727
   longitude: 13.429511
   google_place_id: ChIJqwbxakpOqEcRKSYTra4xGTo
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Kreuzberg
   quarter: Luisenstadt
@@ -188,7 +188,7 @@
   latitude: 52.539587
   longitude: 13.423992
   google_place_id: ChIJn3s1SgdOqEcR30AlIauYIhM
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Pankow
   suburb: Prenzlauer Berg
 - name: Friseur Bernd Kramer Hairdesign
@@ -207,7 +207,7 @@
   latitude: 52.487086
   longitude: 13.352857
   google_place_id: ChIJs2NlZAZRqEcRkHI3InkIbCw
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Tempelhof-Schöneberg
   suburb: Schöneberg
   quarter: Akazienkiez
@@ -217,7 +217,7 @@
   latitude: 52.502023
   longitude: 13.341317
   google_place_id: ChIJB2MJJeVQqEcR_hfMBpg115g
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Tempelhof-Schöneberg
   suburb: Schöneberg
   quarter: Nollendorfkiez
@@ -228,7 +228,7 @@
   latitude: 52.4642
   longitude: 13.330912
   google_place_id: ChIJLwGio4JaqEcRN6_2JZqukYw
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Steglitz-Zehlendorf
   suburb: Steglitz
   quarter: Bismarckviertel
@@ -240,7 +240,7 @@
   latitude: 52.529516
   longitude: 13.40191
   google_place_id: ChIJxbJzYZJRqEcRUVPg19ir-tk
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Mitte
   quarter: Rosenthaler Vorstadt
@@ -252,7 +252,7 @@
   latitude: 52.489173
   longitude: 13.397675
   google_place_id: ChIJWczGW8VPqEcR8zMYY7Zoqe8
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Kreuzberg
   quarter: Bergmannkiez
@@ -263,7 +263,7 @@
   latitude: 52.529987
   longitude: 13.342973
   google_place_id: ChIJwY0Z9qpRqEcRSNnCSzQWsyk
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Moabit
   quarter: Stephankiez
@@ -274,7 +274,7 @@
   latitude: 52.473544
   longitude: 13.439184
   google_place_id: ChIJ-XbhXJ9PqEcRQ0nwxtRlixQ
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Neukölln
   suburb: Neukölln
   quarter: Körnerkiez
@@ -285,7 +285,7 @@
   latitude: 52.535128
   longitude: 13.397704
   google_place_id: ChIJT7xPfZVRqEcRLen82no-gJs
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Mitte
   quarter: Arkonakiez
@@ -297,7 +297,7 @@
   latitude: 52.502033
   longitude: 13.324312
   google_place_id: ChIJB9KL-cVRqEcRdBAcUXyA5V8
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Charlottenburg
 - name: Salone39
@@ -307,7 +307,7 @@
   latitude: 52.515407
   longitude: 13.463405
   google_place_id: ChIJXSSIhdlPqEcRtyS6SWedMF0
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Friedrichshain
   quarter: Samariterviertel
@@ -315,10 +315,10 @@
   description: Irish barber. They also have a bar and serve Guinness.
   website: http://badfishbarbershop.com/
   address: Krossener Str. 18
-  latitude: 52.510547
-  longitude: 13.457827
+  latitude: 52.510436
+  longitude: 13.45796
   google_place_id: ChIJQRgjmB9PqEcRG8WLLjGbEt4
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Friedrichshain
   quarter: Boxhagener Kiez
@@ -328,7 +328,7 @@
   latitude: 52.509673
   longitude: 13.451704
   google_place_id: ChIJ9wxTME9PqEcRWQSf8owWZV8
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Friedrichshain
   quarter: Mediaspree
@@ -338,7 +338,7 @@
   latitude: 52.526744
   longitude: 13.337364
   google_place_id: ChIJqw_YkTVTqEcR8a-YMM9hDNA
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Moabit
 - name: Mado barber shop
@@ -348,7 +348,7 @@
   latitude: 52.542359
   longitude: 13.412723
   google_place_id: ChIJlQGhf2NNqEcRVm7RjvUXxZA
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Pankow
   suburb: Prenzlauer Berg
 - name: Berlin Barbers Charlottenburg
@@ -357,7 +357,7 @@
   latitude: 52.513335
   longitude: 13.304512
   google_place_id: ChIJ2-Z75yBRqEcRNiQSvzQhgSY
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Charlottenburg
   quarter: Alt-Lietzow
@@ -368,7 +368,7 @@
   latitude: 52.531225
   longitude: 13.369909
   google_place_id: ChIJq48f79ZRqEcRhIIApXA7QFE
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Moabit
   quarter: Europacity
@@ -379,7 +379,7 @@
   latitude: 52.542307
   longitude: 13.358133
   google_place_id: ChIJXfI_D9VRqEcRJwPow1xV65Y
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Wedding
   quarter: Sprengelkiez
@@ -391,7 +391,7 @@
   latitude: 52.512618
   longitude: 13.450756
   google_place_id: ChIJN7dacftPqEcRPj9LDR1yrJw
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Friedrichshain
   quarter: Boxhagener Kiez
@@ -402,7 +402,7 @@
   latitude: 52.51432
   longitude: 13.45904
   google_place_id: ChIJfTthsPhPqEcRE8s4AQpznSQ
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Friedrichshain
   quarter: Boxhagener Kiez
@@ -412,7 +412,7 @@
   latitude: 48.865327
   longitude: 2.349591
   google_place_id: ChIJebN16Rlu5kcRFwINZ8mm2uk
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   suburb: Paris 2e Arrondissement
   city: Paris
 - name: St Leonard
@@ -422,7 +422,7 @@
   latitude: 52.535237
   longitude: 13.397534
   google_place_id: ChIJTdxQpTZRqEcRCqDpusto-rQ
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Mitte
   quarter: Arkonakiez
@@ -433,7 +433,7 @@
   latitude: 52.5041
   longitude: 13.322439
   google_place_id: ChIJLaDLwc9RqEcRTNXDCWcHZb0
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Charlottenburg
 - name: Roberto's Gentlemen's Suppliers
@@ -444,7 +444,7 @@
   latitude: 52.516182
   longitude: 13.391034
   google_place_id: ChIJCxHtQdtRqEcRyvfkH3RRiHY
-  last_verified: 2026-04-30
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Mitte
   quarter: Dorotheenstadt
@@ -455,7 +455,7 @@
   latitude: 52.503123
   longitude: 13.304178
   google_place_id: ChIJjao9vllRqEcRAS9MGSxGoO4
-  last_verified: 2026-04-30
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Charlottenburg
   quarter: Witzleben

@@ -4,7 +4,7 @@
   latitude: 52.523312
   longitude: 13.416616
   google_place_id: ChIJ-wBLKBlOqEcRq2t0vHy6S8s
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Mitte
 - name: FitX Fitnessstudio Hellersdorf
@@ -13,7 +13,7 @@
   latitude: 52.536408
   longitude: 13.60287
   google_place_id: ChIJkbmFXzNKqEcR_gZvf6LDvYA
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Marzahn-Hellersdorf
   suburb: Hellersdorf
   quarter: Kastanienallee
@@ -23,7 +23,7 @@
   latitude: 52.485422
   longitude: 13.356002
   google_place_id: ChIJUYomW0BQqEcRamBvYsxKOIM
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Tempelhof-Schöneberg
   suburb: Schöneberg
   quarter: Akazienkiez
@@ -33,7 +33,7 @@
   latitude: 52.478143
   longitude: 13.364681
   google_place_id: ChIJO8BkiD1QqEcRY0TigxJ3xzs
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Tempelhof-Schöneberg
   suburb: Schöneberg
   quarter: Rote Insel
@@ -43,7 +43,7 @@
   latitude: 52.454114
   longitude: 13.387692
   google_place_id: ChIJA-m4LVdFqEcRKLzbJCpa2g0
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Tempelhof-Schöneberg
   suburb: Mariendorf
 - name: FitX Fitnessstudio Waidmannslust
@@ -52,7 +52,7 @@
   latitude: 52.607878
   longitude: 13.324964
   google_place_id: ChIJIwhoXZ1UqEcRxU3Kj70nX2Y
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Reinickendorf
   suburb: Waidmannslust
 - name: FitX Fitnessstudio Wilmersdorf
@@ -61,8 +61,7 @@
   latitude: 52.49875
   longitude: 13.303
   google_place_id: ChIJ5WzFn8JQqEcRpBMsUXxpgpE
-  status: CLOSED_TEMPORARILY
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Wilmersdorf
 - name: JOHN REED Fitness Kreuzberg
@@ -71,7 +70,7 @@
   latitude: 52.495359
   longitude: 13.420099
   google_place_id: ChIJv9CiCMtPqEcRF5Fo74udAJA
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Kreuzberg
   quarter: Graefekiez
@@ -81,7 +80,7 @@
   latitude: 52.528426
   longitude: 13.416379
   google_place_id: ChIJgVtpjBxOqEcR-z-iXveHbcY
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Pankow
   suburb: Prenzlauer Berg
   quarter: Kollwitzkiez
@@ -91,7 +90,7 @@
   latitude: 52.430956
   longitude: 13.549099
   google_place_id: ChIJOaY-59JHqEcRmIPhjqlFPLo
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Treptow-Köpenick
   suburb: Adlershof
   quarter: Adlershof-Süd
@@ -101,7 +100,7 @@
   latitude: 52.503689
   longitude: 13.338794
   google_place_id: ChIJG2BavFVQqEcR4l1NW1XMvHY
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Schöneberg
 - name: McFIT Fitnessstudio Heinersdorf
@@ -110,7 +109,7 @@
   latitude: 52.565443
   longitude: 13.444232
   google_place_id: ChIJtWXu_I1NqEcRAX48yTpM1r0
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Pankow
   suburb: Heinersdorf
 - name: McFIT Fitnessstudio Hohenschönhausen
@@ -119,7 +118,7 @@
   latitude: 52.536037
   longitude: 13.474682
   google_place_id: ChIJ914nWdVNqEcRwQk1hQVD52g
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Lichtenberg
   suburb: Alt-Hohenschönhausen
 - name: McFIT Fitnessstudio Lichtenberg
@@ -128,7 +127,7 @@
   latitude: 52.521826
   longitude: 13.498887
   google_place_id: ChIJ81tm7pdOqEcRIV9FFa9UACc
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Lichtenberg
   suburb: Lichtenberg
 - name: McFIT Fitnessstudio Lichterfelde
@@ -137,7 +136,7 @@
   latitude: 52.418455
   longitude: 13.287984
   google_place_id: ChIJgTjF1ahbqEcRk_UOk9FkBXY
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Steglitz-Zehlendorf
   suburb: Lichterfelde
   quarter: Lichterfelde West
@@ -147,7 +146,7 @@
   latitude: 52.505249
   longitude: 13.612179
   google_place_id: ChIJ2QJmKpJJqEcRlNWkX-ZtBXE
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Marzahn-Hellersdorf
   suburb: Mahlsdorf
 - name: McFit gym Berlin Marienfelde
@@ -156,7 +155,7 @@
   latitude: 52.430767
   longitude: 13.375299
   google_place_id: ChIJde5x6zBFqEcRwLhmg92-s_Y
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Tempelhof-Schöneberg
   suburb: Mariendorf
 - name: McFIT Fitnessstudio Marzahn
@@ -165,7 +164,7 @@
   latitude: 52.532422
   longitude: 13.537356
   google_place_id: ChIJF-HETf9LqEcRID7Y-7POGZg
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Marzahn-Hellersdorf
   suburb: Marzahn
   quarter: Springpfuhl
@@ -175,7 +174,7 @@
   latitude: 52.524889
   longitude: 13.345577
   google_place_id: ChIJh_wCZQpRqEcReTFUGX_9Y-U
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Moabit
   quarter: Westfälisches Viertel
@@ -185,7 +184,7 @@
   latitude: 52.464099
   longitude: 13.497954
   google_place_id: ChIJ00bGqUtPqEcRCJMlVi46kNU
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Treptow-Köpenick
   suburb: Niederschöneweide
 - name: McFIT Fitnessstudio Neukölln
@@ -194,7 +193,7 @@
   latitude: 52.451769
   longitude: 13.434731
   google_place_id: ChIJ_wOt9X9FqEcRA7GzEzoFRw0
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Neukölln
   suburb: Britz
 - name: McFit gym Berlin Reinickendorf
@@ -203,25 +202,17 @@
   latitude: 52.607369
   longitude: 13.323602
   google_place_id: ChIJcdoQr4JUqEcRMy7TGEqeFN0
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Reinickendorf
   suburb: Waidmannslust
   quarter: Schwarzwaldsiedlung
-- name: McFIT Fitnessstudio Spandau
-  website: https://www.mcfit.com/de/studios/studiosuche/studiodetails/studio/berlin-spandau/
-  address: Am Juliusturm 21
-  latitude: 52.537504
-  longitude: 13.227496
-  google_place_id: ChIJidksPF9WqEcRJul0BRo5tW8
-  last_verified: 2026-04-22
-  suburb: Haselhorst
 - name: McFit gym Berlin Spandau Klosterfelde
   website: https://www.mcfit.com/de/studios/studiosuche/studiodetails/studio/berlin-spandau-west/
   address: Altonaer Str. 59-61
   latitude: 52.532045
   longitude: 13.187704
   google_place_id: ChIJpZLzMzdWqEcRFiYXI6EasUs
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   suburb: Spandau
   quarter: Klosterfelde
 - name: McFIT Fitnessstudio Tempelhof
@@ -230,7 +221,7 @@
   latitude: 52.469812
   longitude: 13.373682
   google_place_id: ChIJdyZ2ZQNQqEcROhRoE0Qx1v4
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Tempelhof-Schöneberg
   suburb: Tempelhof
 - name: McFit gym Berlin Wedding
@@ -239,17 +230,18 @@
   latitude: 52.55365
   longitude: 13.360847
   google_place_id: ChIJb4R5X9NTqEcRl0W9wBdgQps
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Wedding
   quarter: Leopoldkiez
+  status: CLOSED_TEMPORARILY
 - name: McFIT Fitnessstudio Wilmersdorf
   website: https://www.mcfit.com/de/studios/studiosuche/studiodetails/studio/berlin-wilmersdorf/
   address: Berliner Straße 148
   latitude: 52.486647
   longitude: 13.32839
   google_place_id: ChIJ811DAGBQqEcRFzLoxWWPQoo
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Wilmersdorf
   quarter: Güntzelkiez
@@ -259,7 +251,7 @@
   latitude: 52.50826
   longitude: 13.30604
   google_place_id: ChIJnRLk2AZRqEcRRJfMw1nL1s8
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Charlottenburg
 - name: SuperFit Europa-Center
@@ -268,7 +260,7 @@
   latitude: 52.504524
   longitude: 13.337422
   google_place_id: ChIJky6YnVVQqEcRKxPUjz9px8c
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Charlottenburg
 - name: SuperFit Friedrichshain
@@ -277,27 +269,27 @@
   latitude: 52.514228
   longitude: 13.473888
   google_place_id: ChIJo5HVsYxOqEcRGqNVg_PXGRs
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Friedrichshain
   quarter: Travekiez
 - name: SuperFit Mitte
   website: http://superfit.club/
   address: Grunerstraße 20
-  latitude: 52.518306
-  longitude: 13.416053
+  latitude: 52.518665
+  longitude: 13.416487
   google_place_id: ChIJez-RBiJOqEcRDmNJKNVXaXc
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Mitte
-  quarter: Spandauer Vorstadt
+  quarter: null
 - name: Superfit Neukölln
   website: http://superfit.club/
   address: Karl-Marx-Straße 66
   latitude: 52.482088
   longitude: 13.432858
   google_place_id: ChIJhduVJLtPqEcRUSAyyrzp2ZY
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Neukölln
   suburb: Neukölln
   quarter: Donaukiez
@@ -307,18 +299,19 @@
   latitude: 52.584819
   longitude: 13.285833
   google_place_id: ChIJYdKLpWlUqEcRE7e4HfI0vV4
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Reinickendorf
   suburb: Tegel
 - name: SuperFit Steglitz
   website: http://superfit.club/
   address: Schloßstraße 1
-  latitude: 52.464324
-  longitude: 13.326835
+  latitude: 52.464424
+  longitude: 13.326939
   google_place_id: ChIJ23SqdIJaqEcR6Y2dRu0JiRw
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Steglitz-Zehlendorf
   suburb: Steglitz
+  quarter: Bismarckviertel
 - name: Sqwod Pod
   description: Rent private fitness studios for yourself
   website: https://sqwodpod.com/
@@ -327,7 +320,7 @@
   latitude: 52.556083
   longitude: 13.434764
   google_place_id: ChIJlejeuxJNqEcRZk9PrDh0u-o
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Pankow
   suburb: Weißensee
   quarter: Gründerviertel

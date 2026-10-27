@@ -6,7 +6,7 @@
   latitude: 52.467995
   longitude: 13.386013
   google_place_id: ChIJIx-GwfxPqEcRfvGckyfVPt0
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Tempelhof-Schöneberg
   suburb: Tempelhof
   quarter: Gartenstadt Neu-Tempelhof
@@ -17,7 +17,7 @@
   latitude: 52.53131
   longitude: 13.429442
   google_place_id: ChIJgeLKog9OqEcRpdlyDPjU_i0
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Pankow
   suburb: Prenzlauer Berg
   quarter: Bötzowkiez
@@ -29,7 +29,7 @@
   latitude: 52.588619
   longitude: 13.284193
   google_place_id: ChIJyRrxpEJUqEcRMK7fCd_jm9Y
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Reinickendorf
   suburb: Tegel
 - name: Dr. Köller
@@ -40,7 +40,7 @@
   latitude: 52.53278
   longitude: 13.432052
   google_place_id: ChIJd_H14Q5OqEcR7Vu0rZ1gfoo
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Pankow
   suburb: Prenzlauer Berg
   quarter: Bötzowkiez
@@ -51,19 +51,20 @@
   latitude: 52.522085
   longitude: 13.345565
   google_place_id: ChIJbWqLFNAjZUERMu6xdgVIhis
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Hansaviertel
 - name: Dr. Gerhard Perchalla
   accepts_public_health_insurance: true
   website: http://www.dr-perchalla.com/
   address: Knesebeckstraße 74
-  latitude: 52.503729
-  longitude: 13.322607
+  latitude: 52.503635
+  longitude: 13.322923
   google_place_id: ChIJYUQCoPxQqEcRPMsEB3808gk
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Charlottenburg
+  quarter: null
 - name: Dr. Nikolaos Rigas
   description: Speaks English and Greek
   accepts_public_health_insurance: true
@@ -72,7 +73,7 @@
   latitude: 52.498496
   longitude: 13.306287
   google_place_id: ChIJsfh4XOhQqEcRisNwSpNnZ34
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Wilmersdorf
 - name: Dr. Ole Georg Munkvold
@@ -82,7 +83,7 @@
   latitude: 52.501552
   longitude: 13.311188
   google_place_id: ChIJTy9oZeZQqEcRepxNbrtZ_YA
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Charlottenburg
 - name: Privatpraxis Dima Salloum
@@ -93,7 +94,7 @@
   latitude: 52.510291
   longitude: 13.465549
   google_place_id: ChIJCdtjcd1PqEcRG0H49Dlrd1o
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Friedrichshain
   quarter: Travekiez
@@ -106,7 +107,7 @@
   latitude: 52.452681
   longitude: 13.509891
   google_place_id: ChIJaRCCo69IqEcRqDkmtq3zmXo
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Treptow-Köpenick
   suburb: Johannisthal
 - name: Praxis Dr. Gerrit Scherf & Kollegen
@@ -118,7 +119,7 @@
   latitude: 52.3932
   longitude: 13.035609
   google_place_id: ChIJ8VBTwDT0qEcRL0h9GXBFVMw
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   suburb: Auf dem Kiewitt
   city: Potsdam
 - name: Praxis Dr. Mungee
@@ -129,7 +130,7 @@
   latitude: 52.531612
   longitude: 13.413167
   google_place_id: ChIJN2DbdepPqEcR9TcsDOjbVYg
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Pankow
   suburb: Prenzlauer Berg
   quarter: Kollwitzkiez

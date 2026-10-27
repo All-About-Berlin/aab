@@ -4,7 +4,7 @@
   latitude: 52.534709
   longitude: 13.397697
   google_place_id: ChIJ93xmUtFRqEcR_JAbEIZKEJA
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Mitte
   quarter: Arkonakiez
@@ -15,7 +15,7 @@
   latitude: 52.530057
   longitude: 13.401883
   google_place_id: ChIJXQ6CX-RRqEcRgrvP9gnMOtY
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Mitte
   suburb: Mitte
   quarter: Rosenthaler Vorstadt
@@ -25,7 +25,7 @@
   latitude: 52.540331
   longitude: 13.418512
   google_place_id: ChIJ64U0awBOqEcRz5pf8Va6W3A
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Pankow
   suburb: Prenzlauer Berg
   quarter: Helmholtzkiez
@@ -35,7 +35,7 @@
   latitude: 52.586174
   longitude: 13.406922
   google_place_id: ChIJhW7Rw25SqEcRYkOFjc3iKvc
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Pankow
   suburb: Niederschönhausen
 - name: Frauenarzt Bogdan Myndiuk
@@ -44,16 +44,16 @@
   latitude: 52.498023
   longitude: 13.289407
   google_place_id: ChIJNdXnvsVQqEcRxmziM_hELKE
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Halensee
 - name: Dr. Christiane Wessel
   website: http://www.frauen-vital.de/
-  address: Markgrafenstraße 20
-  latitude: 52.507641
-  longitude: 13.394421
+  address: Markgrafenstraße 19
+  latitude: 52.506795
+  longitude: 13.394674
   google_place_id: ChIJ-UtXldZRqEcRs8lA0PA8qJg
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Kreuzberg
   quarter: Zeitungsviertel
@@ -64,7 +64,7 @@
   latitude: 52.50216
   longitude: 13.308126
   google_place_id: ChIJ0592Xdz1qEcRfo0k3WQTQlA
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Charlottenburg
 - name: Sana Gesundheitszentren
@@ -74,7 +74,7 @@
   latitude: 52.512166
   longitude: 13.455185
   google_place_id: ChIJR5GxMFxOqEcRSBeOG9TwkuA
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Friedrichshain-Kreuzberg
   suburb: Friedrichshain
   quarter: Boxhagener Kiez
@@ -86,7 +86,7 @@
   latitude: 52.508771
   longitude: 13.316662
   google_place_id: ChIJAUwNGxpRqEcR3lxxgasrW3Q
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Charlottenburg-Wilmersdorf
   suburb: Charlottenburg
 - name: Dipl. Med. Daniel Karohl
@@ -95,7 +95,7 @@
   latitude: 52.549106
   longitude: 13.413268
   google_place_id: ChIJA3r3ngZSqEcRWaaQ6w7ZEeI
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Pankow
   suburb: Prenzlauer Berg
 - name: Gemeinschaftspraxis FERA
@@ -105,7 +105,7 @@
   latitude: 52.458249
   longitude: 13.390498
   google_place_id: ChIJRTm8YfhPqEcRmC5oK5klTYk
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Tempelhof-Schöneberg
   suburb: Tempelhof
 - name: Frauenarzt-Zentrum-Neukölln
@@ -114,27 +114,27 @@
   latitude: 52.477297
   longitude: 13.438445
   google_place_id: ChIJo5Sp0aNPqEcRmCzYLU3O9lM
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Neukölln
   suburb: Neukölln
 - name: Frauenärztinnen am Schulenburgpark
   description: Dr. Katharina Krull speaks fluent English.
   website: https://www.gyn-schulenburgpark.de/
   address: Sonnenallee 306B
-  latitude: 52.466058
-  longitude: 13.470033
+  latitude: 52.466242
+  longitude: 13.469727
   google_place_id: ChIJEYoelT9PqEcRHP47jFa92Kk
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Neukölln
   suburb: Neukölln
-  quarter: High-Deck-Siedlung
+  quarter: Weiße Siedlung
 - name: Gynecologist Dr. Caroline Labin
   website: https://www.sana.de/gesundheitszentren-berlin/standorte-fachbereiche/weissensee/frauenheilkunde-und-geburtshilfe
   address: Berliner Allee 164
   latitude: 52.552756
   longitude: 13.467375
   google_place_id: ChIJA5xhB1ZQqEcRHssSuOO-I0o
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Pankow
   suburb: Weißensee
 - name: Dr. med. Berrit Matthies
@@ -143,7 +143,7 @@
   latitude: 52.457473
   longitude: 13.321701
   google_place_id: ChIJf5S0KoRaqEcR6y3oYOYpW7s
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Steglitz-Zehlendorf
   suburb: Steglitz
 - name: Sonnenallee Praxis
@@ -153,7 +153,7 @@
   latitude: 52.485767
   longitude: 13.431896
   google_place_id: ChIJA9W9rTBPqEcRqf41GpU83BA
-  last_verified: 2026-04-22
+  last_verified: 2026-10-27
   borough: Neukölln
   suburb: Neukölln
   quarter: Donaukiez
@@ -165,7 +165,7 @@
   latitude: 52.456636
   longitude: 13.319581
   google_place_id: ChIJf3cQ0JhbqEcRi28Kh31wQoI
-  last_verified: 2026-04-30
+  last_verified: 2026-10-27
   borough: Steglitz-Zehlendorf
   suburb: Steglitz
   quarter: null
