@@ -54,17 +54,6 @@
   borough: Neukölln
   suburb: Neukölln
   quarter: Körnerkiez
-- name: Alexander von Engelhardt
-  description: Immigration law and business law.
-  website: https://vonengelhardt.com/
-  email: ahoi@vonengelhardt.com
-  address: Hardenbergstraße 12
-  latitude: 52.508052
-  longitude: 13.32706
-  google_place_id: ChIJQ97Pfv1QqEcRkDS1cop4ans
-  last_verified: 2026-10-27
-  borough: Charlottenburg-Wilmersdorf
-  suburb: Charlottenburg
 - name: Schönfeld Benedicter
   description: Dr. Gregory Benedicter speaks English fluently.
   website: http://www.schoenfeld-benedicter.de/
