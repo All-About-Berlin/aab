@@ -61,6 +61,7 @@ class PlacesLinter(Linter):
     """
 
     verification_frequency = timedelta(days=180)
+    temporarily_closed_verification_frequency = timedelta(days=30)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -82,8 +83,13 @@ class PlacesLinter(Linter):
                 yield None, f"{name}: Filled borough/suburb from Nominatim", logging.INFO
                 list_modified = True
 
+            verification_frequency = (
+                self.temporarily_closed_verification_frequency
+                if place.get("status") == "CLOSED_TEMPORARILY"
+                else self.verification_frequency
+            )
             last_verified = place.get("last_verified")
-            if last_verified and (date.today() - last_verified) < self.verification_frequency:
+            if last_verified and (date.today() - last_verified) < verification_frequency:
                 continue
 
             if not place.get("google_place_id"):
