@@ -45,6 +45,7 @@ enter = { task = "setup" }
 [tasks.site]
 description = "Serve the frontend, reload on changes. Fast and resource-efficient."
 run = """
+ursus -c frontend/ursus_config.py
 ursus -wfs -c frontend/ursus_config.py
 """
 
