@@ -38,17 +38,15 @@ November 9 is a *Schicksalstag* in German history: a socialist revolution, a Naz
 
 November 11 is St-Martin's Day in parts of Germany. It marks the [start of  Karneval season](https://germanfoods.org/german-food-facts/karneval-fasching/).
 
-### Harder integration and language tests
+### Harder language tests
 
-https://www.iamexpat.de/education/education-news/german-govt-make-integration-course-tests-harder-nov-1
+On November 1, the integration course language test (DTZ) will become harder.[^3] The test has 3 sections: reading/writing, speaking and listening. Before, you could pass 2 out of 3 sections and still pass the test. Now you must pass all sections.[^4]
 
-https://www.thelocal.de/20261021/qa-what-do-germanys-tougher-language-test-rules-mean-for-you
+This only affects the language test for the integration course. Other language tests like the telc or Goethe exams are not affected.[^6]
 
 ### Permanent €99 family ticket
 
-https://www.iamexpat.de/expat-info/germany-news/deutsche-bahn-makes-99-euro-family-ticket-permanent-offer
-
-https://www.thelocal.de/20261005/deutsch-bahn-makes-its-family-ticket-a-permanent-offer
+The [Family Ticket](https://www.bahn.de/service/individuelle-reise/kinder/familienticket) is back! It covers a two-way long-distance train trip for up to 5 family members. It was initially a temporary deal, but now it's here to stay.[^5]
 
 ### Earlier age for mammograms
 
@@ -60,10 +58,8 @@ The 2026 youth word of the year is *[ragebait](https://www.langenscheidt.com/jug
 
 ### On my radar
 
-- [Tobacco tax increase](https://www.iamexpat.de/expat-info/germany-news/how-will-tobacco-tax-reform-change-smoking-germany-2027)
-- [Daily Deutschland Ticket](https://www.iamexpat.de/expat-info/germany-news/germany-mulls-daily-deutschlandticket-occasional-users)
-
-https://www.iamexpat.de/career/employment-news/burgergeld-cuts-have-saved-just-2m-so-far-govt-figures-show
+- [Transport ministers propose a daily Deutschland Ticket](https://www.iamexpat.de/expat-info/germany-news/germany-mulls-daily-deutschlandticket-occasional-users)
+- [Bürgergeld cuts aren't bringing as much savings as expected](https://www.iamexpat.de/career/employment-news/burgergeld-cuts-have-saved-just-2m-so-far-govt-figures-show)
 
 ## What's new on All About Berlin
 
@@ -81,11 +77,11 @@ This will allow me to write longer explanations and to improve them over time. I
 
 I have updated my [German pension refund guide](/guides/pension-payments-refund) and [pension refund calculator](/tools/pension-refund-calculator) with help from Georg at [Pension Refund Germany](/out/pension-refund-germany). It fixes a few edge cases with Indian residents, and Japanese, Turkish and Balkan nationals.
 
-The rules change all the time. They are hard to understand, hard to verify and impossible to track. This sort of work would be impossible without expert contributions.
+Pension refund rules are hard to understand, hard to verify and impossible to track. This sort of work would be impossible without help from experts.
 
 ### Forum updates
 
-I am still working on a forum for All About Berlin. It's ready to go live, but I want to make it extra nice.
+I am still working on a forum for All About Berlin. It's ready to go live, but I want to make it extra nice before release. The release will also bring many small improvements to the rest of the website, and a *much* better full-site search.
 
 ### Other changes
 
@@ -93,3 +89,7 @@ I have re-checked all 484 places listed on the website. I have automated that la
 
 [^1]: [Wikipedia](https://en.wikipedia.org/wiki/List_of_cities_by_sunshine_duration), [weather-and-climate.com](https://weather-and-climate.com/average-monthly-hours-Sunshine,Berlin,Germany)
 [^2]: [brunnenmagazin.de](https://brunnenmagazin.de/winterspielplaetze-wedding-2026/)
+[^3]: [iamexpat.de](https://www.iamexpat.de/education/education-news/german-govt-make-integration-course-tests-harder-nov-1) (October 2026), [thelocal.de](https://www.thelocal.de/20261021/qa-what-do-germanys-tougher-language-test-rules-mean-for-you) (October 2026), [migrando.de](https://migrando.de/en/news/integration/deutsch-test-fuer-zuwanderer-wird-strenger-neue-regeln-fuer-b1-ab-november-2026/) (October 2026)
+[^4]: [migrando.de](https://migrando.de/en/news/integration/deutsch-test-fuer-zuwanderer-wird-strenger-neue-regeln-fuer-b1-ab-november-2026/) (October 2026)
+[^5]: [iamexpat.de](https://www.iamexpat.de/expat-info/germany-news/deutsche-bahn-makes-99-euro-family-ticket-permanent-offer) (October 2026)
+[^6]: [migrando.de](https://migrando.de/en/news/integration/deutsch-test-fuer-zuwanderer-wird-strenger-neue-regeln-fuer-b1-ab-november-2026/#:~:text=do%20the%20new%20rules%20also%20apply%20to%20other%20b1%20language%20exams%3F) (October 2026)
