@@ -12,6 +12,6 @@ related_guides:
 
 If you are compulsorily insured (*Pflichtversichert*), you must choose [public health insurance](/glossary/gesetzliche%20Krankenversicherung). You can't choose [private health insurance](/glossary/private%20Krankenversicherung). [Public health insurers](/glossary/Krankenkasse) must accept you, even if you are very sick.
 
-If you are an employee, and you earn less than €{{VERSICHERUNGSPFLICHTGRENZE|cur}} per year, you are *pflichtversichert*.
+If you are an employee, and you earn less than €{{GKV_VERSICHERUNGSPFLICHTGRENZE|cur}} per year, you are *pflichtversichert*.
 
 **[How to choose health insurance ➞](/guides/german-health-insurance)**
