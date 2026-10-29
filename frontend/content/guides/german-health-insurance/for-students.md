@@ -119,7 +119,7 @@ You don't need long-term health insurance.[^11] You can switch to [public health
 
 ## After you graduate
 
-When you [start working](/guides/find-a-job-in-berlin#start-working), you must usually get [public health insurance](/glossary/gesetzliche%20Krankenversicherung). If you make more than €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year, you can also choose [private health insurance](/glossary/private%20Krankenversicherung).
+When you [start working](/guides/find-a-job-in-berlin#start-working), you must usually get [public health insurance](/glossary/gesetzliche%20Krankenversicherung). If you make more than €{{VERSICHERUNGSPFLICHTGRENZE|cur}} per year, you can also choose [private health insurance](/glossary/private%20Krankenversicherung).
 
 **[Health insurance for employees ➞](/guides/german-health-insurance/for-employees)**
 

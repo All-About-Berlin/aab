@@ -38,7 +38,7 @@ Your [private health insurance](/glossary/private%20Krankenversicherung) becomes
 
 ## After you find a job
 
-When you start a new job, you must switch to public health insurance. If you make more than €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year, you can choose private health insurance instead.
+When you start a new job, you must switch to public health insurance. If you make more than €{{VERSICHERUNGSPFLICHTGRENZE|cur}} per year, you can choose private health insurance instead.
 
 **[Health insurance for employees ➞](/guides/german-health-insurance/for-employees)**
 
