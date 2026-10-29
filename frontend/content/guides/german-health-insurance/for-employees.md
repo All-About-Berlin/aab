@@ -18,9 +18,9 @@ Employees must get [public](/glossary/gesetzliche%20Krankenversicherung) or [pri
 
 Your options depend on your income:
 
-- **If you earn less than €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year**  
+- **If you earn less than €{{VERSICHERUNGSPFLICHTGRENZE|cur}} per year**  
     You can only choose [public health insurance](/glossary/gesetzliche%20Krankenversicherung). I recommend [Barmer](/out/barmer) or [TK](/out/feather-tk). It costs {{GKV_MIN_RATE_EMPLOYEE}}% to {{GKV_MAX_RATE_EMPLOYEE}}% of your income. The [maximum cost](/glossary/Höchstbeitrag) is around €{{GKV_MAX_COST_EMPLOYEE|cur}} per month.
-- **If you earn more than €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year**  
+- **If you earn more than €{{VERSICHERUNGSPFLICHTGRENZE|cur}} per year**  
     You can choose [public](/glossary/gesetzliche%20Krankenversicherung) or [private health insurance](/glossary/private%20Krankenversicherung). Private can be better and cheaper.[^5] Don't choose private health insurance yourself. [Ask my insurance expert](/guides/german-health-insurance#need-help) to help you.
 
 **[What is the best option? ➞](/guides/german-health-insurance#what-is-the-best-option)**
