@@ -126,6 +126,8 @@
   title: Living in Germany
   description: Guides about the basics of life in Germany.
   entries:
+    - title: What changes in 2027
+      uri: guides/2027.md
     - title: Visiting Berlin
       uri: guides/visit-berlin.md
       entries:

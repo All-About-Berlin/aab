@@ -34,17 +34,15 @@ Some winter playgrounds (*Kinderspielplätze*) also open in November. They provi
 
 ## What's new in Germany
 
+November 9 is a *Schicksalstag* in German history: a socialist revolution, a Nazi putsch, a violent pogrom, and the fall of the Berlin wall. The fateful day has [its own Wikipedia article](https://en.wikipedia.org/wiki/9_November_in_German_history).
+
+November 11 is St-Martin's Day in parts of Germany. It marks the [start of  Karneval season](https://germanfoods.org/german-food-facts/karneval-fasching/).
+
 ### Harder integration and language tests
 
 https://www.iamexpat.de/education/education-news/german-govt-make-integration-course-tests-harder-nov-1
 
 https://www.thelocal.de/20261021/qa-what-do-germanys-tougher-language-test-rules-mean-for-you
-
-### Tax increases in 2027
-
-https://www.iamexpat.de/expat-info/germany-news/high-earners-germany-will-pay-more-social-security-2027
-
-https://www.iamexpat.de/expat-info/germany-news/what-do-germanys-care-reforms-mean-you
 
 ### Permanent €99 family ticket
 
@@ -56,6 +54,10 @@ https://www.thelocal.de/20261005/deutsch-bahn-makes-its-family-ticket-a-permanen
 
 https://www.iamexpat.de/expat-info/germany-news/german-health-insurers-reduce-age-free-mammograms
 
+### Other updates
+
+The 2026 youth word of the year is *[ragebait](https://www.langenscheidt.com/jugendwort-des-jahres)*.
+
 ### On my radar
 
 - [Tobacco tax increase](https://www.iamexpat.de/expat-info/germany-news/how-will-tobacco-tax-reform-change-smoking-germany-2027)
@@ -65,12 +67,29 @@ https://www.iamexpat.de/career/employment-news/burgergeld-cuts-have-saved-just-2
 
 ## What's new on All About Berlin
 
-### ...
+This is the 12th edition of the All About Berlin newsletter. It will be sent to a little over 1000 subscribers. If you enjoy those ad-free, AI-free, no-nonsense monthly updates, consider [buying me a coffee](/donate) or sharing the newsletter on social media.
 
-## Factoids
+### Big changes in 2027
 
-- November 9 is a *Schicksalstag* in German history: a socialist revolution, a Nazi putsch, a pogrom, and the fall of the Berlin wall.
-- It's official, the youth word of the year is "ragebait".
+Every January, lots of things change in Germany: taxes, social contributions, minimum wage, public transit prices, and much more. Instead of announcing those changes in this newsletter, I have compiled them into a guide.
+
+**[What's changing in 2027 ➞](/guides/2027)**
+
+This will allow me to write longer explanations and to improve them over time. I can also include calculators and other tools that would not fit in an email.
+
+### Pension refund updates
+
+I have updated my [German pension refund guide](/guides/pension-payments-refund) and [pension refund calculator](/tools/pension-refund-calculator) with help from Georg at [Pension Refund Germany](/out/pension-refund-germany). It fixes a few edge cases with Indian residents, and Japanese, Turkish and Balkan nationals.
+
+The rules change all the time. They are hard to understand, hard to verify and impossible to track. This sort of work would be impossible without expert contributions.
+
+### Forum updates
+
+I am still working on a forum for All About Berlin. It's ready to go live, but I want to make it extra nice.
+
+### Other changes
+
+I have re-checked all 484 places listed on the website. I have automated that last Spring. A few businesses have moved or closed since then, most notably Brewdog in Mitte.
 
 [^1]: [Wikipedia](https://en.wikipedia.org/wiki/List_of_cities_by_sunshine_duration), [weather-and-climate.com](https://weather-and-climate.com/average-monthly-hours-Sunshine,Berlin,Germany)
 [^2]: [brunnenmagazin.de](https://brunnenmagazin.de/winterspielplaetze-wedding-2026/)
