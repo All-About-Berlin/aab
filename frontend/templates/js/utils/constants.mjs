@@ -539,9 +539,10 @@ export const taxes = {
 		2023: { west: 7300 * 12, east: 7100 * 12 },
 		2024: { west: 7550 * 12, east: 7450 * 12 },
 		2025: { west: 8050 * 12, east: 8050 * 12 },
-		2026: { west: backendConstants.BEITRAGSBEMESSUNGSGRENZE, east: backendConstants.BEITRAGSBEMESSUNGSGRENZE },
+		2026: { west: 8450 * 12, east: 8450 * 12 },
+		2027: { west: backendConstants.BEITRAGSBEMESSUNGSGRENZE, east: backendConstants.BEITRAGSBEMESSUNGSGRENZE },
 		currentYear: { west: backendConstants.BEITRAGSBEMESSUNGSGRENZE, east: backendConstants.BEITRAGSBEMESSUNGSGRENZE },
-		2027: { west: backendConstants.BEITRAGSBEMESSUNGSGRENZE, east: backendConstants.BEITRAGSBEMESSUNGSGRENZE }, // ESTIMATED (2026)
+		2028: { west: backendConstants.BEITRAGSBEMESSUNGSGRENZE, east: backendConstants.BEITRAGSBEMESSUNGSGRENZE }, // ESTIMATED (2027)
 	},
 	grundfreibetrag: backendConstants.GRUNDFREIBETRAG,
 	kinderfreibetrag: backendConstants.KINDERFREIBETRAG,
@@ -623,8 +624,9 @@ export const pensions = {
 		2024: 18.6,
 		2025: 18.6,
 		2026: 18.6,
+		2027: 18.6,
 		currentYear: backendConstants.RV_BASE_RATE,
-		2027: 18.6, // ESTIMATED (2026)
+		2028: 18.6, // ESTIMATED (2027)
 	},
 	companies: {
 		pensionRefundGermany: {
