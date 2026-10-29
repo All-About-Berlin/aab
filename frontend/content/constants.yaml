@@ -27,12 +27,12 @@ constants:
     last_verified: 2026-06-01
     fail_on: 2027-06-01
   BEITRAGSBEMESSUNGSGRENZE_MONTHLY:
-    value: 8450
+    value: 8750
     unit: euros
     description: Maximum income used to calculate pension contributions (€/mth) - § SGB 6 Anlage 2
     fail_on: 2026-12-31
   GRUNDFREIBETRAG:
-    value: 12348
+    value: 12564
     unit: euros
     monitor:
       template: buzer
@@ -40,7 +40,7 @@ constants:
       section: 32a
       subsection: Absatz 1.1
       desired_value: the Grundfreibetrag (basic tax-free allowance) in euros
-      last_verified: 2026-11-02
+
   INCOME_TAX_BRACKET_2_MAX_INCOME:
     value: 17799
     unit: euros
@@ -156,7 +156,7 @@ constants:
       desired_value: the Solidaritätszuschlag, as a decimal (for example '2.4 Prozent' -> '0.024')
       last_verified: 2026-11-02
   WERBUNGSKOSTEN_PAUSCHALE:
-    value: 1230
+    value: 1430
     unit: euros
     monitor:
       template: buzer
@@ -164,7 +164,7 @@ constants:
       section: 9a
       subsection: Absatz 1
       desired_value: Arbeitnehmer-Pauschbetrag
-      last_verified: 2026-11-02
+      last_verified: 2026-12-31
   VORSORGEPAUSCHAL_MIN:
     value: 1900
     unit: euros
@@ -207,7 +207,7 @@ constants:
       desired_value: the unemployment insurance contribution rate (Beitragssatz) as a percentage
       last_verified: 2026-11-02
   KINDERGELD:
-    value: 259
+    value: 267
     unit: euros
     description: § 6 Abs. 1 BKGG, § 66 EStG
     monitor:
@@ -215,7 +215,7 @@ constants:
       law: EStG
       section: '66'
       desired_value: the monthly Kindergeld amount per child in euros
-      last_verified: 2026-11-02
+      last_verified: 2026-12-31
   KINDERFREIBETRAG_PER_PARENT:
     value: 3414
     unit: euros
@@ -439,7 +439,7 @@ constants:
       desired_value: the reduced GKV contribution rate (ermäßigter Beitragssatz) as a percentage
       last_verified: 2026-11-02
   GKV_MAX_INCOME_MONTHLY:
-    value: 5812.5
+    value: 6375
     unit: euros
     description: Above this income (€/mth), you pay the Höchstbeitrag
     fail_on: 2026-12-31
@@ -454,8 +454,8 @@ constants:
       desired_value: the monthly income threshold for Auszubildende (trainees) above which the employer pays social insurance
         contributions, in euros
       last_verified: 2026-11-02
-  GKV_FREIWILLIG_VERSICHERT_MIN_INCOME_MONTHLY:
-    value: 6450
+  VERSICHERUNGSPFLICHTGRENZE_MONTHLY:
+    value: 7012.5
     unit: euros
     description: Versicherungspflichtgrenze (€/mth)
     fail_on: 2026-12-31

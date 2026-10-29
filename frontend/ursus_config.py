@@ -67,7 +67,7 @@ ctx["GKV_MAX_INCOME"] = ctx["GKV_MAX_INCOME_MONTHLY"] * 12  # SVBezGrV 2021 [BBG
 ctx["GKV_NEBENJOB_MAX_INCOME"] = ctx["BEZUGSGROESSE"] * Decimal("0.75")
 
 # Jahresarbeitsentgeltgrenze or Versicherungspflichtgrenze - Above this income (€/y), you are freiwillig versichert
-ctx["GKV_FREIWILLIG_VERSICHERT_MIN_INCOME"] = ctx["GKV_FREIWILLIG_VERSICHERT_MIN_INCOME_MONTHLY"] * 12
+ctx["VERSICHERUNGSPFLICHTGRENZE"] = ctx["VERSICHERUNGSPFLICHTGRENZE_MONTHLY"] * 12
 
 # Above this income (€/m), you can't have Familienversicherung
 ctx["GKV_FAMILIENVERSICHERUNG_MAX_INCOME"] = (Decimal(1 / 7) * ctx["BEZUGSGROESSE"]).normalize()  # § 10 SGB V

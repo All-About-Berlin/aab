@@ -17,7 +17,7 @@ If you are voluntarily insured (*freiwillig versichert*), you can choose [public
 
 You are *freiwillig versichert* if...
 
-- You are an employee, and you earn over €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year
+- You are an employee, and you earn over €{{VERSICHERUNGSPFLICHTGRENZE|cur}} per year
 - or you are self-employed
 - or you are a student
 - or you have a [minijob](/glossary/Minijob)

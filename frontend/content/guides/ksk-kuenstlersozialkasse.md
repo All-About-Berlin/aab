@@ -43,7 +43,7 @@ When you are a KSK member, **they pay half of your [health insurance](/glossary/
 - ✗ **They reject a lot of people**  
     You might need to try multiple times, and still get rejected. Some people give up. Others sue the KSK to get accepted.
 - ✗ **You can't always [keep your private health insurance](#can-i-have-private-health-insurance-with-the-ksk)**  
-    If you earn less than €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year, you must switch to [public health insurance](/glossary/gesetzliche%20Krankenversicherung). It's usually a good thing, but you might prefer to keep your private health insurance.
+    If you earn less than €{{VERSICHERUNGSPFLICHTGRENZE|cur}} per year, you must switch to [public health insurance](/glossary/gesetzliche%20Krankenversicherung). It's usually a good thing, but you might prefer to keep your private health insurance.
 - ✗ **It can limit your options**  
     Artistic/journalistic activities must be your main source of income. If you have other sources of income, [it can be complicated](#can-i-have-another-source-of-income-while-in-the-ksk). You might need to refuse some contracts to stay in the KSK. You can still have a side job and stay in the KSK.
 - ✗ **[Backpayments](#backpayments)**  
@@ -57,13 +57,13 @@ Usually, you pay less than before, *and* you get more benefits. Calculate the di
 
 When you are in the KSK, they pay half of your health insurance, but you are forced to pay [public pension insurance](/glossary/gesetzliche%20Rentenversicherung). In other words, **you save money on health insurance, and reinvest it in your pension**. This is a *really* good deal.
 
-If you earn over €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year, you pay a bit more, but you contribute *a lot* more to your pension. This is the best pension plan you can find.
+If you earn over €{{VERSICHERUNGSPFLICHTGRENZE|cur}} per year, you pay a bit more, but you contribute *a lot* more to your pension. This is the best pension plan you can find.
 
 ### Should I join the KSK?
 
 **Yes!** The KSK is always worth it, except if you stay only 1 year in Germany.
 
-If you earn more than €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year, the KSK can feel more expensive, but it's still worth it, because you get a really cheap pension plan.
+If you earn more than €{{VERSICHERUNGSPFLICHTGRENZE|cur}} per year, the KSK can feel more expensive, but it's still worth it, because you get a really cheap pension plan.
 
 ## Who can join the KSK?
 
@@ -433,7 +433,7 @@ If you can't get your pension payments back, you will get a German pension when 
 **It depends.**[^27] After you join the KSK, you can keep your private health insurance if...[^40]
 
 - You were self-employed for less than 3 years[^49]
-- or you earned more than €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year for 3 years in a row.[^51]
+- or you earned more than €{{VERSICHERUNGSPFLICHTGRENZE|cur}} per year for 3 years in a row.[^51]
 
 **The KSK pays half of your private health insurance.** They pay up to {{GKV_RATE_EMPLOYER|percent(1)}}% of your income, or up to €{{(GKV_RATE_EMPLOYER/100 * GKV_MAX_INCOME/12)|round}} per month. That's half the cost of [public health insurance](/glossary/gesetzliche%20Krankenversicherung) and [long-term care insurance](/glossary/Pflegeversicherung).[^41] If your private health insurance costs more than that, you must pay the extra cost alone.
 

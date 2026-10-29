@@ -114,7 +114,7 @@ If you are not sure, [ask my insurance expert](#need-help). It's free.
 
 You can choose private health insurance if...
 
-- You are an employee, and you earn more than €{{GKV_FREIWILLIG_VERSICHERT_MIN_INCOME|cur}} per year[^3]
+- You are an employee, and you earn more than €{{VERSICHERUNGSPFLICHTGRENZE|cur}} per year[^3]
 - or you are self-employed and you earn more than €{{PKV_MIN_INCOME|cur}} per year[^47]
 - or you are a student
 - or you are a civil servant (*Beamter*)[^31]
