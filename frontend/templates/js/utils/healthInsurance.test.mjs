@@ -388,10 +388,10 @@ describe('An apprentice', () => {
 		]);
 	});
 
-	describe(`with a high income (€${healthInsurance.minFreiwilligMonthlyIncome}/m)`, () => {
+	describe(`with a high income (€${healthInsurance.versicherungspflichtgrenze}/m)`, () => {
 		testInsuranceOptions({
 			...apprentice,
-			monthlyIncome: healthInsurance.minFreiwilligMonthlyIncome
+			monthlyIncome: healthInsurance.versicherungspflichtgrenze
 		}, [
 			getsRecommended(['private', 'public']),
 		]);
@@ -478,10 +478,10 @@ describe('An employee', () => {
 		]);
 	});
 
-	describe(`with a normal income (€${healthInsurance.minFreiwilligMonthlyIncome / 2}/m)`, () => {
+	describe(`with a normal income (€${healthInsurance.versicherungspflichtgrenze / 2}/m)`, () => {
 		testInsuranceOptions({
 			...employee,
-			monthlyIncome: healthInsurance.minFreiwilligMonthlyIncome / 2,
+			monthlyIncome: healthInsurance.versicherungspflichtgrenze / 2,
 		}, [
 			hasEmployeeTarif,
 			getsRecommended(['public']),
@@ -491,10 +491,10 @@ describe('An employee', () => {
 		]);
 	});
 
-	describe(`with a high income (€${healthInsurance.minFreiwilligMonthlyIncome}/m)`, () => {
+	describe(`with a high income (€${healthInsurance.versicherungspflichtgrenze}/m)`, () => {
 		testInsuranceOptions({
 			...employee,
-			monthlyIncome: healthInsurance.minFreiwilligMonthlyIncome,
+			monthlyIncome: healthInsurance.versicherungspflichtgrenze,
 		}, [
 			hasEmployeeTarif,
 			paysMaximumEmployeeAmount,
@@ -505,10 +505,10 @@ describe('An employee', () => {
 		]);
 	});
 
-	describe(`with a really high income (€${healthInsurance.minFreiwilligMonthlyIncome * 2}/m)`, () => {
+	describe(`with a really high income (€${healthInsurance.versicherungspflichtgrenze * 2}/m)`, () => {
 		testInsuranceOptions({
 			...employee,
-			monthlyIncome: healthInsurance.minFreiwilligMonthlyIncome * 2,
+			monthlyIncome: healthInsurance.versicherungspflichtgrenze * 2,
 		}, [
 			hasEmployeeTarif,
 			paysMaximumEmployeeAmount,
@@ -561,7 +561,7 @@ describe('A freelancer', () => {
 	describe('with EU public insurance', () => {
 		testInsuranceOptions({
 			...freelancer,
-			monthlyIncome: healthInsurance.minFreiwilligMonthlyIncome / 2,
+			monthlyIncome: healthInsurance.versicherungspflichtgrenze / 2,
 			hasEUPublicHealthInsurance: true,
 		}, [
 			getsRecommended(['public', 'private', 'expat', 'other']),
@@ -571,7 +571,7 @@ describe('A freelancer', () => {
 	describe('with German public insurance', () => {
 		testInsuranceOptions({
 			...freelancer,
-			monthlyIncome: healthInsurance.minFreiwilligMonthlyIncome / 2,
+			monthlyIncome: healthInsurance.versicherungspflichtgrenze / 2,
 			hasGermanPublicHealthInsurance: true,
 		}, [
 			getsRecommended(['public', 'private', 'other']),
@@ -581,7 +581,7 @@ describe('A freelancer', () => {
 	describe('without insurance', () => {
 		testInsuranceOptions({
 			...freelancer,
-			monthlyIncome: healthInsurance.minFreiwilligMonthlyIncome / 2,
+			monthlyIncome: healthInsurance.versicherungspflichtgrenze / 2,
 			hasEUPublicHealthInsurance: false,
 		}, [
 			getsRecommended(['private', 'expat', 'other']),
@@ -639,10 +639,10 @@ describe('A freelancer', () => {
 		]);
 	});
 
-	describe(`with a normal income (€${healthInsurance.minFreiwilligMonthlyIncome / 2}/m)`, () => {
+	describe(`with a normal income (€${healthInsurance.versicherungspflichtgrenze / 2}/m)`, () => {
 		testInsuranceOptions({
 			...freelancer,
-			monthlyIncome: healthInsurance.minFreiwilligMonthlyIncome / 2,
+			monthlyIncome: healthInsurance.versicherungspflichtgrenze / 2,
 		}, [
 			earnsEnoughForPrivate,
 			getsRecommended(['public', 'private', 'expat', 'other']),

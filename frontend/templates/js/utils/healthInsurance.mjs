@@ -408,7 +408,7 @@ function isPflichtversichertAzubi(occupation, monthlyIncome){
 	return (
 		occupation === 'azubi'
 		&& monthlyIncome > healthInsurance.azubiFreibetrag
-		&& monthlyIncome < healthInsurance.minFreiwilligMonthlyIncome
+		&& monthlyIncome < healthInsurance.versicherungspflichtgrenze
 	);
 }
 
@@ -416,7 +416,7 @@ function isHighPaidEmployee(occupation, monthlyIncome){
 	// Those can choose private health insurance, but public is still forced to accept them at first
 	return (
 		isEmployed(occupation)
-		&& monthlyIncome >= healthInsurance.minFreiwilligMonthlyIncome
+		&& monthlyIncome >= healthInsurance.versicherungspflichtgrenze
 	);
 }
 
