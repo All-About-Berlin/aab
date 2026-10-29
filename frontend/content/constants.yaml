@@ -454,7 +454,7 @@ constants:
       desired_value: the monthly income threshold for Auszubildende (trainees) above which the employer pays social insurance
         contributions, in euros
       last_verified: 2026-11-02
-  VERSICHERUNGSPFLICHTGRENZE_MONTHLY:
+  GKV_VERSICHERUNGSPFLICHTGRENZE_MONTHLY:
     value: 7012.5
     unit: euros
     description: Versicherungspflichtgrenze (€/mth)

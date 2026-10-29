@@ -106,7 +106,7 @@ function privateEmployee() {
 	const opts = getOptions({
 		occupation: 'employee',
 		age: employeeAge,
-		monthlyIncome: healthInsurance.minFreiwilligMonthlyIncome,
+		monthlyIncome: healthInsurance.versicherungspflichtgrenze,
 	});
 	return priceRange(opts.private.options);
 }

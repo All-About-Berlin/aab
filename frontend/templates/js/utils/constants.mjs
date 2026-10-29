@@ -23,7 +23,7 @@ export const healthInsurance = {
 	minMonthlyIncome: backendConstants.GKV_MIN_INCOME,
 	maxMonthlyIncome: backendConstants.GKV_MAX_INCOME/12,
 	minPrivateMonthlyIncome: backendConstants.PKV_MIN_INCOME/12, // Below this amount you get rejected
-	minFreiwilligMonthlyIncome: backendConstants.VERSICHERUNGSPFLICHTGRENZE/12,
+	versicherungspflichtgrenze: backendConstants.GKV_VERSICHERUNGSPFLICHTGRENZE/12,
 	maxFamilienversicherungIncome: backendConstants.GKV_FAMILIENVERSICHERUNG_MAX_INCOME,
 	maxMidijobIncome: backendConstants.MIDIJOB_MAX_INCOME,
 	azubiFreibetrag: backendConstants.GKV_AZUBI_FREIBETRAG,

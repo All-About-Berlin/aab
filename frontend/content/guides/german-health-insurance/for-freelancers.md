@@ -41,7 +41,7 @@ If you are an artist, journalist, publicist or art teacher, join the *[[Künstle
 
 Joining the KSK takes a few months. While you wait, you need public, private or expat health insurance.
 
-If you earn less than €{{VERSICHERUNGSPFLICHTGRENZE|cur}} per year, you must switch to [public health insurance](/glossary/gesetzliche%20Krankenversicherung) after you join the KSK. It's a good way to switch from private to public health insurance.
+If you earn less than €{{GKV_VERSICHERUNGSPFLICHTGRENZE|cur}} per year, you must switch to [public health insurance](/glossary/gesetzliche%20Krankenversicherung) after you join the KSK. It's a good way to switch from private to public health insurance.
 
 **[How to apply for the KSK ➞](/guides/ksk-kuenstlersozialkasse)**
 
