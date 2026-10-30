@@ -14,8 +14,9 @@ import Radio from '/js/vue/components/radio.mjs';
 import Recommended from '/js/vue/components/recommended.mjs';
 import StateInput from '/js/vue/components/state-input.mjs';
 
+import { countriesInEnglish } from '/js/utils/countries.mjs';
 import { isEastGerman } from '/js/utils/germanStates.mjs';
-import { calculatePensionRefund } from '/js/utils/pensionRefund.mjs';
+import { calculatePensionRefund, pensionPaymentDisqualifyingCountries } from '/js/utils/pensionRefund.mjs';
 import { pensions } from '/js/utils/constants.mjs';
 import trackedStagesMixin from '/js/vue/mixins/trackedStages.mjs';
 import uniqueIdsMixin from '/js/vue/mixins/uniqueIds.mjs';
@@ -68,6 +69,7 @@ export default {
 			fullName: userDefaults.empty,
 			email: userDefaults.empty,
 			subscribeToNewsletter: false,
+			isMakingDisqualifyingPensionPayments: false,
 			dateOfBirth: userDefaults.empty,
 			showRefundRequestForm: false,
 			yearOptions: Array.from({ length: ((new Date()).getFullYear() + 2 - 2000) + 1}, (_, i) => 2000 + i), // From 2000 to currentYear + 2
@@ -188,6 +190,12 @@ export default {
 			}
 			return null;
 		},
+		canMakeDisqualifyingPensionPayments() {
+			return pensionPaymentDisqualifyingCountries.has(this.countryOfResidence);
+		},
+		countryOfResidenceName() {
+			return countriesInEnglish[this.countryOfResidence];
+		},
 		results() {
 			return calculatePensionRefund(
 				this.nationality,
@@ -195,7 +203,8 @@ export default {
 				this.firstDayOfWork,
 				this.lastDayOfWork,
 				this.yearlyIncome,
-				isEastGerman(this.germanState)
+				isEastGerman(this.germanState),
+				this.canMakeDisqualifyingPensionPayments && this.isMakingDisqualifyingPensionPayments
 			);
 		},
 		isCountriesSelected() {
@@ -206,6 +215,7 @@ export default {
 				this.results
 				&& !this.hasFlag('eu-resident')
 				&& !this.hasFlag('disqualifying-country-resident')
+				&& !this.hasFlag('india-nonnational-resident')
 				&& !(
 					this.hasFlag('israel-national')
 					&& this.hasFlag('israel-resident')
@@ -222,7 +232,12 @@ export default {
 			);
 		},
 		isCountriesEligible() {
-			return this.results && this.isCountryOfResidenceEligible && this.isNationalityEligible
+			return (
+				this.results
+				&& this.isCountryOfResidenceEligible
+				&& this.isNationalityEligible
+				&& !this.hasFlag('disqualifying-pension-payments')
+			);
 		},
 		isDateRangeSelected() {
 			return this.firstDayOfWork && this.lastDayOfWork;
@@ -260,8 +275,9 @@ export default {
 			if(!(this.results && this.results.refundAmount)) { return false; }
 
 			const args = [this.nationality, this.countryOfResidence, this.firstDayOfWork, this.lastDayOfWork, this.yearlyIncome];
-			const eastGermanResults = calculatePensionRefund(...args, true).refundAmount;
-			const westGermanResults = calculatePensionRefund(...args, false).refundAmount;
+			const disqualifyingPension = this.canMakeDisqualifyingPensionPayments && this.isMakingDisqualifyingPensionPayments;
+			const eastGermanResults = calculatePensionRefund(...args, true, disqualifyingPension).refundAmount;
+			const westGermanResults = calculatePensionRefund(...args, false, disqualifyingPension).refundAmount;
 			return eastGermanResults != westGermanResults;
 		},
 	},
@@ -303,13 +319,17 @@ export default {
 						v-model="countryOfResidence"
 						required></country-input>
 				</div>
+				<div class="form-group" v-if="canMakeDisqualifyingPensionPayments">
+					<checkbox v-model="isMakingDisqualifyingPensionPayments">I make pension payments in {{ countryOfResidenceName }}</checkbox>
+				</div>
 				<template v-if="results && !isCountriesEligible">
 					<hr>
 					<h3>You can't get a pension refund</h3>
 					<p v-if="hasFlag('eu-national')">You can't get a German pension refund because you are a European Union citizen.</p>
 					<p v-if="hasFlag('eea-national')">You can't get a German pension refund because you are a <glossary term="EEA">European Economic Area</glossary> citizen.</p>
 					<p v-if="hasFlag('eu-resident')">You can't get a German pension refund while you live in the European Union. If you leave the European Union, you can get a refund.</p>
-					<p v-if="hasFlag('disqualifying-country-resident')">You can't get a German pension refund while you live in Bosnia-Herzegovina, Kosovo, North Macedonia, Serbia or Turkey.</p>
+					<p v-if="hasFlag('disqualifying-country-resident')">You can't get a German pension refund while you live in Bosnia-Herzegovina, Kosovo, Montenegro or Serbia.</p>
+					<p v-if="hasFlag('disqualifying-pension-payments')">You can't get a German pension refund while you make pension payments in {{ countryOfResidenceName }}.</p>
 					<p v-if="hasFlag('india-nonnational-resident')">You can't get a German pension because you live in India, and you are not an Indian citizen. If you leave India, you can get a refund.</p>
 					<p v-if="hasFlag('israel-national') && hasFlag('israel-resident')">You can't get a pension refund because you live in Israel. If you leave Israel, you can get a pension refund.</p>
 					<p v-if="hasFlag('uk-national')">You can't get a pension refund because you are a citizen of the United Kingdom.</p>

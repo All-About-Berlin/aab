@@ -1,6 +1,9 @@
 import { pensions, taxes } from '/js/utils/constants.mjs';
 import { eeaCountries, euCountries } from '/js/utils/countries.mjs';
 
+// Residents of these countries can pay into the local pension system, which disqualifies a German refund.
+export const pensionPaymentDisqualifyingCountries = new Set(['BA', 'ME', 'MK', 'RS', 'TR']);
+
 function monthsBetween(dateA, dateB) {
 	const startDate = new Date(dateA);
 	const endDate = new Date(dateB);
@@ -45,7 +48,7 @@ function estimatePensionContributions(startDate, endDate, yearlyIncome, isInEast
 	}
 }
 
-export function calculatePensionRefund(nationality, countryOfResidence, entryDate, exitDate, yearlyIncome, isInEastGermany){
+export function calculatePensionRefund(nationality, countryOfResidence, entryDate, exitDate, yearlyIncome, isInEastGermany, isMakingDisqualifyingPensionPayments){
 	const monthsContributed = monthsBetween(entryDate, exitDate);
 	const monthsSinceLastContribution = monthsBetween(exitDate, new Date());
 	const flags = new Set();
@@ -67,10 +70,11 @@ export function calculatePensionRefund(nationality, countryOfResidence, entryDat
 		flags.add('not-eligible');
 		flags.add('eea-national');
 	}
-	// Contributing countries (mostly the balkans)
+	// Balkan block countries
 	else if (pensions.balkanBlockCountries.has(nationality)) {
 		flags.add('balkanblock-national');
-		if (pensions.disqualifyingCountries.has(countryOfResidence)) {
+		// Nationals of Bosnia, Kosovo, Serbia or Montenegro who live in one of those countries can't get a refund. Macedonia is excluded.
+		if (nationality !== 'MK' && countryOfResidence !== 'MK' && pensions.balkanBlockCountries.has(countryOfResidence)) {
 			flags.add('not-eligible');
 			flags.add('disqualifying-country-resident');
 		}
@@ -87,11 +91,7 @@ export function calculatePensionRefund(nationality, countryOfResidence, entryDat
 	// Israeli
 	else if (nationality === 'IL') {
 		flags.add('israel-national');
-		if (pensions.disqualifyingCountries.has(countryOfResidence)) {
-			flags.add('not-eligible');
-			flags.add('disqualifying-country-resident');
-		}
-		else if (countryOfResidence === 'IL') {
+		if (countryOfResidence === 'IL') {
 			flags.add('not-eligible');
 			flags.add('israel-resident');
 		}
@@ -103,11 +103,7 @@ export function calculatePensionRefund(nationality, countryOfResidence, entryDat
 	// Japanese
 	else if (nationality === 'JP') {
 		flags.add('japan-national');
-		if (pensions.disqualifyingCountries.has(countryOfResidence)) {
-			flags.add('not-eligible');
-			flags.add('disqualifying-country-resident');
-		}
-		else if (countryOfResidence === 'JP') {
+		if (countryOfResidence === 'JP') {
 			if(monthsContributed >= 60) {
 				flags.add('not-eligible');
 				flags.add('over-5-years');
@@ -119,23 +115,14 @@ export function calculatePensionRefund(nationality, countryOfResidence, entryDat
 	else if (nationality === 'TR') {
 		flags.add('turkey-national');
 		if(monthsContributed >= 60) {
-			if (countryOfResidence === 'TR') {
-				flags.add('turkey-resident');
-			}
-			else{
-				flags.add('not-eligible');
-				flags.add('over-5-years');
-			}
+			flags.add('not-eligible');
+			flags.add('over-5-years');
 		}
 	}
 	// Contracting country nationals
 	else if (pensions.contractingCountries.has(nationality)) {
 		flags.add('contracting-national');
-		if (pensions.disqualifyingCountries.has(countryOfResidence)) {
-			flags.add('not-eligible');
-			flags.add('disqualifying-country-resident');
-		}
-		else if(monthsContributed >= 60) {
+		if(monthsContributed >= 60) {
 			flags.add('not-eligible');
 			flags.add('over-5-years');
 		}
@@ -154,6 +141,12 @@ export function calculatePensionRefund(nationality, countryOfResidence, entryDat
 	if (countryOfResidence === 'IN' && nationality !== 'IN'){
 		flags.add('not-eligible');
 		flags.add('india-nonnational-resident');
+	}
+
+	// Making pension payments in Türkiye, Bosnia, Serbia, Montenegro or Macedonia disqualifies the refund, regardless of residence
+	if (isMakingDisqualifyingPensionPayments) {
+		flags.add('not-eligible');
+		flags.add('disqualifying-pension-payments');
 	}
 
 	if(!flags.has('not-eligible')) {

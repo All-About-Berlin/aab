@@ -714,7 +714,7 @@ describe('calculatePensionRefund', () => {
 
 	describe('a non-Indian national who lives in India', () => {
 		const output = calculatePensionRefund('CA', 'IN', yearsAgo(12), yearsAgo(10), 30000, false, false);
-		it('is not eligible for a refund', () => hasFlags(output, ['not-eligible', 'india-nonnational-resident']));
+		it('is not eligible for a refund', () => hasFlags(output, ['not-eligible', 'contracting-national', 'india-nonnational-resident']));
 	});
 
 	describe('a non-contracting country national', () => {
