@@ -189,13 +189,20 @@ You will get a refund for all your pension payments.[^37] That's **around {{RV_E
 
 {% tool "pension-refund-calculator" %}
 
-You will not get a refund for your employer's contributions.[^15] If you already got benefits from the Deutsche Rentenversicherung, your refund will be smaller.[^38] You get no refund for the time you received *[[Elterngeld]]* or *[[ALG I]]*.[^32] You can't receive a refund for contributions made in East Germany before June 30 1990.[^16]
+You will not get a refund for...
 
-If you were self-employed, you probably made no pension payments, so you get no money back. If you made voluntary pension payments, you only get 50% of your payments back ({{RV_EMPLOYEE_CONTRIBUTION}}% of your income).[^17]
+- ✗ Your employer's contributions to your pension[^15]
+- ✗ The months you received *[[Elterngeld]]* or *[[ALG I]]*[^32]
+- ✗ Contributions you have made in East Germany before June 30 1990[^16]
 
-To know the exact amount, [request a *Versicherungsverlauf*](/out/drv-pension-payments-info) from the [[Deutsche Rentenversicherung]]. It will arrive by post in 1 to 3 weeks. If you have an [[eID]], you can [get a *Versicherungsverlauf* instantly](https://kundenportal.deutsche-rentenversicherung.de/od-kundenportal).
+If you already received benefits from the Deutsche Rentenversicherung, your refund will be smaller.[^38]
 
-[Pension Refund Germany](/out/pension-refund-germany), [FundsBack](/out/fundsback) and [Germany Pension Refund](/out/germany-pension-refund) can tell you how much your refund is. This service is free.
+If you were self-employed, you probably did not make pension payments, so you get no money back. If you made voluntary pension payments, you only get 50% of your payments back ({{RV_EMPLOYEE_CONTRIBUTION}}% of your income).[^17]
+
+To know the exact amount of your pension refund:
+
+- [Request a *Versicherungsverlauf*](/out/drv-pension-payments-info) from the [[Deutsche Rentenversicherung]]. It will arrive by post in 1 to 3 weeks. If you have an [[eID]], you can [get a *Versicherungsverlauf* instantly](https://kundenportal.deutsche-rentenversicherung.de/od-kundenportal).
+- **or** ask [Pension Refund Germany](/out/pension-refund-germany), [FundsBack](/out/fundsback) or [Germany Pension Refund](/out/germany-pension-refund) to check for you. It's free.
 
 ## How to get your pension payments back
 
