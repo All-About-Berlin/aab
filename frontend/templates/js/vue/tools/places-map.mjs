@@ -213,9 +213,9 @@ export default {
 						<address>
 							<a :href="place.googleMapsUrl" target="_blank" title="Open in Google Maps" v-text="place.suburb"></a>
 						</address>
+						<recommended v-if="place.recommended"></recommended>
 						<p v-if="place.description">{{ place.description }}</p>
 						<span class="pill yes" v-if="place.accepts_public_health_insurance && !healthInsuranceFilter" title="Accepts public health insurance">Public health insurance</span>
-						<recommended v-if="place.recommended"></recommended>
 					</template>
 				</li>
 				<li v-if="filteredPlaces.length === 0">No places match your criteria</li>
