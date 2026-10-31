@@ -117,7 +117,7 @@ def test_filter_reset(page, places_map):
     places_map.locator("select").first.select_option("borough-Neukölln")
     expect(places_map.locator("ol > li")).to_have_count(2)
 
-    places_map.locator("select").first.select_option(label="Anywhere")
+    places_map.locator("select").first.select_option(label="Anywhere in Berlin")
     expect(places_map.locator("ol > li")).to_have_count(5)
 
 
