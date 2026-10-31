@@ -6,6 +6,7 @@ date_created: 2020-06-04
 related_reviews:
     - reviews/pension-payments-refund/johannes-kühn.md
     - reviews/pension-payments-refund/christian-haas.md
+    - reviews/pension-payments-refund/georg-kallscheid.md
 ---
 
 When you work in Germany, {{RV_EMPLOYEE_CONTRIBUTION}}% of your income goes into your [public pension](/glossary/gesetzliche%20Rentenversicherung). If you [leave Germany](/guides/leaving-germany), you can get those pension payments back. You can get thousands of euros back.
@@ -24,7 +25,8 @@ You can get a refund if...
 
 - [ ] You are not forced to contribute to the German pension system
 - [ ] **and** you can't make voluntary German public pension contributions
-- [ ] **and** your last pension payment in the [[European Union]], India, {{PENSION_DISQUALIFYING_COUNTRIES}} was more than 24 months ago[^0]
+- [ ] **and** your last German pension payment was more than 24 months ago[^0]
+- [ ] **and** you do not make pension contributions in {{PENSION_DISQUALIFYING_COUNTRIES}}
 - [ ] **and** you are an Indian citizen **or** you do not live in India[^4]
 
 To see the exact requirements, find your nationality below, or just use the [pension refund calculator](/tools/pension-refund-calculator).
@@ -50,8 +52,9 @@ You can get a pension refund if:
 
 - [ ] you made less than 60 monthly pension payments in Germany
 - [ ] **and** your last pension payment was more than 24 months ago
-- [ ] **and** you do not live in the [[European Union]], the United Kingdom, {{PENSION_DISQUALIFYING_COUNTRIES}}
+- [ ] **and** you do not live in the [[European Union]] or the United Kingdom
 - [ ] **and** you are an Indian citizen **or** you do not live in India[^4]
+- [ ] **and** you do not make pension contributions in {{PENSION_DISQUALIFYING_COUNTRIES}}
 
 You can also get a pension refund if:[^1]
 
@@ -65,7 +68,8 @@ You can get a pension refund if:[^2]
 
 - [ ] you made less than 60 monthly German pension payments
 - [ ] **and** your last pension payment was more than 24 months ago
-- [ ] **and** you do not live in the [[European Union]], the United Kingdom, India, {{PENSION_DISQUALIFYING_COUNTRIES}}
+- [ ] **and** you do not live in the [[European Union]], the United Kingdom, India, Bosnia and Herzegovina, Kosovo, Serbia or Montenegro
+- [ ] **and** you do not make pension contributions in {{PENSION_DISQUALIFYING_COUNTRIES}}
 
 You can also get a pension refund if:[^1]
 
@@ -79,7 +83,8 @@ You can get a pension refund if:[^5]
 
 - [ ] you do not live in Israel
 - [ ] **and** your last pension payment was more than 24 months ago
-- [ ] **and** you do not live in the [[European Union]], the United Kingdom, India, {{PENSION_DISQUALIFYING_COUNTRIES}}
+- [ ] **and** you do not live in the [[European Union]], the United Kingdom or India
+- [ ] **and** you do not make pension contributions in {{PENSION_DISQUALIFYING_COUNTRIES}}
 
 You can also get a pension refund if:[^1]
 
@@ -91,9 +96,10 @@ You can also get a pension refund if:[^1]
 
 You can get a pension refund if:[^6]
 
-- [ ] you made less than 60 monthly German pension payments
-- [ ] **and** your last pension payment was more than 24 months ago
-- [ ] **and** you do not live in the [[European Union]], the United Kingdom, India, {{PENSION_DISQUALIFYING_COUNTRIES}}
+- [ ] your last pension payment was more than 24 months ago
+- [ ] **and** you do not live in the [[European Union]], the United Kingdom or India
+- [ ] **and** you do not make pension contributions in {{PENSION_DISQUALIFYING_COUNTRIES}}
+- [ ] **and** if you live in Japan, you made less than 60 monthly German pension payments
 
 You can also get a pension refund if:[^1]
 
@@ -111,7 +117,8 @@ You can get a pension refund if:[^2]
 
 - [ ] you made less than 60 monthly German pension payments
 - [ ] **and** your last pension payment was more than 24 months ago
-- [ ] **and** you do not live in the [[European Union]], the United Kingdom, India, {{PENSION_DISQUALIFYING_COUNTRIES}}
+- [ ] **and** you do not live in the [[European Union]], the United Kingdom, India, Bosnia and Herzegovina, Kosovo, Serbia or Montenegro
+- [ ] **and** you do not make pension contributions in {{PENSION_DISQUALIFYING_COUNTRIES}}
 
 You can also get a pension refund if:[^1]
 
@@ -119,13 +126,29 @@ You can also get a pension refund if:[^1]
 - [ ] **and** you are at least 67 years old
 - [ ] **and** you live anywhere in the world, including Kosovo
 
+### Macedonian citizens
+
+You can get a pension refund if:
+
+- [ ] you made less than 60 monthly German pension payments
+- [ ] **and** your last pension payment was more than 24 months ago
+- [ ] **and** you do not live in the [[European Union]], the United Kingdom or India[^4]
+- [ ] **and** you do not make pension contributions in {{PENSION_DISQUALIFYING_COUNTRIES}}
+
+You can also get a pension refund if:
+
+- [ ] you made less than 60 monthly German pension payments
+- [ ] **and** you are at least 67 years old
+- [ ] **and** you live anywhere in the world, including North Macedonia
+
 ### Montenegrin citizens
 
 You can get a pension refund if:[^2]
 
 - [ ] you made less than 60 monthly German pension payments
 - [ ] **and** your last pension payment was more than 24 months ago
-- [ ] **and** you do not live in the [[European Union]], the United Kingdom, India, {{PENSION_DISQUALIFYING_COUNTRIES}}
+- [ ] **and** you do not live in the [[European Union]], the United Kingdom, India, Bosnia and Herzegovina, Kosovo, Serbia or Montenegro
+- [ ] **and** you do not make pension contributions in {{PENSION_DISQUALIFYING_COUNTRIES}}
 
 You can also get a pension refund if:[^1]
 
@@ -139,7 +162,8 @@ You can get a pension refund if:[^2]
 
 - [ ] you made less than 60 monthly German pension payments
 - [ ] **and** your last pension payment was more than 24 months ago
-- [ ] **and** you do not live in the [[European Union]], the United Kingdom, India, {{PENSION_DISQUALIFYING_COUNTRIES}}
+- [ ] **and** you do not live in the [[European Union]], the United Kingdom, India, Bosnia and Herzegovina, Kosovo, Serbia or Montenegro
+- [ ] **and** you do not make pension contributions in {{PENSION_DISQUALIFYING_COUNTRIES}}
 
 You can also get a pension refund if:[^1]
 
@@ -151,8 +175,16 @@ You can also get a pension refund if:[^1]
 
 You can get a pension refund if:[^8]
 
-- [ ] Your last pension payment was more than 24 months ago **and** you do not live in the [[European Union]], the United Kingdom, India, {{PENSION_DISQUALIFYING_COUNTRIES}}
-- [ ] **or** you are at least 67 years old and you made less than 60 monthly German pension payments[^1]
+- [ ] you made less than 60 monthly German pension payments
+- [ ] **and** your last pension payment was more than 24 months ago
+- [ ] **and** you do not live in the [[European Union]], the United Kingdom or India
+- [ ] **and** you do not make pension contributions in {{PENSION_DISQUALIFYING_COUNTRIES}}
+
+You can also get a pension refund if:[^1]
+
+- [ ] you made less than 60 monthly German pension payments
+- [ ] **and** you are at least 67 years old
+- [ ] **and** you live anywhere in the world, including Tunisia
 
 If you live in Tunisia, you must use a Tunisian bank account for your refund.[^9]
 
@@ -160,12 +192,10 @@ If you live in Tunisia, you must use a Tunisian bank account for your refund.[^9
 
 You can get a pension refund if:[^10]
 
-- [ ] you made less than 60 monthly German pension payments[^11] **or** you have lived in Turkey for at least 24 months[^12]
-- [ ] **and** you don't pay social security contributions in Turkey[^13]
-
-If you are a Turkish citizen, and you work in Turkey, you can't get a pension refund,[^13] because you pay social security contributions in Turkey. If you are not a Turkish citizen, but you live and work in Turkey, you can still get a pension refund.[^9]
-
-If you live in the United Kingdom, you can't get a pension refund.
+- [ ] you made less than 60 monthly German pension payments[^11]
+- [ ] **and** your last pension payment was more than 24 months ago
+- [ ] **and** you do not live in the [[European Union]], the United Kingdom or India
+- [ ] **and** you do not make pension contributions in {{PENSION_DISQUALIFYING_COUNTRIES}}[^13]
 
 ### UK citizens
 
@@ -180,8 +210,17 @@ There is an exception. You can get a refund if:
 
 You can get a pension refund if:[^8]
 
-- Your last pension payment was more than 24 months ago **and** you do not live in the [[European Union]], the United Kingdom, {{PENSION_BALKAN_BLOCK_COUNTRIES}}
-- **or** you are at least 67 years old and you made less than 60 monthly German pension payments[^1]
+- [ ] your last pension payment was more than 24 months ago
+- [ ] **and** you do not live in the [[European Union]], the United Kingdom or India[^4]
+- [ ] **and** you do not make pension contributions in {{PENSION_DISQUALIFYING_COUNTRIES}}
+
+Unlike citizens of contracting countries, you can get a refund even if you contributed to the German pension for more than 5 years.
+
+You can also get a pension refund if:[^1]
+
+- [ ] you made less than 60 monthly German pension payments
+- [ ] **and** you are at least 67 years old
+- [ ] **and** you live anywhere in the world
 
 ## How much money will I get back?
 
@@ -278,11 +317,11 @@ The *[[Deutsche Rentenversicherung]]* can also help you fill the forms. Their em
 
 [Germany Mantra](/out/germany-mantra) and [Pension Redemption](https://www.pension-redemption.com/) also handle pension refunds, but their fee is higher.
 
-## How long it takes
+## How long pension refunds take
 
-To request a pension payments refund, you must wait at least 2 years after your last pension payment.[^17]
+You can request a pension payments refund 24 months after your last pension payment.[^17] Your last payment is usually the month after you [stop working](/guides/losing-your-job).
 
-After 24 months, you can ask for a refund. After you apply for a refund, it takes **1 to 6 months** to get your money back.[^35] It's a long process, and it's sometimes complicated.[^18] You can start preparing a few months before you are eligible.
+After you apply for a refund, it takes **1 to 6 months** to get your money back.[^35] It's a long process, and it's sometimes complicated.[^18] You can start preparing a few months before you are eligible.
 
 ## How the money is refunded
 
@@ -312,7 +351,6 @@ Tax advisors rarely have experience with German pension refunds. German embassie
 [^9]: [Screenshot](/images/german-pension-refund-tunisian-bank.png)
 [^10]: [rentenfuchs.info](https://www.rentenfuchs.info/beitragserstattung-rentenversicherung/#:~:text=beitragserstattung%20fur%20turkische%20staatsangehorige)
 [^11]: [germanypensionrefund.com](https://www.germanypensionrefund.com/turkey)
-[^12]: [rentenfuchs.info](https://www.rentenfuchs.info/beitragserstattung-rentenversicherung/#:~:text=unter%20berucksichtigung%20dieser%20voraussetzungen%20ist%20fur%20turkische%20staatsangehorige%20eine%20beitragserstattung%20auch%20dann%20moglich)
 [^13]: [Screenshot](/images/rene-pension-turkey-2022-01-20.png)
 [^14]: [taxback.com](https://www.taxback.com/en/germany/pension-return/)
 [^15]: [Wikipedia](https://de.wikipedia.org/wiki/Rentenbeitragserstattung#Auswirkungen_der_Beitragserstattung), [deutsche-rentenversicherung.de](https://www.deutsche-rentenversicherung.de/SharedDocs/Downloads/DE/Broschueren/international/weitere_abkommen_fremdsprachig/working_in_germany_no_contracting_states.pdf;jsessionid=3D2A15785448B28F82B12270A1319D03.delivery2-8-replication?__blob=publicationFile&v=1)
