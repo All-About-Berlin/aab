@@ -5,6 +5,7 @@ from ursus.config import config
 from ursus.utils import import_module_or_path
 import re
 import readline
+import yaml
 
 
 if "libedit" in readline.__doc__:
@@ -13,22 +14,10 @@ else:
     readline.parse_and_bind("tab: complete")
 
 
-expert_template = """---
-Name: {name}
-Job_title: {title}
-Email: {email}
-Website: {website}
-Picture: experts/photos/{slug}.jpg
----
-
-{description}
-"""
-
-review_template = """---
-Related_expert: experts/{expert_slug}.md
-Date_reviewed: {date}
----
-"""
+class IndentedListDumper(yaml.SafeDumper):
+    def increase_indent(self, flow=False, indentless=False):
+        # Enforce indented lists as used in the rest of the content
+        return super().increase_indent(flow, False)
 
 
 def get_user_input(title: str, autocompleter=None):
@@ -48,22 +37,27 @@ def autocomplete_experts(query, state):
     return options[state] if state < len(options) else None
 
 
-def add_expert(expert_slug: str):
-    name = get_user_input("Expert name")
+def write_markdown(path: Path, metadata: dict, body: str = ""):
+    frontmatter = yaml.dump(metadata, Dumper=IndentedListDumper, allow_unicode=True, sort_keys=False, indent=4)
+    content = f"---\n{frontmatter}---\n"
+    if body:
+        content += f"\n{body}\n"
+    path.write_text(content)
 
-    file_content = expert_template.format(
-        name=name,
-        title=get_user_input("Job title"),
-        email=get_user_input("Email"),
-        website=get_user_input("Website"),
-        description=get_user_input("Description"),
-        slug=expert_slug,
-    )
+
+def add_expert(expert_slug: str):
+    metadata = {
+        "name": get_user_input("Expert name"),
+        "job_title": get_user_input("Job title"),
+        "email": get_user_input("Email"),
+        "website": get_user_input("Website"),
+        "picture": f"experts/photos/{expert_slug}.jpg",
+    }
+    body = get_user_input("Description")
 
     file_path = config.content_path / f"experts/{expert_slug}.md"
     print(f"Saving to {str(file_path)}")
-    with file_path.open("w") as file:
-        file.writelines(file_content)
+    write_markdown(file_path, metadata, body)
     print("\n---\n")
 
 
@@ -75,42 +69,32 @@ def add_review():
     if not (config.content_path / f"experts/{expert_slug}.md").exists():
         add_expert(expert_slug)
 
-    file_content = review_template.format(
-        expert_slug=expert_slug,
-        date=datetime.now().strftime("%Y-%m-%d"),
-    )
+    review_metadata = {
+        "related_expert": f"experts/{expert_slug}.md",
+        "date_reviewed": datetime.now().date(),
+    }
 
     review_path = config.content_path / f"reviews/{entry_slug}/{expert_slug}.md"
     print(f"Saving review to {str(review_path.relative_to(config.content_path))}")
     review_path.parent.mkdir(parents=True, exist_ok=True)
-    with review_path.open("w") as file:
-        file.writelines(file_content)
+    write_markdown(review_path, review_metadata)
     print("\n---\n")
 
     print(f"Adding review to {entry_uri}")
-
-    reviewers_regex = re.compile(r"Related_reviews:(\s*\n)(\s+)(.*)$", re.MULTILINE | re.DOTALL)
     guide_path = config.content_path / entry_uri
-    with guide_path.open() as file:
-        guide_content = file.read()
 
-    relative_review_path = str(review_path.relative_to(config.content_path))
-
-    if "Related_reviews:" not in guide_content:
-        guide_content = re.sub(
-            re.compile(r"---(.*)---", re.MULTILINE | re.DOTALL),
-            r"---\1Related_reviews:\n    " + relative_review_path + "\n---",
-            guide_content,
-        )
+    markdown_content = guide_path.read_text()
+    match = re.match(r"^---\s*\n(.*?)\n---\s*\n?", markdown_content, re.DOTALL)
+    if match:
+        metadata = yaml.safe_load(match.group(1)) or {}
+        body = markdown_content[match.end() :]
     else:
-        guide_content = re.sub(
-            reviewers_regex,
-            r"Related_reviews:\1\2" + relative_review_path + r"\n\2\3",
-            guide_content,
-        )
+        metadata = {}
+        body = markdown_content
 
-    with guide_path.open("w") as file:
-        file.writelines(guide_content)
+    reviews = metadata.setdefault("related_reviews", [])
+    reviews.append(str(review_path.relative_to(config.content_path)))
+    write_markdown(guide_path, metadata, body)
 
 
 if __name__ == "__main__":
