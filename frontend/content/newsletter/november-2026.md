@@ -1,7 +1,7 @@
 ---
 title: What's new in November 2026
 description: Winter activities, harder integration test, higher taxes
-date_created: 2026-10-26
+date_created: 2026-10-31
 ---
 
 It is the first of three darkest, most overcast winter months.[^1] Although it's one of the most eventful months in German history, it's a relatively quiet one for us modern Berliners. We retreat into our homes, resume our Netflix subscriptions and wait for the holidays. *[Abwarten und Tee trinken.](https://www.thelocal.de/20201021/german-phrase-of-the-day-abwarten-und-tee-trinken)*
@@ -47,10 +47,6 @@ This only affects the language test for the integration course. Other language t
 ### Permanent €99 family ticket
 
 The [Family Ticket](https://www.bahn.de/service/individuelle-reise/kinder/familienticket) is back! It covers a two-way long-distance train trip for up to 5 family members. It was initially a temporary deal, but now it's here to stay.[^5]
-
-### Earlier age for mammograms
-
-https://www.iamexpat.de/expat-info/germany-news/german-health-insurers-reduce-age-free-mammograms
 
 ### Other updates
 
