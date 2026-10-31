@@ -1,6 +1,6 @@
 ---
 title: What's new in November 2026
-description: Winter activities, harder integration test, higher taxes
+description: Winter activities, harder integration test, and a new guide
 date_created: 2026-10-31
 ---
 
@@ -38,6 +38,14 @@ November 9 is a *Schicksalstag* in German history: a socialist revolution, a Naz
 
 November 11 is St-Martin's Day in parts of Germany. It marks the [start of  Karneval season](https://germanfoods.org/german-food-facts/karneval-fasching/).
 
+### Big changes in 2027
+
+Every January, lots of things change in Germany: taxes, social contributions, minimum wage, public transit prices, and much more. Instead of announcing those changes in this newsletter, I have compiled them into a guide.
+
+**[What's changing in 2027 ➞](/guides/2027)**
+
+This will allow me to write longer explanations and to improve them over time. I can also include calculators and other explainers that would not fit in an email.
+
 ### Harder language tests
 
 On November 1, the integration course language test (DTZ) will become harder.[^3] The test has 3 sections: reading/writing, speaking and listening. Before, you could pass 2 out of 3 sections and still pass the test. Now you must pass all sections.[^4]
@@ -61,14 +69,6 @@ The 2026 youth word of the year is *[ragebait](https://www.langenscheidt.com/jug
 
 This is the 12th edition of the All About Berlin newsletter. It will be sent to a little over 1000 subscribers. If you enjoy those ad-free, AI-free, no-nonsense monthly updates, consider [buying me a coffee](/donate) or sharing the newsletter on social media.
 
-### Big changes in 2027
-
-Every January, lots of things change in Germany: taxes, social contributions, minimum wage, public transit prices, and much more. Instead of announcing those changes in this newsletter, I have compiled them into a guide.
-
-**[What's changing in 2027 ➞](/guides/2027)**
-
-This will allow me to write longer explanations and to improve them over time. I can also include calculators and other tools that would not fit in an email.
-
 ### Pension refund updates
 
 I have updated my [German pension refund guide](/guides/pension-payments-refund) and [pension refund calculator](/tools/pension-refund-calculator) with help from Georg at [Pension Refund Germany](/out/pension-refund-germany). It fixes a few edge cases with Indian residents, and Japanese, Turkish and Balkan nationals.
@@ -81,7 +81,7 @@ I am still working on a forum for All About Berlin. It's ready to go live, but I
 
 ### Other changes
 
-I have re-checked all 484 places listed on the website. I have automated that last Spring. A few businesses have moved or closed since then, most notably Brewdog in Mitte.
+I have re-checked all 484 English-speaking businesses listed on the website. I have automated that last Spring. A few businesses have moved or closed since then, most notably Brewdog in Mitte.
 
 [^1]: [Wikipedia](https://en.wikipedia.org/wiki/List_of_cities_by_sunshine_duration), [weather-and-climate.com](https://weather-and-climate.com/average-monthly-hours-Sunshine,Berlin,Germany)
 [^2]: [brunnenmagazin.de](https://brunnenmagazin.de/winterspielplaetze-wedding-2026/)
