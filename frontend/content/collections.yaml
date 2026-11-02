@@ -435,9 +435,8 @@
   type: tools
   title: Tools and documents for the Bürgeramt
   short_title: For the Bürgeramt
-  description: Berlin Bürgeramt appointment finder, form fillers and form templates.
+  description: Form fillers, form templates and other tools for the Berlin Bürgeramt.
   entries:
-    - uri: tools/appointment-finder.md
     - uri: docs/anmeldung.md
     - uri: docs/abmeldung.md
     - uri: docs/wohnungsgeberbestatigung.md

@@ -177,14 +177,6 @@
     redir /favicon.ico /staticimages/favicon.png 301
     redir /apple-touch-icon* /staticimages/favicon-180.png 301
 
-    # Appointments API proxy (websockets)
-    handle /api/appointments* {
-        reverse_proxy 128.140.76.17:80 {
-            stream_timeout 12h
-            stream_close_delay 5m
-        }
-    }
-
     import openexchangerates_proxy
     import plausible_proxy
     import backend_proxy

@@ -6,7 +6,6 @@ description: When you register your new address at the Bürgeramt
 date_created: 2017-10-06
 related_guides:
     - guides/anmeldung-in-english-berlin.md
-    - tools/appointment-finder.md
     - guides/berlin-burgeramt-appointment.md
     - guides/find-a-flat-in-berlin.md
     - guides/german-tax-id-steuernummer.md

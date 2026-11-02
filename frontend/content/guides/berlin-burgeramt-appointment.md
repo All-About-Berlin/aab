@@ -52,12 +52,6 @@ You can book a single appointment for multiple services:
 
 ## Other ways to get an appointment
 
-### Use my appointment finder
-
-To [register your address](/glossary/Anmeldung), use my [*Anmeldung* appointment finder](/tools/appointment-finder).
-
-{% tool "anmeldung-appointment-finder" %}
-
 ### Call 115
 
 Call [115](tel:+4930115) between 7:00 and 18:00.[^2] This is the *[[Bürgertelefon]]*. They can find you a *Bürgeramt* appointment, even when there are no appointments online.[^1]

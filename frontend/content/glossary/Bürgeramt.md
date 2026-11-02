@@ -7,7 +7,6 @@ date_created: 2017-09-22
 related_guides:
     - guides/berlin-burgeramt-appointment.md
     - guides/anmeldung-in-english-berlin.md
-    - tools/appointment-finder.md
     - guides/abmeldung.md
     - guides/replacement-meldebescheinigung.md
     - guides/international-driving-permit-germany.md

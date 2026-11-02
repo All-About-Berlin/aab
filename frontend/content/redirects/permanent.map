@@ -7,7 +7,8 @@
 "/glossary/Bundesagentur für Arbeit" "/glossary/Agentur für Arbeit"
 "/glossary/Bundesagentur für Arbeit​" "/glossary/Agentur für Arbeit"
 "/glossary/zertifierte Teststelle" /guides
-/appointments "/tools/appointment-finder"
+/appointments /guides/berlin-burgeramt-appointment
+/tools/appointment-finder /guides/berlin-burgeramt-appointment
 /calculators "/tools"
 /calculators/arbeitslosenversicherung "/tools/tax-calculator"
 /calculators/health-insurance "/tools/health-insurance-calculator"

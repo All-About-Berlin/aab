@@ -6,7 +6,6 @@ description: A phone hotline to access citizen services and get a Bürgeramt app
 date_created: 2018-07-31
 related_guides:
     - guides/berlin-burgeramt-appointment.md
-    - tools/appointment-finder.md
     - guides/emergency-numbers.md
 ---
 
