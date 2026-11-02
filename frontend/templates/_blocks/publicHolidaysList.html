@@ -14,7 +14,7 @@
 				</dt>
 				<dd>
 					{{ name.en }}
-					<br><small>{{ name.de }}</small>
+					<br><small>{{ name.de }}{% if date.weekday() > 4 %}. It falls on a weekend.{% endif %}</small>
 				</dd>
 			</tr>
 		{% endif %}
