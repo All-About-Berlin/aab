@@ -283,6 +283,10 @@ sup:target a{
         time.weekend{
             text-decoration: line-through;
             color: var(--c-text-error);
+            + small{
+                color: var(--c-text-error);
+                display: block;
+            }
         }
 
         small{

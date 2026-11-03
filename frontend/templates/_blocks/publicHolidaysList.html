@@ -11,10 +11,11 @@
 			<tr>
 				<dt>
 					<time {% if date.weekday() > 4 %}class="weekend"{% endif %} datetime="{{ date.isoformat() }}">{{ date.strftime('%B %-d') }}</time>
+					{% if date.weekday() > 4 %}<small>On a weekend</small>{% endif %}
 				</dt>
 				<dd>
 					{{ name.en }}
-					<br><small>{{ name.de }}{% if date.weekday() > 4 %}. It falls on a weekend.{% endif %}</small>
+					<br><small>{{ name.de }}</small>
 				</dd>
 			</tr>
 		{% endif %}
