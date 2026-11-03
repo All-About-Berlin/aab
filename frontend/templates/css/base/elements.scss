@@ -351,6 +351,10 @@ sup:target a{
     margin: var(--l-relative) calc(var(--w-page-border) * -1);
     padding: 0 var(--w-page-border);
     overflow-x: auto;
+
+    table{
+        word-break: normal;  // Prevents overly eager word wrapping
+    }
 }
 
 .hidden{
