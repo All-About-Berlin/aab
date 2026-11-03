@@ -159,7 +159,7 @@ To become a permanent resident, you must...
     Your time as a student counts, but it's divided by 2. For example, if you studied for 4 years, it counts as 2 years toward your [PR](/glossary/Niederlassungserlaubnis).
 - [ ] **Speak [[B1]] German**[^20]
 - [ ] **Have a retirement pension**  
-    You need 60 months of public pension payments, a guaranteed private pension, or equivalent retirement savings. See the [pension requirements](#pension-requirements).
+    You need 60 months of [public pension insurance](/glossary/gesetzliche%20Rentenversicherung) payments, a guaranteed private pension, or equivalent retirement savings. See the [pension requirements](#pension-requirements).
 
 If you live 5 years in Germany, you can also [become a German citizen](#citizenship). Citizenship is usually better.
 

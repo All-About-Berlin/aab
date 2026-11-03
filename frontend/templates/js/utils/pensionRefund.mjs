@@ -78,10 +78,6 @@ export function calculatePensionRefund(nationality, countryOfResidence, entryDat
 			flags.add('not-eligible');
 			flags.add('disqualifying-country-resident');
 		}
-		if(monthsContributed >= 60) {
-			flags.add('not-eligible');
-			flags.add('over-5-years');
-		}
 	}
 	// UK gets treated the same as EU citizens, basically.
 	else if (nationality == 'GB'){
@@ -95,40 +91,34 @@ export function calculatePensionRefund(nationality, countryOfResidence, entryDat
 			flags.add('not-eligible');
 			flags.add('israel-resident');
 		}
-		else if(monthsContributed >= 60) {
-			flags.add('not-eligible');
-			flags.add('over-5-years');
-		}
 	}
 	// Japanese
 	else if (nationality === 'JP') {
 		flags.add('japan-national');
 		if (countryOfResidence === 'JP') {
-			if(monthsContributed >= 60) {
-				flags.add('not-eligible');
-				flags.add('over-5-years');
-			}
 			flags.add('japan-resident');
 		}
 	}
 	// Turkish
 	else if (nationality === 'TR') {
 		flags.add('turkey-national');
-		if(monthsContributed >= 60) {
-			flags.add('not-eligible');
-			flags.add('over-5-years');
-		}
 	}
 	// Contracting country nationals
 	else if (pensions.contractingCountries.has(nationality)) {
 		flags.add('contracting-national');
-		if(monthsContributed >= 60) {
-			flags.add('not-eligible');
-			flags.add('over-5-years');
-		}
 	}
 	else {
 		flags.add('noncontracting-national');
+	}
+
+	// Only nationals of specific countries lose eligibility after 60 months of contributions.
+
+	// Nationals of these countries can't get a refund after 60+ months of contributions.
+	// GRA zu § 7 SGB VI, section 4.2, 2025-12
+	const pensionFiveYearLimitCountries = new Set(['AL', 'AU', 'BR', 'CA', 'IN', 'KR', 'MD', 'MK', 'PH', 'US', 'UY']);
+	if (pensionFiveYearLimitCountries.has(nationality) && monthsContributed >= 60) {
+		flags.add('not-eligible');
+		flags.add('over-5-years');
 	}
 
 	// UK residents get treated like EU residents, basically

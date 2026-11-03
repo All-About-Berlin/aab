@@ -214,7 +214,7 @@ You can get a pension refund if:[^8]
 - [ ] **and** you do not live in the [[European Union]], the United Kingdom or India[^4]
 - [ ] **and** you do not make pension contributions in {{PENSION_DISQUALIFYING_COUNTRIES}}
 
-Unlike citizens of contracting countries, you can get a refund even if you contributed to the German pension for more than 5 years.
+Unlike citizens of contracting countries, you can get a refund even if you contributed to the German pension for more than 60 months.
 
 You can also get a pension refund if:[^1]
 

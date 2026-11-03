@@ -708,7 +708,7 @@ constants:
     description: GermanyPensionRefund maximum fee (€)
     fail_on: 2027-03-31
   PENSION_CONTRACTING_COUNTRIES:
-    value: AL,AU,BR,CA,CL,IN,IL,JP,KR,MA,ME,PH,TN,TR,UY,US
+    value: AL,AU,BR,CA,CL,IN,IL,JP,KR,MA,MD,ME,PH,TN,TR,UY,US
     unit: countries
     description: Countries with a bilateral pension agreement with Germany (Sozialversicherungsabkommen)
     fail_on: 2027-03-31

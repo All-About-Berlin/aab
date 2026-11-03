@@ -169,6 +169,36 @@ describe('calculatePensionRefund', () => {
 			});
 		});
 
+		describe('who is an Albanian, Australian, Indian, Korean, Philippine or American national, and worked more than 5 years in Germany', () => {
+			// Contracting countries subject to the 5-year rule
+			const outputAlbanian = calculatePensionRefund('AL', 'AO', yearsAgo(16), yearsAgo(10), 30000, false, false);
+			const outputAustralian = calculatePensionRefund('AU', 'AO', yearsAgo(16), yearsAgo(10), 30000, false, false);
+			const outputIndian = calculatePensionRefund('IN', 'AO', yearsAgo(16), yearsAgo(10), 30000, false, false);
+			const outputKorean = calculatePensionRefund('KR', 'AO', yearsAgo(16), yearsAgo(10), 30000, false, false);
+			const outputPhilippine = calculatePensionRefund('PH', 'AO', yearsAgo(16), yearsAgo(10), 30000, false, false);
+			const outputAmerican = calculatePensionRefund('US', 'AO', yearsAgo(16), yearsAgo(10), 30000, false, false);
+			it('is not eligible for a refund', () => {
+				hasFlags(outputAlbanian, ['not-eligible', 'over-5-years', 'contracting-national']);
+				hasFlags(outputAustralian, ['not-eligible', 'over-5-years', 'contracting-national']);
+				hasFlags(outputIndian, ['not-eligible', 'over-5-years', 'contracting-national']);
+				hasFlags(outputKorean, ['not-eligible', 'over-5-years', 'contracting-national']);
+				hasFlags(outputPhilippine, ['not-eligible', 'over-5-years', 'contracting-national']);
+				hasFlags(outputAmerican, ['not-eligible', 'over-5-years', 'contracting-national']);
+			});
+		});
+
+		describe('who is a Chilean, Moroccan or Tunisian national, and worked more than 5 years in Germany', () => {
+			// Contracting countries not affected by the 5-year rule
+			const outputChilean = calculatePensionRefund('CL', 'AO', yearsAgo(16), yearsAgo(10), 30000, false, false);
+			const outputMoroccan = calculatePensionRefund('MA', 'AO', yearsAgo(16), yearsAgo(10), 30000, false, false);
+			const outputTunisian = calculatePensionRefund('TN', 'AO', yearsAgo(16), yearsAgo(10), 30000, false, false);
+			it('is eligible for a refund', () => {
+				hasFlags(outputChilean, ['eligible', 'contracting-national']);
+				hasFlags(outputMoroccan, ['eligible', 'contracting-national']);
+				hasFlags(outputTunisian, ['eligible', 'contracting-national']);
+			});
+		});
+
 		describe('who left the EU less than 2 years ago', () => {
 			const output = calculatePensionRefund('CA', 'AO', yearsAgo(3), yearsAgo(1), 30000, false, false);
 			it('is eligible for a refund later', () => hasFlags(output, ['eligible-later', 'contracting-national']));
@@ -409,11 +439,24 @@ describe('calculatePensionRefund', () => {
 		});
 
 		describe('who worked more than 5 years in Germany', () => {
+			const outputBosnian = calculatePensionRefund('BA', 'AO', yearsAgo(16), yearsAgo(10), 30000, false, false);
+			const outputSerbian = calculatePensionRefund('RS', 'AO', yearsAgo(16), yearsAgo(10), 30000, false, false);
+			const outputKosovar = calculatePensionRefund('XK', 'AO', yearsAgo(16), yearsAgo(10), 30000, false, false);
+			const outputMontenegran = calculatePensionRefund('ME', 'AO', yearsAgo(16), yearsAgo(10), 30000, false, false);
 			const outputLessThan2YearsAgo = calculatePensionRefund('RS', 'AO', yearsAgo(7), yearsAgo(1), 30000, false, false);
-			const outputOver2YearsAgo = calculatePensionRefund('RS', 'AO', yearsAgo(16), yearsAgo(10), 30000, false, false);
+			it('is eligible for a refund', () => {
+				hasFlags(outputBosnian, ['eligible', 'balkanblock-national']);
+				hasFlags(outputSerbian, ['eligible', 'balkanblock-national']);
+				hasFlags(outputKosovar, ['eligible', 'balkanblock-national']);
+				hasFlags(outputMontenegran, ['eligible', 'balkanblock-national']);
+				hasFlags(outputLessThan2YearsAgo, ['eligible-later', 'balkanblock-national']);
+			});
+		});
+
+		describe('who is Macedonian and worked more than 5 years in Germany', () => {
+			const output = calculatePensionRefund('MK', 'AO', yearsAgo(16), yearsAgo(10), 30000, false, false);
 			it('is not eligible for a refund', () => {
-				hasFlags(outputLessThan2YearsAgo, ['not-eligible', 'over-5-years', 'balkanblock-national']);
-				hasFlags(outputOver2YearsAgo, ['not-eligible', 'over-5-years', 'balkanblock-national']);
+				hasFlags(output, ['not-eligible', 'over-5-years', 'balkanblock-national']);
 			});
 		});
 
@@ -488,9 +531,9 @@ describe('calculatePensionRefund', () => {
 		describe('who worked more than 5 years in Germany', () => {
 			const outputLessThan2YearsAgo = calculatePensionRefund('IL', 'AO', yearsAgo(7), yearsAgo(1), 30000, false, false);
 			const outputOver2YearsAgo = calculatePensionRefund('IL', 'AO', yearsAgo(16), yearsAgo(10), 30000, false, false);
-			it('is not eligible for a refund', () => {
-				hasFlags(outputLessThan2YearsAgo, ['not-eligible', 'over-5-years', 'israel-national']);
-				hasFlags(outputOver2YearsAgo, ['not-eligible', 'over-5-years', 'israel-national']);
+			it('is eligible for a refund', () => {
+				hasFlags(outputLessThan2YearsAgo, ['eligible-later', 'israel-national']);
+				hasFlags(outputOver2YearsAgo, ['eligible', 'israel-national']);
 			});
 		});
 
@@ -523,8 +566,8 @@ describe('calculatePensionRefund', () => {
 		describe('who lives in Japan', () => {
 			describe('and worked for over 5 years in Germany', () => {
 				const output = calculatePensionRefund('JP', 'JP', yearsAgo(17), yearsAgo(10), 30000, false, false);
-				it('is not eligible for a refund', () => {
-					hasFlags(output, ['not-eligible', 'japan-national', 'japan-resident', 'over-5-years']);
+				it('is eligible for a refund', () => {
+					hasFlags(output, ['eligible', 'japan-national', 'japan-resident']);
 				});
 			});
 			describe('and worked for less than 5 years in Germany', () => {
@@ -575,11 +618,11 @@ describe('calculatePensionRefund', () => {
 
 		describe('who left the EU less than 2 years ago', () => {
 			describe('and worked for over 5 years in Germany', () => {
-				it('is not eligible for a refund while in Japan', () => {
+				it('will be eligible for a refund while in Japan later', () => {
 					const output = calculatePensionRefund('JP', 'JP', yearsAgo(7), yearsAgo(1), 30000, false, false);
-					hasFlags(output, ['not-eligible', 'japan-national', 'japan-resident', 'over-5-years']);
+					hasFlags(output, ['eligible-later', 'japan-national', 'japan-resident']);
 				});
-				it('is eligible for a refund while not in Japan', () => {
+				it('will be eligible for a refund while not in Japan later', () => {
 					const output = calculatePensionRefund('JP', 'CA', yearsAgo(7), yearsAgo(1), 30000, false, false);
 					hasFlags(output, ['eligible-later', 'japan-national']);
 				});
@@ -640,9 +683,9 @@ describe('calculatePensionRefund', () => {
 		describe('who worked more than 5 years in Germany', () => {
 			const outputLessThan2YearsAgo = calculatePensionRefund('TR', 'AO', yearsAgo(7), yearsAgo(1), 30000, false, false);
 			const outputOver2YearsAgo = calculatePensionRefund('TR', 'AO', yearsAgo(16), yearsAgo(10), 30000, false, false);
-			it('is not eligible for a refund', () => {
-				hasFlags(outputLessThan2YearsAgo, ['not-eligible', 'over-5-years', 'turkey-national']);
-				hasFlags(outputOver2YearsAgo, ['not-eligible', 'over-5-years', 'turkey-national']);
+			it('is eligible for a refund', () => {
+				hasFlags(outputLessThan2YearsAgo, ['eligible-later', 'turkey-national']);
+				hasFlags(outputOver2YearsAgo, ['eligible', 'turkey-national']);
 			});
 		});
 
@@ -704,6 +747,20 @@ describe('calculatePensionRefund', () => {
 		describe('who left the EU less than 2 years ago', () => {
 			const output = calculatePensionRefund('UY', 'CA', yearsAgo(3), yearsAgo(1), 30000, false, false);
 			it('is eligible for a refund later', () => hasFlags(output, ['eligible-later', 'contracting-national']));
+		});
+	});
+
+	describe('a Moldovan national', () => {
+		describe('who lives in a non-contracting country', () => {
+			const output = calculatePensionRefund('MD', 'AO', yearsAgo(12), yearsAgo(10), 30000, false, false);
+			it('is eligible for a refund', () => hasFlags(output, ['eligible', 'contracting-national']));
+		});
+
+		describe('who worked more than 5 years in Germany', () => {
+			const output = calculatePensionRefund('MD', 'AO', yearsAgo(16), yearsAgo(10), 30000, false, false);
+			it('is not eligible for a refund', () => {
+				hasFlags(output, ['not-eligible', 'over-5-years', 'contracting-national']);
+			});
 		});
 	});
 
