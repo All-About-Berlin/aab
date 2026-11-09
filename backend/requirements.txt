@@ -5,4 +5,4 @@ email-validator~=2.3
 gunicorn~=26.2
 python-dateutil~=2.9
 requests~=2.34
-websockets~=17.1
+websockets~=17.3
