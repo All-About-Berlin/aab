@@ -61,7 +61,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
                 ("date_joined", models.DateTimeField(default=django.utils.timezone.now, verbose_name="date joined")),
-                ("enable_email_notifications", models.BooleanField(default=True)),
+                ("email_notifications", models.BooleanField(default=True)),
                 (
                     "groups",
                     models.ManyToManyField(

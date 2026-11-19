@@ -1,3 +1,5 @@
+import hashlib
+import hmac
 from datetime import datetime, timedelta
 
 from django.conf import settings
@@ -8,12 +10,12 @@ from django.core.cache import cache
 from django.core.paginator import EmptyPage, Paginator
 from django.db.models import Count, F, Max
 from django.db.models.functions import Coalesce
-from django.http import Http404, HttpRequest, HttpResponse
-from django.shortcuts import redirect
+from django.http import Http404, HttpRequest, HttpResponse, HttpResponseBadRequest
+from django.shortcuts import redirect, render
 from django.urls import reverse
 from django.utils import timezone
 from django.utils.decorators import method_decorator
-from django.views.generic import CreateView, DetailView, ListView, TemplateView
+from django.views.generic import CreateView, DetailView, ListView, TemplateView, View
 from django.views.generic.edit import FormMixin
 
 from forum.forms import ReplyForm, ThreadForm
@@ -62,7 +64,7 @@ class VersionedCacheMixin:
         return response
 
 
-class ForumNewPostView(LoginRequiredMixin, CreateView):
+class NewPostView(LoginRequiredMixin, CreateView):
     form_class = ThreadForm
     template_name = "forum/newPost.html"
 
@@ -79,7 +81,7 @@ class ForumNewPostView(LoginRequiredMixin, CreateView):
         return reverse("forum_post", args=[self.object.pk])
 
 
-class ForumIndexView(VersionedCacheMixin, ListView):
+class IndexView(VersionedCacheMixin, ListView):
     template_name = "forum/index.html"
     paginate_by = settings.RESULTS_PER_PAGE
 
@@ -114,7 +116,7 @@ class ForumIndexView(VersionedCacheMixin, ListView):
         return context
 
 
-class ForumUserProfileView(LoginRequiredMixin, DetailView):
+class UserProfileView(LoginRequiredMixin, DetailView):
     model = get_user_model()
     template_name = "forum/userProfile.html"
     slug_field = "username"
@@ -136,7 +138,7 @@ class ForumUserProfileView(LoginRequiredMixin, DetailView):
         return context
 
 
-class ForumPostView(VersionedCacheMixin, FormMixin, DetailView):
+class PostView(VersionedCacheMixin, FormMixin, DetailView):
     model = Post
     template_name = "forum/post.html"
     form_class = ReplyForm
@@ -183,9 +185,54 @@ class ForumPostView(VersionedCacheMixin, FormMixin, DetailView):
         return redirect(f"{url}#reply-{reply.pk}")
 
 
-class ForumSignupWelcomeView(LoginRequiredMixin, TemplateView):
+class SignupWelcomeView(LoginRequiredMixin, TemplateView):
     template_name = "forum/signup/welcome.html"
 
 
-class ForumRulesView(TemplateView):
+class RulesView(TemplateView):
     template_name = "forum/rules.html"
+
+
+class TurnOffNotificationsView(View):
+    """
+    The URL requires an unguessable HMAC hash to prevent one user from
+    turning off notifications for another.
+    """
+
+    template_name = "forum/turnOffAllNotifications.html"
+
+    def get_user_to_unsubscribe(self, params):
+        user = get_user_model().objects.filter(username=params["user"]).first()
+        if user is None:
+            raise KeyError
+
+        expected = hmac.new(
+            settings.SECRET_KEY.encode(),
+            f"{user.pk}:{user.date_joined.isoformat()}".encode(),
+            hashlib.sha256,
+        ).hexdigest()
+
+        if not hmac.compare_digest(expected, params["token"]):
+            raise KeyError
+
+        return user
+
+    def get(self, request, *args, **kwargs):
+        try:
+            user = self.get_user_to_unsubscribe(request.GET)
+        except KeyError:
+            return HttpResponseBadRequest()
+        return render(
+            request,
+            self.template_name,
+            {"user_to_unsubscribe": user, "token": request.GET["token"]},
+        )
+
+    def post(self, request, *args, **kwargs):
+        try:
+            user = self.get_user_to_unsubscribe(request.POST)
+        except KeyError:
+            return HttpResponseBadRequest()
+        user.email_notifications = False
+        user.save()
+        return render(request, self.template_name, {"user_to_unsubscribe": user})

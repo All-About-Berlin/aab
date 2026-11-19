@@ -7,7 +7,7 @@ from django.urls import reverse
 
 from api.jinja2 import safe_markdown
 from forum.models import Post, Reply
-from forum.views import ForumIndexView
+from forum.views import IndexView
 
 
 @override_settings(ALLOWED_HOSTS=["allaboutberlin.com", "services.allaboutberlin.com"])
@@ -163,7 +163,7 @@ class ForumCacheTests(TestCase):
     CACHES={"default": {"BACKEND": "django.core.cache.backends.locmem.LocMemCache", "LOCATION": "forum-links-tests"}},
     RESULTS_PER_PAGE=2,
 )
-@patch.object(ForumIndexView, "paginate_by", 2)
+@patch.object(IndexView, "paginate_by", 2)
 class ForumPaginationMetadataTests(TestCase):
     def setUp(self):
         cache.clear()

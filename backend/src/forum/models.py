@@ -4,7 +4,7 @@ from django.db import models
 
 
 class User(AbstractUser):
-    enable_email_notifications = models.BooleanField(default=True)
+    email_notifications = models.BooleanField(default=True)
 
 
 class Category(models.TextChoices):

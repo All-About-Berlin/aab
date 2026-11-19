@@ -5,10 +5,10 @@ from forum import views
 
 
 urlpatterns = [
-    path("forum", views.ForumIndexView.as_view(), name="forum_index"),
-    path("forum/page-<int:page>", views.ForumIndexView.as_view(), name="forum_index_page"),
-    path("forum/signup/welcome", views.ForumSignupWelcomeView.as_view(), name="forum_signup_welcome"),
-    path("forum/rules", views.ForumRulesView.as_view(), name="forum_rules"),
+    path("forum", views.IndexView.as_view(), name="forum_index"),
+    path("forum/page-<int:page>", views.IndexView.as_view(), name="forum_index_page"),
+    path("forum/signup/welcome", views.SignupWelcomeView.as_view(), name="forum_signup_welcome"),
+    path("forum/rules", views.RulesView.as_view(), name="forum_rules"),
     path("forum/login", allauth_views.login, name="account_login"),
     path("forum/logout", allauth_views.logout, name="account_logout"),
     path("forum/signup", allauth_views.signup, name="account_signup"),
@@ -26,8 +26,9 @@ urlpatterns = [
         allauth_views.password_reset_from_key_done,
         name="account_reset_password_from_key_done",
     ),
-    path("forum/users/<str:username>", views.ForumUserProfileView.as_view(), name="forum_user"),
-    path("forum/new", views.ForumNewPostView.as_view(), name="forum_new_post"),
-    path("forum/<int:pk>", views.ForumPostView.as_view(), name="forum_post"),
-    path("forum/<int:pk>/page-<int:page>", views.ForumPostView.as_view(), name="forum_post_page"),
+    path("forum/users/<str:username>", views.UserProfileView.as_view(), name="forum_user"),
+    path("forum/new", views.NewPostView.as_view(), name="forum_new_post"),
+    path("forum/unsubscribe/all", views.TurnOffNotificationsView.as_view(), name="forum_turn_off_notifications"),
+    path("forum/<int:pk>", views.PostView.as_view(), name="forum_post"),
+    path("forum/<int:pk>/page-<int:page>", views.PostView.as_view(), name="forum_post_page"),
 ]

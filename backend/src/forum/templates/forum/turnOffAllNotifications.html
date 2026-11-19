@@ -1,0 +1,37 @@
+{% extends "forum/layout.html" %}
+
+{% block page_title %}Notifications - All About Berlin forum{% endblock %}
+{% block robots %}<meta name="robots" content="noindex">{% endblock %}
+
+{% block content %}
+<article class="section article-body">
+	<h1>Email notifications</h1>
+	<div class="post-meta">
+		<nav class="breadcrumbs" aria-label="Breadcrumbs">
+			<i class="icon folder" aria-hidden="true"></i>
+			<ol>
+				<li><a href="{{ SITE_URL }}{{ url('forum_index') }}">Forum</a></li>
+				<li>Notifications</li>
+			</ol>
+		</nav>
+	</div>
+
+	{% if user_to_unsubscribe.email_notifications %}
+		<p>You receive a daily email when people mention you or reply to posts that you subscribe to.</p>
+		<form method="post" action="{{ url('forum_turn_off_notifications') }}">
+			{{ csrf_input }}
+			<input type="hidden" name="user" value="{{ user_to_unsubscribe.username }}">
+			<input type="hidden" name="token" value="{{ token }}">
+			<div class="buttons bar">
+				<button type="submit" class="button primary">Turn off notifications</button>
+			</div>
+		</form>
+	{% else %}
+		<p>You have turned off email notifications.</p>
+		<hr>
+		<nav class="buttons bar previous-next">
+			<a class="next" href="{{ url('forum_index') }}">Go to the forum</a>
+		</nav>
+	{% endif %}
+</article>
+{% endblock %}
