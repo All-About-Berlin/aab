@@ -1,9 +1,9 @@
 from datetime import datetime, timedelta
 
 from django.conf import settings
+from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib.auth.models import User
 from django.core.cache import cache
 from django.core.paginator import EmptyPage, Paginator
 from django.db.models import Count, F, Max
@@ -113,7 +113,7 @@ class ForumIndexView(VersionedCacheMixin, ListView):
 
 
 class ForumUserProfileView(LoginRequiredMixin, DetailView):
-    model = User
+    model = get_user_model()
     template_name = "forum/userProfile.html"
     slug_field = "username"
     slug_url_kwarg = "username"

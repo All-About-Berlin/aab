@@ -82,6 +82,8 @@ LOGOUT_REDIRECT_URL = "/forum"
 ACCOUNT_SIGNUP_REDIRECT_URL = "/forum/signup/welcome"
 ACCOUNT_EMAIL_CONFIRMATION_AUTHENTICATED_REDIRECT_URL = "/forum/signup/welcome"
 
+AUTH_USER_MODEL = "forum.User"
+
 ROOT_URLCONF = "api.urls"
 APPEND_SLASH = True
 

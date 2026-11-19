@@ -2,7 +2,7 @@ from base64 import b64encode
 from copy import copy
 from datetime import date, timedelta
 from dateutil.relativedelta import relativedelta
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
 from django.core.cache import cache
 from django.utils import timezone
 from forms.models import (
@@ -61,12 +61,12 @@ class ScheduledMessageEndpointMixin:
         self.assertEqual(response.status_code, 401, response.json())
 
     def test_list_invalidcredentials_401(self):
-        User.objects.create_superuser("myuser", "myemail@test.com", "testpassword")
+        get_user_model().objects.create_superuser("myuser", "myemail@test.com", "testpassword")
         response = self.client.get(self.endpoint, headers=basic_auth_headers("myuser", "WRONGpassword"))
         self.assertEqual(response.status_code, 401, response.json())
 
     def test_list_200(self):
-        User.objects.create_superuser("myuser", "myemail@test.com", "testpassword")
+        get_user_model().objects.create_superuser("myuser", "myemail@test.com", "testpassword")
         response = self.client.get(self.endpoint, headers=basic_auth_headers("myuser", "testpassword"))
         self.assertEqual(response.status_code, 200, response.json())
 
@@ -159,7 +159,7 @@ class FeedbackEndpointMixin:
     def test_list_200(self):
         # When authenticated, return full object including private data
         new_object = self.model.objects.create(**self.example_request)
-        User.objects.create_superuser("myuser", "myemail@test.com", "testpassword")
+        get_user_model().objects.create_superuser("myuser", "myemail@test.com", "testpassword")
         response = self.client.get(self.endpoint, headers=basic_auth_headers("myuser", "testpassword"))
         self.assertEqual(response.status_code, 200, response.json())
         self.assertEqual(response.json()["results"][0]["modification_key"], new_object.modification_key)
@@ -168,7 +168,7 @@ class FeedbackEndpointMixin:
     def test_retrieve_200(self):
         # When authenticated, return full object including private data
         new_object = self.model.objects.create(**self.example_request)
-        User.objects.create_superuser("myuser", "myemail@test.com", "testpassword")
+        get_user_model().objects.create_superuser("myuser", "myemail@test.com", "testpassword")
         response = self.client.get(
             f"{self.endpoint}/{new_object.modification_key}", headers=basic_auth_headers("myuser", "testpassword")
         )
@@ -185,7 +185,7 @@ class FeedbackEndpointMixin:
         self.assertNotIn("modification_key", response.json()["results"][0])
 
     def test_list_invalidcredentials_401(self):
-        User.objects.create_superuser("myuser", "myemail@test.com", "testpassword")
+        get_user_model().objects.create_superuser("myuser", "myemail@test.com", "testpassword")
         response = self.client.get(self.endpoint, headers=basic_auth_headers("myuser", "WRONGpassword"))
         self.assertEqual(response.status_code, 401, response.json())
 
@@ -203,14 +203,14 @@ class FeedbackEndpointMixin:
         self.assertEqual(response.status_code, 401, response.json())
 
     def test_delete_all_authenticated_405(self):
-        User.objects.create_superuser("myuser", "myemail@test.com", "testpassword")
+        get_user_model().objects.create_superuser("myuser", "myemail@test.com", "testpassword")
         self.model.objects.create(**self.example_request)
         response = self.client.delete(self.endpoint, headers=basic_auth_headers("myuser", "testpassword"))
         self.assertEqual(response.status_code, 405, response.json())
         self.assertEqual(self.model.objects.count(), 1)
 
     def test_delete_one_authenticated_204(self):
-        User.objects.create_superuser("myuser", "myemail@test.com", "testpassword")
+        get_user_model().objects.create_superuser("myuser", "myemail@test.com", "testpassword")
         new_object = self.model.objects.create(**self.example_request)
         response = self.client.delete(
             f"{self.endpoint}/{new_object.pk}", headers=basic_auth_headers("myuser", "testpassword")
@@ -219,7 +219,7 @@ class FeedbackEndpointMixin:
         self.assertEqual(self.model.objects.count(), 0)
 
     def test_delete_one_invalidcredentials_401(self):
-        User.objects.create_superuser("myuser", "myemail@test.com", "testpassword")
+        get_user_model().objects.create_superuser("myuser", "myemail@test.com", "testpassword")
         new_object = self.model.objects.create(**self.example_request)
         response = self.client.delete(
             f"{self.endpoint}/{new_object.pk}", headers=basic_auth_headers("myuser", "WRONGpassword")
@@ -879,12 +879,12 @@ class PlaceSuggestionTestCase(APITestCase):
         self.assertEqual(response.status_code, 401)
 
     def test_list_invalidcredentials_401(self):
-        User.objects.create_superuser("myuser", "myemail@test.com", "testpassword")
+        get_user_model().objects.create_superuser("myuser", "myemail@test.com", "testpassword")
         response = self.client.get(self.endpoint, headers=basic_auth_headers("myuser", "WRONGpassword"))
         self.assertEqual(response.status_code, 401)
 
     def test_list_200(self):
-        User.objects.create_superuser("myuser", "myemail@test.com", "testpassword")
+        get_user_model().objects.create_superuser("myuser", "myemail@test.com", "testpassword")
         PlaceSuggestion.objects.create(**self.example_request)
         response = self.client.get(self.endpoint, headers=basic_auth_headers("myuser", "testpassword"))
         self.assertEqual(response.status_code, 200)
@@ -896,7 +896,7 @@ class PlaceSuggestionTestCase(APITestCase):
         self.assertEqual(PlaceSuggestion.objects.count(), 1)
 
     def test_delete_one_invalidcredentials_401(self):
-        User.objects.create_superuser("myuser", "myemail@test.com", "testpassword")
+        get_user_model().objects.create_superuser("myuser", "myemail@test.com", "testpassword")
         suggestion = PlaceSuggestion.objects.create(**self.example_request)
         response = self.client.delete(
             f"{self.endpoint}/{suggestion.pk}", headers=basic_auth_headers("myuser", "WRONGpassword")
@@ -905,7 +905,7 @@ class PlaceSuggestionTestCase(APITestCase):
         self.assertEqual(PlaceSuggestion.objects.count(), 1)
 
     def test_delete_one_authenticated_204(self):
-        User.objects.create_superuser("myuser", "myemail@test.com", "testpassword")
+        get_user_model().objects.create_superuser("myuser", "myemail@test.com", "testpassword")
         suggestion = PlaceSuggestion.objects.create(**self.example_request)
         response = self.client.delete(
             f"{self.endpoint}/{suggestion.pk}", headers=basic_auth_headers("myuser", "testpassword")

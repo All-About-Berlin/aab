@@ -1,6 +1,6 @@
 from unittest.mock import patch
 
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
 from django.core.cache import cache
 from django.test import SimpleTestCase, TestCase, override_settings
 from django.urls import reverse
@@ -109,7 +109,7 @@ class SafeMarkdownTests(SimpleTestCase):
 class ForumCacheTests(TestCase):
     def setUp(self):
         cache.clear()
-        self.user = User.objects.create_user(username="alice")
+        self.user = get_user_model().objects.create_user(username="alice")
         self.post = Post.objects.create(author=self.user, title="Original title", body="Original body")
         self.url = reverse("forum_post", args=[self.post.pk])
 
@@ -167,7 +167,7 @@ class ForumCacheTests(TestCase):
 class ForumPaginationMetadataTests(TestCase):
     def setUp(self):
         cache.clear()
-        self.user = User.objects.create_user(username="alice")
+        self.user = get_user_model().objects.create_user(username="alice")
 
     def test_forum_index_prev_next_head_links(self):
         for i in range(5):

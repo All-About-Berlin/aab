@@ -4,7 +4,7 @@ from datetime import timedelta
 from pathlib import Path
 
 from allauth.account.models import EmailAddress
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
 from django.core.management.base import BaseCommand
 from django.utils import timezone
 
@@ -25,7 +25,7 @@ class Command(BaseCommand):
 
         Reply.objects.all().delete()
         Post.objects.all().delete()
-        User.objects.filter(is_staff=False).delete()
+        get_user_model().objects.filter(is_staff=False).delete()
 
         data = json.loads(FIXTURE_PATH.read_text())
         rng = random.Random(0)
@@ -33,7 +33,7 @@ class Command(BaseCommand):
 
         users = {}
         for u in data["users"]:
-            user, _ = User.objects.get_or_create(
+            user, _ = get_user_model().objects.get_or_create(
                 username=u["username"],
                 defaults={"email": u["email"]},
             )

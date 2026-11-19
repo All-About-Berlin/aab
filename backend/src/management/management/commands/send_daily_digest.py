@@ -1,6 +1,6 @@
 from datetime import timedelta
 from django.conf import settings
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
 from django.core.management.base import BaseCommand
 from django.template.loader import render_to_string
 from django.utils import timezone
@@ -28,7 +28,7 @@ class Command(BaseCommand):
         error_level = max(logging.INFO, *[m["status"] for m in context["monitors"]])
 
         subject = f"{error_icons[error_level]} All About Berlin daily digest"
-        recipients = User.objects.filter(is_superuser=True).values_list("email", flat=True)
+        recipients = get_user_model().objects.filter(is_superuser=True).values_list("email", flat=True)
         body = render_to_string("daily-digest.html", context)
 
         if settings.DEBUG_EMAILS:
