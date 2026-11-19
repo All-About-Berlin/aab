@@ -17,7 +17,7 @@ from django.views.generic import CreateView, DetailView, ListView, TemplateView
 from django.views.generic.edit import FormMixin
 
 from forum.forms import ReplyForm, ThreadForm
-from forum.models import Category, Post, Reply
+from forum.models import Category, Post, PostSubscription, Reply
 
 
 def is_user_posting_too_fast(model, user):
@@ -71,7 +71,9 @@ class ForumNewPostView(LoginRequiredMixin, CreateView):
             form.add_error(None, "You are posting too fast. Please wait a bit before creating another post.")
             return self.form_invalid(form)
         form.instance.author = self.request.user
-        return super().form_valid(form)
+        response = super().form_valid(form)
+        PostSubscription.objects.create(user=self.request.user, post=self.object)
+        return response
 
     def get_success_url(self):
         return reverse("forum_post", args=[self.object.pk])
