@@ -18,8 +18,6 @@ from django.urls import reverse
 from django.utils import timezone
 from django.utils.safestring import mark_safe
 from jinja2 import ChoiceLoader, Environment, FileSystemLoader, PrefixLoader, StrictUndefined
-from markdown.extensions import Extension
-from markdown.treeprocessors import Treeprocessor
 
 
 class Jinja2Templates(Jinja2):
@@ -28,8 +26,8 @@ class Jinja2Templates(Jinja2):
     app_dirname = "templates"
 
 
-SAFE_MARKDOWN_TAGS = {"p", "br", "strong", "em", "a", "ul", "ol", "li", "blockquote", "code", "pre"}
-SAFE_MARKDOWN_ATTRIBUTES = {"a": {"href", "rel"}}
+SAFE_MARKDOWN_TAGS = {"p", "br", "strong", "em", "a", "ul", "ol", "li", "blockquote", "code", "pre", "img"}
+SAFE_MARKDOWN_ATTRIBUTES = {"a": {"href", "rel"}, "img": {"alt", "src"}}
 
 
 def is_external_href(href: str) -> bool:
@@ -39,33 +37,30 @@ def is_external_href(href: str) -> bool:
     return parsed.hostname not in settings.ALLOWED_HOSTS
 
 
-class NoFollowExternalLinkProcessor(Treeprocessor):
-    def run(self, root):
-        for anchor in root.iter("a"):
-            href = anchor.get("href", "")
-            if is_external_href(href):
-                anchor.set("rel", "nofollow ugc noopener")
+def add_external_link_rel(html: str) -> str:
+    def replace(match):
+        attrs = match.group(1)
+        if "rel=" in attrs:
+            return match.group(0)
+        href_match = re.search(r'href="([^"]*)"', attrs)
+        if not href_match or not is_external_href(href_match.group(1)):
+            return match.group(0)
+        return f'<a{attrs} rel="nofollow ugc noopener">'
 
-
-class NoFollowExternalLinkExtension(Extension):
-    def extendMarkdown(self, md):
-        md.treeprocessors.register(NoFollowExternalLinkProcessor(md), "external_rel", 5)
+    return re.sub(r"<a\b([^>]*)>", replace, html)
 
 
 def safe_markdown(value: str):
     if not value:
         return mark_safe("")
-    html = markdown.markdown(
-        value,
-        extensions=["fenced_code", "nl2br", "sane_lists", NoFollowExternalLinkExtension()],
-    )
+    html = markdown.markdown(value, extensions=["fenced_code", "nl2br", "sane_lists"])
     cleaned = nh3.clean(
         html,
         tags=SAFE_MARKDOWN_TAGS,
         attributes=SAFE_MARKDOWN_ATTRIBUTES,
         link_rel=None,
     )
-    return mark_safe(cleaned)
+    return mark_safe(add_external_link_rel(cleaned))
 
 
 def short_datetime(value):
