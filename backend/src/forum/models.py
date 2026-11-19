@@ -27,6 +27,11 @@ class RemovalReason(models.TextChoices):
     OTHER = "other", "Other"
 
 
+class PostAndReplyQuerySet(models.QuerySet):
+    def visible(self):
+        return self.filter(removal_date__isnull=True)
+
+
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.PROTECT, related_name="forum_posts")
     title = models.CharField(max_length=200)
@@ -36,6 +41,8 @@ class Post(models.Model):
     modification_date = models.DateTimeField(auto_now=True, db_index=True)
     removal_date = models.DateTimeField(null=True, blank=True)
     removal_reason = models.CharField(max_length=32, choices=RemovalReason, blank=True)
+
+    objects = PostAndReplyQuerySet.as_manager()
 
     @property
     def removed(self):
@@ -54,9 +61,24 @@ class Reply(models.Model):
     removal_date = models.DateTimeField(null=True, blank=True)
     removal_reason = models.CharField(max_length=32, choices=RemovalReason, blank=True)
 
+    objects = PostAndReplyQuerySet.as_manager()
+
     @property
     def removed(self):
         return self.removal_date is not None
 
     class Meta:
         ordering = ["creation_date"]
+
+
+class PostSubscription(models.Model):
+    """
+    Subscribes a user to notifications when someone replies to a post
+    """
+
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="post_subscriptions")
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="subscriptions", db_index=True)
+    creation_date = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = ("user", "post")
