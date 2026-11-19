@@ -48,6 +48,11 @@
 			{% endif %}
 		</div>
 		<hr>
+		{% if user.enable_email_notifications %}
+			<p class="input-instructions">You will get an email when someone replies to your post.</p>
+		{% else %}
+			<p class="input-instructions">You have disabled email notifications. You will not get an email if someone replies to your post.</p>
+		{% endif %}
 		<div class="buttons bar">
 			<button type="submit" class="button primary">Create post</button>
 		</div>
