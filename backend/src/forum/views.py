@@ -82,7 +82,8 @@ class NewPostView(LoginRequiredMixin, CreateView):
             return self.form_invalid(form)
         form.instance.author = self.request.user
         response = super().form_valid(form)
-        PostSubscription.objects.create(user=self.request.user, post=self.object)
+        if form.cleaned_data["reply_notifications"]:
+            PostSubscription.objects.create(user=self.request.user, post=self.object)
         return response
 
     def get_success_url(self):

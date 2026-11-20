@@ -41,6 +41,8 @@ class ReplyForm(forms.ModelForm):
 
 
 class PostForm(forms.ModelForm):
+    reply_notifications = forms.BooleanField(required=False, initial=True)
+
     class Meta:
         model = Post
         fields = ["title", "category", "body"]
