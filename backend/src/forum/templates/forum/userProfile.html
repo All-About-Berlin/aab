@@ -17,7 +17,7 @@
 		</nav>
 		<div class="date">
 			<i class="icon calendar" aria-hidden="true"></i>
-			<time datetime="{{ profile_user.date_joined.isoformat() }}">Joined on {{ profile_user.date_joined|short_datetime }}</time>
+			<time datetime="{{ profile_user.date_joined.isoformat() }}">Joined on {{ profile_user.date_joined|date("F j, Y") }}</time>
 		</div>
 		<div>
 			<i class="icon bubble" aria-hidden="true"></i>

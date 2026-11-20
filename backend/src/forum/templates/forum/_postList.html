@@ -2,7 +2,7 @@
 	<ol class="h-feed" aria-label="Posts">
 		{% for post in posts %}
 			<li class="post h-entry">
-				<h3><a class="u-url p-name" href="{{ SITE_URL }}{{ url('forum_post', post.pk) }}">{{ post.title }}</a></h3>
+				<h3 class="post-title"><a class="u-url p-name" href="{{ SITE_URL }}{{ url('forum_post', post.pk) }}">{{ post.title }}</a></h3>
 				<div class="post-meta" aria-label="Post author, publication date and category">
 					<div aria-label="{{ post.reply_count }} repl{{ post.reply_count|pluralize('y,ies') }}" title="{{ post.reply_count }} repl{{ post.reply_count|pluralize('y,ies') }}">
 						<i class="icon bubble" aria-hidden="true"></i> {{ post.reply_count }}

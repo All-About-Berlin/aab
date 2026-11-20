@@ -27,7 +27,7 @@
         grid-template-areas: "title meta";
         grid-template-columns: 1fr auto;
 
-        h3{
+        .post-title{
             grid-area: title;
             font-size: var(--m);
             @include text-bold;
