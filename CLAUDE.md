@@ -2,6 +2,10 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Language
+
+Use plain language, short sentences, and avoid dense or overly compressed phrasing. Use Simplified Technical English ASD-STE100.
+
 ## Project Overview
 
 All About Berlin is a website for people moving to or living in Berlin. It consists of:

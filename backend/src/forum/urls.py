@@ -29,6 +29,11 @@ urlpatterns = [
     path("forum/users/<str:username>", views.UserProfileView.as_view(), name="forum_user"),
     path("forum/new", views.NewPostView.as_view(), name="forum_new_post"),
     path("forum/unsubscribe/all", views.TurnOffNotificationsView.as_view(), name="forum_turn_off_notifications"),
+    path(
+        "forum/unsubscribe/post/<int:pk>",
+        views.UnsubscribeFromPostView.as_view(),
+        name="forum_unsubscribe_from_post",
+    ),
     path("forum/<int:pk>", views.PostView.as_view(), name="forum_post"),
     path("forum/<int:pk>/page-<int:page>", views.PostView.as_view(), name="forum_post_page"),
 ]
