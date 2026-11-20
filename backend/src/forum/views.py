@@ -27,12 +27,11 @@ def is_user_posting_too_fast(model, user):
     return model.objects.filter(author=user, creation_date__gte=cutoff).exists()
 
 
-def get_unsubscribe_url_token(user: User) -> str:
-    return hmac.new(
-        settings.SECRET_KEY.encode(),
-        f"{user.pk}:{user.date_joined.isoformat()}".encode(),
-        hashlib.sha256,
-    ).hexdigest()
+def get_unsubscribe_url_token(user: User, post_id: int | None = None) -> str:
+    message = f"{user.pk}:{user.date_joined.isoformat()}"
+    if post_id is not None:
+        message += f":{post_id}"
+    return hmac.new(settings.SECRET_KEY.encode(), message.encode(), hashlib.sha256).hexdigest()
 
 
 class VersionedCacheMixin:

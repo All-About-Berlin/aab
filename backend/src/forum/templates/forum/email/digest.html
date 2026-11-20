@@ -2,10 +2,10 @@
 
 <p>This is what happened on the <a href="{{ SITE_URL }}{{ url('forum_index') }}">All About Berlin forum</a> in the last 24 hours:</p>
 
-{% if mentions %}
+{% if new_mentions %}
 	<h2>Mentions</h2>
 	<ul>
-		{% for mention in mentions %}
+		{% for mention in new_mentions %}
 			<li>{{ mention.author.username }} mentioned you in <a href="{{ SITE_URL }}{{ mention.get_absolute_url() }}">{{ mention.post.title }}</a>.</li>
 		{% endfor %}
 	</ul>
@@ -15,7 +15,7 @@
 	<h2>Replies to posts you follow</h2>
 	<ul>
 		{% for item in new_replies %}
-			<li><a href="{{ SITE_URL }}{{ url('forum_post', item.post.pk) }}">{{ item.post.title }}</a> — {{ item.count }} new {{ 'reply' if item.count == 1 else 'replies' }}.</li>
+			<li><a href="{{ SITE_URL }}{{ url('forum_post', item.post.pk) }}">{{ item.post.title }}</a> — {{ item.count }} new {{ 'reply' if item.count == 1 else 'replies' }} (<a href="{{ item.unsubscribe_url }}">unsubscribe</a>).</li>
 		{% endfor %}
 	</ul>
 {% endif %}
