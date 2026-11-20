@@ -489,8 +489,20 @@ class NewPostAutoSubscribeTests(TestCase):
 
         self.client.post(
             reverse("forum_new_post"),
-            {"title": "Hello", "category": "other", "body": "body"},
+            {"title": "Hello", "category": "other", "body": "body", "reply_notifications": "on"},
         )
 
         post = Post.objects.get(title="Hello")
         self.assertTrue(PostSubscription.objects.filter(user=user, post=post).exists())
+
+    def test_creating_a_post_without_reply_notifications_does_not_subscribe(self):
+        user = get_user_model().objects.create_user(username="alice", password="pw")
+        self.client.force_login(user)
+
+        self.client.post(
+            reverse("forum_new_post"),
+            {"title": "Hello", "category": "other", "body": "body"},
+        )
+
+        post = Post.objects.get(title="Hello")
+        self.assertFalse(PostSubscription.objects.filter(user=user, post=post).exists())
