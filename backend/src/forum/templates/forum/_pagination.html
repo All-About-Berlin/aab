@@ -1,5 +1,6 @@
 {% if page_obj.paginator.num_pages > 1 %}
 	{% set qs = request.GET.urlencode() %}
+	<hr>
 	<nav class="buttons bar" aria-label="Pagination">
 		{% if page_obj.has_previous() %}
 			{% if page_obj.previous_page_number() == 1 %}

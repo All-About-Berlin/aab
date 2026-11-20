@@ -54,12 +54,13 @@
 		</div>
 	{% endif %}
 	{% if page_obj.object_list %}
-	<hr>
-	<section aria-label="Replies" class="replies">
-		{% if page_obj.object_list %}
-			{% with replies = page_obj.object_list %}{% include "forum/_replyList.html" %}{% endwith %}
-		{% endif %}
-		{% set base_url = url('forum_post', post.pk) %}
+		<hr>
+		<section aria-label="Replies" class="replies">
+			{% if page_obj.object_list %}
+				{% with replies = page_obj.object_list %}{% include "forum/_replyList.html" %}{% endwith %}
+			{% endif %}
+			{% set base_url = url('forum_post', post.pk) %}
+		</section>
 		{% include "forum/_pagination.html" %}
 		{% if not user.is_authenticated %}
 			<hr>
@@ -67,7 +68,6 @@
 				To reply, <a href="{{ url('account_login') }}?next={{ request.get_full_path()|urlencode }}">log in</a> or <a href="{{ url('account_signup') }}">create an account</a>.
 			</p>
 		{% endif %}
-	</section>
 	{% endif %}
 </article>
 
