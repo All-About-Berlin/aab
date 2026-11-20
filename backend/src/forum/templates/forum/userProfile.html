@@ -24,6 +24,23 @@
 			{{ post_count }} post{{ post_count|pluralize }}, {{ reply_count }} repl{{ reply_count|pluralize('y,ies') }}
 		</div>
 	</div>
+	{% if request.user.is_staff and request.user != profile_user %}
+		{% if profile_user.is_active %}
+			<form method="post" action="{{ url('forum_ban_user', profile_user.username) }}" class="buttons bar">
+				{{ csrf_input }}
+				<button type="submit" class="button primary">Ban user</button>
+				<label class="checkbox">
+					<input type="checkbox" name="delete_posts" value="1">
+					Delete posts and comments
+				</label>
+			</form>
+		{% else %}
+			<form method="post" action="{{ url('forum_unban_user', profile_user.username) }}" class="buttons bar">
+				{{ csrf_input }}
+				<button type="submit" class="button primary">Lift ban</button>
+			</form>
+		{% endif %}
+	{% endif %}
 </article>
 
 <section class="section posts" aria-label="Posts">
