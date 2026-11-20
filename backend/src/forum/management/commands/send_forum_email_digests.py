@@ -101,6 +101,7 @@ class Command(BaseCommand):
             new_posts = get_new_posts(since_date)
 
             users_to_notify = get_user_model().objects.filter(
+                is_active=True,
                 email_notifications=True,
                 username__in=replies_by_user.keys() | mentions_by_user.keys(),
             )

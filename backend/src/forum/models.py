@@ -2,8 +2,9 @@ import re
 
 from django.conf import settings
 from django.contrib.auth.models import AbstractUser
-from django.db import models
+from django.db import models, transaction
 from django.urls import reverse
+from django.utils import timezone
 
 from forum.validators import USERNAME_REGEX
 
@@ -13,6 +14,26 @@ MENTION_REGEX = rf"\B@({USERNAME_REGEX})(?![A-Za-z0-9._\-])"
 
 class User(AbstractUser):
     email_notifications = models.BooleanField(default=True)
+
+    @transaction.atomic
+    def ban(self, delete_posts: bool) -> None:
+        self.is_active = False
+        self.save()
+        if delete_posts:
+            now = timezone.now()
+            self.forum_posts.filter(removal_date__isnull=True).update(
+                removal_date=now, removal_reason=RemovalReason.USER_BANNED
+            )
+            self.forum_replies.filter(removal_date__isnull=True).update(
+                removal_date=now, removal_reason=RemovalReason.USER_BANNED
+            )
+
+    @transaction.atomic
+    def unban(self) -> None:
+        self.is_active = True
+        self.save()
+        self.forum_posts.filter(removal_reason=RemovalReason.USER_BANNED).update(removal_date=None, removal_reason="")
+        self.forum_replies.filter(removal_reason=RemovalReason.USER_BANNED).update(removal_date=None, removal_reason="")
 
 
 class Category(models.TextChoices):

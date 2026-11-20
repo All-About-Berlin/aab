@@ -38,6 +38,8 @@ class Command(BaseCommand):
                 defaults={"email": u["email"]},
             )
             user.set_password(u["username"])
+            user.is_staff = u["username"] == "aylin_t"
+            user.is_active = u["username"] != "noor_farsi"
             user.save()
             EmailAddress.objects.update_or_create(
                 user=user,

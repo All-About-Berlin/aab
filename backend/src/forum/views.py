@@ -7,10 +7,11 @@ from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.cache import cache
+from django.core.exceptions import PermissionDenied
 from django.core.paginator import EmptyPage, Paginator
 from django.db.models import Count, F, Max
 from django.db.models.functions import Coalesce
-from django.http import Http404, HttpRequest, HttpResponse, HttpResponseBadRequest
+from django.http import Http404, HttpRequest, HttpResponse, HttpResponseBadRequest, HttpResponseGone
 from django.shortcuts import redirect, render
 from django.urls import reverse
 from django.utils import timezone
@@ -130,6 +131,13 @@ class UserProfileView(LoginRequiredMixin, DetailView):
     slug_url_kwarg = "username"
     context_object_name = "profile_user"
 
+    def get(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        if not self.object.is_active and not request.user.is_staff:
+            return HttpResponseGone()
+        context = self.get_context_data(object=self.object)
+        return self.render_to_response(context)
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         user = self.object
@@ -143,6 +151,38 @@ class UserProfileView(LoginRequiredMixin, DetailView):
         context["post_count"] = posts.count()
         context["reply_count"] = replies.count()
         return context
+
+
+class StaffRequiredMixin(LoginRequiredMixin):
+    """
+    Only mods and admins
+    """
+
+    def dispatch(self, request, *args, **kwargs):
+        if not request.user.is_authenticated:
+            return self.handle_no_permission()
+        if not request.user.is_staff:
+            raise PermissionDenied
+        return super().dispatch(request, *args, **kwargs)
+
+
+class BanUserView(StaffRequiredMixin, View):
+    def post(self, request, username):
+        user = get_user_model().objects.filter(username=username).first()
+        if user is None:
+            raise Http404
+        delete_posts = request.POST.get("delete_posts") == "1"
+        user.ban(delete_posts=delete_posts)
+        return redirect("forum_user", username=username)
+
+
+class UnbanUserView(StaffRequiredMixin, View):
+    def post(self, request, username):
+        user = get_user_model().objects.filter(username=username).first()
+        if user is None:
+            raise Http404
+        user.unban()
+        return redirect("forum_user", username=username)
 
 
 class PostView(VersionedCacheMixin, FormMixin, DetailView):
