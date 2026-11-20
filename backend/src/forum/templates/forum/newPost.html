@@ -47,15 +47,18 @@
 				<span class="input-instructions error">{{ form.category.errors|first }}</span>
 			{% endif %}
 		</div>
-		<div class="form-group">
-			<span class="label">Notifications</span>
-			{% if user.email_notifications %}
+		{% if user.email_notifications %}
+			<div class="form-group">
+				<span class="label">Notifications</span>
 				<label class="checkbox">
 					<input type="checkbox" name="reply_notifications" {% if form.reply_notifications.value() %}checked{% endif %}>
-					Get an email when someone replies
+					Email me when someone replies
 				</label>
-			{% else %}
-		</div>
+				<span class="input-instructions">
+					Get a single daily email with all new replies
+				</span>
+			</div>
+		{% else %}
 		<hr>
 			<p class="input-instructions">You have turned off email notifications. You will not get an email if someone replies to your post.</p>
 		{% endif %}
