@@ -1,3 +1,4 @@
+from concurrent.futures import ThreadPoolExecutor
 from datetime import timedelta
 from django.conf import settings
 from django.core.exceptions import ValidationError
@@ -8,6 +9,7 @@ import functools
 import logging
 import random
 import requests
+import time
 
 
 logger = logging.getLogger(__name__)
@@ -136,3 +138,33 @@ def send_email(
 
     if response.status_code != 200:
         raise Exception("Mailgun request returned status %s. %s" % (response.status_code, response.json()))
+
+
+def send_emails(
+    messages: list[tuple[list[str], str, str]],
+    max_requests_per_second: int,
+) -> list[Exception | None]:
+    interval = 1 / max_requests_per_second
+    results: list[Exception | None] = [None] * len(messages)
+
+    session = requests.Session()
+    adapter = requests.adapters.HTTPAdapter(pool_maxsize=max_requests_per_second)
+    session.mount("https://", adapter)
+    session.mount("http://", adapter)
+
+    def worker(index: int, recipients: list[str], subject: str, body: str) -> None:
+        try:
+            send_email(recipients, subject, body, session=session)
+        except Exception as exc:
+            results[index] = exc
+
+    next_slot = time.monotonic()
+    with session, ThreadPoolExecutor(max_workers=max_requests_per_second) as executor:
+        for index, (recipients, subject, body) in enumerate(messages):
+            now = time.monotonic()
+            if now < next_slot:
+                time.sleep(next_slot - now)
+            next_slot = max(next_slot, now) + interval
+            executor.submit(worker, index, recipients, subject, body)
+
+    return results

@@ -2,7 +2,6 @@ import logging
 from datetime import datetime, timedelta
 from urllib.parse import urlencode
 
-import requests
 from django.conf import settings
 from django.contrib.auth import get_user_model
 from django.core.management.base import BaseCommand
@@ -11,7 +10,7 @@ from django.template.loader import render_to_string
 from django.urls import reverse
 from django.utils import timezone
 
-from forms.utils import send_email
+from forms.utils import send_emails
 from forum.models import Post, PostSubscription, Reply, User
 from forum.views import get_unsubscribe_url_token
 from management.models import update_monitor
@@ -137,19 +136,6 @@ class Command(BaseCommand):
         body = render_to_string("forum/email/digest.html", context)
         return subject, body
 
-    def send_digest_emails(self, emails_to_send: list[tuple[User, str, str]]) -> tuple[list[int], int]:
-        sent_user_ids = []
-        failed_count = 0
-        with requests.Session() as session:
-            for user, subject, body in emails_to_send:
-                try:
-                    send_email([user.email], subject, body, session=session)
-                    sent_user_ids.append(user.pk)
-                except Exception:
-                    logger.exception("Could not send forum digest email to %s", user.username)
-                    failed_count += 1
-        return sent_user_ids, failed_count
-
     def handle(self, *args, **options):
         try:
             now = timezone.now()
@@ -180,17 +166,29 @@ class Command(BaseCommand):
                     subject, body = digest
                     emails_to_send.append((user, subject, body))
 
-            sent_user_ids, failed_count = self.send_digest_emails(emails_to_send)
+            messages = [([user.email], subject, body) for user, subject, body in emails_to_send]
+            results = send_emails(messages, max_requests_per_second=100)
+
+            sent_user_ids = []
+            failed_count = 0
+            for (user, _, _), result in zip(emails_to_send, results):
+                if result is None:
+                    sent_user_ids.append(user.pk)
+                else:
+                    logger.error("Could not send forum digest email to %s", user.username, exc_info=result)
+                    failed_count += 1
+
             get_user_model().objects.filter(pk__in=sent_user_ids).update(last_email_digest_date=now)
 
-            sent_count = len(sent_user_ids)
-            if failed_count and not sent_count:
-                level = logging.ERROR
-            elif failed_count:
-                level = logging.WARNING
+            if failed_count:
+                if len(sent_user_ids) == 0:
+                    level = logging.ERROR
+                else:
+                    level = logging.WARNING
             else:
                 level = logging.INFO
-            update_monitor("forum-digest", level, f"{sent_count} sent, {failed_count} failed")
+
+            update_monitor("forum-digest", level, f"{len(sent_user_ids)} sent, {failed_count} failed")
         except Exception as exc:
             logger.exception("Forum digest command failed")
             update_monitor("forum-digest", logging.ERROR, str(exc))

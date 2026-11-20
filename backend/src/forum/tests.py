@@ -248,7 +248,7 @@ class DigestEmailSubjectTests(SimpleTestCase):
         )
 
 
-@patch("forum.management.commands.send_forum_email_digests.send_email")
+@patch("forms.utils.send_email")
 class SendForumDigestCommandTests(TestCase):
     def setUp(self):
         self.alice = get_user_model().objects.create_user(username="alice", email="alice@example.com")
@@ -466,7 +466,7 @@ class UnsubscribeFromPostViewTests(TestCase):
         self.assertTrue(PostSubscription.objects.filter(user=self.user, post=self.post).exists())
 
     def test_unsubscribe_url_in_email_deletes_subscription(self):
-        with patch("forum.management.commands.send_forum_email_digests.send_email") as send_email:
+        with patch("forms.utils.send_email") as send_email:
             Reply.objects.create(author=self.author, post=self.post, body="reply")
             call_command("send_forum_email_digests")
 
