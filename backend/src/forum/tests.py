@@ -372,6 +372,48 @@ class TurnOffNotificationsViewTests(TestCase):
         self.assertTrue(self.user.email_notifications)
 
 
+class UnsubscribeFromPostViewTests(TestCase):
+    def setUp(self):
+        self.user = get_user_model().objects.create_user(username="alice")
+        self.author = get_user_model().objects.create_user(username="bob")
+        self.post = Post.objects.create(author=self.author, title="Hello", body="body")
+        PostSubscription.objects.create(user=self.user, post=self.post)
+        self.token = get_unsubscribe_url_token(self.user, self.post.pk)
+        self.url = reverse("forum_unsubscribe_from_post", args=[self.post.pk])
+
+    def test_post_with_valid_token_deletes_subscription(self):
+        response = self.client.post(self.url, {"user": "alice", "token": self.token})
+        self.assertEqual(response.status_code, 200)
+        self.assertFalse(PostSubscription.objects.filter(user=self.user, post=self.post).exists())
+
+    def test_post_with_tampered_token_rejected(self):
+        response = self.client.post(self.url, {"user": "alice", "token": "wrong"})
+        self.assertEqual(response.status_code, 400)
+        self.assertTrue(PostSubscription.objects.filter(user=self.user, post=self.post).exists())
+
+    def test_all_scope_token_rejected_on_post_url(self):
+        all_token = get_unsubscribe_url_token(self.user)
+        response = self.client.post(self.url, {"user": "alice", "token": all_token})
+        self.assertEqual(response.status_code, 400)
+        self.assertTrue(PostSubscription.objects.filter(user=self.user, post=self.post).exists())
+
+    def test_unsubscribe_url_in_email_deletes_subscription(self):
+        with patch("forum.management.commands.send_forum_email_digests.send_email") as send_email:
+            Reply.objects.create(author=self.author, post=self.post, body="reply")
+            call_command("send_forum_email_digests")
+
+        body = send_email.call_args.args[2]
+        match = re.search(r'href="([^"]+/forum/unsubscribe/post/\d+[^"]+)"', body)
+        self.assertIsNotNone(match)
+        parsed = urlparse(html.unescape(match.group(1)))
+        params = {k: v[0] for k, v in parse_qs(parsed.query).items()}
+
+        response = self.client.post(parsed.path, params)
+
+        self.assertEqual(response.status_code, 200)
+        self.assertFalse(PostSubscription.objects.filter(user=self.user, post=self.post).exists())
+
+
 class NewPostAutoSubscribeTests(TestCase):
     def test_creating_a_post_auto_subscribes_the_author(self):
         user = get_user_model().objects.create_user(username="alice", password="pw")

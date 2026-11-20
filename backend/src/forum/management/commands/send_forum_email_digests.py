@@ -144,5 +144,5 @@ class Command(BaseCommand):
                 level = logging.INFO
             update_monitor("forum-digest", level, f"{sent_count} sent, {failed_count} failed")
         except Exception as exc:
-            logger.exception("Forum digest command failed_count")
+            logger.exception("Forum digest command failed")
             update_monitor("forum-digest", logging.ERROR, str(exc))

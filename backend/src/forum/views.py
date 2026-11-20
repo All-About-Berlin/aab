@@ -235,3 +235,49 @@ class TurnOffNotificationsView(View):
         user.email_notifications = False
         user.save()
         return render(request, self.template_name, {"user_to_unsubscribe": user})
+
+
+class UnsubscribeFromPostView(View):
+    """
+    The URL requires an unguessable HMAC hash to prevent one user from
+    unsubscribing another from a post.
+    """
+
+    template_name = "forum/unsubscribeFromPost.html"
+
+    def get_user_and_post_to_unsubscribe(self, params, pk):
+        post = Post.objects.filter(pk=pk).first()
+        user = get_user_model().objects.filter(username=params["user"]).first()
+        if user is None or post is None:
+            raise KeyError
+        if not hmac.compare_digest(get_unsubscribe_url_token(user, post.pk), params["token"]):
+            raise KeyError
+        return user, post
+
+    def get(self, request, pk, *args, **kwargs):
+        try:
+            user, post = self.get_user_and_post_to_unsubscribe(request.GET, pk)
+        except KeyError:
+            return HttpResponseBadRequest()
+        return render(
+            request,
+            self.template_name,
+            {
+                "user_to_unsubscribe": user,
+                "post": post,
+                "token": request.GET["token"],
+                "is_subscribed": PostSubscription.objects.filter(user=user, post=post).exists(),
+            },
+        )
+
+    def post(self, request, pk, *args, **kwargs):
+        try:
+            user, post = self.get_user_and_post_to_unsubscribe(request.POST, pk)
+        except KeyError:
+            return HttpResponseBadRequest()
+        PostSubscription.objects.filter(user=user, post=post).delete()
+        return render(
+            request,
+            self.template_name,
+            {"user_to_unsubscribe": user, "post": post, "is_subscribed": False},
+        )
