@@ -6,15 +6,15 @@
 	<h2>Mentions</h2>
 	<ul>
 		{% for mention in mentions %}
-			<li>{{ mention.author }} mentioned you in <a href="{{ mention.url }}">{{ mention.thread_title }}</a>.</li>
+			<li>{{ mention.author.username }} mentioned you in <a href="{{ SITE_URL }}{{ mention.get_absolute_url() }}">{{ mention.post.title }}</a>.</li>
 		{% endfor %}
 	</ul>
 {% endif %}
 
-{% if subscribed_replies %}
+{% if new_replies %}
 	<h2>Replies to posts you follow</h2>
 	<ul>
-		{% for item in subscribed_replies %}
+		{% for item in new_replies %}
 			<li><a href="{{ SITE_URL }}{{ url('forum_post', item.post.pk) }}">{{ item.post.title }}</a> — {{ item.count }} new {{ 'reply' if item.count == 1 else 'replies' }}.</li>
 		{% endfor %}
 	</ul>

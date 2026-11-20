@@ -103,6 +103,31 @@ class SafeMarkdownTests(SimpleTestCase):
         )
 
 
+class UserMentionsTests(SimpleTestCase):
+    def test_post_user_mentions(self):
+        cases = [
+            ("@alice hello", {"alice"}),
+            ("hey @alice and @bob", {"alice", "bob"}),
+            ("@alice and @alice again", {"alice"}),
+            ("@Alice and @alice", {"Alice", "alice"}),
+            ("@alice.b and @bob-c and @dev_1", {"alice.b", "bob-c", "dev_1"}),
+            ("hi (@alice)", {"alice"}),
+            ("line one\n@alice", {"alice"}),
+            ("email bob@gmail.com for help", set()),
+            ("see https://user@host/path", set()),
+            ("@ab is too short", set()),
+            ("@abcdefghijklmnopqrstuvwxyz is too long", set()),
+            ("hi @abc", {"abc"}),
+            ("hi @abcdefghijklmnopqrst done", {"abcdefghijklmnopqrst"}),
+        ]
+        for body, expected in cases:
+            with self.subTest(body=body):
+                self.assertEqual(Post(body=body).user_mentions, expected)
+
+    def test_reply_user_mentions(self):
+        self.assertEqual(Reply(body="thanks @alice").user_mentions, {"alice"})
+
+
 @override_settings(
     CACHES={"default": {"BACKEND": "django.core.cache.backends.locmem.LocMemCache", "LOCATION": "forum-cache-tests"}}
 )

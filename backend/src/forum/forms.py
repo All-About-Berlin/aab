@@ -40,7 +40,7 @@ class ReplyForm(forms.ModelForm):
         widgets = {"body": forms.Textarea(attrs={"rows": 6})}
 
 
-class ThreadForm(forms.ModelForm):
+class PostForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = ["title", "category", "body"]

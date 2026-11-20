@@ -18,13 +18,21 @@ from django.utils.decorators import method_decorator
 from django.views.generic import CreateView, DetailView, ListView, TemplateView, View
 from django.views.generic.edit import FormMixin
 
-from forum.forms import ReplyForm, ThreadForm
-from forum.models import Category, Post, PostSubscription, Reply
+from forum.forms import PostForm, ReplyForm
+from forum.models import Category, Post, PostSubscription, Reply, User
 
 
 def is_user_posting_too_fast(model, user):
     cutoff = timezone.now() - timedelta(minutes=1)
     return model.objects.filter(author=user, creation_date__gte=cutoff).exists()
+
+
+def get_unsubscribe_url_token(user: User) -> str:
+    return hmac.new(
+        settings.SECRET_KEY.encode(),
+        f"{user.pk}:{user.date_joined.isoformat()}".encode(),
+        hashlib.sha256,
+    ).hexdigest()
 
 
 class VersionedCacheMixin:
@@ -65,7 +73,7 @@ class VersionedCacheMixin:
 
 
 class NewPostView(LoginRequiredMixin, CreateView):
-    form_class = ThreadForm
+    form_class = PostForm
     template_name = "forum/newPost.html"
 
     def form_valid(self, form):
@@ -205,16 +213,8 @@ class TurnOffNotificationsView(View):
         user = get_user_model().objects.filter(username=params["user"]).first()
         if user is None:
             raise KeyError
-
-        expected = hmac.new(
-            settings.SECRET_KEY.encode(),
-            f"{user.pk}:{user.date_joined.isoformat()}".encode(),
-            hashlib.sha256,
-        ).hexdigest()
-
-        if not hmac.compare_digest(expected, params["token"]):
+        if not hmac.compare_digest(get_unsubscribe_url_token(user), params["token"]):
             raise KeyError
-
         return user
 
     def get(self, request, *args, **kwargs):

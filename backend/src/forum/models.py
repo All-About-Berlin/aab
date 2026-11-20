@@ -1,6 +1,14 @@
+import re
+
 from django.conf import settings
 from django.contrib.auth.models import AbstractUser
 from django.db import models
+from django.urls import reverse
+
+from forum.validators import USERNAME_REGEX
+
+
+MENTION_REGEX = rf"\B@({USERNAME_REGEX})(?![A-Za-z0-9._\-])"
 
 
 class User(AbstractUser):
@@ -45,8 +53,19 @@ class Post(models.Model):
     objects = PostAndReplyQuerySet.as_manager()
 
     @property
-    def removed(self):
+    def removed(self) -> bool:
         return self.removal_date is not None
+
+    @property
+    def user_mentions(self) -> set[str]:
+        return set(re.findall(MENTION_REGEX, self.body))
+
+    @property
+    def post(self) -> "Post":
+        return self
+
+    def get_absolute_url(self) -> str:
+        return reverse("forum_post", args=[self.pk])
 
     def __str__(self):
         return self.title
@@ -64,8 +83,15 @@ class Reply(models.Model):
     objects = PostAndReplyQuerySet.as_manager()
 
     @property
-    def removed(self):
+    def removed(self) -> bool:
         return self.removal_date is not None
+
+    @property
+    def user_mentions(self) -> set[str]:
+        return set(re.findall(MENTION_REGEX, self.body))
+
+    def get_absolute_url(self) -> str:
+        return f"{reverse('forum_post', args=[self.post.pk])}#reply-{self.pk}"
 
     class Meta:
         ordering = ["creation_date"]
