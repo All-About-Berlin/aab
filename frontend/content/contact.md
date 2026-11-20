@@ -7,7 +7,7 @@ date_created: 2022-01-27
 Hi, I'm [Nicolas](/about). You can contact me to…
 
 - **Ask a question**  
-    Please [ask the right people](/guides/help) first. I get a lot of questions, but I can't answer everyone. I do not give legal or financial advice. I can't answer visa and residence permit questions.
+    Please [ask on the forum](/forum) or [ask an expert](/guides/help) first.
 - **Give feedback**  
     Send me your fixes and suggestions. You can also [make a pull request](https://github.com/All-About-Berlin/aab).
 - **Say thanks**  
@@ -17,8 +17,6 @@ Hi, I'm [Nicolas](/about). You can contact me to…
 
 ## Contact information
 
-I do not answer visa and residence permit questions, but there are [other people who can help](/guides/help#immigration-questions).
-
 **Website owner**: [Nicolas Bouliane](/about)
 
 **Email**: <contact@allaboutberlin.com>
@@ -27,6 +25,7 @@ I do not answer visa and residence permit questions, but there are [other people
 
 **Social media:**
 
+- [Forum](/forum)
 - [Newsletter](/newsletter)
 - [Reddit](https://reddit.com/r/allaboutberlin)
 - [LinkedIn](https://www.linkedin.com/in/nicolasbouliane/)

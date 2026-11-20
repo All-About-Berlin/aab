@@ -5,8 +5,6 @@ description: Communities, experts and resources that can answer your questions a
 date_created: 2017-09-27
 ---
 
-If I can't answer your questions, these resources can help.
-
 {% tableOfContents %}
 
 ## General questions
@@ -15,6 +13,7 @@ If I can't answer your questions, these resources can help.
 
 You can get help from these communities and services.
 
+- **[Ask on the forum](/forum)**{{RECOMMENDED}}
 - [Free Advice Berlin](https://www.facebook.com/groups/FreeAdviceBerlin/) - Facebook
 - [Berlin EXPATS](https://www.facebook.com/groups/berlinexpats/) - Facebook
 - [Berlin4Beginners](https://www.facebook.com/groups/Berlin4Beginners/) - Facebook
@@ -30,6 +29,7 @@ You can get help from these communities and services.
     They offer legal help about immigration. They answer in English and many other languages. They answer a few days later.
 - **["Working and Living in Germany" hotline](https://www.bamf.de/EN/Service/ServiceCenter/ThemenHotlines/ArbeitenUndLeben/arbeitenundleben-node.html)**  
     This phone hotline helps people move to Germany. They speak English.
+- **[Ask on the forum](/forum)**
 - **Facebook**
     - [Problems and challenges with the Ausländerbehörde](https://www.facebook.com/groups/226825394858771/)
     - [Einbürgerung in Berlin](https://www.facebook.com/groups/1331414823711459/)
@@ -101,6 +101,7 @@ Use my lists of English-speaking professionals:
     If you are in a union, you can usually get free legal help, but only for work-related problems.[^4]
 - **Lawyer** (*Fachanwalt für Arbeitsrecht*)  
     Hire a lawyer who specialises in employment law (*Arbeitsrecht*). They cost around €{{LAWYER_HOURLY_RATE|cur}} per hour. Use my [list of English-speaking lawyers in Berlin](/guides/english-speaking-lawyers-berlin). If you have [legal insurance](/glossary/Rechtsschutzversicherung), it usually pays for your lawyer.
+- [Ask on the forum](/forum)
 
 Don't be afraid to use a lawyer. Your employer can't fire you or blacklist you because you defend your rights. It will not affect your job search.[^7]
 
@@ -145,15 +146,13 @@ Don't be afraid to use a lawyer. Your employer can't fire you or blacklist you b
 - [List of English-speaking lawyers in Berlin](/guides/english-speaking-lawyers-berlin)
 - [Berlin startups](https://www.facebook.com/groups/159595270791268/) - Facebook
 - [Berlin freelancers](https://www.facebook.com/groups/berlinfreelancers/) - Facebook
-
-### Helpful websites
-
-- [Starting your own business](https://www.existenzgruendungsportal.de/Navigation/EN/Home/home) - official resource
+- [Ask on the forum](/forum)
 
 ## Parenting questions
 
 ### Parenting communities
 
+- **[Ask on the forum](/forum)**{{RECOMMENDED}}
 - [International Families Berlin](https://www.facebook.com/groups/InternationalFamiliesBerlin/) - Facebook
 - [ExpatBabies Berlin](https://www.facebook.com/groups/107498526067436/) - Facebook
 - [Berlin Kids](https://www.facebook.com/groups/844609522248598/) - Facebook
@@ -170,7 +169,7 @@ Don't be afraid to use a lawyer. Your employer can't fire you or blacklist you b
 
 ## Ask me
 
-Write to <contact@allaboutberlin.com>. I can't answer every question, but I can point you in the right direction. Please do some research first.
+[Ask on the forum](/forum), or write to <contact@allaboutberlin.com>. I can't answer every question, but I will try my best. Please do some research first.
 
 [^0]: [joinimagine.com](https://www.joinimagine.com/faq)
 [^1]: [Berliner Mieterverein](https://www.berliner-mieterverein.de/mitgliedsbeitraege-und-leistungen.htm) (January 2026){{ fail_on('2026-12-31') }}
