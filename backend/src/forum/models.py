@@ -14,6 +14,7 @@ MENTION_REGEX = rf"\B@({USERNAME_REGEX})(?![A-Za-z0-9._\-])"
 
 class User(AbstractUser):
     email_notifications = models.BooleanField(default=True)
+    last_email_digest_date = models.DateTimeField(null=True, blank=True)
 
     @transaction.atomic
     def ban(self, delete_posts: bool) -> None:

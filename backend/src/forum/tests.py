@@ -12,6 +12,7 @@ from django.urls import reverse
 from django.utils import timezone
 
 from api.jinja2 import safe_markdown
+from forum.management.commands.send_forum_email_digests import get_digest_email_subject
 from forum.models import Post, PostSubscription, Reply
 from forum.views import IndexView, get_unsubscribe_url_token
 
@@ -221,13 +222,39 @@ class ForumPaginationMetadataTests(TestCase):
         self.assertContains(response, f'<link rel="prev" href="https://localhost/forum/{post.pk}">')
 
 
+class DigestEmailSubjectTests(SimpleTestCase):
+    def test_all_three_counts_plural(self):
+        self.assertEqual(
+            get_digest_email_subject(2, 3, 4),
+            "Recently on the All About Berlin forum: 2 mentions, 3 replies, 4 posts",
+        )
+
+    def test_singular(self):
+        self.assertEqual(
+            get_digest_email_subject(1, 1, 1),
+            "Recently on the All About Berlin forum: 1 mention, 1 reply, 1 post",
+        )
+
+    def test_zero_counts_are_omitted(self):
+        self.assertEqual(
+            get_digest_email_subject(0, 2, 0),
+            "Recently on the All About Berlin forum: 2 replies",
+        )
+
+    def test_only_posts(self):
+        self.assertEqual(
+            get_digest_email_subject(0, 0, 5),
+            "Recently on the All About Berlin forum: 5 posts",
+        )
+
+
 @patch("forum.management.commands.send_forum_email_digests.send_email")
 class SendForumDigestCommandTests(TestCase):
     def setUp(self):
         self.alice = get_user_model().objects.create_user(username="alice", email="alice@example.com")
         self.bob = get_user_model().objects.create_user(username="bob", email="bob@example.com")
 
-    def test_subscribed_reply_triggers_email(self, send_email):
+    def test_reply_to_subscribed_topic_triggers_daily_email(self, send_email):
         post = Post.objects.create(author=self.alice, title="Hello", body="body")
         PostSubscription.objects.create(user=self.alice, post=post)
         Reply.objects.create(author=self.bob, post=post, body="reply!")
@@ -235,27 +262,24 @@ class SendForumDigestCommandTests(TestCase):
         call_command("send_forum_email_digests")
 
         send_email.assert_called_once()
-        recipients, subject, _ = send_email.call_args.args
-        self.assertEqual(recipients, ["alice@example.com"])
-        self.assertIn("1 reply", subject)
+        self.assertEqual(send_email.call_args.args[0], ["alice@example.com"])
 
-    def test_mention_triggers_email(self, send_email):
+    def test_mention_triggers_daily_email(self, send_email):
         Post.objects.create(author=self.bob, title="Hey", body="hey @alice")
 
         call_command("send_forum_email_digests")
 
         send_email.assert_called_once()
         self.assertEqual(send_email.call_args.args[0], ["alice@example.com"])
-        self.assertIn("1 mention", send_email.call_args.args[1])
 
-    def test_self_mention_does_not_trigger_email(self, send_email):
+    def test_mention_of_own_username_does_not_trigger_email(self, send_email):
         Post.objects.create(author=self.alice, title="Hey", body="hey @alice")
 
         call_command("send_forum_email_digests")
 
         send_email.assert_not_called()
 
-    def test_own_reply_to_subscribed_post_does_not_trigger_email(self, send_email):
+    def test_reply_to_own_post_does_not_trigger_email(self, send_email):
         post = Post.objects.create(author=self.alice, title="Hi", body="body")
         PostSubscription.objects.create(user=self.alice, post=post)
         Reply.objects.create(author=self.alice, post=post, body="my own reply")
@@ -264,21 +288,7 @@ class SendForumDigestCommandTests(TestCase):
 
         send_email.assert_not_called()
 
-    def test_items_older_than_24h_are_excluded(self, send_email):
-        post = Post.objects.create(author=self.alice, title="Old subscribed", body="body")
-        PostSubscription.objects.create(user=self.alice, post=post)
-        old = timezone.now() - timedelta(hours=25)
-        Post.objects.filter(pk=post.pk).update(creation_date=old)
-        reply = Reply.objects.create(author=self.bob, post=post, body="hey @alice")
-        Reply.objects.filter(pk=reply.pk).update(creation_date=old)
-        mention_post = Post.objects.create(author=self.bob, title="Old mention", body="hi @alice")
-        Post.objects.filter(pk=mention_post.pk).update(creation_date=old)
-
-        call_command("send_forum_email_digests")
-
-        send_email.assert_not_called()
-
-    def test_removed_items_do_not_trigger_email(self, send_email):
+    def test_removed_posts_or_replies_do_not_trigger_email(self, send_email):
         subscribed = Post.objects.create(author=self.alice, title="Hi", body="body")
         PostSubscription.objects.create(user=self.alice, post=subscribed)
         Reply.objects.create(author=self.bob, post=subscribed, body="reply", removal_date=timezone.now())
@@ -295,7 +305,7 @@ class SendForumDigestCommandTests(TestCase):
 
         send_email.assert_not_called()
 
-    def test_disabled_notifications_skips_user(self, send_email):
+    def test_no_email_sent_if_notifications_disabled(self, send_email):
         self.alice.email_notifications = False
         self.alice.save()
         post = Post.objects.create(author=self.alice, title="Hi", body="body")
@@ -306,29 +316,87 @@ class SendForumDigestCommandTests(TestCase):
 
         send_email.assert_not_called()
 
-    def test_subject_combines_counts(self, send_email):
-        post = Post.objects.create(author=self.alice, title="Hi", body="body")
-        PostSubscription.objects.create(user=self.alice, post=post)
-        Reply.objects.create(author=self.bob, post=post, body="first")
-        Reply.objects.create(author=self.bob, post=post, body="second")
-        Post.objects.create(author=self.bob, title="New thread", body="hi @alice")
+    def test_no_email_sent_to_banned_user(self, send_email):
+        self.alice.is_active = False
+        self.alice.save()
+        Post.objects.create(author=self.bob, title="Hey", body="hey @alice")
 
         call_command("send_forum_email_digests")
 
-        self.assertEqual(
-            send_email.call_args.args[1],
-            "Yesterday on All About Berlin: 2 replies, 2 new posts, 1 mention",
-        )
+        send_email.assert_not_called()
 
-    def test_subject_hides_zero_parts(self, send_email):
-        post = Post.objects.create(author=self.alice, title="Old", body="body")
-        PostSubscription.objects.create(user=self.alice, post=post)
-        Reply.objects.create(author=self.bob, post=post, body="reply")
-        Post.objects.filter(pk=post.pk).update(creation_date=timezone.now() - timedelta(hours=25))
+    def test_user_without_notifications_gets_weekly_digest(self, send_email):
+        self.alice.last_email_digest_date = timezone.now() - timedelta(days=8)
+        self.alice.save()
+        Post.objects.create(author=self.bob, title="Fresh thread", body="unrelated to alice")
 
         call_command("send_forum_email_digests")
 
-        self.assertEqual(send_email.call_args.args[1], "Yesterday on All About Berlin: 1 reply")
+        send_email.assert_called_once()
+        recipients, _, body = send_email.call_args.args
+        self.assertEqual(recipients, ["alice@example.com"])
+        self.assertIn("Fresh thread", body)
+
+    def test_no_weekly_digest_if_no_new_posts_in_a_week(self, send_email):
+        self.alice.last_email_digest_date = timezone.now() - timedelta(days=8)
+        self.alice.save()
+        stale = Post.objects.create(author=self.bob, title="Old thread", body="old")
+
+        Post.objects.filter(pk=stale.pk).update(creation_date=timezone.now() - timedelta(days=10))
+
+        call_command("send_forum_email_digests")
+
+        send_email.assert_not_called()
+
+    def test_no_weekly_digest_if_already_sent_2_days_ago(self, send_email):
+        self.alice.last_email_digest_date = timezone.now() - timedelta(days=2)
+        self.alice.save()
+        Post.objects.create(author=self.bob, title="Fresh thread", body="unrelated to alice")
+
+        call_command("send_forum_email_digests")
+
+        send_email.assert_not_called()
+
+    def test_only_include_mentions_since_last_digest(self, send_email):
+        self.alice.last_email_digest_date = timezone.now() - timedelta(days=3)
+        self.alice.save()
+        mention = Post.objects.create(author=self.bob, title="Older mention", body="hey @alice")
+        Post.objects.filter(pk=mention.pk).update(creation_date=timezone.now() - timedelta(days=5))
+
+        call_command("send_forum_email_digests")
+
+        send_email.assert_not_called()
+
+    def test_body_contains_all_three_sections(self, send_email):
+        self.alice.last_email_digest_date = timezone.now() - timedelta(days=8)
+        self.alice.save()
+        subscribed = Post.objects.create(author=self.alice, title="My thread", body="body")
+        PostSubscription.objects.create(user=self.alice, post=subscribed)
+        Reply.objects.create(author=self.bob, post=subscribed, body="a reply")
+        Post.objects.create(author=self.bob, title="You there?", body="hey @alice")
+        Post.objects.create(author=self.bob, title="Fresh thread", body="unrelated")
+
+        call_command("send_forum_email_digests")
+
+        send_email.assert_called_once()
+        subject, body = send_email.call_args.args[1], send_email.call_args.args[2]
+        self.assertEqual(subject, "Recently on the All About Berlin forum: 1 mention, 1 reply, 3 posts")
+        self.assertIn("<h2>Mentions</h2>", body)
+        self.assertIn("<h2>Replies to posts you follow</h2>", body)
+        self.assertIn("<h2>New posts</h2>", body)
+        self.assertIn("You there?", body)
+        self.assertIn("My thread", body)
+        self.assertIn("Fresh thread", body)
+
+    def test_last_email_digest_date_is_updated(self, send_email):
+        Post.objects.create(author=self.bob, title="Hey", body="hey @alice")
+        before = timezone.now()
+
+        call_command("send_forum_email_digests")
+
+        self.alice.refresh_from_db()
+        self.assertIsNotNone(self.alice.last_email_digest_date)
+        self.assertGreaterEqual(self.alice.last_email_digest_date, before)
 
     def test_unsubscribe_url_in_email_disables_notifications(self, send_email):
         Post.objects.create(author=self.bob, title="Hey", body="hey @alice")

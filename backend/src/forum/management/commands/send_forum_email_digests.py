@@ -6,7 +6,7 @@ import requests
 from django.conf import settings
 from django.contrib.auth import get_user_model
 from django.core.management.base import BaseCommand
-from django.db.models import Count, F, Q
+from django.db.models import Q
 from django.template.loader import render_to_string
 from django.urls import reverse
 from django.utils import timezone
@@ -19,42 +19,44 @@ from management.models import update_monitor
 logger = logging.getLogger(__name__)
 
 
-def get_new_replies_by_user(since_date: datetime) -> dict[str, list[dict]]:
-    subscriptions_with_new_replies = (
-        PostSubscription.objects.filter(user__email_notifications=True)
-        .annotate(
-            new_reply_count=Count(
-                "post__replies",
-                filter=Q(
-                    post__replies__creation_date__gte=since_date,
-                    post__replies__removal_date__isnull=True,
-                )
-                & ~Q(post__replies__author=F("user")),
-            )
+def get_new_replies_by_user(since_date: datetime) -> dict[str, list[tuple[Post, list[Reply]]]]:
+    subscriptions_with_updates = (
+        PostSubscription.objects.filter(
+            user__is_active=True,  # Banned users don't get emails
+            user__email_notifications=True,
+            post__replies__creation_date__gte=since_date,
+            post__replies__removal_date__isnull=True,
         )
-        .filter(new_reply_count__gt=0)
         .select_related("user", "post")
-        .order_by("-post__creation_date")
+        .distinct()
     )
-    replies_by_user: dict[str, list[dict]] = {}
-    for subscription in subscriptions_with_new_replies:
-        replies_by_user.setdefault(subscription.user.username, []).append(
-            {
-                "post": subscription.post,
-                "count": subscription.new_reply_count,
-                "unsubscribe_url": get_post_unsubscribe_url(subscription.user, subscription.post),
-            }
-        )
-    return replies_by_user
 
+    subscribed_post_ids = {subscription.post_id for subscription in subscriptions_with_updates}
+    recent_replies_by_post_id: dict[int, list[Reply]] = {}
+    for reply in Reply.objects.visible().filter(creation_date__gte=since_date, post_id__in=subscribed_post_ids):
+        recent_replies_by_post_id.setdefault(reply.post_id, []).append(reply)
 
-def get_new_posts(since_date: datetime) -> list[Post]:
-    return list(Post.objects.visible().filter(creation_date__gte=since_date).order_by("-creation_date"))
+    new_replies_by_user: dict[str, list[tuple[Post, list[Reply]]]] = {}
+    for subscription in subscriptions_with_updates:
+        replies = [
+            reply
+            for reply in recent_replies_by_post_id.get(subscription.post_id, [])
+            if reply.author_id != subscription.user_id
+        ]
+        if replies:
+            new_replies_by_user.setdefault(subscription.user.username, []).append((subscription.post, replies))
+    return new_replies_by_user
 
 
 def get_new_mentions_by_user(since_date: datetime) -> dict[str, list[Post | Reply]]:
-    new_posts = Post.objects.visible().filter(creation_date__gte=since_date).select_related("author")
-    new_replies = Reply.objects.visible().filter(creation_date__gte=since_date).select_related("post", "author")
+    new_posts = (
+        Post.objects.visible().filter(creation_date__gte=since_date, body__contains="@").select_related("author")
+    )
+    new_replies = (
+        Reply.objects.visible()
+        .filter(creation_date__gte=since_date, body__contains="@")
+        .select_related("post", "author")
+    )
     new_posts_and_replies: list[Post | Reply] = sorted(
         [*new_posts, *new_replies],
         key=lambda item: item.creation_date,
@@ -70,6 +72,17 @@ def get_new_mentions_by_user(since_date: datetime) -> dict[str, list[Post | Repl
     return mentions_by_user
 
 
+def get_digest_email_subject(mention_count: int, reply_count: int, post_count: int) -> str:
+    parts = []
+    if mention_count:
+        parts.append(f"{mention_count} {'mention' if mention_count == 1 else 'mentions'}")
+    if reply_count:
+        parts.append(f"{reply_count} {'reply' if reply_count == 1 else 'replies'}")
+    if post_count:
+        parts.append(f"{post_count} {'post' if post_count == 1 else 'posts'}")
+    return "Recently on the All About Berlin forum: " + ", ".join(parts)
+
+
 def get_unsubscribe_url(user: User) -> str:
     query = urlencode({"user": user.username, "token": get_unsubscribe_url_token(user)})
     return f"{settings.BASE_URL}{reverse('forum_turn_off_notifications')}?{query}"
@@ -80,65 +93,97 @@ def get_post_unsubscribe_url(user: User, post: Post) -> str:
     return f"{settings.BASE_URL}{reverse('forum_unsubscribe_from_post', args=[post.pk])}?{query}"
 
 
-def get_digest_email_subject(reply_count, new_post_count, mention_count):
-    parts = []
-    if reply_count:
-        parts.append(f"{reply_count} {'reply' if reply_count == 1 else 'replies'}")
-    if new_post_count:
-        parts.append(f"{new_post_count} new {'post' if new_post_count == 1 else 'posts'}")
-    if mention_count:
-        parts.append(f"{mention_count} {'mention' if mention_count == 1 else 'mentions'}")
-    return "Yesterday on All About Berlin: " + ", ".join(parts)
-
-
 class Command(BaseCommand):
-    help = "Send the daily forum digest to subscribed users"
+    help = "Send the forum digest to subscribed users"
+
+    def get_user_digest_email(
+        self,
+        user: User,
+        since_date: datetime,
+        mentions_by_user: dict[str, list[Post | Reply]],
+        replies_by_user: dict[str, list[tuple[Post, list[Reply]]]],
+        new_posts: list[Post],
+    ) -> tuple[str, str] | None:
+        since = max(user.last_email_digest_date or user.date_joined, since_date)
+        hit_cap = since == since_date
+
+        user_mentions = [m for m in mentions_by_user.get(user.username, []) if m.creation_date >= since]
+        user_replies = []
+        for post, replies in replies_by_user.get(user.username, []):
+            count = sum(1 for reply in replies if reply.creation_date >= since)
+            if count:
+                user_replies.append(
+                    {
+                        "post": post,
+                        "count": count,
+                        "unsubscribe_url": get_post_unsubscribe_url(user, post),
+                    }
+                )
+        user_new_posts = [post for post in new_posts if post.creation_date >= since]
+
+        should_send = bool(user_mentions or user_replies) or (hit_cap and user_new_posts)
+        if not should_send:
+            return None
+
+        context = {
+            "user": user,
+            "new_mentions": user_mentions,
+            "new_replies": user_replies,
+            "new_posts": user_new_posts,
+            "unsubscribe_url": get_unsubscribe_url(user),
+        }
+        reply_count = sum(item["count"] for item in user_replies)
+        subject = get_digest_email_subject(len(user_mentions), reply_count, len(user_new_posts))
+        body = render_to_string("forum/email/digest.html", context)
+        return subject, body
+
+    def send_digest_emails(self, emails_to_send: list[tuple[User, str, str]]) -> tuple[list[int], int]:
+        sent_user_ids = []
+        failed_count = 0
+        with requests.Session() as session:
+            for user, subject, body in emails_to_send:
+                try:
+                    send_email([user.email], subject, body, session=session)
+                    sent_user_ids.append(user.pk)
+                except Exception:
+                    logger.exception("Could not send forum digest email to %s", user.username)
+                    failed_count += 1
+        return sent_user_ids, failed_count
 
     def handle(self, *args, **options):
         try:
-            since_date = timezone.now() - timedelta(hours=24)
+            now = timezone.now()
+            since_date = now - timedelta(days=7)
+
             mentions_by_user = get_new_mentions_by_user(since_date)
             replies_by_user = get_new_replies_by_user(since_date)
-            new_posts = get_new_posts(since_date)
+            new_posts = list(Post.objects.visible().filter(creation_date__gte=since_date).order_by("-creation_date"))
 
-            users_to_notify = get_user_model().objects.filter(
-                is_active=True,
-                email_notifications=True,
-                username__in=replies_by_user.keys() | mentions_by_user.keys(),
+            usernames_with_activity = set(mentions_by_user.keys()) | set(replies_by_user.keys())
+
+            # Include users with activity, plus dormant users (last digest 7+ days ago, or never got one
+            # and joined 7+ days ago) when there are new posts to show them.
+            candidate_filter = Q(username__in=usernames_with_activity)
+            if new_posts:
+                candidate_filter |= Q(last_email_digest_date__lte=since_date) | Q(
+                    last_email_digest_date__isnull=True, date_joined__lte=since_date
+                )
+
+            users_to_notify = (
+                get_user_model().objects.filter(is_active=True, email_notifications=True).filter(candidate_filter)
             )
 
-            sent_count = 0
-            failed_count = 0
-            email_queue = []
+            emails_to_send = []
             for user in users_to_notify:
-                try:
-                    new_replies = replies_by_user.get(user.username, [])
-                    new_mentions = mentions_by_user.get(user.username, [])
+                digest = self.get_user_digest_email(user, since_date, mentions_by_user, replies_by_user, new_posts)
+                if digest:
+                    subject, body = digest
+                    emails_to_send.append((user, subject, body))
 
-                    context = {
-                        "user": user,
-                        "new_mentions": new_mentions,
-                        "new_replies": new_replies,
-                        "new_posts": new_posts,
-                        "unsubscribe_url": get_unsubscribe_url(user),
-                    }
-                    reply_count = sum(summary["count"] for summary in new_replies)
-                    subject = get_digest_email_subject(reply_count, len(new_posts), len(new_mentions))
-                    body = render_to_string("forum/email/digest.html", context)
-                    email_queue.append((user, subject, body))
-                except Exception:
-                    logger.exception("Could not prepare forum digest email for %s", user.username)
-                    failed_count += 1
+            sent_user_ids, failed_count = self.send_digest_emails(emails_to_send)
+            get_user_model().objects.filter(pk__in=sent_user_ids).update(last_email_digest_date=now)
 
-            with requests.Session() as session:
-                for user, subject, body in email_queue:
-                    try:
-                        send_email([user.email], subject, body, session=session)
-                        sent_count += 1
-                    except Exception:
-                        logger.exception("Could not send forum digest email to %s", user.username)
-                        failed_count += 1
-
+            sent_count = len(sent_user_ids)
             if failed_count and not sent_count:
                 level = logging.ERROR
             elif failed_count:
