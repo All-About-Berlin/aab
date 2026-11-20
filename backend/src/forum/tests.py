@@ -221,7 +221,7 @@ class ForumPaginationMetadataTests(TestCase):
         self.assertContains(response, f'<link rel="prev" href="https://localhost/forum/{post.pk}">')
 
 
-@patch("forum.management.commands.send_forum_digest.send_email")
+@patch("forum.management.commands.send_forum_email_digests.send_email")
 class SendForumDigestCommandTests(TestCase):
     def setUp(self):
         self.alice = get_user_model().objects.create_user(username="alice", email="alice@example.com")
@@ -232,7 +232,7 @@ class SendForumDigestCommandTests(TestCase):
         PostSubscription.objects.create(user=self.alice, post=post)
         Reply.objects.create(author=self.bob, post=post, body="reply!")
 
-        call_command("send_forum_digest")
+        call_command("send_forum_email_digests")
 
         send_email.assert_called_once()
         recipients, subject, _ = send_email.call_args.args
@@ -242,7 +242,7 @@ class SendForumDigestCommandTests(TestCase):
     def test_mention_triggers_email(self, send_email):
         Post.objects.create(author=self.bob, title="Hey", body="hey @alice")
 
-        call_command("send_forum_digest")
+        call_command("send_forum_email_digests")
 
         send_email.assert_called_once()
         self.assertEqual(send_email.call_args.args[0], ["alice@example.com"])
@@ -251,7 +251,7 @@ class SendForumDigestCommandTests(TestCase):
     def test_self_mention_does_not_trigger_email(self, send_email):
         Post.objects.create(author=self.alice, title="Hey", body="hey @alice")
 
-        call_command("send_forum_digest")
+        call_command("send_forum_email_digests")
 
         send_email.assert_not_called()
 
@@ -260,7 +260,7 @@ class SendForumDigestCommandTests(TestCase):
         PostSubscription.objects.create(user=self.alice, post=post)
         Reply.objects.create(author=self.alice, post=post, body="my own reply")
 
-        call_command("send_forum_digest")
+        call_command("send_forum_email_digests")
 
         send_email.assert_not_called()
 
@@ -274,7 +274,7 @@ class SendForumDigestCommandTests(TestCase):
         mention_post = Post.objects.create(author=self.bob, title="Old mention", body="hi @alice")
         Post.objects.filter(pk=mention_post.pk).update(creation_date=old)
 
-        call_command("send_forum_digest")
+        call_command("send_forum_email_digests")
 
         send_email.assert_not_called()
 
@@ -284,14 +284,14 @@ class SendForumDigestCommandTests(TestCase):
         Reply.objects.create(author=self.bob, post=subscribed, body="reply", removal_date=timezone.now())
         Post.objects.create(author=self.bob, title="Mention", body="hey @alice", removal_date=timezone.now())
 
-        call_command("send_forum_digest")
+        call_command("send_forum_email_digests")
 
         send_email.assert_not_called()
 
     def test_only_new_posts_skips_user(self, send_email):
         Post.objects.create(author=self.bob, title="Unrelated", body="no mentions")
 
-        call_command("send_forum_digest")
+        call_command("send_forum_email_digests")
 
         send_email.assert_not_called()
 
@@ -302,7 +302,7 @@ class SendForumDigestCommandTests(TestCase):
         PostSubscription.objects.create(user=self.alice, post=post)
         Reply.objects.create(author=self.bob, post=post, body="reply")
 
-        call_command("send_forum_digest")
+        call_command("send_forum_email_digests")
 
         send_email.assert_not_called()
 
@@ -313,7 +313,7 @@ class SendForumDigestCommandTests(TestCase):
         Reply.objects.create(author=self.bob, post=post, body="second")
         Post.objects.create(author=self.bob, title="New thread", body="hi @alice")
 
-        call_command("send_forum_digest")
+        call_command("send_forum_email_digests")
 
         self.assertEqual(
             send_email.call_args.args[1],
@@ -326,14 +326,14 @@ class SendForumDigestCommandTests(TestCase):
         Reply.objects.create(author=self.bob, post=post, body="reply")
         Post.objects.filter(pk=post.pk).update(creation_date=timezone.now() - timedelta(hours=25))
 
-        call_command("send_forum_digest")
+        call_command("send_forum_email_digests")
 
         self.assertEqual(send_email.call_args.args[1], "Yesterday on All About Berlin: 1 reply")
 
     def test_unsubscribe_url_in_email_disables_notifications(self, send_email):
         Post.objects.create(author=self.bob, title="Hey", body="hey @alice")
 
-        call_command("send_forum_digest")
+        call_command("send_forum_email_digests")
 
         body = send_email.call_args.args[2]
         match = re.search(r'href="([^"]+/forum/unsubscribe/all[^"]+)"', body)
