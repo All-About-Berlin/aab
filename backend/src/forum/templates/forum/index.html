@@ -70,38 +70,38 @@
 			</svg>
 		</header>
 	{% endif %}
-<section class="section posts">
-	{% if user.is_authenticated or page_obj.number != 1 or category %}
-		<h1>{% if category %}{{ category.label }}{% else %}Forum{% endif %}{% if page_obj.number > 1 %} - page {{ page_obj.number }}{% endif %}</h1>
-		{% if user.is_authenticated or category %}
-			<div class="post-meta">
-				<nav class="breadcrumbs" aria-label="Breadcrumbs">
-					<i class="icon folder" aria-hidden="true"></i>
-					<ol>
-						<li><a href="{{ SITE_URL }}{{ url('forum_index') }}">Forum</a></li>
-						{% if category %}
-							<li><a href="{{ SITE_URL }}{{ url('forum_index') }}?category={{ category.value }}">{{ category.label }}</a></li>
-						{% endif %}
-						{% if page_obj.number > 1 %}
-							<li><a href="{{ SITE_URL }}{{ url('forum_index_page', page=page_obj.number) }}{% if category %}?category={{ category.value }}{% endif %}">Page {{ page_obj.number }}</a></li>
-						{% endif %}
-					</ol>
-				</nav>
-				{% if user.is_authenticated %}
-					<div class="buttons">
-						<a class="button primary" href="{{ url('forum_new_post') }}">New post</a>
-						<a class="button" href="{{ url('account_logout') }}">Log out</a>
-					</div>
-				{% endif %}
-			</div>
+	<article class="section posts">
+		{% if user.is_authenticated or page_obj.number != 1 or category %}
+			<h1>{% if category %}{{ category.label }}{% else %}Forum{% endif %}{% if page_obj.number > 1 %} - page {{ page_obj.number }}{% endif %}</h1>
+			{% if user.is_authenticated or category %}
+				<div class="post-meta">
+					<nav class="breadcrumbs" aria-label="Breadcrumbs">
+						<i class="icon folder" aria-hidden="true"></i>
+						<ol>
+							<li><a href="{{ SITE_URL }}{{ url('forum_index') }}">Forum</a></li>
+							{% if category %}
+								<li><a href="{{ SITE_URL }}{{ url('forum_index') }}?category={{ category.value }}">{{ category.label }}</a></li>
+							{% endif %}
+							{% if page_obj.number > 1 %}
+								<li><a href="{{ SITE_URL }}{{ url('forum_index_page', page=page_obj.number) }}{% if category %}?category={{ category.value }}{% endif %}">Page {{ page_obj.number }}</a></li>
+							{% endif %}
+						</ol>
+					</nav>
+					{% if user.is_authenticated %}
+						<div class="buttons">
+							<a class="button primary" href="{{ url('forum_new_post') }}">New post</a>
+							<a class="button" href="{{ url('account_logout') }}">Log out</a>
+						</div>
+					{% endif %}
+				</div>
+			{% endif %}
+		{% else %}
+			<h2>Recent posts</h2>
 		{% endif %}
-	{% else %}
-		<h2>Recent posts</h2>
-	{% endif %}
-	{% with posts = page_obj %}{% include "forum/_postList.html" %}{% endwith %}
-	{% set base_url = url('forum_index') %}
-	{% include "forum/_pagination.html" %}
-</section>
+		{% with posts = page_obj %}{% include "forum/_postList.html" %}{% endwith %}
+		{% set base_url = url('forum_index') %}
+		{% include "forum/_pagination.html" %}
+	</article>
 {% endblock %}
 
 {% block jsonld %}

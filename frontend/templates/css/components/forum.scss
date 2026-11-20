@@ -36,13 +36,37 @@
         .post-meta a{
             color: inherit;
         }
+
+        @include only-phone{
+            grid-template-areas: "title" "meta";
+            .post-meta{
+                justify-content: space-between;
+                > *{
+                    flex: unset!important;
+                }
+
+                .date{
+                    order: -1;
+                }
+            }
+        }
     }
 
     .reply{
         grid-template-areas: "meta" "message";
         grid-template-columns: 1fr;
-        .post-meta .username{
-            flex: 1;
+
+        .post-meta{
+            justify-content: space-between;
+
+            .post-title{
+                font-size: var(--m)!important;
+                font-weight: 600;
+            }
+
+            > *{
+                flex: unset!important;
+            }
         }
 
         &:target{
@@ -60,7 +84,7 @@
                 display: none;
             }
             a{
-                @include text-bold;
+                font-weight: 600;
             }
         }
     }
@@ -110,7 +134,7 @@
         color: var(--c-highlight);
     }
 
-    &.flair-banned{
+    .flair-banned{
         &:before{
             content: '⃠';
             text-align: center;
@@ -119,7 +143,7 @@
         background: var(--c-bg-error);  
     }
 
-    &.flair-moderator{
+    .flair-moderator{
         &:before{
             content: '⚖';
             text-align: center;
