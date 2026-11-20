@@ -13,6 +13,7 @@ from django.utils import timezone
 from forms.utils import send_email
 from forum.models import Post, Reply, User
 from forum.views import get_unsubscribe_url_token
+from management.models import update_monitor
 
 logger = logging.getLogger(__name__)
 
@@ -77,29 +78,40 @@ class Command(BaseCommand):
     help = "Send the daily forum digest to subscribed users"
 
     def handle(self, *args, **options):
-        from_date = timezone.now() - timedelta(hours=24)
-        mentions_by_user = get_new_mentions(from_date)
-        new_posts = list(get_new_posts(from_date))
+        try:
+            from_date = timezone.now() - timedelta(hours=24)
+            mentions_by_user = get_new_mentions(from_date)
+            new_posts = list(get_new_posts(from_date))
 
-        users = get_user_model().objects.filter(email_notifications=True)
-        for user in users:
-            try:
-                replies = list(get_new_replies_to_subscribed_posts(user, from_date))
-                mentions = mentions_by_user.get(user.username, [])
+            sent = 0
+            failed = 0
+            users = get_user_model().objects.filter(email_notifications=True)
+            for user in users:
+                try:
+                    replies = list(get_new_replies_to_subscribed_posts(user, from_date))
+                    mentions = mentions_by_user.get(user.username, [])
 
-                # If there are no notifications, send no emails
-                if not replies and not mentions:
-                    continue
+                    # If there are no notifications, send no emails
+                    if not replies and not mentions:
+                        continue
 
-                context = {
-                    "user": user,
-                    "mentions": mentions,
-                    "new_replies": group_replies_by_post(replies),
-                    "new_posts": new_posts,
-                    "unsubscribe_url": get_unsubscribe_url(user),
-                }
-                subject = get_digest_email_subject(len(replies), len(new_posts), len(mentions))
-                body = render_to_string("forum/email/digest.html", context)
-                send_email([user.email], subject, body)
-            except Exception:
-                logger.exception("Could not send forum digest to %s", user.username)
+                    context = {
+                        "user": user,
+                        "mentions": mentions,
+                        "new_replies": group_replies_by_post(replies),
+                        "new_posts": new_posts,
+                        "unsubscribe_url": get_unsubscribe_url(user),
+                    }
+                    subject = get_digest_email_subject(len(replies), len(new_posts), len(mentions))
+                    body = render_to_string("forum/email/digest.html", context)
+                    send_email([user.email], subject, body)
+                    sent += 1
+                except Exception:
+                    logger.exception("Could not send forum digest to %s", user.username)
+                    failed += 1
+
+            level = logging.WARNING if failed else logging.INFO
+            update_monitor("forum-digest", level, f"{sent} sent, {failed} failed.")
+        except Exception as exc:
+            logger.exception("Forum digest command failed")
+            update_monitor("forum-digest", logging.ERROR, str(exc))
