@@ -1,6 +1,7 @@
 {% extends "forum/layout.html" %}
 
-{% block page_title %}{% if page_obj.number > 1 %}Page {{ page_obj.number }} - {% endif %}{{ post.title }} - All About Berlin forum{% endblock %}
+{% block page_title %}{% if page_obj.number > 1 %}Page {{ page_obj.number }} - {% endif %}{{ post.title }}{% endblock %}
+{% block page_description %}A post by {{ post.author.username }} on the All About Berlin forum.{% endblock %}
 
 {% block postHead %}
 	<link rel="canonical" href="{{ SITE_URL }}{{ url('forum_post', post.pk) }}">
