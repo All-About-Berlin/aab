@@ -1,0 +1,37 @@
+{% extends "forum/layout.html" %}
+
+{% block page_title %}Notifications - All About Berlin forum{% endblock %}
+{% block robots %}<meta name="robots" content="noindex">{% endblock %}
+
+{% block content %}
+<article class="section article-body">
+	<h1>Email notifications</h1>
+	<div class="post-meta">
+		<nav class="breadcrumbs" aria-label="Breadcrumbs">
+			<i class="icon folder" aria-hidden="true"></i>
+			<ol>
+				<li><a href="{{ SITE_URL }}{{ url('forum_index') }}">Forum</a></li>
+				<li>Notifications</li>
+			</ol>
+		</nav>
+	</div>
+
+	{% if is_subscribed %}
+		<p>You receive an email when someone replies to <a href="{{ SITE_URL }}{{ url('forum_post', post.pk) }}">{{ post.title }}</a>.</p>
+		<form method="post" action="{{ url('forum_unsubscribe_from_post', post.pk) }}">
+			{{ csrf_input }}
+			<input type="hidden" name="user" value="{{ user_to_unsubscribe.username }}">
+			<input type="hidden" name="token" value="{{ token }}">
+			<div class="buttons bar">
+				<button type="submit" class="button primary">Unsubscribe</button>
+			</div>
+		</form>
+	{% else %}
+		<p>You have unsubscribed from <a href="{{ SITE_URL }}{{ url('forum_post', post.pk) }}">{{ post.title }}</a>.</p>
+		<hr>
+		<nav class="buttons bar previous-next">
+			<a class="next" href="{{ url('forum_index') }}">Go to the forum</a>
+		</nav>
+	{% endif %}
+</article>
+{% endblock %}
