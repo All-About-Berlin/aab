@@ -2,6 +2,10 @@
 	<i class="icon person" aria-hidden="true"></i>
 	<a rel="author" class="p-name u-url" itemprop="url" href="{{ SITE_URL }}{{ url('forum_user', user.username) }}"><span itemprop="name">{{ user.username }}</span></a>
 	{% if user.is_superuser %}
-		<span class="pill">Admin</span>
+		<span class="pill flair-moderator">Admin</span>
+	{% elif user.is_staff %}
+		<span class="pill flair-moderator">Moderator</span>
+	{% elif not user.is_active %}
+		<span class="pill flair-banned">Banned</span>
 	{% endif %}
 </div>

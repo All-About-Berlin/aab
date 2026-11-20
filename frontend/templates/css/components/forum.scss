@@ -51,11 +51,8 @@
 
         &.removed{
             color: var(--c-text-light);
-            border: var(--b-box);
-            background: transparent;
             grid-template-areas: none;
-            padding: var(--m) var(--w-page-border);
-            border-radius: var(--b-radius);
+            text-align: center;
         }
 
         .username{
@@ -111,6 +108,22 @@
     &.admin{
         font-weight: bold;
         color: var(--c-highlight);
+    }
+
+    &.flair-banned{
+        &:before{
+            content: '⃠';
+            text-align: center;
+        }
+        color: var(--c-text-error)!important;
+        background: var(--c-bg-error);  
+    }
+
+    &.flair-moderator{
+        &:before{
+            content: '⚖';
+            text-align: center;
+        }
     }
 }
 

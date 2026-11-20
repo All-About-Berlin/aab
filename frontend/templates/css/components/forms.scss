@@ -511,16 +511,19 @@ output.placeholder, .recommended:before, .pill{
     }
 }
 
-.pill.yes{
-    &:before{
-        content: '✓';
-        text-align: center;
-    }
+.pill{
     &:not(:empty):before{
         margin-right: var(--xs);
     }
-    color: #fff!important;
-    background: var(--c-highlight-green);
+
+    &.yes{
+        &:before{
+            content: '✓';
+            text-align: center;
+        }
+        color: #fff!important;
+        background: var(--c-highlight-green);   
+    }
 }
 
 output.placeholder{
