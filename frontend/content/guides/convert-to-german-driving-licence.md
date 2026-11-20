@@ -28,7 +28,7 @@ You usually need a translation of your driving licence. There are 2 ways to get 
 
 You **don't** need a driving licence translation if...[^0]
 
-- Your driving licence is from the [EU](/glossary/European%20Union), [[EEA]], Andorra, Hong Kong, Monaco, New Zealand, San Marino, Senegal or Switzerland.[^25]
+- Your driving licence is from the [EU](/glossary/European%20Union), [[EEA]], Andorra, Hong Kong, Monaco, New Zealand, San Marino, Senegal or Switzerland.[^24]
 - or it follows [these rules](https://treaties.un.org/doc/Treaties/1977/05/19770524%2000-13%20AM/Ch_XI_B_19.pdf#page=146) (Vienna Convention on Road Traffic, Annex 6, page 146)
 - or it's in German
 
@@ -39,7 +39,7 @@ Foreign driving licences are sometimes valid in Germany:
 - **[EU](/glossary/European%20Union) or [[EEA]] driving licences**  
     Your driving licence is valid in Germany until it expires.[^17] After it expires, you can [exchange it for a German driving licence](https://service.berlin.de/dienstleistung/121598/) at the *[[Bürgeramt]]*. You don't need to take driving classes.
     - **Converted driving licences**  
-        If you got a driving licence outside of [[EEA]] and [Annex 11 countries](https://www.gesetze-im-internet.de/fev_2010/anlage_11.html), then converted it to an EU driving licence without taking a driving exam, your EU driving licence is only valid for 6 months after you move to Germany.[^23] You might need to take driving classes to get a German driving licence.
+        If you got a driving licence outside of [[EEA]] and [Annex 11 countries](https://www.gesetze-im-internet.de/fev_2010/anlage_11.html), then converted it to an EU driving licence without taking a driving exam, your EU driving licence is still valid as any other driving license originally obtained in the EU (due to the change in the law in August 2026).[^23] 
 - **Ukrainian driving licences**  
     If you are a Ukrainian asylum seeker, your driving licence is valid in Germany.[^22] If it expires after the Russian invasion of Ukraine, it's still valid in Germany.{{ fail_on('2028-04-01') }}
 - **Other driving licences**  
@@ -58,11 +58,9 @@ There are a few conditions:
 - [ ] **It's not expired**[^6]  
     Your foreign driving licence must still be valid. Expired [EU](/glossary/European%20Union) and [[EEA]] driving licences can still be converted.[^8]
 - [ ] **It's a full driving licence**  
-    You can't convert a temporary licence or a learner's permit.[^26]
+    You can't convert a temporary licence or a learner's permit.[^25]
 
 Sometimes, truck and motorcycle licences from non-[EU](/glossary/European%20Union) countries can't be converted. See the [rules for your country](https://www.gesetze-im-internet.de/fev_2010/anlage_11.html).
-
-When you convert your driving licence, they check **where you got driving lessons**. For example, if you converted your Iranian driving licence to a Spanish driving licence, they will follow the rules for Iranian driving licences, because that's where you passed your driving exam.[^24]
 
 ### 1. Register your address
 
@@ -190,7 +188,6 @@ After a few weeks, you get a letter. It tells you to pick up your new driving li
 [^20]: [berlin.de](https://service.berlin.de/dienstleistung/121598/)
 [^21]: Emily Archer (November 2024)
 [^22]: [germany4ukraine.de](https://www.germany4ukraine.de/DE/mobilitaet/ukrainischer-fuehrerschein/seite_node.html) (June 2026), [ADAC](https://www.adac.de/verkehr/rund-um-den-fuehrerschein/auslaendische-fuehrerscheine/fuehrerscheinumschreibung-fluechtlinge/#:~:text=fur%20menschen%20aus%20der%20ukraine%20gilt%20eine%20sonderregel%3A%20ihr%20fuhrerschein%20ist%20auch%20ohne%20umschreibung%20gultig.) (June 2026)
-[^23]: [§ 28 Abs. 4 FeV](https://www.buzer.de/28_FeV.htm), [ADAC](https://www.adac.de/verkehr/rund-um-den-fuehrerschein/auslaendische-fuehrerscheine/gueltigkeit/#keine-umschreibung-erforderlich) (June 2026)
-[^24]: Reader feedback, [§ 28 Abs. 4 FeV](https://www.buzer.de/28_FeV.htm), [ADAC](https://www.adac.de/verkehr/rund-um-den-fuehrerschein/auslaendische-fuehrerscheine/gueltigkeit/#keine-umschreibung-erforderlich) (June 2026)
-[^25]: [ADAC](https://www.adac.de/verkehr/rund-um-den-fuehrerschein/auslaendische-fuehrerscheine/staaten-auserhalb/#uebersetzung-erforderlich) (June 2026)
-[^26]: [§ 28 Abs. 4 FeV](https://www.buzer.de/28_FeV.htm)
+[^23]: [§ 28 Abs. 4 FeV](https://www.buzer.de/28_FeV.htm), [ADAC](https://www.adac.de/verkehr/rund-um-den-fuehrerschein/auslaendische-fuehrerscheine/gueltigkeit/#keine-umschreibung-erforderlich) (November 2026)
+[^24]: [ADAC](https://www.adac.de/verkehr/rund-um-den-fuehrerschein/auslaendische-fuehrerscheine/staaten-auserhalb/#uebersetzung-erforderlich) (June 2026)
+[^25]: [§ 28 Abs. 4 FeV](https://www.buzer.de/28_FeV.htm)
