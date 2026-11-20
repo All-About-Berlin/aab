@@ -2,6 +2,7 @@ import logging
 from datetime import datetime, timedelta
 from urllib.parse import urlencode
 
+import requests
 from django.conf import settings
 from django.contrib.auth import get_user_model
 from django.core.management.base import BaseCommand
@@ -129,13 +130,14 @@ class Command(BaseCommand):
                     logger.exception("Could not prepare forum digest email for %s", user.username)
                     failed_count += 1
 
-            for user, subject, body in email_queue:
-                try:
-                    send_email([user.email], subject, body)
-                    sent_count += 1
-                except Exception:
-                    logger.exception("Could not send forum digest email to %s", user.username)
-                    failed_count += 1
+            with requests.Session() as session:
+                for user, subject, body in email_queue:
+                    try:
+                        send_email([user.email], subject, body, session=session)
+                        sent_count += 1
+                    except Exception:
+                        logger.exception("Could not send forum digest email to %s", user.username)
+                        failed_count += 1
 
             if failed_count and not sent_count:
                 level = logging.ERROR

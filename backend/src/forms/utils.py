@@ -93,7 +93,13 @@ def subscribe_to_newsletter(email: str, ip: str | None = None, source: str | Non
     return response
 
 
-def send_email(recipients: List[str], subject: str, body: str, reply_to: str | None = None):
+def send_email(
+    recipients: List[str],
+    subject: str,
+    body: str,
+    reply_to: str | None = None,
+    session: requests.Session | None = None,
+):
     if settings.DEBUG:
         if settings.DEBUG_EMAILS:
             reply_to_line = f"\tReply-To: {reply_to}\n" if reply_to else ""
@@ -121,7 +127,8 @@ def send_email(recipients: List[str], subject: str, body: str, reply_to: str | N
     if reply_to:
         message_data["h:Reply-To"] = reply_to
 
-    response = requests.post(
+    post = session.post if session else requests.post
+    response = post(
         "https://api.eu.mailgun.net/v3/allaboutberlin.com/messages",
         auth=("api", settings.MAILGUN_API_KEY),
         data=message_data,
